@@ -1,0 +1,41 @@
+POWER SUPPLY  Revised: Tuesday, April 15, 2025
+          Revision: 
+
+
+
+
+
+
+
+Bill Of Materials          April 18,2025      15:42:31	Page1
+
+Item	Quantity	Reference	Part
+______________________________________________
+
+1	1	ADC	30K
+2	1	ADCGround	10K
+3	1	CBST1	.1uf
+4	1	CEXT	4.7 uF
+5	1	CSPD	470pF
+6	2	Cout,Cin	10uF
+7	10	C1,C2,C3,C4,C5,C6,C7,C8,	100n
+		C9,C11
+8	1	C10	4.7uF
+9	1	ESR	1
+10	1	GND	Battery-
+11	2	LoRaModule,GPSModule	CONN5_1LFBN-RC
+12	1	J1	CANL
+13	1	J2	CANH
+14	1	L	4.7uH
+15	1	RBST	51
+16	1	R1	3.75k
+17	1	R2	1.2k
+18	1	R3	5.1K
+19	2	Steeringservo,	CONN_PPTC031
+		Speedcontroller
+20	1	U1	TCAN1042H-Q1D
+21	1	U2	STM32F4XXR2
+22	1	U5	SB007-03Q-TL-E
+23	1	U6	R1240N001x
+24	1	Vin	Battery+
+25	1	10pinJTAG	STMM-105-02-G-D-RA

@@ -1,0 +1,121 @@
+Thu May  8 20:53:31 2025				Page     1
+
+
+ 
+Update Symbols/Modules Logfile
+	Thu May  8 20:53:31 2025
+
+------ Module Refresh Messages ------
+
+SUMMARY:    Updated 0 out of 0 modules
+
+------ End Module Messages     ------
+
+
+
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Refresh Symbol                                                   )
+(                                                                     )
+(    Drawing          : senior design v5DRL.brd                       )
+(    Software Version : 22.1P001                                      )
+(    Date/Time        : Thu May  8 20:53:32 2025                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Thu May  8 20:53:32 2025				Page     1
+
+
+------ Symbol Refresh Directives ------
+
+Input design  = 'L:/SENIOR DESIGN/Design 4/ALLEGRO V5/Allegro/senior design v5DRL.brd'
+Output design = ''
+
+Update mechanical symbols              = 'NO'
+Update format symbols                  = 'NO'
+Update package symbols                 = 'YES'
+Update shape/flash symbols             = 'YES'
+Update symbol padstacks                = 'YES'
+Preserve padstacks replaced on pins    = 'NO'
+Reset symbol text and size locations   = 'NO'
+Reset Pin Escapes (fanouts)            = 'NO'
+Ripup Etch                             = 'NO'
+Reset custom drill data                = 'NO'
+
+
+------ Library Paths ------
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           c:/cadence/spb_22.1/share/local/pcb/symbols 
+           c:/cadence/spb_22.1/share/pcb/pcb_lib/symbols 
+           c:/cadence/spb_22.1/share/pcb/allegrolib/symbols 
+           L:/Senior Design/Design 4/LIBRARY_MASTER/symbols 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           c:/cadence/spb_22.1/share/local/pcb/padstacks 
+           c:/cadence/spb_22.1/share/pcb/pcb_lib/symbols 
+           c:/cadence/spb_22.1/share/pcb/allegrolib/symbols 
+           L:/Senior Design/Design 4/LIBRARY_MASTER/padstacks 
+
+
+------ Symbol Refresh Messages ------
+
+'AMV_TEST_POINT'  symbol refreshed successfully.
+'CONN5_1LFBN-RC_SUL'  symbol refreshed successfully.
+'CONN_PPTC031_SUL'  symbol refreshed successfully.
+'CONN_B4B-XH-A_JST'  symbol refreshed successfully.
+'AMV_CON1'  symbol refreshed successfully.
+'CAP_NTS_55_2P8T_NIP'  symbol refreshed successfully.
+'RC0402N_PAN-M'  symbol refreshed successfully.
+'RC0603N_YAG-M'  symbol refreshed successfully.
+'CAP_0603G_AVX-M'  symbol refreshed successfully.
+'RC0402N_YAG-M'  symbol refreshed successfully.
+'CAP_CL10_SAM-M'  symbol refreshed successfully.
+'G-31_MUR-M'  symbol refreshed successfully.
+'RES_R0805_ROM-M'  symbol refreshed successfully.
+'RES_1005_SAM-M'  symbol refreshed successfully.
+'LQFP64-10X10MM'  symbol refreshed successfully.
+'D0008A_L'  symbol refreshed successfully.
+'SOT-23-6W_PE-SOT23-6W-0512_NMD'  symbol refreshed successfully.
+'AB00'  symbol refreshed successfully.
+
+
+------ Pad Stack Refresh Messages ------
+
+'RX31P84Y21P69D0T'  pad stack refreshed successfully.
+'RX35P5Y22D0T'  pad stack refreshed successfully.
+'OX69Y69D49P'  pad stack refreshed successfully.
+'RX33P81Y33P5D0T'  pad stack refreshed successfully.
+'EX60Y60D40P'  pad stack refreshed successfully.
+
+'PAD340MM_CIR140MM'  pad stack refresh starting.
+     WARNING(SPMHGE-126): Cannot load padstack: 'PAD340MM_CIR140MM'.
+
+'PAD160MM_CIR060MM'  pad stack refresh starting.
+     WARNING(SPMHGE-126): Cannot load padstack: 'PAD160MM_CIR060MM'.
+
+'O10220490000200A'  pad stack refreshed successfully.
+'RX65Y213D0T'  pad stack refreshed successfully.
+'RX42Y40D0T'  pad stack refreshed successfully.
+'RX34Y22D0T'  pad stack refreshed successfully.
+'RX47Y12D0T'  pad stack refreshed successfully.
+'RX50Y65D0T'  pad stack refreshed successfully.
+'RX38Y34D0T'  pad stack refreshed successfully.
+'RX33P81Y21P68D0T'  pad stack refreshed successfully.
+'RX36Y55D0T'  pad stack refreshed successfully.
+
+
+----- Symbol Update Summary ----
+
+Updated symbols: 18 out 18
+    Design updated.
+
+Completed refreshing symbols; some symbols may not have been updated due to warnings or errors.
+       0  errors detected.
+       2  warnings detected.

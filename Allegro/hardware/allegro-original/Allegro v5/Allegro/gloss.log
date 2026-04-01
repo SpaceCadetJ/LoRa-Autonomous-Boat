@@ -1,0 +1,738 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Glossing                                                         )
+(                                                                     )
+(    Drawing          : senior design v4.brd                          )
+(    Software Version : 22.1P001                                      )
+(    Date/Time        : Thu May  1 14:16:27 2025                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+**WARNING: Disabling dynamic shapes
+
+
+
+Via Eliminate glossing in progress.
+Started on Thu May  1 14:16:27 2025
+ with Parameters: 
+   Jog limit            : -1 
+   Used pin escapes        : YES 
+   Unused pin escapes      : YES 
+   Stand alone vias        : YES 
+   Regular through vias    : YES 
+   HDI Unused stacked vias : NO 
+
+
+Eliminations on net ADC :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net PB3 TBO :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net GND :
+Unused Pin Escape Candidates: 1, Eliminations: 1,  = 100 % Eliminated.
+
+
+ Abandoned elimination attempts on 0 : too many attempts
+
+Eliminations on net 0 :
+Through Via Candidates: 19, Eliminations: 0,  = 0 % Eliminated.
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Thu May  1 14:16:27 2025
+
+
+Via Eliminate Total Stats:
+Total Through Via Candidates: 23, Eliminations: 0,  = 0 % Eliminated.
+Total Unused Pin Escape Candidates: 1, Eliminations: 1,  = 100 % Eliminated.
+Vias: Total Candidates = 24,  Total Eliminations = 1,  4 % Eliminatons.
+
+
+
+
+Via Eliminate glossing in progress.
+Started on Thu May  1 14:16:27 2025
+ with Parameters: 
+   Jog limit            : -1 
+   Used pin escapes        : YES 
+   Unused pin escapes      : YES 
+   Stand alone vias        : YES 
+   Regular through vias    : YES 
+   HDI Unused stacked vias : NO 
+
+
+Eliminations on net ADC :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+Eliminations on net PB3 TBO :
+Through Via Candidates: 2, Eliminations: 0,  = 0 % Eliminated.
+
+
+ Abandoned elimination attempts on 0 : too many attempts
+
+Eliminations on net 0 :
+Through Via Candidates: 19, Eliminations: 0,  = 0 % Eliminated.
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Thu May  1 14:16:27 2025
+
+
+Via Eliminate Total Stats:
+Total Through Via Candidates: 23, Eliminations: 0,  = 0 % Eliminated.
+Vias: Total Candidates = 23,  Total Eliminations = 0,  0 % Eliminatons.
+
+
+
+
+Line entry into Pad glossing in progress.
+Started on Thu May  1 14:16:27 2025
+Bend Distance is 12.00.
+
+ Circular pads:          YES
+ Square pads  :          YES
+ Rectangular pads :      YES
+ Oblong pads :           YES
+ Enter Square Pad :      Side : YES      Corner : YES  
+ Enter Rectangular Pad : Long : YES      Short  : YES      Corner : YES  
+ Enter Oblong Pad :      Side : YES      Round  : YES      Angle  : 45 OR 90
+ Enter Circular Pad :    Angle : 45 OR 90
+ Create Odd Segs:   NO
+ Corner type  :     45
+ Maximum 45 limit is -1.
+
+Glossing attempt unsuccessful. Active pad is at (170.00,527.50).
+
+Glossing attempt unsuccessful. Active pad is at (172.27,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-309.00,334.00).
+
+Glossing attempt unsuccessful. Active pad is at (-641.00,288.59).
+
+Glossing attempt unsuccessful. Active pad is at (-567.00,216.41).
+
+Glossing was successful:  SYMBOL PIN at (-922.25,233.60) defined by pad  RX35P5Y22D0T
+
+Glossing attempt unsuccessful. Active pad is at (-725.00,235.00).
+
+Glossing was successful:  SYMBOL PIN at (-922.25,308.40) defined by pad  RX35P5Y22D0T
+
+Glossing attempt unsuccessful. Active pad is at (-727.00,364.24).
+
+Glossing was successful:  SYMBOL PIN at (-727.00,364.24) defined by pad  RX33P81Y21P68D0T
+
+Glossing attempt unsuccessful. Active pad is at (-162.38,897.53).
+
+Glossing attempt unsuccessful. Active pad is at (191.95,1094.38).
+
+Glossing was successful:  SYMBOL PIN at (-958.00,87.24) defined by pad  RX31P84Y21P69D0T
+
+Glossing attempt unsuccessful. Active pad is at (-958.00,87.24).
+
+Glossing attempt unsuccessful. Active pad is at (92.00,1156.00).
+
+Glossing was successful:  VIA at (256.00,1156.00) defined by pad  VIA
+
+Glossing attempt unsuccessful. Active pad is at (668.50,1307.00).
+
+Glossing attempt unsuccessful. Active pad is at (716.00,1213.35).
+
+Glossing attempt unsuccessful. Active pad is at (-83.64,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-271.00,800.50).
+
+Error getting pad info on pad connected to active pad = -3000099. Active pad is at (-727.00,415.76).
+
+Glossing was successful:  SYMBOL PIN at (-1373.50,1103.00) defined by pad  RX26Y47D0T
+
+Glossing attempt unsuccessful. Active pad is at (870.00,395.00).
+
+Glossing attempt unsuccessful. Active pad is at (967.00,752.50).
+
+Glossing attempt unsuccessful. Active pad is at (211.64,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-24.50,544.00).
+
+Glossing attempt unsuccessful. Active pad is at (-44.27,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-83.64,1094.38).
+
+Glossing was successful:  SYMBOL PIN at (130.50,224.00) defined by pad  RX36Y47D0T
+
+Error getting pad info on pad connected to active pad = -3000099. Active pad is at (290.38,1015.64).
+
+Glossing attempt unsuccessful. Active pad is at (-1065.76,380.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1065.76,380.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1235.00,380.50).
+
+Glossing attempt unsuccessful. Active pad is at (615.00,832.00).
+
+Glossing was successful:  SYMBOL PIN at (409.00,129.00) defined by pad  EX60Y60D40P
+
+Glossing was successful:  SYMBOL PIN at (185.50,224.00) defined by pad  RX36Y47D0T
+
+Glossing was successful:  SYMBOL PIN at (975.00,275.50) defined by pad  RX36Y47D0T
+
+Glossing attempt unsuccessful. Active pad is at (-1259.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1259.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1249.50,1286.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1249.50,1286.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1340.50,1050.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1340.50,1050.00).
+
+Glossing attempt unsuccessful. Active pad is at (-271.00,855.50).
+
+Glossing attempt unsuccessful. Active pad is at (290.38,995.95).
+
+Glossing attempt unsuccessful. Active pad is at (376.00,1015.50).
+
+Glossing attempt unsuccessful. Active pad is at (376.00,1015.50).
+
+Glossing was successful:  VIA at (-96.00,1215.00) defined by pad  VIA
+
+Glossing attempt unsuccessful. Active pad is at (591.00,1392.00).
+
+Glossing was successful:  SYMBOL PIN at (870.00,195.00) defined by pad  EX60Y60D40P
+
+Glossing was successful:  SYMBOL PIN at (-807.00,456.50) defined by pad  RX38Y34D0T
+
+Glossing attempt unsuccessful. Active pad is at (-79.50,544.00).
+
+Glossing attempt unsuccessful. Active pad is at (-60.50,1161.00).
+
+Glossing attempt unsuccessful. Active pad is at (-63.95,1094.38).
+
+Glossing attempt unsuccessful. Active pad is at (233.50,536.00).
+
+Glossing attempt unsuccessful. Active pad is at (191.95,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-1077.00,1264.00).
+
+Glossing attempt unsuccessful. Active pad is at (886.28,1392.00).
+
+Glossing attempt unsuccessful. Active pad is at (816.00,1006.65).
+
+Glossing was successful:  SYMBOL PIN at (309.00,129.00) defined by pad  EX60Y60D40P
+
+Glossing attempt unsuccessful. Active pad is at (93.53,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-1292.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1304.50,1221.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1302.50,1164.00).
+
+Glossing attempt unsuccessful. Active pad is at (-162.38,740.05).
+
+Glossing attempt unsuccessful. Active pad is at (-1307.50,1050.00).
+
+
+Finished execution 1
+
+Glossing attempt unsuccessful. Active pad is at (170.00,527.50).
+
+Glossing attempt unsuccessful. Active pad is at (172.27,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-309.00,334.00).
+
+Glossing attempt unsuccessful. Active pad is at (-641.00,288.59).
+
+Glossing attempt unsuccessful. Active pad is at (-567.00,216.41).
+
+Glossing attempt unsuccessful. Active pad is at (-725.00,235.00).
+
+Glossing attempt unsuccessful. Active pad is at (-727.00,364.24).
+
+Glossing attempt unsuccessful. Active pad is at (-162.38,897.53).
+
+Glossing attempt unsuccessful. Active pad is at (191.95,1094.38).
+
+Glossing attempt unsuccessful. Active pad is at (-958.00,87.24).
+
+Glossing attempt unsuccessful. Active pad is at (92.00,1156.00).
+
+Glossing attempt unsuccessful. Active pad is at (668.50,1307.00).
+
+Glossing attempt unsuccessful. Active pad is at (716.00,1213.35).
+
+Glossing attempt unsuccessful. Active pad is at (-83.64,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-271.00,800.50).
+
+Error getting pad info on pad connected to active pad = -3000099. Active pad is at (-727.00,415.76).
+
+Glossing attempt unsuccessful. Active pad is at (870.00,395.00).
+
+Glossing attempt unsuccessful. Active pad is at (967.00,752.50).
+
+Glossing attempt unsuccessful. Active pad is at (211.64,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-24.50,544.00).
+
+Glossing attempt unsuccessful. Active pad is at (-44.27,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-83.64,1094.38).
+
+Error getting pad info on pad connected to active pad = -3000099. Active pad is at (290.38,1015.64).
+
+Glossing attempt unsuccessful. Active pad is at (-1065.76,380.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1065.76,380.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1235.00,380.50).
+
+Glossing attempt unsuccessful. Active pad is at (615.00,832.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1259.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1259.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1249.50,1286.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1249.50,1286.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1340.50,1050.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1340.50,1050.00).
+
+Glossing attempt unsuccessful. Active pad is at (-271.00,855.50).
+
+Glossing attempt unsuccessful. Active pad is at (290.38,995.95).
+
+Glossing attempt unsuccessful. Active pad is at (376.00,1015.50).
+
+Glossing attempt unsuccessful. Active pad is at (376.00,1015.50).
+
+Glossing attempt unsuccessful. Active pad is at (591.00,1392.00).
+
+Glossing attempt unsuccessful. Active pad is at (-79.50,544.00).
+
+Glossing attempt unsuccessful. Active pad is at (-60.50,1161.00).
+
+Glossing attempt unsuccessful. Active pad is at (-63.95,1094.38).
+
+Glossing attempt unsuccessful. Active pad is at (233.50,536.00).
+
+Glossing attempt unsuccessful. Active pad is at (191.95,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-1077.00,1264.00).
+
+Glossing attempt unsuccessful. Active pad is at (886.28,1392.00).
+
+Glossing attempt unsuccessful. Active pad is at (816.00,1006.65).
+
+Glossing attempt unsuccessful. Active pad is at (93.53,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-1292.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1304.50,1221.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1302.50,1164.00).
+
+Glossing attempt unsuccessful. Active pad is at (-162.38,740.05).
+
+Glossing attempt unsuccessful. Active pad is at (-1307.50,1050.00).
+
+
+Finished execution 2
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Thu May  1 14:16:27 2025
+
+
+Line Entry Into Pad Glossings Stats
+
+Number of Glossing Attempts                   : 114
+Number of Actual Glossings                    : 14
+Number of Glossings Aborted by DRC violations : 0
+
+There were 4 errors reported in logfile
+
+
+
+Line Smooth glossing in progress.
+Started on Thu May  1 14:16:27 2025
+
+ Smooth Functions  :  bubbles maximize 45 jogs dangling clines add 45s
+ Number of executions  : 1
+ Corner type  : 45
+ Length limit is -0.01.
+
+ Maximum 45 limit is -0.01.
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Thu May  1 14:16:27 2025
+
+ - 0 - Error(s) from Line smooth Glossing
+
+
+Line Centering Between Pins glossing in progress.
+Started on Thu May  1 14:16:27 2025
+
+Minimum Move Size 2.00.
+Line spacing MINIMUM
+Pad Tolerance 100.00.
+Corner type 45
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Thu May  1 14:16:27 2025
+
+
+
+Line Center Between Pins Stats
+
+Number of Glossing Attempts                   : 219
+Number of Actual Glossings                    : 0
+Number of Glossings Aborted by DRC violations : 4
+Number of Glossings Aborted by No-Gloss nets  : 0
+
+
+
+Line entry into Pad glossing in progress.
+Started on Thu May  1 14:16:27 2025
+Bend Distance is 12.00.
+
+ Circular pads:          YES
+ Square pads  :          YES
+ Rectangular pads :      YES
+ Oblong pads :           YES
+ Enter Square Pad :      Side : YES      Corner : YES  
+ Enter Rectangular Pad : Long : YES      Short  : YES      Corner : YES  
+ Enter Oblong Pad :      Side : YES      Round  : YES      Angle  : 45 OR 90
+ Enter Circular Pad :    Angle : 45 OR 90
+ Create Odd Segs:   NO
+ Corner type  :     45
+ Maximum 45 limit is -1.
+
+Glossing attempt unsuccessful. Active pad is at (170.00,527.50).
+
+Glossing attempt unsuccessful. Active pad is at (-309.00,334.00).
+
+Glossing attempt unsuccessful. Active pad is at (-641.00,288.59).
+
+Glossing was successful:  SYMBOL PIN at (-537.00,174.00) defined by pad  RX16Y28D0T
+
+Glossing attempt unsuccessful. Active pad is at (-567.00,216.41).
+
+Glossing was successful:  SYMBOL PIN at (-641.00,215.41) defined by pad  RX33P81Y33P5D0T
+
+Glossing attempt unsuccessful. Active pad is at (-725.00,235.00).
+
+Glossing was successful:  SYMBOL PIN at (-1014.24,380.00) defined by pad  RX33P81Y21P68D0T
+
+Glossing attempt unsuccessful. Active pad is at (-727.00,364.24).
+
+Glossing attempt unsuccessful. Active pad is at (191.95,1094.38).
+
+Glossing attempt unsuccessful. Active pad is at (-958.00,87.24).
+
+Glossing attempt unsuccessful. Active pad is at (92.00,1156.00).
+
+Glossing attempt unsuccessful. Active pad is at (378.00,1265.88).
+
+Glossing attempt unsuccessful. Active pad is at (668.50,1307.00).
+
+Glossing attempt unsuccessful. Active pad is at (716.00,1213.35).
+
+Glossing attempt unsuccessful. Active pad is at (-83.64,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-271.00,800.50).
+
+Glossing was successful:  SYMBOL PIN at (-426.00,216.00) defined by pad  RX50Y65D0T
+
+Error getting pad info on pad connected to active pad = -3000099. Active pad is at (-727.00,415.76).
+
+Glossing was successful:  SYMBOL PIN at (-1373.50,1103.00) defined by pad  RX26Y47D0T
+
+Glossing was successful:  SYMBOL PIN at (967.00,752.50) defined by pad  RX36Y47D0T
+
+Glossing attempt unsuccessful. Active pad is at (211.64,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-44.27,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-83.64,1094.38).
+
+Glossing was successful:  SYMBOL PIN at (109.00,129.00) defined by pad  EX60Y60D40P
+
+Error getting pad info on pad connected to active pad = -3000099. Active pad is at (290.38,1015.64).
+
+Glossing attempt unsuccessful. Active pad is at (-1065.76,380.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1065.76,380.00).
+
+Glossing was successful:  SYMBOL PIN at (-1440.00,379.00) defined by pad  PAD160MM_CIR060MM
+
+Glossing attempt unsuccessful. Active pad is at (615.00,832.00).
+
+Glossing attempt unsuccessful. Active pad is at (328.00,1426.12).
+
+Glossing was successful:  SYMBOL PIN at (975.00,275.50) defined by pad  RX36Y47D0T
+
+Glossing attempt unsuccessful. Active pad is at (-1259.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1259.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1249.50,1286.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1249.50,1286.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1340.50,1050.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1340.50,1050.00).
+
+Glossing attempt unsuccessful. Active pad is at (-271.00,855.50).
+
+Glossing attempt unsuccessful. Active pad is at (290.38,995.95).
+
+Glossing attempt unsuccessful. Active pad is at (376.00,1015.50).
+
+Glossing attempt unsuccessful. Active pad is at (376.00,1015.50).
+
+Glossing was successful:  SYMBOL PIN at (209.00,129.00) defined by pad  EX60Y60D40P
+
+Glossing attempt unsuccessful. Active pad is at (591.00,1392.00).
+
+Glossing was successful:  SYMBOL PIN at (-807.00,456.50) defined by pad  RX38Y34D0T
+
+Glossing attempt unsuccessful. Active pad is at (-79.50,544.00).
+
+Glossing attempt unsuccessful. Active pad is at (-60.50,1161.00).
+
+Glossing was successful:  SYMBOL PIN at (-60.50,1161.00) defined by pad  RX36Y47D0T
+
+Glossing attempt unsuccessful. Active pad is at (233.50,536.00).
+
+Glossing attempt unsuccessful. Active pad is at (191.95,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-1077.00,1264.00).
+
+Glossing attempt unsuccessful. Active pad is at (886.28,1392.00).
+
+Glossing attempt unsuccessful. Active pad is at (816.00,1006.65).
+
+Glossing was successful:  SYMBOL PIN at (-1077.00,1364.00) defined by pad  EX60Y60D40P
+
+Glossing attempt unsuccessful. Active pad is at (-1292.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1302.50,1164.00).
+
+Glossing attempt unsuccessful. Active pad is at (-162.38,740.05).
+
+Glossing attempt unsuccessful. Active pad is at (-1307.50,1050.00).
+
+
+Finished execution 1
+
+Glossing attempt unsuccessful. Active pad is at (170.00,527.50).
+
+Glossing attempt unsuccessful. Active pad is at (-309.00,334.00).
+
+Glossing attempt unsuccessful. Active pad is at (-641.00,288.59).
+
+Glossing attempt unsuccessful. Active pad is at (-567.00,216.41).
+
+Glossing attempt unsuccessful. Active pad is at (-725.00,235.00).
+
+Glossing attempt unsuccessful. Active pad is at (-727.00,364.24).
+
+Glossing attempt unsuccessful. Active pad is at (191.95,1094.38).
+
+Glossing attempt unsuccessful. Active pad is at (-958.00,87.24).
+
+Glossing attempt unsuccessful. Active pad is at (92.00,1156.00).
+
+Glossing attempt unsuccessful. Active pad is at (378.00,1265.88).
+
+Glossing attempt unsuccessful. Active pad is at (668.50,1307.00).
+
+Glossing attempt unsuccessful. Active pad is at (716.00,1213.35).
+
+Glossing attempt unsuccessful. Active pad is at (-83.64,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-271.00,800.50).
+
+Error getting pad info on pad connected to active pad = -3000099. Active pad is at (-727.00,415.76).
+
+Glossing attempt unsuccessful. Active pad is at (211.64,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-44.27,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-83.64,1094.38).
+
+Error getting pad info on pad connected to active pad = -3000099. Active pad is at (290.38,1015.64).
+
+Glossing attempt unsuccessful. Active pad is at (-1065.76,380.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1065.76,380.00).
+
+Glossing attempt unsuccessful. Active pad is at (615.00,832.00).
+
+Glossing attempt unsuccessful. Active pad is at (328.00,1426.12).
+
+Glossing was successful:  SYMBOL PIN at (-1259.50,1345.00) defined by pad  RX20Y20D0T
+
+Glossing attempt unsuccessful. Active pad is at (-1259.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1249.50,1286.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1249.50,1286.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1340.50,1050.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1340.50,1050.00).
+
+Glossing attempt unsuccessful. Active pad is at (-271.00,855.50).
+
+Glossing attempt unsuccessful. Active pad is at (290.38,995.95).
+
+Glossing attempt unsuccessful. Active pad is at (376.00,1015.50).
+
+Glossing attempt unsuccessful. Active pad is at (376.00,1015.50).
+
+Glossing attempt unsuccessful. Active pad is at (591.00,1392.00).
+
+Glossing attempt unsuccessful. Active pad is at (-79.50,544.00).
+
+Glossing attempt unsuccessful. Active pad is at (-60.50,1161.00).
+
+Glossing attempt unsuccessful. Active pad is at (233.50,536.00).
+
+Glossing attempt unsuccessful. Active pad is at (191.95,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-1077.00,1264.00).
+
+Glossing attempt unsuccessful. Active pad is at (886.28,1392.00).
+
+Glossing attempt unsuccessful. Active pad is at (816.00,1006.65).
+
+Glossing attempt unsuccessful. Active pad is at (-1292.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1302.50,1164.00).
+
+Glossing attempt unsuccessful. Active pad is at (-162.38,740.05).
+
+Glossing attempt unsuccessful. Active pad is at (-1307.50,1050.00).
+
+
+Finished execution 2
+
+Glossing attempt unsuccessful. Active pad is at (170.00,527.50).
+
+Glossing attempt unsuccessful. Active pad is at (-309.00,334.00).
+
+Glossing attempt unsuccessful. Active pad is at (-641.00,288.59).
+
+Glossing attempt unsuccessful. Active pad is at (-567.00,216.41).
+
+Glossing attempt unsuccessful. Active pad is at (-725.00,235.00).
+
+Glossing attempt unsuccessful. Active pad is at (-727.00,364.24).
+
+Glossing attempt unsuccessful. Active pad is at (191.95,1094.38).
+
+Glossing attempt unsuccessful. Active pad is at (-958.00,87.24).
+
+Glossing attempt unsuccessful. Active pad is at (92.00,1156.00).
+
+Glossing attempt unsuccessful. Active pad is at (378.00,1265.88).
+
+Glossing attempt unsuccessful. Active pad is at (668.50,1307.00).
+
+Glossing attempt unsuccessful. Active pad is at (716.00,1213.35).
+
+Glossing attempt unsuccessful. Active pad is at (-83.64,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-271.00,800.50).
+
+Error getting pad info on pad connected to active pad = -3000099. Active pad is at (-727.00,415.76).
+
+Glossing attempt unsuccessful. Active pad is at (211.64,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-44.27,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-83.64,1094.38).
+
+Error getting pad info on pad connected to active pad = -3000099. Active pad is at (290.38,1015.64).
+
+Glossing attempt unsuccessful. Active pad is at (-1065.76,380.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1065.76,380.00).
+
+Glossing attempt unsuccessful. Active pad is at (615.00,832.00).
+
+Glossing attempt unsuccessful. Active pad is at (328.00,1426.12).
+
+Glossing attempt unsuccessful. Active pad is at (-1259.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1249.50,1286.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1249.50,1286.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1340.50,1050.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1340.50,1050.00).
+
+Glossing attempt unsuccessful. Active pad is at (-271.00,855.50).
+
+Glossing attempt unsuccessful. Active pad is at (290.38,995.95).
+
+Glossing attempt unsuccessful. Active pad is at (376.00,1015.50).
+
+Glossing attempt unsuccessful. Active pad is at (376.00,1015.50).
+
+Glossing attempt unsuccessful. Active pad is at (591.00,1392.00).
+
+Glossing attempt unsuccessful. Active pad is at (-79.50,544.00).
+
+Glossing attempt unsuccessful. Active pad is at (-60.50,1161.00).
+
+Glossing attempt unsuccessful. Active pad is at (233.50,536.00).
+
+Glossing attempt unsuccessful. Active pad is at (191.95,641.62).
+
+Glossing attempt unsuccessful. Active pad is at (-1077.00,1264.00).
+
+Glossing attempt unsuccessful. Active pad is at (886.28,1392.00).
+
+Glossing attempt unsuccessful. Active pad is at (816.00,1006.65).
+
+Glossing attempt unsuccessful. Active pad is at (-1292.50,1345.00).
+
+Glossing attempt unsuccessful. Active pad is at (-1302.50,1164.00).
+
+Glossing attempt unsuccessful. Active pad is at (-162.38,740.05).
+
+Glossing attempt unsuccessful. Active pad is at (-1307.50,1050.00).
+
+
+Finished execution 3
+
+
+Elapsed time:  0 hr 0 min 0 sec ( 0.00 hr)
+Actual time of completion: Thu May  1 14:16:27 2025
+
+
+Line Entry Into Pad Glossings Stats
+
+Number of Glossing Attempts                   : 141
+Number of Actual Glossings                    : 14
+Number of Glossings Aborted by DRC violations : 0
+
+There were 6 errors reported in logfile
+
+WARNING: Glossing operations may leave fillets out of date.
+
+
+Glossing complete.

@@ -1,0 +1,6 @@
+#  View replacement method:
+#  Complete
+
+color -globvis off
+color -vis "MANUFACTURING/AUTOSILK_TOP"
+color -vis "PACKAGE GEOMETRY/SILKSCREEN_TOP"

@@ -1,0 +1,312 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    ARTWORK LOG                                                      )
+(                                                                     )
+(    Drawing          : senior design v5.brd                          )
+(    Software Version : 22.1P001                                      )
+(    Date/Time        : Fri May  9 17:41:07 2025                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+ ---- Photoplot outline rectangle not found; using drawing extents.
+
+
+
+Results from parameter file ...
+    DEVICE-TYPE           GERBER_RS274X
+    OUTPUT-UNITS          INCHES
+    FILM-SIZE             2400000 1600000
+    FORMAT                2.5
+    ABORT-ON-ERROR        NO
+    SCALE                 1
+    SUPPRESS-LEAD-ZEROES  YES
+    SUPPRESS-TRAIL-ZEROES NO
+    SUPPRESS-EQUAL        YES
+    UNDEF-APT-CONT        NO
+
+
+
+================================================================
+     PROCESSING FILM < BOTTOM >
+     TO FILE < L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/BOATCREWBOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.00
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.01200                                  DARK 
+  CIRCLE     0.02400                                  DARK 
+  CIRCLE     0.06299                                  DARK 
+  CIRCLE     0.06800                                  DARK 
+  CIRCLE     0.06900                                  DARK 
+  CIRCLE     0.13386                                  DARK 
+
+     BOATCREWBOTTOM created.
+
+
+================================================================
+     PROCESSING FILM < MASK_TOP >
+     TO FILE < L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/BOATCREWMASK_TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.04400                                  DARK 
+  CIRCLE     0.06800                                  DARK 
+  CIRCLE     0.06900                                  DARK 
+  CIRCLE     0.07087                                  DARK 
+  CIRCLE     0.14173                                  DARK 
+  SQUARE     0.02000                     0.000 NO     DARK 
+  RECTANGLE  0.02600     x 0.04700      90.000 NO     DARK 
+  RECTANGLE  0.03184     x 0.02168      90.000 NO     DARK 
+  RECTANGLE  0.03381     x 0.02168       0.000 NO     DARK 
+  RECTANGLE  0.03381     x 0.02168      90.000 NO     DARK 
+  RECTANGLE  0.03381     x 0.03350      90.000 NO     DARK 
+  RECTANGLE  0.03400     x 0.02200      90.000 NO     DARK 
+  RECTANGLE  0.03550     x 0.02200       0.000 NO     DARK 
+  RECTANGLE  0.03600     x 0.04700       0.000 NO     DARK 
+  RECTANGLE  0.03600     x 0.04700      90.000 NO     DARK 
+  RECTANGLE  0.03600     x 0.05500      90.000 NO     DARK 
+  RECTANGLE  0.03701     x 0.11772       0.000 NO     DARK 
+  RECTANGLE  0.03800     x 0.03400      90.000 NO     DARK 
+  RECTANGLE  0.03800     x 0.07100      90.000 NO     DARK 
+  RECTANGLE  0.04200     x 0.03700       0.000 NO     DARK 
+  RECTANGLE  0.04200     x 0.03700      90.000 NO     DARK 
+  RECTANGLE  0.04200     x 0.04000      90.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.01200       0.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.01200      90.000 NO     DARK 
+  RECTANGLE  0.05000     x 0.06500       0.000 NO     DARK 
+  RECTANGLE  0.06500     x 0.21300      90.000 NO     DARK 
+  RECTANGLE  0.07874     x 0.08661      90.000 NO     DARK 
+  OBLONG     0.02565     x 0.05321       0.000 NO     DARK 
+
+     BOATCREWMASK_TOP created.
+
+
+================================================================
+     PROCESSING FILM < MASK_BOT >
+     TO FILE < L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/BOATCREWMASK_BOT.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.04400                                  DARK 
+  CIRCLE     0.06800                                  DARK 
+  CIRCLE     0.06900                                  DARK 
+  CIRCLE     0.07087                                  DARK 
+  CIRCLE     0.14173                                  DARK 
+
+     BOATCREWMASK_BOT created.
+
+
+================================================================
+     PROCESSING FILM < SILK_TOP >
+     TO FILE < L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/BOATCREWSILK_TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: text composed 0 width line found at (-1451.00 84.00) in MIL
+           ... using undefined line width of 5.00 MIL
+
+    WARNING: 0 width line found at (-1502.20 110.80) in MIL
+           ... using undefined line width of 5.00 MIL
+
+    WARNING: text having Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 5.00 MIL
+
+    WARNING: Multiple 0 width lines; all will be treated the same as the first.
+           ... using undefined line width of 5.00 MIL
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00500                                  DARK 
+  CIRCLE     0.00600                                  DARK 
+  CIRCLE     0.00787                                  DARK 
+
+     BOATCREWSILK_TOP created with warnings
+
+
+================================================================
+     PROCESSING FILM < OUTLINE >
+     TO FILE < L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/BOATCREWOUTLINE.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.00500                                  DARK 
+
+     BOATCREWOUTLINE created.
+
+
+================================================================
+     PROCESSING FILM < TOPL >
+     TO FILE < L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/BOATCREWTOPL.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.01200                                  DARK 
+  CIRCLE     0.02400                                  DARK 
+  CIRCLE     0.06299                                  DARK 
+  CIRCLE     0.06800                                  DARK 
+  CIRCLE     0.06900                                  DARK 
+  CIRCLE     0.13386                                  DARK 
+  SQUARE     0.02000                     0.000 NO     DARK 
+  RECTANGLE  0.02600     x 0.04700      90.000 NO     DARK 
+  RECTANGLE  0.02913     x 0.10984       0.000 NO     DARK 
+  RECTANGLE  0.03184     x 0.02168      90.000 NO     DARK 
+  RECTANGLE  0.03381     x 0.02168       0.000 NO     DARK 
+  RECTANGLE  0.03381     x 0.02168      90.000 NO     DARK 
+  RECTANGLE  0.03381     x 0.03350      90.000 NO     DARK 
+  RECTANGLE  0.03400     x 0.02200      90.000 NO     DARK 
+  RECTANGLE  0.03550     x 0.02200       0.000 NO     DARK 
+  RECTANGLE  0.03600     x 0.04700       0.000 NO     DARK 
+  RECTANGLE  0.03600     x 0.04700      90.000 NO     DARK 
+  RECTANGLE  0.03600     x 0.05500      90.000 NO     DARK 
+  RECTANGLE  0.03800     x 0.03400      90.000 NO     DARK 
+  RECTANGLE  0.03800     x 0.07100      90.000 NO     DARK 
+  RECTANGLE  0.04200     x 0.03700       0.000 NO     DARK 
+  RECTANGLE  0.04200     x 0.03700      90.000 NO     DARK 
+  RECTANGLE  0.04200     x 0.04000      90.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.01200       0.000 NO     DARK 
+  RECTANGLE  0.04700     x 0.01200      90.000 NO     DARK 
+  RECTANGLE  0.05000     x 0.06500       0.000 NO     DARK 
+  RECTANGLE  0.06500     x 0.21300      90.000 NO     DARK 
+  RECTANGLE  0.07874     x 0.08661      90.000 NO     DARK 
+  OBLONG     0.02165     x 0.04921       0.000 NO     DARK 
+
+     BOATCREWTOPL created.
+
+
+================================================================
+     PROCESSING FILM < BOTL >
+     TO FILE < L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/BOATCREWBOTL.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                5.00 MIL
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.00
+  Offset y:                           0.00
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED (UNIT = IN):
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.01200                                  DARK 
+  CIRCLE     0.02400                                  DARK 
+  CIRCLE     0.06299                                  DARK 
+  CIRCLE     0.06800                                  DARK 
+  CIRCLE     0.06900                                  DARK 
+  CIRCLE     0.13386                                  DARK 
+
+     BOATCREWBOTL created.
+
+
+------------------------------------------------------
+ SUMMARY:
+        BOATCREWBOTTOM created.
+        BOATCREWMASK_TOP created.
+        BOATCREWMASK_BOT created.
+        BOATCREWSILK_TOP created with warnings
+        BOATCREWOUTLINE created.
+        BOATCREWTOPL created.
+        BOATCREWBOTL created.
+
+ ARTWORK had warnings

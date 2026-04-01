@@ -1,0 +1,1285 @@
+\t (00:00:30) allegro_free_viewer 22.1 P001 Windows SPB 64-bit Edition
+\t (00:00:30)     Journal start - Fri May  9 15:28:48 2025
+\t (00:00:30)         Host=EECS-2023-50 User=jckrisel Pid=13028 CPUs=4
+\t (00:00:30) CmdLine= C:\Cadence\SPB_22.1\tools\bin\allegro_free_viewer.exe
+\t (00:00:30) 
+\d (00:00:30) Design opened: L:/Senior Design/Design 4/Allegro v5/Allegro/senior design v5.brd
+\i (00:00:30) updateport PropPane
+\i (00:00:30) ucpedit 
+\i (00:00:31) zoom in 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom in -340.60 618.59
+\i (00:00:31) trapsize 2388
+\i (00:00:31) zoom in 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom in -340.59 618.60
+\i (00:00:31) trapsize 1194
+\i (00:00:32) zoom out 1 
+\i (00:00:32) setwindow pcb
+\i (00:00:32) zoom out -340.59 618.60
+\i (00:00:32) trapsize 2388
+\i (00:00:33) zoom in 1 
+\i (00:00:33) setwindow pcb
+\i (00:00:33) zoom in -1257.44 260.45
+\i (00:00:33) trapsize 1194
+\i (00:00:33) zoom in 1 
+\i (00:00:33) setwindow pcb
+\i (00:00:33) zoom in -1259.82 258.07
+\i (00:00:33) trapsize 597
+\i (00:00:34) zoom in 1 
+\i (00:00:34) setwindow pcb
+\i (00:00:34) zoom in -1307.57 158.99
+\i (00:00:34) trapsize 298
+\i (00:00:34) zoom in 1 
+\i (00:00:34) setwindow pcb
+\i (00:00:34) zoom in -1307.57 158.99
+\i (00:00:34) trapsize 149
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out -1307.56 158.99
+\i (00:00:36) trapsize 298
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out -1307.57 159.00
+\i (00:00:36) trapsize 597
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out -1307.56 159.00
+\i (00:00:36) trapsize 1194
+\i (00:00:37) zoom in 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom in -1307.56 158.99
+\i (00:00:37) trapsize 597
+\i (00:00:37) zoom in 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom in -1307.56 159.00
+\i (00:00:37) trapsize 298
+\i (00:00:38) zoom in 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom in -1308.75 157.21
+\i (00:00:38) trapsize 149
+\i (00:00:38) zoom out 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom out -1308.75 156.91
+\i (00:00:38) trapsize 298
+\i (00:00:38) zoom out 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom out -1308.75 156.91
+\i (00:00:38) trapsize 597
+\i (00:00:39) zoom out 1 
+\i (00:00:39) setwindow pcb
+\i (00:00:39) zoom out -1210.86 197.50
+\i (00:00:39) trapsize 1194
+\i (00:00:40) zoom out 1 
+\i (00:00:40) setwindow pcb
+\i (00:00:40) zoom out -783.46 481.63
+\i (00:00:40) trapsize 2388
+\i (00:00:45) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "Film: TOPL"
+\i (00:00:45) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "Film: TOPL"
+\i (00:00:45) updateport SearchPane
+\i (00:00:45) updateport PropPane
+\i (00:00:45) updateport CVPane
+\i (00:00:50) pick grid -559.02 796.80
+\t (00:00:50) last pick:  -559.02 796.80
+\i (00:00:53) zoom in 1 
+\i (00:00:53) setwindow pcb
+\i (00:00:53) zoom in -43.28 935.29
+\i (00:00:53) trapsize 1194
+\i (00:00:53) zoom in 1 
+\i (00:00:53) setwindow pcb
+\i (00:00:53) zoom in -43.28 935.29
+\i (00:00:53) trapsize 597
+\i (00:00:53) zoom in 1 
+\i (00:00:53) setwindow pcb
+\i (00:00:53) zoom in -43.28 935.29
+\i (00:00:53) trapsize 298
+\i (00:00:53) zoom out 1 
+\i (00:00:53) setwindow pcb
+\i (00:00:53) zoom out 73.11 947.83
+\i (00:00:53) trapsize 597
+\i (00:00:54) zoom out 1 
+\i (00:00:54) setwindow pcb
+\i (00:00:54) zoom out 73.12 947.83
+\i (00:00:54) trapsize 1194
+\i (00:00:54) zoom out 1 
+\i (00:00:54) setwindow pcb
+\i (00:00:54) zoom out 73.11 947.83
+\i (00:00:54) trapsize 2388
+\i (00:00:55) zoom in 1 
+\i (00:00:55) setwindow pcb
+\i (00:00:55) zoom in 416.93 1129.30
+\i (00:00:55) trapsize 1194
+\i (00:00:55) zoom out 1 
+\i (00:00:55) setwindow pcb
+\i (00:00:55) zoom out 510.05 1217.65
+\i (00:00:55) trapsize 2388
+\i (00:01:01) QtSignal VisibilityLayersObjArWidget VisLayerTable layerColorChanged Bottom "#0249fe"
+\i (00:01:02) QtSignal VisibilityLayersObjArWidget VisLayerTable layerColorChanged Bottom "#0249fe"
+\i (00:01:02) updateport SearchPane
+\i (00:01:02) updateport PropPane
+\i (00:01:07) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "File: ALL"
+\i (00:01:07) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "File: ALL"
+\t (00:01:07) File not found: ALL.color
+
+\i (00:01:08) updateport SearchPane
+\i (00:01:08) updateport PropPane
+\i (00:01:13) QtSignal VisibilityLayersObjArWidget VisLayerTable layerVisibilityChanged Top 1
+\i (00:01:13) updateport SearchPane
+\i (00:01:13) updateport PropPane
+\i (00:01:13) updateport CVPane
+\i (00:01:14) QtSignal VisibilityLayersObjArWidget VisLayerTable layerVisibilityChanged Bottom 1
+\i (00:01:14) updateport SearchPane
+\i (00:01:14) updateport PropPane
+\i (00:01:14) updateport CVPane
+\i (00:01:18) zoom in 1 
+\i (00:01:18) setwindow pcb
+\i (00:01:18) zoom in 113.70 744.89
+\i (00:01:18) trapsize 1194
+\i (00:01:19) zoom in 1 
+\i (00:01:19) setwindow pcb
+\i (00:01:19) zoom in -628.86 792.64
+\i (00:01:19) trapsize 597
+\i (00:01:19) zoom in 1 
+\i (00:01:19) setwindow pcb
+\i (00:01:19) zoom in -628.86 792.65
+\i (00:01:19) trapsize 298
+\i (00:01:20) zoom in 1 
+\i (00:01:20) setwindow pcb
+\i (00:01:20) zoom in -596.03 769.97
+\i (00:01:20) trapsize 149
+\i (00:01:22) zoom in 1 
+\i (00:01:22) setwindow pcb
+\i (00:01:22) zoom in -622.00 772.06
+\i (00:01:22) trapsize 75
+\i (00:01:24) zoom out 1 
+\i (00:01:24) setwindow pcb
+\i (00:01:24) zoom out -628.12 773.26
+\i (00:01:24) trapsize 149
+\i (00:01:24) zoom out 1 
+\i (00:01:24) setwindow pcb
+\i (00:01:24) zoom out -628.13 773.26
+\i (00:01:24) trapsize 298
+\i (00:01:24) zoom out 1 
+\i (00:01:24) setwindow pcb
+\i (00:01:24) zoom out -628.13 773.26
+\i (00:01:24) trapsize 597
+\i (00:01:24) zoom out 1 
+\i (00:01:24) setwindow pcb
+\i (00:01:24) zoom out -628.13 773.26
+\i (00:01:24) trapsize 1194
+\i (00:01:25) zoom in 1 
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom in -138.64 761.32
+\i (00:01:26) trapsize 597
+\i (00:01:26) zoom in 1 
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom in -138.64 761.32
+\i (00:01:26) trapsize 298
+\i (00:01:26) zoom in 1 
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom in -142.82 754.76
+\i (00:01:26) trapsize 149
+\i (00:01:26) zoom in 1 
+\i (00:01:26) setwindow pcb
+\i (00:01:26) zoom in -142.81 754.76
+\i (00:01:26) trapsize 75
+\i (00:01:27) zoom out 1 
+\i (00:01:27) setwindow pcb
+\i (00:01:27) zoom out -145.50 755.95
+\i (00:01:27) trapsize 149
+\i (00:01:27) zoom out 1 
+\i (00:01:27) setwindow pcb
+\i (00:01:27) zoom out -145.51 755.96
+\i (00:01:27) trapsize 298
+\i (00:01:28) zoom in 1 
+\i (00:01:28) setwindow pcb
+\i (00:01:28) zoom in -152.66 868.78
+\i (00:01:28) trapsize 149
+\i (00:01:29) zoom in 1 
+\i (00:01:29) setwindow pcb
+\i (00:01:29) zoom in -172.65 794.46
+\i (00:01:29) trapsize 75
+\i (00:01:31) pick grid -170.26 797.89
+\t (00:01:31) last pick:  -170.26 797.89
+\i (00:01:33) pick grid -171.16 790.88
+\t (00:01:33) last pick:  -171.16 790.88
+\i (00:01:33) pick grid -158.62 791.03
+\t (00:01:33) last pick:  -158.62 791.03
+\i (00:01:34) zoom out 1 
+\i (00:01:34) setwindow pcb
+\i (00:01:34) zoom out -159.97 790.73
+\i (00:01:34) trapsize 149
+\i (00:01:34) zoom out 1 
+\i (00:01:34) setwindow pcb
+\i (00:01:34) zoom out -159.96 790.73
+\i (00:01:34) trapsize 298
+\i (00:01:34) zoom out 1 
+\i (00:01:34) setwindow pcb
+\i (00:01:34) zoom out -159.97 790.73
+\i (00:01:34) trapsize 597
+\i (00:01:34) zoom out 1 
+\i (00:01:34) setwindow pcb
+\i (00:01:34) zoom out -159.97 790.74
+\i (00:01:34) trapsize 1194
+\i (00:01:34) zoom out 1 
+\i (00:01:34) setwindow pcb
+\i (00:01:34) zoom out -159.96 790.74
+\i (00:01:34) trapsize 2388
+\i (00:01:34) zoom out 1 
+\i (00:01:34) setwindow pcb
+\i (00:01:34) zoom out -159.97 790.73
+\i (00:01:34) trapsize 4775
+\i (00:01:35) zoom in 1 
+\i (00:01:35) setwindow pcb
+\i (00:01:35) zoom in 1147.40 1222.38
+\i (00:01:35) trapsize 2388
+\i (00:01:35) zoom in 1 
+\i (00:01:35) setwindow pcb
+\i (00:01:35) zoom in 1137.85 1227.16
+\i (00:01:35) trapsize 1194
+\i (00:01:35) zoom in 1 
+\i (00:01:35) setwindow pcb
+\i (00:01:35) zoom in 1133.08 1227.16
+\i (00:01:35) trapsize 597
+\i (00:01:37) zoom out 1 
+\i (00:01:37) setwindow pcb
+\i (00:01:37) zoom out 844.16 1094.64
+\i (00:01:37) trapsize 1194
+\i (00:01:37) zoom out 1 
+\i (00:01:37) setwindow pcb
+\i (00:01:37) zoom out 844.17 1087.48
+\i (00:01:37) trapsize 2388
+\i (00:01:37) zoom out 1 
+\i (00:01:37) setwindow pcb
+\i (00:01:37) zoom out 848.95 1073.16
+\i (00:01:37) trapsize 4775
+\i (00:01:38) zoom in 1 
+\i (00:01:38) setwindow pcb
+\i (00:01:38) zoom in 698.51 582.47
+\i (00:01:38) trapsize 2388
+\i (00:01:39) zoom in 1 
+\i (00:01:39) setwindow pcb
+\i (00:01:39) zoom in 698.51 582.47
+\i (00:01:39) trapsize 1194
+\i (00:01:39) zoom in 1 
+\i (00:01:39) setwindow pcb
+\i (00:01:39) zoom in 698.52 584.86
+\i (00:01:39) trapsize 597
+\i (00:01:39) zoom in 1 
+\i (00:01:39) setwindow pcb
+\i (00:01:39) zoom in 688.97 528.75
+\i (00:01:39) trapsize 298
+\i (00:01:40) zoom out 1 
+\i (00:01:40) setwindow pcb
+\i (00:01:40) zoom out 688.97 528.76
+\i (00:01:40) trapsize 597
+\i (00:01:41) zoom out 1 
+\i (00:01:41) setwindow pcb
+\i (00:01:41) zoom out 688.97 528.75
+\i (00:01:41) trapsize 1194
+\i (00:01:42) zoom out 1 
+\i (00:01:42) setwindow pcb
+\i (00:01:42) zoom out -645.76 330.57
+\i (00:01:42) trapsize 2388
+\i (00:01:44) zoom in 1 
+\i (00:01:44) setwindow pcb
+\i (00:01:44) zoom in -698.28 354.45
+\i (00:01:44) trapsize 1194
+\i (00:01:44) zoom in 1 
+\i (00:01:44) setwindow pcb
+\i (00:01:44) zoom in -698.28 354.45
+\i (00:01:44) trapsize 597
+\i (00:01:44) zoom in 1 
+\i (00:01:44) setwindow pcb
+\i (00:01:44) zoom in -698.28 354.45
+\i (00:01:44) trapsize 298
+\i (00:01:45) zoom in 1 
+\i (00:01:45) setwindow pcb
+\i (00:01:45) zoom in -698.28 354.46
+\i (00:01:45) trapsize 149
+\i (00:01:46) zoom in 1 
+\i (00:01:46) setwindow pcb
+\i (00:01:46) zoom in -513.53 373.56
+\i (00:01:46) trapsize 75
+\i (00:01:48) zoom out 1 
+\i (00:01:48) setwindow pcb
+\i (00:01:48) zoom out -536.22 381.48
+\i (00:01:48) trapsize 149
+\i (00:01:48) zoom out 1 
+\i (00:01:48) setwindow pcb
+\i (00:01:48) zoom out -536.22 381.47
+\i (00:01:48) trapsize 298
+\i (00:01:51) zoom out 1 
+\i (00:01:51) setwindow pcb
+\i (00:01:51) zoom out -757.08 295.52
+\i (00:01:51) trapsize 597
+\i (00:01:51) zoom out 1 
+\i (00:01:51) setwindow pcb
+\i (00:01:51) zoom out -757.07 295.52
+\i (00:01:51) trapsize 1194
+\i (00:01:52) zoom in 1 
+\i (00:01:52) setwindow pcb
+\i (00:01:52) zoom in -797.67 722.92
+\i (00:01:52) trapsize 597
+\i (00:01:52) zoom in 1 
+\i (00:01:52) setwindow pcb
+\i (00:01:52) zoom in -801.25 722.92
+\i (00:01:52) trapsize 298
+\i (00:01:56) prepopup -800.65 672.18
+\i (00:01:57) pick grid -840.05 725.31
+\t (00:01:57) last pick:  -840.05 725.31
+\i (00:02:07) QtSignal DisplayShadow OriginSaturationValue editingFinished "100"
+\i (00:02:07) QtSignal PropertySelectionFilterWidget Gates clicked
+\i (00:02:09) QtSignal PropertySelectionFilterWidget Line_Segments clicked
+\i (00:02:10) QtSignal PropertySelectionFilterWidget Text clicked
+\i (00:02:11) QtSignal PropertySelectionFilterWidget Text clicked on
+\i (00:02:11) QtSignal PropertySelectionFilterWidget Text clicked
+\i (00:02:13) QtSignal PropertySelectionFilterWidget Pins clicked on
+\i (00:02:17) pick grid -825.12 725.31
+\t (00:02:17) last pick:  -825.12 725.31
+\i (00:02:17) updateport SearchPane
+\i (00:02:17) updateport PropPane
+\i (00:02:23) QtSignal PropertyGeneralWidget PropertyGeneralPadstack linkActivated padstackLink
+\i (00:02:23) updateport SearchPane
+\i (00:02:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:25) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:25) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:25) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:25) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:25) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:25) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:25) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:25) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:26) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:26) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:26) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:26) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:26) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:26) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:27) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:27) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:27) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:27) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:28) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:28) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:28) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:28) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:28) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:29) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:29) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:29) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:29) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:29) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:30) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:30) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:31) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:31) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:32) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:32) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:33) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:33) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:33) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:33) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:33) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:34) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:34) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:34) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:34) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:34) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:36) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:36) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:37) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:37) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:37) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:37) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:38) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:38) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:38) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:38) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:38) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:39) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:39) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:39) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:40) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:40) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:41) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:41) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:41) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:41) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:41) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:41) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:41) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:41) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:51) zoom out 1 
+\i (00:02:51) setwindow pcb
+\i (00:02:51) zoom out -646.64 654.27
+\i (00:02:51) trapsize 597
+\i (00:02:51) zoom out 1 
+\i (00:02:51) setwindow pcb
+\i (00:02:51) zoom out -646.64 642.33
+\i (00:02:51) trapsize 1194
+\i (00:02:51) zoom out 1 
+\i (00:02:51) setwindow pcb
+\i (00:02:51) zoom out -646.64 637.57
+\i (00:02:51) trapsize 2388
+\i (00:02:52) zoom in 1 
+\i (00:02:52) setwindow pcb
+\i (00:02:52) zoom in -1468.01 303.28
+\i (00:02:52) trapsize 1194
+\i (00:02:52) zoom in 1 
+\i (00:02:52) setwindow pcb
+\i (00:02:52) zoom in -1468.01 305.67
+\i (00:02:52) trapsize 597
+\i (00:02:52) zoom in 1 
+\i (00:02:52) setwindow pcb
+\i (00:02:52) zoom in -1468.00 305.67
+\i (00:02:52) trapsize 298
+\i (00:02:53) pick grid -1459.65 348.65
+\t (00:02:53) last pick:  -1459.65 348.65
+\i (00:02:53) updateport SearchPane
+\i (00:02:53) updateport PropPane
+\i (00:02:53) prepopup -1459.65 348.65
+\i (00:02:54) pick grid -1465.02 353.42
+\t (00:02:54) last pick:  -1465.02 353.42
+\i (00:02:54) updateport SearchPane
+\i (00:02:54) updateport PropPane
+\i (00:02:55) prepopup -1458.45 344.47
+\i (00:02:58) QtSignal PropertyGeneralWidget PropertyGeneralPadstack linkActivated padstackLink
+\i (00:02:58) updateport SearchPane
+\i (00:02:58) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:58) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:58) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:58) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:59) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:02:59) zoom out 1 
+\i (00:02:59) setwindow pcb
+\i (00:02:59) zoom out -1177.90 476.39
+\i (00:02:59) trapsize 597
+\i (00:02:59) zoom out 1 
+\i (00:02:59) setwindow pcb
+\i (00:02:59) zoom out -1174.31 470.42
+\i (00:02:59) trapsize 1194
+\i (00:02:59) zoom out 1 
+\i (00:02:59) setwindow pcb
+\i (00:02:59) zoom out -1174.30 463.27
+\i (00:02:59) trapsize 2388
+\i (00:03:00) zoom in 1 
+\i (00:03:00) setwindow pcb
+\i (00:03:00) zoom in -1179.08 907.38
+\i (00:03:00) trapsize 1194
+\i (00:03:00) zoom in 1 
+\i (00:03:00) setwindow pcb
+\i (00:03:00) zoom in -1179.08 907.39
+\i (00:03:00) trapsize 597
+\i (00:03:01) pick grid -1336.67 979.02
+\t (00:03:01) last pick:  -1336.67 979.02
+\i (00:03:01) updateport SearchPane
+\i (00:03:01) updateport PropPane
+\i (00:03:03) QtSignal PropertyGeneralWidget PropertyGeneralPadstack linkActivated padstackLink
+\i (00:03:03) updateport SearchPane
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:05) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:06) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:06) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:07) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:08) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:08) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:08) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:08) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:08) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:08) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:08) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:08) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:08) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:08) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:08) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:09) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:09) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:09) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:09) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:10) zoom out 1 
+\i (00:03:10) setwindow pcb
+\i (00:03:10) zoom out -928.37 657.88
+\i (00:03:10) trapsize 1194
+\i (00:03:10) zoom out 1 
+\i (00:03:10) setwindow pcb
+\i (00:03:10) zoom out -928.37 648.32
+\i (00:03:10) trapsize 2388
+\i (00:03:11) zoom in 1 
+\i (00:03:11) setwindow pcb
+\i (00:03:11) zoom in -761.23 691.30
+\i (00:03:11) trapsize 1194
+\i (00:03:11) zoom in 1 
+\i (00:03:11) setwindow pcb
+\i (00:03:11) zoom in -761.23 691.30
+\i (00:03:11) trapsize 597
+\i (00:03:11) zoom out 1 
+\i (00:03:11) setwindow pcb
+\i (00:03:11) zoom out -743.32 679.37
+\i (00:03:11) trapsize 1194
+\i (00:03:11) zoom out 1 
+\i (00:03:11) setwindow pcb
+\i (00:03:11) zoom out -736.15 669.81
+\i (00:03:11) trapsize 2388
+\i (00:03:11) zoom out 1 
+\i (00:03:11) setwindow pcb
+\i (00:03:11) zoom out -717.05 641.16
+\i (00:03:11) trapsize 4775
+\i (00:03:11) zoom out 1 
+\i (00:03:11) setwindow pcb
+\i (00:03:11) zoom out 3993.56 305.49
+\i (00:03:11) trapsize 6232
+\i (00:03:12) zoom in 1 
+\i (00:03:12) setwindow pcb
+\i (00:03:12) zoom in 1055.72 673.02
+\i (00:03:12) trapsize 3116
+\i (00:03:12) zoom in 1 
+\i (00:03:12) setwindow pcb
+\i (00:03:12) zoom in 869.87 673.02
+\i (00:03:12) trapsize 1558
+\i (00:03:14) zoom out 1 
+\i (00:03:14) setwindow pcb
+\i (00:03:14) zoom out 520.90 800.78
+\i (00:03:14) trapsize 3116
+\i (00:03:14) zoom out 1 
+\i (00:03:14) setwindow pcb
+\i (00:03:14) zoom out 171.91 800.77
+\i (00:03:14) trapsize 6232
+\i (00:03:15) zoom in 1 
+\i (00:03:15) setwindow pcb
+\i (00:03:15) zoom in -390.03 747.80
+\i (00:03:15) trapsize 3116
+\i (00:03:15) zoom in 1 
+\i (00:03:15) setwindow pcb
+\i (00:03:15) zoom in -390.03 747.80
+\i (00:03:15) trapsize 1558
+\i (00:03:16) zoom in 1 
+\i (00:03:16) setwindow pcb
+\i (00:03:16) zoom in -573.86 707.30
+\i (00:03:16) trapsize 779
+\i (00:03:21) QtSignal PropertyGeneralWidget PropertyGeneralPadstack linkActivated padstackLink
+\i (00:03:21) updateport SearchPane
+\i (00:03:23) QtSignal PropertyGeneralWidget PropertyGeneralPadstack linkActivated padstackLink
+\i (00:03:23) updateport SearchPane
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:24) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:26) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:26) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:26) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:03:38) zoom out 1 
+\i (00:03:38) setwindow pcb
+\i (00:03:38) zoom out -416.51 308.48
+\i (00:03:38) trapsize 1558
+\i (00:03:38) zoom out 1 
+\i (00:03:38) setwindow pcb
+\i (00:03:38) zoom out -416.51 308.47
+\i (00:03:38) trapsize 3116
+\i (00:03:39) zoom in 1 
+\i (00:03:39) setwindow pcb
+\i (00:03:39) zoom in -1264.02 1311.77
+\i (00:03:39) trapsize 1558
+\i (00:03:39) zoom in 1 
+\i (00:03:39) setwindow pcb
+\i (00:03:39) zoom in -1264.01 1302.42
+\i (00:03:39) trapsize 779
+\i (00:03:40) zoom out 1 
+\i (00:03:40) setwindow pcb
+\i (00:03:40) zoom out -1170.53 995.52
+\i (00:03:40) trapsize 1558
+\i (00:03:41) zoom in 1 
+\i (00:03:41) setwindow pcb
+\i (00:03:41) zoom in -1192.35 948.78
+\i (00:03:41) trapsize 779
+\i (00:03:41) zoom in 1 
+\i (00:03:41) setwindow pcb
+\i (00:03:41) zoom in -1192.35 948.78
+\i (00:03:41) trapsize 389
+\i (00:03:42) zoom in 1 
+\i (00:03:42) setwindow pcb
+\i (00:03:42) zoom in -1192.34 948.78
+\i (00:03:42) trapsize 195
+\i (00:03:43) zoom out 1 
+\i (00:03:43) setwindow pcb
+\i (00:03:43) zoom out -1192.35 948.78
+\i (00:03:43) trapsize 389
+\i (00:03:44) zoom out 1 
+\i (00:03:44) setwindow pcb
+\i (00:03:44) zoom out -1143.27 958.13
+\i (00:03:44) trapsize 779
+\i (00:03:44) zoom out 1 
+\i (00:03:44) setwindow pcb
+\i (00:03:44) zoom out -1143.28 958.13
+\i (00:03:44) trapsize 1558
+\i (00:03:45) zoom in 1 
+\i (00:03:45) setwindow pcb
+\i (00:03:45) zoom in -146.19 864.64
+\i (00:03:45) trapsize 779
+\i (00:03:45) zoom in 1 
+\i (00:03:45) setwindow pcb
+\i (00:03:45) zoom in -146.19 864.65
+\i (00:03:45) trapsize 389
+\i (00:03:46) zoom in 1 
+\i (00:03:46) setwindow pcb
+\i (00:03:46) zoom in -152.42 877.11
+\i (00:03:46) trapsize 195
+\i (00:03:48) zoom out 1 
+\i (00:03:48) setwindow pcb
+\i (00:03:48) zoom out -75.69 912.55
+\i (00:03:48) trapsize 389
+\i (00:03:49) zoom in 1 
+\i (00:03:49) setwindow pcb
+\i (00:03:49) zoom in 40.37 1118.21
+\i (00:03:49) trapsize 195
+\i (00:03:49) zoom in 1 
+\i (00:03:49) setwindow pcb
+\i (00:03:49) zoom in 40.37 1118.21
+\i (00:03:49) trapsize 97
+\i (00:03:50) zoom out 1 
+\i (00:03:50) setwindow pcb
+\i (00:03:50) zoom out -72.59 1121.14
+\i (00:03:50) trapsize 195
+\i (00:03:50) zoom out 1 
+\i (00:03:50) setwindow pcb
+\i (00:03:50) zoom out -72.19 1120.36
+\i (00:03:50) trapsize 390
+\i (00:03:51) zoom out 1 
+\i (00:03:51) setwindow pcb
+\i (00:03:51) zoom out -64.41 1077.51
+\i (00:03:51) trapsize 779
+\i (00:03:54) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "Film: SILK_TOP"
+\i (00:03:54) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "Film: SILK_TOP"
+\i (00:03:54) updateport SearchPane
+\i (00:03:54) updateport PropPane
+\i (00:03:54) updateport CVPane
+\i (00:03:55) zoom out 1 
+\i (00:03:55) setwindow pcb
+\i (00:03:55) zoom out -98.69 973.13
+\i (00:03:55) trapsize 1558
+\i (00:03:58) zoom out 1 
+\i (00:03:58) setwindow pcb
+\i (00:03:58) zoom out -921.32 321.88
+\i (00:03:58) trapsize 3116
+\i (00:03:58) zoom in 1 
+\i (00:03:58) setwindow pcb
+\i (00:03:58) zoom in -1137.17 353.05
+\i (00:03:58) trapsize 1558
+\i (00:03:59) zoom in 1 
+\i (00:03:59) setwindow pcb
+\i (00:03:59) zoom in -1124.70 356.17
+\i (00:03:59) trapsize 779
+\i (00:04:06) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "Film: TOPL"
+\i (00:04:06) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "Film: TOPL"
+\i (00:04:06) updateport SearchPane
+\i (00:04:06) updateport PropPane
+\i (00:04:06) updateport CVPane
+\i (00:04:07) zoom in 1 
+\i (00:04:07) setwindow pcb
+\i (00:04:07) zoom in -1081.08 635.06
+\i (00:04:07) trapsize 390
+\i (00:04:08) zoom in 1 
+\i (00:04:08) setwindow pcb
+\i (00:04:08) zoom in -1081.07 635.06
+\i (00:04:08) trapsize 195
+\i (00:04:15) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "Film: SILK_TOP"
+\i (00:04:15) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "Film: SILK_TOP"
+\i (00:04:15) updateport SearchPane
+\i (00:04:15) updateport PropPane
+\i (00:04:15) updateport CVPane
+\i (00:04:22) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "File: ALL"
+\i (00:04:22) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "File: ALL"
+\t (00:04:22) File not found: ALL.color
+
+\i (00:04:22) updateport SearchPane
+\i (00:04:22) updateport PropPane
+\i (00:04:24) pick grid -1000.05 682.19
+\t (00:04:24) last pick:  -1000.05 682.19
+\i (00:04:28) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "File: SILK_TOP"
+\i (00:04:28) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "File: SILK_TOP"
+\t (00:04:28) File not found: SILK_TOP.color
+
+\i (00:04:28) updateport SearchPane
+\i (00:04:28) updateport PropPane
+\i (00:04:31) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "Film: TOPL"
+\i (00:04:31) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "Film: TOPL"
+\i (00:04:31) updateport SearchPane
+\i (00:04:31) updateport PropPane
+\i (00:04:31) updateport CVPane
+\i (00:04:34) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "Film: OUTLINE"
+\i (00:04:34) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "Film: OUTLINE"
+\i (00:04:34) updateport SearchPane
+\i (00:04:34) updateport PropPane
+\i (00:04:35) updateport CVPane
+\i (00:04:35) zoom out 1 
+\i (00:04:35) setwindow pcb
+\i (00:04:35) zoom out -1080.68 687.65
+\i (00:04:35) trapsize 390
+\i (00:04:35) zoom out 1 
+\i (00:04:35) setwindow pcb
+\i (00:04:35) zoom out -1080.68 683.75
+\i (00:04:35) trapsize 779
+\i (00:04:35) zoom out 1 
+\i (00:04:35) setwindow pcb
+\i (00:04:35) zoom out -1077.56 666.61
+\i (00:04:35) trapsize 1558
+\i (00:04:35) zoom out 1 
+\i (00:04:35) setwindow pcb
+\i (00:04:35) zoom out -1077.57 663.48
+\i (00:04:35) trapsize 3116
+\i (00:04:38) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "Film: MASK_TOP"
+\i (00:04:38) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "Film: MASK_TOP"
+\i (00:04:38) updateport SearchPane
+\i (00:04:38) updateport PropPane
+\i (00:04:38) updateport CVPane
+\i (00:04:39) zoom in 1 
+\i (00:04:39) setwindow pcb
+\i (00:04:39) zoom in -1058.86 750.74
+\i (00:04:39) trapsize 1558
+\i (00:04:39) zoom in 1 
+\i (00:04:39) setwindow pcb
+\i (00:04:39) zoom in -1058.86 750.74
+\i (00:04:39) trapsize 779
+\i (00:04:43) zoom in 1 
+\i (00:04:43) setwindow pcb
+\i (00:04:43) zoom in -731.67 252.17
+\i (00:04:43) trapsize 390
+\i (00:04:43) zoom in 1 
+\i (00:04:43) setwindow pcb
+\i (00:04:43) zoom in -731.67 252.17
+\i (00:04:43) trapsize 195
+\i (00:04:44) zoom out 1 
+\i (00:04:44) setwindow pcb
+\i (00:04:44) zoom out -739.45 268.15
+\i (00:04:44) trapsize 390
+\i (00:04:44) zoom out 1 
+\i (00:04:44) setwindow pcb
+\i (00:04:44) zoom out -739.46 268.14
+\i (00:04:44) trapsize 779
+\i (00:04:46) zoom in 1 
+\i (00:04:46) setwindow pcb
+\i (00:04:46) zoom in -549.39 746.45
+\i (00:04:46) trapsize 390
+\i (00:04:46) zoom in 1 
+\i (00:04:46) setwindow pcb
+\i (00:04:46) zoom in -549.39 746.46
+\i (00:04:46) trapsize 195
+\i (00:04:53) zoom out 1 
+\i (00:04:53) setwindow pcb
+\i (00:04:53) zoom out -582.88 704.01
+\i (00:04:53) trapsize 390
+\i (00:04:53) zoom out 1 
+\i (00:04:53) setwindow pcb
+\i (00:04:53) zoom out -582.88 704.00
+\i (00:04:53) trapsize 779
+\i (00:04:54) zoom in 1 
+\i (00:04:54) setwindow pcb
+\i (00:04:54) zoom in -660.80 669.73
+\i (00:04:54) trapsize 390
+\i (00:05:20) zoom out 1 
+\i (00:05:20) setwindow pcb
+\i (00:05:20) zoom out -724.67 607.41
+\i (00:05:20) trapsize 779
+\i (00:05:20) zoom out 1 
+\i (00:05:20) setwindow pcb
+\i (00:05:20) zoom out -724.68 607.42
+\i (00:05:20) trapsize 1558
+\i (00:05:21) zoom out 1 
+\i (00:05:21) setwindow pcb
+\i (00:05:21) zoom out -724.69 607.42
+\i (00:05:21) trapsize 3116
+\i (00:05:21) zoom in 1 
+\i (00:05:21) setwindow pcb
+\i (00:05:21) zoom in -718.46 607.43
+\i (00:05:21) trapsize 1558
+\i (00:05:21) zoom in 1 
+\i (00:05:21) setwindow pcb
+\i (00:05:21) zoom in -718.45 607.43
+\i (00:05:21) trapsize 779
+\i (00:05:24) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "Film: MASK_BOT"
+\i (00:05:24) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "Film: MASK_BOT"
+\i (00:05:24) updateport SearchPane
+\i (00:05:24) updateport PropPane
+\i (00:05:24) updateport CVPane
+\i (00:05:26) zoom out 1 
+\i (00:05:26) setwindow pcb
+\i (00:05:26) zoom out -247.92 711.82
+\i (00:05:26) trapsize 1558
+\i (00:05:26) zoom out 1 
+\i (00:05:26) setwindow pcb
+\i (00:05:26) zoom out 44.98 674.43
+\i (00:05:26) trapsize 3116
+\i (00:05:26) zoom out 1 
+\i (00:05:26) setwindow pcb
+\i (00:05:26) zoom out 219.48 649.49
+\i (00:05:26) trapsize 6232
+\i (00:05:27) zoom in 1 
+\i (00:05:27) setwindow pcb
+\i (00:05:27) zoom in 145.89 -137.10
+\i (00:05:27) trapsize 3116
+\i (00:05:27) zoom in 1 
+\i (00:05:27) setwindow pcb
+\i (00:05:27) zoom in 201.98 -99.71
+\i (00:05:27) trapsize 1558
+\i (00:05:28) zoom in 1 
+\i (00:05:28) setwindow pcb
+\i (00:05:28) zoom in 86.70 130.86
+\i (00:05:28) trapsize 779
+\i (00:05:28) zoom in 1 
+\i (00:05:28) setwindow pcb
+\i (00:05:28) zoom in 86.71 130.87
+\i (00:05:28) trapsize 389
+\i (00:05:29) zoom out 1 
+\i (00:05:29) setwindow pcb
+\i (00:05:29) zoom out 220.69 132.43
+\i (00:05:29) trapsize 779
+\i (00:05:29) zoom out 1 
+\i (00:05:29) setwindow pcb
+\i (00:05:29) zoom out 225.36 129.32
+\i (00:05:29) trapsize 1558
+\i (00:05:30) zoom in 1 
+\i (00:05:30) setwindow pcb
+\i (00:05:30) zoom in 1125.84 384.81
+\i (00:05:30) trapsize 779
+\i (00:05:30) zoom in 1 
+\i (00:05:30) setwindow pcb
+\i (00:05:30) zoom in 1125.84 386.37
+\i (00:05:30) trapsize 389
+\i (00:05:32) zoom out 1 
+\i (00:05:32) setwindow pcb
+\i (00:05:32) zoom out 890.60 356.00
+\i (00:05:32) trapsize 779
+\i (00:05:32) zoom out 1 
+\i (00:05:32) setwindow pcb
+\i (00:05:32) zoom out 890.60 356.00
+\i (00:05:32) trapsize 1558
+\i (00:05:33) zoom in 1 
+\i (00:05:33) setwindow pcb
+\i (00:05:33) zoom in 370.25 222.01
+\i (00:05:33) trapsize 779
+\i (00:05:33) zoom in 1 
+\i (00:05:33) setwindow pcb
+\i (00:05:33) zoom in 367.14 222.01
+\i (00:05:33) trapsize 389
+\i (00:05:33) zoom out 1 
+\i (00:05:33) setwindow pcb
+\i (00:05:33) zoom out 367.15 222.01
+\i (00:05:33) trapsize 779
+\i (00:05:33) zoom out 1 
+\i (00:05:33) setwindow pcb
+\i (00:05:33) zoom out 367.14 222.01
+\i (00:05:33) trapsize 1558
+\i (00:05:34) zoom out 1 
+\i (00:05:34) setwindow pcb
+\i (00:05:34) zoom out 367.14 222.02
+\i (00:05:34) trapsize 3116
+\i (00:05:34) zoom in 1 
+\i (00:05:34) setwindow pcb
+\i (00:05:34) zoom in -1442.09 222.02
+\i (00:05:34) trapsize 1558
+\i (00:05:34) zoom in 1 
+\i (00:05:34) setwindow pcb
+\i (00:05:34) zoom in -1442.08 222.02
+\i (00:05:34) trapsize 779
+\i (00:05:34) zoom in 1 
+\i (00:05:34) setwindow pcb
+\i (00:05:34) zoom in -1442.08 222.02
+\i (00:05:34) trapsize 389
+\i (00:05:36) zoom out 1 
+\i (00:05:36) setwindow pcb
+\i (00:05:36) zoom out -1294.86 224.36
+\i (00:05:36) trapsize 779
+\i (00:05:36) zoom out 1 
+\i (00:05:36) setwindow pcb
+\i (00:05:36) zoom out -1293.30 225.92
+\i (00:05:36) trapsize 1558
+\i (00:05:36) zoom out 1 
+\i (00:05:36) setwindow pcb
+\i (00:05:36) zoom out -1290.18 225.91
+\i (00:05:36) trapsize 3116
+\i (00:05:37) zoom in 1 
+\i (00:05:37) setwindow pcb
+\i (00:05:37) zoom in -660.78 718.22
+\i (00:05:37) trapsize 1558
+\i (00:05:37) zoom in 1 
+\i (00:05:37) setwindow pcb
+\i (00:05:37) zoom in -660.78 718.22
+\i (00:05:37) trapsize 779
+\i (00:05:41) zoom out 1 
+\i (00:05:41) setwindow pcb
+\i (00:05:41) zoom out -509.66 716.66
+\i (00:05:41) trapsize 1558
+\i (00:05:41) zoom out 1 
+\i (00:05:41) setwindow pcb
+\i (00:05:41) zoom out -487.85 697.97
+\i (00:05:41) trapsize 3116
+\i (00:05:41) zoom out 1 
+\i (00:05:41) setwindow pcb
+\i (00:05:41) zoom out -431.77 660.59
+\i (00:05:41) trapsize 6232
+\i (00:05:42) zoom in 1 
+\i (00:05:42) setwindow pcb
+\i (00:05:42) zoom in 557.18 1532.99
+\i (00:05:42) trapsize 3116
+\i (00:05:42) zoom in 1 
+\i (00:05:42) setwindow pcb
+\i (00:05:42) zoom in 550.95 1526.76
+\i (00:05:42) trapsize 1558
+\i (00:05:43) zoom in 1 
+\i (00:05:43) setwindow pcb
+\i (00:05:43) zoom in 631.96 1330.47
+\i (00:05:43) trapsize 779
+\i (00:05:43) zoom in 1 
+\i (00:05:43) setwindow pcb
+\i (00:05:43) zoom in 631.97 1328.91
+\i (00:05:43) trapsize 389
+\i (00:05:44) zoom out 1 
+\i (00:05:44) setwindow pcb
+\i (00:05:44) zoom out 585.23 1385.00
+\i (00:05:44) trapsize 779
+\i (00:05:44) zoom out 1 
+\i (00:05:44) setwindow pcb
+\i (00:05:44) zoom out 585.23 1383.44
+\i (00:05:44) trapsize 1558
+\i (00:05:47) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "Film: TOPL"
+\i (00:05:47) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "Film: TOPL"
+\i (00:05:47) updateport SearchPane
+\i (00:05:47) updateport PropPane
+\i (00:05:47) updateport CVPane
+\i (00:05:47) zoom in 1 
+\i (00:05:47) setwindow pcb
+\i (00:05:47) zoom in -34.82 1022.01
+\i (00:05:47) trapsize 779
+\i (00:05:47) zoom in 1 
+\i (00:05:47) setwindow pcb
+\i (00:05:47) zoom in -34.81 1025.13
+\i (00:05:47) trapsize 389
+\i (00:05:47) zoom in 1 
+\i (00:05:47) setwindow pcb
+\i (00:05:47) zoom in -34.81 1025.13
+\i (00:05:47) trapsize 195
+\i (00:05:49) drag_start grid 134.61 1072.27
+\i (00:05:49) drag_stop 143.96 1059.02
+\i (00:05:49) updateport SearchPane
+\i (00:05:49) updateport PropPane
+\i (00:05:50) drag_start grid 139.28 1068.37
+\i (00:05:50) drag_stop 143.18 1057.85
+\i (00:05:51) prepopup 133.05 1069.15
+\i (00:05:51) updateport SearchPane
+\i (00:05:51) updateport PropPane
+\i (00:05:52) prepopup 85.92 1052.79
+\i (00:05:52) prepopup 73.07 1048.90
+\i (00:05:52) prepopup 73.07 1048.90
+\i (00:05:52) prepopup 73.07 1048.90
+\i (00:06:01) zoom out 1 
+\i (00:06:01) setwindow pcb
+\i (00:06:01) zoom out 301.31 1085.12
+\i (00:06:01) trapsize 389
+\i (00:06:01) zoom out 1 
+\i (00:06:01) setwindow pcb
+\i (00:06:01) zoom out 301.31 1085.12
+\i (00:06:01) trapsize 779
+\i (00:06:01) zoom out 1 
+\i (00:06:01) setwindow pcb
+\i (00:06:01) zoom out 301.31 1085.12
+\i (00:06:01) trapsize 1558
+\i (00:06:02) zoom in 1 
+\i (00:06:02) setwindow pcb
+\i (00:06:02) zoom in 291.95 1085.11
+\i (00:06:02) trapsize 779
+\i (00:06:02) zoom in 1 
+\i (00:06:02) setwindow pcb
+\i (00:06:02) zoom in 284.16 1085.12
+\i (00:06:02) trapsize 389
+\i (00:06:02) zoom in 1 
+\i (00:06:02) setwindow pcb
+\i (00:06:02) zoom in 284.17 1085.12
+\i (00:06:02) trapsize 195
+\i (00:06:05) zoom out 1 
+\i (00:06:05) setwindow pcb
+\i (00:06:05) zoom out 287.68 1027.47
+\i (00:06:05) trapsize 389
+\i (00:06:05) zoom out 1 
+\i (00:06:05) setwindow pcb
+\i (00:06:05) zoom out 288.46 1025.92
+\i (00:06:05) trapsize 779
+\i (00:06:06) zoom out 1 
+\i (00:06:06) setwindow pcb
+\i (00:06:06) zoom out 288.45 1025.92
+\i (00:06:06) trapsize 1558
+\i (00:06:06) zoom in 1 
+\i (00:06:06) setwindow pcb
+\i (00:06:06) zoom in -531.03 390.28
+\i (00:06:06) trapsize 779
+\i (00:06:06) zoom in 1 
+\i (00:06:06) setwindow pcb
+\i (00:06:06) zoom in -531.03 390.28
+\i (00:06:06) trapsize 389
+\i (00:06:07) zoom in 1 
+\i (00:06:07) setwindow pcb
+\i (00:06:07) zoom in -465.59 407.42
+\i (00:06:07) trapsize 195
+\i (00:06:13) zoom out 1 
+\i (00:06:13) setwindow pcb
+\i (00:06:13) zoom out -610.48 443.64
+\i (00:06:13) trapsize 389
+\i (00:06:13) zoom out 1 
+\i (00:06:13) setwindow pcb
+\i (00:06:13) zoom out -610.48 443.64
+\i (00:06:13) trapsize 779
+\i (00:06:13) zoom out 1 
+\i (00:06:13) setwindow pcb
+\i (00:06:13) zoom out -610.48 443.64
+\i (00:06:13) trapsize 1558
+\i (00:06:14) zoom in 1 
+\i (00:06:14) setwindow pcb
+\i (00:06:14) zoom in -451.57 238.00
+\i (00:06:14) trapsize 779
+\i (00:06:14) zoom in 1 
+\i (00:06:14) setwindow pcb
+\i (00:06:14) zoom in -451.57 239.56
+\i (00:06:14) trapsize 389
+\i (00:06:15) zoom out 1 
+\i (00:06:15) setwindow pcb
+\i (00:06:15) zoom out -457.80 249.69
+\i (00:06:15) trapsize 779
+\i (00:06:17) zoom in 1 
+\i (00:06:17) setwindow pcb
+\i (00:06:17) zoom in -1359.86 151.53
+\i (00:06:17) trapsize 389
+\i (00:06:18) zoom in 1 
+\i (00:06:18) setwindow pcb
+\i (00:06:18) zoom in -1359.86 151.53
+\i (00:06:18) trapsize 195
+\i (00:06:18) zoom in 1 
+\i (00:06:18) setwindow pcb
+\i (00:06:18) zoom in -1359.86 151.53
+\i (00:06:18) trapsize 97
+\i (00:06:18) zoom out 1 
+\i (00:06:18) setwindow pcb
+\i (00:06:18) zoom out -1359.87 151.53
+\i (00:06:18) trapsize 195
+\i (00:06:19) zoom out 1 
+\i (00:06:19) setwindow pcb
+\i (00:06:19) zoom out -1359.86 151.53
+\i (00:06:19) trapsize 390
+\i (00:06:19) zoom out 1 
+\i (00:06:19) setwindow pcb
+\i (00:06:19) zoom out -1359.87 151.54
+\i (00:06:19) trapsize 779
+\i (00:06:20) zoom out 1 
+\i (00:06:20) setwindow pcb
+\i (00:06:20) zoom out -1391.04 145.30
+\i (00:06:20) trapsize 1558
+\i (00:06:21) zoom in 1 
+\i (00:06:21) setwindow pcb
+\i (00:06:21) zoom in -1391.04 145.30
+\i (00:06:21) trapsize 779
+\i (00:06:21) zoom in 1 
+\i (00:06:21) setwindow pcb
+\i (00:06:21) zoom in -1391.04 145.30
+\i (00:06:21) trapsize 390
+\i (00:06:21) zoom in 1 
+\i (00:06:21) setwindow pcb
+\i (00:06:21) zoom in -1391.04 146.08
+\i (00:06:21) trapsize 195
+\i (00:06:28) pick grid -1317.42 202.17
+\t (00:06:28) last pick:  -1317.42 202.17
+\i (00:06:28) prepopup -1317.42 202.56
+\i (00:06:29) prepopup -1314.69 156.99
+\i (00:06:29) updateport SearchPane
+\i (00:06:29) updateport PropPane
+\i (00:06:30) pick grid -1322.09 158.16
+\t (00:06:30) last pick:  -1322.09 158.16
+\i (00:06:30) updateport SearchPane
+\i (00:06:30) updateport PropPane
+\i (00:06:39) xrefdes '!' Cin.1 
+\i (00:06:39) xname_flush '!' 
+\i (00:06:39) xrefdes Cin 
+\i (00:06:39) xname_flush 
+\i (00:06:39) trapsize 472
+\t (00:07:08) > DoActivateAllegro message received
+\t (00:07:09) > Activating Allegro on existing open design...
+\t (00:07:09) > Sending response DoneActivateAllegro
+\t (00:07:09) > Allegro activated successfully
+\i (00:07:21) zoom out 1 
+\i (00:07:21) setwindow pcb
+\i (00:07:21) zoom out -954.62 247.39
+\i (00:07:21) trapsize 944
+\i (00:07:21) zoom out 1 
+\i (00:07:21) setwindow pcb
+\i (00:07:21) zoom out -956.52 245.50
+\i (00:07:21) trapsize 1889
+\i (00:07:21) zoom out 1 
+\i (00:07:21) setwindow pcb
+\i (00:07:21) zoom out -956.52 245.51
+\i (00:07:21) trapsize 3777
+\i (00:07:21) zoom in 1 
+\i (00:07:21) setwindow pcb
+\i (00:07:21) zoom in -317.92 1378.62
+\i (00:07:21) trapsize 1889
+\i (00:07:21) zoom in 1 
+\i (00:07:21) setwindow pcb
+\i (00:07:21) zoom in -317.92 1378.62
+\i (00:07:21) trapsize 944
+\i (00:07:22) zoom out 1 
+\i (00:07:22) setwindow pcb
+\i (00:07:22) zoom out -317.92 1378.62
+\i (00:07:22) trapsize 1889
+\i (00:07:22) zoom out 1 
+\i (00:07:22) setwindow pcb
+\i (00:07:22) zoom out -155.51 1238.87
+\i (00:07:22) trapsize 3777
+\i (00:07:22) zoom in 1 
+\i (00:07:22) setwindow pcb
+\i (00:07:22) zoom in 6.90 1238.88
+\i (00:07:22) trapsize 1889
+\t (00:08:24) > DoActivateAllegro message received
+\t (00:08:24) > Activating Allegro on existing open design...
+\t (00:08:24) > Sending response DoneActivateAllegro
+\t (00:08:24) > Allegro activated successfully
+\t (00:08:28) > DoActivateAllegro message received
+\t (00:08:28) > Activating Allegro on existing open design...
+\t (00:08:28) > Sending response DoneActivateAllegro
+\t (00:08:28) > Allegro activated successfully
+\i (00:10:03) zoom out 1 
+\i (00:10:03) setwindow pcb
+\i (00:10:03) zoom out -1330.17 460.82
+\i (00:10:03) trapsize 3777
+\i (00:10:03) zoom out 1 
+\i (00:10:03) setwindow pcb
+\i (00:10:03) zoom out -1330.16 460.81
+\i (00:10:03) trapsize 6232
+\i (00:10:04) zoom in 1 
+\i (00:10:04) setwindow pcb
+\i (00:10:04) zoom in -925.95 573.31
+\i (00:10:04) trapsize 3116
+\i (00:10:04) zoom in 1 
+\i (00:10:04) setwindow pcb
+\i (00:10:04) zoom in -925.95 573.32
+\i (00:10:04) trapsize 1558
+\i (00:10:05) zoom out 1 
+\i (00:10:05) setwindow pcb
+\i (00:10:05) zoom out -876.09 535.93
+\i (00:10:05) trapsize 3116
+\i (00:10:05) zoom in 1 
+\i (00:10:05) setwindow pcb
+\i (00:10:05) zoom in -1013.19 1289.96
+\i (00:10:05) trapsize 1558
+\i (00:10:05) zoom in 1 
+\i (00:10:05) setwindow pcb
+\i (00:10:05) zoom in -1010.08 1293.08
+\i (00:10:05) trapsize 779
+\i (00:10:06) zoom out 1 
+\i (00:10:06) setwindow pcb
+\i (00:10:06) zoom out -1008.52 1249.46
+\i (00:10:06) trapsize 1558
+\i (00:10:08) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "Film: SILK_TOP"
+\i (00:10:08) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "Film: SILK_TOP"
+\i (00:10:09) updateport SearchPane
+\i (00:10:09) updateport PropPane
+\i (00:10:09) updateport CVPane
+\i (00:10:09) zoom in 1 
+\i (00:10:09) setwindow pcb
+\i (00:10:09) zoom in -1089.52 560.87
+\i (00:10:09) trapsize 779
+\i (00:10:11) zoom out 1 
+\i (00:10:11) setwindow pcb
+\i (00:10:11) zoom out -131.40 451.82
+\i (00:10:11) trapsize 1558
+\i (00:10:11) zoom out 1 
+\i (00:10:11) setwindow pcb
+\i (00:10:11) zoom out 18.16 607.61
+\i (00:10:11) trapsize 3116
+\i (00:10:11) zoom out 1 
+\i (00:10:11) setwindow pcb
+\i (00:10:11) zoom out 731.68 607.61
+\i (00:10:11) trapsize 6232
+\i (00:10:12) zoom in 1 
+\i (00:10:12) setwindow pcb
+\i (00:10:12) zoom in 21.26 1184.02
+\i (00:10:12) trapsize 3116
+\i (00:10:16) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox CurrentIndexChanged "Film: TOPL"
+\i (00:10:16) QtSignal VisibilityLayersViewsWidget ViewsDropDownComboBox activated "Film: TOPL"
+\i (00:10:16) updateport SearchPane
+\i (00:10:16) updateport PropPane
+\i (00:10:16) updateport CVPane
+\i (00:10:16) zoom in 1 
+\i (00:10:16) setwindow pcb
+\i (00:10:16) zoom in -714.08 629.40
+\i (00:10:16) trapsize 1558
+\i (00:10:16) zoom in 1 
+\i (00:10:16) setwindow pcb
+\i (00:10:16) zoom in -714.07 629.41
+\i (00:10:16) trapsize 779
+\i (00:10:16) zoom in 1 
+\i (00:10:16) setwindow pcb
+\i (00:10:16) zoom in -714.07 629.41
+\i (00:10:16) trapsize 389
+\i (00:10:18) pick grid -840.26 721.33
+\t (00:10:18) last pick:  -840.26 721.33
+\i (00:10:22) QtSignal PropertySelectionFilterWidget Components clicked
+\i (00:10:26) pick grid -845.71 725.22
+\t (00:10:26) last pick:  -845.71 725.22
+\i (00:10:26) updateport SearchPane
+\i (00:10:26) updateport PropPane
+\i (00:10:27) QtSignal PropertyGeneralWidget PropertyGeneralPadstack linkActivated padstackLink
+\i (00:10:27) updateport SearchPane
+\i (00:10:28) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:28) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:28) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:28) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:28) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:28) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:29) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:29) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:30) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:30) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:30) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:30) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:31) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:31) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:31) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:31) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:31) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:31) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:31) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:31) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:31) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:31) QtSignal ADTableContainerWidget PinsTable selectionChanged
+\i (00:10:34) prepopup -841.04 723.66
+\t (00:10:39) > DoActivateAllegro message received
+\t (00:10:39) > Activating Allegro on existing open design...
+\t (00:10:39) > Sending response DoneActivateAllegro
+\t (00:10:39) > Allegro activated successfully
+\i (00:10:48) exit 
+\t (00:10:49)     Journal end - Fri May  9 15:39:07 2025

@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : amv_test_point.dra                            )
+(    Software Version : 17.2S050                                      )
+(    Date/Time        : Tue Nov 05 10:09:19 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = L:/AMV_MELINDAP/AMV Footprints and Padstacks
+    Name      = amv_test_point.psm
+    User      = melindap
+    Machine   = BLACKMESA
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

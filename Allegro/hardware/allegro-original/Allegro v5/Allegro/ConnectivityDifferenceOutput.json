@@ -1,0 +1,158 @@
+{
+	"Gate Swap" : [],
+	"Ref Des" : [],
+	"Pin Swap" : [],
+	"Component Property" : [],
+	"Net Property" : [],
+	"Pin Property" : [],
+	"Component" : [
+		{
+			"Name" : "U5",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):canbus@seniordesign_board.\\canbus module\\(sch_1):ins13929@orcadcaptureolb.\\tcan1042hdrq1.normal\\(sch_1)",
+			"Logical" : "TCAN1042HDRQ1_D0008A_L_TCAN1042H-Q1D",
+			"Physical" : "TCAN1042HDRQ1_D0008A_L_TCAN1042"
+		},
+		{
+			"Name" : "C10",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\mcu ouputs1\\@seniordesign_board.\\mcu outputs\\(sch_1):ins26357@analog.\\c.normal\\(chips)",
+			"Logical" : "C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7UF",
+			"Physical" : "C_CAP_0603_CL10A_1P6XP8_SAM-M_4"
+		},
+		{
+			"Name" : "CEXT",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\mcu ouputs1\\@seniordesign_board.\\mcu outputs\\(sch_1):ins26269@analog.\\c.normal\\(chips)",
+			"Logical" : "C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7 UF",
+			"Physical" : "C_CAP_0603_CL10A_1P6XP8_SAM-M_1"
+		},
+		{
+			"Name" : "JTAG",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\mcu ouputs1\\@seniordesign_board.\\mcu outputs\\(sch_1):ins29321@\\ftsh-105-xx-x-dv\\.\\ftsh-105-xx-x-dv.normal\\(chips)",
+			"Logical" : "FTSH-105-XX-X-DV_SAMTEC_FTSH-105-XX-X-DV_FTSH-105-XX-X-DV",
+			"Physical" : "FTSH-105-XX-X-DV_SAMTEC_FTSH-10"
+		},
+		{
+			"Name" : "U3",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\mcu ouputs1\\@seniordesign_board.\\mcu outputs\\(sch_1):ins26029@orcadcaptureolb.\\stm32f446ret6tra.normal\\(sch_1)",
+			"Logical" : "STM32F446RET6TR_LQFP64-10X10MM_STM32F4XXR2",
+			"Physical" : "STM32F446RET6TR_LQFP64-10X10MM_"
+		},
+		{
+			"Name" : "U3",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\mcu ouputs1\\@seniordesign_board.\\mcu outputs\\(sch_1):ins1701@orcadcaptureolb.\\stm32f446ret6trb.normal\\(sch_1)",
+			"Logical" : "STM32F446RET6TR_LQFP64-10X10MM_STM32F4XXR2",
+			"Physical" : "STM32F446RET6TR_LQFP64-10X10MM_"
+		},
+		{
+			"Name" : "CIN",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\power supply\\@seniordesign_board.(sch_1):ins5671@orcadcaptureolb.\\kts500b106m55n0t00.normal\\(sch_1)",
+			"Logical" : "KTS500B106M55N0T00_CAP_NTS_55_2P8T_NIP_10UF",
+			"Physical" : "KTS500B106M55N0T00_CAP_NTS_55_2"
+		},
+		{
+			"Name" : "D21",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\power supply\\@seniordesign_board.(sch_1):ins20790@orcadcaptureolb.\\cms06te12l,q,m.normal\\(sch_1)",
+			"Logical" : "CMS06TE12L,Q,M_M-FLAT_TOS-L_DIODE_MFLAT",
+			"Physical" : "CMS06TE12L,Q,M_M-FLAT_TOS-L_DIO"
+		},
+		{
+			"Name" : "L1",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\power supply\\@seniordesign_board.(sch_1):ins20873@orcadcaptureolb.\\slf7045t-4r7m2r0-pf.normal\\(sch_1)",
+			"Logical" : "SLF7045T-4R7M2R0-PF_IND_7045_TDK_4.7UH",
+			"Physical" : "SLF7045T-4R7M2R0-PF_IND_7045_TD"
+		},
+		{
+			"Name" : "TP4",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\power supply\\@seniordesign_board.(sch_1):ins18329@connector.\\test point.normal\\(chips)",
+			"Logical" : "TEST POINT_AMV_TEST_POINT_TEST POINT",
+			"Physical" : "TEST POINT_AMV_TEST_POINT_TEST"
+		},
+		{
+			"Name" : "TP5",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\power supply\\@seniordesign_board.(sch_1):ins18356@connector.\\test point.normal\\(chips)",
+			"Logical" : "TEST POINT_AMV_TEST_POINT_TEST POINT",
+			"Physical" : "TEST POINT_AMV_TEST_POINT_TEST"
+		},
+		{
+			"Name" : "U6",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\power supply\\@seniordesign_board.(sch_1):ins19524@seniordesign_board.\\r1240n001b-tr-fe_3.normal\\(sch_1)",
+			"Logical" : "R1240N001B-TR-FE_3_SOT-23-6W_PE-SOT23-6W-0512_NMD_R1240N001X",
+			"Physical" : "R1240N001B-TR-FE_3_SOT-23-6W_PE"
+		},
+		{
+			"Name" : "C23",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):ins27390@analog.\\c.normal\\(chips)",
+			"Logical" : "C_CAP_GJM1555C1H220JB01__MUR-L_47PF",
+			"Physical" : "C_CAP_GJM1555C1H220JB01__MUR-L_"
+		},
+		{
+			"Name" : "CANHEADER",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):ins26555@orcadcaptureolb.\\b4b-xh-a.normal\\(sch_1)",
+			"Logical" : "B4B-XH-A_CONN_B4B-XH-A_JST_CONN_B4B-XH-A",
+			"Physical" : "B4B-XH-A_CONN_B4B-XH-A_JST_CONN"
+		},
+		{
+			"Name" : "GPSMODULE",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):ins4209@orcadcaptureolb.\\pptc051lfbn-rc.normal\\(sch_1)",
+			"Logical" : "PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC",
+			"Physical" : "PPTC051LFBN-RC_CONN5_1LFBN-RC_S"
+		},
+		{
+			"Name" : "L3",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):ins27270@discrete.\\inductor.normal\\(chips)",
+			"Logical" : "INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR",
+			"Physical" : "INDUCTOR_IND_BLM15_0402_MUR-L_I"
+		},
+		{
+			"Name" : "L4",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):ins27286@discrete.\\inductor.normal\\(chips)",
+			"Logical" : "INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR",
+			"Physical" : "INDUCTOR_IND_BLM15_0402_MUR-L_I"
+		},
+		{
+			"Name" : "LORAMODULE",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):ins4435@orcadcaptureolb.\\pptc051lfbn-rc.normal\\(sch_1)",
+			"Logical" : "PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC",
+			"Physical" : "PPTC051LFBN-RC_CONN5_1LFBN-RC_S"
+		},
+		{
+			"Name" : "SPEEDCONTROLLER",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):ins4287@orcadcaptureolb.\\pptc031lfbn-rc.normal\\(sch_1)",
+			"Logical" : "PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031",
+			"Physical" : "PPTC031LFBN-RC_CONN_PPTC031_SUL"
+		},
+		{
+			"Name" : "STEERINGSERVO",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):ins4335@orcadcaptureolb.\\pptc031lfbn-rc.normal\\(sch_1)",
+			"Logical" : "PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031",
+			"Physical" : "PPTC031LFBN-RC_CONN_PPTC031_SUL"
+		},
+		{
+			"Name" : "TP1",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):ins26644@connector.\\test point.normal\\(chips)",
+			"Logical" : "TEST POINT_AMV_TEST_POINT_TEST POINT",
+			"Physical" : "TEST POINT_AMV_TEST_POINT_TEST"
+		},
+		{
+			"Name" : "TP3",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):ins26687@connector.\\test point.normal\\(chips)",
+			"Logical" : "TEST POINT_AMV_TEST_POINT_TEST POINT",
+			"Physical" : "TEST POINT_AMV_TEST_POINT_TEST"
+		}
+	],
+	"Net" : [
+		{
+			"Name" : "GND",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):gnd",
+			"Logical" : null,
+			"Physical" : "GND"
+		}
+	],
+	"Connection" : [
+		{
+			"Name" : "CIN.1",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\power supply\\@seniordesign_board.(sch_1):ins5671@orcadcaptureolb.\\kts500b106m55n0t00.normal\\(sch_1):\\1\\",
+			"Logical" : "0",
+			"Physical" : "GND"
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"Gate Swap" : [],
+	"Ref Des" : [],
+	"Pin Swap" : [],
+	"Component Property" : [],
+	"Net Property" : [],
+	"Pin Property" : [],
+	"Component" : [
+		{
+			"Name" : "COUT1",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\power supply\\@seniordesign_board.(sch_1):ins18208@analog.\\c.normal\\(chips)",
+			"Logical" : null,
+			"Physical" : "COUT1"
+		},
+		{
+			"Name" : "TP2",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):ins26665@connector.\\test point.normal\\(chips)",
+			"Logical" : null,
+			"Physical" : "TP2"
+		}
+	],
+	"Net" : [
+		{
+			"Name" : "N068040",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):n068040",
+			"Logical" : null,
+			"Physical" : "N068040"
+		}
+	],
+	"Connection" : [
+		{
+			"Name" : "COUT.1",
+			"C_PATH" : "@seniordesign_board.\\top view\\(sch_1):\\power supply\\@seniordesign_board.(sch_1):ins6794@analog.\\c.normal\\(chips):\\1\\",
+			"Logical" : "0",
+			"Physical" : "N068040"
+		}
+	]
+}

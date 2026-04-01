@@ -1,0 +1,146 @@
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   1  |
+|------------------------------------------------------------------------------|
+|  L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd           |
+|                                                    Fri May  9 17:12:46 2025  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  GND          pins MOVED FROM this net (to net name listed on right)
+                                 CIN.1           -1279.0  152.50
+                                                                              0
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd           |
+|                                                    Fri May  9 17:12:46 2025  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ B4B-XH-A_CONN_B4B-XH-A_JST_CONN_B4B-XH-A
+ CMS06TE12L,Q,M_M-FLAT_TOS-L_DIODE_MFLAT
+ C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7 UF
+ C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7UF
+ C_CAP_GJM1555C1H220JB01__MUR-L_47PF
+ FTSH-105-XX-X-DV_SAMTEC_FTSH-105-XX-X-DV_FTSH-105-XX-X-DV
+ INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR
+ KTS500B106M55N0T00_CAP_NTS_55_2P8T_NIP_10UF
+ PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031
+ PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC
+ R1240N001B-TR-FE_3_SOT-23-6W_PE-SOT23-6W-0512_NMD_R1240N001X
+ SLF7045T-4R7M2R0-PF_IND_7045_TDK_4.7UH
+ STM32F446RET6TR_LQFP64-10X10MM_STM32F4XXR2
+ TCAN1042HDRQ1_D0008A_L_TCAN1042H-Q1D
+ TEST POINT_AMV_TEST_POINT_TEST POINT
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd           |
+|                                                    Fri May  9 17:12:46 2025  |
+|------------------------------------------------------------------------------|
+| COMPONENTS CHANGED from one device type to another in design                 |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        | new device type     |   x   |   y   |  old  device type  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C10                 C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7UF  -44.00  438.00 C_CAP_0603_CL10A_1P6XP8_SAM-M_4
+ C23                 C_CAP_GJM1555C1H220JB01__MUR-L_47PF -924.00  711.00 C_CAP_GJM1555C1H220JB01__MUR-L_
+ CANHEADER           B4B-XH-A_CONN_B4B-XH-A_JST_CONN_B4B-XH-A  591.00 1392.00 B4B-XH-A_CONN_B4B-XH-A_JST_CONN
+ CEXT                C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7 UF  170.00  493.00 C_CAP_0603_CL10A_1P6XP8_SAM-M_1
+ CIN                 KTS500B106M55N0T00_CAP_NTS_55_2P8T_NIP_10UF -1279.0  254.00 KTS500B106M55N0T00_CAP_NTS_55_2
+ D21                 CMS06TE12L,Q,M_M-FLAT_TOS-L_DIODE_MFLAT -760.00  178.00 CMS06TE12L,Q,M_M-FLAT_TOS-L_DIO
+ GPSMODULE           PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC  109.00  129.00 PPTC051LFBN-RC_CONN5_1LFBN-RC_S
+ JTAG                FTSH-105-XX-X-DV_SAMTEC_FTSH-105-XX-X-DV_FTSH-105-XX-X-DV  278.00 1346.00 FTSH-105-XX-X-DV_SAMTEC_FTSH-10
+ L1                  SLF7045T-4R7M2R0-PF_IND_7045_TDK_4.7UH -543.00  217.00 SLF7045T-4R7M2R0-PF_IND_7045_TD
+ L3                  INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR -1098.0  740.00 INDUCTOR_IND_BLM15_0402_MUR-L_I
+ L4                  INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR -1095.0  674.00 INDUCTOR_IND_BLM15_0402_MUR-L_I
+ LORAMODULE          PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC -837.00  725.00 PPTC051LFBN-RC_CONN5_1LFBN-RC_S
+ SPEEDCONTROLLER     PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031  868.00  666.00 PPTC031LFBN-RC_CONN_PPTC031_SUL
+ STEERINGSERVO       PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031  870.00  432.00 PPTC031LFBN-RC_CONN_PPTC031_SUL
+ TP1                 TEST POINT_AMV_TEST_POINT_TEST POINT  615.00  832.00 TEST POINT_AMV_TEST_POINT_TEST
+ TP3                 TEST POINT_AMV_TEST_POINT_TEST POINT  610.00  679.00 TEST POINT_AMV_TEST_POINT_TEST
+ TP4                 TEST POINT_AMV_TEST_POINT_TEST POINT -1326.0  996.00 TEST POINT_AMV_TEST_POINT_TEST
+ TP5                 TEST POINT_AMV_TEST_POINT_TEST POINT -1084.0  996.00 TEST POINT_AMV_TEST_POINT_TEST
+ U3                  STM32F446RET6TR_LQFP64-10X10MM_STM32F4XXR2   64.00  868.00 STM32F446RET6TR_LQFP64-10X10MM_
+ U5                  TCAN1042HDRQ1_D0008A_L_TCAN1042H-Q1D  741.00 1110.00 TCAN1042HDRQ1_D0008A_L_TCAN1042
+ U6                  R1240N001B-TR-FE_3_SOT-23-6W_PE-SOT23-6W-0512_NMD_R1240N001X -1037.0  160.00 R1240N001B-TR-FE_3_SOT-23-6W_PE
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd           |
+|                                                    Fri May  9 17:12:46 2025  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ C10.2           -44.00  438.00 PRIM_FILE      .\pstchip.dat
+ C10.2           -44.00  438.00 XY             (560,200)
+ C23.2          -924.00  711.00 PRIM_FILE      .\pstchip.dat
+ C23.2          -924.00  711.00 XY             (790,330)
+ CANHEADER.4     591.00 1392.00 PRIM_FILE      .\pstchip.dat
+ CANHEADER.4     591.00 1392.00 XY             (40,280)
+ CEXT.2          170.00  493.00 PRIM_FILE      .\pstchip.dat
+ CEXT.2          170.00  493.00 XY             (830,130)
+ CIN.2          -1279.0  254.00 PRIM_FILE      .\pstchip.dat
+ CIN.2          -1279.0  254.00 XY             (240,230)
+ D21.2          -760.00  178.00 PRIM_FILE      .\pstchip.dat
+ D21.2          -760.00  178.00 XY             (510,410)
+ GPSMODULE.5     109.00  129.00 PRIM_FILE      .\pstchip.dat
+ GPSMODULE.5     109.00  129.00 XY             (640,130)
+ JTAG.10         278.00 1346.00 PRIM_FILE      .\pstchip.dat
+ JTAG.10         278.00 1346.00 XY             (130,60)
+ L1.2           -543.00  217.00 PRIM_FILE      .\pstchip.dat
+ L1.2           -543.00  217.00 XY             (560,350)
+ L3.2           -1098.0  740.00 PRIM_FILE      .\pstchip.dat
+ L3.2           -1098.0  740.00 XY             (890,290)
+ L4.2           -1095.0  674.00 PRIM_FILE      .\pstchip.dat
+ L4.2           -1095.0  674.00 XY             (890,370)
+ LORAMODULE.5   -837.00  725.00 PRIM_FILE      .\pstchip.dat
+ LORAMODULE.5   -837.00  725.00 XY             (640,270)
+ SPEEDCONTROLLER.3  868.00  666.00 PRIM_FILE      .\pstchip.dat
+ SPEEDCONTROLLER.3  868.00  666.00 XY             (110,200)
+ STEERINGSERVO.3  870.00  432.00 PRIM_FILE      .\pstchip.dat
+ STEERINGSERVO.3  870.00  432.00 XY             (640,210)
+ TP1.1           615.00  832.00 PRIM_FILE      .\pstchip.dat
+ TP1.1           615.00  832.00 XY             (280,180)
+ TP3.1           610.00  679.00 PRIM_FILE      .\pstchip.dat
+ TP3.1           610.00  679.00 XY             (510,190)
+ TP4.1          -1326.0  996.00 PRIM_FILE      .\pstchip.dat
+ TP4.1          -1326.0  996.00 XY             (700,350)
+ TP5.1          -1084.0  996.00 PRIM_FILE      .\pstchip.dat
+ TP5.1          -1084.0  996.00 XY             (170,490)
+ U3.6             64.00  868.00 PRIM_FILE      .\pstchip.dat
+ U3.6             64.00  868.00 XY             (550,50)
+ U3.63            64.00  868.00 PRIM_FILE      .\pstchip.dat
+ U3.63            64.00  868.00 XY             (550,50)
+ U5.3            741.00 1110.00 PRIM_FILE      .\pstchip.dat
+ U5.3            741.00 1110.00 XY             (360,260)
+ U6.2           -1037.0  160.00 PRIM_FILE      .\pstchip.dat
+ U6.2           -1037.0  160.00 XY             (320,210)
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd           |
+|                                                    Fri May  9 17:12:46 2025  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|------------------------------------------------------------------------------|
+|       Nets changed          :       1                                        |
+|       Comp definitions added:      15                                        |
+|       Components changed    :      21                                        |
+|       Slot property added   :      44                                        |
+|                                                                              |
+|   Total ECO changes reported:      81                                        |
+|------------------------------------------------------------------------------|

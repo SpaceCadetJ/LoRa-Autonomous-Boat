@@ -1,0 +1,820 @@
+(ExpressProject "SeniorDesign_Board"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "22.1 P001 (4063652)  [10/6/2022]-[05/09/25]")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "c:\cadence\spb_22.1\tools\capture\library\amplifier.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\arithmetic.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\atod.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\busdrivertransceiver.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\capsym.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\connector.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\counter.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\discrete.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\dram.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\electromechanical.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\fifo.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\filter.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\fpga.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\gate.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\latch.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\linedriverreceiver.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\mechanical.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\microcontroller.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\microprocessor.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\misc.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\misc2.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\misc3.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\misclinear.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\miscmemory.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\miscpower.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\muxdecoder.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\opamp.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\passivefilter.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pld.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\prom.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\regulator.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\shiftregister.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\sram.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\transistor.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\1_shot.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\74ac.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\74act.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\74als.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\74as.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\74f.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\74h.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\74hc.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\74hct.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\74l.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\74ls.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\74s.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\7400.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\abm.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\ad_reg.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\adv_lin.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\ana_swit.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\analog.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\analog_p.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\anl_misc.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\anlg_dev.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\apex.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\apex_pwm.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\battery.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\bipolar.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\breakout.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\burr_brn.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\bzt55.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\cd4000.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\cel.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\coilcraft.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\coilcraft_ind.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\comlinr.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\cp_cnvtr.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\darlngtn.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\dataconv.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\dei_lin_rec.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\dig_abm.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\dig_ecl.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\dig_gal.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\dig_misc.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\dig_pal.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\dig_prim.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\diode.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\diode_fullbridge.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\dual_diode.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\ebipolar.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\ediode.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\elantec.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_b8247x.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_b82462.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_b82464.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_b82470.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_b82472.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_b82476.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_b82477.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_b82479.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_dld.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_hf_bc.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_simdad.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_simid_0603.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_simid_0805.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_simid_1210.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\epcos_simid_1812.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\epwrbjt.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\evalp.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\fagor_zy_gp.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\fairchild.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\filtsub.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\fwbell.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\harris.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\igbt.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_bsx.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_buz.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_coolmos_500.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_coolmos_600.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_coolmos_800.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_ikw_t120_l2.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_optimos_n.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_optimos_p.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_optimos2.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_pfet_60.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_s_afbjt.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_s_ditr.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_s_ditrar.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_sfet_100.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_sic_diodes.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\infineon_sigcxxt120_l2.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\irf.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\ixys.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\jbipolar.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\jdiode.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\jfet.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\jjfet.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\jopamp.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\jpwrbjt.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\jpwrmos.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\lin_tech.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\linedriv.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\ltspicedevices.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\magnetic.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\maxim.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\mfet_drvr.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\mic_sup.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\micrel_stepdown_regulator.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\micrel_stepup_regulator.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\microchip_opamp.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\mii_opto.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\mix_misc.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\motor_rf.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\motorsen.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\msemi_supressor.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\nat_semi.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\nat_semi_pwmic.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\nec_mos.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\nxp_mosfets.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\on_amp.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\on_bjt.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\on_diode.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\on_mos.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\on_pwm.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\on_up_sup.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\on_zener.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\opamp.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\opto.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_3mmradial.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_5mmradial.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_advpow_topled.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_argus.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_chipled.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_firefly.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_golden_dragon.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_minitopled.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_ovalled.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_pointled.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_power_topled.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_sideled.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_smartled.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_topled.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\osram_u_sideled.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\phil_bjt.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\phil_diode.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\phil_fet.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\phil_rf.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\polyfet.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\pwlcomps.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\pwrbjt.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\pwrmos.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\schottky.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\shindngn.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\siliconix.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\source.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\sourcstm.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\special.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\special_purpose_ics.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\ssr.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\st_opamp.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\swit_rav.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\swit_reg.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\synch_cntrl.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\tex_inst.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\thermistor_vishay.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\thyristr.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\tline.olb"
+        (Type "Schematic Library"))
+      (File
+         "c:\cadence\spb_22.1\tools\capture\library\pspice\transphorm_gan.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\tyco_elec.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\xtal.olb"
+        (Type "Schematic Library"))
+      (File "c:\cadence\spb_22.1\tools\capture\library\pspice\zetex.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\3pos female header\orcadcaptureolb\orcadcaptureolb.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\all parts 65\3 pin female.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\all parts 65\5 pin female.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\all parts 65\10 row jtag.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\all parts 65\10kohm adc.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\all parts 65\10ohm adc.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\all parts 65\buck converter.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\all parts 65\power supply cin cap.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\all parts 65\power supply cout cap.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\all parts 65\power supply diode.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\all parts 65\power supply inductor.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\all parts 65\processor.olb"
+        (Type "Schematic Library"))
+      (File "..\parts\all parts 65\schottky diode.olb"
+        (Type "Schematic Library")))
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\seniordesign_board.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "TRUE")
+    (RootChangedForceReNetlist "x")
+    (Netlist_TAB "0")
+    ("Create Allegro Netlist" "TRUE")
+    ("View Allegro Netlist Files" "FALSE")
+    ("Allegro Netlist Create DCF File" "FALSE")
+    ("Update Allegro Board" "FALSE")
+    ("Allegro Netlist Output Board File" ".\allegro\senior design v5.brd")
+    ("Allegro Netlist Remove Etch" "FALSE")
+    ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
+    ("Allegro Netlist Open Board in Allegro" "ALLEGRO")
+    ("Allegro Setup Backup Versions" "3")
+    ("Allegro Setup Ignore Constraints" "FALSE")
+    ("Allegro Setup Part Type Length" "255")
+    ("Allegro Netlist Combine Property String" "PCB Footprint")
+    ("Allegro Netlist Ignore Fixed Property" "FALSE")
+    ("Allegro Netlist User Defined Property" "FALSE")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File "L:\SENIOR DESIGN\SENIORDESIGN_BOARD.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File "L:\SENIOR DESIGN\SENIORDESIGN_BOARD.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "FALSE")
+    (DRC_Scope "0")
+    (DRC_Action "0")
+    (DRC_Create_Warnings "TRUE")
+    (DRC_View_Output "TRUE")
+    (DRC_View_Output_Type "2")
+    (DRC_Preserved_Waived "FALSE")
+    (RUN_Online_Rules "TRUE")
+    (DRC_Run_Electrical_Rules "TRUE")
+    (DRC_Check_Single_Node_Nets "TRUE")
+    (DRC_Check_No_Driving_Source "TRUE")
+    (DRC_Check_Duplicate_NetNames "TRUE")
+    (DRC_Check_Off-Page_Connectors "FALSE")
+    (DRC_Check_Ports "FALSE")
+    (DRC_Check_Unconnected_Nets "TRUE")
+    (DRC_Check_Floating_Pins "TRUE")
+    (DRC_SDT_Compatibility "FALSE")
+    (DRC_Check_Single_Node_Nets_Online "TRUE")
+    (DRC_Check_No_Driving_Source_Online "FALSE")
+    (DRC_Check_Duplicate_NetNames_Online "TRUE")
+    (DRC_Check_Off-Page_Connectors_Online "FALSE")
+    (DRC_Check_Ports_Online "FALSE")
+    (DRC_Check_Unconnected_Nets_Online "FALSE")
+    (DRC_Check_Floating_Pins_Online "FALSE")
+    (DRC_Run_Electrical_Reports "TRUE")
+    (DRC_Report_Netnames "FALSE")
+    (DRC_Report_Off-grid_Objects "FALSE")
+    (DRC_Report_Ports_and_Off-page_Connectors "FALSE")
+    (DRC_Check_for_Misleading_TAP "FALSE")
+    (DRC_Run_Physical_Rules "TRUE")
+    (DRC_Check_Physical_Power_Pins_Visibility "TRUE")
+    (DRC_Check_PCB_Footprint_Property "TRUE")
+    (DRC_Check_Normal_Convert_View_Sync "TRUE")
+    (DRC_Check_Incorrect_PinGroup_Assignment "TRUE")
+    (DRC_Check_High_Speed_Props_Syntax "TRUE")
+    (DRC_Check_Missing_Pin_Numbers "TRUE")
+    (DRC_Check_Device_With_No_Pins "TRUE")
+    (DRC_Check_Power_Ground_Short "TRUE")
+    (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
+    (DRC_Check_Physical_Power_Pins_Visibility_Online "FALSE")
+    (DRC_Check_PCB_Footprint_Property_Online "TRUE")
+    (DRC_Check_Normal_Convert_View_Sync_Online "FALSE")
+    (DRC_Check_Incorrect_PinGroup_Assignment_Online "TRUE")
+    (DRC_Check_Missing_Pin_Numbers_Online "TRUE")
+    (DRC_Check_Device_With_No_Pins_Online "FALSE")
+    (DRC_Check_Power_Ground_Short_Online "FALSE")
+    (DRC_Check_Name_Prop_For_HierBlocks_Online "FALSE")
+    (DRC_Run_Physical_Reports "TRUE")
+    (DRC_Visible_Power_pins "FALSE")
+    (DRC_Report_Unused_Part_Packages "TRUE")
+    (DRC_Type_Mismatch "TRUE")
+    (DRC_Identical_References "TRUE")
+    (DRC_Run_Simulation_Rules "TRUE")
+    (DRC_Check_Pspice_Model_Lib_Path_Online "FALSE")
+    (DRC_Run_Custom_Rules "FALSE")
+    (DRC_Report_File "L:\SENIOR DESIGN\SENIORDESIGN_BOARD.DRC")
+    ("Allegro Netlist Input Board File"
+       "l:\senior design\design 2\senior design\senior design\allegro\senior design v3.brd"))
+  (Folder "Layout"
+    (File ".\allegro\seniordesign_board.brd"
+      (Type "Board File")
+      (OutputBoard ".\allegro\seniordesign_board.brd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "0"))
+    (File ".\allegro\seniordesignboard.brd"
+      (Type "Board File")
+      (OutputBoard ".\allegro\seniordesignboard.brd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "0"))
+    (File ".\allegro\senior design v2.brd"
+      (Type "Board File")
+      (OutputBoard ".\allegro\senior design v2.brd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "0"))
+    (File ".\allegro\senior design v3.brd"
+      (Type "Board File")
+      (OutputBoard ".\allegro\senior design v3.brd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "0"))
+    (File ".\allegro\senior design v4.brd"
+      (Type "Board File")
+      (OutputBoard ".\allegro\senior design v4.brd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "0"))
+    (File ".\allegro\senior design v5.brd"
+      (Type "Board File")
+      (OutputBoard ".\allegro\senior design v5.brd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "1"))
+    (File ".\allegro\senior design v5drl.brd"
+      (Type "Board File")
+      (OutputBoard ".\allegro\senior design v5drl.brd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "0")))
+  (Folder "Outputs"
+    (File ".\seniordesign_board-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\allegro\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\allegro\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\allegro\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat"))
+    (File ".\seniordesign_board.bom"
+      (Type "Report"))
+    (File ".\seniordesign_board-pspicefiles\top view\top view.net"
+      (Type "Report"))
+    (File ".\seniordesign_board.drc"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs"
+    (File ".\allegro\netlist.log"
+      (Type "Log File")
+      (LogFile "l:\allegro\allegro\netlist.log"))
+    (File ".\allegro\netrev.lst"
+      (Type "Log File")
+      (LogFile "l:\allegro\allegro\netrev.lst"))
+    (File ".\allegro\eco.txt"
+      (Type "Log File")
+      (LogFile "l:\allegro\allegro\eco.txt"))
+    (File ".\allegro\genfeed.log"
+      (Type "Log File")
+      (LogFile "l:\allegro\allegro\genfeed.log")))
+  (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (SLF7045T-4R7M2R0-PF
+      (FullPartName "SLF7045T-4R7M2R0-PF.Normal")
+      (LibraryName
+         "L:\SENIOR DESIGN PROJECT PARTS\4.7 UH INDUCTOR\ORCADCAPTUREOLB.OLB")
+      (DeviceIndex "0"))
+    (CMS06TE12L,Q,M
+      (FullPartName "CMS06TE12L,Q,M.Normal")
+      (LibraryName
+         "L:\SENIOR DESIGN PROJECT PARTS\SCHOTTKY DIODE\ORCADCAPTUREOLB.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (FTSH-105-XX-X-DV
+      (FullPartName "FTSH-105-XX-X-DV.Normal")
+      (LibraryName
+         "L:\SENIOR DESIGN PROJECT PARTS\10 ROW JTAG HEADER\FTSH-105-XX-X-DV.OLB")
+      (DeviceIndex "0"))
+    (SB007-03Q-TL-E
+      (FullPartName "SB007-03Q-TL-E.Normal")
+      (LibraryName
+         "L:\SENIOR DESIGN PROJECT PARTS\SCHOTTKY DIODE\ORCADCAPTUREOLB.OLB")
+      (DeviceIndex "0"))
+    (TCAN1042HDRQ1
+      (FullPartName "TCAN1042HDRQ1.Normal")
+      (LibraryName
+         "L:\SENIOR DESIGN PROJECT PARTS\CANBUS MODULE\ORCADCAPTUREOLB.OLB")
+      (DeviceIndex "0"))
+    (INDUCTOR
+      (FullPartName "INDUCTOR.Normal")
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (SBH11-PBPC-D05-ST-BK
+      (FullPartName "SBH11-PBPC-D05-ST-BK.Normal")
+      (LibraryName
+         "L:\SENIOR DESIGN PROJECT PARTS\10 ROW JTAG HEADER\ORCADCAPTUREOLB.OLB")
+      (DeviceIndex "0"))
+    ("TEST POINT"
+      (FullPartName "TEST POINT.Normal")
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (B4B-XH-A
+      (FullPartName "B4B-XH-A.Normal")
+      (LibraryName
+         "L:\SENIOR DESIGN PROJECT PARTS\4 PIN HEADER\ORCADCAPTUREOLB.OLB")
+      (DeviceIndex "0"))
+    ("DIODE SCHOTTKY"
+      (FullPartName "DIODE SCHOTTKY.Normal")
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (SWR201-NRTN-S04-SA-WH
+      (FullPartName "SWR201-NRTN-S04-SA-WH.Normal")
+      (LibraryName
+         "L:\SENIOR DESIGN PROJECT PARTS\4 PIN HEADER\SWR201-NRTN-S04-SA-WH.OLB")
+      (DeviceIndex "0"))
+    (CON1
+      (FullPartName "CON1.Normal")
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (BQ21040DBVR
+      (FullPartName "BQ21040DBVR.Normal")
+      (LibraryName
+         "L:\PARTS\BQ21040DBVR\ORCADCAPTUREXML\2025-01-15_18-26-57.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (STMM-105-02-G-D-RA
+      (FullPartName "STMM-105-02-G-D-RA.Normal")
+      (LibraryName "L:\PARTS\10 ROW JTAG HEADER\STMM-105-02-G-D-RA.OLB")
+      (DeviceIndex "0"))
+    (STMM-105-02-G-D-06
+      (FullPartName "STMM-105-02-G-D-06.Normal")
+      (LibraryName "L:\PARTS\10 ROW JTAG\STMM-105-02-G-D-06.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-R
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (302-S201
+      (FullPartName "302-S201.Normal")
+      (LibraryName "L:\PARTS\JTAG HEADER\ORCADCAPTUREOLB\ORCADCAPTUREOLB.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "L:\Senior design project parts\4.7 UH inductor")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\seniordesign_board.dsn")
+      (Path "Design Resources" ".\seniordesign_board.dsn" "TOP VIEW")
+      (Path "Design Resources" ".\seniordesign_board.dsn" "CANBUS module")
+      (Path "Design Resources" ".\seniordesign_board.dsn" "MCU OUTPUTS")
+      (Path "Design Resources" ".\seniordesign_board.dsn" "Power Supply ")
+      (Path "Layout")
+      (Path "Outputs")
+      (Path "Logs")
+      (Select "Layout" ".\allegro\senior design v5.brd"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 755"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 773")
+        (Scroll "2407 2701")
+        (Zoom "816")
+        (Occurrence "/PowerSupply"))
+      (Path "L:\SENIOR DESIGN\DESIGN 4\ALLEGRO V5\SENIORDESIGN_BOARD.DSN")
+      (Schematic "Power Supply ")
+      (Page "Power Supply"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 0 0 5 1674 24 773")
+        (Scroll "-324 7")
+        (Zoom "102")
+        (Occurrence "/"))
+      (Path "L:\SENIOR DESIGN\DESIGN 4\ALLEGRO V5\SENIORDESIGN_BOARD.DSN")
+      (Schematic "TOP VIEW")
+      (Page "TOP VIEW"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 773")
+        (Scroll "-333 0")
+        (Zoom "100")
+        (Occurrence "/MCU OUPUTS"))
+      (Path "L:\SENIOR DESIGN\DESIGN 4\ALLEGRO V5\SENIORDESIGN_BOARD.DSN")
+      (Schematic "MCU OUTPUTS")
+      (Page "MCU outputs"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 773")
+        (Scroll "0 1645")
+        (Zoom "598")
+        (Occurrence "/CANBUS"))
+      (Path "L:\SENIOR DESIGN\DESIGN 4\ALLEGRO V5\SENIORDESIGN_BOARD.DSN")
+      (Schematic "CANBUS module")
+      (Page "CANBUS module")))
+  (MPSSessionName "jckrisel")
+  (ISPCBBASICLICENSE "false"))

@@ -1,0 +1,90 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : senior design v5.brd                          )
+(    Software Version : 22.1P001                                      )
+(    Date/Time        : Fri May  9 17:12:46 2025                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------------
+
+Ripup etch:                  No
+Ripup delete first segment:  No
+Ripup retain bondwire:       No
+Ripup symbols:               Always
+Missing symbol has error:    No
+DRC update:                  Yes
+Schematic directory:         '.'
+Design Directory:            'L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro'
+Old design name:             'L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd'
+New design name:             'L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd'
+
+CmdLine: netrev -y 1 -h -q netrev_constraint_report.xml L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/#Taaaaay03844.tmp
+
+------ Preparing to read pst files ------
+
+Starting to read ./pstchip.dat 
+   Finished reading ./pstchip.dat (00:00:00.09)
+Starting to read ./pstxprt.dat 
+   Finished reading ./pstxprt.dat (00:00:00.00)
+Starting to read ./pstxnet.dat 
+   Finished reading ./pstxnet.dat (00:00:00.01)
+
+------ Oversights/Warnings/Errors ------
+
+
+------ Library Paths ------
+MODULEPATH =  . 
+           c:/cadence/spb_22.1/share/local/pcb/modules 
+
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           c:/cadence/spb_22.1/share/local/pcb/symbols 
+           c:/cadence/spb_22.1/share/pcb/pcb_lib/symbols 
+           c:/cadence/spb_22.1/share/pcb/allegrolib/symbols 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           c:/cadence/spb_22.1/share/local/pcb/padstacks 
+           c:/cadence/spb_22.1/share/pcb/pcb_lib/symbols 
+           c:/cadence/spb_22.1/share/pcb/allegrolib/symbols 
+
+
+------ Summary Statistics ------
+
+
+netrev run on May 9 17:12:46 2025
+   DESIGN NAME : 'SENIORDESIGN_BOARD'
+   PACKAGING ON Oct  6 2022 20:42:06
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:01:50
+elapsed time  0:00:01
+

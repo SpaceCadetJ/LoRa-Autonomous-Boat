@@ -1,0 +1,47 @@
+A!FUNC_LOGICAL_PATH!COMP_DEVICE_TYPE!REFDES!FUNC_PRIM_FILE!COMP_PARENT_PPT!COMP_PARENT_PPT_PART!COMP_PARENT_PART_TYPE!FUNC_SCH_SIZE!FUNC_HAS_FIXED_SIZE!FUNC_DES!FUNC_GROUP!FUNC_ROOM!FUNC_CDS_FSP_UID!FUNC_NO_SWAP_PIN!FUNC_HARD_LOCATION!FUNC_NO_SWAP_GATE_EXT!FUNC_CDS_FSP_MAPPED_CELL!FUNC_CDS_FSP_FPGA_SYMBOL!FUNC_CDS_FSP_TERM_TYPE!FUNC_CDS_FSP_TERM_NAME!FUNC_ROOM!FUNC_GROUP!FUNC_CDS_FSP_TERM_INDEX!FUNC_CDS_FSP_INSTANCE_ID!FUNC_NO_SWAP_GATE!FUNC_NO_XNET_CONNECTION!FUNC_CDS_FSP_IS_FPGA!
+J!L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd!Fri May  9 17:12:30 2025!-5500.00!-4250.00!5500.00!4250.00!0.01!mils!SENIORDESIGN_BOARD!10.400000 mil!2!UP TO DATE!
+S!@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26357@analog.\c.normal\(chips)!C_CAP_0603_CL10A_1P6XP8_SAM-M_4!C10!.\chipsView.dat!!!!!!F34!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins27390@analog.\c.normal\(chips)!C_CAP_GJM1555C1H220JB01__MUR-L_!C23!.\chipsView.dat!!!!!!F29!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins26555@orcadcaptureolb.\b4b-xh-a.normal\(sch_1)!B4B-XH-A_CONN_B4B-XH-A_JST_CONN!CANHEADER!.\chipsView.dat!!!!!!F28!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26269@analog.\c.normal\(chips)!C_CAP_0603_CL10A_1P6XP8_SAM-M_1!CEXT!.\chipsView.dat!!!!!!F27!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins5671@orcadcaptureolb.\kts500b106m55n0t00.normal\(sch_1)!KTS500B106M55N0T00_CAP_NTS_55_2!CIN!.\chipsView.dat!!!!!!F26!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins20790@orcadcaptureolb.\cms06te12l,q,m.normal\(sch_1)!CMS06TE12L,Q,M_M-FLAT_TOS-L_DIO!D21!.\chipsView.dat!!!!!!F24!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins4209@orcadcaptureolb.\pptc051lfbn-rc.normal\(sch_1)!PPTC051LFBN-RC_CONN5_1LFBN-RC_S!GPSMODULE!.\chipsView.dat!!!!!!F22!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins4435@orcadcaptureolb.\pptc051lfbn-rc.normal\(sch_1)!PPTC051LFBN-RC_CONN5_1LFBN-RC_S!LORAMODULE!.\chipsView.dat!!!!!!F21!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins29321@\ftsh-105-xx-x-dv\.\ftsh-105-xx-x-dv.normal\(chips)!FTSH-105-XX-X-DV_SAMTEC_FTSH-10!JTAG!.\chipsView.dat!!!!!!F20!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins20873@orcadcaptureolb.\slf7045t-4r7m2r0-pf.normal\(sch_1)!SLF7045T-4R7M2R0-PF_IND_7045_TD!L1!.\chipsView.dat!!!!!!F19!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins27270@discrete.\inductor.normal\(chips)!INDUCTOR_IND_BLM15_0402_MUR-L_I!L3!.\chipsView.dat!!!!!!F18!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins27286@discrete.\inductor.normal\(chips)!INDUCTOR_IND_BLM15_0402_MUR-L_I!L4!.\chipsView.dat!!!!!!F17!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins4287@orcadcaptureolb.\pptc031lfbn-rc.normal\(sch_1)!PPTC031LFBN-RC_CONN_PPTC031_SUL!SPEEDCONTROLLER!.\chipsView.dat!!!!!!F10!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins4335@orcadcaptureolb.\pptc031lfbn-rc.normal\(sch_1)!PPTC031LFBN-RC_CONN_PPTC031_SUL!STEERINGSERVO!.\chipsView.dat!!!!!!F9!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins26644@connector.\test point.normal\(chips)!TEST POINT_AMV_TEST_POINT_TEST!TP1!.\chipsView.dat!!!!!!F8!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins26687@connector.\test point.normal\(chips)!TEST POINT_AMV_TEST_POINT_TEST!TP3!.\chipsView.dat!!!!!!F7!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins18329@connector.\test point.normal\(chips)!TEST POINT_AMV_TEST_POINT_TEST!TP4!.\chipsView.dat!!!!!!F6!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins18356@connector.\test point.normal\(chips)!TEST POINT_AMV_TEST_POINT_TEST!TP5!.\chipsView.dat!!!!!!F5!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26029@orcadcaptureolb.\stm32f446ret6tra.normal\(sch_1)!STM32F446RET6TR_LQFP64-10X10MM_!U3!.\chipsView.dat!!!!!!F4!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins1701@orcadcaptureolb.\stm32f446ret6trb.normal\(sch_1)!STM32F446RET6TR_LQFP64-10X10MM_!U3!.\chipsView.dat!!!!!!F3!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):canbus@seniordesign_board.\canbus module\(sch_1):ins13929@orcadcaptureolb.\tcan1042hdrq1.normal\(sch_1)!TCAN1042HDRQ1_D0008A_L_TCAN1042!U5!.\chipsView.dat!!!!!!F2!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins19524@seniordesign_board.\r1240n001b-tr-fe_3.normal\(sch_1)!R1240N001B-TR-FE_3_SOT-23-6W_PE!U6!.\chipsView.dat!!!!!!F1!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):canbus@seniordesign_board.\canbus module\(sch_1):ins4562@analog.\c.normal\(chips)!C_CAP_KGM21_KAV-L_.1UF!C1!.\chipsView.dat!!!!!!F44!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins4373@analog.\c.normal\(chips)!C_CAP_KGM21_KAV-L_.1UF!C2!.\chipsView.dat!!!!!!F43!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins27364@analog.\c.normal\(chips)!C_CAP_KGM21_KAV-L_.1UF!C22!.\chipsView.dat!!!!!!F42!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins4193@analog.\c.normal\(chips)!C_CAP_KGM21_KAV-L_.1UF!C3!.\chipsView.dat!!!!!!F41!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins4357@analog.\c.normal\(chips)!C_CAP_KGM21_KAV-L_.1UF!C4!.\chipsView.dat!!!!!!F40!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26373@analog.\c.normal\(chips)!C_CAP_KGM21_KAV-L_.1UF!C5!.\chipsView.dat!!!!!!F39!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26389@analog.\c.normal\(chips)!C_CAP_KGM21_KAV-L_.1UF!C6!.\chipsView.dat!!!!!!F38!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26405@analog.\c.normal\(chips)!C_CAP_KGM21_KAV-L_.1UF!C7!.\chipsView.dat!!!!!!F37!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26421@analog.\c.normal\(chips)!C_CAP_KGM21_KAV-L_.1UF!C8!.\chipsView.dat!!!!!!F36!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26437@analog.\c.normal\(chips)!C_CAP_KGM21_KAV-L_.1UF!C9!.\chipsView.dat!!!!!!F35!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins6123@analog.\c.normal\(chips)!C_CAP_CL10_SAM-M_.1UF!C12!.\chipsView.dat!!!!!!F33!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins6321@analog.\c.normal\(chips)!C_CAP_0603G_AVX-M_470PF!C14!.\chipsView.dat!!!!!!F32!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins27312@analog.\c.normal\(chips)!C_G-21_MUR-L_10UF!C20!.\chipsView.dat!!!!!!F31!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins27338@analog.\c.normal\(chips)!C_G-21_MUR-L_10UF!C21!.\chipsView.dat!!!!!!F30!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins6794@analog.\c.normal\(chips)!C_G-31_MUR-M_10UF!COUT!.\chipsView.dat!!!!!!F25!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins9253@connector.\con1.normal\(chips)!CON1_AMV_CON1_BATTERY-!GND!.\chipsView.dat!!!!!!F23!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins6295@analog.\r.normal\(chips)!R_RC0402N_PAN-M_15K!R1!.\chipsView.dat!!!!!!F16!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins6429@analog.\r.normal\(chips)!R_RC0603N_YAG-M_4.7K!R2!.\chipsView.dat!!!!!!F15!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins6097@analog.\r.normal\(chips)!R_RC0402N_YAG-M_51!R3!.\chipsView.dat!!!!!!F14!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins14850@analog.\r.normal\(chips)!R_RC0402N_PAN-M_5.1K!R4!.\chipsView.dat!!!!!!F13!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins13418@analog.\r.normal\(chips)!R_RES_R0805_ROM-M_30K!R5!.\chipsView.dat!!!!!!F12!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins13444@analog.\r.normal\(chips)!R_RES_1005_SAM-M_10K!R6!.\chipsView.dat!!!!!!F11!!!!!!!!!!!!!!!!!!
+S!@seniordesign_board.\top view\(sch_1):ins9187@connector.\con1.normal\(chips)!CON1_AMV_CON1_BATTERY+!VIN!.\chipsView.dat!!!!!!F0!!!!!!!!!!!!!!!!!!

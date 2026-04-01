@@ -1,0 +1,12 @@
+\t (00:00:01) padstack_editor 22.1 P001 Windows SPB 64-bit Edition
+\t (00:00:01)     Journal start - Fri May  9 15:39:45 2025
+\t (00:00:01)         Host=EECS-2023-50 User=jckrisel Pid=9244 CPUs=4
+\t (00:00:01) CmdLine= padstack_editor -mpssession jckrisel -file C:/Users/jckrisel/AppData/Local/Temp/#Taaaaag12336.tmp -pname EX60Y60D40P -data C:/Users/jckrisel/AppData/Local/Temp/#Taaaaaj12336.tmp
+\t (00:00:01) 
+\d (00:00:05) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:00:06) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:00:09) QtSignal GuidedTabsParent GuidedTabs currentChanged Drill
+\d (00:00:20) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\d (00:00:23) QtSignal GuidedTabsParent GuidedTabs currentChanged "Mask Layers"
+\d (00:00:25) QtSignal GuidedTabsParent GuidedTabs currentChanged "Design Layers"
+\t (00:00:30)     Journal end - Fri May  9 15:40:13 2025

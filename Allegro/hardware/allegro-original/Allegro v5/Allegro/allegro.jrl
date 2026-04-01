@@ -1,0 +1,73 @@
+\t (00:00:04) allegro 22.1 P001 Windows SPB 64-bit Edition
+\t (00:00:04)     Journal start - Fri May  9 17:40:43 2025
+\t (00:00:04)         Host=EECS-2023-42 User=jckrisel Pid=2192 CPUs=4
+\t (00:00:04) CmdLine= c:\cadence\spb_22.1\tools\bin\allegro.exe -mpssession jckrisel -proj L:\SENIOR DESIGN\DESIGN 4\ALLEGRO V5\SENIORDESIGN_BOARD.opj L:\SENIOR DESIGN\DESIGN 4\ALLEGRO V5\allegro\senior design v5.brd
+\t (00:00:04) 
+   (00:00:04) Loading axlcore.cxt 
+\t (00:00:07) Opening existing design...
+\i (00:00:07) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "senior design v5"
+\d (00:00:07) Design opened: L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd
+\i (00:00:07) trapsize 1668
+\i (00:00:07) trapsize 1713
+\i (00:00:07) trapsize 1726
+\i (00:00:08) trapsize 1668
+\i (00:00:08) trapsize 1717
+\t (00:00:08) > Sending response DoneOpenBoard
+\t (00:00:08) Loading NV GPU Plugin
+\i (00:00:08) trapsize 1763
+\i (00:00:08) trapsize 1776
+\i (00:00:08) trapsize 1717
+\i (00:00:10) generaledit 
+\i (00:00:17) QtSignal ColorVisibilityPane CVPViewDropdown CurrentIndexChanged "Film: SILK_TOP"
+\i (00:00:17) QtSignal ColorVisibilityPane CVPViewDropdown activated "Film: SILK_TOP"
+\i (00:00:20) QtSignal ColorVisibilityPane CVPViewDropdown CurrentIndexChanged "File: ALL"
+\i (00:00:20) color -globvis off 
+\i (00:00:20) color -vis 'BOARD GEOMETRY/DESIGN_OUTLINE' 
+\i (00:00:20) color -vis 'BOARD GEOMETRY/OUTLINE' 
+\i (00:00:20) color -vis 'DRC ERROR CLASS/TOP' 
+\i (00:00:20) color -vis 'DRC ERROR CLASS/BOTTOM' 
+\i (00:00:20) color -vis 'DRC ERROR CLASS/SOLDERMASK_BOTTOM' 
+\i (00:00:20) color -vis 'DRC ERROR CLASS/SOLDERMASK_TOP' 
+\i (00:00:20) color -vis ETCH/TOP 
+\i (00:00:20) color -vis ETCH/BOTTOM 
+\i (00:00:20) color -vis MANUFACTURING/AUTOSILK_TOP 
+\i (00:00:20) color -vis 'PACKAGE GEOMETRY/DFA_BOUND_TOP' 
+\i (00:00:20) color -vis 'PACKAGE GEOMETRY/SILKSCREEN_TOP' 
+\i (00:00:20) color -vis 'PACKAGE GEOMETRY/PLACE_BOUND_TOP' 
+\i (00:00:20) color -vis PIN/TOP 
+\i (00:00:20) color -vis PIN/BOTTOM 
+\i (00:00:20) color -vis PIN/SOLDERMASK_BOTTOM 
+\i (00:00:20) color -vis PIN/SOLDERMASK_TOP 
+\i (00:00:20) color -vis 'REF DES/ASSEMBLY_TOP' 
+\i (00:00:20) color -vis 'VIA CLASS/TOP' 
+\i (00:00:20) color -vis 'VIA CLASS/BOTTOM' 
+\i (00:00:20) color -vis 'VIA CLASS/SOLDERMASK_BOTTOM' 
+\i (00:00:20) color -vis 'VIA CLASS/SOLDERMASK_TOP' 
+\i (00:00:20) color -vis 'ANTI ETCH/TOP' 
+\i (00:00:20) color -vis 'ANTI ETCH/BOTTOM' 
+\i (00:00:20) color -vis BOUNDARY/TOP 
+\i (00:00:20) color -vis BOUNDARY/BOTTOM 
+\i (00:00:20) color -vis PLAN/TOP 
+\i (00:00:20) color -vis PLAN/BOTTOM 
+\i (00:00:20) color -vis CAVITY 
+\i (00:00:20) trapsize 1717
+\i (00:00:20) QtSignal ColorVisibilityPane CVPViewDropdown activated "File: ALL"
+\i (00:00:20) generaledit 
+\i (00:00:23) artwork 
+\i (00:00:24) setwindow form.film_control
+\i (00:00:24) FORM film_control select_all  
+\i (00:00:26) FORM film_control create  
+\i (00:00:27) fillin yes 
+\t (00:00:27) Checking db records
+\t (00:00:27)     checking for orphans...
+\t (00:00:27)     Checked 100 percent
+\t (00:00:27) Done dbdoctor.
+\t (00:00:27) Starting Create artwork films...
+\w (00:00:28) WARNING(SPMHGE-269): artwork had warnings, use Viewlog to review the log file.
+\w (00:00:29) Artwork generated with warnings.
+\i (00:01:57) setwindow pcb
+\i (00:01:57) exit 
+\e (00:01:57) Do you want to save the changes you made to senior design v5.brd?
+\i (00:02:01) fillin no 
+   (00:02:01) Loading signal.cxt 
+\t (00:02:01)     Journal end - Fri May  9 17:42:40 2025

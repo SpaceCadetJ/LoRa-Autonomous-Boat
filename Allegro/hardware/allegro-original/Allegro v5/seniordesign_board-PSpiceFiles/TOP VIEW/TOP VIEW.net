@@ -1,0 +1,28 @@
+* source SENIORDESIGN_BOARD
+R_PowerSupply_R4         N088060 PowerSupply_N055670  5.1K TC=0,0 
+C_PowerSupply_Cout         PowerSupply_N068040 3.3V  10uf  TC=0,0 
+R_PowerSupply_R3         PowerSupply_N061071 PowerSupply_N17942  51 TC=0,0 
+R_PowerSupply_R6         0 ADC  10K TC=0,0 
+C_PowerSupply_C14         3.3V PowerSupply_N17576  470pF  TC=0,0 
+C_PowerSupply_C12         PowerSupply_N18028 PowerSupply_N061071  .1uf  TC=0,0 
+R_PowerSupply_R2         PowerSupply_N17576 0  4.7K TC=0,0 
+R_PowerSupply_R1         3.3V PowerSupply_N17576  15K TC=0,0 
+R_PowerSupply_R5         N088060 ADC  30K TC=0,0 
+C_PowerSupply_Cout1         0 PowerSupply_N068040  10uf  TC=0,0 
+C_C3         0 3.3V  100n  TC=0,0 
+C_MCU         OUPUTS.C7 0 3.3V  100n  TC=0,0 
+C_MCU         OUPUTS.CEXT MCU OUPUTS_N262590 3.3V  4.7 uF  TC=0,0 
+C_MCU         OUPUTS.C6 0 3.3V  100n  TC=0,0 
+C_MCU         OUPUTS.C5 0 3.3V  100n  TC=0,0 
+C_MCU         OUPUTS.C10 0 3.3V  4.7uF  TC=0,0 
+R_MCU         OUPUTS.R7 MCU OUPUTS_N2605911 MCU OUPUTS_N262590  1 TC=0,0 
+C_MCU         OUPUTS.C9 0 3.3V  100n  TC=0,0 
+C_MCU         OUPUTS.C8 0 3.3V  100n  TC=0,0 
+C_C2         0 3.3V  100n  TC=0,0 
+C_C4         3.3V 0  100n  TC=0,0 
+L_L3         INDUCTOR 
+L_L4         INDUCTOR 
+C_C20         N27410 3.3V  10uF  TC=0,0 
+C_C21         0 N04429  10uF  TC=0,0 
+C_C22         0 N04429  .1uF  TC=0,0 
+C_C23         0 N04429  47pF  TC=0,0 

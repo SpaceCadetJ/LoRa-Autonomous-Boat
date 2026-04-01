@@ -1,0 +1,14 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    DBDOCTOR                                                         )
+(                                                                     )
+(    Drawing          : senior design v5.brd                          )
+(    Software Version : 22.1P001                                      )
+(    Date/Time        : Thu May  8 21:05:04 2025                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+WARNING Deleted redundant via at (-252.00 706.00) on net ADC.
+
+1 warnings, 0 errors detected, 0 errors could be fixed.

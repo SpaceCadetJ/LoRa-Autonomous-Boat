@@ -1,0 +1,30 @@
+G04 ================== begin FILE IDENTIFICATION RECORD ==================*
+G04 Layout Name:  L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd*
+G04 Film Name:    BOATCREWOUTLINE*
+G04 File Format:  Gerber RS274X*
+G04 File Origin:  Cadence Allegro 22.1-P001*
+G04 Origin Date:  Fri May  9 15:46:27 2025*
+G04 *
+G04 Layer:  BOARD GEOMETRY/OUTLINE*
+G04 Layer:  BOARD GEOMETRY/DESIGN_OUTLINE*
+G04 *
+G04 Offset:    (0.00 0.00)*
+G04 Mirror:    No*
+G04 Mode:      Positive*
+G04 Rotation:  0*
+G04 FullContactRelief:  No*
+G04 UndefLineWidth:     5.00*
+G04 ================== end FILE IDENTIFICATION RECORD ====================*
+%FSLAX25Y25*MOIN*%
+%IR0*IPPOS*OFA0.00000B0.00000*MIA0B0*SFA1.00000B1.00000*%
+%ADD10C,.005*%
+G75*
+%LPD*%
+G75*
+G54D10*
+G01X-150200Y150500D02*
+Y3600D01*
+X111800D01*
+Y150500D01*
+X-150200D01*
+M02*

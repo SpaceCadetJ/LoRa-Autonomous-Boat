@@ -1,0 +1,46 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Auto Silkscreen Log File                                         )
+(                                                                     )
+(    Drawing          : senior design v3.brd                          )
+(    Software Version : 22.1P001                                      )
+(    Date/Time        : Tue Apr 29 18:56:32 2025                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Generating Auto Silkscreen for the top of the board.
+
+Copying text elements.
+
+Element to Pad clearance is 0.00
+Max Text displacement is 100.00
+Min Line Length is 0.00
+Allowing 0 degree text rotation.
+Text Allowed Under Components.
+Subclass Selections:
+ Board Geometry       : Silkscreen
+ Component Value      : None
+ Device Type          : None
+ Package Geometry     : Silkscreen
+ Reference Designator : Silkscreen
+ Tolerance            : None
+ User Part Number     : None
+
+Text string 'CEXT' is not at a suitable location
+(location: 862.00, 50.00)
+Text string 'C22' is not at a suitable location
+(location: 826.00, -662.00)
+Text string 'COUT' is not at a suitable location
+(location: -569.00, 451.00)
+Text string 'C14' is not at a suitable location
+(location: -669.00, 452.00)
+Text string 'GPSMODULE' is not at a suitable location
+(location: 86.00, -780.00)
+Text string 'LORAMODULE' is not at a suitable location
+(location: 820.00, -1105.00)
+
+Total Failures: 6
+
+Log End
+

@@ -1,0 +1,51 @@
+# ============================================================
+# LoRa Autonomous Boat Controller - .gitignore
+# ============================================================
+
+# === STM32CubeIDE / GCC ARM Build Artifacts ===
+firmware/Debug/
+firmware/Release/
+firmware/.settings/
+firmware/*.launch
+firmware/.cproject
+firmware/.project
+firmware/.mxproject
+*.o
+*.d
+*.su
+*.elf
+*.map
+*.bin
+*.hex
+*.list
+*.cyclo
+
+# === KiCad ===
+hardware/kicad/*.kicad_pcb-bak
+hardware/kicad/*.kicad_sch-bak
+hardware/kicad/*.kicad_prl
+hardware/kicad/*-backups/
+hardware/kicad/_autosave-*
+hardware/kicad/fp-info-cache
+hardware/kicad/gerber/
+hardware/kicad/design_data.json
+hardware/kicad/generate_kicad.py
+hardware/kicad/*.dsn
+
+# === Allegro / OrCAD ===
+hardware/allegro-original/**/*.log
+hardware/allegro-original/**/*.log,*
+hardware/allegro-original/**/*.jrl
+hardware/allegro-original/**/*.jrl,*
+hardware/allegro-original/**/GPUCache/
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# === IDE ===
+.vscode/
+.idea/
