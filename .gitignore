@@ -20,24 +20,21 @@ firmware/.mxproject
 *.list
 *.cyclo
 
-# === KiCad ===
-hardware/kicad/*.kicad_pcb-bak
-hardware/kicad/*.kicad_sch-bak
-hardware/kicad/*.kicad_prl
-hardware/kicad/*-backups/
-hardware/kicad/_autosave-*
-hardware/kicad/fp-info-cache
-hardware/kicad/gerber/
-hardware/kicad/design_data.json
-hardware/kicad/generate_kicad.py
-hardware/kicad/*.dsn
+# === KiCad (all projects under hardware/) ===
+hardware/**/*.kicad_pcb-bak
+hardware/**/*.kicad_sch-bak
+hardware/**/*.kicad_prl
+hardware/**/*-backups/
+hardware/**/_autosave-*
+hardware/**/fp-info-cache
+hardware/**/*.lck
+*.lck
+_backup_*/
+hardware/**/_build/
 
-# === Allegro / OrCAD ===
-hardware/allegro-original/**/*.log
-hardware/allegro-original/**/*.log,*
-hardware/allegro-original/**/*.jrl
-hardware/allegro-original/**/*.jrl,*
-hardware/allegro-original/**/GPUCache/
+# === Claude Code local settings (never commit) ===
+.claude/
+**/.claude/
 
 # === OS ===
 .DS_Store
@@ -49,3 +46,7 @@ desktop.ini
 # === IDE ===
 .vscode/
 .idea/
+
+# === Python ===
+__pycache__/
+*.pyc

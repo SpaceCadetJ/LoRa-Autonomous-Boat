@@ -1,0 +1,664 @@
+{
+  "placements": [
+    {
+      "footprint": "D0008A_L_U5",
+      "ref": "U5",
+      "x": -58.0,
+      "y": 874.0,
+      "side": "front",
+      "rotation": 180,
+      "value": "TCAN1042H-Q1D",
+      "height": 150.0
+    },
+    {
+      "footprint": "'LQFP64-10X10MM_U3'",
+      "ref": "U3",
+      "x": 749.0,
+      "y": 443.0,
+      "side": "front",
+      "rotation": 90,
+      "value": "STM32F4XXR2",
+      "height": 63.0
+    },
+    {
+      "footprint": "'SOT-323-3_2X1P25_ONS-L_U1'",
+      "ref": "U1",
+      "x": -846.0,
+      "y": 119.0,
+      "side": "front",
+      "rotation": 90,
+      "value": "SB007-03Q-TL-E",
+      "height": 43.0
+    },
+    {
+      "footprint": "AMV_TEST_POINT_TP5",
+      "ref": "TP5",
+      "x": -767.0,
+      "y": 1383.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "TEST POINT",
+      "height": 150.0
+    },
+    {
+      "footprint": "AMV_TEST_POINT_TP4",
+      "ref": "TP4",
+      "x": -557.0,
+      "y": 1375.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "TEST POINT",
+      "height": 150.0
+    },
+    {
+      "footprint": "AMV_TEST_POINT_TP3",
+      "ref": "TP3",
+      "x": 765.0,
+      "y": 1033.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "TEST POINT",
+      "height": 150.0
+    },
+    {
+      "footprint": "AMV_TEST_POINT_TP1",
+      "ref": "TP1",
+      "x": 1120.0,
+      "y": 1048.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "TEST POINT",
+      "height": 150.0
+    },
+    {
+      "footprint": "'CAP_0603_CL10A_1P6XP8_SAM-M_CEXT'",
+      "ref": "CEXT",
+      "x": 837.0,
+      "y": 50.0,
+      "side": "front",
+      "rotation": 90,
+      "value": "4.7 uF",
+      "height": 35.0
+    },
+    {
+      "footprint": "'CAP_0603_CL10A_1P6XP8_SAM-M_C10'",
+      "ref": "C10",
+      "x": -319.0,
+      "y": 470.0,
+      "side": "front",
+      "rotation": 90,
+      "value": "4.7uF",
+      "height": 35.0
+    },
+    {
+      "footprint": "'RES_1005_SAM-M_R6'",
+      "ref": "R6",
+      "x": -958.0,
+      "y": 113.0,
+      "side": "front",
+      "rotation": 270,
+      "value": "10K",
+      "height": 15.75
+    },
+    {
+      "footprint": "'IND_BLM15_0402_MUR-L_L4'",
+      "ref": "L4",
+      "x": 954.0,
+      "y": -570.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "INDUCTOR",
+      "height": 22.0
+    },
+    {
+      "footprint": "'IND_BLM15_0402_MUR-L_L3'",
+      "ref": "L3",
+      "x": 954.0,
+      "y": -518.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "INDUCTOR",
+      "height": 22.0
+    },
+    {
+      "footprint": "'G-21_MUR-L_C20'",
+      "ref": "C20",
+      "x": 1041.0,
+      "y": -544.0,
+      "side": "front",
+      "rotation": 90,
+      "value": "10uF",
+      "height": 57.0
+    },
+    {
+      "footprint": "'G-21_MUR-L_C21'",
+      "ref": "C21",
+      "x": 820.0,
+      "y": -560.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "10uF",
+      "height": 57.0
+    },
+    {
+      "footprint": "'CAPC17595_95N_KEM-L_C22'",
+      "ref": "C22",
+      "x": 826.0,
+      "y": -637.0,
+      "side": "front",
+      "rotation": 0,
+      "value": ".1uF",
+      "height": 37.4
+    },
+    {
+      "footprint": "'CAP_GJM1555C1H220JB01__MUR-L_C23'",
+      "ref": "C23",
+      "x": 833.0,
+      "y": -692.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "47pF",
+      "height": 22.0
+    },
+    {
+      "footprint": "'CAP_CL05_SAM-M_C1'",
+      "ref": "C1",
+      "x": 140.0,
+      "y": 898.0,
+      "side": "front",
+      "rotation": 180,
+      "value": "100n",
+      "height": 21.65
+    },
+    {
+      "footprint": "'CAP_CL05_SAM-M_C9'",
+      "ref": "C9",
+      "x": 613.0,
+      "y": 795.0,
+      "side": "front",
+      "rotation": 270,
+      "value": "100n",
+      "height": 21.65
+    },
+    {
+      "footprint": "'CAP_CL05_SAM-M_C5'",
+      "ref": "C5",
+      "x": 981.0,
+      "y": 63.0,
+      "side": "front",
+      "rotation": 90,
+      "value": "100n",
+      "height": 21.65
+    },
+    {
+      "footprint": "'CAP_CL05_SAM-M_C6'",
+      "ref": "C6",
+      "x": 396.0,
+      "y": 351.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "100n",
+      "height": 21.65
+    },
+    {
+      "footprint": "'CAP_CL05_SAM-M_C7'",
+      "ref": "C7",
+      "x": 678.0,
+      "y": 55.0,
+      "side": "front",
+      "rotation": 90,
+      "value": "100n",
+      "height": 21.65
+    },
+    {
+      "footprint": "'CAP_CL05_SAM-M_C8'",
+      "ref": "C8",
+      "x": 1146.0,
+      "y": 606.0,
+      "side": "front",
+      "rotation": 180,
+      "value": "100n",
+      "height": 21.65
+    },
+    {
+      "footprint": "'CAP_CL05_SAM-M_C3'",
+      "ref": "C3",
+      "x": 112.0,
+      "y": -311.0,
+      "side": "front",
+      "rotation": 270,
+      "value": "100n",
+      "height": 21.65
+    },
+    {
+      "footprint": "'CAP_CL05_SAM-M_C2'",
+      "ref": "C2",
+      "x": 613.0,
+      "y": 1079.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "100n",
+      "height": 21.65
+    },
+    {
+      "footprint": "'CAP_CL05_SAM-M_C4'",
+      "ref": "C4",
+      "x": 1266.0,
+      "y": 1095.0,
+      "side": "front",
+      "rotation": 180,
+      "value": "100n",
+      "height": 21.65
+    },
+    {
+      "footprint": "'RES_R0805_ROM-M_R5'",
+      "ref": "R5",
+      "x": -1063.0,
+      "y": 123.0,
+      "side": "front",
+      "rotation": 270,
+      "value": "30K",
+      "height": 26.0
+    },
+    {
+      "footprint": "'G-31_MUR-M_COUT1'",
+      "ref": "COUT1",
+      "x": -427.0,
+      "y": 449.0,
+      "side": "front",
+      "rotation": 90,
+      "value": "10uf",
+      "height": 79.0
+    },
+    {
+      "footprint": "'G-31_MUR-M_COUT'",
+      "ref": "COUT",
+      "x": -544.0,
+      "y": 451.0,
+      "side": "front",
+      "rotation": 270,
+      "value": "10uf",
+      "height": 79.0
+    },
+    {
+      "footprint": "IND_1608_TDK_L1",
+      "ref": "L1",
+      "x": -567.0,
+      "y": 249.0,
+      "side": "front",
+      "rotation": 90,
+      "value": "4.7uH",
+      "height": 31.5
+    },
+    {
+      "footprint": "'CAP_CL10_SAM-M_C12'",
+      "ref": "C12",
+      "x": -641.0,
+      "y": 252.0,
+      "side": "front",
+      "rotation": 90,
+      "value": ".1uf",
+      "height": 35.43
+    },
+    {
+      "footprint": "'RC0402N_YAG-M_R3'",
+      "ref": "R3",
+      "x": -725.0,
+      "y": 261.0,
+      "side": "front",
+      "rotation": 270,
+      "value": "51",
+      "height": 28.0
+    },
+    {
+      "footprint": "'CAP_0603G_AVX-M_C14'",
+      "ref": "C14",
+      "x": -644.0,
+      "y": 452.0,
+      "side": "front",
+      "rotation": 270,
+      "value": "470pF",
+      "height": 35.0
+    },
+    {
+      "footprint": "'RC0603N_YAG-M_R2'",
+      "ref": "R2",
+      "x": -808.0,
+      "y": 450.0,
+      "side": "front",
+      "rotation": 90,
+      "value": "4.7K",
+      "height": 28.0
+    },
+    {
+      "footprint": "'RC0402N_PAN-M_R1'",
+      "ref": "R1",
+      "x": -726.0,
+      "y": 440.0,
+      "side": "front",
+      "rotation": 270,
+      "value": "15K",
+      "height": 28.0
+    },
+    {
+      "footprint": "'RC0402N_PAN-M_R4'",
+      "ref": "R4",
+      "x": -1040.0,
+      "y": 380.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "5.1K",
+      "height": 28.0
+    },
+    {
+      "footprint": "'SOT-23-6W_PE-SOT23-6W-0512_NMD_U6'",
+      "ref": "U6",
+      "x": -868.0,
+      "y": 271.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "R1240N001x",
+      "height": 51.0
+    },
+    {
+      "footprint": "CAP_NTS_55_2P8T_NIP_CIN",
+      "ref": "CIN",
+      "x": -1235.0,
+      "y": 279.0,
+      "side": "front",
+      "rotation": 90,
+      "value": "10uF",
+      "height": 110.0
+    },
+    {
+      "footprint": "AMV_CON1_GND",
+      "ref": "GND",
+      "x": -1442.0,
+      "y": 92.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "Battery-",
+      "height": 150.0
+    },
+    {
+      "footprint": "AMV_CON1_VIN",
+      "ref": "VIN",
+      "x": -1440.0,
+      "y": 379.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "Battery+",
+      "height": 150.0
+    },
+    {
+      "footprint": "'CONN_B4B-XH-A_JST_CANHEADER'",
+      "ref": "CANHEADER",
+      "x": 100.0,
+      "y": 1217.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "CONN_B4B-XH-A",
+      "height": 276.0
+    },
+    {
+      "footprint": "CONN_PPTC031_SUL_STEERINGSERVO",
+      "ref": "STEERINGSERVO",
+      "x": 708.0,
+      "y": 1308.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "CONN_PPTC031",
+      "height": 335.0
+    },
+    {
+      "footprint": "CONN_PPTC031_SUL_SPEEDCONTROLLER",
+      "ref": "SPEEDCONTROLLER",
+      "x": 1292.0,
+      "y": 1308.0,
+      "side": "front",
+      "rotation": 0,
+      "value": "CONN_PPTC031",
+      "height": 335.0
+    },
+    {
+      "footprint": "'CONN_SBH11-PBPC-D05-ST-BK_SUL_JTAG'",
+      "ref": "JTAG",
+      "x": -1239.0,
+      "y": 754.0,
+      "side": "front",
+      "rotation": 90,
+      "value": "CONN_010P_000C_1",
+      "height": 358.0
+    },
+    {
+      "footprint": "'CONN5_1LFBN-RC_SUL_GPSMODULE'",
+      "ref": "GPSMODULE",
+      "x": 111.0,
+      "y": -580.0,
+      "side": "front",
+      "rotation": 270,
+      "value": "CONN5_1LFBN-RC",
+      "height": 335.0
+    },
+    {
+      "footprint": "'CONN5_1LFBN-RC_SUL_LORAMODULE'",
+      "ref": "LORAMODULE",
+      "x": 845.0,
+      "y": -905.0,
+      "side": "front",
+      "rotation": 270,
+      "value": "CONN5_1LFBN-RC",
+      "height": 335.0
+    }
+  ],
+  "nets": {
+    "N27791": [
+      "CEXT-1",
+      "U3-30"
+    ],
+    "N068040": [
+      "COUT-1",
+      "COUT1-2"
+    ],
+    "N061071": [
+      "R3-1",
+      "C12-2"
+    ],
+    "N18028": [
+      "U6-3",
+      "U1-3",
+      "C12-1",
+      "L1-1"
+    ],
+    "N17942": [
+      "U6-4",
+      "R3-2"
+    ],
+    "N055670": [
+      "R4-2",
+      "U6-1"
+    ],
+    "N17576": [
+      "C14-2",
+      "R1-2",
+      "U6-6",
+      "R2-1"
+    ],
+    "VBAT": [
+      "U3-1"
+    ],
+    "RESET": [
+      "U3-7",
+      "JTAG-2"
+    ],
+    "PA15": [
+      "U3-50",
+      "JTAG-4"
+    ],
+    "ADC": [
+      "U3-16",
+      "TP2-1",
+      "R5-2",
+      "R6-2"
+    ],
+    "PB3": [
+      "U3-55",
+      "JTAG-6"
+    ],
+    "PA14": [
+      "U3-49"
+    ],
+    "PA13": [
+      "U3-46",
+      "JTAG-10"
+    ],
+    "N24886": [
+      "C1-2",
+      "U5-3",
+      "CANHEADER-2"
+    ],
+    "N24691": [
+      "U5-7",
+      "CANHEADER-3"
+    ],
+    "N24517": [
+      "LORAMODULE-4",
+      "U3-17"
+    ],
+    "GND": [
+      "CIN-1"
+    ],
+    "3.3V": [
+      "U3-48",
+      "L3-2",
+      "U3-19",
+      "C6-2",
+      "U3-64",
+      "U3-32",
+      "U3-13",
+      "TP4-1",
+      "SPEEDCONTROLLER-1",
+      "STEERINGSERVO-1",
+      "C4-1",
+      "C2-2",
+      "C9-2",
+      "JTAG-9",
+      "COUT-2",
+      "C3-2",
+      "JTAG-5",
+      "JTAG-3",
+      "GPSMODULE-1",
+      "C8-2",
+      "CEXT-2",
+      "C20-2",
+      "C7-2",
+      "C5-2",
+      "L1-2",
+      "C14-1",
+      "R1-1",
+      "C10-2"
+    ],
+    "N04395": [
+      "U3-37",
+      "TP3-1",
+      "STEERINGSERVO-2"
+    ],
+    "N088060": [
+      "U6-2",
+      "R5-1",
+      "R4-1",
+      "VIN-1",
+      "CIN-2"
+    ],
+    "N04355": [
+      "SPEEDCONTROLLER-2",
+      "TP1-1",
+      "U3-41"
+    ],
+    "N04285": [
+      "U3-51",
+      "GPSMODULE-5"
+    ],
+    "N04281": [
+      "U3-52",
+      "GPSMODULE-4"
+    ],
+    "0": [
+      "C6-1",
+      "U3-12",
+      "U3-63",
+      "U3-47",
+      "C7-1",
+      "U3-18",
+      "C5-1",
+      "C4-2",
+      "U3-31",
+      "R2-2",
+      "U6-5",
+      "U1-1",
+      "C2-1",
+      "C8-1",
+      "L4-1",
+      "C23-1",
+      "C3-1",
+      "R6-1",
+      "C9-1",
+      "C10-1",
+      "COUT1-1",
+      "SPEEDCONTROLLER-3",
+      "STEERINGSERVO-3",
+      "CANHEADER-1",
+      "GND-1",
+      "JTAG-1",
+      "TP5-1",
+      "LORAMODULE-5",
+      "GPSMODULE-2",
+      "C22-1",
+      "C21-1",
+      "C1-1",
+      "U5-2"
+    ],
+    "N04477": [
+      "U3-14",
+      "LORAMODULE-2"
+    ],
+    "N04755": [
+      "U5-8",
+      "U3-44"
+    ],
+    "N04855": [
+      "U5-6",
+      "CANHEADER-4"
+    ],
+    "N04763": [
+      "U3-45",
+      "U5-1"
+    ],
+    "N04759": [
+      "U5-4",
+      "U3-43"
+    ],
+    "N04277": [
+      "U3-26",
+      "GPSMODULE-3"
+    ],
+    "N04429": [
+      "LORAMODULE-1",
+      "C23-2",
+      "C22-2",
+      "L3-1",
+      "C21-2"
+    ],
+    "N04485": [
+      "U3-15",
+      "LORAMODULE-3"
+    ],
+    "N27410": [
+      "L4-2",
+      "C20-1"
+    ],
+    "PA14TCLK": [
+      "JTAG-8"
+    ]
+  }
+}
