@@ -1,0 +1,543 @@
+[
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "639e08f"
+    ],
+    "exit_code": 0,
+    "stdout": "639e08fe56c38d54becf086f4fd86ec20ecfcb90\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "ls-tree",
+      "-r",
+      "--name-only",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90",
+      "hardware/kicad"
+    ],
+    "exit_code": 0,
+    "stdout": "hardware/kicad/CAN_Bus.kicad_sch\nhardware/kicad/DIRECTIVES.md\nhardware/kicad/Debug.kicad_sch\nhardware/kicad/GPS_Module.kicad_sch\nhardware/kicad/LoRa_Boat_Controller.kicad_dru\nhardware/kicad/LoRa_Boat_Controller.kicad_pcb\nhardware/kicad/LoRa_Boat_Controller.kicad_pro\nhardware/kicad/LoRa_Boat_Controller.kicad_sch\nhardware/kicad/LoRa_Boat_Controller.kicad_sym\nhardware/kicad/LoRa_Boat_Controller.pretty/CAP_0603G_AVX-M.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/CAP_0603_CL10A_1P6XP8_SAM-M.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/CAP_CL10_SAM-M.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/CAP_GJM1555C1H220JB01__MUR-L.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/CAP_KGM21_KAV-L.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/CAP_NTS_55_2P8T_NIP.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/CONN_B4B-XH-A_JST.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/CONN_PPTC031_SUL.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/D0008A_L.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/G-21_MUR-L.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/G-31_MUR-M.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/IND_7045_TDK.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/IND_BLM15_0402_MUR-L.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/LQFP64-10x10mm.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/RC0402N_PAN-M.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/RC0402N_YAG-M.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/RC0603N_YAG-M.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/RES_1005_SAM-M.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/RES_R0805_ROM-M.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/SAMTEC_FTSH-105-XX-X-DV.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/amv_con1.kicad_mod\nhardware/kicad/LoRa_Boat_Controller.pretty/amv_test_point.kicad_mod\nhardware/kicad/LoRa_Module.kicad_sch\nhardware/kicad/MCU.kicad_sch\nhardware/kicad/PWM_Outputs.kicad_sch\nhardware/kicad/PowerSupply.kicad_sch\nhardware/kicad/SESSION_HANDOFF.md\nhardware/kicad/STATUS.md\nhardware/kicad/fp-lib-table\nhardware/kicad/generate_kicad.py\nhardware/kicad/sym-lib-table\nhardware/kicad/tools/a0_xor_dsn.py\nhardware/kicad/tools/allegro_data.py\nhardware/kicad/tools/build_v1.py\nhardware/kicad/tools/check_netlist.py\nhardware/kicad/tools/gen_bom.py\nhardware/kicad/tools/gen_footprints.py\nhardware/kicad/tools/gen_pcb.py\nhardware/kicad/tools/gen_sch.py\nhardware/kicad/tools/gen_symbols.py\nhardware/kicad/tools/kicad_sym.py\nhardware/kicad/tools/kicad_write.py\nhardware/kicad/tools/legacy/design_data.json\nhardware/kicad/tools/provenance.py\nhardware/kicad/tools/raster.py\nhardware/kicad/tools/sexpr_check.py\nhardware/kicad/tools/v1_design.py\nhardware/kicad/tools/v5_reconstruct.py\nhardware/kicad/tools/validate_pcb.py\nhardware/kicad/tools/xor_compare.py\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/CAN_Bus.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/CAN_Bus.kicad_sch]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/Debug.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/Debug.kicad_sch]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/GPS_Module.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/GPS_Module.kicad_sch]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.kicad_dru"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.kicad_dru]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.kicad_pcb"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.kicad_pcb]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.kicad_pro"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.kicad_pro]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.kicad_sch]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.kicad_sym"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.kicad_sym]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/CAP_0603G_AVX-M.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/CAP_0603G_AVX-M.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/CAP_0603_CL10A_1P6XP8_SAM-M.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/CAP_0603_CL10A_1P6XP8_SAM-M.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/CAP_CL10_SAM-M.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/CAP_CL10_SAM-M.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/CAP_GJM1555C1H220JB01__MUR-L.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/CAP_GJM1555C1H220JB01__MUR-L.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/CAP_KGM21_KAV-L.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/CAP_KGM21_KAV-L.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/CAP_NTS_55_2P8T_NIP.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/CAP_NTS_55_2P8T_NIP.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/CONN_B4B-XH-A_JST.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/CONN_B4B-XH-A_JST.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/CONN_PPTC031_SUL.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/CONN_PPTC031_SUL.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/D0008A_L.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/D0008A_L.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/G-21_MUR-L.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/G-21_MUR-L.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/G-31_MUR-M.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/G-31_MUR-M.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/IND_7045_TDK.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/IND_7045_TDK.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/IND_BLM15_0402_MUR-L.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/IND_BLM15_0402_MUR-L.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/LQFP64-10x10mm.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/LQFP64-10x10mm.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/RC0402N_PAN-M.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/RC0402N_PAN-M.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/RC0402N_YAG-M.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/RC0402N_YAG-M.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/RC0603N_YAG-M.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/RC0603N_YAG-M.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/RES_1005_SAM-M.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/RES_1005_SAM-M.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/RES_R0805_ROM-M.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/RES_R0805_ROM-M.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/SAMTEC_FTSH-105-XX-X-DV.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/SAMTEC_FTSH-105-XX-X-DV.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/amv_con1.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/amv_con1.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Boat_Controller.pretty/amv_test_point.kicad_mod"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Boat_Controller.pretty/amv_test_point.kicad_mod]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/LoRa_Module.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/LoRa_Module.kicad_sch]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/MCU.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/MCU.kicad_sch]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/PWM_Outputs.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/PWM_Outputs.kicad_sch]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/PowerSupply.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/PowerSupply.kicad_sch]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/fp-lib-table"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/fp-lib-table]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:hardware/kicad/sym-lib-table"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: hardware/kicad/sym-lib-table]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxprt.dat"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxprt.dat]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWDRILL-1-2.drl"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWDRILL-1-2.drl]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:Allegro/hardware/allegro-original/Allegro v5/Allegro/senior design v4-1-2.drl"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: Allegro/hardware/allegro-original/Allegro v5/Allegro/senior design v4-1-2.drl]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWTOPL.art"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWTOPL.art]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWBOTL.art"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWBOTL.art]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "639e08fe56c38d54becf086f4fd86ec20ecfcb90:Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWOUTLINE.art"
+    ],
+    "exit_code": 0,
+    "stdout": "[blob captured in snapshot: Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWOUTLINE.art]",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+      "version"
+    ],
+    "exit_code": 0,
+    "stdout": "9.0.7\r\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "--output",
+      "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\s2\\netlist.xml",
+      "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\s2\\snapshot\\hardware\\kicad\\LoRa_Boat_Controller.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+      "sch",
+      "erc",
+      "--severity-all",
+      "--format",
+      "json",
+      "--output",
+      "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\s2\\erc.json",
+      "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\s2\\snapshot\\hardware\\kicad\\LoRa_Boat_Controller.kicad_sch"
+    ],
+    "exit_code": 0,
+    "stdout": "Found 0 violations\r\nSaved ERC Report to C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\s2\\erc.json\r\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+      "pcb",
+      "drc",
+      "--severity-all",
+      "--schematic-parity",
+      "--format",
+      "json",
+      "--output",
+      "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\s2\\drc.json",
+      "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\s2\\snapshot\\hardware\\kicad\\LoRa_Boat_Controller.kicad_pcb"
+    ],
+    "exit_code": 0,
+    "stdout": "Found 67 violations\r\nFound 0 unconnected items\r\nFound 139 schematic parity issues\r\nSaved DRC Report to C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\s2\\drc.json\r\n",
+    "stderr": ""
+  }
+]

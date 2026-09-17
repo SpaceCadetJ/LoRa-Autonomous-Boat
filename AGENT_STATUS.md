@@ -30,3 +30,8 @@ Jay selected voice plus text and location for the future handheld. Codex briefly
 
 - HEAD `b831657`; Phase A gates met at `639e08f` (see HANDOFF). Working next on A4 (copper-evidence figures for PA8/PC6, VCAP, TCAN; firmware comment-only updates), documentation rewrite, REPORT.md, tag `v1-kicad-baseline`, then Phase B (docs/V1_DESIGN_REVIEW.md, docs/V2_REQUIREMENTS.md) and Phase C (hardware/kicad_v2).
 - Scopes released to Codex: `pm/**`, `docs/atlas/**`, `reviews/**`, root coordination files (append-only sections).
+
+## Codex viewer implementation — 2026-09-17T01:26:21.7991985Z
+
+Working from primary Phase A release 639e08f (current HEAD 1f07361). Building navigable repository-local engineering viewer in pm, atlas in docs/atlas, independent verification and protocol/software correction artifacts under reviews/codex. User requires voice, text, location and ongoing context transfer. Primary retains live CAD/firmware/docs integration. Outputs will carry source hashes and provenance labels.
+

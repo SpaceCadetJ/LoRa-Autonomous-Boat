@@ -1,0 +1,116 @@
+(footprint "CONN_PPTC031_SUL"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Allegro footprint CONN_PPTC031_SUL as fabricated on senior design v5.brd")
+	(tags "allegro CONN_PPTC031_SUL")
+	(property "Reference" "REF**"
+		(at 0 -1.8796 0)
+		(layer "F.Fab")
+		(uuid "07166045-27fb-5095-89fc-da89083c587c")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "CONN_PPTC031_SUL"
+		(at 0 1.8796 0)
+		(layer "F.Fab")
+		(uuid "a9c12e63-9320-5420-890a-c59dafe1bb65")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8477c115-9ade-5dab-8d4b-d8cd9308ad5d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4934ef8e-d0d0-5ed0-92ec-74d01f0cf675")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -5.9436 -0.8636)
+		(end 0.8636 0.8636)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "ead0a16f-0f78-505f-8f41-005be1ab3e6a")
+	)
+	(fp_rect
+		(start -5.9436 -0.8636)
+		(end 0.8636 0.8636)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "ac066580-e7d9-5fc6-a55f-e3f85c57ef3c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "ed05e616-6a16-5c86-804d-66879d1a29e1")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "3" thru_hole circle
+		(at -5.08 0)
+		(size 1.7272 1.7272)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0)
+		(uuid "3cf9d002-af20-5ff2-884a-bd5ff902fd38")
+	)
+	(pad "2" thru_hole circle
+		(at -2.54 0)
+		(size 1.7272 1.7272)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0)
+		(uuid "69f6bd75-3e73-53d8-9d7b-fafbaabfa2c5")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.7272 1.7272)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0)
+		(uuid "2be0791d-739a-5bb7-952d-019b60288ecf")
+	)
+	(embedded_fonts no)
+)

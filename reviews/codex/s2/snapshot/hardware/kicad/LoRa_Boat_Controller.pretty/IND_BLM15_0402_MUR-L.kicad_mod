@@ -1,0 +1,103 @@
+(footprint "IND_BLM15_0402_MUR-L"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Allegro footprint IND_BLM15_0402_MUR-L as fabricated on senior design v5.brd")
+	(tags "allegro IND_BLM15_0402_MUR-L")
+	(property "Reference" "REF**"
+		(at 0 -1.27 0)
+		(layer "F.Fab")
+		(uuid "1e5e12be-d938-5bc7-916a-53d336dd4319")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "IND_BLM15_0402_MUR-L"
+		(at 0 1.27 0)
+		(layer "F.Fab")
+		(uuid "7af70bd9-b40e-5f73-87e9-13aa2faaed74")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "372f4441-78f7-52c6-8bda-a69fafebdf1d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b049f7e-0128-5bcc-a77b-8471aa8d2d1a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -0.6731 -0.254)
+		(end 0.6731 0.254)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "78c28553-ca78-5612-a5a1-250af7f2b43a")
+	)
+	(fp_rect
+		(start -0.6731 -0.254)
+		(end 0.6731 0.254)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7f64db94-c0e4-5cfb-8f61-85d333d5b435")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "6bce76a6-ac77-5933-80e0-95602fe99f0a")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "2" smd rect
+		(at 0.4191 0)
+		(size 0.508 0.508)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "441ead6f-bb61-514c-a2a8-13463ab8f5d6")
+	)
+	(pad "1" smd rect
+		(at -0.4191 0)
+		(size 0.508 0.508)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "8f0e0bab-a834-58fc-a813-394fa145bae5")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,103 @@
+(footprint "CAP_CL10_SAM-M"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Allegro footprint CAP_CL10_SAM-M as fabricated on senior design v5.brd")
+	(tags "allegro CAP_CL10_SAM-M")
+	(property "Reference" "REF**"
+		(at 0 -1.44145 0)
+		(layer "F.Fab")
+		(uuid "9fbd8393-bbf9-5f46-8510-e7cea6e70b8a")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "CAP_CL10_SAM-M"
+		(at 0 1.44145 0)
+		(layer "F.Fab")
+		(uuid "8de82b43-325c-53f5-a9de-bc6ddef5f43d")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "88ac895f-a0a7-57d6-a352-64dde1d8172d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c49d414a-7242-5c74-bf84-d2769119ae56")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.358773 -0.42545)
+		(end 1.358773 0.42545)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e1ff92a2-2331-5e47-88f9-e833fc1889e3")
+	)
+	(fp_rect
+		(start -1.358773 -0.42545)
+		(end 1.358773 0.42545)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "25dde146-16e3-5686-a239-98fc8c54cc5a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "966b0909-69e0-5b17-adf0-42e49f3841d5")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "2" smd rect
+		(at 0.929386 0)
+		(size 0.858774 0.8509)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "32fdc013-ef44-5e1a-9e6b-bf0851d3047a")
+	)
+	(pad "1" smd rect
+		(at -0.929386 0)
+		(size 0.858774 0.8509)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "609fb97a-9982-5601-bb07-2a792cbf460a")
+	)
+	(embedded_fonts no)
+)

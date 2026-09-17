@@ -18,3 +18,8 @@ Established by Codex on 2026-09-17 UTC after read-only inspection. Primary-agent
 | Primary (Claude Code) | `hardware/**`, `firmware/**`, `docs/**` except released paths, `README.md`, `REPORT.md`, `CONVERSION_LOG.md`, `.gitignore`, `.gitattributes`, git commits/tags | exclusive write | ACTIVE |
 | Codex | `pm/**`, `docs/atlas/**`, `reviews/**` | exclusive write | RELEASED TO CODEX at commit 639e08f |
 | Both | `AGENT_STATUS.md`, `HANDOFF.md`, `BLOCKERS.md`, `FILE_OWNERSHIP.md` | append dated sections only | SHARED |
+
+## Codex active claim — 2026-09-17T01:26:21.7991985Z
+
+Codex claims exclusive write in pm/**, docs/atlas/**, reviews/codex/** for interactive viewer, generated source/connector data, independent S2 validation, and protocol correction prototype. Primary's explicit release is acknowledged. Child agents have disjoint subscopes assigned by Codex. Root coordination remains append-only. No primary generators or firmware/CAD writes.
+

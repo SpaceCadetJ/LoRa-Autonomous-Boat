@@ -1,0 +1,49 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-16T20:30:02-0500",
+    "kicad_version": "9.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/c954de34-2e36-5b27-b5cf-f634d7278a6a",
+            "violations": []
+        },
+        {
+            "path": "/PowerSupply/",
+            "uuid_path": "/c954de34-2e36-5b27-b5cf-f634d7278a6a/27f6bd5a-3797-5a54-9b77-1ed287a75d2c",
+            "violations": []
+        },
+        {
+            "path": "/MCU/",
+            "uuid_path": "/c954de34-2e36-5b27-b5cf-f634d7278a6a/b113cc4f-113a-519b-a0a6-c273ac60c5f5",
+            "violations": []
+        },
+        {
+            "path": "/CAN_Bus/",
+            "uuid_path": "/c954de34-2e36-5b27-b5cf-f634d7278a6a/03b37037-d399-579f-8cd8-abb4c634cffd",
+            "violations": []
+        },
+        {
+            "path": "/LoRa_Module/",
+            "uuid_path": "/c954de34-2e36-5b27-b5cf-f634d7278a6a/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb",
+            "violations": []
+        },
+        {
+            "path": "/GPS_Module/",
+            "uuid_path": "/c954de34-2e36-5b27-b5cf-f634d7278a6a/9db88c42-176c-566e-9323-3aea3f09ec4b",
+            "violations": []
+        },
+        {
+            "path": "/PWM_Outputs/",
+            "uuid_path": "/c954de34-2e36-5b27-b5cf-f634d7278a6a/31210085-9759-5277-8f1d-4204cfd4b08e",
+            "violations": []
+        },
+        {
+            "path": "/Debug/",
+            "uuid_path": "/c954de34-2e36-5b27-b5cf-f634d7278a6a/3a5b5ab2-5467-5f3c-8709-69a633ebc308",
+            "violations": []
+        }
+    ],
+    "source": "LoRa_Boat_Controller.kicad_sch"
+}

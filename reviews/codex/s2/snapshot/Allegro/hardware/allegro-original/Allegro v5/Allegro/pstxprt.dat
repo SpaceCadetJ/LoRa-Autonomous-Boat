@@ -1,0 +1,502 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 22.1.0 d001May-09-2025 at 17:12:28 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='SENIORDESIGN_BOARD';
+ POST_TIME='Oct  6 2022 20:42:06';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ C1 'C_CAP_KGM21_KAV-L_.1UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):CANBUS@SENIORDESIGN_BOARD.CANBUS MODULE(SCH_1):INS4562@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):canbus@seniordesign_board.\canbus module\(sch_1):ins4562@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_canbus@seniordesign_board.\canbus module\(sch_1):page1_ins4562@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(550,370)',
+ SECTION='';
+
+PART_NAME
+ C10 'C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):MCU OUPUTS1@SENIORDESIGN_BOARD.MCU OUTPUTS(SCH_1):INS26357@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26357@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):page1_ins26357@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(560,200)',
+ SECTION='';
+
+PART_NAME
+ C12 'C_CAP_CL10_SAM-M_.1UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS6123@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins6123@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins6123@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(510,340)',
+ SECTION='';
+
+PART_NAME
+ C14 'C_CAP_0603G_AVX-M_470PF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS6321@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins6321@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins6321@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(600,230)',
+ SECTION='';
+
+PART_NAME
+ C2 'C_CAP_KGM21_KAV-L_.1UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS4373@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins4373@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins4373@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(570,220)',
+ SECTION='';
+
+PART_NAME
+ C20 'C_G-21_MUR-L_10UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS27312@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins27312@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins27312@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(930,340)',
+ SECTION='';
+
+PART_NAME
+ C21 'C_G-21_MUR-L_10UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS27338@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins27338@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins27338@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(870,330)',
+ SECTION='';
+
+PART_NAME
+ C22 'C_CAP_KGM21_KAV-L_.1UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS27364@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins27364@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins27364@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(830,330)',
+ SECTION='';
+
+PART_NAME
+ C23 'C_CAP_GJM1555C1H220JB01__MUR-L_47PF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS27390@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins27390@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins27390@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(790,330)',
+ SECTION='';
+
+PART_NAME
+ C3 'C_CAP_KGM21_KAV-L_.1UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS4193@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins4193@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins4193@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(570,130)',
+ SECTION='';
+
+PART_NAME
+ C4 'C_CAP_KGM21_KAV-L_.1UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS4357@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins4357@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins4357@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(190,220)',
+ SECTION='';
+
+PART_NAME
+ C5 'C_CAP_KGM21_KAV-L_.1UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):MCU OUPUTS1@SENIORDESIGN_BOARD.MCU OUTPUTS(SCH_1):INS26373@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26373@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):page1_ins26373@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(610,200)',
+ SECTION='';
+
+PART_NAME
+ C6 'C_CAP_KGM21_KAV-L_.1UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):MCU OUPUTS1@SENIORDESIGN_BOARD.MCU OUTPUTS(SCH_1):INS26389@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26389@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):page1_ins26389@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(660,200)',
+ SECTION='';
+
+PART_NAME
+ C7 'C_CAP_KGM21_KAV-L_.1UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):MCU OUPUTS1@SENIORDESIGN_BOARD.MCU OUTPUTS(SCH_1):INS26405@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26405@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):page1_ins26405@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(710,200)',
+ SECTION='';
+
+PART_NAME
+ C8 'C_CAP_KGM21_KAV-L_.1UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):MCU OUPUTS1@SENIORDESIGN_BOARD.MCU OUTPUTS(SCH_1):INS26421@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26421@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):page1_ins26421@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(770,200)',
+ SECTION='';
+
+PART_NAME
+ C9 'C_CAP_KGM21_KAV-L_.1UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):MCU OUPUTS1@SENIORDESIGN_BOARD.MCU OUTPUTS(SCH_1):INS26437@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26437@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):page1_ins26437@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(820,200)',
+ SECTION='';
+
+PART_NAME
+ CANHEADER 'B4B-XH-A_CONN_B4B-XH-A_JST_CONN_B4B-XH-A':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS26555@ORCADCAPTUREOLB.B4B-XH-A.NORMAL(SCH_1)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins26555@orcadcaptureolb.\b4b-xh-a.normal\(sch_1)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins26555@orcadcaptureolb.\b4b-xh-a.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(40,280)',
+ SECTION='';
+
+PART_NAME
+ CEXT 'C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7 UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):MCU OUPUTS1@SENIORDESIGN_BOARD.MCU OUTPUTS(SCH_1):INS26269@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26269@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):page1_ins26269@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(830,130)',
+ SECTION='';
+
+PART_NAME
+ CIN 'KTS500B106M55N0T00_CAP_NTS_55_2P8T_NIP_10UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS5671@ORCADCAPTUREOLB.KTS500B106M55N0T00.NORMAL(SCH_1)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins5671@orcadcaptureolb.\kts500b106m55n0t00.normal\(sch_1)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins5671@orcadcaptureolb.\kts500b106m55n0t00.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(240,230)',
+ SECTION='';
+
+PART_NAME
+ COUT 'C_G-31_MUR-M_10UF':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS6794@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins6794@analog.\c.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins6794@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(630,370)',
+ SECTION='';
+
+PART_NAME
+ D21 'CMS06TE12L,Q,M_M-FLAT_TOS-L_DIODE_MFLAT':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS20790@ORCADCAPTUREOLB.CMS06TE12L,Q,M.NORMAL(SCH_1)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins20790@orcadcaptureolb.\cms06te12l,q,m.normal\(sch_1)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins20790@orcadcaptureolb.\cms06te12l,q,m.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(510,410)',
+ SECTION='';
+
+PART_NAME
+ GND 'CON1_AMV_CON1_BATTERY-':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS9253@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins9253@connector.\con1.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins9253@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(690,540)',
+ SECTION='';
+
+PART_NAME
+ GPSMODULE 'PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS4209@ORCADCAPTUREOLB.PPTC051LFBN-RC.NORMAL(SCH_1)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins4209@orcadcaptureolb.\pptc051lfbn-rc.normal\(sch_1)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins4209@orcadcaptureolb.\pptc051lfbn-rc.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(640,130)',
+ SECTION='';
+
+PART_NAME
+ JTAG 'FTSH-105-XX-X-DV_SAMTEC_FTSH-105-XX-X-DV_FTSH-105-XX-X-DV':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):MCU OUPUTS1@SENIORDESIGN_BOARD.MCU OUTPUTS(SCH_1):INS29321@FTSH-105-XX-X-DV.FTSH-105-XX-X-DV.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins29321@\ftsh-105-xx-x-dv\.\ftsh-105-xx-x-dv.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):page1_ins29321@\ftsh-105-xx-x-dv\.\ftsh-105-xx-x-dv.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(130,60)',
+ SECTION='';
+
+PART_NAME
+ L1 'SLF7045T-4R7M2R0-PF_IND_7045_TDK_4.7UH':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS20873@ORCADCAPTUREOLB.SLF7045T-4R7M2R0-PF.NORMAL(SCH_1)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins20873@orcadcaptureolb.\slf7045t-4r7m2r0-pf.normal\(sch_1)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins20873@orcadcaptureolb.\slf7045t-4r7m2r0-pf.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(560,350)',
+ SECTION='';
+
+PART_NAME
+ L3 'INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS27270@DISCRETE.INDUCTOR.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins27270@discrete.\inductor.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins27270@discrete.\inductor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(890,290)',
+ SECTION='';
+
+PART_NAME
+ L4 'INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS27286@DISCRETE.INDUCTOR.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins27286@discrete.\inductor.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins27286@discrete.\inductor.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(890,370)',
+ SECTION='';
+
+PART_NAME
+ LORAMODULE 'PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS4435@ORCADCAPTUREOLB.PPTC051LFBN-RC.NORMAL(SCH_1)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins4435@orcadcaptureolb.\pptc051lfbn-rc.normal\(sch_1)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins4435@orcadcaptureolb.\pptc051lfbn-rc.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(640,270)',
+ SECTION='';
+
+PART_NAME
+ R1 'R_RC0402N_PAN-M_15K':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS6295@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins6295@analog.\r.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins6295@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(550,230)',
+ SECTION='';
+
+PART_NAME
+ R2 'R_RC0603N_YAG-M_4.7K':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS6429@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins6429@analog.\r.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins6429@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(550,190)',
+ SECTION='';
+
+PART_NAME
+ R3 'R_RC0402N_YAG-M_51':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS6097@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins6097@analog.\r.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins6097@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(510,300)',
+ SECTION='';
+
+PART_NAME
+ R4 'R_RC0402N_PAN-M_5.1K':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS14850@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins14850@analog.\r.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins14850@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(260,280)',
+ SECTION='';
+
+PART_NAME
+ R5 'R_RES_R0805_ROM-M_30K':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS13418@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins13418@analog.\r.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins13418@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(610,40)',
+ SECTION='';
+
+PART_NAME
+ R6 'R_RES_1005_SAM-M_10K':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS13444@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins13444@analog.\r.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins13444@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(630,60)',
+ SECTION='';
+
+PART_NAME
+ SPEEDCONTROLLER 'PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS4287@ORCADCAPTUREOLB.PPTC031LFBN-RC.NORMAL(SCH_1)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins4287@orcadcaptureolb.\pptc031lfbn-rc.normal\(sch_1)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins4287@orcadcaptureolb.\pptc031lfbn-rc.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(110,200)',
+ SECTION='';
+
+PART_NAME
+ STEERINGSERVO 'PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS4335@ORCADCAPTUREOLB.PPTC031LFBN-RC.NORMAL(SCH_1)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins4335@orcadcaptureolb.\pptc031lfbn-rc.normal\(sch_1)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins4335@orcadcaptureolb.\pptc031lfbn-rc.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(640,210)',
+ SECTION='';
+
+PART_NAME
+ TP1 'TEST POINT_AMV_TEST_POINT_TEST POINT':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS26644@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins26644@connector.\test point.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins26644@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(280,180)',
+ SECTION='';
+
+PART_NAME
+ TP3 'TEST POINT_AMV_TEST_POINT_TEST POINT':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS26687@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins26687@connector.\test point.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins26687@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(510,190)',
+ SECTION='';
+
+PART_NAME
+ TP4 'TEST POINT_AMV_TEST_POINT_TEST POINT':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS18329@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins18329@connector.\test point.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins18329@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(700,350)',
+ SECTION='';
+
+PART_NAME
+ TP5 'TEST POINT_AMV_TEST_POINT_TEST POINT':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS18356@CONNECTOR.TEST POINT.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins18356@connector.\test point.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins18356@connector.\test point.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(170,490)',
+ SECTION='';
+
+PART_NAME
+ U3 'STM32F446RET6TR_LQFP64-10X10MM_STM32F4XXR2':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):MCU OUPUTS1@SENIORDESIGN_BOARD.MCU OUTPUTS(SCH_1):INS26029@ORCADCAPTUREOLB.STM32F446RET6TRA.NORMAL(SCH_1)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins26029@orcadcaptureolb.\stm32f446ret6tra.normal\(sch_1)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):page1_ins26029@orcadcaptureolb.\stm32f446ret6tra.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(550,50)',
+ SECTION='A';
+
+SECTION_NUMBER 2
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):MCU OUPUTS1@SENIORDESIGN_BOARD.MCU OUTPUTS(SCH_1):INS1701@ORCADCAPTUREOLB.STM32F446RET6TRB.NORMAL(SCH_1)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):ins1701@orcadcaptureolb.\stm32f446ret6trb.normal\(sch_1)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_mcu ouputs1\@seniordesign_board.\mcu outputs\(sch_1):page1_ins1701@orcadcaptureolb.\stm32f446ret6trb.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(550,50)',
+ SECTION='B';
+
+PART_NAME
+ U5 'TCAN1042HDRQ1_D0008A_L_TCAN1042H-Q1D':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):CANBUS@SENIORDESIGN_BOARD.CANBUS MODULE(SCH_1):INS13929@ORCADCAPTUREOLB.TCAN1042HDRQ1.NORMAL(SCH_1)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):canbus@seniordesign_board.\canbus module\(sch_1):ins13929@orcadcaptureolb.\tcan1042hdrq1.normal\(sch_1)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_canbus@seniordesign_board.\canbus module\(sch_1):page1_ins13929@orcadcaptureolb.\tcan1042hdrq1.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(360,260)',
+ SECTION='';
+
+PART_NAME
+ U6 'R1240N001B-TR-FE_3_SOT-23-6W_PE-SOT23-6W-0512_NMD_R1240N001X':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):POWER SUPPLY@SENIORDESIGN_BOARD.POWER SUPPLY (SCH_1):INS19524@SENIORDESIGN_BOARD.R1240N001B-TR-FE_3.NORMAL(SCH_1)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):\power supply\@seniordesign_board.(sch_1):ins19524@seniordesign_board.\r1240n001b-tr-fe_3.normal\(sch_1)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):\page1_power supply\@seniordesign_board.(sch_1):page1_ins19524@seniordesign_board.\r1240n001b-tr-fe_3.normal\(sch_1)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(320,210)',
+ SECTION='';
+
+PART_NAME
+ VIN 'CON1_AMV_CON1_BATTERY+':;
+
+SECTION_NUMBER 1
+ '@SENIORDESIGN_BOARD.TOP VIEW(SCH_1):INS9187@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@seniordesign_board.\top view\(sch_1):ins9187@connector.\con1.normal\(chips)',
+ P_PATH='@seniordesign_board.\top view\(sch_1):page1_ins9187@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ XY='(690,500)',
+ SECTION='';
+
+END.

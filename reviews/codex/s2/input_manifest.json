@@ -1,0 +1,189 @@
+{
+  "revision": "639e08fe56c38d54becf086f4fd86ec20ecfcb90",
+  "files": {
+    "hardware/kicad/CAN_Bus.kicad_sch": {
+      "bytes": 24652,
+      "sha256": "fe03ffc15d8c62d8361d70660bb3333d573c189db8a1fc6f1a5cee9df6abb1b5"
+    },
+    "hardware/kicad/Debug.kicad_sch": {
+      "bytes": 11951,
+      "sha256": "de0da2c0aec9c69994e431f40bf53c2e834e7f1b21951da48ab88739fd2ae151"
+    },
+    "hardware/kicad/GPS_Module.kicad_sch": {
+      "bytes": 8075,
+      "sha256": "b0f9ce4af37f3b2540802e76ad66b972f9be433f34cea586dbfd9e8520a01853"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.kicad_dru": {
+      "bytes": 1361,
+      "sha256": "7d5337c38b2be25b88bbe9782c88fd56e48c7ec7e023646d69ff9805f43dc82c"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pcb": {
+      "bytes": 913989,
+      "sha256": "ec6bed5c721ed33bb8c6b88f40d2e60b12b2a180a92e1e845dd7ffb373587597"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pro": {
+      "bytes": 8627,
+      "sha256": "cf69469962754466f0821396a3d4eaf7697e78c4926060ac151e4a7bd4f9aeef"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sch": {
+      "bytes": 25086,
+      "sha256": "8af5beedd78649b91e4ae29dd99a0e7721ae9e9617cc53daf528e3db2f8df8ae"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sym": {
+      "bytes": 7307,
+      "sha256": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_0603G_AVX-M.kicad_mod": {
+      "bytes": 1934,
+      "sha256": "19a007764f08f538e91316a0453f13a176b10aef8ae6fd6d81ba58d41adbb21d"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_0603_CL10A_1P6XP8_SAM-M.kicad_mod": {
+      "bytes": 1990,
+      "sha256": "42f5b0cf2557ab22c7bed1660f022ff6e0136b65283a00ded06722c7634e213a"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_CL10_SAM-M.kicad_mod": {
+      "bytes": 1960,
+      "sha256": "631ee486aa336407342863dcd3a27d9500b782fbd31473b40d9a517345f5a3c1"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_GJM1555C1H220JB01__MUR-L.kicad_mod": {
+      "bytes": 1982,
+      "sha256": "d5654fecba8c3ff2912b7713540b888f7cb03bf378583e0a9bb5758ecf59854e"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_KGM21_KAV-L.kicad_mod": {
+      "bytes": 1945,
+      "sha256": "4303ac243d17f1c170711780b72b9101b3d65173e3f674aa9650d958faf5b367"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_NTS_55_2P8T_NIP.kicad_mod": {
+      "bytes": 1948,
+      "sha256": "581137c5ec59ffe1ea65f99dc766b552301111f71fd7441583420edd7af58aa6"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod": {
+      "bytes": 2675,
+      "sha256": "3df2bdad2d5533ceb5a0492e93aae8e2faab545a4f2e999d8a2a426829fca314"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CONN_B4B-XH-A_JST.kicad_mod": {
+      "bytes": 2479,
+      "sha256": "256219b5dfe2bb4b3a7779bb2d0726ef0c38dbd482418a951cb4d16c763d4d56"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CONN_PPTC031_SUL.kicad_mod": {
+      "bytes": 2244,
+      "sha256": "986dd4d6067549d0b65e6da1d8c8c3375e2e3b1c077a59f5980233fab0da7f52"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/D0008A_L.kicad_mod": {
+      "bytes": 3087,
+      "sha256": "ae80a251bf6812470cc2c8e10f5a72651ff1598ea69bc08466bb60096e581096"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/G-21_MUR-L.kicad_mod": {
+      "bytes": 1922,
+      "sha256": "7bd06c7d3ab02d1f539148d7bbe5a42a579ad8fac70edbd0f47a73f9d10022bd"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/G-31_MUR-M.kicad_mod": {
+      "bytes": 1910,
+      "sha256": "5ad069daf33bc0e026ec3702bb7d75f334812b22d8e7cf6ad1ff41c047edfe1f"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/IND_7045_TDK.kicad_mod": {
+      "bytes": 1977,
+      "sha256": "01cf11258392766428c623e4f3ef0d7bcb843a87ea33c5dfd0238a1216f51092"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/IND_BLM15_0402_MUR-L.kicad_mod": {
+      "bytes": 1950,
+      "sha256": "381ae1f8b25d6e1954ee99bfffa7015c2f5d570f8b9b34c075a0300bb531c69a"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/LQFP64-10x10mm.kicad_mod": {
+      "bytes": 13239,
+      "sha256": "8bed62a1ecce2fc5fbd96a4147ba0cca47a77731cbde2481333f6cc8320a7eca"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod": {
+      "bytes": 1942,
+      "sha256": "ce99ee424974e7bae6c9137e43ac6b4f8bc4daaa9d6777f26049be4f1f1dd830"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RC0402N_PAN-M.kicad_mod": {
+      "bytes": 1966,
+      "sha256": "e7c9be7583fb4cf11cc020c328fc0818ca1b1eb24f8309b4875d31f8fe04eec9"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RC0402N_YAG-M.kicad_mod": {
+      "bytes": 1934,
+      "sha256": "6582594b232e1e65278dffdd375499ecf1a46567da5623687e01ebb309fd8c7a"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RC0603N_YAG-M.kicad_mod": {
+      "bytes": 1934,
+      "sha256": "3ae3fcd2fe5cb14bed3a1fb531605a796854b1a01991e4ab02fb58a6e1f79557"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RES_1005_SAM-M.kicad_mod": {
+      "bytes": 1970,
+      "sha256": "fed0e29515f092c6cd3ce2c0d4caf16b0489cde0b06b8b10b60dafc3124e8bba"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RES_R0805_ROM-M.kicad_mod": {
+      "bytes": 1940,
+      "sha256": "9ddd2658a69dd539ff1d2a019773211e8aaeeee9a742a34026427cd618514803"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/SAMTEC_FTSH-105-XX-X-DV.kicad_mod": {
+      "bytes": 3535,
+      "sha256": "9dfc3fef1cfbed2c8d3a2ce7b7653f8019a591ec039ba1a24d5b5d3049882165"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod": {
+      "bytes": 2693,
+      "sha256": "b880a51afb66d5a86cbd2dad667bd6a819500be0a7d51aa2234ce6cac41a2fee"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/amv_con1.kicad_mod": {
+      "bytes": 1821,
+      "sha256": "72f981b041e634931b5fdc25dcd9869e4820f256af557c82cc1866363dbdb885"
+    },
+    "hardware/kicad/LoRa_Boat_Controller.pretty/amv_test_point.kicad_mod": {
+      "bytes": 1849,
+      "sha256": "dbc2c1fa174aa92e4066ccf6303ebcb8f897e78f52d5a97b01fe97a4cfea5317"
+    },
+    "hardware/kicad/LoRa_Module.kicad_sch": {
+      "bytes": 32817,
+      "sha256": "88df1df5df610fd5f5718daed17b47ab073579efbee40afe84a8ea1463157f37"
+    },
+    "hardware/kicad/MCU.kicad_sch": {
+      "bytes": 96763,
+      "sha256": "7d783d89be6aa0751a2cdb620050dc888c7743ff26af1c30b2636896e1406355"
+    },
+    "hardware/kicad/PWM_Outputs.kicad_sch": {
+      "bytes": 15058,
+      "sha256": "535a4705ea40bf422500e1843d3bb537f35a944fbe6ae50195990292ebdd51a3"
+    },
+    "hardware/kicad/PowerSupply.kicad_sch": {
+      "bytes": 74539,
+      "sha256": "bd8a5b1dd67e7d3ddf05bb39bf83bac0e31fa481796a9e233915704c7d4780ea"
+    },
+    "hardware/kicad/fp-lib-table": {
+      "bytes": 186,
+      "sha256": "1d0776c29bd4d9155867b82549e64080a66d13c4b17c6fd28e3071e7635d0cbb"
+    },
+    "hardware/kicad/sym-lib-table": {
+      "bytes": 187,
+      "sha256": "34e90e5baea1d322bbb94670fcaea5e5e7eb42425d520e3faaef27f1e54f1de6"
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat": {
+      "bytes": 30037,
+      "sha256": "b88c36244bb3e3eb4d10712ce8ca39ddb5908e2c3225aa187155f9f4dca6b02c"
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxprt.dat": {
+      "bytes": 22124,
+      "sha256": "71bda2b7ccffa85dce7981c0e3ca1a22596c133f05992c16094a3bf967a92156"
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWDRILL-1-2.drl": {
+      "bytes": 1265,
+      "sha256": "4232176c0023bccfd1748a851f058c45152eb0e499b13dc4ab3bdfb15ec47ade"
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/senior design v4-1-2.drl": {
+      "bytes": 1268,
+      "sha256": "73fa7e99aadc55dad1e19e4f95f20a58bd94c6ae4aa0c95e30f8df3b1508ab7e"
+    },
+    "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWTOPL.art": {
+      "bytes": 43004,
+      "sha256": "4e14c26b200566d8f818b2b258b792472a163b542770e1b91801876969dd8e4e"
+    },
+    "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWBOTL.art": {
+      "bytes": 5155,
+      "sha256": "084398dd32321e298bfa4da4ad3d0bf09a8d57731ea155c98ec05fb0e7854994"
+    },
+    "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWOUTLINE.art": {
+      "bytes": 825,
+      "sha256": "8f874fb88fcbb638e64688ebc218cca7a20552091a95b7b4cce29921291b0bba"
+    }
+  }
+}
