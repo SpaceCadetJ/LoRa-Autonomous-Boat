@@ -26,7 +26,7 @@ DS = "docs/research/DATASHEET_NOTES.md"
 SELF = "docs/atlas/generate_atlas.py"
 INPUTS = (PST, MAP, BOM, XML, MAIN, MSP, IOC, DS, SELF)
 RAW = {p: (ROOT / p).read_bytes() for p in INPUTS}
-TEXT = {p: raw.decode("utf-8-sig") for p, raw in RAW.items()}
+TEXT = {p: raw.decode("utf-8-sig").replace("\r\n", "\n") for p, raw in RAW.items()}
 MANIFEST = [{"path": p, "sha256": hashlib.sha256(RAW[p]).hexdigest(), "bytes": len(RAW[p])} for p in INPUTS]
 
 
@@ -119,8 +119,8 @@ CONNECTORS = [
     ("GPSMODULE", "GPS module", "Five-pin GPS socket with USART3 and an extra PB0 signal.", ["The BOM identifies the socket, not the GPS module. PB0/pin 3 is actively driven LOW by firmware.", "USART3 TX also carries debug output; assess its effect on the selected GPS module."]),
     ("SPEEDCONTROLLER", "SPEEDCONTROLLER header / firmware rudder", "Source-named ESC header carries PA8/TIM1, currently assigned to rudder in firmware.", [ACTUATOR, POWER, "No link-loss failsafe exists in the reviewed C main loop; last command persists."]),
     ("STEERINGSERVO", "STEERINGSERVO header / firmware thrust", "Source-named servo header carries PC6/TIM3, currently assigned to thrust in firmware.", [ACTUATOR, POWER, "TIM3 startup differs: current C requests 1000 us, .ioc requests 1500 us. Regeneration needs review."]),
-    ("CANHEADER", "CAN bus", "Four-pin bus/supply header; its H/L names are corrected while original pin membership is preserved.", ["CANH = pin 3 / U5-7 / N24691; CANL = pin 4 / U5-6 / N04855. Older docs/NETLIST.md reverses them.", "V1 RXD is wired U5-4 → U3-43/PA10. PA10 has no CAN alternate function; no CAN initialization exists in current firmware.", "U5-8/STB goes to PA11, U5-1/TXD goes to PA12. The CAN transceiver supply source and bus termination require review."]),
-    ("JTAG", "Debug / JTAG", "Ten numbered electrical pins; do not infer cable orientation from the table.", ["Raw Allegro pin numbers 01–10 are normalized to 1–10 here. Pin 7 is NC, pin 1 is +3V3, and pins 3/5/9 are GND.", "This corrects the stale debug table in docs/NETLIST.md. Physical keyed-header orientation remains unverified."]),
+    ("CANHEADER", "CAN bus", "Four-pin bus/supply header; its H/L names are corrected while original pin membership is preserved.", ["CANH = pin 3 / U5-7 / N24691; CANL = pin 4 / U5-6 / N04855. Historical March 2026 documentation reversed them; use the v5 pin mapping here.", "V1 RXD is wired U5-4 → U3-43/PA10. PA10 has no CAN alternate function; no CAN initialization exists in current firmware.", "U5-8/STB goes to PA11, U5-1/TXD goes to PA12. The CAN transceiver supply source and bus termination require review."]),
+    ("JTAG", "Debug / JTAG", "Ten numbered electrical pins; do not infer cable orientation from the table.", ["Raw Allegro pin numbers 01–10 are normalized to 1–10 here. Pin 7 is NC, pin 1 is +3V3, and pins 3/5/9 are GND.", "This follows the v5 debug connectivity. Physical keyed-header orientation remains unverified."]),
     ("VIN", "Battery positive", "Single solder pad for raw input supply.", ["The input voltage/current envelope is not established by this source reconstruction. Identify battery and protection first."]),
     ("GND", "Battery ground", "Single solder pad on the board common ground net.", ["Allegro reference GND maps to KiCad GND1; original net name is 0. It is not a separate battery-only ground net in v5."]),
     ("TP1", "TP1 — PA8 PWM", "Test point on the source ESC header signal, currently firmware rudder output.", [ACTUATOR]),
@@ -183,18 +183,25 @@ def connector_md(c):
 
 
 def readme_md(connectors):
+    thrust_ev = ev(MAIN, "static void set_thrust(uint8_t value)\n{")
+    ioc_ev = ev(IOC, "TIM3.Pulse-PWM\\ Generation1\\ CH1=1500")
+    rxd_ev = ev(PST, "NODE_NAME\tU5 4")
+    stb_ev = ev(PST, "NODE_NAME\tU5 8")
+    cext2_ev = ev(PST, "NODE_NAME\tCEXT 2")
+    cext1_ev = ev(PST, "NODE_NAME\tCEXT 1")
+    boot_ev = ev(PST, "NODE_NAME\tU3 60")
     lines = ["# V1 connector atlas", "", "This atlas connects the authoritative v5 electrical netlist to the current KiCad reference names, BOM, and firmware. It is a wiring/review aid for the faithful V1 reconstruction, not a corrected V2 hardware release or a bench sign-off.", "", COMMON, "", "## Navigate", "", "| Connector / test point | Allegro reference | KiCad reference | Pins |", "|---|---|---|---|"]
     for c in connectors:
         lines.append(f"| [{c['title']}]({c['allegro_ref']}.md) | {c['allegro_ref']} | {c['id']} | {len(c['pins'])} |")
     lines += ["", "[Full BOM](../BOM.csv) · [Schematic PDF](../img/v1_schematic.pdf) · [PCB top](../img/v1_pcb_top.png) · [PCB bottom](../img/v1_pcb_bottom.png) · [Viewer JSON](../../pm/data/connectors.json)", "", "## Known V1 issues that affect connection decisions", "",
               f"- **Actuator mapping:** {ACTUATOR} Evidence: {ev(MAIN, 'BOARD WIRING NOTE')}; both PWM connector tables provide pin-level source links.",
-              f"- **Link loss:** reviewed C has one HAL_GetTick use, for outgoing telemetry; its main loop has no command-age timeout. Last actuator command is retained. Evidence: {ev(MAIN, 'uint32_t now = HAL_GetTick()')}; {ev(MAIN, 'static void set_thrust(uint8_t value)\n{')}.",
-              f"- **Regeneration hazard:** C initializes TIM3 at 1000 us; CubeMX stores 1500 us. Evidence: {ev(MAIN, 'sConfigOC.Pulse      = PWM_MOTOR_IDLE_US')}; {ev(IOC, 'TIM3.Pulse-PWM\\ Generation1\\ CH1=1500')}.",
+              f"- **Link loss:** reviewed C has one HAL_GetTick use, for outgoing telemetry; its main loop has no command-age timeout. Last actuator command is retained. Evidence: {ev(MAIN, 'uint32_t now = HAL_GetTick()')}; {thrust_ev}.",
+              f"- **Regeneration hazard:** C initializes TIM3 at 1000 us; CubeMX stores 1500 us. Evidence: {ev(MAIN, 'sConfigOC.Pulse      = PWM_MOTOR_IDLE_US')}; {ioc_ev}.",
               f"- **GPS pin 3:** PB0 is driven LOW; its attached module function is unidentified. Debug text also uses GPS TX. Evidence: {ev(MAIN, 'HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET)')}; {ev(MAIN, 'HAL_UART_Transmit(&huart3')}.",
-              f"- **CAN routing:** U5 RXD connects to PA10, which lacks a CAN alternate function; STB connects to PA11. The TCAN1042H requires 4.5–5.5 V on CAN_VCC. Source evidence: {ev(PST, 'NODE_NAME\tU5 4')}; {ev(PST, 'NODE_NAME\tU5 8')}; [ST pin/alternate-function tables](https://www.st.com/resource/en/datasheet/stm32f446re.pdf); [TI pin table and operating conditions](https://www.ti.com/lit/ds/symlink/tcan1042h-q1.pdf). No operational CAN stack is present in this firmware snapshot.",
-              f"- **Power and boot:** CEXT connects VCAP1 to the +3V3 net, not ground. BOOT0 is listed NC; VBAT is a singleton. These source facts need an electrical correction decision before treating a reconstructed board as ready to power. Evidence: {ev(PST, 'NODE_NAME\tCEXT 2')}; {ev(PST, 'NODE_NAME\tCEXT 1')}; {ev(PST, 'NODE_NAME\tU3 60')}; {ev(PST, chr(39) + 'VBAT' + chr(39))}; [ST MCU supply requirements](https://www.st.com/resource/en/datasheet/stm32f446re.pdf).",
+              f"- **CAN routing:** U5 RXD connects to PA10, which lacks a CAN alternate function; STB connects to PA11. The TCAN1042H requires 4.5–5.5 V on CAN_VCC. Source evidence: {rxd_ev}; {stb_ev}; [ST pin/alternate-function tables](https://www.st.com/resource/en/datasheet/stm32f446re.pdf); [TI pin table and operating conditions](https://www.ti.com/lit/ds/symlink/tcan1042h-q1.pdf). No operational CAN stack is present in this firmware snapshot.",
+              f"- **Power and boot:** CEXT connects VCAP1 to the +3V3 net, not ground. BOOT0 is listed NC; VBAT is a singleton. These source facts need an electrical correction decision before treating a reconstructed board as ready to power. Evidence: {cext2_ev}; {cext1_ev}; {boot_ev}; {ev(PST, chr(39) + 'VBAT' + chr(39))}; [ST MCU supply requirements](https://www.st.com/resource/en/datasheet/stm32f446re.pdf).",
               "- **External power:** ESC and servo header pin 1 are both on +3V3. Exact loads, BEC wiring, regulator thermal margin, and connector orientation are not verified by this atlas.",
-              "- **Stale reference:** docs/NETLIST.md is an older DSN-derived document with incorrect V5 CAN/debug pin tables and TP2. It is intentionally not an input to this atlas. TP2 is absent from both v5 source and the current BOM.",
+              "- **Historical tables:** older DSN-derived documentation contained incorrect V5 CAN/debug pin tables and TP2. This atlas extracts v5 directly; docs/NETLIST.md is maintained separately by the primary agent and is not an input. TP2 is absent from both v5 source and the current BOM.",
               "", "## Reproduce and refresh", "", "Run `python docs/atlas/generate_atlas.py` from the repository (or use the installed KiCad Python executable). Run with `--check` to compare outputs with the same source snapshot without writing. Only Python's standard library is required.", "",
               "The generator parses every v5 net/node, preserves Allegro reference and raw pin identifiers, maps readable nets using the current KiCad netmap, obtains KiCad references from the BOM, and compares each connected atlas pin's entire source net membership with the exported KiCad XML. NC is never treated as an electrical net. Reviewed firmware assertions cause generation to stop if key behavior changes. Full source SHA-256 hashes and byte sizes are stored in the JSON; inputs are rehashed before outputs are written to detect concurrent edits.", "",
               "A successful atlas check proves repeatable extraction and agreement with that exported XML snapshot. It does not independently validate the current CAD copper, a stale XML export, a physical board, firmware build/flash results, or external harnesses. Root S2 validation owns CAD equivalence checks. Manufacturer links were checked on 2026-09-17; local datasheet research remains a separately authored review input.", "",

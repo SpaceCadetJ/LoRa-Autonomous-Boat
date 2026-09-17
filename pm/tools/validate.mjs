@@ -1,0 +1,21 @@
+// Validate generated viewer packaging without executing browser UI code.
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
+const html=fs.readFileSync(path.join(root,'pm/index.html'),'utf8');
+const data=JSON.parse(fs.readFileSync(path.join(root,'pm/status.json'),'utf8'));
+const scripts=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m=>m[1]);
+assert.equal(scripts.length,2,'Exactly one embedded data script and one UI script');
+assert.ok(!html.includes('/*__PROJECT_DATA__*/'),'Data placeholder replaced');
+scripts.forEach((s,i)=>new vm.Script(s,{filename:`viewer-script-${i}`}));
+const context={window:{}};
+vm.runInNewContext(scripts[0],context,{timeout:1000});
+assert.deepEqual(JSON.parse(JSON.stringify(context.window.PROJECT)),data,'Embedded data matches status.json, including literal firmware dollar sequences');
+assert.deepEqual(data.inputs_changed_during_build,[],'Evidence changed during build; rebuild from stable inputs');
+assert.equal(data.bom.length,44,'V1 part inventory');
+for(const p of data.available_paths)assert.ok(fs.existsSync(path.join(root,p)),`Missing indexed path: ${p}`);
+for(const c of data.independent?.checks||[])for(const p of c.evidence||[])assert.ok(fs.existsSync(path.join(root,p)),`Missing independent evidence: ${p}`);
+console.log(JSON.stringify({result:'PASS',scripts:scripts.length,parts:data.bom.length,v2_bom_rows:data.bomV2.length,connectors:data.connectors.length,requirements:data.requirements.length,findings:data.designFindings.length,documents:data.documents.length,existing_paths:data.available_paths.length}));

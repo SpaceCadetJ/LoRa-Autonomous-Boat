@@ -1,0 +1,68 @@
+{
+  "revision": "639e08fe56c38d54becf086f4fd86ec20ecfcb90",
+  "generated_at": "2026-09-17T16:36:48.583852+00:00",
+  "checks": [
+    {
+      "name": "S2 overall / complete V1 transfer gate",
+      "status": "blocked",
+      "detail": "Connectivity and error-level checks pass for the released V1 snapshot. Complete schematic/PCB parity remains unresolved: 139 warnings. This report does not review the newer V2 branch or authorize fabrication/powered operation.",
+      "evidence": ["reviews/codex/S2_VERIFICATION.md", "reviews/codex/s2/analysis.json"]
+    },
+    {
+      "name": "Released-input identity",
+      "status": "pass",
+      "detail": "Inputs exported read-only from commit 639e08f; all snapshot SHA-256 hashes unchanged after KiCad checks and final analysis.",
+      "evidence": ["reviews/codex/s2/input_manifest.json", "reviews/codex/s2/commands.json", "reviews/codex/s2/run.json"]
+    },
+    {
+      "name": "Source / schematic / PCB pin membership",
+      "status": "pass",
+      "detail": "44/44 references and 172/172 physical pins agree exactly across all three representations. All 31 multi-pin nets, 37 individually isolated NC pins and singleton VBAT match. No duplicate memberships, missing/extra pin groups, footprint path differences or library differences.",
+      "evidence": ["reviews/codex/s2/connectivity.json", "reviews/codex/s2/netlist.xml", "reviews/codex/s2/pcb_inventory.json"]
+    },
+    {
+      "name": "ERC",
+      "status": "pass",
+      "detail": "KiCad 9.0.7 --severity-all: 0 violations across root plus seven functional sheets.",
+      "evidence": ["reviews/codex/s2/erc.json"]
+    },
+    {
+      "name": "PCB DRC / routing",
+      "status": "warning",
+      "detail": "0 errors and 0 unconnected items under the released custom rules; 67 warnings remain: 37 solder-mask bridges, 21 silk-over-copper, 6 silk-edge clearances and 3 isolated copper islands.",
+      "evidence": ["reviews/codex/s2/drc.json", "reviews/codex/s2/rule_summary.json"]
+    },
+    {
+      "name": "Native schematic / PCB parity",
+      "status": "blocked",
+      "detail": "139 warnings: 34 footprint-value differences, 67 hierarchical net-name prefix differences, 37 unnamed NC pads versus generated unconnected names, and 1 singleton VBAT naming difference. All classified; exact pin connectivity agrees, but a no-change Update PCB from Schematic is not proven.",
+      "evidence": ["reviews/codex/s2/drc.json", "reviews/codex/s2/rule_summary.json"]
+    },
+    {
+      "name": "V5 hole centers",
+      "status": "pass",
+      "detail": "53/53 centers independently match shared round dark flashes in both V5 copper films: 26 drilled component pads plus 27 vias. Maximum error is effectively 0.000 mil after one independently solved coordinate translation.",
+      "evidence": ["reviews/codex/s2/drill_comparison.json"]
+    },
+    {
+      "name": "V5 drill diameters / fabrication fidelity",
+      "status": "blocked",
+      "detail": "Available BOATCREW drill is identical to the older V4 drill after removing its FILE header. Film centers validate positions, not finished-hole diameters or plating; no independent V5 drill-diameter proof is available.",
+      "evidence": ["reviews/codex/s2/drill_comparison.json"]
+    },
+    {
+      "name": "Copper / mask / silk / outline XOR",
+      "status": "not_run",
+      "detail": "The primary agent's XOR percentages were not independently reproduced in this bounded S2 packet.",
+      "evidence": ["reviews/codex/S2_VERIFICATION.md"]
+    }
+  ],
+  "limitations": [
+    "Historic V1 commit 639e08f only; later branch/head changes are outside this report.",
+    "Netlist membership and DRC are complementary checks; neither proves functional electrical design or physical bench behavior.",
+    "DRC uses the released as-fabricated custom clearance rules, including a 3.3 mil track-to-pad allowance.",
+    "The 139 parity warnings remain unresolved at this revision despite exact connectivity agreement.",
+    "V5 finished-hole sizes, plating and complete drill provenance are not independently verified.",
+    "No independent full-film XOR, all-pad geometry comparison, schematic visual QA, Update-PCB GUI exercise, firmware build or powered-hardware test was performed in this packet."
+  ]
+}

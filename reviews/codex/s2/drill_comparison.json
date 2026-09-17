@@ -1,0 +1,17 @@
+{
+  "board_plated_pad_holes": 26,
+  "board_vias": 27,
+  "board_total_holes": 53,
+  "top_round_dark_flash_centers": 53,
+  "bottom_round_dark_flash_centers": 53,
+  "shared_v5_round_dark_flash_centers": 53,
+  "alignment_translation_mm_after_Y_inversion": [
+    100.0,
+    100.0
+  ],
+  "max_board_to_film_error_mil": 7.912276957146584e-13,
+  "max_film_to_board_error_mil": 7.912276957146584e-13,
+  "centers_within_0_05mil": true,
+  "available_drill_identical_to_v4_except_FILE_header": true,
+  "diameters_independently_verified_against_v5_drill": false
+}

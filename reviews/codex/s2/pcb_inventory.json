@@ -1,0 +1,2638 @@
+{
+  "footprints": [
+    {
+      "ref": "R1",
+      "allegro_ref": "R1",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/d7e1fd58-46c5-554a-9388-21ba4a8eb6ff",
+      "footprint": "LoRa_Boat_Controller:RC0402N_PAN-M",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "+3V3",
+          "at_mm": [
+            76.4288,
+            92.157496
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "FB_DIV",
+          "at_mm": [
+            76.4288,
+            93.466104
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "GND1",
+      "allegro_ref": "GND",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/15957c44-5c31-5ec5-a16d-5883b5bb78cd",
+      "footprint": "LoRa_Boat_Controller:amv_con1",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            63.1192,
+            95.9106
+          ],
+          "drill_mm": [
+            0.599948,
+            0.599948
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R2",
+      "allegro_ref": "R2",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/1efe8319-1589-5a8a-8b22-46b0998785d4",
+      "footprint": "LoRa_Boat_Controller:RC0603N_YAG-M",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "FB_DIV",
+          "at_mm": [
+            72.314,
+            93.1039
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "at_mm": [
+            72.314,
+            91.3513
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C14",
+      "allegro_ref": "C14",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/5190ca35-0b3f-56b0-bfde-2436574f244a",
+      "footprint": "LoRa_Boat_Controller:CAP_0603G_AVX-M",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "+3V3",
+          "at_mm": [
+            74.473,
+            91.1989
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "FB_DIV",
+          "at_mm": [
+            74.473,
+            93.0023
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "COUT1",
+      "allegro_ref": "COUT",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/4a3dfb10-7235-58ba-9206-7f0fb4ebf84e",
+      "footprint": "LoRa_Boat_Controller:G-31_MUR-M",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            83.0074,
+            88.4684
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            86.0554,
+            88.4684
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "JTAG1",
+      "allegro_ref": "JTAG",
+      "path": "/3a5b5ab2-5467-5f3c-8709-69a633ebc308/4637dcd9-1b36-5ade-b6b4-0dde1a27f22f",
+      "footprint": "LoRa_Boat_Controller:SAMTEC_FTSH-105-XX-X-DV",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "+3V3",
+          "at_mm": [
+            109.6012,
+            63.776552
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "SWDIO",
+          "at_mm": [
+            109.6012,
+            67.846648
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "GND",
+          "at_mm": [
+            108.3312,
+            63.776552
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "4",
+          "net": "SWCLK",
+          "at_mm": [
+            108.3312,
+            67.846648
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "5",
+          "net": "GND",
+          "at_mm": [
+            107.0612,
+            63.776552
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "6",
+          "net": "SWO_TDO",
+          "at_mm": [
+            107.0612,
+            67.846648
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "7",
+          "net": "",
+          "at_mm": [
+            105.7912,
+            63.776552
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "8",
+          "net": "TDI",
+          "at_mm": [
+            105.7912,
+            67.846648
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "9",
+          "net": "GND",
+          "at_mm": [
+            104.5212,
+            63.776552
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "10",
+          "net": "NRST",
+          "at_mm": [
+            104.5212,
+            67.846648
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C5",
+      "allegro_ref": "C5",
+      "path": "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/46a8f99f-40b4-5d4b-8dd3-c5eed14db603",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            104.7117,
+            94.3104
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            103.3147,
+            94.3104
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "CANHEADER1",
+      "allegro_ref": "CANHEADER",
+      "path": "/03b37037-d399-579f-8cd8-abb4c634cffd/05c4f6c9-339e-59bf-95f9-b9a8f07ee756",
+      "footprint": "LoRa_Boat_Controller:CONN_B4B-XH-A_JST",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            115.0114,
+            64.6432
+          ],
+          "drill_mm": [
+            1.2446,
+            1.2446
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "CAN_VCC",
+          "at_mm": [
+            117.511268,
+            64.6432
+          ],
+          "drill_mm": [
+            1.2446,
+            1.2446
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "CANH",
+          "at_mm": [
+            120.01139,
+            64.6432
+          ],
+          "drill_mm": [
+            1.2446,
+            1.2446
+          ]
+        },
+        {
+          "pin": "4",
+          "net": "CANL",
+          "at_mm": [
+            122.511512,
+            64.6432
+          ],
+          "drill_mm": [
+            1.2446,
+            1.2446
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "CEXT1",
+      "allegro_ref": "CEXT",
+      "path": "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/4391bb3d-57d2-575d-9cab-9bd2e293e8fc",
+      "footprint": "LoRa_Boat_Controller:CAP_0603_CL10A_1P6XP8_SAM-M",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "VCAP1",
+          "at_mm": [
+            104.318,
+            86.6015
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            104.318,
+            88.3541
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "LORAMODULE1",
+      "allegro_ref": "LORAMODULE",
+      "path": "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/a0732c3e-1cd6-52be-ad8b-b5797d913a1a",
+      "footprint": "LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "LORA_VCC",
+          "at_mm": [
+            78.7402,
+            81.585
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "LORA_TX_PA0",
+          "at_mm": [
+            81.2802,
+            81.585
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "LORA_RX_PA1",
+          "at_mm": [
+            83.8202,
+            81.585
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        },
+        {
+          "pin": "4",
+          "net": "LORA_RST_PA3",
+          "at_mm": [
+            86.3602,
+            81.585
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        },
+        {
+          "pin": "5",
+          "net": "GND",
+          "at_mm": [
+            88.9002,
+            81.585
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "L1",
+      "allegro_ref": "L1",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/b64610a9-c051-5485-8fa1-11ce81b6789a",
+      "footprint": "LoRa_Boat_Controller:IND_7045_TDK",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "+3V3",
+          "at_mm": [
+            86.2078,
+            91.743222
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "SW_NODE",
+          "at_mm": [
+            86.2078,
+            97.233178
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U6",
+      "allegro_ref": "U6",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/2d989ea3-50dc-5ad3-a25a-715671b21c51",
+      "footprint": "LoRa_Boat_Controller:SOT-23-6W_PE-SOT23-6W-0512_NMD",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "EN",
+          "at_mm": [
+            72.20605,
+            94.98604
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "VIN_RAW",
+          "at_mm": [
+            72.20605,
+            95.936
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "SW_NODE",
+          "at_mm": [
+            72.20605,
+            96.88596
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "4",
+          "net": "BST",
+          "at_mm": [
+            75.11435,
+            96.88596
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "5",
+          "net": "GND",
+          "at_mm": [
+            75.11435,
+            95.936
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "6",
+          "net": "FB_DIV",
+          "at_mm": [
+            75.11435,
+            94.98604
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R3",
+      "allegro_ref": "R3",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/bb97a6e2-ac0d-59c0-8b3e-63d85fb7ec89",
+      "footprint": "LoRa_Boat_Controller:RC0402N_YAG-M",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "BST_RC",
+          "at_mm": [
+            76.6574,
+            95.555
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "BST",
+          "at_mm": [
+            76.6574,
+            96.8758
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C9",
+      "allegro_ref": "C9",
+      "path": "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/a73262a9-350f-5d66-b028-00618e727dc1",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            124.765,
+            92.0625
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            124.765,
+            90.6655
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C4",
+      "allegro_ref": "C4",
+      "path": "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/f187378e-3053-50aa-9bf7-8c4f0cb641a9",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            97.9807,
+            86.1824
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            99.3777,
+            86.1824
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C7",
+      "allegro_ref": "C7",
+      "path": "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/415699de-1d71-52cb-819e-2e89256f38e9",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            109.5504,
+            74.2063
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            109.5504,
+            72.8093
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "L4",
+      "allegro_ref": "L4",
+      "path": "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/0c7259c5-e3c4-5c8a-8c90-aab664db610e",
+      "footprint": "LoRa_Boat_Controller:IND_BLM15_0402_MUR-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            72.6061,
+            82.8804
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "LORA_FILT",
+          "at_mm": [
+            71.7679,
+            82.8804
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "TP4",
+      "allegro_ref": "TP4",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/a4d7d304-9ea3-5e57-8eba-8dd6e9416fd3",
+      "footprint": "LoRa_Boat_Controller:amv_test_point",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "+3V3",
+          "at_mm": [
+            66.3196,
+            74.7016
+          ],
+          "drill_mm": [
+            1.400048,
+            1.400048
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C1",
+      "allegro_ref": "C1",
+      "path": "/03b37037-d399-579f-8cd8-abb4c634cffd/8ba4d440-69c8-59bb-b151-894ab8b3bb41",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            113.8303,
+            69.139
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "CAN_VCC",
+          "at_mm": [
+            115.2273,
+            69.139
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "TP1",
+      "allegro_ref": "TP1",
+      "path": "/31210085-9759-5277-8f1d-4204cfd4b08e/6783f8fc-20b7-5bd6-86af-d601321dbc82",
+      "footprint": "LoRa_Boat_Controller:amv_test_point",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "PWM_PA8_ESCHDR",
+          "at_mm": [
+            115.621,
+            78.8672
+          ],
+          "drill_mm": [
+            1.400048,
+            1.400048
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C6",
+      "allegro_ref": "C6",
+      "path": "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/ac85f5a8-fd00-5f75-abd3-83edeaa32852",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            105.9309,
+            86.3856
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            107.3279,
+            86.3856
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C20",
+      "allegro_ref": "C20",
+      "path": "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/9c2647c1-3432-5336-bd24-2a5a4e5cfb29",
+      "footprint": "LoRa_Boat_Controller:G-21_MUR-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "LORA_FILT",
+          "at_mm": [
+            70.3074,
+            82.8677
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            70.3074,
+            81.2167
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C12",
+      "allegro_ref": "C12",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/51e9806c-c7a5-5ff4-8cb7-23c1cf7e3957",
+      "footprint": "LoRa_Boat_Controller:CAP_CL10_SAM-M",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "SW_NODE",
+          "at_mm": [
+            78.3846,
+            96.916186
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "BST_RC",
+          "at_mm": [
+            78.3846,
+            95.057414
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R6",
+      "allegro_ref": "R6",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/cab713cf-6fd3-5fcf-9934-ef61bee4acc6",
+      "footprint": "LoRa_Boat_Controller:RES_1005_SAM-M",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            65.4306,
+            88.487704
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "ADC_VBAT",
+          "at_mm": [
+            65.4306,
+            87.179096
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R4",
+      "allegro_ref": "R4",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/8b19c11a-13b3-55ca-b2c2-8e02c5371db1",
+      "footprint": "LoRa_Boat_Controller:RC0402N_PAN-M",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "VIN_RAW",
+          "at_mm": [
+            67.290896,
+            88.6462
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "EN",
+          "at_mm": [
+            68.599504,
+            88.6462
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "TP5",
+      "allegro_ref": "TP5",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/647d57b3-542a-5b1f-b65d-5259f6bd3850",
+      "footprint": "LoRa_Boat_Controller:amv_test_point",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            72.4664,
+            74.7016
+          ],
+          "drill_mm": [
+            1.400048,
+            1.400048
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "GPSMODULE1",
+      "allegro_ref": "GPSMODULE",
+      "path": "/9db88c42-176c-566e-9323-3aea3f09ec4b/c527998b-5ac0-5b30-a6ca-6114bbdf301b",
+      "footprint": "LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "+3V3",
+          "at_mm": [
+            102.7686,
+            96.7234
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "at_mm": [
+            105.3086,
+            96.7234
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "GPS_PB0",
+          "at_mm": [
+            107.8486,
+            96.7234
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        },
+        {
+          "pin": "4",
+          "net": "GPS_RX_PC11",
+          "at_mm": [
+            110.3886,
+            96.7234
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        },
+        {
+          "pin": "5",
+          "net": "GPS_TX_PC10",
+          "at_mm": [
+            112.9286,
+            96.7234
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C8",
+      "allegro_ref": "C8",
+      "path": "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/a363b6cf-804c-5efa-bb0f-540908a4c2f5",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            124.5618,
+            79.4895
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            124.5618,
+            80.8865
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C2",
+      "allegro_ref": "C2",
+      "path": "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/58285181-813f-5dae-8b80-0086b9eee149",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            92.7356,
+            78.0163
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            92.7356,
+            79.4133
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "STEERINGSERVO1",
+      "allegro_ref": "STEERINGSERVO",
+      "path": "/31210085-9759-5277-8f1d-4204cfd4b08e/81d90489-aa42-589f-b433-122d0b297b78",
+      "footprint": "LoRa_Boat_Controller:CONN_PPTC031_SUL",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "+3V3",
+          "at_mm": [
+            122.098,
+            89.0272
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "PWM_PC6_SERVOHDR",
+          "at_mm": [
+            122.098,
+            91.5672
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "GND",
+          "at_mm": [
+            122.098,
+            94.1072
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C22",
+      "allegro_ref": "C22",
+      "path": "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/2fdee2a4-8ce9-54ba-9036-8187b83e6a45",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            75.362,
+            82.7661
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "LORA_VCC",
+          "at_mm": [
+            75.362,
+            81.3691
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U3",
+      "allegro_ref": "U3",
+      "path": "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/5b1b3e88-9698-5022-a076-a5744f2cba77",
+      "footprint": "LoRa_Boat_Controller:LQFP64-10x10mm",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "VBAT",
+          "at_mm": [
+            95.875548,
+            74.202744
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "",
+          "at_mm": [
+            95.875548,
+            74.70287
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "",
+          "at_mm": [
+            95.875548,
+            75.202742
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "4",
+          "net": "",
+          "at_mm": [
+            95.875548,
+            75.702868
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "5",
+          "net": "",
+          "at_mm": [
+            95.875548,
+            76.20274
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "6",
+          "net": "",
+          "at_mm": [
+            95.875548,
+            76.702866
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "7",
+          "net": "NRST",
+          "at_mm": [
+            95.875548,
+            77.202738
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "8",
+          "net": "",
+          "at_mm": [
+            95.875548,
+            77.702864
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "9",
+          "net": "",
+          "at_mm": [
+            95.875548,
+            78.202736
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "10",
+          "net": "",
+          "at_mm": [
+            95.875548,
+            78.702862
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "11",
+          "net": "",
+          "at_mm": [
+            95.875548,
+            79.202734
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "12",
+          "net": "GND",
+          "at_mm": [
+            95.875548,
+            79.70286
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "13",
+          "net": "+3V3",
+          "at_mm": [
+            95.875548,
+            80.202732
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "14",
+          "net": "LORA_TX_PA0",
+          "at_mm": [
+            95.875548,
+            80.702858
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "15",
+          "net": "LORA_RX_PA1",
+          "at_mm": [
+            95.875548,
+            81.20273
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "16",
+          "net": "ADC_VBAT",
+          "at_mm": [
+            95.875548,
+            81.702856
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "17",
+          "net": "LORA_RST_PA3",
+          "at_mm": [
+            97.875544,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "18",
+          "net": "GND",
+          "at_mm": [
+            98.37567,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "19",
+          "net": "+3V3",
+          "at_mm": [
+            98.875542,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "20",
+          "net": "",
+          "at_mm": [
+            99.375668,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "21",
+          "net": "",
+          "at_mm": [
+            99.87554,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "22",
+          "net": "",
+          "at_mm": [
+            100.375666,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "23",
+          "net": "",
+          "at_mm": [
+            100.875538,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "24",
+          "net": "",
+          "at_mm": [
+            101.375664,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "25",
+          "net": "",
+          "at_mm": [
+            101.875536,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "26",
+          "net": "GPS_PB0",
+          "at_mm": [
+            102.375662,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "27",
+          "net": "",
+          "at_mm": [
+            102.875534,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "28",
+          "net": "",
+          "at_mm": [
+            103.37566,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "29",
+          "net": "",
+          "at_mm": [
+            103.875532,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "30",
+          "net": "VCAP1",
+          "at_mm": [
+            104.375658,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "31",
+          "net": "GND",
+          "at_mm": [
+            104.87553,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "32",
+          "net": "+3V3",
+          "at_mm": [
+            105.375656,
+            83.702852
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "33",
+          "net": "",
+          "at_mm": [
+            107.375652,
+            81.702856
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "34",
+          "net": "",
+          "at_mm": [
+            107.375652,
+            81.20273
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "35",
+          "net": "",
+          "at_mm": [
+            107.375652,
+            80.702858
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "36",
+          "net": "",
+          "at_mm": [
+            107.375652,
+            80.202732
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "37",
+          "net": "PWM_PC6_SERVOHDR",
+          "at_mm": [
+            107.375652,
+            79.70286
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "38",
+          "net": "",
+          "at_mm": [
+            107.375652,
+            79.202734
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "39",
+          "net": "",
+          "at_mm": [
+            107.375652,
+            78.702862
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "40",
+          "net": "",
+          "at_mm": [
+            107.375652,
+            78.202736
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "41",
+          "net": "PWM_PA8_ESCHDR",
+          "at_mm": [
+            107.375652,
+            77.702864
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "42",
+          "net": "",
+          "at_mm": [
+            107.375652,
+            77.202738
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "43",
+          "net": "CAN_RXD_PA10",
+          "at_mm": [
+            107.375652,
+            76.702866
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "44",
+          "net": "CAN_STB_PA11",
+          "at_mm": [
+            107.375652,
+            76.20274
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "45",
+          "net": "CAN_TXD_PA12",
+          "at_mm": [
+            107.375652,
+            75.702868
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "46",
+          "net": "SWDIO",
+          "at_mm": [
+            107.375652,
+            75.202742
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "47",
+          "net": "GND",
+          "at_mm": [
+            107.375652,
+            74.70287
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "48",
+          "net": "+3V3",
+          "at_mm": [
+            107.375652,
+            74.202744
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "49",
+          "net": "SWCLK",
+          "at_mm": [
+            105.375656,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "50",
+          "net": "TDI",
+          "at_mm": [
+            104.87553,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "51",
+          "net": "GPS_TX_PC10",
+          "at_mm": [
+            104.375658,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "52",
+          "net": "GPS_RX_PC11",
+          "at_mm": [
+            103.875532,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "53",
+          "net": "",
+          "at_mm": [
+            103.37566,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "54",
+          "net": "",
+          "at_mm": [
+            102.875534,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "55",
+          "net": "SWO_TDO",
+          "at_mm": [
+            102.375662,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "56",
+          "net": "",
+          "at_mm": [
+            101.875536,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "57",
+          "net": "",
+          "at_mm": [
+            101.375664,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "58",
+          "net": "",
+          "at_mm": [
+            100.875538,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "59",
+          "net": "",
+          "at_mm": [
+            100.375666,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "60",
+          "net": "",
+          "at_mm": [
+            99.87554,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "61",
+          "net": "",
+          "at_mm": [
+            99.375668,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "62",
+          "net": "",
+          "at_mm": [
+            98.875542,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "63",
+          "net": "GND",
+          "at_mm": [
+            98.37567,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "64",
+          "net": "+3V3",
+          "at_mm": [
+            97.875544,
+            72.202748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C3",
+      "allegro_ref": "C3",
+      "path": "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/6bf552d0-e1a9-59e5-b98e-f697d6b06fa0",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            98.4633,
+            70.5106
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            97.0663,
+            70.5106
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "VIN1",
+      "allegro_ref": "VIN",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/8a090e02-baca-51a2-ba1e-de7d97c10e9f",
+      "footprint": "LoRa_Boat_Controller:amv_con1",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "VIN_RAW",
+          "at_mm": [
+            63.1192,
+            91.1354
+          ],
+          "drill_mm": [
+            0.599948,
+            0.599948
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "TP3",
+      "allegro_ref": "TP3",
+      "path": "/31210085-9759-5277-8f1d-4204cfd4b08e/b75d899b-2795-5c5b-be00-7258ec9a8ead",
+      "footprint": "LoRa_Boat_Controller:amv_test_point",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "PWM_PC6_SERVOHDR",
+          "at_mm": [
+            115.494,
+            82.7534
+          ],
+          "drill_mm": [
+            1.400048,
+            1.400048
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "SPEEDCONTROLLER1",
+      "allegro_ref": "SPEEDCONTROLLER",
+      "path": "/31210085-9759-5277-8f1d-4204cfd4b08e/4a6ba665-9413-5377-90a6-4014a5f9ecf1",
+      "footprint": "LoRa_Boat_Controller:CONN_PPTC031_SUL",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "+3V3",
+          "at_mm": [
+            122.0472,
+            83.0836
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "PWM_PA8_ESCHDR",
+          "at_mm": [
+            122.0472,
+            80.5436
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "GND",
+          "at_mm": [
+            122.0472,
+            78.0036
+          ],
+          "drill_mm": [
+            1.016,
+            1.016
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U5",
+      "allegro_ref": "U5",
+      "path": "/03b37037-d399-579f-8cd8-abb4c634cffd/2a37d36c-b21d-508e-948d-738a4433b1f5",
+      "footprint": "LoRa_Boat_Controller:D0008A_L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "CAN_TXD_PA12",
+          "at_mm": [
+            116.9164,
+            74.43109
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "at_mm": [
+            118.1864,
+            74.43109
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "CAN_VCC",
+          "at_mm": [
+            119.4564,
+            74.43109
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "4",
+          "net": "CAN_RXD_PA10",
+          "at_mm": [
+            120.7264,
+            74.43109
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "5",
+          "net": "",
+          "at_mm": [
+            120.7264,
+            69.18091
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "6",
+          "net": "CANL",
+          "at_mm": [
+            119.4564,
+            69.18091
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "7",
+          "net": "CANH",
+          "at_mm": [
+            118.1864,
+            69.18091
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "8",
+          "net": "CAN_STB_PA11",
+          "at_mm": [
+            116.9164,
+            69.18091
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D21",
+      "allegro_ref": "D21",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/3aaac9d3-1d0a-5307-8a55-83eed596f498",
+      "footprint": "LoRa_Boat_Controller:M-FLAT_TOS-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            80.696,
+            93.4087
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "SW_NODE",
+          "at_mm": [
+            80.696,
+            97.5489
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C23",
+      "allegro_ref": "C23",
+      "path": "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/0354cc44-8e46-5b44-aec8-e40996845123",
+      "footprint": "LoRa_Boat_Controller:CAP_GJM1555C1H220JB01__MUR-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            76.5304,
+            82.3597
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "LORA_VCC",
+          "at_mm": [
+            76.5304,
+            81.5215
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "L3",
+      "allegro_ref": "L3",
+      "path": "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/a373030b-08ac-5fbc-b864-0b899511416f",
+      "footprint": "LoRa_Boat_Controller:IND_BLM15_0402_MUR-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "LORA_VCC",
+          "at_mm": [
+            72.5299,
+            81.204
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            71.6917,
+            81.204
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C21",
+      "allegro_ref": "C21",
+      "path": "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/ae71f1a7-ce53-565b-af5f-4bb9e74cf395",
+      "footprint": "LoRa_Boat_Controller:G-21_MUR-L",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            73.7618,
+            82.8677
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "LORA_VCC",
+          "at_mm": [
+            73.7618,
+            81.2167
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R5",
+      "allegro_ref": "R5",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/03efdf1d-9000-5044-8bf1-4a8aa611e6a2",
+      "footprint": "LoRa_Boat_Controller:RES_R0805_ROM-M",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "VIN_RAW",
+          "at_mm": [
+            63.1954,
+            88.6589
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "ADC_VBAT",
+          "at_mm": [
+            63.1954,
+            86.8555
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C10",
+      "allegro_ref": "C10",
+      "path": "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/34f336b8-86d0-5de6-b277-97d72af944d5",
+      "footprint": "LoRa_Boat_Controller:CAP_0603_CL10A_1P6XP8_SAM-M",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            98.0061,
+            88.8748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "at_mm": [
+            99.7587,
+            88.8748
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "CIN1",
+      "allegro_ref": "CIN",
+      "path": "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/9c0e8963-dca4-52d4-adf4-489b29c8c7ef",
+      "footprint": "LoRa_Boat_Controller:CAP_NTS_55_2P8T_NIP",
+      "pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "at_mm": [
+            67.5134,
+            96.1265
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "VIN_RAW",
+          "at_mm": [
+            67.5134,
+            90.9703
+          ],
+          "drill_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "vias": [
+    {
+      "at_mm": [
+        81.8644,
+        88.4684
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        72.5934,
+        84.3028
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        73.7618,
+        95.936
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        113.6144,
+        74.2063
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        105.6642,
+        94.3104
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        98.4633,
+        69.139
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        92.7356,
+        76.886
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        80.696,
+        92.3038
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        105.9309,
+        87.4524
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        67.9452,
+        87.18062
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        110.922,
+        74.2063
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        113.8303,
+        70.282
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        124.5618,
+        78.029
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        97.9807,
+        87.2746
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        67.5134,
+        97.587
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        72.314,
+        90.0178
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        124.765,
+        93.0404
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        76.8352,
+        86.03
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        85.8014,
+        86.03
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        93.5992,
+        82.0676
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        93.4722,
+        86.03
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        116.9164,
+        70.8662
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        115.5956,
+        75.997
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        86.3602,
+        83.0836
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        86.3602,
+        85.014
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        107.0612,
+        70.8916
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    },
+    {
+      "at_mm": [
+        102.3368,
+        70.6376
+      ],
+      "diameter_mm": 0.6096,
+      "drill_mm": 0.3302
+    }
+  ]
+}

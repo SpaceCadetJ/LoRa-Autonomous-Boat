@@ -85,7 +85,7 @@ def inventory(commit, manifest, version):
                               'drill_mm': [p.GetDrillSize().x / 1e6, p.GetDrillSize().y / 1e6]}
                              for p in fp.Pads()]})
     vias = [{'at_mm': [t.GetPosition().x / 1e6, t.GetPosition().y / 1e6],
-             'diameter_mm': t.GetWidth() / 1e6, 'drill_mm': t.GetDrillValue() / 1e6}
+             'diameter_mm': t.GetWidth(pcbnew.F_Cu) / 1e6, 'drill_mm': t.GetDrillValue() / 1e6}
             for t in board.GetTracks() if isinstance(t, pcbnew.PCB_VIA)]
     dump('pcb_inventory.json', {'footprints': fps, 'vias': vias})
     changed = [p for p, m in manifest.items() if hashlib.sha256((SNAP / p).read_bytes()).hexdigest() != m['sha256']]

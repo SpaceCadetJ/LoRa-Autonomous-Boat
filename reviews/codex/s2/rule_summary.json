@@ -1,0 +1,20 @@
+{
+  "erc_violations": 0,
+  "drc_violations": 67,
+  "drc_counts": {
+    "isolated_copper:warning": 3,
+    "silk_edge_clearance:warning": 6,
+    "silk_over_copper:warning": 21,
+    "solder_mask_bridge:warning": 37
+  },
+  "drc_errors": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 139,
+  "schematic_parity_counts": {
+    "footprint_value_mismatch": 34,
+    "sheet_prefix_net_name_difference": 67,
+    "VBAT_singleton_vs_schematic_unconnected_name": 1,
+    "unassigned_pad_vs_schematic_unconnected_name": 37
+  },
+  "schematic_parity_unclassified": []
+}

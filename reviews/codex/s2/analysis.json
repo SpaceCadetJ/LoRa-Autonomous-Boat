@@ -1,0 +1,68 @@
+{
+  "revision": "639e08fe56c38d54becf086f4fd86ec20ecfcb90",
+  "generated_at": "2026-09-17T16:36:48.583852+00:00",
+  "snapshot_hash_mismatches": [],
+  "connectivity": {
+    "source_parts": 44,
+    "schematic_parts": 44,
+    "pcb_parts": 44,
+    "source_connected_nets": 32,
+    "source_multi_pin_nets": 31,
+    "source_nc_pins": 37,
+    "all_physical_pins": 172,
+    "schematic_pin_count": 172,
+    "pcb_pad_count": 172,
+    "source_pin_groups_with_NC_split": 69,
+    "source_duplicate_memberships": [],
+    "schematic_duplicate_memberships": [],
+    "pcb_duplicate_memberships": [],
+    "schematic_missing_groups": [],
+    "schematic_extra_groups": [],
+    "pcb_missing_groups": [],
+    "pcb_extra_groups": [],
+    "refs_missing_in_schematic": [],
+    "refs_extra_in_schematic": [],
+    "refs_missing_in_pcb": [],
+    "refs_extra_in_pcb": [],
+    "footprint_path_mismatches": [],
+    "footprint_library_mismatches": [],
+    "pass": true
+  },
+  "rules": {
+    "erc_violations": 0,
+    "drc_violations": 67,
+    "drc_counts": {
+      "isolated_copper:warning": 3,
+      "silk_edge_clearance:warning": 6,
+      "silk_over_copper:warning": 21,
+      "solder_mask_bridge:warning": 37
+    },
+    "drc_errors": 0,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 139,
+    "schematic_parity_counts": {
+      "footprint_value_mismatch": 34,
+      "sheet_prefix_net_name_difference": 67,
+      "VBAT_singleton_vs_schematic_unconnected_name": 1,
+      "unassigned_pad_vs_schematic_unconnected_name": 37
+    },
+    "schematic_parity_unclassified": []
+  },
+  "drill": {
+    "board_plated_pad_holes": 26,
+    "board_vias": 27,
+    "board_total_holes": 53,
+    "top_round_dark_flash_centers": 53,
+    "bottom_round_dark_flash_centers": 53,
+    "shared_v5_round_dark_flash_centers": 53,
+    "alignment_translation_mm_after_Y_inversion": [
+      100.0,
+      100.0
+    ],
+    "max_board_to_film_error_mil": 7.912276957146584e-13,
+    "max_film_to_board_error_mil": 7.912276957146584e-13,
+    "centers_within_0_05mil": true,
+    "available_drill_identical_to_v4_except_FILE_header": true,
+    "diameters_independently_verified_against_v5_drill": false
+  }
+}

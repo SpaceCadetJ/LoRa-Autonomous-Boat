@@ -1,0 +1,1562 @@
+{
+  "generated_at": "2026-09-17T16:38:39.365348+00:00",
+  "sources": [
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+      "sha256": "b88c36244bb3e3eb4d10712ce8ca39ddb5908e2c3225aa187155f9f4dca6b02c",
+      "bytes": 30037
+    },
+    {
+      "path": "hardware/kicad/_build/netmap.json",
+      "sha256": "b9f5502f8c0e06aab989e1558b25aba334c8a6395102dbcc328f358ce43b54e9",
+      "bytes": 753
+    },
+    {
+      "path": "docs/BOM.csv",
+      "sha256": "71f589596007465f98d433cfb7af735b766a5905f74390a73a25d3e1aa0b3efb",
+      "bytes": 7275
+    },
+    {
+      "path": "hardware/kicad/_build/netlist.xml",
+      "sha256": "d16588c8f579a2a2324b6d6d940b7e0dc2e861f66a75ea191dab4e3c3811a68a",
+      "bytes": 105171
+    },
+    {
+      "path": "firmware/Core/Src/main.c",
+      "sha256": "088bc6e61b8865e1bbf5c8a585cb8524134d418db22926f306627440957d495a",
+      "bytes": 22010
+    },
+    {
+      "path": "firmware/Core/Src/stm32f4xx_hal_msp.c",
+      "sha256": "180c6eefe84d1e58d7f01f635faad358ccc64a3848e0ff2e3f9d700e2d45a1c0",
+      "bytes": 8346
+    },
+    {
+      "path": "firmware/BoatTHISTIMEITSDIFFERENT.ioc",
+      "sha256": "eb9df4055fe4f072996c6a92f7b4fc9039c39f28451d9eefeb3bc702370a0579",
+      "bytes": 5682
+    },
+    {
+      "path": "docs/research/DATASHEET_NOTES.md",
+      "sha256": "b5171f1d3963c6c293c95935485ca9cab86cb0385e6a2174726a99ca3bb73a3d",
+      "bytes": 32734
+    },
+    {
+      "path": "docs/atlas/generate_atlas.py",
+      "sha256": "204e288f63b04842134921c2678ec6a840aa302536f923cc30adfa96d5a36a77",
+      "bytes": 24123
+    }
+  ],
+  "status": "Source-derived snapshot; bench and physical orientation unverified",
+  "connectors": [
+    {
+      "id": "LORAMODULE1",
+      "allegro_ref": "LORAMODULE",
+      "title": "LoRa module",
+      "description": "Five-pin serial radio interface; the BOM identifies the socket, not the fitted radio module.",
+      "doc": "docs/atlas/LORAMODULE.md",
+      "notes": [
+        "Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.",
+        "Installed RYLR model remains unconfirmed. Capture identification and accepted AT settings before using performance estimates.",
+        "No LoRa reset GPIO setup appears in the current source. Legacy command reception has no link-loss timeout."
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "allegro_pin": "1",
+          "net": "LORA_VCC",
+          "allegro_net": "N04429",
+          "mcu": "No direct MCU pin",
+          "firmware": "LoRa supply through L3",
+          "voltage": "Derived from +3V3; actual voltage unmeasured",
+          "direction": "Board → module supply",
+          "bench": "Unpowered continuity through L3 to +3V3; identify module before powering.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 27
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 22
+            }
+          ]
+        },
+        {
+          "pin": "2",
+          "allegro_pin": "2",
+          "net": "LORA_TX_PA0",
+          "allegro_net": "N04477",
+          "mcu": "U3-14 PA0",
+          "firmware": "UART4 TX; AT commands at 115200 baud, 8N1",
+          "voltage": "3.3 V logic domain; module tolerance unverified",
+          "direction": "MCU → LoRa RX",
+          "bench": "Logic analyzer: expect AT commands at startup. Read module replies to establish accepted settings.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 96
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 99
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 21
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 639
+            },
+            {
+              "path": "firmware/Core/Src/stm32f4xx_hal_msp.c",
+              "line": 213
+            }
+          ]
+        },
+        {
+          "pin": "3",
+          "allegro_pin": "3",
+          "net": "LORA_RX_PA1",
+          "allegro_net": "N04485",
+          "mcu": "U3-15 PA1",
+          "firmware": "UART4 RX; +RCV line parser",
+          "voltage": "Module TX level must be verified",
+          "direction": "LoRa TX → MCU",
+          "bench": "Capture startup replies and +RCV traffic at 115200 baud, 8N1; no capture exists in this atlas.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 17
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 20
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 20
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 639
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 294
+            },
+            {
+              "path": "firmware/Core/Src/stm32f4xx_hal_msp.c",
+              "line": 214
+            }
+          ]
+        },
+        {
+          "pin": "4",
+          "allegro_pin": "4",
+          "net": "LORA_RST_PA3",
+          "allegro_net": "N24517",
+          "mcu": "U3-17 PA3",
+          "firmware": "Wired to PA3; no PA3 reset GPIO configuration in this firmware snapshot",
+          "voltage": "Reset polarity/level needs module identification",
+          "direction": "Intended MCU → module reset; unconfigured",
+          "bench": "Confirm module reset pin and pull network; do not assume this firmware can reset the radio.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 375
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 378
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 19
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 678
+            }
+          ]
+        },
+        {
+          "pin": "5",
+          "allegro_pin": "5",
+          "net": "GND",
+          "allegro_net": "0",
+          "mcu": "U3-18 VSS; U3-31 VSS_2; U3-47 VSS_3; U3-63 VSS_4; U3-12 VSSA/VREF-",
+          "firmware": "Common reference",
+          "voltage": "0 V reference (expected)",
+          "direction": "Reference",
+          "bench": "Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 124
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 169
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 172
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 175
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 178
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 181
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 3
+            }
+          ]
+        }
+      ],
+      "bom": {
+        "Ref": "LORAMODULE1",
+        "Allegro_RefDes": "LORAMODULE",
+        "Value": "PPTC051LFBN-RC",
+        "MPN": "PPTC051LFBN-RC",
+        "Manufacturer": "Sullins Connector Solutions",
+        "Footprint": "LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL",
+        "Confidence": "HIGH"
+      }
+    },
+    {
+      "id": "GPSMODULE1",
+      "allegro_ref": "GPSMODULE",
+      "title": "GPS module",
+      "description": "Five-pin GPS socket with USART3 and an extra PB0 signal.",
+      "doc": "docs/atlas/GPSMODULE.md",
+      "notes": [
+        "Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.",
+        "The BOM identifies the socket, not the GPS module. PB0/pin 3 is actively driven LOW by firmware.",
+        "USART3 TX also carries debug output; assess its effect on the selected GPS module."
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "allegro_pin": "1",
+          "net": "+3V3",
+          "allegro_net": "3.3V",
+          "mcu": "U3-19 VDD; U3-32 VDD_2; U3-48 VDD_3; U3-64 VDD_4; U3-13 VDDA/VREF+",
+          "firmware": "Board supply / debug voltage reference",
+          "voltage": "3.3 V nominal (unmeasured)",
+          "direction": "Board rail; external powering unsupported until reviewed",
+          "bench": "Measure rail relative to TP5 with loads disconnected after V1 power defects are reviewed.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 286
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 322
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 325
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 328
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 331
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 334
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 2
+            }
+          ]
+        },
+        {
+          "pin": "2",
+          "allegro_pin": "2",
+          "net": "GND",
+          "allegro_net": "0",
+          "mcu": "U3-18 VSS; U3-31 VSS_2; U3-47 VSS_3; U3-63 VSS_4; U3-12 VSSA/VREF-",
+          "firmware": "Common reference",
+          "voltage": "0 V reference (expected)",
+          "direction": "Reference",
+          "bench": "Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 109
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 169
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 172
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 175
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 178
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 181
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 3
+            }
+          ]
+        },
+        {
+          "pin": "3",
+          "allegro_pin": "3",
+          "net": "GPS_PB0",
+          "allegro_net": "N04277",
+          "mcu": "U3-26 PB0",
+          "firmware": "PB0 is a push-pull output held LOW, described as debug LED/probe",
+          "voltage": "0 V expected after GPIO init (unmeasured)",
+          "direction": "MCU → attached GPS pin 3; external function unknown",
+          "bench": "Identify GPS module pin 3 before attachment; possible output contention if that module drives this pin.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 46
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 49
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 15
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 688
+            }
+          ]
+        },
+        {
+          "pin": "4",
+          "allegro_pin": "4",
+          "net": "GPS_RX_PC11",
+          "allegro_net": "N04281",
+          "mcu": "U3-52 PC11",
+          "firmware": "USART3 RX; $GPRMC/$GNRMC parsing at 9600 baud, 8N1",
+          "voltage": "GPS TX level unverified",
+          "direction": "GPS TX → MCU",
+          "bench": "Capture NMEA lines and verify actual GPS baud rate/logic levels.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 218
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 221
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 16
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 660
+            },
+            {
+              "path": "firmware/Core/Src/stm32f4xx_hal_msp.c",
+              "line": 241
+            }
+          ]
+        },
+        {
+          "pin": "5",
+          "allegro_pin": "5",
+          "net": "GPS_TX_PC10",
+          "allegro_net": "N04285",
+          "mcu": "U3-51 PC10",
+          "firmware": "USART3 TX; debug strings share the GPS UART",
+          "voltage": "3.3 V logic domain; module tolerance unverified",
+          "direction": "MCU → GPS RX",
+          "bench": "Capture transmitted debug text; determine whether the connected GPS interprets or rejects it.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 228
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 231
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 17
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 171
+            },
+            {
+              "path": "firmware/Core/Src/stm32f4xx_hal_msp.c",
+              "line": 240
+            }
+          ]
+        }
+      ],
+      "bom": {
+        "Ref": "GPSMODULE1",
+        "Allegro_RefDes": "GPSMODULE",
+        "Value": "PPTC051LFBN-RC",
+        "MPN": "PPTC051LFBN-RC",
+        "Manufacturer": "Sullins Connector Solutions",
+        "Footprint": "LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL",
+        "Confidence": "HIGH"
+      }
+    },
+    {
+      "id": "SPEEDCONTROLLER1",
+      "allegro_ref": "SPEEDCONTROLLER",
+      "title": "SPEEDCONTROLLER header / firmware rudder",
+      "description": "Source-named ESC header carries PA8/TIM1, currently assigned to rudder in firmware.",
+      "doc": "docs/atlas/SPEEDCONTROLLER.md",
+      "notes": [
+        "Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.",
+        "V1 connector names conflict with firmware roles: SPEEDCONTROLLER pin 2 carries the firmware rudder waveform; STEERINGSERVO pin 2 carries the firmware thrust waveform. Treat both as electrical identities until harness labels and physical continuity are verified.",
+        "Pin 1 is on the board +3V3 rail. ESC/BEC/servo external power compatibility and current budget are unverified; this is not a certified actuator power port.",
+        "No link-loss failsafe exists in the reviewed C main loop; last command persists."
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "allegro_pin": "1",
+          "net": "+3V3",
+          "allegro_net": "3.3V",
+          "mcu": "U3-19 VDD; U3-32 VDD_2; U3-48 VDD_3; U3-64 VDD_4; U3-13 VDDA/VREF+",
+          "firmware": "Board supply / debug voltage reference",
+          "voltage": "3.3 V nominal (unmeasured)",
+          "direction": "Board rail; external powering unsupported until reviewed",
+          "bench": "Measure rail relative to TP5 with loads disconnected after V1 power defects are reviewed.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 295
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 322
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 325
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 328
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 331
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 334
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 2
+            }
+          ]
+        },
+        {
+          "pin": "2",
+          "allegro_pin": "2",
+          "net": "PWM_PA8_ESCHDR",
+          "allegro_net": "N04355",
+          "mcu": "U3-41 PA8",
+          "firmware": "TIM1_CH1 / set_rudder(): 1100–1900 us; startup 1500 us",
+          "voltage": "3.3 V logic; load compatibility unverified",
+          "direction": "MCU → header / TP1",
+          "bench": "Expected 50 Hz, 1500 us after startup; source name says ESC but firmware role is rudder. Scope with actuators disconnected.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 238
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 244
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 24
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 407
+            },
+            {
+              "path": "firmware/Core/Src/stm32f4xx_hal_msp.c",
+              "line": 125
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 570
+            }
+          ]
+        },
+        {
+          "pin": "3",
+          "allegro_pin": "3",
+          "net": "GND",
+          "allegro_net": "0",
+          "mcu": "U3-18 VSS; U3-31 VSS_2; U3-47 VSS_3; U3-63 VSS_4; U3-12 VSSA/VREF-",
+          "firmware": "Common reference",
+          "voltage": "0 V reference (expected)",
+          "direction": "Reference",
+          "bench": "Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 115
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 169
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 172
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 175
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 178
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 181
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 3
+            }
+          ]
+        }
+      ],
+      "bom": {
+        "Ref": "SPEEDCONTROLLER1",
+        "Allegro_RefDes": "SPEEDCONTROLLER",
+        "Value": "PPTC031LFBN-RC",
+        "MPN": "PPTC031LFBN-RC",
+        "Manufacturer": "Sullins Connector Solutions",
+        "Footprint": "LoRa_Boat_Controller:CONN_PPTC031_SUL",
+        "Confidence": "HIGH"
+      }
+    },
+    {
+      "id": "STEERINGSERVO1",
+      "allegro_ref": "STEERINGSERVO",
+      "title": "STEERINGSERVO header / firmware thrust",
+      "description": "Source-named servo header carries PC6/TIM3, currently assigned to thrust in firmware.",
+      "doc": "docs/atlas/STEERINGSERVO.md",
+      "notes": [
+        "Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.",
+        "V1 connector names conflict with firmware roles: SPEEDCONTROLLER pin 2 carries the firmware rudder waveform; STEERINGSERVO pin 2 carries the firmware thrust waveform. Treat both as electrical identities until harness labels and physical continuity are verified.",
+        "Pin 1 is on the board +3V3 rail. ESC/BEC/servo external power compatibility and current budget are unverified; this is not a certified actuator power port.",
+        "TIM3 startup differs: current C requests 1000 us, .ioc requests 1500 us. Regeneration needs review."
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "allegro_pin": "1",
+          "net": "+3V3",
+          "allegro_net": "3.3V",
+          "mcu": "U3-19 VDD; U3-32 VDD_2; U3-48 VDD_3; U3-64 VDD_4; U3-13 VDDA/VREF+",
+          "firmware": "Board supply / debug voltage reference",
+          "voltage": "3.3 V nominal (unmeasured)",
+          "direction": "Board rail; external powering unsupported until reviewed",
+          "bench": "Measure rail relative to TP5 with loads disconnected after V1 power defects are reviewed.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 292
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 322
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 325
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 328
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 331
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 334
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 2
+            }
+          ]
+        },
+        {
+          "pin": "2",
+          "allegro_pin": "2",
+          "net": "PWM_PC6_SERVOHDR",
+          "allegro_net": "N04395",
+          "mcu": "U3-37 PC6",
+          "firmware": "TIM3_CH1 / set_thrust(): 1000–2000 us; C startup 1000 us",
+          "voltage": "3.3 V logic; load compatibility unverified",
+          "direction": "MCU → header / TP3",
+          "bench": "Expected 50 Hz, 1000 us after C startup. CubeMX .ioc instead specifies 1500 us. Scope with actuators disconnected.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 273
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 276
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 25
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 391
+            },
+            {
+              "path": "firmware/Core/Src/stm32f4xx_hal_msp.c",
+              "line": 146
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 621
+            },
+            {
+              "path": "firmware/BoatTHISTIMEITSDIFFERENT.ioc",
+              "line": 150
+            }
+          ]
+        },
+        {
+          "pin": "3",
+          "allegro_pin": "3",
+          "net": "GND",
+          "allegro_net": "0",
+          "mcu": "U3-18 VSS; U3-31 VSS_2; U3-47 VSS_3; U3-63 VSS_4; U3-12 VSSA/VREF-",
+          "firmware": "Common reference",
+          "voltage": "0 V reference (expected)",
+          "direction": "Reference",
+          "bench": "Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 121
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 169
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 172
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 175
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 178
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 181
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 3
+            }
+          ]
+        }
+      ],
+      "bom": {
+        "Ref": "STEERINGSERVO1",
+        "Allegro_RefDes": "STEERINGSERVO",
+        "Value": "PPTC031LFBN-RC",
+        "MPN": "PPTC031LFBN-RC",
+        "Manufacturer": "Sullins Connector Solutions",
+        "Footprint": "LoRa_Boat_Controller:CONN_PPTC031_SUL",
+        "Confidence": "HIGH"
+      }
+    },
+    {
+      "id": "CANHEADER1",
+      "allegro_ref": "CANHEADER",
+      "title": "CAN bus",
+      "description": "Four-pin bus/supply header; its H/L names are corrected while original pin membership is preserved.",
+      "doc": "docs/atlas/CANHEADER.md",
+      "notes": [
+        "Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.",
+        "CANH = pin 3 / U5-7 / N24691; CANL = pin 4 / U5-6 / N04855. Historical March 2026 documentation reversed them; use the v5 pin mapping here.",
+        "V1 RXD is wired U5-4 → U3-43/PA10. PA10 has no CAN alternate function; no CAN initialization exists in current firmware.",
+        "U5-8/STB goes to PA11, U5-1/TXD goes to PA12. The CAN transceiver supply source and bus termination require review."
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "allegro_pin": "1",
+          "net": "GND",
+          "allegro_net": "0",
+          "mcu": "U3-18 VSS; U3-31 VSS_2; U3-47 VSS_3; U3-63 VSS_4; U3-12 VSSA/VREF-",
+          "firmware": "Common reference",
+          "voltage": "0 V reference (expected)",
+          "direction": "Reference",
+          "bench": "Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 127
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 169
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 172
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 175
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 178
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 181
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 3
+            }
+          ]
+        },
+        {
+          "pin": "2",
+          "allegro_pin": "2",
+          "net": "CAN_VCC",
+          "allegro_net": "N24886",
+          "mcu": "No direct MCU pin",
+          "firmware": "No CAN initialization; transceiver supply net connects header to U5-3 and C1-2",
+          "voltage": "External supply unidentified; TCAN1042H needs 4.5–5.5 V",
+          "direction": "External connector → CAN supply (source unresolved)",
+          "bench": "Confirm supply source and polarity. This net is separate from +3V3 and VIN_RAW in v5.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 395
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 12
+            },
+            {
+              "path": "docs/research/DATASHEET_NOTES.md",
+              "line": 37
+            }
+          ]
+        },
+        {
+          "pin": "3",
+          "allegro_pin": "3",
+          "net": "CANH",
+          "allegro_net": "N24691",
+          "mcu": "No direct MCU pin",
+          "firmware": "Bus line to U5-7; CAN firmware not implemented",
+          "voltage": "Differential CAN bus; not a TTL UART pin",
+          "direction": "Bidirectional bus via U5",
+          "bench": "Check continuity header pin 3 → U5-7 and external termination; no working bus is claimed.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 385
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 7
+            },
+            {
+              "path": "docs/research/DATASHEET_NOTES.md",
+              "line": 36
+            }
+          ]
+        },
+        {
+          "pin": "4",
+          "allegro_pin": "4",
+          "net": "CANL",
+          "allegro_net": "N04855",
+          "mcu": "No direct MCU pin",
+          "firmware": "Bus line to U5-6; CAN firmware not implemented",
+          "voltage": "Differential CAN bus; not a TTL UART pin",
+          "direction": "Bidirectional bus via U5",
+          "bench": "Check continuity header pin 4 → U5-6 and external termination; no working bus is claimed.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 76
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 8
+            },
+            {
+              "path": "docs/research/DATASHEET_NOTES.md",
+              "line": 36
+            }
+          ]
+        }
+      ],
+      "bom": {
+        "Ref": "CANHEADER1",
+        "Allegro_RefDes": "CANHEADER",
+        "Value": "B4B-XH-A",
+        "MPN": "B4B-XH-A(LF)(SN)",
+        "Manufacturer": "JST",
+        "Footprint": "LoRa_Boat_Controller:CONN_B4B-XH-A_JST",
+        "Confidence": "HIGH"
+      }
+    },
+    {
+      "id": "JTAG1",
+      "allegro_ref": "JTAG",
+      "title": "Debug / JTAG",
+      "description": "Ten numbered electrical pins; do not infer cable orientation from the table.",
+      "doc": "docs/atlas/JTAG.md",
+      "notes": [
+        "Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.",
+        "Raw Allegro pin numbers 01–10 are normalized to 1–10 here. Pin 7 is NC, pin 1 is +3V3, and pins 3/5/9 are GND.",
+        "This follows the v5 debug connectivity. Physical keyed-header orientation remains unverified."
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "allegro_pin": "01",
+          "net": "+3V3",
+          "allegro_net": "3.3V",
+          "mcu": "U3-19 VDD; U3-32 VDD_2; U3-48 VDD_3; U3-64 VDD_4; U3-13 VDDA/VREF+",
+          "firmware": "Board supply / debug voltage reference",
+          "voltage": "3.3 V nominal (unmeasured)",
+          "direction": "Board rail; external powering unsupported until reviewed",
+          "bench": "Measure rail relative to TP5 with loads disconnected after V1 power defects are reviewed.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 358
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 322
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 325
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 328
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 331
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 334
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 2
+            }
+          ]
+        },
+        {
+          "pin": "2",
+          "allegro_pin": "02",
+          "net": "SWDIO",
+          "allegro_net": "PA13 TMS",
+          "mcu": "U3-46 PA13",
+          "firmware": "PA13 debug data",
+          "voltage": "Target +3V3 logic domain",
+          "direction": "Bidirectional debugger ↔ MCU",
+          "bench": "Verify cable numbering against actual header view before debug attachment.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 421
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 418
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 27
+            },
+            {
+              "path": "firmware/BoatTHISTIMEITSDIFFERENT.ioc",
+              "line": 58
+            }
+          ]
+        },
+        {
+          "pin": "3",
+          "allegro_pin": "03",
+          "net": "GND",
+          "allegro_net": "0",
+          "mcu": "U3-18 VSS; U3-31 VSS_2; U3-47 VSS_3; U3-63 VSS_4; U3-12 VSSA/VREF-",
+          "firmware": "Common reference",
+          "voltage": "0 V reference (expected)",
+          "direction": "Reference",
+          "bench": "Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 205
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 169
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 172
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 175
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 178
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 181
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 3
+            }
+          ]
+        },
+        {
+          "pin": "4",
+          "allegro_pin": "04",
+          "net": "SWCLK",
+          "allegro_net": "PA14 TCLK",
+          "mcu": "U3-49 PA14",
+          "firmware": "PA14 debug clock",
+          "voltage": "Target +3V3 logic domain",
+          "direction": "Debugger → MCU",
+          "bench": "Verify continuity pin 4 → U3-49; no successful programming session recorded here.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 431
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 428
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 26
+            },
+            {
+              "path": "firmware/BoatTHISTIMEITSDIFFERENT.ioc",
+              "line": 61
+            }
+          ]
+        },
+        {
+          "pin": "5",
+          "allegro_pin": "05",
+          "net": "GND",
+          "allegro_net": "0",
+          "mcu": "U3-18 VSS; U3-31 VSS_2; U3-47 VSS_3; U3-63 VSS_4; U3-12 VSSA/VREF-",
+          "firmware": "Common reference",
+          "voltage": "0 V reference (expected)",
+          "direction": "Reference",
+          "bench": "Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 202
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 169
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 172
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 175
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 178
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 181
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 3
+            }
+          ]
+        },
+        {
+          "pin": "6",
+          "allegro_pin": "06",
+          "net": "SWO_TDO",
+          "allegro_net": "PB3 TBO",
+          "mcu": "U3-55 PB3",
+          "firmware": "PB3 trace/JTAG output; usable debug mode must be confirmed",
+          "voltage": "Target +3V3 logic domain",
+          "direction": "MCU → debugger",
+          "bench": "Verify trace/debug configuration before expecting SWO output.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 411
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 408
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 28
+            }
+          ]
+        },
+        {
+          "pin": "7",
+          "allegro_pin": "07",
+          "net": "NC",
+          "allegro_net": "NC",
+          "mcu": "No direct MCU pin",
+          "firmware": "No connection in v5 source",
+          "voltage": "No defined voltage",
+          "direction": "None",
+          "bench": "Do not treat NC as a common net; JTAG pin 7 is an individually unconnected pin.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 648
+            }
+          ]
+        },
+        {
+          "pin": "8",
+          "allegro_pin": "08",
+          "net": "TDI",
+          "allegro_net": "PA15 TDI",
+          "mcu": "U3-50 PA15",
+          "firmware": "PA15 JTAG input; usable debug mode must be confirmed",
+          "voltage": "Target +3V3 logic domain",
+          "direction": "Debugger → MCU",
+          "bench": "Confirm chosen debug mode; SWD normally uses SWDIO/SWCLK instead.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 464
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 461
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 30
+            }
+          ]
+        },
+        {
+          "pin": "9",
+          "allegro_pin": "09",
+          "net": "GND",
+          "allegro_net": "0",
+          "mcu": "U3-18 VSS; U3-31 VSS_2; U3-47 VSS_3; U3-63 VSS_4; U3-12 VSSA/VREF-",
+          "firmware": "Common reference",
+          "voltage": "0 V reference (expected)",
+          "direction": "Reference",
+          "bench": "Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 199
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 169
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 172
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 175
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 178
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 181
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 3
+            }
+          ]
+        },
+        {
+          "pin": "10",
+          "allegro_pin": "10",
+          "net": "NRST",
+          "allegro_net": "RESET",
+          "mcu": "U3-7 NRST",
+          "firmware": "MCU reset",
+          "voltage": "Reset domain; pull-up and waveform unmeasured",
+          "direction": "Debugger → MCU reset",
+          "bench": "Verify reset pull network and observe reset release waveform.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 474
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 471
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 23
+            }
+          ]
+        }
+      ],
+      "bom": {
+        "Ref": "JTAG1",
+        "Allegro_RefDes": "JTAG",
+        "Value": "FTSH-105-XX-X-DV",
+        "MPN": "FTSH-105-01-L-DV-K",
+        "Manufacturer": "Samtec",
+        "Footprint": "LoRa_Boat_Controller:SAMTEC_FTSH-105-XX-X-DV",
+        "Confidence": "HIGH"
+      }
+    },
+    {
+      "id": "VIN1",
+      "allegro_ref": "VIN",
+      "title": "Battery positive",
+      "description": "Single solder pad for raw input supply.",
+      "doc": "docs/atlas/VIN.md",
+      "notes": [
+        "Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.",
+        "The input voltage/current envelope is not established by this source reconstruction. Identify battery and protection first."
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "allegro_pin": "1",
+          "net": "VIN_RAW",
+          "allegro_net": "N088060",
+          "mcu": "No direct MCU pin",
+          "firmware": "Battery input to buck converter and R5/R6 divider; ADC not initialized",
+          "voltage": "Battery specification and safe board operating envelope unresolved",
+          "direction": "Battery/external supply → board",
+          "bench": "Identify battery and input protection; regulator rating alone does not establish safe board input voltage.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 251
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 33
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 428
+            }
+          ]
+        }
+      ],
+      "bom": {
+        "Ref": "VIN1",
+        "Allegro_RefDes": "VIN",
+        "Value": "Battery+",
+        "MPN": "",
+        "Manufacturer": "",
+        "Footprint": "LoRa_Boat_Controller:amv_con1",
+        "Confidence": "n/a"
+      }
+    },
+    {
+      "id": "GND1",
+      "allegro_ref": "GND",
+      "title": "Battery ground",
+      "description": "Single solder pad on the board common ground net.",
+      "doc": "docs/atlas/GND.md",
+      "notes": [
+        "Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.",
+        "Allegro reference GND maps to KiCad GND1; original net name is 0. It is not a separate battery-only ground net in v5."
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "allegro_pin": "1",
+          "net": "GND",
+          "allegro_net": "0",
+          "mcu": "U3-18 VSS; U3-31 VSS_2; U3-47 VSS_3; U3-63 VSS_4; U3-12 VSSA/VREF-",
+          "firmware": "Common reference",
+          "voltage": "0 V reference (expected)",
+          "direction": "Reference",
+          "bench": "Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 142
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 169
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 172
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 175
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 178
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 181
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 3
+            }
+          ]
+        }
+      ],
+      "bom": {
+        "Ref": "GND1",
+        "Allegro_RefDes": "GND",
+        "Value": "Battery-",
+        "MPN": "",
+        "Manufacturer": "",
+        "Footprint": "LoRa_Boat_Controller:amv_con1",
+        "Confidence": "n/a"
+      }
+    },
+    {
+      "id": "TP1",
+      "allegro_ref": "TP1",
+      "title": "TP1 — PA8 PWM",
+      "description": "Test point on the source ESC header signal, currently firmware rudder output.",
+      "doc": "docs/atlas/TP1.md",
+      "notes": [
+        "Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.",
+        "V1 connector names conflict with firmware roles: SPEEDCONTROLLER pin 2 carries the firmware rudder waveform; STEERINGSERVO pin 2 carries the firmware thrust waveform. Treat both as electrical identities until harness labels and physical continuity are verified."
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "allegro_pin": "1",
+          "net": "PWM_PA8_ESCHDR",
+          "allegro_net": "N04355",
+          "mcu": "U3-41 PA8",
+          "firmware": "TIM1_CH1 / set_rudder(): 1100–1900 us; startup 1500 us",
+          "voltage": "3.3 V logic; load compatibility unverified",
+          "direction": "MCU → header / TP1",
+          "bench": "Expected 50 Hz, 1500 us after startup; source name says ESC but firmware role is rudder. Scope with actuators disconnected.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 241
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 244
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 24
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 407
+            },
+            {
+              "path": "firmware/Core/Src/stm32f4xx_hal_msp.c",
+              "line": 125
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 570
+            }
+          ]
+        }
+      ],
+      "bom": {
+        "Ref": "TP1",
+        "Allegro_RefDes": "TP1",
+        "Value": "TP",
+        "MPN": "",
+        "Manufacturer": "",
+        "Footprint": "LoRa_Boat_Controller:amv_test_point",
+        "Confidence": "TBD"
+      }
+    },
+    {
+      "id": "TP3",
+      "allegro_ref": "TP3",
+      "title": "TP3 — PC6 PWM",
+      "description": "Test point on the source servo header signal, currently firmware thrust output.",
+      "doc": "docs/atlas/TP3.md",
+      "notes": [
+        "Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.",
+        "V1 connector names conflict with firmware roles: SPEEDCONTROLLER pin 2 carries the firmware rudder waveform; STEERINGSERVO pin 2 carries the firmware thrust waveform. Treat both as electrical identities until harness labels and physical continuity are verified."
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "allegro_pin": "1",
+          "net": "PWM_PC6_SERVOHDR",
+          "allegro_net": "N04395",
+          "mcu": "U3-37 PC6",
+          "firmware": "TIM3_CH1 / set_thrust(): 1000–2000 us; C startup 1000 us",
+          "voltage": "3.3 V logic; load compatibility unverified",
+          "direction": "MCU → header / TP3",
+          "bench": "Expected 50 Hz, 1000 us after C startup. CubeMX .ioc instead specifies 1500 us. Scope with actuators disconnected.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 270
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 276
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 25
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 391
+            },
+            {
+              "path": "firmware/Core/Src/stm32f4xx_hal_msp.c",
+              "line": 146
+            },
+            {
+              "path": "firmware/Core/Src/main.c",
+              "line": 621
+            },
+            {
+              "path": "firmware/BoatTHISTIMEITSDIFFERENT.ioc",
+              "line": 150
+            }
+          ]
+        }
+      ],
+      "bom": {
+        "Ref": "TP3",
+        "Allegro_RefDes": "TP3",
+        "Value": "TP",
+        "MPN": "",
+        "Manufacturer": "",
+        "Footprint": "LoRa_Boat_Controller:amv_test_point",
+        "Confidence": "TBD"
+      }
+    },
+    {
+      "id": "TP4",
+      "allegro_ref": "TP4",
+      "title": "TP4 — +3V3",
+      "description": "Test point on the main 3.3 V rail.",
+      "doc": "docs/atlas/TP4.md",
+      "notes": [
+        "Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.",
+        "Use TP5 as the source-defined reference. Bench rail tolerance/ripple has not been measured."
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "allegro_pin": "1",
+          "net": "+3V3",
+          "allegro_net": "3.3V",
+          "mcu": "U3-19 VDD; U3-32 VDD_2; U3-48 VDD_3; U3-64 VDD_4; U3-13 VDDA/VREF+",
+          "firmware": "Board supply / debug voltage reference",
+          "voltage": "3.3 V nominal (unmeasured)",
+          "direction": "Board rail; external powering unsupported until reviewed",
+          "bench": "Measure rail relative to TP5 with loads disconnected after V1 power defects are reviewed.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 313
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 322
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 325
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 328
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 331
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 334
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 2
+            }
+          ]
+        }
+      ],
+      "bom": {
+        "Ref": "TP4",
+        "Allegro_RefDes": "TP4",
+        "Value": "TP",
+        "MPN": "",
+        "Manufacturer": "",
+        "Footprint": "LoRa_Boat_Controller:amv_test_point",
+        "Confidence": "TBD"
+      }
+    },
+    {
+      "id": "TP5",
+      "allegro_ref": "TP5",
+      "title": "TP5 — ground",
+      "description": "Test point on common ground.",
+      "doc": "docs/atlas/TP5.md",
+      "notes": [
+        "Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.",
+        "TP2 is absent from the v5 netlist and current BOM. Do not reuse the older documentation's ADC test-point claim."
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "allegro_pin": "1",
+          "net": "GND",
+          "allegro_net": "0",
+          "mcu": "U3-18 VSS; U3-31 VSS_2; U3-47 VSS_3; U3-63 VSS_4; U3-12 VSSA/VREF-",
+          "firmware": "Common reference",
+          "voltage": "0 V reference (expected)",
+          "direction": "Reference",
+          "bench": "Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.",
+          "evidence": [
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 163
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 169
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 172
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 175
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 178
+            },
+            {
+              "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat",
+              "line": 181
+            },
+            {
+              "path": "hardware/kicad/_build/netmap.json",
+              "line": 3
+            }
+          ]
+        }
+      ],
+      "bom": {
+        "Ref": "TP5",
+        "Allegro_RefDes": "TP5",
+        "Value": "TP",
+        "MPN": "",
+        "Manufacturer": "",
+        "Footprint": "LoRa_Boat_Controller:amv_test_point",
+        "Confidence": "TBD"
+      }
+    }
+  ]
+}
