@@ -6,7 +6,7 @@ The viewer reads the integrated V2 board's [native review](../reviews/codex/desi
 
 Headless Edge checks at 1440 x 1050 and 390 x 844 passed: five guide cards, V2 guide dialog, application search, diagnostic instructions, no browser errors and no page-level overflow. [Recorded results](../reviews/codex/design_completion/ui/application-ui.json) and desktop/phone screenshots preserve the checked view. The six electrical findings use expandable cards for phone readability. The server exposes reviewed V2 source and evidence paths, while firmware build outputs remain unavailable over HTTP. Direct-file mode and physical hardware behavior were not tested.
 
-Earlier counts and missing-V2-image statements below describe their dated snapshots. Current source/input hashes are in [status.json](status.json); final packaging and archive checks are recorded in the [current handoff](../reviews/codex/design_completion/HANDOFF.md).
+Earlier counts and missing-V2-image statements below describe their dated snapshots. Current source/input hashes are in [status.json](status.json). The clean source archive rebuilt 74 documents, 52 images and 222 indexed paths; live HTTP validation passed 234 paths. The [current handoff](../reviews/codex/design_completion/HANDOFF.md) records the 27 passing tests, evidence checks and refreshed PCB preview provenance.
 
 ## Earlier portable publication edition
 

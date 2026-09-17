@@ -62,3 +62,6 @@ reviews/codex/professionalization/v2_after_mcu.png
 /temp_build/
 firmware_v2/build/
 *.pending
+
+# KiCad local session state is not design evidence.
+*.kicad_prl

@@ -36,6 +36,9 @@ def main():
                      for p, h in exports["input_sha256"].items()}
     check_hashes(export_inputs, "schematic export inputs (PCB context preserved)")
     check_hashes(exports["output_sha256"], "schematic PDF/SVG outputs")
+    pcb_renders = read_json("reviews/codex/design_completion/pcb_render_manifest.json")
+    check_hashes(pcb_renders["input_sha256"], "V2 PCB render input")
+    check_hashes(pcb_renders["output_sha256"], "V2 PCB preview outputs")
     firmware = read_json("docs/build/evidence/v1-build-manifest.json")
     check_hashes(firmware["input_sha256"], "recorded V1 build inputs")
     assert firmware["status"] == "build_pass_unqualified" and firmware["hardware_access"] is False

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "source_revision": "5a95a6a1e8e01463e74fe14806165b7ee4f885c9",
+  "renderer": "KiCad CLI 9.0.7",
+  "input_sha256": {
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb": "49a8aa88cf61e8b6272ce13a0d5a5a6a3c6b81aeba057ebcd4ca15a6262c37b2"
+  },
+  "output_sha256": {
+    "docs/img/v2_pcb_top.png": "a4815cb3f0e8693e08cab15c206846fcc1f74b98fc594934223ba2b287c63dc1",
+    "docs/img/v2_pcb_bottom.png": "f685b3d9f4a94923e2b7bc1cd7ef52f63786742e0fc114118a17cf4ad82c874d"
+  },
+  "commands": [
+    "kicad-cli pcb render --side top --width 1992 --height 1120 --background opaque --quality high --output docs/img/v2_pcb_top.png hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb",
+    "kicad-cli pcb render --side bottom --width 1992 --height 1120 --background opaque --quality high --output docs/img/v2_pcb_bottom.png hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb"
+  ],
+  "visual_review": "Top and bottom inspected: complete board visible. Silkscreen overlaps and model/population limitations remain; these are CAD illustrations, not manufacturing acceptance."
+}

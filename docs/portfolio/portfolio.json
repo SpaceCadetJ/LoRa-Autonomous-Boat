@@ -52,7 +52,8 @@
     {
       "path": "docs/img/v2_pcb_top.png",
       "kind": "pcb_render",
-      "caption": "Multifunction vehicle-controller CAD draft; electrical and layout review ongoing."
+      "caption": "Multifunction vehicle-controller CAD draft; electrical and layout review ongoing.",
+      "render_evidence": "reviews/codex/design_completion/pcb_render_manifest.json"
     },
     {
       "path": "docs/img/v1_sch_Root.svg",
@@ -209,9 +210,9 @@
     "Jay's individual original team role must be confirmed before first-person contribution claims."
   ],
   "publication": {
-    "integration_commit": "fb9f16f605fd8861d24ca46763a2ab40c93cc635",
+    "integration_commit": "5a95a6a1e8e01463e74fe14806165b7ee4f885c9",
     "live_viewer_url": null,
-    "editor_note": "The integration_commit names an earlier publication milestone. Current reviewed source is on main and v2-design; use the actual branch commit when pinning portfolio links. Repository-relative paths are authoritative. No hosted viewer URL is claimed.",
+    "editor_note": "The integration_commit identifies the ground repair, diagnostic and application-guide milestone. Later validation/preview commits may follow; use the actual main commit when pinning the complete current portfolio edition. No hosted viewer URL is claimed.",
     "repository_url": "https://github.com/SpaceCadetJ/LoRa-Autonomous-Boat",
     "branch": "main"
   }
