@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Generated KiCad and tool files are written with LF; keep them that way on every platform
+*.py text eol=lf
+*.kicad_* text eol=lf
+*.kicad_dru text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.json text eol=lf

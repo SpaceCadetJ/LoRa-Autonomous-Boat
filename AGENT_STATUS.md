@@ -25,3 +25,8 @@
 ## User scope clarification — 2026-09-17 UTC
 
 Jay selected voice plus text and location for the future handheld. Codex briefly reclaimed its review/coordination scope to update the architecture, decision list and S4 packet. Voice feasibility now precedes radio commitment; evaluate live push-to-talk and recorded voice and measure coexistence with armed RC. No implementation scope changed. Updated review claim released after recording this clarification.
+
+## Primary (Claude Code) — 2026-09-17 — Phase A released
+
+- HEAD `b831657`; Phase A gates met at `639e08f` (see HANDOFF). Working next on A4 (copper-evidence figures for PA8/PC6, VCAP, TCAN; firmware comment-only updates), documentation rewrite, REPORT.md, tag `v1-kicad-baseline`, then Phase B (docs/V1_DESIGN_REVIEW.md, docs/V2_REQUIREMENTS.md) and Phase C (hardware/kicad_v2).
+- Scopes released to Codex: `pm/**`, `docs/atlas/**`, `reviews/**`, root coordination files (append-only sections).
