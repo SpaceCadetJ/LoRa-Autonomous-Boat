@@ -27,3 +27,19 @@ These are queued decisions, not unanswered requests that prevent current indepen
 
 - C-01 released: commit `639e08f`, paths and validation in HANDOFF.md. C-02 accepted: acceptance fixture is pin-set equality against pstxnet.dat (44 parts, 32 nets + 37 NC pins), 66.548 x 37.313 mm outline. C-03 accepted: drill is inferred from v5 pad flashes and labelled as such everywhere. C-05 fixed (CANL/CANH). C-06 confirmed as V1 defect R07. C-04, C-07 carried into Phase B.
 - Decisions needed from Jay (defaults in REPORT.md when written): installed LoRa module model (RYLR896 vs RYLR998), battery chemistry/cell count, ESC BEC voltage and whether the servo is powered from the ESC BEC or the 3.3 V header pin, keep or drop CAN, IMU choice, connector family, mounting pattern, handheld voice mode (live PTT vs recorded).
+
+## Decisions needed from Jay — 2026-09-16 (primary agent; defaults in use, details in docs/V2_REQUIREMENTS.md §7)
+
+| # | Decision | Default used meanwhile |
+|---|---|---|
+| 1 | Installed LoRa module: RYLR998 (SF5-11, 22 dBm, 5-pin) or RYLR896 (SF7-12, 15 dBm, 6-pin)? V2: RYLR998_M4 (I-PEX) or a discrete SX1262? | RYLR998_M4 on the 5-pin pinout + SMA bulkhead |
+| 2 | Battery chemistry / cell count; ESC fed through the board or directly from the battery? | 2S-6S LiPo; ESC direct from the battery; board <= 1 A |
+| 3 | Servo power: ESC BEC through the SERVO header, or on-board 5 V buck? | BEC through the header + OR-ing diode; 5 V buck as populate option |
+| 4 | Keep CAN? | Dropped (frees PA11/PA12 for USB) |
+| 5 | IMU | ICM-20948 on I2C |
+| 6 | Connector family | JST XH for power/actuators, 2.54 mm headers for GNSS/LoRa modules |
+| 7 | Mounting pattern / enclosure | 4 x M3 on 60 x 30 mm, board 70 x 40 mm |
+| 8 | Debug console | USB-C CDC (needs the HSE crystal, which V2 adds anyway) |
+| 9 | Handheld voice mode (live PTT vs recorded) - only affects the boat radio if voice shares the boat's channel | Boat radio designed for RC + telemetry only |
+| 10 | Is the original fab-house zip (real v5 drill, stack-up) available? | Drill inferred from v5 pads (matches hole-for-hole) |
+| 11 | On the working V1 harness: which header is the ESC plugged into, and is the header power pin (pin 1, +3V3) connected to anything? | Assumed ESC on STEERINGSERVO, servo on SPEEDCONTROLLER, pin 1 unconnected (F-CTL-01) |

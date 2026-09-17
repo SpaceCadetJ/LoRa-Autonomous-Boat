@@ -1,3 +1,5 @@
+> **ARCHIVED 2026-09-16.** This March-2026 CC/CD pipeline document is superseded by [README.md](../../README.md) and [REPORT.md](../../REPORT.md). Several statements in it are wrong (35 nets, 3 x 3 in board, DSN as source of truth); see docs/A0_PROVENANCE.md.
+
 # DIRECTIVES — CD ↔ CC Pipeline
 **Last updated:** 2026-03-31  
 **Pipeline status:** ACTIVE  

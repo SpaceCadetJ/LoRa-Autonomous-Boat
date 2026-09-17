@@ -61,6 +61,8 @@ def main():
         run([KCLI, 'pcb', 'export', 'drill', '--output', gd + os.sep, '--format', 'excellon', '--excellon-units', 'in', '--excellon-zeros-format', 'suppressleading', PCB])
     if start <= 8:
         run([PY, os.path.join(HERE, 'xor_compare.py')])
+        run([PY, os.path.join(HERE, 'a0_xor_dsn.py')])
+        run([PY, os.path.join(HERE, 'evidence_figs.py')])
     if start <= 9 and '--skip-render' not in sys.argv:
         for side in ('top', 'bottom'):
             run([KCLI, 'pcb', 'render', '--output', os.path.join(IMG, f'v1_pcb_{side}.png'), '--side', side, '--width', '2400', '--height', '1400',
@@ -68,6 +70,22 @@ def main():
         for lay in ('F.Cu', 'B.Cu', 'F.Mask', 'B.Mask', 'F.SilkS', 'Edge.Cuts'):
             run([KCLI, 'pcb', 'export', 'svg', '--output', os.path.join(IMG, f'v1_layer_{lay.replace(".", "_")}.svg'), '--layers', lay + ',Edge.Cuts',
                  '--exclude-drawing-sheet', '--page-size-mode', '2', PCB])
+    # ---- schematic chain (steps 10-14): symbols -> MPN map -> sheets -> ERC -> netlist check -> BOM -> exports
+    SCH = os.path.join(KDIR, 'LoRa_Boat_Controller.kicad_sch')
+    if start <= 14:
+        run([PY, os.path.join(HERE, 'gen_symbols.py')])
+        run([PY, os.path.join(HERE, 'gen_bom.py'), '--json-only'])
+        run([PY, os.path.join(HERE, 'gen_sch.py')])
+        run([KCLI, 'sch', 'erc', '--severity-all', '--format', 'json', '--output', os.path.join(BUILD, 'erc.json'), SCH])
+        run([KPY, os.path.join(HERE, 'check_netlist.py')])
+        run([PY, os.path.join(HERE, 'gen_bom.py')])
+        run([KCLI, 'sch', 'export', 'pdf', '--output', os.path.join(IMG, 'v1_schematic.pdf'), SCH])
+        svgdir = os.path.join(BUILD, 'sch_svg')
+        run([KCLI, 'sch', 'export', 'svg', '--output', svgdir, SCH])
+        for f in glob.glob(os.path.join(svgdir, '*.svg')):
+            name = os.path.basename(f).replace('LoRa_Boat_Controller-', '').replace('LoRa_Boat_Controller', 'Root').replace('.svg', '')
+            shutil.copyfile(f, os.path.join(IMG, f'v1_sch_{name}.svg'))
+        run([PY, os.path.join(HERE, 'gen_docs.py')])
     # summary
     try:
         d = json.load(open(os.path.join(BUILD, 'drc.json')))

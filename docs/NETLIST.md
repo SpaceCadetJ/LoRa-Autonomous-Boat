@@ -1,208 +1,50 @@
-# Netlist Reference — LoRa Autonomous Boat Controller
-
-Extracted from Allegro Specctra DSN (`senior design v2.dsn`). Net names in parentheses are the original OrCAD auto-generated names.
-
----
-
-## Power Nets
-
-### GND (Allegro net: `0`)
-Ground plane — connects to every IC ground pin, decoupling cap, connector ground, and test points.
-
-**Pins:** C1-1, C2-1, C3-1, C4-2, C5-1, C6-1, C7-1, C8-1, C9-1, C10-1, C21-1, C22-1, C23-1, COUT1-1, GND-1 (Battery−), U3-12 (VSSA), U3-18 (VSS), U3-31 (VCAP_1), U3-47 (VSS), U3-63 (VSS), U1-1, U5-2, U6-5, R2-2, R6-1, L4-1, SPEEDCONTROLLER-3, STEERINGSERVO-3, CANHEADER-1, JTAG-1, TP5-1, LORAMODULE-5, GPSMODULE-2
-
-### +3V3 (Allegro net: `3.3V`)
-Regulated 3.3V rail from the R1240N buck converter.
-
-**Pins:** U3-13 (VDDA), U3-19 (VDD), U3-32 (VDD), U3-48 (VDD), U3-64 (VDD), C2-2, C3-2, C4-1, C5-2, C6-2, C7-2, C8-2, C9-2, C10-2, C14-1, C20-2, CEXT-2, COUT-2, L1-2, R1-1, L3-2, SPEEDCONTROLLER-1, STEERINGSERVO-1, GPSMODULE-1, JTAG-3, JTAG-5, JTAG-9, TP4-1
-
-### VIN_RAW (Allegro net: `N088060`)
-Battery input voltage — feeds the buck converter and ADC voltage divider.
-
-**Pins:** VIN-1 (Battery+), CIN-2, U6-2, R4-1, R5-1
-
-### GND_BAT (Allegro net: `GND`)
-Battery ground terminal.
-
-**Pins:** CIN-1
-
----
-
-## Power Supply (R1240N Buck Converter)
-
-### EN (Allegro net: `N055670`)
-Enable pin for the R1240N regulator.
-
-**Pins:** U6-1, R4-2
-
-### SW_NODE (Allegro net: `N18028`)
-Switching node — inductor/diode connection.
-
-**Pins:** U6-3, U1-3, C12-1, L1-1
-
-### BST (Allegro net: `N17942`)
-Bootstrap capacitor node.
-
-**Pins:** U6-4, R3-2
-
-### FB_DIV (Allegro net: `N17576`)
-Feedback voltage divider node.
-
-**Pins:** U6-6, C14-2, R1-2, R2-1
-
-### COIL_SENSE (Allegro net: `N061071`)
-Current sense / inductor-side filter.
-
-**Pins:** R3-1, C12-2
-
-### VREG_OUT (Allegro net: `N068040`)
-Regulator output before the output caps.
-
-**Pins:** COUT-1, COUT1-2
-
-### ADC_VBAT (Allegro net: `ADC`)
-Battery voltage ADC measurement via resistor divider (R5/R6).
-
-**Pins:** U3-16 (PA2), R5-2, R6-2, TP2-1
-
-### VCAP1 (Allegro net: `N27791`)
-Internal voltage regulator capacitor for STM32.
-
-**Pins:** U3-30 (PB11 — Note: This is actually VCAP_1 on pin 31), CEXT-1
-
----
-
-## LoRa Module Interface
-
-### LORA_TX (Allegro net: `N04477`)
-MCU UART4_TX → LoRa module RX.
-
-**Pins:** U3-14 (PA0), LORAMODULE-2
-
-### LORA_RX (Allegro net: `N04485`)
-LoRa module TX → MCU UART4_RX.
-
-**Pins:** U3-15 (PA1), LORAMODULE-3
-
-### LORA_RST (Allegro net: `N24517`)
-LoRa module reset.
-
-**Pins:** U3-17 (PA3), LORAMODULE-4
-
-### LORA_VCC (Allegro net: `N04429`)
-Filtered 3.3V supply for LoRa module (through ferrite beads L3/L4 with decoupling).
-
-**Pins:** LORAMODULE-1, L3-1, C21-2, C22-2, C23-2
-
-### LORA_FILT (Allegro net: `N27410`)
-Intermediate node between ferrite beads and bulk cap.
-
-**Pins:** L4-2, C20-1
-
----
-
-## GPS Module Interface
-
-### GPS_RX (Allegro net: `N04277`)
-MCU PB0 → GPS module (data to GPS). Note: firmware uses USART3 on PC10/PC11.
-
-**Pins:** U3-26 (PB0), GPSMODULE-3
-
-### GPS_TX_PC11 (Allegro net: `N04281`)
-GPS TX → MCU USART3_RX.
-
-**Pins:** U3-52 (PC11), GPSMODULE-4
-
-### GPS_TX_PC10 (Allegro net: `N04285`)
-MCU USART3_TX → GPS module.
-
-**Pins:** U3-51 (PC10), GPSMODULE-5
-
----
-
-## CAN Bus (TCAN1042H)
-
-### CAN_TX (Allegro net: `N04755`)
-MCU CAN_TX → TCAN1042H TXD.
-
-**Pins:** U3-44 (PA11), U5-8 (Note: pin 8 = STB on TCAN1042; verify pinout)
-
-### CAN_RX (Allegro net: `N04759`)
-TCAN1042H RXD → MCU CAN_RX.
-
-**Pins:** U3-43 (PA10), U5-4
-
-### CAN_STB (Allegro net: `N04763`)
-TCAN1042H standby pin.
-
-**Pins:** U3-45 (PA12), U5-1
-
-### CANH (Allegro net: `N04855`)
-CAN High bus line.
-
-**Pins:** U5-6, CANHEADER-4
-
-### CANL (Allegro net: `N24691`)
-CAN Low bus line.
-
-**Pins:** U5-7, CANHEADER-3
-
-### CAN_VCC (Allegro net: `N24886`)
-CAN transceiver VCC.
-
-**Pins:** U5-3, C1-2, CANHEADER-2
-
----
-
-## PWM Outputs
-
-### PWM_MOTOR (Allegro net: `N04355`)
-Motor ESC PWM signal (TIM3_CH1, 50 Hz, 1000–2000 µs).
-
-**Pins:** U3-41 (PA8 — Note: firmware uses PC6/TIM3_CH1), SPEEDCONTROLLER-2, TP1-1
-
-### PWM_RUDDER (Allegro net: `N04395`)
-Rudder servo PWM signal (TIM1_CH1, 50 Hz, 1100–1900 µs).
-
-**Pins:** U3-37 (PC6 — Note: firmware uses PA8/TIM1_CH1), STEERINGSERVO-2, TP3-1
-
-> **Note:** The schematic pin assignments for motor/rudder appear swapped relative to the firmware. The firmware assigns TIM3_CH1/PC6 to motor and TIM1_CH1/PA8 to rudder. Verify against the actual board routing.
-
----
-
-## Debug / JTAG
-
-### SWDIO (Allegro net: `'PA13`)
-SWD data.
-
-**Pins:** U3-46 (PA13), JTAG-10
-
-### SWCLK (Allegro net: `'PA14`)
-SWD clock.
-
-**Pins:** U3-49 (PA14)
-
-### JTDI (Allegro net: `'PA15`)
-JTAG TDI.
-
-**Pins:** U3-50 (PA15), JTAG-4
-
-### JTDO_SWO (Allegro net: `'PB3`)
-JTAG TDO / SWO trace output.
-
-**Pins:** U3-55 (PB3), JTAG-6
-
-### JTAG_TCK (Allegro net: `PA14TCLK`)
-JTAG TCK routed to header.
-
-**Pins:** JTAG-8
-
-### NRST (Allegro net: `RESET`)
-MCU reset.
-
-**Pins:** U3-7, JTAG-2
-
-### VBAT (Allegro net: `VBAT`)
-Battery backup for RTC.
-
-**Pins:** U3-1
+# NETLIST - LoRa Autonomous Boat Controller V1 (as fabricated)
+
+Generated by `hardware/kicad/tools/gen_docs.py` from `pstxnet.dat` (OrCAD packaging of 2025-05-09 17:12, imported into senior design v5.brd) and the KiCad netmap. Do not edit by hand. KiCad references carry a `1` suffix where the Allegro refdes had no trailing digit (e.g. `CANHEADER1` = Allegro `CANHEADER`).
+
+32 nets (31 with two or more pins, 1 single-node) plus 37 unconnected (NC) pins. The schematic and board were proven to carry exactly these pin sets by `check_netlist.py` (see `hardware/kicad/_build/netlist_check.json`).
+
+| KiCad net | Allegro net | Pins | Sheet(s) | V1 note (as built) | Changed in V2? |
+|---|---|---|---|---|---|
+| `+3V3` | `3.3V` | C3-2, GPSMODULE1-1, C2-2, STEERINGSERVO1-1, SPEEDCONTROLLER1-1, C4-2, L3-2, C20-2, R1-1, C14-1, TP4-1, COUT1-2, L1-1, U3-19 (VDD), U3-32 (VDD_2), U3-48 (VDD_3), U3-64 (VDD_4), U3-13 (VDDA/VREF+), CEXT1-2, C10-2, C5-2, C6-2, C7-2, C8-2, C9-2, JTAG1-1 (01) | Debug, GPS_Module, LoRa_Module, MCU, PWM_Outputs, PowerSupply | Top-layer pour. Also feeds SPEEDCONTROLLER-1 and STEERINGSERVO-1 (actuator power pins!) and JTAG-1 | V2: actuator power leaves this rail |
+| `GND` | `0` | C3-1, GPSMODULE1-2, C4-1, SPEEDCONTROLLER1-3, C2-1, STEERINGSERVO1-3, LORAMODULE1-5, CANHEADER1-1, C21-1, L4-1, C22-1, C23-1, GND1-1, CIN1-1, R6-1, U6-5 (GND), R2-2, D21-1, COUT1-1, TP5-1, C10-1, U3-18 (VSS), U3-31 (VSS_2), U3-47 (VSS_3), U3-63 (VSS_4), U3-12 (VSSA/VREF-), C5-1, C6-1, C7-1, C8-1, C9-1, JTAG1-9 (09), JTAG1-5 (05), JTAG1-3 (03), C1-1, U5-2 (GND) | CAN_Bus, Debug, GPS_Module, LoRa_Module, MCU, PWM_Outputs, PowerSupply | Bottom-layer pour; top pour is +3V3 | kept; V2 adds proper star/return for the actuator rail |
+| `ADC_VBAT` | `ADC` | R6-2, R5-2, U3-16 (PA2) | MCU, PowerSupply | R5 30 k / R6 10 k divider to PA2 (ADC1_IN2); firmware never enables the ADC | V2: read it; add filter cap |
+| `BST` | `N17942` | U6-4 (BST), R3-2 | PowerSupply | U6 BST to R3 (51 R) | unchanged |
+| `BST_RC` | `N061071` | R3-1, C12-2 | PowerSupply | between R3 and C12 (0.1 uF) - the bootstrap RC per Nisshinbo DS | unchanged |
+| `CANH` | `N24691` | CANHEADER1-3, U5-7 (CANH) | CAN_Bus | U5 pin 7 (CANH) -> CANHEADER pin 3 | V2: termination option |
+| `CANL` | `N04855` | CANHEADER1-4, U5-6 (CANL) | CAN_Bus | U5 pin 6 (CANL) -> CANHEADER pin 4 | V2: termination option |
+| `CAN_RXD_PA10` | `N04759` | U3-43 (PA10), U5-4 (RXD) | CAN_Bus, MCU | U5 RXD -> PA10, which has no CAN alternate function | V2: RXD to PA11 |
+| `CAN_STB_PA11` | `N04755` | U3-44 (PA11), U5-8 (STB) | CAN_Bus, MCU | PA11 (= CAN1_RX pin!) drives U5 STB | V2: STB on a plain GPIO or tied low |
+| `CAN_TXD_PA12` | `N04763` | U3-45 (PA12), U5-1 (TXD) | CAN_Bus, MCU | PA12 CAN1_TX -> U5 TXD (correct) | unchanged |
+| `CAN_VCC` | `N24886` | CANHEADER1-2, U5-3 (VCC), C1-2 | CAN_Bus | U5 VCC (needs 4.5-5.5 V) supplied from CANHEADER-2, C1 0.1 uF | V2: on-board 5 V |
+| `EN` | `N148600` | R4-2, U6-1 (CE) | PowerSupply | U6 CE via R4 5.1 k from VIN_RAW (CE has no internal pull) | V2: MCU-controlled enable optional |
+| `FB_DIV` | `N17576` | U6-6 (VFB), R2-1, R1-2, C14-2 | PowerSupply | U6 VFB with R1 15 k / R2 4.7 k / C14 470 pF -> Vout = 0.8*(1+15/4.7) = 3.35 V | unchanged |
+| `GPS_PB0` | `N04277` | GPSMODULE1-3, U3-26 (PB0) | GPS_Module, MCU | PB0 GPIO output (held LOW by firmware) -> GPS header pin 3 | V2: PPS input instead |
+| `GPS_RX_PC11` | `N04281` | GPSMODULE1-4, U3-52 (PC11) | GPS_Module, MCU | GPS TXD -> USART3_RX | unchanged |
+| `GPS_TX_PC10` | `N04285` | GPSMODULE1-5, U3-51 (PC10) | GPS_Module, MCU | USART3_TX -> GPS RXD (also carries debug prints) | V2: separate console |
+| `LORA_FILT` | `N27410` | C20-1, L4-2 | LoRa_Module | between L4 (from +3V3) and L3; C20 10 uF to +3V3 (not GND!) | V2: cap to GND |
+| `LORA_RST_PA3` | `N24517` | LORAMODULE1-4, U3-17 (PA3) | LoRa_Module, MCU | PA3 -> LoRa NRST; firmware never drives it | V2 firmware drives reset |
+| `LORA_RX_PA1` | `N04485` | LORAMODULE1-3, U3-15 (PA1) | LoRa_Module, MCU | LoRa TXD -> UART4_RX | series resistor in V2 |
+| `LORA_TX_PA0` | `N04477` | LORAMODULE1-2, U3-14 (PA0) | LoRa_Module, MCU | UART4_TX -> LoRa RXD | series resistor in V2 |
+| `LORA_VCC` | `N04429` | LORAMODULE1-1, L3-1, C21-2, C22-2, C23-2 | LoRa_Module | LoRa header VDD after ferrite L3, with C21 10 uF, C22 0.1 uF, C23 (22 or 47 pF) to GND | V2: same filter, verify TX current |
+| `NRST` | `RESET` | U3-7 (NRST), JTAG1-10 | Debug, MCU | U3 NRST -> JTAG-10; no external RC | V2: 100 nF on NRST |
+| `PWM_PA8_ESCHDR` | `N04355` | SPEEDCONTROLLER1-2, TP1-1, U3-41 (PA8) | MCU, PWM_Outputs | PA8/TIM1_CH1 -> SPEEDCONTROLLER-2 (and TP1); firmware calls PA8 "rudder" | V2: named by function, series R + ESD |
+| `PWM_PC6_SERVOHDR` | `N04395` | TP3-1, STEERINGSERVO1-2, U3-37 (PC6) | MCU, PWM_Outputs | PC6/TIM3_CH1 -> STEERINGSERVO-2 (and TP3); firmware calls PC6 "motor" | V2: named by function, series R + ESD |
+| `SWCLK` | `PA14 TCLK` | U3-49 (PA14), JTAG1-4 (04) | Debug, MCU | PA14 -> JTAG-4 | unchanged |
+| `SWDIO` | `PA13 TMS` | U3-46 (PA13), JTAG1-2 (02) | Debug, MCU | PA13 -> JTAG-2 | unchanged |
+| `SWO_TDO` | `PB3 TBO` | U3-55 (PB3), JTAG1-6 (06) | Debug, MCU | PB3 -> JTAG-6 | unchanged |
+| `SW_NODE` | `N18028` | U6-3 (LX), C12-1, L1-2, D21-2 | PowerSupply | U6 LX, L1-2, C12-1 (bootstrap RC), D21-2 cathode of the CMS06 catch diode | unchanged topology; layout tightened |
+| `TDI` | `PA15 TDI` | U3-50 (PA15), JTAG1-8 (08) | Debug, MCU | PA15 -> JTAG-8 | V2: SWD only, free PA15/PB3 |
+| `VBAT` | `VBAT` | U3-1 (VBAT) | MCU | U3 pin 1 only - floating on V1 | V2: tie to VDD |
+| `VCAP1` | `N27791` | CEXT1-1, U3-30 (VCAP_1) | MCU | U3 pin 30 VCAP_1 to CEXT-1; CEXT-2 returns to +3V3 instead of VSS (V1 defect) | V2: 4.7 uF to VSS |
+| `VIN_RAW` | `N088060` | VIN1-1, U6-2 (VIN), CIN1-2, R5-1, R4-1 | PowerSupply | Battery pad, CIN, U6 VIN, R4 (CE pull-up), R5 (ADC divider); no fuse / reverse protection / TVS | V2: fuse + reverse-polarity + TVS + bulk cap |
+
+## Unconnected pins (NC in pstxnet.dat)
+
+U3: U3-2, U3-3, U3-4, U3-5, U3-6, U3-8, U3-9, U3-10, U3-11, U3-20, U3-21, U3-22, U3-23, U3-24, U3-25, U3-27, U3-28, U3-29, U3-33, U3-34, U3-35, U3-36, U3-38, U3-39, U3-40, U3-42, U3-53, U3-54, U3-56, U3-57, U3-58, U3-59, U3-60, U3-61, U3-62 (35 MCU pins incl. BOOT0 pin 60 and the HSE/LSE pins 3, 4, 5, 6); U5-5 (NC on the H variant); JTAG1-7 (key).
+
+## Reading the names
+
+- Signal nets are named by MCU pin so the PWM swap question cannot recur: `PWM_PA8_ESCHDR` reaches the header the silkscreen calls SPEEDCONTROLLER, `PWM_PC6_SERVOHDR` the STEERINGSERVO header.
+- `CANL`/`CANH` follow the TCAN1042H pin functions (pin 6 = CANL, pin 7 = CANH); the March 2026 NETLIST.md had them reversed.
+- Power symbols in the schematic: `GND`, `+3V3`, `VIN_RAW`.
