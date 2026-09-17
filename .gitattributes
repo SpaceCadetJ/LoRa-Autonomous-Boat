@@ -35,4 +35,7 @@ firmware/BoatTHISTIMEITSDIFFERENT.ioc -text
 firmware/Core/** -text
 firmware/Drivers/** -text
 firmware/STM32F446RETX_FLASH.ld -text
+firmware_v2/evidence/** -text
+firmware_v2/src/** text eol=lf
+reviews/codex/design_completion/** -text
 "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat" -text

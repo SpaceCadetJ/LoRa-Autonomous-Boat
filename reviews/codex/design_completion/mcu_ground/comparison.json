@@ -1,0 +1,45 @@
+{
+  "source_sha256": "1b959ee8c2499d2a65359b695a2f70efd5a588f05ffcaf11f32cf9de18d0cce9",
+  "candidate_sha256": "49a8aa88cf61e8b6272ce13a0d5a5a6a3c6b81aeba057ebcd4ca15a6262c37b2",
+  "footprints_and_all_pad_nets_positions_sizes_drills_unchanged": true,
+  "footprint_count": 118,
+  "removed_track_uuids": [
+    "c9389eec-ff39-4a32-a348-e01f86895af3"
+  ],
+  "added_track_uuids": [
+    "4fe2c761-7620-4ac1-bc71-3d9615d73e1a",
+    "817ba66e-a1dd-4c62-aa1c-fbba8262d251",
+    "93c59a29-4770-4504-9d45-2f0500b94f92",
+    "c6c369d8-7e2a-4b1f-82c7-24a7edf75d81"
+  ],
+  "changed_via_uuids": [
+    "d5ca61cd-93b8-468a-be3a-6a8f5aa0d429"
+  ],
+  "original_nrst_segment_length_mm": 6.852713237835076,
+  "replacement_nrst_length_mm": 7.813659891844822,
+  "native_before": {
+    "violations": {
+      "warning": 101
+    },
+    "unconnected_items": 1,
+    "schematic_parity": 212,
+    "violation_types": {
+      "silk_edge_clearance": 2,
+      "silk_over_copper": 61,
+      "silk_overlap": 38
+    }
+  },
+  "native_after": {
+    "violations": {
+      "warning": 101
+    },
+    "unconnected_items": 0,
+    "schematic_parity": 212,
+    "violation_types": {
+      "silk_edge_clearance": 2,
+      "silk_over_copper": 61,
+      "silk_overlap": 38
+    }
+  },
+  "fabrication_approved": false
+}

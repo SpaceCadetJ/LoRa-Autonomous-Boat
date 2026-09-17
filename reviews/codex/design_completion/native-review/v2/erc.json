@@ -1,0 +1,68 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-17T17:13:40-0500",
+    "kicad_version": "9.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706",
+            "violations": []
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865",
+            "violations": []
+        },
+        {
+            "path": "/MCU/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b",
+            "violations": []
+        },
+        {
+            "path": "/Radio/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/797ed2d7-f26a-5324-8d20-a644f401b7c5",
+            "violations": []
+        },
+        {
+            "path": "/Navigation/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/b7be4430-1eb4-5f2b-9d93-98132a937546",
+            "violations": [
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.413,
+                                "y": 0.8382
+                            },
+                            "uuid": "fba238bc-3165-5f59-abd1-e6d476df589a"
+                        },
+                        {
+                            "description": "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 1.143,
+                                "y": 3.6576
+                            },
+                            "uuid": "bef86b03-b038-5d27-9003-7ad94f8169b0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/Actuators/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31",
+            "violations": []
+        },
+        {
+            "path": "/Debug/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/d1e55589-9ee7-5c35-ba90-3e096ceac45d",
+            "violations": []
+        }
+    ],
+    "source": "LoRa_Boat_Controller_V2.kicad_sch"
+}

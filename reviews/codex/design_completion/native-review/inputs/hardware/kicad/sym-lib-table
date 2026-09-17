@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "LoRa_Boat_Controller")(type "KiCad")(uri "${KIPRJMOD}/LoRa_Boat_Controller.kicad_sym")(options "")(descr "Project-local symbols for LoRa Boat Controller"))
+)

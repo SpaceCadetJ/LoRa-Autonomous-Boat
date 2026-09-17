@@ -1,0 +1,449 @@
+(kicad_sch
+(version 20250114)
+(generator "gen_sch.py")
+(generator_version "9.0")
+(uuid "c954de34-2e36-5b27-b5cf-f634d7278a6a")
+(paper "A3")
+(title_block (title "LoRa boat controller V1 | existing hardware - Root") (date "2026-09-17") (rev "V1 / v5") (company "LoRa Controller Project") (comment 1 "Annotated functional groups; connectivity preserved") (comment 2 "Build and review: docs/build/README.md"))
+(lib_symbols
+
+)
+	(text "LoRa boat controller V1 | existing hardware"
+		(exclude_from_sim no)
+		(at 13 16 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "22b2e098-fa32-5a08-9225-bc9448001af9")
+	)
+	(text "SHEET INDEX / Open a subsystem for component groups, net labels and review notes"
+		(exclude_from_sim no)
+		(at 13 24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "bbbe9979-93a8-5439-a098-63ed20be80e2")
+	)
+	(text "Power names are global; matching signal labels below join hierarchical sheet pins."
+		(exclude_from_sim no)
+		(at 13 30 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51031d5b-c51f-5b14-888d-3c2167c5cacb")
+	)
+	(wire
+		(pts
+			(xy 58.42 43.18) (xy 53.34 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1bc3824-f5ff-552e-90ca-d5cf5f1b5d16")
+	)
+(label "ADC_VBAT"  (at 53.34 43.18 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "07f48c91-4ad5-5a79-9837-c500e220b713"))
+	(wire
+		(pts
+			(xy 187.96 43.18) (xy 182.88 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fb10997-3781-50bf-ac6c-f7fa798f375b")
+	)
+(label "ADC_VBAT"  (at 182.88 43.18 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "732b7c58-e55b-558a-9535-acd6669e98ce"))
+	(wire
+		(pts
+			(xy 187.96 45.72) (xy 182.88 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "757b1e57-f860-5fae-9125-bce932bd091e")
+	)
+(label "CAN_RXD_PA10"  (at 182.88 45.72 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "17acd9ba-ea55-5119-a0ea-de7950908fae"))
+	(wire
+		(pts
+			(xy 187.96 48.26) (xy 182.88 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42d0e537-c9e1-5cc6-9596-dca0aea1fc90")
+	)
+(label "CAN_STB_PA11"  (at 182.88 48.26 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a14bd308-ab00-50ef-8cab-12623f019768"))
+	(wire
+		(pts
+			(xy 187.96 50.8) (xy 182.88 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cbae554-53d7-5e31-9375-01ad3b5841c3")
+	)
+(label "CAN_TXD_PA12"  (at 182.88 50.8 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "e99c347a-6e07-579a-8c59-43c3afbde118"))
+	(wire
+		(pts
+			(xy 187.96 53.34) (xy 182.88 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3af113dc-cb97-51d8-bcc9-716868abfb65")
+	)
+(label "GPS_PB0"  (at 182.88 53.34 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "3b886d2e-79f2-5116-a49e-9cc2560d2f28"))
+	(wire
+		(pts
+			(xy 187.96 55.88) (xy 182.88 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a47b4a93-5f66-5083-bcf9-fb89edde6a5a")
+	)
+(label "GPS_RX_PC11"  (at 182.88 55.88 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "c850c36e-ff72-553b-a42d-63d7b92e1a5d"))
+	(wire
+		(pts
+			(xy 187.96 58.42) (xy 182.88 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a95864b1-b01d-5b16-b721-56166c29cff0")
+	)
+(label "GPS_TX_PC10"  (at 182.88 58.42 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "02849b04-8699-5422-aecf-42828dd00544"))
+	(wire
+		(pts
+			(xy 187.96 60.96) (xy 182.88 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "068f11dc-3e9d-5e92-bdfd-1229e8a01dcc")
+	)
+(label "LORA_RST_PA3"  (at 182.88 60.96 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "00be39d2-9a8c-5e0e-bc1a-d022d524e774"))
+	(wire
+		(pts
+			(xy 187.96 63.5) (xy 182.88 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ebee0a5-6e87-55da-a9b7-03aa975c4669")
+	)
+(label "LORA_RX_PA1"  (at 182.88 63.5 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "3c1f0c4d-3c4a-548c-a2a6-96b865672254"))
+	(wire
+		(pts
+			(xy 187.96 66.04) (xy 182.88 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d0b5e9a-046b-5c04-a010-c821a2c23d32")
+	)
+(label "LORA_TX_PA0"  (at 182.88 66.04 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "9abc4ce3-71b2-57fb-bc0b-47fcc657fbac"))
+	(wire
+		(pts
+			(xy 187.96 68.58) (xy 182.88 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ea13231-a127-59fb-92e0-2b44d08ca00c")
+	)
+(label "NRST"  (at 182.88 68.58 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a3130db4-abc6-5dcc-8ba4-c5e6be044f3e"))
+	(wire
+		(pts
+			(xy 187.96 71.12) (xy 182.88 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d49fa26-1b80-5b00-8010-8b7d2e2870e7")
+	)
+(label "PWM_PA8_ESCHDR"  (at 182.88 71.12 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0fbd88e8-5f1c-5928-9324-7a77390d00e2"))
+	(wire
+		(pts
+			(xy 187.96 73.66) (xy 182.88 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee381d53-a5ce-5537-8b93-70bb3581a594")
+	)
+(label "PWM_PC6_SERVOHDR"  (at 182.88 73.66 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5a41341e-e94d-51b1-83b5-eb8c73ac0606"))
+	(wire
+		(pts
+			(xy 187.96 76.2) (xy 182.88 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57b5b7b7-49ed-53b6-b1b1-6a4bc18b81a1")
+	)
+(label "SWCLK"  (at 182.88 76.2 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "1da43872-2226-57fa-bedd-72026a0a7683"))
+	(wire
+		(pts
+			(xy 187.96 78.74) (xy 182.88 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31fb0d5e-1bac-5a23-b683-f70fc2417ccb")
+	)
+(label "SWDIO"  (at 182.88 78.74 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a0b3f60c-52fa-5d1c-be38-e3de79069232"))
+	(wire
+		(pts
+			(xy 187.96 81.28) (xy 182.88 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "162b8dc7-1988-515c-840e-da9d5a1dc5c3")
+	)
+(label "SWO_TDO"  (at 182.88 81.28 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "02d2bef8-a96b-5cc6-9660-0b68977fa285"))
+	(wire
+		(pts
+			(xy 187.96 83.82) (xy 182.88 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ad8da26-e819-57f9-9153-b75de285dd9c")
+	)
+(label "TDI"  (at 182.88 83.82 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f3ead4cd-0ab0-5fd2-9c64-f530c1fc6d08"))
+	(wire
+		(pts
+			(xy 317.5 43.18) (xy 312.42 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50e4f87e-94c1-5f3f-8cd0-b2f8626d8619")
+	)
+(label "CAN_RXD_PA10"  (at 312.42 43.18 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f85236fa-bddf-57db-8155-0ae6e827c63b"))
+	(wire
+		(pts
+			(xy 317.5 45.72) (xy 312.42 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c786772d-4c95-5bad-98f9-073517c24515")
+	)
+(label "CAN_STB_PA11"  (at 312.42 45.72 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "82b9c19f-cde2-576f-a706-bb7dc2cfae8f"))
+	(wire
+		(pts
+			(xy 317.5 48.26) (xy 312.42 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4419254-7b77-50d4-bb25-70b9936681c6")
+	)
+(label "CAN_TXD_PA12"  (at 312.42 48.26 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "9d4683bc-d962-562f-b064-9eb242fa1003"))
+	(wire
+		(pts
+			(xy 58.42 111.76) (xy 53.34 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9e4742b-8580-5050-aa61-a78807354574")
+	)
+(label "LORA_RST_PA3"  (at 53.34 111.76 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d53b7770-1459-594b-aecc-1f1ab8d20f4b"))
+	(wire
+		(pts
+			(xy 58.42 114.3) (xy 53.34 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d4f1160-5d86-5122-8cd3-b0bca1552fb9")
+	)
+(label "LORA_RX_PA1"  (at 53.34 114.3 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5c2f4f74-1f21-5e88-8fc9-546d7e27c2e6"))
+	(wire
+		(pts
+			(xy 58.42 116.84) (xy 53.34 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1cff627-852b-5707-a300-76489c1c33f3")
+	)
+(label "LORA_TX_PA0"  (at 53.34 116.84 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "44aeaccd-93a4-5271-98a4-7c7019e5287c"))
+	(wire
+		(pts
+			(xy 187.96 111.76) (xy 182.88 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97bb0f51-f008-585b-b12e-07bfd7f61755")
+	)
+(label "GPS_PB0"  (at 182.88 111.76 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0a0e45b4-c5b3-555d-bf7a-acded5a8df6f"))
+	(wire
+		(pts
+			(xy 187.96 114.3) (xy 182.88 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e16a80a-efa4-52ff-8914-cafc9ca36ccc")
+	)
+(label "GPS_RX_PC11"  (at 182.88 114.3 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "e92c1a2c-206a-520d-9d59-264c236ba87a"))
+	(wire
+		(pts
+			(xy 187.96 116.84) (xy 182.88 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbbeccc9-6f67-5cd6-8e52-efa0fba3ac91")
+	)
+(label "GPS_TX_PC10"  (at 182.88 116.84 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "1a3aa57b-1430-5768-804c-0c31d4597b35"))
+	(wire
+		(pts
+			(xy 317.5 111.76) (xy 312.42 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff638b24-eebb-5dec-a467-6d604797364e")
+	)
+(label "PWM_PA8_ESCHDR"  (at 312.42 111.76 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "172d639e-ae6b-5442-90e1-85d4aaab9342"))
+	(wire
+		(pts
+			(xy 317.5 114.3) (xy 312.42 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f02bfa0f-5af8-5539-a5c6-df695cedcd03")
+	)
+(label "PWM_PC6_SERVOHDR"  (at 312.42 114.3 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0ea9e72c-5cfc-5b57-9dff-064b013a4f1f"))
+	(wire
+		(pts
+			(xy 58.42 160.02) (xy 53.34 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cf26fcf-51dc-5179-ae95-75ff4527753c")
+	)
+(label "NRST"  (at 53.34 160.02 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f14ed7eb-4854-5c1a-b5dd-44d84f9349f3"))
+	(wire
+		(pts
+			(xy 58.42 162.56) (xy 53.34 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67c76fd2-31fa-5e18-8c26-7ebdfab5d239")
+	)
+(label "SWCLK"  (at 53.34 162.56 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "55f184bd-a9bf-5359-bb23-a90a6a0dee82"))
+	(wire
+		(pts
+			(xy 58.42 165.1) (xy 53.34 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c26410c-51e0-5fe4-8a61-cdf9c7e93e39")
+	)
+(label "SWDIO"  (at 53.34 165.1 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fded7b0b-7470-5f6e-a010-14b7b586621c"))
+	(wire
+		(pts
+			(xy 58.42 167.64) (xy 53.34 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aeac276a-b3ae-599e-91ed-0112f585a216")
+	)
+(label "SWO_TDO"  (at 53.34 167.64 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "06cca592-ba0d-5971-88cb-e053275a92c3"))
+	(wire
+		(pts
+			(xy 58.42 170.18) (xy 53.34 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb33aecb-e67b-52f8-b75b-a22c5ea743f8")
+	)
+(label "TDI"  (at 53.34 170.18 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "dfa62d92-8394-5d87-ba4f-7ea4ad2734c6"))
+	(text "BUILD PATH: review -> order selected BOM -> inspect/assemble -> verify power -> program over SWD -> functional acceptance"
+		(exclude_from_sim no)
+		(at 13 257 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc00019d-2f7c-505c-a3aa-942a2fb400fb")
+	)
+	(text "Start: docs/build/README.md | V1 is the existing board; V2 is the multifunction vehicle-node draft."
+		(exclude_from_sim no)
+		(at 13 263 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "85cff181-0e10-592d-8bce-d806c4459288")
+	)
+(sheet (at 58.42 40.64) (size 66 26) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "27f6bd5a-3797-5a54-9b77-1ed287a75d2c") (property "Sheetname" "PowerSupply" (at 58.42 38.44 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "PowerSupply.kicad_sch" (at 58.42 68.64 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "ADC_VBAT" passive (at 58.42 43.18 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "07b35654-f187-5494-9418-641706856931")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a" (page "2")))))
+(sheet (at 187.96 40.64) (size 66 48.26) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "b113cc4f-113a-519b-a0a6-c273ac60c5f5") (property "Sheetname" "MCU" (at 187.96 38.44 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "MCU.kicad_sch" (at 187.96 90.9 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "ADC_VBAT" passive (at 187.96 43.18 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "178303a2-4bcf-55cc-9609-52628e6f4b0b"))(pin "CAN_RXD_PA10" passive (at 187.96 45.72 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "d9822952-fa1d-5364-ba0e-cfcaf01e477e"))(pin "CAN_STB_PA11" passive (at 187.96 48.26 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "f26c52b0-9a66-5289-bf57-47e238bc416c"))(pin "CAN_TXD_PA12" passive (at 187.96 50.8 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "508a173f-f234-587c-b9b1-57dab7a61200"))(pin "GPS_PB0" passive (at 187.96 53.34 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a5a9d396-d883-5354-ad42-3a8f1df2e642"))(pin "GPS_RX_PC11" passive (at 187.96 55.88 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "2dd9dd6c-aa11-5d5a-8a6c-1682a3a96237"))(pin "GPS_TX_PC10" passive (at 187.96 58.42 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "83ab298f-cff1-51be-b3c1-26db578a5f04"))(pin "LORA_RST_PA3" passive (at 187.96 60.96 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "3a574284-cef2-5fe9-9dbf-749db488445e"))(pin "LORA_RX_PA1" passive (at 187.96 63.5 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "d327379b-6d6b-5795-94ea-29d887c067e6"))(pin "LORA_TX_PA0" passive (at 187.96 66.04 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "5e02316c-b64a-538c-be4d-21daccc07181"))(pin "NRST" passive (at 187.96 68.58 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a2178935-9fd9-5911-94ce-1980fe4165ac"))(pin "PWM_PA8_ESCHDR" passive (at 187.96 71.12 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "be006b1e-7a8f-5c3f-b8fc-40172c784b95"))(pin "PWM_PC6_SERVOHDR" passive (at 187.96 73.66 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "0cfed526-b955-5262-b3db-8be4bef34060"))(pin "SWCLK" passive (at 187.96 76.2 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "09fa3ad9-f473-5de7-a2f9-dae9f74ea2db"))(pin "SWDIO" passive (at 187.96 78.74 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "2837ca93-6247-57b5-bab7-c36427883cc7"))(pin "SWO_TDO" passive (at 187.96 81.28 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a2f1d38e-ba4d-5f17-a51d-4492d682f464"))(pin "TDI" passive (at 187.96 83.82 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "5a50f60a-f362-53bd-a071-782049118c61")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a" (page "3")))))
+(sheet (at 317.5 40.64) (size 66 26) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "03b37037-d399-579f-8cd8-abb4c634cffd") (property "Sheetname" "CAN_Bus" (at 317.5 38.44 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "CAN_Bus.kicad_sch" (at 317.5 68.64 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "CAN_RXD_PA10" passive (at 317.5 43.18 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a0f67e7c-a55e-5405-8386-d0cc6bded3a7"))(pin "CAN_STB_PA11" passive (at 317.5 45.72 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "64358c94-60ad-57bf-98d2-164f4d0b6682"))(pin "CAN_TXD_PA12" passive (at 317.5 48.26 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b39553bd-bf0d-575f-870c-498a69e364af")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a" (page "4")))))
+(sheet (at 58.42 109.22) (size 66 26) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "616b85f7-7208-5d9a-92c6-cb7fcb5d43cb") (property "Sheetname" "LoRa_Module" (at 58.42 107.02 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "LoRa_Module.kicad_sch" (at 58.42 137.22 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "LORA_RST_PA3" passive (at 58.42 111.76 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "258e72b6-f54b-51f4-88bd-acc5be070f41"))(pin "LORA_RX_PA1" passive (at 58.42 114.3 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "f5b4e618-30a3-5096-928c-eca879484a34"))(pin "LORA_TX_PA0" passive (at 58.42 116.84 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b374f1d2-216c-5187-81d1-f8c4e17e098a")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a" (page "5")))))
+(sheet (at 187.96 109.22) (size 66 26) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "9db88c42-176c-566e-9323-3aea3f09ec4b") (property "Sheetname" "GPS_Module" (at 187.96 107.02 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "GPS_Module.kicad_sch" (at 187.96 137.22 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "GPS_PB0" passive (at 187.96 111.76 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "aa58a606-9bcf-5831-ba49-02c34b574332"))(pin "GPS_RX_PC11" passive (at 187.96 114.3 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "21ccef1f-0f43-50aa-83ab-9e8f8841d320"))(pin "GPS_TX_PC10" passive (at 187.96 116.84 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "fcfb08cb-fad4-5b66-8bb8-a5c69d7905a4")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a" (page "6")))))
+(sheet (at 317.5 109.22) (size 66 26) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "31210085-9759-5277-8f1d-4204cfd4b08e") (property "Sheetname" "PWM_Outputs" (at 317.5 107.02 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "PWM_Outputs.kicad_sch" (at 317.5 137.22 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "PWM_PA8_ESCHDR" passive (at 317.5 111.76 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "7ffa767c-a105-5a3f-aa66-b00af1e043d9"))(pin "PWM_PC6_SERVOHDR" passive (at 317.5 114.3 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "056e4c9a-5988-54a3-ad83-c799c96d7405")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a" (page "7")))))
+(sheet (at 58.42 157.48) (size 66 26) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "3a5b5ab2-5467-5f3c-8709-69a633ebc308") (property "Sheetname" "Debug" (at 58.42 155.28 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "Debug.kicad_sch" (at 58.42 185.48 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "NRST" passive (at 58.42 160.02 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "5db2caec-ec08-5613-bf5f-99c7b955f753"))(pin "SWCLK" passive (at 58.42 162.56 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b76cc326-bac2-512c-9afa-d4ea5713afa7"))(pin "SWDIO" passive (at 58.42 165.1 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "7ef718db-8f76-590e-91ce-ed67c580a688"))(pin "SWO_TDO" passive (at 58.42 167.64 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "4960bbb4-880f-5a57-a78a-0f93262a0c16"))(pin "TDI" passive (at 58.42 170.18 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "c46017d5-2f96-5e60-8c36-e42715482591")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a" (page "8")))))
+(sheet_instances (path "/" (page "1")))
+(embedded_fonts no)
+)

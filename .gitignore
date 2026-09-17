@@ -60,4 +60,5 @@ reviews/codex/professionalization/v2_after_power.png
 reviews/codex/professionalization/v2_after_mcu.png
 .publication-check/
 /temp_build/
+firmware_v2/build/
 *.pending

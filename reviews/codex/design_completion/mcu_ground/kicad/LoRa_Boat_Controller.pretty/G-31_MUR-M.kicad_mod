@@ -1,0 +1,103 @@
+(footprint "G-31_MUR-M"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Allegro footprint G-31_MUR-M as fabricated on senior design v5.brd")
+	(tags "allegro G-31_MUR-M")
+	(property "Reference" "REF**"
+		(at 0 -1.8415 0)
+		(layer "F.Fab")
+		(uuid "56a5b24a-474a-5762-aef2-ae5803905c51")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "G-31_MUR-M"
+		(at 0 1.8415 0)
+		(layer "F.Fab")
+		(uuid "adfd5d16-de31-51e5-be95-ec21885e362c")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "609be21a-e864-5572-82b8-f562b132d386")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "179bee9e-e492-5c90-a31b-553cfdef99d1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2.159 -0.8255)
+		(end 2.159 0.8255)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "42b84939-9e50-5cd7-87ef-958725e9964d")
+	)
+	(fp_rect
+		(start -2.159 -0.8255)
+		(end 2.159 0.8255)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "c1530a88-bc45-5ebb-a7bf-670b731d43f8")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "33883b7b-d904-5e56-8a69-bc517e64256b")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "2" smd rect
+		(at 1.524 0)
+		(size 1.27 1.651)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "630e3b7f-df04-521c-a0da-95112e31b1e0")
+	)
+	(pad "1" smd rect
+		(at -1.524 0)
+		(size 1.27 1.651)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "ac6d6735-d8ba-5a97-8f57-8a38d553398c")
+	)
+	(embedded_fonts no)
+)

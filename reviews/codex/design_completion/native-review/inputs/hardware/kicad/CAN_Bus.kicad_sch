@@ -1,0 +1,1058 @@
+(kicad_sch
+(version 20250114)
+(generator "gen_sch.py")
+(generator_version "9.0")
+(uuid "19ba3c9e-cde0-5616-b4ee-c5e998c71e3e")
+(paper "A3")
+(title_block (title "LoRa Autonomous Boat Controller V1 - CAN_Bus") (date "2026-09-17") (rev "V1 / v5") (company "LoRa Controller Project") (comment 1 "Annotated functional groups; connectivity preserved") (comment 2 "Build and review: docs/build/README.md"))
+(lib_symbols
+	(symbol "Connector_Generic:Conn_01x04"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x04_1_1"
+			(rectangle
+				(start -1.27 3.81)
+				(end 1.27 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762)
+					(xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762)
+					(xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "LoRa_Boat_Controller:TCAN1042H-Q1"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TCAN1042HDRQ1"
+			(at -7.62 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller:D0008A_L"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tcan1042h-q1.pdf"
+			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Automotive CAN FD transceiver, 5 V VCC (4.5-5.5 V), SOIC-8. Pins per TI SLLSES9D. STB has internal pull-up (HIGH = standby)."
+			(at 0 -20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "CAN transceiver"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TCAN1042H-Q1_0_1"
+			(rectangle
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TCAN1042H-Q1_1_1"
+			(pin input line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "TXD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "RXD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "STB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "CANH"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "CANL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 10.16 -5.08 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 10.16 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -10.16 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "power:GND"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0)
+					(xy 0 -1.27)
+					(xy 1.27 -1.27)
+					(xy 0 -2.54)
+					(xy -1.27 -1.27)
+					(xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "power:PWR_FLAG"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0)
+					(xy 0 1.27)
+					(xy -1.016 1.905)
+					(xy 0 2.54)
+					(xy 1.016 1.905)
+					(xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)
+	(text "V1  /  CAN BUS"
+		(exclude_from_sim no)
+		(at 13 17 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9c7ffad-736a-582e-8822-2ff54e940684")
+	)
+	(text "Functional groups / electrical pin numbers / named-net connections"
+		(exclude_from_sim no)
+		(at 13 24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc6fd690-ca66-554a-937c-78ec8249c602")
+	)
+(polyline (pts (xy 13 34) (xy 204 34) (xy 204 123.12) (xy 13 123.12) (xy 13 34)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "a52827b1-9f89-521f-8adf-4def452e0e06"))
+	(text "01  Transceiver"
+		(exclude_from_sim no)
+		(at 18 41 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ced4861-b35d-55bb-b364-afc68f07c673")
+	)
+(symbol (lib_id "LoRa_Boat_Controller:TCAN1042H-Q1") (at 48.26 83.82 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2a37d36c-b21d-508e-948d-738a4433b1f5") (property "Reference" "U5" (at 48.26 54.66 0) (effects (font (size 1.27 1.27))  )) (property "Value" "TCAN1042HDRQ1" (at 48.26 58.16 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "LoRa_Boat_Controller:D0008A_L" (at 48.26 83.82 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_Device" "TCAN1042HDRQ1_D0008A_L_TCAN1042H-Q1D" (at 48.26 83.82 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Automotive CAN FD transceiver, 5 V VCC, SOIC-8 (Mouser flags EOL; TI successor TCAN1044A-Q1)" (at 48.26 83.82 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tcan1042h-q1.pdf" (at 48.26 83.82 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "TCAN1042HDRQ1" (at 48.26 83.82 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Texas Instruments" (at 48.26 83.82 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_RefDes" "U5" (at 48.26 83.82 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "8c6ce804-4d09-5593-aa6e-9a823e33c8e2"))(pin "4" (uuid "d4b6d9f4-5b62-5339-8d76-f42a451d0f9e"))(pin "8" (uuid "ebaff0bd-f324-5941-8f84-d5edf73f3b45"))(pin "7" (uuid "e947a600-a86b-5211-b567-f561a53fdf5f"))(pin "6" (uuid "8486af3f-0d60-5557-882d-762a8c98e9db"))(pin "5" (uuid "c4375030-fe3c-5750-80ee-89e708435bfe"))(pin "3" (uuid "8ce954b0-3112-5413-b903-95f874a98823"))(pin "2" (uuid "63a3ba35-9b90-5b64-8e1d-fea18b929875")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a/03b37037-d399-579f-8cd8-abb4c634cffd" (reference "U5") (unit 1)))))
+	(wire
+		(pts
+			(xy 38.1 78.74) (xy 33.02 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "893fecdd-bc2e-5f1f-9b98-851bd0378490")
+	)
+(hierarchical_label "CAN_TXD_PA12" (shape passive) (at 33.02 78.74 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "db7a2cdd-4434-5395-8308-28b0c5f51a99"))
+	(wire
+		(pts
+			(xy 38.1 81.28) (xy 33.02 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b638d90d-2e63-51f8-b673-fd14da0a79f2")
+	)
+(hierarchical_label "CAN_RXD_PA10" (shape passive) (at 33.02 81.28 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "3a4909c2-1a3e-50b2-bccf-f8685b7b6903"))
+	(wire
+		(pts
+			(xy 38.1 86.36) (xy 33.02 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c3c49b4-3d7d-5862-88c8-2ba6de697d30")
+	)
+(hierarchical_label "CAN_STB_PA11" (shape passive) (at 33.02 86.36 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "7c9ab14a-1a85-5bfa-b28d-0d035bd8283b"))
+	(wire
+		(pts
+			(xy 58.42 81.28) (xy 63.5 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "320fa671-8667-56b7-afb3-77ccfd9522a1")
+	)
+(label "CANH"  (at 63.5 81.28 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a842775f-738f-593c-af19-f1a626d6792a"))
+	(wire
+		(pts
+			(xy 58.42 86.36) (xy 63.5 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8302e0c-a7df-550f-9a31-9d8321f3b920")
+	)
+(label "CANL"  (at 63.5 86.36 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8b4d5e85-a7ee-58d8-9487-40b8d9e082d7"))
+	(no_connect
+		(at 58.42 88.9)
+		(uuid "47ca8454-e9fb-538f-9493-30168446d328")
+	)
+	(wire
+		(pts
+			(xy 48.26 73.66) (xy 48.26 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "352ecbb0-dca7-5f00-9be2-252ffea1b6b1")
+	)
+	(wire
+		(pts
+			(xy 48.26 68.58) (xy 50.8 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97fd4c62-358d-5d00-a94f-ba30f3209b2e")
+	)
+(label "CAN_VCC"  (at 50.8 68.58 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2de6558f-c08e-5f98-8327-208b0cb257cf"))
+	(wire
+		(pts
+			(xy 48.26 93.98) (xy 48.26 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd073404-6622-59c5-8455-d13f8287e75d")
+	)
+(symbol (lib_id "power:GND") (at 48.26 99.06 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "63fa35a4-7984-59f0-9c74-02cbf72cb4b6") (property "Reference" "#PWRCAN01" (at 48.26 95.25 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 48.26 102.616 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "77379dd4-a916-51b6-9090-2b9eef5cbdad")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a/03b37037-d399-579f-8cd8-abb4c634cffd" (reference "#PWRCAN01") (unit 1)))))
+(symbol (lib_id "Device:C") (at 99.06 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "8ba4d440-69c8-59bb-b151-894ab8b3bb41") (property "Reference" "C1" (at 104.092 67.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "0.1uF" (at 104.092 70.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "LoRa_Boat_Controller:CAP_KGM21_KAV-L" (at 99.06 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF" (at 99.06 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "0.1 uF 10% 50 V X7R MLCC 0805" (at 99.06 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 99.06 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "KGM21NR71H104KT" (at 99.06 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 99.06 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_RefDes" "C1" (at 99.06 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "dfd3dd46-49ea-53ac-b88f-3e0749893013"))(pin "2" (uuid "2b5e551d-29dc-53f0-b37d-c31e86820fe1")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a/03b37037-d399-579f-8cd8-abb4c634cffd" (reference "C1") (unit 1)))))
+	(wire
+		(pts
+			(xy 99.06 64.77) (xy 99.06 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7697ee39-07a5-51bf-bc7a-a4b0aba20991")
+	)
+(symbol (lib_id "power:GND") (at 99.06 59.69 180) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "4ec6e80e-7544-5a3c-8b1d-b26a7dc77944") (property "Reference" "#PWRCAN02" (at 99.06 55.88 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 99.06 56.134 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "53197fec-f4ae-5f32-bf3b-3171732e6c23")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a/03b37037-d399-579f-8cd8-abb4c634cffd" (reference "#PWRCAN02") (unit 1)))))
+	(wire
+		(pts
+			(xy 99.06 72.39) (xy 99.06 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc71c1d8-7091-5989-9f23-85d747d11638")
+	)
+	(wire
+		(pts
+			(xy 99.06 77.47) (xy 101.6 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73ecf825-e3ea-5c7c-a307-76d0fa770938")
+	)
+(label "CAN_VCC"  (at 101.6 77.47 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c73b0c39-ff49-5601-aa6b-b84fbdd6b394"))
+	(text "VCC is external 4.5-5.5 V. RXD reaches PA10, which has no CAN receive function; V1 CAN is not operational."
+		(exclude_from_sim no)
+		(at 20 113.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7063e335-98a1-50d7-89f1-24772ad8d1b7")
+	)
+(polyline (pts (xy 216 34) (xy 407 34) (xy 407 105.96) (xy 216 105.96) (xy 216 34)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "0a087d96-f03d-5624-9276-0728be41aa18"))
+	(text "02  External CAN port"
+		(exclude_from_sim no)
+		(at 221 41 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "1d802854-2c84-57cc-9228-fe241e75051d")
+	)
+(symbol (lib_id "Connector_Generic:Conn_01x04") (at 246.38 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "05c4f6c9-339e-59bf-95f9-b9a8f07ee756") (property "Reference" "CANHEADER1" (at 246.38 52.77 0) (effects (font (size 1.27 1.27))  )) (property "Value" "B4B-XH-A" (at 246.38 56.27 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "LoRa_Boat_Controller:CONN_B4B-XH-A_JST" (at 246.38 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_Device" "B4B-XH-A_CONN_B4B-XH-A_JST_CONN_B4B-XH-A" (at 246.38 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "XH 2.5 mm 4-position vertical through-hole header" (at 246.38 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 246.38 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "B4B-XH-A(LF)(SN)" (at 246.38 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "JST" (at 246.38 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_RefDes" "CANHEADER" (at 246.38 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "03919787-01c6-5573-9d59-d7be55d8e2cb"))(pin "2" (uuid "34a35d56-b39b-5a65-8f81-485c4f290f8b"))(pin "3" (uuid "69ba522d-0508-56e9-b1bc-fb4069ed5bee"))(pin "4" (uuid "65018e6a-4fa8-5ef5-9bec-bd899970f229")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a/03b37037-d399-579f-8cd8-abb4c634cffd" (reference "CANHEADER1") (unit 1)))))
+	(wire
+		(pts
+			(xy 241.3 66.04) (xy 236.22 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cea01c9c-2985-5fb0-b021-7bbea90104c6")
+	)
+(global_label "GND" (shape passive) (at 236.22 66.04 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "d2042167-a90c-5d6e-b6aa-0297f6fda656"))
+	(wire
+		(pts
+			(xy 241.3 68.58) (xy 236.22 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef87cc85-8b63-5b89-a174-fbea0bb7e601")
+	)
+(label "CAN_VCC"  (at 236.22 68.58 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "aecfc605-2750-50f4-8702-34c9157cfd3e"))
+	(wire
+		(pts
+			(xy 241.3 71.12) (xy 236.22 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfcb24a0-4cfa-5471-ad92-00511faecfd2")
+	)
+(label "CANH"  (at 236.22 71.12 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "7d1c22f2-98e7-5a7f-8058-2ed6abe1b0fb"))
+	(wire
+		(pts
+			(xy 241.3 73.66) (xy 236.22 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d701008-7d1c-545b-88b6-14368625eb81")
+	)
+(label "CANL"  (at 236.22 73.66 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "9f5d2cbf-c400-5b67-af8f-b0e9f4dde065"))
+	(text "Pin numbers are electrical numbering, not a cable-side view. Confirm pin 1 and supply polarity on the real board."
+		(exclude_from_sim no)
+		(at 223 96.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "accb2687-b9bb-5836-8369-16a41c9db921")
+	)
+	(text "Read named nets within each group; matching labels are electrically connected. Cross-sheet signals use hierarchical ports."
+		(exclude_from_sim no)
+		(at 13 261 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "27258eb0-d2bb-59c0-aa36-a70d23025274")
+	)
+	(text "V1 preserves original defects. V2 is a review draft. Bench values and firmware behavior require validation."
+		(exclude_from_sim no)
+		(at 13 266 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8dcad1a-b448-5abf-8bda-fc8873059320")
+	)
+(symbol (lib_id "power:PWR_FLAG") (at 17.78 243.84 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "d4e2c533-bd1a-5e85-a930-0e58e2b3281d") (property "Reference" "#FLGCAN01" (at 17.78 240.03 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "PWR_FLAG" (at 17.78 240.284 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "75dc55e3-bbb2-5656-ae37-b64190f097c8")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a/03b37037-d399-579f-8cd8-abb4c634cffd" (reference "#FLGCAN01") (unit 1)))))
+	(wire
+		(pts
+			(xy 17.78 243.84) (xy 17.78 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c65d182f-13fd-5b9a-a155-99ebc6e6d16f")
+	)
+(label "CAN_VCC"  (at 17.78 246.38 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "52f81afe-778c-5457-8cb9-8844eadbd5e4"))
+(embedded_fonts no)
+)

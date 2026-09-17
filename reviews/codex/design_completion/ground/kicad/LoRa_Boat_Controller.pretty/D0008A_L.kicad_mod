@@ -1,0 +1,145 @@
+(footprint "D0008A_L"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SOIC-8 narrow, IPC least density (Allegro D0008A_L, oblong pads 21.65x49.21 mil)")
+	(tags "allegro D0008A_L")
+	(property "Reference" "REF**"
+		(at 0 -3.195955 0)
+		(layer "F.Fab")
+		(uuid "01cae60d-2130-50bb-9310-d9ed85dae3bf")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "D0008A_L"
+		(at 0 3.195955 0)
+		(layer "F.Fab")
+		(uuid "a4b0f931-7b4c-5646-aaa9-0e1796c0feab")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6b0b7504-bf97-544a-b0a5-28b2713cb405")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8f7bdcf9-ea0b-53b0-be00-88732dee0c6f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -3.250057 -2.179955)
+		(end 3.250057 2.179955)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "ec54395e-2fa3-5841-a165-21888e47de97")
+	)
+	(fp_rect
+		(start -3.250057 -2.179955)
+		(end 3.250057 2.179955)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "61b98714-9448-513c-90b2-f3ad97403e5b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "a500811a-51c9-550c-b7a6-bff30b8763a2")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "8" smd oval
+		(at 2.62509 -1.905)
+		(size 1.249934 0.54991)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.0508)
+		(uuid "f0a1c2cf-203f-5b5c-9ddb-12983f0c00b7")
+	)
+	(pad "7" smd oval
+		(at 2.62509 -0.635)
+		(size 1.249934 0.54991)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.0508)
+		(uuid "a31912b8-3286-5956-84bb-9fc7d0d14e41")
+	)
+	(pad "6" smd oval
+		(at 2.62509 0.635)
+		(size 1.249934 0.54991)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.0508)
+		(uuid "852fa212-4e92-52ac-b39f-1062028d71e8")
+	)
+	(pad "5" smd oval
+		(at 2.62509 1.905)
+		(size 1.249934 0.54991)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.0508)
+		(uuid "c305f747-6507-54f6-9a91-31a31e9302e3")
+	)
+	(pad "4" smd oval
+		(at -2.62509 1.905)
+		(size 1.249934 0.54991)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.0508)
+		(uuid "732631d7-c22b-51f1-b9d2-5053dcb1db05")
+	)
+	(pad "3" smd oval
+		(at -2.62509 0.635)
+		(size 1.249934 0.54991)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.0508)
+		(uuid "b8129393-87ee-5d88-9725-21c3a2e571fb")
+	)
+	(pad "2" smd oval
+		(at -2.62509 -0.635)
+		(size 1.249934 0.54991)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.0508)
+		(uuid "ea4a07e4-6f6c-51d6-9d9e-e26a89bccc01")
+	)
+	(pad "1" smd oval
+		(at -2.62509 -1.905)
+		(size 1.249934 0.54991)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.0508)
+		(uuid "5667c41c-fc48-5453-a8a9-ad6e4611eb35")
+	)
+	(embedded_fonts no)
+)

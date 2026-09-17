@@ -1,0 +1,3370 @@
+[
+  {
+    "cluster": 1,
+    "pads": [
+      {
+        "ref": "R16",
+        "pad": "2",
+        "position_mm": [
+          96.825,
+          76.0
+        ],
+        "uuid": "5b48351e-0820-4aa5-b0d3-9d1772453136"
+      },
+      {
+        "ref": "U1",
+        "pad": "18",
+        "position_mm": [
+          92.75,
+          72.675
+        ],
+        "uuid": "7d24a386-6b24-4a3d-9cb4-2b0fcba1e7e6"
+      },
+      {
+        "ref": "U1",
+        "pad": "31",
+        "position_mm": [
+          99.25,
+          72.675
+        ],
+        "uuid": "c5476f6a-e411-48c9-a06c-bc19cc714f23"
+      }
+    ],
+    "candidate_sites": [
+      {
+        "position_mm": [
+          93.6,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.574206
+      },
+      {
+        "position_mm": [
+          93.7,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.630376
+      },
+      {
+        "position_mm": [
+          93.6,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.659254
+      },
+      {
+        "position_mm": [
+          93.8,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.690599
+      },
+      {
+        "position_mm": [
+          93.7,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.712637
+      },
+      {
+        "position_mm": [
+          93.6,
+          74.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.745888
+      },
+      {
+        "position_mm": [
+          94.0,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.750179
+      },
+      {
+        "position_mm": [
+          93.9,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.754459
+      },
+      {
+        "position_mm": [
+          93.8,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.770064
+      },
+      {
+        "position_mm": [
+          93.7,
+          74.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.796698
+      },
+      {
+        "position_mm": [
+          94.0,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.821572
+      },
+      {
+        "position_mm": [
+          93.9,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.831154
+      },
+      {
+        "position_mm": [
+          93.8,
+          74.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.85152
+      },
+      {
+        "position_mm": [
+          94.0,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.895554
+      },
+      {
+        "position_mm": [
+          93.9,
+          74.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.910007
+      },
+      {
+        "position_mm": [
+          94.0,
+          74.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 1.971833
+      },
+      {
+        "position_mm": [
+          91.4,
+          74.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.190462
+      },
+      {
+        "position_mm": [
+          91.3,
+          74.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.330906
+      },
+      {
+        "position_mm": [
+          95.3,
+          74.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.359158
+      },
+      {
+        "position_mm": [
+          91.3,
+          74.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.410005
+      },
+      {
+        "position_mm": [
+          95.3,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.436314
+      },
+      {
+        "position_mm": [
+          91.2,
+          74.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.471462
+      },
+      {
+        "position_mm": [
+          91.3,
+          74.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.490607
+      },
+      {
+        "position_mm": [
+          95.3,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.51508
+      },
+      {
+        "position_mm": [
+          91.4,
+          74.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.517563
+      },
+      {
+        "position_mm": [
+          91.2,
+          74.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.550123
+      },
+      {
+        "position_mm": [
+          91.3,
+          74.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.572572
+      },
+      {
+        "position_mm": [
+          91.4,
+          74.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.602523
+      },
+      {
+        "position_mm": [
+          91.1,
+          74.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.612111
+      },
+      {
+        "position_mm": [
+          91.2,
+          74.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.630233
+      },
+      {
+        "position_mm": [
+          91.3,
+          74.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.655772
+      },
+      {
+        "position_mm": [
+          91.1,
+          74.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.690376
+      },
+      {
+        "position_mm": [
+          91.2,
+          74.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.711665
+      },
+      {
+        "position_mm": [
+          91.3,
+          75.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.740096
+      },
+      {
+        "position_mm": [
+          91.1,
+          74.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.770041
+      },
+      {
+        "position_mm": [
+          91.2,
+          75.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.794302
+      },
+      {
+        "position_mm": [
+          91.1,
+          75.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 2.850987
+      },
+      {
+        "position_mm": [
+          102.9,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.664441
+      },
+      {
+        "position_mm": [
+          102.9,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.67466
+      },
+      {
+        "position_mm": [
+          102.9,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.687564
+      },
+      {
+        "position_mm": [
+          102.9,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.703124
+      },
+      {
+        "position_mm": [
+          102.9,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.721307
+      },
+      {
+        "position_mm": [
+          102.9,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.742075
+      },
+      {
+        "position_mm": [
+          103.0,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.764057
+      },
+      {
+        "position_mm": [
+          102.9,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.765385
+      },
+      {
+        "position_mm": [
+          103.0,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.774006
+      },
+      {
+        "position_mm": [
+          103.0,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.786572
+      },
+      {
+        "position_mm": [
+          102.9,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.79119
+      },
+      {
+        "position_mm": [
+          103.0,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.801727
+      },
+      {
+        "position_mm": [
+          102.9,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.81944
+      },
+      {
+        "position_mm": [
+          103.0,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.81944
+      },
+      {
+        "position_mm": [
+          103.0,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.839678
+      },
+      {
+        "position_mm": [
+          102.9,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.850081
+      },
+      {
+        "position_mm": [
+          103.0,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.862399
+      },
+      {
+        "position_mm": [
+          103.1,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.863693
+      },
+      {
+        "position_mm": [
+          103.1,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.873387
+      },
+      {
+        "position_mm": [
+          102.9,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.883056
+      },
+      {
+        "position_mm": [
+          103.1,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.885631
+      },
+      {
+        "position_mm": [
+          103.0,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.88756
+      },
+      {
+        "position_mm": [
+          103.1,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.900401
+      },
+      {
+        "position_mm": [
+          103.0,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.915115
+      },
+      {
+        "position_mm": [
+          103.1,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.917668
+      },
+      {
+        "position_mm": [
+          102.9,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.918306
+      },
+      {
+        "position_mm": [
+          103.1,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.937401
+      },
+      {
+        "position_mm": [
+          103.0,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.945013
+      },
+      {
+        "position_mm": [
+          103.1,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.959561
+      },
+      {
+        "position_mm": [
+          103.2,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.963348
+      },
+      {
+        "position_mm": [
+          103.2,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.972798
+      },
+      {
+        "position_mm": [
+          103.0,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.977201
+      },
+      {
+        "position_mm": [
+          103.1,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.984109
+      },
+      {
+        "position_mm": [
+          103.2,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.984737
+      },
+      {
+        "position_mm": [
+          103.2,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 3.999141
+      },
+      {
+        "position_mm": [
+          103.1,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.011
+      },
+      {
+        "position_mm": [
+          103.0,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.011624
+      },
+      {
+        "position_mm": [
+          103.2,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.015984
+      },
+      {
+        "position_mm": [
+          103.2,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.035235
+      },
+      {
+        "position_mm": [
+          103.1,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.040189
+      },
+      {
+        "position_mm": [
+          103.2,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.056861
+      },
+      {
+        "position_mm": [
+          103.3,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.063019
+      },
+      {
+        "position_mm": [
+          103.1,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.071624
+      },
+      {
+        "position_mm": [
+          103.3,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.072238
+      },
+      {
+        "position_mm": [
+          103.2,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.080824
+      },
+      {
+        "position_mm": [
+          103.3,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.083886
+      },
+      {
+        "position_mm": [
+          103.3,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.097942
+      },
+      {
+        "position_mm": [
+          103.1,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.105256
+      },
+      {
+        "position_mm": [
+          103.2,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.107082
+      },
+      {
+        "position_mm": [
+          103.3,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.11438
+      },
+      {
+        "position_mm": [
+          103.3,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.133174
+      },
+      {
+        "position_mm": [
+          103.2,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.135592
+      },
+      {
+        "position_mm": [
+          103.3,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.15429
+      },
+      {
+        "position_mm": [
+          103.4,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.162706
+      },
+      {
+        "position_mm": [
+          103.2,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.166308
+      },
+      {
+        "position_mm": [
+          103.4,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.171705
+      },
+      {
+        "position_mm": [
+          103.3,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.177694
+      },
+      {
+        "position_mm": [
+          103.4,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.183076
+      },
+      {
+        "position_mm": [
+          103.4,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.196799
+      },
+      {
+        "position_mm": [
+          103.2,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.199181
+      },
+      {
+        "position_mm": [
+          103.3,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.203347
+      },
+      {
+        "position_mm": [
+          103.4,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.212852
+      },
+      {
+        "position_mm": [
+          103.3,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.231208
+      },
+      {
+        "position_mm": [
+          103.4,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.231208
+      },
+      {
+        "position_mm": [
+          103.4,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.251838
+      },
+      {
+        "position_mm": [
+          103.3,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.261235
+      },
+      {
+        "position_mm": [
+          103.5,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.262408
+      },
+      {
+        "position_mm": [
+          103.5,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.271197
+      },
+      {
+        "position_mm": [
+          103.4,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.274708
+      },
+      {
+        "position_mm": [
+          103.5,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.282304
+      },
+      {
+        "position_mm": [
+          103.3,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.293382
+      },
+      {
+        "position_mm": [
+          103.5,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.29571
+      },
+      {
+        "position_mm": [
+          103.4,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.299782
+      },
+      {
+        "position_mm": [
+          103.5,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.311395
+      },
+      {
+        "position_mm": [
+          103.4,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.327023
+      },
+      {
+        "position_mm": [
+          103.5,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.329333
+      },
+      {
+        "position_mm": [
+          103.5,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.349497
+      },
+      {
+        "position_mm": [
+          103.4,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.356389
+      },
+      {
+        "position_mm": [
+          103.6,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.362124
+      },
+      {
+        "position_mm": [
+          103.6,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.370712
+      },
+      {
+        "position_mm": [
+          103.5,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.371856
+      },
+      {
+        "position_mm": [
+          103.6,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.381567
+      },
+      {
+        "position_mm": [
+          103.4,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.387838
+      },
+      {
+        "position_mm": [
+          103.6,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.39467
+      },
+      {
+        "position_mm": [
+          103.5,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.396376
+      },
+      {
+        "position_mm": [
+          103.6,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.410003
+      },
+      {
+        "position_mm": [
+          103.5,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.423022
+      },
+      {
+        "position_mm": [
+          103.6,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.427542
+      },
+      {
+        "position_mm": [
+          103.6,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.44726
+      },
+      {
+        "position_mm": [
+          103.5,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.451755
+      },
+      {
+        "position_mm": [
+          103.7,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.461852
+      },
+      {
+        "position_mm": [
+          103.6,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.46913
+      },
+      {
+        "position_mm": [
+          103.7,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.470249
+      },
+      {
+        "position_mm": [
+          103.7,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.480862
+      },
+      {
+        "position_mm": [
+          103.5,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.482536
+      },
+      {
+        "position_mm": [
+          103.6,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.49312
+      },
+      {
+        "position_mm": [
+          103.7,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.493676
+      },
+      {
+        "position_mm": [
+          103.7,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.508672
+      },
+      {
+        "position_mm": [
+          103.6,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.519195
+      },
+      {
+        "position_mm": [
+          103.7,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.525829
+      },
+      {
+        "position_mm": [
+          103.7,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.545121
+      },
+      {
+        "position_mm": [
+          103.6,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.547321
+      },
+      {
+        "position_mm": [
+          103.8,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.561592
+      },
+      {
+        "position_mm": [
+          103.7,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.566522
+      },
+      {
+        "position_mm": [
+          103.8,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.569806
+      },
+      {
+        "position_mm": [
+          103.6,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.577458
+      },
+      {
+        "position_mm": [
+          103.8,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.580188
+      },
+      {
+        "position_mm": [
+          103.7,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.590003
+      },
+      {
+        "position_mm": [
+          103.8,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.592725
+      },
+      {
+        "position_mm": [
+          103.8,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.607399
+      },
+      {
+        "position_mm": [
+          103.7,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.615531
+      },
+      {
+        "position_mm": [
+          103.8,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.624189
+      },
+      {
+        "position_mm": [
+          103.7,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.643073
+      },
+      {
+        "position_mm": [
+          103.8,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.643073
+      },
+      {
+        "position_mm": [
+          103.9,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.661344
+      },
+      {
+        "position_mm": [
+          103.8,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.664025
+      },
+      {
+        "position_mm": [
+          103.9,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.669382
+      },
+      {
+        "position_mm": [
+          103.7,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.672593
+      },
+      {
+        "position_mm": [
+          103.9,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.679543
+      },
+      {
+        "position_mm": [
+          103.8,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.687017
+      },
+      {
+        "position_mm": [
+          103.9,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.691815
+      },
+      {
+        "position_mm": [
+          103.9,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.706179
+      },
+      {
+        "position_mm": [
+          103.8,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.712019
+      },
+      {
+        "position_mm": [
+          103.9,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.722618
+      },
+      {
+        "position_mm": [
+          103.8,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.739
+      },
+      {
+        "position_mm": [
+          103.9,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.74111
+      },
+      {
+        "position_mm": [
+          104.0,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.761105
+      },
+      {
+        "position_mm": [
+          103.9,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.76163
+      },
+      {
+        "position_mm": [
+          103.8,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.767927
+      },
+      {
+        "position_mm": [
+          104.0,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.768975
+      },
+      {
+        "position_mm": [
+          104.0,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.778925
+      },
+      {
+        "position_mm": [
+          103.9,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.784154
+      },
+      {
+        "position_mm": [
+          104.0,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.790942
+      },
+      {
+        "position_mm": [
+          104.0,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.80501
+      },
+      {
+        "position_mm": [
+          103.9,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.808651
+      },
+      {
+        "position_mm": [
+          104.0,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.821112
+      },
+      {
+        "position_mm": [
+          103.9,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.835093
+      },
+      {
+        "position_mm": [
+          104.0,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.839228
+      },
+      {
+        "position_mm": [
+          104.1,
+          72.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.855216
+      },
+      {
+        "position_mm": [
+          104.0,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.859334
+      },
+      {
+        "position_mm": [
+          104.1,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.860877
+      },
+      {
+        "position_mm": [
+          103.9,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.863448
+      },
+      {
+        "position_mm": [
+          104.1,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.868586
+      },
+      {
+        "position_mm": [
+          104.1,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.878332
+      },
+      {
+        "position_mm": [
+          104.0,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.881406
+      },
+      {
+        "position_mm": [
+          104.1,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.890105
+      },
+      {
+        "position_mm": [
+          104.1,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.903889
+      },
+      {
+        "position_mm": [
+          104.0,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.905418
+      },
+      {
+        "position_mm": [
+          104.1,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.919667
+      },
+      {
+        "position_mm": [
+          104.0,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.931341
+      },
+      {
+        "position_mm": [
+          104.1,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.937421
+      },
+      {
+        "position_mm": [
+          104.2,
+          72.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.955111
+      },
+      {
+        "position_mm": [
+          104.1,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.957129
+      },
+      {
+        "position_mm": [
+          104.0,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.959146
+      },
+      {
+        "position_mm": [
+          104.2,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.960658
+      },
+      {
+        "position_mm": [
+          104.2,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.968211
+      },
+      {
+        "position_mm": [
+          104.2,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.977763
+      },
+      {
+        "position_mm": [
+          104.1,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.978767
+      },
+      {
+        "position_mm": [
+          104.2,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 4.989301
+      },
+      {
+        "position_mm": [
+          104.1,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.002312
+      },
+      {
+        "position_mm": [
+          104.2,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.002812
+      },
+      {
+        "position_mm": [
+          104.2,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.018279
+      },
+      {
+        "position_mm": [
+          104.1,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.027736
+      },
+      {
+        "position_mm": [
+          104.2,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.035685
+      },
+      {
+        "position_mm": [
+          104.1,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.05501
+      },
+      {
+        "position_mm": [
+          104.2,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.05501
+      },
+      {
+        "position_mm": [
+          104.3,
+          72.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.05501
+      },
+      {
+        "position_mm": [
+          104.3,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.060447
+      },
+      {
+        "position_mm": [
+          104.3,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.067852
+      },
+      {
+        "position_mm": [
+          104.2,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.076231
+      },
+      {
+        "position_mm": [
+          104.3,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.077216
+      },
+      {
+        "position_mm": [
+          104.3,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.088529
+      },
+      {
+        "position_mm": [
+          104.2,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.099326
+      },
+      {
+        "position_mm": [
+          104.3,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.101777
+      },
+      {
+        "position_mm": [
+          104.3,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.116945
+      },
+      {
+        "position_mm": [
+          104.2,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.124268
+      },
+      {
+        "position_mm": [
+          104.3,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.134016
+      },
+      {
+        "position_mm": [
+          104.2,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.151031
+      },
+      {
+        "position_mm": [
+          104.4,
+          72.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.151517
+      },
+      {
+        "position_mm": [
+          104.3,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.152972
+      },
+      {
+        "position_mm": [
+          104.4,
+          72.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.154913
+      },
+      {
+        "position_mm": [
+          104.4,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.160245
+      },
+      {
+        "position_mm": [
+          104.4,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.167507
+      },
+      {
+        "position_mm": [
+          104.3,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.173792
+      },
+      {
+        "position_mm": [
+          104.4,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.176691
+      },
+      {
+        "position_mm": [
+          104.4,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.187786
+      },
+      {
+        "position_mm": [
+          104.3,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.196453
+      },
+      {
+        "position_mm": [
+          104.4,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.200781
+      },
+      {
+        "position_mm": [
+          104.4,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.215662
+      },
+      {
+        "position_mm": [
+          104.3,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.220931
+      },
+      {
+        "position_mm": [
+          104.4,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.232411
+      },
+      {
+        "position_mm": [
+          104.3,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.247202
+      },
+      {
+        "position_mm": [
+          104.5,
+          72.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.25006
+      },
+      {
+        "position_mm": [
+          104.4,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.251012
+      },
+      {
+        "position_mm": [
+          104.5,
+          72.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.251488
+      },
+      {
+        "position_mm": [
+          104.5,
+          72.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.254819
+      },
+      {
+        "position_mm": [
+          104.5,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.26005
+      },
+      {
+        "position_mm": [
+          104.5,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.267174
+      },
+      {
+        "position_mm": [
+          104.4,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.271444
+      },
+      {
+        "position_mm": [
+          104.5,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.276185
+      },
+      {
+        "position_mm": [
+          104.5,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.287071
+      },
+      {
+        "position_mm": [
+          104.4,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.293687
+      },
+      {
+        "position_mm": [
+          104.5,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.299823
+      },
+      {
+        "position_mm": [
+          104.5,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.314426
+      },
+      {
+        "position_mm": [
+          104.4,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.317718
+      },
+      {
+        "position_mm": [
+          104.5,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.330865
+      },
+      {
+        "position_mm": [
+          104.4,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.343512
+      },
+      {
+        "position_mm": [
+          104.5,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.349124
+      },
+      {
+        "position_mm": [
+          104.6,
+          72.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.35146
+      },
+      {
+        "position_mm": [
+          104.6,
+          72.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.354729
+      },
+      {
+        "position_mm": [
+          104.6,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.359862
+      },
+      {
+        "position_mm": [
+          104.6,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.366854
+      },
+      {
+        "position_mm": [
+          104.5,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.369183
+      },
+      {
+        "position_mm": [
+          104.6,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.375698
+      },
+      {
+        "position_mm": [
+          104.6,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.386383
+      },
+      {
+        "position_mm": [
+          104.5,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.391023
+      },
+      {
+        "position_mm": [
+          104.6,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.3989
+      },
+      {
+        "position_mm": [
+          104.6,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.413236
+      },
+      {
+        "position_mm": [
+          104.5,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.414621
+      },
+      {
+        "position_mm": [
+          104.6,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.429376
+      },
+      {
+        "position_mm": [
+          104.5,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.439956
+      },
+      {
+        "position_mm": [
+          104.6,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.447304
+      },
+      {
+        "position_mm": [
+          104.7,
+          72.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.454643
+      },
+      {
+        "position_mm": [
+          104.7,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.459682
+      },
+      {
+        "position_mm": [
+          104.7,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.466546
+      },
+      {
+        "position_mm": [
+          104.6,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.467003
+      },
+      {
+        "position_mm": [
+          104.7,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.475228
+      },
+      {
+        "position_mm": [
+          104.7,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.48572
+      },
+      {
+        "position_mm": [
+          104.6,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.488454
+      },
+      {
+        "position_mm": [
+          104.7,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.498011
+      },
+      {
+        "position_mm": [
+          104.6,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.511635
+      },
+      {
+        "position_mm": [
+          104.7,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.512089
+      },
+      {
+        "position_mm": [
+          104.7,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.52794
+      },
+      {
+        "position_mm": [
+          104.6,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.536526
+      },
+      {
+        "position_mm": [
+          104.7,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.54555
+      },
+      {
+        "position_mm": [
+          104.8,
+          73.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.559508
+      },
+      {
+        "position_mm": [
+          104.7,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.564901
+      },
+      {
+        "position_mm": [
+          104.8,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.566249
+      },
+      {
+        "position_mm": [
+          104.8,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.574776
+      },
+      {
+        "position_mm": [
+          104.8,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.585081
+      },
+      {
+        "position_mm": [
+          104.7,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.585976
+      },
+      {
+        "position_mm": [
+          104.8,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.597153
+      },
+      {
+        "position_mm": [
+          104.7,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.608754
+      },
+      {
+        "position_mm": [
+          104.8,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.610983
+      },
+      {
+        "position_mm": [
+          104.8,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.626555
+      },
+      {
+        "position_mm": [
+          104.7,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.633216
+      },
+      {
+        "position_mm": [
+          104.8,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.643857
+      },
+      {
+        "position_mm": [
+          104.8,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.662873
+      },
+      {
+        "position_mm": [
+          104.9,
+          73.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.665962
+      },
+      {
+        "position_mm": [
+          104.9,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.674339
+      },
+      {
+        "position_mm": [
+          104.8,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.683584
+      },
+      {
+        "position_mm": [
+          104.9,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.684463
+      },
+      {
+        "position_mm": [
+          104.9,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.696326
+      },
+      {
+        "position_mm": [
+          104.8,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.705973
+      },
+      {
+        "position_mm": [
+          104.9,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.709915
+      },
+      {
+        "position_mm": [
+          104.9,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.725218
+      },
+      {
+        "position_mm": [
+          104.8,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.73002
+      },
+      {
+        "position_mm": [
+          104.9,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.742223
+      },
+      {
+        "position_mm": [
+          104.9,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.760914
+      },
+      {
+        "position_mm": [
+          105.0,
+          73.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.773918
+      },
+      {
+        "position_mm": [
+          104.9,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.781274
+      },
+      {
+        "position_mm": [
+          105.0,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.783868
+      },
+      {
+        "position_mm": [
+          105.0,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.795526
+      },
+      {
+        "position_mm": [
+          104.9,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.803286
+      },
+      {
+        "position_mm": [
+          105.0,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.808883
+      },
+      {
+        "position_mm": [
+          105.0,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.823927
+      },
+      {
+        "position_mm": [
+          104.9,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.826931
+      },
+      {
+        "position_mm": [
+          105.0,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.840644
+      },
+      {
+        "position_mm": [
+          105.0,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.859021
+      },
+      {
+        "position_mm": [
+          105.0,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.879041
+      },
+      {
+        "position_mm": [
+          105.1,
+          73.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.883292
+      },
+      {
+        "position_mm": [
+          105.1,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.894754
+      },
+      {
+        "position_mm": [
+          105.0,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.900689
+      },
+      {
+        "position_mm": [
+          105.1,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.907887
+      },
+      {
+        "position_mm": [
+          105.1,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.922679
+      },
+      {
+        "position_mm": [
+          105.0,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.923945
+      },
+      {
+        "position_mm": [
+          105.1,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.939118
+      },
+      {
+        "position_mm": [
+          105.1,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.957191
+      },
+      {
+        "position_mm": [
+          105.1,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.976883
+      },
+      {
+        "position_mm": [
+          105.2,
+          73.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.994007
+      },
+      {
+        "position_mm": [
+          105.1,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 5.998177
+      },
+      {
+        "position_mm": [
+          105.2,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.006923
+      },
+      {
+        "position_mm": [
+          105.1,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.021057
+      },
+      {
+        "position_mm": [
+          105.2,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.021472
+      },
+      {
+        "position_mm": [
+          105.2,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.037642
+      },
+      {
+        "position_mm": [
+          105.2,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.055421
+      },
+      {
+        "position_mm": [
+          105.2,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.074794
+      },
+      {
+        "position_mm": [
+          105.2,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.095746
+      },
+      {
+        "position_mm": [
+          105.3,
+          73.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.105991
+      },
+      {
+        "position_mm": [
+          105.2,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.118262
+      },
+      {
+        "position_mm": [
+          105.3,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.120304
+      },
+      {
+        "position_mm": [
+          105.3,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.136214
+      },
+      {
+        "position_mm": [
+          105.3,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.153708
+      },
+      {
+        "position_mm": [
+          105.3,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.172773
+      },
+      {
+        "position_mm": [
+          105.3,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.193394
+      },
+      {
+        "position_mm": [
+          105.3,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.215555
+      },
+      {
+        "position_mm": [
+          105.4,
+          73.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.219174
+      },
+      {
+        "position_mm": [
+          105.4,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.234832
+      },
+      {
+        "position_mm": [
+          105.4,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.25205
+      },
+      {
+        "position_mm": [
+          105.4,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.270815
+      },
+      {
+        "position_mm": [
+          105.4,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.291115
+      },
+      {
+        "position_mm": [
+          105.4,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.312933
+      },
+      {
+        "position_mm": [
+          105.5,
+          73.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.333492
+      },
+      {
+        "position_mm": [
+          105.5,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.350443
+      },
+      {
+        "position_mm": [
+          105.5,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.368919
+      },
+      {
+        "position_mm": [
+          105.5,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.388906
+      },
+      {
+        "position_mm": [
+          105.5,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.410392
+      },
+      {
+        "position_mm": [
+          105.6,
+          73.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.448886
+      },
+      {
+        "position_mm": [
+          105.6,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.46708
+      },
+      {
+        "position_mm": [
+          105.6,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.486765
+      },
+      {
+        "position_mm": [
+          105.6,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.507928
+      },
+      {
+        "position_mm": [
+          105.7,
+          73.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.565297
+      },
+      {
+        "position_mm": [
+          105.7,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.584689
+      },
+      {
+        "position_mm": [
+          105.7,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.605537
+      },
+      {
+        "position_mm": [
+          105.8,
+          74.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.682673
+      },
+      {
+        "position_mm": [
+          105.8,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.703218
+      },
+      {
+        "position_mm": [
+          105.9,
+          74.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:13",
+        "pad_distance_mm": 6.800965
+      }
+    ]
+  },
+  {
+    "cluster": 2,
+    "pads": [
+      {
+        "ref": "U7",
+        "pad": "2",
+        "position_mm": [
+          106.8625,
+          59.5
+        ],
+        "uuid": "7deb73d8-6542-4f67-a665-f5daca454e9d"
+      }
+    ],
+    "candidate_sites": [
+      {
+        "position_mm": [
+          108.0,
+          59.1
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 1.20578
+      },
+      {
+        "position_mm": [
+          108.0,
+          59.0
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 1.24254
+      },
+      {
+        "position_mm": [
+          108.0,
+          58.9
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 1.286043
+      },
+      {
+        "position_mm": [
+          108.0,
+          58.8
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 1.33563
+      },
+      {
+        "position_mm": [
+          108.0,
+          58.7
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 1.39065
+      },
+      {
+        "position_mm": [
+          108.0,
+          58.6
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 1.450485
+      },
+      {
+        "position_mm": [
+          108.0,
+          58.5
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 1.514565
+      },
+      {
+        "position_mm": [
+          108.0,
+          58.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 1.582374
+      },
+      {
+        "position_mm": [
+          108.0,
+          58.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 1.653453
+      },
+      {
+        "position_mm": [
+          107.2,
+          57.4
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 2.126948
+      },
+      {
+        "position_mm": [
+          107.1,
+          57.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 2.212782
+      },
+      {
+        "position_mm": [
+          107.2,
+          57.3
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 2.225737
+      },
+      {
+        "position_mm": [
+          107.0,
+          57.2
+        ],
+        "island_layer": "F.Cu",
+        "island_polygon": "F.Cu:29",
+        "pad_distance_mm": 2.304106
+      }
+    ]
+  },
+  {
+    "cluster": 3,
+    "pads": [
+      {
+        "ref": "U1",
+        "pad": "12",
+        "position_mm": [
+          90.325,
+          68.75
+        ],
+        "uuid": "2d36caf4-63fa-46ef-bae7-3bc59df48d35"
+      }
+    ],
+    "candidate_sites": []
+  }
+]

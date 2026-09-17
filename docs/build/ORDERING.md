@@ -16,7 +16,7 @@ Use **V1 for the existing boat's inspection and repair**. Use **V2 as the develo
 
 **Candidate-order CSVs are partial lists.** They omit held selections, optional populations awaiting a decision, and bare PCB features. `CANDIDATE` means the source has a manufacturer and MPN and no specific hold in this review. It does not mean the part was checked against today's catalogue, approved for the footprint, or purchased. Full quantities and omissions are visible in the BOM review and [run manifest](../../hardware/manufacturing/run_manifest.json).
 
-The initial packet reconciles 44 V1 footprints (20 candidate components, 18 held components, 6 bare features) and 118 V2 footprints (90 candidate components, 17 held components, 11 bare features). The V2 BOM's `TOTAL` row is excluded. These counts are by reference, not by distinct part number. Fresh generated counts are in each `summary.json` and the manifest.
+The current packet reconciles 44 V1 footprints (20 candidate components, 18 held components, 6 bare features) and 118 V2 footprints (74 candidate components, 33 held components, 11 bare features). The V2 BOM's `TOTAL` row is excluded. These counts are by reference, not by distinct part number. The [electrical review](../../reviews/codex/design_completion/electrical/README.md) adds holds for every reference affected by its six circuit findings. Fresh generated counts are in each `summary.json` and the manifest; the earlier 90/17/11 split describes the previous edition.
 
 ## Import a candidate list
 

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "target": "STM32F446RET6",
+  "stage": "A: identity and inactive actuator outputs",
+  "schematic_evidence": "reviews/codex/publication/native-review/review.json",
+  "netlist": "reviews/codex/publication/native-review/v2/netlist.xml",
+  "pins": {
+    "ESC": {"gpio": "PC6", "pad": "37", "net": "/PWM_ESC_PC6", "peer": ["U4", "2"], "mode": "output_low"},
+    "SERVO": {"gpio": "PA8", "pad": "41", "net": "/PWM_SERVO_PA8", "peer": ["U5", "2"], "mode": "output_low"},
+    "HEARTBEAT": {"gpio": "PC1", "pad": "9", "net": "/MCU/LED_LINK", "peer": ["R30", "1"], "mode": "diagnostic_led"},
+    "FIX": {"gpio": "PC2", "pad": "10", "net": "/MCU/LED_FIX", "peer": ["R34", "1"], "mode": "output_low"},
+    "MARKER": {"gpio": "PC3", "pad": "11", "net": "/MCU/LED_FAULT", "peer": ["R35", "1"], "mode": "diagnostic_led"},
+    "SWDIO": {"gpio": "PA13", "pad": "46", "net": "/SWDIO", "peer": ["J7", "2"], "mode": "reset_state"},
+    "SWCLK": {"gpio": "PA14", "pad": "49", "net": "/SWCLK", "peer": ["J7", "4"], "mode": "reset_state"}
+  },
+  "limitations": [
+    "Electrical pin membership only; footprint orientation and hardware operation are unverified.",
+    "Other pins retain reset state. No radio, USB, navigation, PWM or watchdog driver is implemented.",
+    "The current V2 circuit has unresolved electrical blockers; this contract does not authorize powering it."
+  ]
+}

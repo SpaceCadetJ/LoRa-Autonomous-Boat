@@ -1,0 +1,103 @@
+(footprint "RC0603N_YAG-M"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Allegro footprint RC0603N_YAG-M as fabricated on senior design v5.brd")
+	(tags "allegro RC0603N_YAG-M")
+	(property "Reference" "REF**"
+		(at 0 -1.4478 0)
+		(layer "F.Fab")
+		(uuid "b5e18a68-3347-5664-9ffa-8c117cd82e4a")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "RC0603N_YAG-M"
+		(at 0 1.4478 0)
+		(layer "F.Fab")
+		(uuid "b58e6c6c-15ff-56b9-824b-98c079928c91")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5edaf2aa-ae64-5959-ba9e-74b7b3107cd9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8da5498f-1e9e-59b3-8748-71b8ee7f4a35")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.3589 -0.4318)
+		(end 1.3589 0.4318)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "079f7e86-0e46-5d08-85a8-51af89d422e6")
+	)
+	(fp_rect
+		(start -1.3589 -0.4318)
+		(end 1.3589 0.4318)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8cf90f87-951f-5722-99ee-a60a0def5696")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "4270f17f-3549-5145-81fc-c80de14e61e4")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "2" smd rect
+		(at 0.8763 0)
+		(size 0.9652 0.8636)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "74e276b8-076a-5065-b2cb-d35afb971020")
+	)
+	(pad "1" smd rect
+		(at -0.8763 0)
+		(size 0.9652 0.8636)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "25ad4cbf-b105-597f-aa9c-edefd2ed5856")
+	)
+	(embedded_fonts no)
+)

@@ -1,6 +1,10 @@
 # Start here: Codex review checkpoint
 
-## Latest checkpoint — 2026-09-17, schematic and build review edition
+## Current application and electrical completion packet
+
+Start with [design_completion/HANDOFF.md](design_completion/HANDOFF.md), [application guides](../../docs/applications/README.md) and the [V2 diagnostic](../../firmware_v2/README.md). The current work connects application procedures to actual board/firmware readiness, repairs the three ground connections, identifies six component-limit blockers, and adds a pin-checked Stage A image. The previously published integration is on `main` and `v2-design`; earlier primary-ownership and no-push statements below are historical. Operational control firmware, electrical corrections and bench qualification remain separate open work.
+
+## Earlier checkpoint — 2026-09-17, schematic and build review edition
 
 Read [professionalization/HANDOFF.md](professionalization/HANDOFF.md) and [docs/build/README.md](../../docs/build/README.md) first. Jay authorized Codex to continue the professional schematics, purchasing/assembly, V1/V2 programming and review workflow while the other agent is inactive. Current ownership supersedes the earlier reservations below.
 

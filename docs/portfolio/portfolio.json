@@ -8,7 +8,7 @@
     "label": "Engineering review edition; V2 development in progress",
     "manufacturing_approved": false,
     "v1_firmware": "Reproducible preserved-source build; unqualified behavior",
-    "v2_firmware": "No implementation project or qualified image",
+    "v2_firmware": "Stage A board-identity diagnostic builds; no operational or hardware-qualified control image",
     "handheld": "Voice, text and location requirements; no released hardware or firmware",
     "ci": "Automatic repository/evidence checks plus opt-in native CAD/firmware jobs; hardware gates remain separate. Consult the actual GitHub run for hosted execution status."
   },
@@ -23,7 +23,9 @@
     "case_study": "docs/portfolio/README.md",
     "viewer": "pm/index.html",
     "build_guide": "docs/build/README.md",
-    "engineering_handoff": "reviews/codex/publication/README.md"
+    "engineering_handoff": "reviews/codex/design_completion/HANDOFF.md",
+    "application_guides": "docs/applications/README.md",
+    "v2_diagnostic": "firmware_v2/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -146,10 +148,27 @@
         "reviews/codex/publication/QUALITY_PORTABILITY.md",
         "hardware/kicad/evidence/v1_schematic_inputs/reproducibility_report.json"
       ]
+    },
+    {
+      "claim": "Separate V2 Stage A diagnostic builds twice with identical ELF/HEX/BIN; 1328-byte BIN, nine pin-contract tests pass. No hardware operation is claimed.",
+      "classification": "software_build_only",
+      "evidence": [
+        "firmware_v2/evidence/stage_a_build.json",
+        "firmware_v2/README.md",
+        "reviews/codex/design_completion/electrical/FIRMWARE_STAGE_A_REVIEW.md"
+      ]
+    },
+    {
+      "claim": "Localized ground repair reduces V2 unconnected PCB items from three to zero with zero ordinary DRC errors and unchanged warnings/parity; all footprints and pad assignments preserved.",
+      "classification": "independent_native_check",
+      "evidence": [
+        "reviews/codex/design_completion/mcu_ground/comparison.json",
+        "reviews/codex/design_completion/native-review/review.json"
+      ]
     }
   ],
   "current_native_findings": {
-    "snapshot": "publication/native-review",
+    "snapshot": "design_completion/native-review",
     "v1": {
       "erc_errors": 0,
       "erc_warnings": 0,
@@ -163,18 +182,19 @@
       "erc_warnings": 1,
       "drc_violation_errors": 0,
       "drc_warnings": 101,
-      "unconnected_entries": 3,
+      "unconnected_entries": 0,
       "schematic_parity_entries": 212
     },
     "strict_combined_review_gate": "FAIL",
     "evidence": [
-      "reviews/codex/publication/QUALITY_PORTABILITY.md",
-      "reviews/codex/publication/native-review/review.json"
-    ]
+      "reviews/codex/design_completion/HANDOFF.md",
+      "reviews/codex/design_completion/native-review/review.json"
+    ],
+    "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Identify and resolve actual V2 ground islands and affected pads; review U6 AD0 pin intent and schematic-to-PCB discrepancies.",
-    "Freeze V2 pin/protocol contract and create separate diagnostic firmware, then integrate and measure failsafe behavior.",
+    "Correct the IMU 1.8 V supply/interface and five power/signal-limit findings; reconcile schematic-to-PCB discrepancies.",
+    "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",
     "Measure voice quality, airtime and RC coexistence before selecting handheld radio, codec or hardware."
   ],
@@ -191,7 +211,7 @@
   "publication": {
     "integration_commit": "fb9f16f605fd8861d24ca46763a2ab40c93cc635",
     "live_viewer_url": null,
-    "editor_note": "The integration commit is published on main and v2-design; later handoff-only commits may follow it. Repository-relative paths are authoritative. No hosted viewer URL is claimed.",
+    "editor_note": "The integration_commit names an earlier publication milestone. Current reviewed source is on main and v2-design; use the actual branch commit when pinning portfolio links. Repository-relative paths are authoritative. No hosted viewer URL is claimed.",
     "repository_url": "https://github.com/SpaceCadetJ/LoRa-Autonomous-Boat",
     "branch": "main"
   }

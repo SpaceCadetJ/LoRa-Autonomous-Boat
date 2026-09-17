@@ -1,0 +1,98 @@
+(footprint "amv_con1"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Battery wire solder pad 1.6 mm / 0.6 mm hole (Allegro amv_con1)")
+	(tags "allegro amv_con1")
+	(property "Reference" "REF**"
+		(at 0 -1.815973 0)
+		(layer "F.Fab")
+		(uuid "a119b63c-39ef-5ead-a1d7-a0cb4f957c09")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "amv_con1"
+		(at 0 1.815973 0)
+		(layer "F.Fab")
+		(uuid "bef8333d-9205-59da-8765-85a93f024abe")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a82b1171-8674-5001-801d-422100ab3d74")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "24ec85eb-77c4-5f75-8c34-90ca0ff005db")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -0.799973 -0.799973)
+		(end 0.799973 0.799973)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7fde77d7-edff-503e-8e20-e4b10b3d7ffc")
+	)
+	(fp_rect
+		(start -0.799973 -0.799973)
+		(end 0.799973 0.799973)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1b628c29-dfde-5e87-bc16-0316cd98826c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "2631a5eb-830b-50d8-91b0-89de63bb37b6")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.599946 1.599946)
+		(drill 0.599948)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.100076)
+		(uuid "9b80e2f6-0072-5a3d-82ee-c03e4fb06302")
+	)
+	(embedded_fonts no)
+)

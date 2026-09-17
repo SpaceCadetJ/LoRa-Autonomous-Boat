@@ -4,7 +4,7 @@ An embedded-systems project spanning **STM32 firmware, LoRa communication, PCB r
 
 **Current milestone: engineering review edition.** The schematics, source code, parts and build procedures are available for inspection. V2 is not fabrication-ready, and the preserved V1 firmware build is not hardware-qualified.
 
-[Portfolio case study](docs/portfolio/README.md) · [Build and assembly guide](docs/build/README.md) · [Latest verification](reviews/codex/publication/QUALITY_PORTABILITY.md) · [Project history](REPORT.md)
+[Portfolio case study](docs/portfolio/README.md) · [Application handbook](docs/applications/README.md) · [Build and assembly guide](docs/build/README.md) · [Latest verification](reviews/codex/design_completion/HANDOFF.md) · [Project history](REPORT.md)
 
 | Existing controller | Developing controller |
 | --- | --- |
@@ -41,7 +41,7 @@ V1 firmware is bare-metal C using STM32 HAL/CMSIS, with UART radio commands, GPS
 
 Hardware originated in Cadence OrCAD/Allegro and has been reconstructed in KiCad 9. Python tools generate and inspect schematics, compare complete pin groups and prepare assembly evidence. The viewer uses HTML, CSS and JavaScript with embedded project data; Node.js builds and validates it. GitHub Actions separates portable repository checks from optional native CAD and firmware jobs.
 
-V2 adds draft provisions for protected power, a separate actuator rail, sensing and USB/debug access. Corrected control firmware, autonomous navigation and the proposed voice/text/location handheld remain development targets. Voice airtime and RC coexistence must be validated before choosing handheld hardware.
+V2 adds draft provisions for protected power, a separate actuator rail, sensing and USB/debug access. The separate [Stage A diagnostic](firmware_v2/README.md) now builds for board identity and inactive actuator outputs. Corrected control firmware, autonomous navigation and the proposed voice/text/location handheld remain development targets. Voice airtime and RC coexistence must be validated before choosing handheld hardware.
 
 ## What has been demonstrated
 
@@ -54,7 +54,7 @@ V2 adds draft provisions for protected power, a separate actuator rail, sensing 
 | Navigation and documentation | Searchable parts, selected datasheets, V1 connector atlas, source evidence and version-specific programming guides | [Workspace](pm/README.md), [build guide](docs/build/README.md) |
 | Reproducible review | Regression tests, source hashes, native reports and preserved before/after evidence | [Review workflow](docs/build/REVIEW_WORKFLOW.md) |
 
-The current design review still records **one V2 ERC warning, three V2 unconnected zone entries and PCB warning/parity findings**. A successful repository check is not fabrication or hardware acceptance. No range, voice or autonomous-navigation performance is claimed by these software/CAD results.
+The integrated V2 ground repair reduces **three unconnected PCB items to zero**, with zero ordinary DRC errors and unchanged warning/parity counts. The [fresh native review](reviews/codex/design_completion/native-review/REVIEW.md) preserves all 533 electrical pins. One V2 ERC warning remains; the strict review also flags the intentional PCB change against its older preservation baseline. Six [component-limit blockers](reviews/codex/design_completion/electrical/README.md) require circuit corrections before fabrication. No range, voice or autonomous-navigation performance is claimed by these software/CAD results.
 
 ## Build, review and contribute
 
@@ -67,8 +67,8 @@ Do not run full PCB generation or routing merely to refresh drawings. The schema
 
 ## Next milestones
 
-1. Resolve actual V2 ground islands, the AD0 warning and schematic-to-PCB differences.
-2. Freeze the pin/protocol contract and implement separate V2 diagnostic firmware, then measured failsafe behavior.
+1. Correct the IMU's 1.8 V interface and the five remaining power/signal-limit findings; reconcile schematic-to-PCB differences.
+2. Build on the separate Stage A diagnostic: freeze the operational protocol, implement supervised outputs and measure failsafe behavior.
 3. Complete part/footprint qualification, the V2 connector atlas and staged physical bring-up.
 4. Validate voice quality, radio airtime and RC scheduling before developing the handheld.
 

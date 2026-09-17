@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "path_base": "repository_root",
+  "title": "Application handbook",
+  "updated": "2026-09-17",
+  "guide": "docs/applications/README.md",
+  "acceptance_record": "docs/applications/ACCEPTANCE_RECORD.md",
+  "release_statement": "Engineering review edition. No powered vehicle application or handheld mode is qualified by this guide.",
+  "modes": [
+    {
+      "id": "v1-bench",
+      "title": "V1 boat: bench and legacy RC",
+      "board": "V1",
+      "status": "Instrument-only characterization",
+      "summary": "Preserve and reproduce the existing image, identify the reversed header roles and measure unloaded PWM and legacy packet behavior.",
+      "guide": "docs/applications/V1_BENCH.md",
+      "available_now": [
+        "Reproducible preserved-source V1 build and backup/programming instructions",
+        "Source-backed connector map and exact UART test lines",
+        "Unloaded startup, command and link-loss characterization procedure"
+      ],
+      "release_gates": [
+        "Board-specific electrical corrections and verified harness power",
+        "Integrated control supervisor, parser and watchdog correction",
+        "Measured startup, link-loss and fault response with selected hardware"
+      ],
+      "next_task": "Integrate a reviewed supervisor and receive parser into a separate board-specific candidate, then measure unloaded output/fault behavior.",
+      "evidence": ["docs/atlas/README.md", "firmware/Core/Src/main.c", "docs/build/FLASHING_V1.md", "docs/build/FIRMWARE_HANDOFF.md"]
+    },
+    {
+      "id": "v2-boat",
+      "title": "V2 boat controller",
+      "board": "V2",
+      "status": "Development; operation gated",
+      "summary": "One ESC and steering servo with intended local supervision, power monitoring and navigation; operational firmware and physical acceptance remain required.",
+      "guide": "docs/applications/V2_BOAT.md",
+      "available_now": ["Annotated CAD, assembly references and candidate parts", "Stage A identity diagnostic source and reproducible build workflow", "Electrical pin contract review and staged operator acceptance procedure"],
+      "release_gates": ["Accepted electrical design and frozen assembly", "Board-specific diagnostic and control firmware with matching peer", "Measured failsafe, power and navigation acceptance"],
+      "next_task": "Resolve electrical holds, freeze the pin/protocol contract and validate an initial diagnostic image with actuator outputs inactive.",
+      "evidence": ["firmware_v2/README.md", "firmware_v2/evidence/stage_a_build.json", "reviews/codex/design_completion/electrical/README.md", "docs/build/FLASHING_V2.md", "docs/build/ASSEMBLY_V2.md", "docs/V2_REQUIREMENTS.md", "firmware/V2_FIRMWARE_PLAN.md"]
+    },
+    {
+      "id": "rover",
+      "title": "Rover with ESC and steering servo",
+      "board": "V2 adaptation",
+      "status": "Profile specification",
+      "summary": "Adapt the vehicle outputs for one ESC and steering servo, with an explicit neutral/brake/reverse contract for the selected drivetrain.",
+      "guide": "docs/applications/ROVER.md",
+      "available_now": ["Interface reuse and limitation analysis", "Parts, startup, shutdown and acceptance checklist"],
+      "release_gates": ["Selected drivetrain and neutral/braking calibration", "Implemented rover profile and matching peer controls", "Measured stop, reset, reconnect and steering-limit behavior"],
+      "next_task": "Select one ESC/servo pair and document its pulse, neutral and braking behavior before implementing the rover profile.",
+      "evidence": ["docs/build/FLASHING_V2.md", "docs/build/ASSEMBLY_V2.md", "docs/applications/V2_BOAT.md"]
+    },
+    {
+      "id": "telemetry",
+      "title": "Remote position and telemetry",
+      "board": "V1 characterization / V2 development",
+      "status": "Legacy demonstration; tracker not qualified",
+      "summary": "V1 emits basic GPS coordinates; a useful tracking profile needs fresh-fix handling, unit identity, receiver state and bounded reporting.",
+      "guide": "docs/applications/TELEMETRY.md",
+      "available_now": ["Exact V1 position-payload and UART behavior", "Unloaded GNSS/radio capture and stale-fix demonstration procedure"],
+      "release_gates": ["Robust parser and fix-age handling", "Versioned telemetry envelope and receiver", "Dedicated tracker profile with control outputs inactive"],
+      "next_task": "Implement and replay-test fix invalidation, then define identity/fix-age telemetry and an explicit stale/offline receiver display.",
+      "evidence": ["docs/atlas/GPSMODULE.md", "firmware/Core/Src/main.c", "docs/research/FIRMWARE_REVIEW_NOTES.md"]
+    },
+    {
+      "id": "handheld",
+      "title": "Handheld voice, text and location",
+      "board": "Future handheld",
+      "status": "Requirements and feasibility",
+      "summary": "A two-endpoint communicator with voice, text delivery and location status; voice/RC coexistence must be measured before radio and audio hardware selection.",
+      "guide": "docs/applications/HANDHELD.md",
+      "available_now": ["Required user flows and delivery/failure states", "Two-endpoint prototype and coexistence acceptance plan"],
+      "release_gates": ["Agreed voice mode and measurable timing/quality limits", "Measured radio/codec/control airtime compatibility", "Released handheld hardware, firmware, power and peer implementation"],
+      "next_task": "Run a repeatable two-endpoint audio/airtime experiment against explicit speech and RC limits before selecting radio, codec and pins.",
+      "evidence": ["reviews/codex/PLATFORM_CONCEPT.md", "docs/V2_REQUIREMENTS.md", "docs/applications/ACCEPTANCE_RECORD.md"]
+    }
+  ]
+}

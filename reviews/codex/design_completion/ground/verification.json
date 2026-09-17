@@ -1,0 +1,133 @@
+{
+  "source_sha256": "6595d3b58e4a54b1d3ecbf93a69c93202503dbabcf9d279a6a578df1601d0d26",
+  "candidate_sha256": "1b959ee8c2499d2a65359b695a2f70efd5a588f05ffcaf11f32cf9de18d0cce9",
+  "object_counts": {
+    "footprint": {
+      "before": 118,
+      "after": 118
+    },
+    "segment": {
+      "before": 1074,
+      "after": 1074
+    },
+    "arc": {
+      "before": 0,
+      "after": 0
+    },
+    "via": {
+      "before": 164,
+      "after": 166
+    },
+    "gr_line": {
+      "before": 4,
+      "after": 4
+    },
+    "gr_arc": {
+      "before": 0,
+      "after": 0
+    },
+    "gr_text": {
+      "before": 1,
+      "after": 1
+    },
+    "net": {
+      "before": 72,
+      "after": 72
+    },
+    "setup": {
+      "before": 1,
+      "after": 1
+    },
+    "layers": {
+      "before": 1,
+      "after": 1
+    },
+    "general": {
+      "before": 1,
+      "after": 1
+    }
+  },
+  "changed_structures": {
+    "via": {
+      "removed": [],
+      "added": [
+        [
+          "via",
+          [
+            "at",
+            "108",
+            "59"
+          ],
+          [
+            "size",
+            "0.6"
+          ],
+          [
+            "drill",
+            "0.3"
+          ],
+          [
+            "layers",
+            "F.Cu",
+            "B.Cu"
+          ],
+          [
+            "net",
+            "2"
+          ],
+          [
+            "uuid",
+            "2a629043-4c2f-5407-9882-0ffb7093e46c"
+          ]
+        ],
+        [
+          "via",
+          [
+            "at",
+            "93.7",
+            "74"
+          ],
+          [
+            "size",
+            "0.6"
+          ],
+          [
+            "drill",
+            "0.3"
+          ],
+          [
+            "layers",
+            "F.Cu",
+            "B.Cu"
+          ],
+          [
+            "net",
+            "2"
+          ],
+          [
+            "uuid",
+            "1a9a19c4-d139-53d3-9621-1e5af97d6aac"
+          ]
+        ]
+      ]
+    }
+  },
+  "zone_settings_and_outlines_unchanged": true,
+  "all_other_top_level_records_unchanged": true,
+  "drc_before": {
+    "violation_errors": 0,
+    "violation_warnings": 101,
+    "unconnected": 3,
+    "schematic_parity": 212
+  },
+  "drc_after": {
+    "violation_errors": 0,
+    "violation_warnings": 101,
+    "unconnected": 1,
+    "schematic_parity": 212
+  },
+  "ordinary_violations_exactly_equal": true,
+  "schematic_parity_exactly_equal": true,
+  "fabrication_approved": false,
+  "passed": true
+}

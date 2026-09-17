@@ -1,0 +1,28 @@
+[
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 1050
+    },
+    "guides": 5,
+    "dialog": true,
+    "search": true,
+    "diagnostic": true,
+    "overflow": false,
+    "errors": [],
+    "screenshot": "reviews/codex/design_completion/ui/applications-1440.png"
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "guides": 5,
+    "dialog": true,
+    "search": true,
+    "diagnostic": true,
+    "overflow": false,
+    "errors": [],
+    "screenshot": "reviews/codex/design_completion/ui/applications-390.png"
+  }
+]

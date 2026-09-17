@@ -25,7 +25,7 @@ PROJECTS = {
     "v2": ("hardware/kicad_v2", "LoRa_Boat_Controller_V2"),
 }
 SOURCE_EXTENSIONS = {".kicad_sch", ".kicad_sym", ".kicad_pro", ".kicad_dru", ".kicad_pcb", ".kicad_mod"}
-REVIEW_OUTPUT_ROOTS = ("reviews/codex/professionalization", "reviews/codex/publication")
+REVIEW_OUTPUT_ROOTS = ("reviews/codex/professionalization", "reviews/codex/publication", "reviews/codex/design_completion")
 
 
 def sha256(path):

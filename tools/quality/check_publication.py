@@ -21,15 +21,27 @@ def check_hashes(entries, label):
     print(f"PASS {label}: {len(entries)} hashes")
 
 def main():
-    quality = read_json("reviews/codex/publication/native-review/review.json")
-    check_hashes(quality["input_manifest"], "published native review inputs")
+    historical_path = "reviews/codex/publication/native-review"
+    historical = read_json(historical_path + "/review.json")
+    check_hashes({historical_path + "/inputs/" + p: h for p, h in historical["input_manifest"].items()},
+                 "preserved publication native inputs")
+    current_path = "reviews/codex/design_completion/native-review/review.json"
+    quality = read_json(current_path) if (ROOT / current_path).is_file() else historical
+    check_hashes(quality["input_manifest"], "current native review inputs")
     assert quality["gates"]["fabrication"] is False, "This edition is not a fabrication release"
     exports = read_json("docs/img/schematic_export_manifest.json")
-    check_hashes(exports["input_sha256"], "schematic export CAD")
+    # Board copper is a historical context input for a schematic-only export.
+    # Preserve that evidence while independently checking the current board above.
+    export_inputs = {historical_path + "/inputs/" + p if p.endswith(".kicad_pcb") else p: h
+                     for p, h in exports["input_sha256"].items()}
+    check_hashes(export_inputs, "schematic export inputs (PCB context preserved)")
     check_hashes(exports["output_sha256"], "schematic PDF/SVG outputs")
     firmware = read_json("docs/build/evidence/v1-build-manifest.json")
     check_hashes(firmware["input_sha256"], "recorded V1 build inputs")
     assert firmware["status"] == "build_pass_unqualified" and firmware["hardware_access"] is False
+    diagnostic = read_json("firmware_v2/evidence/stage_a_build.json")
+    check_hashes(diagnostic["input_sha256"], "V2 diagnostic build inputs")
+    assert diagnostic["hardware_access"] is False and diagnostic["operational_release"] is False
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -39,6 +51,8 @@ def main():
         assert (ROOT / path).is_file(), f"Missing portfolio artifact: {path}"
     pages = [ROOT / "README.md", ROOT / "docs/portfolio/README.md"]
     pages += list((ROOT / "docs/build").glob("*.md"))
+    pages += list((ROOT / "docs/applications").glob("*.md"))
+    pages += [ROOT / "firmware_v2/README.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

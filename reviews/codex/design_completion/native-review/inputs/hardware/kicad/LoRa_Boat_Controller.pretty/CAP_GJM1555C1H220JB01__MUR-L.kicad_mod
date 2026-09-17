@@ -1,0 +1,103 @@
+(footprint "CAP_GJM1555C1H220JB01__MUR-L"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Allegro footprint CAP_GJM1555C1H220JB01__MUR-L as fabricated on senior design v5.brd")
+	(tags "allegro CAP_GJM1555C1H220JB01__MUR-L")
+	(property "Reference" "REF**"
+		(at 0 -1.27 0)
+		(layer "F.Fab")
+		(uuid "02c41226-be46-5057-8253-32370d003187")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "CAP_GJM1555C1H220JB01__MUR-L"
+		(at 0 1.27 0)
+		(layer "F.Fab")
+		(uuid "46c19a7b-d13c-5120-bd1a-3483c43e97ca")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ddaffa2a-5518-5084-bb33-3a252650611c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "199dea87-cdf5-553c-988a-d28e40bc6c49")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -0.6731 -0.254)
+		(end 0.6731 0.254)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e0575c72-1790-51a5-ba6f-ab608e92ffa8")
+	)
+	(fp_rect
+		(start -0.6731 -0.254)
+		(end 0.6731 0.254)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b734b782-078d-5450-bf6b-baecb8b47e66")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "c868c7bf-4a45-52e2-ac30-ac3e59cb7297")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "2" smd rect
+		(at 0.4191 0)
+		(size 0.508 0.508)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "8bcfdb74-854f-569d-9e21-98f44b22c687")
+	)
+	(pad "1" smd rect
+		(at -0.4191 0)
+		(size 0.508 0.508)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "86fcd22d-f206-5c94-933f-e7dd4e504dc5")
+	)
+	(embedded_fonts no)
+)

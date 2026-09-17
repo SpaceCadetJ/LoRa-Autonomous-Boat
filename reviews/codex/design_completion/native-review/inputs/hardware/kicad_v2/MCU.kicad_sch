@@ -1,0 +1,4720 @@
+(kicad_sch
+(version 20250114)
+(generator "gen_sch.py")
+(generator_version "9.0")
+(uuid "79940ce8-43fc-5301-a85a-2cd469e891e6")
+(paper "A2")
+(title_block (title "LoRa multifunction vehicle node V2 - MCU") (date "2026-09-17") (rev "V2 draft") (company "LoRa Controller Project") (comment 1 "Annotated functional groups; connectivity preserved") (comment 2 "Build and review: docs/build/README.md"))
+(lib_symbols
+	(symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762)
+					(xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762)
+					(xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:Crystal"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Y"
+			(at 0 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Crystal"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Two pin crystal"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "quartz ceramic resonator oscillator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Crystal*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Crystal_0_1"
+			(polyline
+				(pts
+					(xy -2.54 0)
+					(xy -1.905 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.905 -1.27)
+					(xy -1.905 1.27)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.143 2.54)
+				(end 1.143 -2.54)
+				(stroke
+					(width 0.3048)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 -1.27)
+					(xy 1.905 1.27)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 0)
+					(xy 1.905 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Crystal_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 1.27)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:Crystal_GND24"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Y"
+			(at 3.175 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Crystal_GND24"
+			(at 3.175 3.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+			(at 0 -12.7 0)
+			(show_name)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+			(at 0 -15.24 0)
+			(show_name)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "quartz ceramic resonator oscillator"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Crystal*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Crystal_GND24_0_1"
+			(polyline
+				(pts
+					(xy -2.54 2.286)
+					(xy -2.54 3.556)
+					(xy 2.54 3.556)
+					(xy 2.54 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 0)
+					(xy -2.032 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -2.286)
+					(xy -2.54 -3.556)
+					(xy 2.54 -3.556)
+					(xy 2.54 -2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -1.27)
+					(xy -2.032 1.27)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.143 2.54)
+				(end 1.143 -2.54)
+				(stroke
+					(width 0.3048)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81)
+					(xy 0 -3.556)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.032 0)
+					(xy 2.54 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.032 -1.27)
+					(xy 2.032 1.27)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Crystal_GND24_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 1.27)
+				(name "G"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 1.27)
+				(hide yes)
+				(name "G"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 1.27)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:FerriteBead"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "FB"
+			(at -3.81 0.635 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FerriteBead"
+			(at 3.81 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "L ferrite bead inductor filter"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "FerriteBead_0_1"
+			(polyline
+				(pts
+					(xy -2.7686 0.4064)
+					(xy -1.7018 2.2606)
+					(xy 2.7686 -0.3048)
+					(xy 1.6764 -2.159)
+					(xy -2.7686 0.4064)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27)
+					(xy 0 1.2954)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.27)
+					(xy 0 -1.2192)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "FerriteBead_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:LED"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "LED diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "LED_0_1"
+			(polyline
+				(pts
+					(xy -3.048 -0.762)
+					(xy -4.572 -2.286)
+					(xy -3.81 -2.286)
+					(xy -4.572 -2.286)
+					(xy -4.572 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 -0.762)
+					(xy -3.302 -2.286)
+					(xy -2.54 -2.286)
+					(xy -3.302 -2.286)
+					(xy -3.302 -1.524)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 0)
+					(xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27)
+					(xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.27)
+					(xy 1.27 1.27)
+					(xy -1.27 0)
+					(xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "LED_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "MCU_ST_STM32F4:STM32F446RETx"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -17.78 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32F446RETx"
+			(at 10.16 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-64_10x10mm_P0.5mm"
+			(at -17.78 -43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f446re.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M4 MCU, 512KB flash, 128KB RAM, 180 MHz, 1.8-3.6V, 50 GPIO, LQFP64"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M4 STM32F4 STM32F446"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "LQFP*10x10mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "STM32F446RETx_0_1"
+			(rectangle
+				(start -17.78 -43.18)
+				(end 17.78 45.72)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "STM32F446RETx_1_1"
+			(pin input line
+				(at -20.32 40.64 0)
+				(length 2.54)
+				(name "NRST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -20.32 35.56 0)
+				(length 2.54)
+				(name "BOOT0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "60"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -20.32 30.48 0)
+				(length 2.54)
+				(name "PH0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "RCC_OSC_IN" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 27.94 0)
+				(length 2.54)
+				(name "PH1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "RCC_OSC_OUT" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 22.86 0)
+				(length 2.54)
+				(name "PD2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "54"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DCMI_D11" bidirectional line)
+				(alternate "SDIO_CMD" bidirectional line)
+				(alternate "TIM3_ETR" bidirectional line)
+				(alternate "UART5_RX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 17.78 0)
+				(length 2.54)
+				(name "PC0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN10" bidirectional line)
+				(alternate "ADC2_IN10" bidirectional line)
+				(alternate "ADC3_IN10" bidirectional line)
+				(alternate "SAI1_MCLK_B" bidirectional line)
+				(alternate "USB_OTG_HS_ULPI_STP" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 15.24 0)
+				(length 2.54)
+				(name "PC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN11" bidirectional line)
+				(alternate "ADC2_IN11" bidirectional line)
+				(alternate "ADC3_IN11" bidirectional line)
+				(alternate "I2S2_SD" bidirectional line)
+				(alternate "I2S3_SD" bidirectional line)
+				(alternate "SAI1_SD_A" bidirectional line)
+				(alternate "SPI2_MOSI" bidirectional line)
+				(alternate "SPI3_MOSI" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 12.7 0)
+				(length 2.54)
+				(name "PC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN12" bidirectional line)
+				(alternate "ADC2_IN12" bidirectional line)
+				(alternate "ADC3_IN12" bidirectional line)
+				(alternate "SPI2_MISO" bidirectional line)
+				(alternate "USB_OTG_HS_ULPI_DIR" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 10.16 0)
+				(length 2.54)
+				(name "PC3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN13" bidirectional line)
+				(alternate "ADC2_IN13" bidirectional line)
+				(alternate "ADC3_IN13" bidirectional line)
+				(alternate "I2S2_SD" bidirectional line)
+				(alternate "SPI2_MOSI" bidirectional line)
+				(alternate "USB_OTG_HS_ULPI_NXT" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 7.62 0)
+				(length 2.54)
+				(name "PC4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN14" bidirectional line)
+				(alternate "ADC2_IN14" bidirectional line)
+				(alternate "I2S1_MCK" bidirectional line)
+				(alternate "SPDIFRX_IN2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 5.08 0)
+				(length 2.54)
+				(name "PC5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN15" bidirectional line)
+				(alternate "ADC2_IN15" bidirectional line)
+				(alternate "SPDIFRX_IN3" bidirectional line)
+				(alternate "USART3_RX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 2.54 0)
+				(length 2.54)
+				(name "PC6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DCMI_D0" bidirectional line)
+				(alternate "FMPI2C1_SCL" bidirectional line)
+				(alternate "I2S2_MCK" bidirectional line)
+				(alternate "SDIO_D6" bidirectional line)
+				(alternate "TIM3_CH1" bidirectional line)
+				(alternate "TIM8_CH1" bidirectional line)
+				(alternate "USART6_TX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 0 0)
+				(length 2.54)
+				(name "PC7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DCMI_D1" bidirectional line)
+				(alternate "FMPI2C1_SDA" bidirectional line)
+				(alternate "I2S2_CK" bidirectional line)
+				(alternate "I2S3_MCK" bidirectional line)
+				(alternate "SDIO_D7" bidirectional line)
+				(alternate "SPDIFRX_IN1" bidirectional line)
+				(alternate "SPI2_SCK" bidirectional line)
+				(alternate "TIM3_CH2" bidirectional line)
+				(alternate "TIM8_CH2" bidirectional line)
+				(alternate "USART6_RX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 -2.54 0)
+				(length 2.54)
+				(name "PC8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DCMI_D2" bidirectional line)
+				(alternate "SDIO_D0" bidirectional line)
+				(alternate "SYS_TRACED0" bidirectional line)
+				(alternate "TIM3_CH3" bidirectional line)
+				(alternate "TIM8_CH3" bidirectional line)
+				(alternate "UART5_RTS" bidirectional line)
+				(alternate "USART6_CK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 -5.08 0)
+				(length 2.54)
+				(name "PC9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DAC_EXTI9" bidirectional line)
+				(alternate "DCMI_D3" bidirectional line)
+				(alternate "I2C3_SDA" bidirectional line)
+				(alternate "I2S_CKIN" bidirectional line)
+				(alternate "QUADSPI_BK1_IO0" bidirectional line)
+				(alternate "RCC_MCO_2" bidirectional line)
+				(alternate "SDIO_D1" bidirectional line)
+				(alternate "TIM3_CH4" bidirectional line)
+				(alternate "TIM8_CH4" bidirectional line)
+				(alternate "UART5_CTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 -7.62 0)
+				(length 2.54)
+				(name "PC10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "51"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DCMI_D8" bidirectional line)
+				(alternate "I2S3_CK" bidirectional line)
+				(alternate "QUADSPI_BK1_IO1" bidirectional line)
+				(alternate "SDIO_D2" bidirectional line)
+				(alternate "SPI3_SCK" bidirectional line)
+				(alternate "UART4_TX" bidirectional line)
+				(alternate "USART3_TX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 -10.16 0)
+				(length 2.54)
+				(name "PC11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_EXTI11" bidirectional line)
+				(alternate "ADC2_EXTI11" bidirectional line)
+				(alternate "ADC3_EXTI11" bidirectional line)
+				(alternate "DCMI_D4" bidirectional line)
+				(alternate "QUADSPI_BK2_NCS" bidirectional line)
+				(alternate "SDIO_D3" bidirectional line)
+				(alternate "SPI3_MISO" bidirectional line)
+				(alternate "UART4_RX" bidirectional line)
+				(alternate "USART3_RX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 -12.7 0)
+				(length 2.54)
+				(name "PC12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "53"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DCMI_D9" bidirectional line)
+				(alternate "I2C2_SDA" bidirectional line)
+				(alternate "I2S3_SD" bidirectional line)
+				(alternate "SDIO_CK" bidirectional line)
+				(alternate "SPI3_MOSI" bidirectional line)
+				(alternate "UART5_TX" bidirectional line)
+				(alternate "USART3_CK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 -15.24 0)
+				(length 2.54)
+				(name "PC13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "RTC_AF1" bidirectional line)
+				(alternate "SYS_WKUP1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 -17.78 0)
+				(length 2.54)
+				(name "PC14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "RCC_OSC32_IN" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -20.32 -20.32 0)
+				(length 2.54)
+				(name "PC15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_EXTI15" bidirectional line)
+				(alternate "ADC2_EXTI15" bidirectional line)
+				(alternate "ADC3_EXTI15" bidirectional line)
+				(alternate "RCC_OSC32_OUT" bidirectional line)
+			)
+			(pin power_out line
+				(at -20.32 -25.4 0)
+				(length 2.54)
+				(name "VCAP_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -5.08 48.26 270)
+				(length 2.54)
+				(name "VBAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 48.26 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 48.26 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -45.72 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -45.72 90)
+				(length 2.54)
+				(hide yes)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -45.72 90)
+				(length 2.54)
+				(hide yes)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "47"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -45.72 90)
+				(length 2.54)
+				(hide yes)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "63"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 48.26 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "48"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -45.72 90)
+				(length 2.54)
+				(name "VSSA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 5.08 48.26 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "64"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 7.62 48.26 270)
+				(length 2.54)
+				(name "VDDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 20.32 40.64 180)
+				(length 2.54)
+				(name "PA0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN0" bidirectional line)
+				(alternate "ADC2_IN0" bidirectional line)
+				(alternate "ADC3_IN0" bidirectional line)
+				(alternate "RTC_AF2" bidirectional line)
+				(alternate "SYS_WKUP0" bidirectional line)
+				(alternate "TIM2_CH1" bidirectional line)
+				(alternate "TIM2_ETR" bidirectional line)
+				(alternate "TIM5_CH1" bidirectional line)
+				(alternate "TIM8_ETR" bidirectional line)
+				(alternate "UART4_TX" bidirectional line)
+				(alternate "USART2_CTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 38.1 180)
+				(length 2.54)
+				(name "PA1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN1" bidirectional line)
+				(alternate "ADC2_IN1" bidirectional line)
+				(alternate "ADC3_IN1" bidirectional line)
+				(alternate "QUADSPI_BK1_IO3" bidirectional line)
+				(alternate "TIM2_CH2" bidirectional line)
+				(alternate "TIM5_CH2" bidirectional line)
+				(alternate "UART4_RX" bidirectional line)
+				(alternate "USART2_RTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 35.56 180)
+				(length 2.54)
+				(name "PA2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN2" bidirectional line)
+				(alternate "ADC2_IN2" bidirectional line)
+				(alternate "ADC3_IN2" bidirectional line)
+				(alternate "TIM2_CH3" bidirectional line)
+				(alternate "TIM5_CH3" bidirectional line)
+				(alternate "TIM9_CH1" bidirectional line)
+				(alternate "USART2_TX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 33.02 180)
+				(length 2.54)
+				(name "PA3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN3" bidirectional line)
+				(alternate "ADC2_IN3" bidirectional line)
+				(alternate "ADC3_IN3" bidirectional line)
+				(alternate "SAI1_FS_A" bidirectional line)
+				(alternate "TIM2_CH4" bidirectional line)
+				(alternate "TIM5_CH4" bidirectional line)
+				(alternate "TIM9_CH2" bidirectional line)
+				(alternate "USART2_RX" bidirectional line)
+				(alternate "USB_OTG_HS_ULPI_D0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 30.48 180)
+				(length 2.54)
+				(name "PA4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN4" bidirectional line)
+				(alternate "ADC2_IN4" bidirectional line)
+				(alternate "DAC_OUT1" bidirectional line)
+				(alternate "DCMI_HSYNC" bidirectional line)
+				(alternate "I2S1_WS" bidirectional line)
+				(alternate "I2S3_WS" bidirectional line)
+				(alternate "SPI1_NSS" bidirectional line)
+				(alternate "SPI3_NSS" bidirectional line)
+				(alternate "USART2_CK" bidirectional line)
+				(alternate "USB_OTG_HS_SOF" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 27.94 180)
+				(length 2.54)
+				(name "PA5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN5" bidirectional line)
+				(alternate "ADC2_IN5" bidirectional line)
+				(alternate "DAC_OUT2" bidirectional line)
+				(alternate "I2S1_CK" bidirectional line)
+				(alternate "SPI1_SCK" bidirectional line)
+				(alternate "TIM2_CH1" bidirectional line)
+				(alternate "TIM2_ETR" bidirectional line)
+				(alternate "TIM8_CH1N" bidirectional line)
+				(alternate "USB_OTG_HS_ULPI_CK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 25.4 180)
+				(length 2.54)
+				(name "PA6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN6" bidirectional line)
+				(alternate "ADC2_IN6" bidirectional line)
+				(alternate "DCMI_PIXCLK" bidirectional line)
+				(alternate "I2S2_MCK" bidirectional line)
+				(alternate "SPI1_MISO" bidirectional line)
+				(alternate "TIM13_CH1" bidirectional line)
+				(alternate "TIM1_BKIN" bidirectional line)
+				(alternate "TIM3_CH1" bidirectional line)
+				(alternate "TIM8_BKIN" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 22.86 180)
+				(length 2.54)
+				(name "PA7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN7" bidirectional line)
+				(alternate "ADC2_IN7" bidirectional line)
+				(alternate "I2S1_SD" bidirectional line)
+				(alternate "SPI1_MOSI" bidirectional line)
+				(alternate "TIM14_CH1" bidirectional line)
+				(alternate "TIM1_CH1N" bidirectional line)
+				(alternate "TIM3_CH2" bidirectional line)
+				(alternate "TIM8_CH1N" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 20.32 180)
+				(length 2.54)
+				(name "PA8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "41"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C3_SCL" bidirectional line)
+				(alternate "RCC_MCO_1" bidirectional line)
+				(alternate "TIM1_CH1" bidirectional line)
+				(alternate "USART1_CK" bidirectional line)
+				(alternate "USB_OTG_FS_SOF" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 17.78 180)
+				(length 2.54)
+				(name "PA9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "42"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DAC_EXTI9" bidirectional line)
+				(alternate "DCMI_D0" bidirectional line)
+				(alternate "I2C3_SMBA" bidirectional line)
+				(alternate "I2S2_CK" bidirectional line)
+				(alternate "SAI1_SD_B" bidirectional line)
+				(alternate "SPI2_SCK" bidirectional line)
+				(alternate "TIM1_CH2" bidirectional line)
+				(alternate "USART1_TX" bidirectional line)
+				(alternate "USB_OTG_FS_VBUS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 15.24 180)
+				(length 2.54)
+				(name "PA10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "43"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DCMI_D1" bidirectional line)
+				(alternate "TIM1_CH3" bidirectional line)
+				(alternate "USART1_RX" bidirectional line)
+				(alternate "USB_OTG_FS_ID" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 12.7 180)
+				(length 2.54)
+				(name "PA11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "44"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_EXTI11" bidirectional line)
+				(alternate "ADC2_EXTI11" bidirectional line)
+				(alternate "ADC3_EXTI11" bidirectional line)
+				(alternate "CAN1_RX" bidirectional line)
+				(alternate "TIM1_CH4" bidirectional line)
+				(alternate "USART1_CTS" bidirectional line)
+				(alternate "USB_OTG_FS_DM" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 10.16 180)
+				(length 2.54)
+				(name "PA12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "45"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CAN1_TX" bidirectional line)
+				(alternate "TIM1_ETR" bidirectional line)
+				(alternate "USART1_RTS" bidirectional line)
+				(alternate "USB_OTG_FS_DP" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 7.62 180)
+				(length 2.54)
+				(name "PA13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "46"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SYS_JTMS-SWDIO" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 5.08 180)
+				(length 2.54)
+				(name "PA14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "49"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SYS_JTCK-SWCLK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 2.54 180)
+				(length 2.54)
+				(name "PA15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "50"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_EXTI15" bidirectional line)
+				(alternate "ADC2_EXTI15" bidirectional line)
+				(alternate "ADC3_EXTI15" bidirectional line)
+				(alternate "CEC" bidirectional line)
+				(alternate "I2S1_WS" bidirectional line)
+				(alternate "I2S3_WS" bidirectional line)
+				(alternate "SPI1_NSS" bidirectional line)
+				(alternate "SPI3_NSS" bidirectional line)
+				(alternate "SYS_JTDI" bidirectional line)
+				(alternate "TIM2_CH1" bidirectional line)
+				(alternate "TIM2_ETR" bidirectional line)
+				(alternate "UART4_RTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -2.54 180)
+				(length 2.54)
+				(name "PB0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN8" bidirectional line)
+				(alternate "ADC2_IN8" bidirectional line)
+				(alternate "I2S3_SD" bidirectional line)
+				(alternate "SDIO_D1" bidirectional line)
+				(alternate "SPI3_MOSI" bidirectional line)
+				(alternate "TIM1_CH2N" bidirectional line)
+				(alternate "TIM3_CH3" bidirectional line)
+				(alternate "TIM8_CH2N" bidirectional line)
+				(alternate "UART4_CTS" bidirectional line)
+				(alternate "USB_OTG_HS_ULPI_D1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -5.08 180)
+				(length 2.54)
+				(name "PB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN9" bidirectional line)
+				(alternate "ADC2_IN9" bidirectional line)
+				(alternate "SDIO_D2" bidirectional line)
+				(alternate "TIM1_CH3N" bidirectional line)
+				(alternate "TIM3_CH4" bidirectional line)
+				(alternate "TIM8_CH3N" bidirectional line)
+				(alternate "USB_OTG_HS_ULPI_D2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -7.62 180)
+				(length 2.54)
+				(name "PB2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2S3_SD" bidirectional line)
+				(alternate "QUADSPI_CLK" bidirectional line)
+				(alternate "SAI1_SD_A" bidirectional line)
+				(alternate "SDIO_CK" bidirectional line)
+				(alternate "SPI3_MOSI" bidirectional line)
+				(alternate "TIM2_CH4" bidirectional line)
+				(alternate "USB_OTG_HS_ULPI_D4" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -10.16 180)
+				(length 2.54)
+				(name "PB3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "55"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C2_SDA" bidirectional line)
+				(alternate "I2S1_CK" bidirectional line)
+				(alternate "I2S3_CK" bidirectional line)
+				(alternate "SPI1_SCK" bidirectional line)
+				(alternate "SPI3_SCK" bidirectional line)
+				(alternate "SYS_JTDO-SWO" bidirectional line)
+				(alternate "TIM2_CH2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -12.7 180)
+				(length 2.54)
+				(name "PB4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "56"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C3_SDA" bidirectional line)
+				(alternate "I2S2_WS" bidirectional line)
+				(alternate "SPI1_MISO" bidirectional line)
+				(alternate "SPI2_NSS" bidirectional line)
+				(alternate "SPI3_MISO" bidirectional line)
+				(alternate "SYS_JTRST" bidirectional line)
+				(alternate "TIM3_CH1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -15.24 180)
+				(length 2.54)
+				(name "PB5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "57"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CAN2_RX" bidirectional line)
+				(alternate "DCMI_D10" bidirectional line)
+				(alternate "I2C1_SMBA" bidirectional line)
+				(alternate "I2S1_SD" bidirectional line)
+				(alternate "I2S3_SD" bidirectional line)
+				(alternate "SPI1_MOSI" bidirectional line)
+				(alternate "SPI3_MOSI" bidirectional line)
+				(alternate "TIM3_CH2" bidirectional line)
+				(alternate "USB_OTG_HS_ULPI_D7" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -17.78 180)
+				(length 2.54)
+				(name "PB6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "58"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CAN2_TX" bidirectional line)
+				(alternate "CEC" bidirectional line)
+				(alternate "DCMI_D5" bidirectional line)
+				(alternate "I2C1_SCL" bidirectional line)
+				(alternate "QUADSPI_BK1_NCS" bidirectional line)
+				(alternate "TIM4_CH1" bidirectional line)
+				(alternate "USART1_TX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -20.32 180)
+				(length 2.54)
+				(name "PB7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "59"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DCMI_VSYNC" bidirectional line)
+				(alternate "I2C1_SDA" bidirectional line)
+				(alternate "SPDIFRX_IN0" bidirectional line)
+				(alternate "TIM4_CH2" bidirectional line)
+				(alternate "USART1_RX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -22.86 180)
+				(length 2.54)
+				(name "PB8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "61"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CAN1_RX" bidirectional line)
+				(alternate "DCMI_D6" bidirectional line)
+				(alternate "I2C1_SCL" bidirectional line)
+				(alternate "SDIO_D4" bidirectional line)
+				(alternate "TIM10_CH1" bidirectional line)
+				(alternate "TIM2_CH1" bidirectional line)
+				(alternate "TIM2_ETR" bidirectional line)
+				(alternate "TIM4_CH3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -25.4 180)
+				(length 2.54)
+				(name "PB9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "62"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CAN1_TX" bidirectional line)
+				(alternate "DAC_EXTI9" bidirectional line)
+				(alternate "DCMI_D7" bidirectional line)
+				(alternate "I2C1_SDA" bidirectional line)
+				(alternate "I2S2_WS" bidirectional line)
+				(alternate "SAI1_FS_B" bidirectional line)
+				(alternate "SDIO_D5" bidirectional line)
+				(alternate "SPI2_NSS" bidirectional line)
+				(alternate "TIM11_CH1" bidirectional line)
+				(alternate "TIM2_CH2" bidirectional line)
+				(alternate "TIM4_CH4" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -27.94 180)
+				(length 2.54)
+				(name "PB10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C2_SCL" bidirectional line)
+				(alternate "I2S2_CK" bidirectional line)
+				(alternate "SAI1_SCK_A" bidirectional line)
+				(alternate "SPI2_SCK" bidirectional line)
+				(alternate "TIM2_CH3" bidirectional line)
+				(alternate "USART3_TX" bidirectional line)
+				(alternate "USB_OTG_HS_ULPI_D3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -30.48 180)
+				(length 2.54)
+				(name "PB12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CAN2_RX" bidirectional line)
+				(alternate "I2C2_SMBA" bidirectional line)
+				(alternate "I2S2_WS" bidirectional line)
+				(alternate "SAI1_SCK_B" bidirectional line)
+				(alternate "SPI2_NSS" bidirectional line)
+				(alternate "TIM1_BKIN" bidirectional line)
+				(alternate "USART3_CK" bidirectional line)
+				(alternate "USB_OTG_HS_ID" bidirectional line)
+				(alternate "USB_OTG_HS_ULPI_D5" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -33.02 180)
+				(length 2.54)
+				(name "PB13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CAN2_TX" bidirectional line)
+				(alternate "I2S2_CK" bidirectional line)
+				(alternate "SPI2_SCK" bidirectional line)
+				(alternate "TIM1_CH1N" bidirectional line)
+				(alternate "USART3_CTS" bidirectional line)
+				(alternate "USB_OTG_HS_ULPI_D6" bidirectional line)
+				(alternate "USB_OTG_HS_VBUS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -35.56 180)
+				(length 2.54)
+				(name "PB14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SPI2_MISO" bidirectional line)
+				(alternate "TIM12_CH1" bidirectional line)
+				(alternate "TIM1_CH2N" bidirectional line)
+				(alternate "TIM8_CH2N" bidirectional line)
+				(alternate "USART3_RTS" bidirectional line)
+				(alternate "USB_OTG_HS_DM" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 20.32 -38.1 180)
+				(length 2.54)
+				(name "PB15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_EXTI15" bidirectional line)
+				(alternate "ADC2_EXTI15" bidirectional line)
+				(alternate "ADC3_EXTI15" bidirectional line)
+				(alternate "I2S2_SD" bidirectional line)
+				(alternate "RTC_REFIN" bidirectional line)
+				(alternate "SPI2_MOSI" bidirectional line)
+				(alternate "TIM12_CH2" bidirectional line)
+				(alternate "TIM1_CH3N" bidirectional line)
+				(alternate "TIM8_CH3N" bidirectional line)
+				(alternate "USB_OTG_HS_DP" bidirectional line)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Switch:SW_Push"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 1.27 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 0 -1.524 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SW_Push_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27)
+					(xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27)
+					(xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "power:+3V3"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 0 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "+3V3_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27)
+					(xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54)
+					(xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0)
+					(xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+3V3_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "power:GND"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0)
+					(xy 0 -1.27)
+					(xy 1.27 -1.27)
+					(xy 0 -2.54)
+					(xy -1.27 -1.27)
+					(xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "power:PWR_FLAG"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0)
+					(xy 0 1.27)
+					(xy -1.016 1.905)
+					(xy 0 2.54)
+					(xy 1.016 1.905)
+					(xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)
+	(text "V2  /  MCU"
+		(exclude_from_sim no)
+		(at 13 17 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c8214aa-d67e-5df5-b240-7d06172e7d72")
+	)
+	(text "Functional groups / electrical pin numbers / named-net connections"
+		(exclude_from_sim no)
+		(at 13 24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd3c42c5-e1e1-5efe-996d-960c500a8473")
+	)
+(polyline (pts (xy 13 34) (xy 194.333333 34) (xy 194.333333 196.78) (xy 13 196.78) (xy 13 34)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "8ee1b15b-7ef5-530e-a3d4-58bcd2d6ecbc"))
+	(text "01  MCU and assigned interfaces"
+		(exclude_from_sim no)
+		(at 18 41 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "a787c24e-114c-5ab1-8ce4-20c161e9f537")
+	)
+(symbol (lib_id "MCU_ST_STM32F4:STM32F446RETx") (at 58.42 121.92 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7d39c8b0-19e2-5f34-aee7-7b847a66fa0c") (property "Reference" "U1" (at 58.42 54.66 0) (effects (font (size 1.27 1.27))  )) (property "Value" "STM32F446RET6" (at 58.42 58.16 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "Package_QFP:LQFP-64_10x10mm_P0.5mm" (at 58.42 121.92 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Cortex-M4 180 MHz" (at 58.42 121.92 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "STM32F446RET6" (at 58.42 121.92 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "STMicroelectronics" (at 58.42 121.92 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f446re.pdf" (at 58.42 121.92 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "7" (uuid "85b00e7f-ffee-51b4-ac1f-3977302aed7c"))(pin "60" (uuid "ac89c1ec-4026-57fa-960b-b0a99f353e7d"))(pin "5" (uuid "1244079b-106e-5325-9a57-af7216ec636e"))(pin "6" (uuid "fb124dbd-eac2-5fdb-9f0e-5c23f2928943"))(pin "54" (uuid "db3087ce-a620-51e9-9986-7c9783b8e815"))(pin "8" (uuid "9beab5b6-8854-5fa2-9ee5-01076d102763"))(pin "9" (uuid "fa995901-120e-596b-a7ed-204e1ef563dc"))(pin "10" (uuid "6be09f4a-7a25-5e0c-948a-729335ccbc71"))(pin "11" (uuid "5260417e-c740-590f-9b4d-2ee2c9e007fc"))(pin "24" (uuid "575ac1fe-d271-5870-b060-bcd3378496aa"))(pin "25" (uuid "dad277d1-47bd-5537-be2c-7ac302c5704b"))(pin "37" (uuid "6636519a-f54a-5d63-bdb5-13ccab1e43cf"))(pin "38" (uuid "692e9c70-c54f-553a-99b5-636696158fd5"))(pin "39" (uuid "7702c9d3-d7d6-5b84-9e89-d97ec6498fe1"))(pin "40" (uuid "53595b0d-ce0d-5124-b623-fe0c915dac3d"))(pin "51" (uuid "82d63648-edc3-5eec-8321-094e61155371"))(pin "52" (uuid "b506334f-2dae-5920-9dc7-a5b73947f6ac"))(pin "53" (uuid "c2eb261f-9ade-5e34-a7e4-409dabb5a39c"))(pin "2" (uuid "850e8933-a26e-5c5e-8bfb-56fd1d571521"))(pin "3" (uuid "f82c9533-3d09-5921-aa6b-38f3925e1971"))(pin "4" (uuid "6c0ae084-db64-52ca-bbc1-1a565de62c04"))(pin "30" (uuid "e40890db-0ce9-53a6-a67a-663ff88d64d2"))(pin "1" (uuid "36bf3feb-dfc2-539d-8838-317a244ae184"))(pin "19" (uuid "ec05e2af-e8f5-5dde-980b-4daf1d94f4e5"))(pin "32" (uuid "5187176b-4c1d-50dd-b929-1f4152d96bf8"))(pin "18" (uuid "7e67d838-a575-53b9-ad88-1e7c2d2fa9c8"))(pin "31" (uuid "44fc470a-53ff-5015-95ea-c409d421d9cc"))(pin "47" (uuid "a068b374-9a00-54ef-898d-6a3f74e9408e"))(pin "63" (uuid "de077e84-d615-5bb2-8db1-0faef53fc801"))(pin "48" (uuid "cb7a2a69-0d88-50ef-8f44-1a9a0225a6f9"))(pin "12" (uuid "e57eba69-2d69-5e78-b75d-6e2bc160e9ec"))(pin "64" (uuid "04eedbd0-3f9a-50f5-bfa3-c56724c49990"))(pin "13" (uuid "4184bf4f-5f70-5fc4-90d3-6bfa4b49a68b"))(pin "14" (uuid "57d10fde-b4de-5e24-a86d-01cea2d1d9ca"))(pin "15" (uuid "d0eddc81-2989-5d12-ab95-880d6d93d982"))(pin "16" (uuid "eff7e715-77bb-5c01-bf27-5194142434b5"))(pin "17" (uuid "c1079fda-a981-5597-91e6-479e02b52054"))(pin "20" (uuid "c8fe36fa-aea9-5e4e-bff6-30121e24ba48"))(pin "21" (uuid "85b96647-c3c3-5e5f-bda5-435b04d0776b"))(pin "22" (uuid "50010cb3-5441-594f-8b8f-396b6fc46bd0"))(pin "23" (uuid "63ac1fd9-8276-57d7-883a-ab2fc67273fe"))(pin "41" (uuid "7b8c0998-ab56-551a-98ec-f5a213284a6e"))(pin "42" (uuid "4c472157-41fe-58e4-b5d2-8582904459b7"))(pin "43" (uuid "a2b0a4b0-0745-5dd4-8b91-32424f75c8d1"))(pin "44" (uuid "0d094c9e-b22b-5299-8e49-8617f047da5b"))(pin "45" (uuid "89c3ad0e-0c74-58ab-a9e8-b5b0859bb31f"))(pin "46" (uuid "420e1961-ad67-5618-bbda-65f41bebc6f6"))(pin "49" (uuid "a832864f-d469-5a57-b81c-9dca85f8c8ab"))(pin "50" (uuid "801c1240-5fe8-5824-920a-8020953c62da"))(pin "26" (uuid "8a7ecc1b-0ade-5803-b3a3-35bb4f2de478"))(pin "27" (uuid "128e9434-0329-5798-b9f7-44f7e6115e72"))(pin "28" (uuid "75bac0c4-8927-582a-9160-ab54a3a02b0a"))(pin "55" (uuid "8e611d26-6b4d-56b3-9262-c4c67e0c2bac"))(pin "56" (uuid "4909a624-8cda-50a4-bd79-baf8fbe83ea1"))(pin "57" (uuid "6714df34-cce7-5180-a48b-893f9b427a5a"))(pin "58" (uuid "0354b235-c7d5-58ec-b7b4-676be1bf6732"))(pin "59" (uuid "945f3f78-08b1-5482-937b-0a43351f9442"))(pin "61" (uuid "a10b8f33-445d-5a37-95d1-cd6b886b86ef"))(pin "62" (uuid "ff631045-e9d7-508c-aa1d-3ac07224cded"))(pin "29" (uuid "49d56e4e-beb3-5c11-b6ee-68287ebad745"))(pin "33" (uuid "1e9b3ccf-a0fc-5961-8d9f-37c0d0232335"))(pin "34" (uuid "d905bb75-8161-537a-b9eb-39379b091d8e"))(pin "35" (uuid "c418b87b-ded6-568e-bdce-47c8815f89ab"))(pin "36" (uuid "e4349bbf-03de-5418-988d-3cc8cfc1e6f0")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "U1") (unit 1)))))
+	(wire
+		(pts
+			(xy 38.1 81.28) (xy 33.02 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc3acbb4-b57c-5db1-b836-284c2dbfabf7")
+	)
+(hierarchical_label "NRST" (shape passive) (at 33.02 81.28 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "c045abfb-3992-5a61-a9f0-dd580358530d"))
+	(wire
+		(pts
+			(xy 38.1 86.36) (xy 33.02 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e9ee5cb-c79b-5d19-8873-ca5bc28ac486")
+	)
+(label "BOOT0"  (at 33.02 86.36 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "8250518d-22ef-5a2f-b396-a07148444c82"))
+	(wire
+		(pts
+			(xy 38.1 91.44) (xy 33.02 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36a4d59e-8abb-5316-a8f2-12b8b89c4569")
+	)
+(label "HSE_IN"  (at 33.02 91.44 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "08ee7ce8-b24e-5e92-bf1b-0ea1a142760a"))
+	(wire
+		(pts
+			(xy 38.1 93.98) (xy 33.02 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "670b3582-94b1-5fcc-8e5c-da558731d5df")
+	)
+(label "HSE_OUT"  (at 33.02 93.98 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "86fed7f4-6ba9-5fa2-bda3-98be7d45597f"))
+	(no_connect
+		(at 38.1 99.06)
+		(uuid "f2efbc3d-2404-57bc-b7a4-cd6019323f4f")
+	)
+	(no_connect
+		(at 38.1 104.14)
+		(uuid "f70c5f1f-d41c-5829-9c0e-77eac621db15")
+	)
+	(wire
+		(pts
+			(xy 38.1 106.68) (xy 33.02 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a171aa1-ef53-54ed-aae8-c4b4f8f9aaec")
+	)
+(label "LED_LINK"  (at 33.02 106.68 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a04ae805-18f9-54f5-9d4f-e475700cc16e"))
+	(wire
+		(pts
+			(xy 38.1 109.22) (xy 33.02 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "917aa957-90ac-53fa-a959-825bd9848560")
+	)
+(label "LED_FIX"  (at 33.02 109.22 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "420c883c-f1bf-5ad8-a976-1913083365fb"))
+	(wire
+		(pts
+			(xy 38.1 111.76) (xy 33.02 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a86ddc40-234f-5b9b-b8f4-b69d8fc42dab")
+	)
+(label "LED_FAULT"  (at 33.02 111.76 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b9293582-18e1-59be-94e2-91e93705e49b"))
+	(no_connect
+		(at 38.1 114.3)
+		(uuid "91a78b7e-6a9f-5516-be40-ec89e0c356a6")
+	)
+	(no_connect
+		(at 38.1 116.84)
+		(uuid "35a6cf1c-9027-5d22-9985-19b05a6a7b4b")
+	)
+	(wire
+		(pts
+			(xy 38.1 119.38) (xy 33.02 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f385b45e-f638-5d9f-b308-dfe1d7d6b196")
+	)
+(hierarchical_label "PWM_ESC_PC6" (shape passive) (at 33.02 119.38 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "f4a47201-0d97-5cf3-9553-4060b3ff412a"))
+	(no_connect
+		(at 38.1 121.92)
+		(uuid "66fea590-192f-567d-b1af-5a300bb60fa3")
+	)
+	(no_connect
+		(at 38.1 124.46)
+		(uuid "7e803162-13d5-5ad7-9cfe-38c9a08f64e8")
+	)
+	(no_connect
+		(at 38.1 127)
+		(uuid "630ae05b-65f6-57f8-9cc0-f5f805eb0fba")
+	)
+	(wire
+		(pts
+			(xy 38.1 129.54) (xy 33.02 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3173c5dd-4c8d-5c81-b3ad-3d107cc82850")
+	)
+(hierarchical_label "GNSS_TX_PC10" (shape passive) (at 33.02 129.54 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "b31789d8-c8a2-5685-8edb-b874dd908818"))
+	(wire
+		(pts
+			(xy 38.1 132.08) (xy 33.02 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb4ac701-b8cc-5df6-b39d-9fa9f720af34")
+	)
+(hierarchical_label "GNSS_RX_PC11" (shape passive) (at 33.02 132.08 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "15f8ce8b-f764-5dc9-9d17-0ca2a0e4a9d7"))
+	(no_connect
+		(at 38.1 134.62)
+		(uuid "8af656f9-3f8d-5cdb-bdf1-bbbd7f509656")
+	)
+	(no_connect
+		(at 38.1 137.16)
+		(uuid "5c59d1a3-3d58-5406-9c8b-705b96f9e398")
+	)
+	(wire
+		(pts
+			(xy 38.1 139.7) (xy 33.02 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fbadf3e-a33c-5870-b983-00f135afa9da")
+	)
+(label "LSE_IN"  (at 33.02 139.7 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ca5b41d2-2532-5d5c-baa2-6ffa532aea50"))
+	(wire
+		(pts
+			(xy 38.1 142.24) (xy 33.02 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad031b47-1942-57e0-8749-1b87c9f44bd3")
+	)
+(label "LSE_OUT"  (at 33.02 142.24 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "07c49899-9af1-5ecb-bebf-e1fdb93256d9"))
+	(wire
+		(pts
+			(xy 38.1 147.32) (xy 33.02 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "940471e5-ab63-5076-98fc-e0a53c3d62bc")
+	)
+(label "VCAP1"  (at 33.02 147.32 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "8ff25b28-8ca7-5192-9ce1-ab2680283820"))
+	(wire
+		(pts
+			(xy 78.74 81.28) (xy 83.82 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cfa5849-3da8-506c-bcb9-e7dabc8933f9")
+	)
+(hierarchical_label "LORA_TX_PA0" (shape passive) (at 83.82 81.28 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "24dd43ed-cbf5-53b6-83da-b377b00440d1"))
+	(wire
+		(pts
+			(xy 78.74 83.82) (xy 83.82 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ade56426-c565-5443-bb74-5f4fa0b7c801")
+	)
+(hierarchical_label "LORA_RX_PA1" (shape passive) (at 83.82 83.82 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "74f89256-00ab-5a03-9891-3adcc176da98"))
+	(wire
+		(pts
+			(xy 78.74 86.36) (xy 83.82 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c75d4c05-fe50-58ec-b3cf-4367f9b82c5f")
+	)
+(hierarchical_label "VBAT_SENSE" (shape passive) (at 83.82 86.36 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "cd4a0175-4286-5464-95d5-fcb96588eff5"))
+	(wire
+		(pts
+			(xy 78.74 88.9) (xy 83.82 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9898cae6-56cd-52fb-8b35-3fee65158f1d")
+	)
+(hierarchical_label "LORA_NRST_PA3" (shape passive) (at 83.82 88.9 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "4ca696cf-1d5c-5ac2-8c8e-d19928ecfbb2"))
+	(wire
+		(pts
+			(xy 78.74 91.44) (xy 83.82 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b6ab9ee-49cb-55e4-85da-5dd0d300aa5e")
+	)
+(hierarchical_label "ISENSE" (shape passive) (at 83.82 91.44 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "260c770f-11bd-58ed-97f7-55dffbf2bcb7"))
+	(no_connect
+		(at 78.74 93.98)
+		(uuid "476f29b0-63c3-5e28-854b-6b0f83263fb4")
+	)
+	(no_connect
+		(at 78.74 96.52)
+		(uuid "93dff644-bf88-5aaa-9644-8cf40972e26f")
+	)
+	(no_connect
+		(at 78.74 99.06)
+		(uuid "947837bd-093e-563e-8bfe-82e32de4882b")
+	)
+	(wire
+		(pts
+			(xy 78.74 101.6) (xy 83.82 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2da9a1ba-a042-5244-bccb-af95cb86f775")
+	)
+(hierarchical_label "PWM_SERVO_PA8" (shape passive) (at 83.82 101.6 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "c79d0236-12e7-5282-84d2-2b0902757beb"))
+	(wire
+		(pts
+			(xy 78.74 104.14) (xy 83.82 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8646b361-f8d9-5bb6-a473-8f4ec4b89d5b")
+	)
+(hierarchical_label "VBUS_SENSE" (shape passive) (at 83.82 104.14 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "fa39acf6-7ea9-53fe-b087-83e5b3c8ce51"))
+	(no_connect
+		(at 78.74 106.68)
+		(uuid "97fb7cfb-6883-5f7d-9ace-0ed5764bc1c5")
+	)
+	(wire
+		(pts
+			(xy 78.74 109.22) (xy 83.82 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f1dc2c4-3ddb-577c-a8c0-13dcae0e35b2")
+	)
+(hierarchical_label "USB_DM" (shape passive) (at 83.82 109.22 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "47f5faa6-4d64-5258-87d2-0ccd4f15fb5a"))
+	(wire
+		(pts
+			(xy 78.74 111.76) (xy 83.82 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fcacd60-58ac-53c7-b430-5bef4540b727")
+	)
+(hierarchical_label "USB_DP" (shape passive) (at 83.82 111.76 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "4a809a5c-64ab-5653-ba9a-e45c11ab6127"))
+	(wire
+		(pts
+			(xy 78.74 114.3) (xy 83.82 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45fd7701-8c4d-5b94-9b29-cc53cd5011a0")
+	)
+(hierarchical_label "SWDIO" (shape passive) (at 83.82 114.3 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "2e120974-d969-5292-a89c-f1fbca8f80be"))
+	(wire
+		(pts
+			(xy 78.74 116.84) (xy 83.82 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b47b7fe5-9fa7-5103-a74b-5a89b74ffa2f")
+	)
+(hierarchical_label "SWCLK" (shape passive) (at 83.82 116.84 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "5a68c671-17d5-5ad7-835f-2118c88f03af"))
+	(no_connect
+		(at 78.74 119.38)
+		(uuid "2ea9027f-2961-5e11-9e4b-8432d9ba4638")
+	)
+	(wire
+		(pts
+			(xy 78.74 124.46) (xy 83.82 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87507432-6d80-58e3-b791-70da8cead478")
+	)
+(hierarchical_label "PPS_PB0" (shape passive) (at 83.82 124.46 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "37cf0f0b-80d7-54d6-b728-ed25add7803b"))
+	(no_connect
+		(at 78.74 127)
+		(uuid "c27849c4-5e58-57c8-93e1-c578637a346a")
+	)
+	(no_connect
+		(at 78.74 129.54)
+		(uuid "86b34779-4580-5b88-8876-8c13ee5fcaba")
+	)
+	(wire
+		(pts
+			(xy 78.74 132.08) (xy 83.82 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56cb9013-41a0-5eb4-af19-2340bbd01bff")
+	)
+(hierarchical_label "SWO" (shape passive) (at 83.82 132.08 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e6983b6d-3dd4-5e1c-8408-4a3d71e3bfc8"))
+	(no_connect
+		(at 78.74 134.62)
+		(uuid "ac978077-3d12-5879-9b27-fd3810c76456")
+	)
+	(wire
+		(pts
+			(xy 78.74 137.16) (xy 83.82 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4a9db07-82c7-5ab5-a545-b67c2e2a8719")
+	)
+(hierarchical_label "IMU_INT" (shape passive) (at 83.82 137.16 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "6545c528-92a7-5555-9fc8-3eff46e0596d"))
+	(wire
+		(pts
+			(xy 78.74 139.7) (xy 83.82 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc5a1a01-6565-527f-a7a3-4399af7c2588")
+	)
+(hierarchical_label "I2C1_SCL" (shape passive) (at 83.82 139.7 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "0d6f2710-1a1a-571a-800e-422549e716d5"))
+	(wire
+		(pts
+			(xy 78.74 142.24) (xy 83.82 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cd1453b-6321-5417-a438-32af24914fb8")
+	)
+(hierarchical_label "I2C1_SDA" (shape passive) (at 83.82 142.24 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b82e56f3-db30-5735-858a-1ef1016d7078"))
+	(no_connect
+		(at 78.74 144.78)
+		(uuid "cac316ba-ce25-544d-bb70-2e2c69d8b093")
+	)
+	(no_connect
+		(at 78.74 147.32)
+		(uuid "ccab9ef0-9c8e-5583-9a4b-eab0e9511a80")
+	)
+	(no_connect
+		(at 78.74 149.86)
+		(uuid "13c4a4f2-43c8-5c53-ad2c-1d4e08be1083")
+	)
+	(no_connect
+		(at 78.74 152.4)
+		(uuid "db1eb1b1-de48-52b7-8acf-0df285bffa46")
+	)
+	(no_connect
+		(at 78.74 154.94)
+		(uuid "8a9d40ea-7e6a-5a9f-84aa-fdb5e3827696")
+	)
+	(no_connect
+		(at 78.74 157.48)
+		(uuid "608de92d-44b9-535d-9f63-e95f26128e52")
+	)
+	(no_connect
+		(at 78.74 160.02)
+		(uuid "279b0dab-cf4f-5fde-bde0-af293be85e65")
+	)
+	(wire
+		(pts
+			(xy 53.34 73.66) (xy 53.34 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "339c7e79-90e3-5bc9-ae15-2ca2abd2535b")
+	)
+	(wire
+		(pts
+			(xy 55.88 73.66) (xy 55.88 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33297c65-5a3d-5e36-880d-6a43e33cebe9")
+	)
+	(wire
+		(pts
+			(xy 58.42 73.66) (xy 58.42 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dddb8881-bf76-51c0-bb70-c9ebe07f4efe")
+	)
+	(wire
+		(pts
+			(xy 60.96 73.66) (xy 60.96 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e8414e3-2680-5ad3-8444-5023bd2afb11")
+	)
+	(wire
+		(pts
+			(xy 63.5 73.66) (xy 63.5 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97f1987e-0262-5685-94fc-c3ff876a00de")
+	)
+	(wire
+		(pts
+			(xy 53.34 68.58) (xy 55.88 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd72db1e-525f-5796-958e-383ac2641cd2")
+	)
+	(wire
+		(pts
+			(xy 55.88 68.58) (xy 58.42 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f8ee5cf-365f-5c1e-ba48-bacfd444ba71")
+	)
+	(wire
+		(pts
+			(xy 58.42 68.58) (xy 60.96 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cac95d10-46ee-5ca0-a000-f92dba7bec74")
+	)
+	(wire
+		(pts
+			(xy 60.96 68.58) (xy 63.5 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "491160ad-d92b-53ab-82a7-c336c470b93f")
+	)
+(junction (at 55.88 68.58) (diameter 0) (color 0 0 0 0) (uuid "67d9db95-977e-5f69-920f-2c0749a8d664"))
+(junction (at 58.42 68.58) (diameter 0) (color 0 0 0 0) (uuid "c08de3bd-5a2b-5542-942d-40c444715c17"))
+(junction (at 60.96 68.58) (diameter 0) (color 0 0 0 0) (uuid "d5acb3f6-dec9-516d-b2a9-04da2c34f4e5"))
+(symbol (lib_id "power:+3V3") (at 53.34 68.58 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "cb6ba65e-03a1-5b4f-a8d1-0aa871f72fde") (property "Reference" "#PWRMCU01" (at 53.34 64.77 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 53.34 65.024 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "e6931821-403d-57af-8ffd-b9f5582dcc16")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU01") (unit 1)))))
+	(wire
+		(pts
+			(xy 58.42 167.64) (xy 58.42 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "894da16c-59ea-5755-9da9-022c07348791")
+	)
+	(wire
+		(pts
+			(xy 58.42 167.64) (xy 58.42 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07c2de06-fb41-5b89-ad98-f1fc258021b3")
+	)
+	(wire
+		(pts
+			(xy 58.42 167.64) (xy 58.42 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54b82b82-586c-5a0f-9728-f0bb4f108d21")
+	)
+	(wire
+		(pts
+			(xy 58.42 167.64) (xy 58.42 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b26d625b-6ed0-52ba-928a-396240d108f0")
+	)
+	(wire
+		(pts
+			(xy 60.96 167.64) (xy 60.96 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89705595-380a-574e-80e7-c9b1d1689c01")
+	)
+	(wire
+		(pts
+			(xy 58.42 172.72) (xy 60.96 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e676ee2-1cf4-56bd-af16-eff29f688631")
+	)
+(symbol (lib_id "power:GND") (at 58.42 172.72 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "9d09f800-f31d-566d-b4cb-64928e10ad40") (property "Reference" "#PWRMCU02" (at 58.42 168.91 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 58.42 176.276 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "be9544e1-d3b7-5cdb-82d8-61e270068b6c")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU02") (unit 1)))))
+	(wire
+		(pts
+			(xy 66.04 73.66) (xy 66.04 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6384f3d2-64d3-56a5-8f21-911cd6a4363d")
+	)
+	(wire
+		(pts
+			(xy 66.04 68.58) (xy 68.58 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14ea0249-50a1-5f8d-b436-e80d42db65bb")
+	)
+(label "VDDA"  (at 68.58 68.58 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2af4a3f4-5273-54d1-a332-d6f7c66c6d91"))
+	(text "3.3 V logic. Labels define the current board wiring; fleet/ground-vehicle and handheld behavior still requires firmware and interface qualification."
+		(exclude_from_sim no)
+		(at 20 186.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "686b97e8-5bc3-57d1-bd2e-3e27eac717fc")
+	)
+(polyline (pts (xy 206.333333 34) (xy 387.666667 34) (xy 387.666667 178.66) (xy 206.333333 178.66) (xy 206.333333 34)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "37f44f46-af6c-5508-ada6-86b5fd6e877c"))
+	(text "02  Digital and core supply"
+		(exclude_from_sim no)
+		(at 211.333333 41 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "465e5e52-d9be-525f-832c-dccbd106c13b")
+	)
+(symbol (lib_id "Device:C") (at 233.68 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6b46c4a8-de52-56c5-aed9-9bc3b6b08f3c") (property "Reference" "C15" (at 238.712 67.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100nF" (at 238.712 70.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 233.68 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "VDD pin 19" (at 233.68 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "KGM15ACG1H104KT" (at 233.68 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 233.68 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 233.68 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "f321c198-1c7c-544a-ab2e-0d23453ac990"))(pin "2" (uuid "2135bc12-be8e-5b18-86ac-57b090a6458d")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C15") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 64.77) (xy 233.68 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dd16072-fc98-58b6-9400-cee8a8b5a0b4")
+	)
+(symbol (lib_id "power:+3V3") (at 233.68 59.69 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "3a68d3b6-c667-57e8-ae7d-8aeecb4d9f3c") (property "Reference" "#PWRMCU03" (at 233.68 55.88 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 233.68 56.134 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "6882ab61-098d-56cf-a862-8edaecc2bb3f")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU03") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 72.39) (xy 233.68 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8ce30db-d05d-5880-aabd-67f2a4f97d6b")
+	)
+(symbol (lib_id "power:GND") (at 233.68 77.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "dbcac633-7b64-5798-9066-0bc58b1bd3c2") (property "Reference" "#PWRMCU04" (at 233.68 73.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 233.68 81.026 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "601304e1-ce8b-51f1-82eb-ef2638589a8a")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU04") (unit 1)))))
+(symbol (lib_id "Device:C") (at 279.4 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "58a27d4b-1a8f-5594-b3f6-cc98bd74ca39") (property "Reference" "C16" (at 284.432 67.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100nF" (at 284.432 70.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 279.4 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "VDD pin 32" (at 279.4 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "KGM15ACG1H104KT" (at 279.4 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 279.4 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 279.4 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "26a59e10-a590-597c-a85a-d7890823536f"))(pin "2" (uuid "c2d2c2c6-4a11-5f15-95b4-1b2007237489")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C16") (unit 1)))))
+	(wire
+		(pts
+			(xy 279.4 64.77) (xy 279.4 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68e79966-632b-5c28-a6a7-2d51eaa5d353")
+	)
+(symbol (lib_id "power:+3V3") (at 279.4 59.69 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "a8544477-e9a8-5916-86a7-091e0b6a95b8") (property "Reference" "#PWRMCU05" (at 279.4 55.88 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 279.4 56.134 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "14717c53-2502-5d29-84e1-f64da70f5c27")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU05") (unit 1)))))
+	(wire
+		(pts
+			(xy 279.4 72.39) (xy 279.4 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "267d2f19-36e2-57ce-9ad1-4a12de2cdd5d")
+	)
+(symbol (lib_id "power:GND") (at 279.4 77.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "09b03245-2206-5fba-90dc-b95330cb554a") (property "Reference" "#PWRMCU06" (at 279.4 73.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 279.4 81.026 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "4a882e99-45c3-5b66-9fe6-582bff04e4ab")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU06") (unit 1)))))
+(symbol (lib_id "Device:C") (at 322.58 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "771156f4-9f57-5912-8917-464da42e6cc2") (property "Reference" "C17" (at 327.612 67.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100nF" (at 327.612 70.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 322.58 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "VDD pin 48" (at 322.58 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "KGM15ACG1H104KT" (at 322.58 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 322.58 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 322.58 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "37f52a59-3baa-5f8a-a338-84fcd7f43eec"))(pin "2" (uuid "de45a8d6-533c-5ddc-80b1-1c93993983d2")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C17") (unit 1)))))
+	(wire
+		(pts
+			(xy 322.58 64.77) (xy 322.58 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37e0f81a-1d65-5f06-9192-3d29926ad1d5")
+	)
+(symbol (lib_id "power:+3V3") (at 322.58 59.69 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "c7c80b8b-adf5-501a-bb9b-bdf2b4de0ff5") (property "Reference" "#PWRMCU07" (at 322.58 55.88 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 322.58 56.134 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "881e8003-a27a-5b24-9e47-45e8d954f705")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU07") (unit 1)))))
+	(wire
+		(pts
+			(xy 322.58 72.39) (xy 322.58 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "815b01a0-dc39-5fa8-9b62-56291a3f381f")
+	)
+(symbol (lib_id "power:GND") (at 322.58 77.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "a0c2c839-7d53-529b-a296-bf056f03daa5") (property "Reference" "#PWRMCU08" (at 322.58 73.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 322.58 81.026 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "78351336-6968-546d-92e2-4911ced5e06f")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU08") (unit 1)))))
+(symbol (lib_id "Device:C") (at 233.68 106.68 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2b47f797-348f-505b-9922-917cfdd4d0b4") (property "Reference" "C18" (at 238.712 105.18 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100nF" (at 238.712 108.68 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 233.68 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "VDD pin 64" (at 233.68 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "KGM15ACG1H104KT" (at 233.68 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 233.68 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 233.68 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "37876c45-717a-5179-984f-64be26b44977"))(pin "2" (uuid "a6f21fd2-ece9-5f05-abdd-629466174fd1")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C18") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 102.87) (xy 233.68 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9dbdb7a-29b4-5b1c-9864-48bb67c030ce")
+	)
+(symbol (lib_id "power:+3V3") (at 233.68 97.79 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "19e31909-8c1b-5d7d-aefa-492454e8867e") (property "Reference" "#PWRMCU09" (at 233.68 93.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 233.68 94.234 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "f75cc0a0-dfa9-5d18-89a5-6a3cc5f8fd9a")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU09") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 110.49) (xy 233.68 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58d29b68-cb75-5694-9fc0-81d4d352ad1d")
+	)
+(symbol (lib_id "power:GND") (at 233.68 115.57 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "f068c206-84cb-5cf8-a5a9-4fc978d780d1") (property "Reference" "#PWRMCU10" (at 233.68 111.76 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 233.68 119.126 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "5214868e-70b9-52f3-8a94-a5c589a15f6b")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU10") (unit 1)))))
+(symbol (lib_id "Device:C") (at 279.4 106.68 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4aea4353-cbc3-5078-8365-40a1e57d1fb3") (property "Reference" "C19" (at 284.432 105.18 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "10uF 10V" (at 284.432 108.68 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 279.4 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "VDD bulk" (at 279.4 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "GRM21BR61A106KE19L" (at 279.4 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Murata" (at 279.4 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 279.4 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "9ca76f26-fb36-57a9-8c19-30b5341a1f40"))(pin "2" (uuid "9aef2eeb-6cfe-5b64-aff1-ca441284f711")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C19") (unit 1)))))
+	(wire
+		(pts
+			(xy 279.4 102.87) (xy 279.4 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c11fcc65-3eef-5dad-b001-6434e0cda0d7")
+	)
+(symbol (lib_id "power:+3V3") (at 279.4 97.79 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "9d5eb94c-24cc-51f2-b03b-7a73ddd101d5") (property "Reference" "#PWRMCU11" (at 279.4 93.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 279.4 94.234 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "951e18a8-c821-5ae9-8f53-22e8d3015549")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU11") (unit 1)))))
+	(wire
+		(pts
+			(xy 279.4 110.49) (xy 279.4 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7edbba97-ba3b-5195-9fd6-e9ed6a136f77")
+	)
+(symbol (lib_id "power:GND") (at 279.4 115.57 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "196248ba-ae56-5db0-baa5-2f7f2a7ead81") (property "Reference" "#PWRMCU12" (at 279.4 111.76 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 279.4 119.126 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "1a3cdf93-ebdf-5aa5-98de-4f77b1e7a9bc")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU12") (unit 1)))))
+(symbol (lib_id "Device:C") (at 322.58 106.68 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e94038f3-f110-59e9-89fa-bf4891e978e5") (property "Reference" "C20" (at 327.612 105.18 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "4.7uF 10V" (at 327.612 108.68 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 322.58 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "VCAP_1 to VSS (REQ-MCU-01, fixes F-MCU-01)" (at 322.58 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "CL10A475KP8NNNC" (at 322.58 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Samsung" (at 322.58 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 322.58 106.68 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "6ec653b0-ca4f-5426-a68d-134e3485779a"))(pin "2" (uuid "59def136-c95b-58d1-b3f4-c63cb666d3ae")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C20") (unit 1)))))
+	(wire
+		(pts
+			(xy 322.58 102.87) (xy 322.58 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74b8d3e3-96e1-54a6-9a61-6015bc383dfd")
+	)
+	(wire
+		(pts
+			(xy 322.58 97.79) (xy 325.12 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ab3ec88-c2d2-5d6f-906a-30a5ea3d7027")
+	)
+(label "VCAP1"  (at 325.12 97.79 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "cd81b5b5-1f07-5e58-947f-8fb17e83cf30"))
+	(wire
+		(pts
+			(xy 322.58 110.49) (xy 322.58 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09c698a7-bf52-5e28-9101-6ec9ad647d95")
+	)
+(symbol (lib_id "power:GND") (at 322.58 115.57 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "f8129b20-0dc0-5969-be2d-9d36d91f9c24") (property "Reference" "#PWRMCU13" (at 322.58 111.76 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 322.58 119.126 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "584867cf-52c3-5a1d-bd27-25e868f12e8b")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU13") (unit 1)))))
+(symbol (lib_id "Device:C") (at 233.68 144.78 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e9df1b0a-7a3f-5982-a427-e770d55ec0b0") (property "Reference" "C23" (at 238.712 143.28 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100nF" (at 238.712 146.78 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 233.68 144.78 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "VBAT (tied to VDD, REQ-MCU-02)" (at 233.68 144.78 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "KGM15ACG1H104KT" (at 233.68 144.78 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 233.68 144.78 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 233.68 144.78 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "14a23c9e-e302-5050-8897-a7cb62b93107"))(pin "2" (uuid "577ede11-9894-5701-b5ed-bc263dd8313b")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C23") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 140.97) (xy 233.68 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2cfe0d1-7df0-5857-b8a0-fa4998d16f1e")
+	)
+(symbol (lib_id "power:+3V3") (at 233.68 135.89 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "86b81dc8-6f62-54e4-866b-e70ce17d8c3d") (property "Reference" "#PWRMCU14" (at 233.68 132.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 233.68 132.334 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "88d51863-24b7-57df-8aeb-f1d3a171c07b")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU14") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 148.59) (xy 233.68 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d881689e-3b13-54e5-a2b2-c634117326b3")
+	)
+(symbol (lib_id "power:GND") (at 233.68 153.67 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "81612e41-d421-59d0-8680-600caa784b07") (property "Reference" "#PWRMCU15" (at 233.68 149.86 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 233.68 157.226 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "6875f410-5e1a-50ef-b87f-7d87bcbe7c25")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU15") (unit 1)))))
+	(text "Place each 100 nF capacitor near its VDD pin. C20 is the 4.7 uF VCAP_1-to-GND capacitor. VBAT is tied to VDD."
+		(exclude_from_sim no)
+		(at 213.333333 168.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7473dc7c-1d28-5932-8c94-79ec81ac53f3")
+	)
+(polyline (pts (xy 206.333333 186.66) (xy 387.666667 186.66) (xy 387.666667 293.7) (xy 206.333333 293.7) (xy 206.333333 186.66)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "e5b0648c-3421-56db-bce0-685bb3b54b39"))
+	(text "03  Analog supply and reset defaults"
+		(exclude_from_sim no)
+		(at 211.333333 193.66 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "92f9af57-6311-53d9-bcda-7ee2d0005eb6")
+	)
+(symbol (lib_id "Device:FerriteBead") (at 233.68 220.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "030910bf-5e7b-5e42-8f5c-e8e960d05fe9") (property "Reference" "FB1" (at 239.4486 219.48 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "600R" (at 239.4486 222.98 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Inductor_SMD:L_0603_1608Metric" (at 233.68 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "VDDA filter" (at 233.68 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "BLM18AG601SN1D" (at 233.68 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Murata" (at 233.68 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 233.68 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "885674bb-d844-521c-999e-fe9c4506b132"))(pin "2" (uuid "d720a1ed-d0f0-5a7b-9054-66fb0bd3cc43")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "FB1") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 217.17) (xy 233.68 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be5d298b-efc8-517c-a10f-e6cd37b508eb")
+	)
+(symbol (lib_id "power:+3V3") (at 233.68 212.09 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "bc11871e-1d69-5c80-a8d9-39bc98a8bfb0") (property "Reference" "#PWRMCU16" (at 233.68 208.28 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 233.68 208.534 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "df1a6365-1009-522a-ae06-dc844b492de9")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU16") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 224.79) (xy 233.68 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4594da8d-4965-5083-b7e4-519f43428d00")
+	)
+	(wire
+		(pts
+			(xy 233.68 229.87) (xy 236.22 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee6f3a59-4b4f-59ca-823b-054a0d1b7958")
+	)
+(label "VDDA"  (at 236.22 229.87 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "53314f88-edaa-5a7d-886b-6d62bf9de5c0"))
+(symbol (lib_id "Device:C") (at 279.4 220.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "38bf43dc-42b8-5d79-b5e2-bdcac0394d48") (property "Reference" "C21" (at 284.432 219.48 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "1uF" (at 284.432 222.98 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 279.4 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "VDDA" (at 279.4 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "CL10A105KB8NNNC" (at 279.4 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Samsung" (at 279.4 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 279.4 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "8dc064c1-e46c-553a-b167-9c26b9f0b2d2"))(pin "2" (uuid "d3a695bf-e7b2-59d3-841c-6858874e6800")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C21") (unit 1)))))
+	(wire
+		(pts
+			(xy 279.4 217.17) (xy 279.4 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3aa857cc-6299-594d-be94-cbbe7c19a943")
+	)
+	(wire
+		(pts
+			(xy 279.4 212.09) (xy 281.94 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86e86448-2fbc-5569-889d-909d3e9f7a86")
+	)
+(label "VDDA"  (at 281.94 212.09 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8e1bea24-b93e-5ff1-b8c6-a1e2e8421abd"))
+	(wire
+		(pts
+			(xy 279.4 224.79) (xy 279.4 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f297d7b2-312f-519c-882b-20856b6665be")
+	)
+(symbol (lib_id "power:GND") (at 279.4 229.87 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "da3681e6-d54e-522d-8929-1f859512eddb") (property "Reference" "#PWRMCU17" (at 279.4 226.06 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 279.4 233.426 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "060a21ee-b437-5655-bdaf-ad75f3efe180")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU17") (unit 1)))))
+(symbol (lib_id "Device:C") (at 322.58 220.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "eef37e5b-e0fe-5441-8089-f819814f4781") (property "Reference" "C22" (at 327.612 219.48 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100nF" (at 327.612 222.98 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 322.58 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "VDDA" (at 322.58 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "KGM15ACG1H104KT" (at 322.58 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 322.58 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 322.58 220.98 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "c8c535a1-3ec0-54a8-9f47-e1ffcbe5be20"))(pin "2" (uuid "c50366b8-cd98-5e77-9ba2-f512a66059c1")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C22") (unit 1)))))
+	(wire
+		(pts
+			(xy 322.58 217.17) (xy 322.58 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4b4bcaa-6ce7-566e-9914-16ce93d523f4")
+	)
+	(wire
+		(pts
+			(xy 322.58 212.09) (xy 325.12 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ece0040f-827d-5834-a77d-c21ffeaf9c17")
+	)
+(label "VDDA"  (at 325.12 212.09 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "cd192112-5ec7-5b25-b5c5-77eeffd797ff"))
+	(wire
+		(pts
+			(xy 322.58 224.79) (xy 322.58 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02a0d112-56f6-5121-a96e-d5240f5c1436")
+	)
+(symbol (lib_id "power:GND") (at 322.58 229.87 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "3ecf7f4d-3999-5892-a8f9-b451f804b88a") (property "Reference" "#PWRMCU18" (at 322.58 226.06 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 322.58 233.426 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "1189e8f7-8f91-5bd0-b5b3-c240e220e5a2")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU18") (unit 1)))))
+(symbol (lib_id "Device:C") (at 233.68 259.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "8338bd1a-ca82-56ed-ba7e-d5a9ae374e94") (property "Reference" "C24" (at 238.712 257.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100nF" (at 238.712 261.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 233.68 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "NRST (REQ-MCU-05)" (at 233.68 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "KGM15ACG1H104KT" (at 233.68 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 233.68 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 233.68 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "1c227755-791e-5790-9cc2-f1cf29402923"))(pin "2" (uuid "5e8cfbaf-6a22-545c-a9c4-d57c9a17356f")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C24") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 255.27) (xy 233.68 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ca00adb-9cde-5008-9c52-6aeab669d2e7")
+	)
+	(wire
+		(pts
+			(xy 233.68 250.19) (xy 236.22 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa44ebbc-5bd7-5fb6-8d4d-36e172ee6ca3")
+	)
+(hierarchical_label "NRST" (shape passive) (at 236.22 250.19 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "dd386138-f814-5b77-baba-9cb7520425b4"))
+	(wire
+		(pts
+			(xy 233.68 262.89) (xy 233.68 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21456a46-127e-50a6-9802-0b303483d947")
+	)
+(symbol (lib_id "power:GND") (at 233.68 267.97 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "419cceb8-6364-5935-9c69-d6d60b3bc22a") (property "Reference" "#PWRMCU19" (at 233.68 264.16 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 233.68 271.526 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "7d7a58f6-6796-5d1b-9d96-2a93d190a06d")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU19") (unit 1)))))
+(symbol (lib_id "Device:R") (at 279.4 259.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2e76bf43-45ce-52a2-8b54-19eaeae38024") (property "Reference" "R16" (at 283.416 257.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "10k" (at 283.416 261.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 279.4 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "BOOT0 pull-down (REQ-MCU-02)" (at 279.4 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-0710KL" (at 279.4 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 279.4 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 279.4 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "cabd07a1-9be3-51d4-894e-a58fa9d90fb1"))(pin "2" (uuid "834504c0-6596-5e21-bfd5-076a975502d8")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "R16") (unit 1)))))
+	(wire
+		(pts
+			(xy 279.4 255.27) (xy 279.4 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4871c2e3-395f-5936-835a-e0fdbe605411")
+	)
+	(wire
+		(pts
+			(xy 279.4 250.19) (xy 281.94 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ada3653-7a11-5027-90e4-28d79743ad2d")
+	)
+(label "BOOT0"  (at 281.94 250.19 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3e495f8c-41d0-5dc2-aed8-dd01fe7f28d0"))
+	(wire
+		(pts
+			(xy 279.4 262.89) (xy 279.4 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bba0933c-ea4a-5449-91f1-09d95d257420")
+	)
+(symbol (lib_id "power:GND") (at 279.4 267.97 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "b010fd2c-ab4a-5f4c-8a0c-2c8489e3de09") (property "Reference" "#PWRMCU20" (at 279.4 264.16 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 279.4 271.526 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "59dfa7ab-002f-52a7-b5b6-ead4f461ba25")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU20") (unit 1)))))
+(symbol (lib_id "Switch:SW_Push") (at 325.12 259.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "26804b10-b7d2-529a-934d-e8c6e7bc7e78") (property "Reference" "SW1" (at 325.12 252.532 0) (effects (font (size 1.27 1.27))  )) (property "Value" "RESET" (at 325.12 262.58 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" (at 325.12 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Reset button" (at 325.12 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "KMR221GLFS" (at 325.12 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "C&K" (at 325.12 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 325.12 259.08 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "de891f18-a2aa-5a24-bd49-cc77777c8ade"))(pin "2" (uuid "0b6f3bf5-f48b-5669-bd55-a7c4afe95d60")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "SW1") (unit 1)))))
+	(wire
+		(pts
+			(xy 320.04 259.08) (xy 314.96 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eef7123-b856-5efe-9645-1e3b37fc42a2")
+	)
+(hierarchical_label "NRST" (shape passive) (at 314.96 259.08 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "a6ec17f9-2dd2-5593-9bad-8d730ec2b2fd"))
+	(wire
+		(pts
+			(xy 330.2 259.08) (xy 335.28 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c66aefc9-6ccf-56a7-a0f2-ddfc8eb9ae2b")
+	)
+(global_label "GND" (shape passive) (at 335.28 259.08 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "f5272eca-6e7d-51f6-8dea-162c8e04a863"))
+	(text "VDDA filter is fed from +3V3. BOOT0 pull-down selects flash boot; NRST is available at the debug header."
+		(exclude_from_sim no)
+		(at 213.333333 283.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43e627c2-e740-5abb-8075-34bcf6b966fe")
+	)
+(polyline (pts (xy 399.666667 34) (xy 581 34) (xy 581 149.056) (xy 399.666667 149.056) (xy 399.666667 34)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "7972c5b4-8abe-5907-ae25-be5fb74c4ac5"))
+	(text "04  Clock sources"
+		(exclude_from_sim no)
+		(at 404.666667 41 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "a2add7f7-3f66-5ba4-a90a-44aef52e5faf")
+	)
+(symbol (lib_id "Device:Crystal_GND24") (at 426.72 76.2 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "91280356-3241-50bf-b856-7e773d463506") (property "Reference" "Y1" (at 426.72 53.644 0) (effects (font (size 1.27 1.27))  )) (property "Value" "8MHz" (at 426.72 57.144 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" (at 426.72 76.2 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "HSE, CL 10 pF (REQ-MCU-03)" (at 426.72 76.2 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "ABM8-8.000MHZ-10-1-U-T" (at 426.72 76.2 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Abracon" (at 426.72 76.2 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 426.72 76.2 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "36b29ff7-b247-5685-a79c-72c623d9bb6d"))(pin "2" (uuid "c4253504-bc3d-5493-a475-853ec019e136"))(pin "4" (uuid "6ac6c07e-0868-5128-9e07-d4a1746afeec"))(pin "3" (uuid "847a9c16-84ee-5456-9d7e-e94a7de4d643")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "Y1") (unit 1)))))
+	(wire
+		(pts
+			(xy 422.91 76.2) (xy 417.83 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb6480f5-4667-5c1c-a4d8-1c06eb832b27")
+	)
+(label "HSE_IN"  (at 417.83 76.2 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "29902e68-0e18-55b9-8273-1eda44664b60"))
+	(wire
+		(pts
+			(xy 430.53 76.2) (xy 435.61 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b126acb5-081a-565a-9f24-21e4f19be0f2")
+	)
+(label "HSE_OUT"  (at 435.61 76.2 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0abb936a-3133-5c2e-abb0-47af19683843"))
+	(wire
+		(pts
+			(xy 426.72 81.28) (xy 426.72 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "422d1532-59b5-58df-88cc-bcf3c7838ca5")
+	)
+	(wire
+		(pts
+			(xy 426.72 81.28) (xy 426.72 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51f5b2b1-37e8-500d-88a7-3cba9f1c8497")
+	)
+(symbol (lib_id "power:GND") (at 426.72 86.36 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "58b0d731-629e-593c-b2ea-490d485a5ae2") (property "Reference" "#PWRMCU21" (at 426.72 82.55 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 426.72 89.916 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "8f21b434-e754-563f-b206-fa6f691ae76f")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU21") (unit 1)))))
+(symbol (lib_id "Device:C") (at 472.44 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f235b944-71f4-5fc2-95e3-bd4d8cd4edfd") (property "Reference" "C25" (at 477.472 67.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "15pF C0G" (at 477.472 70.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 472.44 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "HSE load" (at 472.44 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "06035A150JAT2A" (at 472.44 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 472.44 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 472.44 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "e8ac549f-808f-5769-8d1b-319f9f553a88"))(pin "2" (uuid "5d05a129-21c8-5895-bbaf-916813d055fb")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C25") (unit 1)))))
+	(wire
+		(pts
+			(xy 472.44 64.77) (xy 472.44 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64c69359-b493-5445-8cda-78d8deb63903")
+	)
+	(wire
+		(pts
+			(xy 472.44 59.69) (xy 474.98 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f1bcc55-b150-5a8b-b098-fcd2c8d8550a")
+	)
+(label "HSE_IN"  (at 474.98 59.69 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ad5112c3-373b-5c04-8fb7-ae558221e612"))
+	(wire
+		(pts
+			(xy 472.44 72.39) (xy 472.44 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54cdfcf0-a33e-5880-b697-620fdbe59105")
+	)
+(symbol (lib_id "power:GND") (at 472.44 77.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "836ef210-5e0c-5257-b074-4940d7f18dfd") (property "Reference" "#PWRMCU22" (at 472.44 73.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 472.44 81.026 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "57606e4d-f241-50a8-ba01-dd552c427375")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU22") (unit 1)))))
+(symbol (lib_id "Device:C") (at 518.16 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "65b1d7c3-fdce-5875-85eb-9314219ea813") (property "Reference" "C26" (at 523.192 67.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "15pF C0G" (at 523.192 70.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 518.16 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "HSE load" (at 518.16 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "06035A150JAT2A" (at 518.16 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 518.16 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 518.16 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "8bd73611-c5d5-5146-bfe8-65e2161ba614"))(pin "2" (uuid "e0168c5b-48da-53db-9490-888553ede3d2")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C26") (unit 1)))))
+	(wire
+		(pts
+			(xy 518.16 64.77) (xy 518.16 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e66f3a94-fe03-5dd5-9157-ab52f274ae9a")
+	)
+	(wire
+		(pts
+			(xy 518.16 59.69) (xy 520.7 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a006fcb-17c5-522b-9d74-7b28874f8728")
+	)
+(label "HSE_OUT"  (at 520.7 59.69 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8e8b4707-9b5f-51b7-a091-962aa8336d0e"))
+	(wire
+		(pts
+			(xy 518.16 72.39) (xy 518.16 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "004c904c-a5c1-5df6-8504-bcf3e5668fe2")
+	)
+(symbol (lib_id "power:GND") (at 518.16 77.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "48fbf5c5-ac4d-5210-9cae-5216a9a44e3a") (property "Reference" "#PWRMCU23" (at 518.16 73.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 518.16 81.026 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "e2b5fef6-5455-5c07-b4e9-d2ae0e607d0d")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU23") (unit 1)))))
+(symbol (lib_id "Device:Crystal") (at 426.72 114.3 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5c9a080a-e9e4-57b3-821c-6a63c774a5e1") (property "Reference" "Y2" (at 426.72 108.26 0) (effects (font (size 1.27 1.27))  )) (property "Value" "32.768kHz" (at 426.72 120.34 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" (at 426.72 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "LSE, CL 7 pF (REQ-MCU-04, populate option)" (at 426.72 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "ABS07-32.768KHZ-7-T" (at 426.72 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Abracon" (at 426.72 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 426.72 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "2459a54c-01e5-5294-9ad7-7cf21de33784"))(pin "2" (uuid "9a1612cd-6dc9-54f3-9e25-88eb12036148")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "Y2") (unit 1)))))
+	(wire
+		(pts
+			(xy 422.91 114.3) (xy 417.83 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6304845-9295-5a6f-b118-d46008df6b34")
+	)
+(label "LSE_IN"  (at 417.83 114.3 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "cfc12618-8143-5747-9b34-ca895c5d3b97"))
+	(wire
+		(pts
+			(xy 430.53 114.3) (xy 435.61 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9d11ded-dc64-557d-8470-152c60d8a001")
+	)
+(label "LSE_OUT"  (at 435.61 114.3 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "00c2758c-387f-5614-8d9d-4d1b1dffbebb"))
+(symbol (lib_id "Device:C") (at 472.44 114.3 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "11cb3ba4-6386-5725-8a91-6bfd8e3962d4") (property "Reference" "C27" (at 477.472 112.8 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "10pF C0G" (at 477.472 116.3 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 472.44 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "LSE load" (at 472.44 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "06035A100JAT2A" (at 472.44 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 472.44 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 472.44 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "e2874178-2fcf-57cc-8b80-c7d477b53ba1"))(pin "2" (uuid "431422fc-edac-5aa1-bebe-b892c13d92b1")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C27") (unit 1)))))
+	(wire
+		(pts
+			(xy 472.44 110.49) (xy 472.44 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfbd1ab9-732b-548d-b6eb-30720d2d0aba")
+	)
+	(wire
+		(pts
+			(xy 472.44 105.41) (xy 474.98 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "413995f1-87d3-5a2e-95e0-6bdce76e2f74")
+	)
+(label "LSE_IN"  (at 474.98 105.41 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d36a3ff4-2c31-5d6c-a0d2-edbb52645cc5"))
+	(wire
+		(pts
+			(xy 472.44 118.11) (xy 472.44 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32dbbe7c-c6b0-5b28-838f-a92ce6314ae2")
+	)
+(symbol (lib_id "power:GND") (at 472.44 123.19 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "68c89c51-cf7e-5298-85fe-bf64580f0482") (property "Reference" "#PWRMCU24" (at 472.44 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 472.44 126.746 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "97a6a726-e5b9-5e1c-b3e1-df79c343c1b4")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU24") (unit 1)))))
+(symbol (lib_id "Device:C") (at 518.16 114.3 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "94351957-4232-5b7e-97ab-b8df7de7c1d3") (property "Reference" "C28" (at 523.192 112.8 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "10pF C0G" (at 523.192 116.3 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 518.16 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "LSE load" (at 518.16 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "06035A100JAT2A" (at 518.16 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 518.16 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 518.16 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "1ec35cbe-a95d-5655-91bd-689681cad65c"))(pin "2" (uuid "57dff715-db99-5e45-ae71-513c201e8b38")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "C28") (unit 1)))))
+	(wire
+		(pts
+			(xy 518.16 110.49) (xy 518.16 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9811b4b4-d291-51b8-85e9-d10013a446cf")
+	)
+	(wire
+		(pts
+			(xy 518.16 105.41) (xy 520.7 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a5987a4-1ea4-5807-9169-22acd64e82c4")
+	)
+(label "LSE_OUT"  (at 520.7 105.41 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "6f7f1ae9-0148-5c97-9d86-583f4f4ca8f4"))
+	(wire
+		(pts
+			(xy 518.16 118.11) (xy 518.16 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d73b5af-6b7d-561c-aab5-33867127d41c")
+	)
+(symbol (lib_id "power:GND") (at 518.16 123.19 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "91f4e3fc-dc27-5408-8e7b-f45731dfa25b") (property "Reference" "#PWRMCU25" (at 518.16 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 518.16 126.746 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "40269fa1-6c16-5cc4-996f-e7342d450d1d")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU25") (unit 1)))))
+	(text "HSE: 8 MHz / CL 10 pF. LSE: 32.768 kHz / CL 7 pF. Check actual stray capacitance and startup; LSE is a population option."
+		(exclude_from_sim no)
+		(at 406.666667 139.256 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba2990d9-e13b-5191-9082-e054aede0f98")
+	)
+(polyline (pts (xy 399.666667 157.056) (xy 581 157.056) (xy 581 301.716) (xy 399.666667 301.716) (xy 399.666667 157.056)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "5bdaffbb-99b0-5369-8643-6f1ae38b959a"))
+	(text "05  Status indicators"
+		(exclude_from_sim no)
+		(at 404.666667 164.056 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e33297c-f49f-5adc-a2c2-159ec89ef3a6")
+	)
+(symbol (lib_id "Device:LED") (at 429.26 190.5 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "382051ab-350b-5dd7-a826-fafb5d0084cd") (property "Reference" "D5" (at 429.26 185.73 0) (effects (font (size 1.27 1.27))  )) (property "Value" "PWR green" (at 429.26 196.286 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 429.26 190.5 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Power LED (REQ-PWR-08)" (at 429.26 190.5 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "LTST-C193KGKT-5A" (at 429.26 190.5 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Lite-On" (at 429.26 190.5 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 429.26 190.5 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "3c7604ca-0e23-50ed-9c25-73dd3a114048"))(pin "2" (uuid "71e7bdca-a2d2-5375-905d-079a19867a14")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "D5") (unit 1)))))
+	(wire
+		(pts
+			(xy 425.45 190.5) (xy 420.37 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ca61774-61b0-5901-921f-f51601911623")
+	)
+(global_label "GND" (shape passive) (at 420.37 190.5 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "e69b068b-0cba-588d-baa3-186f475dd338"))
+	(wire
+		(pts
+			(xy 433.07 190.5) (xy 438.15 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35501a24-2f72-555d-a161-b17d24c07ccd")
+	)
+(label "LED_PWR"  (at 438.15 190.5 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a2efd6fd-47e7-52f6-8b56-9ff8f122813b"))
+(symbol (lib_id "Device:R") (at 474.98 193.04 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "155d0172-308f-5165-8c0e-22030b855aec") (property "Reference" "R29" (at 478.996 191.54 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "1k" (at 478.996 195.04 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 474.98 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "LED" (at 474.98 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-071KL" (at 474.98 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 474.98 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 474.98 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "6e9d7164-7eb6-5fbd-9384-1e0d97b08f4e"))(pin "2" (uuid "976cf9d0-438e-5ad6-b937-acf7ff166023")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "R29") (unit 1)))))
+	(wire
+		(pts
+			(xy 474.98 189.23) (xy 474.98 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "695eab17-c422-5593-8712-333f7a03728b")
+	)
+(symbol (lib_id "power:+3V3") (at 474.98 184.15 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "94348d34-2755-50b4-9260-b05fe035bec7") (property "Reference" "#PWRMCU26" (at 474.98 180.34 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 474.98 180.594 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "0dae7d98-faa8-56e6-99c1-50839faff689")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#PWRMCU26") (unit 1)))))
+	(wire
+		(pts
+			(xy 474.98 196.85) (xy 474.98 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0527ac04-4c9b-53d6-8155-b1626316f422")
+	)
+	(wire
+		(pts
+			(xy 474.98 201.93) (xy 477.52 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d813cca5-2689-586f-8c60-0322693a9af7")
+	)
+(label "LED_PWR"  (at 477.52 201.93 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8497da23-9600-5eeb-878e-2028d1415fd3"))
+(symbol (lib_id "Device:LED") (at 520.7 190.5 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "dee19973-bb55-58de-a94f-361bba30552c") (property "Reference" "D6" (at 520.7 185.73 0) (effects (font (size 1.27 1.27))  )) (property "Value" "LINK blue" (at 520.7 196.286 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 520.7 190.5 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Link LED" (at 520.7 190.5 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "LTST-C193TBKT-5A" (at 520.7 190.5 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Lite-On" (at 520.7 190.5 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 520.7 190.5 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "c0b33bd3-a701-5e98-9f7c-e0ef423cbed5"))(pin "2" (uuid "b1107025-1d07-5521-838a-01d0d62ef021")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "D6") (unit 1)))))
+	(wire
+		(pts
+			(xy 516.89 190.5) (xy 511.81 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb7f4c8d-385e-5ade-bc7b-39345fc6ad34")
+	)
+(global_label "GND" (shape passive) (at 511.81 190.5 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "36b42842-85ff-558c-bb8b-044d8b04d09e"))
+	(wire
+		(pts
+			(xy 524.51 190.5) (xy 529.59 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73965c65-af01-580a-a9e0-933f8467b19e")
+	)
+(label "LED_LINK_A"  (at 529.59 190.5 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "81c7906d-fd9c-5684-89de-9565aa426548"))
+(symbol (lib_id "Device:R") (at 426.72 231.14 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b94a65b0-d5a2-5d21-aa58-b0b4dbf12ef1") (property "Reference" "R30" (at 430.736 229.64 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "1k" (at 430.736 233.14 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 426.72 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "LED" (at 426.72 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-071KL" (at 426.72 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 426.72 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 426.72 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "be18462e-cd28-52ab-9ce1-c83cd718b51d"))(pin "2" (uuid "bbd2d521-7425-54a4-b4dc-a5ae70ba6bb8")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "R30") (unit 1)))))
+	(wire
+		(pts
+			(xy 426.72 227.33) (xy 426.72 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94a525c5-a592-5980-a071-e926765af673")
+	)
+	(wire
+		(pts
+			(xy 426.72 222.25) (xy 429.26 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17e3f8f8-f5a9-51bc-861f-8edecfaead28")
+	)
+(label "LED_LINK"  (at 429.26 222.25 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a2e06dba-2b42-50d8-95a3-c7aae514c8c2"))
+	(wire
+		(pts
+			(xy 426.72 234.95) (xy 426.72 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5227fefe-bcd3-569d-983e-0dc48954fee9")
+	)
+	(wire
+		(pts
+			(xy 426.72 240.03) (xy 429.26 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27756eb7-cc4a-55f7-b75f-220600c0b87a")
+	)
+(label "LED_LINK_A"  (at 429.26 240.03 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d36ab3ed-f8cb-5538-b0d7-8219d9a78f67"))
+(symbol (lib_id "Device:LED") (at 472.44 228.6 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "064b7079-ee1e-5730-9959-f6190c0dfe0b") (property "Reference" "D7" (at 472.44 223.83 0) (effects (font (size 1.27 1.27))  )) (property "Value" "FIX yellow" (at 472.44 234.386 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 472.44 228.6 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "GNSS fix LED" (at 472.44 228.6 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "LTST-C193KSKT-5A" (at 472.44 228.6 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Lite-On" (at 472.44 228.6 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 472.44 228.6 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "b345ab2b-26d8-5be0-81ad-398212ce0c20"))(pin "2" (uuid "4ce414b2-1aff-5ba6-82d5-d91594afc83f")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "D7") (unit 1)))))
+	(wire
+		(pts
+			(xy 468.63 228.6) (xy 463.55 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98cf7d8c-08db-58ff-97b6-0ff3d5c141ad")
+	)
+(global_label "GND" (shape passive) (at 463.55 228.6 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "97d616f6-4800-5348-8cee-68dcb20a6153"))
+	(wire
+		(pts
+			(xy 476.25 228.6) (xy 481.33 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed6c1003-7bf1-59a1-9667-9ec8ae27a006")
+	)
+(label "LED_FIX_A"  (at 481.33 228.6 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d4492024-c8de-5169-9c08-728e8f91006c"))
+(symbol (lib_id "Device:R") (at 518.16 231.14 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "69e6f4fa-2fd9-529a-88a4-b164e3b51a96") (property "Reference" "R34" (at 522.176 229.64 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "1k" (at 522.176 233.14 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 518.16 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "LED" (at 518.16 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-071KL" (at 518.16 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 518.16 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 518.16 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "ca478996-78ee-5c7d-8b68-cf734ab43ab3"))(pin "2" (uuid "63198b76-79e0-5fb5-b9ff-a2921a4e2152")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "R34") (unit 1)))))
+	(wire
+		(pts
+			(xy 518.16 227.33) (xy 518.16 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd1de4c4-c274-50dc-895d-6f5c5b132351")
+	)
+	(wire
+		(pts
+			(xy 518.16 222.25) (xy 520.7 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f4b1a30-e02e-5378-92bb-cd47e0e2d8ab")
+	)
+(label "LED_FIX"  (at 520.7 222.25 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1dd35043-ab41-5058-b0fb-d9eb563cf2bc"))
+	(wire
+		(pts
+			(xy 518.16 234.95) (xy 518.16 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "415c6c20-6dcb-5ffe-ba3a-1d42af97ae42")
+	)
+	(wire
+		(pts
+			(xy 518.16 240.03) (xy 520.7 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea44754c-47b0-5e21-9d7f-96566d534bed")
+	)
+(label "LED_FIX_A"  (at 520.7 240.03 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "bb52c2d5-a11b-5fc3-9941-50a1c238ab1b"))
+(symbol (lib_id "Device:LED") (at 429.26 266.7 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3de85dbc-f4e4-54de-b7b1-1037a5cf8ce7") (property "Reference" "D8" (at 429.26 261.93 0) (effects (font (size 1.27 1.27))  )) (property "Value" "FAULT red" (at 429.26 272.486 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 429.26 266.7 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Fault / failsafe LED" (at 429.26 266.7 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "LTST-C193KRKT-5A" (at 429.26 266.7 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Lite-On" (at 429.26 266.7 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 429.26 266.7 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "03c81415-6e14-593a-9697-fc7410fcbf7e"))(pin "2" (uuid "9fc99b49-ce9a-5ea7-88b1-d9e026ff0f1b")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "D8") (unit 1)))))
+	(wire
+		(pts
+			(xy 425.45 266.7) (xy 420.37 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24a2c531-0dd4-5e96-a48e-c3de0c11ab0d")
+	)
+(global_label "GND" (shape passive) (at 420.37 266.7 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "5ee9fb37-751e-5bfd-87f6-80c930a8d737"))
+	(wire
+		(pts
+			(xy 433.07 266.7) (xy 438.15 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "679b859c-9846-5c19-be35-f1515ce5394f")
+	)
+(label "LED_FAULT_A"  (at 438.15 266.7 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "61dbb26b-f3bc-54f8-83f9-9ab5149f1220"))
+(symbol (lib_id "Device:R") (at 474.98 269.24 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9ff3676d-6183-5f34-b30b-fb3469c30be3") (property "Reference" "R35" (at 478.996 267.74 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "1k" (at 478.996 271.24 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 474.98 269.24 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "LED" (at 474.98 269.24 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-071KL" (at 474.98 269.24 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 474.98 269.24 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 474.98 269.24 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "d2206d4a-2b49-543d-b6d1-e69bd997f87c"))(pin "2" (uuid "fa004279-2ef5-5ef8-8766-2028bdc6cb08")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "R35") (unit 1)))))
+	(wire
+		(pts
+			(xy 474.98 265.43) (xy 474.98 260.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "187d9b0c-d52f-5f56-9a68-1d870fa5b6cb")
+	)
+	(wire
+		(pts
+			(xy 474.98 260.35) (xy 477.52 260.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfb9fc93-240d-5aa4-b71c-6a95bcbb5bb5")
+	)
+(label "LED_FAULT"  (at 477.52 260.35 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "59ae85ba-b1bf-502d-8140-bcb2bf5e4af9"))
+	(wire
+		(pts
+			(xy 474.98 273.05) (xy 474.98 278.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33ef541b-734e-5b39-862b-21f55475c321")
+	)
+	(wire
+		(pts
+			(xy 474.98 278.13) (xy 477.52 278.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "273f7ffb-c3b4-59e1-b749-852bca69a0dc")
+	)
+(label "LED_FAULT_A"  (at 477.52 278.13 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "fd0cc4d0-a910-50a2-af51-b1f7503f4971"))
+	(text "Power, link, fix and fault labels describe intended application states. Firmware must define and verify the indications."
+		(exclude_from_sim no)
+		(at 406.666667 291.916 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b13582e9-1d0d-5c0a-a8b9-e35832737c64")
+	)
+	(text "Read named nets within each group; matching labels are electrically connected. Cross-sheet signals use hierarchical ports."
+		(exclude_from_sim no)
+		(at 13 384 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5e54a01-c278-52fa-a035-0bb9ea2dced8")
+	)
+	(text "V1 preserves original defects. V2 is a review draft. Bench values and firmware behavior require validation."
+		(exclude_from_sim no)
+		(at 13 389 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "86888a8a-4c3d-5e31-bcbe-7401c530f864")
+	)
+(symbol (lib_id "power:PWR_FLAG") (at 17.78 365.76 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "eba895ab-6992-533f-a38f-860f9efcd3ec") (property "Reference" "#FLGMCU01" (at 17.78 361.95 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "PWR_FLAG" (at 17.78 362.204 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "d0f315a8-2c9c-513b-8c28-f681a16a592a")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b" (reference "#FLGMCU01") (unit 1)))))
+	(wire
+		(pts
+			(xy 17.78 365.76) (xy 17.78 368.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b12037c-6b3b-5727-b5b9-50e9feba01ed")
+	)
+(label "VDDA"  (at 17.78 368.3 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b1b949a0-8e89-5ab6-aa97-213675d1f172"))
+(embedded_fonts no)
+)

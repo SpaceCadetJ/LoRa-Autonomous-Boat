@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-17",
+  "baseline_commit": "07c0f3572bf877a9d398c545d9a97f84a8b27cb7",
+  "status": "blocked",
+  "fabrication_approved": false,
+  "report": "reviews/codex/design_completion/electrical/README.md",
+  "capture": "reviews/codex/design_completion/electrical/evidence.json",
+  "scope": "Independent component-limit review. Corrections are proposed and have not been applied or bench tested.",
+  "blockers": [
+    {
+      "id": "E-01",
+      "title": "IMU interface exceeds voltage limits",
+      "severity": "critical",
+      "affected_refs": ["U6", "R23", "R24", "C34"],
+      "status": "open_verified",
+      "evidence": {
+        "project": "Published netlist U6.8=+3V3, U6.22=+3V3; design pulls SCL/SDA to +3V3.",
+        "source": "https://cdn.sparkfun.com/assets/8/4/6/4/2/ds-000189-icm-20948-datasheet-2024.pdf",
+        "document": "TDK DS-000189 revision 1.6, manufacturer-authored PDF mirrored by SparkFun",
+        "pages": [13, 14, 18, 19, 20],
+        "limits": "VDDIO 1.71–1.95 V operating, 2.5 V absolute maximum; specified digital input maximum VDDIO+0.5 V."
+      },
+      "correction": "Add a 1.8 V supply; move VDDIO and CS to it; retain VDD at 3.3 V; translate SCL, SDA and INT1. Detailed candidate circuit is in the report.",
+      "acceptance": ["Expected changed-pin list matches native netlist", "No direct 3.3 V pull-up on a sensor-side signal", "Both rails and signal levels measured through startup and shutdown", "I2C identity read and interrupt operation pass"]
+    },
+    {
+      "id": "E-02",
+      "title": "PWM buffer supply follows an unqualified actuator rail",
+      "severity": "high",
+      "affected_refs": ["U4", "U5", "C13", "C14", "D4", "D9"],
+      "status": "open_verified",
+      "evidence": {
+        "project": "U4.5 and U5.5 are on VSERVO, after source OR-ing diodes.",
+        "source": "https://www.ti.com/lit/ds/symlink/sn74ahct1g125.pdf",
+        "document": "TI SCLS378P",
+        "pages": [4],
+        "limits": "Recommended VCC 4.5–5.5 V. Nominal 5–6 V BEC minus a diode does not guarantee this range."
+      },
+      "correction": "Supply U4/U5 and local bypass capacitors from regulated +5V_BUCK before D4; require that buck when PWM interfaces are populated, or qualify a separate regulated buffer supply.",
+      "acceptance": ["Netlist separates buffer supply from VSERVO", "Buffer VCC stays 4.5–5.5 V across source/load cases", "PWM remains low on startup, reset and brownout", "No backfeed between BEC and regulated source"]
+    },
+    {
+      "id": "E-03",
+      "title": "Input TVS cannot protect the present supply and current-sense devices",
+      "severity": "critical",
+      "affected_refs": ["D1", "U8", "U3", "U2", "Q1", "D3", "R31", "R32"],
+      "status": "open_verified_requires_power_envelope",
+      "evidence": {
+        "project": "SMAJ33A clamps VIN_RAW; current-sense inputs and buck inputs share this supply through the shunt.",
+        "sources": [
+          {"url": "https://www.littelfuse.com/assetdocs/littelfuse_tvs_diode_smaj_datasheet?assetguid=13c2a823-03b8-4d1f-9ddc-9b44670aed9d", "document": "Littelfuse SMAJ series, revised 2025-12-02", "pages": [2]},
+          {"url": "https://www.ti.com/lit/ds/symlink/ina180.pdf", "document": "TI SBOS741H", "pages": [7]},
+          {"url": "https://www.ti.com/lit/ds/symlink/tps54202.pdf", "document": "TI SLVSD26C", "pages": [4]},
+          {"url": "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/r1240-ea.pdf", "document": "Nisshinbo EA-190-240903", "pages": [4]}
+        ],
+        "limits": "SMAJ33A breakdown minimum 36.7 V and clamp 53.3 V at 7.5 A; INA180 common-mode absolute maximum 26 V; TPS54202 VIN 30 V absolute maximum; R1240 VIN 32 V absolute maximum."
+      },
+      "correction": "Select the battery/transient envelope explicitly, then coordinate the protection threshold and every exposed component. Retaining 6S requires a power-stage protection revision; a reduced-voltage prototype is a separate option, not an implemented decision.",
+      "acceptance": ["Battery and transient envelope documented", "Worst-case clamp/cutoff plus overshoot stays below all protected pin limits", "Fuse/TVS pulse-energy and temperature review", "Reverse input and surge measurements with defined fixtures"]
+    },
+    {
+      "id": "E-04",
+      "title": "Buck enable pin lacks a bounded voltage",
+      "severity": "high",
+      "affected_refs": ["R6", "U3"],
+      "status": "open_verified",
+      "evidence": {
+        "project": "R6=100 kΩ connects VIN_BUCK to U3 EN without a divider or documented clamp.",
+        "source": "https://www.ti.com/lit/ds/symlink/tps54202.pdf",
+        "document": "TI SLVSD26C",
+        "pages": [4, 9],
+        "limits": "EN absolute maximum 7 V; EN may float for enabled operation."
+      },
+      "correction": "Remove/DNP R6 and intentionally float EN for always-enabled operation, or implement the documented UVLO divider. Update schematic/BOM population consistency.",
+      "acceptance": ["No VIN pull-up remains on EN", "EN state explicitly documented", "Startup and EN voltage checked over the chosen battery range"]
+    },
+    {
+      "id": "E-05",
+      "title": "Current-sense output is over its specified capacitive load",
+      "severity": "high",
+      "affected_refs": ["U8", "C37", "U1"],
+      "status": "open_verified",
+      "evidence": {
+        "project": "U8 OUT directly drives C37=100 nF and PA4 on ISENSE.",
+        "source": "https://www.ti.com/lit/ds/symlink/ina180.pdf",
+        "document": "TI SBOS741H",
+        "pages": [8, 23],
+        "limits": "Maximum capacitive load for no sustained oscillation is 1 nF."
+      },
+      "correction": "Add a proposed 1 kΩ output isolation resistor before the existing PA4/C37 node, or reduce direct capacitance to a qualified value. The RC proposal has a 100 μs time constant.",
+      "acceptance": ["Netlist places filter capacitor on ADC side of isolation resistor", "Output stable on oscilloscope", "ADC settles at selected sample rate", "Current readout calibrated"]
+    },
+    {
+      "id": "E-06",
+      "title": "5 V buck output-current claim lacks ripple-current margin",
+      "severity": "high",
+      "affected_refs": ["U3", "L2", "C8", "C9"],
+      "status": "open_verified_calculation",
+      "evidence": {
+        "project": "L2=4.7 μH, 2 A output claim, 25.2 V maximum battery assumption. Calculations are captured in evidence.json.",
+        "source": "https://www.ti.com/lit/ds/symlink/tps54202.pdf",
+        "document": "TI SLVSD26C",
+        "pages": [5, 15],
+        "limits": "390 kHz minimum switching frequency and 2.5 A minimum high-side current limit. Ideal nominal-L calculation requires 3.106 A peak at a 2 A load."
+      },
+      "correction": "Recalculate the inductor, saturation/thermal ratings and output capacitors for the final input and load envelope. Do not treat a 15 μH example value as a qualified footprint substitution.",
+      "acceptance": ["Worst-case L/frequency/tolerance calculation", "Current-limit and inductor saturation margin", "Capacitor effective capacitance verified", "Load-step, ripple and thermal tests"]
+    }
+  ],
+  "nonblocker_dispositions": [
+    {"id": "D-AD0", "status": "mode_semantics_confirmed", "affected_refs": ["U6"], "finding": "Grounding AD0 selects 0x68 in I2C mode. The ERC bidirectional-to-power warning is separate from the real VDDIO fault. A documented I2C-specific input pin type can represent the selected mode."},
+    {"id": "D-VCAP", "status": "schematic_value_confirmed_layout_unqualified", "affected_refs": ["U1", "C20"], "finding": "Single-VCAP STM32F446RE uses 4.7 μF with ESR below 1 Ω. Existing pin30-to-ground topology is correct; effective capacitance and placement still need qualification."}
+  ]
+}

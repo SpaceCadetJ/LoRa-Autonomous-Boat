@@ -2,7 +2,7 @@
 
 Start with the board you actually have. **V1 documents the existing boat controller; V2 is the developing multifunction vehicle node.** The future handheld must support voice, text and location alongside RC control. It does not yet have a released PCB, BOM or firmware image.
 
-The [interactive workspace](../../pm/index.html) brings the drawings, parts, assembly maps, firmware and review evidence together. Its Build & program section is the practical entry point. Keep this repository together so all linked artifacts remain available.
+The [interactive workspace](../../pm/index.html) brings the drawings, parts, assembly maps, firmware and review evidence together. Use by application links the [application handbook](../applications/README.md); Build & program covers assembly and firmware. Keep this repository together so all linked artifacts remain available.
 
 ## Choose a build path
 
@@ -12,7 +12,7 @@ The [interactive workspace](../../pm/index.html) brings the drawings, parts, ass
 | Select parts | [Ordering guide](ORDERING.md), [complete BOM review](../../hardware/manufacturing/v1/bom_review.csv), [held parts](../../hardware/manufacturing/v1/holds.csv) | [Ordering guide](ORDERING.md), [complete BOM review](../../hardware/manufacturing/v2/bom_review.csv), [held parts](../../hardware/manufacturing/v2/holds.csv) |
 | Locate and inspect components | [Assembly procedure](ASSEMBLY_V1.md), [top map](../../hardware/manufacturing/v1/assembly_top.svg), [bottom map](../../hardware/manufacturing/v1/assembly_bottom.svg) | [Assembly procedure](ASSEMBLY_V2.md), [top map](../../hardware/manufacturing/v2/assembly_top.svg), [bottom map](../../hardware/manufacturing/v2/assembly_bottom.svg) |
 | Check connector wiring | [V1 connector atlas](../atlas/README.md) and assembly guide | Assembly guide and current schematic; a complete V2 connector atlas is still needed |
-| Compile | [Reproducible V1 build](FIRMWARE_BUILD.md): completed twice with identical image hashes on the recorded toolchain | No V2 firmware project or qualified image exists yet |
+| Compile | [Reproducible V1 build](FIRMWARE_BUILD.md): completed twice with identical image hashes on the recorded toolchain | [Stage A diagnostic](../../firmware_v2/README.md) builds; no operational/qualified image exists |
 | Back up / program / verify | [V1 flashing procedure](FLASHING_V1.md): retain the existing image before changing hardware | [V2 bring-up and programming plan](FLASHING_V2.md): resolve the pin/protocol contract first |
 | Review changes | [Review workflow](REVIEW_WORKFLOW.md), [schematic editing guide](SCHEMATICS.md) | Same checks, plus unresolved PCB routing, layout and device-level electrical review |
 
@@ -34,7 +34,7 @@ The manual CI workflow runs dependency-free quality tests, optionally checks KiC
 ## Next development packets
 
 1. Resolve current V2 electrical/layout findings and all schematic-to-PCB discrepancies at a frozen revision.
-2. Freeze the V2 pin and protocol contract; create a separate diagnostic firmware project with actuator outputs inactive.
+2. Review the Stage A pin-checked diagnostic, finish electrical corrections and freeze the operational protocol before adding control drivers.
 3. Compile and test the protocol/failsafe correction prototype, then integrate it through measured bench acceptance.
 4. Complete the V2 connector atlas and exact-part datasheet coverage; approve a complete population and purchasing list.
 5. Measure voice airtime, speech quality and the worst RC blocking interval before selecting handheld radio, codec or hardware. Voice, text and location remain required; no shared-radio coexistence claim is made yet.

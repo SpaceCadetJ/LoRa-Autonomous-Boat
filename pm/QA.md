@@ -1,6 +1,14 @@
 # Viewer delivery verification — 2026-09-17
 
-## Current portable publication edition
+## Current application and diagnostic edition
+
+The viewer reads the integrated V2 board's [native review](../reviews/codex/design_completion/native-review/REVIEW.md), the [Stage A build manifest](../firmware_v2/evidence/stage_a_build.json), five application guides and six component-limit findings. V2 now has zero unconnected PCB items; the strict native review and hardware release gates remain failed/open. Purchasing data reflects 74 candidate / 33 held / 11 bare-feature V2 references.
+
+Headless Edge checks at 1440 x 1050 and 390 x 844 passed: five guide cards, V2 guide dialog, application search, diagnostic instructions, no browser errors and no page-level overflow. [Recorded results](../reviews/codex/design_completion/ui/application-ui.json) and desktop/phone screenshots preserve the checked view. The six electrical findings use expandable cards for phone readability. The server exposes reviewed V2 source and evidence paths, while firmware build outputs remain unavailable over HTTP. Direct-file mode and physical hardware behavior were not tested.
+
+Earlier counts and missing-V2-image statements below describe their dated snapshots. Current source/input hashes are in [status.json](status.json); final packaging and archive checks are recorded in the [current handoff](../reviews/codex/design_completion/HANDOFF.md).
+
+## Earlier portable publication edition
 
 The viewer now uses the publication native review (52 active CAD inputs), tracked V1 build evidence and tracked primary reports. All fifteen schematic inputs reproduce without the old local build cache. A clean staged-source archive rebuilt and validated the viewer with 60 documents, 200 indexed paths, 52 drawings/images and two valid scripts. Its revision is explicitly `source-archive`. The local HTTP check passed all 212 links and blocked-path probes. No new browser interaction test or hardware test is implied; desktop/mobile behavior was checked in the preceding edition below.
 

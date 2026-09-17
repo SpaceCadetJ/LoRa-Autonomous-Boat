@@ -40,3 +40,11 @@ The user-authorized schematic, ordering/assembly, programming-documentation, vie
 ## Publication authorized — 2026-09-17
 
 Jay explicitly requested committing and pushing the project to the existing GitHub repository so his portfolio agent can use it. Codex claims the integration/documentation/portability scopes necessary for that publication. Current V2 PCB will be included as the reviewed pre-existing draft snapshot. Unfinished pre-existing v1_design.py and route_v2.py edits will remain local and unstaged; their consumed definitions/current evidence do not depend on those edits. Allegro source evidence is preserved. Commit/push authorization supersedes the earlier no-publication/no-Git constraints for this delivery; hardware fabrication/flashing remains outside this publication task.
+
+## Design completion and application guides — 2026-09-17
+
+Jay requested continued improvement toward a finished design and guides for different applications. Root claims V2 correction integration, `tools/quality` readiness checks, `pm/**`, current documentation and review coordination. Child claims are disjoint: `reviews/codex/design_completion/ground/**` for isolated copper analysis/candidate; `reviews/codex/design_completion/electrical/**` for manufacturer-backed circuit audit; `docs/applications/**` for application guides/index. Live Allegro and V1 evidence remain preserved. The existing dirty `v1_design.py` and `route_v2.py` remain excluded. Verified updates may be committed/pushed to the already authorized repository. Physical programming, purchasing and fabrication are not performed by this packet.
+
+## Design/application review complete - 2026-09-17
+
+Root integrated the reviewed V2 ground candidate and separate firmware_v2 Stage A diagnostic. Child scopes docs/applications, electrical, ground and mcu_ground are released; their handoffs identify exact inputs and limits. Root retains current documentation, viewer and selective publication integration through final checks. Later packets may implement reviewed V2 corrections after checking newer claims. The existing v1_design.py and route_v2.py local edits remain outside this packet. Preserve original Allegro/V1 evidence; no orders, real hardware programming or history rewrite.

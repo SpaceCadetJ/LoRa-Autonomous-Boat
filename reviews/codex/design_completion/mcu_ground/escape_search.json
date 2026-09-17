@@ -1,0 +1,16 @@
+{
+  "source_sha256": "1b959ee8c2499d2a65359b695a2f70efd5a588f05ffcaf11f32cf9de18d0cce9",
+  "grid_mm": 0.1,
+  "clearance_mm": 0.17,
+  "width_mm": 0.15,
+  "bounds_mm": [
+    84,
+    61,
+    98,
+    75
+  ],
+  "valid_count": 17937,
+  "visited_count": 844,
+  "starts_count": 799,
+  "path": []
+}

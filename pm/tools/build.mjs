@@ -22,12 +22,18 @@ const manufacturing={manifest_path:`${manufacturingRoot}/run_manifest.json`,mani
   outputs:freshness((manufacturingManifest?.outputs||[]).map(x=>[x.path,x.sha256])),
   variants:['v1','v2'].map(id=>({id,summary:json(`${manufacturingRoot}/${id}/summary.json`),files:manufacturingFiles.filter(p=>p.startsWith(`${manufacturingRoot}/${id}/`))}))};
 const qualityReports=walk('reviews/codex/professionalization').filter(p=>/\/candidate-review-\d+\/review\.json$/.test(p)).sort((a,b)=>Number(b.match(/candidate-review-(\d+)/)[1])-Number(a.match(/candidate-review-(\d+)/)[1]));
-const publishedQualityPath='reviews/codex/publication/native-review/review.json';
+const completionQualityPath='reviews/codex/design_completion/native-review/review.json';
+const publishedQualityPath=exists(completionQualityPath)?completionQualityPath:'reviews/codex/publication/native-review/review.json';
 const qualityPath=exists(publishedQualityPath)?publishedQualityPath:qualityReports[0];
 const qualityReport=qualityPath?json(qualityPath):null;
 const quality=qualityReport?{path:qualityPath,report:qualityReport,source_freshness:freshness(Object.entries(qualityReport.input_manifest||{})),report_md:qualityPath.replace(/review\.json$/,'REVIEW.md')}:null;
 const firmwareManifestPath='docs/build/evidence/v1-build-manifest.json';
 const firmwareManifest=json(firmwareManifestPath);
+const v2DiagnosticManifestPath='firmware_v2/evidence/stage_a_build.json';
+const v2DiagnosticManifest=json(v2DiagnosticManifestPath);
+const v2Diagnostic={manifest:v2DiagnosticManifest,manifest_path:v2DiagnosticManifestPath,source_freshness:v2DiagnosticManifest?freshness(Object.entries(v2DiagnosticManifest.input_sha256||{})):null};
+const applications=json('docs/applications/applications.json');
+const electricalReview=json('reviews/codex/design_completion/electrical/blockers.json');
 const firmwareBuild={manifest:firmwareManifest,manifest_path:firmwareManifestPath,provenance:'Recorded software-only build; binaries remain local and unqualified.',source_freshness:firmwareManifest?freshness(Object.entries(firmwareManifest.input_sha256||{})):null,handoff:'docs/build/FIRMWARE_HANDOFF.md',v2_image_available:false};
 const workflowSources=[...walk('firmware/tools'),...walk('tools/quality'),...manufacturingFiles].filter(p=>/\.(py|mjs)$/.test(p));
 const docs=[...new Set(['pm/README.md','pm/QA.md','README.md','REPORT.md','HANDOFF.md','BLOCKERS.md','AGENT_STATUS.md','CONVERSION_LOG.md',...walk('docs').filter(p=>p.endsWith('.md')&&!p.includes('/archive/')),...walk('reviews/codex').filter(p=>p.endsWith('.md')&&!['/s2/snapshot/','/inputs/','/quality-baseline/','/copy/','/_backup_'].some(segment=>p.includes(segment)))])].filter(exists);
@@ -85,20 +91,22 @@ const connectorData=json('pm/data/connectors.json');
 const atlasEvidence=[...new Set((connectorData?.connectors||[]).flatMap(c=>c.pins||[]).flatMap(p=>p.evidence||[]).map(e=>e.path))];
 const sourcePaths=[...new Set(['firmware/Core/Src/main.c','firmware/Core/Src/stm32f4xx_hal_msp.c','firmware/BoatTHISTIMEITSDIFFERENT.ioc',...walk('reviews/codex/firmware_prototype').filter(p=>/\.(c|h|md)$/.test(p)),...atlasEvidence,...workflowSources])];
 const sources=sourcePaths.filter(exists).map(p=>({path:p,text:read(p)}));
+for(const p of [...walk('firmware_v2/src'),...walk('firmware_v2/tools'),...walk('firmware_v2/tests')].filter(p=>/\.(c|h|py)$/.test(p))){sourcePaths.push(p);sources.push({path:p,text:read(p)});}
 const previous=json('pm/status.json');delete hashes['pm/status.json'];
 const software=json('pm/data/software.json');
 const independent=json('reviews/codex/s2/summary.json');
 const data={schema:1,generated_at:new Date().toISOString(),head:git('rev-parse','HEAD'),branch:git('branch','--show-current'),released_revision:'639e08f',title:'LoRa engineering workspace',
 purpose:'A faithful boat-controller baseline, documented so it can evolve into a reusable RC and voice/text/location platform.',
-bom,bomV2,bomV2Total,requirements,designFindings,decisionRows,fabrication,v2ReportedNumbers,v2Reports,datasheets,documents:documentData,images,reports,findings,phases,connectors:connectorData?.connectors||[],connector_meta:connectorData?{generated_at:connectorData.generated_at,sources:connectorData.sources}:null,software,independent,sources,manufacturing,quality,firmwareBuild,
-next:['Trace the three V2 ground-zone connection reports to actual copper islands and pads.','Review U6 AD0 interface/pin intent and voltage domains before changing the ERC treatment.','Freeze the V2 pin/protocol contract for a separate diagnostic firmware project.','Resolve held parts and verify physical harness, radio, battery and BEC identities.','Measure voice airtime, intelligibility and RC coexistence before handheld hardware selection.'],
+bom,bomV2,bomV2Total,requirements,designFindings,decisionRows,fabrication,v2ReportedNumbers,v2Reports,datasheets,documents:documentData,images,reports,findings,phases,connectors:connectorData?.connectors||[],connector_meta:connectorData?{generated_at:connectorData.generated_at,sources:connectorData.sources}:null,software,independent,sources,manufacturing,quality,firmwareBuild,v2Diagnostic,applications,electricalReview,
+next:['Implement the reviewed IMU 1.8 V supply, I2C and interrupt translation with an explicit circuit delta.','Resolve the five power/buffer findings while preserving the stated 6S input requirement.','Qualify the Stage A diagnostic after electrical correction; freeze the operational protocol before Stage B.','Resolve held parts and verify physical harness, radio, battery and BEC identities.','Measure voice airtime, intelligibility and RC coexistence before handheld hardware selection.'],
 decisions:[['Radio hardware','Identify installed RYLR model and firmware; capture AT readback.','Required before RF commitments'],['Battery and actuator supply','Record chemistry, cell count, BEC voltage and actual harness routing.','Required before V2 power design'],['Voice behavior','Voice + text + location required; evaluate live PTT and recorded messages.','Feasibility packet'],['Operating envelope','Agree control deadline, range, antenna installation and region.','Requirements packet'],['Expansion and mechanics','Decide CAN role, sensor set, connectors and mounting from use cases.','Architecture review']],
 manifest:hashes};
 data.available_paths=[...new Set([...docs,...images.map(x=>x.path),...sourcePaths,...walk('hardware/kicad').filter(x=>/\.(kicad_pro|kicad_pcb|kicad_sch)$/.test(x)&&!x.includes('/_')),...walk('hardware/kicad_v2').filter(x=>/\.(kicad_pro|kicad_pcb|kicad_sch)$/.test(x)&&!x.includes('/_')),'docs/BOM.csv','docs/BOM_V2.csv','firmware/V2_FIRMWARE_PLAN.md'].filter(exists))];
-for(const p of ['firmware/V2_FIRMWARE_PLAN.md','hardware/kicad_v2/README.md'])if(exists(p)&&!data.documents.some(d=>d.path===p))data.documents.push({path:p,title:(read(p).match(/^# (.+)/m)||[])[1]||p,text:read(p)});
+for(const p of ['firmware/V2_FIRMWARE_PLAN.md','firmware_v2/README.md','hardware/kicad_v2/README.md'])if(exists(p)&&!data.documents.some(d=>d.path===p)){data.documents.push({path:p,title:(read(p).match(/^# (.+)/m)||[])[1]||p,text:read(p)});data.available_paths.push(p);}
 data.available_paths=[...new Set([...data.available_paths,...manufacturingFiles,...workflowSources,...(quality?[quality.path,quality.report_md,...quality.report.checks.flatMap(c=>c.evidence||[])]:[])].filter(exists))];
 for(const p of ['docs/img/schematic_export_manifest.json','reviews/codex/professionalization/FINAL_QUALITY.json','hardware/kicad/tools/export_review.py','hardware/kicad/tools/schematic_layout.py',...walk('docs/build/evidence').filter(p=>/\.(json|rpt)$/.test(p)),'docs/portfolio/portfolio.json'])if(exists(p)){read(p);data.available_paths.push(p);}
 data.changed_since_previous=previous?Object.keys(hashes).filter(p=>previous.manifest?.[p]!==hashes[p]):[];
+for(const p of ['docs/applications/applications.json','firmware_v2/board_contract.json',v2DiagnosticManifestPath,'reviews/codex/design_completion/electrical/blockers.json'])if(exists(p)){read(p);data.available_paths.push(p);}
 data.inputs_changed_during_build=Object.entries(hashes).filter(([p,h])=>!exists(p)||crypto.createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex')!==h).map(([p])=>p);
 const template=read('pm/index.template.html');data.manifest={...hashes};
 const serialized=JSON.stringify(data).replaceAll('<','\\u003c');

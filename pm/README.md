@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Current application and diagnostic edition
+
+Use **Use by application** for the [application handbook](../docs/applications/README.md), with separate V1 bench, V2 boat, rover, telemetry and handheld guides. The separate [V2 Stage A diagnostic](../firmware_v2/README.md) builds for board identity and inactive actuator outputs; it is not operational control firmware. The [component-limit review](../reviews/codex/design_completion/electrical/README.md) identifies six circuit blockers beyond the CAD warning count. Current affected parts are held in the ordering package. The integrated ground repair now has zero unconnected items and zero ordinary DRC errors, with unchanged warning/parity counts. V2 ordering has 74 candidate, 33 held and 11 bare-feature references. Start at the [current handoff](../reviews/codex/design_completion/HANDOFF.md); the next circuit packet is the IMU 1.8 V supply/interface correction. Earlier ground-count, no-V2-image and no-publication statements below describe previous checkpoints.
+
 Open [index.html](index.html) directly in a browser. The generated page contains its data and application code; no install or build step is required to view it. Keep it in this repository so images, schematics and evidence links resolve.
 
 For the local HTTP viewer, run from the repository root:
@@ -15,7 +19,7 @@ Then open <http://127.0.0.1:8765/pm/>. The server binds only to this computer, s
 - Overview: phases, evidence gates and the next review tasks.
 - Design: V1/V2 schematic sheets, available PCB renders, PDF drawings and source KiCad files. Choose a view and zoom to inspect it.
 - BOM: searchable V1/V2 parts, component details and selected manufacturer datasheets. An unmapped part explicitly says its exact datasheet is not yet linked. Prices are dated source estimates.
-- Build & program: V1/V2 ordering candidates, held and external parts, assembly maps, inspection steps, firmware build and separate programming procedures. The guides distinguish an unqualified V1 image from the absence of a V2 image.
+- Build & program: V1/V2 ordering candidates, held and external parts, assembly maps, inspection steps, firmware build and separate programming procedures. The guides distinguish the unqualified V1 image from the V2 Stage A diagnostic and future operational firmware.
 - Connector atlas: V1 connector pins, firmware cross-references, voltage expectations and known defects. Bench readings are expectations, not measurements.
 - Software: current source and proposed correction files, clearly separated from integrated firmware.
 - Verification: independent V1 checks, primary reports and input fingerprints.
@@ -25,7 +29,7 @@ Then open <http://127.0.0.1:8765/pm/>. The server binds only to this computer, s
 
 ## Refresh evidence
 
-For the published edition, recorded firmware/primary reports are stored under `docs/build/evidence/`; V1 schematic generation has verified tracked inputs. Rebuilding the viewer no longer needs this workstation's ignored CAD/compiler caches. The current portable native snapshot is [publication/native-review](../reviews/codex/publication/QUALITY_PORTABILITY.md). Downloaded source archives can rebuild without Git, using a `source-archive` revision label. See the [publication record](../reviews/codex/publication/README.md).
+For the published edition, recorded firmware/primary reports are stored under `docs/build/evidence/`; V1 schematic generation has verified tracked inputs. Rebuilding the viewer no longer needs this workstation's ignored CAD/compiler caches. The current portable native snapshot is [design_completion/native-review](../reviews/codex/design_completion/native-review/REVIEW.md). Downloaded source archives can rebuild without Git, using a `source-archive` revision label. See the [publication record](../reviews/codex/publication/README.md).
 
 Only after checking [ownership](../FILE_OWNERSHIP.md), current [handoff](../HANDOFF.md), Git status and primary release notes:
 
@@ -38,7 +42,7 @@ The builder reads evidence and writes only `pm/index.html` and `pm/status.json`.
 
 The snapshot records branch/HEAD and SHA-256 hashes of consumed text/report inputs. Working files may differ from HEAD. Changed-during-build detection covers hashed inputs, not a repository lock or a full media/CAD archive. Images and CAD links load current files from the repository; independent S2 results refer to the separately identified historic snapshot.
 
-## Current review edition — 2026-09-17
+## Earlier schematic review edition — 2026-09-17
 
 Jay authorized Codex to improve schematics, ordering/assembly and programming documentation while the other agent is inactive. This supersedes earlier conservative primary-only edit reservations for the delivered packet. Start at [build and programming](../docs/build/README.md) and the [professionalization handoff](../reviews/codex/professionalization/HANDOFF.md), then check the latest ownership before editing.
 

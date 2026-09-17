@@ -1,0 +1,556 @@
+(kicad_sch
+(version 20250114)
+(generator "gen_sch.py")
+(generator_version "9.0")
+(uuid "5eb98e0e-d790-558e-8456-abafcb16c2f1")
+(paper "A3")
+(title_block (title "LoRa Autonomous Boat Controller V1 - Debug") (date "2026-09-17") (rev "V1 / v5") (company "LoRa Controller Project") (comment 1 "Annotated functional groups; connectivity preserved") (comment 2 "Build and review: docs/build/README.md"))
+(lib_symbols
+	(symbol "Connector_Generic:Conn_02x05_Odd_Even"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 1.27 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x05_Odd_Even"
+			(at 1.27 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_2x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_02x05_Odd_Even_1_1"
+			(rectangle
+				(start -1.27 6.35)
+				(end 3.81 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 5.207)
+				(end 2.54 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 2.667)
+				(end 2.54 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 0.127)
+				(end 2.54 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -2.413)
+				(end 2.54 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 3.81 -4.953)
+				(end 2.54 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 5.08 180)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 2.54 180)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 0 180)
+				(length 3.81)
+				(name "Pin_6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -2.54 180)
+				(length 3.81)
+				(name "Pin_8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -5.08 180)
+				(length 3.81)
+				(name "Pin_10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)
+	(text "V1  /  DEBUG"
+		(exclude_from_sim no)
+		(at 13 17 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "60c5a38e-6151-5ab0-8a85-74f02913ce3a")
+	)
+	(text "Functional groups / electrical pin numbers / named-net connections"
+		(exclude_from_sim no)
+		(at 13 24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "58817150-0c80-5ec7-a46f-9b1dc4d56a82")
+	)
+(polyline (pts (xy 13 34) (xy 204 34) (xy 204 108.5) (xy 13 108.5) (xy 13 34)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "6cf43c00-bfbd-5db3-8d79-48a2803ae6e2"))
+	(text "01  Cortex debug access"
+		(exclude_from_sim no)
+		(at 18 41 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "918f780a-379b-5337-99fd-092ad437af9e")
+	)
+(symbol (lib_id "Connector_Generic:Conn_02x05_Odd_Even") (at 43.18 71.12 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4637dcd9-1b36-5ade-b6b4-0dde1a27f22f") (property "Reference" "JTAG1" (at 43.18 52.77 0) (effects (font (size 1.27 1.27))  )) (property "Value" "FTSH-105-XX-X-DV" (at 43.18 56.27 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "LoRa_Boat_Controller:SAMTEC_FTSH-105-XX-X-DV" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_Device" "FTSH-105-XX-X-DV_SAMTEC_FTSH-105-XX-X-DV_FTSH-105-XX-X-DV" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "2x5 1.27 mm SMT header, keyed (ARM Cortex 10-pin debug)" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "FTSH-105-01-L-DV-K" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Samtec" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_RefDes" "JTAG" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "1fa630ff-5986-530b-b45a-6dd1f5512184"))(pin "3" (uuid "f08cad45-3686-586c-8e19-91a065ada6e6"))(pin "5" (uuid "db47d9d3-3811-5b58-83ab-b0fb4e9d8aee"))(pin "7" (uuid "5eb69081-5294-551e-b261-90202286427d"))(pin "9" (uuid "170e8003-a5ce-53e1-994a-ca750ced5e17"))(pin "2" (uuid "a26fbe7a-57f9-51ee-ab34-1cd403add10f"))(pin "4" (uuid "c890f551-4604-584f-bf16-32c8254002dc"))(pin "6" (uuid "9677e094-ebbf-508b-b952-43a5d1db7d15"))(pin "8" (uuid "28413b69-3e91-510b-bbc5-53ca75ea787a"))(pin "10" (uuid "5461f472-24e0-58ff-b703-898083f06573")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a/3a5b5ab2-5467-5f3c-8709-69a633ebc308" (reference "JTAG1") (unit 1)))))
+	(wire
+		(pts
+			(xy 38.1 66.04) (xy 33.02 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e90af54-b2c9-51ff-944a-398a4f0dcddf")
+	)
+(global_label "+3V3" (shape passive) (at 33.02 66.04 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "bac56610-7e5a-5d94-ac6d-38ca822d31fc"))
+	(wire
+		(pts
+			(xy 38.1 68.58) (xy 33.02 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cea3358-11ec-5601-a8ff-03ad50ab7ef1")
+	)
+(global_label "GND" (shape passive) (at 33.02 68.58 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "a1a32886-c7f5-5439-a1b8-ef2ac390dc70"))
+	(wire
+		(pts
+			(xy 38.1 71.12) (xy 33.02 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e5d16fe-640d-5a8f-9b43-a57bb73c2adb")
+	)
+(global_label "GND" (shape passive) (at 33.02 71.12 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "1f71c951-87ab-5cb9-9306-34d638eec2d6"))
+	(no_connect
+		(at 38.1 73.66)
+		(uuid "c63e9935-9816-5d39-b3bb-26e2b1845f38")
+	)
+	(wire
+		(pts
+			(xy 38.1 76.2) (xy 33.02 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d273fffe-0bdc-5351-a769-43e106320526")
+	)
+(global_label "GND" (shape passive) (at 33.02 76.2 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "d7b9b9b4-64fc-501d-b535-96f62e7c24ef"))
+	(wire
+		(pts
+			(xy 50.8 66.04) (xy 55.88 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95a84060-dd80-50e0-9f0b-96c72d5cca93")
+	)
+(hierarchical_label "SWDIO" (shape passive) (at 55.88 66.04 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "3d27e2aa-0fd4-596f-b0be-f046b13324ad"))
+	(wire
+		(pts
+			(xy 50.8 68.58) (xy 55.88 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc0b1451-c38b-5887-a4a2-b41ce6fde30b")
+	)
+(hierarchical_label "SWCLK" (shape passive) (at 55.88 68.58 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "32e74d51-23b2-5223-a09c-c5952e65b2d6"))
+	(wire
+		(pts
+			(xy 50.8 71.12) (xy 55.88 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a032eb8a-613b-5140-91fe-d266f2fd0321")
+	)
+(hierarchical_label "SWO_TDO" (shape passive) (at 55.88 71.12 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "27741c55-8508-56ba-8246-695f167ba3ab"))
+	(wire
+		(pts
+			(xy 50.8 73.66) (xy 55.88 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "330c2af1-67c2-5e6c-9406-02c8dcaa1e83")
+	)
+(hierarchical_label "TDI" (shape passive) (at 55.88 73.66 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "47d88f78-ee0b-5a74-850d-931dc5be1b5b"))
+	(wire
+		(pts
+			(xy 50.8 76.2) (xy 55.88 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f67cea4a-8e17-5bec-86c2-3a014e51f44a")
+	)
+(hierarchical_label "NRST" (shape passive) (at 55.88 76.2 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "acb30fc7-2fc6-5a80-914e-244761ca582a"))
+	(text "3.3 V target reference, SWDIO, SWCLK, NRST and ground. Probe VTref is a sense input; avoid competing power supplies. See docs/build/FLASHING_V1.md."
+		(exclude_from_sim no)
+		(at 20 98.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "119b708a-e8d2-5f98-ae45-5d2643555aae")
+	)
+	(text "Read named nets within each group; matching labels are electrically connected. Cross-sheet signals use hierarchical ports."
+		(exclude_from_sim no)
+		(at 13 261 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0916af05-d052-5739-bd51-0591998007ed")
+	)
+	(text "V1 preserves original defects. V2 is a review draft. Bench values and firmware behavior require validation."
+		(exclude_from_sim no)
+		(at 13 266 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "cba6b5d0-2226-5926-97fe-1209fdc5378a")
+	)
+(embedded_fonts no)
+)

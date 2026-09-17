@@ -1,0 +1,491 @@
+(kicad_sch
+(version 20250114)
+(generator "gen_sch.py")
+(generator_version "9.0")
+(uuid "0d3fcede-4fd7-5adb-998c-344b6364880c")
+(paper "A3")
+(title_block (title "LoRa Autonomous Boat Controller V1 - PWM_Outputs") (date "2026-09-17") (rev "V1 / v5") (company "LoRa Controller Project") (comment 1 "Annotated functional groups; connectivity preserved") (comment 2 "Build and review: docs/build/README.md"))
+(lib_symbols
+	(symbol "Connector:TestPoint"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.762)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "TP"
+			(at 0 6.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 5.08 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 5.08 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "test point tp"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Pin* Test*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TestPoint_0_1"
+			(circle
+				(center 0 3.302)
+				(radius 0.762)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TestPoint_1_1"
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Connector_Generic:Conn_01x03"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x03_1_1"
+			(rectangle
+				(start -1.27 3.81)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)
+	(text "V1  /  PWM OUTPUTS"
+		(exclude_from_sim no)
+		(at 13 17 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "ffece4d4-8ba7-5ed6-be75-adbb9503d304")
+	)
+	(text "Functional groups / electrical pin numbers / named-net connections"
+		(exclude_from_sim no)
+		(at 13 24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "af13eb6a-d757-5c25-84cd-9e6899ac2aca")
+	)
+(polyline (pts (xy 13 34) (xy 204 34) (xy 204 103.42) (xy 13 103.42) (xy 13 34)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "f222fb63-dfd4-5c02-9d30-ba40c3be0f41"))
+	(text "01  ESC-labelled connector / legacy rudder"
+		(exclude_from_sim no)
+		(at 18 41 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3746f6d-400f-5b3f-b591-de509e28e84a")
+	)
+(symbol (lib_id "Connector_Generic:Conn_01x03") (at 43.18 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4a6ba665-9413-5377-90a6-4014a5f9ecf1") (property "Reference" "SPEEDCONTROLLER1" (at 43.18 52.77 0) (effects (font (size 1.27 1.27))  )) (property "Value" "PPTC031LFBN-RC" (at 43.18 56.27 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "LoRa_Boat_Controller:CONN_PPTC031_SUL" (at 43.18 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_Device" "PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031" (at 43.18 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "1x3 2.54 mm female header, through-hole" (at 43.18 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 43.18 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "PPTC031LFBN-RC" (at 43.18 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Sullins Connector Solutions" (at 43.18 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_RefDes" "SPEEDCONTROLLER" (at 43.18 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "a554a26b-5868-5834-a5af-7189e81eca84"))(pin "2" (uuid "b3447f51-2ae9-51a2-b6ad-97f4a40c635c"))(pin "3" (uuid "3419d25e-a0d0-551c-a0c7-99810c052d59")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a/31210085-9759-5277-8f1d-4204cfd4b08e" (reference "SPEEDCONTROLLER1") (unit 1)))))
+	(wire
+		(pts
+			(xy 38.1 66.04) (xy 33.02 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26de4cbc-78ee-533e-b1fc-a83b6003c2d5")
+	)
+(global_label "+3V3" (shape passive) (at 33.02 66.04 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "38b7844a-231a-5ccf-8c94-3abcbe76c47d"))
+	(wire
+		(pts
+			(xy 38.1 68.58) (xy 33.02 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f807ccf-18f4-594e-a7ed-f625ace28d67")
+	)
+(hierarchical_label "PWM_PA8_ESCHDR" (shape passive) (at 33.02 68.58 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "c6f2d71f-6fbb-523f-a1cd-87791ef3416f"))
+	(wire
+		(pts
+			(xy 38.1 71.12) (xy 33.02 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "955b35f7-5073-54b7-8782-2d61b93091f2")
+	)
+(global_label "GND" (shape passive) (at 33.02 71.12 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "70a90377-f0d3-5b76-8fb6-82ff45bee976"))
+(symbol (lib_id "Connector:TestPoint") (at 88.9 66.04 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6783f8fc-20b7-5bd6-86af-d601321dbc82") (property "Reference" "TP1" (at 91.9 64.54 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "TP" (at 91.9 68.04 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "LoRa_Boat_Controller:amv_test_point" (at 88.9 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_Device" "TEST POINT_AMV_TEST_POINT_TEST POINT" (at 88.9 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Bare plated test-point pad 3.4 mm / 1.4 mm hole (no part; Keystone 5020 would need a footprint change)" (at 88.9 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 88.9 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "" (at 88.9 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "" (at 88.9 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_RefDes" "TP1" (at 88.9 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "c7f2010a-f763-5dec-b23d-e9735bd493a9")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a/31210085-9759-5277-8f1d-4204cfd4b08e" (reference "TP1") (unit 1)))))
+	(wire
+		(pts
+			(xy 88.9 66.04) (xy 88.9 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "675a7ee5-7d19-5d8d-aa4f-156e4811091f")
+	)
+	(wire
+		(pts
+			(xy 88.9 71.12) (xy 91.44 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c003141-fa3e-5ed2-935e-48c15fd124e8")
+	)
+(hierarchical_label "PWM_PA8_ESCHDR" (shape passive) (at 91.44 71.12 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "5f53beb9-8c22-5f12-818d-10cf75db7f32"))
+	(text "PA8 / TIM1. Confirm physical harness before changing firmware. Pin 1 is +3V3, not a BEC input."
+		(exclude_from_sim no)
+		(at 20 93.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fdff5c6a-8135-5550-9755-f1222fb3ed4f")
+	)
+(polyline (pts (xy 216 34) (xy 407 34) (xy 407 103.42) (xy 216 103.42) (xy 216 34)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "361cc297-38c7-519d-913f-1668da030888"))
+	(text "02  Servo-labelled connector / legacy thrust"
+		(exclude_from_sim no)
+		(at 221 41 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "741c7c1d-4f76-59ff-b12f-b5f4aec2f301")
+	)
+(symbol (lib_id "Connector_Generic:Conn_01x03") (at 248.92 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "81d90489-aa42-589f-b433-122d0b297b78") (property "Reference" "STEERINGSERVO1" (at 248.92 52.77 0) (effects (font (size 1.27 1.27))  )) (property "Value" "PPTC031LFBN-RC" (at 248.92 56.27 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "LoRa_Boat_Controller:CONN_PPTC031_SUL" (at 248.92 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_Device" "PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031" (at 248.92 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "1x3 2.54 mm female header, through-hole" (at 248.92 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 248.92 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "PPTC031LFBN-RC" (at 248.92 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Sullins Connector Solutions" (at 248.92 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_RefDes" "STEERINGSERVO" (at 248.92 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "4c5815b9-53dc-5e9c-8a57-f23bc60d2263"))(pin "2" (uuid "8b5ad463-1b33-5935-a9cd-e091356d52d2"))(pin "3" (uuid "c31c3063-f33a-533c-9805-f46e8c0b9143")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a/31210085-9759-5277-8f1d-4204cfd4b08e" (reference "STEERINGSERVO1") (unit 1)))))
+	(wire
+		(pts
+			(xy 243.84 66.04) (xy 238.76 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88f847fc-90ef-53f4-a0b1-25f5af5c7646")
+	)
+(global_label "+3V3" (shape passive) (at 238.76 66.04 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "b32ef0b9-f156-586e-b7bd-d916499e63fe"))
+	(wire
+		(pts
+			(xy 243.84 68.58) (xy 238.76 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e48a2352-ea3a-5145-be68-3792a52927bd")
+	)
+(hierarchical_label "PWM_PC6_SERVOHDR" (shape passive) (at 238.76 68.58 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "e790e1bf-ece9-5796-8c9d-c30cf66e0cc0"))
+	(wire
+		(pts
+			(xy 243.84 71.12) (xy 238.76 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a52fd04b-eac0-5e63-8031-423ad467e555")
+	)
+(global_label "GND" (shape passive) (at 238.76 71.12 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "dc9d6d48-bfb5-5f7f-8b40-978fccce5c7c"))
+(symbol (lib_id "Connector:TestPoint") (at 294.64 66.04 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b75d899b-2795-5c5b-be00-7258ec9a8ead") (property "Reference" "TP3" (at 297.64 64.54 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "TP" (at 297.64 68.04 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "LoRa_Boat_Controller:amv_test_point" (at 294.64 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_Device" "TEST POINT_AMV_TEST_POINT_TEST POINT" (at 294.64 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Bare plated test-point pad 3.4 mm / 1.4 mm hole (no part; Keystone 5020 would need a footprint change)" (at 294.64 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 294.64 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "" (at 294.64 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "" (at 294.64 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_RefDes" "TP3" (at 294.64 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "f31323fb-7fb9-571a-bdf6-9c77363cb7b3")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a/31210085-9759-5277-8f1d-4204cfd4b08e" (reference "TP3") (unit 1)))))
+	(wire
+		(pts
+			(xy 294.64 66.04) (xy 294.64 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db037783-0dad-5373-9820-463483a5aa5f")
+	)
+	(wire
+		(pts
+			(xy 294.64 71.12) (xy 297.18 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf7e0d72-7671-5893-bc8c-21ab29192adb")
+	)
+(hierarchical_label "PWM_PC6_SERVOHDR" (shape passive) (at 297.18 71.12 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "5483c232-c858-5715-9444-5afad5ec2ffb"))
+	(text "PC6 / TIM3. Legacy thrust output starts at 1000 us in C; CubeMX configuration differs. Disconnect propulsion during first tests."
+		(exclude_from_sim no)
+		(at 223 93.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "20427343-4531-5f03-80a7-6479d8517331")
+	)
+	(text "Read named nets within each group; matching labels are electrically connected. Cross-sheet signals use hierarchical ports."
+		(exclude_from_sim no)
+		(at 13 261 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0771a98-b2c2-52c4-9f56-6ff3e590893f")
+	)
+	(text "V1 preserves original defects. V2 is a review draft. Bench values and firmware behavior require validation."
+		(exclude_from_sim no)
+		(at 13 266 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8dcc5c2-9203-5dc7-94d7-ee9f199ec417")
+	)
+(embedded_fonts no)
+)

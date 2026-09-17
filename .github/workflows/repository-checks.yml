@@ -27,6 +27,10 @@ jobs:
         run: python -m unittest discover -s tools/quality -p 'test_*.py' -v
       - name: Verify portable evidence and portfolio links
         run: python tools/quality/check_publication.py
+      - name: Verify V2 diagnostic pin contract
+        run: |
+          python firmware_v2/tools/build.py check
+          python -m unittest discover -s firmware_v2/tests -v
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

@@ -1,8 +1,8 @@
 # V2: firmware readiness and staged bring-up
 
-**There is no qualified V2 firmware image.** At the 2026-09-17 inspection, `firmware_v2/` does not exist. [V2_FIRMWARE_PLAN.md](../../firmware/V2_FIRMWARE_PLAN.md) is a design plan, not an executable implementation. The reconstructed V1 ELF builds, but is **not approved for V2**. No V2 flash, boot, USB, radio, watchdog or actuator test has been run.
+**There is no qualified V2 firmware image.** A separate [Stage A diagnostic](../../firmware_v2/README.md) now builds in `firmware_v2/`, with board identity, heartbeat and inactive actuator signals. It has not been run on hardware. [V2_FIRMWARE_PLAN.md](../../firmware/V2_FIRMWARE_PLAN.md) is a design plan, not an executable implementation. The reconstructed V1 ELF builds, but is **not approved for V2**. No V2 flash, boot, USB, radio, watchdog or actuator test has been run.
 
-This page defines the connection and acceptance procedure to use once a reviewed V2 bring-up image exists. It intentionally supplies no V1-image command disguised as a V2 programming command.
+This page defines the connection and acceptance procedure for the existing Stage A diagnostic and later reviewed V2 images. Hardware power prerequisites and image review still apply before any programming or execution. Use each candidate's own manifest and image; the V1 image is not a substitute.
 
 ## Current pin contract to reconcile before code generation
 
@@ -48,7 +48,7 @@ USB-C is not currently a tested flashing path. A physical USB connector does not
 
 | Stage | Deliverable | Required evidence before the next stage |
 |---|---|---|
-| A: board identity | Separate V2 project, `.ioc`, linker/startup, pin-table check; actuator pins remain inactive | Reproducible build, release manifest identifies V2 board revision, SWD connect and reset; measured rails |
+| A: board identity | Implemented CMSIS diagnostic with preserved ST startup/linker inputs and a checked V2 pin contract; actuator pins remain inactive. No V2 `.ioc` exists; CubeMX integration is future work. | Build evidence exists; image/revision review, SWD connect/reset and measured rails remain required before hardware acceptance |
 | B: safe outputs | PWM startup, disarmed state, timeout supervisor, watchdog and reset handling | Instrument captures at MCU and connector; safe first pulse, boot/brownout/reset, timeout and re-arm tests |
 | C: radio/control | Radio driver + common handset protocol and parser tests | Module/version/settings readback; malformed/old/wrong-sender packets rejected; measured command age and link-loss behavior |
 | D: navigation/power | GNSS validity/age, PPS, IMU, ADC calibration | Sensor disconnect/stale-data behavior; no traffic mixed into GNSS; voltage/current sweep |
@@ -65,7 +65,7 @@ The first image should prove pins, clocks and diagnostics while holding actuator
 5. Release reset deliberately, with loads physically disconnected and probes already attached. Measure startup waveform and supply current. Archive programmer, readback and scope evidence with the manifest.
 6. If verification or first execution fails, leave loads disconnected. Check supply/reset/debug wiring and candidate identity, then reconnect under reset. Restore only the verified image for that board with verification/readback; do not change protection or erase-all as a connectivity fix.
 
-The CLI equivalents are the connect/backup/write/verify/readback sequence in V1, using the V2 image and manifest addresses. They become executable release instructions only when the named V2 image exists; no fabricated filename is supplied here.
+The CLI equivalents are the connect/backup/write/verify/readback sequence in V1, substituting the V2 candidate and its manifest addresses. The [Stage A guide](../../firmware_v2/README.md) names its existing build outputs. A successful Stage A build does not release the present assembly for power or execution; complete the electrical corrections, candidate review and bench prerequisites first.
 
 ## Acceptance record and release gate
 
@@ -75,4 +75,4 @@ Handheld communication needs its own data-delivery, pairing/authentication, cong
 
 Every release record must state board revision, assembly/rework, firmware revision and SHA-256, compiler and build recipe, protocol/profile version, calibration, programmer/probe, backup/rollback identity and passed bench cases. Until that evidence exists, label every V2 image **development / loads disconnected**.
 
-Smallest next step: freeze a reviewed V2 pin contract against the final hardware source and implement stage A in a new `firmware_v2/` project. Existing V1 sources stay preserved.
+Smallest next step: resolve the electrical power/IMU/interface holds, review the existing Stage A diagnostic and record its bench acceptance before implementing Stage B. Existing V1 sources stay preserved.

@@ -1,0 +1,39 @@
+{
+  "source_sha256": "1b959ee8c2499d2a65359b695a2f70efd5a588f05ffcaf11f32cf9de18d0cce9",
+  "candidate_sha256": "49a8aa88cf61e8b6272ce13a0d5a5a6a3c6b81aeba057ebcd4ca15a6262c37b2",
+  "removed_track_uuid": "c9389eec-ff39-4a32-a348-e01f86895af3",
+  "replacement_nrst_path_mm": [
+    [
+      87.3061,
+      65.1717
+    ],
+    [
+      88.6661,
+      65.1717
+    ],
+    [
+      92.35,
+      68.8556
+    ],
+    [
+      92.35,
+      69.819
+    ],
+    [
+      92.1517,
+      70.0173
+    ]
+  ],
+  "replacement_width_mm": 0.25,
+  "moved_gnd_via_uuid": "d5ca61cd-93b8-468a-be3a-6a8f5aa0d429",
+  "gnd_via_old_mm": [
+    92.0137,
+    68.527
+  ],
+  "gnd_via_new_mm": [
+    91.65,
+    69.0
+  ],
+  "native_unconnected_count": 0,
+  "fabrication_approved": false
+}

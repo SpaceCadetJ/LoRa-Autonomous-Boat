@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T20:13:32.904753+00:00",
+  "generated_at": "2026-09-17T22:13:54.426124+00:00",
   "selected_boards": 1,
   "purpose": "Ordering/assembly review package; no purchase or fabrication release",
   "sources": [
@@ -10,8 +10,8 @@
     },
     {
       "path": "hardware/manufacturing/procurement_policy.json",
-      "sha256": "b1d7550db6bb8945e4ce8555bbefe2291c35d89a983810ad80633869493eb648",
-      "bytes": 2370
+      "sha256": "945279faac00960ec720feedcd13a95bf6eb632a61ed33019065454de66a616d",
+      "bytes": 7427
     },
     {
       "path": "hardware/kicad_v2/tools/v2_design.py",
@@ -35,8 +35,8 @@
     },
     {
       "path": "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb",
-      "sha256": "6595d3b58e4a54b1d3ecbf93a69c93202503dbabcf9d279a6a578df1601d0d26",
-      "bytes": 1077236
+      "sha256": "49a8aa88cf61e8b6272ce13a0d5a5a6a3c6b81aeba057ebcd4ca15a6262c37b2",
+      "bytes": 1077020
     }
   ],
   "checks": {
@@ -84,14 +84,14 @@
       "bom_total_row_excluded": true,
       "source_total": 118,
       "counts_by_reference": {
-        "CANDIDATE": 90,
-        "HOLD": 17,
+        "CANDIDATE": 74,
+        "HOLD": 33,
         "BOARD_FEATURE": 11
       },
-      "candidate_order_lines": 49,
+      "candidate_order_lines": 40,
       "selected_boards": 1,
-      "candidate_quantity_selected": 90,
-      "candidate_quantity_fleet5": 450,
+      "candidate_quantity_selected": 74,
+      "candidate_quantity_fleet5": 370,
       "board_dimensions_mm": [
         80.0,
         46.0
@@ -175,28 +175,28 @@
     },
     {
       "path": "hardware/manufacturing/v2/assembly_top.svg",
-      "sha256": "bbf67c9404001d17d8e38160cf599d8c39725f0bafbecf2fbff46dff86df5123",
-      "bytes": 75378
+      "sha256": "19e379a34533e6558f0e343cb19445f5425187e99a40707f289b91232abd20f6",
+      "bytes": 75298
     },
     {
       "path": "hardware/manufacturing/v2/bom_review.csv",
-      "sha256": "fcbed15d301c98cafdcc599bfce911b923a561941ad0b90c8e05f22d2c71b3f7",
-      "bytes": 31621
+      "sha256": "e0bc75a2c5a5039d498ba9025a9bbf806eaf399a596b66cdbf92bd45f8f88d11",
+      "bytes": 34112
     },
     {
       "path": "hardware/manufacturing/v2/distributor_candidates_1board.csv",
-      "sha256": "c95ed0762bc709fd254710b5b3394f6b496c6df40783ab96f730dc298c6ab176",
-      "bytes": 1685
+      "sha256": "8670dd29ace27d6fe0a4ff09024a82ed187c2a4d8a4e73598070f52b27632e91",
+      "bytes": 1365
     },
     {
       "path": "hardware/manufacturing/v2/distributor_candidates_fleet5.csv",
-      "sha256": "6b2ec248857a3660f8b95094a2dcd54136537eca82f91980bc91a5fa3959f42f",
-      "bytes": 1699
+      "sha256": "7510d011251ce760cf3c5aba80ee69801702f5b79549d63cce03c360c0edc31c",
+      "bytes": 1377
     },
     {
       "path": "hardware/manufacturing/v2/distributor_candidates_selected.csv",
-      "sha256": "c95ed0762bc709fd254710b5b3394f6b496c6df40783ab96f730dc298c6ab176",
-      "bytes": 1685
+      "sha256": "8670dd29ace27d6fe0a4ff09024a82ed187c2a4d8a4e73598070f52b27632e91",
+      "bytes": 1365
     },
     {
       "path": "hardware/manufacturing/v2/external_parts_review.csv",
@@ -205,8 +205,8 @@
     },
     {
       "path": "hardware/manufacturing/v2/holds.csv",
-      "sha256": "e7802bda266d414290cef8917b4f23ecb9046c52b4a133e6902f8fe6674857ef",
-      "bytes": 5058
+      "sha256": "a272c392d6b04d5e23297629eb8027bed70423ea9a403e215e98ea95dd886e53",
+      "bytes": 12111
     },
     {
       "path": "hardware/manufacturing/v2/orientation_review.csv",
@@ -225,7 +225,7 @@
     },
     {
       "path": "hardware/manufacturing/v2/summary.json",
-      "sha256": "5470d09c6cbe9c07197a5e97c974227d5401eec82b1e738193bad8880b6f2e43",
+      "sha256": "091c4a374191475d3125dce567483a7f45c7ee51d0d16a6d2dea3201563291bc",
       "bytes": 767
     }
   ]

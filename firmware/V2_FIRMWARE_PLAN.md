@@ -1,6 +1,6 @@
 # V2 firmware plan (boat node)
 
-Written 2026-09-16. `firmware/` (V1, `main.c`) is not modified beyond comments. V2 firmware lives in `firmware_v2/` as a new STM32CubeIDE project when Phase C hardware is frozen; until then this plan is the specification. Requirement IDs refer to `docs/V2_REQUIREMENTS.md`; defect IDs to `docs/research/FIRMWARE_REVIEW_NOTES.md` §10 (S/F/R/N) and `docs/V1_DESIGN_REVIEW.md`.
+Written 2026-09-16. `firmware/` (V1, `main.c`) is not modified beyond comments. A first Stage A diagnostic now exists in [firmware_v2/README.md](../firmware_v2/README.md), built without CubeMX. It implements board identity and inactive actuator outputs only. The operational architecture below remains a proposal and is not the diagnostic implementation; protocol/framing, voltage-domain and watchdog requirements need closure before control firmware. Requirement IDs refer to `docs/V2_REQUIREMENTS.md`; defect IDs to `docs/research/FIRMWARE_REVIEW_NOTES.md` §10 (S/F/R/N) and `docs/V1_DESIGN_REVIEW.md`.
 
 ## 1. Pin map (STM32F446RET6, LQFP-64) — V2 default
 
@@ -15,9 +15,9 @@ Derived from the V2 schematic defaults (decisions 1-8 in `docs/V2_REQUIREMENTS.m
 | GNSS PPS | PB0 | TIM3_CH3 input capture (or EXTI0) | in | replaces V1's GPIO output on this header pin |
 | Console | PA11/PA12 USB OTG_FS D−/D+ (opt: USART1 PA9/PA10 header) | USB CDC | — | needs HSE (REQ-MCU-03) |
 | IMU | PB6 SCL / PB7 SDA | I2C1 400 kHz; INT on PB5 | 3.3 V | ICM-20948 default |
-| Battery V | PA2 | ADC1_IN2 | analog | 30 k/10 k → 1 %; scale for ≤ 26 V (REQ-PWR-05) |
+| Battery V | PA2 | ADC1_IN2 | analog | Current CAD: R31 47 kΩ / R32 6.8 kΩ; ADC tolerance/headroom review remains open (REQ-PWR-05) |
 | Board current | PA4 | ADC1_IN4 | analog | shunt amplifier (REQ-PWR-06) |
-| LEDs | PC0 PWR (hardware), PC1 LINK, PC2 FIX, PC3 FAULT | GPIO out | — | |
+| LEDs | PWR hardware-wired (no PC0 GPIO), PC1 LINK, PC2 FIX, PC3 FAULT | GPIO out | — | |
 | User button | PC13 | EXTI13, pull-up | in | |
 | HSE | PH0/PH1 | 8 MHz crystal | — | SYSCLK 84-180 MHz via PLL; `RCC_CSS` on |
 | LSE | PC14/PC15 | 32.768 kHz (opt) | — | RTC timestamps |

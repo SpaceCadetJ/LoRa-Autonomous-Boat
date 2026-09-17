@@ -1,8 +1,15 @@
 {
-  "revision": 1,
+  "revision": 2,
   "purpose": "Conservative ordering review of the existing V1 and V2 source BOMs. Candidate means no source-level hold was found; it is not purchasing approval or manufacturer verification.",
   "v1": {
-    "bare_features": ["GND1", "VIN1", "TP1", "TP3", "TP4", "TP5"],
+    "bare_features": [
+      "GND1",
+      "VIN1",
+      "TP1",
+      "TP3",
+      "TP4",
+      "TP5"
+    ],
     "holds": {
       "C23": "Value conflict: BOM value is 47 pF but listed MPN encodes 22 pF; select and verify one before ordering.",
       "L1": "Source BOM flags the original inductor obsolete; any replacement needs electrical and footprint review.",
@@ -13,22 +20,70 @@
     "population_options": {}
   },
   "v2": {
-    "bare_features": ["TP1", "TP2", "TP3", "TP4", "TP5", "TP6", "TP7", "H1", "H2", "H3", "H4"],
+    "bare_features": [
+      "TP1",
+      "TP2",
+      "TP3",
+      "TP4",
+      "TP5",
+      "TP6",
+      "TP7",
+      "H1",
+      "H2",
+      "H3",
+      "H4"
+    ],
     "holds": {
       "J5": "The selected Sullins MPN uses a generic PinHeader footprint in the source; verify exact mating/body dimensions and seating height.",
       "J7": "The keyed Samtec ordering variant uses a generic SMT header footprint; verify key, pin-1 orientation and mechanical envelope.",
-      "D1": "Source gives SMAJ33A without an ordering/packaging suffix. Confirm the exact Littelfuse distributor ordering code and voltage coordination.",
-      "D4": "Source gives SS34 without an ordering/packaging suffix. Confirm the exact Vishay distributor ordering code.",
-      "D9": "Source gives SS34 without an ordering/packaging suffix. Confirm the exact Vishay distributor ordering code."
+      "D1": "Source gives SMAJ33A without an ordering/packaging suffix. Confirm the exact Littelfuse distributor ordering code and voltage coordination. E-03: Input TVS cannot protect the present supply and current-sense devices. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "D4": "Source gives SS34 without an ordering/packaging suffix. Confirm the exact Vishay distributor ordering code. E-02: PWM buffer supply follows an unqualified actuator rail. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "D9": "Source gives SS34 without an ordering/packaging suffix. Confirm the exact Vishay distributor ordering code. E-02: PWM buffer supply follows an unqualified actuator rail. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "U6": "E-01: IMU interface exceeds voltage limits. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "R23": "E-01: IMU interface exceeds voltage limits. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "R24": "E-01: IMU interface exceeds voltage limits. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "C34": "E-01: IMU interface exceeds voltage limits. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "U4": "E-02: PWM buffer supply follows an unqualified actuator rail. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "U5": "E-02: PWM buffer supply follows an unqualified actuator rail. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "C13": "E-02: PWM buffer supply follows an unqualified actuator rail. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "C14": "E-02: PWM buffer supply follows an unqualified actuator rail. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "U8": "E-03: Input TVS cannot protect the present supply and current-sense devices. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md. E-05: Current-sense output is over its specified capacitive load. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "U3": "E-03: Input TVS cannot protect the present supply and current-sense devices. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md. E-04: Buck enable pin lacks a bounded voltage. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md. E-06: 5 V buck output-current claim lacks ripple-current margin. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "U2": "E-03: Input TVS cannot protect the present supply and current-sense devices. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "Q1": "E-03: Input TVS cannot protect the present supply and current-sense devices. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "D3": "E-03: Input TVS cannot protect the present supply and current-sense devices. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "R31": "E-03: Input TVS cannot protect the present supply and current-sense devices. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "R32": "E-03: Input TVS cannot protect the present supply and current-sense devices. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "R6": "E-04: Buck enable pin lacks a bounded voltage. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "C37": "E-05: Current-sense output is over its specified capacitive load. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "U1": "E-05: Current-sense output is over its specified capacitive load. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "L2": "E-06: 5 V buck output-current claim lacks ripple-current margin. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "C8": "E-06: 5 V buck output-current claim lacks ripple-current margin. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "C9": "E-06: 5 V buck output-current claim lacks ripple-current margin. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md."
     },
     "population_options": {
       "onboard_5v": {
-        "refs": ["U3", "R6", "C7", "L2", "R8", "R9", "C8", "C9", "C10", "D4"],
+        "refs": [
+          "U3",
+          "R6",
+          "C7",
+          "L2",
+          "R8",
+          "R9",
+          "C8",
+          "C9",
+          "C10",
+          "D4"
+        ],
         "decision": "Select the on-board 5 V converter population only after the BEC/VSERVO power plan is confirmed. Source BOM currently counts all parts.",
         "source": "hardware/kicad_v2/tools/v2_design.py"
       },
       "lse_clock": {
-        "refs": ["Y2", "C27", "C28"],
+        "refs": [
+          "Y2",
+          "C27",
+          "C28"
+        ],
         "decision": "Select the optional LSE crystal and both load capacitors together. Source BOM currently counts all parts.",
         "source": "hardware/kicad_v2/tools/v2_design.py"
       }

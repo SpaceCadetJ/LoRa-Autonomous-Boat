@@ -1,10 +1,10 @@
 # LoRa controller: from legacy board to reviewable platform
 
-**Embedded systems, PCB reconstruction and engineering documentation.** This project turns an existing university boat-controller design into an inspectable KiCad workspace, with an evolving multifunction vehicle node and a future handheld. The current milestone is a documented engineering review edition, not a production release.
+**Embedded systems, PCB reconstruction and engineering documentation.** This project turns an existing university boat-controller design into an inspectable KiCad workspace, with an evolving multifunction vehicle node and a future handheld. The current milestone is a documented engineering review edition with application guides and a separate V2 identity diagnostic. It is not a production release.
 
 > A LoRa vehicle-controller project combining STM32 firmware, PCB reconstruction and an interactive engineering workspace. The repository preserves the original boat hardware, presents fifteen annotated schematic pages, traces connectors and parts to source evidence, and provides a reproducible V1 firmware build. A second-generation controller and voice/text/location handheld are under development, with verification results and unresolved design decisions recorded alongside the design.
 
-[Explore the workspace](../../pm/index.html) · [Build and assembly guide](../build/README.md) · [Structured portfolio data](portfolio.json) · [Latest engineering handoff](../../reviews/codex/publication/README.md)
+[Explore the workspace](../../pm/index.html) · [Build and assembly guide](../build/README.md) · [Structured portfolio data](portfolio.json) · [Latest engineering handoff](../../reviews/codex/design_completion/HANDOFF.md)
 
 ## Context and contribution boundaries
 
@@ -41,7 +41,7 @@ Python tools generate and review CAD, assemble purchasing evidence and compile p
 | Navigable engineering workspace | [Viewer QA](../../pm/QA.md): searchable BOM, selected datasheets, connector evidence, drawings, build guides and review results; desktop/mobile checks and 203 local HTTP links passed at the recorded checkpoint |
 | Regression checks for the editing workflow | [Publication review](../../reviews/codex/publication/QUALITY_PORTABILITY.md): 18 acceptance tests passed; isolated schematic generation preserves PCB/project/BOM |
 
-The current native check records V1 ERC 0 errors/0 warnings, V2 ERC 0 errors/1 existing warning, and three V2 unconnected zone-to-zone entries. PCB warnings and schematic-parity findings remain. The strict combined review gate fails; fabrication is not approved. No new physical assembly, flashing, bench qualification or range testing was performed during this review edition.
+The [current native check](../../reviews/codex/design_completion/native-review/REVIEW.md) records V1 ERC 0 errors/0 warnings and V2 ERC 0 errors/1 existing warning. The integrated ground repair reduces V2 unconnected items from three to zero with zero ordinary DRC errors; all 118 footprints and pad assignments remain unchanged. PCB warnings and schematic-parity findings remain. The strict combined review also flags the intentional PCB correction against the older preservation baseline. Six component-limit blockers still prevent fabrication approval. No physical assembly, flashing, bench qualification or range testing was performed during this edition.
 
 ## Portfolio visuals
 
@@ -55,10 +55,12 @@ Use the labels below when copying assets into a portfolio. PCB renders show CAD 
 | [V1 schematic PDF](../img/v1_schematic.pdf), [V2 schematic PDF](../img/v2_schematic.pdf) | Annotated circuit drawings with subsystem notes and explicit review status |
 | [V1 assembly map](../../hardware/manufacturing/v1/assembly_top.svg), [V2 assembly map](../../hardware/manufacturing/v2/assembly_top.svg) | Reference-designator maps for locating candidate parts during assembly review |
 
+A separate [V2 Stage A diagnostic](../../firmware_v2/README.md) now builds reproducibly for board identity, heartbeat and inactive actuator outputs. The [application handbook](../applications/README.md) covers five use cases with explicit release gates. The [component-limit review](../../reviews/codex/design_completion/electrical/README.md) identifies six electrical blockers that remain after copper cleanup.
+
 ## Next engineering milestones
 
-1. Identify the actual V2 isolated ground islands/pads, resolve U6's AD0 electrical warning, and reconcile schematic-to-PCB discrepancies before layout release.
-2. Freeze the V2 pin/protocol contract and implement a separate diagnostic firmware project, then integrate and measure failsafe behavior.
+1. Correct the IMU's 1.8 V supply/interface and the remaining power/signal-limit findings, then reconcile schematic-to-PCB discrepancies before layout release.
+2. Extend the implemented Stage A diagnostic after electrical acceptance: freeze the operational protocol, implement output supervision and measure failsafe behavior.
 3. Finish the V2 connector atlas, exact-part qualification and complete population/purchasing decisions; perform recorded staged board bring-up.
 4. Measure voice quality, airtime and RC coexistence, then develop the handheld and application interfaces.
 

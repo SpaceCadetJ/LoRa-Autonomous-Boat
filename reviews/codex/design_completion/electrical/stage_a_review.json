@@ -1,0 +1,46 @@
+{
+  "basis": "Local Stage A binaries and exact recorded build inputs; no hardware execution",
+  "binary_sha256": "c95f9b0352e05971dd269cfaee4962d08d611866886a2e57ab7b403347f5afcd",
+  "binary_bytes": 1328,
+  "initial_stack": "0x20020000",
+  "vector_table": "0x8000000",
+  "vectors": {
+    "Reset_Handler": {
+      "word": "0x8000461",
+      "symbol": "0x8000460",
+      "matches": true
+    },
+    "NMI_Handler": {
+      "word": "0x80002a9",
+      "symbol": "0x80002a8",
+      "matches": true
+    },
+    "HardFault_Handler": {
+      "word": "0x8000289",
+      "symbol": "0x8000288",
+      "matches": true
+    },
+    "MemManage_Handler": {
+      "word": "0x8000291",
+      "symbol": "0x8000290",
+      "matches": true
+    },
+    "BusFault_Handler": {
+      "word": "0x8000299",
+      "symbol": "0x8000298",
+      "matches": true
+    },
+    "UsageFault_Handler": {
+      "word": "0x80002a1",
+      "symbol": "0x80002a0",
+      "matches": true
+    },
+    "SysTick_Handler": {
+      "word": "0x80002b1",
+      "symbol": "0x80002b0",
+      "matches": true
+    }
+  },
+  "input_hash_mismatches": [],
+  "wrong_target_rejected": false
+}

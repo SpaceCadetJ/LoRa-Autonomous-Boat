@@ -1,0 +1,103 @@
+(footprint "CAP_KGM21_KAV-L"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "0805 MLCC, Kyocera-AVX KGM21 land pattern L (pads 36x47 mil, 55 mil pitch)")
+	(tags "allegro CAP_KGM21_KAV-L")
+	(property "Reference" "REF**"
+		(at 0 -1.6129 0)
+		(layer "F.Fab")
+		(uuid "0d3b7cc2-d936-5ce9-af3b-c0f0b7188135")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "CAP_KGM21_KAV-L"
+		(at 0 1.6129 0)
+		(layer "F.Fab")
+		(uuid "88ab717c-810c-53f1-aca8-b1fb396824b4")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18977855-4656-510e-aedc-1f9e1160e746")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b78f8360-8ff9-5d6e-ba7b-dd122e2b6791")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.1557 -0.5969)
+		(end 1.1557 0.5969)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "bf124838-c477-5774-81c1-96a67440daa0")
+	)
+	(fp_rect
+		(start -1.1557 -0.5969)
+		(end 1.1557 0.5969)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "2f0cb94d-6ded-5dbd-929d-ce9e5d7362c6")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "fde0f153-d67f-593e-89f5-bd9e110a2651")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.6985 0)
+		(size 0.9144 1.1938)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "dd698f3a-2f9a-5040-9c4e-7c9aa3dc610f")
+	)
+	(pad "2" smd rect
+		(at 0.6985 0)
+		(size 0.9144 1.1938)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "d45df1fd-0682-5f90-b171-c1a66c63d63b")
+	)
+	(embedded_fonts no)
+)

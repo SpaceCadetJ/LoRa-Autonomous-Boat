@@ -5,14 +5,14 @@
   "bom_total_row_excluded": true,
   "source_total": 118,
   "counts_by_reference": {
-    "CANDIDATE": 90,
-    "HOLD": 17,
+    "CANDIDATE": 74,
+    "HOLD": 33,
     "BOARD_FEATURE": 11
   },
-  "candidate_order_lines": 49,
+  "candidate_order_lines": 40,
   "selected_boards": 1,
-  "candidate_quantity_selected": 90,
-  "candidate_quantity_fleet5": 450,
+  "candidate_quantity_selected": 74,
+  "candidate_quantity_fleet5": 370,
   "board_dimensions_mm": [
     80.0,
     46.0

@@ -1,0 +1,39 @@
+{
+  "source": "reviews/codex/publication/native-review/inputs/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb",
+  "source_sha256": "6595d3b58e4a54b1d3ecbf93a69c93202503dbabcf9d279a6a578df1601d0d26",
+  "candidate_sha256": "1b959ee8c2499d2a65359b695a2f70efd5a588f05ffcaf11f32cf9de18d0cce9",
+  "changes": [
+    {
+      "type": "through_via",
+      "net": "GND",
+      "position_mm": [
+        93.7,
+        74.0
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "uuid": "1a9a19c4-d139-53d3-9621-1e5af97d6aac"
+    },
+    {
+      "type": "through_via",
+      "net": "GND",
+      "position_mm": [
+        108.0,
+        59.0
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3,
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "uuid": "2a629043-4c2f-5407-9882-0ffb7093e46c"
+    }
+  ],
+  "native_unconnected_count_after_refill": 1,
+  "fabrication_approved": false
+}

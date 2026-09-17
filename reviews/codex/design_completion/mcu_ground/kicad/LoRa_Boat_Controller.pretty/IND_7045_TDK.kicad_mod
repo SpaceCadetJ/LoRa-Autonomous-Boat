@@ -1,0 +1,103 @@
+(footprint "IND_7045_TDK"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "TDK SLF7045 7x7 mm shielded power inductor (pads 86.61x94.88 mil, 216.14 mil pitch)")
+	(tags "allegro IND_7045_TDK")
+	(property "Reference" "REF**"
+		(at 0 -4.965954 0)
+		(layer "F.Fab")
+		(uuid "7580f681-a658-5283-934d-daa7ce8245f2")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "IND_7045_TDK"
+		(at 0 4.965954 0)
+		(layer "F.Fab")
+		(uuid "490fa265-182c-50ee-9c10-037ea78eb23e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "11affc31-57d9-57e5-a3bb-47abbef80a6f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "16a30826-90e4-5f17-bd9d-8e893904e5e5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.099947 -3.949954)
+		(end 1.099947 3.949954)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "56235c8d-0f95-549a-8709-990cee092a61")
+	)
+	(fp_rect
+		(start -1.099947 -3.949954)
+		(end 1.099947 3.949954)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f04b8bfe-2da8-570d-8a89-c4abfefefdb9")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "1037dcb6-2c64-5fa1-8657-546591bf18b2")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -2.744978)
+		(size 2.199894 2.409952)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "e28f1205-3d69-502a-82b5-c377fc2d3216")
+	)
+	(pad "2" smd rect
+		(at 0 2.744978)
+		(size 2.199894 2.409952)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "9f41673b-5018-5add-9c8f-32d4e93f1922")
+	)
+	(embedded_fonts no)
+)

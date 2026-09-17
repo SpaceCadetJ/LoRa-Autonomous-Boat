@@ -1,0 +1,103 @@
+(footprint "CAP_NTS_55_2P8T_NIP"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Kemet KTS 5.5 mm MLCC land pattern (pads 65x213 mil, 203 mil pitch)")
+	(tags "allegro CAP_NTS_55_2P8T_NIP")
+	(property "Reference" "REF**"
+		(at 0 -3.7211 0)
+		(layer "F.Fab")
+		(uuid "ea03e8b4-7f58-5b56-aee0-06f5310f6bb3")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "CAP_NTS_55_2P8T_NIP"
+		(at 0 3.7211 0)
+		(layer "F.Fab")
+		(uuid "30c8a76d-d581-5595-9799-6f3e05e49923")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1eeae34-b862-593e-a21d-5e1e9dcc245a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4f127467-fe0a-56a7-9724-09d6f5eb289c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -3.4036 -2.7051)
+		(end 3.4036 2.7051)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "892dc20c-b8ed-5605-a934-3f98509fe15b")
+	)
+	(fp_rect
+		(start -3.4036 -2.7051)
+		(end 3.4036 2.7051)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "ab40f9a9-a073-5971-a4fc-aa364cfcc9fa")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "62e44bd5-7db1-50e7-8b4e-13d8ad4456f3")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "2" smd rect
+		(at 2.5781 0)
+		(size 1.651 5.4102)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "1119ed8e-b9b7-5629-b7f7-6947e6f551aa")
+	)
+	(pad "1" smd rect
+		(at -2.5781 0)
+		(size 1.651 5.4102)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "49dc8d60-9ff4-5830-b04b-09ed30f51de1")
+	)
+	(embedded_fonts no)
+)

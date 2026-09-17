@@ -1,0 +1,3446 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-17T17:13:34-0500",
+    "kicad_version": "9.0.7",
+    "schematic_parity": [
+        {
+            "description": "Value (C12) doesn't match symbol value (.1uf).",
+            "items": [
+                {
+                    "description": "Footprint C12",
+                    "pos": {
+                        "x": 78.3846,
+                        "y": 95.9868
+                    },
+                    "uuid": "84e58aac-7844-5f21-8dfc-ebc7363c973f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (SW_NODE) doesn't match net given by schematic (/PowerSupply/SW_NODE).",
+            "items": [
+                {
+                    "description": "Pad 1 [SW_NODE] of C12 on F.Cu",
+                    "pos": {
+                        "x": 78.3846,
+                        "y": 96.916186
+                    },
+                    "uuid": "16bc0074-dd07-5d29-b217-dcbc8d4c3905"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BST_RC) doesn't match net given by schematic (/PowerSupply/BST_RC).",
+            "items": [
+                {
+                    "description": "Pad 2 [BST_RC] of C12 on F.Cu",
+                    "pos": {
+                        "x": 78.3846,
+                        "y": 95.057414
+                    },
+                    "uuid": "c8e8a6d5-de18-547a-a615-8c5514bb7d2b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (FB_DIV) doesn't match net given by schematic (/PowerSupply/FB_DIV).",
+            "items": [
+                {
+                    "description": "Pad 2 [FB_DIV] of C14 on F.Cu",
+                    "pos": {
+                        "x": 74.473,
+                        "y": 93.0023
+                    },
+                    "uuid": "0f79c237-2396-5e54-a1c0-d4e13abcb1ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (COUT1) doesn't match symbol value (10uf).",
+            "items": [
+                {
+                    "description": "Footprint COUT1",
+                    "pos": {
+                        "x": 84.5314,
+                        "y": 88.4684
+                    },
+                    "uuid": "193703b3-97d8-5917-8f52-1a379d12f4ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (D21) doesn't match symbol value (DIODE_MFLAT).",
+            "items": [
+                {
+                    "description": "Footprint D21",
+                    "pos": {
+                        "x": 80.696,
+                        "y": 95.4788
+                    },
+                    "uuid": "e9fc158b-af82-526a-88fb-7188e73d485e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (SW_NODE) doesn't match net given by schematic (/PowerSupply/SW_NODE).",
+            "items": [
+                {
+                    "description": "Pad 2 [SW_NODE] of D21 on F.Cu",
+                    "pos": {
+                        "x": 80.696,
+                        "y": 97.5489
+                    },
+                    "uuid": "cff7652f-43d6-5bb0-908b-27dd0c1a8c0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (L1) doesn't match symbol value (4.7uh).",
+            "items": [
+                {
+                    "description": "Footprint L1",
+                    "pos": {
+                        "x": 86.2078,
+                        "y": 94.4882
+                    },
+                    "uuid": "305fbb33-e980-559d-b8e1-b57524c6e7ba"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (SW_NODE) doesn't match net given by schematic (/PowerSupply/SW_NODE).",
+            "items": [
+                {
+                    "description": "Pad 2 [SW_NODE] of L1 on F.Cu",
+                    "pos": {
+                        "x": 86.2078,
+                        "y": 97.233178
+                    },
+                    "uuid": "1e68e5b0-3bb5-5f4c-ab11-be8ccdbd09db"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (R1) doesn't match symbol value (15K).",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 76.4288,
+                        "y": 92.8118
+                    },
+                    "uuid": "0994d58c-92ef-5ea6-bb23-2bf46b69619e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (FB_DIV) doesn't match net given by schematic (/PowerSupply/FB_DIV).",
+            "items": [
+                {
+                    "description": "Pad 2 [FB_DIV] of R1 on F.Cu",
+                    "pos": {
+                        "x": 76.4288,
+                        "y": 93.466104
+                    },
+                    "uuid": "8078b2a4-f8e0-5e49-a2b4-a1ef12c5a3b7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (R2) doesn't match symbol value (4.7K).",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 72.314,
+                        "y": 92.2276
+                    },
+                    "uuid": "0b8b550a-f914-57a8-b633-b0878b9f236b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (FB_DIV) doesn't match net given by schematic (/PowerSupply/FB_DIV).",
+            "items": [
+                {
+                    "description": "Pad 1 [FB_DIV] of R2 on F.Cu",
+                    "pos": {
+                        "x": 72.314,
+                        "y": 93.1039
+                    },
+                    "uuid": "06b32efb-0c01-500f-9e76-55ca3624eadc"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BST_RC) doesn't match net given by schematic (/PowerSupply/BST_RC).",
+            "items": [
+                {
+                    "description": "Pad 1 [BST_RC] of R3 on F.Cu",
+                    "pos": {
+                        "x": 76.6574,
+                        "y": 95.555
+                    },
+                    "uuid": "acd8b4c4-4cf6-5b08-b766-fa545958a7f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BST) doesn't match net given by schematic (/PowerSupply/BST).",
+            "items": [
+                {
+                    "description": "Pad 2 [BST] of R3 on F.Cu",
+                    "pos": {
+                        "x": 76.6574,
+                        "y": 96.8758
+                    },
+                    "uuid": "31599168-29c8-5c8f-8ff3-8fd59e27d7d2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (R4) doesn't match symbol value (5.1K).",
+            "items": [
+                {
+                    "description": "Footprint R4",
+                    "pos": {
+                        "x": 67.9452,
+                        "y": 88.6462
+                    },
+                    "uuid": "89a3e903-f3bb-5c9a-93c7-bcaa4066f6a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (EN) doesn't match net given by schematic (/PowerSupply/EN).",
+            "items": [
+                {
+                    "description": "Pad 2 [EN] of R4 on F.Cu",
+                    "pos": {
+                        "x": 68.599504,
+                        "y": 88.6462
+                    },
+                    "uuid": "91b30a67-f3cd-5cc1-a9f5-c0d789fa1492"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (R5) doesn't match symbol value (30K).",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 63.1954,
+                        "y": 87.7572
+                    },
+                    "uuid": "f84445ef-a134-531c-976a-ddc04fd3a2b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (ADC_VBAT) doesn't match net given by schematic (/ADC_VBAT).",
+            "items": [
+                {
+                    "description": "Pad 2 [ADC_VBAT] of R5 on F.Cu",
+                    "pos": {
+                        "x": 63.1954,
+                        "y": 86.8555
+                    },
+                    "uuid": "09a9e031-72a0-5cfb-af6a-00294ec1ed5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (R6) doesn't match symbol value (10K).",
+            "items": [
+                {
+                    "description": "Footprint R6",
+                    "pos": {
+                        "x": 65.4306,
+                        "y": 87.8334
+                    },
+                    "uuid": "88f3faa1-d7f6-5edd-88a0-9c0fb82690d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (ADC_VBAT) doesn't match net given by schematic (/ADC_VBAT).",
+            "items": [
+                {
+                    "description": "Pad 2 [ADC_VBAT] of R6 on F.Cu",
+                    "pos": {
+                        "x": 65.4306,
+                        "y": 87.179096
+                    },
+                    "uuid": "2c61bb9a-bd9c-57b0-9559-a271b5b20bef"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (TP4) doesn't match symbol value (TEST POINT).",
+            "items": [
+                {
+                    "description": "Footprint TP4",
+                    "pos": {
+                        "x": 66.3196,
+                        "y": 74.7016
+                    },
+                    "uuid": "712e0d89-1eb3-5c7f-99ea-60832d82df01"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (TP5) doesn't match symbol value (TEST POINT).",
+            "items": [
+                {
+                    "description": "Footprint TP5",
+                    "pos": {
+                        "x": 72.4664,
+                        "y": 74.7016
+                    },
+                    "uuid": "8c9ca27b-fed9-5172-8883-cd2c51b3f2f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (U6) doesn't match symbol value (R1240N001x).",
+            "items": [
+                {
+                    "description": "Footprint U6",
+                    "pos": {
+                        "x": 73.6602,
+                        "y": 95.936
+                    },
+                    "uuid": "3fbab387-570e-5776-b03d-cd85ac528313"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (EN) doesn't match net given by schematic (/PowerSupply/EN).",
+            "items": [
+                {
+                    "description": "Pad 1 [EN] of U6 on F.Cu",
+                    "pos": {
+                        "x": 72.20605,
+                        "y": 94.98604
+                    },
+                    "uuid": "f55bbf4f-d95a-57a4-b1c8-6dc9b6da2504"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SW_NODE) doesn't match net given by schematic (/PowerSupply/SW_NODE).",
+            "items": [
+                {
+                    "description": "Pad 3 [SW_NODE] of U6 on F.Cu",
+                    "pos": {
+                        "x": 72.20605,
+                        "y": 96.88596
+                    },
+                    "uuid": "2fcfe69f-7137-51cf-8878-793587abfd08"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BST) doesn't match net given by schematic (/PowerSupply/BST).",
+            "items": [
+                {
+                    "description": "Pad 4 [BST] of U6 on F.Cu",
+                    "pos": {
+                        "x": 75.11435,
+                        "y": 96.88596
+                    },
+                    "uuid": "1f1963d4-9de2-5653-a7ea-b478a28d5b99"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (FB_DIV) doesn't match net given by schematic (/PowerSupply/FB_DIV).",
+            "items": [
+                {
+                    "description": "Pad 6 [FB_DIV] of U6 on F.Cu",
+                    "pos": {
+                        "x": 75.11435,
+                        "y": 94.98604
+                    },
+                    "uuid": "51097db5-d7bd-5bcf-80ae-b7c14cf67762"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (C2) doesn't match symbol value (.1uF).",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 92.7356,
+                        "y": 78.7148
+                    },
+                    "uuid": "a47a4641-c7c6-5410-8b73-c5a43103d7fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (C3) doesn't match symbol value (.1uF).",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 97.7648,
+                        "y": 70.5106
+                    },
+                    "uuid": "b9841b79-ecb3-5fab-8149-8c18f858b8b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (C4) doesn't match symbol value (.1uF).",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 98.6792,
+                        "y": 86.1824
+                    },
+                    "uuid": "58f515fc-8ea4-50fb-a9b4-3d024abe0c6e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (C5) doesn't match symbol value (.1uF).",
+            "items": [
+                {
+                    "description": "Footprint C5",
+                    "pos": {
+                        "x": 104.0132,
+                        "y": 94.3104
+                    },
+                    "uuid": "1fbe17de-e8ab-51bc-aac5-a708a42dbe69"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (C6) doesn't match symbol value (.1uF).",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 106.6294,
+                        "y": 86.3856
+                    },
+                    "uuid": "7caddc96-e47d-53c5-a860-ace1c5a1ea77"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (C7) doesn't match symbol value (.1uF).",
+            "items": [
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 109.5504,
+                        "y": 73.5078
+                    },
+                    "uuid": "5d50a1e6-fcae-57cb-8c31-1e924f66b0ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (C8) doesn't match symbol value (.1uF).",
+            "items": [
+                {
+                    "description": "Footprint C8",
+                    "pos": {
+                        "x": 124.5618,
+                        "y": 80.188
+                    },
+                    "uuid": "9d0db34a-6740-5344-b8ec-9c3891a52185"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (C9) doesn't match symbol value (.1uF).",
+            "items": [
+                {
+                    "description": "Footprint C9",
+                    "pos": {
+                        "x": 124.765,
+                        "y": 91.364
+                    },
+                    "uuid": "55b46a62-5792-54ad-b915-01ac8ac441b5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Value (CEXT1) doesn't match symbol value (4.7 uF).",
+            "items": [
+                {
+                    "description": "Footprint CEXT1",
+                    "pos": {
+                        "x": 104.318,
+                        "y": 87.4778
+                    },
+                    "uuid": "21ed3176-5dbc-5548-b064-6c1169612e23"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (VCAP1) doesn't match net given by schematic (/MCU/VCAP1).",
+            "items": [
+                {
+                    "description": "Pad 1 [VCAP1] of CEXT1 on F.Cu",
+                    "pos": {
+                        "x": 104.318,
+                        "y": 86.6015
+                    },
+                    "uuid": "254c1266-31e9-5584-92ad-7adda4843cf3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (U3) doesn't match symbol value (STM32F4XXR2).",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 101.6256,
+                        "y": 77.9528
+                    },
+                    "uuid": "b68c3f90-6a0b-5b2d-a27f-56e8b1250b0b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (VBAT) doesn't match net given by schematic (unconnected-(U3-VBAT-Pad1)).",
+            "items": [
+                {
+                    "description": "Pad 1 [VBAT] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 74.202744
+                    },
+                    "uuid": "9e84673c-e258-5b7a-96c0-80e08c8b861e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC13-Pad2)).",
+            "items": [
+                {
+                    "description": "Pad 2 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 74.70287
+                    },
+                    "uuid": "7d20fbdd-5149-55de-a6c1-5fb0e8a45c44"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC14-Pad3)).",
+            "items": [
+                {
+                    "description": "Pad 3 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 75.202742
+                    },
+                    "uuid": "cbda6094-5ca4-5296-aaad-b52335d048d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC15-Pad4)).",
+            "items": [
+                {
+                    "description": "Pad 4 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 75.702868
+                    },
+                    "uuid": "30e96d68-830c-5322-8913-1f1b00560777"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PH0-Pad5)).",
+            "items": [
+                {
+                    "description": "Pad 5 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 76.20274
+                    },
+                    "uuid": "5d186abd-b862-5754-8f05-c95db4c17b34"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PH1-Pad6)).",
+            "items": [
+                {
+                    "description": "Pad 6 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 76.702866
+                    },
+                    "uuid": "3d9772a3-afdf-530e-96eb-0ed0f372ec50"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NRST) doesn't match net given by schematic (/NRST).",
+            "items": [
+                {
+                    "description": "Pad 7 [NRST] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 77.202738
+                    },
+                    "uuid": "c295d7e7-8210-574e-9659-b3b4b5e282cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC0-Pad8)).",
+            "items": [
+                {
+                    "description": "Pad 8 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 77.702864
+                    },
+                    "uuid": "ed3b97f7-11c4-5113-a8be-b10b1d3bff57"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC1-Pad9)).",
+            "items": [
+                {
+                    "description": "Pad 9 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 78.202736
+                    },
+                    "uuid": "b5c2ca0c-b755-54a5-8ac9-19b955f12018"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC2-Pad10)).",
+            "items": [
+                {
+                    "description": "Pad 10 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 78.702862
+                    },
+                    "uuid": "3c9046fd-b612-5f0b-9a0b-7eb5cb433181"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC3-Pad11)).",
+            "items": [
+                {
+                    "description": "Pad 11 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 79.202734
+                    },
+                    "uuid": "fe400fd6-85b9-5c82-a6c5-7a811432ea7c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_TX_PA0) doesn't match net given by schematic (/LORA_TX_PA0).",
+            "items": [
+                {
+                    "description": "Pad 14 [LORA_TX_PA0] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 80.702858
+                    },
+                    "uuid": "969f5f23-875c-502a-a21d-c55f6df9047c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_RX_PA1) doesn't match net given by schematic (/LORA_RX_PA1).",
+            "items": [
+                {
+                    "description": "Pad 15 [LORA_RX_PA1] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 81.20273
+                    },
+                    "uuid": "3ece1701-8706-5eac-a80d-f960b7221d96"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (ADC_VBAT) doesn't match net given by schematic (/ADC_VBAT).",
+            "items": [
+                {
+                    "description": "Pad 16 [ADC_VBAT] of U3 on F.Cu",
+                    "pos": {
+                        "x": 95.875548,
+                        "y": 81.702856
+                    },
+                    "uuid": "e1d7dd88-b0ba-581d-845a-4b9025bd6c7b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_RST_PA3) doesn't match net given by schematic (/LORA_RST_PA3).",
+            "items": [
+                {
+                    "description": "Pad 17 [LORA_RST_PA3] of U3 on F.Cu",
+                    "pos": {
+                        "x": 97.875544,
+                        "y": 83.702852
+                    },
+                    "uuid": "dd618b03-5b15-53ff-b729-137a0173aef7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PA4-Pad20)).",
+            "items": [
+                {
+                    "description": "Pad 20 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 99.375668,
+                        "y": 83.702852
+                    },
+                    "uuid": "16a08101-d004-5a43-9989-f551249e2a48"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PA5-Pad21)).",
+            "items": [
+                {
+                    "description": "Pad 21 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 99.87554,
+                        "y": 83.702852
+                    },
+                    "uuid": "5e95a75a-6221-5e5f-8757-81847591b104"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PA6-Pad22)).",
+            "items": [
+                {
+                    "description": "Pad 22 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 100.375666,
+                        "y": 83.702852
+                    },
+                    "uuid": "984520d8-1642-5ec7-b9e7-546aa5712d1f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PA7-Pad23)).",
+            "items": [
+                {
+                    "description": "Pad 23 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 100.875538,
+                        "y": 83.702852
+                    },
+                    "uuid": "168a5294-1a85-5393-9cc3-36e3f4a09f2f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC4-Pad24)).",
+            "items": [
+                {
+                    "description": "Pad 24 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 101.375664,
+                        "y": 83.702852
+                    },
+                    "uuid": "22927320-46c1-5311-9499-5808e5209f3f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC5-Pad25)).",
+            "items": [
+                {
+                    "description": "Pad 25 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 101.875536,
+                        "y": 83.702852
+                    },
+                    "uuid": "afa96d01-db36-5b92-aa7f-62658f2a6f49"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GPS_PB0) doesn't match net given by schematic (/GPS_PB0).",
+            "items": [
+                {
+                    "description": "Pad 26 [GPS_PB0] of U3 on F.Cu",
+                    "pos": {
+                        "x": 102.375662,
+                        "y": 83.702852
+                    },
+                    "uuid": "09f56915-b3a9-5a97-ae52-9885cbbf5c72"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB1-Pad27)).",
+            "items": [
+                {
+                    "description": "Pad 27 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 102.875534,
+                        "y": 83.702852
+                    },
+                    "uuid": "02aeb8a8-d181-5dd4-879b-975fc1c9a701"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB2-Pad28)).",
+            "items": [
+                {
+                    "description": "Pad 28 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 103.37566,
+                        "y": 83.702852
+                    },
+                    "uuid": "7d1134c5-0022-5bfb-bab1-a7a55fc9f998"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB10-Pad29)).",
+            "items": [
+                {
+                    "description": "Pad 29 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 103.875532,
+                        "y": 83.702852
+                    },
+                    "uuid": "df1ac8db-f634-5c6a-889d-b6e56dc80493"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VCAP1) doesn't match net given by schematic (/MCU/VCAP1).",
+            "items": [
+                {
+                    "description": "Pad 30 [VCAP1] of U3 on F.Cu",
+                    "pos": {
+                        "x": 104.375658,
+                        "y": 83.702852
+                    },
+                    "uuid": "1eb9108e-2054-54e3-82eb-213ae44f561c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB12-Pad33)).",
+            "items": [
+                {
+                    "description": "Pad 33 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 81.702856
+                    },
+                    "uuid": "3056e5fd-0f4f-59ba-afe8-006f07ea769c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB13-Pad34)).",
+            "items": [
+                {
+                    "description": "Pad 34 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 81.20273
+                    },
+                    "uuid": "d60f3efa-c8bb-5148-b0d5-8f0921f86b6c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB14-Pad35)).",
+            "items": [
+                {
+                    "description": "Pad 35 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 80.702858
+                    },
+                    "uuid": "ee40bddb-f3a0-5bb3-9731-18b2d205b5be"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB15-Pad36)).",
+            "items": [
+                {
+                    "description": "Pad 36 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 80.202732
+                    },
+                    "uuid": "d4edf52f-8282-5e16-a7f6-4c91642bc81c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (PWM_PC6_SERVOHDR) doesn't match net given by schematic (/PWM_PC6_SERVOHDR).",
+            "items": [
+                {
+                    "description": "Pad 37 [PWM_PC6_SERVOHDR] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 79.70286
+                    },
+                    "uuid": "01638ee4-5fe8-5c8e-99d1-5594055379b2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC7-Pad38)).",
+            "items": [
+                {
+                    "description": "Pad 38 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 79.202734
+                    },
+                    "uuid": "f6e36daa-1782-5021-a6d5-d505e174dce5"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC8-Pad39)).",
+            "items": [
+                {
+                    "description": "Pad 39 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 78.702862
+                    },
+                    "uuid": "984276eb-f2e8-54b4-8ab4-3f40df245f8e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC9-Pad40)).",
+            "items": [
+                {
+                    "description": "Pad 40 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 78.202736
+                    },
+                    "uuid": "752c6236-b594-50cc-a4af-d25c966e2ffb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (PWM_PA8_ESCHDR) doesn't match net given by schematic (/PWM_PA8_ESCHDR).",
+            "items": [
+                {
+                    "description": "Pad 41 [PWM_PA8_ESCHDR] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 77.702864
+                    },
+                    "uuid": "eb827d38-b6bb-5e43-ad15-59d2a6968a21"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PA9-Pad42)).",
+            "items": [
+                {
+                    "description": "Pad 42 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 77.202738
+                    },
+                    "uuid": "f501d834-fea3-5353-979b-8ab1f18d599f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (CAN_RXD_PA10) doesn't match net given by schematic (/CAN_RXD_PA10).",
+            "items": [
+                {
+                    "description": "Pad 43 [CAN_RXD_PA10] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 76.702866
+                    },
+                    "uuid": "23f8b225-5e44-5268-854e-516439792bc9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (CAN_STB_PA11) doesn't match net given by schematic (/CAN_STB_PA11).",
+            "items": [
+                {
+                    "description": "Pad 44 [CAN_STB_PA11] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 76.20274
+                    },
+                    "uuid": "9b04f242-0013-504e-87c0-4d6b1640299c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (CAN_TXD_PA12) doesn't match net given by schematic (/CAN_TXD_PA12).",
+            "items": [
+                {
+                    "description": "Pad 45 [CAN_TXD_PA12] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 75.702868
+                    },
+                    "uuid": "46617b94-c2c7-5c1e-808f-6402c751f335"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SWDIO) doesn't match net given by schematic (/SWDIO).",
+            "items": [
+                {
+                    "description": "Pad 46 [SWDIO] of U3 on F.Cu",
+                    "pos": {
+                        "x": 107.375652,
+                        "y": 75.202742
+                    },
+                    "uuid": "6a779357-989a-55c9-87cd-cbf6735a9a3b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SWCLK) doesn't match net given by schematic (/SWCLK).",
+            "items": [
+                {
+                    "description": "Pad 49 [SWCLK] of U3 on F.Cu",
+                    "pos": {
+                        "x": 105.375656,
+                        "y": 72.202748
+                    },
+                    "uuid": "ae8223cf-cc34-5b18-8f00-c7ca16462868"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (TDI) doesn't match net given by schematic (/TDI).",
+            "items": [
+                {
+                    "description": "Pad 50 [TDI] of U3 on F.Cu",
+                    "pos": {
+                        "x": 104.87553,
+                        "y": 72.202748
+                    },
+                    "uuid": "abf64647-ec1f-5e44-969e-d786629c2dbc"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GPS_TX_PC10) doesn't match net given by schematic (/GPS_TX_PC10).",
+            "items": [
+                {
+                    "description": "Pad 51 [GPS_TX_PC10] of U3 on F.Cu",
+                    "pos": {
+                        "x": 104.375658,
+                        "y": 72.202748
+                    },
+                    "uuid": "f68606a9-4970-5d40-87bf-878dcf145a9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GPS_RX_PC11) doesn't match net given by schematic (/GPS_RX_PC11).",
+            "items": [
+                {
+                    "description": "Pad 52 [GPS_RX_PC11] of U3 on F.Cu",
+                    "pos": {
+                        "x": 103.875532,
+                        "y": 72.202748
+                    },
+                    "uuid": "ec016f1f-4d79-57b0-9365-77e0ee51e2b6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PC12-Pad53)).",
+            "items": [
+                {
+                    "description": "Pad 53 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 103.37566,
+                        "y": 72.202748
+                    },
+                    "uuid": "0eb65e04-61ab-5fd8-8b7a-9742759d7b5c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PD2-Pad54)).",
+            "items": [
+                {
+                    "description": "Pad 54 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 102.875534,
+                        "y": 72.202748
+                    },
+                    "uuid": "6ec599ee-3768-5f0b-a1ae-2b587dcd9602"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SWO_TDO) doesn't match net given by schematic (/SWO_TDO).",
+            "items": [
+                {
+                    "description": "Pad 55 [SWO_TDO] of U3 on F.Cu",
+                    "pos": {
+                        "x": 102.375662,
+                        "y": 72.202748
+                    },
+                    "uuid": "8bab1117-ba22-5cf8-975f-d49275406f8a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB4-Pad56)).",
+            "items": [
+                {
+                    "description": "Pad 56 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 101.875536,
+                        "y": 72.202748
+                    },
+                    "uuid": "72852d4b-b971-59f9-a930-232aebfc46a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB5-Pad57)).",
+            "items": [
+                {
+                    "description": "Pad 57 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 101.375664,
+                        "y": 72.202748
+                    },
+                    "uuid": "3b774987-d06a-500e-9e4e-55c4758b9411"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB6-Pad58)).",
+            "items": [
+                {
+                    "description": "Pad 58 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 100.875538,
+                        "y": 72.202748
+                    },
+                    "uuid": "57672ecf-a180-5437-ae98-3aaa9b56cb21"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB7-Pad59)).",
+            "items": [
+                {
+                    "description": "Pad 59 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 100.375666,
+                        "y": 72.202748
+                    },
+                    "uuid": "5b9a869d-ede3-5317-a317-52e9adf59e81"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-BOOT0-Pad60)).",
+            "items": [
+                {
+                    "description": "Pad 60 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 99.87554,
+                        "y": 72.202748
+                    },
+                    "uuid": "148cdc7d-69bd-557d-b86b-598fa2030ebd"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB8-Pad61)).",
+            "items": [
+                {
+                    "description": "Pad 61 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 99.375668,
+                        "y": 72.202748
+                    },
+                    "uuid": "37b9c300-e0dd-5778-9794-4dd6e2146e45"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-PB9-Pad62)).",
+            "items": [
+                {
+                    "description": "Pad 62 [<no net>] of U3 on F.Cu",
+                    "pos": {
+                        "x": 98.875542,
+                        "y": 72.202748
+                    },
+                    "uuid": "2eefb869-159f-50f6-a746-be080ddb706c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (C1) doesn't match symbol value (.1uF).",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 114.5288,
+                        "y": 69.139
+                    },
+                    "uuid": "733b6dbc-3b4d-5ff4-871e-6ffceaacd238"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (CAN_VCC) doesn't match net given by schematic (/CAN_Bus/CAN_VCC).",
+            "items": [
+                {
+                    "description": "Pad 2 [CAN_VCC] of C1 on F.Cu",
+                    "pos": {
+                        "x": 115.2273,
+                        "y": 69.139
+                    },
+                    "uuid": "f4085a6a-b660-5416-ab36-3127471a0822"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (CANHEADER1) doesn't match symbol value (CONN_B4B-XH-A).",
+            "items": [
+                {
+                    "description": "Footprint CANHEADER1",
+                    "pos": {
+                        "x": 115.0114,
+                        "y": 64.6432
+                    },
+                    "uuid": "200ec31e-bcd1-5d7d-9291-78dad83d59e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (CAN_VCC) doesn't match net given by schematic (/CAN_Bus/CAN_VCC).",
+            "items": [
+                {
+                    "description": "PTH pad 2 [CAN_VCC] of CANHEADER1",
+                    "pos": {
+                        "x": 117.511268,
+                        "y": 64.6432
+                    },
+                    "uuid": "0f8bfd88-23e9-508d-a093-2e70b9c98070"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (CANH) doesn't match net given by schematic (/CAN_Bus/CANH).",
+            "items": [
+                {
+                    "description": "PTH pad 3 [CANH] of CANHEADER1",
+                    "pos": {
+                        "x": 120.01139,
+                        "y": 64.6432
+                    },
+                    "uuid": "ef17f858-c68a-5187-a389-6b71e6bd4b14"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (CANL) doesn't match net given by schematic (/CAN_Bus/CANL).",
+            "items": [
+                {
+                    "description": "PTH pad 4 [CANL] of CANHEADER1",
+                    "pos": {
+                        "x": 122.511512,
+                        "y": 64.6432
+                    },
+                    "uuid": "737eca15-c28b-5c51-8aad-c75549c97201"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (U5) doesn't match symbol value (TCAN1042H-Q1D).",
+            "items": [
+                {
+                    "description": "Footprint U5",
+                    "pos": {
+                        "x": 118.8214,
+                        "y": 71.806
+                    },
+                    "uuid": "da89da31-e13e-5f6c-9e05-747416675592"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (CAN_TXD_PA12) doesn't match net given by schematic (/CAN_TXD_PA12).",
+            "items": [
+                {
+                    "description": "Pad 1 [CAN_TXD_PA12] of U5 on F.Cu",
+                    "pos": {
+                        "x": 116.9164,
+                        "y": 74.43109
+                    },
+                    "uuid": "38c51a30-d6a0-57cb-bf13-9fd38ef97a21"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (CAN_VCC) doesn't match net given by schematic (/CAN_Bus/CAN_VCC).",
+            "items": [
+                {
+                    "description": "Pad 3 [CAN_VCC] of U5 on F.Cu",
+                    "pos": {
+                        "x": 119.4564,
+                        "y": 74.43109
+                    },
+                    "uuid": "2237570d-d7a1-56ec-b6a0-b03d6a95ea1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (CAN_RXD_PA10) doesn't match net given by schematic (/CAN_RXD_PA10).",
+            "items": [
+                {
+                    "description": "Pad 4 [CAN_RXD_PA10] of U5 on F.Cu",
+                    "pos": {
+                        "x": 120.7264,
+                        "y": 74.43109
+                    },
+                    "uuid": "a063246c-6da3-533e-b24f-710b2eff4bb9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U5-NC-Pad5)).",
+            "items": [
+                {
+                    "description": "Pad 5 [<no net>] of U5 on F.Cu",
+                    "pos": {
+                        "x": 120.7264,
+                        "y": 69.18091
+                    },
+                    "uuid": "7d13d27d-5f0f-54a8-972f-c365da679bce"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (CANL) doesn't match net given by schematic (/CAN_Bus/CANL).",
+            "items": [
+                {
+                    "description": "Pad 6 [CANL] of U5 on F.Cu",
+                    "pos": {
+                        "x": 119.4564,
+                        "y": 69.18091
+                    },
+                    "uuid": "8b8a3ce3-c68f-510a-93c1-0eb99361486d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (CANH) doesn't match net given by schematic (/CAN_Bus/CANH).",
+            "items": [
+                {
+                    "description": "Pad 7 [CANH] of U5 on F.Cu",
+                    "pos": {
+                        "x": 118.1864,
+                        "y": 69.18091
+                    },
+                    "uuid": "56caeb1f-c121-5315-90cf-85a0d3345c68"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (CAN_STB_PA11) doesn't match net given by schematic (/CAN_STB_PA11).",
+            "items": [
+                {
+                    "description": "Pad 8 [CAN_STB_PA11] of U5 on F.Cu",
+                    "pos": {
+                        "x": 116.9164,
+                        "y": 69.18091
+                    },
+                    "uuid": "fa638098-6e14-536a-8a7f-93d3f2167fd6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_FILT) doesn't match net given by schematic (/LoRa_Module/LORA_FILT).",
+            "items": [
+                {
+                    "description": "Pad 1 [LORA_FILT] of C20 on F.Cu",
+                    "pos": {
+                        "x": 70.3074,
+                        "y": 82.8677
+                    },
+                    "uuid": "9241949e-74e8-5205-b45b-8bf27df6d9f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_VCC) doesn't match net given by schematic (/LoRa_Module/LORA_VCC).",
+            "items": [
+                {
+                    "description": "Pad 2 [LORA_VCC] of C21 on F.Cu",
+                    "pos": {
+                        "x": 73.7618,
+                        "y": 81.2167
+                    },
+                    "uuid": "0caaf204-8575-5eaa-9e17-50734cc7711a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (C22) doesn't match symbol value (.1uF).",
+            "items": [
+                {
+                    "description": "Footprint C22",
+                    "pos": {
+                        "x": 75.362,
+                        "y": 82.0676
+                    },
+                    "uuid": "b1846fe4-1f8b-5bc3-add4-3d76c3bd5cb8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (LORA_VCC) doesn't match net given by schematic (/LoRa_Module/LORA_VCC).",
+            "items": [
+                {
+                    "description": "Pad 2 [LORA_VCC] of C22 on F.Cu",
+                    "pos": {
+                        "x": 75.362,
+                        "y": 81.3691
+                    },
+                    "uuid": "37c9b371-6301-59be-94b3-8fc8df357b40"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_VCC) doesn't match net given by schematic (/LoRa_Module/LORA_VCC).",
+            "items": [
+                {
+                    "description": "Pad 2 [LORA_VCC] of C23 on F.Cu",
+                    "pos": {
+                        "x": 76.5304,
+                        "y": 81.5215
+                    },
+                    "uuid": "9224ea88-3c8d-59ab-9379-fd7b9526ae8a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (L3) doesn't match symbol value (INDUCTOR).",
+            "items": [
+                {
+                    "description": "Footprint L3",
+                    "pos": {
+                        "x": 72.1108,
+                        "y": 81.204
+                    },
+                    "uuid": "f454f762-6c81-5898-b7a6-b287f521055d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (LORA_VCC) doesn't match net given by schematic (/LoRa_Module/LORA_VCC).",
+            "items": [
+                {
+                    "description": "Pad 1 [LORA_VCC] of L3 on F.Cu",
+                    "pos": {
+                        "x": 72.5299,
+                        "y": 81.204
+                    },
+                    "uuid": "ee6ede19-9dd6-5dcb-9e52-dfcec37eed9a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (L4) doesn't match symbol value (INDUCTOR).",
+            "items": [
+                {
+                    "description": "Footprint L4",
+                    "pos": {
+                        "x": 72.187,
+                        "y": 82.8804
+                    },
+                    "uuid": "6bf77b7e-64c8-55f0-ae07-5ea7516f0476"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (LORA_FILT) doesn't match net given by schematic (/LoRa_Module/LORA_FILT).",
+            "items": [
+                {
+                    "description": "Pad 2 [LORA_FILT] of L4 on F.Cu",
+                    "pos": {
+                        "x": 71.7679,
+                        "y": 82.8804
+                    },
+                    "uuid": "084679a9-085b-574b-9dab-d2f31bf3cb6c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (LORAMODULE1) doesn't match symbol value (CONN5_1LFBN-RC).",
+            "items": [
+                {
+                    "description": "Footprint LORAMODULE1",
+                    "pos": {
+                        "x": 78.7402,
+                        "y": 81.585
+                    },
+                    "uuid": "2c072760-28fe-5fbf-8c68-532d3204c13c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (LORA_VCC) doesn't match net given by schematic (/LoRa_Module/LORA_VCC).",
+            "items": [
+                {
+                    "description": "PTH pad 1 [LORA_VCC] of LORAMODULE1",
+                    "pos": {
+                        "x": 78.7402,
+                        "y": 81.585
+                    },
+                    "uuid": "033b2ac6-9534-501f-b1cb-6b30e4911f12"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_TX_PA0) doesn't match net given by schematic (/LORA_TX_PA0).",
+            "items": [
+                {
+                    "description": "PTH pad 2 [LORA_TX_PA0] of LORAMODULE1",
+                    "pos": {
+                        "x": 81.2802,
+                        "y": 81.585
+                    },
+                    "uuid": "5648acfb-45d4-50a3-80d2-d5f59317fc49"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_RX_PA1) doesn't match net given by schematic (/LORA_RX_PA1).",
+            "items": [
+                {
+                    "description": "PTH pad 3 [LORA_RX_PA1] of LORAMODULE1",
+                    "pos": {
+                        "x": 83.8202,
+                        "y": 81.585
+                    },
+                    "uuid": "4a6393d1-e881-5938-8205-426e3858f9c8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_RST_PA3) doesn't match net given by schematic (/LORA_RST_PA3).",
+            "items": [
+                {
+                    "description": "PTH pad 4 [LORA_RST_PA3] of LORAMODULE1",
+                    "pos": {
+                        "x": 86.3602,
+                        "y": 81.585
+                    },
+                    "uuid": "6e01a6db-5881-5c90-913d-57c54c195038"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (GPSMODULE1) doesn't match symbol value (CONN5_1LFBN-RC).",
+            "items": [
+                {
+                    "description": "Footprint GPSMODULE1",
+                    "pos": {
+                        "x": 102.7686,
+                        "y": 96.7234
+                    },
+                    "uuid": "949164a3-c7c8-5f36-a9f5-f222a6da98d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (GPS_PB0) doesn't match net given by schematic (/GPS_PB0).",
+            "items": [
+                {
+                    "description": "PTH pad 3 [GPS_PB0] of GPSMODULE1",
+                    "pos": {
+                        "x": 107.8486,
+                        "y": 96.7234
+                    },
+                    "uuid": "f92331df-a414-5519-a0aa-969b0f68e0d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GPS_RX_PC11) doesn't match net given by schematic (/GPS_RX_PC11).",
+            "items": [
+                {
+                    "description": "PTH pad 4 [GPS_RX_PC11] of GPSMODULE1",
+                    "pos": {
+                        "x": 110.3886,
+                        "y": 96.7234
+                    },
+                    "uuid": "eb1d4c77-bc38-5cfe-afe3-462705542d96"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GPS_TX_PC10) doesn't match net given by schematic (/GPS_TX_PC10).",
+            "items": [
+                {
+                    "description": "PTH pad 5 [GPS_TX_PC10] of GPSMODULE1",
+                    "pos": {
+                        "x": 112.9286,
+                        "y": 96.7234
+                    },
+                    "uuid": "a7f56485-6d8d-5b2e-9b60-c8a15010cb45"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (SPEEDCONTROLLER1) doesn't match symbol value (CONN_PPTC031).",
+            "items": [
+                {
+                    "description": "Footprint SPEEDCONTROLLER1",
+                    "pos": {
+                        "x": 122.0472,
+                        "y": 83.0836
+                    },
+                    "uuid": "d5b9ed96-f8f4-54e3-8347-da34ae8f73d2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (PWM_PA8_ESCHDR) doesn't match net given by schematic (/PWM_PA8_ESCHDR).",
+            "items": [
+                {
+                    "description": "PTH pad 2 [PWM_PA8_ESCHDR] of SPEEDCONTROLLER1",
+                    "pos": {
+                        "x": 122.0472,
+                        "y": 80.5436
+                    },
+                    "uuid": "a03d3c60-f912-560e-8113-ec10751c8517"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (STEERINGSERVO1) doesn't match symbol value (CONN_PPTC031).",
+            "items": [
+                {
+                    "description": "Footprint STEERINGSERVO1",
+                    "pos": {
+                        "x": 122.098,
+                        "y": 89.0272
+                    },
+                    "uuid": "a9b46a46-8847-54ae-ac5b-607f01e330b9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (PWM_PC6_SERVOHDR) doesn't match net given by schematic (/PWM_PC6_SERVOHDR).",
+            "items": [
+                {
+                    "description": "PTH pad 2 [PWM_PC6_SERVOHDR] of STEERINGSERVO1",
+                    "pos": {
+                        "x": 122.098,
+                        "y": 91.5672
+                    },
+                    "uuid": "a6904def-6068-5661-9394-81e32cce2b15"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (TP1) doesn't match symbol value (TEST POINT).",
+            "items": [
+                {
+                    "description": "Footprint TP1",
+                    "pos": {
+                        "x": 115.621,
+                        "y": 78.8672
+                    },
+                    "uuid": "7b991c00-85e0-5d14-a383-e4077962a495"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (PWM_PA8_ESCHDR) doesn't match net given by schematic (/PWM_PA8_ESCHDR).",
+            "items": [
+                {
+                    "description": "PTH pad 1 [PWM_PA8_ESCHDR] of TP1",
+                    "pos": {
+                        "x": 115.621,
+                        "y": 78.8672
+                    },
+                    "uuid": "beff05d5-fe9b-575e-94d2-72e1221b89e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (TP3) doesn't match symbol value (TEST POINT).",
+            "items": [
+                {
+                    "description": "Footprint TP3",
+                    "pos": {
+                        "x": 115.494,
+                        "y": 82.7534
+                    },
+                    "uuid": "c83a9b02-d7de-5ba9-9511-c7d2589f35fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (PWM_PC6_SERVOHDR) doesn't match net given by schematic (/PWM_PC6_SERVOHDR).",
+            "items": [
+                {
+                    "description": "PTH pad 1 [PWM_PC6_SERVOHDR] of TP3",
+                    "pos": {
+                        "x": 115.494,
+                        "y": 82.7534
+                    },
+                    "uuid": "c1d8f01a-f704-5513-85b6-c6751cebf155"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SWDIO) doesn't match net given by schematic (/SWDIO).",
+            "items": [
+                {
+                    "description": "Pad 2 [SWDIO] of JTAG1 on F.Cu",
+                    "pos": {
+                        "x": 109.6012,
+                        "y": 67.846648
+                    },
+                    "uuid": "b21f1d4a-5408-56ac-9c7c-9834e7c61328"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SWCLK) doesn't match net given by schematic (/SWCLK).",
+            "items": [
+                {
+                    "description": "Pad 4 [SWCLK] of JTAG1 on F.Cu",
+                    "pos": {
+                        "x": 108.3312,
+                        "y": 67.846648
+                    },
+                    "uuid": "23f22ea9-5431-5a0e-986c-def3d4853a9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SWO_TDO) doesn't match net given by schematic (/SWO_TDO).",
+            "items": [
+                {
+                    "description": "Pad 6 [SWO_TDO] of JTAG1 on F.Cu",
+                    "pos": {
+                        "x": 107.0612,
+                        "y": 67.846648
+                    },
+                    "uuid": "f7596ade-9749-57ec-93f2-ace64c82cefb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(JTAG1-Pin_7-Pad7)).",
+            "items": [
+                {
+                    "description": "Pad 7 [<no net>] of JTAG1 on F.Cu",
+                    "pos": {
+                        "x": 105.7912,
+                        "y": 63.776552
+                    },
+                    "uuid": "9856f66c-fbdf-5e58-92ae-6d53a5c4fbc7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (TDI) doesn't match net given by schematic (/TDI).",
+            "items": [
+                {
+                    "description": "Pad 8 [TDI] of JTAG1 on F.Cu",
+                    "pos": {
+                        "x": 105.7912,
+                        "y": 67.846648
+                    },
+                    "uuid": "8e85db45-b4a9-594f-903a-76b5baecce34"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NRST) doesn't match net given by schematic (/NRST).",
+            "items": [
+                {
+                    "description": "Pad 10 [NRST] of JTAG1 on F.Cu",
+                    "pos": {
+                        "x": 104.5212,
+                        "y": 67.846648
+                    },
+                    "uuid": "871cca23-7f77-5618-8793-d2cf63229597"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        }
+    ],
+    "source": "LoRa_Boat_Controller.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "4e9acd36-bd78-5f84-9acb-c358c8e988b2"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 61.84412,
+                        "y": 97.18568
+                    },
+                    "uuid": "1f7e378f-9e56-561a-aeea-3ffb47f7ec3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "4e9acd36-bd78-5f84-9acb-c358c8e988b2"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 64.39428,
+                        "y": 94.63552
+                    },
+                    "uuid": "2cf801fc-c7d5-53e2-96de-00ab0587e5cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "4e9acd36-bd78-5f84-9acb-c358c8e988b2"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 64.39428,
+                        "y": 89.86032
+                    },
+                    "uuid": "3eed65b7-4693-50be-8a36-845db9917bdd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "4e9acd36-bd78-5f84-9acb-c358c8e988b2"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 61.84412,
+                        "y": 92.41048
+                    },
+                    "uuid": "5ab82a42-9e66-52c6-9a1d-332d6c9cabac"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "4e9acd36-bd78-5f84-9acb-c358c8e988b2"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 61.84412,
+                        "y": 94.63552
+                    },
+                    "uuid": "9bfbc873-b5f8-5b0e-ba34-b6c600795fcb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "4e9acd36-bd78-5f84-9acb-c358c8e988b2"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 61.84412,
+                        "y": 89.86032
+                    },
+                    "uuid": "9dd6a91b-ca52-56bd-a228-ef5468a4a6f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 65.0496,
+                        "y": 75.9716
+                    },
+                    "uuid": "0273b40b-cb9a-5b0c-a46d-badbb69815c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 65.0496,
+                        "y": 73.4316
+                    },
+                    "uuid": "16c58dcd-1e57-52bb-b093-401247035994"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 114.224,
+                        "y": 84.0234
+                    },
+                    "uuid": "17d57103-25dc-51f9-8b2d-027883de502b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 71.1964,
+                        "y": 73.4316
+                    },
+                    "uuid": "2920a4bd-62b6-5e99-a655-6c322a529a94"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 73.7364,
+                        "y": 75.9716
+                    },
+                    "uuid": "3b5487dd-cde4-5497-82a4-3e04cdcf9559"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 117.217898,
+                        "y": 79.7562
+                    },
+                    "uuid": "616ff272-61bd-56a7-9452-0f7dc0bcf352"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 67.5896,
+                        "y": 73.4316
+                    },
+                    "uuid": "61fbb66f-3ab3-5cc8-865f-9af1a76547ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 114.224,
+                        "y": 81.4834
+                    },
+                    "uuid": "66f306f4-edaa-5847-8867-500cc778d46b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 116.891,
+                        "y": 77.5972
+                    },
+                    "uuid": "6ea9768e-8eeb-5d98-b58d-6e7d08ca0c1d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 116.764,
+                        "y": 81.4834
+                    },
+                    "uuid": "8b27ad3b-2f55-5418-b016-365a5fabd5f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Circle on F.Silkscreen",
+                    "pos": {
+                        "x": 106.0071,
+                        "y": 94.3104
+                    },
+                    "uuid": "954875be-238a-54eb-a0b6-04f3baad534a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 73.7364,
+                        "y": 73.4316
+                    },
+                    "uuid": "9d096e3d-2e22-5fe7-a396-f6ee4469adb0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 71.1964,
+                        "y": 75.9716
+                    },
+                    "uuid": "9e7236c4-2e8a-55e1-b2d0-11e18ef74165"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 67.5896,
+                        "y": 75.9716
+                    },
+                    "uuid": "b297ad6d-c94c-5366-b2cf-1b5d8bed73bc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 85.188498,
+                        "y": 86.5126
+                    },
+                    "uuid": "c2a63c95-891a-541f-aab4-545dd66cb502"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 114.351,
+                        "y": 80.1372
+                    },
+                    "uuid": "c37ebecf-321b-51bd-a615-442f8ae19723"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 116.764,
+                        "y": 84.0234
+                    },
+                    "uuid": "cadfde65-2f32-5359-9574-34cd5f4ab9e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 114.351,
+                        "y": 77.5972
+                    },
+                    "uuid": "db148ce4-6539-52f7-a69b-23c8faeaa6c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 77.0892,
+                        "y": 82.982
+                    },
+                    "uuid": "dcd9243f-7dfe-5497-8051-73edca4491a1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Circle on F.Silkscreen",
+                    "pos": {
+                        "x": 124.5618,
+                        "y": 78.1941
+                    },
+                    "uuid": "e1c0aba1-e051-5cff-8db2-e4f0eda392ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 116.891,
+                        "y": 80.1372
+                    },
+                    "uuid": "f32c1b61-51c9-5b8f-95a7-d48416cf9191"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 81.8644,
+                        "y": 88.4684
+                    },
+                    "uuid": "06680e37-14a9-54d2-ae67-76764bf66987"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 72.5934,
+                        "y": 84.3028
+                    },
+                    "uuid": "1abd55d3-9400-54c6-8af8-2b1df953faf6"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 73.7618,
+                        "y": 95.936
+                    },
+                    "uuid": "1ed6909b-2e55-5c51-bb11-059719c7a637"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.6144,
+                        "y": 74.2063
+                    },
+                    "uuid": "2dc981aa-edee-5e4a-a74b-17eba2071525"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.6642,
+                        "y": 94.3104
+                    },
+                    "uuid": "312faaba-a59a-5c85-91cd-422581e3d352"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 98.4633,
+                        "y": 69.139
+                    },
+                    "uuid": "3509c85a-6c2d-57e3-b167-07a017d4d04c"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 92.7356,
+                        "y": 76.886
+                    },
+                    "uuid": "3af37b6e-5f91-592d-8d5b-f30deddd7ae5"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 80.696,
+                        "y": 92.3038
+                    },
+                    "uuid": "475cd634-a243-5fbf-be3e-11bb30d1ffad"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.9309,
+                        "y": 87.4524
+                    },
+                    "uuid": "56d41801-0cd0-5ee8-93e8-a32844050902"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 67.9452,
+                        "y": 87.18062
+                    },
+                    "uuid": "93dc1e5c-211a-5d94-93af-23bf6faecb2f"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 110.922,
+                        "y": 74.2063
+                    },
+                    "uuid": "9ac8f461-dcc5-56ff-bbc3-e5253a5a4734"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.8303,
+                        "y": 70.282
+                    },
+                    "uuid": "afb44cdf-4762-59a9-804d-5a65621e80bc"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 124.5618,
+                        "y": 78.029
+                    },
+                    "uuid": "b7a36afc-4c92-5a3f-ad2b-aaa6d9ecde3a"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 97.9807,
+                        "y": 87.2746
+                    },
+                    "uuid": "b8205a8e-fe67-5ea0-b3e2-64000ab8c097"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 67.5134,
+                        "y": 97.587
+                    },
+                    "uuid": "c4b18f1c-791d-5471-8b95-f87a9903d332"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 72.314,
+                        "y": 90.0178
+                    },
+                    "uuid": "e18881db-10c8-55f2-8aa9-2ae86a61db26"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 124.765,
+                        "y": 93.0404
+                    },
+                    "uuid": "f4067fc0-e713-5457-a29d-6574e6778be2"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 76.8352,
+                        "y": 86.03
+                    },
+                    "uuid": "2405e599-b236-5c16-a24b-eaa4f745b6f0"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 76.8352,
+                        "y": 86.03
+                    },
+                    "uuid": "2405e599-b236-5c16-a24b-eaa4f745b6f0"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 85.8014,
+                        "y": 86.03
+                    },
+                    "uuid": "516f7394-4a7f-5b2e-8a1d-fe8c469debc9"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 85.8014,
+                        "y": 86.03
+                    },
+                    "uuid": "516f7394-4a7f-5b2e-8a1d-fe8c469debc9"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.5992,
+                        "y": 82.0676
+                    },
+                    "uuid": "db579136-13ac-5bb7-b4e8-b3195ed8241b"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.5992,
+                        "y": 82.0676
+                    },
+                    "uuid": "db579136-13ac-5bb7-b4e8-b3195ed8241b"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.4722,
+                        "y": 86.03
+                    },
+                    "uuid": "ec3d2ab6-5f82-596a-aa7e-31ba0835c6cd"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.4722,
+                        "y": 86.03
+                    },
+                    "uuid": "ec3d2ab6-5f82-596a-aa7e-31ba0835c6cd"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [CAN_STB_PA11] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.9164,
+                        "y": 70.8662
+                    },
+                    "uuid": "385d6f86-30b6-534a-a5a8-95e60b1af882"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [CAN_STB_PA11] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.9164,
+                        "y": 70.8662
+                    },
+                    "uuid": "385d6f86-30b6-534a-a5a8-95e60b1af882"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [CAN_STB_PA11] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.5956,
+                        "y": 75.997
+                    },
+                    "uuid": "e6c0b992-d31e-573f-91af-7a49af332150"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [CAN_STB_PA11] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.5956,
+                        "y": 75.997
+                    },
+                    "uuid": "e6c0b992-d31e-573f-91af-7a49af332150"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [LORA_RST_PA3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 86.3602,
+                        "y": 83.0836
+                    },
+                    "uuid": "8bf755a0-9db1-5ef2-909e-683f6602d0d9"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [LORA_RST_PA3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 86.3602,
+                        "y": 83.0836
+                    },
+                    "uuid": "8bf755a0-9db1-5ef2-909e-683f6602d0d9"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [LORA_RST_PA3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 86.3602,
+                        "y": 85.014
+                    },
+                    "uuid": "f740978d-f069-53d3-9e72-1f61d09e83c9"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [LORA_RST_PA3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 86.3602,
+                        "y": 85.014
+                    },
+                    "uuid": "f740978d-f069-53d3-9e72-1f61d09e83c9"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [SWO_TDO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.0612,
+                        "y": 70.8916
+                    },
+                    "uuid": "42d93505-cffd-53f8-8759-1f2543b1d150"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [SWO_TDO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.0612,
+                        "y": 70.8916
+                    },
+                    "uuid": "42d93505-cffd-53f8-8759-1f2543b1d150"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [SWO_TDO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.3368,
+                        "y": 70.6376
+                    },
+                    "uuid": "f18f4627-2c39-5160-8eef-def009cb5ed9"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [SWO_TDO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.3368,
+                        "y": 70.6376
+                    },
+                    "uuid": "f18f4627-2c39-5160-8eef-def009cb5ed9"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

@@ -1,0 +1,363 @@
+(kicad_sch
+(version 20250114)
+(generator "gen_sch.py")
+(generator_version "9.0")
+(uuid "f89aeec6-8b31-51cd-b4aa-c9163fc314aa")
+(paper "A3")
+(title_block (title "LoRa Autonomous Boat Controller V1 - GPS_Module") (date "2026-09-17") (rev "V1 / v5") (company "LoRa Controller Project") (comment 1 "Annotated functional groups; connectivity preserved") (comment 2 "Build and review: docs/build/README.md"))
+(lib_symbols
+	(symbol "Connector_Generic:Conn_01x05"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x05_1_1"
+			(rectangle
+				(start -1.27 6.35)
+				(end 1.27 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)
+	(text "V1  /  GPS MODULE"
+		(exclude_from_sim no)
+		(at 13 17 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "e08f297d-c495-520c-9d7c-fc588f752b49")
+	)
+	(text "Functional groups / electrical pin numbers / named-net connections"
+		(exclude_from_sim no)
+		(at 13 24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "72cf4332-11a7-543a-b335-5652b37b2a5f")
+	)
+(polyline (pts (xy 13 34) (xy 204 34) (xy 204 108.5) (xy 13 108.5) (xy 13 34)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "b40e73a4-97dd-5906-ba27-2ae2a70dacb4"))
+	(text "01  GNSS serial interface"
+		(exclude_from_sim no)
+		(at 18 41 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "a248c038-d0da-581d-bfd0-378115ce7737")
+	)
+(symbol (lib_id "Connector_Generic:Conn_01x05") (at 43.18 71.12 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c527998b-5ac0-5b30-a6ca-6114bbdf301b") (property "Reference" "GPSMODULE1" (at 43.18 52.77 0) (effects (font (size 1.27 1.27))  )) (property "Value" "PPTC051LFBN-RC" (at 43.18 56.27 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_Device" "PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "1x5 2.54 mm female header, through-hole" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "PPTC051LFBN-RC" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Sullins Connector Solutions" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Allegro_RefDes" "GPSMODULE" (at 43.18 71.12 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "331d8936-51a4-50c1-84d8-57a502cffd74"))(pin "2" (uuid "3c053ffe-7693-52c0-b21d-fcefe0cc0123"))(pin "3" (uuid "80ced41c-7743-5bc0-aff0-5fb1464f1f15"))(pin "4" (uuid "8fb6e8ad-1663-5f98-9fde-59ecf7566a5f"))(pin "5" (uuid "ff136fc5-cb54-5c15-aa04-6a65c4f36bc2")) (instances (project "LoRa_Boat_Controller" (path "/c954de34-2e36-5b27-b5cf-f634d7278a6a/9db88c42-176c-566e-9323-3aea3f09ec4b" (reference "GPSMODULE1") (unit 1)))))
+	(wire
+		(pts
+			(xy 38.1 66.04) (xy 33.02 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f37ef3c-3ee3-5b63-85e0-f05f07e88328")
+	)
+(global_label "+3V3" (shape passive) (at 33.02 66.04 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "9b158650-56a7-5e5f-8ff9-a87bc94a0ba8"))
+	(wire
+		(pts
+			(xy 38.1 68.58) (xy 33.02 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06c2d38d-1a23-5fd4-b26b-1884d619dbb4")
+	)
+(global_label "GND" (shape passive) (at 33.02 68.58 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "6f8a9f15-ef28-54db-a725-06eea1bf557e"))
+	(wire
+		(pts
+			(xy 38.1 71.12) (xy 33.02 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "740f7788-d067-5509-8a47-194325865df6")
+	)
+(hierarchical_label "GPS_PB0" (shape passive) (at 33.02 71.12 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "2c5e8975-1ca7-5357-a56b-59ed45184531"))
+	(wire
+		(pts
+			(xy 38.1 73.66) (xy 33.02 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feea68b6-6d6d-5779-9cf5-4bc3ed2b2894")
+	)
+(hierarchical_label "GPS_RX_PC11" (shape passive) (at 33.02 73.66 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "7fbc9134-2bb8-586e-8b47-dae6b37f2fbd"))
+	(wire
+		(pts
+			(xy 38.1 76.2) (xy 33.02 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "388e775b-0a58-5706-a84d-b6e32fd6fc34")
+	)
+(hierarchical_label "GPS_TX_PC10" (shape passive) (at 33.02 76.2 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "101131f0-b82e-569b-8efe-716d94bcca6b"))
+	(text "PC11 is GNSS-to-MCU data; PC10 is MCU-to-GNSS data. PB0 on pin 3 is driven low by legacy firmware; confirm the module pin function."
+		(exclude_from_sim no)
+		(at 20 98.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4465bb47-4ca8-5214-87cb-f487b4beb608")
+	)
+	(text "Read named nets within each group; matching labels are electrically connected. Cross-sheet signals use hierarchical ports."
+		(exclude_from_sim no)
+		(at 13 261 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8c855f5-23f1-56dd-8d8f-fa64e1e3a9e1")
+	)
+	(text "V1 preserves original defects. V2 is a review draft. Bench values and firmware behavior require validation."
+		(exclude_from_sim no)
+		(at 13 266 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d6133a09-3f88-5e8e-accf-311471d8be7e")
+	)
+(embedded_fonts no)
+)

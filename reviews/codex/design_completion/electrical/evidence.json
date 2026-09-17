@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "captured_date": "2026-09-17",
+  "status": "electrical_review_blocked_not_a_release",
+  "source_commit": "07c0f3572bf877a9d398c545d9a97f84a8b27cb7",
+  "sources": [
+    {
+      "path": "hardware/kicad_v2/tools/v2_design.py",
+      "sha256": "5b8d457625ba2dec897a0ab1e8b75ac2a57455c914030d89d772f3a255cbf3b4"
+    },
+    {
+      "path": "hardware/kicad_v2/Navigation.kicad_sch",
+      "sha256": "9d07440781ce1fb8f1d98997a1f34044cdc7ac7a29b36a1b2260bd3e542ec039"
+    },
+    {
+      "path": "hardware/kicad_v2/Actuators.kicad_sch",
+      "sha256": "19ccbc4b351d8f371c53b831e3f80bc9be7fdf925b876e5c6f14da5d1ad6bfa2"
+    },
+    {
+      "path": "hardware/kicad_v2/Power.kicad_sch",
+      "sha256": "77b234a7b111fc6105b951f4049ed4f8b4d68257905c57d70b86d1207a68dc04"
+    },
+    {
+      "path": "hardware/kicad_v2/MCU.kicad_sch",
+      "sha256": "ecbec0770dd18ffdc33a859239e98700ea401bd74abe1135e2775989eb254ba7"
+    },
+    {
+      "path": "reviews/codex/publication/native-review/v2/netlist.xml",
+      "sha256": "0b1a20f611a2bbc30748edfdf3a2e993fab9b962e1b93d4823997f6b3f2d3b19"
+    },
+    {
+      "path": "reviews/codex/publication/native-review/v2/erc.json",
+      "sha256": "ab7dc8821edc67cbbb693a139b8cc629eae354ea908bfbab6e72488413098fdc"
+    }
+  ],
+  "basis": "Published native-review netlist plus separately hashed live design sources. No new native export or hardware measurement.",
+  "pins": {
+    "C20.1": {
+      "net": "/MCU/VCAP1",
+      "pin_function": null
+    },
+    "C20.2": {
+      "net": "GND",
+      "pin_function": null
+    },
+    "C37.1": {
+      "net": "/ISENSE",
+      "pin_function": null
+    },
+    "C37.2": {
+      "net": "GND",
+      "pin_function": null
+    },
+    "D1.1": {
+      "net": "VIN_RAW",
+      "pin_function": "A1"
+    },
+    "D1.2": {
+      "net": "GND",
+      "pin_function": "A2"
+    },
+    "R6.1": {
+      "net": "/Power/VIN_BUCK",
+      "pin_function": null
+    },
+    "R6.2": {
+      "net": "/Power/EN_5V",
+      "pin_function": null
+    },
+    "U1.30": {
+      "net": "/MCU/VCAP1",
+      "pin_function": "VCAP_1"
+    },
+    "U3.3": {
+      "net": "/Power/VIN_BUCK",
+      "pin_function": "VIN"
+    },
+    "U3.5": {
+      "net": "/Power/EN_5V",
+      "pin_function": "EN"
+    },
+    "U4.5": {
+      "net": "VSERVO",
+      "pin_function": "VCC"
+    },
+    "U5.5": {
+      "net": "VSERVO",
+      "pin_function": "VCC"
+    },
+    "U6.12": {
+      "net": "/IMU_INT",
+      "pin_function": "INT1"
+    },
+    "U6.13": {
+      "net": "+3V3",
+      "pin_function": "VDD"
+    },
+    "U6.22": {
+      "net": "+3V3",
+      "pin_function": "~{CS}"
+    },
+    "U6.23": {
+      "net": "/I2C1_SCL",
+      "pin_function": "SCL/SCLK"
+    },
+    "U6.24": {
+      "net": "/I2C1_SDA",
+      "pin_function": "SDA/SDI"
+    },
+    "U6.8": {
+      "net": "+3V3",
+      "pin_function": "VDDIO"
+    },
+    "U6.9": {
+      "net": "GND",
+      "pin_function": "SDO/AD0"
+    },
+    "U8.1": {
+      "net": "/ISENSE",
+      "pin_function": null
+    },
+    "U8.3": {
+      "net": "VIN_RAW",
+      "pin_function": "+"
+    },
+    "U8.4": {
+      "net": "/Power/VIN_BUCK",
+      "pin_function": "-"
+    },
+    "U8.5": {
+      "net": "+3V3",
+      "pin_function": "V+"
+    }
+  },
+  "calculations": {
+    "battery_divider_ratio_nominal": 0.12639405204460966,
+    "battery_divider_ratio_worst_1percent_resistors": 0.12861904940259933,
+    "adc_at_25_2V_nominal_V": 3.1851301115241633,
+    "adc_at_26V_worst_resistors_V": 3.3440952844675826,
+    "buck5_output_nominal_V": 5.077203007518797,
+    "buck5_ripple_25_2V_390kHz_nominal_4_7uH_A": 2.2118204480883055,
+    "buck5_peak_at_2A_A": 3.1059102240441527,
+    "buck5_minimum_highside_limit_A": 2.5,
+    "proposed_ISENSE_1k_100nF_time_constant_s": 9.999999999999999e-05
+  }
+}
