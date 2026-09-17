@@ -2,6 +2,8 @@
 
 This package makes the engineering review edition portable and gives the portfolio editor a clear, evidence-backed project description. The destination is the existing [LoRa-Autonomous-Boat repository](https://github.com/SpaceCadetJ/LoRa-Autonomous-Boat). The repository landing page and `docs/portfolio/portfolio.json` are the portfolio entry points; no public website deployment is implied.
 
+Published integration: [`fb9f16f605fd8861d24ca46763a2ab40c93cc635`](https://github.com/SpaceCadetJ/LoRa-Autonomous-Boat/commit/fb9f16f605fd8861d24ca46763a2ab40c93cc635), verified on remote `main` and `v2-design` on 2026-09-17. The push was an ordinary fast-forward plus creation of the remote design branch, without rewriting history. Follow-up handoff commits may advance the branch; the integration revision remains the stable engineering milestone. Check [GitHub Actions](https://github.com/SpaceCadetJ/LoRa-Autonomous-Boat/actions) for hosted check status.
+
 ## What is included
 
 - The reconstruction and design history already present on local `v2-design`, plus the reviewed schematic, assembly, build, viewer and documentation packet.

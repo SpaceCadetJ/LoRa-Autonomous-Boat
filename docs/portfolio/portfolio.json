@@ -189,9 +189,9 @@
     "Jay's individual original team role must be confirmed before first-person contribution claims."
   ],
   "publication": {
-    "integration_commit": null,
+    "integration_commit": "fb9f16f605fd8861d24ca46763a2ab40c93cc635",
     "live_viewer_url": null,
-    "editor_note": "Use the actual published integration commit and deployment URL when available; repository-relative paths are authoritative here.",
+    "editor_note": "The integration commit is published on main and v2-design; later handoff-only commits may follow it. Repository-relative paths are authoritative. No hosted viewer URL is claimed.",
     "repository_url": "https://github.com/SpaceCadetJ/LoRa-Autonomous-Boat",
     "branch": "main"
   }
