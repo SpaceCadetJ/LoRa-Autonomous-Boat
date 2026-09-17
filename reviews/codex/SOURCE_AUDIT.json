@@ -1,0 +1,1866 @@
+{
+  "timestamp_utc": "2026-09-17T00:17:47.700130+00:00",
+  "purpose": "Independent source inventory; not ERC/DRC/copper continuity proof",
+  "command": "python reviews/codex/tools/source_audit.py",
+  "git_head": {
+    "exit_code": 0,
+    "stdout": "89b5219cffe56657295f6cf944d2770036806313",
+    "stderr": ""
+  },
+  "git_status": {
+    "exit_code": 0,
+    "stdout": "## v1-kicad-reconstruction\n M hardware/kicad/LoRa_Boat_Controller.kicad_pcb\n M hardware/kicad/LoRa_Boat_Controller.kicad_pro\n?? AGENT_STATUS.md\n?? BLOCKERS.md\n?? CONVERSION_LOG.md\n?? FILE_OWNERSHIP.md\n?? HANDOFF.md\n?? docs/A0_PROVENANCE.md\n?? docs/img/\n?? docs/research/\n?? hardware/kicad/LoRa_Boat_Controller.pretty/\n?? hardware/kicad/tools/\n?? reviews/",
+    "stderr": ""
+  },
+  "electrical_net_count_excluding_NC": 32,
+  "NC_node_count": 37,
+  "part_count": 44,
+  "parts": {
+    "C1": "C_CAP_KGM21_KAV-L_.1UF",
+    "C10": "C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7UF",
+    "C12": "C_CAP_CL10_SAM-M_.1UF",
+    "C14": "C_CAP_0603G_AVX-M_470PF",
+    "C2": "C_CAP_KGM21_KAV-L_.1UF",
+    "C20": "C_G-21_MUR-L_10UF",
+    "C21": "C_G-21_MUR-L_10UF",
+    "C22": "C_CAP_KGM21_KAV-L_.1UF",
+    "C23": "C_CAP_GJM1555C1H220JB01__MUR-L_47PF",
+    "C3": "C_CAP_KGM21_KAV-L_.1UF",
+    "C4": "C_CAP_KGM21_KAV-L_.1UF",
+    "C5": "C_CAP_KGM21_KAV-L_.1UF",
+    "C6": "C_CAP_KGM21_KAV-L_.1UF",
+    "C7": "C_CAP_KGM21_KAV-L_.1UF",
+    "C8": "C_CAP_KGM21_KAV-L_.1UF",
+    "C9": "C_CAP_KGM21_KAV-L_.1UF",
+    "CANHEADER": "B4B-XH-A_CONN_B4B-XH-A_JST_CONN_B4B-XH-A",
+    "CEXT": "C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7 UF",
+    "CIN": "KTS500B106M55N0T00_CAP_NTS_55_2P8T_NIP_10UF",
+    "COUT": "C_G-31_MUR-M_10UF",
+    "D21": "CMS06TE12L,Q,M_M-FLAT_TOS-L_DIODE_MFLAT",
+    "GND": "CON1_AMV_CON1_BATTERY-",
+    "GPSMODULE": "PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC",
+    "JTAG": "FTSH-105-XX-X-DV_SAMTEC_FTSH-105-XX-X-DV_FTSH-105-XX-X-DV",
+    "L1": "SLF7045T-4R7M2R0-PF_IND_7045_TDK_4.7UH",
+    "L3": "INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR",
+    "L4": "INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR",
+    "LORAMODULE": "PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC",
+    "R1": "R_RC0402N_PAN-M_15K",
+    "R2": "R_RC0603N_YAG-M_4.7K",
+    "R3": "R_RC0402N_YAG-M_51",
+    "R4": "R_RC0402N_PAN-M_5.1K",
+    "R5": "R_RES_R0805_ROM-M_30K",
+    "R6": "R_RES_1005_SAM-M_10K",
+    "SPEEDCONTROLLER": "PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031",
+    "STEERINGSERVO": "PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031",
+    "TP1": "TEST POINT_AMV_TEST_POINT_TEST POINT",
+    "TP3": "TEST POINT_AMV_TEST_POINT_TEST POINT",
+    "TP4": "TEST POINT_AMV_TEST_POINT_TEST POINT",
+    "TP5": "TEST POINT_AMV_TEST_POINT_TEST POINT",
+    "U3": "STM32F446RET6TR_LQFP64-10X10MM_STM32F4XXR2",
+    "U5": "TCAN1042HDRQ1_D0008A_L_TCAN1042H-Q1D",
+    "U6": "R1240N001B-TR-FE_3_SOT-23-6W_PE-SOT23-6W-0512_NMD_R1240N001X",
+    "VIN": "CON1_AMV_CON1_BATTERY+"
+  },
+  "nets_including_NC": {
+    "N27410": [
+      {
+        "ref": "C20",
+        "pin": "1",
+        "label": "1",
+        "line": 7
+      },
+      {
+        "ref": "L4",
+        "pin": "2",
+        "label": "2",
+        "line": 10
+      }
+    ],
+    "N04485": [
+      {
+        "ref": "LORAMODULE",
+        "pin": "3",
+        "label": "3",
+        "line": 17
+      },
+      {
+        "ref": "U3",
+        "pin": "15",
+        "label": "PA1",
+        "line": 20
+      }
+    ],
+    "N04429": [
+      {
+        "ref": "LORAMODULE",
+        "pin": "1",
+        "label": "1",
+        "line": 27
+      },
+      {
+        "ref": "L3",
+        "pin": "1",
+        "label": "1",
+        "line": 30
+      },
+      {
+        "ref": "C21",
+        "pin": "2",
+        "label": "2",
+        "line": 33
+      },
+      {
+        "ref": "C22",
+        "pin": "2",
+        "label": "2",
+        "line": 36
+      },
+      {
+        "ref": "C23",
+        "pin": "2",
+        "label": "2",
+        "line": 39
+      }
+    ],
+    "N04277": [
+      {
+        "ref": "GPSMODULE",
+        "pin": "3",
+        "label": "3",
+        "line": 46
+      },
+      {
+        "ref": "U3",
+        "pin": "26",
+        "label": "PB0",
+        "line": 49
+      }
+    ],
+    "N04759": [
+      {
+        "ref": "U3",
+        "pin": "43",
+        "label": "PA10",
+        "line": 56
+      },
+      {
+        "ref": "U5",
+        "pin": "4",
+        "label": "RXD",
+        "line": 59
+      }
+    ],
+    "N04763": [
+      {
+        "ref": "U3",
+        "pin": "45",
+        "label": "PA12",
+        "line": 66
+      },
+      {
+        "ref": "U5",
+        "pin": "1",
+        "label": "TXD",
+        "line": 69
+      }
+    ],
+    "N04855": [
+      {
+        "ref": "CANHEADER",
+        "pin": "4",
+        "label": "4",
+        "line": 76
+      },
+      {
+        "ref": "U5",
+        "pin": "6",
+        "label": "CANL",
+        "line": 79
+      }
+    ],
+    "N04755": [
+      {
+        "ref": "U3",
+        "pin": "44",
+        "label": "PA11",
+        "line": 86
+      },
+      {
+        "ref": "U5",
+        "pin": "8",
+        "label": "STB",
+        "line": 89
+      }
+    ],
+    "N04477": [
+      {
+        "ref": "LORAMODULE",
+        "pin": "2",
+        "label": "2",
+        "line": 96
+      },
+      {
+        "ref": "U3",
+        "pin": "14",
+        "label": "PA0",
+        "line": 99
+      }
+    ],
+    "0": [
+      {
+        "ref": "C3",
+        "pin": "1",
+        "label": "1",
+        "line": 106
+      },
+      {
+        "ref": "GPSMODULE",
+        "pin": "2",
+        "label": "2",
+        "line": 109
+      },
+      {
+        "ref": "C4",
+        "pin": "1",
+        "label": "1",
+        "line": 112
+      },
+      {
+        "ref": "SPEEDCONTROLLER",
+        "pin": "3",
+        "label": "3",
+        "line": 115
+      },
+      {
+        "ref": "C2",
+        "pin": "1",
+        "label": "1",
+        "line": 118
+      },
+      {
+        "ref": "STEERINGSERVO",
+        "pin": "3",
+        "label": "3",
+        "line": 121
+      },
+      {
+        "ref": "LORAMODULE",
+        "pin": "5",
+        "label": "5",
+        "line": 124
+      },
+      {
+        "ref": "CANHEADER",
+        "pin": "1",
+        "label": "1",
+        "line": 127
+      },
+      {
+        "ref": "C21",
+        "pin": "1",
+        "label": "1",
+        "line": 130
+      },
+      {
+        "ref": "L4",
+        "pin": "1",
+        "label": "1",
+        "line": 133
+      },
+      {
+        "ref": "C22",
+        "pin": "1",
+        "label": "1",
+        "line": 136
+      },
+      {
+        "ref": "C23",
+        "pin": "1",
+        "label": "1",
+        "line": 139
+      },
+      {
+        "ref": "GND",
+        "pin": "1",
+        "label": "1",
+        "line": 142
+      },
+      {
+        "ref": "CIN",
+        "pin": "1",
+        "label": "1",
+        "line": 145
+      },
+      {
+        "ref": "R6",
+        "pin": "1",
+        "label": "1",
+        "line": 148
+      },
+      {
+        "ref": "U6",
+        "pin": "5",
+        "label": "GND",
+        "line": 151
+      },
+      {
+        "ref": "R2",
+        "pin": "2",
+        "label": "2",
+        "line": 154
+      },
+      {
+        "ref": "D21",
+        "pin": "1",
+        "label": "1",
+        "line": 157
+      },
+      {
+        "ref": "COUT",
+        "pin": "1",
+        "label": "1",
+        "line": 160
+      },
+      {
+        "ref": "TP5",
+        "pin": "1",
+        "label": "1",
+        "line": 163
+      },
+      {
+        "ref": "C10",
+        "pin": "1",
+        "label": "1",
+        "line": 166
+      },
+      {
+        "ref": "U3",
+        "pin": "18",
+        "label": "VSS",
+        "line": 169
+      },
+      {
+        "ref": "U3",
+        "pin": "31",
+        "label": "VSS_2",
+        "line": 172
+      },
+      {
+        "ref": "U3",
+        "pin": "47",
+        "label": "VSS_3",
+        "line": 175
+      },
+      {
+        "ref": "U3",
+        "pin": "63",
+        "label": "VSS_4",
+        "line": 178
+      },
+      {
+        "ref": "U3",
+        "pin": "12",
+        "label": "VSSA/VREF-",
+        "line": 181
+      },
+      {
+        "ref": "C5",
+        "pin": "1",
+        "label": "1",
+        "line": 184
+      },
+      {
+        "ref": "C6",
+        "pin": "1",
+        "label": "1",
+        "line": 187
+      },
+      {
+        "ref": "C7",
+        "pin": "1",
+        "label": "1",
+        "line": 190
+      },
+      {
+        "ref": "C8",
+        "pin": "1",
+        "label": "1",
+        "line": 193
+      },
+      {
+        "ref": "C9",
+        "pin": "1",
+        "label": "1",
+        "line": 196
+      },
+      {
+        "ref": "JTAG",
+        "pin": "9",
+        "label": "09",
+        "line": 199
+      },
+      {
+        "ref": "JTAG",
+        "pin": "5",
+        "label": "05",
+        "line": 202
+      },
+      {
+        "ref": "JTAG",
+        "pin": "3",
+        "label": "03",
+        "line": 205
+      },
+      {
+        "ref": "C1",
+        "pin": "1",
+        "label": "1",
+        "line": 208
+      },
+      {
+        "ref": "U5",
+        "pin": "2",
+        "label": "GND",
+        "line": 211
+      }
+    ],
+    "N04281": [
+      {
+        "ref": "GPSMODULE",
+        "pin": "4",
+        "label": "4",
+        "line": 218
+      },
+      {
+        "ref": "U3",
+        "pin": "52",
+        "label": "PC11",
+        "line": 221
+      }
+    ],
+    "N04285": [
+      {
+        "ref": "GPSMODULE",
+        "pin": "5",
+        "label": "5",
+        "line": 228
+      },
+      {
+        "ref": "U3",
+        "pin": "51",
+        "label": "PC10",
+        "line": 231
+      }
+    ],
+    "N04355": [
+      {
+        "ref": "SPEEDCONTROLLER",
+        "pin": "2",
+        "label": "2",
+        "line": 238
+      },
+      {
+        "ref": "TP1",
+        "pin": "1",
+        "label": "1",
+        "line": 241
+      },
+      {
+        "ref": "U3",
+        "pin": "41",
+        "label": "PA8",
+        "line": 244
+      }
+    ],
+    "N088060": [
+      {
+        "ref": "VIN",
+        "pin": "1",
+        "label": "1",
+        "line": 251
+      },
+      {
+        "ref": "U6",
+        "pin": "2",
+        "label": "VIN",
+        "line": 254
+      },
+      {
+        "ref": "CIN",
+        "pin": "2",
+        "label": "2",
+        "line": 257
+      },
+      {
+        "ref": "R5",
+        "pin": "1",
+        "label": "1",
+        "line": 260
+      },
+      {
+        "ref": "R4",
+        "pin": "1",
+        "label": "1",
+        "line": 263
+      }
+    ],
+    "N04395": [
+      {
+        "ref": "TP3",
+        "pin": "1",
+        "label": "1",
+        "line": 270
+      },
+      {
+        "ref": "STEERINGSERVO",
+        "pin": "2",
+        "label": "2",
+        "line": 273
+      },
+      {
+        "ref": "U3",
+        "pin": "37",
+        "label": "PC6",
+        "line": 276
+      }
+    ],
+    "3.3V": [
+      {
+        "ref": "C3",
+        "pin": "2",
+        "label": "2",
+        "line": 283
+      },
+      {
+        "ref": "GPSMODULE",
+        "pin": "1",
+        "label": "1",
+        "line": 286
+      },
+      {
+        "ref": "C2",
+        "pin": "2",
+        "label": "2",
+        "line": 289
+      },
+      {
+        "ref": "STEERINGSERVO",
+        "pin": "1",
+        "label": "1",
+        "line": 292
+      },
+      {
+        "ref": "SPEEDCONTROLLER",
+        "pin": "1",
+        "label": "1",
+        "line": 295
+      },
+      {
+        "ref": "C4",
+        "pin": "2",
+        "label": "2",
+        "line": 298
+      },
+      {
+        "ref": "L3",
+        "pin": "2",
+        "label": "2",
+        "line": 301
+      },
+      {
+        "ref": "C20",
+        "pin": "2",
+        "label": "2",
+        "line": 304
+      },
+      {
+        "ref": "R1",
+        "pin": "1",
+        "label": "1",
+        "line": 307
+      },
+      {
+        "ref": "C14",
+        "pin": "1",
+        "label": "1",
+        "line": 310
+      },
+      {
+        "ref": "TP4",
+        "pin": "1",
+        "label": "1",
+        "line": 313
+      },
+      {
+        "ref": "COUT",
+        "pin": "2",
+        "label": "2",
+        "line": 316
+      },
+      {
+        "ref": "L1",
+        "pin": "1",
+        "label": "1",
+        "line": 319
+      },
+      {
+        "ref": "U3",
+        "pin": "19",
+        "label": "VDD",
+        "line": 322
+      },
+      {
+        "ref": "U3",
+        "pin": "32",
+        "label": "VDD_2",
+        "line": 325
+      },
+      {
+        "ref": "U3",
+        "pin": "48",
+        "label": "VDD_3",
+        "line": 328
+      },
+      {
+        "ref": "U3",
+        "pin": "64",
+        "label": "VDD_4",
+        "line": 331
+      },
+      {
+        "ref": "U3",
+        "pin": "13",
+        "label": "VDDA/VREF+",
+        "line": 334
+      },
+      {
+        "ref": "CEXT",
+        "pin": "2",
+        "label": "2",
+        "line": 337
+      },
+      {
+        "ref": "C10",
+        "pin": "2",
+        "label": "2",
+        "line": 340
+      },
+      {
+        "ref": "C5",
+        "pin": "2",
+        "label": "2",
+        "line": 343
+      },
+      {
+        "ref": "C6",
+        "pin": "2",
+        "label": "2",
+        "line": 346
+      },
+      {
+        "ref": "C7",
+        "pin": "2",
+        "label": "2",
+        "line": 349
+      },
+      {
+        "ref": "C8",
+        "pin": "2",
+        "label": "2",
+        "line": 352
+      },
+      {
+        "ref": "C9",
+        "pin": "2",
+        "label": "2",
+        "line": 355
+      },
+      {
+        "ref": "JTAG",
+        "pin": "1",
+        "label": "01",
+        "line": 358
+      }
+    ],
+    "N27791": [
+      {
+        "ref": "CEXT",
+        "pin": "1",
+        "label": "1",
+        "line": 365
+      },
+      {
+        "ref": "U3",
+        "pin": "30",
+        "label": "VCAP_1",
+        "line": 368
+      }
+    ],
+    "N24517": [
+      {
+        "ref": "LORAMODULE",
+        "pin": "4",
+        "label": "4",
+        "line": 375
+      },
+      {
+        "ref": "U3",
+        "pin": "17",
+        "label": "PA3",
+        "line": 378
+      }
+    ],
+    "N24691": [
+      {
+        "ref": "CANHEADER",
+        "pin": "3",
+        "label": "3",
+        "line": 385
+      },
+      {
+        "ref": "U5",
+        "pin": "7",
+        "label": "CANH",
+        "line": 388
+      }
+    ],
+    "N24886": [
+      {
+        "ref": "CANHEADER",
+        "pin": "2",
+        "label": "2",
+        "line": 395
+      },
+      {
+        "ref": "U5",
+        "pin": "3",
+        "label": "VCC",
+        "line": 398
+      },
+      {
+        "ref": "C1",
+        "pin": "2",
+        "label": "2",
+        "line": 401
+      }
+    ],
+    "PB3 TBO": [
+      {
+        "ref": "U3",
+        "pin": "55",
+        "label": "PB3",
+        "line": 408
+      },
+      {
+        "ref": "JTAG",
+        "pin": "6",
+        "label": "06",
+        "line": 411
+      }
+    ],
+    "PA13 TMS": [
+      {
+        "ref": "U3",
+        "pin": "46",
+        "label": "PA13",
+        "line": 418
+      },
+      {
+        "ref": "JTAG",
+        "pin": "2",
+        "label": "02",
+        "line": 421
+      }
+    ],
+    "PA14 TCLK": [
+      {
+        "ref": "U3",
+        "pin": "49",
+        "label": "PA14",
+        "line": 428
+      },
+      {
+        "ref": "JTAG",
+        "pin": "4",
+        "label": "04",
+        "line": 431
+      }
+    ],
+    "N148600": [
+      {
+        "ref": "R4",
+        "pin": "2",
+        "label": "2",
+        "line": 438
+      },
+      {
+        "ref": "U6",
+        "pin": "1",
+        "label": "CE",
+        "line": 441
+      }
+    ],
+    "ADC": [
+      {
+        "ref": "R6",
+        "pin": "2",
+        "label": "2",
+        "line": 448
+      },
+      {
+        "ref": "R5",
+        "pin": "2",
+        "label": "2",
+        "line": 451
+      },
+      {
+        "ref": "U3",
+        "pin": "16",
+        "label": "PA2",
+        "line": 454
+      }
+    ],
+    "PA15 TDI": [
+      {
+        "ref": "U3",
+        "pin": "50",
+        "label": "PA15",
+        "line": 461
+      },
+      {
+        "ref": "JTAG",
+        "pin": "8",
+        "label": "08",
+        "line": 464
+      }
+    ],
+    "RESET": [
+      {
+        "ref": "U3",
+        "pin": "7",
+        "label": "NRST",
+        "line": 471
+      },
+      {
+        "ref": "JTAG",
+        "pin": "10",
+        "label": "10",
+        "line": 474
+      }
+    ],
+    "VBAT": [
+      {
+        "ref": "U3",
+        "pin": "1",
+        "label": "VBAT",
+        "line": 481
+      }
+    ],
+    "N17576": [
+      {
+        "ref": "U6",
+        "pin": "6",
+        "label": "VFB",
+        "line": 488
+      },
+      {
+        "ref": "R2",
+        "pin": "1",
+        "label": "1",
+        "line": 491
+      },
+      {
+        "ref": "R1",
+        "pin": "2",
+        "label": "2",
+        "line": 494
+      },
+      {
+        "ref": "C14",
+        "pin": "2",
+        "label": "2",
+        "line": 497
+      }
+    ],
+    "N17942": [
+      {
+        "ref": "U6",
+        "pin": "4",
+        "label": "BST",
+        "line": 504
+      },
+      {
+        "ref": "R3",
+        "pin": "2",
+        "label": "2",
+        "line": 507
+      }
+    ],
+    "N18028": [
+      {
+        "ref": "U6",
+        "pin": "3",
+        "label": "LX",
+        "line": 514
+      },
+      {
+        "ref": "C12",
+        "pin": "1",
+        "label": "1",
+        "line": 517
+      },
+      {
+        "ref": "L1",
+        "pin": "2",
+        "label": "2",
+        "line": 520
+      },
+      {
+        "ref": "D21",
+        "pin": "2",
+        "label": "2",
+        "line": 523
+      }
+    ],
+    "N061071": [
+      {
+        "ref": "R3",
+        "pin": "1",
+        "label": "1",
+        "line": 530
+      },
+      {
+        "ref": "C12",
+        "pin": "2",
+        "label": "2",
+        "line": 533
+      }
+    ],
+    "NC": [
+      {
+        "ref": "U3",
+        "pin": "20",
+        "label": "PA4",
+        "line": 540
+      },
+      {
+        "ref": "U3",
+        "pin": "21",
+        "label": "PA5",
+        "line": 543
+      },
+      {
+        "ref": "U3",
+        "pin": "22",
+        "label": "PA6",
+        "line": 546
+      },
+      {
+        "ref": "U3",
+        "pin": "23",
+        "label": "PA7",
+        "line": 549
+      },
+      {
+        "ref": "U3",
+        "pin": "42",
+        "label": "PA9",
+        "line": 552
+      },
+      {
+        "ref": "U3",
+        "pin": "27",
+        "label": "PB1",
+        "line": 555
+      },
+      {
+        "ref": "U3",
+        "pin": "28",
+        "label": "PB2",
+        "line": 558
+      },
+      {
+        "ref": "U3",
+        "pin": "56",
+        "label": "PB4",
+        "line": 561
+      },
+      {
+        "ref": "U3",
+        "pin": "57",
+        "label": "PB5",
+        "line": 564
+      },
+      {
+        "ref": "U3",
+        "pin": "58",
+        "label": "PB6",
+        "line": 567
+      },
+      {
+        "ref": "U3",
+        "pin": "59",
+        "label": "PB7",
+        "line": 570
+      },
+      {
+        "ref": "U3",
+        "pin": "61",
+        "label": "PB8",
+        "line": 573
+      },
+      {
+        "ref": "U3",
+        "pin": "62",
+        "label": "PB9",
+        "line": 576
+      },
+      {
+        "ref": "U3",
+        "pin": "29",
+        "label": "PB10",
+        "line": 579
+      },
+      {
+        "ref": "U3",
+        "pin": "33",
+        "label": "PB12",
+        "line": 582
+      },
+      {
+        "ref": "U3",
+        "pin": "34",
+        "label": "PB13",
+        "line": 585
+      },
+      {
+        "ref": "U3",
+        "pin": "35",
+        "label": "PB14",
+        "line": 588
+      },
+      {
+        "ref": "U3",
+        "pin": "36",
+        "label": "PB15",
+        "line": 591
+      },
+      {
+        "ref": "U3",
+        "pin": "8",
+        "label": "PC0",
+        "line": 594
+      },
+      {
+        "ref": "U3",
+        "pin": "9",
+        "label": "PC1",
+        "line": 597
+      },
+      {
+        "ref": "U3",
+        "pin": "10",
+        "label": "PC2",
+        "line": 600
+      },
+      {
+        "ref": "U3",
+        "pin": "11",
+        "label": "PC3",
+        "line": 603
+      },
+      {
+        "ref": "U3",
+        "pin": "24",
+        "label": "PC4",
+        "line": 606
+      },
+      {
+        "ref": "U3",
+        "pin": "25",
+        "label": "PC5",
+        "line": 609
+      },
+      {
+        "ref": "U3",
+        "pin": "38",
+        "label": "PC7",
+        "line": 612
+      },
+      {
+        "ref": "U3",
+        "pin": "39",
+        "label": "PC8",
+        "line": 615
+      },
+      {
+        "ref": "U3",
+        "pin": "40",
+        "label": "PC9",
+        "line": 618
+      },
+      {
+        "ref": "U3",
+        "pin": "53",
+        "label": "PC12",
+        "line": 621
+      },
+      {
+        "ref": "U3",
+        "pin": "2",
+        "label": "PC13",
+        "line": 624
+      },
+      {
+        "ref": "U3",
+        "pin": "3",
+        "label": "PC14-OSC32_IN",
+        "line": 627
+      },
+      {
+        "ref": "U3",
+        "pin": "4",
+        "label": "PC15-OSC32_OUT",
+        "line": 630
+      },
+      {
+        "ref": "U3",
+        "pin": "54",
+        "label": "PD2",
+        "line": 633
+      },
+      {
+        "ref": "U3",
+        "pin": "5",
+        "label": "PH0-OSC_IN",
+        "line": 636
+      },
+      {
+        "ref": "U3",
+        "pin": "6",
+        "label": "PH1",
+        "line": 639
+      },
+      {
+        "ref": "U3",
+        "pin": "60",
+        "label": "BOOT0",
+        "line": 642
+      },
+      {
+        "ref": "U5",
+        "pin": "5",
+        "label": "NC",
+        "line": 645
+      },
+      {
+        "ref": "JTAG",
+        "pin": "7",
+        "label": "07",
+        "line": 648
+      }
+    ]
+  },
+  "duplicate_pin_membership": [],
+  "artwork_headers": [
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWBOTL.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 15:41:34 2025",
+      "film": "BOATCREWBOTL"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWBOTTOM.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 15:41:34 2025",
+      "film": "BOATCREWBOTTOM"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWMASK_BOT.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 15:41:34 2025",
+      "film": "BOATCREWMASK_BOT"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWMASK_TOP.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 15:41:34 2025",
+      "film": "BOATCREWMASK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWOUTLINE.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 15:41:34 2025",
+      "film": "BOATCREWOUTLINE"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWSILK_TOP.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 15:41:34 2025",
+      "film": "BOATCREWSILK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWTOPL.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 15:41:34 2025",
+      "film": "BOATCREWTOPL"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWBOTL.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWBOTL"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWBOTL.art,1",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 15:46:27 2025",
+      "film": "BOATCREWBOTL"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWBOTTOM.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWBOTTOM"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWBOTTOM.art,1",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 15:46:27 2025",
+      "film": "BOATCREWBOTTOM"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWMASK_BOT.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWMASK_BOT"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWMASK_BOT.art,1",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 15:46:27 2025",
+      "film": "BOATCREWMASK_BOT"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWMASK_TOP.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWMASK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWMASK_TOP.art,1",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 15:46:27 2025",
+      "film": "BOATCREWMASK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWOUTLINE.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWOUTLINE"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWOUTLINE.art,1",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 15:46:27 2025",
+      "film": "BOATCREWOUTLINE"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWSILK_TOP.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWSILK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWSILK_TOP.art,1",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 15:46:27 2025",
+      "film": "BOATCREWSILK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWTOPL.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWTOPL"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWTOPL.art,1",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 15:46:27 2025",
+      "film": "BOATCREWTOPL"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOTL.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:29:46 2025",
+      "film": "BOTL"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOTTOM.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:55:53 2025",
+      "film": "BOTTOM"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOTTOM.art,1",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:39:21 2025",
+      "film": "BOTTOM"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Filesv2BOTTOM.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:57:41 2025",
+      "film": "Filesv2BOTTOM"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Filesv2MASK_BOT.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:57:41 2025",
+      "film": "Filesv2MASK_BOT"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Filesv2MASK_TOP.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:57:41 2025",
+      "film": "Filesv2MASK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Filesv2OUTLINE.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:57:41 2025",
+      "film": "Filesv2OUTLINE"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Filesv2SILK_TOP.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:57:41 2025",
+      "film": "Filesv2SILK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Filesv2TOP.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:57:41 2025",
+      "film": "Filesv2TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/MASK_BOT.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:55:53 2025",
+      "film": "MASK_BOT"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/MASK_BOT.art,1",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:39:21 2025",
+      "film": "MASK_BOT"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/MASK_TOP.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:55:53 2025",
+      "film": "MASK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/MASK_TOP.art,1",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:39:21 2025",
+      "film": "MASK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/OUTLINE.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:55:53 2025",
+      "film": "OUTLINE"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/OUTLINE.art,1",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:39:21 2025",
+      "film": "OUTLINE"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Routing.art",
+      "source_board": "senior design v4.brd",
+      "date": "Tue Apr 29 18:29:31 2025",
+      "film": "Routing"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/Routing.art,1",
+      "source_board": "senior design v4.brd",
+      "date": "Tue Apr 29 17:56:02 2025",
+      "film": "Routing"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/SILK_TOP.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:55:53 2025",
+      "film": "SILK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/SILK_TOP.art,1",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:39:21 2025",
+      "film": "SILK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/TOP.art",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:55:53 2025",
+      "film": "TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/Allegro v5/Allegro/TOP.art,1",
+      "source_board": "L:/ALLEGRO/allegro/senior design v4.brd",
+      "date": "Thu May  1 14:39:21 2025",
+      "film": "TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWBOTL.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWBOTL"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWBOTTOM.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWBOTTOM"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWMASK_BOT.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWMASK_BOT"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWMASK_TOP.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWMASK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWOUTLINE.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWOUTLINE"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWSILK_TOP.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWSILK_TOP"
+    },
+    {
+      "path": "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWTOPL.art",
+      "source_board": "L:/SENIOR DESIGN/DESIGN 4/ALLEGRO V5/allegro/senior design v5.brd",
+      "date": "Fri May  9 17:41:07 2025",
+      "film": "BOATCREWTOPL"
+    }
+  ],
+  "outline": {
+    "centerline_points_inches": [
+      [
+        -1.502,
+        1.505
+      ],
+      [
+        -1.502,
+        0.036
+      ],
+      [
+        1.118,
+        0.036
+      ],
+      [
+        1.118,
+        1.505
+      ],
+      [
+        -1.502,
+        1.505
+      ]
+    ],
+    "width_mm": 66.548,
+    "height_mm": 37.3126
+  },
+  "drill": {
+    "holes_per_tool": {
+      "T01": 24,
+      "T02": 2,
+      "T03": 16,
+      "T04": 4,
+      "T05": 4
+    },
+    "total": 50,
+    "same_as_v4_except_FILE_line": true,
+    "archived_copy": {
+      "timestamp": [
+        2025,
+        5,
+        1,
+        15,
+        51,
+        2
+      ],
+      "same_bytes_as_boatcrew_drill": true
+    },
+    "interpretation": "Older v4-identical drill; no independent v5 drill fidelity proof"
+  },
+  "pcb_text_counts_only": {
+    "footprint": 44,
+    "segment": 367,
+    "via": 27,
+    "zone": 3
+  },
+  "schematic_text_counts_only": {
+    "CAN_Bus.kicad_sch": {
+      "wire_objects_text_count": 0
+    },
+    "GPS_Module.kicad_sch": {
+      "wire_objects_text_count": 0
+    },
+    "LoRa_Boat_Controller.kicad_sch": {
+      "wire_objects_text_count": 84
+    },
+    "LoRa_Module.kicad_sch": {
+      "wire_objects_text_count": 0
+    },
+    "MCU.kicad_sch": {
+      "wire_objects_text_count": 0
+    },
+    "PowerSupply.kicad_sch": {
+      "wire_objects_text_count": 0
+    },
+    "PWM_Outputs.kicad_sch": {
+      "wire_objects_text_count": 0
+    }
+  },
+  "observed_primary_reports_not_independently_rerun": {
+    "validate_pcb.json": {
+      "footprints": 44,
+      "pads_checked": 172,
+      "max_pad_error_mil": 4.43961293735052e-13,
+      "pad_errors": [],
+      "unconnected": 1,
+      "zones": 3,
+      "nets": 33
+    },
+    "drc.json": {
+      "date": "2026-09-16T19:16:16-0500",
+      "source": "LoRa_Boat_Controller.kicad_pcb",
+      "violations_by_type_severity": {
+        "clearance:error": 64,
+        "track_dangling:warning": 1,
+        "isolated_copper:warning": 6,
+        "silk_edge_clearance:warning": 6,
+        "silk_over_copper:warning": 17
+      },
+      "unconnected_report_entries": 1,
+      "status": "Observed primary output; input linkage and independent run NOT verified"
+    }
+  },
+  "files_changed_during_read": [],
+  "input_manifest": {
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat": {
+      "sha256": "b88c36244bb3e3eb4d10712ce8ca39ddb5908e2c3225aa187155f9f4dca6b02c",
+      "bytes": 30037
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxprt.dat": {
+      "sha256": "71bda2b7ccffa85dce7981c0e3ca1a22596c133f05992c16094a3bf967a92156",
+      "bytes": 22124
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWBOTL.art": {
+      "sha256": "633d84e9ba1e05a71b5c51b0fe0f274bd7da7d49b03759419b01ef59b0203702",
+      "bytes": 4082
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWBOTTOM.art": {
+      "sha256": "b23f508853c6d85218b844ed11129c716462ba38c7d8939c1ca76296998fb4c5",
+      "bytes": 4084
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWMASK_BOT.art": {
+      "sha256": "17f585024b541a8397bc487c80af10be3dae35043736e05da674558ff82aa026",
+      "bytes": 1739
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWMASK_TOP.art": {
+      "sha256": "ad63b99b64260b9508334cc0e2ebaa118b25f77fb452773373fd8e214e4309ba",
+      "bytes": 4547
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWOUTLINE.art": {
+      "sha256": "1b0ac4a8607495ac0505a957ee55cbee60bf82f6de1f9904db544d1dc7d5873c",
+      "bytes": 902
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWSILK_TOP.art": {
+      "sha256": "f30551e25b9ff59358daddd55a557b7384b77a38eb648bbf1a5125565bc65cef",
+      "bytes": 39805
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork/BOATCREWTOPL.art": {
+      "sha256": "7e742529103586d2a1bbcb51ad9e69e1f031ec06457ac5a639c0cc92feeb7a6f",
+      "bytes": 50607
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWBOTL.art": {
+      "sha256": "bad4a280fba0ed733c8a86acd4a36693fe1ea85e8351a3232e4ac9d1b86c357a",
+      "bytes": 5455
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWBOTL.art,1": {
+      "sha256": "eb85eb598ae656a3f49e6236ef6c475b877fd249fca203159d69386810d7438c",
+      "bytes": 6430
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWBOTTOM.art": {
+      "sha256": "32efa8e765b83dfbb0b0357d73d664af3805faab011fad81a5d7690a0be53aae",
+      "bytes": 5457
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWBOTTOM.art,1": {
+      "sha256": "6465ffd2c45bed409f08569011e565ff294d85c470105a49c31cb4ddad5b827b",
+      "bytes": 6432
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWMASK_BOT.art": {
+      "sha256": "116e3d8f162346f7eab21a8ad9870a121fca399aef40430a6d4854725ecd4d41",
+      "bytes": 1805
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWMASK_BOT.art,1": {
+      "sha256": "acff01c69b71817660a25a0fd007383cb80923fd05b4d60bfc219ea9cc2dc8b6",
+      "bytes": 1805
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWMASK_TOP.art": {
+      "sha256": "2cbccfaa539c0a41aff7292fec9eeba64b1ce8823605adc605089e7019c30bce",
+      "bytes": 4592
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWMASK_TOP.art,1": {
+      "sha256": "a5e6c7fd8801ee2d8328d31f559be06b22d444f2da4f18d6061796e6f5c40531",
+      "bytes": 4593
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWOUTLINE.art": {
+      "sha256": "e4f0ac0eeab1c70193c7031a10c19e8d0715ad00b4ad4aad5c9f0b69c665bcb3",
+      "bytes": 855
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWOUTLINE.art,1": {
+      "sha256": "2dddffda512e0c0f71c61f0ccd1e837442fe9f499b57111e21793a582436708d",
+      "bytes": 855
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWSILK_TOP.art": {
+      "sha256": "a317926151860824de9c5777f2227915be1db92ca3dc78fcd714894844f869f7",
+      "bytes": 49819
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWSILK_TOP.art,1": {
+      "sha256": "5846d2e9ef4eb0753e52b86130c6a49ce9d1f9454f7a8d5c77cfe157e9ac9298",
+      "bytes": 48594
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWTOPL.art": {
+      "sha256": "bf6d1945af1983515d2a89d23a65a69682552b8d317ecd27cd849527cdddc5b1",
+      "bytes": 45354
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWTOPL.art,1": {
+      "sha256": "75e6f65d7f6374019c612481a891b97c8b67161244f4eecde9d9c9c6070b4636",
+      "bytes": 48066
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOTL.art": {
+      "sha256": "9e1f3146d1928b993192c1306f13c391b344360ff7df18e61bc652fbd349d722",
+      "bytes": 4074
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOTTOM.art": {
+      "sha256": "ec89d69c2fc34937108465a797c76a3da6abc006728ad5fa96219447a7aa4be8",
+      "bytes": 4076
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOTTOM.art,1": {
+      "sha256": "906b40cb41564a39f80648bbd291485cf31c39efe1a1f2f295d6fc62edfea0ea",
+      "bytes": 4076
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Filesv2BOTTOM.art": {
+      "sha256": "326327260e6f2dac84f0648079ca60f0d644d4a31e4775aa67190808f5772a51",
+      "bytes": 4083
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Filesv2MASK_BOT.art": {
+      "sha256": "0cf208c69c0ed0f26b7ed5677a121a2663029d7217ec68f30d0c62053f0f67b0",
+      "bytes": 751
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Filesv2MASK_TOP.art": {
+      "sha256": "36aa4b10452261e92778dfe6919a6fcbee3fe37635eef24df8ee344adc5bb4da",
+      "bytes": 4546
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Filesv2OUTLINE.art": {
+      "sha256": "0d34091d2d126efec91801c84927dba895916a9e320b18274d6a91afbb46e720",
+      "bytes": 716
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Filesv2SILK_TOP.art": {
+      "sha256": "849947de0d10fd377ead98fe3ee48bb9a42bd60ac1c0254d0551559b01b908e1",
+      "bytes": 4191
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Filesv2TOP.art": {
+      "sha256": "e924bf0a8f029a1781d8bbc8d92cf127fc2d98c08b5dfe70e89a20ad990c8bc7",
+      "bytes": 50605
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/MASK_BOT.art": {
+      "sha256": "278754140b9466787075aa30915accba0dd4083d6617b94b135f6fcb949e1296",
+      "bytes": 744
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/MASK_BOT.art,1": {
+      "sha256": "13ee36735b560c600b0121fda164700f9dfad3c6180d3a86c0b14c96b618122f",
+      "bytes": 744
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/MASK_TOP.art": {
+      "sha256": "f45421da668c032b2ff94edf7056a2f2a74bc8852cc0fb9ebd6f342f7e6c988f",
+      "bytes": 4539
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/MASK_TOP.art,1": {
+      "sha256": "f092dd0960b5e733c4b21a487b87a08fe380503cc5ce6193d28798df717e6cf1",
+      "bytes": 4539
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/OUTLINE.art": {
+      "sha256": "f42764906d3906d928b744210fdb9a8d07212736c0e5a362357fe741ae392d62",
+      "bytes": 709
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/OUTLINE.art,1": {
+      "sha256": "00cb5edda5f0cb3b8413be8482d81232ef915edaeb917354b5e16469366b19bb",
+      "bytes": 709
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Routing.art": {
+      "sha256": "0e8f0dee0012dc1a6044866e31545c915f63fddc9de69cd68b3b8821d8f9e49e",
+      "bytes": 67999
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Routing.art,1": {
+      "sha256": "a57d08c8a114906939fc191d3a427cf80efdcc77aa896ba650cff83a973e4a21",
+      "bytes": 67999
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/SILK_TOP.art": {
+      "sha256": "069f260d5d6642e06052c26d8348ff79cb7fbef425f1f2456b6d96010f8f3aee",
+      "bytes": 4184
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/SILK_TOP.art,1": {
+      "sha256": "e5edbb63635544b70b057f7bb9fb8888fb1c5d5b7f4255a22b20bb8f720ad6ac",
+      "bytes": 4184
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/TOP.art": {
+      "sha256": "6940a3f1b6ce54315edc9036db46c1fe0ba6164168c91091a62f1c82b765583f",
+      "bytes": 50598
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/TOP.art,1": {
+      "sha256": "c0c531fd4abd1ef3c3da7aabd38110d2e3bcdf2f55dacb5382427aeccb64b8b8",
+      "bytes": 50598
+    },
+    "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWBOTL.art": {
+      "sha256": "bad4a280fba0ed733c8a86acd4a36693fe1ea85e8351a3232e4ac9d1b86c357a",
+      "bytes": 5455
+    },
+    "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWBOTTOM.art": {
+      "sha256": "32efa8e765b83dfbb0b0357d73d664af3805faab011fad81a5d7690a0be53aae",
+      "bytes": 5457
+    },
+    "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWMASK_BOT.art": {
+      "sha256": "116e3d8f162346f7eab21a8ad9870a121fca399aef40430a6d4854725ecd4d41",
+      "bytes": 1805
+    },
+    "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWMASK_TOP.art": {
+      "sha256": "2cbccfaa539c0a41aff7292fec9eeba64b1ce8823605adc605089e7019c30bce",
+      "bytes": 4592
+    },
+    "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWOUTLINE.art": {
+      "sha256": "e4f0ac0eeab1c70193c7031a10c19e8d0715ad00b4ad4aad5c9f0b69c665bcb3",
+      "bytes": 855
+    },
+    "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWSILK_TOP.art": {
+      "sha256": "a317926151860824de9c5777f2227915be1db92ca3dc78fcd714894844f869f7",
+      "bytes": 49819
+    },
+    "Allegro/hardware/allegro-original/BoatcrewArtwork/BOATCREWTOPL.art": {
+      "sha256": "bf6d1945af1983515d2a89d23a65a69682552b8d317ecd27cd849527cdddc5b1",
+      "bytes": 45354
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/BOATCREWDRILL-1-2.drl": {
+      "sha256": "3cc976f26d8287385643907dfe924a9e4731d3b3c9ebc74ce4441930d69cacba",
+      "bytes": 1339
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/senior design v4-1-2.drl": {
+      "sha256": "b80b930a7193d605d16770b1a8fa8b064df86281ef315eb7f51541118a1e4b50",
+      "bytes": 1342
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/Artwork.zip": {
+      "sha256": "644a78c8c054201cfbcbfa762e11d4b45dc540a2f5c68bc36b6e5c796cf4fc8e",
+      "bytes": 32677
+    },
+    "AGENT_PROMPT_V2.md": {
+      "sha256": "814b3854c0e76ba48d0459b88007b0a8a5902e42d8eac01b3698d59f6888f44d",
+      "bytes": 28318
+    },
+    "CONVERSION_LOG.md": {
+      "sha256": "6a5ca0c8188e91ca71cf95c16a9e20892420dfa5acba8d2c22492792c10d09e5",
+      "bytes": 2350
+    },
+    "docs/A0_PROVENANCE.md": {
+      "sha256": "903865dc7b24cd6f64c46e8fc4c772f440de30466e850a90a935650add357099",
+      "bytes": 28923
+    },
+    "hardware/kicad/tools/gen_pcb.py": {
+      "sha256": "b2edb4134860c80eb456aac06022ed6046e5fa70f2d690a5c3a7fe205131a73a",
+      "bytes": 24200
+    },
+    "hardware/kicad/tools/validate_pcb.py": {
+      "sha256": "6f38ddba46ed144e22208ac3e93b37c77acfc2db1f114c760b4cade9221c218b",
+      "bytes": 3102
+    },
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pcb": {
+      "sha256": "5edb5b64e18d4027e27004eab59149dc407501b2e6ddb2903567a649e9bbe327",
+      "bytes": 907697
+    },
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pro": {
+      "sha256": "9d9e57f06115d0abe4cfc0b08ce2c10777c35de2d2ab39cae26ab681647ce9cd",
+      "bytes": 8623
+    },
+    "firmware/Core/Src/main.c": {
+      "sha256": "3201ae73ce45a6ddbfc5cc891020b5c93c82e8ad2b918f20a1c1117cd6e3ff63",
+      "bytes": 20957
+    },
+    "firmware/Core/Src/stm32f4xx_hal_msp.c": {
+      "sha256": "180c6eefe84d1e58d7f01f635faad358ccc64a3848e0ff2e3f9d700e2d45a1c0",
+      "bytes": 8346
+    },
+    "firmware/BoatTHISTIMEITSDIFFERENT.ioc": {
+      "sha256": "eb9df4055fe4f072996c6a92f7b4fc9039c39f28451d9eefeb3bc702370a0579",
+      "bytes": 5682
+    },
+    "Allegro/hardware/allegro-original/Allegro v5/Allegro/netrev.lst": {
+      "sha256": "e61b29c1d219402b639f0bc06a3371f893eeb7c7935967de983273604bf37923",
+      "bytes": 2826
+    },
+    "reviews/codex/tools/source_audit.py": {
+      "sha256": "ce984143ed40b72a6a2bde014ca987335f8ccebd8e351afadec54b4f03702577",
+      "bytes": 7761
+    },
+    "hardware/kicad/_build/validate_pcb.json": {
+      "sha256": "7499cfd5ce256fbe12d0058c4663d29c536f0812d49563c6ab36dacd898ad7c1",
+      "bytes": 159
+    },
+    "hardware/kicad/_build/drc.json": {
+      "sha256": "c45ceee1dee87a0ab40eaaae71a6fa7949fb3ab54a39750e931adb8f43ebb13e",
+      "bytes": 74310
+    },
+    "hardware/kicad/CAN_Bus.kicad_sch": {
+      "sha256": "4ad33c5877d8cf33813343deaa2ae179dc1a2fed459e8caf7dd3a8174c6f7786",
+      "bytes": 5001
+    },
+    "hardware/kicad/GPS_Module.kicad_sch": {
+      "sha256": "2384c14d475236d59e7f53ca099ad59f1404d5c21906b073c40c173fe2163ab8",
+      "bytes": 5001
+    },
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sch": {
+      "sha256": "37b13d4d66c03d15cfdda2a74708d6bc12131a0c15525485a907b0e222fd92fc",
+      "bytes": 77191
+    },
+    "hardware/kicad/LoRa_Module.kicad_sch": {
+      "sha256": "df8ac103e70ca642c69a35382a7a3a8498a8bd5be6c9bcd9034c90d6b7190633",
+      "bytes": 5001
+    },
+    "hardware/kicad/MCU.kicad_sch": {
+      "sha256": "2441e0b3ceb44eb7a9ce0d3a2b20379f3d1d2712a6a3df67d71687a4991dce1c",
+      "bytes": 5001
+    },
+    "hardware/kicad/PowerSupply.kicad_sch": {
+      "sha256": "b6a7fb8f15ced2631f7e8c1bc6895dedc149c73e4d6170e8a91974322a11f05c",
+      "bytes": 5001
+    },
+    "hardware/kicad/PWM_Outputs.kicad_sch": {
+      "sha256": "a17185bb00e1b1c8d378acd2e17446101b724b109a7ced5984f69144bf004d2c",
+      "bytes": 5001
+    }
+  }
+}
