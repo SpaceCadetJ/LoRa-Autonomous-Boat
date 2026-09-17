@@ -25,14 +25,15 @@ docs/
   A0_PROVENANCE.md            which artwork is the fabricated board, v2→v5 placement diff, drill provenance, Gerber XOR tables
   V1_DESIGN_REVIEW.md         findings with evidence + link budget / control / power analysis
   V2_REQUIREMENTS.md          numbered testable requirements + decision list
-  NETLIST.md                  every net (generated); CONVERSION_NOTES.md: method + footprint mapping; BOM.csv (generated)
+  NETLIST.md                  every net (generated); CONVERSION_NOTES.md: method + footprint mapping; BOM.csv, BOM_V2.csv (generated)
   research/                   datasheet notes, MPN/pricing research, firmware review (line-cited)
   img/                        renders, layer SVGs, XOR images, evidence figures, schematic PDF/SVGs
   archive/                    superseded March-2026 pipeline docs
 hardware/kicad/               V1 KiCad 9 project (as fabricated): LoRa_Boat_Controller.kicad_pro / .kicad_pcb / .kicad_sch + 7 sheets,
                               LoRa_Boat_Controller.pretty/ (project footprints), .kicad_sym (project symbols), .kicad_dru (as-fabricated rules)
 hardware/kicad/tools/         every script that produced the above (see "Regenerate")
-hardware/kicad_v2/            V2 KiCad project (Phase C)
+hardware/kicad_v2/            V2 KiCad project (Phase C draft): LoRa_Boat_Controller_V2.kicad_pro / .kicad_pcb (80 x 46 mm, autorouted) / root + 6 sheets,
+                              generated from tools/v2_design.py by tools/gen_v2.py; tools/route_v2.py drives freerouting; README.md explains the chain
 firmware/                     V1 STM32CubeIDE project (unchanged behaviour; header comments document the board wiring) + V2_FIRMWARE_PLAN.md
 Allegro/hardware/allegro-original/   read-only source evidence: Allegro v5/ (board revisions, logs, OrCAD netlist pstxnet.dat),
                               BoatcrewArtwork/ (the v5 fabrication Gerbers), LIBRARY_MASTER/ (Allegro footprints)
@@ -50,7 +51,7 @@ reviews/codex/                independent review packet by the second agent
 ## Opening the projects in KiCad 9
 
 - V1: open `hardware/kicad/LoRa_Boat_Controller.kicad_pro`. Libraries are project-local (`fp-lib-table`, `sym-lib-table`); no global library setup is needed except the standard KiCad 9 symbol libraries (`MCU_ST_STM32F4`, `Device`, `Connector*`, `power`) that ship with KiCad. The board opens with zones filled; DRC runs with the project's `.kicad_dru` (0 errors, 67 documented warnings). ERC 0.
-- V2: open `hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro` (Phase C).
+- V2: open `hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro`. Same library conventions (project-local tables; the V1 `.pretty` is reused through `${KIPRJMOD}/../kicad/`). The board is an autorouted draft (freerouting 2.1.0) with DRC 0 errors; see `hardware/kicad_v2/README.md` for the state of the draft and what still needs hand work before fabrication.
 
 Reference designators without a trailing digit in Allegro (`CANHEADER`, `LORAMODULE`, `GPSMODULE`, `SPEEDCONTROLLER`, `STEERINGSERVO`, `JTAG`, `CIN`, `COUT`, `CEXT`, `VIN`, `GND`) are `…1` in KiCad (annotation rule); the Allegro name is in every symbol's `Allegro_RefDes` field and in `docs/BOM.csv`.
 
@@ -63,6 +64,8 @@ python hardware/kicad/tools/build_v1.py
 ```
 
 runs, from the repo root: provenance → v5 reconstruction (placement + connectivity from the films and pstxnet.dat) → footprints → board + project + rule file → pcbnew validation and zone fill → DRC → Gerber/drill export → XOR fidelity check → DSN-v2 comparison → evidence figures → renders/SVGs → symbols → schematic → ERC → netlist check → BOM → schematic PDF/SVG → NETLIST/CONVERSION_NOTES/INDEX. Every script has a header stating its inputs and outputs and can be run alone (`python hardware/kicad/tools/<script>.py`; `validate_pcb.py` and `check_netlist.py` need KiCad's own `python.exe`). Outputs that are evidence go to `docs/`; intermediate JSON goes to `hardware/kicad/_build/` (gitignored).
+
+To regenerate V2: `python hardware/kicad_v2/tools/gen_v2.py` (library, schematic, project, unrouted board, `docs/BOM_V2.csv`), then `route_v2.py all` with KiCad's `python.exe` to autoroute (needs Java 21 + freerouting 2.1.0; details in `hardware/kicad_v2/README.md`).
 
 Phase A validation as of the `v1-kicad-baseline` tag: 172/172 pads within 0.000 mil of the film flashes; DRC 0 errors / 0 unconnected; ERC 0 violations; schematic and board pin sets identical to `pstxnet.dat`; Gerber XOR vs the films F.Cu 0.87 %, B.Cu 0.23 %, masks < 1 %; drill 53/53 holes within 0.05 mil.
 

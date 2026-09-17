@@ -43,3 +43,8 @@ These are queued decisions, not unanswered requests that prevent current indepen
 | 9 | Handheld voice mode (live PTT vs recorded) - only affects the boat radio if voice shares the boat's channel | Boat radio designed for RC + telemetry only |
 | 10 | Is the original fab-house zip (real v5 drill, stack-up) available? | Drill inferred from v5 pads (matches hole-for-hole) |
 | 11 | On the working V1 harness: which header is the ESC plugged into, and is the header power pin (pin 1, +3V3) connected to anything? | Assumed ESC on STEERINGSERVO, servo on SPEEDCONTROLLER, pin 1 unconnected (F-CTL-01) |
+
+## Primary (Claude Code) — 2026-09-16 — decision 7 default revised, decision list unchanged otherwise
+
+- **Decision 7 (board size / mounting pattern):** the V2 layout in `hardware/kicad_v2/` is placed on an **80 × 46 mm** board with four M3 holes on a **72 × 38 mm** pattern. The 70 × 40 mm / 60 × 30 mm default in the table above did not fit the 118 V2 parts without courtyard overlaps (`hardware/kicad_v2/tools/placement_check.py`). Board size is a generator constant (`v2_design.BOARD_W/BOARD_H`, `MOUNT_HOLES`) and can be changed to match the enclosure; the placement table then needs re-legalising.
+- **Decision 1 (LoRa module variant):** the layout assumes RYLR998_M4 (u.FL, antenna on an external pigtail) so no on-board RF keep-out is generated (`v2_design.KEEPOUTS = []`). If the antenna-equipped RYLR998 is chosen instead, the module must hang off the right edge with the antenna outboard and a pour void added under it.

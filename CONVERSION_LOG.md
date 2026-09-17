@@ -48,3 +48,14 @@ Newest entries at the bottom. Each entry: date, what changed, what was validated
   (gen_bom.py), V1_DESIGN_REVIEW.md (findings F-*, link budget, control, power), V2_REQUIREMENTS.md (REQ-*, decisions),
   firmware/V2_FIRMWARE_PLAN.md; stale pipeline docs archived to docs/archive/.
 - Coordination: Codex review packet committed (b831657); scopes split in FILE_OWNERSHIP.md; PROMPT_FOR_CODEX.md.
+
+## 2026-09-16 (late) — Phase C: V2 schematic, placement, autoroute chain
+
+- `hardware/kicad_v2/tools/v2_design.py` is the single source of the V2 design (118 parts, 71 nets, placement, netclass membership, prices); `gen_v2.py` writes the project library, six sub-sheets + root, `.kicad_pro`, the unrouted `.kicad_pcb` and `docs/BOM_V2.csv`; `placement_check.py` reports courtyard overlaps; `route_v2.py` drives freerouting 2.1.0 (DSN export -> route -> SES import -> pour fill).
+- Board grown from the 70 × 40 mm default to **80 × 46 mm** (M3 pattern 72 × 38 mm) — the smaller outline could not hold the parts without courtyard overlaps; decision 7 note appended to BLOCKERS.md and REQ-MECH-01 / decision table updated.
+- Placement legalised to 0 courtyard overlaps; XT30 placed with its peg holes 0.3 mm inside the left edge (housing overhangs), USB-C receptacle at the top edge. Unrouted DRC: 0 violations.
+- QFN-24 (ICM-20948) footprint pads changed to 0.20 × 0.60 mm, inner end 1.25 mm from centre: the first cut (0.25 × 0.70 at 1.45 mm) had corner pads of adjacent sides intersecting (DRC clearance 0.016 mm + mask bridges).
+- Freerouting stalled at ~143 unrouted with the first netclasses (Default 0.3 mm/0.2 mm, Power 0.6 mm/0.25 mm on +3V3, VDDA, VBUS...): a 0.6 mm track cannot enter a 0.3 mm LQFP pad and the 0.2 mm clearance equals the 0.5 mm-pitch pad gap. Retuned: Default 0.25 mm track / 0.15 mm clearance, Power class (0.6 mm / 0.2 mm) restricted to the battery/buck/servo-rail nets that only touch coarse pads; +3V3/VDDA/VBUS/LORA_* in Default. Result: fully routed in 13 passes.
+- First import left 39 GND pads unreached by the F.Cu pour (pads inside the LQFP/QFN fan-out). Fix: export the DSN with only the B.Cu pour as a Specctra plane (`route_v2.py dsn --gnd-plane bcu`) so freerouting drops a via next to every top-side GND pad; both pours are filled in KiCad afterwards.
+- Freerouting 1.9.0 tried for comparison (same stall with the first rules); 2.1.0 kept. Jar location: `%LOCALAPPDATA%\freerouting\freerouting-2.1.0.jar` (not committed; download link in route_v2.py).
+- Commits: c06307f (V2 schematic + placed PCB + tools), 0aa4920 (Codex snapshot: pm/, reviews/codex/).

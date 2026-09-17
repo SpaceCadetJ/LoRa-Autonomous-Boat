@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """gen_v2.py - Generate the V2 KiCad 9 project from v2_design.py.
+  python gen_v2.py bom   -> docs/BOM_V2.csv (grouped by MPN, qty-1 catalogue prices)
   python gen_v2.py sch   -> LoRa_Boat_Controller_V2.kicad_sym / .pretty (project parts), the 6 sub-sheets + root sheet, .kicad_pro
   python gen_v2.py pcb   -> LoRa_Boat_Controller_V2.kicad_pcb: outline, mounting holes, every footprint from the KiCad/V1/V2
                             libraries embedded with its nets, GND zones on both layers, LoRa keep-out.  Unrouted; route_v2.py routes it.
@@ -312,11 +313,11 @@ def gen_pcb(pin_net, paths):
     for i in range(4):
         (x1, y1), (x2, y2) = corners[i], corners[(i + 1) % 4]
         L.append(f'\t(gr_line\n\t\t(start {f(x1)} {f(y1)})\n\t\t(end {f(x2)} {f(y2)})\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type default)\n\t\t)\n\t\t(layer "Edge.Cuts")\n\t\t(uuid "{uid("v2edge", i)}")\n\t)')
-    L.append(f'\t(gr_text "LoRa Boat V2"\n\t\t(at {f(ox + 35)} {f(oy + 2)} 0)\n\t\t(layer "F.SilkS")\n\t\t(uuid "{uid("v2txt", 1)}")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.2 1.2)\n\t\t\t\t(thickness 0.2)\n\t\t\t)\n\t\t)\n\t)')
+    L.append(f'\t(gr_text "LoRa Boat V2"\n\t\t(at {f(ox + 6.5)} {f(oy + 36)} 0)\n\t\t(layer "F.SilkS")\n\t\t(uuid "{uid("v2txt", 1)}")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.2 1.2)\n\t\t\t\t(thickness 0.2)\n\t\t\t)\n\t\t)\n\t)')
     # GND pours both layers, LoRa keep-out
     for i, lay in enumerate(('F.Cu', 'B.Cu')):
         pts = ''.join(f'\n\t\t\t\t(xy {f(x)} {f(y)})' for (x, y) in corners)
-        L.append(f'\t(zone\n\t\t(net {netid["GND"]})\n\t\t(net_name "GND")\n\t\t(layer "{lay}")\n\t\t(uuid "{uid("v2zone", lay)}")\n\t\t(name "GND pour {lay}")\n\t\t(hatch edge 0.5)\n\t\t(priority 0)\n\t\t(connect_pads\n\t\t\t(clearance 0.2)\n\t\t)\n\t\t(min_thickness 0.2)\n\t\t(filled_areas_thickness no)\n\t\t(fill yes\n\t\t\t(thermal_gap 0.3)\n\t\t\t(thermal_bridge_width 0.4)\n\t\t)\n\t\t(polygon\n\t\t\t(pts{pts}\n\t\t\t)\n\t\t)\n\t)')
+        L.append(f'\t(zone\n\t\t(net {netid["GND"]})\n\t\t(net_name "GND")\n\t\t(layer "{lay}")\n\t\t(uuid "{uid("v2zone", lay)}")\n\t\t(name "GND pour {lay}")\n\t\t(hatch edge 0.5)\n\t\t(priority 0)\n\t\t(connect_pads yes\n\t\t\t(clearance 0.2)\n\t\t)\n\t\t(min_thickness 0.2)\n\t\t(filled_areas_thickness no)\n\t\t(fill yes\n\t\t\t(thermal_gap 0.25)\n\t\t\t(thermal_bridge_width 0.3)\n\t\t)\n\t\t(polygon\n\t\t\t(pts{pts}\n\t\t\t)\n\t\t)\n\t)')
         for k, (x0, y0, x1, y1) in enumerate(D.KEEPOUTS):
             kp = ''.join(f'\n\t\t\t\t(xy {f(ox + a)} {f(oy + b)})' for (a, b) in [(x0, y0), (x1, y0), (x1, y1), (x0, y1)])
             L.append(f'\t(zone\n\t\t(net 0)\n\t\t(net_name "")\n\t\t(layer "{lay}")\n\t\t(uuid "{uid("v2keep", lay, k)}")\n\t\t(name "LoRa module keep-out {lay} (REQ-RF-05)")\n\t\t(hatch edge 0.5)\n\t\t(priority 1)\n\t\t(connect_pads\n\t\t\t(clearance 0)\n\t\t)\n\t\t(min_thickness 0.25)\n\t\t(filled_areas_thickness no)\n\t\t(keepout\n\t\t\t(tracks allowed)\n\t\t\t(vias allowed)\n\t\t\t(pads allowed)\n\t\t\t(copperpour not_allowed)\n\t\t\t(footprints allowed)\n\t\t)\n\t\t(fill\n\t\t\t(thermal_gap 0.5)\n\t\t\t(thermal_bridge_width 0.5)\n\t\t)\n\t\t(polygon\n\t\t\t(pts{kp}\n\t\t\t)\n\t\t)\n\t)')
@@ -326,7 +327,11 @@ def gen_pcb(pin_net, paths):
     print('wrote', out, len(D.PARTS), 'footprints', len(nets), 'nets')
 
 def gen_project():
-    power_nets = ['GND', '+3V3', 'VIN_RAW', 'VIN_BUCK', 'VBAT_IN', 'VBAT_FUSED', 'VSERVO', '+5V_BUCK', 'BEC_IN', 'SW_3V3', 'SW_5V', 'VBUS', 'LORA_VCC', 'LORA_FILT', 'VDDA']
+    # Power class (0.6 mm tracks, 0.8/0.4 vias, 0.2 mm clearance) is limited to the nets that only touch coarse-pitch pads (XT30, fuse, SOT-23,
+    # SMA diodes, inductors, bulk caps, JST).  +3V3 / VDDA / VBUS / LORA_* enter 0.5 mm and 0.4 mm pitch pads (U1, U6, J6): a 0.6 mm track cannot
+    # land on a 0.3 mm pad without violating clearance to the neighbours and freerouting does not neck down, so those stay in Default
+    # (0.25 mm tracks, 0.15 mm clearance; the 3V3 rail draws < 300 mA).  GND is carried by the two pours.
+    power_nets = ['VIN_RAW', 'VIN_BUCK', 'VBAT_IN', 'VBAT_FUSED', 'VSERVO', '+5V_BUCK', 'BEC_IN', 'SW_3V3', 'SW_5V']
     pro = {
         "board": {"3dviewports": [], "design_settings": {
             "defaults": {"board_outline_line_width": 0.1, "copper_line_width": 0.2, "silk_line_width": 0.127, "silk_text_size_h": 1.0, "silk_text_size_v": 1.0, "silk_text_thickness": 0.15},
@@ -334,17 +339,17 @@ def gen_project():
             "rule_severities": {"clearance": "error", "courtyards_overlap": "error", "solder_mask_bridge": "error", "silk_over_copper": "warning", "silk_overlap": "warning",
                                 "missing_courtyard": "warning", "unconnected_items": "error", "track_width": "error", "hole_clearance": "error", "copper_edge_clearance": "error",
                                 "footprint_type_mismatch": "ignore", "lib_footprint_issues": "warning", "lib_footprint_mismatch": "warning", "isolated_copper": "warning"},
-            "rules": {"max_error": 0.005, "min_clearance": 0.1524, "min_connection": 0.0, "min_copper_edge_clearance": 0.3, "min_hole_clearance": 0.25, "min_hole_to_hole": 0.25,
+            "rules": {"max_error": 0.005, "min_clearance": 0.127, "min_connection": 0.0, "min_copper_edge_clearance": 0.3, "min_hole_clearance": 0.25, "min_hole_to_hole": 0.25,
                       "min_microvia_diameter": 0.2, "min_microvia_drill": 0.1, "min_resolved_spokes": 2, "min_silk_clearance": 0.0, "min_text_height": 0.6, "min_text_thickness": 0.08,
-                      "min_through_hole_diameter": 0.3, "min_track_width": 0.1524, "min_via_annular_width": 0.15, "min_via_diameter": 0.6, "solder_mask_to_copper_clearance": 0.0, "use_height_for_length_calcs": True},
-            "track_widths": [0.0, 0.3, 0.5, 0.8], "via_dimensions": [{"diameter": 0.0, "drill": 0.0}, {"diameter": 0.6, "drill": 0.3}, {"diameter": 0.8, "drill": 0.4}],
+                      "min_through_hole_diameter": 0.3, "min_track_width": 0.127, "min_via_annular_width": 0.15, "min_via_diameter": 0.6, "solder_mask_to_copper_clearance": 0.0, "use_height_for_length_calcs": True},
+            "track_widths": [0.0, 0.25, 0.3, 0.5, 0.6], "via_dimensions": [{"diameter": 0.0, "drill": 0.0}, {"diameter": 0.6, "drill": 0.3}, {"diameter": 0.8, "drill": 0.4}],
             "zones_allow_external_fillets": False},
             "ipc2581": {"dist": "", "distpn": "", "internal_id": "", "mfg": "", "mpn": ""}, "layer_pairs": [], "layer_presets": [], "viewports": []},
         "boards": [], "cvpcb": {"equivalence_files": []}, "libraries": {"pinned_footprint_libs": [], "pinned_symbol_libs": []},
         "meta": {"filename": PROJ + ".kicad_pro", "version": 3},
         "net_settings": {"classes": [
-            {"bus_width": 12, "clearance": 0.2, "diff_pair_gap": 0.25, "diff_pair_via_gap": 0.25, "diff_pair_width": 0.2, "line_style": 0, "microvia_diameter": 0.3, "microvia_drill": 0.1,
-             "name": "Default", "pcb_color": "rgba(0, 0, 0, 0.000)", "priority": 2147483647, "schematic_color": "rgba(0, 0, 0, 0.000)", "track_width": 0.3, "via_diameter": 0.6, "via_drill": 0.3, "wire_width": 6},
+            {"bus_width": 12, "clearance": 0.15, "diff_pair_gap": 0.25, "diff_pair_via_gap": 0.25, "diff_pair_width": 0.2, "line_style": 0, "microvia_diameter": 0.3, "microvia_drill": 0.1,
+             "name": "Default", "pcb_color": "rgba(0, 0, 0, 0.000)", "priority": 2147483647, "schematic_color": "rgba(0, 0, 0, 0.000)", "track_width": 0.25, "via_diameter": 0.6, "via_drill": 0.3, "wire_width": 6},
             {"bus_width": 12, "clearance": 0.2, "diff_pair_gap": 0.25, "diff_pair_via_gap": 0.25, "diff_pair_width": 0.2, "line_style": 0, "microvia_diameter": 0.3, "microvia_drill": 0.1,
              "name": "Power", "pcb_color": "rgba(0, 0, 0, 0.000)", "priority": 0, "schematic_color": "rgba(0, 0, 0, 0.000)", "track_width": 0.6, "via_diameter": 0.8, "via_drill": 0.4, "wire_width": 6}],
             "meta": {"version": 4}, "net_colors": None, "netclass_assignments": None,
@@ -352,6 +357,28 @@ def gen_project():
         "pcbnew": {"last_paths": {"gencad": "", "idf": "", "netlist": "", "plot": "", "pos_files": "", "specctra_dsn": "", "step": "", "svg": "", "vrml": ""}, "page_layout_descr_file": ""},
         "schematic": {"legacy_lib_dir": "", "legacy_lib_list": []}, "sheets": [], "text_variables": {}}
     json.dump(pro, open(os.path.join(V2DIR, PROJ + '.kicad_pro'), 'w', encoding='utf-8'), indent=2)
+
+def gen_bom():
+    """docs/BOM_V2.csv grouped by MPN with qty-1 catalogue prices (v2_design.PRICE_USD) + _build/bom_v2.json."""
+    import csv
+    from collections import OrderedDict
+    groups = OrderedDict()
+    for ref, (sym, fp, val, mpn, mfr, sheet, descr) in D.PARTS.items():
+        groups.setdefault((mpn, mfr, val, fp), []).append(ref)
+    rows = []; total = 0.0; missing = []
+    for (mpn, mfr, val, fp), refs in groups.items():
+        unit = D.PRICE_USD.get(mpn, 0.0) if mpn else 0.0
+        if mpn and mpn not in D.PRICE_USD: missing.append(mpn)
+        ext = round(unit * len(refs), 2); total += ext
+        descr = D.PARTS[refs[0]][6]; sheet = D.PARTS[refs[0]][5]
+        rows.append({'Item': len(rows) + 1, 'Qty': len(refs), 'Refs': ' '.join(refs), 'Value': val, 'MPN': mpn, 'Manufacturer': mfr, 'Description': descr,
+                     'Footprint': fp, 'Sheet': sheet, 'Unit price qty1 USD': f'{unit:.2f}' if mpn else '', 'Ext price USD': f'{ext:.2f}' if mpn else ''})
+    out = os.path.join(ROOT, 'docs', 'BOM_V2.csv')
+    with open(out, 'w', newline='', encoding='utf-8') as fh:
+        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)
+        w.writerow({'Item': '', 'Qty': sum(r['Qty'] for r in rows), 'Refs': 'TOTAL (board only, qty 1, catalogue prices as of ' + D.PRICE_DATE + ')', 'Ext price USD': f'{total:.2f}'})
+    json.dump({'date': D.PRICE_DATE, 'lines': rows, 'total_usd': round(total, 2)}, open(os.path.join(V2DIR, '_build', 'bom_v2.json'), 'w'), indent=1)
+    print(f'wrote {out}: {len(rows)} line items, {sum(r["Qty"] for r in rows)} parts, total ${total:.2f} at qty 1' + (f'; NO PRICE for {missing}' if missing else ''))
 
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'all'
@@ -364,9 +391,12 @@ def main():
     print(f'{len(D.PARTS)} parts, {len(D.NETS)} nets, {sum(len(v) for v in pin_net.values())} connected pins, errors {len(errors)}')
     if cmd == 'check':
         return
+    if cmd == 'bom':
+        gen_bom(); return
     paths = gen_schematic(pin_net, syms)
     gen_project()
     gen_pcb(pin_net, paths)
+    gen_bom()
 
 if __name__ == '__main__':
     main()

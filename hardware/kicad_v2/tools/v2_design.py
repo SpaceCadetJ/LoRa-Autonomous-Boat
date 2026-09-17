@@ -271,3 +271,21 @@ PLACE = {
     'TP6': (31.0, 44.0, 0), 'TP1': (35.0, 44.0, 0), 'TP2': (39.0, 44.0, 0), 'TP3': (43.0, 44.0, 0), 'TP4': (47.0, 44.0, 0), 'TP5': (51.0, 44.0, 0), 'TP7': (70.0, 40.0, 0),
 }
 KEEPOUTS = []  # RYLR998_M4 (antenna on an external SMA pigtail) needs no on-board RF keep-out; if an antenna-equipped RYLR998 is used, mount it hanging off the right edge (antenna outboard)
+
+# ---------------------------------------------------------------------------------------------------------------------
+# BOM pricing: unit price in USD at qty 1 from distributor catalogue listings (Digi-Key / Mouser / LCSC) as read on
+# PRICE_DATE.  Estimates for planning only; re-quote at order time.  Parts without an MPN (test points, holes) cost 0.
+PRICE_DATE = '2026-09-16'
+PRICE_USD = {
+    'XT30PW-M': 1.20, '0468003.NR': 0.55, 'AO3401A': 0.35, 'BZT52C12-7-F': 0.15, 'SMAJ33A': 0.45, 'EEE-FK1H470P': 0.60,
+    'GRM32ER71H106KA12L': 0.85, 'CRA2512-FZ-R020ELF': 0.55, 'INA180A1IDBVR': 0.95, 'KGM15ACG1H104KT': 0.10, 'R1240N001B-TR-FE': 1.45,
+    'CL10B104KB8NNNC': 0.10, 'SRN6045TA-4R7M': 0.55, 'CMS06(TE12L,Q,M)': 0.60, '06035A471JAT2A': 0.15, 'GRM31CR71E106KA12L': 0.45,
+    'TPS54202DDCR': 0.75, 'GRM32ER61C226KE20L': 0.60, 'SS34': 0.35, 'EEE-FK1A101P': 0.40, 'GRM21BR61C106KE15L': 0.25,
+    'STM32F446RET6': 9.80, 'GRM21BR61A106KE19L': 0.20, 'CL10A475KP8NNNC': 0.12, 'BLM18AG601SN1D': 0.12, 'CL10A105KB8NNNC': 0.10,
+    'KMR221GLFS': 0.65, 'ABM8-8.000MHZ-10-1-U-T': 0.95, '06035A150JAT2A': 0.15, 'ABS07-32.768KHZ-7-T': 0.70, '06035A100JAT2A': 0.15,
+    'LTST-C193KGKT-5A': 0.30, 'LTST-C193TBKT-5A': 0.30, 'LTST-C193KSKT-5A': 0.30, 'LTST-C193KRKT-5A': 0.30, 'PPTC051LFBN-RC': 0.60,
+    'BLM15AG601SN1D': 0.12, 'GJM1555C1H470JB01D': 0.12, 'PPTC061LFBN-RC': 0.65, 'ICM-20948': 11.50, 'B3B-XH-A(LF)(SN)': 0.25,
+    'SN74AHCT1G125DBVR': 0.45, 'PESD5V0S1BA,115': 0.25, 'USB4105-GF-A': 1.10, 'USBLC6-2SC6': 0.55, 'FTSH-105-01-L-DV-K': 3.20,
+}
+PRICE_USD.update({m: 0.10 for m in ('RC0603FR-07100KL', 'RC0603FR-0747KL', 'RC0603FR-076K8L', 'RC0603FR-075K1L', 'RC0603FR-0751RL', 'RC0603FR-0715KL',
+                                    'RC0603FR-074K7L', 'RC0603FR-0713K3L', 'RC0603FR-0710KL', 'RC0603FR-071KL', 'RC0603FR-07100RL', 'RC0603FR-072K2L', 'RC0603FR-0722KL')})

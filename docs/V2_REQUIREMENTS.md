@@ -12,7 +12,7 @@ Mission (M): an RC-scale autonomous surface vessel that takes thrust/rudder comm
 | REQ-RF-02 | Operating point: SF7 or SF8, BW 125 kHz, CR 4/5 **[default SF7]**, with automatic fallback to SF9/SF10 when the handset RSSI < −110 dBm for > 5 s, and recovery when > −100 dBm for > 10 s. Both ends switch together via a signalled profile change. | F-RF-02, §2.2 | Range test with attenuator; log SF transitions |
 | REQ-RF-03 | One command packet carries thrust, rudder, arm flag, 8-bit sequence number and CRC-8 in ≤ 8 payload bytes; handset sends it at ≥ 5 Hz **[default 10 Hz at SF7]**; telemetry ≤ 1 Hz and never longer than 120 ms on air at the current SF. | F-RF-02, F-RF-05 | Logic analyser on the module UART: command period and telemetry duration |
 | REQ-RF-04 | The board provides a 50 Ω antenna port (SMA or u.FL bulkhead) with a controlled-impedance feed ≤ 20 mm long and a copper/component keep-out of ≥ 5 mm around the feed and connector; no antenna sits on the module header. **[default: RYLR998_M4 (I-PEX) on the existing 1×5 pinout, u.FL-to-SMA pigtail to a 2 dBi whip]** | F-RF-04, §2.1 | Impedance by TDR/VNA or by stack-up calculation record; range test ≥ 1.5 km over water at SF7 with 12 dB margin |
-| REQ-RF-05 | The buck converter, ESC cabling and servo cabling shall be ≥ 25 mm from the antenna feed; the copper pour is voided under the module on both layers. | F-RF-04 | Layout review; DRC keep-out rule areas |
+| REQ-RF-05 | The buck converters, ESC cabling and servo cabling shall be ≥ 25 mm from the antenna feed. With the default RYLR998_M4 (u.FL, antenna on an external pigtail) no on-board copper void is needed under the module; if an antenna-equipped RYLR998 is fitted instead, it mounts hanging off the right board edge (antenna outboard) and the pour is voided under the antenna on both layers. | F-RF-04 | Layout review; DRC keep-out rule areas (only for the on-board-antenna variant) |
 | REQ-RF-06 | Every received command shall be rejected unless it has the expected sender address, a valid CRC, and a sequence number newer than the last accepted one (modulo 256); rejected packets are counted and reported in telemetry. | F-RF-05 | Fuzz the UART with corrupted frames; count rejects, confirm no actuator change |
 | REQ-RF-07 | Link statistics (RSSI, SNR, reject count, command age) are available in telemetry and on the console. | F-RF-05 | Read telemetry |
 
@@ -72,7 +72,7 @@ Mission (M): an RC-scale autonomous surface vessel that takes thrust/rudder comm
 
 | ID | Requirement | Trace | Verify |
 |---|---|---|---|
-| REQ-MECH-01 | Four M3 mounting holes (3.2 mm, 6 mm keep-out) on a rectangular pattern **[default 60 × 30 mm on a 70 × 40 mm board; decision 7]**, board size ≤ 76.2 × 76.2 mm. | F-MECH-01 | Drill check |
+| REQ-MECH-01 | Four M3 mounting holes (3.2 mm, 6 mm keep-out) on a rectangular pattern **[default 72 × 38 mm on an 80 × 46 mm board; decision 7 — the 70 × 40 mm first cut could not hold the 118 parts without courtyard overlaps]**, board size ≤ 100 × 60 mm (JLCPCB/PCBWay 2-layer prototype price break). | F-MECH-01 | Drill check; `placement_check.py` 0 courtyard overlaps |
 | REQ-MECH-02 | All connectors on two opposite edges, keyed (JST XH/PH or locking headers) **[default: JST XH for power/actuators, 2.54 mm headers with polarity marks for modules; decision 6]**; the board accepts conformal coating (no exposed adjustable parts). | F-MECH-05 | Assembly review |
 | REQ-MECH-03 | Design rules: 6 mil track / 6 mil clearance minimum, 8 mil pour clearance, 12 mil signal tracks where possible, 20 mil power, 0.3/0.6 mm vias; DRC 0 errors with the project's rule file and no exceptions. | F-MECH-02 | `kicad-cli pcb drc` |
 | REQ-MECH-04 | Vias tented or with 1:1 mask; no pour copper of another net inside a via's mask opening. | F-MECH-03 | DRC solder-mask bridge = 0 |
@@ -89,7 +89,7 @@ Mission (M): an RC-scale autonomous surface vessel that takes thrust/rudder comm
 | 4 | Keep CAN? | Drop (frees PA11/PA12, no 5 V needed) | Keep: 3.3 V transceiver, on PA11/PA12, termination |
 | 5 | IMU choice | ICM-20948 (9-axis, I²C) | BMI270+BMM150, or an external module header only |
 | 6 | Connector family | JST XH (power/actuators), 2.54 mm headers for GNSS/LoRa modules | JST GH/PH for compactness; screw terminals for battery |
-| 7 | Mounting pattern / enclosure | 60 × 30 mm M3 pattern, 70 × 40 mm board | Enclosure drawing dictates |
+| 7 | Mounting pattern / enclosure | 72 × 38 mm M3 pattern, 80 × 46 mm board (revised from 60 × 30 / 70 × 40 on 2026-09-16: the smaller board could not hold the 118 parts without courtyard overlaps) | Enclosure drawing dictates |
 | 8 | Debug console | USB-C CDC | UART header only (no HSE-dependent USB) |
 | 9 | Handheld voice mode (live PTT vs recorded messages) — affects V2 radio only if voice must share the boat's channel | Boat V2 radio designed for RC + telemetry; voice on the handheld's own link | Shared channel: RF-02/03 timing changes, second radio study |
 | 10 | Do you have the fab-house zip for v5 (real drill file, stack-up)? | Drill inferred from v5 pads | Adds certainty to the V1 baseline only |
