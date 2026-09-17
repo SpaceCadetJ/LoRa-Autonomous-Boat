@@ -34,6 +34,7 @@ Requirement traceability is in the schematic sheet descriptions and in `docs/V2_
 
 ## Known state of this draft
 
+- DRC 0 violations, **2 unconnected GND connections**: two pour islands (near U1 at board (42, 18.5) mm and near U7 at (55.7, 9.2) mm) are fenced in by other-net tracks on both layers. `route_v2.py import` stitches what it can (one of three islands on this layout); the last two need a hand-placed via each in KiCad (or a rip-up of the fencing track). The next layout pre-places a GND via next to every fine-pitch GND pad before routing to avoid this.
 - Autorouted, not hand-optimised: expect to tidy the buck-converter loops (U2/L1/D3/C5-C6 and U3/L2/D4/C8-C9), the crystal traces and the USB pair before fabrication; keep the placement.
 - Silkscreen is reference designators only; no assembly drawing yet.
 - Footprints for new parts come from the KiCad 9 standard library on this machine (`KICAD_FOOTPRINT_DIR`), embedded into the board at generation time.

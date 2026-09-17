@@ -38,7 +38,7 @@ These are queued decisions, not unanswered requests that prevent current indepen
 | 4 | Keep CAN? | Dropped (frees PA11/PA12 for USB) |
 | 5 | IMU | ICM-20948 on I2C |
 | 6 | Connector family | JST XH for power/actuators, 2.54 mm headers for GNSS/LoRa modules |
-| 7 | Mounting pattern / enclosure | 4 x M3 on 60 x 30 mm, board 70 x 40 mm |
+| 7 | Mounting pattern / enclosure | 4 x M3 on 72 x 38 mm, board 80 x 46 mm (revised 2026-09-16, see the dated note below; a further step to ~90 x 55 mm is proposed for the multi-vehicle scope) |
 | 8 | Debug console | USB-C CDC (needs the HSE crystal, which V2 adds anyway) |
 | 9 | Handheld voice mode (live PTT vs recorded) - only affects the boat radio if voice shares the boat's channel | Boat radio designed for RC + telemetry only |
 | 10 | Is the original fab-house zip (real v5 drill, stack-up) available? | Drill inferred from v5 pads (matches hole-for-hole) |

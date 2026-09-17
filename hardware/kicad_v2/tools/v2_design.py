@@ -20,7 +20,7 @@ PARTS = {
     'J1':  (('Connector_Generic', 'Conn_01x02'), 'Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal', 'BATTERY XT30', 'XT30PW-M', 'Amass', 'Power', 'Battery input 7-25 V, board only (<= 3 A)'),
     'F1':  (('Device', 'Fuse'), 'Fuse:Fuse_1812_4532Metric', '3A', '0468003.NR', 'Littelfuse', 'Power', '3 A fast-acting 1812 fuse on the board feed'),
     'Q1':  (('Transistor_FET', 'AO3401A'), 'Package_TO_SOT_SMD:SOT-23', 'AO3401A', 'AO3401A', 'Alpha & Omega', 'Power', 'P-MOSFET reverse-polarity protection (-30 V, 4 A)'),
-    'D2':  (('Device', 'D_Zener'), 'Diode_SMD:D_SOD-123', '12V', 'BZT52C12-7-F', 'Diodes Inc', 'Power', 'Gate-source clamp for Q1'),
+    'D2':  (('Device', 'D_Zener'), 'Diode_SMD:D_SOD-123', '10V', 'BZT52C10-7-F', 'Diodes Inc', 'Power', 'Gate-source clamp for Q1 (10 V: AO3401A Vgs max is 12 V, review A-10)'),
     'R1':  (('Device', 'R'), 'Resistor_SMD:R_0603_1608Metric', '100k', 'RC0603FR-07100KL', 'Yageo', 'Power', 'Q1 gate pull-down'),
     'D1':  (('Diode', 'SMAJ33A'), 'Diode_SMD:D_SMA', 'SMAJ33A', 'SMAJ33A', 'Littelfuse', 'Power', '33 V unidirectional TVS on VIN_RAW (pin 1 = cathode to VIN_RAW)'),
     'C1':  (('Device', 'C_Polarized'), 'Capacitor_SMD:CP_Elec_6.3x7.7', '47uF 50V', 'EEE-FK1H470P', 'Panasonic', 'Power', 'Bulk input capacitor'),
@@ -129,7 +129,7 @@ PARTS = {
     'R25': (('Device', 'R'), 'Resistor_SMD:R_0603_1608Metric', '5.1k', 'RC0603FR-075K1L', 'Yageo', 'Debug', 'CC1 pull-down (UFP)'),
     'R26': (('Device', 'R'), 'Resistor_SMD:R_0603_1608Metric', '5.1k', 'RC0603FR-075K1L', 'Yageo', 'Debug', 'CC2 pull-down (UFP)'),
     'R27': (('Device', 'R'), 'Resistor_SMD:R_0603_1608Metric', '47k', 'RC0603FR-0747KL', 'Yageo', 'Debug', 'VBUS sense top'),
-    'R28': (('Device', 'R'), 'Resistor_SMD:R_0603_1608Metric', '22k', 'RC0603FR-0722KL', 'Yageo', 'Debug', 'VBUS sense bottom (5 V -> 1.6 V on PA9)'),
+    'R28': (('Device', 'R'), 'Resistor_SMD:R_0603_1608Metric', '47k', 'RC0603FR-0747KL', 'Yageo', 'Debug', 'VBUS sense bottom (5 V -> 2.5 V on PA9 as a plain GPIO/ADC input, review A-12)'),
     'J7':  (('Connector_Generic', 'Conn_02x05_Odd_Even'), 'Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD', 'SWD', 'FTSH-105-01-L-DV-K', 'Samtec', 'Debug', 'ARM 10-pin Cortex debug'),
     # ---- Test points and mechanical (REQ-DBG-03, REQ-MECH-01)
     'TP1': (('Connector', 'TestPoint'), 'TestPoint:TestPoint_Pad_D1.5mm', 'ESC_PWM', '', '', 'Actuators', 'MCU-side ESC PWM'),
@@ -277,7 +277,7 @@ KEEPOUTS = []  # RYLR998_M4 (antenna on an external SMA pigtail) needs no on-boa
 # PRICE_DATE.  Estimates for planning only; re-quote at order time.  Parts without an MPN (test points, holes) cost 0.
 PRICE_DATE = '2026-09-16'
 PRICE_USD = {
-    'XT30PW-M': 1.20, '0468003.NR': 0.55, 'AO3401A': 0.35, 'BZT52C12-7-F': 0.15, 'SMAJ33A': 0.45, 'EEE-FK1H470P': 0.60,
+    'XT30PW-M': 1.20, '0468003.NR': 0.55, 'AO3401A': 0.35, 'BZT52C10-7-F': 0.15, 'SMAJ33A': 0.45, 'EEE-FK1H470P': 0.60,
     'GRM32ER71H106KA12L': 0.85, 'CRA2512-FZ-R020ELF': 0.55, 'INA180A1IDBVR': 0.95, 'KGM15ACG1H104KT': 0.10, 'R1240N001B-TR-FE': 1.45,
     'CL10B104KB8NNNC': 0.10, 'SRN6045TA-4R7M': 0.55, 'CMS06(TE12L,Q,M)': 0.60, '06035A471JAT2A': 0.15, 'GRM31CR71E106KA12L': 0.45,
     'TPS54202DDCR': 0.75, 'GRM32ER61C226KE20L': 0.60, 'SS34': 0.35, 'EEE-FK1A101P': 0.40, 'GRM21BR61C106KE15L': 0.25,

@@ -3401,7 +3401,7 @@
 				)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "47k"
 			(at 53.34 96.75 0)
 			(effects
 				(font
@@ -3427,7 +3427,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "VBUS sense bottom (5 V -> 1.6 V on PA9)"
+		(property "Description" "VBUS sense bottom (5 V -> 2.5 V on PA9 as a plain GPIO/ADC input, review A-12)"
 			(at 53.34 91.44 0)
 			(effects
 				(font
@@ -3436,7 +3436,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0722KL"
+		(property "MPN" "RC0603FR-0747KL"
 			(at 53.34 91.44 0)
 			(effects
 				(font

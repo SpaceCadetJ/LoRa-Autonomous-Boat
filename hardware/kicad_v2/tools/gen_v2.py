@@ -15,6 +15,7 @@ sys.path.insert(0, HERE); sys.path.insert(0, V1TOOLS)
 import kicad_sym as ks
 from kicad_write import uid, f, esc
 import gen_sch
+gen_sch.FORCE_NC = set()   # V1 forced U3-1 (VBAT) to no-connect; in V2 U3 is the TPS54202 and pin 1 is GND (review finding R-02)
 import v2_design as D
 
 V2DIR = os.path.join(ROOT, 'hardware', 'kicad_v2')

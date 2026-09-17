@@ -77,29 +77,79 @@ def _seg_seg(a, b, c, d):
     return min(_pt_seg(c[0], c[1], a[0], a[1], b[0], b[1]), _pt_seg(d[0], d[1], a[0], a[1], b[0], b[1]),
                _pt_seg(a[0], a[1], c[0], c[1], d[0], d[1]), _pt_seg(b[0], b[1], c[0], c[1], d[0], d[1]))
 
-def unconnected_gnd_pads(b):
-    """(ref, pad number) of GND pads that kicad-cli DRC reports as unconnected (the python connectivity API does not expose
-    zone-fill connections per pad, so the CLI report is the reliable source)."""
+def gnd_pour_outlines(b, netcode):
+    """{layer: (filled SHAPE_POLY_SET, main outline index, [island outline indices])} of the GND pours: the largest outline per
+    layer is the main pour, every other outline is an island (kept by KiCad because a pad sits in it) not connected to the net.
+    The SHAPE_POLY_SET object is kept in the result so the indices stay valid (Outline() references die with the set)."""
     import pcbnew
-    tmp = os.path.join(BUILD, 'stitch_tmp.kicad_pcb'); rpt = os.path.join(BUILD, 'stitch_drc.rpt')
-    pcbnew.SaveBoard(tmp, b)
-    subprocess.run([KICAD_CLI, 'pcb', 'drc', '--severity-error', '-o', rpt, tmp], capture_output=True)
-    pads = set(); head = ''
-    for ln in open(rpt, encoding='utf-8', errors='replace'):
-        if ln.startswith('['):
-            head = ln.split(':', 1)[0]
-        elif head == '[unconnected_items]' and '[GND]' in ln and ' of ' in ln and ('Pad ' in ln or 'PTH pad ' in ln):
-            body = ln.split('): ', 1)[1] if '): ' in ln else ln
-            words = body.split()
-            num = words[2] if words[0] == 'PTH' else words[1]
-            ref = body.split(' of ', 1)[1].split()[0]
-            pads.add((ref, num))
-    return sorted(pads)
+    out = {}
+    for z in b.Zones():
+        if z.GetNetCode() != netcode or z.GetIsRuleArea():
+            continue
+        for lay in (pcbnew.F_Cu, pcbnew.B_Cu):
+            if not z.IsOnLayer(lay):
+                continue
+            polys = z.GetFilledPolysList(lay); n = polys.OutlineCount()
+            if n == 0:
+                continue
+            areas = [polys.Outline(i).Area() for i in range(n)]
+            main = max(range(n), key=lambda i: areas[i])
+            out[lay] = (polys, main, [i for i in range(n) if i != main])
+    return out
+
+def isolated_gnd_sources(b, netcode):
+    """Clusters of filled GND copper that do not reach the main pour of either layer. Pour outlines are joined through the GND
+    vias they contain (union-find); every cluster without a main outline is isolated. Returns one stitch source per cluster:
+    (label, position VECTOR2I, layers the source copper exists on) - a GND via inside the cluster if there is one, else a GND pad."""
+    import pcbnew
+    outl = gnd_pour_outlines(b, netcode)
+    parent = {}
+    def find(a):
+        while parent.setdefault(a, a) != a:
+            parent[a] = parent[parent[a]]; a = parent[a]
+        return a
+    def union(a, c):
+        parent[find(a)] = find(c)
+    nodes = [(lay, i) for lay, (polys, main, islands) in outl.items() for i in [main] + islands]
+    for n in nodes:
+        find(n)
+    def containing(pos):
+        return [(lay, i) for lay, (polys, main, islands) in outl.items() for i in [main] + islands if polys.Contains(pos, i)]
+    vias = [v for v in b.GetTracks() if v.GetClass() == 'PCB_VIA' and v.GetNetCode() == netcode]
+    tht = [p for fp in b.GetFootprints() for p in fp.Pads() if p.GetNetCode() == netcode and p.GetAttribute() != pcbnew.PAD_ATTRIB_SMD]
+    for item in vias + tht:
+        c = containing(item.GetPosition())
+        for n in c[1:]:
+            union(c[0], n)
+    mains = {find((lay, outl[lay][1])) for lay in outl}
+    clusters = {}; connected = set()
+    for n in nodes:
+        r = find(n)
+        if r not in mains:
+            clusters.setdefault(r, []).append(n)
+        else:
+            connected.add(n)
+    sources = []
+    pads = [p for fp in b.GetFootprints() for p in fp.Pads() if p.GetNetCode() == netcode]
+    for r, members in clusters.items():
+        src = None
+        for v in vias:
+            if any(outl[lay][0].Contains(v.GetPosition(), i) for lay, i in members):
+                src = (f'via@({pcbnew.ToMM(v.GetPosition().x) - D.BOARD_ORIGIN[0]:.1f},{pcbnew.ToMM(v.GetPosition().y) - D.BOARD_ORIGIN[1]:.1f})', v.GetPosition(), (pcbnew.F_Cu, pcbnew.B_Cu)); break
+        if src is None:
+            for p in pads:
+                if any(p.IsOnLayer(lay) and outl[lay][0].Contains(p.GetPosition(), i) for lay, i in members):
+                    lays = tuple(l for l in (pcbnew.F_Cu, pcbnew.B_Cu) if p.IsOnLayer(l))
+                    src = (f'{p.GetParentFootprint().GetReference()}-{p.GetNumber()}', p.GetPosition(), lays); break
+        if src is not None:
+            sources.append(src)
+    return sources, connected
 
 def stitch_gnd(b):
-    """Freerouting assumes every GND pad sits on the B.Cu plane; pads fenced in by tracks stay unreached by the pours.
-    For each such pad add a 0.25 mm GND track to a 0.6/0.3 via at the nearest spot that clears every other-net item by the
-    Default clearance (geometric pre-check), sits inside a filled GND pour, and lowers the board's unconnected count after a refill."""
+    """Freerouting assumes every GND pad sits on the B.Cu plane; pads fenced in by tracks end up on small pour islands that the
+    main pours never reach. For every isolated cluster add a 0.25 mm GND track from its via/pad to the nearest spot inside the MAIN
+    pour (same layer: track only; other layer: track + 0.6/0.3 via) that clears every other-net item by the Default clearance
+    (geometric pre-check) and that lowers the unconnected count after a refill."""
     import pcbnew
     mm = pcbnew.ToMM; netcode = b.GetNetcodeFromNetname('GND'); ox, oy = D.BOARD_ORIGIN
     CLR, VIA_R, TW = 0.15, 0.3, 0.25
@@ -130,44 +180,62 @@ def stitch_gnd(b):
         for (px, py, pr, net, tht, pl, dr) in pads:
             if net != netcode and (tht or pl == lay) and _pt_seg(px, py, x0, y0, x1, y1) < TW / 2 + CLR + pr + 0.02: return False
         return True
-    pours = [z for z in b.Zones() if z.GetNetCode() == netcode and not z.GetIsRuleArea()]
-    def in_pour(x, y, lay):
-        pt = pcbnew.VECTOR2I(pcbnew.FromMM(x), pcbnew.FromMM(y))
-        return any(z.IsOnLayer(lay) and z.GetFilledPolysList(lay).Contains(pt) for z in pours)
     b.BuildConnectivity(); before = b.GetConnectivity().GetUnconnectedCount(True)
-    todo = unconnected_gnd_pads(b) if before else []
-    print('unconnected connections:', before, '; GND pads not reached by the pours:', todo)
-    for ref, num in todo:
-        fp = b.FindFootprintByReference(ref); pad = [q for q in fp.Pads() if q.GetNumber() == num][0]
-        cx, cy = mm(pad.GetPosition().x), mm(pad.GetPosition().y); done = False; tried = 0
-        layers = (pcbnew.B_Cu, pcbnew.F_Cu) if pad.GetAttribute() != pcbnew.PAD_ATTRIB_SMD else (pad.GetLayer(),)
-        for d in [1.4 + 0.2 * i for i in range(12)]:
+    sources, connected = isolated_gnd_sources(b, netcode) if before else ([], set())
+    print('unconnected connections:', before, '; isolated GND clusters, stitch sources:', [s[0] for s in sources])
+    for label, spos, slayers in sources:
+        outl = gnd_pour_outlines(b, netcode)
+        _, connected = isolated_gnd_sources(b, netcode)
+        def in_main(x, y, lay):
+            # inside any pour outline that belongs to the connected (main) cluster on that layer
+            pt = pcbnew.VECTOR2I(pcbnew.FromMM(x), pcbnew.FromMM(y))
+            return lay in outl and any(outl[lay][0].Contains(pt, i) for (l, i) in connected if l == lay)
+        cx, cy = mm(spos.x), mm(spos.y); done = False; tried = 0
+        for d in [1.0 + 0.2 * i for i in range(26)]:
             for k in range(24):
                 ang = k * math.pi / 12; x, y = cx + d * math.cos(ang), cy + d * math.sin(ang)
-                if not (0.8 <= x - ox <= D.BOARD_W - 0.8 and 0.8 <= y - oy <= D.BOARD_H - 0.8) or not via_ok(x, y):
+                if not (0.8 <= x - ox <= D.BOARD_W - 0.8 and 0.8 <= y - oy <= D.BOARD_H - 0.8):
                     continue
-                if not (in_pour(x, y, pcbnew.B_Cu) or in_pour(x, y, pcbnew.F_Cu)):
-                    continue
-                for lay in layers:
-                    if not track_ok(cx, cy, x, y, lay):
+                for lay in slayers:
+                    same = in_main(x, y, lay); other = in_main(x, y, pcbnew.B_Cu if lay == pcbnew.F_Cu else pcbnew.F_Cu)
+                    if not (same or other):
                         continue
-                    via = pcbnew.PCB_VIA(b); via.SetPosition(pcbnew.VECTOR2I(pcbnew.FromMM(x), pcbnew.FromMM(y))); via.SetViaType(pcbnew.VIATYPE_THROUGH)
-                    via.SetDrill(pcbnew.FromMM(0.3)); via.SetWidth(pcbnew.FromMM(2 * VIA_R)); via.SetLayerPair(pcbnew.F_Cu, pcbnew.B_Cu); via.SetNetCode(netcode)
-                    tr = pcbnew.PCB_TRACK(b); tr.SetStart(pad.GetPosition()); tr.SetEnd(via.GetPosition()); tr.SetWidth(pcbnew.FromMM(TW)); tr.SetLayer(lay); tr.SetNetCode(netcode)
-                    b.Add(via); b.Add(tr); tried += 1
+                    if not same and not via_ok(x, y):
+                        continue
+                    # straight track, else an L through (x, cy) or (cx, y)
+                    path = None
+                    if track_ok(cx, cy, x, y, lay):
+                        path = [(cx, cy), (x, y)]
+                    else:
+                        for mx, my in ((x, cy), (cx, y)):
+                            if track_ok(cx, cy, mx, my, lay) and track_ok(mx, my, x, y, lay):
+                                path = [(cx, cy), (mx, my), (x, y)]; break
+                    if path is None:
+                        continue
+                    added = []
+                    if not same:
+                        via = pcbnew.PCB_VIA(b); via.SetPosition(pcbnew.VECTOR2I(pcbnew.FromMM(x), pcbnew.FromMM(y))); via.SetViaType(pcbnew.VIATYPE_THROUGH)
+                        via.SetDrill(pcbnew.FromMM(0.3)); via.SetWidth(pcbnew.FromMM(2 * VIA_R)); via.SetLayerPair(pcbnew.F_Cu, pcbnew.B_Cu); via.SetNetCode(netcode)
+                        b.Add(via); added.append(via)
+                    for (x0, y0), (x1, y1) in zip(path, path[1:]):
+                        tr = pcbnew.PCB_TRACK(b); tr.SetStart(pcbnew.VECTOR2I(pcbnew.FromMM(x0), pcbnew.FromMM(y0))); tr.SetEnd(pcbnew.VECTOR2I(pcbnew.FromMM(x1), pcbnew.FromMM(y1)))
+                        tr.SetWidth(pcbnew.FromMM(TW)); tr.SetLayer(lay); tr.SetNetCode(netcode); b.Add(tr); added.append(tr)
+                    tried += 1
                     pcbnew.ZONE_FILLER(b).Fill(b.Zones()); b.BuildConnectivity()
                     after = b.GetConnectivity().GetUnconnectedCount(True)
                     if after < before:
                         before = after
-                        tracks.append((cx, cy, x, y, TW / 2, lay, netcode)); vias.append((x, y, VIA_R, netcode))
-                        print(f'  {ref}-{num}: stitched, via {d:.1f} mm at {k * 15} deg on {pcbnew.BOARD.GetStandardLayerName(lay)} (fills tried: {tried}); unconnected now {after}')
+                        for (x0, y0), (x1, y1) in zip(path, path[1:]):
+                            tracks.append((x0, y0, x1, y1, TW / 2, lay, netcode))
+                        if not same: vias.append((x, y, VIA_R, netcode))
+                        print(f'  {label}: stitched with a {d:.1f} mm track at {k * 15} deg on {pcbnew.BOARD.GetStandardLayerName(lay)}' + ('' if same else ' + via') + f' (fills tried: {tried}); unconnected now {after}')
                         done = True; break
-                    b.Remove(via); b.Remove(tr)
-                    if tried >= 12: break
-                if done or tried >= 12: break
-            if done or tried >= 12: break
+                    for it in added: b.Remove(it)
+                    if tried >= 16: break
+                if done or tried >= 16: break
+            if done or tried >= 16: break
         if not done:
-            print(f'  {ref}-{num}: no clean stitch position found ({tried} fills tried)')
+            print(f'  {label}: no clean stitch position found ({tried} fills tried)')
     pcbnew.ZONE_FILLER(b).Fill(b.Zones()); b.BuildConnectivity()
     print('unconnected connections after stitching:', b.GetConnectivity().GetUnconnectedCount(True))
 

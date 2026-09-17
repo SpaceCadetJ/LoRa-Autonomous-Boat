@@ -3523,7 +3523,7 @@
 				)
 			)
 		)
-		(property "Value" "12V"
+		(property "Value" "10V"
 			(at 193.04 35.79 0)
 			(effects
 				(font
@@ -3549,7 +3549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Gate-source clamp for Q1"
+		(property "Description" "Gate-source clamp for Q1 (10 V: AO3401A Vgs max is 12 V, review A-10)"
 			(at 193.04 33.02 0)
 			(effects
 				(font
@@ -3558,7 +3558,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "BZT52C12-7-F"
+		(property "MPN" "BZT52C10-7-F"
 			(at 193.04 33.02 0)
 			(effects
 				(font
@@ -7196,9 +7196,54 @@
 		)
 		(uuid "4964a130-3289-58f7-a24a-d0e7d27943eb")
 	)
-	(no_connect
-		(at 106.68 127)
-		(uuid "a90e65ec-18a1-5305-8a6c-00a85c7dacbe")
+	(wire
+		(pts
+			(xy 106.68 127) (xy 106.68 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36be051c-c72c-562c-860c-64cc54262865")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 106.68 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "2baddccc-98a3-5e6e-8872-0f01e2c8335b")
+		(property "Reference" "#PWRPOW23"
+			(at 106.68 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 133.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+
+		(pin "1"
+			(uuid "8f717d29-ef73-5c05-a18e-1be51e04d4c4")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
+					(reference "#PWRPOW23")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(wire
 		(pts
@@ -7208,30 +7253,10 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ab212c8a-526d-5c2e-8f0d-02efac69f0e3")
+		(uuid "de320382-2669-5a5d-aa9f-ad128559d87f")
 	)
 	(label "BOOT_5V"
 		(at 119.38 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fffa2ca8-b6fe-591a-880f-b27f72a4df41")
-	)
-	(wire
-		(pts
-			(xy 116.84 119.38) (xy 119.38 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de320382-2669-5a5d-aa9f-ad128559d87f")
-	)
-	(label "SW_5V"
-		(at 119.38 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7242,13 +7267,33 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 121.92) (xy 119.38 121.92)
+			(xy 116.84 119.38) (xy 119.38 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c44a0f89-7730-5b0e-8335-7f9d375c7aae")
+	)
+	(label "SW_5V"
+		(at 119.38 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5f7dfe0-6327-541c-a878-909b0cca8dbc")
+	)
+	(wire
+		(pts
+			(xy 116.84 121.92) (xy 119.38 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "760dde97-7234-58c3-b157-e4ba4e2b1de5")
 	)
 	(label "FB_5V"
 		(at 119.38 121.92 0)
@@ -7258,7 +7303,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "a5f7dfe0-6327-541c-a878-909b0cca8dbc")
+		(uuid "6aa403e8-2e41-5496-9dab-ec2362384a87")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -7332,10 +7377,10 @@
 		)
 
 		(pin "1"
-			(uuid "0c7fe92a-83a0-5d69-a496-7f22e55f3a77")
+			(uuid "2743e4c1-cff5-511e-94bb-bd4a72958b62")
 		)
 		(pin "2"
-			(uuid "84e236e3-a8ec-53ba-afdc-b72ccffd383f")
+			(uuid "b883f9a2-ea6e-5186-86de-89360c51dc9a")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -7354,7 +7399,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "85d562d9-095e-5f9f-ac0e-386faba46b2b")
+		(uuid "8286b479-4cec-5862-b696-8914738ac6ee")
 	)
 	(label "VIN_BUCK"
 		(at 157.48 110.49 90)
@@ -7364,7 +7409,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "a2f11f77-657e-5606-9e41-80693bf5160e")
+		(uuid "ecfb4139-b6b6-58b3-b56d-d09c63a43c18")
 	)
 	(wire
 		(pts
@@ -7374,7 +7419,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8286b479-4cec-5862-b696-8914738ac6ee")
+		(uuid "c6070dfe-c078-5272-acf3-c0c2b2feff3f")
 	)
 	(label "EN_5V"
 		(at 157.48 123.19 270)
@@ -7384,7 +7429,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ecfb4139-b6b6-58b3-b56d-d09c63a43c18")
+		(uuid "25da991c-be1b-594e-bd46-755285235169")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -7458,10 +7503,10 @@
 		)
 
 		(pin "1"
-			(uuid "b36a8138-949b-5552-83bb-45d7dd651f44")
+			(uuid "a79b2b95-bbf2-51c8-a5ca-85da82c5a751")
 		)
 		(pin "2"
-			(uuid "74d4f83f-300d-565c-a533-0637150cb4fd")
+			(uuid "8e88563c-34ea-5941-bdce-cbdb39749fa4")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -7480,7 +7525,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "50a14c12-54bd-5b00-b973-a7ffbf9062bd")
+		(uuid "9e6bc536-f828-5e8c-aded-819524f6b619")
 	)
 	(label "SW_5V"
 		(at 200.66 110.49 90)
@@ -7490,7 +7535,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "e203c709-8293-57c2-b550-0f5c08fd70fd")
+		(uuid "320456a6-4b7a-5257-a3c0-d81cad6fbe45")
 	)
 	(wire
 		(pts
@@ -7500,7 +7545,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "9e6bc536-f828-5e8c-aded-819524f6b619")
+		(uuid "da06f996-2876-5c71-8b9f-6f21d37b1725")
 	)
 	(label "BOOT_5V"
 		(at 200.66 123.19 270)
@@ -7510,7 +7555,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "320456a6-4b7a-5257-a3c0-d81cad6fbe45")
+		(uuid "1bddf4e1-e504-59d2-8e8f-5b8d3d6cf4a3")
 	)
 	(symbol
 		(lib_id "Device:L")
@@ -7584,10 +7629,10 @@
 		)
 
 		(pin "1"
-			(uuid "0d0e5691-a49c-53ff-80d3-afe50287c35c")
+			(uuid "3aec9137-b205-5831-98a7-956f2e340622")
 		)
 		(pin "2"
-			(uuid "6e4c34b7-827a-5691-a8ca-b28a849beb05")
+			(uuid "8033b506-0a5c-5da1-ad54-3871077fe7dc")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -7606,7 +7651,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b6e69456-5582-579b-b09d-d964c9436eb6")
+		(uuid "a137ba46-931a-501d-a5eb-981bf11b3a0b")
 	)
 	(label "SW_5V"
 		(at 243.84 110.49 90)
@@ -7616,7 +7661,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2159215d-db78-5c68-a665-796dbc71030c")
+		(uuid "ca6106fd-3865-5f0b-9b25-471f254dc0eb")
 	)
 	(wire
 		(pts
@@ -7626,7 +7671,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a137ba46-931a-501d-a5eb-981bf11b3a0b")
+		(uuid "9b76f6c5-ba58-5e91-8392-f0469e8852b1")
 	)
 	(label "+5V_BUCK"
 		(at 243.84 123.19 270)
@@ -7636,7 +7681,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ca6106fd-3865-5f0b-9b25-471f254dc0eb")
+		(uuid "f539fbc1-a1a4-5eb0-ac67-920f08a63883")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -7710,10 +7755,10 @@
 		)
 
 		(pin "1"
-			(uuid "2f141e59-37b4-5de0-beb4-5c7995a0b939")
+			(uuid "fd183d80-5146-5e72-8efd-e691fefb0981")
 		)
 		(pin "2"
-			(uuid "0b1e74bc-baa8-53a1-87f3-2f469944868d")
+			(uuid "16edbdae-8cc7-5afc-8911-3aa167c6ef43")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -7732,7 +7777,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "da48b8e7-cf79-5c36-b1bf-8ee7f7ba1d61")
+		(uuid "fada1433-77df-542e-867b-e3fd54b3b8d0")
 	)
 	(label "+5V_BUCK"
 		(at 284.48 110.49 90)
@@ -7742,7 +7787,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2b7f5219-9881-5eb0-a232-02a39bd0a739")
+		(uuid "e6dd0496-fe0f-539a-b8b4-d56034fc51e2")
 	)
 	(wire
 		(pts
@@ -7752,7 +7797,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "fada1433-77df-542e-867b-e3fd54b3b8d0")
+		(uuid "a141e324-6b67-5899-90e0-4f54b2fce8ea")
 	)
 	(label "FB_5V"
 		(at 284.48 123.19 270)
@@ -7762,7 +7807,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "e6dd0496-fe0f-539a-b8b4-d56034fc51e2")
+		(uuid "b1ae4d30-aa13-59be-af0c-4c335d68eac2")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -7836,10 +7881,10 @@
 		)
 
 		(pin "1"
-			(uuid "fef2315f-0885-50d0-a45b-4e7d260b89ab")
+			(uuid "2638898e-86d6-5b2e-9d50-ef02c2a28af6")
 		)
 		(pin "2"
-			(uuid "03ecb1b8-bbdb-5f11-9589-7d8868b502b3")
+			(uuid "c5229e29-4ddf-5f62-898b-8d6c2ffd0f74")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -7858,7 +7903,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d2b73c2d-1cc9-5743-9ded-4425488b4c6f")
+		(uuid "869cfec6-bef5-54d3-b457-be2e2cded3cb")
 	)
 	(label "FB_5V"
 		(at 325.12 110.49 90)
@@ -7868,7 +7913,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "078ec905-ab0b-57cb-a225-c94602624332")
+		(uuid "af5accff-a91a-5bed-9039-cc1cd7473652")
 	)
 	(wire
 		(pts
@@ -7878,7 +7923,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "869cfec6-bef5-54d3-b457-be2e2cded3cb")
+		(uuid "f63b711f-7a6a-5cd4-a91c-dc61a9c94928")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7888,8 +7933,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "b267f8c6-f75a-5f97-9d7a-50a0c32c0918")
-		(property "Reference" "#PWRPOW23"
+		(uuid "c93cd4e0-4d1d-5c60-9653-1601d288c1e1")
+		(property "Reference" "#PWRPOW24"
 			(at 325.12 119.38 0)
 			(effects
 				(font
@@ -7908,12 +7953,12 @@
 		)
 
 		(pin "1"
-			(uuid "ee1b9bbc-8d95-518a-a3cb-638c73177c57")
+			(uuid "fd6bb02a-4976-58e7-8a24-65788690e4d5")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW23")
+					(reference "#PWRPOW24")
 					(unit 1)
 				)
 			)
@@ -7991,10 +8036,10 @@
 		)
 
 		(pin "1"
-			(uuid "55848ed7-bb0b-518b-803c-135a1b1679d9")
+			(uuid "5db3e660-63b7-5f36-b2d2-1c2bae8d0275")
 		)
 		(pin "2"
-			(uuid "fd6bb02a-4976-58e7-8a24-65788690e4d5")
+			(uuid "7cde4c7e-c0e5-5c8d-883b-5d8815581fd2")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -8013,7 +8058,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a8ae44c1-5ab8-513c-ac33-f129853bff9b")
+		(uuid "a2ef2244-0dd1-54be-b699-146fb63f7ee5")
 	)
 	(label "+5V_BUCK"
 		(at 368.3 110.49 90)
@@ -8023,7 +8068,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "b81268ad-abd6-5f99-a5af-52de938f6aa8")
+		(uuid "c0b9e2af-fd09-5d60-8f6d-3109c9570455")
 	)
 	(wire
 		(pts
@@ -8033,7 +8078,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a2ef2244-0dd1-54be-b699-146fb63f7ee5")
+		(uuid "55217537-ca20-5c97-be28-b518ae22a1f7")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8043,8 +8088,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "807c4056-ff3e-5090-b747-b870eeb19afe")
-		(property "Reference" "#PWRPOW24"
+		(uuid "739075a3-3422-5a1f-8853-9a1f34e71f3b")
+		(property "Reference" "#PWRPOW25"
 			(at 368.3 119.38 0)
 			(effects
 				(font
@@ -8063,12 +8108,12 @@
 		)
 
 		(pin "1"
-			(uuid "6a476ee2-6d84-5f8e-b321-92eec2c6f01f")
+			(uuid "0d37d59d-6cca-593b-bf59-1ac9ac830a5c")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW24")
+					(reference "#PWRPOW25")
 					(unit 1)
 				)
 			)
@@ -8146,10 +8191,10 @@
 		)
 
 		(pin "1"
-			(uuid "0b6e22d0-e579-5502-85e5-60d65aef5e4a")
+			(uuid "e79ff72a-96b9-5597-8b77-8ca3e1b6316c")
 		)
 		(pin "2"
-			(uuid "0d37d59d-6cca-593b-bf59-1ac9ac830a5c")
+			(uuid "593d284d-f13b-5824-9b9f-2db520c46e01")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -8168,7 +8213,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8b1bc5ca-1681-547e-ba8d-b7234d279e52")
+		(uuid "22628a1a-99d2-51b9-af9a-192ed189ef82")
 	)
 	(label "+5V_BUCK"
 		(at 55.88 138.43 90)
@@ -8178,7 +8223,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "987262b5-2511-55b2-9228-84116039b594")
+		(uuid "54472342-07e0-5cbb-9694-d0cab3450a35")
 	)
 	(wire
 		(pts
@@ -8188,7 +8233,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "22628a1a-99d2-51b9-af9a-192ed189ef82")
+		(uuid "4b3abaa6-1a81-51ac-909d-4cfd7d4c68dc")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8198,8 +8243,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "5c6fc12a-06d6-586c-9d7a-2fb763450ca3")
-		(property "Reference" "#PWRPOW25"
+		(uuid "f8e18ccc-48bc-552a-965d-a7890473c328")
+		(property "Reference" "#PWRPOW26"
 			(at 55.88 147.32 0)
 			(effects
 				(font
@@ -8218,12 +8263,12 @@
 		)
 
 		(pin "1"
-			(uuid "5087d714-c3b3-546f-b6e6-bfbffef85c4a")
+			(uuid "e5bc3d6f-7042-55b4-ac9b-7986ecf51f25")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW25")
+					(reference "#PWRPOW26")
 					(unit 1)
 				)
 			)
@@ -8301,10 +8346,10 @@
 		)
 
 		(pin "1"
-			(uuid "56ceacf7-96a0-55ec-bb18-97788931c40a")
+			(uuid "b05574f0-d731-5521-bff8-106fffedb7b1")
 		)
 		(pin "2"
-			(uuid "e5bc3d6f-7042-55b4-ac9b-7986ecf51f25")
+			(uuid "b49cad4c-6064-5971-ba7e-86691bf1bcdf")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -8323,7 +8368,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "515dc73a-a676-5e56-8491-9f9ad720a6a1")
+		(uuid "5ed7eb7c-84cd-5950-865c-ccc81f27840d")
 	)
 	(label "VIN_BUCK"
 		(at 99.06 138.43 90)
@@ -8333,7 +8378,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "935c9c77-c4be-579e-a9fa-3b543a8bd8d9")
+		(uuid "69e56ea9-a74f-5234-b223-1c3ac31b3abe")
 	)
 	(wire
 		(pts
@@ -8343,7 +8388,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5ed7eb7c-84cd-5950-865c-ccc81f27840d")
+		(uuid "d9e993b5-bec9-5a59-be29-43fed4ab7b6c")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8353,8 +8398,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "35ace49d-1aec-5426-a81f-a766eb8249a2")
-		(property "Reference" "#PWRPOW26"
+		(uuid "d979942e-d635-51d0-8638-515428a7fb9f")
+		(property "Reference" "#PWRPOW27"
 			(at 99.06 147.32 0)
 			(effects
 				(font
@@ -8373,12 +8418,12 @@
 		)
 
 		(pin "1"
-			(uuid "5c9b2331-93bb-529a-bf4e-a2c22f9897a2")
+			(uuid "e9b16316-e7df-5557-a920-950202574fa1")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW26")
+					(reference "#PWRPOW27")
 					(unit 1)
 				)
 			)
@@ -8456,10 +8501,10 @@
 		)
 
 		(pin "1"
-			(uuid "8e325c36-56e5-56ef-a94b-6d09feaa1791")
+			(uuid "7373ea0d-3697-5226-8050-4b1e96938d8f")
 		)
 		(pin "2"
-			(uuid "e9b16316-e7df-5557-a920-950202574fa1")
+			(uuid "dea14102-a431-5fc2-9ce5-8f506f3bf8ad")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -8478,7 +8523,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "89821078-56dc-572a-b190-71ae0e305cb5")
+		(uuid "281b98ce-cfb3-51ca-a9de-dc9f9f181cea")
 	)
 	(global_label "VSERVO"
 		(shape passive)
@@ -8489,7 +8534,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "26000112-4f76-5790-86ee-d935ad42cc55")
+		(uuid "e83d0d46-5db1-5546-81d3-405b2ea804e1")
 	)
 	(wire
 		(pts
@@ -8499,7 +8544,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "281b98ce-cfb3-51ca-a9de-dc9f9f181cea")
+		(uuid "72b307b1-7368-5f37-8984-17d7f111400f")
 	)
 	(label "+5V_BUCK"
 		(at 151.13 142.24 0)
@@ -8509,7 +8554,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "e83d0d46-5db1-5546-81d3-405b2ea804e1")
+		(uuid "a65eba4f-c688-5e0b-8f23-55ae4faca9ee")
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
@@ -8583,10 +8628,10 @@
 		)
 
 		(pin "1"
-			(uuid "14980290-f39e-51e7-9cef-359bf034e0fe")
+			(uuid "89abffea-f0ad-5b84-a09a-58ad1bf6a6e5")
 		)
 		(pin "2"
-			(uuid "13ff3433-fe68-5135-b982-652a9775a62e")
+			(uuid "3e87cd2f-8731-5854-8e29-41172462d29f")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -8605,7 +8650,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b735c31a-d041-504e-9863-64c48500eb7d")
+		(uuid "8bb9bab9-e28c-552c-8b1c-655aafb84457")
 	)
 	(global_label "VSERVO"
 		(shape passive)
@@ -8616,7 +8661,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "344529f9-359a-5f3a-bbbe-2b7235d80b4b")
+		(uuid "38b65b07-8dea-54fc-816d-c3d5c7b6127b")
 	)
 	(wire
 		(pts
@@ -8626,7 +8671,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8bb9bab9-e28c-552c-8b1c-655aafb84457")
+		(uuid "256666d6-4d71-58ef-b0e0-92a928d8ffd9")
 	)
 	(hierarchical_label "BEC_IN"
 		(shape passive)
@@ -8637,7 +8682,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "38b65b07-8dea-54fc-816d-c3d5c7b6127b")
+		(uuid "db24d2c4-ef24-54f8-830a-5bdd7128a57e")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -8711,10 +8756,10 @@
 		)
 
 		(pin "1"
-			(uuid "c6ef9b54-ed50-5e49-b06e-b18fae801f52")
+			(uuid "81baa712-e269-5493-afec-e389357a5824")
 		)
 		(pin "2"
-			(uuid "fe8fcf2c-1671-5f26-99ad-7691de196812")
+			(uuid "6eef5020-d30b-58c5-aa06-d55df5716e82")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -8733,7 +8778,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c8276dd3-3e9d-561c-8dc7-a8239bc943fd")
+		(uuid "802d846f-551c-5858-baea-8c0beeb9275e")
 	)
 	(symbol
 		(lib_id "LoRa_Boat_Controller_V2:VSERVO")
@@ -8743,8 +8788,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "045890e0-1b24-57d3-be8f-ae8ded7b80e0")
-		(property "Reference" "#PWRPOW27"
+		(uuid "42873bc1-45c5-56fb-96a3-c4ca5902475b")
+		(property "Reference" "#PWRPOW28"
 			(at 238.76 134.62 0)
 			(effects
 				(font
@@ -8763,12 +8808,12 @@
 		)
 
 		(pin "1"
-			(uuid "5281af91-7453-560e-acc2-e060dd7cdadb")
+			(uuid "ad711e50-393f-5b63-8b09-d0e9de0957ad")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW27")
+					(reference "#PWRPOW28")
 					(unit 1)
 				)
 			)
@@ -8782,7 +8827,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "8dbeb399-daca-56c9-b295-5999fa449c1b")
+		(uuid "5670b1c0-3d58-5586-8ff2-510ee312dd47")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8792,8 +8837,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "e869019f-61fd-5d19-a099-5bb3d2d06bc2")
-		(property "Reference" "#PWRPOW28"
+		(uuid "af1fe896-efdc-59e8-a776-976d0510feef")
+		(property "Reference" "#PWRPOW29"
 			(at 238.76 147.32 0)
 			(effects
 				(font
@@ -8812,12 +8857,12 @@
 		)
 
 		(pin "1"
-			(uuid "f33f62a1-6e2f-5aba-aeb3-ab13761fceb4")
+			(uuid "bfdbc89c-258b-5a14-afec-65cb46a8fbf9")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW28")
+					(reference "#PWRPOW29")
 					(unit 1)
 				)
 			)
@@ -8895,10 +8940,10 @@
 		)
 
 		(pin "1"
-			(uuid "bf0d2721-cfe8-5aeb-a64c-fd96b3f91512")
+			(uuid "e7f7a05e-b7aa-5530-a462-778f6c1cdab8")
 		)
 		(pin "2"
-			(uuid "bfdbc89c-258b-5a14-afec-65cb46a8fbf9")
+			(uuid "3c27e35e-23a2-5057-8287-fa5ef99d98e0")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -8917,7 +8962,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "650a9290-7c28-5d3a-b442-9c71c52bbc17")
+		(uuid "f98a3f50-3366-5a44-adcd-26a970abc20d")
 	)
 	(symbol
 		(lib_id "LoRa_Boat_Controller_V2:VSERVO")
@@ -8927,8 +8972,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "617e2b90-fcfa-5ac7-9a65-45265eb8b9b0")
-		(property "Reference" "#PWRPOW29"
+		(uuid "ef1f57c6-af2a-5390-9b17-966efcab64e3")
+		(property "Reference" "#PWRPOW30"
 			(at 281.94 134.62 0)
 			(effects
 				(font
@@ -8947,12 +8992,12 @@
 		)
 
 		(pin "1"
-			(uuid "e7b9132c-662f-5844-a9b5-b01843a16d51")
+			(uuid "d7efe976-b309-5baa-9ccf-af171e8a8f95")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW29")
+					(reference "#PWRPOW30")
 					(unit 1)
 				)
 			)
@@ -8966,7 +9011,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "af35e247-8b23-591f-8795-8b50d787741a")
+		(uuid "68a6bad2-1a87-5935-95cc-d1bf6706fb71")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8976,8 +9021,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "baa2bcb2-62bd-5d36-9e13-bc3984430d52")
-		(property "Reference" "#PWRPOW30"
+		(uuid "ee9863ed-0503-5e7b-95e1-f8680f7af381")
+		(property "Reference" "#PWRPOW31"
 			(at 281.94 147.32 0)
 			(effects
 				(font
@@ -8996,12 +9041,12 @@
 		)
 
 		(pin "1"
-			(uuid "498eab3c-7289-5c72-a236-aa43ca526c3c")
+			(uuid "a6dcff28-3d69-51fe-a5d4-3f2851b3c427")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW30")
+					(reference "#PWRPOW31")
 					(unit 1)
 				)
 			)
@@ -9079,7 +9124,7 @@
 		)
 
 		(pin "1"
-			(uuid "b380b96a-1558-512e-ac26-3d4be9e89166")
+			(uuid "acb41ad4-130a-5348-9720-d1ac4cd828cc")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -9098,7 +9143,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7b859bad-6a6e-5e05-901d-9865e6fd5711")
+		(uuid "13952ca2-ea74-5a0d-a9a0-dca6126a9418")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -9108,8 +9153,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "ee06b67c-daa2-5e2d-93ac-076cebbfeecd")
-		(property "Reference" "#PWRPOW31"
+		(uuid "261693c4-c57a-568e-8582-e78239812096")
+		(property "Reference" "#PWRPOW32"
 			(at 325.12 140.97 0)
 			(effects
 				(font
@@ -9128,12 +9173,12 @@
 		)
 
 		(pin "1"
-			(uuid "31b63d10-aeca-5ced-887c-36d6439782a6")
+			(uuid "2a5f7afa-1166-516d-9f0c-2be2bac3b554")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW31")
+					(reference "#PWRPOW32")
 					(unit 1)
 				)
 			)
@@ -9211,7 +9256,7 @@
 		)
 
 		(pin "1"
-			(uuid "87e45cfc-a361-5bc4-9dfb-5a9e50aad04f")
+			(uuid "4eb8d579-aa53-5f9a-93b2-b068da65755d")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -9230,7 +9275,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "935e6d20-f65d-5d10-8613-211d45d8b4d9")
+		(uuid "50b7d4e9-d4b1-5cf9-894b-cb38b7dcb3e0")
 	)
 	(symbol
 		(lib_id "LoRa_Boat_Controller_V2:VSERVO")
@@ -9240,8 +9285,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "a1e292fa-e33b-5572-894b-a01af651e78d")
-		(property "Reference" "#PWRPOW32"
+		(uuid "d225824c-d1dd-5073-9fa9-91bc27868c67")
+		(property "Reference" "#PWRPOW33"
 			(at 365.76 140.97 0)
 			(effects
 				(font
@@ -9260,12 +9305,12 @@
 		)
 
 		(pin "1"
-			(uuid "e5c87cb7-616d-555a-9dba-993b9ddbe77c")
+			(uuid "61ac58ed-83d4-5a49-9962-c4e9fba217ad")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW32")
+					(reference "#PWRPOW33")
 					(unit 1)
 				)
 			)
@@ -9343,7 +9388,7 @@
 		)
 
 		(pin "1"
-			(uuid "3d35d2c9-6b2c-5ca2-aee4-1541cd7f2cf8")
+			(uuid "df33dc90-28a6-5012-bbff-8dc2ba1b6418")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -9362,7 +9407,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a8df5244-8b7b-58d2-8bdf-f02cda8b52be")
+		(uuid "71bb51d5-49fa-5f0c-b081-8e30abb6b636")
 	)
 	(symbol
 		(lib_id "LoRa_Boat_Controller:VIN_RAW")
@@ -9372,8 +9417,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "e877df19-7efa-518a-b246-2a1723472d72")
-		(property "Reference" "#PWRPOW33"
+		(uuid "44dfb864-e12c-5351-8ff3-4840b361b89a")
+		(property "Reference" "#PWRPOW34"
 			(at 53.34 163.83 0)
 			(effects
 				(font
@@ -9392,12 +9437,12 @@
 		)
 
 		(pin "1"
-			(uuid "9cffdd5e-7413-5882-a750-42d887802900")
+			(uuid "c60ad13d-76b9-5753-9ccc-0488dbadfd06")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW33")
+					(reference "#PWRPOW34")
 					(unit 1)
 				)
 			)
@@ -9475,7 +9520,7 @@
 		)
 
 		(pin "1"
-			(uuid "7789672a-4bc6-568c-a478-67a51b8c2b52")
+			(uuid "b9c04de4-a8e9-5da2-bdd2-b2893eac43c0")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -9494,7 +9539,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f0ef0ddf-e06d-5743-9a47-2ade267221d7")
+		(uuid "ffd1612a-7d38-5385-9219-3c04664123f4")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -9504,8 +9549,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "332b608a-296f-5dd4-9b0c-9184382dd3a2")
-		(property "Reference" "#PWRPOW34"
+		(uuid "1e7e389a-d2e9-5161-8f1d-226c07775e8c")
+		(property "Reference" "#PWRPOW35"
 			(at 91.44 163.83 0)
 			(effects
 				(font
@@ -9524,12 +9569,12 @@
 		)
 
 		(pin "1"
-			(uuid "b44fe6cf-208e-5b59-af5d-aebed8d0d72b")
+			(uuid "a1ec7b65-d415-5ddd-bdcb-efba3efd098d")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW34")
+					(reference "#PWRPOW35")
 					(unit 1)
 				)
 			)
@@ -9543,7 +9588,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "1e7e389a-d2e9-5161-8f1d-226c07775e8c")
+		(uuid "d3539a80-d31b-5494-808f-92ad984281d8")
 		(property "Reference" "#FLG01"
 			(at 350.52 252.73 0)
 			(effects
@@ -9563,7 +9608,7 @@
 		)
 
 		(pin "1"
-			(uuid "a1ec7b65-d415-5ddd-bdcb-efba3efd098d")
+			(uuid "1bf58233-c595-514f-b21c-5979a322f512")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -9582,7 +9627,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b999d6e1-36cc-51f1-bfb0-4162d0011e11")
+		(uuid "e06478e9-707d-5611-a1a1-edd991523895")
 	)
 	(symbol
 		(lib_id "LoRa_Boat_Controller:VIN_RAW")
@@ -9592,8 +9637,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "3392d749-be74-5274-9595-7395d0f03e2f")
-		(property "Reference" "#PWRPOW35"
+		(uuid "19ccfcc5-52c1-55a9-b9e1-2861786b7605")
+		(property "Reference" "#PWRPOW36"
 			(at 350.52 255.27 0)
 			(effects
 				(font
@@ -9612,12 +9657,12 @@
 		)
 
 		(pin "1"
-			(uuid "caa9b9d1-e7c8-590d-a7e5-8740dec9ed12")
+			(uuid "49cddfab-910d-5e35-982b-0ca9fc2aab4f")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW35")
+					(reference "#PWRPOW36")
 					(unit 1)
 				)
 			)
@@ -9631,7 +9676,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "19ccfcc5-52c1-55a9-b9e1-2861786b7605")
+		(uuid "870ba331-c39c-55b3-a495-194811652060")
 		(property "Reference" "#FLG02"
 			(at 365.76 252.73 0)
 			(effects
@@ -9651,7 +9696,7 @@
 		)
 
 		(pin "1"
-			(uuid "49cddfab-910d-5e35-982b-0ca9fc2aab4f")
+			(uuid "b39729c8-357d-59e4-9a67-cfbf79a69a53")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -9670,7 +9715,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "de74d09b-7d66-5c52-a5c1-a641fa0aa3d3")
+		(uuid "cac386eb-b66b-53e0-be11-980afb4e4a76")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -9680,8 +9725,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "b08745fd-1793-5809-a55d-387f68c41948")
-		(property "Reference" "#PWRPOW36"
+		(uuid "ad2867fe-967f-58c7-b2ff-d38e66ed3174")
+		(property "Reference" "#PWRPOW37"
 			(at 365.76 255.27 0)
 			(effects
 				(font
@@ -9700,12 +9745,12 @@
 		)
 
 		(pin "1"
-			(uuid "b1946395-429c-5825-9be0-aac2cbc9d531")
+			(uuid "c3088c78-6730-5eee-ad37-cb77f258e93d")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW36")
+					(reference "#PWRPOW37")
 					(unit 1)
 				)
 			)
@@ -9719,7 +9764,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "ad2867fe-967f-58c7-b2ff-d38e66ed3174")
+		(uuid "fb76fcd6-9255-5dd1-855b-274576143312")
 		(property "Reference" "#FLG03"
 			(at 381 252.73 0)
 			(effects
@@ -9739,7 +9784,7 @@
 		)
 
 		(pin "1"
-			(uuid "c3088c78-6730-5eee-ad37-cb77f258e93d")
+			(uuid "d9187b2e-fd90-57a2-9cba-a3552626b0be")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -9758,7 +9803,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f415cdc9-2dbc-53cb-b890-09a06a36f10e")
+		(uuid "d89b94da-dc78-5bff-87ca-dcfae4182429")
 	)
 	(symbol
 		(lib_id "LoRa_Boat_Controller_V2:VSERVO")
@@ -9768,8 +9813,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "5b49c654-6d9f-52da-a0d8-8ba2d2168fc7")
-		(property "Reference" "#PWRPOW37"
+		(uuid "973c6f1b-6039-53b4-8be3-3a750dab68e1")
+		(property "Reference" "#PWRPOW38"
 			(at 381 255.27 0)
 			(effects
 				(font
@@ -9788,12 +9833,12 @@
 		)
 
 		(pin "1"
-			(uuid "e58d250c-58f9-55f0-9b0f-9cddbd9a7eef")
+			(uuid "c107e1cc-89a7-5c77-9a09-db6b9be23d3d")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW37")
+					(reference "#PWRPOW38")
 					(unit 1)
 				)
 			)
@@ -9807,7 +9852,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "973c6f1b-6039-53b4-8be3-3a750dab68e1")
+		(uuid "53f16f8d-e84e-5593-a1e0-47796d6c0fa8")
 		(property "Reference" "#FLG04"
 			(at 396.24 252.73 0)
 			(effects
@@ -9827,7 +9872,7 @@
 		)
 
 		(pin "1"
-			(uuid "c107e1cc-89a7-5c77-9a09-db6b9be23d3d")
+			(uuid "56204ebe-fb90-5700-9fd1-92763bd9a073")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -9846,7 +9891,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a77297f7-ce75-5b5e-ab0c-27f56147c3ec")
+		(uuid "bcc37c8d-9207-5bd6-aa21-dbe6272d016e")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -9856,8 +9901,8 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "cf093002-a6d8-5ac9-998e-c7ca12f0bd56")
-		(property "Reference" "#PWRPOW38"
+		(uuid "48aba6d6-5019-58e6-a938-469680f58a31")
+		(property "Reference" "#PWRPOW39"
 			(at 396.24 255.27 0)
 			(effects
 				(font
@@ -9876,12 +9921,12 @@
 		)
 
 		(pin "1"
-			(uuid "7d46cc1d-89c7-5f2b-84dd-8bb3f72958da")
+			(uuid "70baac01-5545-5d78-a315-81be12a23afc")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
 				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865"
-					(reference "#PWRPOW38")
+					(reference "#PWRPOW39")
 					(unit 1)
 				)
 			)
@@ -9895,7 +9940,7 @@
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(uuid "48aba6d6-5019-58e6-a938-469680f58a31")
+		(uuid "d38e0245-af0f-5e36-ae52-5084db589290")
 		(property "Reference" "#FLG05"
 			(at 408.94 252.73 0)
 			(effects
@@ -9915,7 +9960,7 @@
 		)
 
 		(pin "1"
-			(uuid "70baac01-5545-5d78-a315-81be12a23afc")
+			(uuid "4bbd6254-8e5f-5c16-a9ec-976328abb806")
 		)
 		(instances
 			(project "LoRa_Boat_Controller_V2"
@@ -9934,7 +9979,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "68492759-e801-5cc4-9192-65d8f61fa573")
+		(uuid "8d41e390-e58a-5f54-a6a4-ad86d546a750")
 	)
 	(label "VIN_BUCK"
 		(at 408.94 259.08 270)
@@ -9944,7 +9989,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "c11ae102-7e72-541e-bc5f-25f80ed7dee2")
+		(uuid "a76d02ef-463e-5b3a-9c1e-9370cb880253")
 	)
 	(text "PWR_FLAG: VIN_RAW is sourced through Q1 (passive), +3V3 through L1, VSERVO through D4/D9, VIN_BUCK through the shunt R33"
 		(exclude_from_sim no)
@@ -9955,7 +10000,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "b25f2f88-4084-54ac-96f8-07ac7c5b2fe8")
+		(uuid "37a7cef1-140f-5259-9b08-999ec3d4c9c8")
 	)
 	(embedded_fonts no)
 )
