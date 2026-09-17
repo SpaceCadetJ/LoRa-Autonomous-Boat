@@ -12,6 +12,19 @@
   *   UART4  (PA0 TX,  PA1 RX)   -> LoRa  @115200 (RYLR module)
   *   USART3(PC10 TX, PC11 RX)   -> GPS / DEBUG @9600
   *
+  * BOARD WIRING NOTE (V1 as fabricated, verified from the v5 fab Gerbers +
+  * pstxnet.dat, 2026-09-16 - see docs/V1_DESIGN_REVIEW.md, docs/img/v1_evidence_pwm.png):
+  *   PA8 / TIM1_CH1 is routed to header refdes SPEEDCONTROLLER pin 2
+  *   PC6 / TIM3_CH1 is routed to header refdes STEERINGSERVO  pin 2
+  *   i.e. the copper is the mirror of the names used in this file: with this
+  *   firmware the ESC must be plugged into the header STEERINGSERVO and the
+  *   rudder servo into the header SPEEDCONTROLLER.  Do not "fix" the
+  *   firmware without also re-labelling the harness; V2 renames the nets by MCU
+  *   pin (PWM_PA8_ESCHDR / PWM_PC6_SERVOHDR).
+  *   PB0 is wired to GPSMODULE pin 3 and is held LOW by this firmware.
+  *   Other board facts that matter here: no HSE/LSE crystal (HSI only), VBAT and
+  *   BOOT0 pins are unconnected, CAN transceiver RXD is on PA10 (no CAN AF).
+  *
   * Behavior:
   *   - PWM:
   *       Motor:  TIM3_CH1 / PC6, 50 Hz, 1000–2000 µs
@@ -446,7 +459,7 @@ int main(void)
   lora_send_line("AT+ADDRESS=1");                // This node address (boat)
   lora_send_line("AT+NETWORKID=18");             // Network ID
   lora_send_line("AT+BAND=915000000");           // 915 MHz
-  lora_send_line("AT+PARAMETER=" LORA_PARAM_STR);// SF12,BW7.8,CR4/5,PL=4
+  lora_send_line("AT+PARAMETER=" LORA_PARAM_STR);// SF12, BW index 7 = 125 kHz (not 7.8 kHz), CR4/5, preamble 4. NOTE: an RYLR998 rejects SF12 (SF5-11 only) and keeps its stored settings; only the RYLR896 accepts SF12.
 
   dbg("Boat: LoRa init done\r\n");
 
