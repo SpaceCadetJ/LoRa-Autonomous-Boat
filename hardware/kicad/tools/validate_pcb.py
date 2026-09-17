@@ -34,8 +34,9 @@ def main():
     errs = []
     maxd = 0.0
     n = 0
+    from v1_design import allegro_ref
     for fp in fps:
-        ref = fp.GetReference()
+        ref = allegro_ref(fp.GetReference())
         for pad in fp.Pads():
             key = (ref, pad.GetNumber())
             pos = pad.GetPosition()

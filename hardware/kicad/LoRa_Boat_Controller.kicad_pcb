@@ -204,6 +204,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "R1"
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d653d95-4e02-58a9-aeff-d348d732f0e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "R_RC0402N_PAN-M_15K"
 			(at 0 0 270)
 			(layer "F.Fab")
@@ -216,7 +228,7 @@
 				)
 			)
 		)
-		(path "/d7e1fd58-46c5-554a-9388-21ba4a8eb6ff")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/d7e1fd58-46c5-554a-9388-21ba4a8eb6ff")
 		(attr smd)
 		(fp_rect
 			(start -1.083691 -0.275336)
@@ -266,7 +278,7 @@
 		(layer "F.Cu")
 		(uuid "09dc70c4-7eca-560e-888b-1e8f0b918b3d")
 		(at 63.1192 95.9106)
-		(property "Reference" "GND"
+		(property "Reference" "GND1"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "da12fcb3-e225-5036-9799-2c8edd4625ba")
@@ -313,6 +325,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "GND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50d7fb6e-2b40-50ca-ba7d-402485b6498c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "CON1_AMV_CON1_BATTERY-"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -325,7 +349,7 @@
 				)
 			)
 		)
-		(path "/15957c44-5c31-5ec5-a16d-5883b5bb78cd")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/15957c44-5c31-5ec5-a16d-5883b5bb78cd")
 		(attr through_hole)
 		(fp_rect
 			(start -0.799973 -0.799973)
@@ -414,6 +438,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "R2"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9918b89-8d0b-5018-8045-f7b6c6aa0085")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "R_RC0603N_YAG-M_4.7K"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -426,7 +462,7 @@
 				)
 			)
 		)
-		(path "/1efe8319-1589-5a8a-8b22-46b0998785d4")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/1efe8319-1589-5a8a-8b22-46b0998785d4")
 		(attr smd)
 		(fp_rect
 			(start -1.3589 -0.4318)
@@ -523,6 +559,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C14"
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ce186b7-ba46-55d7-9cb8-af49c6c8caa5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_0603G_AVX-M_470PF"
 			(at 0 0 270)
 			(layer "F.Fab")
@@ -535,7 +583,7 @@
 				)
 			)
 		)
-		(path "/5190ca35-0b3f-56b0-bfde-2436574f244a")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/5190ca35-0b3f-56b0-bfde-2436574f244a")
 		(attr smd)
 		(fp_rect
 			(start -1.4351 -0.508)
@@ -585,7 +633,7 @@
 		(layer "F.Cu")
 		(uuid "193703b3-97d8-5917-8f52-1a379d12f4ec")
 		(at 84.5314 88.4684)
-		(property "Reference" "COUT"
+		(property "Reference" "COUT1"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "9faa2daa-601d-53a7-98a4-4f9b011e995e")
@@ -632,6 +680,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "COUT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96eba539-d467-5486-a138-11f0735b103e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_G-31_MUR-M_10UF"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -644,7 +704,7 @@
 				)
 			)
 		)
-		(path "/4a3dfb10-7235-58ba-9206-7f0fb4ebf84e")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/4a3dfb10-7235-58ba-9206-7f0fb4ebf84e")
 		(attr smd)
 		(fp_rect
 			(start -2.159 -0.8255)
@@ -694,7 +754,7 @@
 		(layer "F.Cu")
 		(uuid "1b603163-f7b5-5db0-af2b-4be81c3c40dd")
 		(at 107.0612 65.8116)
-		(property "Reference" "JTAG"
+		(property "Reference" "JTAG1"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "7b89c921-10d6-5773-be00-f4036cf986fa")
@@ -741,6 +801,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "JTAG"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dedcdb26-0b99-5c91-8709-b6e542595438")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "FTSH-105-XX-X-DV_SAMTEC_FTSH-105-XX-X-DV_FTSH-105-XX-X-DV"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -753,7 +825,7 @@
 				)
 			)
 		)
-		(path "/4637dcd9-1b36-5ade-b6b4-0dde1a27f22f")
+		(path "/3a5b5ab2-5467-5f3c-8709-69a633ebc308/4637dcd9-1b36-5ade-b6b4-0dde1a27f22f")
 		(attr smd)
 		(fp_rect
 			(start -2.909951 -3.430016)
@@ -937,6 +1009,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C5"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b48e1334-d11e-5c58-b884-3621e3624f9b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -949,7 +1033,7 @@
 				)
 			)
 		)
-		(path "/46a8f99f-40b4-5d4b-8dd3-c5eed14db603")
+		(path "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/46a8f99f-40b4-5d4b-8dd3-c5eed14db603")
 		(attr smd)
 		(fp_rect
 			(start -1.1557 -0.5969)
@@ -999,7 +1083,7 @@
 		(layer "F.Cu")
 		(uuid "200ec31e-bcd1-5d7d-9291-78dad83d59e9")
 		(at 115.0114 64.6432 180)
-		(property "Reference" "CANHEADER"
+		(property "Reference" "CANHEADER1"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(uuid "7c3bfd7b-e483-5904-8625-5f4aee64f39d")
@@ -1046,6 +1130,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "CANHEADER"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24c55370-0b9c-5b81-8133-f6d549a01141")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "B4B-XH-A_CONN_B4B-XH-A_JST_CONN_B4B-XH-A"
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -1058,7 +1154,7 @@
 				)
 			)
 		)
-		(path "/05c4f6c9-339e-59bf-95f9-b9a8f07ee756")
+		(path "/03b37037-d399-579f-8cd8-abb4c634cffd/05c4f6c9-339e-59bf-95f9-b9a8f07ee756")
 		(attr through_hole)
 		(fp_rect
 			(start -8.376412 -0.8763)
@@ -1136,7 +1232,7 @@
 		(layer "F.Cu")
 		(uuid "21ed3176-5dbc-5548-b064-6c1169612e23")
 		(at 104.318 87.4778 -90)
-		(property "Reference" "CEXT"
+		(property "Reference" "CEXT1"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(uuid "e8c0aca8-4195-52d1-ba77-0ea44f960377")
@@ -1183,6 +1279,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "CEXT"
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4955a68e-d4e3-5cd0-a840-bcfc501c5d25")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7 UF"
 			(at 0 0 270)
 			(layer "F.Fab")
@@ -1195,7 +1303,7 @@
 				)
 			)
 		)
-		(path "/4391bb3d-57d2-575d-9cab-9bd2e293e8fc")
+		(path "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/4391bb3d-57d2-575d-9cab-9bd2e293e8fc")
 		(attr smd)
 		(fp_rect
 			(start -1.4097 -0.4699)
@@ -1245,7 +1353,7 @@
 		(layer "F.Cu")
 		(uuid "2c072760-28fe-5fbf-8c68-532d3204c13c")
 		(at 78.7402 81.585)
-		(property "Reference" "LORAMODULE"
+		(property "Reference" "LORAMODULE1"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "36c83571-216f-5d75-8739-0be8c4f0c5a0")
@@ -1292,6 +1400,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "LORAMODULE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ab6c124-ea39-545b-ab42-b258702ce047")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -1304,7 +1424,7 @@
 				)
 			)
 		)
-		(path "/a0732c3e-1cd6-52be-ad8b-b5797d913a1a")
+		(path "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/a0732c3e-1cd6-52be-ad8b-b5797d913a1a")
 		(attr through_hole)
 		(fp_rect
 			(start -0.8636 -0.8636)
@@ -1441,6 +1561,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "L1"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11709952-5c07-5277-ac7a-8bdcb97b5a7e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "SLF7045T-4R7M2R0-PF_IND_7045_TDK_4.7UH"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -1453,7 +1585,7 @@
 				)
 			)
 		)
-		(path "/b64610a9-c051-5485-8fa1-11ce81b6789a")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/b64610a9-c051-5485-8fa1-11ce81b6789a")
 		(attr smd)
 		(fp_rect
 			(start -1.099947 -3.949954)
@@ -1550,6 +1682,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "U6"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c53ad9a-f063-5e41-afd8-7f3bf99a4793")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "R1240N001B-TR-FE_3_SOT-23-6W_PE-SOT23-6W-0512_NMD_R1240N001X"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -1562,7 +1706,7 @@
 				)
 			)
 		)
-		(path "/2d989ea3-50dc-5ad3-a25a-715671b21c51")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/2d989ea3-50dc-5ad3-a25a-715671b21c51")
 		(attr smd)
 		(fp_rect
 			(start -1.905 -1.22936)
@@ -1705,6 +1849,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "R3"
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "94ea50cd-c284-5fbf-bbd1-04ff383d9709")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "R_RC0402N_YAG-M_51"
 			(at 0 0 270)
 			(layer "F.Fab")
@@ -1717,7 +1873,7 @@
 				)
 			)
 		)
-		(path "/bb97a6e2-ac0d-59c0-8b3e-63d85fb7ec89")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/bb97a6e2-ac0d-59c0-8b3e-63d85fb7ec89")
 		(attr smd)
 		(fp_rect
 			(start -1.0922 -0.2794)
@@ -1814,6 +1970,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C9"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5cef2b26-c70a-5e13-b1d9-a15170b4e830")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -1826,7 +1994,7 @@
 				)
 			)
 		)
-		(path "/a73262a9-350f-5d66-b028-00618e727dc1")
+		(path "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/a73262a9-350f-5d66-b028-00618e727dc1")
 		(attr smd)
 		(fp_rect
 			(start -1.1557 -0.5969)
@@ -1923,6 +2091,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C4"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "852f922b-d7d8-55d8-8283-91724a5e73e1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -1935,7 +2115,7 @@
 				)
 			)
 		)
-		(path "/f187378e-3053-50aa-9bf7-8c4f0cb641a9")
+		(path "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/f187378e-3053-50aa-9bf7-8c4f0cb641a9")
 		(attr smd)
 		(fp_rect
 			(start -1.1557 -0.5969)
@@ -2032,6 +2212,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C7"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7392258b-3085-5051-b67e-61e968666247")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -2044,7 +2236,7 @@
 				)
 			)
 		)
-		(path "/415699de-1d71-52cb-819e-2e89256f38e9")
+		(path "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/415699de-1d71-52cb-819e-2e89256f38e9")
 		(attr smd)
 		(fp_rect
 			(start -1.1557 -0.5969)
@@ -2141,6 +2333,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "L4"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77ff021e-8210-5477-998c-7fa2d9fa3a21")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR"
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -2153,7 +2357,7 @@
 				)
 			)
 		)
-		(path "/0c7259c5-e3c4-5c8a-8c90-aab664db610e")
+		(path "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/0c7259c5-e3c4-5c8a-8c90-aab664db610e")
 		(attr smd)
 		(fp_rect
 			(start -0.6731 -0.254)
@@ -2250,6 +2454,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "TP4"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa1e1b0e-3e83-53bd-bd77-3d39212f0ae6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "TEST POINT_AMV_TEST_POINT_TEST POINT"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -2262,7 +2478,7 @@
 				)
 			)
 		)
-		(path "/a4d7d304-9ea3-5e57-8eba-8dd6e9416fd3")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/a4d7d304-9ea3-5e57-8eba-8dd6e9416fd3")
 		(attr through_hole)
 		(fp_rect
 			(start -1.700022 -1.700022)
@@ -2351,6 +2567,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C1"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d296c432-88b4-53d9-9a77-a650832fc3f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -2363,7 +2591,7 @@
 				)
 			)
 		)
-		(path "/8ba4d440-69c8-59bb-b151-894ab8b3bb41")
+		(path "/03b37037-d399-579f-8cd8-abb4c634cffd/8ba4d440-69c8-59bb-b151-894ab8b3bb41")
 		(attr smd)
 		(fp_rect
 			(start -1.1557 -0.5969)
@@ -2460,6 +2688,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "TP1"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c53ceb30-1489-5c23-ba8e-8316628557f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "TEST POINT_AMV_TEST_POINT_TEST POINT"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -2472,7 +2712,7 @@
 				)
 			)
 		)
-		(path "/6783f8fc-20b7-5bd6-86af-d601321dbc82")
+		(path "/31210085-9759-5277-8f1d-4204cfd4b08e/6783f8fc-20b7-5bd6-86af-d601321dbc82")
 		(attr through_hole)
 		(fp_rect
 			(start -1.700022 -1.700022)
@@ -2561,6 +2801,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C6"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3258091-6aaf-5a43-b7fb-ff325fb18103")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -2573,7 +2825,7 @@
 				)
 			)
 		)
-		(path "/ac85f5a8-fd00-5f75-abd3-83edeaa32852")
+		(path "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/ac85f5a8-fd00-5f75-abd3-83edeaa32852")
 		(attr smd)
 		(fp_rect
 			(start -1.1557 -0.5969)
@@ -2670,6 +2922,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C20"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "899b0f28-752a-5a0f-b280-136b3ebd87ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_G-21_MUR-L_10UF"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -2682,7 +2946,7 @@
 				)
 			)
 		)
-		(path "/9c2647c1-3432-5336-bd24-2a5a4e5cfb29")
+		(path "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/9c2647c1-3432-5336-bd24-2a5a4e5cfb29")
 		(attr smd)
 		(fp_rect
 			(start -1.1557 -0.5969)
@@ -2779,6 +3043,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C12"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "289c2222-fa11-5be7-9231-8212f58420e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_CL10_SAM-M_.1UF"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -2791,7 +3067,7 @@
 				)
 			)
 		)
-		(path "/51e9806c-c7a5-5ff4-8cb7-23c1cf7e3957")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/51e9806c-c7a5-5ff4-8cb7-23c1cf7e3957")
 		(attr smd)
 		(fp_rect
 			(start -1.358773 -0.42545)
@@ -2888,6 +3164,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "R6"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b2136f3-1f6c-5428-bdb3-88137253f31e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "R_RES_1005_SAM-M_10K"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -2900,7 +3188,7 @@
 				)
 			)
 		)
-		(path "/cab713cf-6fd3-5fcf-9934-ef61bee4acc6")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/cab713cf-6fd3-5fcf-9934-ef61bee4acc6")
 		(attr smd)
 		(fp_rect
 			(start -1.058672 -0.275336)
@@ -2997,6 +3285,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "R4"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48b5114b-d813-5c27-b545-b7b911f62a71")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "R_RC0402N_PAN-M_5.1K"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -3009,7 +3309,7 @@
 				)
 			)
 		)
-		(path "/8b19c11a-13b3-55ca-b2c2-8e02c5371db1")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/8b19c11a-13b3-55ca-b2c2-8e02c5371db1")
 		(attr smd)
 		(fp_rect
 			(start -1.083691 -0.275336)
@@ -3106,6 +3406,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "TP5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5fd969a7-045f-5fbe-a61e-a2ab8f1fddd1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "TEST POINT_AMV_TEST_POINT_TEST POINT"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -3118,7 +3430,7 @@
 				)
 			)
 		)
-		(path "/647d57b3-542a-5b1f-b65d-5259f6bd3850")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/647d57b3-542a-5b1f-b65d-5259f6bd3850")
 		(attr through_hole)
 		(fp_rect
 			(start -1.700022 -1.700022)
@@ -3160,7 +3472,7 @@
 		(layer "F.Cu")
 		(uuid "949164a3-c7c8-5f36-a9f5-f222a6da98d3")
 		(at 102.7686 96.7234)
-		(property "Reference" "GPSMODULE"
+		(property "Reference" "GPSMODULE1"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "55b35169-5d10-504b-bb7e-8d8b4a65929d")
@@ -3207,6 +3519,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "GPSMODULE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f80e52b-a551-58e9-b233-cd235f53ae0d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -3219,7 +3543,7 @@
 				)
 			)
 		)
-		(path "/c527998b-5ac0-5b30-a6ca-6114bbdf301b")
+		(path "/9db88c42-176c-566e-9323-3aea3f09ec4b/c527998b-5ac0-5b30-a6ca-6114bbdf301b")
 		(attr through_hole)
 		(fp_rect
 			(start -0.8636 -0.8636)
@@ -3356,6 +3680,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C8"
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc08bdbe-1d1c-5f95-bbc1-5c0d8ecf7764")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
 			(at 0 0 270)
 			(layer "F.Fab")
@@ -3368,7 +3704,7 @@
 				)
 			)
 		)
-		(path "/a363b6cf-804c-5efa-bb0f-540908a4c2f5")
+		(path "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/a363b6cf-804c-5efa-bb0f-540908a4c2f5")
 		(attr smd)
 		(fp_rect
 			(start -1.1557 -0.5969)
@@ -3465,6 +3801,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C2"
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c31089d7-f599-5166-a1ae-9e3e2dcbc197")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
 			(at 0 0 270)
 			(layer "F.Fab")
@@ -3477,7 +3825,7 @@
 				)
 			)
 		)
-		(path "/58285181-813f-5dae-8b80-0086b9eee149")
+		(path "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/58285181-813f-5dae-8b80-0086b9eee149")
 		(attr smd)
 		(fp_rect
 			(start -1.1557 -0.5969)
@@ -3527,7 +3875,7 @@
 		(layer "F.Cu")
 		(uuid "a9b46a46-8847-54ae-ac5b-607f01e330b9")
 		(at 122.098 89.0272 90)
-		(property "Reference" "STEERINGSERVO"
+		(property "Reference" "STEERINGSERVO1"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "62042583-5a84-53b2-a87d-a195dbb5de41")
@@ -3574,6 +3922,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "STEERINGSERVO"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0fc87612-a810-5369-ab82-6026a4a6278c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -3586,7 +3946,7 @@
 				)
 			)
 		)
-		(path "/81d90489-aa42-589f-b433-122d0b297b78")
+		(path "/31210085-9759-5277-8f1d-4204cfd4b08e/81d90489-aa42-589f-b433-122d0b297b78")
 		(attr through_hole)
 		(fp_rect
 			(start -5.9436 -0.8636)
@@ -3699,6 +4059,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C22"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61b18a33-9540-559a-b848-f5818003cb5f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -3711,7 +4083,7 @@
 				)
 			)
 		)
-		(path "/2fdee2a4-8ce9-54ba-9036-8187b83e6a45")
+		(path "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/2fdee2a4-8ce9-54ba-9036-8187b83e6a45")
 		(attr smd)
 		(fp_rect
 			(start -1.1557 -0.5969)
@@ -3808,6 +4180,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "U3"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be38651a-1f47-595f-a7d7-ea9d34a38298")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "STM32F446RET6TR_LQFP64-10X10MM_STM32F4XXR2"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -3820,7 +4204,7 @@
 				)
 			)
 		)
-		(path "/5b1b3e88-9698-5022-a076-a5744f2cba77")
+		(path "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/5b1b3e88-9698-5022-a076-a5744f2cba77")
 		(attr smd)
 		(fp_rect
 			(start -6.346952 -6.346952)
@@ -4531,6 +4915,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C3"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "33c1fa4f-989f-5c3d-8d4a-ae967a890132")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -4543,7 +4939,7 @@
 				)
 			)
 		)
-		(path "/6bf552d0-e1a9-59e5-b98e-f697d6b06fa0")
+		(path "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/6bf552d0-e1a9-59e5-b98e-f697d6b06fa0")
 		(attr smd)
 		(fp_rect
 			(start -1.1557 -0.5969)
@@ -4593,7 +4989,7 @@
 		(layer "F.Cu")
 		(uuid "bb0e9f55-7f66-59aa-80ef-88fc28d96438")
 		(at 63.1192 91.1354)
-		(property "Reference" "VIN"
+		(property "Reference" "VIN1"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "b8061ff0-ea93-530f-b9e7-be39723a9e23")
@@ -4640,6 +5036,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "VIN"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "783c865d-d1bb-5204-a91b-6b1e5f61844f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "CON1_AMV_CON1_BATTERY+"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -4652,7 +5060,7 @@
 				)
 			)
 		)
-		(path "/8a090e02-baca-51a2-ba1e-de7d97c10e9f")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/8a090e02-baca-51a2-ba1e-de7d97c10e9f")
 		(attr through_hole)
 		(fp_rect
 			(start -0.799973 -0.799973)
@@ -4741,6 +5149,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "TP3"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d860cdd-4c14-50a2-b045-bbdb7fd82e3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "TEST POINT_AMV_TEST_POINT_TEST POINT"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -4753,7 +5173,7 @@
 				)
 			)
 		)
-		(path "/b75d899b-2795-5c5b-be00-7258ec9a8ead")
+		(path "/31210085-9759-5277-8f1d-4204cfd4b08e/b75d899b-2795-5c5b-be00-7258ec9a8ead")
 		(attr through_hole)
 		(fp_rect
 			(start -1.700022 -1.700022)
@@ -4795,7 +5215,7 @@
 		(layer "F.Cu")
 		(uuid "d5b9ed96-f8f4-54e3-8347-da34ae8f73d2")
 		(at 122.0472 83.0836 -90)
-		(property "Reference" "SPEEDCONTROLLER"
+		(property "Reference" "SPEEDCONTROLLER1"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(uuid "d40b8f7d-2d03-5775-8004-0e4a9d03f5c3")
@@ -4842,6 +5262,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "SPEEDCONTROLLER"
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e63d5bfc-c4c9-5b78-b26d-b8c4b3cef595")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031"
 			(at 0 0 270)
 			(layer "F.Fab")
@@ -4854,7 +5286,7 @@
 				)
 			)
 		)
-		(path "/4a6ba665-9413-5377-90a6-4014a5f9ecf1")
+		(path "/31210085-9759-5277-8f1d-4204cfd4b08e/4a6ba665-9413-5377-90a6-4014a5f9ecf1")
 		(attr through_hole)
 		(fp_rect
 			(start -5.9436 -0.8636)
@@ -4967,6 +5399,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "U5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4958a35-038e-5004-91c6-d841362fee0f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "TCAN1042HDRQ1_D0008A_L_TCAN1042H-Q1D"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -4979,7 +5423,7 @@
 				)
 			)
 		)
-		(path "/2a37d36c-b21d-508e-948d-738a4433b1f5")
+		(path "/03b37037-d399-579f-8cd8-abb4c634cffd/2a37d36c-b21d-508e-948d-738a4433b1f5")
 		(attr smd)
 		(fp_rect
 			(start -3.250057 -2.179955)
@@ -5142,6 +5586,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "D21"
+			(at 0 0 270)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ebfd2ad7-83ac-5fa7-82d5-9840da6baf6f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "CMS06TE12L,Q,M_M-FLAT_TOS-L_DIODE_MFLAT"
 			(at 0 0 270)
 			(layer "F.Fab")
@@ -5154,7 +5610,7 @@
 				)
 			)
 		)
-		(path "/3aaac9d3-1d0a-5307-8a55-83eed596f498")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/3aaac9d3-1d0a-5307-8a55-83eed596f498")
 		(attr smd)
 		(fp_rect
 			(start -2.5527 -0.9017)
@@ -5251,6 +5707,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C23"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6171a0e3-e773-5859-b603-6717996b831e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_GJM1555C1H220JB01__MUR-L_47PF"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -5263,7 +5731,7 @@
 				)
 			)
 		)
-		(path "/0354cc44-8e46-5b44-aec8-e40996845123")
+		(path "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/0354cc44-8e46-5b44-aec8-e40996845123")
 		(attr smd)
 		(fp_rect
 			(start -0.6731 -0.254)
@@ -5360,6 +5828,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "L3"
+			(at 0 0 180)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b95ea8d7-cbce-5dd5-9a2b-f325e1de88e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR"
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -5372,7 +5852,7 @@
 				)
 			)
 		)
-		(path "/a373030b-08ac-5fbc-b864-0b899511416f")
+		(path "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/a373030b-08ac-5fbc-b864-0b899511416f")
 		(attr smd)
 		(fp_rect
 			(start -0.6731 -0.254)
@@ -5469,6 +5949,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C21"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10113626-c223-5abd-abc8-71b4cfa74bfb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_G-21_MUR-L_10UF"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -5481,7 +5973,7 @@
 				)
 			)
 		)
-		(path "/ae71f1a7-ce53-565b-af5f-4bb9e74cf395")
+		(path "/616b85f7-7208-5d9a-92c6-cb7fcb5d43cb/ae71f1a7-ce53-565b-af5f-4bb9e74cf395")
 		(attr smd)
 		(fp_rect
 			(start -1.1557 -0.5969)
@@ -5578,6 +6070,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "R5"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8bebdad4-3d12-5620-8ea1-33549fc8818e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "R_RES_R0805_ROM-M_30K"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -5590,7 +6094,7 @@
 				)
 			)
 		)
-		(path "/03efdf1d-9000-5044-8bf1-4a8aa611e6a2")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/03efdf1d-9000-5044-8bf1-4a8aa611e6a2")
 		(attr smd)
 		(fp_rect
 			(start -1.3589 -0.6985)
@@ -5687,6 +6191,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "C10"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3595cea6-4a6b-5df2-99e8-95527e4c7c82")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7UF"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -5699,7 +6215,7 @@
 				)
 			)
 		)
-		(path "/34f336b8-86d0-5de6-b277-97d72af944d5")
+		(path "/b113cc4f-113a-519b-a0a6-c273ac60c5f5/34f336b8-86d0-5de6-b277-97d72af944d5")
 		(attr smd)
 		(fp_rect
 			(start -1.4097 -0.4699)
@@ -5749,7 +6265,7 @@
 		(layer "F.Cu")
 		(uuid "fd7bc6c1-e2ee-5c77-bfe5-1bba1a356593")
 		(at 67.5134 93.5484 90)
-		(property "Reference" "CIN"
+		(property "Reference" "CIN1"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "d76eab16-5023-5a43-944f-c93f09eaeae6")
@@ -5796,6 +6312,18 @@
 				)
 			)
 		)
+		(property "Allegro_RefDes" "CIN"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "110e34fb-9025-5293-840e-1105d49b1af3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property "Allegro_Device" "KTS500B106M55N0T00_CAP_NTS_55_2P8T_NIP_10UF"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -5808,7 +6336,7 @@
 				)
 			)
 		)
-		(path "/9c0e8963-dca4-52d4-adf4-489b29c8c7ef")
+		(path "/27f6bd5a-3797-5a54-9b77-1ed287a75d2c/9c0e8963-dca4-52d4-adf4-489b29c8c7ef")
 		(attr smd)
 		(fp_rect
 			(start -3.4036 -2.7051)

@@ -19,6 +19,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 import allegro_data as ad
 import raster
 from kicad_write import uid, f, mm, esc
+from v1_design import kicad_ref, symbol_path
 
 ROOT = ad.ROOT
 KDIR = os.path.join(ROOT, 'hardware', 'kicad')
@@ -214,15 +215,17 @@ def main():
         dev = c['device']
         is_th = any(p['hole'] for p in c['pads'])
         at = f'(at {K(c["x"], c["y"])} {f(rot)})' if rot else f'(at {K(c["x"], c["y"])})'
+        kref = kicad_ref(ref)
         L = [f'\t(footprint "{LIB}:{esc(jedec)}"', '\t\t(layer "F.Cu")', f'\t\t(uuid "{uid("fp", ref)}")', f'\t\t{at}',
              f'\t\t(descr "{esc(t.get("descr", ""))}")' if t.get('descr') else None,
-             f'\t\t(property "Reference" "{esc(ref)}"\n\t\t\t(at 0 0 {f(rot)})\n\t\t\t(layer "F.Fab")\n\t\t\t(uuid "{uid("fp", ref, "Reference")}")\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 0.6 0.6)\n\t\t\t\t\t(thickness 0.1)\n\t\t\t\t)\n\t\t\t)\n\t\t)',
+             f'\t\t(property "Reference" "{esc(kref)}"\n\t\t\t(at 0 0 {f(rot)})\n\t\t\t(layer "F.Fab")\n\t\t\t(uuid "{uid("fp", ref, "Reference")}")\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 0.6 0.6)\n\t\t\t\t\t(thickness 0.1)\n\t\t\t\t)\n\t\t\t)\n\t\t)',
+             f'\t\t(property "Allegro_RefDes" "{esc(ref)}"\n\t\t\t(at 0 0 {f(rot)})\n\t\t\t(layer "F.Fab")\n\t\t\t(hide yes)\n\t\t\t(uuid "{uid("fp", ref, "Allegro_RefDes")}")\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t(thickness 0.15)\n\t\t\t\t)\n\t\t\t)\n\t\t)',
              f'\t\t(property "Value" "{esc(c["value"])}"\n\t\t\t(at 0 1.2 {f(rot)})\n\t\t\t(layer "F.Fab")\n\t\t\t(hide yes)\n\t\t\t(uuid "{uid("fp", ref, "Value")}")\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 0.6 0.6)\n\t\t\t\t\t(thickness 0.1)\n\t\t\t\t)\n\t\t\t)\n\t\t)',
              f'\t\t(property "Footprint" "{LIB}:{esc(jedec)}"\n\t\t\t(at 0 0 {f(rot)})\n\t\t\t(layer "F.Fab")\n\t\t\t(hide yes)\n\t\t\t(uuid "{uid("fp", ref, "Footprint")}")\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t(thickness 0.15)\n\t\t\t\t)\n\t\t\t)\n\t\t)',
              f'\t\t(property "Datasheet" ""\n\t\t\t(at 0 0 {f(rot)})\n\t\t\t(layer "F.Fab")\n\t\t\t(hide yes)\n\t\t\t(uuid "{uid("fp", ref, "Datasheet")}")\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t(thickness 0.15)\n\t\t\t\t)\n\t\t\t)\n\t\t)',
              f'\t\t(property "Description" "{esc(c["part"])}"\n\t\t\t(at 0 0 {f(rot)})\n\t\t\t(layer "F.Fab")\n\t\t\t(hide yes)\n\t\t\t(uuid "{uid("fp", ref, "Description")}")\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t(thickness 0.15)\n\t\t\t\t)\n\t\t\t)\n\t\t)',
              f'\t\t(property "Allegro_Device" "{esc(dev)}"\n\t\t\t(at 0 0 {f(rot)})\n\t\t\t(layer "F.Fab")\n\t\t\t(hide yes)\n\t\t\t(uuid "{uid("fp", ref, "Allegro_Device")}")\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t\t(thickness 0.15)\n\t\t\t\t)\n\t\t\t)\n\t\t)',
-             f'\t\t(path "/{uid("sch", ref)}")',
+             f'\t\t(path "{symbol_path(ref)}")',
              '\t\t(attr through_hole)' if is_th else '\t\t(attr smd)']
         L = [x for x in L if x is not None]
         # local geometry (unrotated footprint frame, Y flipped)
