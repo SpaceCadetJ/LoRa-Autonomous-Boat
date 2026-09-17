@@ -346,7 +346,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "1x3 2.54 mm female header, through-hole"
 			(at 58.42 35.56 0)
 			(effects
 				(font
@@ -356,6 +356,24 @@
 			)
 		)
 		(property "Allegro_Device" "PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031"
+			(at 58.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PPTC031LFBN-RC"
+			(at 58.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
 			(at 58.42 35.56 0)
 			(effects
 				(font
@@ -498,7 +516,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "1x3 2.54 mm female header, through-hole"
 			(at 104.14 35.56 0)
 			(effects
 				(font
@@ -508,6 +526,24 @@
 			)
 		)
 		(property "Allegro_Device" "PPTC031LFBN-RC_CONN_PPTC031_SUL_CONN_PPTC031"
+			(at 104.14 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PPTC031LFBN-RC"
+			(at 104.14 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
 			(at 104.14 35.56 0)
 			(effects
 				(font
@@ -650,7 +686,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Bare plated test-point pad 3.4 mm / 1.4 mm hole (no part; Keystone 5020 would need a footprint change)"
 			(at 144.78 33.02 0)
 			(effects
 				(font
@@ -660,6 +696,24 @@
 			)
 		)
 		(property "Allegro_Device" "TEST POINT_AMV_TEST_POINT_TEST POINT"
+			(at 144.78 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 144.78 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 144.78 33.02 0)
 			(effects
 				(font
@@ -754,7 +808,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Bare plated test-point pad 3.4 mm / 1.4 mm hole (no part; Keystone 5020 would need a footprint change)"
 			(at 185.42 33.02 0)
 			(effects
 				(font
@@ -764,6 +818,24 @@
 			)
 		)
 		(property "Allegro_Device" "TEST POINT_AMV_TEST_POINT_TEST POINT"
+			(at 185.42 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 185.42 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 185.42 33.02 0)
 			(effects
 				(font

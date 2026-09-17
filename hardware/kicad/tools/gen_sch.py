@@ -53,7 +53,7 @@ def symbol_for(ref, jedec):
 
 def nice_value(ref, part, value):
     v = (value or '').strip()
-    m = re.fullmatch(r'\.?(\d*\.?\d+)\s*([UuNnPp])[Ff]', v)
+    m = re.fullmatch(r'(\.?\d*\.?\d+)\s*([UuNnPp])[Ff]', v)
     if m:
         num = m.group(1); num = ('0' + num) if num.startswith('.') else num
         return f'{num}{m.group(2).lower()}F'

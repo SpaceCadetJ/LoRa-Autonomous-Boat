@@ -827,7 +827,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "1x5 2.54 mm female header, through-hole"
 			(at 58.42 38.1 0)
 			(effects
 				(font
@@ -837,6 +837,24 @@
 			)
 		)
 		(property "Allegro_Device" "PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC"
+			(at 58.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PPTC051LFBN-RC"
+			(at 58.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
 			(at 58.42 38.1 0)
 			(effects
 				(font
@@ -1026,7 +1044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ferrite bead"
+		(property "Description" "Ferrite bead 600 ohm @100 MHz 300 mA 0402 - value not specified in the design (typical pick)"
 			(at 101.6 35.56 0)
 			(effects
 				(font
@@ -1036,6 +1054,24 @@
 			)
 		)
 		(property "Allegro_Device" "INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR"
+			(at 101.6 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BLM15AG601SN1D"
+			(at 101.6 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 101.6 35.56 0)
 			(effects
 				(font
@@ -1181,7 +1217,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ferrite bead"
+		(property "Description" "Ferrite bead 600 ohm @100 MHz 300 mA 0402 - value not specified in the design (typical pick)"
 			(at 147.32 35.56 0)
 			(effects
 				(font
@@ -1191,6 +1227,24 @@
 			)
 		)
 		(property "Allegro_Device" "INDUCTOR_IND_BLM15_0402_MUR-L_INDUCTOR"
+			(at 147.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BLM15AG601SN1D"
+			(at 147.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 147.32 35.56 0)
 			(effects
 				(font
@@ -1336,7 +1390,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 uF 10% 16 V X5R MLCC 0805 (design gives GRM21 only)"
 			(at 193.04 35.56 0)
 			(effects
 				(font
@@ -1346,6 +1400,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_G-21_MUR-L_10UF"
+			(at 193.04 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM21BR61C106KE15L"
+			(at 193.04 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 193.04 35.56 0)
 			(effects
 				(font
@@ -1491,7 +1563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 uF 10% 16 V X5R MLCC 0805 (design gives GRM21 only)"
 			(at 236.22 35.56 0)
 			(effects
 				(font
@@ -1501,6 +1573,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_G-21_MUR-L_10UF"
+			(at 236.22 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM21BR61C106KE15L"
+			(at 236.22 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 236.22 35.56 0)
 			(effects
 				(font
@@ -1620,7 +1710,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 55.88 68.81 0)
 			(effects
 				(font
@@ -1646,7 +1736,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 uF 10% 50 V X7R MLCC 0805"
 			(at 55.88 63.5 0)
 			(effects
 				(font
@@ -1656,6 +1746,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
+			(at 55.88 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KGM21NR71H104KT"
+			(at 55.88 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
 			(at 55.88 63.5 0)
 			(effects
 				(font
@@ -1801,7 +1909,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "22 pF 5% 50 V C0G MLCC 0402 - NOTE: device name encodes 22 pF, schematic value says 47 pF (GJM1555C1H470JB01D); resolve"
 			(at 99.06 63.5 0)
 			(effects
 				(font
@@ -1811,6 +1919,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_GJM1555C1H220JB01__MUR-L_47PF"
+			(at 99.06 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GJM1555C1H220JB01D"
+			(at 99.06 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 99.06 63.5 0)
 			(effects
 				(font

@@ -442,7 +442,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "2x5 1.27 mm SMT header, keyed (ARM Cortex 10-pin debug)"
 			(at 58.42 38.1 0)
 			(effects
 				(font
@@ -452,6 +452,24 @@
 			)
 		)
 		(property "Allegro_Device" "FTSH-105-XX-X-DV_SAMTEC_FTSH-105-XX-X-DV_FTSH-105-XX-X-DV"
+			(at 58.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FTSH-105-01-L-DV-K"
+			(at 58.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samtec"
 			(at 58.42 38.1 0)
 			(effects
 				(font

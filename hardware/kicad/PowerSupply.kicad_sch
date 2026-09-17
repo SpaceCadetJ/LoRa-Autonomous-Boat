@@ -1513,7 +1513,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Bare battery wire solder pad 1.6 mm / 0.6 mm hole (no part)"
 			(at 58.42 33.02 0)
 			(effects
 				(font
@@ -1523,6 +1523,24 @@
 			)
 		)
 		(property "Allegro_Device" "CON1_AMV_CON1_BATTERY+"
+			(at 58.42 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 58.42 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 58.42 33.02 0)
 			(effects
 				(font
@@ -1617,7 +1635,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Bare battery wire solder pad 1.6 mm / 0.6 mm hole (no part)"
 			(at 104.14 33.02 0)
 			(effects
 				(font
@@ -1627,6 +1645,24 @@
 			)
 		)
 		(property "Allegro_Device" "CON1_AMV_CON1_BATTERY-"
+			(at 104.14 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 104.14 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 104.14 33.02 0)
 			(effects
 				(font
@@ -1721,7 +1757,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 uF 20% 50 V X7R MLCC 2220 (NTS series; not Kemet, not 1210)"
 			(at 147.32 35.56 0)
 			(effects
 				(font
@@ -1731,6 +1767,24 @@
 			)
 		)
 		(property "Allegro_Device" "KTS500B106M55N0T00_CAP_NTS_55_2P8T_NIP_10UF"
+			(at 147.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KTS500B106M55N0T00"
+			(at 147.32 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nippon Chemi-Con"
 			(at 147.32 35.56 0)
 			(effects
 				(font
@@ -1905,7 +1959,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.25 MHz asynchronous step-down DC/DC converter (external Schottky catch diode required), SOT-23-6W. Pins per Nisshinbo DS EA-190-240903."
+		(property "Description" "1.25 MHz asynchronous step-down DC/DC, 4.5-30 V in, 1.2 A, SOT-23-6W"
 			(at 200.66 40.64 0)
 			(effects
 				(font
@@ -1915,6 +1969,24 @@
 			)
 		)
 		(property "Allegro_Device" "R1240N001B-TR-FE_3_SOT-23-6W_PE-SOT23-6W-0512_NMD_R1240N001X"
+			(at 200.66 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R1240N001B-TR-FE"
+			(at 200.66 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nisshinbo Micro Devices (ex-Ricoh)"
 			(at 200.66 40.64 0)
 			(effects
 				(font
@@ -2153,7 +2225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Schottky barrier diode 30 V 2 A, M-FLAT. Pin 1 anode, pin 2 cathode (Toshiba numbering)."
+		(property "Description" "Schottky barrier diode 30 V 2 A, M-FLAT (buck catch diode)"
 			(at 254 33.02 0)
 			(effects
 				(font
@@ -2163,6 +2235,24 @@
 			)
 		)
 		(property "Allegro_Device" "CMS06TE12L,Q,M_M-FLAT_TOS-L_DIODE_MFLAT"
+			(at 254 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CMS06(TE12L,Q,M)"
+			(at 254 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Toshiba"
 			(at 254 33.02 0)
 			(effects
 				(font
@@ -2280,7 +2370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "4.7 uH 20% 2.0 A shielded power inductor 7x7x4.5 mm - EOL (TDK PCN 2024-07-30, last ship 2026-12-31); substitute VLS6045EX-4R7M-H needs a new footprint"
 			(at 53.34 68.58 0)
 			(effects
 				(font
@@ -2290,6 +2380,24 @@
 			)
 		)
 		(property "Allegro_Device" "SLF7045T-4R7M2R0-PF_IND_7045_TDK_4.7UH"
+			(at 53.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SLF7045T-4R7M2R0-PF"
+			(at 53.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
 			(at 53.34 68.58 0)
 			(effects
 				(font
@@ -2409,7 +2517,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 93.98 73.89 0)
 			(effects
 				(font
@@ -2435,7 +2543,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 uF 10% 50 V X7R MLCC 0603 (design gives CL10 + 0603 only)"
 			(at 93.98 68.58 0)
 			(effects
 				(font
@@ -2445,6 +2553,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_CL10_SAM-M_.1UF"
+			(at 93.98 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10B104KB8NNNC"
+			(at 93.98 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 93.98 68.58 0)
 			(effects
 				(font
@@ -2561,7 +2687,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "51 ohm 1% 1/16 W thick film 0402"
 			(at 137.16 68.58 0)
 			(effects
 				(font
@@ -2571,6 +2697,24 @@
 			)
 		)
 		(property "Allegro_Device" "R_RC0402N_YAG-M_51"
+			(at 137.16 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0751RL"
+			(at 137.16 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Yageo"
 			(at 137.16 68.58 0)
 			(effects
 				(font
@@ -2687,7 +2831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "470 pF 5% 50 V C0G MLCC 0603 (global PN KGM15ACG1H471JT)"
 			(at 180.34 68.58 0)
 			(effects
 				(font
@@ -2697,6 +2841,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_0603G_AVX-M_470PF"
+			(at 180.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "06035A471JAT2A"
+			(at 180.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
 			(at 180.34 68.58 0)
 			(effects
 				(font
@@ -2842,7 +3004,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "15 kohm 1% 0.1 W thick film 0402"
 			(at 223.52 68.58 0)
 			(effects
 				(font
@@ -2852,6 +3014,24 @@
 			)
 		)
 		(property "Allegro_Device" "R_RC0402N_PAN-M_15K"
+			(at 223.52 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-2RKF1502X"
+			(at 223.52 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
 			(at 223.52 68.58 0)
 			(effects
 				(font
@@ -2997,7 +3177,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "4.7 kohm 1% 0.1 W thick film 0603"
 			(at 53.34 91.44 0)
 			(effects
 				(font
@@ -3007,6 +3187,24 @@
 			)
 		)
 		(property "Allegro_Device" "R_RC0603N_YAG-M_4.7K"
+			(at 53.34 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0603FR-074K7L"
+			(at 53.34 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Yageo"
 			(at 53.34 91.44 0)
 			(effects
 				(font
@@ -3152,7 +3350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "5.1 kohm 1% 0.1 W thick film 0402"
 			(at 96.52 91.44 0)
 			(effects
 				(font
@@ -3162,6 +3360,24 @@
 			)
 		)
 		(property "Allegro_Device" "R_RC0402N_PAN-M_5.1K"
+			(at 96.52 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-2RKF5101X"
+			(at 96.52 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
 			(at 96.52 91.44 0)
 			(effects
 				(font
@@ -3307,7 +3523,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10 uF 10% 25 V X7R MLCC 1206 (design gives GRM31 only)"
 			(at 139.7 91.44 0)
 			(effects
 				(font
@@ -3317,6 +3533,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_G-31_MUR-M_10UF"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM31CR71E106KA12L"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 139.7 91.44 0)
 			(effects
 				(font
@@ -3491,7 +3725,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "30 kohm 1% 0805 thick film (design intent ROHM MCR10EZPF3002, no longer orderable)"
 			(at 182.88 91.44 0)
 			(effects
 				(font
@@ -3501,6 +3735,24 @@
 			)
 		)
 		(property "Allegro_Device" "R_RES_R0805_ROM-M_30K"
+			(at 182.88 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0805FR-0730KL"
+			(at 182.88 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Yageo"
 			(at 182.88 91.44 0)
 			(effects
 				(font
@@ -3647,7 +3899,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10 kohm 1% 1/16 W thick film 0402"
 			(at 223.52 91.44 0)
 			(effects
 				(font
@@ -3657,6 +3909,24 @@
 			)
 		)
 		(property "Allegro_Device" "R_RES_1005_SAM-M_10K"
+			(at 223.52 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC1005F103CS"
+			(at 223.52 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 223.52 91.44 0)
 			(effects
 				(font
@@ -3803,7 +4073,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Bare plated test-point pad 3.4 mm / 1.4 mm hole (no part; Keystone 5020 would need a footprint change)"
 			(at 53.34 111.76 0)
 			(effects
 				(font
@@ -3813,6 +4083,24 @@
 			)
 		)
 		(property "Allegro_Device" "TEST POINT_AMV_TEST_POINT_TEST POINT"
+			(at 53.34 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 53.34 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 53.34 111.76 0)
 			(effects
 				(font
@@ -3935,7 +4223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Bare plated test-point pad 3.4 mm / 1.4 mm hole (no part; Keystone 5020 would need a footprint change)"
 			(at 91.44 111.76 0)
 			(effects
 				(font
@@ -3945,6 +4233,24 @@
 			)
 		)
 		(property "Allegro_Device" "TEST POINT_AMV_TEST_POINT_TEST POINT"
+			(at 91.44 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 91.44 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 91.44 111.76 0)
 			(effects
 				(font

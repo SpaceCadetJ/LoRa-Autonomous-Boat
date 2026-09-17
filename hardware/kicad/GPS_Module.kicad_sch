@@ -297,7 +297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "1x5 2.54 mm female header, through-hole"
 			(at 58.42 38.1 0)
 			(effects
 				(font
@@ -307,6 +307,24 @@
 			)
 		)
 		(property "Allegro_Device" "PPTC051LFBN-RC_CONN5_1LFBN-RC_SUL_CONN5_1LFBN-RC"
+			(at 58.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PPTC051LFBN-RC"
+			(at 58.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
 			(at 58.42 38.1 0)
 			(effects
 				(font

@@ -157,3 +157,10 @@ Raster: 2 px/mil (2000 dpi). Red = copper only in the fabrication film, blue = o
 
 Drill (KiCad export vs v5 plated holes): 53 of 53 holes match within 1 mil (worst offset 0.043 mil); KiCad file has 53 holes; size mismatches: 0; per size v5={49.0: 4, 23.62: 2, 40.0: 16, 55.12: 4, 13.0: 27} kicad={13.0: 27, 23.6: 2, 40.0: 16, 49.0: 4, 55.1: 4}.
 <!-- END GENERATED xor_compare.py -->
+
+
+## Generated: DSN v2 wiring vs v5 films
+
+<!-- BEGIN GENERATED a0_xor_dsn.py -->
+DSN v2 copper rasterized (wires + vias + polygons + pads of the v2 placement) against the v5 films: F.Cu XOR **53.7 %**, B.Cu XOR **62.6 %** of the union ([F.Cu image](img/v1_xor_dsn2_vs_v5_F_Cu.png), [B.Cu image](img/v1_xor_dsn2_vs_v5_B_Cu.png); blue = DSN v2 only, red = v5 film only). Vias: DSN v2 has 20, v5 film has 27, at the same position: 0. Placement: 0 of 45 v2 components are at their v2 position on v5 (none); only in v2: COUT1, TP2, U1; only in v5: D21. Conclusion: the DSN v2 wiring cannot be reused; v5 is a re-layout on a 2.62 x 1.47 in outline. The reconstruction takes copper from the films and nets from pstxnet.dat.
+<!-- END GENERATED a0_xor_dsn.py -->

@@ -2016,7 +2016,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "STMicroelectronics Arm Cortex-M4 MCU, 512KB flash, 128KB RAM, 180 MHz, 1.8-3.6V, 50 GPIO, LQFP64"
+		(property "Description" "Arm Cortex-M4 180 MHz, 512 KB flash, 128 KB SRAM, LQFP-64 (TR = tape-and-reel of the same die)"
 			(at 73.66 81.28 0)
 			(effects
 				(font
@@ -2026,6 +2026,24 @@
 			)
 		)
 		(property "Allegro_Device" "STM32F446RET6TR_LQFP64-10X10MM_STM32F4XXR2"
+			(at 73.66 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "STM32F446RET6"
+			(at 73.66 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
 			(at 73.66 81.28 0)
 			(effects
 				(font
@@ -3299,7 +3317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "4.7 uF 10% 10 V X5R MLCC 0603 (design gives CL10A + 0603 only; 10 V chosen)"
 			(at 134.62 35.56 0)
 			(effects
 				(font
@@ -3309,6 +3327,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7 UF"
+			(at 134.62 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A475KP8NNNC"
+			(at 134.62 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 134.62 35.56 0)
 			(effects
 				(font
@@ -3454,7 +3490,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "4.7 uF 10% 10 V X5R MLCC 0603 (design gives CL10A + 0603 only; 10 V chosen)"
 			(at 180.34 35.56 0)
 			(effects
 				(font
@@ -3464,6 +3500,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_0603_CL10A_1P6XP8_SAM-M_4.7UF"
+			(at 180.34 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A475KP8NNNC"
+			(at 180.34 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 180.34 35.56 0)
 			(effects
 				(font
@@ -3612,7 +3666,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 223.52 40.87 0)
 			(effects
 				(font
@@ -3638,7 +3692,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 uF 10% 50 V X7R MLCC 0805"
 			(at 223.52 35.56 0)
 			(effects
 				(font
@@ -3648,6 +3702,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
+			(at 223.52 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KGM21NR71H104KT"
+			(at 223.52 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
 			(at 223.52 35.56 0)
 			(effects
 				(font
@@ -3796,7 +3868,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 266.7 40.87 0)
 			(effects
 				(font
@@ -3822,7 +3894,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 uF 10% 50 V X7R MLCC 0805"
 			(at 266.7 35.56 0)
 			(effects
 				(font
@@ -3832,6 +3904,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
+			(at 266.7 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KGM21NR71H104KT"
+			(at 266.7 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
 			(at 266.7 35.56 0)
 			(effects
 				(font
@@ -3980,7 +4070,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 312.42 40.87 0)
 			(effects
 				(font
@@ -4006,7 +4096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 uF 10% 50 V X7R MLCC 0805"
 			(at 312.42 35.56 0)
 			(effects
 				(font
@@ -4016,6 +4106,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KGM21NR71H104KT"
+			(at 312.42 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
 			(at 312.42 35.56 0)
 			(effects
 				(font
@@ -4164,7 +4272,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 355.6 40.87 0)
 			(effects
 				(font
@@ -4190,7 +4298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 uF 10% 50 V X7R MLCC 0805"
 			(at 355.6 35.56 0)
 			(effects
 				(font
@@ -4200,6 +4308,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
+			(at 355.6 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KGM21NR71H104KT"
+			(at 355.6 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
 			(at 355.6 35.56 0)
 			(effects
 				(font
@@ -4348,7 +4474,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 55.88 150.09 0)
 			(effects
 				(font
@@ -4374,7 +4500,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 uF 10% 50 V X7R MLCC 0805"
 			(at 55.88 144.78 0)
 			(effects
 				(font
@@ -4384,6 +4510,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
+			(at 55.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KGM21NR71H104KT"
+			(at 55.88 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
 			(at 55.88 144.78 0)
 			(effects
 				(font
@@ -4532,7 +4676,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 99.06 150.09 0)
 			(effects
 				(font
@@ -4558,7 +4702,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 uF 10% 50 V X7R MLCC 0805"
 			(at 99.06 144.78 0)
 			(effects
 				(font
@@ -4568,6 +4712,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
+			(at 99.06 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KGM21NR71H104KT"
+			(at 99.06 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
 			(at 99.06 144.78 0)
 			(effects
 				(font
@@ -4716,7 +4878,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 142.24 150.09 0)
 			(effects
 				(font
@@ -4742,7 +4904,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 uF 10% 50 V X7R MLCC 0805"
 			(at 142.24 144.78 0)
 			(effects
 				(font
@@ -4752,6 +4914,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
+			(at 142.24 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KGM21NR71H104KT"
+			(at 142.24 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
 			(at 142.24 144.78 0)
 			(effects
 				(font
@@ -4900,7 +5080,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 187.96 150.09 0)
 			(effects
 				(font
@@ -4926,7 +5106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 uF 10% 50 V X7R MLCC 0805"
 			(at 187.96 144.78 0)
 			(effects
 				(font
@@ -4936,6 +5116,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
+			(at 187.96 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KGM21NR71H104KT"
+			(at 187.96 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
 			(at 187.96 144.78 0)
 			(effects
 				(font

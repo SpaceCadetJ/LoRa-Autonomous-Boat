@@ -843,7 +843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Automotive CAN FD transceiver, 5 V VCC (4.5-5.5 V), SOIC-8. Pins per TI SLLSES9D. STB has internal pull-up (HIGH = standby)."
+		(property "Description" "Automotive CAN FD transceiver, 5 V VCC, SOIC-8 (Mouser flags EOL; TI successor TCAN1044A-Q1)"
 			(at 63.5 43.18 0)
 			(effects
 				(font
@@ -853,6 +853,24 @@
 			)
 		)
 		(property "Allegro_Device" "TCAN1042HDRQ1_D0008A_L_TCAN1042H-Q1D"
+			(at 63.5 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TCAN1042HDRQ1"
+			(at 63.5 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
 			(at 63.5 43.18 0)
 			(effects
 				(font
@@ -977,7 +995,7 @@
 		)
 		(uuid "01c12b12-ad51-5bb7-a73d-5afd3dfa5c2e")
 	)
-	(label "CANL"
+	(label "CANH"
 		(at 76.2 40.64 0)
 		(effects
 			(font
@@ -997,7 +1015,7 @@
 		)
 		(uuid "326ac566-b460-5c7a-81d3-ea57e942e7f0")
 	)
-	(label "CANH"
+	(label "CANL"
 		(at 76.2 45.72 0)
 		(effects
 			(font
@@ -1097,7 +1115,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 114.3 40.87 0)
 			(effects
 				(font
@@ -1123,7 +1141,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "0.1 uF 10% 50 V X7R MLCC 0805"
 			(at 114.3 35.56 0)
 			(effects
 				(font
@@ -1133,6 +1151,24 @@
 			)
 		)
 		(property "Allegro_Device" "C_CAP_KGM21_KAV-L_.1UF"
+			(at 114.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "KGM21NR71H104KT"
+			(at 114.3 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
 			(at 114.3 35.56 0)
 			(effects
 				(font
@@ -1278,7 +1314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "XH 2.5 mm 4-position vertical through-hole header"
 			(at 162.56 35.56 0)
 			(effects
 				(font
@@ -1288,6 +1324,24 @@
 			)
 		)
 		(property "Allegro_Device" "B4B-XH-A_CONN_B4B-XH-A_JST_CONN_B4B-XH-A"
+			(at 162.56 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "B4B-XH-A(LF)(SN)"
+			(at 162.56 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
 			(at 162.56 35.56 0)
 			(effects
 				(font
@@ -1378,7 +1432,7 @@
 		)
 		(uuid "aec03184-a223-5592-86a0-ea6db37029a7")
 	)
-	(label "CANL"
+	(label "CANH"
 		(at 154.94 38.1 180)
 		(effects
 			(font
@@ -1398,7 +1452,7 @@
 		)
 		(uuid "765e4614-919a-5a29-ae55-af2b735b2b1d")
 	)
-	(label "CANH"
+	(label "CANL"
 		(at 154.94 40.64 180)
 		(effects
 			(font
@@ -1408,7 +1462,7 @@
 		)
 		(uuid "dee3c94f-7f17-5ff4-bc2d-b57bc9659723")
 	)
-	(text "Allegro net names: CANH<-N04855, CANL<-N24691, CAN_RXD_PA10<-N04759, CAN_STB_PA11<-N04755, CAN_TXD_PA12<-N04763, CAN_VCC<-N24886, GND<-0"
+	(text "Allegro net names: CANH<-N24691, CANL<-N04855, CAN_RXD_PA10<-N04759, CAN_STB_PA11<-N04755, CAN_TXD_PA12<-N04763, CAN_VCC<-N24886, GND<-0"
 		(exclude_from_sim no)
 		(at 12.7 200 0)
 		(effects
