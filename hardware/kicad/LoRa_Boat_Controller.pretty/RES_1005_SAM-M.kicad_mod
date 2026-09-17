@@ -1,0 +1,103 @@
+(footprint "RES_1005_SAM-M"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Allegro footprint RES_1005_SAM-M as fabricated on senior design v5.brd")
+	(tags "allegro RES_1005_SAM-M")
+	(property "Reference" "REF**"
+		(at 0 -1.291336 0)
+		(layer "F.Fab")
+		(uuid "75f96dab-2d06-56e5-8e3a-e2d58b273d51")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "RES_1005_SAM-M"
+		(at 0 1.291336 0)
+		(layer "F.Fab")
+		(uuid "e60f0744-9a4c-58a7-84ce-e341f951627b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "df680b15-97da-5989-a0f1-c21642494fb0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "632ecaea-f343-5d37-9429-2e4a878c5f17")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.058672 -0.275336)
+		(end 1.058672 0.275336)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "24921c97-1434-54b1-a707-82922a68df4b")
+	)
+	(fp_rect
+		(start -1.058672 -0.275336)
+		(end 1.058672 0.275336)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "497a4309-9813-57ce-9597-e1175ffbf92d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "d5b2815d-05c8-5f36-92f2-18e6b4626983")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "2" smd rect
+		(at 0.654304 0)
+		(size 0.808736 0.550672)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "ca55c907-dd72-5a7c-9d44-bd0fddf650ba")
+	)
+	(pad "1" smd rect
+		(at -0.654304 0)
+		(size 0.808736 0.550672)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "3d3a1531-ad44-5cae-93df-9faef401925c")
+	)
+	(embedded_fonts no)
+)

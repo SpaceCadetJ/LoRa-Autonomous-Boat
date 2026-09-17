@@ -1,0 +1,39 @@
+# CONVERSION_LOG.md — append-only work log
+
+Newest entries at the bottom. Each entry: date, what changed, what was validated, commit.
+
+## 2026-09-16 — Session 1 (autonomous agent, brief = AGENT_PROMPT_V2.md)
+
+- Environment: KiCad 9.0.7 found at `C:\Users\Jay\AppData\Local\Programs\KiCad\9.0\bin` (not Program Files). Its bundled
+  Python 3.11.5 imports `pcbnew 9.0.7`. System Python 3.12.3; installed gerbonara 1.6.3, sexpdata, kiutils, numpy, pillow, shapely.
+- Backed up `hardware/kicad/` to `hardware/kicad/_backup_2026-09-16/`; deleted `~LoRa_Boat_Controller.kicad_pcb.lck`;
+  rewrote `.gitignore` (.claude/, *.lck, _backup_*/, autosaves, _build/).
+- Branch `v1-kicad-reconstruction` created; commit 89b5219 snapshots the untracked pre-existing files.
+- Provenance (tools/provenance.py -> docs/A0_PROVENANCE.md): `BoatcrewArtwork/*.art` is byte-identical to
+  `Allegro v5/Allegro/BOATCREW*.art`, all from `senior design v5.brd`, 2025-05-09 17:41:07 (the last journal entry in
+  allegro.jrl is the artwork run at 17:40-17:42 the same day). `Allegro v5/Allegro/Artwork/*.art` and `Artwork.zip` are
+  from **v4** (2025-05-01 15:41). `BOATCREWDRILL-1-2.drl` (all three copies identical, md5 fb6a06b0edf8) is byte-identical
+  to `senior design v4-1-2.drl` except the filename line, and the zip stamps it 2025-05-01 15:51 -> the only drill file in the
+  repo is a **v4** drill, not v5. No v5 drill file exists in the repo.
+- Netlist: `pstxnet.dat` (PSTWRITER 2025-05-09 17:12:27) was imported into v5.brd at 17:12:46 (netrev.lst, eco.txt). It has
+  32 electrical nets + NC. Versus the DSN v2 netlist: U1 (SB007-03Q) removed, D21 (CMS06 Schottky, GND<->SW node) added,
+  COUT1 removed, TP2 removed, CIN-1 moved from net GND to net 0, EN net renamed N055670->N148600, JTAG changed to Samtec
+  FTSH-105 with the standard 10-pin Cortex pinout, L1 changed to TDK SLF7045T 4.7 uH, C1-C9/C22 changed to Kyocera KGM21 0805.
+- Board outline from BOATCREWOUTLINE.art: x -1.502..1.118 in, y 0.036..1.505 in => 2.620 x 1.469 in (66.5 x 37.3 mm).
+  The DSN v2 3.0 x 3.0 in boundary and the existing .kicad_pcb gr_rect are stale.
+- STM32F446RE LQFP-64 pin 30 = VCAP_1, pin 31 = VSS (KiCad lib symbol MCU_ST_STM32F4:STM32F446R_C-E_Tx and the OrCAD
+  symbol agree). The "pin 30 = PB11" note in the old NETLIST.md came from an F405 pin table in generate_kicad.py.
+
+### 2026-09-16 — A0/A1/A2 (PCB gate reached)
+- tools/v5_reconstruct.py: 44/44 components placed by pad-pattern matching against the v5 film flashes (all 172 pads at
+  0.000 mil error when re-read with pcbnew), nets from pstxnet.dat via copper connectivity (0 shorts, 0 opens), 27 vias
+  (17 GND), 21/21 ECO positions confirmed. v4 drill file: 35 of 50 holes have no v5 pad -> holes derived from v5 pads.
+- Pour analysis: top pour = +3V3, bottom pour = GND; all pour clearances 5.0 mil; the three "floating" top regions are
+  pour islands; 27 film voids on F.Cu (component-body keep-outs, LoRa 580x706 mil keep-out on BOTH layers, smoothing)
+  and 1 on B.Cu are imported as rule areas.
+- tools/gen_footprints.py -> 25 project footprints; tools/gen_pcb.py -> .kicad_pcb/.kicad_pro/.kicad_dru.
+- Validation: kicad-cli DRC 0 errors / 0 unconnected (warnings: 37 solder-mask bridges at untented vias with 5 mil pour
+  gaps, 21 silk-over-copper, 6 silk-edge, 3 isolated pour islands - all present on the fabricated board);
+  Gerber XOR vs BOATCREW films at 2 px/mil: F.Cu 0.87 %, B.Cu 0.23 %, F.Mask 0.87 %, B.Mask 0.95 %, silk 2.75 %,
+  outline 3.5 % (of union); drill 53/53 holes within 0.05 mil, all 5 sizes.
+- As-fabricated exceptions to the 12 mil .do rule are in LoRa_Boat_Controller.kicad_dru (7.5 mil LQFP fan-out etc.).

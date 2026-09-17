@@ -1,0 +1,98 @@
+(footprint "amv_test_point"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Through-hole test point pad 3.4 mm / 1.4 mm hole (Allegro amv_test_point)")
+	(tags "allegro amv_test_point")
+	(property "Reference" "REF**"
+		(at 0 -2.716022 0)
+		(layer "F.Fab")
+		(uuid "8600e06d-447b-5192-891a-42fcb92531fe")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "amv_test_point"
+		(at 0 2.716022 0)
+		(layer "F.Fab")
+		(uuid "e7ae038d-2c0a-5411-acdd-e0d726880f68")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4ec6277b-e741-5d25-94ef-01d2921437b4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6767737e-83f8-5c46-937c-c7b84205784d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -1.700022 -1.700022)
+		(end 1.700022 1.700022)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "029843c0-fc0f-5364-a457-105c1e852994")
+	)
+	(fp_rect
+		(start -1.700022 -1.700022)
+		(end 1.700022 1.700022)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "da873d71-1e8c-52bb-ae2f-bb5203b8994b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "5da13a2a-0be7-5977-bbdb-12319c817293")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 3.400044 3.400044)
+		(drill 1.400048)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.099949)
+		(uuid "a351a42e-8571-5801-8281-779675205568")
+	)
+	(embedded_fonts no)
+)
