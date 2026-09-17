@@ -75,7 +75,7 @@ def main():
     if start <= 14:
         run([PY, os.path.join(HERE, 'gen_symbols.py')])
         run([PY, os.path.join(HERE, 'gen_bom.py'), '--json-only'])
-        run([PY, os.path.join(HERE, 'gen_sch.py')])
+        run([PY, os.path.join(HERE, 'gen_sch.py'), '--input-dir', BUILD])
         run([KCLI, 'sch', 'erc', '--severity-all', '--format', 'json', '--output', os.path.join(BUILD, 'erc.json'), SCH])
         run([KPY, os.path.join(HERE, 'check_netlist.py')])
         run([PY, os.path.join(HERE, 'gen_bom.py')])

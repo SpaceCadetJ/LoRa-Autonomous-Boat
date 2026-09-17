@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.000 79.313" width="1400" role="img" aria-labelledby="title desc">
+<title id="title">V1 bottom assembly pad map</title>
+<desc id="desc">Source-derived pad positions and electrical pin-one marks. A planning drawing, not a fabrication release or verified package polarity guide.</desc>
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<style>text{font-family:Arial,sans-serif;fill:#142337}.ref{font-size:.88px;font-weight:700;paint-order:stroke;stroke:#f8fafc;stroke-width:.28px;stroke-linejoin:round}.pin{fill:#ef6b26;stroke:#9d3b04;stroke-width:.08}.body{fill:none;stroke:#768aa5;stroke-width:.13}</style>
+<text x="4" y="5.3" font-size="2.6" font-weight="700">V1  /  BOTTOM ASSEMBLY REFERENCE</text>
+<text x="4" y="9" font-size="1.45">66.548 × 37.313 mm · electrical pad geometry · NOT FABRICATION RELEASED</text>
+<text x="4" y="12.2" font-size="1.25">Underside view: mirrored horizontally from PCB top coordinates.</text>
+<rect x="18.726" y="17" width="66.548" height="37.313" rx=".2" fill="#e9f0f4" stroke="#20364c" stroke-width=".25"/>
+<text x="52.0" y="35.6563" text-anchor="middle" font-size="2.6">No footprints on this side in the source board</text>
+<circle cx="5" cy="58.912600000000005" r=".8" fill="#ef6b26"/><text x="7" y="59.3126" font-size="1.45">Orange = electrical pad 1/01. It does not universally mean cathode or positive.</text>
+<text x="4" y="62.512600000000006" font-size="1.25">Match IC dots, diode bands, capacitor polarity and connector keys to the exact package drawing.</text>
+<text x="4" y="65.4126" font-size="1.25">Grey outlines show pad envelopes, not component bodies. Check orientation_review.csv before assembly.</text>
+<text x="4" y="68.3126" font-size="1.25">0 source footprints on this side. No bench, package, solder-paste or machine-rotation approval is implied.</text>
+</svg>

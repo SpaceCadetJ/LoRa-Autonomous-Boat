@@ -1,0 +1,1111 @@
+{
+  "schema": 1,
+  "captured_at": "2026-09-17T19:57:49.4777415Z",
+  "head_at_capture": "a6316e9216cc55656e3fbb7c4f173895151ac4ff",
+  "scope": "Pre-professionalization working files, preserved before layout edits; HEAD alone is not the full input identity.",
+  "exported_netlist": {
+    "path": "reviews/codex/professionalization/quality-baseline/v1.netlist.xml",
+    "sha256": "dc17ec24088aebd68e9be0d823f5ecff0cd9d47080b00b057b3bc5eb36e5498d"
+  },
+  "input_hashes": {
+    "hardware/kicad/CAN_Bus.kicad_sch": "fe03ffc15d8c62d8361d70660bb3333d573c189db8a1fc6f1a5cee9df6abb1b5",
+    "hardware/kicad/Debug.kicad_sch": "de0da2c0aec9c69994e431f40bf53c2e834e7f1b21951da48ab88739fd2ae151",
+    "hardware/kicad/fp-lib-table": "1d0776c29bd4d9155867b82549e64080a66d13c4b17c6fd28e3071e7635d0cbb",
+    "hardware/kicad/GPS_Module.kicad_sch": "b0f9ce4af37f3b2540802e76ad66b972f9be433f34cea586dbfd9e8520a01853",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_dru": "7d5337c38b2be25b88bbe9782c88fd56e48c7ec7e023646d69ff9805f43dc82c",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pcb": "2f604d1691ebde874075baecc2d1aa2985afa0db1a89ca277dec5d2156a553f2",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pro": "bd7405e6898de2359513fca9e25c7008c0a23771fe8e9d0aa7f13b507b7a30a3",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sch": "8af5beedd78649b91e4ae29dd99a0e7721ae9e9617cc53daf528e3db2f8df8ae",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sym": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950",
+    "hardware/kicad/LoRa_Module.kicad_sch": "88df1df5df610fd5f5718daed17b47ab073579efbee40afe84a8ea1463157f37",
+    "hardware/kicad/MCU.kicad_sch": "7d783d89be6aa0751a2cdb620050dc888c7743ff26af1c30b2636896e1406355",
+    "hardware/kicad/PowerSupply.kicad_sch": "bd8a5b1dd67e7d3ddf05bb39bf83bac0e31fa481796a9e233915704c7d4780ea",
+    "hardware/kicad/PWM_Outputs.kicad_sch": "535a4705ea40bf422500e1843d3bb537f35a944fbe6ae50195990292ebdd51a3",
+    "hardware/kicad/sym-lib-table": "34e90e5baea1d322bbb94670fcaea5e5e7eb42425d520e3faaef27f1e54f1de6"
+  },
+  "protected_files": {
+    "hardware/kicad/LoRa_Boat_Controller.kicad_dru": "7d5337c38b2be25b88bbe9782c88fd56e48c7ec7e023646d69ff9805f43dc82c",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pcb": "2f604d1691ebde874075baecc2d1aa2985afa0db1a89ca277dec5d2156a553f2",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pro": "bd7405e6898de2359513fca9e25c7008c0a23771fe8e9d0aa7f13b507b7a30a3"
+  },
+  "netlist": {
+    "components": {
+      "C1": {
+        "value": "0.1uF",
+        "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L"
+      },
+      "C10": {
+        "value": "4.7uF",
+        "footprint": "LoRa_Boat_Controller:CAP_0603_CL10A_1P6XP8_SAM-M"
+      },
+      "C12": {
+        "value": "0.1uF",
+        "footprint": "LoRa_Boat_Controller:CAP_CL10_SAM-M"
+      },
+      "C14": {
+        "value": "470pF",
+        "footprint": "LoRa_Boat_Controller:CAP_0603G_AVX-M"
+      },
+      "C2": {
+        "value": "0.1uF",
+        "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L"
+      },
+      "C20": {
+        "value": "10uF",
+        "footprint": "LoRa_Boat_Controller:G-21_MUR-L"
+      },
+      "C21": {
+        "value": "10uF",
+        "footprint": "LoRa_Boat_Controller:G-21_MUR-L"
+      },
+      "C22": {
+        "value": "0.1uF",
+        "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L"
+      },
+      "C23": {
+        "value": "47pF",
+        "footprint": "LoRa_Boat_Controller:CAP_GJM1555C1H220JB01__MUR-L"
+      },
+      "C3": {
+        "value": "0.1uF",
+        "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L"
+      },
+      "C4": {
+        "value": "0.1uF",
+        "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L"
+      },
+      "C5": {
+        "value": "0.1uF",
+        "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L"
+      },
+      "C6": {
+        "value": "0.1uF",
+        "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L"
+      },
+      "C7": {
+        "value": "0.1uF",
+        "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L"
+      },
+      "C8": {
+        "value": "0.1uF",
+        "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L"
+      },
+      "C9": {
+        "value": "0.1uF",
+        "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L"
+      },
+      "CANHEADER": {
+        "value": "B4B-XH-A",
+        "footprint": "LoRa_Boat_Controller:CONN_B4B-XH-A_JST"
+      },
+      "CEXT": {
+        "value": "4.7uF",
+        "footprint": "LoRa_Boat_Controller:CAP_0603_CL10A_1P6XP8_SAM-M"
+      },
+      "CIN": {
+        "value": "10uF",
+        "footprint": "LoRa_Boat_Controller:CAP_NTS_55_2P8T_NIP"
+      },
+      "COUT": {
+        "value": "10uF",
+        "footprint": "LoRa_Boat_Controller:G-31_MUR-M"
+      },
+      "D21": {
+        "value": "CMS06(TE12L,Q,M)",
+        "footprint": "LoRa_Boat_Controller:M-FLAT_TOS-L"
+      },
+      "GND": {
+        "value": "Battery-",
+        "footprint": "LoRa_Boat_Controller:amv_con1"
+      },
+      "GPSMODULE": {
+        "value": "PPTC051LFBN-RC",
+        "footprint": "LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL"
+      },
+      "JTAG": {
+        "value": "FTSH-105-XX-X-DV",
+        "footprint": "LoRa_Boat_Controller:SAMTEC_FTSH-105-XX-X-DV"
+      },
+      "L1": {
+        "value": "4.7uH",
+        "footprint": "LoRa_Boat_Controller:IND_7045_TDK"
+      },
+      "L3": {
+        "value": "BLM15 ferrite",
+        "footprint": "LoRa_Boat_Controller:IND_BLM15_0402_MUR-L"
+      },
+      "L4": {
+        "value": "BLM15 ferrite",
+        "footprint": "LoRa_Boat_Controller:IND_BLM15_0402_MUR-L"
+      },
+      "LORAMODULE": {
+        "value": "PPTC051LFBN-RC",
+        "footprint": "LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL"
+      },
+      "R1": {
+        "value": "15k",
+        "footprint": "LoRa_Boat_Controller:RC0402N_PAN-M"
+      },
+      "R2": {
+        "value": "4.7k",
+        "footprint": "LoRa_Boat_Controller:RC0603N_YAG-M"
+      },
+      "R3": {
+        "value": "51",
+        "footprint": "LoRa_Boat_Controller:RC0402N_YAG-M"
+      },
+      "R4": {
+        "value": "5.1k",
+        "footprint": "LoRa_Boat_Controller:RC0402N_PAN-M"
+      },
+      "R5": {
+        "value": "30k",
+        "footprint": "LoRa_Boat_Controller:RES_R0805_ROM-M"
+      },
+      "R6": {
+        "value": "10k",
+        "footprint": "LoRa_Boat_Controller:RES_1005_SAM-M"
+      },
+      "SPEEDCONTROLLER": {
+        "value": "PPTC031LFBN-RC",
+        "footprint": "LoRa_Boat_Controller:CONN_PPTC031_SUL"
+      },
+      "STEERINGSERVO": {
+        "value": "PPTC031LFBN-RC",
+        "footprint": "LoRa_Boat_Controller:CONN_PPTC031_SUL"
+      },
+      "TP1": {
+        "value": "TP",
+        "footprint": "LoRa_Boat_Controller:amv_test_point"
+      },
+      "TP3": {
+        "value": "TP",
+        "footprint": "LoRa_Boat_Controller:amv_test_point"
+      },
+      "TP4": {
+        "value": "TP",
+        "footprint": "LoRa_Boat_Controller:amv_test_point"
+      },
+      "TP5": {
+        "value": "TP",
+        "footprint": "LoRa_Boat_Controller:amv_test_point"
+      },
+      "U3": {
+        "value": "STM32F446RET6",
+        "footprint": "LoRa_Boat_Controller:LQFP64-10x10mm"
+      },
+      "U5": {
+        "value": "TCAN1042HDRQ1",
+        "footprint": "LoRa_Boat_Controller:D0008A_L"
+      },
+      "U6": {
+        "value": "R1240N001B-TR-FE",
+        "footprint": "LoRa_Boat_Controller:SOT-23-6W_PE-SOT23-6W-0512_NMD"
+      },
+      "VIN": {
+        "value": "Battery+",
+        "footprint": "LoRa_Boat_Controller:amv_con1"
+      }
+    },
+    "pin_groups": [
+      [
+        [
+          "C1",
+          "1"
+        ],
+        [
+          "C10",
+          "1"
+        ],
+        [
+          "C2",
+          "1"
+        ],
+        [
+          "C21",
+          "1"
+        ],
+        [
+          "C22",
+          "1"
+        ],
+        [
+          "C23",
+          "1"
+        ],
+        [
+          "C3",
+          "1"
+        ],
+        [
+          "C4",
+          "1"
+        ],
+        [
+          "C5",
+          "1"
+        ],
+        [
+          "C6",
+          "1"
+        ],
+        [
+          "C7",
+          "1"
+        ],
+        [
+          "C8",
+          "1"
+        ],
+        [
+          "C9",
+          "1"
+        ],
+        [
+          "CANHEADER",
+          "1"
+        ],
+        [
+          "CIN",
+          "1"
+        ],
+        [
+          "COUT",
+          "1"
+        ],
+        [
+          "D21",
+          "1"
+        ],
+        [
+          "GND",
+          "1"
+        ],
+        [
+          "GPSMODULE",
+          "2"
+        ],
+        [
+          "JTAG",
+          "3"
+        ],
+        [
+          "JTAG",
+          "5"
+        ],
+        [
+          "JTAG",
+          "9"
+        ],
+        [
+          "L4",
+          "1"
+        ],
+        [
+          "LORAMODULE",
+          "5"
+        ],
+        [
+          "R2",
+          "2"
+        ],
+        [
+          "R6",
+          "1"
+        ],
+        [
+          "SPEEDCONTROLLER",
+          "3"
+        ],
+        [
+          "STEERINGSERVO",
+          "3"
+        ],
+        [
+          "TP5",
+          "1"
+        ],
+        [
+          "U3",
+          "12"
+        ],
+        [
+          "U3",
+          "18"
+        ],
+        [
+          "U3",
+          "31"
+        ],
+        [
+          "U3",
+          "47"
+        ],
+        [
+          "U3",
+          "63"
+        ],
+        [
+          "U5",
+          "2"
+        ],
+        [
+          "U6",
+          "5"
+        ]
+      ],
+      [
+        [
+          "C1",
+          "2"
+        ],
+        [
+          "CANHEADER",
+          "2"
+        ],
+        [
+          "U5",
+          "3"
+        ]
+      ],
+      [
+        [
+          "C10",
+          "2"
+        ],
+        [
+          "C14",
+          "1"
+        ],
+        [
+          "C2",
+          "2"
+        ],
+        [
+          "C20",
+          "2"
+        ],
+        [
+          "C3",
+          "2"
+        ],
+        [
+          "C4",
+          "2"
+        ],
+        [
+          "C5",
+          "2"
+        ],
+        [
+          "C6",
+          "2"
+        ],
+        [
+          "C7",
+          "2"
+        ],
+        [
+          "C8",
+          "2"
+        ],
+        [
+          "C9",
+          "2"
+        ],
+        [
+          "CEXT",
+          "2"
+        ],
+        [
+          "COUT",
+          "2"
+        ],
+        [
+          "GPSMODULE",
+          "1"
+        ],
+        [
+          "JTAG",
+          "1"
+        ],
+        [
+          "L1",
+          "1"
+        ],
+        [
+          "L3",
+          "2"
+        ],
+        [
+          "R1",
+          "1"
+        ],
+        [
+          "SPEEDCONTROLLER",
+          "1"
+        ],
+        [
+          "STEERINGSERVO",
+          "1"
+        ],
+        [
+          "TP4",
+          "1"
+        ],
+        [
+          "U3",
+          "13"
+        ],
+        [
+          "U3",
+          "19"
+        ],
+        [
+          "U3",
+          "32"
+        ],
+        [
+          "U3",
+          "48"
+        ],
+        [
+          "U3",
+          "64"
+        ]
+      ],
+      [
+        [
+          "C12",
+          "1"
+        ],
+        [
+          "D21",
+          "2"
+        ],
+        [
+          "L1",
+          "2"
+        ],
+        [
+          "U6",
+          "3"
+        ]
+      ],
+      [
+        [
+          "C12",
+          "2"
+        ],
+        [
+          "R3",
+          "1"
+        ]
+      ],
+      [
+        [
+          "C14",
+          "2"
+        ],
+        [
+          "R1",
+          "2"
+        ],
+        [
+          "R2",
+          "1"
+        ],
+        [
+          "U6",
+          "6"
+        ]
+      ],
+      [
+        [
+          "C20",
+          "1"
+        ],
+        [
+          "L4",
+          "2"
+        ]
+      ],
+      [
+        [
+          "C21",
+          "2"
+        ],
+        [
+          "C22",
+          "2"
+        ],
+        [
+          "C23",
+          "2"
+        ],
+        [
+          "L3",
+          "1"
+        ],
+        [
+          "LORAMODULE",
+          "1"
+        ]
+      ],
+      [
+        [
+          "CANHEADER",
+          "3"
+        ],
+        [
+          "U5",
+          "7"
+        ]
+      ],
+      [
+        [
+          "CANHEADER",
+          "4"
+        ],
+        [
+          "U5",
+          "6"
+        ]
+      ],
+      [
+        [
+          "CEXT",
+          "1"
+        ],
+        [
+          "U3",
+          "30"
+        ]
+      ],
+      [
+        [
+          "CIN",
+          "2"
+        ],
+        [
+          "R4",
+          "1"
+        ],
+        [
+          "R5",
+          "1"
+        ],
+        [
+          "U6",
+          "2"
+        ],
+        [
+          "VIN",
+          "1"
+        ]
+      ],
+      [
+        [
+          "GPSMODULE",
+          "3"
+        ],
+        [
+          "U3",
+          "26"
+        ]
+      ],
+      [
+        [
+          "GPSMODULE",
+          "4"
+        ],
+        [
+          "U3",
+          "52"
+        ]
+      ],
+      [
+        [
+          "GPSMODULE",
+          "5"
+        ],
+        [
+          "U3",
+          "51"
+        ]
+      ],
+      [
+        [
+          "JTAG",
+          "10"
+        ],
+        [
+          "U3",
+          "7"
+        ]
+      ],
+      [
+        [
+          "JTAG",
+          "2"
+        ],
+        [
+          "U3",
+          "46"
+        ]
+      ],
+      [
+        [
+          "JTAG",
+          "4"
+        ],
+        [
+          "U3",
+          "49"
+        ]
+      ],
+      [
+        [
+          "JTAG",
+          "6"
+        ],
+        [
+          "U3",
+          "55"
+        ]
+      ],
+      [
+        [
+          "JTAG",
+          "7"
+        ]
+      ],
+      [
+        [
+          "JTAG",
+          "8"
+        ],
+        [
+          "U3",
+          "50"
+        ]
+      ],
+      [
+        [
+          "LORAMODULE",
+          "2"
+        ],
+        [
+          "U3",
+          "14"
+        ]
+      ],
+      [
+        [
+          "LORAMODULE",
+          "3"
+        ],
+        [
+          "U3",
+          "15"
+        ]
+      ],
+      [
+        [
+          "LORAMODULE",
+          "4"
+        ],
+        [
+          "U3",
+          "17"
+        ]
+      ],
+      [
+        [
+          "R3",
+          "2"
+        ],
+        [
+          "U6",
+          "4"
+        ]
+      ],
+      [
+        [
+          "R4",
+          "2"
+        ],
+        [
+          "U6",
+          "1"
+        ]
+      ],
+      [
+        [
+          "R5",
+          "2"
+        ],
+        [
+          "R6",
+          "2"
+        ],
+        [
+          "U3",
+          "16"
+        ]
+      ],
+      [
+        [
+          "SPEEDCONTROLLER",
+          "2"
+        ],
+        [
+          "TP1",
+          "1"
+        ],
+        [
+          "U3",
+          "41"
+        ]
+      ],
+      [
+        [
+          "STEERINGSERVO",
+          "2"
+        ],
+        [
+          "TP3",
+          "1"
+        ],
+        [
+          "U3",
+          "37"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "1"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "10"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "11"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "2"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "20"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "21"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "22"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "23"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "24"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "25"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "27"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "28"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "29"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "3"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "33"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "34"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "35"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "36"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "38"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "39"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "4"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "40"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "42"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "43"
+        ],
+        [
+          "U5",
+          "4"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "44"
+        ],
+        [
+          "U5",
+          "8"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "45"
+        ],
+        [
+          "U5",
+          "1"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "5"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "53"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "54"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "56"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "57"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "58"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "59"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "6"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "60"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "61"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "62"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "8"
+        ]
+      ],
+      [
+        [
+          "U3",
+          "9"
+        ]
+      ],
+      [
+        [
+          "U5",
+          "5"
+        ]
+      ]
+    ],
+    "net_names": {
+      "[[\"C10\",\"2\"],[\"C14\",\"1\"],[\"C2\",\"2\"],[\"C20\",\"2\"],[\"C3\",\"2\"],[\"C4\",\"2\"],[\"C5\",\"2\"],[\"C6\",\"2\"],[\"C7\",\"2\"],[\"C8\",\"2\"],[\"C9\",\"2\"],[\"CEXT\",\"2\"],[\"COUT\",\"2\"],[\"GPSMODULE\",\"1\"],[\"JTAG\",\"1\"],[\"L1\",\"1\"],[\"L3\",\"2\"],[\"R1\",\"1\"],[\"SPEEDCONTROLLER\",\"1\"],[\"STEERINGSERVO\",\"1\"],[\"TP4\",\"1\"],[\"U3\",\"13\"],[\"U3\",\"19\"],[\"U3\",\"32\"],[\"U3\",\"48\"],[\"U3\",\"64\"]]": "+3V3",
+      "[[\"R5\",\"2\"],[\"R6\",\"2\"],[\"U3\",\"16\"]]": "/ADC_VBAT",
+      "[[\"CANHEADER\",\"3\"],[\"U5\",\"7\"]]": "/CAN_Bus/CANH",
+      "[[\"CANHEADER\",\"4\"],[\"U5\",\"6\"]]": "/CAN_Bus/CANL",
+      "[[\"C1\",\"2\"],[\"CANHEADER\",\"2\"],[\"U5\",\"3\"]]": "/CAN_Bus/CAN_VCC",
+      "[[\"U3\",\"43\"],[\"U5\",\"4\"]]": "/CAN_RXD_PA10",
+      "[[\"U3\",\"44\"],[\"U5\",\"8\"]]": "/CAN_STB_PA11",
+      "[[\"U3\",\"45\"],[\"U5\",\"1\"]]": "/CAN_TXD_PA12",
+      "[[\"GPSMODULE\",\"3\"],[\"U3\",\"26\"]]": "/GPS_PB0",
+      "[[\"GPSMODULE\",\"4\"],[\"U3\",\"52\"]]": "/GPS_RX_PC11",
+      "[[\"GPSMODULE\",\"5\"],[\"U3\",\"51\"]]": "/GPS_TX_PC10",
+      "[[\"LORAMODULE\",\"4\"],[\"U3\",\"17\"]]": "/LORA_RST_PA3",
+      "[[\"LORAMODULE\",\"3\"],[\"U3\",\"15\"]]": "/LORA_RX_PA1",
+      "[[\"LORAMODULE\",\"2\"],[\"U3\",\"14\"]]": "/LORA_TX_PA0",
+      "[[\"C20\",\"1\"],[\"L4\",\"2\"]]": "/LoRa_Module/LORA_FILT",
+      "[[\"C21\",\"2\"],[\"C22\",\"2\"],[\"C23\",\"2\"],[\"L3\",\"1\"],[\"LORAMODULE\",\"1\"]]": "/LoRa_Module/LORA_VCC",
+      "[[\"CEXT\",\"1\"],[\"U3\",\"30\"]]": "/MCU/VCAP1",
+      "[[\"JTAG\",\"10\"],[\"U3\",\"7\"]]": "/NRST",
+      "[[\"SPEEDCONTROLLER\",\"2\"],[\"TP1\",\"1\"],[\"U3\",\"41\"]]": "/PWM_PA8_ESCHDR",
+      "[[\"STEERINGSERVO\",\"2\"],[\"TP3\",\"1\"],[\"U3\",\"37\"]]": "/PWM_PC6_SERVOHDR",
+      "[[\"R3\",\"2\"],[\"U6\",\"4\"]]": "/PowerSupply/BST",
+      "[[\"C12\",\"2\"],[\"R3\",\"1\"]]": "/PowerSupply/BST_RC",
+      "[[\"R4\",\"2\"],[\"U6\",\"1\"]]": "/PowerSupply/EN",
+      "[[\"C14\",\"2\"],[\"R1\",\"2\"],[\"R2\",\"1\"],[\"U6\",\"6\"]]": "/PowerSupply/FB_DIV",
+      "[[\"C12\",\"1\"],[\"D21\",\"2\"],[\"L1\",\"2\"],[\"U6\",\"3\"]]": "/PowerSupply/SW_NODE",
+      "[[\"JTAG\",\"4\"],[\"U3\",\"49\"]]": "/SWCLK",
+      "[[\"JTAG\",\"2\"],[\"U3\",\"46\"]]": "/SWDIO",
+      "[[\"JTAG\",\"6\"],[\"U3\",\"55\"]]": "/SWO_TDO",
+      "[[\"JTAG\",\"8\"],[\"U3\",\"50\"]]": "/TDI",
+      "[[\"C1\",\"1\"],[\"C10\",\"1\"],[\"C2\",\"1\"],[\"C21\",\"1\"],[\"C22\",\"1\"],[\"C23\",\"1\"],[\"C3\",\"1\"],[\"C4\",\"1\"],[\"C5\",\"1\"],[\"C6\",\"1\"],[\"C7\",\"1\"],[\"C8\",\"1\"],[\"C9\",\"1\"],[\"CANHEADER\",\"1\"],[\"CIN\",\"1\"],[\"COUT\",\"1\"],[\"D21\",\"1\"],[\"GND\",\"1\"],[\"GPSMODULE\",\"2\"],[\"JTAG\",\"3\"],[\"JTAG\",\"5\"],[\"JTAG\",\"9\"],[\"L4\",\"1\"],[\"LORAMODULE\",\"5\"],[\"R2\",\"2\"],[\"R6\",\"1\"],[\"SPEEDCONTROLLER\",\"3\"],[\"STEERINGSERVO\",\"3\"],[\"TP5\",\"1\"],[\"U3\",\"12\"],[\"U3\",\"18\"],[\"U3\",\"31\"],[\"U3\",\"47\"],[\"U3\",\"63\"],[\"U5\",\"2\"],[\"U6\",\"5\"]]": "GND",
+      "[[\"CIN\",\"2\"],[\"R4\",\"1\"],[\"R5\",\"1\"],[\"U6\",\"2\"],[\"VIN\",\"1\"]]": "VIN_RAW",
+      "[[\"JTAG\",\"7\"]]": "unconnected-(JTAG1-Pin_7-Pad7)",
+      "[[\"U3\",\"60\"]]": "unconnected-(U3-BOOT0-Pad60)",
+      "[[\"U3\",\"20\"]]": "unconnected-(U3-PA4-Pad20)",
+      "[[\"U3\",\"21\"]]": "unconnected-(U3-PA5-Pad21)",
+      "[[\"U3\",\"22\"]]": "unconnected-(U3-PA6-Pad22)",
+      "[[\"U3\",\"23\"]]": "unconnected-(U3-PA7-Pad23)",
+      "[[\"U3\",\"42\"]]": "unconnected-(U3-PA9-Pad42)",
+      "[[\"U3\",\"27\"]]": "unconnected-(U3-PB1-Pad27)",
+      "[[\"U3\",\"28\"]]": "unconnected-(U3-PB2-Pad28)",
+      "[[\"U3\",\"56\"]]": "unconnected-(U3-PB4-Pad56)",
+      "[[\"U3\",\"57\"]]": "unconnected-(U3-PB5-Pad57)",
+      "[[\"U3\",\"58\"]]": "unconnected-(U3-PB6-Pad58)",
+      "[[\"U3\",\"59\"]]": "unconnected-(U3-PB7-Pad59)",
+      "[[\"U3\",\"61\"]]": "unconnected-(U3-PB8-Pad61)",
+      "[[\"U3\",\"62\"]]": "unconnected-(U3-PB9-Pad62)",
+      "[[\"U3\",\"29\"]]": "unconnected-(U3-PB10-Pad29)",
+      "[[\"U3\",\"33\"]]": "unconnected-(U3-PB12-Pad33)",
+      "[[\"U3\",\"34\"]]": "unconnected-(U3-PB13-Pad34)",
+      "[[\"U3\",\"35\"]]": "unconnected-(U3-PB14-Pad35)",
+      "[[\"U3\",\"36\"]]": "unconnected-(U3-PB15-Pad36)",
+      "[[\"U3\",\"8\"]]": "unconnected-(U3-PC0-Pad8)",
+      "[[\"U3\",\"9\"]]": "unconnected-(U3-PC1-Pad9)",
+      "[[\"U3\",\"10\"]]": "unconnected-(U3-PC2-Pad10)",
+      "[[\"U3\",\"11\"]]": "unconnected-(U3-PC3-Pad11)",
+      "[[\"U3\",\"24\"]]": "unconnected-(U3-PC4-Pad24)",
+      "[[\"U3\",\"25\"]]": "unconnected-(U3-PC5-Pad25)",
+      "[[\"U3\",\"38\"]]": "unconnected-(U3-PC7-Pad38)",
+      "[[\"U3\",\"39\"]]": "unconnected-(U3-PC8-Pad39)",
+      "[[\"U3\",\"40\"]]": "unconnected-(U3-PC9-Pad40)",
+      "[[\"U3\",\"53\"]]": "unconnected-(U3-PC12-Pad53)",
+      "[[\"U3\",\"2\"]]": "unconnected-(U3-PC13-Pad2)",
+      "[[\"U3\",\"3\"]]": "unconnected-(U3-PC14-Pad3)",
+      "[[\"U3\",\"4\"]]": "unconnected-(U3-PC15-Pad4)",
+      "[[\"U3\",\"54\"]]": "unconnected-(U3-PD2-Pad54)",
+      "[[\"U3\",\"5\"]]": "unconnected-(U3-PH0-Pad5)",
+      "[[\"U3\",\"6\"]]": "unconnected-(U3-PH1-Pad6)",
+      "[[\"U3\",\"1\"]]": "unconnected-(U3-VBAT-Pad1)",
+      "[[\"U5\",\"5\"]]": "unconnected-(U5-NC-Pad5)"
+    },
+    "pin_count": 172
+  }
+}

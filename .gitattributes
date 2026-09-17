@@ -8,3 +8,31 @@
 *.md text eol=lf
 *.csv text eol=lf
 *.json text eol=lf
+*.mjs text eol=lf
+*.html text eol=lf
+*.yml text eol=lf
+*.svg text eol=lf
+
+# Raw-byte evidence must survive a fresh checkout on Windows or Linux.
+# These sources were hashed before publication; do not silently normalize them.
+hardware/kicad/LoRa_Boat_Controller.kicad_pcb -text
+hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb -text
+hardware/kicad_v2/tools/v2_design.py -text
+hardware/kicad/fp-lib-table -text
+hardware/kicad/sym-lib-table -text
+hardware/kicad_v2/fp-lib-table -text
+hardware/kicad_v2/sym-lib-table -text
+hardware/kicad/evidence/** -text
+docs/BOM.csv -text
+docs/BOM_V2.csv -text
+docs/img/*_sch_*.svg -text
+docs/build/evidence/** -text
+hardware/manufacturing/** -text
+reviews/codex/professionalization/** -text
+reviews/codex/publication/** -text
+tools/quality/baselines/** -text
+firmware/BoatTHISTIMEITSDIFFERENT.ioc -text
+firmware/Core/** -text
+firmware/Drivers/** -text
+firmware/STM32F446RETX_FLASH.ld -text
+"Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat" -text

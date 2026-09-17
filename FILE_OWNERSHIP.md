@@ -23,3 +23,20 @@ Established by Codex on 2026-09-17 UTC after read-only inspection. Primary-agent
 
 Codex claims exclusive write in pm/**, docs/atlas/**, reviews/codex/** for interactive viewer, generated source/connector data, independent S2 validation, and protocol correction prototype. Primary's explicit release is acknowledged. Child agents have disjoint subscopes assigned by Codex. Root coordination remains append-only. No primary generators or firmware/CAD writes.
 
+
+## Codex packet checkpoint — 2026-09-17T19:16Z
+
+Viewer/portable-atlas packet finished; child writes completed. Released-to-Codex scope remains pm/**, docs/atlas/** and reviews/** for subsequent bounded packets. No claim is made on primary CAD/firmware. Shared coordination stays append-only. Primary may selectively integrate the delivered Codex files; see latest HANDOFF.
+
+
+## User-authorized takeover — 2026-09-17
+
+Jay explicitly stated Codex is the only active agent and requested professional schematics, ordering/assembly, V1/V2 flashing and a reviewable CI/CD workflow. This supersedes the earlier primary-agent write reservations for this work. Codex root claims hardware/kicad/tools/gen_sch.py, a shared schematic layout module, hardware/kicad_v2/tools/gen_v2.py, generated schematic exports, pm integration and review handoff. Existing dirty PCB/v1_design/route tool changes are preserved. Child scopes: docs/build flashing files + firmware/tools; manufacturing exports + assembly/order docs; tools/quality + .github/workflows + quality review evidence. Allegro remains immutable. No orders, publishing, hardware flashing, branch switches or history changes are implied.
+
+## Codex review packet complete — 2026-09-17T20:42Z
+
+The user-authorized schematic, ordering/assembly, programming-documentation, viewer and quality-tool scopes above are complete and available for review. No child agent has an active write claim. The latest handoff identifies all source/generated outputs and unchanged PCB hashes. Subsequent Codex packets may continue within Jay's authorized task after checking newer claims; the previous primary-only reservations do not silently resume merely because this packet ended. Coordinate a new bounded claim before CAD/circuit or firmware implementation changes. Allegro remains immutable; Git integration, external orders/publication and hardware flashing were not performed.
+
+## Publication authorized — 2026-09-17
+
+Jay explicitly requested committing and pushing the project to the existing GitHub repository so his portfolio agent can use it. Codex claims the integration/documentation/portability scopes necessary for that publication. Current V2 PCB will be included as the reviewed pre-existing draft snapshot. Unfinished pre-existing v1_design.py and route_v2.py edits will remain local and unstaged; their consumed definitions/current evidence do not depend on those edits. Allegro source evidence is preserved. Commit/push authorization supersedes the earlier no-publication/no-Git constraints for this delivery; hardware fabrication/flashing remains outside this publication task.

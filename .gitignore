@@ -50,3 +50,14 @@ desktop.ini
 # === Python ===
 __pycache__/
 *.pyc
+
+# Review scratch copies; reports, final captured inputs and baselines are retained.
+reviews/codex/professionalization/generator-guard/**/copy/
+reviews/codex/professionalization/candidate-review-0[123]/inputs/
+reviews/codex/professionalization/candidate-review-0[123]/*/svg/
+reviews/codex/professionalization/v2_before_power.png
+reviews/codex/professionalization/v2_after_power.png
+reviews/codex/professionalization/v2_after_mcu.png
+.publication-check/
+/temp_build/
+*.pending

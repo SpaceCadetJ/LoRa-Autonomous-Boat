@@ -1,0 +1,103 @@
+(footprint "RC0402N_PAN-M"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Allegro footprint RC0402N_PAN-M as fabricated on senior design v5.brd")
+	(tags "allegro RC0402N_PAN-M")
+	(property "Reference" "REF**"
+		(at 0 -1.291336 0)
+		(layer "F.Fab")
+		(uuid "cad051ec-8f86-58f1-ab60-47476b6cac84")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "RC0402N_PAN-M"
+		(at 0 1.291336 0)
+		(layer "F.Fab")
+		(uuid "f0991d91-3bca-5adc-b60f-a686c78a2fad")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "239eb8b7-6d47-5760-95df-b72f4190b818")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "06a0ab18-4116-515a-8ec4-e9a1aab1ccae")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.083691 -0.275336)
+		(end 1.083691 0.275336)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "58c3ea87-cb3a-5946-a0b6-4759ed1055ac")
+	)
+	(fp_rect
+		(start -1.083691 -0.275336)
+		(end 1.083691 0.275336)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0e860b57-37a5-58c9-a71f-a27ec25f3e1e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "decc3d82-87ac-54f0-9ab3-a0d238f503fa")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "2" smd rect
+		(at 0.654304 0)
+		(size 0.858774 0.550672)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "0a6ea16d-77b1-5c72-aced-78a24bb9a848")
+	)
+	(pad "1" smd rect
+		(at -0.654304 0)
+		(size 0.858774 0.550672)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "c7b058f5-75c0-5f1e-b286-29cf45c4a78c")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,21 @@
+{
+ "pstxnet_nets": 32,
+ "pstxnet_multi_pin_nets": 31,
+ "pstxnet_single_pin_nets": [
+  "VBAT"
+ ],
+ "sch_nets_matching": 31,
+ "sch_missing": [],
+ "sch_extra": [],
+ "sch_name_mismatch": [],
+ "pcb_nets_matching": 31,
+ "pcb_missing": [],
+ "pcb_extra": [],
+ "sch_refs": 44,
+ "pcb_refs": 44,
+ "refs_only_in_sch": [],
+ "refs_only_in_pcb": [],
+ "footprint_path_mismatch": [],
+ "footprint_lib_mismatch": [],
+ "PASS": true
+}

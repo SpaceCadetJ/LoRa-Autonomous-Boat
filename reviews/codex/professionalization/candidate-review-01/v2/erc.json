@@ -1,0 +1,415 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-17T15:14:40-0500",
+    "kicad_version": "9.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706",
+            "violations": [
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGPow01 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 0.1778,
+                                "y": 3.67
+                            },
+                            "uuid": "3eb92a6f-ea0a-560b-808a-f93ea7b2ff14"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 0.0254 mm",
+                            "pos": {
+                                "x": 0.1778,
+                                "y": 3.67
+                            },
+                            "uuid": "89604425-fc61-5358-a403-b0b64144502d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGPow02 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 0.508,
+                                "y": 3.67
+                            },
+                            "uuid": "aae94998-8f95-5bc7-ba15-05b26c8323f9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 0.0254 mm",
+                            "pos": {
+                                "x": 0.508,
+                                "y": 3.67
+                            },
+                            "uuid": "b9613583-118c-5579-ae40-a77c595ad2a0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGPow03 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 0.8128,
+                                "y": 3.67
+                            },
+                            "uuid": "85aac768-a66c-5c4b-acbb-d653aea297a5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 0.0254 mm",
+                            "pos": {
+                                "x": 0.8128,
+                                "y": 3.67
+                            },
+                            "uuid": "c31b6c50-d933-52e1-88b0-215afc14b50d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 0.0254 mm",
+                            "pos": {
+                                "x": 1.143,
+                                "y": 3.67
+                            },
+                            "uuid": "09088d27-bb02-50dc-9c4c-b4104a7e086e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 1.143,
+                                "y": 3.67
+                            },
+                            "uuid": "bef86b03-b038-5d27-9003-7ad94f8169b0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 0.0254 mm",
+                            "pos": {
+                                "x": 1.4478,
+                                "y": 3.67
+                            },
+                            "uuid": "62d67a1a-ab30-5654-ba52-1655bf17ff04"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGPow05 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 1.4478,
+                                "y": 3.67
+                            },
+                            "uuid": "842ada8c-c5cd-54ff-bf27-6c37e42b8af4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 0.0508 mm",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.6604
+                            },
+                            "uuid": "33297c65-5a3d-5e36-880d-6a43e33cebe9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 0.0508 mm",
+                            "pos": {
+                                "x": 0.5588,
+                                "y": 0.6604
+                            },
+                            "uuid": "dddb8881-bf76-51c0-bb70-c9ebe07f4efe"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 0.0508 mm",
+                            "pos": {
+                                "x": 0.5842,
+                                "y": 0.6604
+                            },
+                            "uuid": "8e8414e3-2680-5ad3-8444-5023bd2afb11"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGMCU01 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 0.1778,
+                                "y": 3.67
+                            },
+                            "uuid": "72bf926f-d542-53e0-839f-cf2253042d65"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 0.0254 mm",
+                            "pos": {
+                                "x": 0.1778,
+                                "y": 3.67
+                            },
+                            "uuid": "84ffc767-d0c5-523a-b60f-21e75a5f8430"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 0.0254 mm",
+                            "pos": {
+                                "x": 0.1778,
+                                "y": 2.44
+                            },
+                            "uuid": "bcdef13a-aded-5b60-90e9-ec408d48628a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGDeb01 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 0.1778,
+                                "y": 2.44
+                            },
+                            "uuid": "e800f844-7ab2-5697-942f-9c0bbc30d3bf"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                }
+            ]
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865",
+            "violations": []
+        },
+        {
+            "path": "/MCU/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 19 [VDD, Power input, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.6604
+                            },
+                            "uuid": "ec05e2af-e8f5-5dde-980b-4daf1d94f4e5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 19 [VDD, Power input, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.6604
+                            },
+                            "uuid": "ec05e2af-e8f5-5dde-980b-4daf1d94f4e5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 32 [VDD, Power input, Line]",
+                            "pos": {
+                                "x": 0.5588,
+                                "y": 0.6604
+                            },
+                            "uuid": "5187176b-4c1d-50dd-b929-1f4152d96bf8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 32 [VDD, Power input, Line]",
+                            "pos": {
+                                "x": 0.5588,
+                                "y": 0.6604
+                            },
+                            "uuid": "5187176b-4c1d-50dd-b929-1f4152d96bf8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 48 [VDD, Power input, Line]",
+                            "pos": {
+                                "x": 0.5842,
+                                "y": 0.6604
+                            },
+                            "uuid": "cb7a2a69-0d88-50ef-8f44-1a9a0225a6f9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 48 [VDD, Power input, Line]",
+                            "pos": {
+                                "x": 0.5842,
+                                "y": 0.6604
+                            },
+                            "uuid": "cb7a2a69-0d88-50ef-8f44-1a9a0225a6f9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                }
+            ]
+        },
+        {
+            "path": "/Radio/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/797ed2d7-f26a-5324-8d20-a644f401b7c5",
+            "violations": []
+        },
+        {
+            "path": "/Navigation/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/b7be4430-1eb4-5f2b-9d93-98132a937546",
+            "violations": [
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.3876,
+                                "y": 0.762
+                            },
+                            "uuid": "fba238bc-3165-5f59-abd1-e6d476df589a"
+                        },
+                        {
+                            "description": "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 1.143,
+                                "y": 3.67
+                            },
+                            "uuid": "bef86b03-b038-5d27-9003-7ad94f8169b0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/Actuators/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31",
+            "violations": []
+        },
+        {
+            "path": "/Debug/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/d1e55589-9ee7-5c35-ba90-3e096ceac45d",
+            "violations": []
+        }
+    ],
+    "source": "LoRa_Boat_Controller_V2.kicad_sch"
+}

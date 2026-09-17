@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-09-17T21:13:53.9143884Z",
+  "purpose": "Pinned V1 schematic-only inputs; byte-for-byte copies of existing local reconstruction outputs, not a new Allegro reconstruction or qualification",
+  "captures": [
+    {
+      "file": "v5_board.json",
+      "captured_from": "hardware/kicad/_build/v5_board.json",
+      "bytes": 1551200,
+      "sha256": "5ef6d37102bd897c5ab034fac6fbe5d5b5c5fd1254287ee41eb0547f6fa0e332"
+    },
+    {
+      "file": "netmap.json",
+      "captured_from": "hardware/kicad/_build/netmap.json",
+      "bytes": 753,
+      "sha256": "b9f5502f8c0e06aab989e1558b25aba334c8a6395102dbcc328f358ce43b54e9"
+    },
+    {
+      "file": "mpn.json",
+      "captured_from": "hardware/kicad/_build/mpn.json",
+      "bytes": 10289,
+      "sha256": "562a77f4bb8fe16a66fae147634b8d1c4b09d1baf31e9ea3157d1ea49178fe38"
+    }
+  ],
+  "provenance": {
+    "v5_board.json": "Existing output of hardware/kicad/tools/v5_reconstruct.py; see embedded source metadata and docs/A0_PROVENANCE.md",
+    "netmap.json": "Existing output of hardware/kicad/tools/gen_pcb.py mapping Allegro names to KiCad net names",
+    "mpn.json": "Existing output of hardware/kicad/tools/gen_bom.py derived from its research table; conflicts and provisional selections remain"
+  },
+  "limitations": [
+    "No upstream converter rerun was performed during capture",
+    "Original Allegro source files were read-only and are not replaced by this convenience snapshot",
+    "MPN price/confidence fields are historical research, not current procurement or qualification evidence"
+  ]
+}

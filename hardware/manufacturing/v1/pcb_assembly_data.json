@@ -1,0 +1,2562 @@
+{
+  "origin_board_mm": [
+    61.8492,
+    61.773
+  ],
+  "dimensions_mm": [
+    66.548,
+    37.3126
+  ],
+  "footprints": {
+    "R1": {
+      "reference": "R1",
+      "value": "15K",
+      "footprint": "LoRa_Boat_Controller:RC0402N_PAN-M",
+      "x": 14.579599999999992,
+      "y": 31.038800000000002,
+      "rotation": -90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 14.579599999999992,
+          "y": 30.38449599999999,
+          "w": 0.858774,
+          "h": 0.550672,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "FB_DIV",
+          "x": 14.579599999999992,
+          "y": 31.693103999999998,
+          "w": 0.858774,
+          "h": 0.550672,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "GND1": {
+      "reference": "GND1",
+      "value": "Battery-",
+      "footprint": "LoRa_Boat_Controller:amv_con1",
+      "x": 1.269999999999996,
+      "y": 34.1376,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 1.269999999999996,
+          "y": 34.1376,
+          "w": 1.599946,
+          "h": 1.599946,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 0.599948,
+          "drill_y": 0.599948
+        }
+      ]
+    },
+    "R2": {
+      "reference": "R2",
+      "value": "4.7K",
+      "footprint": "LoRa_Boat_Controller:RC0603N_YAG-M",
+      "x": 10.46479999999999,
+      "y": 30.454599999999992,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "FB_DIV",
+          "x": 10.46479999999999,
+          "y": 31.330899999999993,
+          "w": 0.9652,
+          "h": 0.8636,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 10.46479999999999,
+          "y": 29.57829999999999,
+          "w": 0.9652,
+          "h": 0.8636,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C14": {
+      "reference": "C14",
+      "value": "470pF",
+      "footprint": "LoRa_Boat_Controller:CAP_0603G_AVX-M",
+      "x": 12.623799999999996,
+      "y": 30.327599999999997,
+      "rotation": -90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 12.623799999999996,
+          "y": 29.42589999999999,
+          "w": 1.0668,
+          "h": 1.016,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "FB_DIV",
+          "x": 12.623799999999996,
+          "y": 31.229300000000002,
+          "w": 1.0668,
+          "h": 1.016,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "COUT1": {
+      "reference": "COUT1",
+      "value": "10uf",
+      "footprint": "LoRa_Boat_Controller:G-31_MUR-M",
+      "x": 22.6822,
+      "y": 26.6954,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 21.1582,
+          "y": 26.6954,
+          "w": 1.27,
+          "h": 1.651,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 24.206200000000003,
+          "y": 26.6954,
+          "w": 1.27,
+          "h": 1.651,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "JTAG1": {
+      "reference": "JTAG1",
+      "value": "FTSH-105-XX-X-DV",
+      "footprint": "LoRa_Boat_Controller:SAMTEC_FTSH-105-XX-X-DV",
+      "x": 45.211999999999996,
+      "y": 4.038599999999995,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 47.752,
+          "y": 2.003551999999999,
+          "w": 0.739902,
+          "h": 2.789936,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "SWDIO",
+          "x": 47.752,
+          "y": 6.073647999999999,
+          "w": 0.739902,
+          "h": 2.789936,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "GND",
+          "x": 46.48199999999999,
+          "y": 2.003551999999999,
+          "w": 0.739902,
+          "h": 2.789936,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "SWCLK",
+          "x": 46.48199999999999,
+          "y": 6.073647999999999,
+          "w": 0.739902,
+          "h": 2.789936,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "GND",
+          "x": 45.211999999999996,
+          "y": 2.003551999999999,
+          "w": 0.739902,
+          "h": 2.789936,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "6",
+          "net": "SWO_TDO",
+          "x": 45.211999999999996,
+          "y": 6.073647999999999,
+          "w": 0.739902,
+          "h": 2.789936,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "7",
+          "net": "",
+          "x": 43.942,
+          "y": 2.003551999999999,
+          "w": 0.739902,
+          "h": 2.789936,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "8",
+          "net": "TDI",
+          "x": 43.942,
+          "y": 6.073647999999999,
+          "w": 0.739902,
+          "h": 2.789936,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "9",
+          "net": "GND",
+          "x": 42.67199999999999,
+          "y": 2.003551999999999,
+          "w": 0.739902,
+          "h": 2.789936,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "10",
+          "net": "NRST",
+          "x": 42.67199999999999,
+          "y": 6.073647999999999,
+          "w": 0.739902,
+          "h": 2.789936,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C5": {
+      "reference": "C5",
+      "value": ".1uF",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "x": 42.163999999999994,
+      "y": 32.5374,
+      "rotation": 180.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 42.86249999999999,
+          "y": 32.5374,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 41.4655,
+          "y": 32.5374,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "CANHEADER1": {
+      "reference": "CANHEADER1",
+      "value": "CONN_B4B-XH-A",
+      "footprint": "LoRa_Boat_Controller:CONN_B4B-XH-A_JST",
+      "x": 53.16219999999999,
+      "y": 2.87019999999999,
+      "rotation": 180.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 53.16219999999999,
+          "y": 2.87019999999999,
+          "w": 1.7526,
+          "h": 1.7526,
+          "rotation": 180.0,
+          "circle": true,
+          "drill_x": 1.2446,
+          "drill_y": 1.2446
+        },
+        {
+          "number": "2",
+          "net": "CAN_VCC",
+          "x": 55.662068,
+          "y": 2.87019999999999,
+          "w": 1.7526,
+          "h": 1.7526,
+          "rotation": 180.0,
+          "circle": true,
+          "drill_x": 1.2446,
+          "drill_y": 1.2446
+        },
+        {
+          "number": "3",
+          "net": "CANH",
+          "x": 58.16219,
+          "y": 2.87019999999999,
+          "w": 1.7526,
+          "h": 1.7526,
+          "rotation": 180.0,
+          "circle": true,
+          "drill_x": 1.2446,
+          "drill_y": 1.2446
+        },
+        {
+          "number": "4",
+          "net": "CANL",
+          "x": 60.66231199999999,
+          "y": 2.87019999999999,
+          "w": 1.7526,
+          "h": 1.7526,
+          "rotation": 180.0,
+          "circle": true,
+          "drill_x": 1.2446,
+          "drill_y": 1.2446
+        }
+      ]
+    },
+    "CEXT1": {
+      "reference": "CEXT1",
+      "value": "4.7 uF",
+      "footprint": "LoRa_Boat_Controller:CAP_0603_CL10A_1P6XP8_SAM-M",
+      "x": 42.468799999999995,
+      "y": 25.7048,
+      "rotation": -90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VCAP1",
+          "x": 42.468799999999995,
+          "y": 24.8285,
+          "w": 1.0668,
+          "h": 0.9398,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 42.468799999999995,
+          "y": 26.5811,
+          "w": 1.0668,
+          "h": 0.9398,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "LORAMODULE1": {
+      "reference": "LORAMODULE1",
+      "value": "CONN5_1LFBN-RC",
+      "footprint": "LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL",
+      "x": 16.891,
+      "y": 19.81199999999999,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LORA_VCC",
+          "x": 16.891,
+          "y": 19.81199999999999,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "2",
+          "net": "LORA_TX_PA0",
+          "x": 19.43099999999999,
+          "y": 19.81199999999999,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "3",
+          "net": "LORA_RX_PA1",
+          "x": 21.970999999999997,
+          "y": 19.81199999999999,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "4",
+          "net": "LORA_RST_PA3",
+          "x": 24.511000000000003,
+          "y": 19.81199999999999,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "5",
+          "net": "GND",
+          "x": 27.050999999999995,
+          "y": 19.81199999999999,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        }
+      ]
+    },
+    "L1": {
+      "reference": "L1",
+      "value": "4.7uh",
+      "footprint": "LoRa_Boat_Controller:IND_7045_TDK",
+      "x": 24.358600000000003,
+      "y": 32.7152,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 24.358600000000003,
+          "y": 29.970222,
+          "w": 2.199894,
+          "h": 2.409952,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "SW_NODE",
+          "x": 24.358600000000003,
+          "y": 35.46017799999999,
+          "w": 2.199894,
+          "h": 2.409952,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "U6": {
+      "reference": "U6",
+      "value": "R1240N001x",
+      "footprint": "LoRa_Boat_Controller:SOT-23-6W_PE-SOT23-6W-0512_NMD",
+      "x": 11.811,
+      "y": 34.163000000000004,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "EN",
+          "x": 10.356850000000001,
+          "y": 33.21304,
+          "w": 0.9017,
+          "h": 0.5588,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "VIN_RAW",
+          "x": 10.356850000000001,
+          "y": 34.163000000000004,
+          "w": 0.9017,
+          "h": 0.5588,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "SW_NODE",
+          "x": 10.356850000000001,
+          "y": 35.112959999999994,
+          "w": 0.9017,
+          "h": 0.5588,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "BST",
+          "x": 13.265149999999998,
+          "y": 35.112959999999994,
+          "w": 0.9017,
+          "h": 0.5588,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "GND",
+          "x": 13.265149999999998,
+          "y": 34.163000000000004,
+          "w": 0.9017,
+          "h": 0.5588,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "6",
+          "net": "FB_DIV",
+          "x": 13.265149999999998,
+          "y": 33.21304,
+          "w": 0.9017,
+          "h": 0.5588,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R3": {
+      "reference": "R3",
+      "value": "51",
+      "footprint": "LoRa_Boat_Controller:RC0402N_YAG-M",
+      "x": 14.808199999999992,
+      "y": 34.4424,
+      "rotation": -90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "BST_RC",
+          "x": 14.808199999999992,
+          "y": 33.782000000000004,
+          "w": 0.8636,
+          "h": 0.5588,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "BST",
+          "x": 14.808199999999992,
+          "y": 35.102799999999995,
+          "w": 0.8636,
+          "h": 0.5588,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C9": {
+      "reference": "C9",
+      "value": ".1uF",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "x": 62.9158,
+      "y": 29.591,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 62.9158,
+          "y": 30.289499999999997,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 62.9158,
+          "y": 28.89249999999999,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C4": {
+      "reference": "C4",
+      "value": ".1uF",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "x": 36.82999999999999,
+      "y": 24.409399999999998,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 36.131499999999996,
+          "y": 24.409399999999998,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 37.5285,
+          "y": 24.409399999999998,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C7": {
+      "reference": "C7",
+      "value": ".1uF",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "x": 47.70119999999999,
+      "y": 11.7348,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 47.70119999999999,
+          "y": 12.433299999999996,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 47.70119999999999,
+          "y": 11.03629999999999,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "L4": {
+      "reference": "L4",
+      "value": "INDUCTOR",
+      "footprint": "LoRa_Boat_Controller:IND_BLM15_0402_MUR-L",
+      "x": 10.337799999999994,
+      "y": 21.10739999999999,
+      "rotation": 180.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 10.756899999999995,
+          "y": 21.10739999999999,
+          "w": 0.508,
+          "h": 0.508,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LORA_FILT",
+          "x": 9.918699999999994,
+          "y": 21.10739999999999,
+          "w": 0.508,
+          "h": 0.508,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "TP4": {
+      "reference": "TP4",
+      "value": "TEST POINT",
+      "footprint": "LoRa_Boat_Controller:amv_test_point",
+      "x": 4.470399999999991,
+      "y": 12.928599999999996,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 4.470399999999991,
+          "y": 12.928599999999996,
+          "w": 3.400044,
+          "h": 3.400044,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.400048,
+          "drill_y": 1.400048
+        }
+      ]
+    },
+    "C1": {
+      "reference": "C1",
+      "value": ".1uF",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "x": 52.6796,
+      "y": 7.3659999999999926,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 51.98109999999999,
+          "y": 7.3659999999999926,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "CAN_VCC",
+          "x": 53.378099999999996,
+          "y": 7.3659999999999926,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "TP1": {
+      "reference": "TP1",
+      "value": "TEST POINT",
+      "footprint": "LoRa_Boat_Controller:amv_test_point",
+      "x": 53.77179999999999,
+      "y": 17.094199999999994,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "PWM_PA8_ESCHDR",
+          "x": 53.77179999999999,
+          "y": 17.094199999999994,
+          "w": 3.400044,
+          "h": 3.400044,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.400048,
+          "drill_y": 1.400048
+        }
+      ]
+    },
+    "C6": {
+      "reference": "C6",
+      "value": ".1uF",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "x": 44.7802,
+      "y": 24.612599999999993,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 44.08169999999999,
+          "y": 24.612599999999993,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 45.478699999999996,
+          "y": 24.612599999999993,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C20": {
+      "reference": "C20",
+      "value": "10uF",
+      "footprint": "LoRa_Boat_Controller:G-21_MUR-L",
+      "x": 8.458199999999998,
+      "y": 20.26919999999999,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LORA_FILT",
+          "x": 8.458199999999998,
+          "y": 21.094699999999996,
+          "w": 0.6604,
+          "h": 1.1938,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 8.458199999999998,
+          "y": 19.4437,
+          "w": 0.6604,
+          "h": 1.1938,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C12": {
+      "reference": "C12",
+      "value": ".1uf",
+      "footprint": "LoRa_Boat_Controller:CAP_CL10_SAM-M",
+      "x": 16.535400000000003,
+      "y": 34.2138,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "SW_NODE",
+          "x": 16.535400000000003,
+          "y": 35.14318599999999,
+          "w": 0.858774,
+          "h": 0.8509,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "BST_RC",
+          "x": 16.535400000000003,
+          "y": 33.28441399999999,
+          "w": 0.858774,
+          "h": 0.8509,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R6": {
+      "reference": "R6",
+      "value": "10K",
+      "footprint": "LoRa_Boat_Controller:RES_1005_SAM-M",
+      "x": 3.581399999999995,
+      "y": 26.060399999999994,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 3.581399999999995,
+          "y": 26.71470399999999,
+          "w": 0.808736,
+          "h": 0.550672,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "ADC_VBAT",
+          "x": 3.581399999999995,
+          "y": 25.406095999999998,
+          "w": 0.808736,
+          "h": 0.550672,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R4": {
+      "reference": "R4",
+      "value": "5.1K",
+      "footprint": "LoRa_Boat_Controller:RC0402N_PAN-M",
+      "x": 6.0959999999999965,
+      "y": 26.87319999999999,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_RAW",
+          "x": 5.441696,
+          "y": 26.87319999999999,
+          "w": 0.858774,
+          "h": 0.550672,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "EN",
+          "x": 6.750303999999993,
+          "y": 26.87319999999999,
+          "w": 0.858774,
+          "h": 0.550672,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "TP5": {
+      "reference": "TP5",
+      "value": "TEST POINT",
+      "footprint": "LoRa_Boat_Controller:amv_test_point",
+      "x": 10.61719999999999,
+      "y": 12.928599999999996,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 10.61719999999999,
+          "y": 12.928599999999996,
+          "w": 3.400044,
+          "h": 3.400044,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.400048,
+          "drill_y": 1.400048
+        }
+      ]
+    },
+    "GPSMODULE1": {
+      "reference": "GPSMODULE1",
+      "value": "CONN5_1LFBN-RC",
+      "footprint": "LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL",
+      "x": 40.9194,
+      "y": 34.950399999999995,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 40.9194,
+          "y": 34.950399999999995,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 43.459399999999995,
+          "y": 34.950399999999995,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "3",
+          "net": "GPS_PB0",
+          "x": 45.9994,
+          "y": 34.950399999999995,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "4",
+          "net": "GPS_RX_PC11",
+          "x": 48.53939999999999,
+          "y": 34.950399999999995,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "5",
+          "net": "GPS_TX_PC10",
+          "x": 51.0794,
+          "y": 34.950399999999995,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        }
+      ]
+    },
+    "C8": {
+      "reference": "C8",
+      "value": ".1uF",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "x": 62.7126,
+      "y": 18.415,
+      "rotation": -90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 62.7126,
+          "y": 17.716500000000003,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 62.7126,
+          "y": 19.113499999999995,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C2": {
+      "reference": "C2",
+      "value": ".1uF",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "x": 30.886400000000002,
+      "y": 16.941799999999994,
+      "rotation": -90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 30.886400000000002,
+          "y": 16.243299999999998,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 30.886400000000002,
+          "y": 17.640300000000003,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "STEERINGSERVO1": {
+      "reference": "STEERINGSERVO1",
+      "value": "CONN_PPTC031",
+      "footprint": "LoRa_Boat_Controller:CONN_PPTC031_SUL",
+      "x": 60.248799999999996,
+      "y": 27.25419999999999,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 60.248799999999996,
+          "y": 27.25419999999999,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "2",
+          "net": "PWM_PC6_SERVOHDR",
+          "x": 60.248799999999996,
+          "y": 29.794199999999996,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "3",
+          "net": "GND",
+          "x": 60.248799999999996,
+          "y": 32.3342,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        }
+      ]
+    },
+    "C22": {
+      "reference": "C22",
+      "value": ".1uF",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "x": 13.512799999999991,
+      "y": 20.294599999999996,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 13.512799999999991,
+          "y": 20.99309999999999,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LORA_VCC",
+          "x": 13.512799999999991,
+          "y": 19.5961,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "U3": {
+      "reference": "U3",
+      "value": "STM32F4XXR2",
+      "footprint": "LoRa_Boat_Controller:LQFP64-10x10mm",
+      "x": 39.7764,
+      "y": 16.179799999999993,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VBAT",
+          "x": 34.02634799999999,
+          "y": 12.429743999999992,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "",
+          "x": 34.02634799999999,
+          "y": 12.929870000000001,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "",
+          "x": 34.02634799999999,
+          "y": 13.429741999999997,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "",
+          "x": 34.02634799999999,
+          "y": 13.929867999999992,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "",
+          "x": 34.02634799999999,
+          "y": 14.429740000000002,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "6",
+          "net": "",
+          "x": 34.02634799999999,
+          "y": 14.929865999999997,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "7",
+          "net": "NRST",
+          "x": 34.02634799999999,
+          "y": 15.429737999999993,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "8",
+          "net": "",
+          "x": 34.02634799999999,
+          "y": 15.929864000000002,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "9",
+          "net": "",
+          "x": 34.02634799999999,
+          "y": 16.429736,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "10",
+          "net": "",
+          "x": 34.02634799999999,
+          "y": 16.929861999999993,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "11",
+          "net": "",
+          "x": 34.02634799999999,
+          "y": 17.429734000000003,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "12",
+          "net": "GND",
+          "x": 34.02634799999999,
+          "y": 17.929859999999998,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "13",
+          "net": "+3V3",
+          "x": 34.02634799999999,
+          "y": 18.429731999999994,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "14",
+          "net": "LORA_TX_PA0",
+          "x": 34.02634799999999,
+          "y": 18.929858000000003,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "15",
+          "net": "LORA_RX_PA1",
+          "x": 34.02634799999999,
+          "y": 19.42973,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "16",
+          "net": "ADC_VBAT",
+          "x": 34.02634799999999,
+          "y": 19.929855999999994,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "17",
+          "net": "LORA_RST_PA3",
+          "x": 36.026344,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "18",
+          "net": "GND",
+          "x": 36.526469999999996,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "19",
+          "net": "+3V3",
+          "x": 37.02634199999999,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "20",
+          "net": "",
+          "x": 37.526468,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "21",
+          "net": "",
+          "x": 38.02634,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "22",
+          "net": "",
+          "x": 38.52646599999999,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "23",
+          "net": "",
+          "x": 39.026338,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "24",
+          "net": "",
+          "x": 39.526464,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "25",
+          "net": "",
+          "x": 40.02633599999999,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "26",
+          "net": "GPS_PB0",
+          "x": 40.526462,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "27",
+          "net": "",
+          "x": 41.026334,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "28",
+          "net": "",
+          "x": 41.52645999999999,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "29",
+          "net": "",
+          "x": 42.026332000000004,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "30",
+          "net": "VCAP1",
+          "x": 42.526458,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "31",
+          "net": "GND",
+          "x": 43.026329999999994,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "32",
+          "net": "+3V3",
+          "x": 43.526456,
+          "y": 21.92985199999999,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "33",
+          "net": "",
+          "x": 45.526452,
+          "y": 19.929855999999994,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "34",
+          "net": "",
+          "x": 45.526452,
+          "y": 19.42973,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "35",
+          "net": "",
+          "x": 45.526452,
+          "y": 18.929858000000003,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "36",
+          "net": "",
+          "x": 45.526452,
+          "y": 18.429731999999994,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "37",
+          "net": "PWM_PC6_SERVOHDR",
+          "x": 45.526452,
+          "y": 17.929859999999998,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "38",
+          "net": "",
+          "x": 45.526452,
+          "y": 17.429734000000003,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "39",
+          "net": "",
+          "x": 45.526452,
+          "y": 16.929861999999993,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "40",
+          "net": "",
+          "x": 45.526452,
+          "y": 16.429736,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "41",
+          "net": "PWM_PA8_ESCHDR",
+          "x": 45.526452,
+          "y": 15.929864000000002,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "42",
+          "net": "",
+          "x": 45.526452,
+          "y": 15.429737999999993,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "43",
+          "net": "CAN_RXD_PA10",
+          "x": 45.526452,
+          "y": 14.929865999999997,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "44",
+          "net": "CAN_STB_PA11",
+          "x": 45.526452,
+          "y": 14.429740000000002,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "45",
+          "net": "CAN_TXD_PA12",
+          "x": 45.526452,
+          "y": 13.929867999999992,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "46",
+          "net": "SWDIO",
+          "x": 45.526452,
+          "y": 13.429741999999997,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "47",
+          "net": "GND",
+          "x": 45.526452,
+          "y": 12.929870000000001,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "48",
+          "net": "+3V3",
+          "x": 45.526452,
+          "y": 12.429743999999992,
+          "w": 1.1938,
+          "h": 0.3048,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "49",
+          "net": "SWCLK",
+          "x": 43.526456,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "50",
+          "net": "TDI",
+          "x": 43.026329999999994,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "51",
+          "net": "GPS_TX_PC10",
+          "x": 42.526458,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "52",
+          "net": "GPS_RX_PC11",
+          "x": 42.026332000000004,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "53",
+          "net": "",
+          "x": 41.52645999999999,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "54",
+          "net": "",
+          "x": 41.026334,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "55",
+          "net": "SWO_TDO",
+          "x": 40.526462,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "56",
+          "net": "",
+          "x": 40.02633599999999,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "57",
+          "net": "",
+          "x": 39.526464,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "58",
+          "net": "",
+          "x": 39.026338,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "59",
+          "net": "",
+          "x": 38.52646599999999,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "60",
+          "net": "",
+          "x": 38.02634,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "61",
+          "net": "",
+          "x": 37.526468,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "62",
+          "net": "",
+          "x": 37.02634199999999,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "63",
+          "net": "GND",
+          "x": 36.526469999999996,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "64",
+          "net": "+3V3",
+          "x": 36.026344,
+          "y": 10.429747999999996,
+          "w": 0.3048,
+          "h": 1.1938,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C3": {
+      "reference": "C3",
+      "value": ".1uF",
+      "footprint": "LoRa_Boat_Controller:CAP_KGM21_KAV-L",
+      "x": 35.91559999999999,
+      "y": 8.737599999999993,
+      "rotation": 180.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 36.6141,
+          "y": 8.737599999999993,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 35.217099999999995,
+          "y": 8.737599999999993,
+          "w": 0.9144,
+          "h": 1.1938,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "VIN1": {
+      "reference": "VIN1",
+      "value": "Battery+",
+      "footprint": "LoRa_Boat_Controller:amv_con1",
+      "x": 1.269999999999996,
+      "y": 29.3624,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_RAW",
+          "x": 1.269999999999996,
+          "y": 29.3624,
+          "w": 1.599946,
+          "h": 1.599946,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 0.599948,
+          "drill_y": 0.599948
+        }
+      ]
+    },
+    "TP3": {
+      "reference": "TP3",
+      "value": "TEST POINT",
+      "footprint": "LoRa_Boat_Controller:amv_test_point",
+      "x": 53.6448,
+      "y": 20.980399999999996,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "PWM_PC6_SERVOHDR",
+          "x": 53.6448,
+          "y": 20.980399999999996,
+          "w": 3.400044,
+          "h": 3.400044,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.400048,
+          "drill_y": 1.400048
+        }
+      ]
+    },
+    "SPEEDCONTROLLER1": {
+      "reference": "SPEEDCONTROLLER1",
+      "value": "CONN_PPTC031",
+      "footprint": "LoRa_Boat_Controller:CONN_PPTC031_SUL",
+      "x": 60.198,
+      "y": 21.3106,
+      "rotation": -90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 60.198,
+          "y": 21.3106,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 270.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "2",
+          "net": "PWM_PA8_ESCHDR",
+          "x": 60.198,
+          "y": 18.770599999999995,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 270.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "3",
+          "net": "GND",
+          "x": 60.198,
+          "y": 16.230600000000003,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 270.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        }
+      ]
+    },
+    "U5": {
+      "reference": "U5",
+      "value": "TCAN1042H-Q1D",
+      "footprint": "LoRa_Boat_Controller:D0008A_L",
+      "x": 56.972199999999994,
+      "y": 10.032999999999994,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "CAN_TXD_PA12",
+          "x": 55.06719999999999,
+          "y": 12.658089999999994,
+          "w": 1.249934,
+          "h": 0.54991,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 56.3372,
+          "y": 12.658089999999994,
+          "w": 1.249934,
+          "h": 0.54991,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "CAN_VCC",
+          "x": 57.6072,
+          "y": 12.658089999999994,
+          "w": 1.249934,
+          "h": 0.54991,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "CAN_RXD_PA10",
+          "x": 58.877199999999995,
+          "y": 12.658089999999994,
+          "w": 1.249934,
+          "h": 0.54991,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "",
+          "x": 58.877199999999995,
+          "y": 7.407909999999994,
+          "w": 1.249934,
+          "h": 0.54991,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "6",
+          "net": "CANL",
+          "x": 57.6072,
+          "y": 7.407909999999994,
+          "w": 1.249934,
+          "h": 0.54991,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "7",
+          "net": "CANH",
+          "x": 56.3372,
+          "y": 7.407909999999994,
+          "w": 1.249934,
+          "h": 0.54991,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "8",
+          "net": "CAN_STB_PA11",
+          "x": 55.06719999999999,
+          "y": 7.407909999999994,
+          "w": 1.249934,
+          "h": 0.54991,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "D21": {
+      "reference": "D21",
+      "value": "DIODE_MFLAT",
+      "footprint": "LoRa_Boat_Controller:M-FLAT_TOS-L",
+      "x": 18.846799999999995,
+      "y": 33.7058,
+      "rotation": -90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 18.846799999999995,
+          "y": 31.635699999999993,
+          "w": 0.9652,
+          "h": 1.8034,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "SW_NODE",
+          "x": 18.846799999999995,
+          "y": 35.7759,
+          "w": 0.9652,
+          "h": 1.8034,
+          "rotation": 270.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C23": {
+      "reference": "C23",
+      "value": "47pF",
+      "footprint": "LoRa_Boat_Controller:CAP_GJM1555C1H220JB01__MUR-L",
+      "x": 14.681199999999997,
+      "y": 20.1676,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 14.681199999999997,
+          "y": 20.5867,
+          "w": 0.508,
+          "h": 0.508,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LORA_VCC",
+          "x": 14.681199999999997,
+          "y": 19.7485,
+          "w": 0.508,
+          "h": 0.508,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "L3": {
+      "reference": "L3",
+      "value": "INDUCTOR",
+      "footprint": "LoRa_Boat_Controller:IND_BLM15_0402_MUR-L",
+      "x": 10.261599999999994,
+      "y": 19.43099999999999,
+      "rotation": 180.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LORA_VCC",
+          "x": 10.680699999999995,
+          "y": 19.43099999999999,
+          "w": 0.508,
+          "h": 0.508,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 9.842499999999994,
+          "y": 19.43099999999999,
+          "w": 0.508,
+          "h": 0.508,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C21": {
+      "reference": "C21",
+      "value": "10uF",
+      "footprint": "LoRa_Boat_Controller:G-21_MUR-L",
+      "x": 11.91259999999999,
+      "y": 20.26919999999999,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 11.91259999999999,
+          "y": 21.094699999999996,
+          "w": 0.6604,
+          "h": 1.1938,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LORA_VCC",
+          "x": 11.91259999999999,
+          "y": 19.4437,
+          "w": 0.6604,
+          "h": 1.1938,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R5": {
+      "reference": "R5",
+      "value": "30K",
+      "footprint": "LoRa_Boat_Controller:RES_R0805_ROM-M",
+      "x": 1.346199999999996,
+      "y": 25.984199999999994,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_RAW",
+          "x": 1.346199999999996,
+          "y": 26.8859,
+          "w": 0.9144,
+          "h": 1.397,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "ADC_VBAT",
+          "x": 1.346199999999996,
+          "y": 25.082500000000003,
+          "w": 0.9144,
+          "h": 1.397,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C10": {
+      "reference": "C10",
+      "value": "4.7uF",
+      "footprint": "LoRa_Boat_Controller:CAP_0603_CL10A_1P6XP8_SAM-M",
+      "x": 37.0332,
+      "y": 27.10179999999999,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 36.1569,
+          "y": 27.10179999999999,
+          "w": 1.0668,
+          "h": 0.9398,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 37.9095,
+          "y": 27.10179999999999,
+          "w": 1.0668,
+          "h": 0.9398,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "CIN1": {
+      "reference": "CIN1",
+      "value": "10uF",
+      "footprint": "LoRa_Boat_Controller:CAP_NTS_55_2P8T_NIP",
+      "x": 5.664200000000001,
+      "y": 31.775399999999998,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 5.664200000000001,
+          "y": 34.35349999999999,
+          "w": 1.651,
+          "h": 5.4102,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "VIN_RAW",
+          "x": 5.664200000000001,
+          "y": 29.19729999999999,
+          "w": 1.651,
+          "h": 5.4102,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    }
+  },
+  "kicad_version": "9.0.7",
+  "coordinate_note": "Origin = upper-left Edge.Cuts centerline corner (stroke excluded); +X right, +Y down as viewed from top. Rotations are raw KiCad angles, not assembler-normalized rotations."
+}

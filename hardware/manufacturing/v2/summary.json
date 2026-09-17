@@ -1,0 +1,29 @@
+{
+  "release_state": "NOT_RELEASED",
+  "reason": "V2 vehicle-node design draft: not fabrication released; routing/electrical/firmware/assembly review remains. Handheld hardware is not included.",
+  "footprints": 118,
+  "bom_total_row_excluded": true,
+  "source_total": 118,
+  "counts_by_reference": {
+    "CANDIDATE": 90,
+    "HOLD": 17,
+    "BOARD_FEATURE": 11
+  },
+  "candidate_order_lines": 49,
+  "selected_boards": 1,
+  "candidate_quantity_selected": 90,
+  "candidate_quantity_fleet5": 450,
+  "board_dimensions_mm": [
+    80.0,
+    46.0
+  ],
+  "board_origin_mm": [
+    50.0,
+    50.0
+  ],
+  "bom_pcb_reference_match": true,
+  "footprint_mapping_mismatches": [],
+  "drc_rerun": false,
+  "physical_package_orientation_verified": false,
+  "kicad_version": "9.0.7"
+}

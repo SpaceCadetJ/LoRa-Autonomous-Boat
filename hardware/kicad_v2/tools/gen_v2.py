@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """gen_v2.py - Generate the V2 KiCad 9 project from v2_design.py.
   python gen_v2.py bom   -> docs/BOM_V2.csv (grouped by MPN, qty-1 catalogue prices)
-  python gen_v2.py sch   -> LoRa_Boat_Controller_V2.kicad_sym / .pretty (project parts), the 6 sub-sheets + root sheet, .kicad_pro
+  python gen_v2.py sch   -> only the 6 sub-sheets + root schematic and schematic-path bookkeeping; preserves PCB/project/BOM
   python gen_v2.py pcb   -> LoRa_Boat_Controller_V2.kicad_pcb: outline, mounting holes, every footprint from the KiCad/V1/V2
                             libraries embedded with its nets, GND zones on both layers, LoRa keep-out.  Unrouted; route_v2.py routes it.
   python gen_v2.py check -> pin/net consistency of v2_design.py against the library symbols (also run by 'sch')
+  python gen_v2.py all   -> libraries, schematic, project, unrouted PCB and BOM; explicitly destructive to existing routing
 Reuses hardware/kicad/tools (kicad_sym.py, gen_sch.Sheet, kicad_write).  Run from repo root.
 """
 import os, sys, json, re, glob
@@ -120,95 +121,9 @@ def write_project_lib():
 
 # ----------------------------------------------------------------------------------------------
 def gen_schematic(pin_net, syms):
-    gen_sch.POWER_NETS = {k: (lib_path(v[0]) if v[0] in (D.V1LIB, PROJ, 'LoRa_Boat_Controller') else v[0], v[1], v[2]) for k, v in D.POWER_NETS.items()}
-    root_uuid = uid('sch', PROJ, 'root')
-    net_sheets = {}
-    for ref, pins in pin_net.items():
-        for num, net in pins.items():
-            net_sheets.setdefault(net, set()).add(D.PARTS[ref][5])
-    sheets = []
-    paths = {}
-    for (name, file, paper, descr) in D.SHEETS:
-        refs = [r for r in D.PARTS if D.PARTS[r][5] == name]
-        sh = gen_sch.Sheet(name, file, paper, descr, refs, ref_fn=lambda r: r, uuid_fn=lambda r: uid('sch', PROJ, r), proj=PROJ,
-                           title='LoRa Autonomous Boat Controller V2')
-        W, H = gen_sch.PAPER[paper]
-        sh.text(f'{name}: {descr}', 12.7, 12.7, 1.5)
-        x0, y0 = 12.7 + gen_sch.LABEL_ROOM, 25.4
-        cx, cy, row_h = x0, y0, 0.0
-        for ref in refs:
-            lib, sname = D.PARTS[ref][0]; fp, value, mpn, mfr, _, descr_p = D.PARTS[ref][1:7]
-            sym = syms[ref]
-            if not sym['pins']:
-                continue   # mounting holes: no symbol needed on the sheet (they are footprint-only); keep in BOM via PCB
-            bb = ks.symbol_bbox(sym['tree'])
-            w = (bb[2] - bb[0]) + 2 * gen_sch.LABEL_ROOM
-            h = (bb[3] - bb[1]) + 2 * gen_sch.STUB + 10.0
-            if cx + w > W - 12.7:
-                cx, cy, row_h = x0, cy + row_h, 0.0
-            sx = round((cx + gen_sch.LABEL_ROOM - bb[0]) / gen_sch.G) * gen_sch.G
-            sy = round((cy + gen_sch.STUB + 5.0 + bb[3]) / gen_sch.G) * gen_sch.G
-            pn = {p['number']: pin_net[ref].get(p['number']) for p in sym['pins']}
-            props = {'Footprint': fp, 'Datasheet': '', 'Description': descr_p, 'MPN': mpn, 'Manufacturer': mfr}
-            for p in sym['tree']:
-                if isinstance(p, list) and p and p[0] == 'property' and str(p[1]) == 'Datasheet' and str(p[2]):
-                    props['Datasheet'] = str(p[2])
-            sh.place(ref, sym, sx, sy, value, props, pn, net_sheets, root_uuid)
-            paths[ref] = f'/{sh.uuid}/{uid("sch", PROJ, ref)}'
-            cx += w; row_h = max(row_h, h)
-        if name == 'Power':
-            fx, fy = W - 70.0, H - 40.0
-            for i, net in enumerate(('VIN_RAW', '+3V3', 'VSERVO', 'GND', 'VIN_BUCK')):
-                x = round((fx + 15 * i) / gen_sch.G) * gen_sch.G; y = round(fy / gen_sch.G) * gen_sch.G
-                flag = ks.load_symbol('power', 'PWR_FLAG'); sh.add_lib(flag)
-                sh.items.append(sh._symbol(str(flag['tree'][1]), x, y, 0, f'#FLG{i + 1:02d}', 'PWR_FLAG', {}, flag, root_uuid, power=True))
-                sh.wire(x, y, x, y + gen_sch.G)
-                if net in gen_sch.POWER_NETS:
-                    sh.power(net, x, y + gen_sch.G, 0 if net == 'GND' else 180, root_uuid)
-                else:
-                    sh.label(net, x, y + gen_sch.G, 270, 'label')
-            sh.text('PWR_FLAG: VIN_RAW is sourced through Q1 (passive), +3V3 through L1, VSERVO through D4/D9, VIN_BUCK through the shunt R33', fx - 30, fy + 12, 1.0)
-        if name == 'MCU':
-            flag = ks.load_symbol('power', 'PWR_FLAG'); sh.add_lib(flag)
-            x, y = round((W - 50) / gen_sch.G) * gen_sch.G, round((H - 30) / gen_sch.G) * gen_sch.G
-            sh.items.append(sh._symbol(str(flag['tree'][1]), x, y, 0, '#FLG06', 'PWR_FLAG', {}, flag, root_uuid, power=True))
-            sh.wire(x, y, x, y + gen_sch.G); sh.label('VDDA', x, y + gen_sch.G, 270, 'label')
-            sh.text('PWR_FLAG: VDDA is fed through ferrite FB1', x - 20, y + 10, 1.0)
-        if name == 'Debug':
-            flag = ks.load_symbol('power', 'PWR_FLAG'); sh.add_lib(flag)
-            x, y = round((W - 50) / gen_sch.G) * gen_sch.G, round((H - 40) / gen_sch.G) * gen_sch.G
-            sh.items.append(sh._symbol(str(flag['tree'][1]), x, y, 0, '#FLG05', 'PWR_FLAG', {}, flag, root_uuid, power=True))
-            sh.wire(x, y, x, y + gen_sch.G); sh.power('VBUS', x, y + gen_sch.G, 180, root_uuid)
-        sheets.append(sh)
-    # root
-    root = gen_sch.Sheet('Root', PROJ + '.kicad_sch', 'A3', 'V2 top level', [], ref_fn=lambda r: r, uuid_fn=lambda r: uid('sch', PROJ, r), proj=PROJ, title='LoRa Autonomous Boat Controller V2')
-    root.text('LoRa Autonomous Boat Controller V2 - draft generated from hardware/kicad_v2/tools/v2_design.py. Requirements: docs/V2_REQUIREMENTS.md; decisions: BLOCKERS.md', 12.7, 12.7, 2.0)
-    root.text('Global power: GND, +3V3, VIN_RAW, VSERVO, VBUS. Every other inter-sheet net enters through the sheet pins.', 12.7, 17.78, 1.27)
-    blocks = []
-    cols = 3; gx, gy = 130.0, 25.4
-    for i, sh in enumerate(sheets):
-        hier = sorted(sh.hier)
-        h = max(25.4, gen_sch.G * (len(hier) + 2)); w = 76.2
-        col, row = i % cols, i // cols
-        x = round((25.4 + col * gx) / gen_sch.G) * gen_sch.G
-        y = round((gy + row * 130.0) / gen_sch.G) * gen_sch.G
-        pins = ''
-        for k, net in enumerate(hier):
-            py = y + gen_sch.G * (k + 1)
-            pins += f'\n\t\t(pin "{esc(net)}" passive\n\t\t\t(at {f(x)} {f(py)} 180)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify right)\n\t\t\t)\n\t\t\t(uuid "{uid("sheetpin", PROJ, sh.name, net)}")\n\t\t)'
-            root.wire(x, py, x - 2 * gen_sch.G, py)
-            root.label(net, x - 2 * gen_sch.G, py, 180, 'label')
-        blocks.append(f'\t(sheet\n\t\t(at {f(x)} {f(y)})\n\t\t(size {f(w)} {f(h)})\n\t\t(exclude_from_sim no)\n\t\t(in_bom yes)\n\t\t(on_board yes)\n\t\t(dnp no)\n\t\t(fields_autoplaced yes)\n\t\t(stroke\n\t\t\t(width 0.1524)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill\n\t\t\t(color 0 0 0 0.0000)\n\t\t)\n\t\t(uuid "{sh.uuid}")\n'
-                      f'\t\t(property "Sheetname" "{sh.name}"\n\t\t\t(at {f(x)} {f(y - 0.7116)} 0)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify left bottom)\n\t\t\t)\n\t\t)\n'
-                      f'\t\t(property "Sheetfile" "{sh.file}"\n\t\t\t(at {f(x)} {f(y + h + 0.5846)} 0)\n\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t\t(justify left top)\n\t\t\t)\n\t\t){pins}\n'
-                      f'\t\t(instances\n\t\t\t(project "{PROJ}"\n\t\t\t\t(path "/{root_uuid}"\n\t\t\t\t\t(page "{i + 2}")\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t)')
-        root.text(sh.descr, x, y + h + 6.0, 0.9)
-    open(os.path.join(V2DIR, root.file), 'w', encoding='utf-8', newline='\n').write(root.render(root_uuid, root=True, sheets_block='\n'.join(blocks)))
-    for sh in sheets:
-        open(os.path.join(V2DIR, sh.file), 'w', encoding='utf-8', newline='\n').write(sh.render(root_uuid))
-    json.dump({'root_uuid': root_uuid, 'sheet_uuid': {sh.name: sh.uuid for sh in sheets}, 'paths': paths}, open(os.path.join(BUILD, 'sch_paths.json'), 'w'), indent=1)
-    print('wrote root +', len(sheets), 'sheets;', len(paths), 'symbols; hierarchical nets:', sum(len(sh.hier) for sh in sheets))
-    return paths
+    from schematic_layout import generate_v2
+    return generate_v2(sys.modules[__name__], pin_net, syms)
+
 
 # ----------------------------------------------------------------------------------------------
 def find_footprint_file(fpid):
@@ -383,21 +298,33 @@ def gen_bom():
 
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'all'
-    write_project_lib()
+    if cmd not in ('check', 'bom', 'sch', 'pcb', 'all'):
+        raise SystemExit('Usage: gen_v2.py check|bom|sch|pcb|all')
+    # Read-only commands do not rewrite libraries, project settings, BOM or PCB.
+    if cmd == 'bom':
+        gen_bom()
+        return
     pin_net, syms, errors = resolve_pins()
     if errors:
-        print('DESIGN ERRORS:'); [print('  ', e) for e in errors]
-        if cmd != 'check':
-            sys.exit(1)
-    print(f'{len(D.PARTS)} parts, {len(D.NETS)} nets, {sum(len(v) for v in pin_net.values())} connected pins, errors {len(errors)}')
+        raise SystemExit('DESIGN ERRORS: ' + '; '.join(errors))
+    print(f'{len(D.PARTS)} parts, {len(D.NETS)} nets, {sum(len(v) for v in pin_net.values())} connected pins')
     if cmd == 'check':
         return
-    if cmd == 'bom':
-        gen_bom(); return
+    if cmd == 'sch':
+        gen_schematic(pin_net, syms)
+        return
+    if cmd == 'pcb':
+        paths = {ref: f'/{uid("sch", PROJ, "sheet", part[5])}/{uid("sch", PROJ, ref)}'
+                 for ref, part in D.PARTS.items() if syms[ref]['pins']}
+        gen_pcb(pin_net, paths)
+        return
+    # Explicit full regeneration is intentionally separate from presentation updates.
+    write_project_lib()
     paths = gen_schematic(pin_net, syms)
     gen_project()
     gen_pcb(pin_net, paths)
     gen_bom()
+
 
 if __name__ == '__main__':
     main()

@@ -1,0 +1,32 @@
+{
+  "scope": "V1 connector atlas evidence snapshot; not a fresh CAD validation",
+  "preserved_on": "2026-09-17",
+  "observed_repository_head": "a6316e9",
+  "prior_atlas_generated_at": "2026-09-17T16:38:39.365348+00:00",
+  "release_context": "Primary released V1 review inputs at 639e08f in HANDOFF.md. Exact generation commit is not asserted for these build artifacts.",
+  "method": "Copied original bytes only after matching the SHA-256 and byte counts in the previously generated pm/data/connectors.json. No primary generator was run.",
+  "artifacts": [
+    {
+      "path": "docs/atlas/evidence/v1-netmap.json",
+      "original_path": "hardware/kicad/_build/netmap.json",
+      "sha256": "b9f5502f8c0e06aab989e1558b25aba334c8a6395102dbcc328f358ce43b54e9",
+      "bytes": 753,
+      "role": "Readable V1 net-name mapping used by the first connector atlas"
+    },
+    {
+      "path": "docs/atlas/evidence/v1-netlist.xml",
+      "original_path": "hardware/kicad/_build/netlist.xml",
+      "sha256": "d16588c8f579a2a2324b6d6d940b7e0dc2e861f66a75ea191dab4e3c3811a68a",
+      "bytes": 105171,
+      "role": "Exported V1 schematic connectivity used by the first connector atlas",
+      "export_date": "2026-09-16T20:19:46-0500",
+      "export_tool": "Eeschema 9.0.7"
+    }
+  ],
+  "limits": [
+    "This preserves the original atlas evidence; it is not a refreshed export from current CAD.",
+    "The XML includes historical absolute source/library paths as metadata. The atlas does not resolve them or require those local paths.",
+    "Other atlas inputs remain repository source files and can change; rerun generation after a reviewed source change.",
+    "No V2 connectors, physical orientation, bench measurements, or hardware sign-off are provided."
+  ]
+}

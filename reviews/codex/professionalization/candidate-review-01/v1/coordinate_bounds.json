@@ -1,0 +1,82 @@
+{
+  "CAN_Bus.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 69,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "Debug.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 40,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "GPS_Module.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 27,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "LoRa_Boat_Controller.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 121,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "LoRa_Module.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 88,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "MCU.kicad_sch": {
+    "page_mm": [
+      594,
+      420
+    ],
+    "checked_anchors_and_corners": 214,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "PowerSupply.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 185,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "PWM_Outputs.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 50,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  }
+}

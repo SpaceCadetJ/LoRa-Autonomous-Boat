@@ -1,0 +1,354 @@
+{
+ "C1": {
+  "MPN": "KGM21NR71H104KT",
+  "Manufacturer": "Kyocera AVX",
+  "Description": "0.1 uF 10% 50 V X7R MLCC 0805",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "C2": {
+  "MPN": "KGM21NR71H104KT",
+  "Manufacturer": "Kyocera AVX",
+  "Description": "0.1 uF 10% 50 V X7R MLCC 0805",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "C3": {
+  "MPN": "KGM21NR71H104KT",
+  "Manufacturer": "Kyocera AVX",
+  "Description": "0.1 uF 10% 50 V X7R MLCC 0805",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "C4": {
+  "MPN": "KGM21NR71H104KT",
+  "Manufacturer": "Kyocera AVX",
+  "Description": "0.1 uF 10% 50 V X7R MLCC 0805",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "C5": {
+  "MPN": "KGM21NR71H104KT",
+  "Manufacturer": "Kyocera AVX",
+  "Description": "0.1 uF 10% 50 V X7R MLCC 0805",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "C6": {
+  "MPN": "KGM21NR71H104KT",
+  "Manufacturer": "Kyocera AVX",
+  "Description": "0.1 uF 10% 50 V X7R MLCC 0805",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "C7": {
+  "MPN": "KGM21NR71H104KT",
+  "Manufacturer": "Kyocera AVX",
+  "Description": "0.1 uF 10% 50 V X7R MLCC 0805",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "C8": {
+  "MPN": "KGM21NR71H104KT",
+  "Manufacturer": "Kyocera AVX",
+  "Description": "0.1 uF 10% 50 V X7R MLCC 0805",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "C9": {
+  "MPN": "KGM21NR71H104KT",
+  "Manufacturer": "Kyocera AVX",
+  "Description": "0.1 uF 10% 50 V X7R MLCC 0805",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "C22": {
+  "MPN": "KGM21NR71H104KT",
+  "Manufacturer": "Kyocera AVX",
+  "Description": "0.1 uF 10% 50 V X7R MLCC 0805",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "C10": {
+  "MPN": "CL10A475KP8NNNC",
+  "Manufacturer": "Samsung Electro-Mechanics",
+  "Description": "4.7 uF 10% 10 V X5R MLCC 0603 (design gives CL10A + 0603 only; 10 V chosen)",
+  "Confidence": "MEDIUM",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "CEXT": {
+  "MPN": "CL10A475KP8NNNC",
+  "Manufacturer": "Samsung Electro-Mechanics",
+  "Description": "4.7 uF 10% 10 V X5R MLCC 0603 (design gives CL10A + 0603 only; 10 V chosen)",
+  "Confidence": "MEDIUM",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "C12": {
+  "MPN": "CL10B104KB8NNNC",
+  "Manufacturer": "Samsung Electro-Mechanics",
+  "Description": "0.1 uF 10% 50 V X7R MLCC 0603 (design gives CL10 + 0603 only)",
+  "Confidence": "MEDIUM",
+  "Price_qty1_USD": 0.16,
+  "Source": "Mouser"
+ },
+ "C14": {
+  "MPN": "06035A471JAT2A",
+  "Manufacturer": "Kyocera AVX",
+  "Description": "470 pF 5% 50 V C0G MLCC 0603 (global PN KGM15ACG1H471JT)",
+  "Confidence": "MEDIUM",
+  "Price_qty1_USD": 0.12,
+  "Source": "Mouser"
+ },
+ "C20": {
+  "MPN": "GRM21BR61C106KE15L",
+  "Manufacturer": "Murata",
+  "Description": "10 uF 10% 16 V X5R MLCC 0805 (design gives GRM21 only)",
+  "Confidence": "MEDIUM",
+  "Price_qty1_USD": 0.12,
+  "Source": "Mouser"
+ },
+ "C21": {
+  "MPN": "GRM21BR61C106KE15L",
+  "Manufacturer": "Murata",
+  "Description": "10 uF 10% 16 V X5R MLCC 0805 (design gives GRM21 only)",
+  "Confidence": "MEDIUM",
+  "Price_qty1_USD": 0.12,
+  "Source": "Mouser"
+ },
+ "C23": {
+  "MPN": "GJM1555C1H220JB01D",
+  "Manufacturer": "Murata",
+  "Description": "22 pF 5% 50 V C0G MLCC 0402 - NOTE: device name encodes 22 pF, schematic value says 47 pF (GJM1555C1H470JB01D); resolve",
+  "Confidence": "HIGH (MPN) / value conflict",
+  "Price_qty1_USD": 0.15,
+  "Source": "Mouser"
+ },
+ "CIN": {
+  "MPN": "KTS500B106M55N0T00",
+  "Manufacturer": "Nippon Chemi-Con",
+  "Description": "10 uF 20% 50 V X7R MLCC 2220 (NTS series; not Kemet, not 1210)",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 4.37,
+  "Source": "Mouser"
+ },
+ "COUT": {
+  "MPN": "GRM31CR71E106KA12L",
+  "Manufacturer": "Murata",
+  "Description": "10 uF 10% 25 V X7R MLCC 1206 (design gives GRM31 only)",
+  "Confidence": "MEDIUM",
+  "Price_qty1_USD": 0.33,
+  "Source": "Mouser"
+ },
+ "D21": {
+  "MPN": "CMS06(TE12L,Q,M)",
+  "Manufacturer": "Toshiba",
+  "Description": "Schottky barrier diode 30 V 2 A, M-FLAT (buck catch diode)",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.88,
+  "Source": "Mouser"
+ },
+ "L1": {
+  "MPN": "SLF7045T-4R7M2R0-PF",
+  "Manufacturer": "TDK",
+  "Description": "4.7 uH 20% 2.0 A shielded power inductor 7x7x4.5 mm - EOL (TDK PCN 2024-07-30, last ship 2026-12-31); substitute VLS6045EX-4R7M-H needs a new footprint",
+  "Confidence": "HIGH (obsolete)",
+  "Price_qty1_USD": 0.37,
+  "Source": "Arrow residual stock"
+ },
+ "L3": {
+  "MPN": "BLM15AG601SN1D",
+  "Manufacturer": "Murata",
+  "Description": "Ferrite bead 600 ohm @100 MHz 300 mA 0402 - value not specified in the design (typical pick)",
+  "Confidence": "TBD",
+  "Price_qty1_USD": 0.1,
+  "Source": "Mouser"
+ },
+ "L4": {
+  "MPN": "BLM15AG601SN1D",
+  "Manufacturer": "Murata",
+  "Description": "Ferrite bead 600 ohm @100 MHz 300 mA 0402 - value not specified in the design (typical pick)",
+  "Confidence": "TBD",
+  "Price_qty1_USD": 0.1,
+  "Source": "Mouser"
+ },
+ "R1": {
+  "MPN": "ERJ-2RKF1502X",
+  "Manufacturer": "Panasonic",
+  "Description": "15 kohm 1% 0.1 W thick film 0402",
+  "Confidence": "MEDIUM",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "R2": {
+  "MPN": "RC0603FR-074K7L",
+  "Manufacturer": "Yageo",
+  "Description": "4.7 kohm 1% 0.1 W thick film 0603",
+  "Confidence": "MEDIUM",
+  "Price_qty1_USD": 0.1,
+  "Source": "Mouser"
+ },
+ "R3": {
+  "MPN": "RC0402FR-0751RL",
+  "Manufacturer": "Yageo",
+  "Description": "51 ohm 1% 1/16 W thick film 0402",
+  "Confidence": "MEDIUM",
+  "Price_qty1_USD": 0.11,
+  "Source": "Mouser"
+ },
+ "R4": {
+  "MPN": "ERJ-2RKF5101X",
+  "Manufacturer": "Panasonic",
+  "Description": "5.1 kohm 1% 0.1 W thick film 0402",
+  "Confidence": "MEDIUM",
+  "Price_qty1_USD": 0.1,
+  "Source": "Mouser"
+ },
+ "R5": {
+  "MPN": "RC0805FR-0730KL",
+  "Manufacturer": "Yageo",
+  "Description": "30 kohm 1% 0805 thick film (design intent ROHM MCR10EZPF3002, no longer orderable)",
+  "Confidence": "MEDIUM (substitute)",
+  "Price_qty1_USD": 0.1,
+  "Source": "estimate"
+ },
+ "R6": {
+  "MPN": "RC1005F103CS",
+  "Manufacturer": "Samsung Electro-Mechanics",
+  "Description": "10 kohm 1% 1/16 W thick film 0402",
+  "Confidence": "MEDIUM",
+  "Price_qty1_USD": 0.1,
+  "Source": "Digi-Key"
+ },
+ "U3": {
+  "MPN": "STM32F446RET6",
+  "Manufacturer": "STMicroelectronics",
+  "Description": "Arm Cortex-M4 180 MHz, 512 KB flash, 128 KB SRAM, LQFP-64 (TR = tape-and-reel of the same die)",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 10.57,
+  "Source": "Mouser"
+ },
+ "U5": {
+  "MPN": "TCAN1042HDRQ1",
+  "Manufacturer": "Texas Instruments",
+  "Description": "Automotive CAN FD transceiver, 5 V VCC, SOIC-8 (Mouser flags EOL; TI successor TCAN1044A-Q1)",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 2.19,
+  "Source": "Mouser"
+ },
+ "U6": {
+  "MPN": "R1240N001B-TR-FE",
+  "Manufacturer": "Nisshinbo Micro Devices (ex-Ricoh)",
+  "Description": "1.25 MHz asynchronous step-down DC/DC, 4.5-30 V in, 1.2 A, SOT-23-6W",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 1.77,
+  "Source": "Mouser"
+ },
+ "JTAG": {
+  "MPN": "FTSH-105-01-L-DV-K",
+  "Manufacturer": "Samtec",
+  "Description": "2x5 1.27 mm SMT header, keyed (ARM Cortex 10-pin debug)",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 1.24,
+  "Source": "Mouser"
+ },
+ "CANHEADER": {
+  "MPN": "B4B-XH-A(LF)(SN)",
+  "Manufacturer": "JST",
+  "Description": "XH 2.5 mm 4-position vertical through-hole header",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.21,
+  "Source": "Digi-Key"
+ },
+ "GPSMODULE": {
+  "MPN": "PPTC051LFBN-RC",
+  "Manufacturer": "Sullins Connector Solutions",
+  "Description": "1x5 2.54 mm female header, through-hole",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.38,
+  "Source": "Digi-Key"
+ },
+ "LORAMODULE": {
+  "MPN": "PPTC051LFBN-RC",
+  "Manufacturer": "Sullins Connector Solutions",
+  "Description": "1x5 2.54 mm female header, through-hole",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.38,
+  "Source": "Digi-Key"
+ },
+ "SPEEDCONTROLLER": {
+  "MPN": "PPTC031LFBN-RC",
+  "Manufacturer": "Sullins Connector Solutions",
+  "Description": "1x3 2.54 mm female header, through-hole",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.3,
+  "Source": "Digi-Key"
+ },
+ "STEERINGSERVO": {
+  "MPN": "PPTC031LFBN-RC",
+  "Manufacturer": "Sullins Connector Solutions",
+  "Description": "1x3 2.54 mm female header, through-hole",
+  "Confidence": "HIGH",
+  "Price_qty1_USD": 0.3,
+  "Source": "Digi-Key"
+ },
+ "TP1": {
+  "MPN": "",
+  "Manufacturer": "",
+  "Description": "Bare plated test-point pad 3.4 mm / 1.4 mm hole (no part; Keystone 5020 would need a footprint change)",
+  "Confidence": "TBD",
+  "Price_qty1_USD": 0.0,
+  "Source": "-"
+ },
+ "TP3": {
+  "MPN": "",
+  "Manufacturer": "",
+  "Description": "Bare plated test-point pad 3.4 mm / 1.4 mm hole (no part; Keystone 5020 would need a footprint change)",
+  "Confidence": "TBD",
+  "Price_qty1_USD": 0.0,
+  "Source": "-"
+ },
+ "TP4": {
+  "MPN": "",
+  "Manufacturer": "",
+  "Description": "Bare plated test-point pad 3.4 mm / 1.4 mm hole (no part; Keystone 5020 would need a footprint change)",
+  "Confidence": "TBD",
+  "Price_qty1_USD": 0.0,
+  "Source": "-"
+ },
+ "TP5": {
+  "MPN": "",
+  "Manufacturer": "",
+  "Description": "Bare plated test-point pad 3.4 mm / 1.4 mm hole (no part; Keystone 5020 would need a footprint change)",
+  "Confidence": "TBD",
+  "Price_qty1_USD": 0.0,
+  "Source": "-"
+ },
+ "VIN": {
+  "MPN": "",
+  "Manufacturer": "",
+  "Description": "Bare battery wire solder pad 1.6 mm / 0.6 mm hole (no part)",
+  "Confidence": "n/a",
+  "Price_qty1_USD": 0.0,
+  "Source": "-"
+ },
+ "GND": {
+  "MPN": "",
+  "Manufacturer": "",
+  "Description": "Bare battery wire solder pad 1.6 mm / 0.6 mm hole (no part)",
+  "Confidence": "n/a",
+  "Price_qty1_USD": 0.0,
+  "Source": "-"
+ }
+}

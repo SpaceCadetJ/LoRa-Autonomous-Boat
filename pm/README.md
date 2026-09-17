@@ -15,6 +15,7 @@ Then open <http://127.0.0.1:8765/pm/>. The server binds only to this computer, s
 - Overview: phases, evidence gates and the next review tasks.
 - Design: V1/V2 schematic sheets, available PCB renders, PDF drawings and source KiCad files. Choose a view and zoom to inspect it.
 - BOM: searchable V1/V2 parts, component details and selected manufacturer datasheets. An unmapped part explicitly says its exact datasheet is not yet linked. Prices are dated source estimates.
+- Build & program: V1/V2 ordering candidates, held and external parts, assembly maps, inspection steps, firmware build and separate programming procedures. The guides distinguish an unqualified V1 image from the absence of a V2 image.
 - Connector atlas: V1 connector pins, firmware cross-references, voltage expectations and known defects. Bench readings are expectations, not measurements.
 - Software: current source and proposed correction files, clearly separated from integrated firmware.
 - Verification: independent V1 checks, primary reports and input fingerprints.
@@ -23,6 +24,8 @@ Then open <http://127.0.0.1:8765/pm/>. The server binds only to this computer, s
 - Documents: searchable embedded documentation and the repository file map.
 
 ## Refresh evidence
+
+For the published edition, recorded firmware/primary reports are stored under `docs/build/evidence/`; V1 schematic generation has verified tracked inputs. Rebuilding the viewer no longer needs this workstation's ignored CAD/compiler caches. The current portable native snapshot is [publication/native-review](../reviews/codex/publication/QUALITY_PORTABILITY.md). Downloaded source archives can rebuild without Git, using a `source-archive` revision label. See the [publication record](../reviews/codex/publication/README.md).
 
 Only after checking [ownership](../FILE_OWNERSHIP.md), current [handoff](../HANDOFF.md), Git status and primary release notes:
 
@@ -35,12 +38,22 @@ The builder reads evidence and writes only `pm/index.html` and `pm/status.json`.
 
 The snapshot records branch/HEAD and SHA-256 hashes of consumed text/report inputs. Working files may differ from HEAD. Changed-during-build detection covers hashed inputs, not a repository lock or a full media/CAD archive. Images and CAD links load current files from the repository; independent S2 results refer to the separately identified historic snapshot.
 
-## Current limits and next packet
+## Current review edition — 2026-09-17
 
-V1 independent review is at `639e08f`: all 172 pin memberships agree, ERC has zero violations, and DRC has zero errors/zero unconnected with 67 warnings. Native schematic/PCB comparison adds 139 value/name warnings; V5 drill diameters and independent whole-film XOR remain unresolved. See [S2 verification](../reviews/codex/S2_VERIFICATION.md).
+Jay authorized Codex to improve schematics, ordering/assembly and programming documentation while the other agent is inactive. This supersedes earlier conservative primary-only edit reservations for the delivered packet. Start at [build and programming](../docs/build/README.md) and the [professionalization handoff](../reviews/codex/professionalization/HANDOFF.md), then check the latest ownership before editing.
 
-V2 is a primary-agent draft, not independently accepted for fabrication. Firmware correction files are proposals; no firmware integration, compilation or bench result is implied. V2 connector coverage and complete datasheet mapping are subsequent packets.
+All fifteen schematic pages now have grouped components, separate label/property spacing and engineering annotations. PDF/SVG exports share a source/output hash manifest. The latest independent numbered review is captured automatically in the viewer: all 172 V1 and 361 V2 electrical pins preserve the prior design. V1 ERC is clean; V2 has one pre-existing pin-type warning, so the strict combined review remains failed. V2 PCB checks report three unconnected entries, 101 warnings and 212 parity entries. Fabrication is not approved.
 
-The next smallest verification packet is a read-only V2 snapshot inventory with ERC/DRC, BOM and requirements checks. Keep voice + text + location in scope: establish voice airtime and RC coexistence before choosing handheld hardware. The primary's current `REQ-CTL-01` text governs proposed deadlines; summaries may be stale.
+The purchasing packet distinguishes complete BOM reviews from partial candidate import lists: V1 has 20 candidate / 18 held / 6 bare-feature references; V2 has 90 / 17 / 11. Assembly maps, optional population decisions and first-power procedures are linked. Existing firmware builds reproducibly on the recorded toolchain but preserves original defects; no hardware was flashed and there is no V2 firmware image. The manual CI definition is local and has not been activated or pushed.
+
+**Next smallest task:** classify V2's three open PCB connections against their exact pad/net evidence, and review the pre-existing U6 AD0 warning against the selected sensor interface. Produce a correction proposal before changing circuit intent or routing. Then freeze the V2 pin/protocol contract for a separate diagnostic firmware project. Voice/text/location and RC coexistence remain required before handheld hardware selection.
+
+## Historical evidence and remaining limits
+
+V1 independent review is at `639e08f`: all 172 pin memberships agree, ERC has zero violations, and DRC has zero errors/zero unconnected with 67 warnings. Native schematic/PCB comparison adds 139 value/name warnings; these concern metadata and update workflow, not electrical pin connectivity. V5 drill diameters and independent whole-film XOR remain unresolved. See [S2 verification](../reviews/codex/S2_VERIFICATION.md).
+
+V2 remains a draft. The latest CSV has 67 component rows totaling 118 parts; older reports said 68 lines and two open connections. Current independent checks supersede those counts. The V1 review has 35 distinct findings linked to 45 V2 requirements. Standalone protocol correction files remain proposals; they were not integrated by the preserved-V1 compilation. V2 connector coverage and complete datasheet mapping are subsequent packets.
+
+The independent V2 snapshot/ERC/DRC inventory is now complete and separately identified from historic S2. The current `REQ-CTL-01` text governs proposed deadlines; reconcile its 1.0 s default with the older 500 ms prompt summary before timing acceptance.
 
 Resume through this file and [Codex checkpoint](../reviews/codex/README.md). Work one bounded packet in owned paths, record exact evidence and limitations, then append the next task to the handoff.

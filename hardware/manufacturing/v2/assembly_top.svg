@@ -1,0 +1,774 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.000 88.000" width="1400" role="img" aria-labelledby="title desc">
+<title id="title">V2 top assembly pad map</title>
+<desc id="desc">Source-derived pad positions and electrical pin-one marks. A planning drawing, not a fabrication release or verified package polarity guide.</desc>
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<style>text{font-family:Arial,sans-serif;fill:#142337}.ref{font-size:.88px;font-weight:700;paint-order:stroke;stroke:#f8fafc;stroke-width:.28px;stroke-linejoin:round}.pin{fill:#ef6b26;stroke:#9d3b04;stroke-width:.08}.body{fill:none;stroke:#768aa5;stroke-width:.13}</style>
+<text x="4" y="5.3" font-size="2.6" font-weight="700">V2  /  TOP ASSEMBLY REFERENCE</text>
+<text x="4" y="9" font-size="1.45">80.000 × 46.000 mm · electrical pad geometry · NOT FABRICATION RELEASED</text>
+<text x="4" y="12.2" font-size="1.25">Top view: +X right, +Y down. Hover a part for its value and source MPN.</text>
+<rect x="12.000" y="17" width="80.000" height="46.000" rx=".2" fill="#e9f0f4" stroke="#20364c" stroke-width=".25"/>
+<g><title>C1 | 47uF 50V | EEE-FK1H470P | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="14.550" y="45.250" width="8.900" height="3.500"/>
+<rect x="14.550" y="46.200" width="3.500" height="1.600" rx=".08" fill="#ef6b26" transform="rotate(-0.000 16.300 47.000)"/>
+<rect x="19.950" y="46.200" width="3.500" height="1.600" rx=".08" fill="#627e99" transform="rotate(-0.000 21.700 47.000)"/>
+<text class="ref" text-anchor="middle" x="19.000" y="47.300">C1</text></g>
+<g><title>C2 | 10uF 50V | GRM32ER71H106KA12L | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="33.675" y="32.150" width="5.650" height="2.700"/>
+<rect x="34.450" y="32.150" width="1.150" height="2.700" rx=".08" fill="#ef6b26" transform="rotate(-0.000 35.025 33.500)"/>
+<rect x="37.400" y="32.150" width="1.150" height="2.700" rx=".08" fill="#627e99" transform="rotate(-0.000 37.975 33.500)"/>
+<text class="ref" text-anchor="middle" x="36.500" y="33.800">C2</text></g>
+<g><title>C3 | 100nF 50V | CL10B104KB8NNNC | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="32.750" y="48.025" width="2.500" height="0.950"/>
+<rect x="32.775" y="48.025" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 33.225 48.500)"/>
+<rect x="34.325" y="48.025" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 34.775 48.500)"/>
+<text class="ref" text-anchor="middle" x="34.000" y="48.800">C3</text></g>
+<g><title>C4 | 470pF | 06035A471JAT2A | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="30.750" y="54.025" width="2.500" height="0.950"/>
+<rect x="30.775" y="54.025" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 31.225 54.500)"/>
+<rect x="32.325" y="54.025" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 32.775 54.500)"/>
+<text class="ref" text-anchor="middle" x="32.000" y="54.800">C4</text></g>
+<g><title>C5 | 10uF 25V | GRM31CR71E106KA12L | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="44.100" y="43.125" width="1.800" height="4.750"/>
+<rect x="44.425" y="46.075" width="1.150" height="1.800" rx=".08" fill="#ef6b26" transform="rotate(-90.000 45.000 46.975)"/>
+<rect x="44.425" y="43.125" width="1.150" height="1.800" rx=".08" fill="#627e99" transform="rotate(-90.000 45.000 44.025)"/>
+<text class="ref" text-anchor="middle" x="45.000" y="45.800">C5</text></g>
+<g><title>C6 | 10uF 25V | GRM31CR71E106KA12L | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="44.100" y="48.125" width="1.800" height="4.750"/>
+<rect x="44.425" y="51.075" width="1.150" height="1.800" rx=".08" fill="#ef6b26" transform="rotate(-90.000 45.000 51.975)"/>
+<rect x="44.425" y="48.125" width="1.150" height="1.800" rx=".08" fill="#627e99" transform="rotate(-90.000 45.000 49.025)"/>
+<text class="ref" text-anchor="middle" x="45.000" y="50.800">C6</text></g>
+<g><title>C7 | 100nF | KGM15ACG1H104KT | HOLD | KiCad 0 deg</title>
+<rect class="body" x="50.750" y="48.525" width="2.500" height="0.950"/>
+<rect x="50.775" y="48.525" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 51.225 49.000)"/>
+<rect x="52.325" y="48.525" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 52.775 49.000)"/>
+<text class="ref" text-anchor="middle" x="52.000" y="49.300">C7</text></g>
+<g><title>C8 | 22uF 16V | GRM32ER61C226KE20L | HOLD | KiCad 90 deg</title>
+<rect class="body" x="63.650" y="42.675" width="2.700" height="5.650"/>
+<rect x="64.425" y="45.625" width="1.150" height="2.700" rx=".08" fill="#ef6b26" transform="rotate(-90.000 65.000 46.975)"/>
+<rect x="64.425" y="42.675" width="1.150" height="2.700" rx=".08" fill="#627e99" transform="rotate(-90.000 65.000 44.025)"/>
+<text class="ref" text-anchor="middle" x="65.000" y="45.800">C8</text></g>
+<g><title>C9 | 22uF 16V | GRM32ER61C226KE20L | HOLD | KiCad 90 deg</title>
+<rect class="body" x="63.650" y="48.175" width="2.700" height="5.650"/>
+<rect x="64.425" y="51.125" width="1.150" height="2.700" rx=".08" fill="#ef6b26" transform="rotate(-90.000 65.000 52.475)"/>
+<rect x="64.425" y="48.175" width="1.150" height="2.700" rx=".08" fill="#627e99" transform="rotate(-90.000 65.000 49.525)"/>
+<text class="ref" text-anchor="middle" x="65.000" y="51.300">C9</text></g>
+<g><title>C10 | 10uF 50V | GRM32ER71H106KA12L | HOLD | KiCad 90 deg</title>
+<rect class="body" x="46.950" y="48.175" width="2.700" height="5.650"/>
+<rect x="47.725" y="51.125" width="1.150" height="2.700" rx=".08" fill="#ef6b26" transform="rotate(-90.000 48.300 52.475)"/>
+<rect x="47.725" y="48.175" width="1.150" height="2.700" rx=".08" fill="#627e99" transform="rotate(-90.000 48.300 49.525)"/>
+<text class="ref" text-anchor="middle" x="48.300" y="51.300">C10</text></g>
+<g><title>C11 | 100uF 10V | EEE-FK1A101P | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="67.050" y="45.250" width="8.900" height="3.500"/>
+<rect x="67.050" y="46.200" width="3.500" height="1.600" rx=".08" fill="#ef6b26" transform="rotate(-0.000 68.800 47.000)"/>
+<rect x="72.450" y="46.200" width="3.500" height="1.600" rx=".08" fill="#627e99" transform="rotate(-0.000 74.200 47.000)"/>
+<text class="ref" text-anchor="middle" x="71.500" y="47.300">C11</text></g>
+<g><title>C12 | 10uF 16V | GRM21BR61C106KE15L | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="69.825" y="52.275" width="3.350" height="1.450"/>
+<rect x="70.050" y="52.275" width="1.000" height="1.450" rx=".08" fill="#ef6b26" transform="rotate(-0.000 70.550 53.000)"/>
+<rect x="71.950" y="52.275" width="1.000" height="1.450" rx=".08" fill="#627e99" transform="rotate(-0.000 72.450 53.000)"/>
+<text class="ref" text-anchor="middle" x="71.500" y="53.300">C12</text></g>
+<g><title>C13 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="41.025" y="19.750" width="0.950" height="2.500"/>
+<rect x="41.050" y="21.300" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 41.500 21.775)"/>
+<rect x="41.050" y="19.750" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 41.500 20.225)"/>
+<text class="ref" text-anchor="middle" x="41.500" y="21.300">C13</text></g>
+<g><title>C14 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="40.025" y="57.250" width="0.950" height="2.500"/>
+<rect x="40.050" y="58.800" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 40.500 59.275)"/>
+<rect x="40.050" y="57.250" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 40.500 57.725)"/>
+<text class="ref" text-anchor="middle" x="40.500" y="58.800">C14</text></g>
+<g><title>C15 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="49.525" y="28.750" width="0.950" height="2.500"/>
+<rect x="49.550" y="30.300" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 50.000 30.775)"/>
+<rect x="49.550" y="28.750" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 50.000 29.225)"/>
+<text class="ref" text-anchor="middle" x="50.000" y="30.300">C15</text></g>
+<g><title>C16 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="54.750" y="25.025" width="2.500" height="0.950"/>
+<rect x="54.775" y="25.025" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 55.225 25.500)"/>
+<rect x="56.325" y="25.025" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 56.775 25.500)"/>
+<text class="ref" text-anchor="middle" x="56.000" y="25.800">C16</text></g>
+<g><title>C17 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="67.025" y="31.750" width="0.950" height="2.500"/>
+<rect x="67.050" y="33.300" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 67.500 33.775)"/>
+<rect x="67.050" y="31.750" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 67.500 32.225)"/>
+<text class="ref" text-anchor="middle" x="67.500" y="33.300">C17</text></g>
+<g><title>C18 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="58.750" y="25.025" width="2.500" height="0.950"/>
+<rect x="58.775" y="25.025" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 59.225 25.500)"/>
+<rect x="60.325" y="25.025" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 60.775 25.500)"/>
+<text class="ref" text-anchor="middle" x="60.000" y="25.800">C18</text></g>
+<g><title>C19 | 10uF 10V | GRM21BR61A106KE19L | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="50.325" y="24.775" width="3.350" height="1.450"/>
+<rect x="50.550" y="24.775" width="1.000" height="1.450" rx=".08" fill="#ef6b26" transform="rotate(-0.000 51.050 25.500)"/>
+<rect x="52.450" y="24.775" width="1.000" height="1.450" rx=".08" fill="#627e99" transform="rotate(-0.000 52.950 25.500)"/>
+<text class="ref" text-anchor="middle" x="52.000" y="25.800">C19</text></g>
+<g><title>C20 | 4.7uF 10V | CL10A475KP8NNNC | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="49.525" y="37.250" width="0.950" height="2.500"/>
+<rect x="49.550" y="38.800" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 50.000 39.275)"/>
+<rect x="49.550" y="37.250" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 50.000 37.725)"/>
+<text class="ref" text-anchor="middle" x="50.000" y="38.800">C20</text></g>
+<g><title>C21 | 1uF | CL10A105KB8NNNC | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="47.725" y="30.750" width="0.950" height="2.500"/>
+<rect x="47.750" y="32.300" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 48.200 32.775)"/>
+<rect x="47.750" y="30.750" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 48.200 31.225)"/>
+<text class="ref" text-anchor="middle" x="48.200" y="32.300">C21</text></g>
+<g><title>C22 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="47.525" y="36.250" width="0.950" height="2.500"/>
+<rect x="47.550" y="37.800" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 48.000 38.275)"/>
+<rect x="47.550" y="36.250" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 48.000 36.725)"/>
+<line x1="48.000" y1="37.500" x2="48.000" y2="36.200" stroke="#314a62" stroke-width=".09"/>
+<text class="ref" text-anchor="middle" x="48.000" y="36.500">C22</text></g>
+<g><title>C23 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="67.025" y="35.750" width="0.950" height="2.500"/>
+<rect x="67.050" y="37.300" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 67.500 37.775)"/>
+<rect x="67.050" y="35.750" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 67.500 36.225)"/>
+<text class="ref" text-anchor="middle" x="67.500" y="37.300">C23</text></g>
+<g><title>C24 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="52.750" y="42.525" width="2.500" height="0.950"/>
+<rect x="52.775" y="42.525" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 53.225 43.000)"/>
+<rect x="54.325" y="42.525" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 54.775 43.000)"/>
+<text class="ref" text-anchor="middle" x="54.000" y="43.300">C24</text></g>
+<g><title>C25 | 15pF C0G | 06035A150JAT2A | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="40.025" y="29.050" width="0.950" height="2.500"/>
+<rect x="40.050" y="30.600" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 40.500 31.075)"/>
+<rect x="40.050" y="29.050" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 40.500 29.525)"/>
+<text class="ref" text-anchor="middle" x="40.500" y="30.600">C25</text></g>
+<g><title>C26 | 15pF C0G | 06035A150JAT2A | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="46.025" y="29.050" width="0.950" height="2.500"/>
+<rect x="46.050" y="30.600" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 46.500 31.075)"/>
+<rect x="46.050" y="29.050" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 46.500 29.525)"/>
+<text class="ref" text-anchor="middle" x="46.500" y="30.600">C26</text></g>
+<g><title>C27 | 10pF C0G | 06035A100JAT2A | HOLD | KiCad 90 deg</title>
+<rect class="body" x="40.025" y="32.450" width="0.950" height="2.500"/>
+<rect x="40.050" y="34.000" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 40.500 34.475)"/>
+<rect x="40.050" y="32.450" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 40.500 32.925)"/>
+<text class="ref" text-anchor="middle" x="40.500" y="34.000">C27</text></g>
+<g><title>C28 | 10pF C0G | 06035A100JAT2A | HOLD | KiCad 90 deg</title>
+<rect class="body" x="46.025" y="32.450" width="0.950" height="2.500"/>
+<rect x="46.050" y="34.000" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 46.500 34.475)"/>
+<rect x="46.050" y="32.450" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 46.500 32.925)"/>
+<text class="ref" text-anchor="middle" x="46.500" y="34.000">C28</text></g>
+<g><title>C29 | 10uF 10V | GRM21BR61A106KE19L | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="80.325" y="43.775" width="3.350" height="1.450"/>
+<rect x="80.550" y="43.775" width="1.000" height="1.450" rx=".08" fill="#ef6b26" transform="rotate(-0.000 81.050 44.500)"/>
+<rect x="82.450" y="43.775" width="1.000" height="1.450" rx=".08" fill="#627e99" transform="rotate(-0.000 82.950 44.500)"/>
+<text class="ref" text-anchor="middle" x="82.000" y="44.800">C29</text></g>
+<g><title>C30 | 10uF 10V | GRM21BR61A106KE19L | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="83.825" y="43.775" width="3.350" height="1.450"/>
+<rect x="84.050" y="43.775" width="1.000" height="1.450" rx=".08" fill="#ef6b26" transform="rotate(-0.000 84.550 44.500)"/>
+<rect x="85.950" y="43.775" width="1.000" height="1.450" rx=".08" fill="#627e99" transform="rotate(-0.000 86.450 44.500)"/>
+<text class="ref" text-anchor="middle" x="85.500" y="44.800">C30</text></g>
+<g><title>C31 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="87.025" y="46.050" width="0.950" height="2.500"/>
+<rect x="87.050" y="47.600" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 87.500 48.075)"/>
+<rect x="87.050" y="46.050" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 87.500 46.525)"/>
+<text class="ref" text-anchor="middle" x="87.500" y="47.600">C31</text></g>
+<g><title>C32 | 47pF | GJM1555C1H470JB01D | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="86.190" y="50.210" width="0.620" height="1.580"/>
+<rect x="86.220" y="51.170" width="0.560" height="0.620" rx=".08" fill="#ef6b26" transform="rotate(-90.000 86.500 51.480)"/>
+<rect x="86.220" y="50.210" width="0.560" height="0.620" rx=".08" fill="#627e99" transform="rotate(-90.000 86.500 50.520)"/>
+<text class="ref" text-anchor="middle" x="86.500" y="51.300">C32</text></g>
+<g><title>C33 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="74.525" y="53.250" width="0.950" height="2.500"/>
+<rect x="74.550" y="54.800" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 75.000 55.275)"/>
+<rect x="74.550" y="53.250" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 75.000 53.725)"/>
+<text class="ref" text-anchor="middle" x="75.000" y="54.800">C33</text></g>
+<g><title>C34 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="83.025" y="52.750" width="0.950" height="2.500"/>
+<rect x="83.050" y="54.300" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 83.500 54.775)"/>
+<rect x="83.050" y="52.750" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 83.500 53.225)"/>
+<text class="ref" text-anchor="middle" x="83.500" y="54.300">C34</text></g>
+<g><title>C35 | 10uF 10V | GRM21BR61A106KE19L | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="77.325" y="47.775" width="3.350" height="1.450"/>
+<rect x="77.550" y="47.775" width="1.000" height="1.450" rx=".08" fill="#ef6b26" transform="rotate(-0.000 78.050 48.500)"/>
+<rect x="79.450" y="47.775" width="1.000" height="1.450" rx=".08" fill="#627e99" transform="rotate(-0.000 79.950 48.500)"/>
+<text class="ref" text-anchor="middle" x="79.000" y="48.800">C35</text></g>
+<g><title>C36 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="45.825" y="39.250" width="0.950" height="2.500"/>
+<rect x="45.850" y="40.800" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 46.300 41.275)"/>
+<rect x="45.850" y="39.250" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 46.300 39.725)"/>
+<text class="ref" text-anchor="middle" x="46.300" y="40.800">C36</text></g>
+<g><title>C37 | 100nF | KGM15ACG1H104KT | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="38.525" y="41.250" width="0.950" height="2.500"/>
+<rect x="38.550" y="42.800" width="0.900" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 39.000 43.275)"/>
+<rect x="38.550" y="41.250" width="0.900" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 39.000 41.725)"/>
+<text class="ref" text-anchor="middle" x="39.000" y="42.800">C37</text></g>
+<g><title>D1 | SMAJ33A | SMAJ33A | HOLD | KiCad 0 deg</title>
+<rect class="body" x="26.950" y="32.250" width="6.500" height="2.500"/>
+<rect x="26.950" y="32.600" width="2.500" height="1.800" rx=".08" fill="#ef6b26" transform="rotate(-0.000 28.200 33.500)"/>
+<rect x="30.950" y="32.600" width="2.500" height="1.800" rx=".08" fill="#627e99" transform="rotate(-0.000 32.200 33.500)"/>
+<text class="ref" text-anchor="middle" x="30.200" y="33.800">D1</text></g>
+<g><title>D2 | 10V | BZT52C10-7-F | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="34.950" y="28.400" width="4.500" height="1.200"/>
+<rect x="35.100" y="28.400" width="0.900" height="1.200" rx=".08" fill="#ef6b26" transform="rotate(-0.000 35.550 29.000)"/>
+<rect x="38.400" y="28.400" width="0.900" height="1.200" rx=".08" fill="#627e99" transform="rotate(-0.000 38.850 29.000)"/>
+<text class="ref" text-anchor="middle" x="37.200" y="29.300">D2</text></g>
+<g><title>D3 | CMS06 | CMS06(TE12L,Q,M) | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="24.528" y="50.598" width="5.944" height="1.803"/>
+<rect x="24.947" y="50.598" width="0.965" height="1.803" rx=".08" fill="#ef6b26" transform="rotate(-0.000 25.430 51.500)"/>
+<rect x="29.087" y="50.598" width="0.965" height="1.803" rx=".08" fill="#627e99" transform="rotate(-0.000 29.570 51.500)"/>
+<text class="ref" text-anchor="middle" x="27.500" y="51.800">D3</text></g>
+<g><title>D4 | SS34 | SS34 | HOLD | KiCad 0 deg</title>
+<rect class="body" x="55.750" y="52.750" width="6.500" height="2.500"/>
+<rect x="55.750" y="53.100" width="2.500" height="1.800" rx=".08" fill="#ef6b26" transform="rotate(-0.000 57.000 54.000)"/>
+<rect x="59.750" y="53.100" width="2.500" height="1.800" rx=".08" fill="#627e99" transform="rotate(-0.000 61.000 54.000)"/>
+<text class="ref" text-anchor="middle" x="59.000" y="54.300">D4</text></g>
+<g><title>D5 | PWR green | LTST-C193KGKT-5A | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="48.738" y="19.525" width="2.525" height="0.950"/>
+<rect x="48.775" y="19.525" width="0.875" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 49.213 20.000)"/>
+<rect x="50.350" y="19.525" width="0.875" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 50.787 20.000)"/>
+<text class="ref" text-anchor="middle" x="50.000" y="20.300">D5</text></g>
+<g><title>D6 | LINK blue | LTST-C193TBKT-5A | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="51.937" y="19.525" width="2.525" height="0.950"/>
+<rect x="51.975" y="19.525" width="0.875" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 52.412 20.000)"/>
+<rect x="53.550" y="19.525" width="0.875" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 53.987 20.000)"/>
+<text class="ref" text-anchor="middle" x="53.200" y="20.300">D6</text></g>
+<g><title>D7 | FIX yellow | LTST-C193KSKT-5A | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="55.137" y="19.525" width="2.525" height="0.950"/>
+<rect x="55.175" y="19.525" width="0.875" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 55.612 20.000)"/>
+<rect x="56.750" y="19.525" width="0.875" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 57.188 20.000)"/>
+<text class="ref" text-anchor="middle" x="56.400" y="20.300">D7</text></g>
+<g><title>D8 | FAULT red | LTST-C193KRKT-5A | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="58.337" y="19.525" width="2.525" height="0.950"/>
+<rect x="58.375" y="19.525" width="0.875" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 58.812 20.000)"/>
+<rect x="59.950" y="19.525" width="0.875" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 60.388 20.000)"/>
+<text class="ref" text-anchor="middle" x="59.600" y="20.300">D8</text></g>
+<g><title>D9 | SS34 | SS34 | HOLD | KiCad 0 deg</title>
+<rect class="body" x="36.750" y="23.050" width="6.500" height="2.500"/>
+<rect x="36.750" y="23.400" width="2.500" height="1.800" rx=".08" fill="#ef6b26" transform="rotate(-0.000 38.000 24.300)"/>
+<rect x="40.750" y="23.400" width="2.500" height="1.800" rx=".08" fill="#627e99" transform="rotate(-0.000 42.000 24.300)"/>
+<text class="ref" text-anchor="middle" x="40.000" y="24.600">D9</text></g>
+<g><title>D10 | PESD5V0S1BA | PESD5V0S1BA,115 | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="48.700" y="25.150" width="0.600" height="2.700"/>
+<rect x="48.700" y="27.325" width="0.600" height="0.450" rx=".08" fill="#ef6b26" transform="rotate(-90.000 49.000 27.550)"/>
+<rect x="48.700" y="25.225" width="0.600" height="0.450" rx=".08" fill="#627e99" transform="rotate(-90.000 49.000 25.450)"/>
+<text class="ref" text-anchor="middle" x="49.000" y="26.800">D10</text></g>
+<g><title>D11 | PESD5V0S1BA | PESD5V0S1BA,115 | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="43.700" y="53.650" width="0.600" height="2.700"/>
+<rect x="43.700" y="55.825" width="0.600" height="0.450" rx=".08" fill="#ef6b26" transform="rotate(-90.000 44.000 56.050)"/>
+<rect x="43.700" y="53.725" width="0.600" height="0.450" rx=".08" fill="#627e99" transform="rotate(-90.000 44.000 53.950)"/>
+<text class="ref" text-anchor="middle" x="44.000" y="55.300">D11</text></g>
+<g><title>F1 | 3A | 0468003.NR | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="25.662" y="35.800" width="7.675" height="3.400"/>
+<rect x="26.800" y="35.800" width="1.125" height="3.400" rx=".08" fill="#ef6b26" transform="rotate(-0.000 27.362 37.500)"/>
+<rect x="31.075" y="35.800" width="1.125" height="3.400" rx=".08" fill="#627e99" transform="rotate(-0.000 31.638 37.500)"/>
+<text class="ref" text-anchor="middle" x="29.500" y="37.800">F1</text></g>
+<g><title>FB1 | 600R | BLM18AG601SN1D | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="49.525" y="32.738" width="0.950" height="2.525"/>
+<rect x="49.562" y="34.312" width="0.875" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 50.000 34.787)"/>
+<rect x="49.562" y="32.738" width="0.875" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 50.000 33.213)"/>
+<text class="ref" text-anchor="middle" x="50.000" y="34.300">FB1</text></g>
+<g><title>FB2 | 600R | BLM15AG601SN1D | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="80.195" y="41.680" width="1.610" height="0.640"/>
+<rect x="80.220" y="41.680" width="0.590" height="0.640" rx=".08" fill="#ef6b26" transform="rotate(-0.000 80.515 42.000)"/>
+<rect x="81.190" y="41.680" width="0.590" height="0.640" rx=".08" fill="#627e99" transform="rotate(-0.000 81.485 42.000)"/>
+<text class="ref" text-anchor="middle" x="81.000" y="42.300">FB2</text></g>
+<g><title>FB3 | 600R | BLM15AG601SN1D | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="83.195" y="41.680" width="1.610" height="0.640"/>
+<rect x="83.220" y="41.680" width="0.590" height="0.640" rx=".08" fill="#ef6b26" transform="rotate(-0.000 83.515 42.000)"/>
+<rect x="84.190" y="41.680" width="0.590" height="0.640" rx=".08" fill="#627e99" transform="rotate(-0.000 84.485 42.000)"/>
+<text class="ref" text-anchor="middle" x="84.000" y="42.300">FB3</text></g>
+<g><title>H1 | M3 | bare PCB feature | BOARD_FEATURE | KiCad 0 deg</title>
+<rect class="body" x="14.400" y="19.400" width="3.200" height="3.200"/>
+<ellipse cx="16.000" cy="21.000" rx="1.600" ry="1.600" fill="#627e99"/>
+<ellipse cx="16.000" cy="21.000" rx="1.600" ry="1.600" fill="#f8fafc"/>
+<text class="ref" text-anchor="middle" x="16.000" y="21.300">H1</text></g>
+<g><title>H2 | M3 | bare PCB feature | BOARD_FEATURE | KiCad 0 deg</title>
+<rect class="body" x="86.400" y="19.400" width="3.200" height="3.200"/>
+<ellipse cx="88.000" cy="21.000" rx="1.600" ry="1.600" fill="#627e99"/>
+<ellipse cx="88.000" cy="21.000" rx="1.600" ry="1.600" fill="#f8fafc"/>
+<text class="ref" text-anchor="middle" x="88.000" y="21.300">H2</text></g>
+<g><title>H3 | M3 | bare PCB feature | BOARD_FEATURE | KiCad 0 deg</title>
+<rect class="body" x="14.400" y="57.400" width="3.200" height="3.200"/>
+<ellipse cx="16.000" cy="59.000" rx="1.600" ry="1.600" fill="#627e99"/>
+<ellipse cx="16.000" cy="59.000" rx="1.600" ry="1.600" fill="#f8fafc"/>
+<text class="ref" text-anchor="middle" x="16.000" y="59.300">H3</text></g>
+<g><title>H4 | M3 | bare PCB feature | BOARD_FEATURE | KiCad 0 deg</title>
+<rect class="body" x="86.400" y="57.400" width="3.200" height="3.200"/>
+<ellipse cx="88.000" cy="59.000" rx="1.600" ry="1.600" fill="#627e99"/>
+<ellipse cx="88.000" cy="59.000" rx="1.600" ry="1.600" fill="#f8fafc"/>
+<text class="ref" text-anchor="middle" x="88.000" y="59.300">H4</text></g>
+<g><title>J1 | BATTERY XT30 | XT30PW-M | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="13.000" y="29.300" width="12.400" height="12.450"/>
+<ellipse cx="13.700" cy="30.000" rx="0.700" ry="0.700" fill="#627e99"/>
+<ellipse cx="13.700" cy="30.000" rx="0.500" ry="0.500" fill="#f8fafc"/>
+<ellipse cx="24.700" cy="30.000" rx="0.700" ry="0.700" fill="#627e99"/>
+<ellipse cx="24.700" cy="30.000" rx="0.500" ry="0.500" fill="#f8fafc"/>
+<rect x="19.950" y="38.250" width="3.500" height="3.500" rx=".08" fill="#ef6b26" transform="rotate(-0.000 21.700 40.000)"/>
+<ellipse cx="21.700" cy="40.000" rx="0.950" ry="0.950" fill="#f8fafc"/>
+<ellipse cx="16.700" cy="40.000" rx="1.750" ry="1.750" fill="#627e99"/>
+<ellipse cx="16.700" cy="40.000" rx="0.950" ry="0.950" fill="#f8fafc"/>
+<text class="ref" text-anchor="middle" x="21.700" y="40.300">J1</text></g>
+<g><title>J2 | ESC | B3B-XH-A(LF)(SN) | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="24.025" y="21.025" width="6.950" height="1.950"/>
+<rect x="24.150" y="21.025" width="1.700" height="1.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 25.000 22.000)"/>
+<ellipse cx="25.000" cy="22.000" rx="0.475" ry="0.475" fill="#f8fafc"/>
+<rect x="26.650" y="21.025" width="1.700" height="1.950" rx=".08" fill="#627e99" transform="rotate(-0.000 27.500 22.000)"/>
+<ellipse cx="27.500" cy="22.000" rx="0.475" ry="0.475" fill="#f8fafc"/>
+<rect x="29.150" y="21.025" width="1.700" height="1.950" rx=".08" fill="#627e99" transform="rotate(-0.000 30.000 22.000)"/>
+<ellipse cx="30.000" cy="22.000" rx="0.475" ry="0.475" fill="#f8fafc"/>
+<text class="ref" text-anchor="middle" x="25.000" y="22.300">J2</text></g>
+<g><title>J3 | SERVO | B3B-XH-A(LF)(SN) | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="24.025" y="58.025" width="6.950" height="1.950"/>
+<rect x="24.150" y="58.025" width="1.700" height="1.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 25.000 59.000)"/>
+<ellipse cx="25.000" cy="59.000" rx="0.475" ry="0.475" fill="#f8fafc"/>
+<rect x="26.650" y="58.025" width="1.700" height="1.950" rx=".08" fill="#627e99" transform="rotate(-0.000 27.500 59.000)"/>
+<ellipse cx="27.500" cy="59.000" rx="0.475" ry="0.475" fill="#f8fafc"/>
+<rect x="29.150" y="58.025" width="1.700" height="1.950" rx=".08" fill="#627e99" transform="rotate(-0.000 30.000 59.000)"/>
+<ellipse cx="30.000" cy="59.000" rx="0.475" ry="0.475" fill="#f8fafc"/>
+<text class="ref" text-anchor="middle" x="25.000" y="59.300">J3</text></g>
+<g><title>J4 | LoRa RYLR998 | PPTC051LFBN-RC | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="89.136" y="33.976" width="1.727" height="11.887"/>
+<ellipse cx="90.000" cy="45.000" rx="0.864" ry="0.864" fill="#ef6b26"/>
+<ellipse cx="90.000" cy="45.000" rx="0.508" ry="0.508" fill="#f8fafc"/>
+<ellipse cx="90.000" cy="42.460" rx="0.864" ry="0.864" fill="#627e99"/>
+<ellipse cx="90.000" cy="42.460" rx="0.508" ry="0.508" fill="#f8fafc"/>
+<ellipse cx="90.000" cy="39.920" rx="0.864" ry="0.864" fill="#627e99"/>
+<ellipse cx="90.000" cy="39.920" rx="0.508" ry="0.508" fill="#f8fafc"/>
+<ellipse cx="90.000" cy="37.380" rx="0.864" ry="0.864" fill="#627e99"/>
+<ellipse cx="90.000" cy="37.380" rx="0.508" ry="0.508" fill="#f8fafc"/>
+<ellipse cx="90.000" cy="34.840" rx="0.864" ry="0.864" fill="#627e99"/>
+<ellipse cx="90.000" cy="34.840" rx="0.508" ry="0.508" fill="#f8fafc"/>
+<text class="ref" text-anchor="middle" x="90.000" y="45.300">J4</text></g>
+<g><title>J5 | GNSS | PPTC061LFBN-RC | HOLD | KiCad 90 deg</title>
+<rect class="body" x="67.150" y="59.650" width="14.400" height="1.700"/>
+<rect x="67.150" y="59.650" width="1.700" height="1.700" rx=".08" fill="#ef6b26" transform="rotate(-90.000 68.000 60.500)"/>
+<ellipse cx="68.000" cy="60.500" rx="0.500" ry="0.500" fill="#f8fafc"/>
+<ellipse cx="70.540" cy="60.500" rx="0.850" ry="0.850" fill="#627e99"/>
+<ellipse cx="70.540" cy="60.500" rx="0.500" ry="0.500" fill="#f8fafc"/>
+<ellipse cx="73.080" cy="60.500" rx="0.850" ry="0.850" fill="#627e99"/>
+<ellipse cx="73.080" cy="60.500" rx="0.500" ry="0.500" fill="#f8fafc"/>
+<ellipse cx="75.620" cy="60.500" rx="0.850" ry="0.850" fill="#627e99"/>
+<ellipse cx="75.620" cy="60.500" rx="0.500" ry="0.500" fill="#f8fafc"/>
+<ellipse cx="78.160" cy="60.500" rx="0.850" ry="0.850" fill="#627e99"/>
+<ellipse cx="78.160" cy="60.500" rx="0.500" ry="0.500" fill="#f8fafc"/>
+<ellipse cx="80.700" cy="60.500" rx="0.850" ry="0.850" fill="#627e99"/>
+<ellipse cx="80.700" cy="60.500" rx="0.500" ry="0.500" fill="#f8fafc"/>
+<text class="ref" text-anchor="middle" x="68.000" y="60.800">J5</text></g>
+<g><title>J6 | USB-C | USB4105-GF-A | CANDIDATE | KiCad 180 deg</title>
+<rect class="body" x="62.630" y="17.525" width="10.740" height="6.230"/>
+<ellipse cx="70.890" cy="22.105" rx="0.325" ry="0.325" fill="#627e99"/>
+<ellipse cx="70.890" cy="22.105" rx="0.325" ry="0.325" fill="#f8fafc"/>
+<ellipse cx="65.110" cy="22.105" rx="0.325" ry="0.325" fill="#627e99"/>
+<ellipse cx="65.110" cy="22.105" rx="0.325" ry="0.325" fill="#f8fafc"/>
+<rect x="70.900" y="22.605" width="0.600" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 71.200 23.180)"/>
+<rect x="70.100" y="22.605" width="0.600" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 70.400 23.180)"/>
+<rect x="69.100" y="22.605" width="0.300" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 69.250 23.180)"/>
+<rect x="68.100" y="22.605" width="0.300" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 68.250 23.180)"/>
+<rect x="67.600" y="22.605" width="0.300" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 67.750 23.180)"/>
+<rect x="66.600" y="22.605" width="0.300" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 66.750 23.180)"/>
+<rect x="65.300" y="22.605" width="0.600" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 65.600 23.180)"/>
+<rect x="64.500" y="22.605" width="0.600" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 64.800 23.180)"/>
+<rect x="64.500" y="22.605" width="0.600" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 64.800 23.180)"/>
+<rect x="65.300" y="22.605" width="0.600" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 65.600 23.180)"/>
+<rect x="66.100" y="22.605" width="0.300" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 66.250 23.180)"/>
+<rect x="67.100" y="22.605" width="0.300" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 67.250 23.180)"/>
+<rect x="68.600" y="22.605" width="0.300" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 68.750 23.180)"/>
+<rect x="69.600" y="22.605" width="0.300" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 69.750 23.180)"/>
+<rect x="70.100" y="22.605" width="0.600" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 70.400 23.180)"/>
+<rect x="70.900" y="22.605" width="0.600" height="1.150" rx=".08" fill="#627e99" transform="rotate(-180.000 71.200 23.180)"/>
+<rect x="71.820" y="21.555" width="1.000" height="2.100" rx=".08" fill="#627e99" transform="rotate(-180.000 72.320 22.605)"/>
+<ellipse cx="72.320" cy="22.605" rx="0.300" ry="0.850" fill="#f8fafc"/>
+<rect x="71.820" y="17.525" width="1.000" height="1.800" rx=".08" fill="#627e99" transform="rotate(-180.000 72.320 18.425)"/>
+<ellipse cx="72.320" cy="18.425" rx="0.300" ry="0.700" fill="#f8fafc"/>
+<rect x="63.180" y="21.555" width="1.000" height="2.100" rx=".08" fill="#627e99" transform="rotate(-180.000 63.680 22.605)"/>
+<ellipse cx="63.680" cy="22.605" rx="0.300" ry="0.850" fill="#f8fafc"/>
+<rect x="63.180" y="17.525" width="1.000" height="1.800" rx=".08" fill="#627e99" transform="rotate(-180.000 63.680 18.425)"/>
+<ellipse cx="63.680" cy="18.425" rx="0.300" ry="0.700" fill="#f8fafc"/>
+<text class="ref" text-anchor="middle" x="68.000" y="19.800">J6</text></g>
+<g><title>J7 | SWD | FTSH-105-01-L-DV-K | HOLD | KiCad 0 deg</title>
+<rect class="body" x="81.850" y="26.260" width="6.300" height="7.480"/>
+<rect x="81.850" y="27.090" width="2.400" height="0.740" rx=".08" fill="#ef6b26" transform="rotate(-0.000 83.050 27.460)"/>
+<rect x="85.750" y="27.090" width="2.400" height="0.740" rx=".08" fill="#627e99" transform="rotate(-0.000 86.950 27.460)"/>
+<rect x="81.850" y="28.360" width="2.400" height="0.740" rx=".08" fill="#627e99" transform="rotate(-0.000 83.050 28.730)"/>
+<rect x="85.750" y="28.360" width="2.400" height="0.740" rx=".08" fill="#627e99" transform="rotate(-0.000 86.950 28.730)"/>
+<rect x="81.850" y="29.630" width="2.400" height="0.740" rx=".08" fill="#627e99" transform="rotate(-0.000 83.050 30.000)"/>
+<rect x="85.750" y="29.630" width="2.400" height="0.740" rx=".08" fill="#627e99" transform="rotate(-0.000 86.950 30.000)"/>
+<rect x="81.850" y="30.900" width="2.400" height="0.740" rx=".08" fill="#627e99" transform="rotate(-0.000 83.050 31.270)"/>
+<rect x="85.750" y="30.900" width="2.400" height="0.740" rx=".08" fill="#627e99" transform="rotate(-0.000 86.950 31.270)"/>
+<rect x="81.850" y="32.170" width="2.400" height="0.740" rx=".08" fill="#627e99" transform="rotate(-0.000 83.050 32.540)"/>
+<rect x="85.750" y="32.170" width="2.400" height="0.740" rx=".08" fill="#627e99" transform="rotate(-0.000 86.950 32.540)"/>
+<text class="ref" text-anchor="middle" x="85.000" y="30.300">J7</text></g>
+<g><title>L1 | 4.7uH 3A | SRN6045TA-4R7M | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="35.375" y="45.450" width="9.250" height="5.100"/>
+<rect x="36.750" y="45.450" width="2.350" height="5.100" rx=".08" fill="#ef6b26" transform="rotate(-0.000 37.925 48.000)"/>
+<rect x="40.900" y="45.450" width="2.350" height="5.100" rx=".08" fill="#627e99" transform="rotate(-0.000 42.075 48.000)"/>
+<text class="ref" text-anchor="middle" x="40.000" y="48.300">L1</text></g>
+<g><title>L2 | 4.7uH 3A | SRN6045TA-4R7M | HOLD | KiCad 0 deg</title>
+<rect class="body" x="54.375" y="44.950" width="9.250" height="5.100"/>
+<rect x="55.750" y="44.950" width="2.350" height="5.100" rx=".08" fill="#ef6b26" transform="rotate(-0.000 56.925 47.500)"/>
+<rect x="59.900" y="44.950" width="2.350" height="5.100" rx=".08" fill="#627e99" transform="rotate(-0.000 61.075 47.500)"/>
+<text class="ref" text-anchor="middle" x="59.000" y="47.800">L2</text></g>
+<g><title>Q1 | AO3401A | AO3401A | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="31.025" y="27.312" width="3.350" height="3.375"/>
+<rect x="31.025" y="27.750" width="1.475" height="0.600" rx=".08" fill="#ef6b26" transform="rotate(-0.000 31.763 28.050)"/>
+<rect x="31.025" y="29.650" width="1.475" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 31.763 29.950)"/>
+<rect x="32.900" y="28.700" width="1.475" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 33.638 29.000)"/>
+<text class="ref" text-anchor="middle" x="32.700" y="29.300">Q1</text></g>
+<g><title>R1 | 100k | RC0603FR-07100KL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="33.500" y="25.825" width="2.600" height="0.950"/>
+<rect x="33.575" y="25.825" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 33.975 26.300)"/>
+<rect x="35.225" y="25.825" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 35.625 26.300)"/>
+<text class="ref" text-anchor="middle" x="34.800" y="26.600">R1</text></g>
+<g><title>R2 | 5.1k | RC0603FR-075K1L | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="30.525" y="46.200" width="0.950" height="2.600"/>
+<rect x="30.600" y="47.850" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 31.000 48.325)"/>
+<rect x="30.600" y="46.200" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 31.000 46.675)"/>
+<text class="ref" text-anchor="middle" x="31.000" y="47.800">R2</text></g>
+<g><title>R3 | 51R | RC0603FR-0751RL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="32.700" y="45.525" width="2.600" height="0.950"/>
+<rect x="32.775" y="45.525" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 33.175 46.000)"/>
+<rect x="34.425" y="45.525" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 34.825 46.000)"/>
+<text class="ref" text-anchor="middle" x="34.000" y="46.300">R3</text></g>
+<g><title>R4 | 15k | RC0603FR-0715KL | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="31.525" y="50.200" width="0.950" height="2.600"/>
+<rect x="31.600" y="51.850" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 32.000 52.325)"/>
+<rect x="31.600" y="50.200" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 32.000 50.675)"/>
+<text class="ref" text-anchor="middle" x="32.000" y="51.800">R4</text></g>
+<g><title>R5 | 4.7k | RC0603FR-074K7L | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="34.025" y="50.200" width="0.950" height="2.600"/>
+<rect x="34.100" y="51.850" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 34.500 52.325)"/>
+<rect x="34.100" y="50.200" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 34.500 50.675)"/>
+<text class="ref" text-anchor="middle" x="34.500" y="51.800">R5</text></g>
+<g><title>R6 | 100k | RC0603FR-07100KL | HOLD | KiCad 90 deg</title>
+<rect class="body" x="48.025" y="44.700" width="0.950" height="2.600"/>
+<rect x="48.100" y="46.350" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 48.500 46.825)"/>
+<rect x="48.100" y="44.700" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 48.500 45.175)"/>
+<text class="ref" text-anchor="middle" x="48.500" y="46.300">R6</text></g>
+<g><title>R8 | 100k | RC0603FR-07100KL | HOLD | KiCad 0 deg</title>
+<rect class="body" x="50.700" y="51.025" width="2.600" height="0.950"/>
+<rect x="50.775" y="51.025" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 51.175 51.500)"/>
+<rect x="52.425" y="51.025" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 52.825 51.500)"/>
+<text class="ref" text-anchor="middle" x="52.000" y="51.800">R8</text></g>
+<g><title>R9 | 13.3k | RC0603FR-0713K3L | HOLD | KiCad 0 deg</title>
+<rect class="body" x="50.700" y="53.025" width="2.600" height="0.950"/>
+<rect x="50.775" y="53.025" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 51.175 53.500)"/>
+<rect x="52.425" y="53.025" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 52.825 53.500)"/>
+<text class="ref" text-anchor="middle" x="52.000" y="53.800">R9</text></g>
+<g><title>R10 | 100R | RC0603FR-07100RL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="44.700" y="23.525" width="2.600" height="0.950"/>
+<rect x="44.775" y="23.525" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 45.175 24.000)"/>
+<rect x="46.425" y="23.525" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 46.825 24.000)"/>
+<text class="ref" text-anchor="middle" x="46.000" y="24.300">R10</text></g>
+<g><title>R11 | 10k | RC0603FR-0710KL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="44.700" y="26.025" width="2.600" height="0.950"/>
+<rect x="44.775" y="26.025" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 45.175 26.500)"/>
+<rect x="46.425" y="26.025" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 46.825 26.500)"/>
+<text class="ref" text-anchor="middle" x="46.000" y="26.800">R11</text></g>
+<g><title>R12 | 100R | RC0603FR-07100RL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="36.200" y="54.525" width="2.600" height="0.950"/>
+<rect x="36.275" y="54.525" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 36.675 55.000)"/>
+<rect x="37.925" y="54.525" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 38.325 55.000)"/>
+<text class="ref" text-anchor="middle" x="37.500" y="55.300">R12</text></g>
+<g><title>R13 | 10k | RC0603FR-0710KL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="39.700" y="54.525" width="2.600" height="0.950"/>
+<rect x="39.775" y="54.525" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 40.175 55.000)"/>
+<rect x="41.425" y="54.525" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 41.825 55.000)"/>
+<text class="ref" text-anchor="middle" x="41.000" y="55.300">R13</text></g>
+<g><title>R14 | 100k | RC0603FR-07100KL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="43.200" y="20.525" width="2.600" height="0.950"/>
+<rect x="43.275" y="20.525" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 43.675 21.000)"/>
+<rect x="44.925" y="20.525" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 45.325 21.000)"/>
+<text class="ref" text-anchor="middle" x="44.500" y="21.300">R14</text></g>
+<g><title>R15 | 100k | RC0603FR-07100KL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="42.200" y="58.025" width="2.600" height="0.950"/>
+<rect x="42.275" y="58.025" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 42.675 58.500)"/>
+<rect x="43.925" y="58.025" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 44.325 58.500)"/>
+<text class="ref" text-anchor="middle" x="43.500" y="58.800">R15</text></g>
+<g><title>R16 | 10k | RC0603FR-0710KL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="56.700" y="42.525" width="2.600" height="0.950"/>
+<rect x="56.775" y="42.525" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 57.175 43.000)"/>
+<rect x="58.425" y="42.525" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 58.825 43.000)"/>
+<text class="ref" text-anchor="middle" x="58.000" y="43.300">R16</text></g>
+<g><title>R17 | 100R | RC0603FR-07100RL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="82.200" y="47.025" width="2.600" height="0.950"/>
+<rect x="82.275" y="47.025" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 82.675 47.500)"/>
+<rect x="83.925" y="47.025" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 84.325 47.500)"/>
+<text class="ref" text-anchor="middle" x="83.500" y="47.800">R17</text></g>
+<g><title>R18 | 100R | RC0603FR-07100RL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="82.200" y="49.025" width="2.600" height="0.950"/>
+<rect x="82.275" y="49.025" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 82.675 49.500)"/>
+<rect x="83.925" y="49.025" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 84.325 49.500)"/>
+<text class="ref" text-anchor="middle" x="83.500" y="49.800">R18</text></g>
+<g><title>R19 | 100R | RC0603FR-07100RL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="82.200" y="51.025" width="2.600" height="0.950"/>
+<rect x="82.275" y="51.025" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 82.675 51.500)"/>
+<rect x="83.925" y="51.025" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 84.325 51.500)"/>
+<text class="ref" text-anchor="middle" x="83.500" y="51.800">R19</text></g>
+<g><title>R20 | 100R | RC0603FR-07100RL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="66.700" y="55.525" width="2.600" height="0.950"/>
+<rect x="66.775" y="55.525" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 67.175 56.000)"/>
+<rect x="68.425" y="55.525" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 68.825 56.000)"/>
+<text class="ref" text-anchor="middle" x="68.000" y="56.300">R20</text></g>
+<g><title>R21 | 100R | RC0603FR-07100RL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="70.200" y="55.525" width="2.600" height="0.950"/>
+<rect x="70.275" y="55.525" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 70.675 56.000)"/>
+<rect x="71.925" y="55.525" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 72.325 56.000)"/>
+<text class="ref" text-anchor="middle" x="71.500" y="56.300">R21</text></g>
+<g><title>R22 | 100R | RC0603FR-07100RL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="76.700" y="57.025" width="2.600" height="0.950"/>
+<rect x="76.775" y="57.025" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 77.175 57.500)"/>
+<rect x="78.425" y="57.025" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 78.825 57.500)"/>
+<text class="ref" text-anchor="middle" x="78.000" y="57.800">R22</text></g>
+<g><title>R23 | 2.2k | RC0603FR-072K2L | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="77.200" y="43.525" width="2.600" height="0.950"/>
+<rect x="77.275" y="43.525" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 77.675 44.000)"/>
+<rect x="78.925" y="43.525" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 79.325 44.000)"/>
+<text class="ref" text-anchor="middle" x="78.500" y="44.300">R23</text></g>
+<g><title>R24 | 2.2k | RC0603FR-072K2L | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="77.200" y="45.525" width="2.600" height="0.950"/>
+<rect x="77.275" y="45.525" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 77.675 46.000)"/>
+<rect x="78.925" y="45.525" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 79.325 46.000)"/>
+<text class="ref" text-anchor="middle" x="78.500" y="46.300">R24</text></g>
+<g><title>R25 | 5.1k | RC0603FR-075K1L | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="65.700" y="28.525" width="2.600" height="0.950"/>
+<rect x="65.775" y="28.525" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 66.175 29.000)"/>
+<rect x="67.425" y="28.525" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 67.825 29.000)"/>
+<text class="ref" text-anchor="middle" x="67.000" y="29.300">R25</text></g>
+<g><title>R26 | 5.1k | RC0603FR-075K1L | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="69.700" y="29.025" width="2.600" height="0.950"/>
+<rect x="69.775" y="29.025" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 70.175 29.500)"/>
+<rect x="71.425" y="29.025" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 71.825 29.500)"/>
+<text class="ref" text-anchor="middle" x="71.000" y="29.800">R26</text></g>
+<g><title>R27 | 47k | RC0603FR-0747KL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="73.700" y="29.025" width="2.600" height="0.950"/>
+<rect x="73.775" y="29.025" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 74.175 29.500)"/>
+<rect x="75.425" y="29.025" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 75.825 29.500)"/>
+<text class="ref" text-anchor="middle" x="75.000" y="29.800">R27</text></g>
+<g><title>R28 | 47k | RC0603FR-0747KL | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="73.700" y="31.025" width="2.600" height="0.950"/>
+<rect x="73.775" y="31.025" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 74.175 31.500)"/>
+<rect x="75.425" y="31.025" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 75.825 31.500)"/>
+<text class="ref" text-anchor="middle" x="75.000" y="31.800">R28</text></g>
+<g><title>R29 | 1k | RC0603FR-071KL | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="49.525" y="21.200" width="0.950" height="2.600"/>
+<rect x="49.600" y="22.850" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 50.000 23.325)"/>
+<rect x="49.600" y="21.200" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 50.000 21.675)"/>
+<text class="ref" text-anchor="middle" x="50.000" y="22.800">R29</text></g>
+<g><title>R30 | 1k | RC0603FR-071KL | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="52.725" y="21.200" width="0.950" height="2.600"/>
+<rect x="52.800" y="22.850" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 53.200 23.325)"/>
+<rect x="52.800" y="21.200" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 53.200 21.675)"/>
+<text class="ref" text-anchor="middle" x="53.200" y="22.800">R30</text></g>
+<g><title>R31 | 47k | RC0603FR-0747KL | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="43.025" y="36.700" width="0.950" height="2.600"/>
+<rect x="43.100" y="38.350" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 43.500 38.825)"/>
+<rect x="43.100" y="36.700" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 43.500 37.175)"/>
+<text class="ref" text-anchor="middle" x="43.500" y="38.300">R31</text></g>
+<g><title>R32 | 6.8k | RC0603FR-076K8L | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="43.025" y="40.200" width="0.950" height="2.600"/>
+<rect x="43.100" y="41.850" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 43.500 42.325)"/>
+<rect x="43.100" y="40.200" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 43.500 40.675)"/>
+<text class="ref" text-anchor="middle" x="43.500" y="41.800">R32</text></g>
+<g><title>R33 | 0.02R 1W | CRA2512-FZ-R020ELF | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="33.362" y="35.825" width="9.275" height="3.350"/>
+<rect x="34.425" y="35.825" width="1.225" height="3.350" rx=".08" fill="#ef6b26" transform="rotate(-0.000 35.037 37.500)"/>
+<rect x="40.350" y="35.825" width="1.225" height="3.350" rx=".08" fill="#627e99" transform="rotate(-0.000 40.963 37.500)"/>
+<text class="ref" text-anchor="middle" x="38.000" y="37.800">R33</text></g>
+<g><title>R34 | 1k | RC0603FR-071KL | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="55.925" y="21.200" width="0.950" height="2.600"/>
+<rect x="56.000" y="22.850" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 56.400 23.325)"/>
+<rect x="56.000" y="21.200" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 56.400 21.675)"/>
+<text class="ref" text-anchor="middle" x="56.400" y="22.800">R34</text></g>
+<g><title>R35 | 1k | RC0603FR-071KL | CANDIDATE | KiCad 90 deg</title>
+<rect class="body" x="59.125" y="21.200" width="0.950" height="2.600"/>
+<rect x="59.200" y="22.850" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-90.000 59.600 23.325)"/>
+<rect x="59.200" y="21.200" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-90.000 59.600 21.675)"/>
+<text class="ref" text-anchor="middle" x="59.600" y="22.800">R35</text></g>
+<g><title>SW1 | RESET | KMR221GLFS | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="81.450" y="36.700" width="5.100" height="2.600"/>
+<rect x="81.500" y="36.700" width="0.900" height="1.000" rx=".08" fill="#ef6b26" transform="rotate(-0.000 81.950 37.200)"/>
+<rect x="85.600" y="36.700" width="0.900" height="1.000" rx=".08" fill="#ef6b26" transform="rotate(-0.000 86.050 37.200)"/>
+<rect x="81.500" y="38.300" width="0.900" height="1.000" rx=".08" fill="#627e99" transform="rotate(-0.000 81.950 38.800)"/>
+<rect x="85.600" y="38.300" width="0.900" height="1.000" rx=".08" fill="#627e99" transform="rotate(-0.000 86.050 38.800)"/>
+<text class="ref" text-anchor="middle" x="84.000" y="38.300">SW1</text></g>
+<g><title>TP1 | ESC_PWM | bare PCB feature | BOARD_FEATURE | KiCad 0 deg</title>
+<rect class="body" x="46.250" y="60.250" width="1.500" height="1.500"/>
+<ellipse cx="47.000" cy="61.000" rx="0.750" ry="0.750" fill="#ef6b26"/>
+<text class="ref" text-anchor="middle" x="47.000" y="61.300">TP1</text></g>
+<g><title>TP2 | SERVO_PWM | bare PCB feature | BOARD_FEATURE | KiCad 0 deg</title>
+<rect class="body" x="50.250" y="60.250" width="1.500" height="1.500"/>
+<ellipse cx="51.000" cy="61.000" rx="0.750" ry="0.750" fill="#ef6b26"/>
+<text class="ref" text-anchor="middle" x="51.000" y="61.300">TP2</text></g>
+<g><title>TP3 | +3V3 | bare PCB feature | BOARD_FEATURE | KiCad 0 deg</title>
+<rect class="body" x="54.250" y="60.250" width="1.500" height="1.500"/>
+<ellipse cx="55.000" cy="61.000" rx="0.750" ry="0.750" fill="#ef6b26"/>
+<text class="ref" text-anchor="middle" x="55.000" y="61.300">TP3</text></g>
+<g><title>TP4 | VSERVO | bare PCB feature | BOARD_FEATURE | KiCad 0 deg</title>
+<rect class="body" x="58.250" y="60.250" width="1.500" height="1.500"/>
+<ellipse cx="59.000" cy="61.000" rx="0.750" ry="0.750" fill="#ef6b26"/>
+<text class="ref" text-anchor="middle" x="59.000" y="61.300">TP4</text></g>
+<g><title>TP5 | VIN_RAW | bare PCB feature | BOARD_FEATURE | KiCad 0 deg</title>
+<rect class="body" x="62.250" y="60.250" width="1.500" height="1.500"/>
+<ellipse cx="63.000" cy="61.000" rx="0.750" ry="0.750" fill="#ef6b26"/>
+<text class="ref" text-anchor="middle" x="63.000" y="61.300">TP5</text></g>
+<g><title>TP6 | GND | bare PCB feature | BOARD_FEATURE | KiCad 0 deg</title>
+<rect class="body" x="42.250" y="60.250" width="1.500" height="1.500"/>
+<ellipse cx="43.000" cy="61.000" rx="0.750" ry="0.750" fill="#ef6b26"/>
+<text class="ref" text-anchor="middle" x="43.000" y="61.300">TP6</text></g>
+<g><title>TP7 | PPS | bare PCB feature | BOARD_FEATURE | KiCad 0 deg</title>
+<rect class="body" x="81.250" y="56.250" width="1.500" height="1.500"/>
+<ellipse cx="82.000" cy="57.000" rx="0.750" ry="0.750" fill="#ef6b26"/>
+<text class="ref" text-anchor="middle" x="82.000" y="57.300">TP7</text></g>
+<g><title>U1 | STM32F446RET6 | STM32F446RET6 | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="51.550" y="27.550" width="12.900" height="12.900"/>
+<rect x="51.550" y="30.100" width="1.550" height="0.300" rx=".08" fill="#ef6b26" transform="rotate(-0.000 52.325 30.250)"/>
+<rect x="51.550" y="30.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 30.750)"/>
+<rect x="51.550" y="31.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 31.250)"/>
+<rect x="51.550" y="31.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 31.750)"/>
+<rect x="51.550" y="32.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 32.250)"/>
+<rect x="51.550" y="32.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 32.750)"/>
+<rect x="51.550" y="33.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 33.250)"/>
+<rect x="51.550" y="33.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 33.750)"/>
+<rect x="51.550" y="34.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 34.250)"/>
+<rect x="51.550" y="34.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 34.750)"/>
+<rect x="51.550" y="35.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 35.250)"/>
+<rect x="51.550" y="35.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 35.750)"/>
+<rect x="51.550" y="36.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 36.250)"/>
+<rect x="51.550" y="36.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 36.750)"/>
+<rect x="51.550" y="37.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 37.250)"/>
+<rect x="51.550" y="37.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 52.325 37.750)"/>
+<rect x="54.100" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 54.250 39.675)"/>
+<rect x="54.600" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 54.750 39.675)"/>
+<rect x="55.100" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 55.250 39.675)"/>
+<rect x="55.600" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 55.750 39.675)"/>
+<rect x="56.100" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 56.250 39.675)"/>
+<rect x="56.600" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 56.750 39.675)"/>
+<rect x="57.100" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 57.250 39.675)"/>
+<rect x="57.600" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 57.750 39.675)"/>
+<rect x="58.100" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 58.250 39.675)"/>
+<rect x="58.600" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 58.750 39.675)"/>
+<rect x="59.100" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 59.250 39.675)"/>
+<rect x="59.600" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 59.750 39.675)"/>
+<rect x="60.100" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 60.250 39.675)"/>
+<rect x="60.600" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 60.750 39.675)"/>
+<rect x="61.100" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 61.250 39.675)"/>
+<rect x="61.600" y="38.900" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 61.750 39.675)"/>
+<rect x="62.900" y="37.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 37.750)"/>
+<rect x="62.900" y="37.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 37.250)"/>
+<rect x="62.900" y="36.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 36.750)"/>
+<rect x="62.900" y="36.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 36.250)"/>
+<rect x="62.900" y="35.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 35.750)"/>
+<rect x="62.900" y="35.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 35.250)"/>
+<rect x="62.900" y="34.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 34.750)"/>
+<rect x="62.900" y="34.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 34.250)"/>
+<rect x="62.900" y="33.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 33.750)"/>
+<rect x="62.900" y="33.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 33.250)"/>
+<rect x="62.900" y="32.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 32.750)"/>
+<rect x="62.900" y="32.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 32.250)"/>
+<rect x="62.900" y="31.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 31.750)"/>
+<rect x="62.900" y="31.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 31.250)"/>
+<rect x="62.900" y="30.600" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 30.750)"/>
+<rect x="62.900" y="30.100" width="1.550" height="0.300" rx=".08" fill="#627e99" transform="rotate(-0.000 63.675 30.250)"/>
+<rect x="61.600" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 61.750 28.325)"/>
+<rect x="61.100" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 61.250 28.325)"/>
+<rect x="60.600" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 60.750 28.325)"/>
+<rect x="60.100" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 60.250 28.325)"/>
+<rect x="59.600" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 59.750 28.325)"/>
+<rect x="59.100" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 59.250 28.325)"/>
+<rect x="58.600" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 58.750 28.325)"/>
+<rect x="58.100" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 58.250 28.325)"/>
+<rect x="57.600" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 57.750 28.325)"/>
+<rect x="57.100" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 57.250 28.325)"/>
+<rect x="56.600" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 56.750 28.325)"/>
+<rect x="56.100" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 56.250 28.325)"/>
+<rect x="55.600" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 55.750 28.325)"/>
+<rect x="55.100" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 55.250 28.325)"/>
+<rect x="54.600" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 54.750 28.325)"/>
+<rect x="54.100" y="27.550" width="0.300" height="1.550" rx=".08" fill="#627e99" transform="rotate(-0.000 54.250 28.325)"/>
+<text class="ref" text-anchor="middle" x="58.000" y="34.300">U1</text></g>
+<g><title>U2 | R1240N001B-TR-FE | R1240N001B-TR-FE | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="25.095" y="46.099" width="3.810" height="2.802"/>
+<rect x="25.095" y="46.271" width="0.902" height="0.559" rx=".08" fill="#ef6b26" transform="rotate(-0.000 25.546 46.550)"/>
+<rect x="25.095" y="47.221" width="0.902" height="0.559" rx=".08" fill="#627e99" transform="rotate(-0.000 25.546 47.500)"/>
+<rect x="25.095" y="48.171" width="0.902" height="0.559" rx=".08" fill="#627e99" transform="rotate(-0.000 25.546 48.450)"/>
+<rect x="28.003" y="48.171" width="0.902" height="0.559" rx=".08" fill="#627e99" transform="rotate(-0.000 28.454 48.450)"/>
+<rect x="28.003" y="47.221" width="0.902" height="0.559" rx=".08" fill="#627e99" transform="rotate(-0.000 28.454 47.500)"/>
+<rect x="28.003" y="46.271" width="0.902" height="0.559" rx=".08" fill="#627e99" transform="rotate(-0.000 28.454 46.550)"/>
+<text class="ref" text-anchor="middle" x="27.000" y="47.800">U2</text></g>
+<g><title>U3 | TPS54202 | TPS54202DDCR | HOLD | KiCad 0 deg</title>
+<rect class="body" x="50.200" y="44.387" width="3.600" height="3.225"/>
+<rect x="50.200" y="44.750" width="1.325" height="0.600" rx=".08" fill="#ef6b26" transform="rotate(-0.000 50.862 45.050)"/>
+<rect x="50.200" y="45.700" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 50.862 46.000)"/>
+<rect x="50.200" y="46.650" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 50.862 46.950)"/>
+<rect x="52.475" y="46.650" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 53.138 46.950)"/>
+<rect x="52.475" y="45.700" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 53.138 46.000)"/>
+<rect x="52.475" y="44.750" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 53.138 45.050)"/>
+<text class="ref" text-anchor="middle" x="52.000" y="46.300">U3</text></g>
+<g><title>U4 | 74AHCT1G125 | SN74AHCT1G125DBVR | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="36.200" y="18.887" width="3.600" height="3.225"/>
+<rect x="36.200" y="19.250" width="1.325" height="0.600" rx=".08" fill="#ef6b26" transform="rotate(-0.000 36.862 19.550)"/>
+<rect x="36.200" y="20.200" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 36.862 20.500)"/>
+<rect x="36.200" y="21.150" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 36.862 21.450)"/>
+<rect x="38.475" y="21.150" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 39.138 21.450)"/>
+<rect x="38.475" y="19.250" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 39.138 19.550)"/>
+<text class="ref" text-anchor="middle" x="38.000" y="20.800">U4</text></g>
+<g><title>U5 | 74AHCT1G125 | SN74AHCT1G125DBVR | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="35.200" y="56.887" width="3.600" height="3.225"/>
+<rect x="35.200" y="57.250" width="1.325" height="0.600" rx=".08" fill="#ef6b26" transform="rotate(-0.000 35.862 57.550)"/>
+<rect x="35.200" y="58.200" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 35.862 58.500)"/>
+<rect x="35.200" y="59.150" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 35.862 59.450)"/>
+<rect x="37.475" y="59.150" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 38.138 59.450)"/>
+<rect x="37.475" y="57.250" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 38.138 57.550)"/>
+<text class="ref" text-anchor="middle" x="37.000" y="58.800">U5</text></g>
+<g><title>U6 | ICM-20948 | ICM-20948 | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="76.150" y="51.150" width="3.700" height="3.700"/>
+<rect x="76.150" y="51.900" width="0.600" height="0.200" rx=".08" fill="#ef6b26" transform="rotate(-0.000 76.450 52.000)"/>
+<rect x="76.150" y="52.300" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-0.000 76.450 52.400)"/>
+<rect x="76.150" y="52.700" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-0.000 76.450 52.800)"/>
+<rect x="76.150" y="53.100" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-0.000 76.450 53.200)"/>
+<rect x="76.150" y="53.500" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-0.000 76.450 53.600)"/>
+<rect x="76.150" y="53.900" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-0.000 76.450 54.000)"/>
+<rect x="76.700" y="54.450" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-90.000 77.000 54.550)"/>
+<rect x="77.100" y="54.450" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-90.000 77.400 54.550)"/>
+<rect x="77.500" y="54.450" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-90.000 77.800 54.550)"/>
+<rect x="77.900" y="54.450" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-90.000 78.200 54.550)"/>
+<rect x="78.300" y="54.450" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-90.000 78.600 54.550)"/>
+<rect x="78.700" y="54.450" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-90.000 79.000 54.550)"/>
+<rect x="79.250" y="53.900" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-0.000 79.550 54.000)"/>
+<rect x="79.250" y="53.500" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-0.000 79.550 53.600)"/>
+<rect x="79.250" y="53.100" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-0.000 79.550 53.200)"/>
+<rect x="79.250" y="52.700" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-0.000 79.550 52.800)"/>
+<rect x="79.250" y="52.300" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-0.000 79.550 52.400)"/>
+<rect x="79.250" y="51.900" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-0.000 79.550 52.000)"/>
+<rect x="78.700" y="51.350" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-90.000 79.000 51.450)"/>
+<rect x="78.300" y="51.350" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-90.000 78.600 51.450)"/>
+<rect x="77.900" y="51.350" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-90.000 78.200 51.450)"/>
+<rect x="77.500" y="51.350" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-90.000 77.800 51.450)"/>
+<rect x="77.100" y="51.350" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-90.000 77.400 51.450)"/>
+<rect x="76.700" y="51.350" width="0.600" height="0.200" rx=".08" fill="#627e99" transform="rotate(-90.000 77.000 51.450)"/>
+<text class="ref" text-anchor="middle" x="78.000" y="53.300">U6</text></g>
+<g><title>U7 | USBLC6-2SC6 | USBLC6-2SC6 | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="68.200" y="24.887" width="3.600" height="3.225"/>
+<rect x="68.200" y="25.250" width="1.325" height="0.600" rx=".08" fill="#ef6b26" transform="rotate(-0.000 68.862 25.550)"/>
+<rect x="68.200" y="26.200" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 68.862 26.500)"/>
+<rect x="68.200" y="27.150" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 68.862 27.450)"/>
+<rect x="70.475" y="27.150" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 71.138 27.450)"/>
+<rect x="70.475" y="26.200" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 71.138 26.500)"/>
+<rect x="70.475" y="25.250" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 71.138 25.550)"/>
+<text class="ref" text-anchor="middle" x="70.000" y="26.800">U7</text></g>
+<g><title>U8 | INA180A1 | INA180A1IDBVR | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="34.200" y="40.887" width="3.600" height="3.225"/>
+<rect x="34.200" y="41.250" width="1.325" height="0.600" rx=".08" fill="#ef6b26" transform="rotate(-0.000 34.862 41.550)"/>
+<rect x="34.200" y="42.200" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 34.862 42.500)"/>
+<rect x="34.200" y="43.150" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 34.862 43.450)"/>
+<rect x="36.475" y="43.150" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 37.138 43.450)"/>
+<rect x="36.475" y="41.250" width="1.325" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 37.138 41.550)"/>
+<text class="ref" text-anchor="middle" x="36.000" y="42.800">U8</text></g>
+<g><title>Y1 | 8MHz | ABM8-8.000MHZ-10-1-U-T | CANDIDATE | KiCad 0 deg</title>
+<rect class="body" x="41.700" y="27.950" width="3.600" height="3.100"/>
+<rect x="41.700" y="29.750" width="1.400" height="1.200" rx=".08" fill="#ef6b26" transform="rotate(-0.000 42.400 30.350)"/>
+<rect x="43.900" y="29.750" width="1.400" height="1.200" rx=".08" fill="#627e99" transform="rotate(-0.000 44.600 30.350)"/>
+<rect x="43.900" y="28.050" width="1.400" height="1.200" rx=".08" fill="#627e99" transform="rotate(-0.000 44.600 28.650)"/>
+<rect x="41.700" y="28.050" width="1.400" height="1.200" rx=".08" fill="#627e99" transform="rotate(-0.000 42.400 28.650)"/>
+<text class="ref" text-anchor="middle" x="43.500" y="29.800">Y1</text></g>
+<g><title>Y2 | 32.768kHz | ABS07-32.768KHZ-7-T | HOLD | KiCad 0 deg</title>
+<rect class="body" x="41.350" y="33.100" width="4.300" height="1.800"/>
+<rect x="44.250" y="33.100" width="1.000" height="1.800" rx=".08" fill="#ef6b26" transform="rotate(-0.000 44.750 34.000)"/>
+<rect x="41.750" y="33.100" width="1.000" height="1.800" rx=".08" fill="#627e99" transform="rotate(-0.000 42.250 34.000)"/>
+<text class="ref" text-anchor="middle" x="43.500" y="34.300">Y2</text></g>
+<circle cx="5" cy="67.6" r=".8" fill="#ef6b26"/><text x="7" y="68.0" font-size="1.45">Orange = electrical pad 1/01. It does not universally mean cathode or positive.</text>
+<text x="4" y="71.2" font-size="1.25">Match IC dots, diode bands, capacitor polarity and connector keys to the exact package drawing.</text>
+<text x="4" y="74.1" font-size="1.25">Grey outlines show pad envelopes, not component bodies. Check orientation_review.csv before assembly.</text>
+<text x="4" y="77.0" font-size="1.25">118 source footprints on this side. No bench, package, solder-paste or machine-rotation approval is implied.</text>
+</svg>

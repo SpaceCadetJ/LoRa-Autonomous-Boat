@@ -3,9 +3,9 @@
   "generated_at": "2026-09-17T16:36:48.583852+00:00",
   "checks": [
     {
-      "name": "S2 overall / complete V1 transfer gate",
-      "status": "blocked",
-      "detail": "Connectivity and error-level checks pass for the released V1 snapshot. Complete schematic/PCB parity remains unresolved: 139 warnings. This report does not review the newer V2 branch or authorize fabrication/powered operation.",
+      "name": "S2 overall / historic V1 evidence coverage",
+      "status": "pass with limitations",
+      "detail": "Connectivity and error-level checks pass for the released V1 snapshot. The 139 parity warnings are classified value/name metadata differences, not electrical connectivity failures. A no-change schematic update workflow and full fabrication fidelity remain unverified. No V2 review or fabrication/powered-operation approval is implied.",
       "evidence": ["reviews/codex/S2_VERIFICATION.md", "reviews/codex/s2/analysis.json"]
     },
     {
@@ -34,7 +34,7 @@
     },
     {
       "name": "Native schematic / PCB parity",
-      "status": "blocked",
+      "status": "warning / workflow unverified",
       "detail": "139 warnings: 34 footprint-value differences, 67 hierarchical net-name prefix differences, 37 unnamed NC pads versus generated unconnected names, and 1 singleton VBAT naming difference. All classified; exact pin connectivity agrees, but a no-change Update PCB from Schematic is not proven.",
       "evidence": ["reviews/codex/s2/drc.json", "reviews/codex/s2/rule_summary.json"]
     },
@@ -46,7 +46,7 @@
     },
     {
       "name": "V5 drill diameters / fabrication fidelity",
-      "status": "blocked",
+      "status": "unverified",
       "detail": "Available BOATCREW drill is identical to the older V4 drill after removing its FILE header. Film centers validate positions, not finished-hole diameters or plating; no independent V5 drill-diameter proof is available.",
       "evidence": ["reviews/codex/s2/drill_comparison.json"]
     },

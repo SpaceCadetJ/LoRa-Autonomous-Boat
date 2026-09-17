@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-17",
+  "title": "LoRa Vehicle Controller: Reconstruction and Platform Redesign",
+  "short_title": "LoRa Autonomous Boat Controller",
+  "summary": "An STM32 and LoRa vehicle-controller project with reconstructed KiCad hardware, annotated schematics, a searchable engineering workspace, assembly evidence and a reproducible V1 firmware build. V2 hardware and a voice/text/location handheld remain under development.",
+  "status": {
+    "label": "Engineering review edition; V2 development in progress",
+    "manufacturing_approved": false,
+    "v1_firmware": "Reproducible preserved-source build; unqualified behavior",
+    "v2_firmware": "No implementation project or qualified image",
+    "handheld": "Voice, text and location requirements; no released hardware or firmware",
+    "ci": "Automatic repository/evidence checks plus opt-in native CAD/firmware jobs; hardware gates remain separate. Consult the actual GitHub run for hosted execution status."
+  },
+  "attribution": {
+    "original_context": "University of Arkansas EECS senior-design team project; repository identifies May 2025 fabrication evidence",
+    "current_work": "AI-agent-assisted reconstruction, redesign, documentation and review workflow",
+    "individual_original_role": null,
+    "editor_note": "Confirm Jay's original team contribution before making first-person ownership claims."
+  },
+  "path_base": "repository_root",
+  "entrypoints": {
+    "case_study": "docs/portfolio/README.md",
+    "viewer": "pm/index.html",
+    "build_guide": "docs/build/README.md",
+    "engineering_handoff": "reviews/codex/publication/README.md"
+  },
+  "technologies": [
+    "STM32F446",
+    "LoRa / Reyax UART modules",
+    "Embedded C",
+    "STM32 HAL / CMSIS",
+    "STM32CubeIDE / CubeMX",
+    "GNU Arm GCC",
+    "NMEA GNSS",
+    "Servo PWM",
+    "Cadence OrCAD / Allegro source evidence",
+    "KiCad 9",
+    "Python",
+    "HTML / CSS / JavaScript",
+    "Node.js",
+    "GitHub Actions workflow definition"
+  ],
+  "assets": [
+    {
+      "path": "docs/img/v1_pcb_top.png",
+      "kind": "pcb_render",
+      "caption": "Legacy boat-controller PCB reconstructed in KiCad from preserved source evidence."
+    },
+    {
+      "path": "docs/img/v2_pcb_top.png",
+      "kind": "pcb_render",
+      "caption": "Multifunction vehicle-controller CAD draft; electrical and layout review ongoing."
+    },
+    {
+      "path": "docs/img/v1_sch_Root.svg",
+      "kind": "schematic_overview",
+      "caption": "V1 functional schematic overview."
+    },
+    {
+      "path": "docs/img/v2_sch_root.svg",
+      "kind": "schematic_overview",
+      "caption": "V2 draft functional schematic overview."
+    },
+    {
+      "path": "docs/img/v1_schematic.pdf",
+      "kind": "schematic_document",
+      "caption": "Annotated V1 circuit drawings; original defects remain documented."
+    },
+    {
+      "path": "docs/img/v2_schematic.pdf",
+      "kind": "schematic_document",
+      "caption": "Annotated V2 draft circuit drawings; fabrication unapproved."
+    },
+    {
+      "path": "hardware/manufacturing/v1/assembly_top.svg",
+      "kind": "assembly_map",
+      "caption": "V1 reference-designator map for assembly review."
+    },
+    {
+      "path": "hardware/manufacturing/v2/assembly_top.svg",
+      "kind": "assembly_map",
+      "caption": "V2 reference-designator map for assembly review."
+    }
+  ],
+  "validated_results": [
+    {
+      "claim": "Fifteen annotated schematic pages were visually inspected after export.",
+      "classification": "visual_review",
+      "evidence": [
+        "reviews/codex/professionalization/VISUAL_REVIEW.md",
+        "docs/img/schematic_export_manifest.json"
+      ]
+    },
+    {
+      "claim": "Presentation edits preserved all baseline components and 533 electrical pins without changing net names, values or footprints.",
+      "classification": "independent_native_check",
+      "metrics": {
+        "v1_components": 44,
+        "v1_pins": 172,
+        "v2_electrical_components": 114,
+        "v2_pins": 361
+      },
+      "evidence": [
+        "reviews/codex/professionalization/FINAL_QUALITY.json",
+        "reviews/codex/professionalization/candidate-review-04/review.json"
+      ]
+    },
+    {
+      "claim": "Two V1 builds on the recorded host and toolchain produced identical ELF, HEX and BIN hashes.",
+      "classification": "software_build_only",
+      "metrics": {
+        "bin_bytes": 36528,
+        "ram_reserved_bytes": 4496,
+        "builds_compared": 2
+      },
+      "bin_sha256": "9b90f0322089d997f1498ee634d4880005bd85fd5337d7a013a5609954239e17",
+      "evidence": [
+        "docs/build/FIRMWARE_HANDOFF.md",
+        "reviews/codex/professionalization/firmware-build-evidence.json"
+      ]
+    },
+    {
+      "claim": "Purchasing and assembly exports reconcile physical references and separate candidate parts from holds and board features.",
+      "classification": "source_reconciliation",
+      "metrics": {
+        "v1_physical_references": 44,
+        "v2_physical_references": 118
+      },
+      "evidence": [
+        "docs/build/PROCUREMENT_HANDOFF.md",
+        "hardware/manufacturing/run_manifest.json"
+      ]
+    },
+    {
+      "claim": "Viewer desktop/mobile interaction checks and 203 local HTTP links passed at the recorded checkpoint.",
+      "classification": "local_viewer_qa",
+      "evidence": [
+        "pm/QA.md"
+      ]
+    },
+    {
+      "claim": "Eighteen quality-tool acceptance tests passed; isolated schematic generation preserved PCB, project and BOM artifacts.",
+      "classification": "workflow_regression_check",
+      "evidence": [
+        "reviews/codex/publication/QUALITY_PORTABILITY.md",
+        "hardware/kicad/evidence/v1_schematic_inputs/reproducibility_report.json"
+      ]
+    }
+  ],
+  "current_native_findings": {
+    "snapshot": "publication/native-review",
+    "v1": {
+      "erc_errors": 0,
+      "erc_warnings": 0,
+      "drc_violation_errors": 0,
+      "drc_warnings": 67,
+      "unconnected_entries": 0,
+      "schematic_parity_entries": 139
+    },
+    "v2": {
+      "erc_errors": 0,
+      "erc_warnings": 1,
+      "drc_violation_errors": 0,
+      "drc_warnings": 101,
+      "unconnected_entries": 3,
+      "schematic_parity_entries": 212
+    },
+    "strict_combined_review_gate": "FAIL",
+    "evidence": [
+      "reviews/codex/publication/QUALITY_PORTABILITY.md",
+      "reviews/codex/publication/native-review/review.json"
+    ]
+  },
+  "roadmap": [
+    "Identify and resolve actual V2 ground islands and affected pads; review U6 AD0 pin intent and schematic-to-PCB discrepancies.",
+    "Freeze V2 pin/protocol contract and create separate diagnostic firmware, then integrate and measure failsafe behavior.",
+    "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",
+    "Measure voice quality, airtime and RC coexistence before selecting handheld radio, codec or hardware."
+  ],
+  "claim_boundaries": [
+    "No verified range, autonomous navigation, speech quality or voice/RC coexistence result is claimed.",
+    "V1 source contains radio, GPS and PWM implementations but retains known safety and parsing defects.",
+    "Protocol/failsafe prototypes are review proposals; no functional firmware correction is represented as integrated.",
+    "A successful compile does not establish original deployed firmware, hardware operation or safety qualification.",
+    "PCB renders are CAD illustrations, not photographs of tested hardware.",
+    "Candidate purchasing CSVs are partial review lists, not complete approved orders or fabrication releases.",
+    "Handset source is absent; the multifunction handheld is proposed.",
+    "Jay's individual original team role must be confirmed before first-person contribution claims."
+  ],
+  "publication": {
+    "integration_commit": null,
+    "live_viewer_url": null,
+    "editor_note": "Use the actual published integration commit and deployment URL when available; repository-relative paths are authoritative here.",
+    "repository_url": "https://github.com/SpaceCadetJ/LoRa-Autonomous-Boat",
+    "branch": "main"
+  }
+}

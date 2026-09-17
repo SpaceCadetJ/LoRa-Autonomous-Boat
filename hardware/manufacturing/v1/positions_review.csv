@@ -1,0 +1,45 @@
+Reference,Value,MPN,Side,X mm from outline left,Y mm from outline top,KiCad rotation degrees,Pad 1 net,Status,Footprint
+C1,0.1uF,KGM21NR71H104KT,Top,52.6796,7.366,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_KGM21_KAV-L
+C10,4.7uF,CL10A475KP8NNNC,Top,37.0332,27.1018,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_0603_CL10A_1P6XP8_SAM-M
+C12,0.1uF,CL10B104KB8NNNC,Top,16.5354,34.2138,90.0,SW_NODE,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_CL10_SAM-M
+C14,470pF,06035A471JAT2A,Top,12.6238,30.3276,-90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_0603G_AVX-M
+C2,0.1uF,KGM21NR71H104KT,Top,30.8864,16.9418,-90.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_KGM21_KAV-L
+C20,10uF,GRM21BR61C106KE15L,Top,8.4582,20.2692,90.0,LORA_FILT,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:G-21_MUR-L
+C21,10uF,GRM21BR61C106KE15L,Top,11.9126,20.2692,90.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:G-21_MUR-L
+C22,0.1uF,KGM21NR71H104KT,Top,13.5128,20.2946,90.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_KGM21_KAV-L
+C23,47pF,GJM1555C1H220JB01D,Top,14.6812,20.1676,90.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_GJM1555C1H220JB01__MUR-L
+C3,0.1uF,KGM21NR71H104KT,Top,35.9156,8.7376,180.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_KGM21_KAV-L
+C4,0.1uF,KGM21NR71H104KT,Top,36.83,24.4094,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_KGM21_KAV-L
+C5,0.1uF,KGM21NR71H104KT,Top,42.164,32.5374,180.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_KGM21_KAV-L
+C6,0.1uF,KGM21NR71H104KT,Top,44.7802,24.6126,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_KGM21_KAV-L
+C7,0.1uF,KGM21NR71H104KT,Top,47.7012,11.7348,90.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_KGM21_KAV-L
+C8,0.1uF,KGM21NR71H104KT,Top,62.7126,18.415,-90.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_KGM21_KAV-L
+C9,0.1uF,KGM21NR71H104KT,Top,62.9158,29.591,90.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_KGM21_KAV-L
+CANHEADER1,B4B-XH-A,B4B-XH-A(LF)(SN),Top,53.1622,2.8702,180.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CONN_B4B-XH-A_JST
+CEXT1,4.7uF,CL10A475KP8NNNC,Top,42.4688,25.7048,-90.0,VCAP1,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_0603_CL10A_1P6XP8_SAM-M
+CIN1,10uF,KTS500B106M55N0T00,Top,5.6642,31.7754,90.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CAP_NTS_55_2P8T_NIP
+COUT1,10uF,GRM31CR71E106KA12L,Top,22.6822,26.6954,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:G-31_MUR-M
+D21,"CMS06(TE12L,Q,M)","CMS06(TE12L,Q,M)",Top,18.8468,33.7058,-90.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:M-FLAT_TOS-L
+GND1,Battery-,,Top,1.27,34.1376,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:amv_con1
+GPSMODULE1,PPTC051LFBN-RC,PPTC051LFBN-RC,Top,40.9194,34.9504,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL
+JTAG1,FTSH-105-XX-X-DV,FTSH-105-01-L-DV-K,Top,45.212,4.0386,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:SAMTEC_FTSH-105-XX-X-DV
+L1,4.7uH,SLF7045T-4R7M2R0-PF,Top,24.3586,32.7152,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:IND_7045_TDK
+L3,BLM15 ferrite,BLM15AG601SN1D,Top,10.2616,19.431,180.0,LORA_VCC,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:IND_BLM15_0402_MUR-L
+L4,BLM15 ferrite,BLM15AG601SN1D,Top,10.3378,21.1074,180.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:IND_BLM15_0402_MUR-L
+LORAMODULE1,PPTC051LFBN-RC,PPTC051LFBN-RC,Top,16.891,19.812,0.0,LORA_VCC,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL
+R1,15k,ERJ-2RKF1502X,Top,14.5796,31.0388,-90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:RC0402N_PAN-M
+R2,4.7k,RC0603FR-074K7L,Top,10.4648,30.4546,90.0,FB_DIV,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:RC0603N_YAG-M
+R3,51,RC0402FR-0751RL,Top,14.8082,34.4424,-90.0,BST_RC,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:RC0402N_YAG-M
+R4,5.1k,ERJ-2RKF5101X,Top,6.096,26.8732,0.0,VIN_RAW,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:RC0402N_PAN-M
+R5,30k,RC0805FR-0730KL,Top,1.3462,25.9842,90.0,VIN_RAW,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:RES_R0805_ROM-M
+R6,10k,RC1005F103CS,Top,3.5814,26.0604,90.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:RES_1005_SAM-M
+SPEEDCONTROLLER1,PPTC031LFBN-RC,PPTC031LFBN-RC,Top,60.198,21.3106,-90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CONN_PPTC031_SUL
+STEERINGSERVO1,PPTC031LFBN-RC,PPTC031LFBN-RC,Top,60.2488,27.2542,90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CONN_PPTC031_SUL
+TP1,TP,,Top,53.7718,17.0942,0.0,PWM_PA8_ESCHDR,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:amv_test_point
+TP3,TP,,Top,53.6448,20.9804,0.0,PWM_PC6_SERVOHDR,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:amv_test_point
+TP4,TP,,Top,4.4704,12.9286,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:amv_test_point
+TP5,TP,,Top,10.6172,12.9286,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:amv_test_point
+U3,STM32F446RET6,STM32F446RET6,Top,39.7764,16.1798,0.0,VBAT,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:LQFP64-10x10mm
+U5,TCAN1042HDRQ1,TCAN1042HDRQ1,Top,56.9722,10.033,90.0,CAN_TXD_PA12,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:D0008A_L
+U6,R1240N001B-TR-FE,R1240N001B-TR-FE,Top,11.811,34.163,0.0,EN,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:SOT-23-6W_PE-SOT23-6W-0512_NMD
+VIN1,Battery+,,Top,1.27,29.3624,0.0,VIN_RAW,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:amv_con1

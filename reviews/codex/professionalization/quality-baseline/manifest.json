@@ -1,0 +1,136 @@
+{
+  "captured_at": "2026-09-17T19:57:49.4777415Z",
+  "revision": "a6316e9216cc55656e3fbb7c4f173895151ac4ff",
+  "files": [
+    {
+      "path": "hardware/kicad/CAN_Bus.kicad_sch",
+      "sha256": "fe03ffc15d8c62d8361d70660bb3333d573c189db8a1fc6f1a5cee9df6abb1b5",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/Debug.kicad_sch",
+      "sha256": "de0da2c0aec9c69994e431f40bf53c2e834e7f1b21951da48ab88739fd2ae151",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/fp-lib-table",
+      "sha256": "1d0776c29bd4d9155867b82549e64080a66d13c4b17c6fd28e3071e7635d0cbb",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/GPS_Module.kicad_sch",
+      "sha256": "b0f9ce4af37f3b2540802e76ad66b972f9be433f34cea586dbfd9e8520a01853",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/LoRa_Boat_Controller.kicad_dru",
+      "sha256": "7d5337c38b2be25b88bbe9782c88fd56e48c7ec7e023646d69ff9805f43dc82c",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/LoRa_Boat_Controller.kicad_pcb",
+      "sha256": "2f604d1691ebde874075baecc2d1aa2985afa0db1a89ca277dec5d2156a553f2",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/LoRa_Boat_Controller.kicad_pro",
+      "sha256": "bd7405e6898de2359513fca9e25c7008c0a23771fe8e9d0aa7f13b507b7a30a3",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/LoRa_Boat_Controller.kicad_sch",
+      "sha256": "8af5beedd78649b91e4ae29dd99a0e7721ae9e9617cc53daf528e3db2f8df8ae",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/LoRa_Boat_Controller.kicad_sym",
+      "sha256": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/LoRa_Module.kicad_sch",
+      "sha256": "88df1df5df610fd5f5718daed17b47ab073579efbee40afe84a8ea1463157f37",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/MCU.kicad_sch",
+      "sha256": "7d783d89be6aa0751a2cdb620050dc888c7743ff26af1c30b2636896e1406355",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/PowerSupply.kicad_sch",
+      "sha256": "bd8a5b1dd67e7d3ddf05bb39bf83bac0e31fa481796a9e233915704c7d4780ea",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/PWM_Outputs.kicad_sch",
+      "sha256": "535a4705ea40bf422500e1843d3bb537f35a944fbe6ae50195990292ebdd51a3",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad/sym-lib-table",
+      "sha256": "34e90e5baea1d322bbb94670fcaea5e5e7eb42425d520e3faaef27f1e54f1de6",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad_v2/Actuators.kicad_sch",
+      "sha256": "99aef0818f19f411e6b5cf8f7ea36a3cc841d765766daaef92b3b8ef319bbf63",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad_v2/Debug.kicad_sch",
+      "sha256": "bbb8eec291e296a37b1a3c28df5945b876f35a30a640dc5cf6ccfb43141b8dc0",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad_v2/fp-lib-table",
+      "sha256": "ab7fae9b8768ecd1309a42873f463ef02016b0ac5c026a12fb412bfa47e8faf7",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb",
+      "sha256": "6595d3b58e4a54b1d3ecbf93a69c93202503dbabcf9d279a6a578df1601d0d26",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro",
+      "sha256": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch",
+      "sha256": "fc86a4e8150e1c638c931abda2cc721ffe7f6b92a6da2391086fb0fbd9734ede",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym",
+      "sha256": "3a8e94baff843cfd8d3253f808d07d697424464d7a5db6d0a4a2f22c5527e121",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad_v2/MCU.kicad_sch",
+      "sha256": "55a9029ee35d9584a79ba8e78161b7d9f76745ef295d83e3c1e9ffb540bd5de0",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad_v2/Navigation.kicad_sch",
+      "sha256": "a1e82218a8c00a4463917795403d4a44de899fe439061f62cd96b16e499650c8",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad_v2/Power.kicad_sch",
+      "sha256": "7d430a949bfc6c9b3d8f5257fad47b7ff4a7f01083045b84552aec54b7b9bf14",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad_v2/Radio.kicad_sch",
+      "sha256": "7a66a12e18ea75f9e1c849974eae1e80c26611b488976c24f3ccb7262382bc3e",
+      "unchanged": true
+    },
+    {
+      "path": "hardware/kicad_v2/sym-lib-table",
+      "sha256": "3dccf10d5632037fbc6978966881b8eb68ceb500677674a746481e19a0368ae3",
+      "unchanged": true
+    }
+  ]
+}

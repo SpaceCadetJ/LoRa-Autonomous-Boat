@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-09-17T20:37:42.701588+00:00",
+  "command": [
+    "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\python.exe",
+    "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\professionalization\\generator-guard\\20260917T203740404372Z\\copy\\hardware\\kicad_v2\\tools\\gen_v2.py",
+    "sch"
+  ],
+  "generator_sha256": "1504bb30d96acd736ea5b70dfab8eb7e7c5171ae6d1a805d5e2275e35ed0338b",
+  "exit_code": 0,
+  "stdout": "118 parts, 71 nets, 320 connected pins\nAnnotated schematic: 7 sheets; 114 symbols; Power:A2, MCU:A2, Radio:A3, Navigation:A3, Actuators:A3, Debug:A3\n",
+  "stderr": "",
+  "protected_before": {
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb": "6595d3b58e4a54b1d3ecbf93a69c93202503dbabcf9d279a6a578df1601d0d26",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+    "docs/BOM_V2.csv": "b95aa2bcb77328e48fcaf6ea74af611e3459863ab394b033a73a0a0dd10778d4"
+  },
+  "protected_after": {
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb": "6595d3b58e4a54b1d3ecbf93a69c93202503dbabcf9d279a6a578df1601d0d26",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+    "docs/BOM_V2.csv": "b95aa2bcb77328e48fcaf6ea74af611e3459863ab394b033a73a0a0dd10778d4"
+  },
+  "changed_in_copy": [],
+  "working_inputs_changed_during_test": [],
+  "passed": true,
+  "scope": "Explicitly tests only gen_v2.py sch; generated schematic correctness is assessed separately by review.py."
+}

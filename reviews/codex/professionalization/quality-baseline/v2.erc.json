@@ -1,0 +1,129 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-17T15:16:25-0500",
+    "kicad_version": "9.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706",
+            "violations": [
+                {
+                    "description": "Footprint 'M-FLAT_TOS-L' not found in library 'LoRa_Boat_Controller'.",
+                    "items": [
+                        {
+                            "description": "Symbol D3 [CMS06_Schottky]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 0.9144
+                            },
+                            "uuid": "d44a204c-40be-5c96-bc40-1d4c83522da5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Footprint 'SOT-23-6W_PE-SOT23-6W-0512_NMD' not found in library 'LoRa_Boat_Controller'.",
+                    "items": [
+                        {
+                            "description": "Symbol U2 [R1240N001x]",
+                            "pos": {
+                                "x": 3.3274,
+                                "y": 0.6604
+                            },
+                            "uuid": "b2356ebc-24c8-5796-a8ee-81f7037d6235"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Footprint 'QFN-24_3x3mm_P0.4mm_NoEP' not found in library 'LoRa_Boat_Controller_V2'.",
+                    "items": [
+                        {
+                            "description": "Symbol U6 [ICM-20948]",
+                            "pos": {
+                                "x": 2.3876,
+                                "y": 0.508
+                            },
+                            "uuid": "5955283e-8b2b-5873-af23-904e068dcd4a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Footprint 'CONN5_1LFBN-RC_SUL' not found in library 'LoRa_Boat_Controller'.",
+                    "items": [
+                        {
+                            "description": "Symbol J4 [Conn_01x05]",
+                            "pos": {
+                                "x": 0.5842,
+                                "y": 0.381
+                            },
+                            "uuid": "b251f397-e6f1-5d50-847a-7bac7a1b206d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                }
+            ]
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865",
+            "violations": []
+        },
+        {
+            "path": "/MCU/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/8711b833-cdc8-552e-8deb-3b072a45ec1b",
+            "violations": []
+        },
+        {
+            "path": "/Radio/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/797ed2d7-f26a-5324-8d20-a644f401b7c5",
+            "violations": []
+        },
+        {
+            "path": "/Navigation/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/b7be4430-1eb4-5f2b-9d93-98132a937546",
+            "violations": [
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]",
+                            "pos": {
+                                "x": 2.2606,
+                                "y": 0.4318
+                            },
+                            "uuid": "72855d3b-6336-590e-b8c9-c165786bd29d"
+                        },
+                        {
+                            "description": "Symbol #FLG04 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 3.9624,
+                                "y": 2.5654
+                            },
+                            "uuid": "56204ebe-fb90-5700-9fd1-92763bd9a073"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/Actuators/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31",
+            "violations": []
+        },
+        {
+            "path": "/Debug/",
+            "uuid_path": "/1dd45446-4f65-56e8-a2d3-9539c2076706/d1e55589-9ee7-5c35-ba90-3e096ceac45d",
+            "violations": []
+        }
+    ],
+    "source": "LoRa_Boat_Controller_V2.kicad_sch"
+}

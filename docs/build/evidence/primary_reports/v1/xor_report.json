@@ -1,0 +1,92 @@
+{
+ "layers": {
+  "F.Cu": {
+   "fab_px": 12425788,
+   "kicad_px": 12493936,
+   "union_px": 12513996,
+   "xor_px": 108268,
+   "only_fab_px": 20060,
+   "only_kicad_px": 88208,
+   "xor_pct_of_union": 0.8651752805418829,
+   "xor_pct_of_board": 0.7032618128341969,
+   "scale_px_per_mil": 2.0
+  },
+  "B.Cu": {
+   "fab_px": 13567455,
+   "kicad_px": 13580766,
+   "union_px": 13589941,
+   "xor_px": 31661,
+   "only_fab_px": 9175,
+   "only_kicad_px": 22486,
+   "xor_pct_of_union": 0.23297378553740594,
+   "xor_pct_of_board": 0.20565607802992117,
+   "scale_px_per_mil": 2.0
+  },
+  "F.Mask": {
+   "fab_px": 1634878,
+   "kicad_px": 1634878,
+   "union_px": 1642060,
+   "xor_px": 14364,
+   "only_fab_px": 7182,
+   "only_kicad_px": 7182,
+   "xor_pct_of_union": 0.8747548810640293,
+   "xor_pct_of_board": 0.09330229319420699,
+   "scale_px_per_mil": 2.0
+  },
+  "B.Mask": {
+   "fab_px": 748827,
+   "kicad_px": 748827,
+   "union_px": 752402,
+   "xor_px": 7150,
+   "only_fab_px": 3575,
+   "only_kicad_px": 3575,
+   "xor_pct_of_union": 0.9502898716377681,
+   "xor_pct_of_board": 0.04644328852259677,
+   "scale_px_per_mil": 2.0
+  },
+  "F.SilkS": {
+   "fab_px": 462254,
+   "kicad_px": 462096,
+   "union_px": 468624,
+   "xor_px": 12898,
+   "only_fab_px": 6528,
+   "only_kicad_px": 6370,
+   "xor_pct_of_union": 2.7523131551094266,
+   "xor_pct_of_board": 0.08377979515586757,
+   "scale_px_per_mil": 2.0
+  },
+  "Edge.Cuts": {
+   "fab_px": 163568,
+   "kicad_px": 163548,
+   "union_px": 166497,
+   "xor_px": 5878,
+   "only_fab_px": 2949,
+   "only_kicad_px": 2929,
+   "xor_pct_of_union": 3.5303939410319707,
+   "xor_pct_of_board": 0.03818093006095438,
+   "scale_px_per_mil": 2.0
+  }
+ },
+ "drill": {
+  "v5_holes": 53,
+  "kicad_holes": 53,
+  "matched_within_1mil": 53,
+  "worst_offset_mil": 0.0428555559192659,
+  "size_mismatches": [],
+  "v5_holes_missing_in_kicad": [],
+  "v5_by_size": {
+   "49.0": 4,
+   "23.62": 2,
+   "40.0": 16,
+   "55.12": 4,
+   "13.0": 27
+  },
+  "kicad_by_size": {
+   "13.0": 27,
+   "23.6": 2,
+   "40.0": 16,
+   "49.0": 4,
+   "55.1": 4
+  }
+ }
+}

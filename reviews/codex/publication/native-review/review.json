@@ -1,0 +1,675 @@
+{
+  "schema": 1,
+  "generated_at": "2026-09-17T21:17:01.962328+00:00",
+  "profile": "review",
+  "purpose": "Documentation/layout review is not fabrication approval",
+  "checks": [
+    {
+      "name": "Stable input capture",
+      "passed": true,
+      "gate": "both",
+      "detail": {
+        "changed_during_copy": []
+      },
+      "evidence": []
+    },
+    {
+      "name": "KiCad major version",
+      "passed": true,
+      "gate": "both",
+      "detail": "9.0.7",
+      "evidence": []
+    },
+    {
+      "name": "v1 source connectivity/component preservation",
+      "passed": true,
+      "gate": "both",
+      "detail": {
+        "parts": 44,
+        "pins": 172,
+        "baseline_sha256": "ae7b1fa15ca1d2b350e7a3141f02c2ae29d8d90d507fc511ffbb5122d3617db2",
+        "net_name_changes": 0
+      },
+      "evidence": [
+        "reviews/codex/publication/native-review/v1/connectivity.json"
+      ]
+    },
+    {
+      "name": "v1 PCB/project preservation",
+      "passed": true,
+      "gate": "review",
+      "detail": {
+        "changed": []
+      },
+      "evidence": []
+    },
+    {
+      "name": "v1 ERC",
+      "passed": true,
+      "gate": "both",
+      "detail": {
+        "violations": 0,
+        "by_severity": {},
+        "passed": true
+      },
+      "evidence": [
+        "reviews/codex/publication/native-review/v1/erc.json"
+      ]
+    },
+    {
+      "name": "v1 page-coordinate bounds",
+      "passed": true,
+      "gate": "both",
+      "detail": {
+        "CAN_Bus.kicad_sch": {
+          "page_mm": [
+            420,
+            297
+          ],
+          "checked_anchors_and_corners": 69,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "Debug.kicad_sch": {
+          "page_mm": [
+            420,
+            297
+          ],
+          "checked_anchors_and_corners": 40,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "GPS_Module.kicad_sch": {
+          "page_mm": [
+            420,
+            297
+          ],
+          "checked_anchors_and_corners": 27,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "LoRa_Boat_Controller.kicad_sch": {
+          "page_mm": [
+            420,
+            297
+          ],
+          "checked_anchors_and_corners": 121,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "LoRa_Module.kicad_sch": {
+          "page_mm": [
+            420,
+            297
+          ],
+          "checked_anchors_and_corners": 88,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "MCU.kicad_sch": {
+          "page_mm": [
+            594,
+            420
+          ],
+          "checked_anchors_and_corners": 223,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "PowerSupply.kicad_sch": {
+          "page_mm": [
+            594,
+            420
+          ],
+          "checked_anchors_and_corners": 185,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "PWM_Outputs.kicad_sch": {
+          "page_mm": [
+            420,
+            297
+          ],
+          "checked_anchors_and_corners": 50,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        }
+      },
+      "evidence": [
+        "reviews/codex/publication/native-review/v1/coordinate_bounds.json"
+      ]
+    },
+    {
+      "name": "v1 rendered sheet coverage",
+      "passed": true,
+      "gate": "both",
+      "detail": {
+        "expected_sheets": 8,
+        "svg_files": [
+          "LoRa_Boat_Controller-CAN_Bus.svg",
+          "LoRa_Boat_Controller-Debug.svg",
+          "LoRa_Boat_Controller-GPS_Module.svg",
+          "LoRa_Boat_Controller-LoRa_Module.svg",
+          "LoRa_Boat_Controller-MCU.svg",
+          "LoRa_Boat_Controller-PowerSupply.svg",
+          "LoRa_Boat_Controller-PWM_Outputs.svg",
+          "LoRa_Boat_Controller.svg"
+        ]
+      },
+      "evidence": []
+    },
+    {
+      "name": "v1 complete PCB DRC/connectivity/parity",
+      "passed": false,
+      "gate": "fabrication",
+      "detail": {
+        "errors": 0,
+        "warnings": 67,
+        "total_violations": 67,
+        "unconnected": 0,
+        "schematic_parity": 139,
+        "counts": {
+          "isolated_copper:warning": 3,
+          "silk_edge_clearance:warning": 6,
+          "silk_over_copper:warning": 21,
+          "solder_mask_bridge:warning": 37
+        },
+        "passed": false
+      },
+      "evidence": [
+        "reviews/codex/publication/native-review/v1/drc.json"
+      ]
+    },
+    {
+      "name": "v1 visual and manufacturing acceptance",
+      "passed": false,
+      "gate": "fabrication",
+      "detail": "Pending explicit review of text extents/overlap, pin labeling, assembly data, drill provenance and fabrication package at these hashes. This runner does not issue that approval.",
+      "evidence": []
+    },
+    {
+      "name": "v2 source connectivity/component preservation",
+      "passed": true,
+      "gate": "both",
+      "detail": {
+        "parts": 114,
+        "pins": 361,
+        "baseline_sha256": "0199e5b7da97b83c1dd269ee4fabad8eb84bda6ca2360e7f8b5c7a152cfd0758",
+        "net_name_changes": 0
+      },
+      "evidence": [
+        "reviews/codex/publication/native-review/v2/connectivity.json"
+      ]
+    },
+    {
+      "name": "v2 PCB/project preservation",
+      "passed": true,
+      "gate": "review",
+      "detail": {
+        "changed": []
+      },
+      "evidence": []
+    },
+    {
+      "name": "v2 ERC",
+      "passed": false,
+      "gate": "both",
+      "detail": {
+        "violations": 1,
+        "by_severity": {
+          "warning": 1
+        },
+        "passed": false
+      },
+      "evidence": [
+        "reviews/codex/publication/native-review/v2/erc.json"
+      ]
+    },
+    {
+      "name": "v2 page-coordinate bounds",
+      "passed": true,
+      "gate": "both",
+      "detail": {
+        "Actuators.kicad_sch": {
+          "page_mm": [
+            420,
+            297
+          ],
+          "checked_anchors_and_corners": 168,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "Debug.kicad_sch": {
+          "page_mm": [
+            420,
+            297
+          ],
+          "checked_anchors_and_corners": 157,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "LoRa_Boat_Controller_V2.kicad_sch": {
+          "page_mm": [
+            420,
+            297
+          ],
+          "checked_anchors_and_corners": 143,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "MCU.kicad_sch": {
+          "page_mm": [
+            594,
+            420
+          ],
+          "checked_anchors_and_corners": 423,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "Navigation.kicad_sch": {
+          "page_mm": [
+            420,
+            297
+          ],
+          "checked_anchors_and_corners": 164,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "Power.kicad_sch": {
+          "page_mm": [
+            594,
+            420
+          ],
+          "checked_anchors_and_corners": 439,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        },
+        "Radio.kicad_sch": {
+          "page_mm": [
+            420,
+            297
+          ],
+          "checked_anchors_and_corners": 123,
+          "outside": [],
+          "passed": true,
+          "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+        }
+      },
+      "evidence": [
+        "reviews/codex/publication/native-review/v2/coordinate_bounds.json"
+      ]
+    },
+    {
+      "name": "v2 rendered sheet coverage",
+      "passed": true,
+      "gate": "both",
+      "detail": {
+        "expected_sheets": 7,
+        "svg_files": [
+          "LoRa_Boat_Controller_V2-Actuators.svg",
+          "LoRa_Boat_Controller_V2-Debug.svg",
+          "LoRa_Boat_Controller_V2-MCU.svg",
+          "LoRa_Boat_Controller_V2-Navigation.svg",
+          "LoRa_Boat_Controller_V2-Power.svg",
+          "LoRa_Boat_Controller_V2-Radio.svg",
+          "LoRa_Boat_Controller_V2.svg"
+        ]
+      },
+      "evidence": []
+    },
+    {
+      "name": "v2 complete PCB DRC/connectivity/parity",
+      "passed": false,
+      "gate": "fabrication",
+      "detail": {
+        "errors": 0,
+        "warnings": 101,
+        "total_violations": 101,
+        "unconnected": 3,
+        "schematic_parity": 212,
+        "counts": {
+          "silk_edge_clearance:warning": 2,
+          "silk_over_copper:warning": 61,
+          "silk_overlap:warning": 38
+        },
+        "passed": false
+      },
+      "evidence": [
+        "reviews/codex/publication/native-review/v2/drc.json"
+      ]
+    },
+    {
+      "name": "v2 visual and manufacturing acceptance",
+      "passed": false,
+      "gate": "fabrication",
+      "detail": "Pending explicit review of text extents/overlap, pin labeling, assembly data, drill provenance and fabrication package at these hashes. This runner does not issue that approval.",
+      "evidence": []
+    },
+    {
+      "name": "Working inputs unchanged during review",
+      "passed": true,
+      "gate": "both",
+      "detail": {
+        "changed": []
+      },
+      "evidence": []
+    },
+    {
+      "name": "KiCad did not modify captured design inputs",
+      "passed": true,
+      "gate": "both",
+      "detail": {
+        "changed": []
+      },
+      "evidence": []
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "a6316e9216cc55656e3fbb7c4f173895151ac4ff\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exit_code": 0,
+      "stdout": " M .gitattributes\n M .gitignore\n M AGENT_STATUS.md\n M FILE_OWNERSHIP.md\n M HANDOFF.md\n M README.md\n M REPORT.md\n M docs/atlas/CANHEADER.md\n M docs/atlas/GND.md\n M docs/atlas/GPSMODULE.md\n M docs/atlas/JTAG.md\n M docs/atlas/LORAMODULE.md\n M docs/atlas/README.md\n M docs/atlas/SPEEDCONTROLLER.md\n M docs/atlas/STEERINGSERVO.md\n M docs/atlas/TP1.md\n M docs/atlas/TP3.md\n M docs/atlas/TP4.md\n M docs/atlas/TP5.md\n M docs/atlas/VIN.md\n M docs/atlas/generate_atlas.py\n M docs/img/v1_sch_CAN_Bus.svg\n M docs/img/v1_sch_Debug.svg\n M docs/img/v1_sch_GPS_Module.svg\n M docs/img/v1_sch_LoRa_Module.svg\n M docs/img/v1_sch_MCU.svg\n M docs/img/v1_sch_PWM_Outputs.svg\n M docs/img/v1_sch_PowerSupply.svg\n M docs/img/v1_sch_Root.svg\n M docs/img/v1_schematic.pdf\n M docs/img/v2_sch_Actuators.svg\n M docs/img/v2_sch_Debug.svg\n M docs/img/v2_sch_MCU.svg\n M docs/img/v2_sch_Navigation.svg\n M docs/img/v2_sch_Power.svg\n M docs/img/v2_sch_Radio.svg\n M docs/img/v2_sch_root.svg\n M docs/img/v2_schematic.pdf\n M hardware/kicad/CAN_Bus.kicad_sch\n M hardware/kicad/Debug.kicad_sch\n M hardware/kicad/GPS_Module.kicad_sch\n M hardware/kicad/LoRa_Boat_Controller.kicad_sch\n M hardware/kicad/LoRa_Module.kicad_sch\n M hardware/kicad/MCU.kicad_sch\n M hardware/kicad/PWM_Outputs.kicad_sch\n M hardware/kicad/PowerSupply.kicad_sch\n M hardware/kicad/tools/gen_sch.py\n M hardware/kicad/tools/v1_design.py\n M hardware/kicad_v2/Actuators.kicad_sch\n M hardware/kicad_v2/Debug.kicad_sch\n M hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb\n M hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch\n M hardware/kicad_v2/MCU.kicad_sch\n M hardware/kicad_v2/Navigation.kicad_sch\n M hardware/kicad_v2/Power.kicad_sch\n M hardware/kicad_v2/README.md\n M hardware/kicad_v2/Radio.kicad_sch\n M hardware/kicad_v2/tools/gen_v2.py\n M hardware/kicad_v2/tools/route_v2.py\n M pm/README.md\n M pm/data/connectors.json\n M pm/index.html\n M pm/index.template.html\n M pm/status.json\n M pm/tools/build.mjs\n M pm/tools/serve.mjs\n M pm/tools/validate.mjs\n M reviews/codex/README.md\n M reviews/codex/S2_VERIFICATION.md\n M reviews/codex/s2/summary.json\n?? .github/\n?? docs/atlas/check_portability.py\n?? docs/atlas/evidence/\n?? docs/build/\n?? docs/img/schematic_export_manifest.json\n?? docs/portfolio/\n?? firmware/tools/\n?? hardware/kicad/evidence/\n?? hardware/kicad/tools/export_review.py\n?? hardware/kicad/tools/schematic_layout.py\n?? hardware/manufacturing/\n?? pm/QA.md\n?? reviews/codex/professionalization/\n?? temp_build/\n?? tools/\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+        "version"
+      ],
+      "exit_code": 0,
+      "stdout": "9.0.7\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "--output",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\netlist.xml",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\inputs\\hardware\\kicad\\LoRa_Boat_Controller.kicad_sch"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+        "sch",
+        "erc",
+        "--severity-all",
+        "--format",
+        "json",
+        "--output",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\erc.json",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\inputs\\hardware\\kicad\\LoRa_Boat_Controller.kicad_sch"
+      ],
+      "exit_code": 0,
+      "stdout": "Found 0 violations\nSaved ERC Report to C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\erc.json\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+        "sch",
+        "export",
+        "svg",
+        "--output",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\svg\\",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\inputs\\hardware\\kicad\\LoRa_Boat_Controller.kicad_sch"
+      ],
+      "exit_code": 0,
+      "stdout": "Plotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\svg\\LoRa_Boat_Controller.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\svg\\LoRa_Boat_Controller-PowerSupply.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\svg\\LoRa_Boat_Controller-MCU.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\svg\\LoRa_Boat_Controller-CAN_Bus.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\svg\\LoRa_Boat_Controller-LoRa_Module.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\svg\\LoRa_Boat_Controller-GPS_Module.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\svg\\LoRa_Boat_Controller-PWM_Outputs.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\svg\\LoRa_Boat_Controller-Debug.svg'.\nDone.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--severity-all",
+        "--schematic-parity",
+        "--format",
+        "json",
+        "--output",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\drc.json",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\inputs\\hardware\\kicad\\LoRa_Boat_Controller.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "stdout": "Found 67 violations\nFound 0 unconnected items\nFound 139 schematic parity issues\nSaved DRC Report to C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v1\\drc.json\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "--output",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\netlist.xml",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\inputs\\hardware\\kicad_v2\\LoRa_Boat_Controller_V2.kicad_sch"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+        "sch",
+        "erc",
+        "--severity-all",
+        "--format",
+        "json",
+        "--output",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\erc.json",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\inputs\\hardware\\kicad_v2\\LoRa_Boat_Controller_V2.kicad_sch"
+      ],
+      "exit_code": 0,
+      "stdout": "Found 1 violations\nSaved ERC Report to C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\erc.json\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+        "sch",
+        "export",
+        "svg",
+        "--output",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\svg\\",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\inputs\\hardware\\kicad_v2\\LoRa_Boat_Controller_V2.kicad_sch"
+      ],
+      "exit_code": 0,
+      "stdout": "Plotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\svg\\LoRa_Boat_Controller_V2.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\svg\\LoRa_Boat_Controller_V2-Power.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\svg\\LoRa_Boat_Controller_V2-MCU.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\svg\\LoRa_Boat_Controller_V2-Radio.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\svg\\LoRa_Boat_Controller_V2-Navigation.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\svg\\LoRa_Boat_Controller_V2-Actuators.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\svg\\LoRa_Boat_Controller_V2-Debug.svg'.\nDone.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--severity-all",
+        "--schematic-parity",
+        "--format",
+        "json",
+        "--output",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\drc.json",
+        "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\inputs\\hardware\\kicad_v2\\LoRa_Boat_Controller_V2.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "stdout": "Found 101 violations\nFound 3 unconnected items\nFound 212 schematic parity issues\nSaved DRC Report to C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\publication\\native-review\\v2\\drc.json\n",
+      "stderr": ""
+    }
+  ],
+  "designs": {
+    "v1": {
+      "erc": {
+        "violations": 0,
+        "by_severity": {},
+        "passed": true
+      },
+      "drc": {
+        "errors": 0,
+        "warnings": 67,
+        "total_violations": 67,
+        "unconnected": 0,
+        "schematic_parity": 139,
+        "counts": {
+          "isolated_copper:warning": 3,
+          "silk_edge_clearance:warning": 6,
+          "silk_over_copper:warning": 21,
+          "solder_mask_bridge:warning": 37
+        },
+        "passed": false
+      },
+      "parts": 44,
+      "pins": 172
+    },
+    "v2": {
+      "erc": {
+        "violations": 1,
+        "by_severity": {
+          "warning": 1
+        },
+        "passed": false
+      },
+      "drc": {
+        "errors": 0,
+        "warnings": 101,
+        "total_violations": 101,
+        "unconnected": 3,
+        "schematic_parity": 212,
+        "counts": {
+          "silk_edge_clearance:warning": 2,
+          "silk_over_copper:warning": 61,
+          "silk_overlap:warning": 38
+        },
+        "passed": false
+      },
+      "parts": 114,
+      "pins": 361
+    }
+  },
+  "head": "a6316e9216cc55656e3fbb7c4f173895151ac4ff",
+  "working_tree": "M .gitattributes\n M .gitignore\n M AGENT_STATUS.md\n M FILE_OWNERSHIP.md\n M HANDOFF.md\n M README.md\n M REPORT.md\n M docs/atlas/CANHEADER.md\n M docs/atlas/GND.md\n M docs/atlas/GPSMODULE.md\n M docs/atlas/JTAG.md\n M docs/atlas/LORAMODULE.md\n M docs/atlas/README.md\n M docs/atlas/SPEEDCONTROLLER.md\n M docs/atlas/STEERINGSERVO.md\n M docs/atlas/TP1.md\n M docs/atlas/TP3.md\n M docs/atlas/TP4.md\n M docs/atlas/TP5.md\n M docs/atlas/VIN.md\n M docs/atlas/generate_atlas.py\n M docs/img/v1_sch_CAN_Bus.svg\n M docs/img/v1_sch_Debug.svg\n M docs/img/v1_sch_GPS_Module.svg\n M docs/img/v1_sch_LoRa_Module.svg\n M docs/img/v1_sch_MCU.svg\n M docs/img/v1_sch_PWM_Outputs.svg\n M docs/img/v1_sch_PowerSupply.svg\n M docs/img/v1_sch_Root.svg\n M docs/img/v1_schematic.pdf\n M docs/img/v2_sch_Actuators.svg\n M docs/img/v2_sch_Debug.svg\n M docs/img/v2_sch_MCU.svg\n M docs/img/v2_sch_Navigation.svg\n M docs/img/v2_sch_Power.svg\n M docs/img/v2_sch_Radio.svg\n M docs/img/v2_sch_root.svg\n M docs/img/v2_schematic.pdf\n M hardware/kicad/CAN_Bus.kicad_sch\n M hardware/kicad/Debug.kicad_sch\n M hardware/kicad/GPS_Module.kicad_sch\n M hardware/kicad/LoRa_Boat_Controller.kicad_sch\n M hardware/kicad/LoRa_Module.kicad_sch\n M hardware/kicad/MCU.kicad_sch\n M hardware/kicad/PWM_Outputs.kicad_sch\n M hardware/kicad/PowerSupply.kicad_sch\n M hardware/kicad/tools/gen_sch.py\n M hardware/kicad/tools/v1_design.py\n M hardware/kicad_v2/Actuators.kicad_sch\n M hardware/kicad_v2/Debug.kicad_sch\n M hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb\n M hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch\n M hardware/kicad_v2/MCU.kicad_sch\n M hardware/kicad_v2/Navigation.kicad_sch\n M hardware/kicad_v2/Power.kicad_sch\n M hardware/kicad_v2/README.md\n M hardware/kicad_v2/Radio.kicad_sch\n M hardware/kicad_v2/tools/gen_v2.py\n M hardware/kicad_v2/tools/route_v2.py\n M pm/README.md\n M pm/data/connectors.json\n M pm/index.html\n M pm/index.template.html\n M pm/status.json\n M pm/tools/build.mjs\n M pm/tools/serve.mjs\n M pm/tools/validate.mjs\n M reviews/codex/README.md\n M reviews/codex/S2_VERIFICATION.md\n M reviews/codex/s2/summary.json\n?? .github/\n?? docs/atlas/check_portability.py\n?? docs/atlas/evidence/\n?? docs/build/\n?? docs/img/schematic_export_manifest.json\n?? docs/portfolio/\n?? firmware/tools/\n?? hardware/kicad/evidence/\n?? hardware/kicad/tools/export_review.py\n?? hardware/kicad/tools/schematic_layout.py\n?? hardware/manufacturing/\n?? pm/QA.md\n?? reviews/codex/professionalization/\n?? temp_build/\n?? tools/",
+  "input_manifest": {
+    "hardware/kicad/CAN_Bus.kicad_sch": "b4488ed536809ec9478e536cb40be5d42d35ca166bde5f6fd7781907843df21a",
+    "hardware/kicad/Debug.kicad_sch": "b5fefc732fe2feca52960ec93295a1772e5cc90cba1f75c86a8e590a7619a17d",
+    "hardware/kicad/fp-lib-table": "1d0776c29bd4d9155867b82549e64080a66d13c4b17c6fd28e3071e7635d0cbb",
+    "hardware/kicad/GPS_Module.kicad_sch": "29a1cba2e36d88d892d56f01fb14e35aa34f2b096fd3d0050e70f6d9b320686b",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_dru": "7d5337c38b2be25b88bbe9782c88fd56e48c7ec7e023646d69ff9805f43dc82c",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pcb": "2f604d1691ebde874075baecc2d1aa2985afa0db1a89ca277dec5d2156a553f2",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pro": "bd7405e6898de2359513fca9e25c7008c0a23771fe8e9d0aa7f13b507b7a30a3",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sch": "b2f4a6ecc46b403bdf71a5335e9f95d78885b525ca46f8d94d156afea0bc9497",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sym": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/amv_con1.kicad_mod": "72f981b041e634931b5fdc25dcd9869e4820f256af557c82cc1866363dbdb885",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/amv_test_point.kicad_mod": "dbc2c1fa174aa92e4066ccf6303ebcb8f897e78f52d5a97b01fe97a4cfea5317",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_0603_CL10A_1P6XP8_SAM-M.kicad_mod": "42f5b0cf2557ab22c7bed1660f022ff6e0136b65283a00ded06722c7634e213a",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_0603G_AVX-M.kicad_mod": "19a007764f08f538e91316a0453f13a176b10aef8ae6fd6d81ba58d41adbb21d",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_CL10_SAM-M.kicad_mod": "631ee486aa336407342863dcd3a27d9500b782fbd31473b40d9a517345f5a3c1",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_GJM1555C1H220JB01__MUR-L.kicad_mod": "d5654fecba8c3ff2912b7713540b888f7cb03bf378583e0a9bb5758ecf59854e",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_KGM21_KAV-L.kicad_mod": "4303ac243d17f1c170711780b72b9101b3d65173e3f674aa9650d958faf5b367",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_NTS_55_2P8T_NIP.kicad_mod": "581137c5ec59ffe1ea65f99dc766b552301111f71fd7441583420edd7af58aa6",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod": "3df2bdad2d5533ceb5a0492e93aae8e2faab545a4f2e999d8a2a426829fca314",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CONN_B4B-XH-A_JST.kicad_mod": "256219b5dfe2bb4b3a7779bb2d0726ef0c38dbd482418a951cb4d16c763d4d56",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CONN_PPTC031_SUL.kicad_mod": "986dd4d6067549d0b65e6da1d8c8c3375e2e3b1c077a59f5980233fab0da7f52",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/D0008A_L.kicad_mod": "ae80a251bf6812470cc2c8e10f5a72651ff1598ea69bc08466bb60096e581096",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/G-21_MUR-L.kicad_mod": "7bd06c7d3ab02d1f539148d7bbe5a42a579ad8fac70edbd0f47a73f9d10022bd",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/G-31_MUR-M.kicad_mod": "5ad069daf33bc0e026ec3702bb7d75f334812b22d8e7cf6ad1ff41c047edfe1f",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/IND_7045_TDK.kicad_mod": "01cf11258392766428c623e4f3ef0d7bcb843a87ea33c5dfd0238a1216f51092",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/IND_BLM15_0402_MUR-L.kicad_mod": "381ae1f8b25d6e1954ee99bfffa7015c2f5d570f8b9b34c075a0300bb531c69a",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/LQFP64-10x10mm.kicad_mod": "8bed62a1ecce2fc5fbd96a4147ba0cca47a77731cbde2481333f6cc8320a7eca",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod": "ce99ee424974e7bae6c9137e43ac6b4f8bc4daaa9d6777f26049be4f1f1dd830",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RC0402N_PAN-M.kicad_mod": "e7c9be7583fb4cf11cc020c328fc0818ca1b1eb24f8309b4875d31f8fe04eec9",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RC0402N_YAG-M.kicad_mod": "6582594b232e1e65278dffdd375499ecf1a46567da5623687e01ebb309fd8c7a",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RC0603N_YAG-M.kicad_mod": "3ae3fcd2fe5cb14bed3a1fb531605a796854b1a01991e4ab02fb58a6e1f79557",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RES_1005_SAM-M.kicad_mod": "fed0e29515f092c6cd3ce2c0d4caf16b0489cde0b06b8b10b60dafc3124e8bba",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RES_R0805_ROM-M.kicad_mod": "9ddd2658a69dd539ff1d2a019773211e8aaeeee9a742a34026427cd618514803",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/SAMTEC_FTSH-105-XX-X-DV.kicad_mod": "9dfc3fef1cfbed2c8d3a2ce7b7653f8019a591ec039ba1a24d5b5d3049882165",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod": "b880a51afb66d5a86cbd2dad667bd6a819500be0a7d51aa2234ce6cac41a2fee",
+    "hardware/kicad/LoRa_Module.kicad_sch": "f75993974ab9b4c1bf68ab92871ce256e6f44d70d469b74873ad22a5fb54048a",
+    "hardware/kicad/MCU.kicad_sch": "1bd904af9fd33906c6a1fafc43b17e0f8c072126fb358eebc3637f44f3ba4f75",
+    "hardware/kicad/PowerSupply.kicad_sch": "63e6d6a238fb7fbc3764dc48d28d2bd3f39620d71bfe77a3cfbf2f5d257da91e",
+    "hardware/kicad/PWM_Outputs.kicad_sch": "f76959998e8aab96115fe7c0043acc39fdcaedd4105ab0d00ef30509b58e4f50",
+    "hardware/kicad/sym-lib-table": "34e90e5baea1d322bbb94670fcaea5e5e7eb42425d520e3faaef27f1e54f1de6",
+    "hardware/kicad_v2/Actuators.kicad_sch": "19ccbc4b351d8f371c53b831e3f80bc9be7fdf925b876e5c6f14da5d1ad6bfa2",
+    "hardware/kicad_v2/Debug.kicad_sch": "601919fb15d757bd0018576be9a4278cb35f92bbdd9484ab85d984f6b5eff924",
+    "hardware/kicad_v2/fp-lib-table": "ab7fae9b8768ecd1309a42873f463ef02016b0ac5c026a12fb412bfa47e8faf7",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb": "6595d3b58e4a54b1d3ecbf93a69c93202503dbabcf9d279a6a578df1601d0d26",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch": "9f8754f2d40612077a687448ca6a3ae10855176f9c796f19831109b043c532eb",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym": "3a8e94baff843cfd8d3253f808d07d697424464d7a5db6d0a4a2f22c5527e121",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/QFN-24_3x3mm_P0.4mm_NoEP.kicad_mod": "45d275957763fbc76756a2c762a7dd9bf1e8ab71e7eeb03e3e537b192d28f054",
+    "hardware/kicad_v2/MCU.kicad_sch": "ecbec0770dd18ffdc33a859239e98700ea401bd74abe1135e2775989eb254ba7",
+    "hardware/kicad_v2/Navigation.kicad_sch": "9d07440781ce1fb8f1d98997a1f34044cdc7ac7a29b36a1b2260bd3e542ec039",
+    "hardware/kicad_v2/Power.kicad_sch": "77b234a7b111fc6105b951f4049ed4f8b4d68257905c57d70b86d1207a68dc04",
+    "hardware/kicad_v2/Radio.kicad_sch": "b4e1ee24c1b04bc9d6199e2ee57fbcffd5476d1599e1905a8d1fa9e916799930",
+    "hardware/kicad_v2/sym-lib-table": "3dccf10d5632037fbc6978966881b8eb68ceb500677674a746481e19a0368ae3"
+  },
+  "kicad_version": "9.0.7",
+  "gates": {
+    "review": false,
+    "fabrication": false
+  },
+  "verdict": "FAIL",
+  "output_manifest": {
+    "v1/connectivity.json": "a2d216881f09e0351f0cc4f699a76b621a1754f8a2cce4d5f755af067fb4cc5d",
+    "v1/coordinate_bounds.json": "05c055bf91556a3607571e7c0ae11d1905a49af5c47cd6393b94f94958f1ed2f",
+    "v1/drc.json": "ca89864c1c6a1f127315975db5c3546315080318db499198558fa169e6567a48",
+    "v1/erc.json": "701ef26f43d95aabd62d7cc914de5c0c258b6abb76fbb04206c8f699f3728dd7",
+    "v1/netlist.xml": "e6a47d90fdcb979ea547fe748aaf247f7fb7be46f5b7f5458de7e5ba3109cfd0",
+    "v1/svg/LoRa_Boat_Controller-CAN_Bus.svg": "b3978c1a020580b1c2b5716679a80e30ca5df4f50bb318d9e7b017ed7f9f8cc1",
+    "v1/svg/LoRa_Boat_Controller-Debug.svg": "6e41343726d7b7f0af2cc40b05af15c8569378dd99798cd71291c950010bbfe5",
+    "v1/svg/LoRa_Boat_Controller-GPS_Module.svg": "fd2ae598a97c26588c58424d777b632c983fb89f36c75225f628ff6dc99a3e65",
+    "v1/svg/LoRa_Boat_Controller-LoRa_Module.svg": "8779aa3dcef109dde28519f563fbe37ef5f2b825c4f29fe380a5aac91aa56002",
+    "v1/svg/LoRa_Boat_Controller-MCU.svg": "c84a293e0cd09d3aefe225bec196a7c6edff6868f9f42f3afbc8b886da5ee385",
+    "v1/svg/LoRa_Boat_Controller-PowerSupply.svg": "dc9913893f7c68c3e9509f28a4ee075fe6777d374ef48c3c8c62e2624ebccd06",
+    "v1/svg/LoRa_Boat_Controller-PWM_Outputs.svg": "d553e2c86b84f4489519dfa81f7c33278308d928cc60fb3cc3e3a86802edd389",
+    "v1/svg/LoRa_Boat_Controller.svg": "c95468745f21a85de9fde3eebf447d7996467e22eea84bdd7b050376bf427e60",
+    "v2/connectivity.json": "b1db8ed81883121c8fb59b27e44705ff4e029545556ceb13791ff265e823536e",
+    "v2/coordinate_bounds.json": "6d2b09fdd6939423d6da975dddaac577d50a87a5987bf034aa5d4a0a01eb2f74",
+    "v2/drc.json": "06dbf1051b8a93f18ca5b119383c37763f7e9ed624cb8668b5ba9c65ec6da736",
+    "v2/erc.json": "ab7dc8821edc67cbbb693a139b8cc629eae354ea908bfbab6e72488413098fdc",
+    "v2/netlist.xml": "0b1a20f611a2bbc30748edfdf3a2e993fab9b962e1b93d4823997f6b3f2d3b19",
+    "v2/svg/LoRa_Boat_Controller_V2-Actuators.svg": "613f7b809575abf29585c3c73d1d444a20afc310b693f640447f10da4f8ab262",
+    "v2/svg/LoRa_Boat_Controller_V2-Debug.svg": "c4f0cb7ec14a054e9e8fa23933eb954c02daa4d994b206d0182a5ebd9793369b",
+    "v2/svg/LoRa_Boat_Controller_V2-MCU.svg": "f4b3ac45c2fbb094f2ecda2eca92f42ea08b48ebd20108646ff16026c319d00b",
+    "v2/svg/LoRa_Boat_Controller_V2-Navigation.svg": "95d69ff805a364b0986c6f9d53e32dfb5b283143dd86f4689cc85dfe20e6fedb",
+    "v2/svg/LoRa_Boat_Controller_V2-Power.svg": "8431657e7916a648aecad5c3f1e3167e835140e0cc8e9695fb0a4a6bff2c4465",
+    "v2/svg/LoRa_Boat_Controller_V2-Radio.svg": "5c041d59827ad5f476a36d31eb46b2e7d043e6c08a509ba243156caca38e6a5b",
+    "v2/svg/LoRa_Boat_Controller_V2.svg": "cde209583ccc328a167b965a8a63012a6ae6560aa139dd6e0f678c5cf3fb6994"
+  }
+}

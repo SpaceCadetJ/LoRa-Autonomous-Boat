@@ -1,82 +1,79 @@
 # LoRa Autonomous Boat Controller
 
-An RC-scale autonomous surface vessel controller: an STM32F446 takes thrust and rudder commands from a handheld over a 915 MHz LoRa link (Reyax RYLR UART module), reads a NMEA GPS, and drives a brushless ESC and a rudder servo with 50 Hz servo PWM. Built as a University of Arkansas EECS senior design project in Cadence OrCAD/Allegro 22.1, fabricated in May 2025 ("senior design v5"), and now reconstructed in KiCad 9 as the baseline for a V2 redesign.
+An embedded-systems project spanning **STM32 firmware, LoRa communication, PCB reconstruction and a documented V2 redesign**. The original university boat controller is preserved as V1; the next vehicle node and a voice/text/location handheld are under development.
 
-**Start with [REPORT.md](REPORT.md)** (five minutes) or [docs/INDEX.md](docs/INDEX.md) (everything). The interactive project manager, when present, is at `pm/index.html`.
+**Current milestone: engineering review edition.** The schematics, source code, parts and build procedures are available for inspection. V2 is not fabrication-ready, and the preserved V1 firmware build is not hardware-qualified.
 
-| | |
-|---|---|
-| ![V1 top](docs/img/v1_pcb_top.png) | ![V1 root schematic](docs/img/v1_sch_Root.svg) |
-| V1 as fabricated, reconstructed in KiCad 9 (66.5 × 37.3 mm, 2 layers) | V1 root schematic (one sheet per OrCAD block) |
+[Portfolio case study](docs/portfolio/README.md) · [Build and assembly guide](docs/build/README.md) · [Latest verification](reviews/codex/publication/QUALITY_PORTABILITY.md) · [Project history](REPORT.md)
 
-## V1 → V2 in one paragraph
+| Existing controller | Developing controller |
+| --- | --- |
+| ![V1 controller reconstructed in KiCad](docs/img/v1_pcb_top.png) | ![V2 vehicle-node CAD draft](docs/img/v2_pcb_top.png) |
+| V1: 44 physical components, reconstructed from original fabrication evidence | V2: 118 physical references, 80 × 46 mm board draft |
 
-V1 works as a radio-controlled boat but has no link-loss failsafe (the last thrust value persists forever), puts the MCU's 3.3 V logic rail on the servo/ESC power pins, returns the STM32's VCAP capacitor to +3V3 instead of ground, wires the CAN transceiver to pins the CAN peripheral cannot use, runs everything from the internal RC oscillator, and leaves the battery input unprotected. All of this is documented with copper-level evidence in [docs/V1_DESIGN_REVIEW.md](docs/V1_DESIGN_REVIEW.md). V2 ([docs/V2_REQUIREMENTS.md](docs/V2_REQUIREMENTS.md), `hardware/kicad_v2/`) keeps the proven parts (STM32F446, R1240N buck, 2-layer form factor, ARM debug connector) and adds the failsafe/watchdog, a separate actuator rail with input protection, an HSE crystal, status LEDs, PPS/IMU for navigation, an external antenna port and mounting holes.
+These are CAD renders. They do not establish that the V2 board has been manufactured or tested.
 
-## Repository map
+## Explore the project
 
-```
-README.md, REPORT.md          start here / the report
-CONVERSION_LOG.md             append-only work log (what changed, what was validated, commits)
-BLOCKERS.md                   decisions Jay must make + defaults in use; AGENT_STATUS.md, HANDOFF.md, FILE_OWNERSHIP.md: agent coordination
-PROMPT_FOR_CODEX.md           brief for the second (review/documentation) agent
-docs/
-  INDEX.md                    table of every document and image
-  A0_PROVENANCE.md            which artwork is the fabricated board, v2→v5 placement diff, drill provenance, Gerber XOR tables
-  V1_DESIGN_REVIEW.md         findings with evidence + link budget / control / power analysis
-  V2_REQUIREMENTS.md          numbered testable requirements + decision list
-  NETLIST.md                  every net (generated); CONVERSION_NOTES.md: method + footprint mapping; BOM.csv, BOM_V2.csv (generated)
-  research/                   datasheet notes, MPN/pricing research, firmware review (line-cited)
-  img/                        renders, layer SVGs, XOR images, evidence figures, schematic PDF/SVGs
-  archive/                    superseded March-2026 pipeline docs
-hardware/kicad/               V1 KiCad 9 project (as fabricated): LoRa_Boat_Controller.kicad_pro / .kicad_pcb / .kicad_sch + 7 sheets,
-                              LoRa_Boat_Controller.pretty/ (project footprints), .kicad_sym (project symbols), .kicad_dru (as-fabricated rules)
-hardware/kicad/tools/         every script that produced the above (see "Regenerate")
-hardware/kicad_v2/            V2 KiCad project (Phase C draft): LoRa_Boat_Controller_V2.kicad_pro / .kicad_pcb (80 x 46 mm, autorouted) / root + 6 sheets,
-                              generated from tools/v2_design.py by tools/gen_v2.py; tools/route_v2.py drives freerouting; README.md explains the chain
-firmware/                     V1 STM32CubeIDE project (unchanged behaviour; header comments document the board wiring) + V2_FIRMWARE_PLAN.md
-Allegro/hardware/allegro-original/   read-only source evidence: Allegro v5/ (board revisions, logs, OrCAD netlist pstxnet.dat),
-                              BoatcrewArtwork/ (the v5 fabrication Gerbers), LIBRARY_MASTER/ (Allegro footprints)
-reviews/codex/                independent review packet by the second agent
+Clone or download the repository, then open [pm/index.html](pm/index.html) locally. For the complete interactive workspace with searchable BOMs, datasheets, drawings, connector evidence and assembly/programming guides:
+
+```sh
+node pm/tools/serve.mjs
 ```
 
-## What is actually in the Allegro folder (read this before trusting older notes)
+Open **http://127.0.0.1:8765/pm/**. The viewer runs locally and requires no account or package installation. GitHub displays the HTML source; it does not run the viewer from a repository file link. See [viewer instructions](pm/README.md).
 
-- `BoatcrewArtwork/BOATCREW*.art` are the fabrication films: plotted from `senior design v5.brd` on 2025-05-09 17:41, the last thing Allegro did (`allegro.jrl`). They are the copper ground truth.
-- `Allegro v5/Allegro/pstxnet.dat` (+ `pstxprt.dat`, `pstchip.dat`) is the OrCAD netlist imported into v5 half an hour earlier: 44 parts, 32 nets + 37 unconnected pins. This, not the older `senior design v2.dsn`, is the connectivity truth.
-- `senior design v2.dsn` is a Specctra export of **v2**: a 76.2 × 76.2 mm board with 45 parts on a different placement. v5 is 66.5 × 37.3 mm; every part moved; U1/COUT1/TP2 are gone and D21 was added. The DSN is only used for pad geometry.
-- `BOATCREWDRILL-1-2.drl` is a **v4** drill (35 of 50 holes don't exist on v5); the KiCad drill is derived from the v5 pad flashes and matches them hole for hole.
-- `Allegro v5/Allegro/Artwork/` and `Artwork.zip` are v4; `SENIORDESIGN_BOARD.png` is a screenshot of the OrCAD start page.
+The [portfolio handoff](docs/portfolio/README.md) and [structured project data](docs/portfolio/portfolio.json) provide captions, asset paths, result evidence and claim boundaries for a portfolio site.
 
-## Opening the projects in KiCad 9
+## Architecture and implementation
 
-- V1: open `hardware/kicad/LoRa_Boat_Controller.kicad_pro`. Libraries are project-local (`fp-lib-table`, `sym-lib-table`); no global library setup is needed except the standard KiCad 9 symbol libraries (`MCU_ST_STM32F4`, `Device`, `Connector*`, `power`) that ship with KiCad. The board opens with zones filled; DRC runs with the project's `.kicad_dru` (0 errors, 67 documented warnings). ERC 0.
-- V2: open `hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro`. Same library conventions (project-local tables; the V1 `.pretty` is reused through `${KIPRJMOD}/../kicad/`). The board is an autorouted draft (freerouting 2.1.0) with DRC 0 errors; see `hardware/kicad_v2/README.md` for the state of the draft and what still needs hand work before fabrication.
-
-Reference designators without a trailing digit in Allegro (`CANHEADER`, `LORAMODULE`, `GPSMODULE`, `SPEEDCONTROLLER`, `STEERINGSERVO`, `JTAG`, `CIN`, `COUT`, `CEXT`, `VIN`, `GND`) are `…1` in KiCad (annotation rule); the Allegro name is in every symbol's `Allegro_RefDes` field and in `docs/BOM.csv`.
-
-## Regenerate everything
-
-Requirements: KiCad 9.0.7 (default path `C:\Users\Jay\AppData\Local\Programs\KiCad\9.0\bin`, override with `KICAD_BIN`), Python 3.12 with `pip install gerbonara sexpdata kiutils numpy scipy shapely pillow`.
-
-```bash
-python hardware/kicad/tools/build_v1.py
+```mermaid
+flowchart LR
+  Handset[External handset] <-->|LoRa radio link| Radio[Reyax UART radio]
+  Radio <-->|UART| MCU[STM32F446 vehicle controller]
+  GPS[GNSS receiver] -->|NMEA UART| MCU
+  MCU -->|PWM| ESC[Propulsion ESC]
+  MCU -->|PWM| Servo[Steering servo]
+  Battery[Battery and regulation] --> MCU
 ```
 
-runs, from the repo root: provenance → v5 reconstruction (placement + connectivity from the films and pstxnet.dat) → footprints → board + project + rule file → pcbnew validation and zone fill → DRC → Gerber/drill export → XOR fidelity check → DSN-v2 comparison → evidence figures → renders/SVGs → symbols → schematic → ERC → netlist check → BOM → schematic PDF/SVG → NETLIST/CONVERSION_NOTES/INDEX. Every script has a header stating its inputs and outputs and can be run alone (`python hardware/kicad/tools/<script>.py`; `validate_pcb.py` and `check_netlist.py` need KiCad's own `python.exe`). Outputs that are evidence go to `docs/`; intermediate JSON goes to `hardware/kicad/_build/` (gitignored).
+V1 firmware is bare-metal C using STM32 HAL/CMSIS, with UART radio commands, GPS parsing and two PWM outputs. The original handset source is not included. The current code has known failsafe, parsing and pin-role issues documented in the [firmware audit](docs/research/FIRMWARE_REVIEW_NOTES.md).
 
-To regenerate V2: `python hardware/kicad_v2/tools/gen_v2.py` (library, schematic, project, unrouted board, `docs/BOM_V2.csv`), then `route_v2.py all` with KiCad's `python.exe` to autoroute (needs Java 21 + freerouting 2.1.0; details in `hardware/kicad_v2/README.md`).
+Hardware originated in Cadence OrCAD/Allegro and has been reconstructed in KiCad 9. Python tools generate and inspect schematics, compare complete pin groups and prepare assembly evidence. The viewer uses HTML, CSS and JavaScript with embedded project data; Node.js builds and validates it. GitHub Actions separates portable repository checks from optional native CAD and firmware jobs.
 
-Phase A validation as of the `v1-kicad-baseline` tag: 172/172 pads within 0.000 mil of the film flashes; DRC 0 errors / 0 unconnected; ERC 0 violations; schematic and board pin sets identical to `pstxnet.dat`; Gerber XOR vs the films F.Cu 0.87 %, B.Cu 0.23 %, masks < 1 %; drill 53/53 holes within 0.05 mil.
+V2 adds draft provisions for protected power, a separate actuator rail, sensing and USB/debug access. Corrected control firmware, autonomous navigation and the proposed voice/text/location handheld remain development targets. Voice airtime and RC coexistence must be validated before choosing handheld hardware.
 
-## Firmware
+## What has been demonstrated
 
-`firmware/` is the V1 STM32CubeIDE project (bare-metal HAL, `Core/Src/main.c` ≈ 750 lines: RYLR AT init, `+RCV=` parsing, RMC parsing, two PWM channels, 5 s telemetry). Behaviour is unchanged; the header comments now state the copper-verified wiring (PA8/TIM1 → SPEEDCONTROLLER header, PC6/TIM3 → STEERINGSERVO header, PB0 → GPS pin 3). See `docs/research/FIRMWARE_REVIEW_NOTES.md` for the line-cited review and `firmware/V2_FIRMWARE_PLAN.md` for V2.
+| Deliverable | Recorded result | Evidence |
+| --- | --- | --- |
+| Readable schematic set | 15 annotated pages, visually inspected | [V1 PDF](docs/img/v1_schematic.pdf), [V2 PDF](docs/img/v2_schematic.pdf), [visual review](reviews/codex/professionalization/VISUAL_REVIEW.md) |
+| Electrical preservation | All 172 V1 and 361 V2 pins preserved through the presentation changes | [Independent quality evidence](reviews/codex/professionalization/QUALITY_HANDOFF.md) |
+| V1 firmware reconstruction | Two same-host builds produced identical ELF/HEX/BIN hashes; 36,528-byte BIN | [Build record](docs/build/FIRMWARE_HANDOFF.md) |
+| Ordering and assembly | BOM reconciliation, held-part decisions, one-board/five-board candidate lists and assembly maps | [Ordering guide](docs/build/ORDERING.md) |
+| Navigation and documentation | Searchable parts, selected datasheets, V1 connector atlas, source evidence and version-specific programming guides | [Workspace](pm/README.md), [build guide](docs/build/README.md) |
+| Reproducible review | Regression tests, source hashes, native reports and preserved before/after evidence | [Review workflow](docs/build/REVIEW_WORKFLOW.md) |
 
-## Companion hardware
+The current design review still records **one V2 ERC warning, three V2 unconnected zone entries and PCB warning/parity findings**. A successful repository check is not fabrication or hardware acceptance. No range, voice or autonomous-navigation performance is claimed by these software/CAD results.
 
-The boat node is address 1 on network 18; the handset (STM32L072 + matching RYLR module, address 2) is not in this repository.
+## Build, review and contribute
 
-## License
+- [V1 assembly and inspection](docs/build/ASSEMBLY_V1.md) · [V1 backup/flashing procedure](docs/build/FLASHING_V1.md)
+- [V2 assembly review](docs/build/ASSEMBLY_V2.md) · [V2 firmware bring-up plan](docs/build/FLASHING_V2.md)
+- [Safe schematic-only regeneration](docs/build/SCHEMATICS.md) · [Reproducible firmware build](docs/build/FIRMWARE_BUILD.md)
+- [Independent review workflow](docs/build/REVIEW_WORKFLOW.md) · [Publication and portability record](reviews/codex/publication/README.md)
 
-Senior design project — University of Arkansas EECS.
+Do not run full PCB generation or routing merely to refresh drawings. The schematic-only command preserves the existing PCB, project and BOM. Native KiCad checks require KiCad 9; the V1 build requires the recorded GNU Arm toolchain. No CI job flashes real hardware.
+
+## Next milestones
+
+1. Resolve actual V2 ground islands, the AD0 warning and schematic-to-PCB differences.
+2. Freeze the pin/protocol contract and implement separate V2 diagnostic firmware, then measured failsafe behavior.
+3. Complete part/footprint qualification, the V2 connector atlas and staged physical bring-up.
+4. Validate voice quality, radio airtime and RC scheduling before developing the handheld.
+
+## Provenance and attribution
+
+The original controller was a University of Arkansas EECS senior-design team project; the repository identifies May 2025 fabrication evidence. The current reconstruction, documentation and review tooling include AI-agent-assisted development. Individual original team contributions should be confirmed before using first-person portfolio claims.
+
+`Allegro/` preserves original source evidence. Read [provenance and conversion limits](docs/A0_PROVENANCE.md) before interpreting the reconstructed geometry or inferred drill data. Third-party firmware and tools retain their existing notices; no new project-wide license is granted by this documentation.

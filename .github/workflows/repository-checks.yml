@@ -1,0 +1,45 @@
+name: Repository checks
+
+# Software/evidence packaging checks. A green result is not hardware approval.
+on:
+  push:
+    branches: [main, v2-design]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portable-review-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check acceptance logic
+        run: python -m unittest discover -s tools/quality -p 'test_*.py' -v
+      - name: Verify portable evidence and portfolio links
+        run: python tools/quality/check_publication.py
+      - name: Reconcile candidate ordering package
+        run: python hardware/manufacturing/check_package.py
+      - name: Check connector atlas sources
+        run: python docs/atlas/generate_atlas.py --check
+      - name: Build and validate the local viewer
+        run: |
+          node pm/tools/build.mjs
+          node pm/tools/validate.mjs
+      - name: Preserve inspectable viewer snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: engineering-workspace-snapshot
+          path: |
+            pm/index.html
+            pm/status.json
+          if-no-files-found: error

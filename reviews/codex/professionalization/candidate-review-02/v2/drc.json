@@ -1,0 +1,5097 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-17T15:20:13-0500",
+    "kicad_version": "9.0.7",
+    "schematic_parity": [
+        {
+            "description": "Pad net (SW_3V3) doesn't match net given by schematic (/Power/SW_3V3).",
+            "items": [
+                {
+                    "description": "Pad 1 [SW_3V3] of C3 on F.Cu",
+                    "pos": {
+                        "x": 71.225,
+                        "y": 81.5
+                    },
+                    "uuid": "215d33cc-09b3-4135-9ce9-1d5e9ee12c18"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BST_RC) doesn't match net given by schematic (/Power/BST_RC).",
+            "items": [
+                {
+                    "description": "Pad 2 [BST_RC] of C3 on F.Cu",
+                    "pos": {
+                        "x": 72.775,
+                        "y": 81.5
+                    },
+                    "uuid": "fe96b440-f537-492c-82d4-6a19db8021f1"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (FB_3V3) doesn't match net given by schematic (/Power/FB_3V3).",
+            "items": [
+                {
+                    "description": "Pad 1 [FB_3V3] of C4 on F.Cu",
+                    "pos": {
+                        "x": 69.225,
+                        "y": 87.5
+                    },
+                    "uuid": "88516f53-bf41-4713-94dd-f310016b83c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SW_5V) doesn't match net given by schematic (/Power/SW_5V).",
+            "items": [
+                {
+                    "description": "Pad 1 [SW_5V] of C7 on F.Cu",
+                    "pos": {
+                        "x": 89.225,
+                        "y": 82.0
+                    },
+                    "uuid": "0e2d29c3-f31a-48cf-b526-fd0dd1960908"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BOOT_5V) doesn't match net given by schematic (/Power/BOOT_5V).",
+            "items": [
+                {
+                    "description": "Pad 2 [BOOT_5V] of C7 on F.Cu",
+                    "pos": {
+                        "x": 90.775,
+                        "y": 82.0
+                    },
+                    "uuid": "813675a4-dd0c-4358-b22e-16f35b8da0bf"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (+5V_BUCK) doesn't match net given by schematic (/Power/+5V_BUCK).",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V_BUCK] of C8 on F.Cu",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 79.975
+                    },
+                    "uuid": "25abe65c-c700-4ade-8328-fb0c64ee1d5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (+5V_BUCK) doesn't match net given by schematic (/Power/+5V_BUCK).",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V_BUCK] of C9 on F.Cu",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 85.475
+                    },
+                    "uuid": "3d6af50a-fab9-4269-9805-22324ea46b46"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VIN_BUCK) doesn't match net given by schematic (/Power/VIN_BUCK).",
+            "items": [
+                {
+                    "description": "Pad 1 [VIN_BUCK] of C10 on F.Cu",
+                    "pos": {
+                        "x": 86.3,
+                        "y": 85.475
+                    },
+                    "uuid": "8f331e2e-76cb-446a-864b-07bcafa01a6b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VBAT_SENSE) doesn't match net given by schematic (/VBAT_SENSE).",
+            "items": [
+                {
+                    "description": "Pad 1 [VBAT_SENSE] of C36 on F.Cu",
+                    "pos": {
+                        "x": 84.3,
+                        "y": 74.275
+                    },
+                    "uuid": "90c0ed14-7666-4064-bb95-c41a5465bb6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (ISENSE) doesn't match net given by schematic (/ISENSE).",
+            "items": [
+                {
+                    "description": "Pad 1 [ISENSE] of C37 on F.Cu",
+                    "pos": {
+                        "x": 77.0,
+                        "y": 76.275
+                    },
+                    "uuid": "4e31bb07-aeba-4a46-ade2-51484d812009"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (D2) doesn't match symbol value (12V).",
+            "items": [
+                {
+                    "description": "Footprint D2",
+                    "pos": {
+                        "x": 75.2,
+                        "y": 62.0
+                    },
+                    "uuid": "8f7aa25b-767e-5840-89a7-0a6dc3fe9a97"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (PGATE) doesn't match net given by schematic (/Power/PGATE).",
+            "items": [
+                {
+                    "description": "Pad 2 [PGATE] of D2 on F.Cu",
+                    "pos": {
+                        "x": 76.85,
+                        "y": 62.0
+                    },
+                    "uuid": "6df6f7bc-2215-4f91-8920-244285a2df55"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SW_3V3) doesn't match net given by schematic (/Power/SW_3V3).",
+            "items": [
+                {
+                    "description": "Pad 2 [SW_3V3] of D3 on F.Cu",
+                    "pos": {
+                        "x": 67.5701,
+                        "y": 84.5
+                    },
+                    "uuid": "285a1dca-ab30-5fb9-b5f1-8594eb3668c4"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (+5V_BUCK) doesn't match net given by schematic (/Power/+5V_BUCK).",
+            "items": [
+                {
+                    "description": "Pad 2 [+5V_BUCK] of D4 on F.Cu",
+                    "pos": {
+                        "x": 99.0,
+                        "y": 87.0
+                    },
+                    "uuid": "7c00314a-7875-4f2e-ac99-32554d25fcd6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BEC_IN) doesn't match net given by schematic (/BEC_IN).",
+            "items": [
+                {
+                    "description": "Pad 2 [+5V_BUCK] of D4 on F.Cu",
+                    "pos": {
+                        "x": 99.0,
+                        "y": 87.0
+                    },
+                    "uuid": "7c00314a-7875-4f2e-ac99-32554d25fcd6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VBAT_IN) doesn't match net given by schematic (/Power/VBAT_IN).",
+            "items": [
+                {
+                    "description": "Pad 1 [VBAT_IN] of F1 on F.Cu",
+                    "pos": {
+                        "x": 65.3625,
+                        "y": 70.5
+                    },
+                    "uuid": "6b367da8-64c3-4d13-81b9-f7c2bf053ef4"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VBAT_FUSED) doesn't match net given by schematic (/Power/VBAT_FUSED).",
+            "items": [
+                {
+                    "description": "Pad 2 [VBAT_FUSED] of F1 on F.Cu",
+                    "pos": {
+                        "x": 69.6375,
+                        "y": 70.5
+                    },
+                    "uuid": "dd73f7cf-9567-416a-ac1b-ae266ca86ff3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VBAT_IN) doesn't match net given by schematic (/Power/VBAT_IN).",
+            "items": [
+                {
+                    "description": "PTH pad 1 [VBAT_IN] of J1",
+                    "pos": {
+                        "x": 59.7,
+                        "y": 73.0
+                    },
+                    "uuid": "3c08777f-6352-4a31-ad4f-79ad6b02212f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SW_3V3) doesn't match net given by schematic (/Power/SW_3V3).",
+            "items": [
+                {
+                    "description": "Pad 1 [SW_3V3] of L1 on F.Cu",
+                    "pos": {
+                        "x": 75.925,
+                        "y": 81.0
+                    },
+                    "uuid": "ee5cf1ed-31e4-4446-bdd3-00b038ebb5e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SW_5V) doesn't match net given by schematic (/Power/SW_5V).",
+            "items": [
+                {
+                    "description": "Pad 1 [SW_3V3] of L1 on F.Cu",
+                    "pos": {
+                        "x": 75.925,
+                        "y": 81.0
+                    },
+                    "uuid": "ee5cf1ed-31e4-4446-bdd3-00b038ebb5e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (+5V_BUCK) doesn't match net given by schematic (/Power/+5V_BUCK).",
+            "items": [
+                {
+                    "description": "Pad 2 [+3V3] of L1 on F.Cu",
+                    "pos": {
+                        "x": 80.075,
+                        "y": 81.0
+                    },
+                    "uuid": "f70c9271-f509-461c-97db-c86d35258e33"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (PGATE) doesn't match net given by schematic (/Power/PGATE).",
+            "items": [
+                {
+                    "description": "Pad 1 [PGATE] of Q1 on F.Cu",
+                    "pos": {
+                        "x": 69.7625,
+                        "y": 61.05
+                    },
+                    "uuid": "f0d097ce-8a3f-4c2e-95ab-840ccdd07eb9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VBAT_FUSED) doesn't match net given by schematic (/Power/VBAT_FUSED).",
+            "items": [
+                {
+                    "description": "Pad 3 [VBAT_FUSED] of Q1 on F.Cu",
+                    "pos": {
+                        "x": 71.6375,
+                        "y": 62.0
+                    },
+                    "uuid": "c20ff410-c006-4bb4-bd58-d7e56646d891"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (PGATE) doesn't match net given by schematic (/Power/PGATE).",
+            "items": [
+                {
+                    "description": "Pad 1 [PGATE] of R1 on F.Cu",
+                    "pos": {
+                        "x": 71.975,
+                        "y": 59.3
+                    },
+                    "uuid": "25d870c0-b4c6-4868-a500-9b143df0d255"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VIN_BUCK) doesn't match net given by schematic (/Power/VIN_BUCK).",
+            "items": [
+                {
+                    "description": "Pad 1 [VIN_BUCK] of R2 on F.Cu",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 81.325
+                    },
+                    "uuid": "25a3a295-ff70-428d-85c1-25a3a2d134ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (EN_3V3) doesn't match net given by schematic (/Power/EN_3V3).",
+            "items": [
+                {
+                    "description": "Pad 2 [EN_3V3] of R2 on F.Cu",
+                    "pos": {
+                        "x": 69.0,
+                        "y": 79.675
+                    },
+                    "uuid": "ad02d89d-07fb-4faa-8cb1-7d1f0133b047"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BST_RC) doesn't match net given by schematic (/Power/BST_RC).",
+            "items": [
+                {
+                    "description": "Pad 1 [BST_RC] of R3 on F.Cu",
+                    "pos": {
+                        "x": 71.175,
+                        "y": 79.0
+                    },
+                    "uuid": "020b6c70-b98b-41b4-af41-cc9dd2117a3e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BST_3V3) doesn't match net given by schematic (/Power/BST_3V3).",
+            "items": [
+                {
+                    "description": "Pad 2 [BST_3V3] of R3 on F.Cu",
+                    "pos": {
+                        "x": 72.825,
+                        "y": 79.0
+                    },
+                    "uuid": "d0c23f7f-b4f4-4b79-a28a-d111b5886822"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (FB_3V3) doesn't match net given by schematic (/Power/FB_3V3).",
+            "items": [
+                {
+                    "description": "Pad 2 [FB_3V3] of R4 on F.Cu",
+                    "pos": {
+                        "x": 70.0,
+                        "y": 83.675
+                    },
+                    "uuid": "ceaa36c8-f518-47a8-9531-f5d67b0414f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (FB_3V3) doesn't match net given by schematic (/Power/FB_3V3).",
+            "items": [
+                {
+                    "description": "Pad 1 [FB_3V3] of R5 on F.Cu",
+                    "pos": {
+                        "x": 72.5,
+                        "y": 85.325
+                    },
+                    "uuid": "5f2cf9dc-f76d-4e44-a9cb-e79716aba124"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VIN_BUCK) doesn't match net given by schematic (/Power/VIN_BUCK).",
+            "items": [
+                {
+                    "description": "Pad 1 [VIN_BUCK] of R6 on F.Cu",
+                    "pos": {
+                        "x": 86.5,
+                        "y": 79.825
+                    },
+                    "uuid": "48be83a5-68e7-4f8e-aff7-abb6c5e481a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (EN_5V) doesn't match net given by schematic (/Power/EN_5V).",
+            "items": [
+                {
+                    "description": "Pad 2 [EN_5V] of R6 on F.Cu",
+                    "pos": {
+                        "x": 86.5,
+                        "y": 78.175
+                    },
+                    "uuid": "a019bdb1-4cff-4b86-90c0-96f1e55aebfa"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (+5V_BUCK) doesn't match net given by schematic (/Power/+5V_BUCK).",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V_BUCK] of R8 on F.Cu",
+                    "pos": {
+                        "x": 89.175,
+                        "y": 84.5
+                    },
+                    "uuid": "b75bfccd-6f70-4b20-be07-3d5f29e7eb5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (FB_5V) doesn't match net given by schematic (/Power/FB_5V).",
+            "items": [
+                {
+                    "description": "Pad 2 [FB_5V] of R8 on F.Cu",
+                    "pos": {
+                        "x": 90.825,
+                        "y": 84.5
+                    },
+                    "uuid": "ea9212bc-ac76-4327-aab3-b4fbd1364376"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (FB_5V) doesn't match net given by schematic (/Power/FB_5V).",
+            "items": [
+                {
+                    "description": "Pad 1 [FB_5V] of R9 on F.Cu",
+                    "pos": {
+                        "x": 89.175,
+                        "y": 86.5
+                    },
+                    "uuid": "d74c8f63-6681-4cc8-b505-2a19b84a3f30"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VBAT_SENSE) doesn't match net given by schematic (/VBAT_SENSE).",
+            "items": [
+                {
+                    "description": "Pad 2 [VBAT_SENSE] of R31 on F.Cu",
+                    "pos": {
+                        "x": 81.5,
+                        "y": 70.175
+                    },
+                    "uuid": "fb529782-9f16-4d05-a49b-0816e3a736d1"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VBAT_SENSE) doesn't match net given by schematic (/VBAT_SENSE).",
+            "items": [
+                {
+                    "description": "Pad 1 [VBAT_SENSE] of R32 on F.Cu",
+                    "pos": {
+                        "x": 81.5,
+                        "y": 75.325
+                    },
+                    "uuid": "6d3e2cc4-7f6f-4e77-a512-5ba174dc3072"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VIN_BUCK) doesn't match net given by schematic (/Power/VIN_BUCK).",
+            "items": [
+                {
+                    "description": "Pad 2 [VIN_BUCK] of R33 on F.Cu",
+                    "pos": {
+                        "x": 78.9625,
+                        "y": 70.5
+                    },
+                    "uuid": "5f566b80-03f0-4f68-9b83-3ce96f42e000"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.",
+            "items": [
+                {
+                    "description": "Footprint TP3",
+                    "pos": {
+                        "x": 93.0,
+                        "y": 94.0
+                    },
+                    "uuid": "2215d90d-8aa0-5f8b-abd6-f4524f6f82d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.",
+            "items": [
+                {
+                    "description": "Footprint TP4",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 94.0
+                    },
+                    "uuid": "bf87de23-02bf-5ed4-a793-8795e411f8b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.",
+            "items": [
+                {
+                    "description": "Footprint TP5",
+                    "pos": {
+                        "x": 101.0,
+                        "y": 94.0
+                    },
+                    "uuid": "ac597313-f298-569d-89af-c8168ff19a6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.",
+            "items": [
+                {
+                    "description": "Footprint TP6",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 94.0
+                    },
+                    "uuid": "ee01df59-fcc5-552b-bb0c-eab7aed0e8e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (EN_3V3) doesn't match net given by schematic (/Power/EN_3V3).",
+            "items": [
+                {
+                    "description": "Pad 1 [EN_3V3] of U2 on F.Cu",
+                    "pos": {
+                        "x": 63.54585,
+                        "y": 79.55004
+                    },
+                    "uuid": "309524c4-0a97-53e1-b05c-e8350336727d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VIN_BUCK) doesn't match net given by schematic (/Power/VIN_BUCK).",
+            "items": [
+                {
+                    "description": "Pad 2 [VIN_BUCK] of U2 on F.Cu",
+                    "pos": {
+                        "x": 63.54585,
+                        "y": 80.5
+                    },
+                    "uuid": "2d529894-e71d-5f35-88e4-1dce9bee8a93"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SW_3V3) doesn't match net given by schematic (/Power/SW_3V3).",
+            "items": [
+                {
+                    "description": "Pad 3 [SW_3V3] of U2 on F.Cu",
+                    "pos": {
+                        "x": 63.54585,
+                        "y": 81.44996
+                    },
+                    "uuid": "30e8540c-ea8a-5a00-946a-d6fdf7239387"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BST_3V3) doesn't match net given by schematic (/Power/BST_3V3).",
+            "items": [
+                {
+                    "description": "Pad 4 [BST_3V3] of U2 on F.Cu",
+                    "pos": {
+                        "x": 66.45415,
+                        "y": 81.44996
+                    },
+                    "uuid": "089a4a12-b591-5450-bece-84309d12b8fc"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (FB_3V3) doesn't match net given by schematic (/Power/FB_3V3).",
+            "items": [
+                {
+                    "description": "Pad 6 [FB_3V3] of U2 on F.Cu",
+                    "pos": {
+                        "x": 66.45415,
+                        "y": 79.55004
+                    },
+                    "uuid": "829f1a63-4996-59c4-992e-d62b6a04f665"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SW_5V) doesn't match net given by schematic (/Power/SW_5V).",
+            "items": [
+                {
+                    "description": "Pad 2 [SW_5V] of U3 on F.Cu",
+                    "pos": {
+                        "x": 88.8625,
+                        "y": 79.0
+                    },
+                    "uuid": "e31f0a05-d388-42f5-b0bc-24eae136cb81"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VIN_BUCK) doesn't match net given by schematic (/Power/VIN_BUCK).",
+            "items": [
+                {
+                    "description": "Pad 3 [VIN_BUCK] of U3 on F.Cu",
+                    "pos": {
+                        "x": 88.8625,
+                        "y": 79.95
+                    },
+                    "uuid": "d6454d87-bf9e-48d5-89f6-7ff559167ed4"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (FB_5V) doesn't match net given by schematic (/Power/FB_5V).",
+            "items": [
+                {
+                    "description": "Pad 4 [FB_5V] of U3 on F.Cu",
+                    "pos": {
+                        "x": 91.1375,
+                        "y": 79.95
+                    },
+                    "uuid": "1a2036a4-b2d5-48c0-8006-0117108941ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (EN_5V) doesn't match net given by schematic (/Power/EN_5V).",
+            "items": [
+                {
+                    "description": "Pad 5 [EN_5V] of U3 on F.Cu",
+                    "pos": {
+                        "x": 91.1375,
+                        "y": 79.0
+                    },
+                    "uuid": "7c023052-2c8d-4aec-a950-44fc55646d24"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BOOT_5V) doesn't match net given by schematic (/Power/BOOT_5V).",
+            "items": [
+                {
+                    "description": "Pad 6 [BOOT_5V] of U3 on F.Cu",
+                    "pos": {
+                        "x": 91.1375,
+                        "y": 78.05
+                    },
+                    "uuid": "c676c383-3d02-4236-9cbc-d44b298cbf00"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (ISENSE) doesn't match net given by schematic (/ISENSE).",
+            "items": [
+                {
+                    "description": "Pad 1 [ISENSE] of U8 on F.Cu",
+                    "pos": {
+                        "x": 72.8625,
+                        "y": 74.55
+                    },
+                    "uuid": "c3dfc9c1-5378-4c72-b35f-313fc51e3a4b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VIN_BUCK) doesn't match net given by schematic (/Power/VIN_BUCK).",
+            "items": [
+                {
+                    "description": "Pad 4 [VIN_BUCK] of U8 on F.Cu",
+                    "pos": {
+                        "x": 75.1375,
+                        "y": 76.45
+                    },
+                    "uuid": "6dbfbd3c-01ca-4c10-82e6-3090586fe0fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VCAP1) doesn't match net given by schematic (/MCU/VCAP1).",
+            "items": [
+                {
+                    "description": "Pad 1 [VCAP1] of C20 on F.Cu",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 72.275
+                    },
+                    "uuid": "7e3c0cc8-4519-4f0c-a90b-50247ab9b119"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VDDA) doesn't match net given by schematic (/MCU/VDDA).",
+            "items": [
+                {
+                    "description": "Pad 1 [VDDA] of C21 on F.Cu",
+                    "pos": {
+                        "x": 86.2,
+                        "y": 65.775
+                    },
+                    "uuid": "d850193d-6388-4de2-ae8a-b6dc07de7797"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VDDA) doesn't match net given by schematic (/MCU/VDDA).",
+            "items": [
+                {
+                    "description": "Pad 1 [VDDA] of C22 on F.Cu",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 71.275
+                    },
+                    "uuid": "d03c1853-cc18-49dc-a3e0-5cbfcb7b9ef0"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NRST) doesn't match net given by schematic (/NRST).",
+            "items": [
+                {
+                    "description": "Pad 1 [NRST] of C24 on F.Cu",
+                    "pos": {
+                        "x": 91.225,
+                        "y": 76.0
+                    },
+                    "uuid": "2575898d-c3d9-4c68-9226-35c0d693a58e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (HSE_IN) doesn't match net given by schematic (/MCU/HSE_IN).",
+            "items": [
+                {
+                    "description": "Pad 1 [HSE_IN] of C25 on F.Cu",
+                    "pos": {
+                        "x": 78.5,
+                        "y": 64.075
+                    },
+                    "uuid": "cec144f1-e73a-4e17-a6f6-d2a798408da8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (HSE_OUT) doesn't match net given by schematic (/MCU/HSE_OUT).",
+            "items": [
+                {
+                    "description": "Pad 1 [HSE_OUT] of C26 on F.Cu",
+                    "pos": {
+                        "x": 84.5,
+                        "y": 64.075
+                    },
+                    "uuid": "003b7718-2fac-41b4-bba1-d700f5548f09"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LSE_IN) doesn't match net given by schematic (/MCU/LSE_IN).",
+            "items": [
+                {
+                    "description": "Pad 1 [LSE_IN] of C27 on F.Cu",
+                    "pos": {
+                        "x": 78.5,
+                        "y": 67.475
+                    },
+                    "uuid": "a819d348-4753-42d9-929d-ae9bbe37014e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LSE_OUT) doesn't match net given by schematic (/MCU/LSE_OUT).",
+            "items": [
+                {
+                    "description": "Pad 1 [LSE_OUT] of C28 on F.Cu",
+                    "pos": {
+                        "x": 84.5,
+                        "y": 67.475
+                    },
+                    "uuid": "9b40301a-eadc-45ad-8025-1f3abf624707"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_PWR) doesn't match net given by schematic (/MCU/LED_PWR).",
+            "items": [
+                {
+                    "description": "Pad 2 [LED_PWR] of D5 on F.Cu",
+                    "pos": {
+                        "x": 88.7875,
+                        "y": 53.0
+                    },
+                    "uuid": "f10adfdd-4c66-4234-a11e-edf483c5a7ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_LINK_A) doesn't match net given by schematic (/MCU/LED_LINK_A).",
+            "items": [
+                {
+                    "description": "Pad 2 [LED_LINK_A] of D6 on F.Cu",
+                    "pos": {
+                        "x": 91.9875,
+                        "y": 53.0
+                    },
+                    "uuid": "2a331e3a-91a5-406c-bf54-68d0ac060b71"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_FIX_A) doesn't match net given by schematic (/MCU/LED_FIX_A).",
+            "items": [
+                {
+                    "description": "Pad 2 [LED_FIX_A] of D7 on F.Cu",
+                    "pos": {
+                        "x": 95.1875,
+                        "y": 53.0
+                    },
+                    "uuid": "917ffcf5-eda5-4952-b4ed-fed5f1869b8e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_FAULT_A) doesn't match net given by schematic (/MCU/LED_FAULT_A).",
+            "items": [
+                {
+                    "description": "Pad 2 [LED_FAULT_A] of D8 on F.Cu",
+                    "pos": {
+                        "x": 98.3875,
+                        "y": 53.0
+                    },
+                    "uuid": "5825f00b-7a31-4e54-8989-c9a18c938f3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VDDA) doesn't match net given by schematic (/MCU/VDDA).",
+            "items": [
+                {
+                    "description": "Pad 2 [VDDA] of FB1 on F.Cu",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 66.2125
+                    },
+                    "uuid": "97067502-6909-416b-a696-fabb2e07049c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BOOT0) doesn't match net given by schematic (/MCU/BOOT0).",
+            "items": [
+                {
+                    "description": "Pad 1 [BOOT0] of R16 on F.Cu",
+                    "pos": {
+                        "x": 95.175,
+                        "y": 76.0
+                    },
+                    "uuid": "a0abcc95-3f79-49a5-8f4b-2e398a66144f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_PWR) doesn't match net given by schematic (/MCU/LED_PWR).",
+            "items": [
+                {
+                    "description": "Pad 2 [LED_PWR] of R29 on F.Cu",
+                    "pos": {
+                        "x": 88.0,
+                        "y": 54.675
+                    },
+                    "uuid": "ac460ccd-bef1-4c97-a776-1fbfaac952a8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_LINK) doesn't match net given by schematic (/MCU/LED_LINK).",
+            "items": [
+                {
+                    "description": "Pad 1 [LED_LINK] of R30 on F.Cu",
+                    "pos": {
+                        "x": 91.2,
+                        "y": 56.325
+                    },
+                    "uuid": "cfa4d1d5-70c8-40cd-a526-4432f9bcf946"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_LINK_A) doesn't match net given by schematic (/MCU/LED_LINK_A).",
+            "items": [
+                {
+                    "description": "Pad 2 [LED_LINK_A] of R30 on F.Cu",
+                    "pos": {
+                        "x": 91.2,
+                        "y": 54.675
+                    },
+                    "uuid": "21efd3a6-9291-4356-bb79-c75a9929834b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_FIX) doesn't match net given by schematic (/MCU/LED_FIX).",
+            "items": [
+                {
+                    "description": "Pad 1 [LED_FIX] of R34 on F.Cu",
+                    "pos": {
+                        "x": 94.4,
+                        "y": 56.325
+                    },
+                    "uuid": "1f546bc9-7d82-467a-9625-1d5c876b0f7c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_FIX_A) doesn't match net given by schematic (/MCU/LED_FIX_A).",
+            "items": [
+                {
+                    "description": "Pad 2 [LED_FIX_A] of R34 on F.Cu",
+                    "pos": {
+                        "x": 94.4,
+                        "y": 54.675
+                    },
+                    "uuid": "9b18f654-4d31-4819-9f48-d043b00aa0f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_FAULT) doesn't match net given by schematic (/MCU/LED_FAULT).",
+            "items": [
+                {
+                    "description": "Pad 1 [LED_FAULT] of R35 on F.Cu",
+                    "pos": {
+                        "x": 97.6,
+                        "y": 56.325
+                    },
+                    "uuid": "585d256f-13f1-4a20-89af-e080b5fb9a58"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_FAULT_A) doesn't match net given by schematic (/MCU/LED_FAULT_A).",
+            "items": [
+                {
+                    "description": "Pad 2 [LED_FAULT_A] of R35 on F.Cu",
+                    "pos": {
+                        "x": 97.6,
+                        "y": 54.675
+                    },
+                    "uuid": "d741fe1b-2e6c-4496-886a-927ff10a48e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NRST) doesn't match net given by schematic (/NRST).",
+            "items": [
+                {
+                    "description": "Pad 1 [NRST] of SW1 on F.Cu",
+                    "pos": {
+                        "x": 119.95,
+                        "y": 70.2
+                    },
+                    "uuid": "631abbef-dae7-44b5-9c2f-735c91784b21"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NRST) doesn't match net given by schematic (/NRST).",
+            "items": [
+                {
+                    "description": "Pad 1 [NRST] of SW1 on F.Cu",
+                    "pos": {
+                        "x": 124.05,
+                        "y": 70.2
+                    },
+                    "uuid": "c99723a4-0a04-4828-89a8-f465817a8432"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PC13-Pad2)).",
+            "items": [
+                {
+                    "description": "Pad 2 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 63.75
+                    },
+                    "uuid": "73f02540-8377-45df-a972-cbcb21b40320"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LSE_IN) doesn't match net given by schematic (/MCU/LSE_IN).",
+            "items": [
+                {
+                    "description": "Pad 3 [LSE_IN] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 64.25
+                    },
+                    "uuid": "65981f06-7a0d-4c61-a03a-6bfc347fe038"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LSE_OUT) doesn't match net given by schematic (/MCU/LSE_OUT).",
+            "items": [
+                {
+                    "description": "Pad 4 [LSE_OUT] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 64.75
+                    },
+                    "uuid": "476334b5-dd06-4b21-a7c0-a6d2f824ac87"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (HSE_IN) doesn't match net given by schematic (/MCU/HSE_IN).",
+            "items": [
+                {
+                    "description": "Pad 5 [HSE_IN] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 65.25
+                    },
+                    "uuid": "b787d29c-d42e-4a4b-be17-72f11b98a66f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (HSE_OUT) doesn't match net given by schematic (/MCU/HSE_OUT).",
+            "items": [
+                {
+                    "description": "Pad 6 [HSE_OUT] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 65.75
+                    },
+                    "uuid": "b329f4fb-6d04-45a6-85fa-c434918e1f64"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NRST) doesn't match net given by schematic (/NRST).",
+            "items": [
+                {
+                    "description": "Pad 7 [NRST] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 66.25
+                    },
+                    "uuid": "9fbad8ca-5dad-4fea-a9ce-589aef49eeea"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PC0-Pad8)).",
+            "items": [
+                {
+                    "description": "Pad 8 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 66.75
+                    },
+                    "uuid": "56ce82d3-329d-41bd-b7d4-79891826b172"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_LINK) doesn't match net given by schematic (/MCU/LED_LINK).",
+            "items": [
+                {
+                    "description": "Pad 9 [LED_LINK] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 67.25
+                    },
+                    "uuid": "b66f7968-0136-4d12-bb26-dba5bab0dd09"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_FIX) doesn't match net given by schematic (/MCU/LED_FIX).",
+            "items": [
+                {
+                    "description": "Pad 10 [LED_FIX] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 67.75
+                    },
+                    "uuid": "d29b1b50-4d8a-4d5c-8667-07d90a330d67"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LED_FAULT) doesn't match net given by schematic (/MCU/LED_FAULT).",
+            "items": [
+                {
+                    "description": "Pad 11 [LED_FAULT] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 68.25
+                    },
+                    "uuid": "ddb3d457-738d-4fa2-8615-1266a8484b6b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VDDA) doesn't match net given by schematic (/MCU/VDDA).",
+            "items": [
+                {
+                    "description": "Pad 13 [VDDA] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 69.25
+                    },
+                    "uuid": "722b4fac-5cc5-4f64-81de-d5c8eef38cc3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_TX_PA0) doesn't match net given by schematic (/LORA_TX_PA0).",
+            "items": [
+                {
+                    "description": "Pad 14 [LORA_TX_PA0] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 69.75
+                    },
+                    "uuid": "38f816a3-ebda-41cd-a43f-f457b4c97024"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_RX_PA1) doesn't match net given by schematic (/LORA_RX_PA1).",
+            "items": [
+                {
+                    "description": "Pad 15 [LORA_RX_PA1] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 70.25
+                    },
+                    "uuid": "6ee41725-f117-4beb-b5ee-3183cab63206"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VBAT_SENSE) doesn't match net given by schematic (/VBAT_SENSE).",
+            "items": [
+                {
+                    "description": "Pad 16 [VBAT_SENSE] of U1 on F.Cu",
+                    "pos": {
+                        "x": 90.325,
+                        "y": 70.75
+                    },
+                    "uuid": "bff29b01-ec23-4b11-b896-8c012203235f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_NRST_PA3) doesn't match net given by schematic (/LORA_NRST_PA3).",
+            "items": [
+                {
+                    "description": "Pad 17 [LORA_NRST_PA3] of U1 on F.Cu",
+                    "pos": {
+                        "x": 92.25,
+                        "y": 72.675
+                    },
+                    "uuid": "249fdb2d-9c5f-4029-b65d-ee5215f5068f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (+3V3) doesn't match net given by schematic (unconnected-(U1-VDD-Pad19)).",
+            "items": [
+                {
+                    "description": "Pad 19 [+3V3] of U1 on F.Cu",
+                    "pos": {
+                        "x": 93.25,
+                        "y": 72.675
+                    },
+                    "uuid": "af43e3d2-e161-447c-88ac-a877fb018b1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (ISENSE) doesn't match net given by schematic (/ISENSE).",
+            "items": [
+                {
+                    "description": "Pad 20 [ISENSE] of U1 on F.Cu",
+                    "pos": {
+                        "x": 93.75,
+                        "y": 72.675
+                    },
+                    "uuid": "453b9e6b-19b0-4e25-b580-1daa69cad4d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PA5-Pad21)).",
+            "items": [
+                {
+                    "description": "Pad 21 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 94.25,
+                        "y": 72.675
+                    },
+                    "uuid": "d684962f-c6ee-4881-a29e-81c946ffe14a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PA6-Pad22)).",
+            "items": [
+                {
+                    "description": "Pad 22 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 94.75,
+                        "y": 72.675
+                    },
+                    "uuid": "a8f7a092-8a5d-4a4c-bfe1-cfaed0512fd3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PA7-Pad23)).",
+            "items": [
+                {
+                    "description": "Pad 23 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 95.25,
+                        "y": 72.675
+                    },
+                    "uuid": "dbd25a8b-7f41-441b-bf51-8f016a66b83d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PC4-Pad24)).",
+            "items": [
+                {
+                    "description": "Pad 24 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 95.75,
+                        "y": 72.675
+                    },
+                    "uuid": "a2b02591-1b66-409d-9120-047b12eec26c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PC5-Pad25)).",
+            "items": [
+                {
+                    "description": "Pad 25 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 96.25,
+                        "y": 72.675
+                    },
+                    "uuid": "5905c28f-c84f-4102-980e-6d7eb3dc93dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (PPS_PB0) doesn't match net given by schematic (/PPS_PB0).",
+            "items": [
+                {
+                    "description": "Pad 26 [PPS_PB0] of U1 on F.Cu",
+                    "pos": {
+                        "x": 96.75,
+                        "y": 72.675
+                    },
+                    "uuid": "b45c1ffb-bd1f-4a9b-82f8-2aceb5c874e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PB1-Pad27)).",
+            "items": [
+                {
+                    "description": "Pad 27 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 97.25,
+                        "y": 72.675
+                    },
+                    "uuid": "3f627762-540b-40ae-9b67-2a400c8ce4bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PB2-Pad28)).",
+            "items": [
+                {
+                    "description": "Pad 28 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 97.75,
+                        "y": 72.675
+                    },
+                    "uuid": "a055672a-d39e-4804-a0f8-92d3481e9639"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PB10-Pad29)).",
+            "items": [
+                {
+                    "description": "Pad 29 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 98.25,
+                        "y": 72.675
+                    },
+                    "uuid": "c1b1428e-a7f9-4495-a0ed-bbc0ff4283e6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VCAP1) doesn't match net given by schematic (/MCU/VCAP1).",
+            "items": [
+                {
+                    "description": "Pad 30 [VCAP1] of U1 on F.Cu",
+                    "pos": {
+                        "x": 98.75,
+                        "y": 72.675
+                    },
+                    "uuid": "c26e180c-dc94-4cb8-8d5d-54e941cf5312"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (+3V3) doesn't match net given by schematic (unconnected-(U1-VDD-Pad32)).",
+            "items": [
+                {
+                    "description": "Pad 32 [+3V3] of U1 on F.Cu",
+                    "pos": {
+                        "x": 99.75,
+                        "y": 72.675
+                    },
+                    "uuid": "b6aef49c-67ae-4e14-9323-f3bd2a4f2cef"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PB12-Pad33)).",
+            "items": [
+                {
+                    "description": "Pad 33 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 70.75
+                    },
+                    "uuid": "94bb9410-aa48-4eb4-a9d1-efeb79360759"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PB13-Pad34)).",
+            "items": [
+                {
+                    "description": "Pad 34 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 70.25
+                    },
+                    "uuid": "bdd05d8a-e657-4d81-be3c-286beaa5e7c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PB14-Pad35)).",
+            "items": [
+                {
+                    "description": "Pad 35 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 69.75
+                    },
+                    "uuid": "7b3cece7-fa62-474d-b09c-7ab4d88596b2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PB15-Pad36)).",
+            "items": [
+                {
+                    "description": "Pad 36 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 69.25
+                    },
+                    "uuid": "3c928b77-ff8d-4582-9df8-339d7482f0e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (PWM_ESC_PC6) doesn't match net given by schematic (/PWM_ESC_PC6).",
+            "items": [
+                {
+                    "description": "Pad 37 [PWM_ESC_PC6] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 68.75
+                    },
+                    "uuid": "7e8c037b-e383-4a10-a01d-9eafaa4565a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PC7-Pad38)).",
+            "items": [
+                {
+                    "description": "Pad 38 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 68.25
+                    },
+                    "uuid": "012eef80-2c58-4c33-a5ed-934dcbd10bf2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PC8-Pad39)).",
+            "items": [
+                {
+                    "description": "Pad 39 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 67.75
+                    },
+                    "uuid": "7d4794a9-d421-40a5-baf7-95037eac74ff"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PC9-Pad40)).",
+            "items": [
+                {
+                    "description": "Pad 40 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 67.25
+                    },
+                    "uuid": "4630b4ff-9a94-4d92-b36d-70da23849a0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (PWM_SERVO_PA8) doesn't match net given by schematic (/PWM_SERVO_PA8).",
+            "items": [
+                {
+                    "description": "Pad 41 [PWM_SERVO_PA8] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 66.75
+                    },
+                    "uuid": "35de4d04-fb39-4ef5-b9d6-95d10dbee7e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (VBUS_SENSE) doesn't match net given by schematic (/VBUS_SENSE).",
+            "items": [
+                {
+                    "description": "Pad 42 [VBUS_SENSE] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 66.25
+                    },
+                    "uuid": "f1be7c0c-cc70-4cc4-8058-e61f41c3066a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PA10-Pad43)).",
+            "items": [
+                {
+                    "description": "Pad 43 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 65.75
+                    },
+                    "uuid": "09c3885e-0892-4aad-960f-3b607d1522f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (USB_DM) doesn't match net given by schematic (/USB_DM).",
+            "items": [
+                {
+                    "description": "Pad 44 [USB_DM] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 65.25
+                    },
+                    "uuid": "5bb17629-1747-4721-877d-92670a24f87b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (USB_DP) doesn't match net given by schematic (/USB_DP).",
+            "items": [
+                {
+                    "description": "Pad 45 [USB_DP] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 64.75
+                    },
+                    "uuid": "cd5903ff-a4c6-4b65-bd7b-5a1f6ebb8ae5"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SWDIO) doesn't match net given by schematic (/SWDIO).",
+            "items": [
+                {
+                    "description": "Pad 46 [SWDIO] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 64.25
+                    },
+                    "uuid": "926428e1-8011-4094-b1af-5853e5dff949"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (+3V3) doesn't match net given by schematic (unconnected-(U1-VDD-Pad48)).",
+            "items": [
+                {
+                    "description": "Pad 48 [+3V3] of U1 on F.Cu",
+                    "pos": {
+                        "x": 101.675,
+                        "y": 63.25
+                    },
+                    "uuid": "cc9f9755-c342-413c-83b4-2af4e9edb007"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SWCLK) doesn't match net given by schematic (/SWCLK).",
+            "items": [
+                {
+                    "description": "Pad 49 [SWCLK] of U1 on F.Cu",
+                    "pos": {
+                        "x": 99.75,
+                        "y": 61.325
+                    },
+                    "uuid": "16ae79d5-797b-455a-8100-8feedd8cc18a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PA15-Pad50)).",
+            "items": [
+                {
+                    "description": "Pad 50 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 99.25,
+                        "y": 61.325
+                    },
+                    "uuid": "028b1bf0-1d4a-4d4c-857e-9acf69a6fdc8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GNSS_TX_PC10) doesn't match net given by schematic (/GNSS_TX_PC10).",
+            "items": [
+                {
+                    "description": "Pad 51 [GNSS_TX_PC10] of U1 on F.Cu",
+                    "pos": {
+                        "x": 98.75,
+                        "y": 61.325
+                    },
+                    "uuid": "252634cf-7844-4b47-a4a1-16facb233830"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GNSS_RX_PC11) doesn't match net given by schematic (/GNSS_RX_PC11).",
+            "items": [
+                {
+                    "description": "Pad 52 [GNSS_RX_PC11] of U1 on F.Cu",
+                    "pos": {
+                        "x": 98.25,
+                        "y": 61.325
+                    },
+                    "uuid": "88ff6389-4965-46f9-9cf6-a73c3f2415ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PC12-Pad53)).",
+            "items": [
+                {
+                    "description": "Pad 53 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 97.75,
+                        "y": 61.325
+                    },
+                    "uuid": "f777a524-bef4-4075-aa36-806a9169f39d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PD2-Pad54)).",
+            "items": [
+                {
+                    "description": "Pad 54 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 97.25,
+                        "y": 61.325
+                    },
+                    "uuid": "187376a3-1d63-40c5-b6d8-1af2bea829bf"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SWO) doesn't match net given by schematic (/SWO).",
+            "items": [
+                {
+                    "description": "Pad 55 [SWO] of U1 on F.Cu",
+                    "pos": {
+                        "x": 96.75,
+                        "y": 61.325
+                    },
+                    "uuid": "bb5b97c8-b7c9-497d-bda0-2da173944c9a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PB4-Pad56)).",
+            "items": [
+                {
+                    "description": "Pad 56 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 96.25,
+                        "y": 61.325
+                    },
+                    "uuid": "eac351f3-fe26-45a6-805d-659d96c7df29"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (IMU_INT) doesn't match net given by schematic (/IMU_INT).",
+            "items": [
+                {
+                    "description": "Pad 57 [IMU_INT] of U1 on F.Cu",
+                    "pos": {
+                        "x": 95.75,
+                        "y": 61.325
+                    },
+                    "uuid": "edb9effb-7d8b-4328-9894-eb9cbc496f66"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (I2C1_SCL) doesn't match net given by schematic (/I2C1_SCL).",
+            "items": [
+                {
+                    "description": "Pad 58 [I2C1_SCL] of U1 on F.Cu",
+                    "pos": {
+                        "x": 95.25,
+                        "y": 61.325
+                    },
+                    "uuid": "95f1e6c3-5681-483e-b750-fddfed85a649"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (I2C1_SDA) doesn't match net given by schematic (/I2C1_SDA).",
+            "items": [
+                {
+                    "description": "Pad 59 [I2C1_SDA] of U1 on F.Cu",
+                    "pos": {
+                        "x": 94.75,
+                        "y": 61.325
+                    },
+                    "uuid": "4c557532-f47a-4e26-ad93-8e53835d9ea5"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BOOT0) doesn't match net given by schematic (/MCU/BOOT0).",
+            "items": [
+                {
+                    "description": "Pad 60 [BOOT0] of U1 on F.Cu",
+                    "pos": {
+                        "x": 94.25,
+                        "y": 61.325
+                    },
+                    "uuid": "47abbdf1-f012-491b-96ce-6cbc657dc3f1"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PB8-Pad61)).",
+            "items": [
+                {
+                    "description": "Pad 61 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 93.75,
+                        "y": 61.325
+                    },
+                    "uuid": "e72f15f0-05d7-481f-83f9-d97053fdac4a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-PB9-Pad62)).",
+            "items": [
+                {
+                    "description": "Pad 62 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 93.25,
+                        "y": 61.325
+                    },
+                    "uuid": "5acff28d-ee8a-40e4-a7fd-603c2123af47"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (HSE_IN) doesn't match net given by schematic (/MCU/HSE_IN).",
+            "items": [
+                {
+                    "description": "Pad 1 [HSE_IN] of Y1 on F.Cu",
+                    "pos": {
+                        "x": 80.4,
+                        "y": 63.35
+                    },
+                    "uuid": "b19cfb23-a346-47b9-bdeb-0b0cb1c0460b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (HSE_OUT) doesn't match net given by schematic (/MCU/HSE_OUT).",
+            "items": [
+                {
+                    "description": "Pad 3 [HSE_OUT] of Y1 on F.Cu",
+                    "pos": {
+                        "x": 82.6,
+                        "y": 61.65
+                    },
+                    "uuid": "139c4c67-0b93-4e0f-b589-00a1105fe5cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LSE_IN) doesn't match net given by schematic (/MCU/LSE_IN).",
+            "items": [
+                {
+                    "description": "Pad 1 [LSE_IN] of Y2 on F.Cu",
+                    "pos": {
+                        "x": 82.75,
+                        "y": 67.0
+                    },
+                    "uuid": "5f309129-2787-4831-83e1-b8e47abd636c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LSE_OUT) doesn't match net given by schematic (/MCU/LSE_OUT).",
+            "items": [
+                {
+                    "description": "Pad 2 [LSE_OUT] of Y2 on F.Cu",
+                    "pos": {
+                        "x": 80.25,
+                        "y": 67.0
+                    },
+                    "uuid": "e5e4f8c5-e618-44fc-825d-06f612513e80"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_FILT) doesn't match net given by schematic (/Radio/LORA_FILT).",
+            "items": [
+                {
+                    "description": "Pad 1 [LORA_FILT] of C29 on F.Cu",
+                    "pos": {
+                        "x": 119.05,
+                        "y": 77.5
+                    },
+                    "uuid": "d70c0d7d-3cce-48a7-965a-fa0a006932d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_VCC) doesn't match net given by schematic (/Radio/LORA_VCC).",
+            "items": [
+                {
+                    "description": "Pad 1 [LORA_VCC] of C30 on F.Cu",
+                    "pos": {
+                        "x": 122.55,
+                        "y": 77.5
+                    },
+                    "uuid": "a6d6a368-23e0-47b8-b6ce-6944fe5d441f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_VCC) doesn't match net given by schematic (/Radio/LORA_VCC).",
+            "items": [
+                {
+                    "description": "Pad 1 [LORA_VCC] of C31 on F.Cu",
+                    "pos": {
+                        "x": 125.5,
+                        "y": 81.075
+                    },
+                    "uuid": "d16e5721-c683-486d-9799-1500e47dff41"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_VCC) doesn't match net given by schematic (/Radio/LORA_VCC).",
+            "items": [
+                {
+                    "description": "Pad 1 [LORA_VCC] of C32 on F.Cu",
+                    "pos": {
+                        "x": 124.5,
+                        "y": 84.48
+                    },
+                    "uuid": "f244871f-bc1f-480e-b3af-46d0b014f516"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_FILT) doesn't match net given by schematic (/Radio/LORA_FILT).",
+            "items": [
+                {
+                    "description": "Pad 2 [LORA_FILT] of FB2 on F.Cu",
+                    "pos": {
+                        "x": 119.485,
+                        "y": 75.0
+                    },
+                    "uuid": "2733645b-1365-4eed-a434-e3fbfa68fa82"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_FILT) doesn't match net given by schematic (/Radio/LORA_FILT).",
+            "items": [
+                {
+                    "description": "Pad 1 [LORA_FILT] of FB3 on F.Cu",
+                    "pos": {
+                        "x": 121.515,
+                        "y": 75.0
+                    },
+                    "uuid": "fd427888-eb61-4871-9399-16c623277f1b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_VCC) doesn't match net given by schematic (/Radio/LORA_VCC).",
+            "items": [
+                {
+                    "description": "Pad 2 [LORA_VCC] of FB3 on F.Cu",
+                    "pos": {
+                        "x": 122.485,
+                        "y": 75.0
+                    },
+                    "uuid": "698166c1-2a8a-466f-abd2-b56f40c5c351"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_VCC) doesn't match net given by schematic (/Radio/LORA_VCC).",
+            "items": [
+                {
+                    "description": "PTH pad 1 [LORA_VCC] of J4",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 78.0
+                    },
+                    "uuid": "4fada279-8a6d-5cdf-93ff-e849446b0956"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_NRST) doesn't match net given by schematic (/Radio/LORA_NRST).",
+            "items": [
+                {
+                    "description": "PTH pad 2 [LORA_NRST] of J4",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 75.46
+                    },
+                    "uuid": "6a5f3dd0-dc4e-5657-925b-bc964135a198"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_RXD) doesn't match net given by schematic (/Radio/LORA_RXD).",
+            "items": [
+                {
+                    "description": "PTH pad 3 [LORA_RXD] of J4",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 72.92
+                    },
+                    "uuid": "5dc31456-fb15-5f9b-9e13-37a96ac41b1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_TXD) doesn't match net given by schematic (/Radio/LORA_TXD).",
+            "items": [
+                {
+                    "description": "PTH pad 4 [LORA_TXD] of J4",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 70.38
+                    },
+                    "uuid": "682a5071-fa01-5c71-bf80-76ed8053f158"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_TX_PA0) doesn't match net given by schematic (/LORA_TX_PA0).",
+            "items": [
+                {
+                    "description": "Pad 1 [LORA_TX_PA0] of R17 on F.Cu",
+                    "pos": {
+                        "x": 120.675,
+                        "y": 80.5
+                    },
+                    "uuid": "5bc0ab24-c205-452d-a5c0-af54c60aa962"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_RXD) doesn't match net given by schematic (/Radio/LORA_RXD).",
+            "items": [
+                {
+                    "description": "Pad 2 [LORA_RXD] of R17 on F.Cu",
+                    "pos": {
+                        "x": 122.325,
+                        "y": 80.5
+                    },
+                    "uuid": "15321008-e2ae-4881-a1b0-b60da6bde148"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_RX_PA1) doesn't match net given by schematic (/LORA_RX_PA1).",
+            "items": [
+                {
+                    "description": "Pad 1 [LORA_RX_PA1] of R18 on F.Cu",
+                    "pos": {
+                        "x": 120.675,
+                        "y": 82.5
+                    },
+                    "uuid": "b9566e0c-acac-4ba5-978f-1f95e2dc4134"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_TXD) doesn't match net given by schematic (/Radio/LORA_TXD).",
+            "items": [
+                {
+                    "description": "Pad 2 [LORA_TXD] of R18 on F.Cu",
+                    "pos": {
+                        "x": 122.325,
+                        "y": 82.5
+                    },
+                    "uuid": "0142de09-a5cc-42d3-babc-210819ea0c8b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_NRST_PA3) doesn't match net given by schematic (/LORA_NRST_PA3).",
+            "items": [
+                {
+                    "description": "Pad 1 [LORA_NRST_PA3] of R19 on F.Cu",
+                    "pos": {
+                        "x": 120.675,
+                        "y": 84.5
+                    },
+                    "uuid": "4850171f-4aaa-4a2c-82d0-7b889c189d04"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (LORA_NRST) doesn't match net given by schematic (/Radio/LORA_NRST).",
+            "items": [
+                {
+                    "description": "Pad 2 [LORA_NRST] of R19 on F.Cu",
+                    "pos": {
+                        "x": 122.325,
+                        "y": 84.5
+                    },
+                    "uuid": "7cd1959c-0738-4224-b7b9-4afedf4374b9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (IMU_REGOUT) doesn't match net given by schematic (/Navigation/IMU_REGOUT).",
+            "items": [
+                {
+                    "description": "Pad 1 [IMU_REGOUT] of C33 on F.Cu",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 88.275
+                    },
+                    "uuid": "19ca2f39-6d3e-4406-b782-bb084fb6dee0"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GNSS_TXD) doesn't match net given by schematic (/Navigation/GNSS_TXD).",
+            "items": [
+                {
+                    "description": "PTH pad 3 [GNSS_TXD] of J5",
+                    "pos": {
+                        "x": 111.08,
+                        "y": 93.5
+                    },
+                    "uuid": "8cd8b696-9940-4b8e-9b23-0803f5631efd"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GNSS_RXD) doesn't match net given by schematic (/Navigation/GNSS_RXD).",
+            "items": [
+                {
+                    "description": "PTH pad 4 [GNSS_RXD] of J5",
+                    "pos": {
+                        "x": 113.62,
+                        "y": 93.5
+                    },
+                    "uuid": "8ccf20e5-a669-4812-964c-95c4df7b507b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GNSS_PPS) doesn't match net given by schematic (/Navigation/GNSS_PPS).",
+            "items": [
+                {
+                    "description": "PTH pad 5 [GNSS_PPS] of J5",
+                    "pos": {
+                        "x": 116.16,
+                        "y": 93.5
+                    },
+                    "uuid": "f9f2c38f-e8e5-4ab8-a09d-d57d9d593b25"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GNSS_TX_PC10) doesn't match net given by schematic (/GNSS_TX_PC10).",
+            "items": [
+                {
+                    "description": "Pad 1 [GNSS_TX_PC10] of R20 on F.Cu",
+                    "pos": {
+                        "x": 105.175,
+                        "y": 89.0
+                    },
+                    "uuid": "868f8881-f7e9-4cef-af5c-5d3b16d4e71a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GNSS_RXD) doesn't match net given by schematic (/Navigation/GNSS_RXD).",
+            "items": [
+                {
+                    "description": "Pad 2 [GNSS_RXD] of R20 on F.Cu",
+                    "pos": {
+                        "x": 106.825,
+                        "y": 89.0
+                    },
+                    "uuid": "42cd1905-fd9f-4597-b929-ea658964e9c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GNSS_RX_PC11) doesn't match net given by schematic (/GNSS_RX_PC11).",
+            "items": [
+                {
+                    "description": "Pad 1 [GNSS_RX_PC11] of R21 on F.Cu",
+                    "pos": {
+                        "x": 108.675,
+                        "y": 89.0
+                    },
+                    "uuid": "9e11777f-62c4-4c35-8df5-cb448c8e8508"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GNSS_TXD) doesn't match net given by schematic (/Navigation/GNSS_TXD).",
+            "items": [
+                {
+                    "description": "Pad 2 [GNSS_TXD] of R21 on F.Cu",
+                    "pos": {
+                        "x": 110.325,
+                        "y": 89.0
+                    },
+                    "uuid": "b0f37923-9fd1-4293-9a31-27fbb930b0cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (PPS_PB0) doesn't match net given by schematic (/PPS_PB0).",
+            "items": [
+                {
+                    "description": "Pad 1 [PPS_PB0] of R22 on F.Cu",
+                    "pos": {
+                        "x": 115.175,
+                        "y": 90.5
+                    },
+                    "uuid": "123ce94a-d9ac-46d9-9d69-fbd74f355272"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (GNSS_PPS) doesn't match net given by schematic (/Navigation/GNSS_PPS).",
+            "items": [
+                {
+                    "description": "Pad 2 [GNSS_PPS] of R22 on F.Cu",
+                    "pos": {
+                        "x": 116.825,
+                        "y": 90.5
+                    },
+                    "uuid": "83c83cf6-6e8b-46c5-bfb3-b227f7bcc21a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (I2C1_SCL) doesn't match net given by schematic (/I2C1_SCL).",
+            "items": [
+                {
+                    "description": "Pad 2 [I2C1_SCL] of R23 on F.Cu",
+                    "pos": {
+                        "x": 117.325,
+                        "y": 77.0
+                    },
+                    "uuid": "13d873dc-c093-47b3-b7f5-ead45ec8a2b9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (I2C1_SDA) doesn't match net given by schematic (/I2C1_SDA).",
+            "items": [
+                {
+                    "description": "Pad 2 [I2C1_SDA] of R24 on F.Cu",
+                    "pos": {
+                        "x": 117.325,
+                        "y": 79.0
+                    },
+                    "uuid": "a12522e1-c9ba-4525-b56c-dd5f37146411"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.",
+            "items": [
+                {
+                    "description": "Footprint TP7",
+                    "pos": {
+                        "x": 120.0,
+                        "y": 90.0
+                    },
+                    "uuid": "4d218593-56ef-5449-abd5-da5f84d42cc9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (PPS_PB0) doesn't match net given by schematic (/PPS_PB0).",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] of TP6 on F.Cu",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 94.0
+                    },
+                    "uuid": "8a03cd79-fadf-4c81-9b59-724c470e191a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-NC-Pad1)).",
+            "items": [
+                {
+                    "description": "Pad 1 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 114.45,
+                        "y": 85.0
+                    },
+                    "uuid": "a673b6d4-3909-5ed1-80c4-fd9fb4afb02e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-NC-Pad2)).",
+            "items": [
+                {
+                    "description": "Pad 2 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 114.45,
+                        "y": 85.4
+                    },
+                    "uuid": "7322e086-3ae0-5054-9881-004d9d256978"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-NC-Pad3)).",
+            "items": [
+                {
+                    "description": "Pad 3 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 114.45,
+                        "y": 85.8
+                    },
+                    "uuid": "37c4ec8e-22af-5c58-add8-918d503f942f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-NC-Pad4)).",
+            "items": [
+                {
+                    "description": "Pad 4 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 114.45,
+                        "y": 86.2
+                    },
+                    "uuid": "00ffeb8e-421f-5774-b8f0-1adf5c0fa340"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-NC-Pad5)).",
+            "items": [
+                {
+                    "description": "Pad 5 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 114.45,
+                        "y": 86.6
+                    },
+                    "uuid": "fc42d390-24c9-57c4-9a2c-fc711ce20119"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-NC-Pad6)).",
+            "items": [
+                {
+                    "description": "Pad 6 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 114.45,
+                        "y": 87.0
+                    },
+                    "uuid": "046446b1-9760-56b1-9f9b-6b42b69fe7df"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-AUX_CL-Pad7)).",
+            "items": [
+                {
+                    "description": "Pad 7 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 87.55
+                    },
+                    "uuid": "3eedf991-5e04-5bbf-b1c5-a3db4689f9d2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (IMU_REGOUT) doesn't match net given by schematic (/Navigation/IMU_REGOUT).",
+            "items": [
+                {
+                    "description": "Pad 10 [IMU_REGOUT] of U6 on F.Cu",
+                    "pos": {
+                        "x": 116.2,
+                        "y": 87.55
+                    },
+                    "uuid": "7c071edf-db0f-5aa9-9d58-5017cbaebfa8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (IMU_INT) doesn't match net given by schematic (/IMU_INT).",
+            "items": [
+                {
+                    "description": "Pad 12 [IMU_INT] of U6 on F.Cu",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 87.55
+                    },
+                    "uuid": "da21b86b-8873-5d5e-b817-96b3d5f0fcac"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-NC-Pad14)).",
+            "items": [
+                {
+                    "description": "Pad 14 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 117.55,
+                        "y": 86.6
+                    },
+                    "uuid": "257945f9-3fb5-5073-84ab-06a6acdbc74c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-NC-Pad15)).",
+            "items": [
+                {
+                    "description": "Pad 15 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 117.55,
+                        "y": 86.2
+                    },
+                    "uuid": "e212b1b1-b6b2-5d1a-819e-967d75889322"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-NC-Pad16)).",
+            "items": [
+                {
+                    "description": "Pad 16 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 117.55,
+                        "y": 85.8
+                    },
+                    "uuid": "3a9b76e9-a43c-57cb-8936-99b2311c600c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-NC-Pad17)).",
+            "items": [
+                {
+                    "description": "Pad 17 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 117.55,
+                        "y": 85.4
+                    },
+                    "uuid": "883fe6de-2181-5fda-87c6-36e280129220"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-RESV-Pad19)).",
+            "items": [
+                {
+                    "description": "Pad 19 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 84.45
+                    },
+                    "uuid": "9cc1c45b-6c37-5b43-8537-bf7071e0d1a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U6-AUX_DA-Pad21)).",
+            "items": [
+                {
+                    "description": "Pad 21 [<no net>] of U6 on F.Cu",
+                    "pos": {
+                        "x": 116.2,
+                        "y": 84.45
+                    },
+                    "uuid": "996e26ee-a514-510c-80db-bf29d15d57c0"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (I2C1_SCL) doesn't match net given by schematic (/I2C1_SCL).",
+            "items": [
+                {
+                    "description": "Pad 23 [I2C1_SCL] of U6 on F.Cu",
+                    "pos": {
+                        "x": 115.4,
+                        "y": 84.45
+                    },
+                    "uuid": "1be36141-9aef-5a22-bf4c-25733acff2d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (I2C1_SDA) doesn't match net given by schematic (/I2C1_SDA).",
+            "items": [
+                {
+                    "description": "Pad 24 [I2C1_SDA] of U6 on F.Cu",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 84.45
+                    },
+                    "uuid": "17116325-3b20-59c0-95b7-61a570c3ed92"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (ESC_SIG) doesn't match net given by schematic (/Actuators/ESC_SIG).",
+            "items": [
+                {
+                    "description": "Pad 1 [ESC_SIG] of D10 on F.Cu",
+                    "pos": {
+                        "x": 87.0,
+                        "y": 60.55
+                    },
+                    "uuid": "8ca31b66-f8b6-45f9-8378-2150b0b7a501"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SERVO_SIG) doesn't match net given by schematic (/Actuators/SERVO_SIG).",
+            "items": [
+                {
+                    "description": "Pad 1 [ESC_SIG] of D10 on F.Cu",
+                    "pos": {
+                        "x": 87.0,
+                        "y": 60.55
+                    },
+                    "uuid": "8ca31b66-f8b6-45f9-8378-2150b0b7a501"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (ESC_SIG) doesn't match net given by schematic (/Actuators/ESC_SIG).",
+            "items": [
+                {
+                    "description": "PTH pad 1 [ESC_SIG] of J2",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 55.0
+                    },
+                    "uuid": "21df5113-c50c-4407-86d1-09c3de5f29b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BEC_IN) doesn't match net given by schematic (/BEC_IN).",
+            "items": [
+                {
+                    "description": "PTH pad 2 [BEC_IN] of J2",
+                    "pos": {
+                        "x": 65.5,
+                        "y": 55.0
+                    },
+                    "uuid": "37d3bc66-02a5-4957-b51a-b4705a3ddfbb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SERVO_SIG) doesn't match net given by schematic (/Actuators/SERVO_SIG).",
+            "items": [
+                {
+                    "description": "PTH pad 1 [SERVO_SIG] of J3",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 92.0
+                    },
+                    "uuid": "927b752b-b734-422c-bedf-559ed43a16d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (ESC_SIG_5V) doesn't match net given by schematic (/Actuators/ESC_SIG_5V).",
+            "items": [
+                {
+                    "description": "Pad 1 [ESC_SIG_5V] of R10 on F.Cu",
+                    "pos": {
+                        "x": 83.175,
+                        "y": 57.0
+                    },
+                    "uuid": "b223873d-42c7-4f70-86fa-4ded134e1cfa"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (ESC_SIG) doesn't match net given by schematic (/Actuators/ESC_SIG).",
+            "items": [
+                {
+                    "description": "Pad 2 [ESC_SIG] of R10 on F.Cu",
+                    "pos": {
+                        "x": 84.825,
+                        "y": 57.0
+                    },
+                    "uuid": "6d34a6b7-6fa3-430f-8bbf-81da08976de5"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (ESC_SIG) doesn't match net given by schematic (/Actuators/ESC_SIG).",
+            "items": [
+                {
+                    "description": "Pad 1 [ESC_SIG] of R11 on F.Cu",
+                    "pos": {
+                        "x": 83.175,
+                        "y": 59.5
+                    },
+                    "uuid": "8052b877-a069-4de0-8d50-497b2a22619d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SERVO_SIG_5V) doesn't match net given by schematic (/Actuators/SERVO_SIG_5V).",
+            "items": [
+                {
+                    "description": "Pad 1 [SERVO_SIG_5V] of R12 on F.Cu",
+                    "pos": {
+                        "x": 74.675,
+                        "y": 88.0
+                    },
+                    "uuid": "7186a522-ada3-4731-9cab-8e70b5bffe57"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SERVO_SIG) doesn't match net given by schematic (/Actuators/SERVO_SIG).",
+            "items": [
+                {
+                    "description": "Pad 2 [SERVO_SIG] of R12 on F.Cu",
+                    "pos": {
+                        "x": 76.325,
+                        "y": 88.0
+                    },
+                    "uuid": "98749b01-b719-4a4f-9378-b8a4e91b060a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SERVO_SIG) doesn't match net given by schematic (/Actuators/SERVO_SIG).",
+            "items": [
+                {
+                    "description": "Pad 1 [SERVO_SIG] of R13 on F.Cu",
+                    "pos": {
+                        "x": 78.175,
+                        "y": 88.0
+                    },
+                    "uuid": "bb37a0a3-a3b2-416c-afd3-41ca5a13dea1"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (PWM_ESC_PC6) doesn't match net given by schematic (/PWM_ESC_PC6).",
+            "items": [
+                {
+                    "description": "Pad 1 [PWM_ESC_PC6] of R14 on F.Cu",
+                    "pos": {
+                        "x": 81.675,
+                        "y": 54.0
+                    },
+                    "uuid": "10f81127-afc7-4b6b-bcec-1bb2d54eca88"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (PWM_SERVO_PA8) doesn't match net given by schematic (/PWM_SERVO_PA8).",
+            "items": [
+                {
+                    "description": "Pad 1 [PWM_SERVO_PA8] of R15 on F.Cu",
+                    "pos": {
+                        "x": 80.675,
+                        "y": 91.5
+                    },
+                    "uuid": "4f411fb3-aa14-4f8a-bace-e4812359cc82"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.",
+            "items": [
+                {
+                    "description": "Footprint TP1",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 94.0
+                    },
+                    "uuid": "95e8eccb-ff91-54ca-8524-0d830b8d418b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (PWM_ESC_PC6) doesn't match net given by schematic (/PWM_ESC_PC6).",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] of TP6 on F.Cu",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 94.0
+                    },
+                    "uuid": "8a03cd79-fadf-4c81-9b59-724c470e191a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.",
+            "items": [
+                {
+                    "description": "Footprint TP2",
+                    "pos": {
+                        "x": 89.0,
+                        "y": 94.0
+                    },
+                    "uuid": "8a63254f-206f-5cdb-a31c-11cc5ea84b9b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad net (PWM_SERVO_PA8) doesn't match net given by schematic (/PWM_SERVO_PA8).",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] of TP6 on F.Cu",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 94.0
+                    },
+                    "uuid": "8a03cd79-fadf-4c81-9b59-724c470e191a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (PWM_ESC_PC6) doesn't match net given by schematic (/PWM_ESC_PC6).",
+            "items": [
+                {
+                    "description": "Pad 2 [PWM_ESC_PC6] of U4 on F.Cu",
+                    "pos": {
+                        "x": 74.8625,
+                        "y": 53.5
+                    },
+                    "uuid": "380b28af-1a92-4c9d-b129-8c9042aaf4f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (ESC_SIG_5V) doesn't match net given by schematic (/Actuators/ESC_SIG_5V).",
+            "items": [
+                {
+                    "description": "Pad 4 [ESC_SIG_5V] of U4 on F.Cu",
+                    "pos": {
+                        "x": 77.1375,
+                        "y": 54.45
+                    },
+                    "uuid": "2117942d-ed57-49ad-9817-dcbac449a221"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (PWM_SERVO_PA8) doesn't match net given by schematic (/PWM_SERVO_PA8).",
+            "items": [
+                {
+                    "description": "Pad 2 [PWM_SERVO_PA8] of U5 on F.Cu",
+                    "pos": {
+                        "x": 73.8625,
+                        "y": 91.5
+                    },
+                    "uuid": "9ef5c167-259c-4490-84e7-aab459fb3f71"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (SERVO_SIG_5V) doesn't match net given by schematic (/Actuators/SERVO_SIG_5V).",
+            "items": [
+                {
+                    "description": "Pad 4 [SERVO_SIG_5V] of U5 on F.Cu",
+                    "pos": {
+                        "x": 76.1375,
+                        "y": 92.45
+                    },
+                    "uuid": "95f28ce4-c6a2-46ab-b1f3-4997e69487af"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Value (R28) doesn't match symbol value (22k).",
+            "items": [
+                {
+                    "description": "Footprint R28",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 64.5
+                    },
+                    "uuid": "ab8acf2d-8b34-5c1f-9df6-679fcaca8089"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint H1",
+                    "pos": {
+                        "x": 54.0,
+                        "y": 54.0
+                    },
+                    "uuid": "7123ab03-d203-5a42-aa79-3aac089d61c4"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint H2",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 54.0
+                    },
+                    "uuid": "88645c8f-9758-52a4-807a-f703003b4d96"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint H3",
+                    "pos": {
+                        "x": 54.0,
+                        "y": 92.0
+                    },
+                    "uuid": "88bc1a77-5737-5379-b7b0-ecdb34214fd6"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint H4",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 92.0
+                    },
+                    "uuid": "c1e35296-4cb9-5b7a-a6a1-bdcacfd766d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        }
+    ],
+    "source": "LoRa_Boat_Controller_V2.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'GND pour F.Cu' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 50.0
+                    },
+                    "uuid": "093653ad-a3c4-5002-9172-9120862fb5b6"
+                },
+                {
+                    "description": "Zone 'GND pour B.Cu' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 50.0
+                    },
+                    "uuid": "d1156e2a-4ec1-5f84-9ba8-1382e68a48cd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'GND pour B.Cu' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 50.0
+                    },
+                    "uuid": "d1156e2a-4ec1-5f84-9ba8-1382e68a48cd"
+                },
+                {
+                    "description": "Zone 'GND pour F.Cu' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 50.0
+                    },
+                    "uuid": "093653ad-a3c4-5002-9172-9120862fb5b6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone 'GND pour F.Cu' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 50.0
+                    },
+                    "uuid": "093653ad-a3c4-5002-9172-9120862fb5b6"
+                },
+                {
+                    "description": "Zone 'GND pour F.Cu' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 50.0
+                    },
+                    "uuid": "093653ad-a3c4-5002-9172-9120862fb5b6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 50.0
+                    },
+                    "uuid": "f5f69191-72b4-5cb3-8f6a-7a0e7444e587"
+                },
+                {
+                    "description": "Reference field of H1",
+                    "pos": {
+                        "x": 54.0,
+                        "y": 49.85
+                    },
+                    "uuid": "9234cbbb-dfcf-4d0d-894d-888c8161ea4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 50.0
+                    },
+                    "uuid": "f5f69191-72b4-5cb3-8f6a-7a0e7444e587"
+                },
+                {
+                    "description": "Reference field of H2",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 49.85
+                    },
+                    "uuid": "fbc19b70-7a93-4238-a23d-27a3fb2dca28"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R5",
+                    "pos": {
+                        "x": 71.07,
+                        "y": 84.5
+                    },
+                    "uuid": "a18c3f8a-bbac-4a4c-ac8d-29de3ee76ea7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C35",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 79.82
+                    },
+                    "uuid": "fa1e78d1-1df5-4063-a5c5-351a3fa92dfe"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R24",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 77.57
+                    },
+                    "uuid": "bee2720a-99ef-4d5f-8d84-00db00a4fb6e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R4",
+                    "pos": {
+                        "x": 68.57,
+                        "y": 84.5
+                    },
+                    "uuid": "a872e941-7f38-4a57-8aab-e76f3908e567"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C4",
+                    "pos": {
+                        "x": 70.0,
+                        "y": 86.07
+                    },
+                    "uuid": "a4689b72-95b9-4c9d-a743-fedccc15c6b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C33",
+                    "pos": {
+                        "x": 111.57,
+                        "y": 87.5
+                    },
+                    "uuid": "cf9ea8e6-307d-4816-b8a8-2f998eecc777"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C18",
+                    "pos": {
+                        "x": 98.0,
+                        "y": 57.07
+                    },
+                    "uuid": "c864d25d-44e6-4221-ad2b-07b7d13ec9aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of L1",
+                    "pos": {
+                        "x": 78.0,
+                        "y": 76.4
+                    },
+                    "uuid": "095d6c52-4f76-4e86-b3af-7f4eb120d55d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 74.9,
+                        "y": 77.9
+                    },
+                    "uuid": "6a1fd857-a184-47a3-a58a-8368dcf8783a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 74.9,
+                        "y": 84.1
+                    },
+                    "uuid": "c53142a7-4f67-400d-a688-4d1d236a0dae"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.1,
+                        "y": 77.9
+                    },
+                    "uuid": "11a57130-1140-4717-82fd-51f07b6a1792"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.1,
+                        "y": 84.1
+                    },
+                    "uuid": "8eecef81-331e-45a5-a572-bde5df11fce0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of Y2 on F.Silkscreen",
+                    "pos": {
+                        "x": 80.825,
+                        "y": 66.125
+                    },
+                    "uuid": "b9878ceb-ac85-427a-b09b-697ad8ec3ffd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of Y2 on F.Silkscreen",
+                    "pos": {
+                        "x": 80.825,
+                        "y": 67.875
+                    },
+                    "uuid": "b52b18e4-822c-4965-a856-e89bc6ca2a7c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C13",
+                    "pos": {
+                        "x": 78.07,
+                        "y": 54.0
+                    },
+                    "uuid": "1d18d310-48d5-43a3-a418-18a6915f9316"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C8",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 78.5
+                    },
+                    "uuid": "5a15af57-1640-4eb4-80ac-18c22b4de88a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of J6",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 58.0
+                    },
+                    "uuid": "95c2ba4d-6f60-4594-9ea9-52fbf5601365"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R31",
+                    "pos": {
+                        "x": 80.07,
+                        "y": 71.0
+                    },
+                    "uuid": "ed7caf5e-c487-4609-be02-f76676616fc9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of U5",
+                    "pos": {
+                        "x": 75.0,
+                        "y": 89.1
+                    },
+                    "uuid": "87e5a935-06a8-4f9a-80b5-46c73730f493"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C5",
+                    "pos": {
+                        "x": 81.15,
+                        "y": 78.5
+                    },
+                    "uuid": "7527c6fb-1f1b-44be-a12b-c155028e88bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C29",
+                    "pos": {
+                        "x": 120.0,
+                        "y": 75.82
+                    },
+                    "uuid": "70350d34-34f9-4f2b-ad4d-42465a3591fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of F1",
+                    "pos": {
+                        "x": 67.5,
+                        "y": 67.85
+                    },
+                    "uuid": "718debb8-5813-437d-a5f0-96e2e5d8d1cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP6",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 92.352
+                    },
+                    "uuid": "df8ad89a-4372-48a1-959d-41a6068fbd8e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C27",
+                    "pos": {
+                        "x": 77.07,
+                        "y": 66.7
+                    },
+                    "uuid": "5b17c494-8997-42f3-a0d0-202db8b67edf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R18",
+                    "pos": {
+                        "x": 121.5,
+                        "y": 81.07
+                    },
+                    "uuid": "532edf69-840c-4064-b318-aee4ff186e2b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C3",
+                    "pos": {
+                        "x": 72.0,
+                        "y": 80.07
+                    },
+                    "uuid": "160c474c-2aad-4e88-9717-d8c86394c138"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R25",
+                    "pos": {
+                        "x": 105.0,
+                        "y": 60.57
+                    },
+                    "uuid": "aafc781e-1480-4303-ab77-4618716c1baa"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C21",
+                    "pos": {
+                        "x": 84.77,
+                        "y": 65.0
+                    },
+                    "uuid": "191f6692-20cb-48d7-8de6-ac9f78d0b914"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R19",
+                    "pos": {
+                        "x": 121.5,
+                        "y": 83.07
+                    },
+                    "uuid": "37dec9ea-9167-4ef7-8dcd-52ffd233e478"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of L1",
+                    "pos": {
+                        "x": 78.0,
+                        "y": 76.4
+                    },
+                    "uuid": "095d6c52-4f76-4e86-b3af-7f4eb120d55d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 74.9,
+                        "y": 77.9
+                    },
+                    "uuid": "6a1fd857-a184-47a3-a58a-8368dcf8783a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 74.9,
+                        "y": 84.1
+                    },
+                    "uuid": "c53142a7-4f67-400d-a688-4d1d236a0dae"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.1,
+                        "y": 77.9
+                    },
+                    "uuid": "11a57130-1140-4717-82fd-51f07b6a1792"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.1,
+                        "y": 84.1
+                    },
+                    "uuid": "8eecef81-331e-45a5-a572-bde5df11fce0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of FB1",
+                    "pos": {
+                        "x": 86.57,
+                        "y": 67.0
+                    },
+                    "uuid": "8af5650e-16eb-49b3-a64e-686ec96e528a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C14",
+                    "pos": {
+                        "x": 77.07,
+                        "y": 91.5
+                    },
+                    "uuid": "b2a25a6c-c11d-4bf3-8823-6cdf3515108f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of D4",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 84.5
+                    },
+                    "uuid": "78f18f7d-f8a5-43e4-98c1-400155beaace"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C10",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 84.0
+                    },
+                    "uuid": "5da8234e-db55-4d2d-ac58-e9862fddd08d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C6",
+                    "pos": {
+                        "x": 81.15,
+                        "y": 83.5
+                    },
+                    "uuid": "832a2f3a-5610-4912-8592-fac4de79daa3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C16",
+                    "pos": {
+                        "x": 94.0,
+                        "y": 57.07
+                    },
+                    "uuid": "0eba3a91-ddff-41f0-bce5-eaaafa9617ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C28",
+                    "pos": {
+                        "x": 83.07,
+                        "y": 66.7
+                    },
+                    "uuid": "7165be1f-5607-42c4-8952-9eb9dfa4597f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of D10",
+                    "pos": {
+                        "x": 85.15,
+                        "y": 59.5
+                    },
+                    "uuid": "79190826-681c-4fdc-b12c-3f8b6154fbab"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C7",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 80.57
+                    },
+                    "uuid": "116aeeea-d8a8-4e60-8ae3-d91f18cba011"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C32",
+                    "pos": {
+                        "x": 123.34,
+                        "y": 84.0
+                    },
+                    "uuid": "167b356a-3018-44af-b0a7-810a2fec5ce1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R9",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 85.07
+                    },
+                    "uuid": "78be852c-6695-4d80-825b-f1730be3c3c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of U7",
+                    "pos": {
+                        "x": 108.0,
+                        "y": 57.1
+                    },
+                    "uuid": "dc9f2c30-79a1-413c-ab65-47cc8b0febc2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R28",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 63.07
+                    },
+                    "uuid": "4290dd30-c76e-4359-abcb-3529ced147cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of D10",
+                    "pos": {
+                        "x": 85.15,
+                        "y": 59.5
+                    },
+                    "uuid": "79190826-681c-4fdc-b12c-3f8b6154fbab"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C25",
+                    "pos": {
+                        "x": 77.07,
+                        "y": 63.3
+                    },
+                    "uuid": "50b06f2a-09ad-48dc-8a08-92347fac87f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R33",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 67.87
+                    },
+                    "uuid": "6b3f58c7-703f-42b8-89d4-6da7036230f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C37",
+                    "pos": {
+                        "x": 75.57,
+                        "y": 75.5
+                    },
+                    "uuid": "ff44b6e7-b8e7-473e-9260-9249621888fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C19",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 56.82
+                    },
+                    "uuid": "84190e54-8f74-4a70-88c5-9d08a945f616"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R8",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 83.07
+                    },
+                    "uuid": "fb1f33cc-5d6b-4c0d-9fe0-fce72664f29d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of TP6",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 92.352
+                    },
+                    "uuid": "df8ad89a-4372-48a1-959d-41a6068fbd8e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C15",
+                    "pos": {
+                        "x": 86.57,
+                        "y": 63.0
+                    },
+                    "uuid": "40e3243c-5e1e-4ee5-9ce3-779ea0a085fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C20",
+                    "pos": {
+                        "x": 86.57,
+                        "y": 71.5
+                    },
+                    "uuid": "868077fa-2628-4332-bff5-8cb806953b9a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R26",
+                    "pos": {
+                        "x": 109.0,
+                        "y": 61.07
+                    },
+                    "uuid": "7ec34eff-e0e3-4af8-8f5b-cff6d51c9b4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of U3",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 76.6
+                    },
+                    "uuid": "4c701585-7f9d-4187-a558-8ee628a1c739"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C30",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 75.82
+                    },
+                    "uuid": "1f8bcc08-7ae8-4e80-9105-93feb8edbfb8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 58.07
+                    },
+                    "uuid": "124ab787-981e-47b4-9f17-540132bc94fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C26",
+                    "pos": {
+                        "x": 83.07,
+                        "y": 63.3
+                    },
+                    "uuid": "1ea60728-e9ee-4358-8ae1-227b1fbe2de7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of F1",
+                    "pos": {
+                        "x": 67.5,
+                        "y": 67.85
+                    },
+                    "uuid": "718debb8-5813-437d-a5f0-96e2e5d8d1cd"
+                },
+                {
+                    "description": "Segment of D4 on F.Silkscreen",
+                    "pos": {
+                        "x": 93.49,
+                        "y": 88.65
+                    },
+                    "uuid": "dff34e10-67ca-4b77-95c8-838244782165"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R15",
+                    "pos": {
+                        "x": 81.5,
+                        "y": 90.07
+                    },
+                    "uuid": "90e1e0bd-a085-4192-965a-5ccbad71d391"
+                },
+                {
+                    "description": "Segment of D10 on F.Silkscreen",
+                    "pos": {
+                        "x": 86.15,
+                        "y": 61.11
+                    },
+                    "uuid": "9fa4a396-756e-42e1-95fe-51f739568da4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP6",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 92.352
+                    },
+                    "uuid": "df8ad89a-4372-48a1-959d-41a6068fbd8e"
+                },
+                {
+                    "description": "Segment of R15 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.262742,
+                        "y": 92.0225
+                    },
+                    "uuid": "e8ef89b2-115a-4b99-ba21-ed9bff1d5eba"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R9",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 85.07
+                    },
+                    "uuid": "78be852c-6695-4d80-825b-f1730be3c3c9"
+                },
+                {
+                    "description": "Segment of R8 on F.Silkscreen",
+                    "pos": {
+                        "x": 89.762742,
+                        "y": 85.0225
+                    },
+                    "uuid": "b5f86258-0e07-4362-8dba-b29a0a5689c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of R4 on F.Silkscreen",
+                    "pos": {
+                        "x": 70.5225,
+                        "y": 84.737258
+                    },
+                    "uuid": "a101499e-159e-4348-a0ad-e749085b3d05"
+                },
+                {
+                    "description": "Reference field of R5",
+                    "pos": {
+                        "x": 71.07,
+                        "y": 84.5
+                    },
+                    "uuid": "a18c3f8a-bbac-4a4c-ac8d-29de3ee76ea7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of R12 on F.Silkscreen",
+                    "pos": {
+                        "x": 75.262742,
+                        "y": 88.5225
+                    },
+                    "uuid": "0f66bb6b-65b6-4910-986c-c80825936c50"
+                },
+                {
+                    "description": "Reference field of U5",
+                    "pos": {
+                        "x": 75.0,
+                        "y": 89.1
+                    },
+                    "uuid": "87e5a935-06a8-4f9a-80b5-46c73730f493"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C3",
+                    "pos": {
+                        "x": 72.0,
+                        "y": 80.07
+                    },
+                    "uuid": "160c474c-2aad-4e88-9717-d8c86394c138"
+                },
+                {
+                    "description": "Segment of R3 on F.Silkscreen",
+                    "pos": {
+                        "x": 71.762742,
+                        "y": 79.5225
+                    },
+                    "uuid": "63025ab3-cc5f-4fe3-930b-25fed16742ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C6",
+                    "pos": {
+                        "x": 81.15,
+                        "y": 83.5
+                    },
+                    "uuid": "832a2f3a-5610-4912-8592-fac4de79daa3"
+                },
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.1,
+                        "y": 84.1
+                    },
+                    "uuid": "8a96b866-7fa2-485f-8d51-1c7deeb253dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.1,
+                        "y": 77.9
+                    },
+                    "uuid": "11a57130-1140-4717-82fd-51f07b6a1792"
+                },
+                {
+                    "description": "Reference field of C5",
+                    "pos": {
+                        "x": 81.15,
+                        "y": 78.5
+                    },
+                    "uuid": "7527c6fb-1f1b-44be-a12b-c155028e88bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of C6 on F.Silkscreen",
+                    "pos": {
+                        "x": 83.91,
+                        "y": 84.211252
+                    },
+                    "uuid": "16d2973a-f578-40a8-9ddd-a14110a5a84e"
+                },
+                {
+                    "description": "Reference field of C10",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 84.0
+                    },
+                    "uuid": "5da8234e-db55-4d2d-ac58-e9862fddd08d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C7",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 80.57
+                    },
+                    "uuid": "116aeeea-d8a8-4e60-8ae3-d91f18cba011"
+                },
+                {
+                    "description": "Segment of U3 on F.Silkscreen",
+                    "pos": {
+                        "x": 89.09,
+                        "y": 80.56
+                    },
+                    "uuid": "bbd5fdf4-65a1-43c1-aa4f-0ec9cd8da7ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C7",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 80.57
+                    },
+                    "uuid": "116aeeea-d8a8-4e60-8ae3-d91f18cba011"
+                },
+                {
+                    "description": "Segment of U3 on F.Silkscreen",
+                    "pos": {
+                        "x": 90.91,
+                        "y": 80.56
+                    },
+                    "uuid": "95632f7f-d681-401f-a17c-2e42eb719682"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of C7 on F.Silkscreen",
+                    "pos": {
+                        "x": 89.85942,
+                        "y": 82.51
+                    },
+                    "uuid": "02e1b4e2-61b7-4576-8008-eee4d263d8ba"
+                },
+                {
+                    "description": "Reference field of R8",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 83.07
+                    },
+                    "uuid": "fb1f33cc-5d6b-4c0d-9fe0-fce72664f29d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of D10",
+                    "pos": {
+                        "x": 85.15,
+                        "y": 59.5
+                    },
+                    "uuid": "79190826-681c-4fdc-b12c-3f8b6154fbab"
+                },
+                {
+                    "description": "Reference field of R13",
+                    "pos": {
+                        "x": 79.0,
+                        "y": 86.57
+                    },
+                    "uuid": "889d9f8c-0eac-4eca-8f09-424836bd2621"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Polygon of U7 on F.Silkscreen",
+                    "pos": {
+                        "x": 106.55,
+                        "y": 57.99
+                    },
+                    "uuid": "1f041ba5-4f85-4e52-8f48-111378443e8b"
+                },
+                {
+                    "description": "Reference field of J6",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 58.0
+                    },
+                    "uuid": "95c2ba4d-6f60-4594-9ea9-52fbf5601365"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of L1",
+                    "pos": {
+                        "x": 78.0,
+                        "y": 76.4
+                    },
+                    "uuid": "095d6c52-4f76-4e86-b3af-7f4eb120d55d"
+                },
+                {
+                    "description": "Segment of R16 on F.Silkscreen",
+                    "pos": {
+                        "x": 95.762742,
+                        "y": 75.4775
+                    },
+                    "uuid": "9f4401b2-a19c-4593-86e1-36555c2ca6b6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.1,
+                        "y": 84.1
+                    },
+                    "uuid": "8a96b866-7fa2-485f-8d51-1c7deeb253dc"
+                },
+                {
+                    "description": "Reference field of C9",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 84.0
+                    },
+                    "uuid": "b8e88ad8-ce57-4244-8642-38797670b73a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.1,
+                        "y": 84.1
+                    },
+                    "uuid": "8eecef81-331e-45a5-a572-bde5df11fce0"
+                },
+                {
+                    "description": "Reference field of C9",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 84.0
+                    },
+                    "uuid": "b8e88ad8-ce57-4244-8642-38797670b73a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 81.1,
+                        "y": 77.9
+                    },
+                    "uuid": "11a57130-1140-4717-82fd-51f07b6a1792"
+                },
+                {
+                    "description": "Reference field of C8",
+                    "pos": {
+                        "x": 100.7,
+                        "y": 78.5
+                    },
+                    "uuid": "5a15af57-1640-4eb4-80ac-18c22b4de88a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of R27 on F.Silkscreen",
+                    "pos": {
+                        "x": 112.762742,
+                        "y": 63.0225
+                    },
+                    "uuid": "01b51510-045d-4d63-b87c-2a45531b2af0"
+                },
+                {
+                    "description": "Reference field of R28",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 63.07
+                    },
+                    "uuid": "4290dd30-c76e-4359-abcb-3529ced147cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R26",
+                    "pos": {
+                        "x": 109.0,
+                        "y": 61.07
+                    },
+                    "uuid": "7ec34eff-e0e3-4af8-8f5b-cff6d51c9b4d"
+                },
+                {
+                    "description": "Segment of U7 on F.Silkscreen",
+                    "pos": {
+                        "x": 108.91,
+                        "y": 61.06
+                    },
+                    "uuid": "8ec678eb-51ec-4749-80ea-82d7a027e177"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C5",
+                    "pos": {
+                        "x": 81.15,
+                        "y": 78.5
+                    },
+                    "uuid": "7527c6fb-1f1b-44be-a12b-c155028e88bb"
+                },
+                {
+                    "description": "Segment of L1 on F.Silkscreen",
+                    "pos": {
+                        "x": 74.9,
+                        "y": 77.9
+                    },
+                    "uuid": "e466e7d8-37ca-46e8-a5e2-961f740373a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of U8 on F.Silkscreen",
+                    "pos": {
+                        "x": 74.91,
+                        "y": 75.11
+                    },
+                    "uuid": "470442ba-2f68-469d-9e53-836b1cacfbe8"
+                },
+                {
+                    "description": "Reference field of C37",
+                    "pos": {
+                        "x": 75.57,
+                        "y": 75.5
+                    },
+                    "uuid": "ff44b6e7-b8e7-473e-9260-9249621888fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C25",
+                    "pos": {
+                        "x": 77.07,
+                        "y": 63.3
+                    },
+                    "uuid": "50b06f2a-09ad-48dc-8a08-92347fac87f0"
+                },
+                {
+                    "description": "Segment of D2 on F.Silkscreen",
+                    "pos": {
+                        "x": 72.84,
+                        "y": 63.0
+                    },
+                    "uuid": "bb8e1113-3a33-4b8a-8d4d-dc28453c23b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of C2 on F.Silkscreen",
+                    "pos": {
+                        "x": 73.788748,
+                        "y": 67.86
+                    },
+                    "uuid": "3a572197-fb35-491f-a0d0-1bbcb2e2ea5e"
+                },
+                {
+                    "description": "Reference field of R33",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 67.87
+                    },
+                    "uuid": "6b3f58c7-703f-42b8-89d4-6da7036230f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C20",
+                    "pos": {
+                        "x": 86.57,
+                        "y": 71.5
+                    },
+                    "uuid": "868077fa-2628-4332-bff5-8cb806953b9a"
+                },
+                {
+                    "description": "Segment of C22 on F.Silkscreen",
+                    "pos": {
+                        "x": 86.51,
+                        "y": 70.64058
+                    },
+                    "uuid": "9f1c831e-6de9-4269-9054-202c058c06cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of R17 on F.Silkscreen",
+                    "pos": {
+                        "x": 121.262742,
+                        "y": 81.0225
+                    },
+                    "uuid": "3de98875-a001-4e86-aa0c-932043974ce8"
+                },
+                {
+                    "description": "Reference field of R18",
+                    "pos": {
+                        "x": 121.5,
+                        "y": 81.07
+                    },
+                    "uuid": "532edf69-840c-4064-b318-aee4ff186e2b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of TP6",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 92.352
+                    },
+                    "uuid": "df8ad89a-4372-48a1-959d-41a6068fbd8e"
+                },
+                {
+                    "description": "Reference field of C34",
+                    "pos": {
+                        "x": 120.07,
+                        "y": 87.0
+                    },
+                    "uuid": "f5a2bacb-7f54-4394-91a0-5dc143894147"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of R18 on F.Silkscreen",
+                    "pos": {
+                        "x": 121.262742,
+                        "y": 83.0225
+                    },
+                    "uuid": "328413b0-c64c-45b1-8659-b93e5773312a"
+                },
+                {
+                    "description": "Reference field of R19",
+                    "pos": {
+                        "x": 121.5,
+                        "y": 83.07
+                    },
+                    "uuid": "37dec9ea-9167-4ef7-8dcd-52ffd233e478"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C32",
+                    "pos": {
+                        "x": 123.34,
+                        "y": 84.0
+                    },
+                    "uuid": "167b356a-3018-44af-b0a7-810a2fec5ce1"
+                },
+                {
+                    "description": "Reference field of R19",
+                    "pos": {
+                        "x": 121.5,
+                        "y": 83.07
+                    },
+                    "uuid": "37dec9ea-9167-4ef7-8dcd-52ffd233e478"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Segment of R23 on F.Silkscreen",
+                    "pos": {
+                        "x": 116.262742,
+                        "y": 77.5225
+                    },
+                    "uuid": "5d69f601-1b78-4835-b811-037a2c612956"
+                },
+                {
+                    "description": "Reference field of R24",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 77.57
+                    },
+                    "uuid": "bee2720a-99ef-4d5f-8d84-00db00a4fb6e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C13",
+                    "pos": {
+                        "x": 78.07,
+                        "y": 54.0
+                    },
+                    "uuid": "1d18d310-48d5-43a3-a418-18a6915f9316"
+                },
+                {
+                    "description": "Reference field of D4",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 84.5
+                    },
+                    "uuid": "78f18f7d-f8a5-43e4-98c1-400155beaace"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C16",
+                    "pos": {
+                        "x": 94.0,
+                        "y": 57.07
+                    },
+                    "uuid": "0eba3a91-ddff-41f0-bce5-eaaafa9617ac"
+                },
+                {
+                    "description": "Reference field of R34",
+                    "pos": {
+                        "x": 92.97,
+                        "y": 55.5
+                    },
+                    "uuid": "9b90e8b9-0a8b-425a-bd16-e1c794c857a5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C19",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 56.82
+                    },
+                    "uuid": "84190e54-8f74-4a70-88c5-9d08a945f616"
+                },
+                {
+                    "description": "Reference field of R30",
+                    "pos": {
+                        "x": 89.77,
+                        "y": 55.5
+                    },
+                    "uuid": "d58ff236-966b-42fe-ab3a-69ab00c8bded"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 58.07
+                    },
+                    "uuid": "124ab787-981e-47b4-9f17-540132bc94fa"
+                },
+                {
+                    "description": "Reference field of D10",
+                    "pos": {
+                        "x": 85.15,
+                        "y": 59.5
+                    },
+                    "uuid": "79190826-681c-4fdc-b12c-3f8b6154fbab"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of R11",
+                    "pos": {
+                        "x": 84.0,
+                        "y": 58.07
+                    },
+                    "uuid": "124ab787-981e-47b4-9f17-540132bc94fa"
+                },
+                {
+                    "description": "Segment of R10 on F.Silkscreen",
+                    "pos": {
+                        "x": 83.762742,
+                        "y": 57.5225
+                    },
+                    "uuid": "8da31814-5401-4976-99b0-2a8578f84910"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C27",
+                    "pos": {
+                        "x": 77.07,
+                        "y": 66.7
+                    },
+                    "uuid": "5b17c494-8997-42f3-a0d0-202db8b67edf"
+                },
+                {
+                    "description": "Reference field of R33",
+                    "pos": {
+                        "x": 76.0,
+                        "y": 67.87
+                    },
+                    "uuid": "6b3f58c7-703f-42b8-89d4-6da7036230f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen overlap",
+            "items": [
+                {
+                    "description": "Reference field of C26",
+                    "pos": {
+                        "x": 83.07,
+                        "y": 63.3
+                    },
+                    "uuid": "1ea60728-e9ee-4358-8ae1-227b1fbe2de7"
+                },
+                {
+                    "description": "Segment of Y1 on F.Silkscreen",
+                    "pos": {
+                        "x": 79.44,
+                        "y": 64.21
+                    },
+                    "uuid": "536fc178-263c-4d8b-9a67-aded31ea9587"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

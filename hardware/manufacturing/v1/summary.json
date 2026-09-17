@@ -1,0 +1,29 @@
+{
+  "release_state": "NOT_RELEASED",
+  "reason": "Existing V1 reconstruction: reference/repair only; known electrical defects and inferred drill provenance prevent a new-build release.",
+  "footprints": 44,
+  "bom_total_row_excluded": false,
+  "source_total": null,
+  "counts_by_reference": {
+    "CANDIDATE": 20,
+    "HOLD": 18,
+    "BOARD_FEATURE": 6
+  },
+  "candidate_order_lines": 9,
+  "selected_boards": 1,
+  "candidate_quantity_selected": 20,
+  "candidate_quantity_fleet5": 100,
+  "board_dimensions_mm": [
+    66.548,
+    37.3126
+  ],
+  "board_origin_mm": [
+    61.8492,
+    61.773
+  ],
+  "bom_pcb_reference_match": true,
+  "footprint_mapping_mismatches": [],
+  "drc_rerun": false,
+  "physical_package_orientation_verified": false,
+  "kicad_version": "9.0.7"
+}

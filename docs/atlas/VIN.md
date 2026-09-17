@@ -26,6 +26,6 @@ Footprint: `LoRa_Boat_Controller:amv_con1`. [Full BOM](../BOM.csv).
 
 Identify battery and input protection; regulator rating alone does not establish safe board input voltage.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:251](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L251); [hardware/kicad/_build/netmap.json:33](../../hardware/kicad/_build/netmap.json#L33); [firmware/Core/Src/main.c:428](../../firmware/Core/Src/main.c#L428).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:251](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L251); [docs/atlas/evidence/v1-netmap.json:33](../../docs/atlas/evidence/v1-netmap.json#L33); [firmware/Core/Src/main.c:428](../../firmware/Core/Src/main.c#L428).
 
 [Atlas index and snapshot provenance](README.md) · [Schematic PDF](../img/v1_schematic.pdf) · [PCB top](../img/v1_pcb_top.png) · [PCB bottom](../img/v1_pcb_bottom.png)

@@ -1,0 +1,5800 @@
+{
+  "origin_board_mm": [
+    50.0,
+    50.0
+  ],
+  "dimensions_mm": [
+    80.0,
+    46.0
+  ],
+  "footprints": {
+    "R5": {
+      "reference": "R5",
+      "value": "4.7k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 22.5,
+      "y": 34.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "FB_3V3",
+          "x": 22.5,
+          "y": 35.325,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 22.5,
+          "y": 33.675,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R3": {
+      "reference": "R3",
+      "value": "51R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 22.0,
+      "y": 29.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "BST_RC",
+          "x": 21.174999999999997,
+          "y": 29.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "BST_3V3",
+          "x": 22.825000000000003,
+          "y": 29.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C35": {
+      "reference": "C35",
+      "value": "10uF 10V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "x": 67.0,
+      "y": 31.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 66.05,
+          "y": 31.5,
+          "w": 1.0,
+          "h": 1.45,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 67.95,
+          "y": 31.5,
+          "w": 1.0,
+          "h": 1.45,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R24": {
+      "reference": "R24",
+      "value": "2.2k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 66.5,
+      "y": 29.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 65.675,
+          "y": 29.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "I2C1_SDA",
+          "x": 67.325,
+          "y": 29.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "D8": {
+      "reference": "D8",
+      "value": "FAULT red",
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "x": 47.599999999999994,
+      "y": 3.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 46.8125,
+          "y": 3.0,
+          "w": 0.875,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LED_FAULT_A",
+          "x": 48.3875,
+          "y": 3.0,
+          "w": 0.875,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C31": {
+      "reference": "C31",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 75.5,
+      "y": 30.299999999999997,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LORA_VCC",
+          "x": 75.5,
+          "y": 31.075000000000003,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 75.5,
+          "y": 29.525000000000006,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R4": {
+      "reference": "R4",
+      "value": "15k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 20.0,
+      "y": 34.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 20.0,
+          "y": 35.325,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "FB_3V3",
+          "x": 20.0,
+          "y": 33.675,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C4": {
+      "reference": "C4",
+      "value": "470pF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 20.0,
+      "y": 37.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "FB_3V3",
+          "x": 19.224999999999994,
+          "y": 37.5,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 20.775000000000006,
+          "y": 37.5,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C33": {
+      "reference": "C33",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 63.0,
+      "y": 37.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "IMU_REGOUT",
+          "x": 63.0,
+          "y": 38.275000000000006,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 63.0,
+          "y": 36.724999999999994,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C18": {
+      "reference": "C18",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 48.0,
+      "y": 8.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 47.224999999999994,
+          "y": 8.5,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 48.775000000000006,
+          "y": 8.5,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "L2": {
+      "reference": "L2",
+      "value": "4.7uH 3A",
+      "footprint": "Inductor_SMD:L_Bourns_SRN6045TA",
+      "x": 47.0,
+      "y": 30.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "SW_5V",
+          "x": 44.925,
+          "y": 30.5,
+          "w": 2.35,
+          "h": 5.1,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+5V_BUCK",
+          "x": 49.075,
+          "y": 30.5,
+          "w": 2.35,
+          "h": 5.1,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "TP3": {
+      "reference": "TP3",
+      "value": "+3V3",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "x": 43.0,
+      "y": 44.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 43.0,
+          "y": 44.0,
+          "w": 1.5,
+          "h": 1.5,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R10": {
+      "reference": "R10",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 34.0,
+      "y": 7.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "ESC_SIG_5V",
+          "x": 33.175,
+          "y": 7.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "ESC_SIG",
+          "x": 34.825,
+          "y": 7.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "Y2": {
+      "reference": "Y2",
+      "value": "32.768kHz",
+      "footprint": "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm",
+      "x": 31.5,
+      "y": 17.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LSE_IN",
+          "x": 32.75,
+          "y": 17.0,
+          "w": 1.0,
+          "h": 1.8,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LSE_OUT",
+          "x": 30.25,
+          "y": 17.0,
+          "w": 1.0,
+          "h": 1.8,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "J4": {
+      "reference": "J4",
+      "value": "LoRa RYLR998",
+      "footprint": "LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL",
+      "x": 78.0,
+      "y": 28.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LORA_VCC",
+          "x": 78.0,
+          "y": 28.0,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "2",
+          "net": "LORA_NRST",
+          "x": 78.0,
+          "y": 25.459999999999994,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "3",
+          "net": "LORA_RXD",
+          "x": 78.0,
+          "y": 22.92,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "4",
+          "net": "LORA_TXD",
+          "x": 78.0,
+          "y": 20.379999999999995,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        },
+        {
+          "number": "5",
+          "net": "GND",
+          "x": 78.0,
+          "y": 17.840000000000003,
+          "w": 1.7272,
+          "h": 1.7272,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.016,
+          "drill_y": 1.016
+        }
+      ]
+    },
+    "C13": {
+      "reference": "C13",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 29.5,
+      "y": 4.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSERVO",
+          "x": 29.5,
+          "y": 4.774999999999999,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 29.5,
+          "y": 3.2250000000000014,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C8": {
+      "reference": "C8",
+      "value": "22uF 16V",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "x": 53.0,
+      "y": 28.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+5V_BUCK",
+          "x": 53.0,
+          "y": 29.974999999999994,
+          "w": 1.15,
+          "h": 2.7,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 53.0,
+          "y": 27.025000000000006,
+          "w": 1.15,
+          "h": 2.7,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "J6": {
+      "reference": "J6",
+      "value": "USB-C",
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "x": 56.0,
+      "y": 2.5,
+      "rotation": 180.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "x": 58.89,
+          "y": 5.104999999999997,
+          "w": 0.65,
+          "h": 0.65,
+          "rotation": 180.0,
+          "circle": true,
+          "drill_x": 0.65,
+          "drill_y": 0.65
+        },
+        {
+          "number": "",
+          "net": "",
+          "x": 53.11,
+          "y": 5.104999999999997,
+          "w": 0.65,
+          "h": 0.65,
+          "rotation": 180.0,
+          "circle": true,
+          "drill_x": 0.65,
+          "drill_y": 0.65
+        },
+        {
+          "number": "A1",
+          "net": "GND",
+          "x": 59.2,
+          "y": 6.18,
+          "w": 0.6,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "A4",
+          "net": "VBUS",
+          "x": 58.400000000000006,
+          "y": 6.18,
+          "w": 0.6,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "A5",
+          "net": "USB_CC1",
+          "x": 57.25,
+          "y": 6.18,
+          "w": 0.3,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "A6",
+          "net": "USB_DP_CONN",
+          "x": 56.25,
+          "y": 6.18,
+          "w": 0.3,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "A7",
+          "net": "USB_DM_CONN",
+          "x": 55.75,
+          "y": 6.18,
+          "w": 0.3,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "A8",
+          "net": "",
+          "x": 54.75,
+          "y": 6.18,
+          "w": 0.3,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "A9",
+          "net": "VBUS",
+          "x": 53.599999999999994,
+          "y": 6.18,
+          "w": 0.6,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "A12",
+          "net": "GND",
+          "x": 52.8,
+          "y": 6.18,
+          "w": 0.6,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "B1",
+          "net": "GND",
+          "x": 52.8,
+          "y": 6.18,
+          "w": 0.6,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "B4",
+          "net": "VBUS",
+          "x": 53.599999999999994,
+          "y": 6.18,
+          "w": 0.6,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "B5",
+          "net": "USB_CC2",
+          "x": 54.25,
+          "y": 6.18,
+          "w": 0.3,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "B6",
+          "net": "USB_DP_CONN",
+          "x": 55.25,
+          "y": 6.18,
+          "w": 0.3,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "B7",
+          "net": "USB_DM_CONN",
+          "x": 56.75,
+          "y": 6.18,
+          "w": 0.3,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "B8",
+          "net": "",
+          "x": 57.75,
+          "y": 6.18,
+          "w": 0.3,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "B9",
+          "net": "VBUS",
+          "x": 58.400000000000006,
+          "y": 6.18,
+          "w": 0.6,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "B12",
+          "net": "GND",
+          "x": 59.2,
+          "y": 6.18,
+          "w": 0.6,
+          "h": 1.15,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "S1",
+          "net": "GND",
+          "x": 60.31999999999999,
+          "y": 5.604999999999997,
+          "w": 1.0,
+          "h": 2.1,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.6,
+          "drill_y": 1.7
+        },
+        {
+          "number": "S1",
+          "net": "GND",
+          "x": 60.31999999999999,
+          "y": 1.4249999999999972,
+          "w": 1.0,
+          "h": 1.8,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.6,
+          "drill_y": 1.4
+        },
+        {
+          "number": "S1",
+          "net": "GND",
+          "x": 51.68000000000001,
+          "y": 5.604999999999997,
+          "w": 1.0,
+          "h": 2.1,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.6,
+          "drill_y": 1.7
+        },
+        {
+          "number": "S1",
+          "net": "GND",
+          "x": 51.68000000000001,
+          "y": 1.4249999999999972,
+          "w": 1.0,
+          "h": 1.8,
+          "rotation": 180.0,
+          "circle": false,
+          "drill_x": 0.6,
+          "drill_y": 1.4
+        }
+      ]
+    },
+    "Q1": {
+      "reference": "Q1",
+      "value": "AO3401A",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "x": 20.700000000000003,
+      "y": 12.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "PGATE",
+          "x": 19.762500000000003,
+          "y": 11.049999999999997,
+          "w": 1.475,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "VIN_RAW",
+          "x": 19.762500000000003,
+          "y": 12.950000000000003,
+          "w": 1.475,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "VBAT_FUSED",
+          "x": 21.637500000000003,
+          "y": 12.0,
+          "w": 1.475,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "J1": {
+      "reference": "J1",
+      "value": "BATTERY XT30",
+      "footprint": "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal",
+      "x": 9.700000000000003,
+      "y": 23.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "x": 1.7000000000000028,
+          "y": 13.0,
+          "w": 1.4,
+          "h": 1.4,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.0,
+          "drill_y": 1.0
+        },
+        {
+          "number": "",
+          "net": "",
+          "x": 12.700000000000003,
+          "y": 13.0,
+          "w": 1.4,
+          "h": 1.4,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.0,
+          "drill_y": 1.0
+        },
+        {
+          "number": "1",
+          "net": "VBAT_IN",
+          "x": 9.700000000000003,
+          "y": 23.0,
+          "w": 3.5,
+          "h": 3.5,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 1.9,
+          "drill_y": 1.9
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 4.700000000000003,
+          "y": 23.0,
+          "w": 3.5,
+          "h": 3.5,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 1.9,
+          "drill_y": 1.9
+        }
+      ]
+    },
+    "R31": {
+      "reference": "R31",
+      "value": "47k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 31.5,
+      "y": 21.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_RAW",
+          "x": 31.5,
+          "y": 21.825000000000003,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "VBAT_SENSE",
+          "x": 31.5,
+          "y": 20.174999999999997,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R17": {
+      "reference": "R17",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 71.5,
+      "y": 30.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LORA_TX_PA0",
+          "x": 70.675,
+          "y": 30.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LORA_RXD",
+          "x": 72.325,
+          "y": 30.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "U5": {
+      "reference": "U5",
+      "value": "74AHCT1G125",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "x": 25.0,
+      "y": 41.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 23.862499999999997,
+          "y": 40.55,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "PWM_SERVO_PA8",
+          "x": 23.862499999999997,
+          "y": 41.5,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "GND",
+          "x": 23.862499999999997,
+          "y": 42.45,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "SERVO_SIG_5V",
+          "x": 26.137500000000003,
+          "y": 42.45,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "VSERVO",
+          "x": 26.137500000000003,
+          "y": 40.55,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C17": {
+      "reference": "C17",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 55.5,
+      "y": 16.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 55.5,
+          "y": 16.775000000000006,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 55.5,
+          "y": 15.224999999999994,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C5": {
+      "reference": "C5",
+      "value": "10uF 25V",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "x": 33.0,
+      "y": 28.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 33.0,
+          "y": 29.974999999999994,
+          "w": 1.15,
+          "h": 1.8,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 33.0,
+          "y": 27.025000000000006,
+          "w": 1.15,
+          "h": 1.8,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R1": {
+      "reference": "R1",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 22.799999999999997,
+      "y": 9.299999999999997,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "PGATE",
+          "x": 21.974999999999994,
+          "y": 9.299999999999997,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 23.625,
+          "y": 9.299999999999997,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R32": {
+      "reference": "R32",
+      "value": "6.8k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 31.5,
+      "y": 24.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VBAT_SENSE",
+          "x": 31.5,
+          "y": 25.325000000000003,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 31.5,
+          "y": 23.674999999999997,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C9": {
+      "reference": "C9",
+      "value": "22uF 16V",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "x": 53.0,
+      "y": 34.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+5V_BUCK",
+          "x": 53.0,
+          "y": 35.474999999999994,
+          "w": 1.15,
+          "h": 2.7,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 53.0,
+          "y": 32.525000000000006,
+          "w": 1.15,
+          "h": 2.7,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C29": {
+      "reference": "C29",
+      "value": "10uF 10V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "x": 70.0,
+      "y": 27.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LORA_FILT",
+          "x": 69.05,
+          "y": 27.5,
+          "w": 1.0,
+          "h": 1.45,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 70.95,
+          "y": 27.5,
+          "w": 1.0,
+          "h": 1.45,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R34": {
+      "reference": "R34",
+      "value": "1k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 44.400000000000006,
+      "y": 5.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LED_FIX",
+          "x": 44.400000000000006,
+          "y": 6.325000000000003,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LED_FIX_A",
+          "x": 44.400000000000006,
+          "y": 4.674999999999997,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C36": {
+      "reference": "C36",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 34.3,
+      "y": 23.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VBAT_SENSE",
+          "x": 34.3,
+          "y": 24.275000000000006,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 34.3,
+          "y": 22.724999999999994,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R27": {
+      "reference": "R27",
+      "value": "47k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 63.0,
+      "y": 12.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VBUS",
+          "x": 62.175,
+          "y": 12.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "VBUS_SENSE",
+          "x": 63.825,
+          "y": 12.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "F1": {
+      "reference": "F1",
+      "value": "3A",
+      "footprint": "Fuse:Fuse_1812_4532Metric",
+      "x": 17.5,
+      "y": 20.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VBAT_IN",
+          "x": 15.362499999999997,
+          "y": 20.5,
+          "w": 1.125,
+          "h": 3.4,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "VBAT_FUSED",
+          "x": 19.637500000000003,
+          "y": 20.5,
+          "w": 1.125,
+          "h": 3.4,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "TP7": {
+      "reference": "TP7",
+      "value": "PPS",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "x": 70.0,
+      "y": 40.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "PPS_PB0",
+          "x": 70.0,
+          "y": 40.0,
+          "w": 1.5,
+          "h": 1.5,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C27": {
+      "reference": "C27",
+      "value": "10pF C0G",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 28.5,
+      "y": 16.700000000000003,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LSE_IN",
+          "x": 28.5,
+          "y": 17.474999999999994,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 28.5,
+          "y": 15.924999999999997,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R22": {
+      "reference": "R22",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 66.0,
+      "y": 40.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "PPS_PB0",
+          "x": 65.175,
+          "y": 40.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GNSS_PPS",
+          "x": 66.825,
+          "y": 40.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R18": {
+      "reference": "R18",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 71.5,
+      "y": 32.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LORA_RX_PA1",
+          "x": 70.675,
+          "y": 32.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LORA_TXD",
+          "x": 72.325,
+          "y": 32.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C3": {
+      "reference": "C3",
+      "value": "100nF 50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 22.0,
+      "y": 31.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "SW_3V3",
+          "x": 21.224999999999994,
+          "y": 31.5,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "BST_RC",
+          "x": 22.775000000000006,
+          "y": 31.5,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R25": {
+      "reference": "R25",
+      "value": "5.1k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 55.0,
+      "y": 12.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "USB_CC1",
+          "x": 54.175,
+          "y": 12.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 55.825,
+          "y": 12.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C2": {
+      "reference": "C2",
+      "value": "10uF 50V",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "x": 24.5,
+      "y": 16.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_RAW",
+          "x": 23.025000000000006,
+          "y": 16.5,
+          "w": 1.15,
+          "h": 2.7,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 25.974999999999994,
+          "y": 16.5,
+          "w": 1.15,
+          "h": 2.7,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "J3": {
+      "reference": "J3",
+      "value": "SERVO",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "x": 13.0,
+      "y": 42.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "SERVO_SIG",
+          "x": 13.0,
+          "y": 42.0,
+          "w": 1.7,
+          "h": 1.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.95,
+          "drill_y": 0.95
+        },
+        {
+          "number": "2",
+          "net": "VSERVO",
+          "x": 15.5,
+          "y": 42.0,
+          "w": 1.7,
+          "h": 1.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.95,
+          "drill_y": 0.95
+        },
+        {
+          "number": "3",
+          "net": "GND",
+          "x": 18.0,
+          "y": 42.0,
+          "w": 1.7,
+          "h": 1.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.95,
+          "drill_y": 0.95
+        }
+      ]
+    },
+    "C21": {
+      "reference": "C21",
+      "value": "1uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 36.2,
+      "y": 15.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VDDA",
+          "x": 36.2,
+          "y": 15.775000000000006,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 36.2,
+          "y": 14.224999999999994,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R19": {
+      "reference": "R19",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 71.5,
+      "y": 34.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LORA_NRST_PA3",
+          "x": 70.675,
+          "y": 34.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LORA_NRST",
+          "x": 72.325,
+          "y": 34.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "U2": {
+      "reference": "U2",
+      "value": "R1240N001B-TR-FE",
+      "footprint": "LoRa_Boat_Controller:SOT-23-6W_PE-SOT23-6W-0512_NMD",
+      "x": 15.0,
+      "y": 30.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "EN_3V3",
+          "x": 13.545850000000002,
+          "y": 29.550039999999996,
+          "w": 0.9017,
+          "h": 0.5588,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "VIN_BUCK",
+          "x": 13.545850000000002,
+          "y": 30.5,
+          "w": 0.9017,
+          "h": 0.5588,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "SW_3V3",
+          "x": 13.545850000000002,
+          "y": 31.449960000000004,
+          "w": 0.9017,
+          "h": 0.5588,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "BST_3V3",
+          "x": 16.45415,
+          "y": 31.449960000000004,
+          "w": 0.9017,
+          "h": 0.5588,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "GND",
+          "x": 16.45415,
+          "y": 30.5,
+          "w": 0.9017,
+          "h": 0.5588,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "6",
+          "net": "FB_3V3",
+          "x": 16.45415,
+          "y": 29.550039999999996,
+          "w": 0.9017,
+          "h": 0.5588,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "L1": {
+      "reference": "L1",
+      "value": "4.7uH 3A",
+      "footprint": "Inductor_SMD:L_Bourns_SRN6045TA",
+      "x": 28.0,
+      "y": 31.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "SW_3V3",
+          "x": 25.924999999999997,
+          "y": 31.0,
+          "w": 2.35,
+          "h": 5.1,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+3V3",
+          "x": 30.075000000000003,
+          "y": 31.0,
+          "w": 2.35,
+          "h": 5.1,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R12": {
+      "reference": "R12",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 25.5,
+      "y": 38.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "SERVO_SIG_5V",
+          "x": 24.674999999999997,
+          "y": 38.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "SERVO_SIG",
+          "x": 26.325000000000003,
+          "y": 38.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C34": {
+      "reference": "C34",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 71.5,
+      "y": 37.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 71.5,
+          "y": 37.775000000000006,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 71.5,
+          "y": 36.224999999999994,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R21": {
+      "reference": "R21",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 59.5,
+      "y": 39.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GNSS_RX_PC11",
+          "x": 58.675,
+          "y": 39.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GNSS_TXD",
+          "x": 60.325,
+          "y": 39.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "D1": {
+      "reference": "D1",
+      "value": "SMAJ33A",
+      "footprint": "Diode_SMD:D_SMA",
+      "x": 18.200000000000003,
+      "y": 16.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_RAW",
+          "x": 16.200000000000003,
+          "y": 16.5,
+          "w": 2.5,
+          "h": 1.8,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 20.200000000000003,
+          "y": 16.5,
+          "w": 2.5,
+          "h": 1.8,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "H1": {
+      "reference": "H1",
+      "value": "M3",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "x": 4.0,
+      "y": 4.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "x": 4.0,
+          "y": 4.0,
+          "w": 3.2,
+          "h": 3.2,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 3.2,
+          "drill_y": 3.2
+        }
+      ]
+    },
+    "U4": {
+      "reference": "U4",
+      "value": "74AHCT1G125",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "x": 26.0,
+      "y": 3.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 24.862499999999997,
+          "y": 2.549999999999997,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "PWM_ESC_PC6",
+          "x": 24.862499999999997,
+          "y": 3.5,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "GND",
+          "x": 24.862499999999997,
+          "y": 4.450000000000003,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "ESC_SIG_5V",
+          "x": 27.137500000000003,
+          "y": 4.450000000000003,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "VSERVO",
+          "x": 27.137500000000003,
+          "y": 2.549999999999997,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "FB1": {
+      "reference": "FB1",
+      "value": "600R",
+      "footprint": "Inductor_SMD:L_0603_1608Metric",
+      "x": 38.0,
+      "y": 17.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 38.0,
+          "y": 17.787499999999994,
+          "w": 0.875,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "VDDA",
+          "x": 38.0,
+          "y": 16.212500000000006,
+          "w": 0.875,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R15": {
+      "reference": "R15",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 31.5,
+      "y": 41.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "PWM_SERVO_PA8",
+          "x": 30.674999999999997,
+          "y": 41.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 32.325,
+          "y": 41.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R2": {
+      "reference": "R2",
+      "value": "5.1k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 19.0,
+      "y": 30.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_BUCK",
+          "x": 19.0,
+          "y": 31.325000000000003,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "EN_3V3",
+          "x": 19.0,
+          "y": 29.674999999999997,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R23": {
+      "reference": "R23",
+      "value": "2.2k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 66.5,
+      "y": 27.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 65.675,
+          "y": 27.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "I2C1_SCL",
+          "x": 67.325,
+          "y": 27.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C14": {
+      "reference": "C14",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 28.5,
+      "y": 41.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSERVO",
+          "x": 28.5,
+          "y": 42.275000000000006,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 28.5,
+          "y": 40.724999999999994,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "J7": {
+      "reference": "J7",
+      "value": "SWD",
+      "footprint": "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD",
+      "x": 73.0,
+      "y": 13.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 71.05,
+          "y": 10.46,
+          "w": 2.4,
+          "h": 0.74,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "SWDIO",
+          "x": 74.95,
+          "y": 10.46,
+          "w": 2.4,
+          "h": 0.74,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "GND",
+          "x": 71.05,
+          "y": 11.729999999999997,
+          "w": 2.4,
+          "h": 0.74,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "SWCLK",
+          "x": 74.95,
+          "y": 11.729999999999997,
+          "w": 2.4,
+          "h": 0.74,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "GND",
+          "x": 71.05,
+          "y": 13.0,
+          "w": 2.4,
+          "h": 0.74,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "6",
+          "net": "SWO",
+          "x": 74.95,
+          "y": 13.0,
+          "w": 2.4,
+          "h": 0.74,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "7",
+          "net": "",
+          "x": 71.05,
+          "y": 14.269999999999996,
+          "w": 2.4,
+          "h": 0.74,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "8",
+          "net": "",
+          "x": 74.95,
+          "y": 14.269999999999996,
+          "w": 2.4,
+          "h": 0.74,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "9",
+          "net": "GND",
+          "x": 71.05,
+          "y": 15.540000000000006,
+          "w": 2.4,
+          "h": 0.74,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "10",
+          "net": "NRST",
+          "x": 74.95,
+          "y": 15.540000000000006,
+          "w": 2.4,
+          "h": 0.74,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "D9": {
+      "reference": "D9",
+      "value": "SS34",
+      "footprint": "Diode_SMD:D_SMA",
+      "x": 28.0,
+      "y": 7.299999999999997,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSERVO",
+          "x": 26.0,
+          "y": 7.299999999999997,
+          "w": 2.5,
+          "h": 1.8,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "BEC_IN",
+          "x": 30.0,
+          "y": 7.299999999999997,
+          "w": 2.5,
+          "h": 1.8,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C10": {
+      "reference": "C10",
+      "value": "10uF 50V",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "x": 36.3,
+      "y": 34.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_BUCK",
+          "x": 36.3,
+          "y": 35.474999999999994,
+          "w": 1.15,
+          "h": 2.7,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 36.3,
+          "y": 32.525000000000006,
+          "w": 1.15,
+          "h": 2.7,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C6": {
+      "reference": "C6",
+      "value": "10uF 25V",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "x": 33.0,
+      "y": 33.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 33.0,
+          "y": 34.974999999999994,
+          "w": 1.15,
+          "h": 1.8,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 33.0,
+          "y": 32.025000000000006,
+          "w": 1.15,
+          "h": 1.8,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C12": {
+      "reference": "C12",
+      "value": "10uF 16V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "x": 59.5,
+      "y": 36.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSERVO",
+          "x": 58.55,
+          "y": 36.0,
+          "w": 1.0,
+          "h": 1.45,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 60.45,
+          "y": 36.0,
+          "w": 1.0,
+          "h": 1.45,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C16": {
+      "reference": "C16",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 44.0,
+      "y": 8.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 43.224999999999994,
+          "y": 8.5,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 44.775000000000006,
+          "y": 8.5,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C28": {
+      "reference": "C28",
+      "value": "10pF C0G",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 34.5,
+      "y": 16.700000000000003,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LSE_OUT",
+          "x": 34.5,
+          "y": 17.474999999999994,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 34.5,
+          "y": 15.924999999999997,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "D11": {
+      "reference": "D11",
+      "value": "PESD5V0S1BA",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "x": 32.0,
+      "y": 38.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "SERVO_SIG",
+          "x": 32.0,
+          "y": 39.05,
+          "w": 0.6,
+          "h": 0.45,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 32.0,
+          "y": 36.95,
+          "w": 0.6,
+          "h": 0.45,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "H2": {
+      "reference": "H2",
+      "value": "M3",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "x": 76.0,
+      "y": 4.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "x": 76.0,
+          "y": 4.0,
+          "w": 3.2,
+          "h": 3.2,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 3.2,
+          "drill_y": 3.2
+        }
+      ]
+    },
+    "H3": {
+      "reference": "H3",
+      "value": "M3",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "x": 4.0,
+      "y": 42.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "x": 4.0,
+          "y": 42.0,
+          "w": 3.2,
+          "h": 3.2,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 3.2,
+          "drill_y": 3.2
+        }
+      ]
+    },
+    "TP2": {
+      "reference": "TP2",
+      "value": "SERVO_PWM",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "x": 39.0,
+      "y": 44.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "PWM_SERVO_PA8",
+          "x": 39.0,
+          "y": 44.0,
+          "w": 1.5,
+          "h": 1.5,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C7": {
+      "reference": "C7",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 40.0,
+      "y": 32.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "SW_5V",
+          "x": 39.224999999999994,
+          "y": 32.0,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "BOOT_5V",
+          "x": 40.775000000000006,
+          "y": 32.0,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "D2": {
+      "reference": "D2",
+      "value": "12V",
+      "footprint": "Diode_SMD:D_SOD-123",
+      "x": 25.200000000000003,
+      "y": 12.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_RAW",
+          "x": 23.549999999999997,
+          "y": 12.0,
+          "w": 0.9,
+          "h": 1.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "PGATE",
+          "x": 26.849999999999994,
+          "y": 12.0,
+          "w": 0.9,
+          "h": 1.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "TP1": {
+      "reference": "TP1",
+      "value": "ESC_PWM",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "x": 35.0,
+      "y": 44.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "PWM_ESC_PC6",
+          "x": 35.0,
+          "y": 44.0,
+          "w": 1.5,
+          "h": 1.5,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C32": {
+      "reference": "C32",
+      "value": "47pF",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "x": 74.5,
+      "y": 34.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LORA_VCC",
+          "x": 74.5,
+          "y": 34.480000000000004,
+          "w": 0.56,
+          "h": 0.62,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 74.5,
+          "y": 33.519999999999996,
+          "w": 0.56,
+          "h": 0.62,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "D5": {
+      "reference": "D5",
+      "value": "PWR green",
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "x": 38.0,
+      "y": 3.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 37.212500000000006,
+          "y": 3.0,
+          "w": 0.875,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LED_PWR",
+          "x": 38.787499999999994,
+          "y": 3.0,
+          "w": 0.875,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "D7": {
+      "reference": "D7",
+      "value": "FIX yellow",
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "x": 44.400000000000006,
+      "y": 3.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 43.6125,
+          "y": 3.0,
+          "w": 0.875,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LED_FIX_A",
+          "x": 45.1875,
+          "y": 3.0,
+          "w": 0.875,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R9": {
+      "reference": "R9",
+      "value": "13.3k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 40.0,
+      "y": 36.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "FB_5V",
+          "x": 39.175,
+          "y": 36.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 40.825,
+          "y": 36.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "U7": {
+      "reference": "U7",
+      "value": "USBLC6-2SC6",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "x": 58.0,
+      "y": 9.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "USB_DP_CONN",
+          "x": 56.8625,
+          "y": 8.549999999999997,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 56.8625,
+          "y": 9.5,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "USB_DM_CONN",
+          "x": 56.8625,
+          "y": 10.450000000000003,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "USB_DM",
+          "x": 59.1375,
+          "y": 10.450000000000003,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "VBUS",
+          "x": 59.1375,
+          "y": 9.5,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "6",
+          "net": "USB_DP",
+          "x": 59.1375,
+          "y": 8.549999999999997,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "FB3": {
+      "reference": "FB3",
+      "value": "600R",
+      "footprint": "Inductor_SMD:L_0402_1005Metric",
+      "x": 72.0,
+      "y": 25.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LORA_FILT",
+          "x": 71.515,
+          "y": 25.0,
+          "w": 0.59,
+          "h": 0.64,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LORA_VCC",
+          "x": 72.485,
+          "y": 25.0,
+          "w": 0.59,
+          "h": 0.64,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "Y1": {
+      "reference": "Y1",
+      "value": "8MHz",
+      "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+      "x": 31.5,
+      "y": 12.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "HSE_IN",
+          "x": 30.400000000000006,
+          "y": 13.350000000000001,
+          "w": 1.4,
+          "h": 1.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 32.599999999999994,
+          "y": 13.350000000000001,
+          "w": 1.4,
+          "h": 1.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "HSE_OUT",
+          "x": 32.599999999999994,
+          "y": 11.649999999999999,
+          "w": 1.4,
+          "h": 1.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "GND",
+          "x": 30.400000000000006,
+          "y": 11.649999999999999,
+          "w": 1.4,
+          "h": 1.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C11": {
+      "reference": "C11",
+      "value": "100uF 10V",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x7.7",
+      "x": 59.5,
+      "y": 30.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSERVO",
+          "x": 56.8,
+          "y": 30.0,
+          "w": 3.5,
+          "h": 1.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 62.2,
+          "y": 30.0,
+          "w": 3.5,
+          "h": 1.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R16": {
+      "reference": "R16",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 46.0,
+      "y": 26.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "BOOT0",
+          "x": 45.175,
+          "y": 26.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 46.825,
+          "y": 26.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R13": {
+      "reference": "R13",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 29.0,
+      "y": 38.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "SERVO_SIG",
+          "x": 28.174999999999997,
+          "y": 38.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 29.825000000000003,
+          "y": 38.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R28": {
+      "reference": "R28",
+      "value": "22k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 63.0,
+      "y": 14.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VBUS_SENSE",
+          "x": 62.175,
+          "y": 14.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 63.825,
+          "y": 14.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "TP5": {
+      "reference": "TP5",
+      "value": "VIN_RAW",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "x": 51.0,
+      "y": 44.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_RAW",
+          "x": 51.0,
+          "y": 44.0,
+          "w": 1.5,
+          "h": 1.5,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "D10": {
+      "reference": "D10",
+      "value": "PESD5V0S1BA",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "x": 37.0,
+      "y": 9.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "ESC_SIG",
+          "x": 37.0,
+          "y": 10.549999999999997,
+          "w": 0.6,
+          "h": 0.45,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 37.0,
+          "y": 8.450000000000003,
+          "w": 0.6,
+          "h": 0.45,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C24": {
+      "reference": "C24",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 42.0,
+      "y": 26.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "NRST",
+          "x": 41.224999999999994,
+          "y": 26.0,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 42.775000000000006,
+          "y": 26.0,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "D3": {
+      "reference": "D3",
+      "value": "CMS06",
+      "footprint": "LoRa_Boat_Controller:M-FLAT_TOS-L",
+      "x": 15.5,
+      "y": 34.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 13.429900000000004,
+          "y": 34.5,
+          "w": 0.9652,
+          "h": 1.8034,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "SW_3V3",
+          "x": 17.570099999999996,
+          "y": 34.5,
+          "w": 0.9652,
+          "h": 1.8034,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R14": {
+      "reference": "R14",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 32.5,
+      "y": 4.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "PWM_ESC_PC6",
+          "x": 31.674999999999997,
+          "y": 4.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 33.325,
+          "y": 4.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "U6": {
+      "reference": "U6",
+      "value": "ICM-20948",
+      "footprint": "LoRa_Boat_Controller_V2:QFN-24_3x3mm_P0.4mm_NoEP",
+      "x": 66.0,
+      "y": 36.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "",
+          "x": 64.45,
+          "y": 35.0,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "",
+          "x": 64.45,
+          "y": 35.400000000000006,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "",
+          "x": 64.45,
+          "y": 35.8,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "",
+          "x": 64.45,
+          "y": 36.2,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "",
+          "x": 64.45,
+          "y": 36.599999999999994,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "6",
+          "net": "",
+          "x": 64.45,
+          "y": 37.0,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "7",
+          "net": "",
+          "x": 65.0,
+          "y": 37.55,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "8",
+          "net": "+3V3",
+          "x": 65.4,
+          "y": 37.55,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "9",
+          "net": "GND",
+          "x": 65.8,
+          "y": 37.55,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "10",
+          "net": "IMU_REGOUT",
+          "x": 66.2,
+          "y": 37.55,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "11",
+          "net": "GND",
+          "x": 66.6,
+          "y": 37.55,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "12",
+          "net": "IMU_INT",
+          "x": 67.0,
+          "y": 37.55,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "13",
+          "net": "+3V3",
+          "x": 67.55,
+          "y": 37.0,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "14",
+          "net": "",
+          "x": 67.55,
+          "y": 36.599999999999994,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "15",
+          "net": "",
+          "x": 67.55,
+          "y": 36.2,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "16",
+          "net": "",
+          "x": 67.55,
+          "y": 35.8,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "17",
+          "net": "",
+          "x": 67.55,
+          "y": 35.400000000000006,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "18",
+          "net": "GND",
+          "x": 67.55,
+          "y": 35.0,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "19",
+          "net": "",
+          "x": 67.0,
+          "y": 34.45,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "20",
+          "net": "GND",
+          "x": 66.6,
+          "y": 34.45,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "21",
+          "net": "",
+          "x": 66.2,
+          "y": 34.45,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "22",
+          "net": "+3V3",
+          "x": 65.8,
+          "y": 34.45,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "23",
+          "net": "I2C1_SCL",
+          "x": 65.4,
+          "y": 34.45,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "24",
+          "net": "I2C1_SDA",
+          "x": 65.0,
+          "y": 34.45,
+          "w": 0.6,
+          "h": 0.2,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "TP4": {
+      "reference": "TP4",
+      "value": "VSERVO",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "x": 47.0,
+      "y": 44.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSERVO",
+          "x": 47.0,
+          "y": 44.0,
+          "w": 1.5,
+          "h": 1.5,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "H4": {
+      "reference": "H4",
+      "value": "M3",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "x": 76.0,
+      "y": 42.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "",
+          "net": "",
+          "x": 76.0,
+          "y": 42.0,
+          "w": 3.2,
+          "h": 3.2,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 3.2,
+          "drill_y": 3.2
+        }
+      ]
+    },
+    "C25": {
+      "reference": "C25",
+      "value": "15pF C0G",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 28.5,
+      "y": 13.299999999999997,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "HSE_IN",
+          "x": 28.5,
+          "y": 14.075000000000003,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 28.5,
+          "y": 12.524999999999999,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C23": {
+      "reference": "C23",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 55.5,
+      "y": 20.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 55.5,
+          "y": 20.775000000000006,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 55.5,
+          "y": 19.224999999999994,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R35": {
+      "reference": "R35",
+      "value": "1k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 47.599999999999994,
+      "y": 5.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LED_FAULT",
+          "x": 47.599999999999994,
+          "y": 6.325000000000003,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LED_FAULT_A",
+          "x": 47.599999999999994,
+          "y": 4.674999999999997,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R33": {
+      "reference": "R33",
+      "value": "0.02R 1W",
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "x": 26.0,
+      "y": 20.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_RAW",
+          "x": 23.037499999999994,
+          "y": 20.5,
+          "w": 1.225,
+          "h": 3.35,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "VIN_BUCK",
+          "x": 28.962500000000006,
+          "y": 20.5,
+          "w": 1.225,
+          "h": 3.35,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C37": {
+      "reference": "C37",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 27.0,
+      "y": 25.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "ISENSE",
+          "x": 27.0,
+          "y": 26.275000000000006,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 27.0,
+          "y": 24.724999999999994,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "D4": {
+      "reference": "D4",
+      "value": "SS34",
+      "footprint": "Diode_SMD:D_SMA",
+      "x": 47.0,
+      "y": 37.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSERVO",
+          "x": 45.0,
+          "y": 37.0,
+          "w": 2.5,
+          "h": 1.8,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "+5V_BUCK",
+          "x": 49.0,
+          "y": 37.0,
+          "w": 2.5,
+          "h": 1.8,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R29": {
+      "reference": "R29",
+      "value": "1k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 38.0,
+      "y": 5.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 38.0,
+          "y": 6.325000000000003,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LED_PWR",
+          "x": 38.0,
+          "y": 4.674999999999997,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "SW1": {
+      "reference": "SW1",
+      "value": "RESET",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "x": 72.0,
+      "y": 21.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "NRST",
+          "x": 69.95,
+          "y": 20.200000000000003,
+          "w": 0.9,
+          "h": 1.0,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "1",
+          "net": "NRST",
+          "x": 74.05,
+          "y": 20.200000000000003,
+          "w": 0.9,
+          "h": 1.0,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 69.95,
+          "y": 21.799999999999997,
+          "w": 0.9,
+          "h": 1.0,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 74.05,
+          "y": 21.799999999999997,
+          "w": 0.9,
+          "h": 1.0,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C19": {
+      "reference": "C19",
+      "value": "10uF 10V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "x": 40.0,
+      "y": 8.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 39.05,
+          "y": 8.5,
+          "w": 1.0,
+          "h": 1.45,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 40.95,
+          "y": 8.5,
+          "w": 1.0,
+          "h": 1.45,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R8": {
+      "reference": "R8",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 40.0,
+      "y": 34.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+5V_BUCK",
+          "x": 39.175,
+          "y": 34.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "FB_5V",
+          "x": 40.825,
+          "y": 34.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "J5": {
+      "reference": "J5",
+      "value": "GNSS",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "x": 56.0,
+      "y": 43.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 56.0,
+          "y": 43.5,
+          "w": 1.7,
+          "h": 1.7,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 1.0,
+          "drill_y": 1.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 58.540000000000006,
+          "y": 43.5,
+          "w": 1.7,
+          "h": 1.7,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.0,
+          "drill_y": 1.0
+        },
+        {
+          "number": "3",
+          "net": "GNSS_TXD",
+          "x": 61.08,
+          "y": 43.5,
+          "w": 1.7,
+          "h": 1.7,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.0,
+          "drill_y": 1.0
+        },
+        {
+          "number": "4",
+          "net": "GNSS_RXD",
+          "x": 63.620000000000005,
+          "y": 43.5,
+          "w": 1.7,
+          "h": 1.7,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.0,
+          "drill_y": 1.0
+        },
+        {
+          "number": "5",
+          "net": "GNSS_PPS",
+          "x": 66.16,
+          "y": 43.5,
+          "w": 1.7,
+          "h": 1.7,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.0,
+          "drill_y": 1.0
+        },
+        {
+          "number": "6",
+          "net": "+3V3",
+          "x": 68.7,
+          "y": 43.5,
+          "w": 1.7,
+          "h": 1.7,
+          "rotation": 90.0,
+          "circle": true,
+          "drill_x": 1.0,
+          "drill_y": 1.0
+        }
+      ]
+    },
+    "C22": {
+      "reference": "C22",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 36.0,
+      "y": 20.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VDDA",
+          "x": 36.0,
+          "y": 21.275000000000006,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 36.0,
+          "y": 19.724999999999994,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "U1": {
+      "reference": "U1",
+      "value": "STM32F446RET6",
+      "footprint": "Package_QFP:LQFP-64_10x10mm_P0.5mm",
+      "x": 46.0,
+      "y": 17.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 40.325,
+          "y": 13.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "",
+          "x": 40.325,
+          "y": 13.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "LSE_IN",
+          "x": 40.325,
+          "y": 14.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "LSE_OUT",
+          "x": 40.325,
+          "y": 14.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "HSE_IN",
+          "x": 40.325,
+          "y": 15.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "6",
+          "net": "HSE_OUT",
+          "x": 40.325,
+          "y": 15.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "7",
+          "net": "NRST",
+          "x": 40.325,
+          "y": 16.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "8",
+          "net": "",
+          "x": 40.325,
+          "y": 16.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "9",
+          "net": "LED_LINK",
+          "x": 40.325,
+          "y": 17.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "10",
+          "net": "LED_FIX",
+          "x": 40.325,
+          "y": 17.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "11",
+          "net": "LED_FAULT",
+          "x": 40.325,
+          "y": 18.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "12",
+          "net": "GND",
+          "x": 40.325,
+          "y": 18.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "13",
+          "net": "VDDA",
+          "x": 40.325,
+          "y": 19.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "14",
+          "net": "LORA_TX_PA0",
+          "x": 40.325,
+          "y": 19.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "15",
+          "net": "LORA_RX_PA1",
+          "x": 40.325,
+          "y": 20.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "16",
+          "net": "VBAT_SENSE",
+          "x": 40.325,
+          "y": 20.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "17",
+          "net": "LORA_NRST_PA3",
+          "x": 42.25,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "18",
+          "net": "GND",
+          "x": 42.75,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "19",
+          "net": "+3V3",
+          "x": 43.25,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "20",
+          "net": "ISENSE",
+          "x": 43.75,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "21",
+          "net": "",
+          "x": 44.25,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "22",
+          "net": "",
+          "x": 44.75,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "23",
+          "net": "",
+          "x": 45.25,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "24",
+          "net": "",
+          "x": 45.75,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "25",
+          "net": "",
+          "x": 46.25,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "26",
+          "net": "PPS_PB0",
+          "x": 46.75,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "27",
+          "net": "",
+          "x": 47.25,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "28",
+          "net": "",
+          "x": 47.75,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "29",
+          "net": "",
+          "x": 48.25,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "30",
+          "net": "VCAP1",
+          "x": 48.75,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "31",
+          "net": "GND",
+          "x": 49.25,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "32",
+          "net": "+3V3",
+          "x": 49.75,
+          "y": 22.674999999999997,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "33",
+          "net": "",
+          "x": 51.675,
+          "y": 20.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "34",
+          "net": "",
+          "x": 51.675,
+          "y": 20.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "35",
+          "net": "",
+          "x": 51.675,
+          "y": 19.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "36",
+          "net": "",
+          "x": 51.675,
+          "y": 19.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "37",
+          "net": "PWM_ESC_PC6",
+          "x": 51.675,
+          "y": 18.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "38",
+          "net": "",
+          "x": 51.675,
+          "y": 18.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "39",
+          "net": "",
+          "x": 51.675,
+          "y": 17.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "40",
+          "net": "",
+          "x": 51.675,
+          "y": 17.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "41",
+          "net": "PWM_SERVO_PA8",
+          "x": 51.675,
+          "y": 16.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "42",
+          "net": "VBUS_SENSE",
+          "x": 51.675,
+          "y": 16.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "43",
+          "net": "",
+          "x": 51.675,
+          "y": 15.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "44",
+          "net": "USB_DM",
+          "x": 51.675,
+          "y": 15.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "45",
+          "net": "USB_DP",
+          "x": 51.675,
+          "y": 14.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "46",
+          "net": "SWDIO",
+          "x": 51.675,
+          "y": 14.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "47",
+          "net": "GND",
+          "x": 51.675,
+          "y": 13.75,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "48",
+          "net": "+3V3",
+          "x": 51.675,
+          "y": 13.25,
+          "w": 1.55,
+          "h": 0.3,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "49",
+          "net": "SWCLK",
+          "x": 49.75,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "50",
+          "net": "",
+          "x": 49.25,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "51",
+          "net": "GNSS_TX_PC10",
+          "x": 48.75,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "52",
+          "net": "GNSS_RX_PC11",
+          "x": 48.25,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "53",
+          "net": "",
+          "x": 47.75,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "54",
+          "net": "",
+          "x": 47.25,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "55",
+          "net": "SWO",
+          "x": 46.75,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "56",
+          "net": "",
+          "x": 46.25,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "57",
+          "net": "IMU_INT",
+          "x": 45.75,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "58",
+          "net": "I2C1_SCL",
+          "x": 45.25,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "59",
+          "net": "I2C1_SDA",
+          "x": 44.75,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "60",
+          "net": "BOOT0",
+          "x": 44.25,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "61",
+          "net": "",
+          "x": 43.75,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "62",
+          "net": "",
+          "x": 43.25,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "63",
+          "net": "GND",
+          "x": 42.75,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "64",
+          "net": "+3V3",
+          "x": 42.25,
+          "y": 11.325000000000003,
+          "w": 0.3,
+          "h": 1.55,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R20": {
+      "reference": "R20",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 56.0,
+      "y": 39.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GNSS_TX_PC10",
+          "x": 55.175,
+          "y": 39.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GNSS_RXD",
+          "x": 56.825,
+          "y": 39.0,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R6": {
+      "reference": "R6",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 36.5,
+      "y": 29.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_BUCK",
+          "x": 36.5,
+          "y": 29.825000000000003,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "EN_5V",
+          "x": 36.5,
+          "y": 28.174999999999997,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "TP6": {
+      "reference": "TP6",
+      "value": "GND",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "x": 31.0,
+      "y": 44.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 31.0,
+          "y": 44.0,
+          "w": 1.5,
+          "h": 1.5,
+          "rotation": 0.0,
+          "circle": true,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C15": {
+      "reference": "C15",
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 38.0,
+      "y": 13.0,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 38.0,
+          "y": 13.774999999999999,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 38.0,
+          "y": 12.225000000000001,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C20": {
+      "reference": "C20",
+      "value": "4.7uF 10V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 38.0,
+      "y": 21.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VCAP1",
+          "x": 38.0,
+          "y": 22.275000000000006,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 38.0,
+          "y": 20.724999999999994,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R26": {
+      "reference": "R26",
+      "value": "5.1k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 59.0,
+      "y": 12.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "USB_CC2",
+          "x": 58.175,
+          "y": 12.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 59.825,
+          "y": 12.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "D6": {
+      "reference": "D6",
+      "value": "LINK blue",
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "x": 41.2,
+      "y": 3.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 40.412499999999994,
+          "y": 3.0,
+          "w": 0.875,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LED_LINK_A",
+          "x": 41.9875,
+          "y": 3.0,
+          "w": 0.875,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "U3": {
+      "reference": "U3",
+      "value": "TPS54202",
+      "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+      "x": 40.0,
+      "y": 29.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND",
+          "x": 38.8625,
+          "y": 28.049999999999997,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "SW_5V",
+          "x": 38.8625,
+          "y": 29.0,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "VIN_BUCK",
+          "x": 38.8625,
+          "y": 29.950000000000003,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "FB_5V",
+          "x": 41.1375,
+          "y": 29.950000000000003,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "EN_5V",
+          "x": 41.1375,
+          "y": 29.0,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "6",
+          "net": "BOOT_5V",
+          "x": 41.1375,
+          "y": 28.049999999999997,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "U8": {
+      "reference": "U8",
+      "value": "INA180A1",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "x": 24.0,
+      "y": 25.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "ISENSE",
+          "x": 22.862499999999997,
+          "y": 24.549999999999997,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 22.862499999999997,
+          "y": 25.5,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "3",
+          "net": "VIN_RAW",
+          "x": 22.862499999999997,
+          "y": 26.450000000000003,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "4",
+          "net": "VIN_BUCK",
+          "x": 25.137500000000003,
+          "y": 26.450000000000003,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "5",
+          "net": "+3V3",
+          "x": 25.137500000000003,
+          "y": 24.549999999999997,
+          "w": 1.325,
+          "h": 0.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C1": {
+      "reference": "C1",
+      "value": "47uF 50V",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x7.7",
+      "x": 7.0,
+      "y": 30.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VIN_RAW",
+          "x": 4.299999999999997,
+          "y": 30.0,
+          "w": 3.5,
+          "h": 1.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 9.700000000000003,
+          "y": 30.0,
+          "w": 3.5,
+          "h": 1.6,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "FB2": {
+      "reference": "FB2",
+      "value": "600R",
+      "footprint": "Inductor_SMD:L_0402_1005Metric",
+      "x": 69.0,
+      "y": 25.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3",
+          "x": 68.515,
+          "y": 25.0,
+          "w": 0.59,
+          "h": 0.64,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LORA_FILT",
+          "x": 69.485,
+          "y": 25.0,
+          "w": 0.59,
+          "h": 0.64,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "J2": {
+      "reference": "J2",
+      "value": "ESC",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "x": 13.0,
+      "y": 5.0,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "ESC_SIG",
+          "x": 13.0,
+          "y": 5.0,
+          "w": 1.7,
+          "h": 1.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.95,
+          "drill_y": 0.95
+        },
+        {
+          "number": "2",
+          "net": "BEC_IN",
+          "x": 15.5,
+          "y": 5.0,
+          "w": 1.7,
+          "h": 1.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.95,
+          "drill_y": 0.95
+        },
+        {
+          "number": "3",
+          "net": "GND",
+          "x": 18.0,
+          "y": 5.0,
+          "w": 1.7,
+          "h": 1.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.95,
+          "drill_y": 0.95
+        }
+      ]
+    },
+    "C30": {
+      "reference": "C30",
+      "value": "10uF 10V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "x": 73.5,
+      "y": 27.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LORA_VCC",
+          "x": 72.55,
+          "y": 27.5,
+          "w": 1.0,
+          "h": 1.45,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 74.45,
+          "y": 27.5,
+          "w": 1.0,
+          "h": 1.45,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R11": {
+      "reference": "R11",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 34.0,
+      "y": 9.5,
+      "rotation": 0.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "ESC_SIG",
+          "x": 33.175,
+          "y": 9.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 34.825,
+          "y": 9.5,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 0.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "R30": {
+      "reference": "R30",
+      "value": "1k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "x": 41.2,
+      "y": 5.5,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LED_LINK",
+          "x": 41.2,
+          "y": 6.325000000000003,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "LED_LINK_A",
+          "x": 41.2,
+          "y": 4.674999999999997,
+          "w": 0.8,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    },
+    "C26": {
+      "reference": "C26",
+      "value": "15pF C0G",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "x": 34.5,
+      "y": 13.299999999999997,
+      "rotation": 90.0,
+      "side": "Top",
+      "pads": [
+        {
+          "number": "1",
+          "net": "HSE_OUT",
+          "x": 34.5,
+          "y": 14.075000000000003,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "x": 34.5,
+          "y": 12.524999999999999,
+          "w": 0.9,
+          "h": 0.95,
+          "rotation": 90.0,
+          "circle": false,
+          "drill_x": 0.0,
+          "drill_y": 0.0
+        }
+      ]
+    }
+  },
+  "kicad_version": "9.0.7",
+  "coordinate_note": "Origin = upper-left Edge.Cuts centerline corner (stroke excluded); +X right, +Y down as viewed from top. Rotations are raw KiCad angles, not assembler-normalized rotations."
+}

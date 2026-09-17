@@ -1,0 +1,9 @@
+Item,MPN,Quantity,Decision needed
+LoRa radio module,,TBD,"Confirm exact radio model, firmware and mating pinout; board BOM includes only socket"
+GNSS module,,TBD,"Select exact breakout/module, supply, update rate and pin mapping; board BOM includes only socket"
+Antenna and RF pigtail,,TBD,"Match selected radio connector, band, enclosure and regional configuration"
+Actuator mating housings / contacts / cables,,TBD,"Select wire gauge, contact plating, lengths and verified harness orientation"
+Battery / ESC / servo or ground-vehicle drives,,TBD,Application-specific load and power plan; not included in controller board BOM
+Enclosure / seals / mounting screws / standoffs,,TBD,Mechanical stack and environmental protection not selected; mounting holes are not hardware items
+Handheld and audio/display/control hardware,,TBD,Separate future product BOM; not represented by either vehicle-node PCB
+Programming cable / debug probe / test leads,,TBD,Reusable tools; do not multiply automatically by fleet size

@@ -1,0 +1,152 @@
+{
+  "hardware/kicad/CAN_Bus.kicad_sch": {
+    "page_mm": [
+      297,
+      210
+    ],
+    "checked_anchors_and_corners": 50,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad/Debug.kicad_sch": {
+    "page_mm": [
+      297,
+      210
+    ],
+    "checked_anchors_and_corners": 31,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad/GPS_Module.kicad_sch": {
+    "page_mm": [
+      297,
+      210
+    ],
+    "checked_anchors_and_corners": 18,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad/LoRa_Boat_Controller.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 125,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad/LoRa_Module.kicad_sch": {
+    "page_mm": [
+      297,
+      210
+    ],
+    "checked_anchors_and_corners": 60,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad/MCU.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 194,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad/PowerSupply.kicad_sch": {
+    "page_mm": [
+      297,
+      210
+    ],
+    "checked_anchors_and_corners": 134,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad/PWM_Outputs.kicad_sch": {
+    "page_mm": [
+      297,
+      210
+    ],
+    "checked_anchors_and_corners": 30,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad_v2/Actuators.kicad_sch": {
+    "page_mm": [
+      297,
+      210
+    ],
+    "checked_anchors_and_corners": 131,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad_v2/Debug.kicad_sch": {
+    "page_mm": [
+      297,
+      210
+    ],
+    "checked_anchors_and_corners": 127,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 146,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad_v2/MCU.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 346,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad_v2/Navigation.kicad_sch": {
+    "page_mm": [
+      297,
+      210
+    ],
+    "checked_anchors_and_corners": 127,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad_v2/Power.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 340,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "hardware/kicad_v2/Radio.kicad_sch": {
+    "page_mm": [
+      297,
+      210
+    ],
+    "checked_anchors_and_corners": 80,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  }
+}

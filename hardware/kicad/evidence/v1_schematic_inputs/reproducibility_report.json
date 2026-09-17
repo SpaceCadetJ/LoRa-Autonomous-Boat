@@ -1,0 +1,92 @@
+{
+  "checked_utc": "2026-09-17T21:18:30.900532+00:00",
+  "python": "3.11.5",
+  "input_manifest_sha256": "27160f3899721980675b947800db6b6e29540f19e8b98e87d945ab66365d1169",
+  "checks": [
+    {
+      "name": "V1 fresh checkout without _build",
+      "exit_code": 0,
+      "stdout": "V1 schematic inputs: hardware\\kicad\\evidence\\v1_schematic_inputs\nAnnotated schematic: 8 sheets; 44 symbols; PowerSupply:A2, MCU:A2, CAN_Bus:A3, LoRa_Module:A3, GPS_Module:A3, PWM_Outputs:A3, Debug:A3",
+      "stderr": ""
+    },
+    {
+      "name": "V2 fresh checkout without _build",
+      "exit_code": 0,
+      "stdout": "118 parts, 71 nets, 320 connected pins\nAnnotated schematic: 7 sheets; 114 symbols; Power:A2, MCU:A2, Radio:A3, Navigation:A3, Actuators:A3, Debug:A3",
+      "stderr": ""
+    },
+    {
+      "name": "V1 explicit reconstructed input directory",
+      "exit_code": 0,
+      "stdout": "V1 schematic inputs: hardware\\kicad\\_build\nAnnotated schematic: 8 sheets; 44 symbols; PowerSupply:A2, MCU:A2, CAN_Bus:A3, LoRa_Module:A3, GPS_Module:A3, PWM_Outputs:A3, Debug:A3",
+      "stderr": ""
+    },
+    {
+      "name": "V1 default ignores stale _build data",
+      "exit_code": 0,
+      "stdout": "V1 schematic inputs: hardware\\kicad\\evidence\\v1_schematic_inputs\nAnnotated schematic: 8 sheets; 44 symbols; PowerSupply:A2, MCU:A2, CAN_Bus:A3, LoRa_Module:A3, GPS_Module:A3, PWM_Outputs:A3, Debug:A3",
+      "stderr": ""
+    },
+    {
+      "name": "V1 rejects changed captured input before CAD writes",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<isolated-checkout>\\hardware\\kicad\\tools\\gen_sch.py\", line 265, in <module>\n    main()\n  File \"<isolated-checkout>\\hardware\\kicad\\tools\\gen_sch.py\", line 261, in main\n    generate_v1(sys.modules[__name__], args.input_dir)\n  File \"<isolated-checkout>\\hardware\\kicad\\tools\\schematic_layout.py\", line 177, in generate_v1\n    b,netmap,mpn=g.load_inputs(input_dir)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<isolated-checkout>\\hardware\\kicad\\tools\\gen_sch.py\", line 243, in load_inputs\n    raise ValueError(f'Captured schematic input hash mismatch: {name}')\nValueError: Captured schematic input hash mismatch: netmap.json"
+    }
+  ],
+  "schematic_count": 15,
+  "protected_file_count": 24,
+  "standard_symbol_library_sha256": {
+    "74xGxx": "df63c0c03da370d4086856019a03737bffc5197adaae0757bbc4580b295b44da",
+    "Amplifier_Current": "33f104a37fb0718e9959d1cc174220fb3121643e75d63a6133e24984a55d6f6f",
+    "Connector": "3cfe78e4032eccb0c9ef462967d92c639796007f6f2e35927cc74092d3852f93",
+    "Connector_Generic": "e48baaea0d5256ac03cf9b72cf0f3827d460390c9098fa266cd135395921b4a4",
+    "Device": "1a1811e462bbb60aa3c681fa2cedcd7c15a4108d29b33d08972254ddbbe46e11",
+    "Diode": "af42d9311e45ee6f3962492bc7fc4f357a1fb66e18138f1d77499167407950d0",
+    "MCU_ST_STM32F4": "f68b855a8851163ff836212eef4c00fcc27904d5512f0a32749dc9abe4167aa1",
+    "Power_Protection": "e5f4159cc38e156c7048af1f63c83b5e67fb9ec91d4ed40adf73263f1aca0a70",
+    "Regulator_Switching": "cf69171b5a47fd7706a7cf14424bc9d4249138ea684f45b830860c1f84fe44fc",
+    "Sensor_Motion": "8b22ad3fe6e10d623b17472419f136eafd00a9e979648d79b105e7ab186c9c4f",
+    "Switch": "5bb7294e5815483aaec4b87c71852861150dd19cc08d792d00653853ad6a6ca2",
+    "Transistor_FET": "81b01160ec345053618e8741b40fa20d6e6085ad3fcedf9c5b863fa4dac94419",
+    "power": "95f02b021f03d46fe4f04522baa86e02668950a93932a2b32ebffc86a5a1173a"
+  },
+  "working_cad_and_bom_unchanged": true,
+  "protected_sha256": {
+    "hardware/kicad/CAN_Bus.kicad_sch": "b4488ed536809ec9478e536cb40be5d42d35ca166bde5f6fd7781907843df21a",
+    "hardware/kicad/Debug.kicad_sch": "b5fefc732fe2feca52960ec93295a1772e5cc90cba1f75c86a8e590a7619a17d",
+    "hardware/kicad/GPS_Module.kicad_sch": "29a1cba2e36d88d892d56f01fb14e35aa34f2b096fd3d0050e70f6d9b320686b",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_dru": "7d5337c38b2be25b88bbe9782c88fd56e48c7ec7e023646d69ff9805f43dc82c",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pcb": "2f604d1691ebde874075baecc2d1aa2985afa0db1a89ca277dec5d2156a553f2",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pro": "bd7405e6898de2359513fca9e25c7008c0a23771fe8e9d0aa7f13b507b7a30a3",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sch": "b2f4a6ecc46b403bdf71a5335e9f95d78885b525ca46f8d94d156afea0bc9497",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sym": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950",
+    "hardware/kicad/LoRa_Module.kicad_sch": "f75993974ab9b4c1bf68ab92871ce256e6f44d70d469b74873ad22a5fb54048a",
+    "hardware/kicad/MCU.kicad_sch": "1bd904af9fd33906c6a1fafc43b17e0f8c072126fb358eebc3637f44f3ba4f75",
+    "hardware/kicad/PowerSupply.kicad_sch": "63e6d6a238fb7fbc3764dc48d28d2bd3f39620d71bfe77a3cfbf2f5d257da91e",
+    "hardware/kicad/PWM_Outputs.kicad_sch": "f76959998e8aab96115fe7c0043acc39fdcaedd4105ab0d00ef30509b58e4f50",
+    "hardware/kicad_v2/Actuators.kicad_sch": "19ccbc4b351d8f371c53b831e3f80bc9be7fdf925b876e5c6f14da5d1ad6bfa2",
+    "hardware/kicad_v2/Debug.kicad_sch": "601919fb15d757bd0018576be9a4278cb35f92bbdd9484ab85d984f6b5eff924",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb": "6595d3b58e4a54b1d3ecbf93a69c93202503dbabcf9d279a6a578df1601d0d26",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch": "9f8754f2d40612077a687448ca6a3ae10855176f9c796f19831109b043c532eb",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym": "3a8e94baff843cfd8d3253f808d07d697424464d7a5db6d0a4a2f22c5527e121",
+    "hardware/kicad_v2/MCU.kicad_sch": "ecbec0770dd18ffdc33a859239e98700ea401bd74abe1135e2775989eb254ba7",
+    "hardware/kicad_v2/Navigation.kicad_sch": "9d07440781ce1fb8f1d98997a1f34044cdc7ac7a29b36a1b2260bd3e542ec039",
+    "hardware/kicad_v2/Power.kicad_sch": "77b234a7b111fc6105b951f4049ed4f8b4d68257905c57d70b86d1207a68dc04",
+    "hardware/kicad_v2/Radio.kicad_sch": "b4e1ee24c1b04bc9d6199e2ee57fbcffd5476d1599e1905a8d1fa9e916799930",
+    "docs/BOM.csv": "71f589596007465f98d433cfb7af735b766a5905f74390a73a25d3e1aa0b3efb",
+    "docs/BOM_V2.csv": "b95aa2bcb77328e48fcaf6ea74af611e3459863ab394b033a73a0a0dd10778d4"
+  },
+  "scope": "Isolated schematic-only regeneration and input guard; byte-for-byte comparison, not a new electrical or manufacturing qualification.",
+  "tool_sha256": {
+    "hardware/kicad/tools/gen_sch.py": "8fa6097c9911df77137fd0600bdd991cbd1a9ab8be071a445a0691c143a8b8df",
+    "hardware/kicad/tools/schematic_layout.py": "c574d54773510b8795aa7e61e17b042b476af00357e750b86a8dc4a4244d9996",
+    "hardware/kicad/tools/kicad_sym.py": "fdc2f79c1cc821d9a28dc9cbdb49aae2e6f86611d36a53a2194514c4c3a3f0f3",
+    "hardware/kicad/tools/kicad_write.py": "df9a3121b8555ac8a84290448dbd16f7a2d0664e9a7c126150ab2cb062001bd1",
+    "hardware/kicad/tools/v1_design.py": "4c3765346e6b64976aaad5f406f8662056cfece10029767837a9f47864474dc0",
+    "hardware/kicad_v2/tools/gen_v2.py": "1504bb30d96acd736ea5b70dfab8eb7e7c5171ae6d1a805d5e2275e35ed0338b",
+    "hardware/kicad_v2/tools/v2_design.py": "5b8d457625ba2dec897a0ab1e8b75ac2a57455c914030d89d772f3a255cbf3b4"
+  },
+  "result": "PASS"
+}

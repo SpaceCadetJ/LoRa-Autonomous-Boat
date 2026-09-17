@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+"""Check committed evidence/portfolio portability; no CAD generation or hardware."""
+import hashlib
+import json
+from pathlib import Path
+import re
+
+ROOT = Path(__file__).resolve().parents[2]
+
+def read_json(path):
+    return json.loads((ROOT / path).read_text(encoding="utf-8-sig"))
+
+def check_hashes(entries, label):
+    for name, expected in entries.items():
+        source = ROOT / name
+        if not source.is_file():
+            raise AssertionError(f"{label}: missing {name}")
+        actual = hashlib.sha256(source.read_bytes()).hexdigest()
+        if actual != expected:
+            raise AssertionError(f"{label}: byte mismatch {name}")
+    print(f"PASS {label}: {len(entries)} hashes")
+
+def main():
+    quality = read_json("reviews/codex/publication/native-review/review.json")
+    check_hashes(quality["input_manifest"], "published native review inputs")
+    assert quality["gates"]["fabrication"] is False, "This edition is not a fabrication release"
+    exports = read_json("docs/img/schematic_export_manifest.json")
+    check_hashes(exports["input_sha256"], "schematic export CAD")
+    check_hashes(exports["output_sha256"], "schematic PDF/SVG outputs")
+    firmware = read_json("docs/build/evidence/v1-build-manifest.json")
+    check_hashes(firmware["input_sha256"], "recorded V1 build inputs")
+    assert firmware["status"] == "build_pass_unqualified" and firmware["hardware_access"] is False
+    portfolio = read_json("docs/portfolio/portfolio.json")
+    assert portfolio["status"]["manufacturing_approved"] is False
+    paths = list(portfolio["entrypoints"].values())
+    paths += [asset["path"] for asset in portfolio["assets"]]
+    paths += [p for result in portfolio["validated_results"] for p in result["evidence"]]
+    for path in paths:
+        assert (ROOT / path).is_file(), f"Missing portfolio artifact: {path}"
+    pages = [ROOT / "README.md", ROOT / "docs/portfolio/README.md"]
+    pages += list((ROOT / "docs/build").glob("*.md"))
+    for page in pages:
+        for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
+            target = target.strip("<>").split("#", 1)[0]
+            if not target or "://" in target:
+                continue
+            assert (page.parent / target).is_file(), f"Broken document link: {page.name}: {target}"
+    print(f"PASS portfolio artifacts and {len(pages)} linked guide pages")
+    print("Scope: portable evidence and software packaging only; fabrication/hardware gates remain open.")
+
+if __name__ == "__main__":
+    main()

@@ -16,18 +16,23 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[2]
 PST = "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat"
-MAP = "hardware/kicad/_build/netmap.json"
+MAP = "docs/atlas/evidence/v1-netmap.json"
 BOM = "docs/BOM.csv"
-XML = "hardware/kicad/_build/netlist.xml"
+XML = "docs/atlas/evidence/v1-netlist.xml"
+PROVENANCE = "docs/atlas/evidence/provenance.json"
 MAIN = "firmware/Core/Src/main.c"
 MSP = "firmware/Core/Src/stm32f4xx_hal_msp.c"
 IOC = "firmware/BoatTHISTIMEITSDIFFERENT.ioc"
 DS = "docs/research/DATASHEET_NOTES.md"
 SELF = "docs/atlas/generate_atlas.py"
-INPUTS = (PST, MAP, BOM, XML, MAIN, MSP, IOC, DS, SELF)
+INPUTS = (PST, MAP, BOM, XML, MAIN, MSP, IOC, DS, PROVENANCE, SELF)
 RAW = {p: (ROOT / p).read_bytes() for p in INPUTS}
 TEXT = {p: raw.decode("utf-8-sig").replace("\r\n", "\n") for p, raw in RAW.items()}
 MANIFEST = [{"path": p, "sha256": hashlib.sha256(RAW[p]).hexdigest(), "bytes": len(RAW[p])} for p in INPUTS]
+for artifact in json.loads(TEXT[PROVENANCE])["artifacts"]:
+    raw = RAW[artifact["path"]]
+    if len(raw) != artifact["bytes"] or hashlib.sha256(raw).hexdigest() != artifact["sha256"]:
+        raise ValueError("Preserved V1 evidence differs from its provenance: " + artifact["path"])
 
 
 def evidence(path, needle):
@@ -190,7 +195,7 @@ def readme_md(connectors):
     cext2_ev = ev(PST, "NODE_NAME\tCEXT 2")
     cext1_ev = ev(PST, "NODE_NAME\tCEXT 1")
     boot_ev = ev(PST, "NODE_NAME\tU3 60")
-    lines = ["# V1 connector atlas", "", "This atlas connects the authoritative v5 electrical netlist to the current KiCad reference names, BOM, and firmware. It is a wiring/review aid for the faithful V1 reconstruction, not a corrected V2 hardware release or a bench sign-off.", "", COMMON, "", "## Navigate", "", "| Connector / test point | Allegro reference | KiCad reference | Pins |", "|---|---|---|---|"]
+    lines = ["# V1 connector atlas", "", "This atlas connects the authoritative v5 electrical netlist to preserved V1 KiCad net evidence and the repository BOM and firmware. It is a wiring/review aid for the faithful V1 reconstruction, not a corrected V2 hardware release or a bench sign-off.", "", COMMON, "", "## Navigate", "", "| Connector / test point | Allegro reference | KiCad reference | Pins |", "|---|---|---|---|"]
     for c in connectors:
         lines.append(f"| [{c['title']}]({c['allegro_ref']}.md) | {c['allegro_ref']} | {c['id']} | {len(c['pins'])} |")
     lines += ["", "[Full BOM](../BOM.csv) · [Schematic PDF](../img/v1_schematic.pdf) · [PCB top](../img/v1_pcb_top.png) · [PCB bottom](../img/v1_pcb_bottom.png) · [Viewer JSON](../../pm/data/connectors.json)", "", "## Known V1 issues that affect connection decisions", "",
@@ -203,7 +208,9 @@ def readme_md(connectors):
               "- **External power:** ESC and servo header pin 1 are both on +3V3. Exact loads, BEC wiring, regulator thermal margin, and connector orientation are not verified by this atlas.",
               "- **Historical tables:** older DSN-derived documentation contained incorrect V5 CAN/debug pin tables and TP2. This atlas extracts v5 directly; docs/NETLIST.md is maintained separately by the primary agent and is not an input. TP2 is absent from both v5 source and the current BOM.",
               "", "## Reproduce and refresh", "", "Run `python docs/atlas/generate_atlas.py` from the repository (or use the installed KiCad Python executable). Run with `--check` to compare outputs with the same source snapshot without writing. Only Python's standard library is required.", "",
-              "The generator parses every v5 net/node, preserves Allegro reference and raw pin identifiers, maps readable nets using the current KiCad netmap, obtains KiCad references from the BOM, and compares each connected atlas pin's entire source net membership with the exported KiCad XML. NC is never treated as an electrical net. Reviewed firmware assertions cause generation to stop if key behavior changes. Full source SHA-256 hashes and byte sizes are stored in the JSON; inputs are rehashed before outputs are written to detect concurrent edits.", "",
+              "The generator parses every v5 net/node, preserves Allegro reference and raw pin identifiers, maps readable nets using the preserved V1 KiCad netmap, obtains KiCad references from the BOM, and compares each connected atlas pin's entire source net membership with the preserved exported KiCad XML. NC is never treated as an electrical net. Reviewed firmware assertions cause generation to stop if key behavior changes. Full source SHA-256 hashes and byte sizes are stored in the JSON; inputs are rehashed before outputs are written to detect concurrent edits.", "",
+              "[Preserved evidence and provenance](evidence/README.md) replace the original ignored build paths. These byte-identical snapshots are the evidence used by the original atlas, not newly generated CAD results. The generator verifies their recorded hashes before parsing and never reads hardware/kicad/_build. Commit the evidence directory along with the atlas so a clean checkout needs only Python and the repository files. Every pin evidence path is checked for existence and a valid line number.", "",
+              "Run `python docs/atlas/check_portability.py` to verify a source-only checkout copy with no ignored build directory or CAD tools. It also checks that altered snapshot bytes are rejected. The temporary copy is created and cleaned inside docs/atlas; original inputs remain untouched.", "",
               "A successful atlas check proves repeatable extraction and agreement with that exported XML snapshot. It does not independently validate the current CAD copper, a stale XML export, a physical board, firmware build/flash results, or external harnesses. Root S2 validation owns CAD equivalence checks. Manufacturer links were checked on 2026-09-17; local datasheet research remains a separately authored review input.", "",
               "Before adaptation: identify fitted radio/GPS and actuator hardware, resolve the power/boot/CAN defects, label the actual harness, scope unloaded PWM, add/test command failsafe, then perform documented bench bring-up. Voice, text, and location handheld requirements are a future platform requirement, not implemented on these connectors.", "", "## Input snapshot", "", "| Input | SHA-256 |", "|---|---|"]
     lines += [f"| [{x['path']}](../../{x['path'].replace(' ', '%20')}) | `{x['sha256']}` |" for x in MANIFEST]
@@ -215,6 +222,11 @@ def main():
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     connectors = make_connectors()
+    for connector in connectors:
+        for pin in connector["pins"]:
+            for item in pin["evidence"]:
+                if item["path"] not in TEXT or not (1 <= item["line"] <= len(TEXT[item["path"]].splitlines())):
+                    raise ValueError("Invalid pin evidence reference: " + repr(item))
     assert len(connectors) == 12 and sum(len(c["pins"]) for c in connectors) == 36
     assert not any(n["ref"] == "TP2" for nodes in NETS.values() for n in nodes)
     report = {"generated_at": dt.datetime.now(dt.timezone.utc).isoformat(), "sources": MANIFEST,

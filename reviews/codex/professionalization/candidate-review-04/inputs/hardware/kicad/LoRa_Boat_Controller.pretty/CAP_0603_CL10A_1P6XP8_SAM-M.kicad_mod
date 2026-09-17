@@ -1,0 +1,103 @@
+(footprint "CAP_0603_CL10A_1P6XP8_SAM-M"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Allegro footprint CAP_0603_CL10A_1P6XP8_SAM-M as fabricated on senior design v5.brd")
+	(tags "allegro CAP_0603_CL10A_1P6XP8_SAM-M")
+	(property "Reference" "REF**"
+		(at 0 -1.4859 0)
+		(layer "F.Fab")
+		(uuid "32809ca1-e5f7-5cb7-8c91-fde5eb850dd7")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "CAP_0603_CL10A_1P6XP8_SAM-M"
+		(at 0 1.4859 0)
+		(layer "F.Fab")
+		(uuid "2e00cc49-ccfb-585d-bc7c-77a24e83ee09")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4e5f3a35-3add-5598-91c4-52d7c83adfe4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "edf6113f-a238-5566-8cb6-ac645a396fe9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.4097 -0.4699)
+		(end 1.4097 0.4699)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a0f11925-00fd-5a6b-ad61-184ec335530f")
+	)
+	(fp_rect
+		(start -1.4097 -0.4699)
+		(end 1.4097 0.4699)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "9ffa0e7e-d495-58fc-949a-9df2a7546ec4")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "5b9db93f-200e-5ede-a5ff-941a72f17646")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "2" smd rect
+		(at 0.8763 0)
+		(size 1.0668 0.9398)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "a674705c-41ac-5d6d-827f-eaa4d69154c7")
+	)
+	(pad "1" smd rect
+		(at -0.8763 0)
+		(size 1.0668 0.9398)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "cab67d8e-3a47-529f-9840-49f5cc950232")
+	)
+	(embedded_fonts no)
+)

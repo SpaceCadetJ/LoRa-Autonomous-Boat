@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-09-17T20:34:56.179622+00:00",
+  "kicad_version": "9.0.7",
+  "input_sha256": {
+    "hardware/kicad/CAN_Bus.kicad_sch": "b4488ed536809ec9478e536cb40be5d42d35ca166bde5f6fd7781907843df21a",
+    "hardware/kicad/Debug.kicad_sch": "b5fefc732fe2feca52960ec93295a1772e5cc90cba1f75c86a8e590a7619a17d",
+    "hardware/kicad/GPS_Module.kicad_sch": "29a1cba2e36d88d892d56f01fb14e35aa34f2b096fd3d0050e70f6d9b320686b",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_dru": "7d5337c38b2be25b88bbe9782c88fd56e48c7ec7e023646d69ff9805f43dc82c",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pcb": "2f604d1691ebde874075baecc2d1aa2985afa0db1a89ca277dec5d2156a553f2",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_prl": "83b9ceca32ebd260273d3e7f2cc1393135865034ea479055f8b22206a90af252",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pro": "bd7405e6898de2359513fca9e25c7008c0a23771fe8e9d0aa7f13b507b7a30a3",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sch": "b2f4a6ecc46b403bdf71a5335e9f95d78885b525ca46f8d94d156afea0bc9497",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sym": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950",
+    "hardware/kicad/LoRa_Module.kicad_sch": "f75993974ab9b4c1bf68ab92871ce256e6f44d70d469b74873ad22a5fb54048a",
+    "hardware/kicad/MCU.kicad_sch": "1bd904af9fd33906c6a1fafc43b17e0f8c072126fb358eebc3637f44f3ba4f75",
+    "hardware/kicad/PowerSupply.kicad_sch": "63e6d6a238fb7fbc3764dc48d28d2bd3f39620d71bfe77a3cfbf2f5d257da91e",
+    "hardware/kicad/PWM_Outputs.kicad_sch": "f76959998e8aab96115fe7c0043acc39fdcaedd4105ab0d00ef30509b58e4f50",
+    "hardware/kicad_v2/Actuators.kicad_sch": "19ccbc4b351d8f371c53b831e3f80bc9be7fdf925b876e5c6f14da5d1ad6bfa2",
+    "hardware/kicad_v2/Debug.kicad_sch": "601919fb15d757bd0018576be9a4278cb35f92bbdd9484ab85d984f6b5eff924",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb": "6595d3b58e4a54b1d3ecbf93a69c93202503dbabcf9d279a6a578df1601d0d26",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_prl": "4ed8511cae4ad0066f7189653c54eeddd218f82c66f8f217dbcee3df51dd430b",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch": "9f8754f2d40612077a687448ca6a3ae10855176f9c796f19831109b043c532eb",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym": "3a8e94baff843cfd8d3253f808d07d697424464d7a5db6d0a4a2f22c5527e121",
+    "hardware/kicad_v2/MCU.kicad_sch": "ecbec0770dd18ffdc33a859239e98700ea401bd74abe1135e2775989eb254ba7",
+    "hardware/kicad_v2/Navigation.kicad_sch": "9d07440781ce1fb8f1d98997a1f34044cdc7ac7a29b36a1b2260bd3e542ec039",
+    "hardware/kicad_v2/Power.kicad_sch": "77b234a7b111fc6105b951f4049ed4f8b4d68257905c57d70b86d1207a68dc04",
+    "hardware/kicad_v2/Radio.kicad_sch": "b4e1ee24c1b04bc9d6199e2ee57fbcffd5476d1599e1905a8d1fa9e916799930"
+  },
+  "commands": [
+    [
+      "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+      "sch",
+      "export",
+      "pdf",
+      "--output",
+      "C:\\Users\\Jay\\AppData\\Local\\Temp\\lora-schematic-export-1z3i5h2p\\v1_schematic.pdf",
+      "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\hardware\\kicad\\LoRa_Boat_Controller.kicad_sch"
+    ],
+    [
+      "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+      "sch",
+      "export",
+      "svg",
+      "--output",
+      "C:\\Users\\Jay\\AppData\\Local\\Temp\\lora-schematic-export-1z3i5h2p\\v1\\",
+      "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\hardware\\kicad\\LoRa_Boat_Controller.kicad_sch"
+    ],
+    [
+      "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+      "sch",
+      "export",
+      "pdf",
+      "--output",
+      "C:\\Users\\Jay\\AppData\\Local\\Temp\\lora-schematic-export-1z3i5h2p\\v2_schematic.pdf",
+      "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\hardware\\kicad_v2\\LoRa_Boat_Controller_V2.kicad_sch"
+    ],
+    [
+      "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+      "sch",
+      "export",
+      "svg",
+      "--output",
+      "C:\\Users\\Jay\\AppData\\Local\\Temp\\lora-schematic-export-1z3i5h2p\\v2\\",
+      "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\hardware\\kicad_v2\\LoRa_Boat_Controller_V2.kicad_sch"
+    ]
+  ],
+  "output_sha256": {
+    "docs/img/v1_schematic.pdf": "37b74e0a88f0609152c4ec3ad8f68873696b9b786f0e56dbb3a7651c4f17f363",
+    "docs/img/v1_sch_CAN_Bus.svg": "71265183d1085d615d7100a461fc84f866f1f0ae0000159668164d57e3a20249",
+    "docs/img/v1_sch_Debug.svg": "4e1bde76a9a07c529af5d8fb322a4d222a5014c39ae447714741a9ab260059e5",
+    "docs/img/v1_sch_GPS_Module.svg": "e385d0925d08e2b0c70e0a683136a893d9788356e24e38c77d0d5cd32ecb8de6",
+    "docs/img/v1_sch_LoRa_Module.svg": "2694c887485cba9f174297b906989fd89fd817865d6586da3558e128abfaa642",
+    "docs/img/v1_sch_MCU.svg": "92df31a848c110fbe9de630e35e4529583008ab09f4d89f1bdae65d7a4eca2a7",
+    "docs/img/v1_sch_PowerSupply.svg": "edcf2c5b0f1ece37aa9f3901232a3fcb2af02eb38fe4aa79e295c90755412bf7",
+    "docs/img/v1_sch_PWM_Outputs.svg": "7d922e5efa6883f86b6a04ce7c7fe1728f60125b4a4126c64768027278db8deb",
+    "docs/img/v1_sch_Root.svg": "f718b1fdf7e05d87451b2217906ffe5e329f7809888c68da461487bf9d61b8df",
+    "docs/img/v2_schematic.pdf": "27fa3745ee287070069cd7a02afb67c640735c75223be5e2a5afa71303e38093",
+    "docs/img/v2_sch_Actuators.svg": "49a296214e1571f1c6db4557b2af92c29ca69df86090653801b5faff5e28f19c",
+    "docs/img/v2_sch_Debug.svg": "c271ce758f600b018d71f704d1ac3b49609bcd62877a9c0b84040fbf71442d22",
+    "docs/img/v2_sch_MCU.svg": "81998e63ce4fb9112356e54c95be7638e690d37ed72719d9d68c9faaad71cdde",
+    "docs/img/v2_sch_Navigation.svg": "724f64b62a21cb7cffca97d38ae93a209fda3e3aa061b7e2ccc8a82dbf792cd5",
+    "docs/img/v2_sch_Power.svg": "f6ffb66f577ba447f06bd09caf3c90c58e8d6154cb3bff720e06340abbb4a8e1",
+    "docs/img/v2_sch_Radio.svg": "ba15415448a74e1058ee50facf77480f1783a27e2235188c16459431c5e748e5",
+    "docs/img/v2_sch_root.svg": "79779f8f0576b7d65290d498c7abe8b207e124f56c92224b247159102b069bf5"
+  },
+  "scope": "Rendering only; visual review and electrical acceptance are separate checks."
+}

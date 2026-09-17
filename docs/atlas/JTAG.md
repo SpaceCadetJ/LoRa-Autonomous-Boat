@@ -36,7 +36,7 @@ Footprint: `LoRa_Boat_Controller:SAMTEC_FTSH-105-XX-X-DV`. [Full BOM](../BOM.csv
 
 Measure rail relative to TP5 with loads disconnected after V1 power defects are reviewed.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:358](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L358); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:322](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L322); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:325](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L325); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:328](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L328); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:331](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L331); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:334](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L334); [hardware/kicad/_build/netmap.json:2](../../hardware/kicad/_build/netmap.json#L2).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:358](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L358); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:322](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L322); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:325](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L325); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:328](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L328); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:331](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L331); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:334](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L334); [docs/atlas/evidence/v1-netmap.json:2](../../docs/atlas/evidence/v1-netmap.json#L2).
 
 ### Pin 2 — SWDIO
 
@@ -44,7 +44,7 @@ Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:358]
 
 Verify cable numbering against actual header view before debug attachment.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:421](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L421); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:418](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L418); [hardware/kicad/_build/netmap.json:27](../../hardware/kicad/_build/netmap.json#L27); [firmware/BoatTHISTIMEITSDIFFERENT.ioc:58](../../firmware/BoatTHISTIMEITSDIFFERENT.ioc#L58).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:421](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L421); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:418](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L418); [docs/atlas/evidence/v1-netmap.json:27](../../docs/atlas/evidence/v1-netmap.json#L27); [firmware/BoatTHISTIMEITSDIFFERENT.ioc:58](../../firmware/BoatTHISTIMEITSDIFFERENT.ioc#L58).
 
 ### Pin 3 — GND
 
@@ -52,7 +52,7 @@ Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:421]
 
 Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:205](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L205); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:169](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L169); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:172](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L172); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:175](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L175); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:178](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L178); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:181](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L181); [hardware/kicad/_build/netmap.json:3](../../hardware/kicad/_build/netmap.json#L3).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:205](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L205); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:169](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L169); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:172](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L172); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:175](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L175); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:178](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L178); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:181](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L181); [docs/atlas/evidence/v1-netmap.json:3](../../docs/atlas/evidence/v1-netmap.json#L3).
 
 ### Pin 4 — SWCLK
 
@@ -60,7 +60,7 @@ Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:205]
 
 Verify continuity pin 4 → U3-49; no successful programming session recorded here.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:431](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L431); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:428](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L428); [hardware/kicad/_build/netmap.json:26](../../hardware/kicad/_build/netmap.json#L26); [firmware/BoatTHISTIMEITSDIFFERENT.ioc:61](../../firmware/BoatTHISTIMEITSDIFFERENT.ioc#L61).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:431](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L431); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:428](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L428); [docs/atlas/evidence/v1-netmap.json:26](../../docs/atlas/evidence/v1-netmap.json#L26); [firmware/BoatTHISTIMEITSDIFFERENT.ioc:61](../../firmware/BoatTHISTIMEITSDIFFERENT.ioc#L61).
 
 ### Pin 5 — GND
 
@@ -68,7 +68,7 @@ Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:431]
 
 Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:202](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L202); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:169](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L169); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:172](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L172); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:175](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L175); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:178](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L178); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:181](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L181); [hardware/kicad/_build/netmap.json:3](../../hardware/kicad/_build/netmap.json#L3).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:202](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L202); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:169](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L169); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:172](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L172); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:175](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L175); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:178](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L178); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:181](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L181); [docs/atlas/evidence/v1-netmap.json:3](../../docs/atlas/evidence/v1-netmap.json#L3).
 
 ### Pin 6 — SWO_TDO
 
@@ -76,7 +76,7 @@ Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:202]
 
 Verify trace/debug configuration before expecting SWO output.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:411](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L411); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:408](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L408); [hardware/kicad/_build/netmap.json:28](../../hardware/kicad/_build/netmap.json#L28).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:411](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L411); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:408](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L408); [docs/atlas/evidence/v1-netmap.json:28](../../docs/atlas/evidence/v1-netmap.json#L28).
 
 ### Pin 7 — NC
 
@@ -92,7 +92,7 @@ Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:648]
 
 Confirm chosen debug mode; SWD normally uses SWDIO/SWCLK instead.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:464](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L464); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:461](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L461); [hardware/kicad/_build/netmap.json:30](../../hardware/kicad/_build/netmap.json#L30).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:464](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L464); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:461](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L461); [docs/atlas/evidence/v1-netmap.json:30](../../docs/atlas/evidence/v1-netmap.json#L30).
 
 ### Pin 9 — GND
 
@@ -100,7 +100,7 @@ Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:464]
 
 Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:199](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L199); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:169](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L169); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:172](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L172); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:175](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L175); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:178](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L178); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:181](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L181); [hardware/kicad/_build/netmap.json:3](../../hardware/kicad/_build/netmap.json#L3).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:199](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L199); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:169](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L169); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:172](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L172); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:175](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L175); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:178](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L178); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:181](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L181); [docs/atlas/evidence/v1-netmap.json:3](../../docs/atlas/evidence/v1-netmap.json#L3).
 
 ### Pin 10 — NRST
 
@@ -108,6 +108,6 @@ Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:199]
 
 Verify reset pull network and observe reset release waveform.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:474](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L474); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:471](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L471); [hardware/kicad/_build/netmap.json:23](../../hardware/kicad/_build/netmap.json#L23).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:474](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L474); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:471](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L471); [docs/atlas/evidence/v1-netmap.json:23](../../docs/atlas/evidence/v1-netmap.json#L23).
 
 [Atlas index and snapshot provenance](README.md) · [Schematic PDF](../img/v1_schematic.pdf) · [PCB top](../img/v1_pcb_top.png) · [PCB bottom](../img/v1_pcb_bottom.png)

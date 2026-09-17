@@ -1,0 +1,9 @@
+{
+ "footprints": 44,
+ "pads_checked": 172,
+ "max_pad_error_mil": 4.43961293735052e-13,
+ "pad_errors": [],
+ "unconnected": 0,
+ "zones": 30,
+ "nets": 33
+}

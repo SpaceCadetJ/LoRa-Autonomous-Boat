@@ -1,6 +1,6 @@
 # V1 connector atlas
 
-This atlas connects the authoritative v5 electrical netlist to the current KiCad reference names, BOM, and firmware. It is a wiring/review aid for the faithful V1 reconstruction, not a corrected V2 hardware release or a bench sign-off.
+This atlas connects the authoritative v5 electrical netlist to preserved V1 KiCad net evidence and the repository BOM and firmware. It is a wiring/review aid for the faithful V1 reconstruction, not a corrected V2 hardware release or a bench sign-off.
 
 Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-right view. Board side, connector key, cable view, and pin-1 marking require physical verification. All voltages and waveforms are design/code expectations, not bench measurements.
 
@@ -38,7 +38,11 @@ Electrical pin numbers below come from v5 pstxnet.dat, not a physical left-to-ri
 
 Run `python docs/atlas/generate_atlas.py` from the repository (or use the installed KiCad Python executable). Run with `--check` to compare outputs with the same source snapshot without writing. Only Python's standard library is required.
 
-The generator parses every v5 net/node, preserves Allegro reference and raw pin identifiers, maps readable nets using the current KiCad netmap, obtains KiCad references from the BOM, and compares each connected atlas pin's entire source net membership with the exported KiCad XML. NC is never treated as an electrical net. Reviewed firmware assertions cause generation to stop if key behavior changes. Full source SHA-256 hashes and byte sizes are stored in the JSON; inputs are rehashed before outputs are written to detect concurrent edits.
+The generator parses every v5 net/node, preserves Allegro reference and raw pin identifiers, maps readable nets using the preserved V1 KiCad netmap, obtains KiCad references from the BOM, and compares each connected atlas pin's entire source net membership with the preserved exported KiCad XML. NC is never treated as an electrical net. Reviewed firmware assertions cause generation to stop if key behavior changes. Full source SHA-256 hashes and byte sizes are stored in the JSON; inputs are rehashed before outputs are written to detect concurrent edits.
+
+[Preserved evidence and provenance](evidence/README.md) replace the original ignored build paths. These byte-identical snapshots are the evidence used by the original atlas, not newly generated CAD results. The generator verifies their recorded hashes before parsing and never reads hardware/kicad/_build. Commit the evidence directory along with the atlas so a clean checkout needs only Python and the repository files. Every pin evidence path is checked for existence and a valid line number.
+
+Run `python docs/atlas/check_portability.py` to verify a source-only checkout copy with no ignored build directory or CAD tools. It also checks that altered snapshot bytes are rejected. The temporary copy is created and cleaned inside docs/atlas; original inputs remain untouched.
 
 A successful atlas check proves repeatable extraction and agreement with that exported XML snapshot. It does not independently validate the current CAD copper, a stale XML export, a physical board, firmware build/flash results, or external harnesses. Root S2 validation owns CAD equivalence checks. Manufacturer links were checked on 2026-09-17; local datasheet research remains a separately authored review input.
 
@@ -49,11 +53,12 @@ Before adaptation: identify fitted radio/GPS and actuator hardware, resolve the 
 | Input | SHA-256 |
 |---|---|
 | [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat) | `b88c36244bb3e3eb4d10712ce8ca39ddb5908e2c3225aa187155f9f4dca6b02c` |
-| [hardware/kicad/_build/netmap.json](../../hardware/kicad/_build/netmap.json) | `b9f5502f8c0e06aab989e1558b25aba334c8a6395102dbcc328f358ce43b54e9` |
+| [docs/atlas/evidence/v1-netmap.json](../../docs/atlas/evidence/v1-netmap.json) | `b9f5502f8c0e06aab989e1558b25aba334c8a6395102dbcc328f358ce43b54e9` |
 | [docs/BOM.csv](../../docs/BOM.csv) | `71f589596007465f98d433cfb7af735b766a5905f74390a73a25d3e1aa0b3efb` |
-| [hardware/kicad/_build/netlist.xml](../../hardware/kicad/_build/netlist.xml) | `d16588c8f579a2a2324b6d6d940b7e0dc2e861f66a75ea191dab4e3c3811a68a` |
+| [docs/atlas/evidence/v1-netlist.xml](../../docs/atlas/evidence/v1-netlist.xml) | `d16588c8f579a2a2324b6d6d940b7e0dc2e861f66a75ea191dab4e3c3811a68a` |
 | [firmware/Core/Src/main.c](../../firmware/Core/Src/main.c) | `088bc6e61b8865e1bbf5c8a585cb8524134d418db22926f306627440957d495a` |
 | [firmware/Core/Src/stm32f4xx_hal_msp.c](../../firmware/Core/Src/stm32f4xx_hal_msp.c) | `180c6eefe84d1e58d7f01f635faad358ccc64a3848e0ff2e3f9d700e2d45a1c0` |
 | [firmware/BoatTHISTIMEITSDIFFERENT.ioc](../../firmware/BoatTHISTIMEITSDIFFERENT.ioc) | `eb9df4055fe4f072996c6a92f7b4fc9039c39f28451d9eefeb3bc702370a0579` |
 | [docs/research/DATASHEET_NOTES.md](../../docs/research/DATASHEET_NOTES.md) | `b5171f1d3963c6c293c95935485ca9cab86cb0385e6a2174726a99ca3bb73a3d` |
-| [docs/atlas/generate_atlas.py](../../docs/atlas/generate_atlas.py) | `204e288f63b04842134921c2678ec6a840aa302536f923cc30adfa96d5a36a77` |
+| [docs/atlas/evidence/provenance.json](../../docs/atlas/evidence/provenance.json) | `54ffc1f10921b790befc9e86b5634882c468f675fbe0695ad17591fa26e164f1` |
+| [docs/atlas/generate_atlas.py](../../docs/atlas/generate_atlas.py) | `56ff3a3e144c72c134bfc5ebf2e7c1f22bdb9079686aab257e96825e47701158` |

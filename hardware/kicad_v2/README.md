@@ -1,6 +1,6 @@
 # LoRa Boat Controller V2 — KiCad 9 project (Phase C draft)
 
-Everything in this folder except `fp-lib-table` / `sym-lib-table` is **generated** from `tools/v2_design.py`. Edit the design there, re-run the chain, and commit both the source and the outputs. Do not hand-edit the `.kicad_sch` / `.kicad_pcb` files unless you also stop regenerating them.
+Electrical intent is generated from `tools/v2_design.py`; schematic presentation is controlled by `../kicad/tools/schematic_layout.py` and the shared renderer. Keep source and generated outputs together. The [build guide](../../docs/build/README.md), [schematic editing procedure](../../docs/build/SCHEMATICS.md) and [current independent checks](../../reviews/codex/professionalization/QUALITY_HANDOFF.md) describe the latest review packet. Existing PCB routing is preserved by schematic-only commands.
 
 | File | What it is |
 |---|---|
@@ -15,14 +15,17 @@ Everything in this folder except `fp-lib-table` / `sym-lib-table` is **generated
 
 ```bash
 python hardware/kicad_v2/tools/gen_v2.py check                                   # design-rule sanity: every pin either in a net or in NC_PINS
-python hardware/kicad_v2/tools/gen_v2.py                                         # library + schematic + project + unrouted PCB + docs/BOM_V2.csv
+python hardware/kicad_v2/tools/gen_v2.py sch                                     # schematic-only refresh; preserves PCB/project/BOM
+python hardware/kicad/tools/export_review.py                                    # PDF/SVG rendering only; no CAD generation
 "C:/Users/Jay/AppData/Local/Programs/KiCad/9.0/bin/python.exe" hardware/kicad_v2/tools/placement_check.py   # courtyard overlaps / parts off the board
 "C:/Users/Jay/AppData/Local/Programs/KiCad/9.0/bin/kicad-cli.exe" sch erc --severity-all -o hardware/kicad_v2/_build/erc.rpt hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch
 "C:/Users/Jay/AppData/Local/Programs/KiCad/9.0/bin/python.exe" hardware/kicad_v2/tools/route_v2.py all     # DSN (B.Cu GND plane only) -> freerouting -> SES import -> pour fill
 "C:/Users/Jay/AppData/Local/Programs/KiCad/9.0/bin/kicad-cli.exe" pcb drc --severity-error -o hardware/kicad_v2/_build/drc.rpt hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb
 ```
 
-`route_v2.py` needs Java 21 and `freerouting-2.1.0.jar` at `%LOCALAPPDATA%\freerouting\` (or `FREEROUTING_JAR`); download from https://github.com/freerouting/freerouting/releases/download/v2.1.0/freerouting-2.1.0.jar (2.4.x needs Java 25). Routing is not stored in the generator: after any `gen_v2.py` run the board is unrouted again and `route_v2.py all` must be repeated.
+`gen_v2.py pcb` explicitly replaces the PCB with an unrouted board; `gen_v2.py all` (also the legacy no-argument default) regenerates libraries, schematic, project, unrouted PCB and BOM. Use those only for an intentional full rebuild. `check`, `bom` and `sch` have separate scopes; `sch` no longer destroys routing. An isolated regression test verifies that separation.
+
+`route_v2.py` needs Java 21 and `freerouting-2.1.0.jar` at `%LOCALAPPDATA%\freerouting\` (or `FREEROUTING_JAR`). Routing is separate from schematic presentation; do not reroute merely to refresh drawings. The routing command above remains an explicit board mutation, outside the presentation-only workflow.
 
 ## Design source (`tools/v2_design.py`)
 
@@ -33,6 +36,8 @@ python hardware/kicad_v2/tools/gen_v2.py                                        
 Requirement traceability is in the schematic sheet descriptions and in `docs/V2_REQUIREMENTS.md` (REQ-xx ids); the design decisions still open for Jay are in `BLOCKERS.md`.
 
 ## Known state of this draft
+
+Current independent results supersede the historical routing count below: **3 unconnected entries, 101 DRC warnings, 212 schematic-parity entries**, zero DRC errors; ERC has one pre-existing U6 AD0 pin-type warning. No fabrication acceptance. [Assembly maps and procedures](../../docs/build/ASSEMBLY_V2.md) are now available; physical orientation and device/footprint qualification remain open.
 
 - DRC 0 violations, **2 unconnected GND connections**: two pour islands (near U1 at board (42, 18.5) mm and near U7 at (55.7, 9.2) mm) are fenced in by other-net tracks on both layers. `route_v2.py import` stitches what it can (one of three islands on this layout); the last two need a hand-placed via each in KiCad (or a rip-up of the fencing track). The next layout pre-places a GND via next to every fine-pitch GND pad before routing to avoid this.
 - Autorouted, not hand-optimised: expect to tidy the buck-converter loops (U2/L1/D3/C5-C6 and U3/L2/D4/C8-C9), the crystal traces and the USB pair before fabrication; keep the placement.

@@ -1,0 +1,12 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "2F604D1691EBDE874075BAECC2D1AA2985AFA0DB1A89CA277DEC5D2156A553F2",
+    "Path": "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\hardware\\kicad\\LoRa_Boat_Controller.kicad_pcb"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "6595D3B58E4A54B1D3ECBF93A69C93202503DBABCF9D279A6A578DF1601D0D26",
+    "Path": "C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\hardware\\kicad_v2\\LoRa_Boat_Controller_V2.kicad_pcb"
+  }
+]

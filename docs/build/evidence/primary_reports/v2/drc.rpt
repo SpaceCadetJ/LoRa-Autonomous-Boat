@@ -1,0 +1,22 @@
+** Drc report for LoRa_Boat_Controller_V2.kicad_pcb **
+** Created on 2026-09-17T13:04:15-0500 **
+
+** Found 0 DRC violations **
+
+** Found 3 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(50.0000 mm, 50.0000 mm): Zone 'GND pour F.Cu' [GND] on F.Cu, priority 0
+    @(50.0000 mm, 50.0000 mm): Zone 'GND pour B.Cu' [GND] on B.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(50.0000 mm, 50.0000 mm): Zone 'GND pour B.Cu' [GND] on B.Cu, priority 0
+    @(50.0000 mm, 50.0000 mm): Zone 'GND pour F.Cu' [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(50.0000 mm, 50.0000 mm): Zone 'GND pour F.Cu' [GND] on F.Cu, priority 0
+    @(50.0000 mm, 50.0000 mm): Zone 'GND pour F.Cu' [GND] on F.Cu, priority 0
+
+** Found 0 Footprint errors **
+
+** End of Report **

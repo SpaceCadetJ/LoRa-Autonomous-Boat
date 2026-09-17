@@ -1,5 +1,30 @@
 # Start here: Codex review checkpoint
 
+## Latest checkpoint — 2026-09-17, schematic and build review edition
+
+Read [professionalization/HANDOFF.md](professionalization/HANDOFF.md) and [docs/build/README.md](../../docs/build/README.md) first. Jay authorized Codex to continue the professional schematics, purchasing/assembly, V1/V2 programming and review workflow while the other agent is inactive. Current ownership supersedes the earlier reservations below.
+
+The delivered packet includes fifteen annotated schematic pages, verified preservation of 172 V1 / 361 V2 pins, a protected schematic-only generator command, ordering candidates/holds and assembly maps, a reproducible unqualified V1 firmware build, separate flashing guides and a manual CI definition. Strict combined review remains failed for one pre-existing V2 ERC warning. V2 also has three unconnected PCB entries, warnings/parity discrepancies and no firmware image; it is not fabrication-ready. The viewer now presents these current results beside the historic S2 evidence.
+
+The next smallest packet is a pad-level disposition of the three V2 open connections and U6 AD0 warning, followed by a reviewed V2 pin/protocol contract. Avoid full CAD regeneration/rerouting during documentation work. All source/output hashes, reproduction commands and remaining limits are in the linked handoff. The hourly continuation prompt has been updated to this scope and remains quiet for non-actionable results.
+
+## Previous checkpoint — 2026-09-17, viewer delivery
+
+This section supersedes the initial intake state below. Resume through [pm/README.md](../../pm/README.md), then the latest root [handoff](../../HANDOFF.md) and [ownership](../../FILE_OWNERSHIP.md). Check Git status/HEAD before writing; the primary remains responsible for CAD, firmware, generators and Git integration. Codex owns `pm/**`, `docs/atlas/**`, `reviews/**`; coordination files are append-only.
+
+- The local [interactive viewer](../../pm/index.html) includes V1 and V2 design assets, searchable BOMs and selected manufacturer references, the V1 connector atlas, source/protocol proposals, independent versus reported checks, findings-to-requirements links, decisions, documents and exported review notes. It opens directly or through the loopback server described in its README.
+- [V1 atlas](../../docs/atlas/README.md): 12 connectors/test points and 36 pins, traced from source evidence with firmware citations. Physical orientation and bench readings remain unverified. V2 atlas is not yet done.
+- [S2 independent verification](S2_VERIFICATION.md): historic `639e08f` only. All 172 pins / 44 parts agree, ERC 0, DRC 0 errors / 0 unconnected / 67 warnings, hole centers 53/53. Additional native parity: 139 classified metadata warnings. No electrical mismatch found; no-change schematic update workflow and V5 drill sizes remain unverified. The earlier global blocked label was narrowed; raw results did not change.
+- Primary V2 release at `a6316e9` / `v2-design-draft` reports 118 parts, 71 nets, 68 grouped BOM lines and two open ground connections. The current CSV independently parses as 67 component rows totaling 118 parts; the report count is stale. Treat V2 numbers as reported, pending independent verification. Current source documents contain 35 distinct V1 findings and 45 requirements.
+- Standalone files in `firmware_prototype/` are uncompiled review proposals. No functional firmware fix was integrated.
+- Jay requires **voice + text + location**. The primary handoff additionally reports expanded vehicle/fleet scope; wait for its architecture/requirements documents before asserting that expanded scope is implemented. Validate voice/RC coexistence before radio selection. `REQ-CTL-01` currently says a default **1.0 s** loss timeout; the primary prompt's **500 ms** summary conflicts and must be reconciled in the RF packet.
+
+**Next smallest packet:** independently snapshot the released V2 inputs, record hashes and run ERC/DRC plus part/net/BOM inventory in `reviews/codex/` without invoking generators or changing source CAD. Then review one power/control subsystem against actual requirements. Later packets: V2 atlas, protocol prototype build/tests, quantitative voice/RC coexistence, handheld/application views from released documents.
+
+An hourly continuation automation is active. It works bounded packets in released scopes and should notify only on meaningful deliverables, new blocking findings or required decisions. Account/runtime availability may interrupt runs; these files are the durable resume context.
+
+## Historical initial intake — retained for context
+
 Updated 2026-09-17 UTC. User objective: understand and improve the conversion, documentation and readability first; develop a general-purpose LoRa controller family later. Primary agent is still active. Codex has made no CAD, firmware, source-evidence or Git-history changes.
 
 ## Read in this order

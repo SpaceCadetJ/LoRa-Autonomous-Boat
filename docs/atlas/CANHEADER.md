@@ -31,7 +31,7 @@ Footprint: `LoRa_Boat_Controller:CONN_B4B-XH-A_JST`. [Full BOM](../BOM.csv).
 
 Unpowered continuity to GND1/TP5; resistance/continuity has not been measured.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:127](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L127); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:169](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L169); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:172](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L172); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:175](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L175); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:178](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L178); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:181](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L181); [hardware/kicad/_build/netmap.json:3](../../hardware/kicad/_build/netmap.json#L3).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:127](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L127); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:169](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L169); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:172](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L172); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:175](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L175); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:178](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L178); [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:181](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L181); [docs/atlas/evidence/v1-netmap.json:3](../../docs/atlas/evidence/v1-netmap.json#L3).
 
 ### Pin 2 — CAN_VCC
 
@@ -39,7 +39,7 @@ Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:127]
 
 Confirm supply source and polarity. This net is separate from +3V3 and VIN_RAW in v5.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:395](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L395); [hardware/kicad/_build/netmap.json:12](../../hardware/kicad/_build/netmap.json#L12); [docs/research/DATASHEET_NOTES.md:37](../../docs/research/DATASHEET_NOTES.md#L37).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:395](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L395); [docs/atlas/evidence/v1-netmap.json:12](../../docs/atlas/evidence/v1-netmap.json#L12); [docs/research/DATASHEET_NOTES.md:37](../../docs/research/DATASHEET_NOTES.md#L37).
 
 ### Pin 3 — CANH
 
@@ -47,7 +47,7 @@ Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:395]
 
 Check continuity header pin 3 → U5-7 and external termination; no working bus is claimed.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:385](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L385); [hardware/kicad/_build/netmap.json:7](../../hardware/kicad/_build/netmap.json#L7); [docs/research/DATASHEET_NOTES.md:36](../../docs/research/DATASHEET_NOTES.md#L36).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:385](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L385); [docs/atlas/evidence/v1-netmap.json:7](../../docs/atlas/evidence/v1-netmap.json#L7); [docs/research/DATASHEET_NOTES.md:36](../../docs/research/DATASHEET_NOTES.md#L36).
 
 ### Pin 4 — CANL
 
@@ -55,6 +55,6 @@ Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:385]
 
 Check continuity header pin 4 → U5-6 and external termination; no working bus is claimed.
 
-Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:76](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L76); [hardware/kicad/_build/netmap.json:8](../../hardware/kicad/_build/netmap.json#L8); [docs/research/DATASHEET_NOTES.md:36](../../docs/research/DATASHEET_NOTES.md#L36).
+Evidence: [Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat:76](../../Allegro/hardware/allegro-original/Allegro%20v5/Allegro/pstxnet.dat#L76); [docs/atlas/evidence/v1-netmap.json:8](../../docs/atlas/evidence/v1-netmap.json#L8); [docs/research/DATASHEET_NOTES.md:36](../../docs/research/DATASHEET_NOTES.md#L36).
 
 [Atlas index and snapshot provenance](README.md) · [Schematic PDF](../img/v1_schematic.pdf) · [PCB top](../img/v1_pcb_top.png) · [PCB bottom](../img/v1_pcb_bottom.png)

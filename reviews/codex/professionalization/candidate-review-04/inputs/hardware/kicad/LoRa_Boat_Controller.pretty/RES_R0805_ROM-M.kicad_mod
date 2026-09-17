@@ -1,0 +1,103 @@
+(footprint "RES_R0805_ROM-M"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Allegro footprint RES_R0805_ROM-M as fabricated on senior design v5.brd")
+	(tags "allegro RES_R0805_ROM-M")
+	(property "Reference" "REF**"
+		(at 0 -1.7145 0)
+		(layer "F.Fab")
+		(uuid "4d5a8318-fcab-5407-9192-f849fdfa9a10")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "RES_R0805_ROM-M"
+		(at 0 1.7145 0)
+		(layer "F.Fab")
+		(uuid "93f6c0d6-5459-5d1e-9612-d322db56263d")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0b478999-e69d-5b32-94ec-497cafa33904")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9bb63bec-cb37-5f10-8383-1a90e9bde00b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.3589 -0.6985)
+		(end 1.3589 0.6985)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "bc6112d2-8633-5a9f-b51f-bb12c5f20cd5")
+	)
+	(fp_rect
+		(start -1.3589 -0.6985)
+		(end 1.3589 0.6985)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "857a7c01-89de-53ad-b175-60784adf4a86")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "2d84f89d-09d8-5572-96a3-f6498f079b01")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "2" smd rect
+		(at 0.9017 0)
+		(size 0.9144 1.397)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "c22debd7-15db-5d9d-b6dd-3e0b02cec4b3")
+	)
+	(pad "1" smd rect
+		(at -0.9017 0)
+		(size 0.9144 1.397)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "6186bbd8-7059-5b54-b77f-48b3b02939a8")
+	)
+	(embedded_fonts no)
+)

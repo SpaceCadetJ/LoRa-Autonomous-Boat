@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-09-17T20:23:36.8666213Z",
+  "scope": "Read-only verification of firmware-agent completed build artifacts; this check did not compile or access hardware",
+  "manifest": "firmware/Debug/reproducible_v1/manifest.json",
+  "manifest_sha256": "342cb261ed1e00ed367c3ad36a9ba391d5e4b5888fc46c9a7b094bbf3cc1327c",
+  "status": "build_pass_unqualified",
+  "compiler": "arm-none-eabi-gcc.exe (GNU Tools for STM32 13.3.rel1.20240926-1715) 13.3.1 20240614",
+  "source_count": 23,
+  "input_count": 95,
+  "binary_bytes": 36528,
+  "hardware_access": false,
+  "artifacts": [
+    {
+      "file": "boat_v1_unqualified.bin",
+      "sha256": "9b90f0322089d997f1498ee634d4880005bd85fd5337d7a013a5609954239e17",
+      "matches": true
+    },
+    {
+      "file": "boat_v1_unqualified.elf",
+      "sha256": "612c82d7c2d4994003d509526d382328300dd505e0a6ef9520c9de8cd2939b0c",
+      "matches": true
+    },
+    {
+      "file": "boat_v1_unqualified.hex",
+      "sha256": "70efa56de33629a070fdc6c5b65b1a7b6e0b9aad8ebc2e5a84e30c1791957ff6",
+      "matches": true
+    },
+    {
+      "file": "boat_v1_unqualified.map",
+      "sha256": "96cd5f9b3050e4c10ebf4b7123f709294210899464c85aa5429e75bb3e9f60c2",
+      "matches": true
+    }
+  ],
+  "inputs_changed": [],
+  "workflow_powershell_blocks_parsed": 3,
+  "workflow_powershell_parse_errors": 0
+}

@@ -1,0 +1,119 @@
+Reference,Value,MPN,Side,X mm from outline left,Y mm from outline top,KiCad rotation degrees,Pad 1 net,Status,Footprint
+J1,BATTERY XT30,XT30PW-M,Top,9.7,23.0,0.0,VBAT_IN,REVIEW ONLY - not assembler-normalized centroid,Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal
+F1,3A,0468003.NR,Top,17.5,20.5,0.0,VBAT_IN,REVIEW ONLY - not assembler-normalized centroid,Fuse:Fuse_1812_4532Metric
+Q1,AO3401A,AO3401A,Top,20.7,12.0,0.0,PGATE,REVIEW ONLY - not assembler-normalized centroid,Package_TO_SOT_SMD:SOT-23
+D2,10V,BZT52C10-7-F,Top,25.2,12.0,0.0,VIN_RAW,REVIEW ONLY - not assembler-normalized centroid,Diode_SMD:D_SOD-123
+R1,100k,RC0603FR-07100KL,Top,22.8,9.3,0.0,PGATE,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R6,100k,RC0603FR-07100KL,Top,36.5,29.0,90.0,VIN_BUCK,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R8,100k,RC0603FR-07100KL,Top,40.0,34.5,0.0,+5V_BUCK,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R14,100k,RC0603FR-07100KL,Top,32.5,4.0,0.0,PWM_ESC_PC6,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R15,100k,RC0603FR-07100KL,Top,31.5,41.5,0.0,PWM_SERVO_PA8,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+D1,SMAJ33A,SMAJ33A,Top,18.2,16.5,0.0,VIN_RAW,REVIEW ONLY - not assembler-normalized centroid,Diode_SMD:D_SMA
+C1,47uF 50V,EEE-FK1H470P,Top,7.0,30.0,0.0,VIN_RAW,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:CP_Elec_6.3x7.7
+C2,10uF 50V,GRM32ER71H106KA12L,Top,24.5,16.5,0.0,VIN_RAW,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_1210_3225Metric
+C10,10uF 50V,GRM32ER71H106KA12L,Top,36.3,34.0,90.0,VIN_BUCK,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_1210_3225Metric
+R33,0.02R 1W,CRA2512-FZ-R020ELF,Top,26.0,20.5,0.0,VIN_RAW,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_2512_6332Metric
+U8,INA180A1,INA180A1IDBVR,Top,24.0,25.5,0.0,ISENSE,REVIEW ONLY - not assembler-normalized centroid,Package_TO_SOT_SMD:SOT-23-5
+C37,100nF,KGM15ACG1H104KT,Top,27.0,25.5,90.0,ISENSE,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C36,100nF,KGM15ACG1H104KT,Top,34.3,23.5,90.0,VBAT_SENSE,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C7,100nF,KGM15ACG1H104KT,Top,40.0,32.0,0.0,SW_5V,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C15,100nF,KGM15ACG1H104KT,Top,38.0,13.0,90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C16,100nF,KGM15ACG1H104KT,Top,44.0,8.5,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C17,100nF,KGM15ACG1H104KT,Top,55.5,16.0,90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C18,100nF,KGM15ACG1H104KT,Top,48.0,8.5,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C22,100nF,KGM15ACG1H104KT,Top,36.0,20.5,90.0,VDDA,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C23,100nF,KGM15ACG1H104KT,Top,55.5,20.0,90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C24,100nF,KGM15ACG1H104KT,Top,42.0,26.0,0.0,NRST,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C31,100nF,KGM15ACG1H104KT,Top,75.5,30.3,90.0,LORA_VCC,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C33,100nF,KGM15ACG1H104KT,Top,63.0,37.5,90.0,IMU_REGOUT,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C34,100nF,KGM15ACG1H104KT,Top,71.5,37.0,90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C13,100nF,KGM15ACG1H104KT,Top,29.5,4.0,90.0,VSERVO,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C14,100nF,KGM15ACG1H104KT,Top,28.5,41.5,90.0,VSERVO,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+R31,47k,RC0603FR-0747KL,Top,31.5,21.0,90.0,VIN_RAW,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R27,47k,RC0603FR-0747KL,Top,63.0,12.5,0.0,VBUS,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R28,47k,RC0603FR-0747KL,Top,63.0,14.5,0.0,VBUS_SENSE,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R32,6.8k,RC0603FR-076K8L,Top,31.5,24.5,90.0,VBAT_SENSE,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+U2,R1240N001B-TR-FE,R1240N001B-TR-FE,Top,15.0,30.5,0.0,EN_3V3,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:SOT-23-6W_PE-SOT23-6W-0512_NMD
+R2,5.1k,RC0603FR-075K1L,Top,19.0,30.5,90.0,VIN_BUCK,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R25,5.1k,RC0603FR-075K1L,Top,55.0,12.0,0.0,USB_CC1,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R26,5.1k,RC0603FR-075K1L,Top,59.0,12.5,0.0,USB_CC2,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R3,51R,RC0603FR-0751RL,Top,22.0,29.0,0.0,BST_RC,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+C3,100nF 50V,CL10B104KB8NNNC,Top,22.0,31.5,0.0,SW_3V3,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+L1,4.7uH 3A,SRN6045TA-4R7M,Top,28.0,31.0,0.0,SW_3V3,REVIEW ONLY - not assembler-normalized centroid,Inductor_SMD:L_Bourns_SRN6045TA
+L2,4.7uH 3A,SRN6045TA-4R7M,Top,47.0,30.5,0.0,SW_5V,REVIEW ONLY - not assembler-normalized centroid,Inductor_SMD:L_Bourns_SRN6045TA
+D3,CMS06,"CMS06(TE12L,Q,M)",Top,15.5,34.5,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:M-FLAT_TOS-L
+R4,15k,RC0603FR-0715KL,Top,20.0,34.5,90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R5,4.7k,RC0603FR-074K7L,Top,22.5,34.5,90.0,FB_3V3,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+C4,470pF,06035A471JAT2A,Top,20.0,37.5,0.0,FB_3V3,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C5,10uF 25V,GRM31CR71E106KA12L,Top,33.0,28.5,90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_1206_3216Metric
+C6,10uF 25V,GRM31CR71E106KA12L,Top,33.0,33.5,90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_1206_3216Metric
+U3,TPS54202,TPS54202DDCR,Top,40.0,29.0,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,Package_TO_SOT_SMD:TSOT-23-6
+R9,13.3k,RC0603FR-0713K3L,Top,40.0,36.5,0.0,FB_5V,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+C8,22uF 16V,GRM32ER61C226KE20L,Top,53.0,28.5,90.0,+5V_BUCK,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_1210_3225Metric
+C9,22uF 16V,GRM32ER61C226KE20L,Top,53.0,34.0,90.0,+5V_BUCK,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_1210_3225Metric
+D4,SS34,SS34,Top,47.0,37.0,0.0,VSERVO,REVIEW ONLY - not assembler-normalized centroid,Diode_SMD:D_SMA
+D9,SS34,SS34,Top,28.0,7.3,0.0,VSERVO,REVIEW ONLY - not assembler-normalized centroid,Diode_SMD:D_SMA
+C11,100uF 10V,EEE-FK1A101P,Top,59.5,30.0,0.0,VSERVO,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:CP_Elec_6.3x7.7
+C12,10uF 16V,GRM21BR61C106KE15L,Top,59.5,36.0,0.0,VSERVO,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0805_2012Metric
+U1,STM32F446RET6,STM32F446RET6,Top,46.0,17.0,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Package_QFP:LQFP-64_10x10mm_P0.5mm
+C19,10uF 10V,GRM21BR61A106KE19L,Top,40.0,8.5,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0805_2012Metric
+C29,10uF 10V,GRM21BR61A106KE19L,Top,70.0,27.5,0.0,LORA_FILT,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0805_2012Metric
+C30,10uF 10V,GRM21BR61A106KE19L,Top,73.5,27.5,0.0,LORA_VCC,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0805_2012Metric
+C35,10uF 10V,GRM21BR61A106KE19L,Top,67.0,31.5,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0805_2012Metric
+C20,4.7uF 10V,CL10A475KP8NNNC,Top,38.0,21.5,90.0,VCAP1,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+FB1,600R,BLM18AG601SN1D,Top,38.0,17.0,90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Inductor_SMD:L_0603_1608Metric
+C21,1uF,CL10A105KB8NNNC,Top,36.2,15.0,90.0,VDDA,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+R16,10k,RC0603FR-0710KL,Top,46.0,26.0,0.0,BOOT0,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R11,10k,RC0603FR-0710KL,Top,34.0,9.5,0.0,ESC_SIG,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R13,10k,RC0603FR-0710KL,Top,29.0,38.0,0.0,SERVO_SIG,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+SW1,RESET,KMR221GLFS,Top,72.0,21.0,0.0,NRST,REVIEW ONLY - not assembler-normalized centroid,Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2
+Y1,8MHz,ABM8-8.000MHZ-10-1-U-T,Top,31.5,12.5,0.0,HSE_IN,REVIEW ONLY - not assembler-normalized centroid,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm
+C25,15pF C0G,06035A150JAT2A,Top,28.5,13.3,90.0,HSE_IN,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C26,15pF C0G,06035A150JAT2A,Top,34.5,13.3,90.0,HSE_OUT,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+Y2,32.768kHz,ABS07-32.768KHZ-7-T,Top,31.5,17.0,0.0,LSE_IN,REVIEW ONLY - not assembler-normalized centroid,Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm
+C27,10pF C0G,06035A100JAT2A,Top,28.5,16.7,90.0,LSE_IN,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+C28,10pF C0G,06035A100JAT2A,Top,34.5,16.7,90.0,LSE_OUT,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0603_1608Metric
+D5,PWR green,LTST-C193KGKT-5A,Top,38.0,3.0,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,LED_SMD:LED_0603_1608Metric
+D6,LINK blue,LTST-C193TBKT-5A,Top,41.2,3.0,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,LED_SMD:LED_0603_1608Metric
+D7,FIX yellow,LTST-C193KSKT-5A,Top,44.4,3.0,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,LED_SMD:LED_0603_1608Metric
+D8,FAULT red,LTST-C193KRKT-5A,Top,47.6,3.0,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,LED_SMD:LED_0603_1608Metric
+R29,1k,RC0603FR-071KL,Top,38.0,5.5,90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R30,1k,RC0603FR-071KL,Top,41.2,5.5,90.0,LED_LINK,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R34,1k,RC0603FR-071KL,Top,44.4,5.5,90.0,LED_FIX,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R35,1k,RC0603FR-071KL,Top,47.6,5.5,90.0,LED_FAULT,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+J4,LoRa RYLR998,PPTC051LFBN-RC,Top,78.0,28.0,90.0,LORA_VCC,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller:CONN5_1LFBN-RC_SUL
+FB2,600R,BLM15AG601SN1D,Top,69.0,25.0,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Inductor_SMD:L_0402_1005Metric
+FB3,600R,BLM15AG601SN1D,Top,72.0,25.0,0.0,LORA_FILT,REVIEW ONLY - not assembler-normalized centroid,Inductor_SMD:L_0402_1005Metric
+C32,47pF,GJM1555C1H470JB01D,Top,74.5,34.0,90.0,LORA_VCC,REVIEW ONLY - not assembler-normalized centroid,Capacitor_SMD:C_0402_1005Metric
+R17,100R,RC0603FR-07100RL,Top,71.5,30.5,0.0,LORA_TX_PA0,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R18,100R,RC0603FR-07100RL,Top,71.5,32.5,0.0,LORA_RX_PA1,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R19,100R,RC0603FR-07100RL,Top,71.5,34.5,0.0,LORA_NRST_PA3,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R20,100R,RC0603FR-07100RL,Top,56.0,39.0,0.0,GNSS_TX_PC10,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R21,100R,RC0603FR-07100RL,Top,59.5,39.0,0.0,GNSS_RX_PC11,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R22,100R,RC0603FR-07100RL,Top,66.0,40.5,0.0,PPS_PB0,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R10,100R,RC0603FR-07100RL,Top,34.0,7.0,0.0,ESC_SIG_5V,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R12,100R,RC0603FR-07100RL,Top,25.5,38.0,0.0,SERVO_SIG_5V,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+J5,GNSS,PPTC061LFBN-RC,Top,56.0,43.5,90.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
+U6,ICM-20948,ICM-20948,Top,66.0,36.0,0.0,,REVIEW ONLY - not assembler-normalized centroid,LoRa_Boat_Controller_V2:QFN-24_3x3mm_P0.4mm_NoEP
+R23,2.2k,RC0603FR-072K2L,Top,66.5,27.0,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+R24,2.2k,RC0603FR-072K2L,Top,66.5,29.0,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Resistor_SMD:R_0603_1608Metric
+J2,ESC,B3B-XH-A(LF)(SN),Top,13.0,5.0,0.0,ESC_SIG,REVIEW ONLY - not assembler-normalized centroid,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical
+J3,SERVO,B3B-XH-A(LF)(SN),Top,13.0,42.0,0.0,SERVO_SIG,REVIEW ONLY - not assembler-normalized centroid,Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical
+U4,74AHCT1G125,SN74AHCT1G125DBVR,Top,26.0,3.5,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,Package_TO_SOT_SMD:SOT-23-5
+U5,74AHCT1G125,SN74AHCT1G125DBVR,Top,25.0,41.5,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,Package_TO_SOT_SMD:SOT-23-5
+D10,PESD5V0S1BA,"PESD5V0S1BA,115",Top,37.0,9.5,90.0,ESC_SIG,REVIEW ONLY - not assembler-normalized centroid,Diode_SMD:D_SOD-323
+D11,PESD5V0S1BA,"PESD5V0S1BA,115",Top,32.0,38.0,90.0,SERVO_SIG,REVIEW ONLY - not assembler-normalized centroid,Diode_SMD:D_SOD-323
+J6,USB-C,USB4105-GF-A,Top,56.0,2.5,180.0,no pad 1,REVIEW ONLY - not assembler-normalized centroid,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal
+U7,USBLC6-2SC6,USBLC6-2SC6,Top,58.0,9.5,0.0,USB_DP_CONN,REVIEW ONLY - not assembler-normalized centroid,Package_TO_SOT_SMD:SOT-23-6
+J7,SWD,FTSH-105-01-L-DV-K,Top,73.0,13.0,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD
+TP1,ESC_PWM,,Top,35.0,44.0,0.0,PWM_ESC_PC6,REVIEW ONLY - not assembler-normalized centroid,TestPoint:TestPoint_Pad_D1.5mm
+TP2,SERVO_PWM,,Top,39.0,44.0,0.0,PWM_SERVO_PA8,REVIEW ONLY - not assembler-normalized centroid,TestPoint:TestPoint_Pad_D1.5mm
+TP3,+3V3,,Top,43.0,44.0,0.0,+3V3,REVIEW ONLY - not assembler-normalized centroid,TestPoint:TestPoint_Pad_D1.5mm
+TP4,VSERVO,,Top,47.0,44.0,0.0,VSERVO,REVIEW ONLY - not assembler-normalized centroid,TestPoint:TestPoint_Pad_D1.5mm
+TP5,VIN_RAW,,Top,51.0,44.0,0.0,VIN_RAW,REVIEW ONLY - not assembler-normalized centroid,TestPoint:TestPoint_Pad_D1.5mm
+TP6,GND,,Top,31.0,44.0,0.0,GND,REVIEW ONLY - not assembler-normalized centroid,TestPoint:TestPoint_Pad_D1.5mm
+TP7,PPS,,Top,70.0,40.0,0.0,PPS_PB0,REVIEW ONLY - not assembler-normalized centroid,TestPoint:TestPoint_Pad_D1.5mm
+H1,M3,,Top,4.0,4.0,0.0,no pad 1,REVIEW ONLY - not assembler-normalized centroid,MountingHole:MountingHole_3.2mm_M3
+H2,M3,,Top,76.0,4.0,0.0,no pad 1,REVIEW ONLY - not assembler-normalized centroid,MountingHole:MountingHole_3.2mm_M3
+H3,M3,,Top,4.0,42.0,0.0,no pad 1,REVIEW ONLY - not assembler-normalized centroid,MountingHole:MountingHole_3.2mm_M3
+H4,M3,,Top,76.0,42.0,0.0,no pad 1,REVIEW ONLY - not assembler-normalized centroid,MountingHole:MountingHole_3.2mm_M3

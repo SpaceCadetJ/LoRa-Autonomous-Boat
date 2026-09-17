@@ -2,6 +2,8 @@
 
 Written 2026-09-16 by the primary agent (Claude Code). Branches: `v1-kicad-reconstruction` (Phase A, tag `v1-kicad-baseline`) and `v2-design` (Phases B/C, tag `v2-design-draft`). The full document set is indexed in [docs/INDEX.md](docs/INDEX.md); the work log is [CONVERSION_LOG.md](CONVERSION_LOG.md); open decisions are in [BLOCKERS.md](BLOCKERS.md).
 
+**2026-09-17 working review update:** the [build guide](docs/build/README.md) and [current quality handoff](reviews/codex/professionalization/QUALITY_HANDOFF.md) supersede readiness summaries below for the current uncommitted files. Annotated schematics, purchasing/assembly packets and version-specific programming procedures are now available. The V1 firmware compiled twice with matching image hashes; it preserves known defects and is not qualified. Current independent V2 checks report 3 unconnected PCB entries and one pre-existing ERC warning; fabrication is not approved. The V2 CSV contains 67 component groups totaling 118 physical parts. Older two-connection/68-line figures below describe earlier reports, not fresh acceptance.
+
 ## 1. What was delivered
 
 | Phase | Deliverable | Where | State |

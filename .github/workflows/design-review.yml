@@ -1,0 +1,95 @@
+name: Design review (manual)
+
+# No pull/push trigger and no deployment. This definition does nothing until a
+# maintainer explicitly runs it in a repository with Actions enabled.
+on:
+  workflow_dispatch:
+    inputs:
+      run_kicad:
+        description: Run the native KiCad checks on a trusted self-hosted Windows runner
+        required: true
+        type: boolean
+        default: false
+      run_firmware:
+        description: Compile preserved V1 only (unqualified image; no programmer or hardware)
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  review-tool-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test acceptance logic
+        run: python -m unittest discover -s tools/quality -p 'test_*.py' -v
+
+  kicad-review:
+    if: ${{ inputs.run_kicad }}
+    needs: review-tool-tests
+    runs-on: [self-hosted, Windows, X64, kicad-9]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Review the schematic changes and record fabrication blockers
+        shell: pwsh
+        run: |
+          $qualityKiCad = Join-Path $env:LOCALAPPDATA 'Programs/KiCad/9.0/bin'
+          $qualityPython = Join-Path $qualityKiCad 'python.exe'
+          $qualityCli = Join-Path $qualityKiCad 'kicad-cli.exe'
+          & $qualityPython tools/quality/review.py --profile review --kicad-cli $qualityCli --output reviews/codex/professionalization/ci-review
+          exit $LASTEXITCODE
+      - name: Preserve raw reports even if a check fails
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: kicad-review
+          path: reviews/codex/professionalization/ci-review
+          if-no-files-found: warn
+
+  firmware-v1-build:
+    if: ${{ inputs.run_firmware }}
+    needs: review-tool-tests
+    runs-on: [self-hosted, Windows, X64, gnu-arm-13-3]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.14'
+      - name: Preflight the pinned GNU Arm toolchain
+        shell: pwsh
+        run: |
+          $qualityPreflightText = & python firmware/tools/build_v1.py preflight
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $qualityPreflight = ($qualityPreflightText -join "`n") | ConvertFrom-Json
+          if ($qualityPreflight.compiler -notmatch 'GNU Tools for STM32 13\.3\.rel1\.20240926-1715.*13\.3\.1 20240614') {
+            throw 'Expected the recorded GNU Tools for STM32 13.3.rel1 toolchain. Set ARM_GCC_BIN to its bin directory.'
+          }
+          Write-Output $qualityPreflight.compiler
+      - name: Build unqualified V1 artifacts without hardware access
+        shell: pwsh
+        run: |
+          & python firmware/tools/build_v1.py build --out firmware/Debug/ci_v1_unqualified
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $qualityFirmware = Get-Content -Raw firmware/Debug/ci_v1_unqualified/manifest.json | ConvertFrom-Json
+          if ($qualityFirmware.status -ne 'build_pass_unqualified' -or $qualityFirmware.hardware_access -ne $false) {
+            throw 'Firmware build manifest does not establish a software-only unqualified build.'
+          }
+      - name: Preserve the unqualified image and build evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: v1-unqualified-not-for-deployment
+          path: firmware/Debug/ci_v1_unqualified
+          if-no-files-found: warn

@@ -50,3 +50,12 @@ Working from primary Phase A release 639e08f (current HEAD 1f07361). Building na
 - Documents: `REPORT.md` (root), `docs/BOM_V2.csv`, `docs/V2_REQUIREMENTS.md`, `firmware/V2_FIRMWARE_PLAN.md`, `docs/INDEX.md` regenerated with the V2 entries.
 - Review workflow (6 readers + adversarial verification) findings that concern Codex: pm viewer is V1-only and hard-codes gate statuses and the R01-R11 list (build.mjs); BOM V2 view counts the TOTAL row; atlas links into git-ignored `hardware/kicad/_build/` files; atlas has no V2 connectors; S2 verdict "transfer gate blocked" overstates warning-level parity metadata (S2-01 is real but metadata-only and is being fixed in the V1 generator by the primary). Updated packets follow in `PROMPT_FOR_CODEX.md` after the synthesis step.
 - Next for the primary: v2.1 layout for the widened scope (fleet / ground vehicles / handheld interoperability), `docs/ARCHITECTURE.md`, `docs/HANDHELD_CONCEPT.md`, application matrix, test plan, REQ-APP / REQ-HH requirements, new BLOCKERS decisions.
+
+## Codex checkpoint — 2026-09-17T19:16Z
+
+Viewer delivery packet complete; portable V1 atlas evidence and S2 interpretation integrated. See pm/README.md, pm/QA.md and latest HANDOFF. Current viewer includes52views,44V1parts,67V2BOMgroups/118parts,12V1connectors,35findings and45requirements. All numbers describe captured sources, not independent V2 sign-off. Next bounded task: immutable V2 verification snapshot and ERC/DRC/inventory; then one subsystem review. No primary CAD/firmware or Git mutations.
+
+
+## Codex checkpoint — 2026-09-17T20:42Z
+
+Schematic/ordering/assembly/programming review packet completed and documented in reviews/codex/professionalization/HANDOFF.md. All delegated tasks finished. Fifteen schematic pages visually reviewed; final candidate04 preserves533electricalpins. Strict combined review still FAILS on one pre-existing V2ERCwarning; fabrication remains NOT APPROVED with3V2unconnectedentries and additional warnings/parity. V1build reproducible but unqualified; noV2image. Viewer and durable next-task context updated; existing hourly continuation remains active. No hardware flashing, orders, external publication or Git-history edits.

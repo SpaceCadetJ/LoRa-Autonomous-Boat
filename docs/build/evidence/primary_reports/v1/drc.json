@@ -1,0 +1,1360 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-16T20:19:41-0500",
+    "kicad_version": "9.0.7",
+    "schematic_parity": [],
+    "source": "LoRa_Boat_Controller.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "4e9acd36-bd78-5f84-9acb-c358c8e988b2"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 61.84412,
+                        "y": 97.18568
+                    },
+                    "uuid": "1f7e378f-9e56-561a-aeea-3ffb47f7ec3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "4e9acd36-bd78-5f84-9acb-c358c8e988b2"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 64.39428,
+                        "y": 94.63552
+                    },
+                    "uuid": "2cf801fc-c7d5-53e2-96de-00ab0587e5cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "4e9acd36-bd78-5f84-9acb-c358c8e988b2"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 64.39428,
+                        "y": 89.86032
+                    },
+                    "uuid": "3eed65b7-4693-50be-8a36-845db9917bdd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "4e9acd36-bd78-5f84-9acb-c358c8e988b2"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 61.84412,
+                        "y": 92.41048
+                    },
+                    "uuid": "5ab82a42-9e66-52c6-9a1d-332d6c9cabac"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "4e9acd36-bd78-5f84-9acb-c358c8e988b2"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 61.84412,
+                        "y": 94.63552
+                    },
+                    "uuid": "9bfbc873-b5f8-5b0e-ba34-b6c600795fcb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "4e9acd36-bd78-5f84-9acb-c358c8e988b2"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 61.84412,
+                        "y": 89.86032
+                    },
+                    "uuid": "9dd6a91b-ca52-56bd-a228-ef5468a4a6f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 65.0496,
+                        "y": 75.9716
+                    },
+                    "uuid": "0273b40b-cb9a-5b0c-a46d-badbb69815c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 65.0496,
+                        "y": 73.4316
+                    },
+                    "uuid": "16c58dcd-1e57-52bb-b093-401247035994"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 114.224,
+                        "y": 84.0234
+                    },
+                    "uuid": "17d57103-25dc-51f9-8b2d-027883de502b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 71.1964,
+                        "y": 73.4316
+                    },
+                    "uuid": "2920a4bd-62b6-5e99-a655-6c322a529a94"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 73.7364,
+                        "y": 75.9716
+                    },
+                    "uuid": "3b5487dd-cde4-5497-82a4-3e04cdcf9559"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 117.217898,
+                        "y": 79.7562
+                    },
+                    "uuid": "616ff272-61bd-56a7-9452-0f7dc0bcf352"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 67.5896,
+                        "y": 73.4316
+                    },
+                    "uuid": "61fbb66f-3ab3-5cc8-865f-9af1a76547ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 114.224,
+                        "y": 81.4834
+                    },
+                    "uuid": "66f306f4-edaa-5847-8867-500cc778d46b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 116.891,
+                        "y": 77.5972
+                    },
+                    "uuid": "6ea9768e-8eeb-5d98-b58d-6e7d08ca0c1d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 116.764,
+                        "y": 81.4834
+                    },
+                    "uuid": "8b27ad3b-2f55-5418-b016-365a5fabd5f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Circle on F.Silkscreen",
+                    "pos": {
+                        "x": 106.0071,
+                        "y": 94.3104
+                    },
+                    "uuid": "954875be-238a-54eb-a0b6-04f3baad534a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 73.7364,
+                        "y": 73.4316
+                    },
+                    "uuid": "9d096e3d-2e22-5fe7-a396-f6ee4469adb0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 71.1964,
+                        "y": 75.9716
+                    },
+                    "uuid": "9e7236c4-2e8a-55e1-b2d0-11e18ef74165"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 67.5896,
+                        "y": 75.9716
+                    },
+                    "uuid": "b297ad6d-c94c-5366-b2cf-1b5d8bed73bc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 85.188498,
+                        "y": 86.5126
+                    },
+                    "uuid": "c2a63c95-891a-541f-aab4-545dd66cb502"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 114.351,
+                        "y": 80.1372
+                    },
+                    "uuid": "c37ebecf-321b-51bd-a615-442f8ae19723"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 116.764,
+                        "y": 84.0234
+                    },
+                    "uuid": "cadfde65-2f32-5359-9574-34cd5f4ab9e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 114.351,
+                        "y": 77.5972
+                    },
+                    "uuid": "db148ce4-6539-52f7-a69b-23c8faeaa6c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 77.0892,
+                        "y": 82.982
+                    },
+                    "uuid": "dcd9243f-7dfe-5497-8051-73edca4491a1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Circle on F.Silkscreen",
+                    "pos": {
+                        "x": 124.5618,
+                        "y": 78.1941
+                    },
+                    "uuid": "e1c0aba1-e051-5cff-8db2-e4f0eda392ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 116.891,
+                        "y": 80.1372
+                    },
+                    "uuid": "f32c1b61-51c9-5b8f-95a7-d48416cf9191"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 81.8644,
+                        "y": 88.4684
+                    },
+                    "uuid": "06680e37-14a9-54d2-ae67-76764bf66987"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 72.5934,
+                        "y": 84.3028
+                    },
+                    "uuid": "1abd55d3-9400-54c6-8af8-2b1df953faf6"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 73.7618,
+                        "y": 95.936
+                    },
+                    "uuid": "1ed6909b-2e55-5c51-bb11-059719c7a637"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.6144,
+                        "y": 74.2063
+                    },
+                    "uuid": "2dc981aa-edee-5e4a-a74b-17eba2071525"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.6642,
+                        "y": 94.3104
+                    },
+                    "uuid": "312faaba-a59a-5c85-91cd-422581e3d352"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 98.4633,
+                        "y": 69.139
+                    },
+                    "uuid": "3509c85a-6c2d-57e3-b167-07a017d4d04c"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 92.7356,
+                        "y": 76.886
+                    },
+                    "uuid": "3af37b6e-5f91-592d-8d5b-f30deddd7ae5"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 80.696,
+                        "y": 92.3038
+                    },
+                    "uuid": "475cd634-a243-5fbf-be3e-11bb30d1ffad"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.9309,
+                        "y": 87.4524
+                    },
+                    "uuid": "56d41801-0cd0-5ee8-93e8-a32844050902"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 67.9452,
+                        "y": 87.18062
+                    },
+                    "uuid": "93dc1e5c-211a-5d94-93af-23bf6faecb2f"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 110.922,
+                        "y": 74.2063
+                    },
+                    "uuid": "9ac8f461-dcc5-56ff-bbc3-e5253a5a4734"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 113.8303,
+                        "y": 70.282
+                    },
+                    "uuid": "afb44cdf-4762-59a9-804d-5a65621e80bc"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 124.5618,
+                        "y": 78.029
+                    },
+                    "uuid": "b7a36afc-4c92-5a3f-ad2b-aaa6d9ecde3a"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 97.9807,
+                        "y": 87.2746
+                    },
+                    "uuid": "b8205a8e-fe67-5ea0-b3e2-64000ab8c097"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 67.5134,
+                        "y": 97.587
+                    },
+                    "uuid": "c4b18f1c-791d-5471-8b95-f87a9903d332"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 72.314,
+                        "y": 90.0178
+                    },
+                    "uuid": "e18881db-10c8-55f2-8aa9-2ae86a61db26"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 124.765,
+                        "y": 93.0404
+                    },
+                    "uuid": "f4067fc0-e713-5457-a29d-6574e6778be2"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 76.8352,
+                        "y": 86.03
+                    },
+                    "uuid": "2405e599-b236-5c16-a24b-eaa4f745b6f0"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 76.8352,
+                        "y": 86.03
+                    },
+                    "uuid": "2405e599-b236-5c16-a24b-eaa4f745b6f0"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 85.8014,
+                        "y": 86.03
+                    },
+                    "uuid": "516f7394-4a7f-5b2e-8a1d-fe8c469debc9"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 85.8014,
+                        "y": 86.03
+                    },
+                    "uuid": "516f7394-4a7f-5b2e-8a1d-fe8c469debc9"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.5992,
+                        "y": 82.0676
+                    },
+                    "uuid": "db579136-13ac-5bb7-b4e8-b3195ed8241b"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.5992,
+                        "y": 82.0676
+                    },
+                    "uuid": "db579136-13ac-5bb7-b4e8-b3195ed8241b"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.4722,
+                        "y": 86.03
+                    },
+                    "uuid": "ec3d2ab6-5f82-596a-aa7e-31ba0835c6cd"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [ADC_VBAT] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 93.4722,
+                        "y": 86.03
+                    },
+                    "uuid": "ec3d2ab6-5f82-596a-aa7e-31ba0835c6cd"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [CAN_STB_PA11] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.9164,
+                        "y": 70.8662
+                    },
+                    "uuid": "385d6f86-30b6-534a-a5a8-95e60b1af882"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [CAN_STB_PA11] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.9164,
+                        "y": 70.8662
+                    },
+                    "uuid": "385d6f86-30b6-534a-a5a8-95e60b1af882"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [CAN_STB_PA11] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.5956,
+                        "y": 75.997
+                    },
+                    "uuid": "e6c0b992-d31e-573f-91af-7a49af332150"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [CAN_STB_PA11] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.5956,
+                        "y": 75.997
+                    },
+                    "uuid": "e6c0b992-d31e-573f-91af-7a49af332150"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [LORA_RST_PA3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 86.3602,
+                        "y": 83.0836
+                    },
+                    "uuid": "8bf755a0-9db1-5ef2-909e-683f6602d0d9"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [LORA_RST_PA3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 86.3602,
+                        "y": 83.0836
+                    },
+                    "uuid": "8bf755a0-9db1-5ef2-909e-683f6602d0d9"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [LORA_RST_PA3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 86.3602,
+                        "y": 85.014
+                    },
+                    "uuid": "f740978d-f069-53d3-9e72-1f61d09e83c9"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [LORA_RST_PA3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 86.3602,
+                        "y": 85.014
+                    },
+                    "uuid": "f740978d-f069-53d3-9e72-1f61d09e83c9"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [SWO_TDO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.0612,
+                        "y": 70.8916
+                    },
+                    "uuid": "42d93505-cffd-53f8-8759-1f2543b1d150"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [SWO_TDO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.0612,
+                        "y": 70.8916
+                    },
+                    "uuid": "42d93505-cffd-53f8-8759-1f2543b1d150"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [SWO_TDO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.3368,
+                        "y": 70.6376
+                    },
+                    "uuid": "f18f4627-2c39-5160-8eef-def009cb5ed9"
+                },
+                {
+                    "description": "Zone '+3V3 pour (F.Cu) from film' [+3V3] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 61.8492,
+                        "y": 61.773
+                    },
+                    "uuid": "88a9653f-e03e-5098-96e6-2332ddbdf20e"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Rear solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [SWO_TDO] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 102.3368,
+                        "y": 70.6376
+                    },
+                    "uuid": "f18f4627-2c39-5160-8eef-def009cb5ed9"
+                },
+                {
+                    "description": "Zone 'GND pour (B.Cu) from film' [GND] on B.Cu, priority 0",
+                    "pos": {
+                        "x": 61.849454,
+                        "y": 61.773254
+                    },
+                    "uuid": "db256504-4d2f-5d3d-bbab-82c360c02f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}
