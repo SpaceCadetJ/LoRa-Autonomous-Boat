@@ -71,6 +71,29 @@ def main():
     assert new_erc["errors"] == 0 and new_erc["violations"] == old_erc["violations"]
     assert imu_result["status"] == "pass_candidate_only" and imu_result["pcb_updated"] is False and imu_result["hardware_tested"] is False
     print("PASS IMU captured-evidence comparison; live PCB unchanged and hardware unqualified")
+    placement_root = "reviews/codex/imu_placement/"
+    placement = read_json(placement_root + "packet_manifest.json")
+    check_hashes(placement["input_sha256"], "placement live baseline inputs")
+    check_hashes(placement["artifact_sha256"], "placement captured evidence and artifacts")
+    placement_native = read_json(placement_root + "native_manifest.json")
+    check_hashes(placement_native["input_sha256"], "placement native inputs")
+    check_hashes(placement_native["output_sha256"], "placement native reports")
+    check_hashes({placement_root + "native_check.py": placement_native["runner_sha256"]}, "placement native runner")
+    assert placement["electrically_integrated"] is False and placement["fabrication_approved"] is False
+    assert placement["hardware_tested"] is False and placement["whole_board_6s_fit_verified"] is False
+    assert placement["courtyard_collisions"] == [] and placement["new_outside_outline"] == []
+    spec = importlib.util.spec_from_file_location("placement_compare", ROOT / placement_root / "compare_study.py")
+    geometry = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(geometry)
+    preserved = geometry.compare((ROOT / placement_root / "inputs/normalized_baseline.kicad_pcb").read_text(),
+                                 (ROOT / placement_root / "study/IMU_PLACEMENT_STUDY.kicad_pcb").read_text())
+    assert preserved == placement["preservation"]
+    for name, key in [("drc_baseline.json", "baseline_drc"), ("drc_study.json", "study_drc")]:
+        report = read_json(placement_root + name)
+        assert sum(v["severity"] == "error" for v in report["violations"]) == placement[key]["errors"]
+        assert sum(v["severity"] == "warning" for v in report["violations"]) == placement[key]["warnings"]
+    assert placement["baseline_drc"]["errors"] == 0 and placement["study_drc"]["errors"] == 136
+    print("PASS placement preservation and recorded FAILED native gate; no electrical integration")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -81,7 +104,7 @@ def main():
     pages = [ROOT / "README.md", ROOT / "docs/portfolio/README.md"]
     pages += list((ROOT / "docs/build").glob("*.md"))
     pages += list((ROOT / "docs/applications").glob("*.md"))
-    pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md"]
+    pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md", ROOT / "reviews/codex/imu_placement/README.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

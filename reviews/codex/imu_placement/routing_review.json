@@ -1,0 +1,618 @@
+{
+  "classification": "courtyard_fit_only_copper_conflicts_block_integration",
+  "baseline_drc": {
+    "errors": 0,
+    "warnings": 105,
+    "types": {
+      "silk_edge_clearance": 2,
+      "lib_footprint_issues": 4,
+      "silk_over_copper": 61,
+      "silk_overlap": 38
+    },
+    "unconnected_items": 0,
+    "schematic_parity_run": false
+  },
+  "study_drc": {
+    "errors": 136,
+    "warnings": 109,
+    "types": {
+      "shorting_items": 25,
+      "clearance": 42,
+      "hole_clearance": 8,
+      "solder_mask_bridge": 61,
+      "silk_edge_clearance": 2,
+      "lib_footprint_issues": 5,
+      "silk_over_copper": 63,
+      "silk_overlap": 39
+    },
+    "unconnected_items": 0,
+    "schematic_parity_run": false
+  },
+  "affected_existing_copper_items": 20,
+  "affected_existing_nets": [
+    "+3V3",
+    "I2C1_SCL",
+    "IMU_REGOUT",
+    "NRST",
+    "SWDIO",
+    "SWO",
+    "VBUS_SENSE"
+  ],
+  "copper_conflicts": [
+    {
+      "uuid": "14bfb0c7-f7b0-4c0d-ba61-64adb7c66d83",
+      "kind": "PCB_TRACK",
+      "net": "NRST",
+      "layer": "F.Cu",
+      "start": [
+        98.9971,
+        74.7879
+      ],
+      "end": [
+        112.194,
+        74.7879
+      ],
+      "new_refs": [
+        "C41"
+      ],
+      "finding_types": [
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "2f27fc87-2b4e-4f4d-bbfa-6887a3f4c4cc",
+      "kind": "PCB_TRACK",
+      "net": "IMU_REGOUT",
+      "layer": "F.Cu",
+      "start": [
+        113.0,
+        88.275
+      ],
+      "end": [
+        114.5322,
+        88.275
+      ],
+      "new_refs": [
+        "C40"
+      ],
+      "finding_types": [
+        "clearance",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "30f89fbe-1e70-4bef-bd36-4ef55f1060e1",
+      "kind": "PCB_TRACK",
+      "net": "I2C1_SCL",
+      "layer": "F.Cu",
+      "start": [
+        108.6707,
+        75.5126
+      ],
+      "end": [
+        115.838,
+        75.5126
+      ],
+      "new_refs": [
+        "R36"
+      ],
+      "finding_types": [
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "51032d60-abd0-4e58-9a4c-b09233fea78c",
+      "kind": "PCB_TRACK",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        115.375,
+        88.075
+      ],
+      "end": [
+        115.375,
+        88.7018
+      ],
+      "new_refs": [
+        "C40"
+      ],
+      "finding_types": [
+        "clearance"
+      ]
+    },
+    {
+      "uuid": "5502b572-24b0-4847-8ccd-aec89e918440",
+      "kind": "PCB_TRACK",
+      "net": "IMU_REGOUT",
+      "layer": "F.Cu",
+      "start": [
+        116.2,
+        88.3083
+      ],
+      "end": [
+        116.2,
+        87.8803
+      ],
+      "new_refs": [
+        "C40"
+      ],
+      "finding_types": [
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "59632e0f-dcc6-4921-8127-c1e1733aace3",
+      "kind": "PCB_TRACK",
+      "net": "IMU_REGOUT",
+      "layer": "F.Cu",
+      "start": [
+        114.5322,
+        88.275
+      ],
+      "end": [
+        114.777,
+        88.5198
+      ],
+      "new_refs": [
+        "C40"
+      ],
+      "finding_types": [
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "5f1ebd43-84e3-45e6-93d5-2f3b8d5e1910",
+      "kind": "PCB_TRACK",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        113.745,
+        66.775
+      ],
+      "end": [
+        119.573,
+        60.947
+      ],
+      "new_refs": [
+        "C39"
+      ],
+      "finding_types": [
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "6dbe9642-02eb-47a4-b5d1-102bc4884085",
+      "kind": "PCB_TRACK",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        104.478,
+        71.7973
+      ],
+      "end": [
+        106.84,
+        74.1596
+      ],
+      "new_refs": [
+        "C41"
+      ],
+      "finding_types": [
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "80cd65ab-8ccf-4dcf-ba3d-9efa9cbcd086",
+      "kind": "PCB_TRACK",
+      "net": "NRST",
+      "layer": "F.Cu",
+      "start": [
+        112.194,
+        74.7879
+      ],
+      "end": [
+        116.782,
+        70.2
+      ],
+      "new_refs": [
+        "R37",
+        "U10"
+      ],
+      "finding_types": [
+        "clearance",
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "8212a78d-a563-4579-99b1-fcd9fe1f30a0",
+      "kind": "PCB_VIA",
+      "net": "IMU_REGOUT",
+      "layer": "F.Cu",
+      "start": [
+        116.0882,
+        88.4201
+      ],
+      "end": [
+        116.0882,
+        88.4201
+      ],
+      "new_refs": [
+        "C40"
+      ],
+      "finding_types": [
+        "hole_clearance",
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "890ea6eb-fcc0-40ed-9505-2113a03a341f",
+      "kind": "PCB_TRACK",
+      "net": "VBUS_SENSE",
+      "layer": "F.Cu",
+      "start": [
+        110.722,
+        65.9526
+      ],
+      "end": [
+        104.387,
+        65.9526
+      ],
+      "new_refs": [
+        "U9"
+      ],
+      "finding_types": [
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "8a9aa4b7-43da-4992-896c-eac355fa7b37",
+      "kind": "PCB_TRACK",
+      "net": "IMU_REGOUT",
+      "layer": "F.Cu",
+      "start": [
+        116.0882,
+        88.4201
+      ],
+      "end": [
+        116.2,
+        88.3083
+      ],
+      "new_refs": [
+        "C40"
+      ],
+      "finding_types": [
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "9a078d07-14b1-46ab-a13d-e15491cd24a7",
+      "kind": "PCB_VIA",
+      "net": "IMU_REGOUT",
+      "layer": "F.Cu",
+      "start": [
+        114.777,
+        88.5198
+      ],
+      "end": [
+        114.777,
+        88.5198
+      ],
+      "new_refs": [
+        "C40"
+      ],
+      "finding_types": [
+        "hole_clearance",
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "acf249c6-470b-4705-a1a6-e539668465eb",
+      "kind": "PCB_TRACK",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        115.375,
+        88.7018
+      ],
+      "end": [
+        115.876,
+        89.2022
+      ],
+      "new_refs": [
+        "C40"
+      ],
+      "finding_types": [
+        "clearance",
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "bc587d30-f449-4301-8645-bef6ba5a02d4",
+      "kind": "PCB_VIA",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        106.84,
+        74.1596
+      ],
+      "end": [
+        106.84,
+        74.1596
+      ],
+      "new_refs": [
+        "C41"
+      ],
+      "finding_types": [
+        "hole_clearance",
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "c47f10d2-3eb0-4586-8c2a-49bb43669ed2",
+      "kind": "PCB_TRACK",
+      "net": "SWDIO",
+      "layer": "F.Cu",
+      "start": [
+        101.676,
+        64.2508
+      ],
+      "end": [
+        111.161,
+        64.2508
+      ],
+      "new_refs": [
+        "C38"
+      ],
+      "finding_types": [
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "c6d77195-6f9a-4206-b9cf-a2944f7e8995",
+      "kind": "PCB_VIA",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        115.876,
+        89.2022
+      ],
+      "end": [
+        115.876,
+        89.2022
+      ],
+      "new_refs": [
+        "C40"
+      ],
+      "finding_types": [
+        "hole_clearance",
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "cf364c0f-2f96-4156-882d-180862231d8c",
+      "kind": "PCB_TRACK",
+      "net": "+3V3",
+      "layer": "F.Cu",
+      "start": [
+        105.5,
+        66.775
+      ],
+      "end": [
+        113.745,
+        66.775
+      ],
+      "new_refs": [
+        "C39",
+        "U9"
+      ],
+      "finding_types": [
+        "clearance",
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "db2fea43-0397-4abc-baf0-d674f5f4db6a",
+      "kind": "PCB_TRACK",
+      "net": "SWO",
+      "layer": "F.Cu",
+      "start": [
+        105.368,
+        68.2196
+      ],
+      "end": [
+        120.362,
+        68.2196
+      ],
+      "new_refs": [
+        "C39",
+        "R38",
+        "R39",
+        "U9"
+      ],
+      "finding_types": [
+        "clearance",
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    },
+    {
+      "uuid": "e28fdafb-267b-4b4b-a2bb-07510d78ab6f",
+      "kind": "PCB_TRACK",
+      "net": "I2C1_SCL",
+      "layer": "F.Cu",
+      "start": [
+        115.838,
+        75.5126
+      ],
+      "end": [
+        117.325,
+        77.0
+      ],
+      "new_refs": [
+        "R36"
+      ],
+      "finding_types": [
+        "shorting_items",
+        "solder_mask_bridge"
+      ]
+    }
+  ],
+  "original_pad_conflicts": [],
+  "u6_separation_review": [
+    {
+      "pin": "U6.8",
+      "current_net": "+3V3",
+      "position": [
+        115.4,
+        87.55
+      ],
+      "endpoint_hits_on_pad": [
+        {
+          "uuid": "75cc207a-26a0-4fd1-ae73-e5f363af8efc",
+          "net": "+3V3",
+          "kind": "PCB_TRACK",
+          "start": [
+            115.375,
+            88.075
+          ],
+          "end": [
+            115.375,
+            87.5748
+          ]
+        },
+        {
+          "uuid": "7e49f084-e154-4d3b-bc62-3c18eb75884f",
+          "net": "+3V3",
+          "kind": "PCB_TRACK",
+          "start": [
+            115.375,
+            87.5748
+          ],
+          "end": [
+            115.4,
+            87.55
+          ]
+        }
+      ],
+      "scope": "Endpoint hit test only; not a complete connectivity/cut-set proof. 3.3 V power also requires zone review."
+    },
+    {
+      "pin": "U6.22",
+      "current_net": "+3V3",
+      "position": [
+        115.8,
+        84.45
+      ],
+      "endpoint_hits_on_pad": [
+        {
+          "uuid": "a467956f-a9d0-4310-b2ea-996764ef5ab0",
+          "net": "+3V3",
+          "kind": "PCB_TRACK",
+          "start": [
+            115.8,
+            84.0568
+          ],
+          "end": [
+            115.8,
+            84.45
+          ]
+        }
+      ],
+      "scope": "Endpoint hit test only; not a complete connectivity/cut-set proof. 3.3 V power also requires zone review."
+    },
+    {
+      "pin": "U6.23",
+      "current_net": "I2C1_SCL",
+      "position": [
+        115.4,
+        84.45
+      ],
+      "endpoint_hits_on_pad": [
+        {
+          "uuid": "f462909d-2a2f-42d3-adde-23072aec3919",
+          "net": "I2C1_SCL",
+          "kind": "PCB_TRACK",
+          "start": [
+            115.4,
+            84.7803
+          ],
+          "end": [
+            115.4,
+            84.45
+          ]
+        }
+      ],
+      "scope": "Endpoint hit test only; not a complete connectivity/cut-set proof. 3.3 V power also requires zone review."
+    },
+    {
+      "pin": "U6.24",
+      "current_net": "I2C1_SDA",
+      "position": [
+        115.0,
+        84.45
+      ],
+      "endpoint_hits_on_pad": [
+        {
+          "uuid": "23cc4c37-8764-4d0f-b646-fa776426af6a",
+          "net": "I2C1_SDA",
+          "kind": "PCB_TRACK",
+          "start": [
+            114.578,
+            84.0282
+          ],
+          "end": [
+            115.0,
+            84.45
+          ]
+        }
+      ],
+      "scope": "Endpoint hit test only; not a complete connectivity/cut-set proof. 3.3 V power also requires zone review."
+    },
+    {
+      "pin": "U6.12",
+      "current_net": "IMU_INT",
+      "position": [
+        117.0,
+        87.55
+      ],
+      "endpoint_hits_on_pad": [
+        {
+          "uuid": "6880f885-6348-44f0-b01f-b6596f9caf76",
+          "net": "IMU_INT",
+          "kind": "PCB_TRACK",
+          "start": [
+            117.0,
+            87.55
+          ],
+          "end": [
+            119.008,
+            87.55
+          ]
+        }
+      ],
+      "scope": "Endpoint hit test only; not a complete connectivity/cut-set proof. 3.3 V power also requires zone review."
+    }
+  ],
+  "limits": [
+    "New pad net0 can report GND overlaps that an eventual assigned/filled board would resolve. Never waive these findings instead of routing and refilling.",
+    "Existing filled zones are frozen and not recalculated.",
+    "Zero unconnected entries is non-evidence for new net0 pads. Electrical schematic parity was not run on this mechanical study.",
+    "Library resolution warnings in this isolated package are retained.",
+    "No source copper has been deleted, moved or reassigned."
+  ]
+}

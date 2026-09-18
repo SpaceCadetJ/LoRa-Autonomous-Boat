@@ -1,0 +1,53 @@
+{
+  "scope": "Euclidean pad-center distance only; a lower bound, not routed trace length or electrical qualification.",
+  "pairs": [
+    {
+      "from": "C40.1",
+      "to": "U6.8",
+      "role": "VDDIO bypass",
+      "straight_line_pad_distance_mm": 1.509
+    },
+    {
+      "from": "C38.1",
+      "to": "U9.1",
+      "role": "LDO input bypass",
+      "straight_line_pad_distance_mm": 2.662
+    },
+    {
+      "from": "C39.1",
+      "to": "U9.5",
+      "role": "LDO output bypass",
+      "straight_line_pad_distance_mm": 2.571
+    },
+    {
+      "from": "C41.1",
+      "to": "U11.1",
+      "role": "IRQ translator VCCA bypass",
+      "straight_line_pad_distance_mm": 1.85
+    },
+    {
+      "from": "C42.1",
+      "to": "U11.6",
+      "role": "IRQ translator VCCB bypass",
+      "straight_line_pad_distance_mm": 1.661
+    },
+    {
+      "from": "U10.3",
+      "to": "U6.23",
+      "role": "Sensor SCL",
+      "straight_line_pad_distance_mm": 10.952
+    },
+    {
+      "from": "U10.4",
+      "to": "U6.24",
+      "role": "Sensor SDA",
+      "straight_line_pad_distance_mm": 11.024
+    },
+    {
+      "from": "U11.3",
+      "to": "U6.12",
+      "role": "Sensor INT1",
+      "straight_line_pad_distance_mm": 15.263
+    }
+  ]
+}

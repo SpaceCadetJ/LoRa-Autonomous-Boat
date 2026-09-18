@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-09-18T04:36:46.514833+00:00",
+  "version": "9.0.7",
+  "runner_sha256": "9620daa748d5b1e083798b79393b74273f97d3b446e59cea3d9f558e41047214",
+  "input_sha256": {
+    "reviews/codex/imu_placement/inputs/LoRa_Boat_Controller_V2.kicad_pcb": "49a8aa88cf61e8b6272ce13a0d5a5a6a3c6b81aeba057ebcd4ca15a6262c37b2",
+    "reviews/codex/imu_placement/inputs/LoRa_Boat_Controller_V2.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+    "reviews/codex/imu_placement/study/IMU_PLACEMENT_STUDY.kicad_pcb": "aa734b049c7486b7be6febcdf8d0c1af15578e1480cbe0f28147a6a30c5c1063",
+    "reviews/codex/imu_placement/study/IMU_PLACEMENT_STUDY.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056"
+  },
+  "output_sha256": {
+    "reviews/codex/imu_placement/drc_baseline.json": "f6cf4e9253049b80b6a4d9642f6f01a04209084351463aff2fbf0451fb89e942",
+    "reviews/codex/imu_placement/drc_study.json": "4a6ad59666f41a70c35e64c28022b10a7e272f85801c9436db360dbee7bbc0a5"
+  },
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--all-track-errors",
+        "-o",
+        "reviews/codex/imu_placement/drc_baseline.json",
+        "reviews/codex/imu_placement/inputs/LoRa_Boat_Controller_V2.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Found 105 violations\nFound 0 unconnected items\nSaved DRC Report to reviews/codex/imu_placement/drc_baseline.json\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\Jay\\AppData\\Local\\Programs\\KiCad\\9.0\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--all-track-errors",
+        "-o",
+        "reviews/codex/imu_placement/drc_study.json",
+        "reviews/codex/imu_placement/study/IMU_PLACEMENT_STUDY.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Found 245 violations\nFound 0 unconnected items\nSaved DRC Report to reviews/codex/imu_placement/drc_study.json\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Native DRC only, no schematic parity or zone refill; a successful command exit does not mean zero violations."
+}

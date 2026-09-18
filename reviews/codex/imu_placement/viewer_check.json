@@ -1,0 +1,29 @@
+{
+  "browser": "Headless Edge",
+  "results": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "image_loaded": true,
+      "study_project_and_board_links": true,
+      "live_pcb_link_absent": true,
+      "guide_contains_failed_native_gate": true,
+      "page_overflow": false,
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_loaded": true,
+      "study_project_and_board_links": true,
+      "live_pcb_link_absent": true,
+      "guide_contains_failed_native_gate": true,
+      "page_overflow": false,
+      "errors": []
+    }
+  ]
+}

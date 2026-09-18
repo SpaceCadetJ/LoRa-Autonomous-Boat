@@ -41,3 +41,5 @@ reviews/codex/design_completion/** -text
 "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat" -text
 
 reviews/codex/imu_interface/** -text
+
+reviews/codex/imu_placement/** -text

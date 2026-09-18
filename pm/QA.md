@@ -56,3 +56,7 @@ Embedding JSON through a replacement string expanded firmware dollar sequences a
 - REQ-CTL-01 says 1.0 s default command loss, while PROMPT_FOR_CODEX.md says 500 ms. Resolve the requirement before voice/RC coexistence acceptance tests.
 
 Next bounded packet: independently snapshot and verify V2 ERC/DRC and inventory, then inspect one power/control subsystem. Preserve Allegro evidence and primary CAD/firmware ownership throughout.
+
+## IMU placement review - 2026-09-18 UTC
+
+Local viewer: 76 documents, 54 images, 228 indexed paths. Desktop 1440 × 1000 and phone 390 × 844 checks passed placement-map loading, isolated project/PCB links, failed-native-check disclosure, zero page overflow and zero script errors. All 228 indexed local HTTP paths passed. The long view selector now shrinks within its label on phones. Placement evidence is deliberately a failed electrical integration gate: 136 native errors, preserved original copper and no new pad assignments. See reviews/codex/imu_placement/viewer_check.json and http_check.json. Hosted CI and hardware acceptance are separate.

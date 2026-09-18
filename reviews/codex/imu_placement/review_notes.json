@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-09-18T04:37:37.429552+00:00",
+  "independent_review": {
+    "read_only": true,
+    "original_footprints_reproduced": 118,
+    "total_footprints": 130,
+    "new_unassigned_pads": 37,
+    "preserved_non_footprint_blocks": 1331,
+    "courtyard_collisions": 0,
+    "native_errors": 136,
+    "native_warnings": 109,
+    "distinct_hole_conflict_pairs": 4,
+    "disposition": "Courtyard fit only; rejected for integration on untouched copper. Resolve filter recommendation and power-package envelope before final routing."
+  },
+  "review_fixes": [
+    "Explicit input list excludes ephemeral KiCad state",
+    "Superseded geometry scratch writer removed",
+    "Map displays failed native gate",
+    "Native runner hashes board/project inputs before and after checks",
+    "Phone view-selector overflow corrected"
+  ],
+  "visual_review": {
+    "path": "reviews/codex/imu_placement/placement-map.png",
+    "sha256": "d6a386114a965dabc768a349915b7c9f17d1aff0577ef91776ddfff1b6114b32",
+    "reviewed": true,
+    "notes": "Readable board context/detail; all trial references visible; native failure and separate fit result explicitly labelled."
+  }
+}

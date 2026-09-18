@@ -1,0 +1,20 @@
+{
+  "original_footprints_preserved_exactly": 118,
+  "added_footprints": [
+    "C38",
+    "C39",
+    "C40",
+    "C41",
+    "C42",
+    "R36",
+    "R37",
+    "R38",
+    "R39",
+    "U10",
+    "U11",
+    "U9"
+  ],
+  "non_footprint_blocks_preserved_exactly": 1331,
+  "tracks_vias_zones_fills_outline_rules_nets_unchanged": true,
+  "new_pads_unassigned": true
+}

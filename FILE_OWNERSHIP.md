@@ -57,3 +57,11 @@ Codex root claims reviews/codex/imu_interface/**, the current review handoff and
 ## IMU candidate review checkpoint - 2026-09-18 UTC
 
 Candidate generation, native exports, independent pin/part validation and eight rejection tests are complete. Child scopes are released. Root closes out the candidate viewer/portfolio records and ordinary selective publication. Live CAD, BOM and firmware remain unchanged. The next authorized packet is placement feasibility on a copy of the corrected PCB; the prior two unrelated local tool edits remain excluded.
+
+## IMU placement feasibility claim - 2026-09-18 UTC
+
+Codex root claims reviews/codex/imu_placement/** and current viewer/handoff integration for a placement study on an isolated copy of the corrected PCB. Existing live CAD, circuit memberships, purchasing exports and Stage A evidence remain unchanged. Child imu_placement_review is read-only. Preserve all existing copper and the 80 x 46 mm outline in the study; record collisions and routing constraints instead of silently deleting or rerouting. Placement is not electrical integration or fabrication approval. Existing v1_design.py and route_v2.py local edits remain excluded.
+
+## IMU placement checkpoint - 2026-09-18 UTC
+
+Read-only child review is complete and released. Root completes the isolated placement packet, viewer, captured-evidence CI and selective commit/push. No live CAD or circuit changes were made. Subsequent circuit work starts with the imu_placement handoff; the existing two unrelated local tool edits remain excluded.

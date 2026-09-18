@@ -26,7 +26,8 @@
     "engineering_handoff": "reviews/codex/design_completion/HANDOFF.md",
     "application_guides": "docs/applications/README.md",
     "v2_diagnostic": "firmware_v2/README.md",
-    "imu_candidate": "reviews/codex/imu_interface/README.md"
+    "imu_candidate": "reviews/codex/imu_interface/README.md",
+    "imu_placement": "reviews/codex/imu_placement/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -85,6 +86,12 @@
       "path": "hardware/manufacturing/v2/assembly_top.svg",
       "kind": "assembly_map",
       "caption": "V2 reference-designator map for assembly review."
+    },
+    {
+      "path": "reviews/codex/imu_placement/v2_imu_placement.svg",
+      "label": "IMU placement and copper-obstacle map",
+      "kind": "engineering_review",
+      "note": "Courtyard fit only; not an integrated or fabrication-ready design."
     }
   ],
   "validated_results": [
@@ -176,6 +183,15 @@
         "reviews/codex/imu_interface/native_manifest.json",
         "reviews/codex/imu_interface/README.md"
       ]
+    },
+    {
+      "claim": "An isolated mechanical study preserves all original PCB objects and fits the IMU courtyard envelopes. Native DRC exposes 136 errors across the proposed placement, blocking integration on untouched copper.",
+      "classification": "verified_geometry_and_recorded_failed_native_check",
+      "evidence": [
+        "reviews/codex/imu_placement/packet_manifest.json",
+        "reviews/codex/imu_placement/preservation.json",
+        "reviews/codex/imu_placement/routing_review.json"
+      ]
     }
   ],
   "current_native_findings": {
@@ -204,7 +220,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Assess placement and local routing for the verified IMU interface candidate while retaining the corrected ground network; resolve the five power/signal-limit findings before hardware release.",
+    "Disposition the IMU translator bias filter, establish a 6S protection/power-package envelope, then resolve the recorded placement/copper conflicts before electrical integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",
     "Measure voice quality, airtime and RC coexistence before selecting handheld radio, codec or hardware."

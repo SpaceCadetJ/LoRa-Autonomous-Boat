@@ -1,5 +1,9 @@
 # Start here: Codex review checkpoint
 
+## Latest bounded packet: placement feasibility
+
+[Placement study and next task](imu_placement/README.md) preserves all original copper and placements. It verifies courtyard fit but rejects integration on untouched copper, with 136 native errors. Next: disposition the recommended bias filter and establish the 6S power-package envelope before final routing.
+
 ## Latest bounded packet: IMU interface candidate
 
 [IMU candidate and next task](imu_interface/README.md) implements and independently checks the 1.8 V supply/bus/interrupt circuit in an isolated schematic. Live CAD and purchasing exports remain unchanged. Assess placement on a corrected PCB copy before integration.

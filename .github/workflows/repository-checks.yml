@@ -33,6 +33,8 @@ jobs:
           python -m unittest discover -s firmware_v2/tests -v
       - name: Check IMU candidate rejection cases
         run: python reviews/codex/imu_interface/test_candidate.py
+      - name: Verify placement preservation rejection cases
+        run: python reviews/codex/imu_placement/test_preservation.py
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

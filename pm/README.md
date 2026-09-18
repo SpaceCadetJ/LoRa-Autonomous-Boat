@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Current IMU placement review
+
+The [placement review](../reviews/codex/imu_placement/README.md) maps the twelve additions and a filter reserve. Courtyards fit, but 136 native errors identify required copper work; complete 6S fit is unresolved. The V2 Design viewer includes the obstacle map. Start with the new circuit/power/routing restart order.
+
 ## Current IMU correction candidate
 
 The [isolated 1.8 V IMU circuit](../reviews/codex/imu_interface/README.md) is available in the V2 Design viewer. Exactly five existing connections change; native comparison and ERC checks pass their scoped acceptance. It is not integrated into the PCB, BOM or firmware contract. Start with its placement/routing handoff; the six live electrical blockers remain open.

@@ -47,3 +47,7 @@ An application is ready when its exact assembly can be ordered, assembled, progr
 4. Operating limits, controls, fault indications and recovery steps demonstrated to match this handbook.
 
 The [review workflow](../build/REVIEW_WORKFLOW.md) handles source and evidence checks; the [acceptance record](ACCEPTANCE_RECORD.md) handles physical results. Failed or unperformed cases remain open. The [application index](applications.json) exposes the same status and next task to the viewer and portfolio tooling.
+
+## Current design gate: IMU placement
+
+The [placement review](../../reviews/codex/imu_placement/README.md) finds physical courtyard space but 136 native copper/mask/clearance errors on the isolated study. This does not advance any application to powered acceptance. Live board, purchasing and Stage A contracts are unchanged; resolve the bias-filter amendment and 6S power envelope before final routing and application bring-up.
