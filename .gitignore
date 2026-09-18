@@ -65,3 +65,5 @@ firmware_v2/build/
 
 # KiCad local session state is not design evidence.
 *.kicad_prl
+
+reviews/codex/imu_interface/source/hardware/**/_build/

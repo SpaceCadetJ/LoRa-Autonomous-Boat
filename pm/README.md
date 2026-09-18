@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Current IMU correction candidate
+
+The [isolated 1.8 V IMU circuit](../reviews/codex/imu_interface/README.md) is available in the V2 Design viewer. Exactly five existing connections change; native comparison and ERC checks pass their scoped acceptance. It is not integrated into the PCB, BOM or firmware contract. Start with its placement/routing handoff; the six live electrical blockers remain open.
+
 ## Current application and diagnostic edition
 
 Use **Use by application** for the [application handbook](../docs/applications/README.md), with separate V1 bench, V2 boat, rover, telemetry and handheld guides. The separate [V2 Stage A diagnostic](../firmware_v2/README.md) builds for board identity and inactive actuator outputs; it is not operational control firmware. The [component-limit review](../reviews/codex/design_completion/electrical/README.md) identifies six circuit blockers beyond the CAD warning count. Current affected parts are held in the ordering package. The integrated ground repair now has zero unconnected items and zero ordinary DRC errors, with unchanged warning/parity counts. V2 ordering has 74 candidate, 33 held and 11 bare-feature references. Start at the [current handoff](../reviews/codex/design_completion/HANDOFF.md); the next circuit packet is the IMU 1.8 V supply/interface correction. Earlier ground-count, no-V2-image and no-publication statements below describe previous checkpoints.

@@ -1,0 +1,28 @@
+[
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "candidate_selected": true,
+    "image_loaded": true,
+    "correct_project_link": true,
+    "live_pcb_link_absent": true,
+    "guide_dialog": true,
+    "page_overflow": false,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "candidate_selected": true,
+    "image_loaded": true,
+    "correct_project_link": true,
+    "live_pcb_link_absent": true,
+    "guide_dialog": true,
+    "page_overflow": false,
+    "errors": []
+  }
+]

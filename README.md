@@ -65,6 +65,8 @@ The integrated V2 ground repair reduces **three unconnected PCB items to zero**,
 
 Do not run full PCB generation or routing merely to refresh drawings. The schematic-only command preserves the existing PCB, project and BOM. Native KiCad checks require KiCad 9; the V1 build requires the recorded GNU Arm toolchain. No CI job flashes real hardware.
 
+The [IMU interface candidate](reviews/codex/imu_interface/README.md) now implements the proposed 1.8 V supply and I2C/interrupt translation in a separately checked schematic. It is available in the V2 viewer; live PCB integration is the next layout task.
+
 ## Next milestones
 
 1. Correct the IMU's 1.8 V interface and the five remaining power/signal-limit findings; reconcile schematic-to-PCB differences.

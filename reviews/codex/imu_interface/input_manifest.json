@@ -1,0 +1,21 @@
+{
+  "revision": "a66980cb9728d30c38aa93c44303feee83f3ab08",
+  "sha256": {
+    "hardware/kicad/tools/gen_sch.py": "8fa6097c9911df77137fd0600bdd991cbd1a9ab8be071a445a0691c143a8b8df",
+    "hardware/kicad/tools/kicad_sym.py": "fdc2f79c1cc821d9a28dc9cbdb49aae2e6f86611d36a53a2194514c4c3a3f0f3",
+    "hardware/kicad/tools/kicad_write.py": "df9a3121b8555ac8a84290448dbd16f7a2d0664e9a7c126150ab2cb062001bd1",
+    "hardware/kicad/tools/schematic_layout.py": "c574d54773510b8795aa7e61e17b042b476af00357e750b86a8dc4a4244d9996",
+    "hardware/kicad/tools/v1_design.py": "f7929aa58422e0b25168d4e451af1768c0282875e78bc503c4172fc76250ef80",
+    "hardware/kicad_v2/tools/gen_v2.py": "1504bb30d96acd736ea5b70dfab8eb7e7c5171ae6d1a805d5e2275e35ed0338b",
+    "hardware/kicad_v2/tools/v2_design.py": "5b8d457625ba2dec897a0ab1e8b75ac2a57455c914030d89d772f3a255cbf3b4",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sym": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym": "3a8e94baff843cfd8d3253f808d07d697424464d7a5db6d0a4a2f22c5527e121",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+    "hardware/kicad_v2/fp-lib-table": "ab7fae9b8768ecd1309a42873f463ef02016b0ac5c026a12fb412bfa47e8faf7",
+    "hardware/kicad_v2/sym-lib-table": "3dccf10d5632037fbc6978966881b8eb68ceb500677674a746481e19a0368ae3",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/QFN-24_3x3mm_P0.4mm_NoEP.kicad_mod": "45d275957763fbc76756a2c762a7dd9bf1e8ab71e7eeb03e3e537b192d28f054",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod": "b880a51afb66d5a86cbd2dad667bd6a819500be0a7d51aa2234ce6cac41a2fee",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod": "ce99ee424974e7bae6c9137e43ac6b4f8bc4daaa9d6777f26049be4f1f1dd830",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod": "3df2bdad2d5533ceb5a0492e93aae8e2faab545a4f2e999d8a2a426829fca314"
+  }
+}

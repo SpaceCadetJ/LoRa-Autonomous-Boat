@@ -25,7 +25,8 @@
     "build_guide": "docs/build/README.md",
     "engineering_handoff": "reviews/codex/design_completion/HANDOFF.md",
     "application_guides": "docs/applications/README.md",
-    "v2_diagnostic": "firmware_v2/README.md"
+    "v2_diagnostic": "firmware_v2/README.md",
+    "imu_candidate": "reviews/codex/imu_interface/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -166,6 +167,15 @@
         "reviews/codex/design_completion/mcu_ground/comparison.json",
         "reviews/codex/design_completion/native-review/review.json"
       ]
+    },
+    {
+      "claim": "An isolated IMU interface schematic adds a 1.8 V rail and I2C/interrupt translation. Native comparison verifies exactly five changed existing connections, 356 preserved memberships and no new ERC findings; PCB integration remains pending.",
+      "classification": "verified_schematic_candidate_not_integrated",
+      "evidence": [
+        "reviews/codex/imu_interface/validation.json",
+        "reviews/codex/imu_interface/native_manifest.json",
+        "reviews/codex/imu_interface/README.md"
+      ]
     }
   ],
   "current_native_findings": {
@@ -194,7 +204,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Correct the IMU 1.8 V supply/interface and five power/signal-limit findings; reconcile schematic-to-PCB discrepancies.",
+    "Assess placement and local routing for the verified IMU interface candidate while retaining the corrected ground network; resolve the five power/signal-limit findings before hardware release.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",
     "Measure voice quality, airtime and RC coexistence before selecting handheld radio, codec or hardware."

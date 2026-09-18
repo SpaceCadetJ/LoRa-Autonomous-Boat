@@ -1,5 +1,11 @@
 # Viewer delivery verification — 2026-09-17
 
+## Current isolated IMU candidate edition
+
+The V2 Design selector includes the annotated 1.8 V IMU candidate with explicit pending PCB integration. Its project link opens the isolated candidate; the live PCB link is omitted for that view. Desktop 1440 x 1000 and phone 390 x 844 checks pass candidate selection/image load, guide opening, correct project link and no page overflow or browser errors. [Results](../reviews/codex/imu_interface/viewer_check.json).
+
+The changed A2 Navigation SVG was rasterized with CairoSVG and visually inspected after correcting supply-label spacing, annotation length and title-block scope. [Visual evidence](../reviews/codex/imu_interface/visual_review.json). Packaging contains 75 documents, 53 images and 224 indexed paths; 236 local HTTP links pass. The candidate is not included in the live PCB or buying lists.
+
 ## Current application and diagnostic edition
 
 The viewer reads the integrated V2 board's [native review](../reviews/codex/design_completion/native-review/REVIEW.md), the [Stage A build manifest](../firmware_v2/evidence/stage_a_build.json), five application guides and six component-limit findings. V2 now has zero unconnected PCB items; the strict native review and hardware release gates remain failed/open. Purchasing data reflects 74 candidate / 33 held / 11 bare-feature V2 references.

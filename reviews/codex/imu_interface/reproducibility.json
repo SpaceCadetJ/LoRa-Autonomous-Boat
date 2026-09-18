@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "runs_compared": 2,
+  "candidate_outputs_identical": true,
+  "source_scripts_identical": true,
+  "live_design_preserved": true,
+  "output_sha256": {
+    "source/hardware/kicad_v2/Actuators.kicad_sch": "a8ed776df3e329b417aacb15e8002553e57923298792df1f406a515793e02a4d",
+    "source/hardware/kicad_v2/Debug.kicad_sch": "443ce9d1f8b8e2d9c254afa007ee91e63c84a60fdf24763ae0e47f4cf1dfbdcf",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch": "b0312c21971d96df426dcf0a8705eb7dd95c210b21644f4756debf134a2e1637",
+    "source/hardware/kicad_v2/MCU.kicad_sch": "16b1e14ba7e1a030b97fdc61bca3590da584edd15fd7a9fe613053ecd73d532e",
+    "source/hardware/kicad_v2/Navigation.kicad_sch": "8452b6168228e3fe3400e52343d16b3982849edd1cd0a0e59f2593f4e4dfe19a",
+    "source/hardware/kicad_v2/Power.kicad_sch": "72564354eb44cf156f49e228b8fae1db9a3ee0e8345a61aea55eac886f354375",
+    "source/hardware/kicad_v2/Radio.kicad_sch": "bba4f4891ea79c80766439bd63387b19646dd30bfb5a26a0d5bb3bfe76427295",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym": "c21bf87dc5ea7de85c19909d0854ba515d1f5cb2d9f8194891cccecb3c0e4773",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DCT0008A_PCA9306_3x3mm_P0.65mm.kicad_mod": "59a3d80d356310abd2e5dd9cf0d958498de884642f733e4b697503f6e62c7706"
+  },
+  "limitations": [
+    "Same-host KiCad 9 library input reproduction; no PCB or hardware qualification."
+  ]
+}

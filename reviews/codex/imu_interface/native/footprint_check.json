@@ -1,0 +1,69 @@
+{
+  "status": "matches_recorded_TI_example_land_pattern",
+  "source": "reviews/codex/imu_interface/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DCT0008A_PCA9306_3x3mm_P0.65mm.kicad_mod",
+  "sha256": "59a3d80d356310abd2e5dd9cf0d958498de884642f733e4b697503f6e62c7706",
+  "source_drawing": "TI DCT0008A 4220784/D October 2025; PCA9306 datasheet pages 28-30",
+  "pads": [
+    {
+      "pin": 1,
+      "x_mm": -1.9,
+      "y_mm": -0.975,
+      "width_mm": 1.1,
+      "height_mm": 0.4
+    },
+    {
+      "pin": 2,
+      "x_mm": -1.9,
+      "y_mm": -0.325,
+      "width_mm": 1.1,
+      "height_mm": 0.4
+    },
+    {
+      "pin": 3,
+      "x_mm": -1.9,
+      "y_mm": 0.325,
+      "width_mm": 1.1,
+      "height_mm": 0.4
+    },
+    {
+      "pin": 4,
+      "x_mm": -1.9,
+      "y_mm": 0.975,
+      "width_mm": 1.1,
+      "height_mm": 0.4
+    },
+    {
+      "pin": 5,
+      "x_mm": 1.9,
+      "y_mm": 0.975,
+      "width_mm": 1.1,
+      "height_mm": 0.4
+    },
+    {
+      "pin": 6,
+      "x_mm": 1.9,
+      "y_mm": 0.325,
+      "width_mm": 1.1,
+      "height_mm": 0.4
+    },
+    {
+      "pin": 7,
+      "x_mm": 1.9,
+      "y_mm": -0.325,
+      "width_mm": 1.1,
+      "height_mm": 0.4
+    },
+    {
+      "pin": 8,
+      "x_mm": 1.9,
+      "y_mm": -0.975,
+      "width_mm": 1.1,
+      "height_mm": 0.4
+    }
+  ],
+  "assembly_qualified": false,
+  "limitations": [
+    "Native pad-geometry check only; no assembled component or stencil qualification.",
+    "Package courtyard and pin-one marking still require first-article inspection."
+  ]
+}

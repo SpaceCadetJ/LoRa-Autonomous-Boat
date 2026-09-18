@@ -66,3 +66,7 @@ Before release, record scope traces for first pulse, reset/brownout, disarm, rad
 Navigation additionally needs fix-age, sensor loss, calibration, manual override and bounded path testing. The smallest next task is to resolve the electrical holds, validate Stage A on the accepted assembly and freeze the [control protocol contract](../build/FLASHING_V2.md) before adding the Stage B supervisor and PWM. Keep outputs inactive until the applicable unloaded checks pass.
 
 References: [requirements](../V2_REQUIREMENTS.md), [firmware plan](../../firmware/V2_FIRMWARE_PLAN.md), [latest project handoff](../../HANDOFF.md), [record template](ACCEPTANCE_RECORD.md).
+
+## IMU correction under review
+
+The [1.8 V IMU schematic candidate](../../reviews/codex/imu_interface/README.md) is available for circuit review. It has not changed the live PCB, wiring guide, order lists or Stage A image. Complete placement/routing and electrical acceptance before treating it as a buildable board revision.

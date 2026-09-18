@@ -39,3 +39,5 @@ firmware_v2/evidence/** -text
 firmware_v2/src/** text eol=lf
 reviews/codex/design_completion/** -text
 "Allegro/hardware/allegro-original/Allegro v5/Allegro/pstxnet.dat" -text
+
+reviews/codex/imu_interface/** -text

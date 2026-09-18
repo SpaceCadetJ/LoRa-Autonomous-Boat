@@ -1,0 +1,19 @@
+{
+  "reviewed_utc": "2026-09-18T03:42:57.209193+00:00",
+  "sheet": "Navigation A2",
+  "method": "Native KiCad SVG rasterized with CairoSVG at 2400 pixels width and visually inspected",
+  "source_sha256": "c4a92a38a4620feedcb5aeac747d3d623434d3baae04147f82ee911b3ed7417c",
+  "image_sha256": "1f5742260e964740abf0dc22fd0f97d988cca784e4cc2c25cd38c30acfd444d5",
+  "findings_addressed": [
+    "Separated adjacent 1.8 V and reference-bias labels",
+    "Separated IC values from supply labels",
+    "Shortened annotations to stay inside panels",
+    "Changed title comment to explicit five-pin candidate scope",
+    "Shortened revision label to avoid title-block clipping"
+  ],
+  "remaining_limits": [
+    "Named-net drawing; matching net labels must be followed across functional groups.",
+    "Only the changed Navigation sheet was visually reviewed in this packet; all seven pages passed coordinate bounds.",
+    "Native ERC retains the prior AD0 pin-type warning; no PCB integration or hardware measurement."
+  ]
+}

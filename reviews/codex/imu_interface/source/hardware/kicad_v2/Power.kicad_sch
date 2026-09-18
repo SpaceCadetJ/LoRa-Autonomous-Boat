@@ -1,0 +1,4644 @@
+(kicad_sch
+(version 20250114)
+(generator "gen_sch.py")
+(generator_version "9.0")
+(uuid "fe754791-0851-5a6f-9db7-b6461980f29f")
+(paper "A2")
+(title_block (title "LoRa multifunction vehicle node V2 - Power") (date "2026-09-18") (rev "V2-IMU1") (company "LoRa Controller Project") (comment 1 "IMU candidate: five U6 pin changes; not PCB integrated") (comment 2 "Build and review: docs/build/README.md"))
+(lib_symbols
+	(symbol "Amplifier_Current:INA180A1"
+		(pin_names
+			(offset 0.127)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 3.81 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "INA180A1"
+			(at 3.81 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 1.27 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina180.pdf"
+			(at 3.81 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Current Sense Amplifier, 1 Circuit, Rail-to-Rail, 26V, Gain 20 V/V, SOT-23-5"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "current monitor shunt sensor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "INA180A1_0_1"
+			(polyline
+				(pts
+					(xy 5.08 0)
+					(xy -5.08 5.08)
+					(xy -5.08 -5.08)
+					(xy 5.08 0)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "INA180A1_1_1"
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 7.62 270)
+				(length 3.81)
+				(name "V+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 -7.62 90)
+				(length 3.81)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Connector:TestPoint"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.762)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "TP"
+			(at 0 6.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 5.08 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 5.08 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "test point tp"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Pin* Test*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TestPoint_0_1"
+			(circle
+				(center 0 3.302)
+				(radius 0.762)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TestPoint_1_1"
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Connector_Generic:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762)
+					(xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762)
+					(xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:C_Polarized"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C_Polarized"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "CP_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C_Polarized_0_1"
+			(rectangle
+				(start -2.286 0.508)
+				(end 2.286 1.016)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 2.286)
+					(xy -0.762 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 2.794)
+					(xy -1.27 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.286 -0.508)
+				(end -2.286 -1.016)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+		)
+		(symbol "C_Polarized_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:D_Schottky"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Schottky"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "diode Schottky"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D_Schottky_0_1"
+			(polyline
+				(pts
+					(xy -1.905 0.635)
+					(xy -1.905 1.27)
+					(xy -1.27 1.27)
+					(xy -1.27 -1.27)
+					(xy -0.635 -1.27)
+					(xy -0.635 -0.635)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.27)
+					(xy 1.27 -1.27)
+					(xy -1.27 0)
+					(xy 1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0)
+					(xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_Schottky_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:D_Zener"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D_Zener_0_1"
+			(polyline
+				(pts
+					(xy -1.27 -1.27)
+					(xy -1.27 1.27)
+					(xy -0.762 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0)
+					(xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.27)
+					(xy 1.27 1.27)
+					(xy -1.27 0)
+					(xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_Zener_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:Fuse"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "F"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fuse"
+			(at -1.905 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "fuse"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*Fuse*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Fuse_0_1"
+			(rectangle
+				(start -0.762 -2.54)
+				(end 0.762 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54)
+					(xy 0 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Fuse_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:L"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "L"
+			(at -1.27 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L"
+			(at 1.905 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "inductor choke coil reactor magnetic"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "L_0_1"
+			(arc
+				(start 0 2.54)
+				(mid 0.6323 1.905)
+				(end 0 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 1.27)
+				(mid 0.6323 0.635)
+				(end 0 0)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 0)
+				(mid 0.6323 -0.635)
+				(end 0 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -1.27)
+				(mid 0.6323 -1.905)
+				(end 0 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "L_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Diode:SMAJ33A"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMAJ33A"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+			(at -1.27 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "400W unidirectional Transient Voltage Suppressor, 33.0Vr, SMA(DO-214AC)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "unidirectional diode TVS voltage suppressor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "D*SMA*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SMAJ33A_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27)
+					(xy -1.27 1.27)
+					(xy -1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.27)
+					(xy 1.27 -1.27)
+					(xy -1.27 0)
+					(xy 1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SMAJ33A_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "LoRa_Boat_Controller:CMS06_Schottky"
+		(pin_numbers hide)
+		(pin_names
+			(offset 1.016)
+			hide
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CMS06(TE12L,Q,M)"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller:M-FLAT_TOS-L"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://toshiba.semicon-storage.com/info/CMS06_datasheet_en_20190723.pdf"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky barrier diode 30 V 2 A, M-FLAT. Pin 1 anode, pin 2 cathode (Toshiba numbering)."
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "diode schottky"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CMS06_Schottky_0_1"
+			(polyline
+				(pts
+					(xy 1.27 0)
+					(xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 1.27)
+					(xy -1.27 -1.27)
+					(xy 1.27 0)
+					(xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.635 1.27)
+					(xy 1.27 1.27)
+					(xy 1.27 -1.27)
+					(xy 1.905 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "CMS06_Schottky_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "LoRa_Boat_Controller:R1240N001x"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R1240N001B-TR-FE"
+			(at -7.62 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller:SOT-23-6W_PE-SOT23-6W-0512_NMD"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/r1240-ea.pdf"
+			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1.25 MHz asynchronous step-down DC/DC converter (external Schottky catch diode required), SOT-23-6W. Pins per Nisshinbo DS EA-190-240903."
+			(at 0 -20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "buck regulator ricoh nisshinbo"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R1240N001x_0_1"
+			(rectangle
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R1240N001x_1_1"
+			(pin power_in line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "CE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name "LX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "BST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -5.08 180)
+				(length 2.54)
+				(name "VFB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -10.16 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "LoRa_Boat_Controller:VIN_RAW"
+		(power)
+		(pin_numbers hide)
+		(pin_names
+			(offset 0)
+			hide
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VIN_RAW"
+			(at 0 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Battery input rail (Allegro net N088060); unregulated, unprotected on V1"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "VIN_RAW_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27)
+					(xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0)
+					(xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54)
+					(xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "VIN_RAW_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "LoRa_Boat_Controller_V2:VSERVO"
+		(power)
+		(pin_numbers hide)
+		(pin_names
+			(offset 0)
+			hide
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VSERVO"
+			(at 0 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Actuator rail 5-6 V: ESC BEC or the on-board 5 V buck through OR-ing diodes (REQ-PWR-03/04)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "VSERVO_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27)
+					(xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0)
+					(xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54)
+					(xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "VSERVO_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Regulator_Switching:TPS54202DDC"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPS54202DDC"
+			(at 0 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 1.27 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54202.pdf"
+			(at -7.62 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2A, 4.5 to 28V Input, EMI Friendly integrated switch synchronous step-down regulator, pulse-skipping, SOT-23-6"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "switching buck converter power-supply voltage regulator emi spread spectrum"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TPS54202DDC_0_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TPS54202DDC_1_1"
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "BOOT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "FB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Transistor_FET:AO3401A"
+		(pin_names
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Q"
+			(at 5.08 1.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3401A"
+			(at 5.08 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 5.08 -1.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
+			(at 5.08 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "P-Channel MOSFET"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "AO3401A_0_1"
+			(polyline
+				(pts
+					(xy 0.254 1.905)
+					(xy 0.254 -1.905)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.254 0)
+					(xy -2.54 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 2.286)
+					(xy 0.762 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 1.778)
+					(xy 3.302 1.778)
+					(xy 3.302 -1.778)
+					(xy 0.762 -1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 0.508)
+					(xy 0.762 -0.508)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 -1.27)
+					(xy 0.762 -2.286)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 1.651 0)
+				(radius 2.794)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.286 0)
+					(xy 1.27 0.381)
+					(xy 1.27 -0.381)
+					(xy 2.286 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 2.54)
+					(xy 2.54 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.54 1.778)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center 2.54 -1.778)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -2.54)
+					(xy 2.54 0)
+					(xy 0.762 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -0.508)
+					(xy 2.921 -0.381)
+					(xy 3.683 -0.381)
+					(xy 3.81 -0.254)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.302 -0.381)
+					(xy 2.921 0.254)
+					(xy 3.683 0.254)
+					(xy 3.302 -0.381)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "AO3401A_1_1"
+			(pin input line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "G"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 5.08 270)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -5.08 90)
+				(length 2.54)
+				(name "S"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "power:+3V3"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 0 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "+3V3_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27)
+					(xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54)
+					(xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0)
+					(xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+3V3_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "power:GND"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0)
+					(xy 0 -1.27)
+					(xy 1.27 -1.27)
+					(xy 0 -2.54)
+					(xy -1.27 -1.27)
+					(xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "power:PWR_FLAG"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0)
+					(xy 0 1.27)
+					(xy -1.016 1.905)
+					(xy 0 2.54)
+					(xy 1.016 1.905)
+					(xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)
+	(text "V2  /  POWER"
+		(exclude_from_sim no)
+		(at 13 17 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "67c7df72-45ea-5bf9-a241-e690a6e62d73")
+	)
+	(text "Functional groups / electrical pin numbers / named-net connections"
+		(exclude_from_sim no)
+		(at 13 24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "48426e5c-d31c-5f25-bdaf-734a9dd8621c")
+	)
+(polyline (pts (xy 13 34) (xy 194.333333 34) (xy 194.333333 188.2) (xy 13 188.2) (xy 13 34)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "13ee5d3c-096f-5c33-9455-5d937d4f0117"))
+	(text "01  Protected board input"
+		(exclude_from_sim no)
+		(at 18 41 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "9113ac27-94c0-5198-8bc5-2751bbde6e0a")
+	)
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 43.18 66.04 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "44a46368-9f7c-5bc6-94b8-563d301be078") (property "Reference" "J1" (at 43.18 61.27 0) (effects (font (size 1.27 1.27))  )) (property "Value" "BATTERY XT30" (at 43.18 73.35 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal" (at 43.18 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Battery input 7-25 V, board only (<= 3 A)" (at 43.18 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "XT30PW-M" (at 43.18 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Amass" (at 43.18 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 43.18 66.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "216d933d-341b-5c44-bd05-02ba262a028c"))(pin "2" (uuid "8e00b7ee-3394-5696-badf-a2f0be3680bc")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "J1") (unit 1)))))
+	(wire
+		(pts
+			(xy 38.1 66.04) (xy 33.02 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c10473-81aa-5a09-b700-430e37982532")
+	)
+(label "VBAT_IN"  (at 33.02 66.04 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "e0917735-1c76-5930-a95b-d7f4547237df"))
+	(wire
+		(pts
+			(xy 38.1 68.58) (xy 33.02 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01c8bf56-5c3a-571a-9df9-b103fd638aac")
+	)
+(global_label "GND" (shape passive) (at 33.02 68.58 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "ec6f020d-b15c-5496-a582-90b22c057e3e"))
+(symbol (lib_id "Device:Fuse") (at 86.36 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ce2febbf-5953-5b80-9a7b-4dab2c28cad8") (property "Reference" "F1" (at 90.122 67.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "3A" (at 90.122 70.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Fuse:Fuse_1812_4532Metric" (at 86.36 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "3 A fast-acting 1812 fuse on the board feed" (at 86.36 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "0468003.NR" (at 86.36 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Littelfuse" (at 86.36 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 86.36 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "5b46a638-e8ef-51d2-a3c8-68cf1ca1bcd8"))(pin "2" (uuid "43284796-f4e5-5796-a701-9503e0dc6cfe")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "F1") (unit 1)))))
+	(wire
+		(pts
+			(xy 86.36 64.77) (xy 86.36 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c651430a-a196-5452-ab0e-1ddbc9cf78da")
+	)
+	(wire
+		(pts
+			(xy 86.36 59.69) (xy 88.9 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81548d17-a580-541d-b56a-5d9e93a964ea")
+	)
+(label "VBAT_IN"  (at 88.9 59.69 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c757ea4a-923d-57a8-9a5e-dec16dc0aaf2"))
+	(wire
+		(pts
+			(xy 86.36 72.39) (xy 86.36 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "123e1d28-9ddd-51fd-afb5-34a25e46f872")
+	)
+	(wire
+		(pts
+			(xy 86.36 77.47) (xy 88.9 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfc7b73c-255c-5a05-bb5b-7523b0544a43")
+	)
+(label "VBAT_FUSED"  (at 88.9 77.47 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1c981e71-64a0-537b-8b06-6248b275a9c2"))
+(symbol (lib_id "Transistor_FET:AO3401A") (at 132.08 78.74 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c52806ed-e1ca-58ad-8795-409e654a4096") (property "Reference" "Q1" (at 132.08 54.66 0) (effects (font (size 1.27 1.27))  )) (property "Value" "AO3401A" (at 132.08 58.16 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 132.08 78.74 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "P-MOSFET reverse-polarity protection (-30 V, 4 A)" (at 132.08 78.74 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "AO3401A" (at 132.08 78.74 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Alpha & Omega" (at 132.08 78.74 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" (at 132.08 78.74 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "d6e8d19a-c393-508a-8c12-a6b5476a558b"))(pin "3" (uuid "a9535534-fd86-5208-b621-9ebbf4edd097"))(pin "2" (uuid "ff5ff7ce-14af-5c8b-bbe5-afb389debdaf")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "Q1") (unit 1)))))
+	(wire
+		(pts
+			(xy 127 78.74) (xy 121.92 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "592caa48-5a99-5035-8ef2-dac71332b030")
+	)
+(label "PGATE"  (at 121.92 78.74 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d2d449e7-8530-5828-8b52-f0386ff85dbc"))
+	(wire
+		(pts
+			(xy 134.62 73.66) (xy 134.62 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07c98695-db7c-582c-a139-d72a46de637b")
+	)
+	(wire
+		(pts
+			(xy 134.62 68.58) (xy 137.16 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ce24f7c-dd7c-57d0-bca1-1b2e7833bd6a")
+	)
+(label "VBAT_FUSED"  (at 137.16 68.58 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5cb4b5ff-d130-5a5d-ae05-f8ef8f126594"))
+	(wire
+		(pts
+			(xy 134.62 83.82) (xy 134.62 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2336aa58-20de-5c6d-89ac-6667dcb38add")
+	)
+(symbol (lib_id "LoRa_Boat_Controller:VIN_RAW") (at 134.62 88.9 180) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "bfb5d254-b62a-5192-87de-7e7ab32022d2") (property "Reference" "#PWRPOW01" (at 134.62 85.09 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "VIN_RAW" (at 134.62 92.456 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "2031696f-b715-5092-b2b7-8877a137adcf")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW01") (unit 1)))))
+(symbol (lib_id "Device:D_Zener") (at 40.64 114.3 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4f686971-a1b4-5314-bb2b-16ff780ebc68") (property "Reference" "D2" (at 40.64 109.53 0) (effects (font (size 1.27 1.27))  )) (property "Value" "10V" (at 40.64 119.07 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "Diode_SMD:D_SOD-123" (at 40.64 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Gate-source clamp for Q1 (10 V: AO3401A Vgs max is 12 V, review A-10)" (at 40.64 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "BZT52C10-7-F" (at 40.64 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Diodes Inc" (at 40.64 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 40.64 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "ef490b3d-e725-5802-adc5-7963730a532d"))(pin "2" (uuid "403d78b2-c52c-52a2-a48f-cb47a5809802")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "D2") (unit 1)))))
+	(wire
+		(pts
+			(xy 36.83 114.3) (xy 31.75 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40ad6bb2-d668-5d85-9a15-e7b36e2d9a61")
+	)
+(global_label "VIN_RAW" (shape passive) (at 31.75 114.3 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "06c2a3e7-540b-511d-a755-0eb4c960fc00"))
+	(wire
+		(pts
+			(xy 44.45 114.3) (xy 49.53 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "683ead31-5455-534c-beb1-13ac0468cb8f")
+	)
+(label "PGATE"  (at 49.53 114.3 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "df920f38-8ae2-515c-aadf-035395812b85"))
+(symbol (lib_id "Device:R") (at 86.36 116.84 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4d7d7929-5431-5dac-8761-cd99e31ce49a") (property "Reference" "R1" (at 90.376 115.34 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100k" (at 90.376 118.84 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 86.36 116.84 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Q1 gate pull-down" (at 86.36 116.84 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-07100KL" (at 86.36 116.84 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 86.36 116.84 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 86.36 116.84 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "662af234-cef0-50ef-8073-a269f5a7a078"))(pin "2" (uuid "41a8250b-090f-5c3e-b3cc-e257e60be530")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "R1") (unit 1)))))
+	(wire
+		(pts
+			(xy 86.36 113.03) (xy 86.36 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d3e395c-46b4-5e99-b615-a87c99c0ecaa")
+	)
+	(wire
+		(pts
+			(xy 86.36 107.95) (xy 88.9 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "413c77f4-d620-5320-83d9-1516b80c4d55")
+	)
+(label "PGATE"  (at 88.9 107.95 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5685061b-4a57-5db5-b8ff-5a148186cfb5"))
+	(wire
+		(pts
+			(xy 86.36 120.65) (xy 86.36 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90ef8e63-b11e-5094-a275-4ee8ad4a265a")
+	)
+(symbol (lib_id "power:GND") (at 86.36 125.73 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "b248b8af-230b-5cdc-a456-5a1bf73e68d6") (property "Reference" "#PWRPOW02" (at 86.36 121.92 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 86.36 129.286 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "27f69feb-0dda-5d6e-bb8f-753a0d2b6be1")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW02") (unit 1)))))
+(symbol (lib_id "Diode:SMAJ33A") (at 132.08 114.3 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "586dcef8-58c2-534d-8f6f-da5c780873da") (property "Reference" "D1" (at 132.08 109.53 0) (effects (font (size 1.27 1.27))  )) (property "Value" "SMAJ33A" (at 132.08 119.07 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "Diode_SMD:D_SMA" (at 132.08 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "33 V unidirectional TVS on VIN_RAW (pin 1 = cathode to VIN_RAW)" (at 132.08 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "SMAJ33A" (at 132.08 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Littelfuse" (at 132.08 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet" (at 132.08 114.3 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "d461354b-20dc-5f78-bdec-33d3c389ee55"))(pin "2" (uuid "766c110c-d63b-5e4d-ace2-fb3677f9fa88")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "D1") (unit 1)))))
+	(wire
+		(pts
+			(xy 128.27 114.3) (xy 123.19 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "984be819-9588-55d5-a882-e7d2efbc05e6")
+	)
+(global_label "VIN_RAW" (shape passive) (at 123.19 114.3 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "470c4fb7-4f65-5327-a0dd-9c22323f6f74"))
+	(wire
+		(pts
+			(xy 135.89 114.3) (xy 140.97 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "291c7348-2756-56ce-ac57-8430108c69b1")
+	)
+(global_label "GND" (shape passive) (at 140.97 114.3 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "9d494f0b-d6f7-51ef-8467-179883696a51"))
+(symbol (lib_id "Device:C_Polarized") (at 40.64 154.94 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2927f856-3917-59d2-a9fe-97bee367927e") (property "Reference" "C1" (at 45.926 153.44 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "47uF 50V" (at 45.926 156.94 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7" (at 40.64 154.94 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Bulk input capacitor" (at 40.64 154.94 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "EEE-FK1H470P" (at 40.64 154.94 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Panasonic" (at 40.64 154.94 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 40.64 154.94 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "2842505f-4382-50fe-a414-1b57d640dcf1"))(pin "2" (uuid "208cf954-44da-5c87-8b6a-d609724c1014")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C1") (unit 1)))))
+	(wire
+		(pts
+			(xy 40.64 151.13) (xy 40.64 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b013dd52-8ead-5ffc-bb3b-ec0f4f2a8059")
+	)
+(symbol (lib_id "LoRa_Boat_Controller:VIN_RAW") (at 40.64 146.05 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "6a61a875-9e08-59ab-b804-aa41710631e4") (property "Reference" "#PWRPOW03" (at 40.64 142.24 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "VIN_RAW" (at 40.64 142.494 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "1e33c9b2-594c-5dad-ab62-3a8de76f7eb1")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW03") (unit 1)))))
+	(wire
+		(pts
+			(xy 40.64 158.75) (xy 40.64 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aabf0fd3-2bea-5906-b740-e273f7f48671")
+	)
+(symbol (lib_id "power:GND") (at 40.64 163.83 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "cb4d5de0-e7f8-5d49-b9c1-e77b8fe14243") (property "Reference" "#PWRPOW04" (at 40.64 160.02 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 40.64 167.386 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "e954059c-ee73-5e8d-9bc3-31cf257d69b9")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW04") (unit 1)))))
+(symbol (lib_id "Device:C") (at 86.36 154.94 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5b2f9dcb-de7d-5cdc-9d1a-c6eb731e64cb") (property "Reference" "C2" (at 91.392 153.44 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "10uF 50V" (at 91.392 156.94 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_1210_3225Metric" (at 86.36 154.94 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Input ceramic" (at 86.36 154.94 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "GRM32ER71H106KA12L" (at 86.36 154.94 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Murata" (at 86.36 154.94 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 86.36 154.94 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "0262a9ef-5f52-57c8-bc8e-860e144b6b4c"))(pin "2" (uuid "a679a931-3e0a-5d4c-aa81-53727f1d384b")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C2") (unit 1)))))
+	(wire
+		(pts
+			(xy 86.36 151.13) (xy 86.36 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9af2c2f-f1c6-5477-b590-4b119baa96f0")
+	)
+(symbol (lib_id "LoRa_Boat_Controller:VIN_RAW") (at 86.36 146.05 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "b0d25296-e77c-54e4-b9ed-c4a608c9a0ea") (property "Reference" "#PWRPOW05" (at 86.36 142.24 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "VIN_RAW" (at 86.36 142.494 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "789f77ea-0009-56f7-a3b2-56c1962658ea")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW05") (unit 1)))))
+	(wire
+		(pts
+			(xy 86.36 158.75) (xy 86.36 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3eb6f32d-5dd5-52cb-ad41-8f0325a7a303")
+	)
+(symbol (lib_id "power:GND") (at 86.36 163.83 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "a6000186-b992-5de7-afbd-9c9c3a20dd00") (property "Reference" "#PWRPOW06" (at 86.36 160.02 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 86.36 167.386 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "aa8b3e66-7f4e-551f-93fa-9fa59ef55513")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW06") (unit 1)))))
+	(text "Board supply path only; propulsion battery current bypasses this PCB. Protection ratings and 2S-6S margin require design review."
+		(exclude_from_sim no)
+		(at 20 178.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "899e6ac0-490b-5ec1-ad3f-fa5df872563a")
+	)
+(polyline (pts (xy 13 196.2) (xy 194.333333 196.2) (xy 194.333333 317.86) (xy 13 317.86) (xy 13 196.2)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "3f8818a4-6dc8-58f7-bde6-4f5110ebd3cb"))
+	(text "02  Board current and battery sensing"
+		(exclude_from_sim no)
+		(at 18 203.2 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7612cdd-b691-5e63-91c0-85a9629682e2")
+	)
+(symbol (lib_id "Device:R") (at 40.64 231.14 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "dc723b94-fb32-5df7-9aab-9aebde3ae630") (property "Reference" "R33" (at 44.656 229.64 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "0.02R 1W" (at 44.656 233.14 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_2512_6332Metric" (at 40.64 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Board current shunt (REQ-PWR-06)" (at 40.64 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "CRA2512-FZ-R020ELF" (at 40.64 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Bourns" (at 40.64 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 40.64 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "ba51be7e-9976-5388-9952-9d50aa012a10"))(pin "2" (uuid "6437eadc-665b-5744-a03e-3ad613299f1f")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "R33") (unit 1)))))
+	(wire
+		(pts
+			(xy 40.64 227.33) (xy 40.64 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60a5bb9e-d8cc-5b70-af81-641b34b3e7ff")
+	)
+(symbol (lib_id "LoRa_Boat_Controller:VIN_RAW") (at 40.64 222.25 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "1db001df-2e05-5f07-8612-811856ef7cd7") (property "Reference" "#PWRPOW07" (at 40.64 218.44 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "VIN_RAW" (at 40.64 218.694 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "c2a8f149-ff4d-5ddf-a2d1-5f6314ac2a52")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW07") (unit 1)))))
+	(wire
+		(pts
+			(xy 40.64 234.95) (xy 40.64 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d569d9f-2f10-5e9b-9e76-5a6fc8d54728")
+	)
+	(wire
+		(pts
+			(xy 40.64 240.03) (xy 43.18 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30344c83-6737-5e4d-b2fd-08288467a601")
+	)
+(label "VIN_BUCK"  (at 43.18 240.03 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f80f59ae-fa9c-5f11-b7c7-4e0d6b050999"))
+(symbol (lib_id "Amplifier_Current:INA180A1") (at 91.44 243.84 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c9370415-ec28-56c3-96a4-c46e29277a63") (property "Reference" "U8" (at 91.44 217.22 0) (effects (font (size 1.27 1.27))  )) (property "Value" "INA180A1" (at 91.44 220.72 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 91.44 243.84 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Current-sense amplifier, gain 20 (3 A = 1.2 V)" (at 91.44 243.84 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "INA180A1IDBVR" (at 91.44 243.84 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Texas Instruments" (at 91.44 243.84 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina180.pdf" (at 91.44 243.84 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "3" (uuid "1093498f-6915-5cdb-94a0-84f42b6f2dcf"))(pin "4" (uuid "4c5d3fc3-a08f-5622-bce3-fa3828aba2b7"))(pin "5" (uuid "b3c129e8-5469-5431-a850-d0fd67ddffb8"))(pin "2" (uuid "d15b04b3-3199-5d3b-9185-9870ab1a965b"))(pin "1" (uuid "0db1b3c7-2cd6-54d7-b118-d73bd1de7588")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "U8") (unit 1)))))
+	(wire
+		(pts
+			(xy 83.82 241.3) (xy 78.74 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d04750f-6854-59c5-92dd-6b1dfeb2d8bd")
+	)
+(global_label "VIN_RAW" (shape passive) (at 78.74 241.3 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "a454c7b3-9e48-53bd-896c-c804da2ee548"))
+	(wire
+		(pts
+			(xy 83.82 246.38) (xy 78.74 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f194768-8274-57db-9771-ca39ef978d3e")
+	)
+(label "VIN_BUCK"  (at 78.74 246.38 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "488742ec-653e-5870-8464-5e07513db659"))
+	(wire
+		(pts
+			(xy 99.06 243.84) (xy 104.14 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbd12396-5874-5c7e-a13d-ad5ed57f6516")
+	)
+(hierarchical_label "ISENSE" (shape passive) (at 104.14 243.84 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "136210cc-fcda-5333-a430-7f8d291379f2"))
+	(wire
+		(pts
+			(xy 88.9 236.22) (xy 88.9 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2374a33f-498b-5d33-8c23-8a7195311cc2")
+	)
+(symbol (lib_id "power:+3V3") (at 88.9 231.14 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "ce3cd7e4-0f9f-5976-aaf6-d809104649ce") (property "Reference" "#PWRPOW08" (at 88.9 227.33 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 88.9 227.584 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "3f15529b-2a64-515a-912b-fb0ea15b3bd8")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW08") (unit 1)))))
+	(wire
+		(pts
+			(xy 88.9 251.46) (xy 88.9 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "683d26ce-25fe-5f8f-b677-919866c84cdd")
+	)
+(symbol (lib_id "power:GND") (at 88.9 256.54 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "2c729afe-1d3f-5677-b408-717afe691d45") (property "Reference" "#PWRPOW09" (at 88.9 252.73 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 88.9 260.096 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "ca8af88a-82fb-56e3-aa41-23961e496ca5")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW09") (unit 1)))))
+(symbol (lib_id "Device:C") (at 139.7 231.14 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9d5e1e2c-1e33-529b-ba23-b3f50b04bdf6") (property "Reference" "C37" (at 144.732 229.64 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100nF" (at 144.732 233.14 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 139.7 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "INA180 output filter" (at 139.7 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "KGM15ACG1H104KT" (at 139.7 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 139.7 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 139.7 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "0e71627f-0dfe-519e-8f46-09a4558eee0c"))(pin "2" (uuid "45a81e4b-d409-566d-b079-5290def1740f")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C37") (unit 1)))))
+	(wire
+		(pts
+			(xy 139.7 227.33) (xy 139.7 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2965c184-da4f-50a7-b16f-722eb15c905a")
+	)
+	(wire
+		(pts
+			(xy 139.7 222.25) (xy 142.24 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43f6fa5f-9903-55a3-bb5f-6e9c59ae35c4")
+	)
+(hierarchical_label "ISENSE" (shape passive) (at 142.24 222.25 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "47fbbb5b-d5b3-54c1-bd38-3c5f7b76d744"))
+	(wire
+		(pts
+			(xy 139.7 234.95) (xy 139.7 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0b43484-b834-5c12-b326-e32f67671fc4")
+	)
+(symbol (lib_id "power:GND") (at 139.7 240.03 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "64a00305-172e-5ed3-80e0-788c312583d5") (property "Reference" "#PWRPOW10" (at 139.7 236.22 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 139.7 243.586 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "baf766ae-a3ea-5e5a-8c84-af656a75f5a9")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW10") (unit 1)))))
+(symbol (lib_id "Device:R") (at 40.64 284.48 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ab462235-0268-5dbe-b1ce-85fdb6632caf") (property "Reference" "R31" (at 44.656 282.98 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "47k" (at 44.656 286.48 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 40.64 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Battery divider top (26 V -> 3.3 V)" (at 40.64 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-0747KL" (at 40.64 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 40.64 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 40.64 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "c2b75ba9-9322-5b05-ace2-4ca2ca6bceee"))(pin "2" (uuid "dbd78b23-126a-56ac-95bc-a0cc6ddde191")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "R31") (unit 1)))))
+	(wire
+		(pts
+			(xy 40.64 280.67) (xy 40.64 275.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c9d0413-b72d-5241-a04a-ab8e404b82e0")
+	)
+(symbol (lib_id "LoRa_Boat_Controller:VIN_RAW") (at 40.64 275.59 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "f302ca0f-5024-50c8-afa1-d4e119cf25a1") (property "Reference" "#PWRPOW11" (at 40.64 271.78 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "VIN_RAW" (at 40.64 272.034 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "44d3b9bb-84aa-5dfd-915e-25b0e3ea086f")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW11") (unit 1)))))
+	(wire
+		(pts
+			(xy 40.64 288.29) (xy 40.64 293.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80e1576c-bf7c-5939-83f9-99c758d22ca9")
+	)
+	(wire
+		(pts
+			(xy 40.64 293.37) (xy 43.18 293.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f64fb863-2738-55fc-a0e7-c7925a4752c0")
+	)
+(hierarchical_label "VBAT_SENSE" (shape passive) (at 43.18 293.37 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b707f968-9a2d-59cf-a351-4a1683bd61be"))
+(symbol (lib_id "Device:R") (at 86.36 284.48 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b6545ffe-d8ef-5aac-86f9-488b2e4ed21a") (property "Reference" "R32" (at 90.376 282.98 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "6.8k" (at 90.376 286.48 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 86.36 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Battery divider bottom" (at 86.36 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-076K8L" (at 86.36 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 86.36 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 86.36 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "f9521167-c68a-5341-8eae-9785e24dc326"))(pin "2" (uuid "0c31c08e-b5be-59d3-a699-4bef7e01599a")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "R32") (unit 1)))))
+	(wire
+		(pts
+			(xy 86.36 280.67) (xy 86.36 275.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "172f19b3-4b5d-5c10-b998-8cf46ca06ec5")
+	)
+	(wire
+		(pts
+			(xy 86.36 275.59) (xy 88.9 275.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "330a8749-3b6e-5979-8d09-cc0faaccd147")
+	)
+(hierarchical_label "VBAT_SENSE" (shape passive) (at 88.9 275.59 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "0c5c4ecd-0559-5203-9ad6-b05c30876629"))
+	(wire
+		(pts
+			(xy 86.36 288.29) (xy 86.36 293.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fd21078-3d32-5ec6-9861-da4bdb9a2707")
+	)
+(symbol (lib_id "power:GND") (at 86.36 293.37 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "1a0d0228-62da-5ca0-9cb0-850b1d77beaa") (property "Reference" "#PWRPOW12" (at 86.36 289.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 86.36 296.926 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "b03992a4-ac46-5835-9ffd-a66d7badd276")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW12") (unit 1)))))
+(symbol (lib_id "Device:C") (at 129.54 284.48 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "abfd5b41-36ad-595e-948d-858c90a74782") (property "Reference" "C36" (at 134.572 282.98 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100nF" (at 134.572 286.48 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 129.54 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Battery ADC filter" (at 129.54 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "KGM15ACG1H104KT" (at 129.54 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 129.54 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 129.54 284.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "9b32c673-ce73-5ef4-bb8e-ff7ba4e7d687"))(pin "2" (uuid "d92e01cf-612d-5ae6-8f25-a7a6b4d31f2a")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C36") (unit 1)))))
+	(wire
+		(pts
+			(xy 129.54 280.67) (xy 129.54 275.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc728e55-e68e-5ec1-99c8-cf03a5476b69")
+	)
+	(wire
+		(pts
+			(xy 129.54 275.59) (xy 132.08 275.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35a9752e-2c55-5cb2-8fce-f89d149cf049")
+	)
+(hierarchical_label "VBAT_SENSE" (shape passive) (at 132.08 275.59 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "7da4c9f5-725d-5a69-b32e-75f65dabd621"))
+	(wire
+		(pts
+			(xy 129.54 288.29) (xy 129.54 293.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e16b8df8-fea2-5ea4-893c-99fcacef4a0b")
+	)
+(symbol (lib_id "power:GND") (at 129.54 293.37 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "117780e2-d30f-5cf1-b59a-4fac1d61e019") (property "Reference" "#PWRPOW13" (at 129.54 289.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 129.54 296.926 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "2189365f-d9a1-51d0-a986-af546e619cc3")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW13") (unit 1)))))
+	(text "20 mOhm shunt, INA180 gain 20: nominal 0.4 V/A. Divider: 6.8k / (47k + 6.8k). Check ADC scaling before use."
+		(exclude_from_sim no)
+		(at 20 308.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "64276a05-e58c-559a-b578-5216cee7107f")
+	)
+(polyline (pts (xy 206.333333 34) (xy 387.666667 34) (xy 387.666667 233.44) (xy 206.333333 233.44) (xy 206.333333 34)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "54a11c04-1699-5525-b44e-5da4d6525fcb"))
+	(text "03  3.3 V logic supply"
+		(exclude_from_sim no)
+		(at 211.333333 41 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "52233813-85f2-59bf-bfdb-e23d674b872c")
+	)
+(symbol (lib_id "LoRa_Boat_Controller:R1240N001x") (at 241.3 81.28 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b2356ebc-24c8-5796-a8ee-81f7037d6235") (property "Reference" "U2" (at 241.3 54.66 0) (effects (font (size 1.27 1.27))  )) (property "Value" "R1240N001B-TR-FE" (at 241.3 58.16 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "LoRa_Boat_Controller:SOT-23-6W_PE-SOT23-6W-0512_NMD" (at 241.3 81.28 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "1.25 MHz async buck, 1.2 A" (at 241.3 81.28 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "R1240N001B-TR-FE" (at 241.3 81.28 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Nisshinbo" (at 241.3 81.28 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/r1240-ea.pdf" (at 241.3 81.28 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "2" (uuid "df2751c9-b86d-5695-8223-a0209ca5ee35"))(pin "1" (uuid "a973f3f8-01d5-52fa-aead-eb75daf6f444"))(pin "3" (uuid "8fdb3c8d-3c95-5caf-b6b1-176f8c00bdb8"))(pin "4" (uuid "9cde42fc-a6b5-538c-886c-a27af0d74888"))(pin "6" (uuid "23ec4714-2026-56d6-88a3-fcd7d249913d"))(pin "5" (uuid "8c8780e1-9150-5fa3-b103-44079fb52b39")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "U2") (unit 1)))))
+	(wire
+		(pts
+			(xy 231.14 76.2) (xy 226.06 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4af7885a-4289-53a6-91fc-bfe0549875fd")
+	)
+(label "VIN_BUCK"  (at 226.06 76.2 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "8325df1d-acbd-531b-bab4-f300f69ec019"))
+	(wire
+		(pts
+			(xy 231.14 81.28) (xy 226.06 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f661d6c0-a845-5bb9-b199-d8f2f6c86619")
+	)
+(label "EN_3V3"  (at 226.06 81.28 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "1d4c49a1-7004-5a85-89f1-3a1ac4001454"))
+	(wire
+		(pts
+			(xy 251.46 76.2) (xy 256.54 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57c6070f-839d-5b54-8d2b-78efcc9f2dab")
+	)
+(label "SW_3V3"  (at 256.54 76.2 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ab555dcb-d5c2-5947-9670-179151e1866b"))
+	(wire
+		(pts
+			(xy 251.46 81.28) (xy 256.54 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "351b040b-2428-53f6-9ca2-1a0a5b5e5533")
+	)
+(label "BST_3V3"  (at 256.54 81.28 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "e8c6454c-1adb-5492-8ebd-52c013e44de3"))
+	(wire
+		(pts
+			(xy 251.46 86.36) (xy 256.54 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e144b938-ab89-58f4-b3cc-51da49abfe67")
+	)
+(label "FB_3V3"  (at 256.54 86.36 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "99f9590b-7e1e-5eb4-ab13-5ab8f34a022a"))
+	(wire
+		(pts
+			(xy 241.3 91.44) (xy 241.3 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6904882f-196b-520a-9c46-ddc7820fbc64")
+	)
+(symbol (lib_id "power:GND") (at 241.3 96.52 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "e0db0355-fd52-5f8d-849f-7cdd1c140334") (property "Reference" "#PWRPOW14" (at 241.3 92.71 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 241.3 100.076 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "42ff0a1b-af79-5a35-b819-d7c8d275b617")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW14") (unit 1)))))
+(symbol (lib_id "Device:R") (at 292.1 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "861724cf-498d-545f-bdd1-3216308888f9") (property "Reference" "R2" (at 296.116 67.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "5.1k" (at 296.116 70.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 292.1 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "CE pull-up to VIN_BUCK" (at 292.1 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-075K1L" (at 292.1 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 292.1 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 292.1 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "ec40e8e1-1cf5-536b-9cf8-ad302dd82227"))(pin "2" (uuid "b29f0c00-ae7a-5a78-8aea-3f193761f8f9")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "R2") (unit 1)))))
+	(wire
+		(pts
+			(xy 292.1 64.77) (xy 292.1 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1c9d01f-4325-551d-b993-89be88f3b2ba")
+	)
+	(wire
+		(pts
+			(xy 292.1 59.69) (xy 294.64 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dc27792-b66f-50db-a528-701f04e7d83e")
+	)
+(label "VIN_BUCK"  (at 294.64 59.69 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0cf001c1-1b2c-50cf-9e34-b0a85bafc690"))
+	(wire
+		(pts
+			(xy 292.1 72.39) (xy 292.1 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bd56b1b-a11b-547a-b099-35326a2dfd1d")
+	)
+	(wire
+		(pts
+			(xy 292.1 77.47) (xy 294.64 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3aeb6952-40fd-5f1c-b10d-3b2188ee7625")
+	)
+(label "EN_3V3"  (at 294.64 77.47 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9cd59f49-17ea-5c8e-916d-f7e3fea4a331"))
+(symbol (lib_id "Device:R") (at 337.82 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "555e4693-217b-55e3-888a-c91d85288514") (property "Reference" "R3" (at 341.836 67.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "51R" (at 341.836 70.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 337.82 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Bootstrap series R (per DS)" (at 337.82 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-0751RL" (at 337.82 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 337.82 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 337.82 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "1aa1912e-8f03-55da-bb43-e1c27b0d256a"))(pin "2" (uuid "66b61d60-0314-5d83-a638-fd29c460225a")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "R3") (unit 1)))))
+	(wire
+		(pts
+			(xy 337.82 64.77) (xy 337.82 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d89494a-bfd9-518a-95dd-faccefb251ad")
+	)
+	(wire
+		(pts
+			(xy 337.82 59.69) (xy 340.36 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0df23ae-bfa0-5db8-9c0d-eb0e6dd17197")
+	)
+(label "BST_RC"  (at 340.36 59.69 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8df86270-9d65-51ac-8313-19ba5fbaaa3a"))
+	(wire
+		(pts
+			(xy 337.82 72.39) (xy 337.82 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00379e94-109a-5eaa-b38a-d67d27fd33a1")
+	)
+	(wire
+		(pts
+			(xy 337.82 77.47) (xy 340.36 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00e8c2cc-491c-596d-b104-d1b5bb448ea8")
+	)
+(label "BST_3V3"  (at 340.36 77.47 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "27d637f2-1177-558d-b895-fd0051f98442"))
+(symbol (lib_id "Device:C") (at 233.68 124.46 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "da28f9b1-be1c-5806-a25f-b17113e9873e") (property "Reference" "C3" (at 238.712 122.96 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100nF 50V" (at 238.712 126.46 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 233.68 124.46 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Bootstrap capacitor" (at 233.68 124.46 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "CL10B104KB8NNNC" (at 233.68 124.46 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Samsung" (at 233.68 124.46 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 233.68 124.46 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "44306328-81bb-55dd-bbbe-b4c7f1dabf84"))(pin "2" (uuid "866029f0-e468-561c-9f84-59539205c096")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C3") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 120.65) (xy 233.68 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b842cb4a-9ea5-587a-8f88-7bdee65ad518")
+	)
+	(wire
+		(pts
+			(xy 233.68 115.57) (xy 236.22 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f0e6a80-50bf-5660-888e-f3618e2ce480")
+	)
+(label "SW_3V3"  (at 236.22 115.57 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "6b970ab8-4ee8-536f-93cc-498a1ce7f2ad"))
+	(wire
+		(pts
+			(xy 233.68 128.27) (xy 233.68 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5ff93e6-c759-5cdb-a822-45ed4f853964")
+	)
+	(wire
+		(pts
+			(xy 233.68 133.35) (xy 236.22 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41aaa5e6-730a-5777-bd8b-6b9cf056a8ec")
+	)
+(label "BST_RC"  (at 236.22 133.35 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b7d0d0bf-39f8-5b78-b2a3-3ea8d2e1ee18"))
+(symbol (lib_id "LoRa_Boat_Controller:CMS06_Schottky") (at 279.4 121.92 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d44a204c-40be-5c96-bc40-1d4c83522da5") (property "Reference" "D3" (at 279.4 117.15 0) (effects (font (size 1.27 1.27))  )) (property "Value" "CMS06" (at 279.4 126.69 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "LoRa_Boat_Controller:M-FLAT_TOS-L" (at 279.4 121.92 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Catch diode 30 V 2 A" (at 279.4 121.92 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "CMS06(TE12L,Q,M)" (at 279.4 121.92 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Toshiba" (at 279.4 121.92 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "https://toshiba.semicon-storage.com/info/CMS06_datasheet_en_20190723.pdf" (at 279.4 121.92 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "6898a62a-ba14-55d5-b81c-181c15e89d80"))(pin "2" (uuid "c0703807-80d8-5e5a-8a3b-11b6d22a7e10")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "D3") (unit 1)))))
+	(wire
+		(pts
+			(xy 275.59 121.92) (xy 270.51 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19edc086-43cd-5150-b04e-fb863854bfae")
+	)
+(global_label "GND" (shape passive) (at 270.51 121.92 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "f5b277bb-6389-59e9-a11b-0bcb5f2d3c84"))
+	(wire
+		(pts
+			(xy 283.21 121.92) (xy 288.29 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99773417-c113-5a1c-a675-d2505a737555")
+	)
+(label "SW_3V3"  (at 288.29 121.92 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9c9371e9-a3af-5aac-813f-db7cfd8a07e3"))
+(symbol (lib_id "Device:L") (at 325.12 124.46 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ae1622f7-bb8d-5871-b79d-aee6d40c25f6") (property "Reference" "L1" (at 328.12 122.96 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "4.7uH 3A" (at 328.12 126.46 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Inductor_SMD:L_Bourns_SRN6045TA" (at 325.12 124.46 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Replaces the EOL SLF7045 (F-BOM-01)" (at 325.12 124.46 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "SRN6045TA-4R7M" (at 325.12 124.46 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Bourns" (at 325.12 124.46 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 325.12 124.46 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "e5224f38-bcff-53d3-9b92-f54449bb3324"))(pin "2" (uuid "152b0fc5-8d94-5886-8330-3be5c3049dde")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "L1") (unit 1)))))
+	(wire
+		(pts
+			(xy 325.12 120.65) (xy 325.12 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d6a8ec8-30ab-573c-92d7-944297d2ffc2")
+	)
+	(wire
+		(pts
+			(xy 325.12 115.57) (xy 327.66 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ca7a01d-7065-5c9e-afcd-658651d9c2a3")
+	)
+(label "SW_3V3"  (at 327.66 115.57 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "629186e2-4eb2-5924-bfd0-ee7c4eba7f33"))
+	(wire
+		(pts
+			(xy 325.12 128.27) (xy 325.12 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5fbb52b-d578-57f9-9315-6406da7e36aa")
+	)
+(symbol (lib_id "power:+3V3") (at 325.12 133.35 180) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "5f7a6c4b-3a54-5b67-8ff5-9fc4105f5340") (property "Reference" "#PWRPOW15" (at 325.12 129.54 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 325.12 136.906 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "07c0ee73-c66f-5812-b491-6f274ee650c2")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW15") (unit 1)))))
+(symbol (lib_id "Device:R") (at 233.68 162.56 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "308d31eb-3940-51a6-977a-91ab0c22a853") (property "Reference" "R4" (at 237.696 161.06 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "15k" (at 237.696 164.56 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 233.68 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "FB top: Vout = 0.8 * (1 + 15/4.7) = 3.35 V" (at 233.68 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-0715KL" (at 233.68 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 233.68 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 233.68 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "f08ffc79-964a-579b-ae7f-7098f5df0ef9"))(pin "2" (uuid "9dc4d0b2-5d26-5a00-ab18-6bed8a306408")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "R4") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 158.75) (xy 233.68 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b18a7be4-2438-54d9-8f23-cb2819615f2d")
+	)
+(symbol (lib_id "power:+3V3") (at 233.68 153.67 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "e5e19d65-955a-56cf-a941-f3df5bbb24b3") (property "Reference" "#PWRPOW16" (at 233.68 149.86 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 233.68 150.114 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "3d9d0b37-0c7e-5c46-baeb-15df3aff92de")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW16") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 166.37) (xy 233.68 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac044aaa-7b86-5341-b7b5-25b1011d0b18")
+	)
+	(wire
+		(pts
+			(xy 233.68 171.45) (xy 236.22 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "401fa25e-4130-5604-900a-439f8d133144")
+	)
+(label "FB_3V3"  (at 236.22 171.45 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f6b7e673-548e-5f40-b341-e13791880045"))
+(symbol (lib_id "Device:R") (at 279.4 162.56 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1d0b822b-ff91-5cca-a527-d2a48c80f8fe") (property "Reference" "R5" (at 283.416 161.06 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "4.7k" (at 283.416 164.56 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 279.4 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "FB bottom" (at 279.4 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-074K7L" (at 279.4 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 279.4 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 279.4 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "c8b37659-827e-5f48-abde-dd39beb5dc47"))(pin "2" (uuid "1c8cf47c-98b8-5743-b1e3-96c1584501b7")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "R5") (unit 1)))))
+	(wire
+		(pts
+			(xy 279.4 158.75) (xy 279.4 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef04abec-3a90-5bb1-9cd2-0ff9b7e197f2")
+	)
+	(wire
+		(pts
+			(xy 279.4 153.67) (xy 281.94 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c164f70f-e897-5cd7-be01-011552709fb6")
+	)
+(label "FB_3V3"  (at 281.94 153.67 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "e14cfc24-124e-5a1c-bde8-c9f711ba1131"))
+	(wire
+		(pts
+			(xy 279.4 166.37) (xy 279.4 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd3301b1-4717-59b7-8e9e-92cabb217f6b")
+	)
+(symbol (lib_id "power:GND") (at 279.4 171.45 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "aa3082d2-12f2-5764-94ba-ddc063f43cd2") (property "Reference" "#PWRPOW17" (at 279.4 167.64 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 279.4 175.006 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "7004a1d1-227d-5ba2-ac3d-948f2dd4c3b1")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW17") (unit 1)))))
+(symbol (lib_id "Device:C") (at 322.58 162.56 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "742e0528-9001-58ca-b218-5868eb1ddb1f") (property "Reference" "C4" (at 327.612 161.06 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "470pF" (at 327.612 164.56 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 322.58 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "Feed-forward (CSPD)" (at 322.58 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "06035A471JAT2A" (at 322.58 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 322.58 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 322.58 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "7b2f4990-dd83-5515-a156-2b84f7f11c3f"))(pin "2" (uuid "51d4fd7e-dddc-5d7e-9c1c-3267a302c2cc")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C4") (unit 1)))))
+	(wire
+		(pts
+			(xy 322.58 158.75) (xy 322.58 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaa41d30-e7da-5625-a703-883d36c9fd1a")
+	)
+	(wire
+		(pts
+			(xy 322.58 153.67) (xy 325.12 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "581270d2-a8ec-59be-a0c6-0c098eb31fdd")
+	)
+(label "FB_3V3"  (at 325.12 153.67 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "22147eb0-629c-515e-b4f8-772fa507899e"))
+	(wire
+		(pts
+			(xy 322.58 166.37) (xy 322.58 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e0f042a-ee37-52d5-8e24-1e9d9a7bb0d9")
+	)
+(symbol (lib_id "power:+3V3") (at 322.58 171.45 180) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "9c9f2372-9bae-58db-aff6-3a7535f22673") (property "Reference" "#PWRPOW18" (at 322.58 167.64 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 322.58 175.006 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "3a0816f4-8ead-5491-b13f-37c83e2fcd90")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW18") (unit 1)))))
+(symbol (lib_id "Device:C") (at 233.68 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2b9f1ddc-8a88-58ce-a7d7-a080d4f835d1") (property "Reference" "C5" (at 238.712 199.16 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "10uF 25V" (at 238.712 202.66 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 233.68 200.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "3.3 V output" (at 233.68 200.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "GRM31CR71E106KA12L" (at 233.68 200.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Murata" (at 233.68 200.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 233.68 200.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "8f717d29-ef73-5c05-a18e-1be51e04d4c4"))(pin "2" (uuid "288bc8f4-dd05-5853-8e97-9a6bd7e1da1a")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C5") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 196.85) (xy 233.68 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e71ffd69-4144-526d-a4c1-226df0a67b77")
+	)
+(symbol (lib_id "power:+3V3") (at 233.68 191.77 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "fdcf0739-191b-5e37-ad75-6a2b332ce867") (property "Reference" "#PWRPOW19" (at 233.68 187.96 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 233.68 188.214 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "4bd857be-4bf2-50ee-8382-c455ead33634")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW19") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 204.47) (xy 233.68 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "760dde97-7234-58c3-b157-e4ba4e2b1de5")
+	)
+(symbol (lib_id "power:GND") (at 233.68 209.55 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "76d50605-6823-554b-b977-b9f72dd1c60c") (property "Reference" "#PWRPOW20" (at 233.68 205.74 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 233.68 213.106 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "2743e4c1-cff5-511e-94bb-bd4a72958b62")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW20") (unit 1)))))
+(symbol (lib_id "Device:C") (at 279.4 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a1d48835-925e-53d1-b7d0-05f8fe0c0383") (property "Reference" "C6" (at 284.432 199.16 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "10uF 25V" (at 284.432 202.66 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 279.4 200.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "3.3 V output" (at 279.4 200.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "GRM31CR71E106KA12L" (at 279.4 200.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Murata" (at 279.4 200.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 279.4 200.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "b883f9a2-ea6e-5186-86de-89360c51dc9a"))(pin "2" (uuid "b75180f1-add9-5465-abfb-f3a686f42f2b")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C6") (unit 1)))))
+	(wire
+		(pts
+			(xy 279.4 196.85) (xy 279.4 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c98205f9-2710-5b61-8437-afec6c3db109")
+	)
+(symbol (lib_id "power:+3V3") (at 279.4 191.77 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "4b77f6ad-8443-5b18-ba7d-65fa44852478") (property "Reference" "#PWRPOW21" (at 279.4 187.96 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 279.4 188.214 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "74d4f83f-300d-565c-a533-0637150cb4fd")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW21") (unit 1)))))
+	(wire
+		(pts
+			(xy 279.4 204.47) (xy 279.4 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50a14c12-54bd-5b00-b973-a7ffbf9062bd")
+	)
+(symbol (lib_id "power:GND") (at 279.4 209.55 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "3da21ce3-597d-5144-855d-950fc9a95137") (property "Reference" "#PWRPOW22" (at 279.4 205.74 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 279.4 213.106 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "db2cb6f7-6ffc-5425-b6c9-2f64d87e3e58")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW22") (unit 1)))))
+	(text "Nominal 3.35 V. Follow the labelled bootstrap, switch and feedback nets; verify component ratings and switching-loop placement before fabrication."
+		(exclude_from_sim no)
+		(at 213.333333 223.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f5da5f7-0f11-5e2f-8424-3999ba48876a")
+	)
+(polyline (pts (xy 399.666667 34) (xy 581 34) (xy 581 265.98) (xy 399.666667 265.98) (xy 399.666667 34)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "fb9d25a5-50e1-5c94-9b0c-1fba5d950745"))
+	(text "04  Actuator supply and BEC isolation"
+		(exclude_from_sim no)
+		(at 404.666667 41 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "a97c7b61-d93a-5378-854a-cc348f0dd783")
+	)
+(symbol (lib_id "Regulator_Switching:TPS54202DDC") (at 434.34 78.74 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f8feded5-6ece-5c10-8671-42e40c01d007") (property "Reference" "U3" (at 434.34 54.66 0) (effects (font (size 1.27 1.27))  )) (property "Value" "TPS54202" (at 434.34 58.16 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6" (at 434.34 78.74 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "5 V / 2 A buck for the servo rail (populate option)" (at 434.34 78.74 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "TPS54202DDCR" (at 434.34 78.74 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Texas Instruments" (at 434.34 78.74 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54202.pdf" (at 434.34 78.74 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "3" (uuid "3aec9137-b205-5831-98a7-956f2e340622"))(pin "5" (uuid "8033b506-0a5c-5da1-ad54-3871077fe7dc"))(pin "1" (uuid "7e4d797c-0036-5904-9a55-0d88a47e1c5b"))(pin "6" (uuid "9090f66b-34f7-56e0-b360-301d6b89fdfd"))(pin "2" (uuid "2f141e59-37b4-5de0-beb4-5c7995a0b939"))(pin "4" (uuid "0b1e74bc-baa8-53a1-87f3-2f469944868d")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "U3") (unit 1)))))
+	(wire
+		(pts
+			(xy 424.18 76.2) (xy 419.1 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da48b8e7-cf79-5c36-b1bf-8ee7f7ba1d61")
+	)
+(label "VIN_BUCK"  (at 419.1 76.2 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "2b7f5219-9881-5eb0-a232-02a39bd0a739"))
+	(wire
+		(pts
+			(xy 424.18 81.28) (xy 419.1 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fada1433-77df-542e-867b-e3fd54b3b8d0")
+	)
+(label "EN_5V"  (at 419.1 81.28 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "e6dd0496-fe0f-539a-b8b4-d56034fc51e2"))
+	(wire
+		(pts
+			(xy 444.5 76.2) (xy 449.58 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a141e324-6b67-5899-90e0-4f54b2fce8ea")
+	)
+(label "BOOT_5V"  (at 449.58 76.2 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b1ae4d30-aa13-59be-af0c-4c335d68eac2"))
+	(wire
+		(pts
+			(xy 444.5 78.74) (xy 449.58 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2b73c2d-1cc9-5743-9ded-4425488b4c6f")
+	)
+(label "SW_5V"  (at 449.58 78.74 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "078ec905-ab0b-57cb-a225-c94602624332"))
+	(wire
+		(pts
+			(xy 444.5 81.28) (xy 449.58 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "869cfec6-bef5-54d3-b457-be2e2cded3cb")
+	)
+(label "FB_5V"  (at 449.58 81.28 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "af5accff-a91a-5bed-9039-cc1cd7473652"))
+	(wire
+		(pts
+			(xy 434.34 86.36) (xy 434.34 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f63b711f-7a6a-5cd4-a91c-dc61a9c94928")
+	)
+(symbol (lib_id "power:GND") (at 434.34 91.44 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "c93cd4e0-4d1d-5c60-9653-1601d288c1e1") (property "Reference" "#PWRPOW23" (at 434.34 87.63 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 434.34 94.996 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "fd6bb02a-4976-58e7-8a24-65788690e4d5")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW23") (unit 1)))))
+(symbol (lib_id "Device:R") (at 485.14 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2a4a41b0-fe50-5a7e-8f15-b57421295148") (property "Reference" "R6" (at 489.156 67.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100k" (at 489.156 70.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 485.14 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "EN pull-up" (at 485.14 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-07100KL" (at 485.14 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 485.14 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 485.14 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "5db3e660-63b7-5f36-b2d2-1c2bae8d0275"))(pin "2" (uuid "7cde4c7e-c0e5-5c8d-883b-5d8815581fd2")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "R6") (unit 1)))))
+	(wire
+		(pts
+			(xy 485.14 64.77) (xy 485.14 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2ef2244-0dd1-54be-b699-146fb63f7ee5")
+	)
+	(wire
+		(pts
+			(xy 485.14 59.69) (xy 487.68 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8069be4-7d2d-54c7-a041-d9abc1da738c")
+	)
+(label "VIN_BUCK"  (at 487.68 59.69 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "e059b2d4-74c9-5c3a-b585-02aa6f00ebe0"))
+	(wire
+		(pts
+			(xy 485.14 72.39) (xy 485.14 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc328d6e-cc61-5cfc-ada4-cf9ab7799d6e")
+	)
+	(wire
+		(pts
+			(xy 485.14 77.47) (xy 487.68 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b3749b2-1b45-58f2-b56b-a51588a878b1")
+	)
+(label "EN_5V"  (at 487.68 77.47 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "35d3a575-09e5-5e08-a57f-c1803e05150e"))
+(symbol (lib_id "Device:C") (at 530.86 68.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "8c1c112a-3aae-5199-aa55-4d50ccb8ff9b") (property "Reference" "C7" (at 535.892 67.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100nF" (at 535.892 70.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 530.86 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "BOOT capacitor" (at 530.86 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "KGM15ACG1H104KT" (at 530.86 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Kyocera AVX" (at 530.86 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 530.86 68.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "593d284d-f13b-5824-9b9f-2db520c46e01"))(pin "2" (uuid "c0ce21b3-ea64-51c1-a645-2360fe50bbae")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C7") (unit 1)))))
+	(wire
+		(pts
+			(xy 530.86 64.77) (xy 530.86 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64206513-dda8-5e52-a439-8788c09efd96")
+	)
+	(wire
+		(pts
+			(xy 530.86 59.69) (xy 533.4 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b3abaa6-1a81-51ac-909d-4cfd7d4c68dc")
+	)
+(label "SW_5V"  (at 533.4 59.69 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7e9e6893-aae7-5de5-8e7b-589ac211d64e"))
+	(wire
+		(pts
+			(xy 530.86 72.39) (xy 530.86 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "909c3816-2224-5037-b3ad-ffa40ec466f6")
+	)
+	(wire
+		(pts
+			(xy 530.86 77.47) (xy 533.4 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "515dc73a-a676-5e56-8491-9f9ad720a6a1")
+	)
+(label "BOOT_5V"  (at 533.4 77.47 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "935c9c77-c4be-579e-a9fa-3b543a8bd8d9"))
+(symbol (lib_id "Device:L") (at 426.72 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "195bc11b-b396-51a0-bc19-2f57346dbe15") (property "Reference" "L2" (at 429.72 117.88 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "4.7uH 3A" (at 429.72 121.38 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Inductor_SMD:L_Bourns_SRN6045TA" (at 426.72 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "5 V buck inductor" (at 426.72 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "SRN6045TA-4R7M" (at 426.72 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Bourns" (at 426.72 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 426.72 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "86450922-1191-5dd5-83cb-f61438a96a17"))(pin "2" (uuid "fd07681a-a4fa-51a5-8c63-be8d49d0d82f")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "L2") (unit 1)))))
+	(wire
+		(pts
+			(xy 426.72 115.57) (xy 426.72 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9e993b5-bec9-5a59-be29-43fed4ab7b6c")
+	)
+	(wire
+		(pts
+			(xy 426.72 110.49) (xy 429.26 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e645953-4ba1-52eb-998b-89df9513ccfb")
+	)
+(label "SW_5V"  (at 429.26 110.49 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "bebd8a8c-832a-5565-9268-f61b81bb0975"))
+	(wire
+		(pts
+			(xy 426.72 123.19) (xy 426.72 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89821078-56dc-572a-b190-71ae0e305cb5")
+	)
+	(wire
+		(pts
+			(xy 426.72 128.27) (xy 429.26 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "678f9ead-6268-5b5d-9369-f1f213da3acc")
+	)
+(label "+5V_BUCK"  (at 429.26 128.27 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5a85356f-3241-542d-9657-06161aa1dd02"))
+(symbol (lib_id "Device:R") (at 472.44 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "745fa6dc-4311-56b9-9acd-26d63e28d3be") (property "Reference" "R8" (at 476.456 117.88 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100k" (at 476.456 121.38 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 472.44 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "FB top (Vout = 0.596 * (1 + 100/13.3) = 5.08 V)" (at 472.44 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-07100KL" (at 472.44 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 472.44 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 472.44 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "e8c6a4b5-8192-50fa-ac5a-732de2c747d0"))(pin "2" (uuid "14980290-f39e-51e7-9cef-359bf034e0fe")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "R8") (unit 1)))))
+	(wire
+		(pts
+			(xy 472.44 115.57) (xy 472.44 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c320db8-385b-589f-897c-57d599538726")
+	)
+	(wire
+		(pts
+			(xy 472.44 110.49) (xy 474.98 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b735c31a-d041-504e-9863-64c48500eb7d")
+	)
+(label "+5V_BUCK"  (at 474.98 110.49 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "344529f9-359a-5f3a-bbbe-2b7235d80b4b"))
+	(wire
+		(pts
+			(xy 472.44 123.19) (xy 472.44 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bb9bab9-e28c-552c-8b1c-655aafb84457")
+	)
+	(wire
+		(pts
+			(xy 472.44 128.27) (xy 474.98 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19c5ade2-de0b-55fe-b746-d640ce3556a3")
+	)
+(label "FB_5V"  (at 474.98 128.27 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "aa58b660-8323-573c-a90e-96e51d93011e"))
+(symbol (lib_id "Device:R") (at 515.62 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7f111fb4-f56a-53a9-9fbb-b29b53e1cf39") (property "Reference" "R9" (at 519.636 117.88 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "13.3k" (at 519.636 121.38 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 515.62 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "FB bottom" (at 515.62 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "RC0603FR-0713K3L" (at 515.62 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Yageo" (at 515.62 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 515.62 119.38 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "fe8fcf2c-1671-5f26-99ad-7691de196812"))(pin "2" (uuid "81baa712-e269-5493-afec-e389357a5824")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "R9") (unit 1)))))
+	(wire
+		(pts
+			(xy 515.62 115.57) (xy 515.62 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93477c59-26f7-574d-a54c-30c332aa2fb4")
+	)
+	(wire
+		(pts
+			(xy 515.62 110.49) (xy 518.16 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "802d846f-551c-5858-baea-8c0beeb9275e")
+	)
+(label "FB_5V"  (at 518.16 110.49 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7edb6815-3497-5e7b-b3d5-72dc6a04b4c1"))
+	(wire
+		(pts
+			(xy 515.62 123.19) (xy 515.62 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "367fc25d-278a-532d-8a6c-8fee18506764")
+	)
+(symbol (lib_id "power:GND") (at 515.62 128.27 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "85b4e41b-78e9-5dea-ae9a-c43b8148aee7") (property "Reference" "#PWRPOW24" (at 515.62 124.46 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 515.62 131.826 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "bf0d2721-cfe8-5aeb-a64c-fd96b3f91512")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW24") (unit 1)))))
+(symbol (lib_id "Device:C") (at 426.72 157.48 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2dafe194-518c-5b50-a95a-a0e5a4ffc819") (property "Reference" "C8" (at 431.752 155.98 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "22uF 16V" (at 431.752 159.48 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_1210_3225Metric" (at 426.72 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "5 V output" (at 426.72 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "GRM32ER61C226KE20L" (at 426.72 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Murata" (at 426.72 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 426.72 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "bfdbc89c-258b-5a14-afec-65cb46a8fbf9"))(pin "2" (uuid "e7f7a05e-b7aa-5530-a462-778f6c1cdab8")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C8") (unit 1)))))
+	(wire
+		(pts
+			(xy 426.72 153.67) (xy 426.72 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7790a16-ec46-5f5b-9fdd-00db9f2ca849")
+	)
+	(wire
+		(pts
+			(xy 426.72 148.59) (xy 429.26 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f98a3f50-3366-5a44-adcd-26a970abc20d")
+	)
+(label "+5V_BUCK"  (at 429.26 148.59 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0faef2d2-e6dc-5825-80b8-53eefdf262a8"))
+	(wire
+		(pts
+			(xy 426.72 161.29) (xy 426.72 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cde50419-f618-5d29-b3bd-0c85f932ea78")
+	)
+(symbol (lib_id "power:GND") (at 426.72 166.37 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "b7a2c6e9-335a-5871-a22a-2ba03b0916b4") (property "Reference" "#PWRPOW25" (at 426.72 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 426.72 169.926 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "b380b96a-1558-512e-ac26-3d4be9e89166")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW25") (unit 1)))))
+(symbol (lib_id "Device:C") (at 472.44 157.48 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4ea3fa6e-21e2-5a3a-930e-bb5771439fae") (property "Reference" "C9" (at 477.472 155.98 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "22uF 16V" (at 477.472 159.48 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_1210_3225Metric" (at 472.44 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "5 V output" (at 472.44 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "GRM32ER61C226KE20L" (at 472.44 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Murata" (at 472.44 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 472.44 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "a6dcff28-3d69-51fe-a5d4-3f2851b3c427"))(pin "2" (uuid "acb41ad4-130a-5348-9720-d1ac4cd828cc")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C9") (unit 1)))))
+	(wire
+		(pts
+			(xy 472.44 153.67) (xy 472.44 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13952ca2-ea74-5a0d-a9a0-dca6126a9418")
+	)
+	(wire
+		(pts
+			(xy 472.44 148.59) (xy 474.98 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "992399d8-367e-512d-ace6-ab3ab9d3bb87")
+	)
+(label "+5V_BUCK"  (at 474.98 148.59 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0c6fba2d-db81-53fc-9b3a-2e2a547709cf"))
+	(wire
+		(pts
+			(xy 472.44 161.29) (xy 472.44 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afe1e254-f310-514d-a3e3-e6c1ddf19c6a")
+	)
+(symbol (lib_id "power:GND") (at 472.44 166.37 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "8f5071c3-6cc0-5774-a97d-187cc1fa7a53") (property "Reference" "#PWRPOW26" (at 472.44 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 472.44 169.926 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "3d35d2c9-6b2c-5ca2-aee4-1541cd7f2cf8")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW26") (unit 1)))))
+(symbol (lib_id "Device:C") (at 515.62 157.48 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "182402b2-2621-54a4-93ce-055764223588") (property "Reference" "C10" (at 520.652 155.98 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "10uF 50V" (at 520.652 159.48 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_1210_3225Metric" (at 515.62 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "5 V buck input" (at 515.62 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "GRM32ER71H106KA12L" (at 515.62 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Murata" (at 515.62 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 515.62 157.48 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "61ac58ed-83d4-5a49-9962-c4e9fba217ad"))(pin "2" (uuid "df33dc90-28a6-5012-bbff-8dc2ba1b6418")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C10") (unit 1)))))
+	(wire
+		(pts
+			(xy 515.62 153.67) (xy 515.62 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71bb51d5-49fa-5f0c-b081-8e30abb6b636")
+	)
+	(wire
+		(pts
+			(xy 515.62 148.59) (xy 518.16 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7fcf45c-c7c6-5410-b06b-9780ef67e36f")
+	)
+(label "VIN_BUCK"  (at 518.16 148.59 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b7f494d0-a80d-5810-af9a-2f3756f63d43"))
+	(wire
+		(pts
+			(xy 515.62 161.29) (xy 515.62 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "597f2ada-463a-5128-a4b8-eed4f23f7a44")
+	)
+(symbol (lib_id "power:GND") (at 515.62 166.37 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "8e11362a-c181-55dc-ae3c-15446d054dd4") (property "Reference" "#PWRPOW27" (at 515.62 162.56 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 515.62 169.926 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "af0c9424-fe21-5339-a1bb-6db25bed5cf5")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW27") (unit 1)))))
+(symbol (lib_id "Device:D_Schottky") (at 426.72 193.04 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9dd0eff2-cf86-55b7-9221-1acbefb4b509") (property "Reference" "D4" (at 426.72 188.27 0) (effects (font (size 1.27 1.27))  )) (property "Value" "SS34" (at 426.72 197.81 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "Diode_SMD:D_SMA" (at 426.72 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "OR-ing: on-board 5 V -> VSERVO" (at 426.72 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "SS34" (at 426.72 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Vishay" (at 426.72 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 426.72 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "a1ec7b65-d415-5ddd-bdcb-efba3efd098d"))(pin "2" (uuid "bcfb79c5-42ce-5e27-9705-4cff8a160aba")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "D4") (unit 1)))))
+	(wire
+		(pts
+			(xy 422.91 193.04) (xy 417.83 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39038e12-3fb3-58fd-94ab-35b3828ab67e")
+	)
+(global_label "VSERVO" (shape passive) (at 417.83 193.04 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "dfa96cee-8739-59db-8aeb-82b1082efd56"))
+	(wire
+		(pts
+			(xy 430.53 193.04) (xy 435.61 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f02086aa-2e73-5c98-841d-9acfd6d17da8")
+	)
+(label "+5V_BUCK"  (at 435.61 193.04 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "68ef1f4c-4829-5062-add1-e61175eea1fb"))
+(symbol (lib_id "Device:D_Schottky") (at 474.98 193.04 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "06b47966-16ed-5d50-915a-cf40357c8041") (property "Reference" "D9" (at 474.98 188.27 0) (effects (font (size 1.27 1.27))  )) (property "Value" "SS34" (at 474.98 197.81 0) (effects (font (size 1.27 1.27))  )) (property "Footprint" "Diode_SMD:D_SMA" (at 474.98 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "OR-ing: ESC BEC -> VSERVO" (at 474.98 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "SS34" (at 474.98 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Vishay" (at 474.98 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 474.98 193.04 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "d3e3a754-b5ea-51ba-ab79-98d0122ab90b"))(pin "2" (uuid "b39729c8-357d-59e4-9a67-cfbf79a69a53")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "D9") (unit 1)))))
+	(wire
+		(pts
+			(xy 471.17 193.04) (xy 466.09 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cac386eb-b66b-53e0-be11-980afb4e4a76")
+	)
+(global_label "VSERVO" (shape passive) (at 466.09 193.04 0) (effects (font (size 1.27 1.27)) (justify right)) (uuid "5dee61c8-8f0a-5230-9a52-33fdcc73ebda"))
+	(wire
+		(pts
+			(xy 478.79 193.04) (xy 483.87 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00751348-ba4a-5d5a-9d6f-20d297e3eebb")
+	)
+(hierarchical_label "BEC_IN" (shape passive) (at 483.87 193.04 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "427d25cd-8ec7-5181-8441-861d9e95e209"))
+(symbol (lib_id "Device:C_Polarized") (at 520.7 195.58 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "916ef407-12c3-5884-938d-901c718fde51") (property "Reference" "C11" (at 525.986 194.08 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "100uF 10V" (at 525.986 197.58 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7" (at 520.7 195.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "VSERVO bulk" (at 520.7 195.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "EEE-FK1A101P" (at 520.7 195.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Panasonic" (at 520.7 195.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 520.7 195.58 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "d9187b2e-fd90-57a2-9cba-a3552626b0be"))(pin "2" (uuid "e58d250c-58f9-55f0-9b0f-9cddbd9a7eef")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C11") (unit 1)))))
+	(wire
+		(pts
+			(xy 520.7 191.77) (xy 520.7 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be1a7a2d-6625-5a8c-951a-e171989e553d")
+	)
+(symbol (lib_id "LoRa_Boat_Controller_V2:VSERVO") (at 520.7 186.69 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "c648c71a-1e14-51ce-9b3f-1bd696f58eb6") (property "Reference" "#PWRPOW28" (at 520.7 182.88 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "VSERVO" (at 520.7 183.134 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "9c5e4936-e67f-5b55-a752-61a504ec092a")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW28") (unit 1)))))
+	(wire
+		(pts
+			(xy 520.7 199.39) (xy 520.7 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a694c658-6cd4-5195-9dba-92861b8af4e2")
+	)
+(symbol (lib_id "power:GND") (at 520.7 204.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "b56e84cd-e65f-5f3f-90f4-84a43ce5d0b4") (property "Reference" "#PWRPOW29" (at 520.7 200.66 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 520.7 208.026 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "96ec89a3-5968-561e-bfa9-738fc83c5e36")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW29") (unit 1)))))
+(symbol (lib_id "Device:C") (at 426.72 231.14 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "854518d5-1572-5cb1-8882-3befb5220567") (property "Reference" "C12" (at 431.752 229.64 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "10uF 16V" (at 431.752 233.14 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 426.72 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "VSERVO ceramic" (at 426.72 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "GRM21BR61C106KE15L" (at 426.72 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "Murata" (at 426.72 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 426.72 231.14 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "70baac01-5545-5d78-a315-81be12a23afc"))(pin "2" (uuid "dad553c7-a29c-54b0-9258-50f5944d0aa5")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "C12") (unit 1)))))
+	(wire
+		(pts
+			(xy 426.72 227.33) (xy 426.72 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b03779e1-10e8-56a8-9307-9c887c6bcc28")
+	)
+(symbol (lib_id "LoRa_Boat_Controller_V2:VSERVO") (at 426.72 222.25 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "2f01f085-34bd-5eb7-94a3-4231cad70d0b") (property "Reference" "#PWRPOW30" (at 426.72 218.44 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "VSERVO" (at 426.72 218.694 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "f8c0cb4e-500a-5961-88ab-cdcbaf18ee5a")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW30") (unit 1)))))
+	(wire
+		(pts
+			(xy 426.72 234.95) (xy 426.72 240.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "517d7425-0e86-5619-b3e2-0663c83b0337")
+	)
+(symbol (lib_id "power:GND") (at 426.72 240.03 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "abbc445d-13d1-5a2d-a871-e3b15777ce90") (property "Reference" "#PWRPOW31" (at 426.72 236.22 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 426.72 243.586 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "8b77c275-bcee-5cdf-8630-39e82bef4fef")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW31") (unit 1)))))
+	(text "Nominal buck output 5.08 V before OR-ing diode loss. VSERVO is separate from +3V3. Confirm BEC voltage, population option and back-feed behavior."
+		(exclude_from_sim no)
+		(at 406.666667 256.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e960a0a1-dcb7-500c-bce4-09ce499ef6f4")
+	)
+(polyline (pts (xy 206.333333 241.44) (xy 387.666667 241.44) (xy 387.666667 333.24) (xy 206.333333 333.24) (xy 206.333333 241.44)) (stroke (width 0.15) (type solid)) (fill (type none)) (uuid "4f5008a5-55d5-567f-988b-10d8a023374e"))
+	(text "05  Power test points"
+		(exclude_from_sim no)
+		(at 211.333333 248.44 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a46a70a-3afe-5d57-8669-e1293a38e5d4")
+	)
+(symbol (lib_id "Connector:TestPoint") (at 233.68 274.32 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "86548062-55de-5ec7-9207-dddbe422b61a") (property "Reference" "TP3" (at 236.68 272.82 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "+3V3" (at 236.68 276.32 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 233.68 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "" (at 233.68 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "" (at 233.68 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "" (at 233.68 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 233.68 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "9dd04281-4430-5c4e-b65c-c633265b6164")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "TP3") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 274.32) (xy 233.68 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ce3a7e8-38a0-568e-9927-0fd979bb137a")
+	)
+(symbol (lib_id "power:+3V3") (at 233.68 279.4 180) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "0392358c-9fb2-5bb6-916f-f7d821c2dc1b") (property "Reference" "#PWRPOW32" (at 233.68 275.59 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "+3V3" (at 233.68 282.956 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "f1c727db-b785-5ca2-a540-56d65c95584e")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW32") (unit 1)))))
+(symbol (lib_id "Connector:TestPoint") (at 279.4 274.32 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "af78c50f-bc32-545a-945c-974dec793ca0") (property "Reference" "TP4" (at 282.4 272.82 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "VSERVO" (at 282.4 276.32 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 279.4 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "" (at 279.4 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "" (at 279.4 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "" (at 279.4 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 279.4 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "9d9c38ef-af5f-5d49-a151-0d48161e4309")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "TP4") (unit 1)))))
+	(wire
+		(pts
+			(xy 279.4 274.32) (xy 279.4 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d9ef874-770a-5abd-bed6-b8ccf89c5317")
+	)
+(symbol (lib_id "LoRa_Boat_Controller_V2:VSERVO") (at 279.4 279.4 180) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "1ae128cf-0bde-52b1-aab8-b12163378f8e") (property "Reference" "#PWRPOW33" (at 279.4 275.59 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "VSERVO" (at 279.4 282.956 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "e576738a-d30b-50bc-9f3f-9cf04e363ad0")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW33") (unit 1)))))
+(symbol (lib_id "Connector:TestPoint") (at 322.58 274.32 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "5d3892d3-96f5-5086-8ceb-3105e053236b") (property "Reference" "TP5" (at 325.58 272.82 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "VIN_RAW" (at 325.58 276.32 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 322.58 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "" (at 322.58 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "" (at 322.58 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "" (at 322.58 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 322.58 274.32 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "fd18e58c-4f7b-5db1-a457-5ac05b5d90c7")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "TP5") (unit 1)))))
+	(wire
+		(pts
+			(xy 322.58 274.32) (xy 322.58 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4629ecc9-6edd-56a8-a5b8-978148aa6478")
+	)
+(symbol (lib_id "LoRa_Boat_Controller:VIN_RAW") (at 322.58 279.4 180) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "d7a0149f-d507-52f7-bb3b-1e628c783450") (property "Reference" "#PWRPOW34" (at 322.58 275.59 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "VIN_RAW" (at 322.58 282.956 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "7ad22856-55c0-5d42-a1c1-a204c19c648a")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW34") (unit 1)))))
+(symbol (lib_id "Connector:TestPoint") (at 233.68 304.8 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9fc0d3cf-0ed0-572c-aadc-ad977c93c443") (property "Reference" "TP6" (at 236.68 303.3 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Value" "GND" (at 236.68 306.8 0) (effects (font (size 1.27 1.27)) (justify left) )) (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 233.68 304.8 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Description" "" (at 233.68 304.8 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "MPN" "" (at 233.68 304.8 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Manufacturer" "" (at 233.68 304.8 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Datasheet" "~" (at 233.68 304.8 0) (effects (font (size 1.27 1.27))  (hide yes))) (pin "1" (uuid "d0791e6a-6525-54ec-8c3a-2c93cdaa8ad6")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "TP6") (unit 1)))))
+	(wire
+		(pts
+			(xy 233.68 304.8) (xy 233.68 309.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5d325d2-c2f1-50a9-bee9-b994b94b5ab4")
+	)
+(symbol (lib_id "power:GND") (at 233.68 309.88 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "cd1a4752-16e2-5015-be03-a13f624fc4d5") (property "Reference" "#PWRPOW35" (at 233.68 306.07 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "GND" (at 233.68 313.436 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "b15699fa-efeb-55cb-840c-8449108fde96")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#PWRPOW35") (unit 1)))))
+	(text "Expected node labels only. No measured rail, ripple, load or thermal qualification is claimed."
+		(exclude_from_sim no)
+		(at 213.333333 323.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d2c95a4-7d9d-5ee2-a129-b518249fca61")
+	)
+	(text "Read named nets within each group; matching labels are electrically connected. Cross-sheet signals use hierarchical ports."
+		(exclude_from_sim no)
+		(at 13 384 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "f3152a91-d7cc-5603-9b54-3eea2e096809")
+	)
+	(text "V1 preserves original defects. V2 is a review draft. Bench values and firmware behavior require validation."
+		(exclude_from_sim no)
+		(at 13 389 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "99a0b584-dadc-52c2-b56d-5d5822aec30e")
+	)
+(symbol (lib_id "power:PWR_FLAG") (at 17.78 365.76 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "65a04788-46a0-500f-a66b-261fccc5d559") (property "Reference" "#FLGPow01" (at 17.78 361.95 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "PWR_FLAG" (at 17.78 362.204 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "3eb92a6f-ea0a-560b-808a-f93ea7b2ff14")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#FLGPow01") (unit 1)))))
+	(wire
+		(pts
+			(xy 17.78 365.76) (xy 17.78 368.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89604425-fc61-5358-a403-b0b64144502d")
+	)
+(global_label "VIN_RAW" (shape passive) (at 17.78 368.3 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "c7a678ed-aa80-5a90-842e-5c6fcbc36bb5"))
+(symbol (lib_id "power:PWR_FLAG") (at 50.8 365.76 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "4cf99c58-d411-5eed-9205-24777dab9362") (property "Reference" "#FLGPow02" (at 50.8 361.95 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "PWR_FLAG" (at 50.8 362.204 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "aae94998-8f95-5bc7-ba15-05b26c8323f9")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#FLGPow02") (unit 1)))))
+	(wire
+		(pts
+			(xy 50.8 365.76) (xy 50.8 368.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9613583-118c-5579-ae40-a77c595ad2a0")
+	)
+(global_label "+3V3" (shape passive) (at 50.8 368.3 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "06e9a80b-ea1e-5461-8aba-c6161eb2e8e5"))
+(symbol (lib_id "power:PWR_FLAG") (at 81.28 365.76 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "876e7ea7-2529-5f01-9e48-f40f8a80348d") (property "Reference" "#FLGPow03" (at 81.28 361.95 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "PWR_FLAG" (at 81.28 362.204 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "85aac768-a66c-5c4b-acbb-d653aea297a5")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#FLGPow03") (unit 1)))))
+	(wire
+		(pts
+			(xy 81.28 365.76) (xy 81.28 368.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c31b6c50-d933-52e1-88b0-215afc14b50d")
+	)
+(global_label "VSERVO" (shape passive) (at 81.28 368.3 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "7de09132-4b10-5c07-adba-f17d2b3f38da"))
+(symbol (lib_id "power:PWR_FLAG") (at 114.3 365.76 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "db0a2067-8dae-5aa3-b987-6caf79a93861") (property "Reference" "#FLGPow04" (at 114.3 361.95 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "PWR_FLAG" (at 114.3 362.204 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "bef86b03-b038-5d27-9003-7ad94f8169b0")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#FLGPow04") (unit 1)))))
+	(wire
+		(pts
+			(xy 114.3 365.76) (xy 114.3 368.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09088d27-bb02-50dc-9c4c-b4104a7e086e")
+	)
+(global_label "GND" (shape passive) (at 114.3 368.3 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "77f984b8-a2f8-5cbe-bef4-e59ec9157447"))
+(symbol (lib_id "power:PWR_FLAG") (at 144.78 365.76 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "6c45a689-4900-5007-8e6a-b9b5068c1042") (property "Reference" "#FLGPow05" (at 144.78 361.95 0) (effects (font (size 1.27 1.27))  (hide yes))) (property "Value" "PWR_FLAG" (at 144.78 362.204 0) (effects (font (size 1.27 1.27))  )) (pin "1" (uuid "842ada8c-c5cd-54ff-bf27-6c37e42b8af4")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865" (reference "#FLGPow05") (unit 1)))))
+	(wire
+		(pts
+			(xy 144.78 365.76) (xy 144.78 368.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62d67a1a-ab30-5654-ba52-1655bf17ff04")
+	)
+(label "VIN_BUCK"  (at 144.78 368.3 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "fa937ca7-cc5e-5822-bed6-bbbd43386536"))
+(embedded_fonts no)
+)

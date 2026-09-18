@@ -1,0 +1,72 @@
+{
+  "Actuators.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 168,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "Debug.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 157,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "LoRa_Boat_Controller_V2.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 143,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "MCU.kicad_sch": {
+    "page_mm": [
+      594,
+      420
+    ],
+    "checked_anchors_and_corners": 423,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "Navigation.kicad_sch": {
+    "page_mm": [
+      594,
+      420
+    ],
+    "checked_anchors_and_corners": 335,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "Power.kicad_sch": {
+    "page_mm": [
+      594,
+      420
+    ],
+    "checked_anchors_and_corners": 439,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  },
+  "Radio.kicad_sch": {
+    "page_mm": [
+      420,
+      297
+    ],
+    "checked_anchors_and_corners": 123,
+    "outside": [],
+    "passed": true,
+    "limitation": "Does not measure text glyph extents, symbol body extents, overlap, or reading order; visual inspection is required."
+  }
+}

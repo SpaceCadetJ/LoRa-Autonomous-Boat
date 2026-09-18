@@ -57,6 +57,8 @@ Use the labels below when copying assets into a portfolio. PCB renders show CAD 
 
 A separate [V2 Stage A diagnostic](../../firmware_v2/README.md) now builds reproducibly for board identity, heartbeat and inactive actuator outputs. The [application handbook](../applications/README.md) covers five use cases with explicit release gates. The [component-limit review](../../reviews/codex/design_completion/electrical/README.md) identifies six electrical blockers that remain after copper cleanup.
 
+The [IMU correction candidate](../../reviews/codex/imu_interface/README.md) now provides a concrete 1.8 V supply and translated I2C/interrupt schematic, with exact pin-delta checks and a reviewed TI-specific footprint. It is separate from the live PCB and purchasing package; placement, routing and physical qualification remain pending.
+
 ## Next engineering milestones
 
 1. Correct the IMU's 1.8 V supply/interface and the remaining power/signal-limit findings, then reconcile schematic-to-PCB discrepancies before layout release.

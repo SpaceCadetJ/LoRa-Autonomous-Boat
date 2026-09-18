@@ -48,3 +48,12 @@ Jay requested continued improvement toward a finished design and guides for diff
 ## Design/application review complete - 2026-09-17
 
 Root integrated the reviewed V2 ground candidate and separate firmware_v2 Stage A diagnostic. Child scopes docs/applications, electrical, ground and mcu_ground are released; their handoffs identify exact inputs and limits. Root retains current documentation, viewer and selective publication integration through final checks. Later packets may implement reviewed V2 corrections after checking newer claims. The existing v1_design.py and route_v2.py local edits remain outside this packet. Preserve original Allegro/V1 evidence; no orders, real hardware programming or history rewrite.
+
+## IMU candidate packet - 2026-09-18 UTC
+
+Codex root claims reviews/codex/imu_interface/**, the current review handoff and viewer integration for an isolated E-01 schematic correction candidate. The live V2 circuit and corrected PCB remain unchanged until candidate electrical delta, symbol/package review and native checks are recorded. Independent child imu_interface_review is read-only. No V1/Allegro, unrelated generator/routing edits, full PCB generation, hardware access or ordering.
+
+
+## IMU candidate review checkpoint - 2026-09-18 UTC
+
+Candidate generation, native exports, independent pin/part validation and eight rejection tests are complete. Child scopes are released. Root closes out the candidate viewer/portfolio records and ordinary selective publication. Live CAD, BOM and firmware remain unchanged. The next authorized packet is placement feasibility on a copy of the corrected PCB; the prior two unrelated local tool edits remain excluded.

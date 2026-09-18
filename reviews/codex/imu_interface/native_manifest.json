@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-18T03:39:05.824622+00:00",
+  "status": "exported_unqualified",
+  "exporter_sha256": "a732656f5010fe17175397d70dd95e58b5dbbc49f6ab36c349133a69d5b11287",
+  "scope": "candidate schematic only; no PCB modification",
+  "input_sha256": {
+    "reviews/codex/imu_interface/source/hardware/kicad/LoRa_Boat_Controller.kicad_sym": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950",
+    "reviews/codex/imu_interface/source/hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod": "3df2bdad2d5533ceb5a0492e93aae8e2faab545a4f2e999d8a2a426829fca314",
+    "reviews/codex/imu_interface/source/hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod": "ce99ee424974e7bae6c9137e43ac6b4f8bc4daaa9d6777f26049be4f1f1dd830",
+    "reviews/codex/imu_interface/source/hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod": "b880a51afb66d5a86cbd2dad667bd6a819500be0a7d51aa2234ce6cac41a2fee",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/Actuators.kicad_sch": "a8ed776df3e329b417aacb15e8002553e57923298792df1f406a515793e02a4d",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/Debug.kicad_sch": "443ce9d1f8b8e2d9c254afa007ee91e63c84a60fdf24763ae0e47f4cf1dfbdcf",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/fp-lib-table": "ab7fae9b8768ecd1309a42873f463ef02016b0ac5c026a12fb412bfa47e8faf7",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch": "b0312c21971d96df426dcf0a8705eb7dd95c210b21644f4756debf134a2e1637",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym": "c21bf87dc5ea7de85c19909d0854ba515d1f5cb2d9f8194891cccecb3c0e4773",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/QFN-24_3x3mm_P0.4mm_NoEP.kicad_mod": "45d275957763fbc76756a2c762a7dd9bf1e8ab71e7eeb03e3e537b192d28f054",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DCT0008A_PCA9306_3x3mm_P0.65mm.kicad_mod": "59a3d80d356310abd2e5dd9cf0d958498de884642f733e4b697503f6e62c7706",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/MCU.kicad_sch": "16b1e14ba7e1a030b97fdc61bca3590da584edd15fd7a9fe613053ecd73d532e",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/Navigation.kicad_sch": "8452b6168228e3fe3400e52343d16b3982849edd1cd0a0e59f2593f4e4dfe19a",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/Power.kicad_sch": "72564354eb44cf156f49e228b8fae1db9a3ee0e8345a61aea55eac886f354375",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/Radio.kicad_sch": "bba4f4891ea79c80766439bd63387b19646dd30bfb5a26a0d5bb3bfe76427295",
+    "reviews/codex/imu_interface/source/hardware/kicad_v2/sym-lib-table": "3dccf10d5632037fbc6978966881b8eb68ceb500677674a746481e19a0368ae3"
+  },
+  "commands": [
+    {
+      "argv": [
+        "C:/Users/Jay/AppData/Local/Programs/KiCad/9.0/bin/kicad-cli.exe",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "reviews/codex/imu_interface/native/netlist.xml",
+        "reviews/codex/imu_interface/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/Jay/AppData/Local/Programs/KiCad/9.0/bin/kicad-cli.exe",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "-o",
+        "reviews/codex/imu_interface/native/erc.json",
+        "reviews/codex/imu_interface/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "Found 1 violations\nSaved ERC Report to reviews/codex/imu_interface/native/erc.json\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/Jay/AppData/Local/Programs/KiCad/9.0/bin/kicad-cli.exe",
+        "sch",
+        "export",
+        "svg",
+        "-o",
+        "reviews/codex/imu_interface/native/svg/",
+        "reviews/codex/imu_interface/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "Plotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\imu_interface\\native\\svg\\LoRa_Boat_Controller_V2.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\imu_interface\\native\\svg\\LoRa_Boat_Controller_V2-Power.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\imu_interface\\native\\svg\\LoRa_Boat_Controller_V2-MCU.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\imu_interface\\native\\svg\\LoRa_Boat_Controller_V2-Radio.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\imu_interface\\native\\svg\\LoRa_Boat_Controller_V2-Navigation.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\imu_interface\\native\\svg\\LoRa_Boat_Controller_V2-Actuators.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\imu_interface\\native\\svg\\LoRa_Boat_Controller_V2-Debug.svg'.\nDone.\n",
+      "stderr": ""
+    }
+  ],
+  "kicad_version": "9.0.7",
+  "live_design_preserved": true,
+  "output_sha256": {
+    "reviews/codex/imu_interface/native/netlist.xml": "081bf490a8228ca0ba159845a06bf5b1bff826631225308684f0219a7543a153",
+    "reviews/codex/imu_interface/native/erc.json": "8c02efcf38d56c767e4f5938ee6ae677d78fcea2a9b7a0405e2f0fe9315ddc69",
+    "reviews/codex/imu_interface/native/coordinate_bounds.json": "f79500e5c388ada49e14ba7828d8ee61f15421252bb3150185538c9d6b5644c5",
+    "reviews/codex/imu_interface/native/footprint_check.json": "9133ffde0f68311837ad5ee87cad4d7cc502e426478315d5c6d44511ef656679",
+    "reviews/codex/imu_interface/v2_imu_candidate.svg": "c4a92a38a4620feedcb5aeac747d3d623434d3baae04147f82ee911b3ed7417c",
+    "reviews/codex/imu_interface/native/svg/LoRa_Boat_Controller_V2-Actuators.svg": "c85ead03e089aa9043c3a2ddd3ab87a1f844d76d2d67cdc5464d8a5013cf9980",
+    "reviews/codex/imu_interface/native/svg/LoRa_Boat_Controller_V2-Debug.svg": "e94fed16d5baa9fb587421e2de7cf6318e342a5b189ffd2cd06e40d94689906c",
+    "reviews/codex/imu_interface/native/svg/LoRa_Boat_Controller_V2-MCU.svg": "971507fb782d1b677b101428626d81f46eb9b14fddea867f9195c4beee32837d",
+    "reviews/codex/imu_interface/native/svg/LoRa_Boat_Controller_V2-Navigation.svg": "c4a92a38a4620feedcb5aeac747d3d623434d3baae04147f82ee911b3ed7417c",
+    "reviews/codex/imu_interface/native/svg/LoRa_Boat_Controller_V2-Power.svg": "4f2e792c7fc3d03c6bdc06ced566ff0026eddf13a3a49382a2e8801cd1eeb0c1",
+    "reviews/codex/imu_interface/native/svg/LoRa_Boat_Controller_V2-Radio.svg": "36ba838f1639585a766ff30a8ba96ad51141b44c3e810f602fae25c813c22faa",
+    "reviews/codex/imu_interface/native/svg/LoRa_Boat_Controller_V2.svg": "02e0c3d32199061b3e4dc97947ddcebc5f0b7ed214b49654bf0c09f84302ebea"
+  }
+}

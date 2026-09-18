@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-09-18T03:39:15.905088+00:00",
+  "status": "pass_candidate_only",
+  "inputs": {
+    "baseline_netlist": {
+      "path": "reviews/codex/design_completion/native-review/v2/netlist.xml",
+      "sha256": "6efc1c8b3daa008a6e21028b5341d95381270798c502e4abc184a42a5e239dd6"
+    },
+    "candidate_netlist": {
+      "path": "reviews/codex/imu_interface/native/netlist.xml",
+      "sha256": "081bf490a8228ca0ba159845a06bf5b1bff826631225308684f0219a7543a153"
+    },
+    "baseline_erc": {
+      "path": "reviews/codex/design_completion/native-review/v2/erc.json",
+      "sha256": "b66a15c6a5d1e09edd0c61737b8b562f36d0019b9187fdd8e38bd4fd557a2afc"
+    },
+    "candidate_erc": {
+      "path": "reviews/codex/imu_interface/native/erc.json",
+      "sha256": "8c02efcf38d56c767e4f5938ee6ae677d78fcea2a9b7a0405e2f0fe9315ddc69"
+    }
+  },
+  "scope": "isolated schematic/netlist candidate only",
+  "pcb_updated": false,
+  "live_circuit_updated": false,
+  "fabrication_approved": false,
+  "hardware_tested": false,
+  "limitations": [
+    "Native ERC does not validate voltage limits, timing, effective capacitance, package land patterns or physical behavior.",
+    "Candidate PCB routing, procurement qualification and operational firmware are not implemented by this check."
+  ],
+  "electrical_delta": {
+    "baseline_components": 114,
+    "candidate_components": 126,
+    "added_components": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "R36",
+      "R37",
+      "R38",
+      "R39",
+      "U10",
+      "U11",
+      "U9"
+    ],
+    "baseline_physical_pins": 361,
+    "candidate_physical_pins": 398,
+    "added_physical_pins": 37,
+    "preserved_existing_pin_memberships": 356,
+    "existing_pin_deltas": [
+      {
+        "reference": "U6",
+        "pin": "12",
+        "before": "/IMU_INT",
+        "after": "/Navigation/IMU_INT_1V8"
+      },
+      {
+        "reference": "U6",
+        "pin": "22",
+        "before": "+3V3",
+        "after": "/Navigation/+1V8_IMU"
+      },
+      {
+        "reference": "U6",
+        "pin": "23",
+        "before": "/I2C1_SCL",
+        "after": "/Navigation/IMU_SCL_1V8"
+      },
+      {
+        "reference": "U6",
+        "pin": "24",
+        "before": "/I2C1_SDA",
+        "after": "/Navigation/IMU_SDA_1V8"
+      },
+      {
+        "reference": "U6",
+        "pin": "8",
+        "before": "+3V3",
+        "after": "/Navigation/+1V8_IMU"
+      }
+    ],
+    "existing_component_values_footprints_mpns_libraries_and_pin_definitions_preserved": true,
+    "physical_pin_completeness_and_uniqueness": "pass"
+  },
+  "native_erc": {
+    "baseline": {
+      "kicad_version": "9.0.7",
+      "date": "2026-09-17T17:13:40-0500",
+      "errors": 0,
+      "warnings": 1,
+      "exclusions": 0,
+      "violations": [
+        {
+          "sheet": "/Navigation/",
+          "severity": "warning",
+          "type": "pin_to_pin",
+          "description": "Pins of type Bidirectional and Power output are connected",
+          "items": [
+            "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+            "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+          ]
+        }
+      ]
+    },
+    "candidate": {
+      "kicad_version": "9.0.7",
+      "date": "2026-09-17T22:39:11-0500",
+      "errors": 0,
+      "warnings": 1,
+      "exclusions": 0,
+      "violations": [
+        {
+          "sheet": "/Navigation/",
+          "severity": "warning",
+          "type": "pin_to_pin",
+          "description": "Pins of type Bidirectional and Power output are connected",
+          "items": [
+            "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+            "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,5 +1,9 @@
 # Start here: Codex review checkpoint
 
+## Latest bounded packet: IMU interface candidate
+
+[IMU candidate and next task](imu_interface/README.md) implements and independently checks the 1.8 V supply/bus/interrupt circuit in an isolated schematic. Live CAD and purchasing exports remain unchanged. Assess placement on a corrected PCB copy before integration.
+
 ## Current application and electrical completion packet
 
 Start with [design_completion/HANDOFF.md](design_completion/HANDOFF.md), [application guides](../../docs/applications/README.md) and the [V2 diagnostic](../../firmware_v2/README.md). The current work connects application procedures to actual board/firmware readiness, repairs the three ground connections, identifies six component-limit blockers, and adds a pin-checked Stage A image. The previously published integration is on `main` and `v2-design`; earlier primary-ownership and no-push statements below are historical. Operational control firmware, electrical corrections and bench qualification remain separate open work.
