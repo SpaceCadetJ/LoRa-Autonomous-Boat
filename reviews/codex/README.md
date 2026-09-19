@@ -1,5 +1,9 @@
 # Start here: Codex review checkpoint
 
+## Latest circuit revision: IMU2
+
+Start with [IMU2 and the next task](imu_bias_filter/README.md). The recommended 100 pF bias filter is verified in an isolated schematic; prior IMU1 and placement evidence remain immutable. Next: the 6S protection/power-package envelope, then complete-circuit routing.
+
 ## Latest bounded packet: placement feasibility
 
 [Placement study and next task](imu_placement/README.md) preserves all original copper and placements. It verifies courtyard fit but rejects integration on untouched copper, with 136 native errors. Next: disposition the recommended bias filter and establish the 6S power-package envelope before final routing.

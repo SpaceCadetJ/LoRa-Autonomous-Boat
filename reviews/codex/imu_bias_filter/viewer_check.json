@@ -1,0 +1,33 @@
+{
+  "browser": "Headless Edge",
+  "results": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "three_candidate_assets_loaded": true,
+      "correct_revision_project_links": true,
+      "live_pcb_link_absent": true,
+      "current_guide_loaded": true,
+      "page_overflow": false,
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "three_candidate_assets_loaded": true,
+      "correct_revision_project_links": true,
+      "live_pcb_link_absent": true,
+      "current_guide_loaded": true,
+      "page_overflow": false,
+      "errors": []
+    }
+  ],
+  "http": {
+    "checked": 231,
+    "failures": []
+  }
+}

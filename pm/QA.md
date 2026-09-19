@@ -60,3 +60,7 @@ Next bounded packet: independently snapshot and verify V2 ERC/DRC and inventory,
 ## IMU placement review - 2026-09-18 UTC
 
 Local viewer: 76 documents, 54 images, 228 indexed paths. Desktop 1440 × 1000 and phone 390 × 844 checks passed placement-map loading, isolated project/PCB links, failed-native-check disclosure, zero page overflow and zero script errors. All 228 indexed local HTTP paths passed. The long view selector now shrinks within its label on phones. Placement evidence is deliberately a failed electrical integration gate: 136 native errors, preserved original copper and no new pad assignments. See reviews/codex/imu_placement/viewer_check.json and http_check.json. Hosted CI and hardware acceptance are separate.
+
+## IMU2 amendment closeout - 2026-09-19 UTC
+
+The current IMU2 schematic is separate from preserved IMU1 and placement evidence. Native checks verify C43 adds two pins and preserves all 398 existing memberships; ERC remains zero errors / one original warning. Seven amendment acceptance/rejection tests pass. Viewer packaging: 77 documents, 55 images and 231 indexed paths. Desktop/phone checks passed all three revision selectors, correct candidate project links, current guide, no misleading live-PCB link, no script errors and no overflow. All 231 HTTP paths passed. Record: reviews/codex/imu_bias_filter/viewer_check.json. Hardware and hosted CI remain separate gates.

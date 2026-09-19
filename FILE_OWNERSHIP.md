@@ -65,3 +65,11 @@ Codex root claims reviews/codex/imu_placement/** and current viewer/handoff inte
 ## IMU placement checkpoint - 2026-09-18 UTC
 
 Read-only child review is complete and released. Root completes the isolated placement packet, viewer, captured-evidence CI and selective commit/push. No live CAD or circuit changes were made. Subsequent circuit work starts with the imu_placement handoff; the existing two unrelated local tool edits remain excluded.
+
+## IMU bias-filter amendment claim - 2026-09-18 UTC
+
+Codex root claims reviews/codex/imu_bias_filter/**, current viewer/application/handoff links and captured-evidence CI for a new isolated schematic revision adding only C43 (100 pF) from PCA9306_BIAS to GND. Prior IMU and placement packets remain immutable. Read-only child imu_bias_review checks electrical intent and final native delta. Preserve all live CAD, BOM, firmware and the two unrelated local tool edits. No PCB generation/routing, hardware access, ordering or branch changes.
+
+## IMU2 review checkpoint - 2026-09-18 UTC
+
+Independent read-only review is complete; child claim released. Root finishes candidate viewer/CI records and ordinary selective publication. Live CAD, purchasing, firmware and historical candidate/placement evidence are preserved. The next bounded scope follows the imu_bias_filter handoff: 6S power envelope before final routing.

@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-09-19T21:14:44.728112+00:00",
+  "independent_review": {
+    "mode": "read-only",
+    "complete_existing_component_xml_preserved": true,
+    "existing_memberships_preserved": 398,
+    "added_components": [
+      "C43"
+    ],
+    "added_pins": 2,
+    "protected_file_hashes_matched": 147,
+    "result": "no publication-blocking findings",
+    "limits": "Schematic-only; no PCB or physical timing acceptance"
+  },
+  "visual_review": {
+    "svg": "reviews/codex/imu_bias_filter/v2_imu_bias_filter.svg",
+    "svg_sha256": "527faeecf3f19bf4c5576be7c49e416108b8cbd015d76401d4195596b99d8c26",
+    "png": "reviews/codex/imu_bias_filter/navigation-review.png",
+    "png_sha256": "0a2251fa09e39d4fbb545776b2871358b10b6c35653289b6993aab7ebabf0e3b",
+    "observations": "C43 bias/GND connections, reference/value and startup annotation readable; no observed new overlaps/clipping. Root/Navigation revision IMU2.",
+    "scope": "Changed Navigation sheet reviewed; all pages checked for coordinate bounds."
+  }
+}

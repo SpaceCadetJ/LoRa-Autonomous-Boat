@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Latest circuit revision: IMU2
+
+The [IMU2 bias-filter amendment](../reviews/codex/imu_bias_filter/README.md) is the current isolated schematic candidate. C43 adds two connections; all 398 previous memberships and the original ERC finding are preserved. Live hardware and ordering remain unchanged. Next: define the 6S protection/power-package envelope before final routing.
+
 ## Current IMU placement review
 
 The [placement review](../reviews/codex/imu_placement/README.md) maps the twelve additions and a filter reserve. Courtyards fit, but 136 native errors identify required copper work; complete 6S fit is unresolved. The V2 Design viewer includes the obstacle map. Start with the new circuit/power/routing restart order.

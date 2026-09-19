@@ -51,3 +51,7 @@ The [review workflow](../build/REVIEW_WORKFLOW.md) handles source and evidence c
 ## Current design gate: IMU placement
 
 The [placement review](../../reviews/codex/imu_placement/README.md) finds physical courtyard space but 136 native copper/mask/clearance errors on the isolated study. This does not advance any application to powered acceptance. Live board, purchasing and Stage A contracts are unchanged; resolve the bias-filter amendment and 6S power envelope before final routing and application bring-up.
+
+## IMU2 circuit amendment
+
+The [current IMU2 candidate](../../reviews/codex/imu_bias_filter/README.md) implements the translator bias filter with a verified two-pin delta. It remains unrouted and does not change application acceptance, physical flashing steps, live BOM or the Stage A contract. The next gate is the 6S protection/power-package envelope followed by reviewed routing.

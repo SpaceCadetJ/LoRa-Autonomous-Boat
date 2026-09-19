@@ -94,6 +94,36 @@ def main():
         assert sum(v["severity"] == "warning" for v in report["violations"]) == placement[key]["warnings"]
     assert placement["baseline_drc"]["errors"] == 0 and placement["study_drc"]["errors"] == 136
     print("PASS placement preservation and recorded FAILED native gate; no electrical integration")
+    bias_root = "reviews/codex/imu_bias_filter/"
+    bias_build = read_json(bias_root + "build_manifest.json")
+    bias_native = read_json(bias_root + "native_manifest.json")
+    bias_result = read_json(bias_root + "validation.json")
+    check_hashes(bias_build["input_sha256"], "IMU2 previous candidate inputs")
+    check_hashes(bias_build["output_sha256"], "IMU2 amended CAD inputs")
+    # These two pre-existing workstation edits are intentionally not published or consumed.
+    local_only = {"hardware/kicad/tools/v1_design.py", "hardware/kicad_v2/tools/route_v2.py"}
+    check_hashes({p: h for p, h in bias_build["protected_sha256"].items() if p not in local_only},
+                 "IMU2 preserved prior evidence and live CAD")
+    check_hashes(bias_native["input_sha256"], "IMU2 native inputs")
+    check_hashes(bias_native["output_sha256"], "IMU2 native exports")
+    check_hashes(bias_result["comparison_input_sha256"], "IMU2 comparison inputs")
+    check_hashes({bias_root + "build_amendment.py": bias_build["builder_sha256"],
+                  bias_root + "export_native.py": bias_native["exporter_sha256"],
+                  bias_root + "verify_amendment.py": bias_result["verifier_sha256"]}, "IMU2 evidence tools")
+    spec = importlib.util.spec_from_file_location("bias_verify", ROOT / bias_root / "verify_amendment.py")
+    bias = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(bias)
+    updated = ET.parse(ROOT / bias_root / "native/netlist.xml")
+    assert bias.validate(ET.parse(ROOT / imu_root / "native/netlist.xml"), updated) == bias_result["amendment_delta"]
+    assert bias.cumulative(updated) == bias_result["cumulative_delta"]
+    bias_erc = bias.base.erc_summary(read_json(bias_root + "native/erc.json"))
+    prior_erc = bias.base.erc_summary(read_json(imu_root + "native/erc.json"))
+    assert bias_erc["errors"] == 0 and bias_erc["violations"] == prior_erc["violations"]
+    assert bias_result["status"] == "pass_isolated_schematic_only"
+    assert not any(bias_result[k] for k in ["pcb_updated", "hardware_tested", "fabrication_approved"])
+    visual = read_json(bias_root + "review_notes.json")["visual_review"]
+    check_hashes({visual["svg"]: visual["svg_sha256"], visual["png"]: visual["png_sha256"]}, "IMU2 reviewed drawing")
+    print("PASS isolated IMU2 two-pin amendment and cumulative contract; no PCB/hardware acceptance")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -104,7 +134,7 @@ def main():
     pages = [ROOT / "README.md", ROOT / "docs/portfolio/README.md"]
     pages += list((ROOT / "docs/build").glob("*.md"))
     pages += list((ROOT / "docs/applications").glob("*.md"))
-    pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md", ROOT / "reviews/codex/imu_placement/README.md"]
+    pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md", ROOT / "reviews/codex/imu_placement/README.md", ROOT / "reviews/codex/imu_bias_filter/README.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

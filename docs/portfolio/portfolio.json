@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-09-17",
+  "updated": "2026-09-19",
   "title": "LoRa Vehicle Controller: Reconstruction and Platform Redesign",
   "short_title": "LoRa Autonomous Boat Controller",
   "summary": "An STM32 and LoRa vehicle-controller project with reconstructed KiCad hardware, annotated schematics, a searchable engineering workspace, assembly evidence and a reproducible V1 firmware build. V2 hardware and a voice/text/location handheld remain under development.",
@@ -27,7 +27,8 @@
     "application_guides": "docs/applications/README.md",
     "v2_diagnostic": "firmware_v2/README.md",
     "imu_candidate": "reviews/codex/imu_interface/README.md",
-    "imu_placement": "reviews/codex/imu_placement/README.md"
+    "imu_placement": "reviews/codex/imu_placement/README.md",
+    "imu_current": "reviews/codex/imu_bias_filter/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -92,6 +93,12 @@
       "label": "IMU placement and copper-obstacle map",
       "kind": "engineering_review",
       "note": "Courtyard fit only; not an integrated or fabrication-ready design."
+    },
+    {
+      "path": "reviews/codex/imu_bias_filter/v2_imu_bias_filter.svg",
+      "label": "Current IMU2 schematic with bias filter",
+      "kind": "engineering_review",
+      "note": "Verified isolated schematic; not PCB integrated or hardware qualified."
     }
   ],
   "validated_results": [
@@ -192,6 +199,15 @@
         "reviews/codex/imu_placement/preservation.json",
         "reviews/codex/imu_placement/routing_review.json"
       ]
+    },
+    {
+      "claim": "IMU2 adds a 100 pF translator bias filter with exactly two new pin memberships and all 398 preceding memberships preserved. Native ERC retains only the previous warning; no PCB integration is claimed.",
+      "classification": "verified_isolated_schematic_amendment",
+      "evidence": [
+        "reviews/codex/imu_bias_filter/validation.json",
+        "reviews/codex/imu_bias_filter/native_manifest.json",
+        "reviews/codex/imu_bias_filter/README.md"
+      ]
     }
   ],
   "current_native_findings": {
@@ -220,7 +236,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Disposition the IMU translator bias filter, establish a 6S protection/power-package envelope, then resolve the recorded placement/copper conflicts before electrical integration.",
+    "Define the 6S protection and power-package envelope, then route and review the complete IMU2 circuit while resolving recorded placement conflicts.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",
     "Measure voice quality, airtime and RC coexistence before selecting handheld radio, codec or hardware."

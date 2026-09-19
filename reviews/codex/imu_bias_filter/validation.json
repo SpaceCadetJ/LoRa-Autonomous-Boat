@@ -1,0 +1,96 @@
+{
+  "created_utc": "2026-09-18T15:53:13.371798+00:00",
+  "status": "pass_isolated_schematic_only",
+  "verifier_sha256": "cb177e3b35885915425daf9eb022884815fc48772450e76de2b33676e932486a",
+  "comparison_input_sha256": {
+    "reviews/codex/imu_interface/native/netlist.xml": "081bf490a8228ca0ba159845a06bf5b1bff826631225308684f0219a7543a153",
+    "reviews/codex/imu_interface/native/erc.json": "8c02efcf38d56c767e4f5938ee6ae677d78fcea2a9b7a0405e2f0fe9315ddc69",
+    "reviews/codex/imu_bias_filter/native/netlist.xml": "9bda3ac0367de142907a61edbbfd2f26bc202d54792456dba2c5cf5651ac7e5b",
+    "reviews/codex/imu_bias_filter/native/erc.json": "aa4bcf8893a8fef09eb172a718ef3cadd419a9cd95050e9a9ce0a9b32eaabee6",
+    "reviews/codex/design_completion/native-review/v2/netlist.xml": "6efc1c8b3daa008a6e21028b5341d95381270798c502e4abc184a42a5e239dd6",
+    "reviews/codex/imu_interface/verify_candidate.py": "14d81fa62be5565c35674438a81d48d0922080ccbcfa0529aef5adb89c48cfb6"
+  },
+  "amendment_delta": {
+    "before_components": 126,
+    "after_components": 127,
+    "before_pins": 398,
+    "after_pins": 400,
+    "preserved_memberships": 398,
+    "changed_existing_memberships": 0,
+    "added_components": [
+      "C43"
+    ],
+    "added_memberships": {
+      "C43.1": "/Navigation/PCA9306_BIAS",
+      "C43.2": "GND"
+    },
+    "existing_component_identities_preserved": true,
+    "new_net_names": []
+  },
+  "cumulative_delta": {
+    "baseline_components": 114,
+    "candidate_components": 127,
+    "added_components": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "R36",
+      "R37",
+      "R38",
+      "R39",
+      "U10",
+      "U11",
+      "U9"
+    ],
+    "baseline_physical_pins": 361,
+    "candidate_physical_pins": 400,
+    "added_physical_pins": 39,
+    "preserved_existing_pin_memberships": 356,
+    "existing_pin_deltas": [
+      {
+        "reference": "U6",
+        "pin": "12",
+        "before": "/IMU_INT",
+        "after": "/Navigation/IMU_INT_1V8"
+      },
+      {
+        "reference": "U6",
+        "pin": "22",
+        "before": "+3V3",
+        "after": "/Navigation/+1V8_IMU"
+      },
+      {
+        "reference": "U6",
+        "pin": "23",
+        "before": "/I2C1_SCL",
+        "after": "/Navigation/IMU_SCL_1V8"
+      },
+      {
+        "reference": "U6",
+        "pin": "24",
+        "before": "/I2C1_SDA",
+        "after": "/Navigation/IMU_SDA_1V8"
+      },
+      {
+        "reference": "U6",
+        "pin": "8",
+        "before": "+3V3",
+        "after": "/Navigation/+1V8_IMU"
+      }
+    ],
+    "existing_component_values_footprints_mpns_libraries_and_pin_definitions_preserved": true,
+    "physical_pin_completeness_and_uniqueness": "pass"
+  },
+  "native_erc": {
+    "errors": 0,
+    "warnings": 1,
+    "prior_findings_unchanged": true
+  },
+  "prior_and_live_preserved": true,
+  "pcb_updated": false,
+  "hardware_tested": false,
+  "fabrication_approved": false
+}
