@@ -1,0 +1,1956 @@
+(kicad_sch
+	(version 20250114)
+	(generator "input_stage_candidate")
+	(generator_version "9.0")
+	(uuid "eb12221b-edfd-5bd0-b05c-67a69fd586db")
+	(paper "A3")
+	(title_block
+		(title "V2 input-stage A1 - isolated candidate")
+		(date "2026-10-12")
+		(rev "INPUT-A1")
+		(comment 1 "Not integrated or approved for powered use")
+	)
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54)
+						(xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635)
+						(xy -1.905 1.27)
+						(xy -1.27 1.27)
+						(xy -1.27 -1.27)
+						(xy -0.635 -1.27)
+						(xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27)
+						(xy 1.27 -1.27)
+						(xy -1.27 0)
+						(xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0)
+						(xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D_TVS"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_TVS"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bidirectional transient-voltage-suppression diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode TVS thyrector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_TVS_0_1"
+				(polyline
+					(pts
+						(xy -2.54 1.27)
+						(xy -2.54 -1.27)
+						(xy 2.54 1.27)
+						(xy 2.54 -1.27)
+						(xy -2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27)
+						(xy 0 1.27)
+						(xy 0 -1.27)
+						(xy -0.508 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0)
+						(xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_TVS_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286)
+						(xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794)
+						(xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "INPUT A1  /  2S-6S BOARD FEED"
+		(at 16 22 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+			(justify left bottom)
+		)
+		(uuid "398a4964-ff73-5be8-9ce0-f3012e625e25")
+	)
+	(text "ISOLATED CANDIDATE - do not power the retained legacy converter/sense circuits"
+		(at 16 33 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "7d787b51-54f7-557d-9975-b7e8ebbfef8c")
+	)
+	(text "This sheet defines the input boundary only. Native connectivity checks do not qualify protection or assembly."
+		(at 16 42 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "bfa11e00-d9e0-5a8e-a8cd-b4ba6e1903b3")
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 40.64 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44a46368-9f7c-5bc6-94b8-563d301be078")
+		(property "Reference" "J1"
+			(at 50.8 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "BATTERY XT30"
+			(at 50.8 90 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+			(at 50.8 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "XT30PW-M"
+			(at 50.8 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Amass"
+			(at 50.8 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "7-25.2 V board input; initial external-BEC study <=1 A"
+			(at 50.8 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97f4d400-c5cc-573e-ba24-7cbd535de172")
+		)
+		(pin "2"
+			(uuid "f3b4be63-fb87-58ca-8065-799af1906414")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/466fe838-a830-5a17-aeb9-5fe9e331e023"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 86.36 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce2febbf-5953-5b80-9a7b-4dab2c28cad8")
+		(property "Reference" "F1"
+			(at 86.36 51 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "2A 125V"
+			(at 86.36 55 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:Fuse_Littelfuse-NANO2-451_453"
+			(at 86.36 51 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0451002.MRL"
+			(at 86.36 51 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Littelfuse"
+			(at 86.36 51 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1"
+			(at 86.36 51 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Candidate only; derating, inrush and fault coordination required"
+			(at 86.36 51 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0201de88-8d7b-5a9c-ab95-53c7723e2f46")
+		)
+		(pin "2"
+			(uuid "3095acdc-3363-56f6-93f0-8721bc7c93dd")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/466fe838-a830-5a17-aeb9-5fe9e331e023"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 177.8 63.5 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ade1ceb-28ab-5ab3-9693-0d63c6e41b21")
+		(property "Reference" "D12"
+			(at 177.8 51 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "STPS3H100U"
+			(at 177.8 55 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:D_SMB"
+			(at 177.8 51 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "STPS3H100U"
+			(at 177.8 51 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 177.8 51 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stps3h100.pdf"
+			(at 177.8 51 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "100 V series reverse diode; pin1 K downstream, pin2 A upstream; thermal qualification open"
+			(at 177.8 51 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a2553e6-8528-5458-bf48-3618ef0d9e24")
+		)
+		(pin "2"
+			(uuid "063611db-abf3-5d69-bc1c-838f07da15a2")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/466fe838-a830-5a17-aeb9-5fe9e331e023"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS")
+		(at 124.46 88.9 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "586dcef8-58c2-534d-8f6f-da5c780873da")
+		(property "Reference" "D1"
+			(at 134 86 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "SMBJ26CA"
+			(at 134 90 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:D_SMB"
+			(at 134 86 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SMBJ26CA"
+			(at 134 86 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Littelfuse"
+			(at 134 86 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smbj_datasheet.pdf.pdf"
+			(at 134 86 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional 26 V standoff; pre-diode fuse-side clamp; waveform and temperature bound required"
+			(at 134 86 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5419166e-3978-5bd0-84d5-ed2bd4759d05")
+		)
+		(pin "2"
+			(uuid "4ade1ceb-28ab-5ab3-9693-0d63c6e41b21")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/466fe838-a830-5a17-aeb9-5fe9e331e023"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 241.3 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2927f856-3917-59d2-a9fe-97bee367927e")
+		(property "Reference" "C1"
+			(at 252 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "47uF 63V"
+			(at 252 90 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:CP_Elec_8x10.5"
+			(at 252 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "EEEFK1J470P"
+			(at 252 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 252 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/tw/products/pt/aluminum-cap-smd/models/EEEFK1J470P"
+			(at 252 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "8 mm body, 10.2 mm nominal length; polarity, ripple and land pattern held"
+			(at 252 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "279edee6-4b68-54c0-9804-c7cff3d7c1d3")
+		)
+		(pin "2"
+			(uuid "f5ed1e8a-22d5-5ec4-bcb8-76056c443bd8")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/466fe838-a830-5a17-aeb9-5fe9e331e023"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 307.34 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b2f9dcb-de7d-5cdc-9d1a-c6eb731e64cb")
+		(property "Reference" "C2"
+			(at 318 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1uF 100V"
+			(at 318 90 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:C_1210_3225Metric"
+			(at 318 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM32ER72A105KA01L"
+			(at 318 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 318 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER72A105KA01-01A.pdf"
+			(at 318 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Local reservoir starting value; effective capacitance and converter bypass remain open"
+			(at 318 86 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c55dcf6-47f0-52cb-8969-ac2a7bbacd54")
+		)
+		(pin "2"
+			(uuid "52adf4d9-a9ec-5c3f-9d67-4947300e3631")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/466fe838-a830-5a17-aeb9-5fe9e331e023"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 35.56 88.9)
+			(xy 25.4 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77989a6d-cf4b-5515-8260-170b988c5dc1")
+	)
+	(wire
+		(pts
+			(xy 25.4 88.9)
+			(xy 25.4 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b54ef05-aa0d-50c8-9d0e-ba8aba744c10")
+	)
+	(wire
+		(pts
+			(xy 25.4 63.5)
+			(xy 82.55 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "180fe768-a760-5c9a-ac0a-69449fc859c8")
+	)
+	(label "VBAT_IN"
+		(at 36 63.5 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "3781b4ad-8d8a-58c2-a268-0224c049f9f3")
+	)
+	(wire
+		(pts
+			(xy 35.56 91.44)
+			(xy 30.48 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43bcd7f6-4fef-5359-938e-ce49ddb91028")
+	)
+	(wire
+		(pts
+			(xy 30.48 91.44)
+			(xy 30.48 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9500d52-c839-5f7c-8cf0-44492a19bb75")
+	)
+	(wire
+		(pts
+			(xy 90.17 63.5)
+			(xy 124.46 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc5d3d49-477f-5bc4-9c6f-25587df40a90")
+	)
+	(wire
+		(pts
+			(xy 124.46 63.5)
+			(xy 173.99 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14176287-b852-59d9-9a0a-218dec1bd607")
+	)
+	(label "VBAT_FUSED"
+		(at 103 63.5 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f363311-7a7b-5b97-8432-ec33f0bf4a6e")
+	)
+	(wire
+		(pts
+			(xy 124.46 63.5)
+			(xy 124.46 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af93ea53-30bf-5854-b955-0fe728905c13")
+	)
+	(junction
+		(at 124.46 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca70dc2e-989b-560d-b493-ce80b3128ca5")
+	)
+	(wire
+		(pts
+			(xy 124.46 92.71)
+			(xy 124.46 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "622621d8-f0eb-5895-8a79-ccba1e6934df")
+	)
+	(wire
+		(pts
+			(xy 181.61 63.5)
+			(xy 241.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9499b15-df36-5af7-b6e3-89ac4a15c82d")
+	)
+	(wire
+		(pts
+			(xy 241.3 63.5)
+			(xy 307.34 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba8d23bd-e345-50c7-b161-a9f568056093")
+	)
+	(wire
+		(pts
+			(xy 307.34 63.5)
+			(xy 368.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccc71ed9-dad4-5834-a036-6dfef55aca6f")
+	)
+	(global_label "VIN_RAW"
+		(shape passive)
+		(at 368.3 63.5 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "81439cc5-e948-525e-8dbb-bf4614367be9")
+	)
+	(wire
+		(pts
+			(xy 241.3 63.5)
+			(xy 241.3 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b22e710-45ba-5e4e-9935-f6d79f783460")
+	)
+	(wire
+		(pts
+			(xy 307.34 63.5)
+			(xy 307.34 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "619b21af-039b-5170-84a9-9bb439dd1899")
+	)
+	(junction
+		(at 241.3 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20678f1d-4a64-58f8-821b-98c8734a8a8e")
+	)
+	(junction
+		(at 307.34 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91906b1a-5602-550d-9ab2-d0afce0c5616")
+	)
+	(wire
+		(pts
+			(xy 241.3 92.71)
+			(xy 241.3 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c091178-5e2e-54ea-bdad-df6a5b96f636")
+	)
+	(wire
+		(pts
+			(xy 307.34 92.71)
+			(xy 307.34 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24f868bc-7d1b-5fed-b8ea-e74e8bd1b1ad")
+	)
+	(wire
+		(pts
+			(xy 30.48 119.38)
+			(xy 124.46 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4ff9351-b53f-55ec-ae7f-22ada65cd0a5")
+	)
+	(wire
+		(pts
+			(xy 124.46 119.38)
+			(xy 241.3 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ec255b4-88ec-5b9c-934d-9ad3424507e8")
+	)
+	(wire
+		(pts
+			(xy 241.3 119.38)
+			(xy 307.34 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82aeab7c-96fe-5040-a312-c804180b99a9")
+	)
+	(wire
+		(pts
+			(xy 307.34 119.38)
+			(xy 368.3 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "904b97aa-7ba0-5b4e-871b-9a41f64c84a6")
+	)
+	(junction
+		(at 124.46 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc28f241-d44d-5eda-9273-7baca73f61a6")
+	)
+	(junction
+		(at 241.3 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04ec9bf0-36da-58f2-8c5b-d7f95f811380")
+	)
+	(junction
+		(at 307.34 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "599f84fb-9708-5ba6-baf0-545c4dceb488")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 368.3 119.38 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "e897dcc9-cf59-5357-9987-146553ae43c7")
+	)
+	(text "Pin 1: battery +"
+		(at 18 124 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+			)
+			(justify left bottom)
+		)
+		(uuid "fb0020df-0a1e-5633-816d-fe96ed44def5")
+	)
+	(text "Pin 2: return"
+		(at 18 130 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1c9be97-82e8-56cf-8c57-eb3070cde699")
+	)
+	(text "Clamp before reverse diode"
+		(at 104 137 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+			)
+			(justify left bottom)
+		)
+		(uuid "10e18b2a-d95f-5cd9-b088-3b3f988316f0")
+	)
+	(text "Cathode band faces VIN_RAW"
+		(at 161 71 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+			)
+			(justify left bottom)
+		)
+		(uuid "b4d42db8-0e62-5fba-af08-f18b8c2496bd")
+	)
+	(text "To R33 / sense / future bucks"
+		(at 320 74 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7c34956-9611-57bb-a1ee-8058ff28643d")
+	)
+	(text "1  DESIGN BOUNDARY"
+		(at 16 155 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "a94cf3d9-bd6d-5f78-af34-3b6ab234184e")
+	)
+	(text "Normal battery: 7-25.2 V; initial external-BEC variant: <=1 A board feed. ESC motor current bypasses this board."
+		(at 16 164 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "3bca5580-0eab-5b70-9602-2d37794bebca")
+	)
+	(text "Qualification target: VBAT_FUSED within +/-44 V and stored VIN_RAW <=44 V. These are required bounds, not measured results."
+		(at 16 172 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c32a6c7-e06b-5fad-b192-19efecaf4b0a")
+	)
+	(text "At those bounds D12 blocks at most 88 V against 100 V rating. Do not infer an unlimited surge rating from the TVS value."
+		(at 16 180 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "67a8d436-7851-5da2-992e-5ddd42d09aa4")
+	)
+	(text "2  TRADEOFFS AND REQUIRED CHECKS"
+		(at 16 195 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a463614-3563-5c6b-a12c-ce46e6688b74")
+	)
+	(text "D12 loss model: about 0.627 W at 1 A DC; copper area, cold drop, leakage and temperature still need qualification."
+		(at 16 204 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "1bc1a3b8-1002-5f20-af8d-d3ba65411c4d")
+	)
+	(text "F1 is not a 1 A limiter. Verify inrush, source short-circuit current, fuse interrupt conditions and TVS/fuse energy coordination."
+		(at 16 212 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "207e5bf8-f870-5966-b2d2-af84c81e9d82")
+	)
+	(text "C1/C2 values are candidate selections. Check ripple, effective capacitance, polarity, physical lands and discharged-output reversal."
+		(at 16 220 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "e67eb327-d485-5535-b26a-af69a0550d14")
+	)
+	(text "3  NEXT CIRCUIT PACKET"
+		(at 16 237 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "cae22778-0049-5fe9-89bf-690d47ccd0b8")
+	)
+	(text "Replace both buck cells and raw-side sensing/ADC protection before powered bring-up. E-01 through E-06 remain open in live CAD."
+		(at 16 246 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "02a57483-c38a-5c93-82f8-f517360dfc91")
+	)
+	(text "Original PCB, corrected ground copper, V1 behavior, IMU2 candidate and purchasing package remain unchanged."
+		(at 16 254 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left bottom)
+		)
+		(uuid "270400e3-6841-5dd3-ab45-a6fb1d099257")
+	)
+	(embedded_fonts no)
+)

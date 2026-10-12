@@ -6,7 +6,7 @@ Use this project as a documented route from the existing boat controller to a re
 
 ## Current V2 design checkpoint
 
-[ACT-03's interlock demonstrator](../../reviews/codex/actuator_interlock/index.html) and [receiver worksheet](../../reviews/codex/actuator_interlock/RECEIVER_ACCEPTANCE.md) now make fault recovery and missing readiness evidence reviewable. Its 61 model tests pass; the latest native circuit remains [ACT-02](../../reviews/codex/actuator_enable/README.md). The hardware latch and receiver sensing are not implemented, and Stage A is still the only V2 diagnostic. The chronological checkpoints below preserve earlier decisions.
+[ACT-04's native latch and signal path](../../reviews/codex/actuator_latch/README.md) now separate PC4 from translator OE and preserve both converters and source populations. Its exact two-pin delta passes native comparison; missing qualification and ACK sources remain default low. Receiver sensing, watchdog and startup/timing qualification remain open. ACK while armed disables in ACT-04; the [older ACT-03 demonstrator](../../reviews/codex/actuator_interlock/index.html) is not an exact circuit model. Use the [receiver worksheet](../../reviews/codex/actuator_interlock/RECEIVER_ACCEPTANCE.md) to record actual loads. Stage A remains the only V2 diagnostic; no powered application is released. The chronological checkpoints below preserve earlier decisions.
 
 ## Choose an application
 

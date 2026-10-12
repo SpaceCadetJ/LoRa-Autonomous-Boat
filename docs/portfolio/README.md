@@ -104,3 +104,8 @@ The [annotated actuator candidate and sequencing guide](../../reviews/codex/actu
 ## ACT-03 interlock prototype — 2026-10-12
 
 The [interactive arm/fault demonstrator](../../reviews/codex/actuator_interlock/index.html) and [review guide](../../reviews/codex/actuator_interlock/README.md) define deliberate rearming after power/command faults and expose the stale-periodic-strobe blind spot. The [receiver worksheet](../../reviews/codex/actuator_interlock/RECEIVER_ACCEPTANCE.md) captures exact ESC/BEC/servo limits before receiver-ready interface selection. Current connectors have no receiver-ready sensing; converter PG pins are unused. These are independently checked captured connections and tested software proposals, not an implemented hardware interlock. ACT-02, live CAD, firmware and ordering are unchanged. Next: isolated latch/OE gate; receiver interfaces and hardware timing remain held.
+
+
+## ACT-04: native actuator arm latch
+
+The [annotated latch candidate](../../reviews/codex/actuator_latch/README.md) now separates the MCU arm request from translator enable. Independent native checks verify exactly two changed memberships, 396 preserved, nine added parts and no new ERC findings. The recorded Boolean and footprint checks cover their declared scopes. Qualification/ACK inputs remain default low until supervisory and receiver interfaces are implemented. The circuit intentionally disables on ACK while armed, unlike the older ACT-03 simulator. No live PCB, operational firmware, purchasing or hardware acceptance is implied. Next: qualification/reset-release, fault retention and conditioned ACK.

@@ -1,0 +1,3498 @@
+(kicad_sch
+	(version 20250114)
+	(generator "act04_isolated")
+	(generator_version "9.0")
+	(uuid "8c5fbfde-a416-5ac0-925d-13da820ca908")
+	(paper "A3")
+	(title_block
+		(title "LoRa multifunction vehicle node V2 - Actuators")
+		(date "2026-10-12")
+		(rev "ACT-04")
+		(company "LoRa Controller Project")
+		(comment 1 "Isolated review candidate; no PCB or hardware release")
+	)
+	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LoRa_Boat_Controller_V2:TXU0102DCU"
+			(pin_names
+				(offset 0.8)
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TXU0102"
+				(at 0 22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TXU0102DCU_0_1"
+				(rectangle
+					(start -10.16 17.78)
+					(end 10.16 -17.78)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TXU0102DCU_1_1"
+				(pin tri_state line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "B2Y"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -20.32 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 20.32 270)
+					(length 2.54)
+					(name "VCCA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -15.24 0)
+					(length 2.54)
+					(name "OE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 5.08 20.32 270)
+					(length 2.54)
+					(name "VCCB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin tri_state line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "B1Y"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D_TVS"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_TVS"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bidirectional transient-voltage-suppression diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode TVS thyrector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_TVS_0_1"
+				(polyline
+					(pts
+						(xy -2.54 1.27)
+						(xy -2.54 -1.27)
+						(xy 2.54 1.27)
+						(xy 2.54 -1.27)
+						(xy -2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27)
+						(xy 0 1.27)
+						(xy 0 -1.27)
+						(xy -0.508 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0)
+						(xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_TVS_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "ACT-04 / ACTUATOR SIGNAL PATH"
+		(at 16 19 0)
+		(effects
+			(font
+				(size 2.8 2.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae720515-e467-538a-a624-9524d160390c")
+	)
+	(text "Isolated latch candidate - QUAL_OK and ACK are unimplemented and default low; valid-rail operation remains disabled"
+		(at 16 29 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "d014a5bc-d659-5e79-bd4b-7f2ba5d07cf3")
+	)
+	(text "01  Local translator rails"
+		(at 24 43 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1fd0e6c-3309-5605-9610-6997619a3b24")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 45.72 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3fdcdaa2-61dc-5d0c-b0e5-4dcd39d93eb1")
+		(property "Reference" "C13"
+			(at 50.72 58.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 50.72 61.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 50.72 58.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "ACT-02 held candidate; see review guide"
+			(at 50.72 58.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "KGM15ACG1H104KT"
+			(at 50.72 58.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
+			(at 50.72 58.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.72 58.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "35477adb-70a9-5da4-96b6-6e30c5218872")
+		)
+		(pin "2"
+			(uuid "04b71355-734a-5e55-8555-2f8add254863")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 45.72 50.8)
+			(xy 45.72 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3833d805-44eb-5a32-b518-6760dd7f98c6")
+	)
+	(global_label "+3V3"
+		(shape passive)
+		(at 45.72 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "192dfa2e-0606-5773-a38c-5c2b8b76335c")
+	)
+	(wire
+		(pts
+			(xy 45.72 64.77)
+			(xy 45.72 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a878c77a-586d-51d4-9aee-f153cb3caa45")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 45.72 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eabccbae-8e5f-57bc-a085-78202dc10f46")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 106.68 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a141c6b-35b0-516d-9df2-f004e4e93443")
+		(property "Reference" "C14"
+			(at 111.68 58.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 111.68 61.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 111.68 58.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "ACT-02 held candidate; see review guide"
+			(at 111.68 58.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "KGM15ACG1H104KT"
+			(at 111.68 58.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Kyocera AVX"
+			(at 111.68 58.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.68 58.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "92f91072-d121-57e4-87e2-2910b2664f1f")
+		)
+		(pin "2"
+			(uuid "5af60a43-1d9f-5317-bbf0-3f6ca6d18959")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 106.68 50.8)
+			(xy 106.68 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab8bbf8c-9115-5257-803c-7678cef4248f")
+	)
+	(hierarchical_label "+5V_BUCK"
+		(shape input)
+		(at 106.68 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9efd237c-1c90-5e87-9f1d-8fe7e39a8d4d")
+	)
+	(wire
+		(pts
+			(xy 106.68 64.77)
+			(xy 106.68 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ab82d66-c298-54a1-83ad-96417e2ee60a")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 106.68 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "efc4d69c-e7a2-52fe-a2eb-ea2675702a5b")
+	)
+	(text "100 nF each; board 5 V is before D4."
+		(at 24 81 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5395040-598c-5484-9c9c-6ee684f238fc")
+	)
+	(text "02  Independent arm permission"
+		(at 24 98 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "1d48154e-3064-5eb0-b930-ab13179d935d")
+	)
+	(sheet
+		(at 60.96 111.76)
+		(size 55.88 35.56)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7c6484d2-0bc2-5055-b3d8-bafcae06405b")
+		(property "Sheetname" "ArmInterlock"
+			(at 60.96 109.5 0)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ArmInterlock.kicad_sch"
+			(at 60.96 150 0)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ARM_REQUEST" input
+			(at 60.96 124.46 180)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+				(justify left)
+			)
+			(uuid "9eace832-6ba8-5fa8-87dc-f2f74f909b71")
+		)
+		(pin "ACT_OE" output
+			(at 116.84 137.16 0)
+			(effects
+				(font
+					(size 1.1 1.1)
+				)
+				(justify right)
+			)
+			(uuid "e13e0edb-edd4-578b-911f-2033f7601690")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(page "11")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 55.88 124.46)
+			(xy 60.96 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d67d0176-0d87-55cb-b059-6effe218da2c")
+	)
+	(hierarchical_label "ACT_EN_PC4"
+		(shape input)
+		(at 55.88 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "97e36f28-37c6-5854-b926-e39a0a9df8ed")
+	)
+	(wire
+		(pts
+			(xy 116.84 137.16)
+			(xy 129.54 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d59e0ad-9a0d-51b9-aed0-8738e70bcfb7")
+	)
+	(label "ACT_OE"
+		(at 129.54 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "70750697-d072-531a-b61b-855f70c96100")
+	)
+	(text "PC4 is a request. Only the latch gate drives OE."
+		(at 24 159 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "45805316-3f1d-51fd-9906-adffccc99538")
+	)
+	(text "03  Preserved signal defaults"
+		(at 24 174 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "2a5848f4-34bb-51d1-83a0-e73e7859dfc4")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 35.56 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "efc5b531-d406-59fe-86b0-50df9f0d5ccf")
+		(property "Reference" "R14"
+			(at 40.56 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100k"
+			(at 40.56 194.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 40.56 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Passive pull-down; startup/off-state behavior unqualified"
+			(at 40.56 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "RC0603FR-07100KL"
+			(at 40.56 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 40.56 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.56 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "cb0399b7-37ea-5a0e-af8e-74f33dbd866b")
+		)
+		(pin "2"
+			(uuid "f7b311c3-4414-51db-985a-a099cf0f990c")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 35.56 182.88)
+			(xy 35.56 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "645ddaf4-1d37-5118-b89b-48d7b57ecdc6")
+	)
+	(hierarchical_label "PWM_ESC_PC6"
+		(shape input)
+		(at 35.56 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c9c42ce6-dc33-5760-abd7-b121ed6b6e06")
+	)
+	(wire
+		(pts
+			(xy 35.56 196.85)
+			(xy 35.56 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe15998d-29a8-5936-98b4-39c105adba88")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 35.56 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4394989c-2db1-58d1-9956-7ee238153222")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 88.9 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69644e84-0711-57e3-875e-0b06bf50773a")
+		(property "Reference" "R15"
+			(at 93.9 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100k"
+			(at 93.9 194.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 93.9 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Passive pull-down; startup/off-state behavior unqualified"
+			(at 93.9 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "RC0603FR-07100KL"
+			(at 93.9 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 93.9 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.9 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "ba2db166-c4f6-5fb3-adf2-fb473a89d450")
+		)
+		(pin "2"
+			(uuid "98b6914c-0aba-5762-a7ee-90de7c59ea87")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 88.9 182.88)
+			(xy 88.9 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3346132a-eb52-56a4-8a2e-5ca6c5cbcbf9")
+	)
+	(hierarchical_label "PWM_SERVO_PA8"
+		(shape input)
+		(at 88.9 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d39d0b00-5f25-5793-8d5d-e213ba737ce8")
+	)
+	(wire
+		(pts
+			(xy 88.9 196.85)
+			(xy 88.9 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be75c5c0-c471-5c63-8752-bf1e65d8fc94")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 88.9 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c3735d6-c15c-54bb-98d6-44457c9af49f")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 137.16 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef535694-139f-5a10-9256-4857678b7def")
+		(property "Reference" "R40"
+			(at 142.16 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 142.16 194.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 142.16 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "ACT-02 held candidate; see review guide"
+			(at 142.16 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 142.16 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 142.16 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.16 191.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "cea6c88d-77b3-5931-9dba-28c47ca074ee")
+		)
+		(pin "2"
+			(uuid "0159ead6-8a84-542c-a5a0-33e0065184b9")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 137.16 182.88)
+			(xy 137.16 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78ea4382-c7fe-51ef-ae0e-389eb3bf91bb")
+	)
+	(label "ACT_OE"
+		(at 137.16 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "195ee66f-bf77-5ed0-ba8c-a438f2c93b2a")
+	)
+	(wire
+		(pts
+			(xy 137.16 196.85)
+			(xy 137.16 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12229ec5-5262-5e83-a4e6-9569170cb31b")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 137.16 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "668e0eca-4217-5322-8311-0f018989cb0c")
+	)
+	(text "R40 remains on OE; R41 on the child holds PC4 low."
+		(at 24 218 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "38d9e1f3-ee12-5262-83c9-3bb2a969d94b")
+	)
+	(text "04  Dual-supply translator"
+		(at 150 43 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8cd9a9b-464c-5552-aec7-809e7c3e4e1a")
+	)
+	(symbol
+		(lib_id "LoRa_Boat_Controller_V2:TXU0102DCU")
+		(at 187.96 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f3d89f30-53de-5c9f-9793-e712f39a1874")
+		(property "Reference" "U4"
+			(at 201 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "TXU0102"
+			(at 201 75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:TI_DCU0008A_TXU0102"
+			(at 201 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "ACT-02 held candidate; see review guide"
+			(at 201 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "TXU0102DCUR"
+			(at 201 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 201 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/txu0102.pdf"
+			(at 201 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "9afc1701-f0f7-57eb-84da-8d7ade364fea")
+		)
+		(pin "2"
+			(uuid "e734f6d2-cfc7-5f30-8ece-23185305cab9")
+		)
+		(pin "3"
+			(uuid "2c387ad3-354e-50c7-8934-9a3f2834d61d")
+		)
+		(pin "4"
+			(uuid "72580cbe-3d6f-5b21-af8b-f89a48c82d60")
+		)
+		(pin "5"
+			(uuid "247477d3-142e-53d7-b881-307aafd29506")
+		)
+		(pin "6"
+			(uuid "4298a6b7-d3a2-5a4e-962e-d6bc4c980c80")
+		)
+		(pin "7"
+			(uuid "245c5dfb-2f94-586f-beed-21ce73f9609a")
+		)
+		(pin "8"
+			(uuid "c99c3cec-d299-5a53-934e-33426dd00731")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 182.88 73.66)
+			(xy 182.88 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dd4016c-6f59-5860-9f50-2394f3b35281")
+	)
+	(global_label "+3V3"
+		(shape passive)
+		(at 182.88 73.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6cc4cd6f-9132-5d71-b5ec-784dca267d5b")
+	)
+	(wire
+		(pts
+			(xy 193.04 73.66)
+			(xy 193.04 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f48cd30d-70a4-5170-a2b5-ca40e977f5e0")
+	)
+	(hierarchical_label "+5V_BUCK"
+		(shape input)
+		(at 193.04 73.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5231f0e2-2ccd-563c-b6ae-76ac3019f668")
+	)
+	(wire
+		(pts
+			(xy 187.96 124.46)
+			(xy 187.96 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "639d2f18-c536-564f-bf90-e5807fd85578")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 187.96 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a142d64f-cefa-51ed-90de-4311df4529db")
+	)
+	(wire
+		(pts
+			(xy 165.1 99.06)
+			(xy 175.26 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f08bd924-b6e3-5bf5-b250-da6f7bfaa71c")
+	)
+	(hierarchical_label "PWM_ESC_PC6"
+		(shape input)
+		(at 165.1 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e13e654e-5f97-5f1f-9895-692311b7ab99")
+	)
+	(wire
+		(pts
+			(xy 165.1 109.22)
+			(xy 175.26 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfc37287-0201-57e3-8ac1-7bd654b59606")
+	)
+	(hierarchical_label "PWM_SERVO_PA8"
+		(shape input)
+		(at 165.1 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e5ef5fad-e287-52b7-aa5b-5f821ee8a251")
+	)
+	(wire
+		(pts
+			(xy 165.1 119.38)
+			(xy 175.26 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4829b934-403f-5129-a76e-ae1369009eec")
+	)
+	(label "ACT_OE"
+		(at 165.1 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0da8c752-3408-5348-8a61-9da764d73f89")
+	)
+	(wire
+		(pts
+			(xy 200.66 99.06)
+			(xy 238.76 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cbfb612-2d72-5c95-9833-f7483d7945b8")
+	)
+	(label "ESC_SIG_5V"
+		(at 238.76 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "355a02ea-88bc-542e-831f-2d9c3dac545e")
+	)
+	(wire
+		(pts
+			(xy 200.66 109.22)
+			(xy 238.76 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55a9bc05-1ec5-590a-84c4-2dc675cbac16")
+	)
+	(label "SERVO_SIG_5V"
+		(at 238.76 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a343923-ee19-5de3-9a7e-90a27d47ee64")
+	)
+	(text "OE low = HiZ; output pulldowns retained."
+		(at 155 150 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c077f83-ebbb-5761-b5b5-9b94b47e2000")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 185.42 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c6ef0ba-8aa9-5e4f-a67b-e491b850c480")
+		(property "Reference" "TP1"
+			(at 185.42 174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "ESC_PWM"
+			(at 185.42 177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 185.42 174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "MCU-side ESC PWM"
+			(at 185.42 174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" ""
+			(at 185.42 174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 185.42 174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "619be7b2-e4a6-5a60-bb27-70ac6b274a93")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 185.42)
+			(xy 185.42 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8479e3da-2bf2-5c92-806d-4b00c0beac36")
+	)
+	(hierarchical_label "PWM_ESC_PC6"
+		(shape input)
+		(at 185.42 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d99212df-5057-5fcc-a91d-f3b7c6a0c0ff")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 228.6 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a9f025ac-95b6-5fd9-b074-5dfba8abebb5")
+		(property "Reference" "TP2"
+			(at 228.6 174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "SERVO_PWM"
+			(at 228.6 177 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 228.6 174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "MCU-side servo PWM"
+			(at 228.6 174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" ""
+			(at 228.6 174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 228.6 174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 174 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "8967a3d5-d551-5cef-8f86-2d94d086b033")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 228.6 185.42)
+			(xy 228.6 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b70ac312-c65c-5592-a9e5-dd0e19c980de")
+	)
+	(hierarchical_label "PWM_SERVO_PA8"
+		(shape input)
+		(at 228.6 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6a094ce6-8ae1-5a49-ab3a-1eaafd3f0392")
+	)
+	(text "05  Preserved output networks"
+		(at 268 43 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "354cd9bb-ae3e-53be-a38b-e2d4dc7a94fb")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 279.4 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e07668c-ccb2-5b69-805d-2d7185fa40dd")
+		(property "Reference" "R10"
+			(at 271 69.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100R"
+			(at 271 72.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 271 69.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "ESC signal series"
+			(at 271 69.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "RC0603FR-07100RL"
+			(at 271 69.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 271 69.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271 69.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "9dba5c55-696a-5618-bfec-096d23aec49d")
+		)
+		(pin "2"
+			(uuid "f9984a75-6319-57b0-8508-b24d2589e5dc")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 312.42 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7a3470b9-5a83-56e6-a82d-f32d97f2320d")
+		(property "Reference" "R11"
+			(at 317.42 89.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 317.42 92.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 317.42 89.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Passive pull-down; startup/off-state behavior unqualified"
+			(at 317.42 89.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 317.42 89.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 317.42 89.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 317.42 89.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "6225b0ad-ef98-5c07-9390-ac9e63a2c1fb")
+		)
+		(pin "2"
+			(uuid "75f14dc3-634e-5d1c-b0f8-d333f5bc240c")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS")
+		(at 350.52 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "401a19fe-3c82-5c6f-9e4b-67595d2871c3")
+		(property "Reference" "D10"
+			(at 370 87.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PESD5V0S1BA"
+			(at 370 90.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 370 87.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "ESC signal ESD"
+			(at 370 87.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "PESD5V0S1BA,115"
+			(at 370 87.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 370 87.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 370 87.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "1075619a-1e6b-5563-bf5d-854394d24954")
+		)
+		(pin "2"
+			(uuid "cf364fbe-1858-5ec3-a884-43cf0765b824")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 388.62 78.74000000000001 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b367ffda-eee5-51ce-a2d9-5ab798e550b1")
+		(property "Reference" "J2"
+			(at 381 64.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "ESC"
+			(at 381 67.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
+			(at 381 64.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "1: signal 5 V, 2: BEC in, 3: GND"
+			(at 381 64.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "B3B-XH-A(LF)(SN)"
+			(at 381 64.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 381 64.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 381 64.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "9d7327b5-6f74-5c78-a5c3-f108d0d2f661")
+		)
+		(pin "2"
+			(uuid "192d7255-5bd9-5970-ad7d-1c2ea74a6db6")
+		)
+		(pin "3"
+			(uuid "d93c33cb-dbd9-51ca-9aec-43758e66e072")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 256.54 76.2)
+			(xy 275.59 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d13faab-1ce3-5d3b-af9f-7818347ffd6e")
+	)
+	(label "ESC_SIG_5V"
+		(at 256.54 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f020285f-8a7e-5d20-8d1f-fe66f77dd1ac")
+	)
+	(wire
+		(pts
+			(xy 283.21 76.2)
+			(xy 312.42 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc518cd2-735e-5466-b1f5-57cc009957ec")
+	)
+	(wire
+		(pts
+			(xy 312.42 76.2)
+			(xy 350.52 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "febf5621-cb79-5bc8-a898-ab86ea42819f")
+	)
+	(wire
+		(pts
+			(xy 350.52 76.2)
+			(xy 383.54 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1292ec6a-6b86-559d-822b-7f83d51f2c76")
+	)
+	(label "ESC_SIG"
+		(at 315 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "578b28aa-f511-5e7f-acd0-6034bdc362c7")
+	)
+	(wire
+		(pts
+			(xy 312.42 76.2)
+			(xy 312.42 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e828176-fd92-5e6a-9815-658046daf8c3")
+	)
+	(wire
+		(pts
+			(xy 350.52 76.2)
+			(xy 350.52 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f74c55a0-817e-5551-a66a-e76e34b9980a")
+	)
+	(junction
+		(at 312.42 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "825a1bf9-13c7-58f4-b3f0-c199081e7d48")
+	)
+	(junction
+		(at 350.52 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43b1f155-7a2e-5d0e-86b3-fa52920afd72")
+	)
+	(wire
+		(pts
+			(xy 312.42 95.25)
+			(xy 312.42 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d21ccc84-4350-5fb8-a265-d6282df67050")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 312.42 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6cb5b660-992f-5168-bfd8-789b2c5a3dc4")
+	)
+	(wire
+		(pts
+			(xy 350.52 87.63)
+			(xy 350.52 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "403b5f3b-d6ea-5682-93d8-fc4f5851690f")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 350.52 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "503fda37-6ad6-5c14-b07e-5ab2fc293ad4")
+	)
+	(wire
+		(pts
+			(xy 373.38 78.74)
+			(xy 383.54 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8654aafa-1a7f-5a0e-9ef7-d2b077566d20")
+	)
+	(hierarchical_label "BEC_IN"
+		(shape input)
+		(at 373.38 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5c245f86-9750-58f2-9a5d-e4600f05ef76")
+	)
+	(wire
+		(pts
+			(xy 383.54 81.28)
+			(xy 383.54 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c105a420-73c4-55d5-9635-4b055feae4d5")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 383.54 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e9cfc564-5a11-56b2-9c07-9f8cacdc51c9")
+	)
+	(text "1 signal / 2 BEC input / 3 GND"
+		(at 255 115.2 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "46085e04-cf5d-5b02-90c2-ad21bd83fca0")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 279.4 139.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b5706879-a69c-5db7-86ca-b1c2f36f5a28")
+		(property "Reference" "R12"
+			(at 271 132.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100R"
+			(at 271 135.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 271 132.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Servo signal series"
+			(at 271 132.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "RC0603FR-07100RL"
+			(at 271 132.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 271 132.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271 132.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "045678ff-c0d8-50df-9931-efb84b4a5287")
+		)
+		(pin "2"
+			(uuid "2e7236d9-7dd9-56d7-a497-ef53ccb674e9")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 312.42 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f29ec9b7-1ceb-5e73-b67c-c05e105c8bfc")
+		(property "Reference" "R13"
+			(at 317.42 152.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 317.42 155.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 317.42 152.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Servo signal pull-down"
+			(at 317.42 152.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 317.42 152.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 317.42 152.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 317.42 152.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "a45db8e2-6caa-56e9-9e54-43a6abad14d9")
+		)
+		(pin "2"
+			(uuid "87b7890f-62ed-5253-8a56-92d0861cdc2a")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS")
+		(at 350.52 154.94 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ecee73ed-ec8e-543f-bb5f-5ef4b6508d2d")
+		(property "Reference" "D11"
+			(at 370 150.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PESD5V0S1BA"
+			(at 370 153.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 370 150.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Servo signal ESD"
+			(at 370 150.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "PESD5V0S1BA,115"
+			(at 370 150.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 370 150.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 370 150.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "95b67d54-21d2-573c-9249-3831b94bfd84")
+		)
+		(pin "2"
+			(uuid "1490b187-de79-5f4d-9313-a1df76f6fda4")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 388.62 142.23999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14dbffc7-243d-587f-bc41-37391299b6e9")
+		(property "Reference" "J3"
+			(at 381 127.69999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "SERVO"
+			(at 381 130.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
+			(at 381 127.69999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "1: signal 5 V, 2: VSERVO out, 3: GND"
+			(at 381 127.69999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "MPN" "B3B-XH-A(LF)(SN)"
+			(at 381 127.69999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 381 127.69999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 381 127.69999999999999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "c1d41c83-89fe-51b9-8f1a-f3a106215c23")
+		)
+		(pin "2"
+			(uuid "7eb0b068-b05e-52a9-9b8a-55c6155c1b50")
+		)
+		(pin "3"
+			(uuid "8f4eecdd-2b18-5bb2-a6aa-fc7a8f62c442")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/6e640c51-22cb-59d5-a5d0-0c229d48ee31"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 256.54 139.7)
+			(xy 275.59 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c85df8b7-e62e-54fc-9341-3d5b2c67e00e")
+	)
+	(label "SERVO_SIG_5V"
+		(at 256.54 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3f23fa1a-934b-5a36-b381-df8f81247711")
+	)
+	(wire
+		(pts
+			(xy 283.21 139.7)
+			(xy 312.42 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b80ca3ea-eb2c-5c06-b8ce-508104cfabd0")
+	)
+	(wire
+		(pts
+			(xy 312.42 139.7)
+			(xy 350.52 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26c0119c-a68d-58ad-bcda-fcabdf8fcaea")
+	)
+	(wire
+		(pts
+			(xy 350.52 139.7)
+			(xy 383.54 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24f3ccc1-d389-5912-8e65-542b79263af8")
+	)
+	(label "SERVO_SIG"
+		(at 315 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00ae2e78-7d49-5d71-a000-310a3031b1c2")
+	)
+	(wire
+		(pts
+			(xy 312.42 139.7)
+			(xy 312.42 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9a41f85-02a9-56ff-98a9-fe9dd240b981")
+	)
+	(wire
+		(pts
+			(xy 350.52 139.7)
+			(xy 350.52 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "147720dc-6796-59de-8785-8312f7e5c3c0")
+	)
+	(junction
+		(at 312.42 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "965f403b-6246-51ff-9db8-c098bcf15062")
+	)
+	(junction
+		(at 350.52 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c3096ec-6709-525f-aaed-ef2f5bf1ea36")
+	)
+	(wire
+		(pts
+			(xy 312.42 158.75)
+			(xy 312.42 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3de4ff1-7e57-53e3-a4b2-ca58af0a43fb")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 312.42 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ec99ef8-5f7b-52d8-a24a-5a1151f34a95")
+	)
+	(wire
+		(pts
+			(xy 350.52 151.13)
+			(xy 350.52 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00b47250-a3a1-5409-b7c1-05201f629a05")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 350.52 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fffc6f73-775e-57b5-8a3d-c69d5e0376fd")
+	)
+	(wire
+		(pts
+			(xy 373.38 142.24)
+			(xy 383.54 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6753f2bf-32d4-5ddd-b378-93259b6e3e6b")
+	)
+	(global_label "VSERVO"
+		(shape passive)
+		(at 373.38 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "850b9262-9cb7-5ff1-8324-38358bf9601d")
+	)
+	(wire
+		(pts
+			(xy 383.54 144.78)
+			(xy 383.54 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c3418c0-9965-5f47-863b-d7ac6fd016e8")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 383.54 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "770d00f1-4ee9-5641-b533-08030fb18aa9")
+	)
+	(text "1 signal / 2 VSERVO output / 3 GND"
+		(at 255 178.7 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "de66f0f7-6463-53e1-b20f-36450fa9e958")
+	)
+	(text "RELEASE GATES"
+		(at 270 202 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "add90fbb-2bfb-55c6-b568-179cb62b9e0a")
+	)
+	(text "BEC_ONLY: D9 only. ONBOARD: D4 only."
+		(at 270 212 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "e783dc4e-f50a-5bbe-a170-cc1752a081b4")
+	)
+	(text "Master: both source diodes DNP."
+		(at 270 219 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d0132bb-fb2e-5c58-9cb9-a2ca7382e88a")
+	)
+	(text "Receiver sensing and fault timing unimplemented."
+		(at 270 226 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "fb352a2d-93bf-5e8d-a256-01765a7f8dbd")
+	)
+	(text "HiZ is not a proven stopped motor or zero volts."
+		(at 270 233 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left bottom)
+		)
+		(uuid "b29c0b13-c6ba-5e4f-84b8-fadf16a72428")
+	)
+	(text "NEXT: qualify supervisory source and conditioned ACK; preserve both converters and 6S requirement."
+		(at 24 238 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ceb3287-8703-5b74-8eea-9b510b8bf8be")
+	)
+	(text "No firmware, live PCB or purchasing change. Receiver backdrive, C11 transients, feed, ADC and IMU2 remain open."
+		(at 24 250 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify left bottom)
+		)
+		(uuid "3853c032-2299-5748-bd7d-5214ca6689fb")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "reviewed_utc_date": "2026-10-12",
+  "revision": "ACT-04",
+  "parts": {
+    "U12": {
+      "mpn": "SN74LVC1G74DCUR",
+      "manufacturer": "Texas Instruments",
+      "package": "DCU0008A VSSOP-8",
+      "footprint_name": "TI_DCU0008A_LVC1G74",
+      "identity_url": "https://www.ti.com/product/SN74LVC1G74/part-details/SN74LVC1G74DCUR",
+      "status_observed": "Active; not a stock or purchasing release claim.",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+      "datasheet_revision": "SCES794G September 2021; pin functions page 4.",
+      "drawing_url": "https://www.ti.com/lit/pdf/MPDS050E",
+      "drawing_identifier": "4225266/A 09/2014; outline page 1, example board/stencil pages 2-3.",
+      "pins": {
+        "1": [
+          "CLK",
+          "input"
+        ],
+        "2": [
+          "D",
+          "input"
+        ],
+        "3": [
+          "~{Q}",
+          "output"
+        ],
+        "4": [
+          "GND",
+          "power_in"
+        ],
+        "5": [
+          "Q",
+          "output"
+        ],
+        "6": [
+          "~{CLR}",
+          "input"
+        ],
+        "7": [
+          "~{PRE}",
+          "input"
+        ],
+        "8": [
+          "VCC",
+          "power_in"
+        ]
+      },
+      "reviewed_dimensions_mm": {
+        "nominal_body_xy": [
+          2.3,
+          2.0
+        ],
+        "maximum_body_xy": [
+          2.4,
+          2.1
+        ],
+        "maximum_height": 0.9,
+        "land": [
+          0.85,
+          0.3
+        ],
+        "column_centers_x": [
+          -1.55,
+          1.55
+        ],
+        "pitch": 0.5,
+        "corner_radius": 0.05,
+        "overall_land_span_x": 3.95,
+        "land_inner_gap_x": 2.25,
+        "courtyard_proposed": [
+          4.5,
+          2.6
+        ]
+      },
+      "orientation": "Top view: 1-4 descend left, 5-8 ascend right; pad 1 CLK top left. Fab chamfer and silk triangle mark top-left pad 1.",
+      "generic_kicad_comparison": {
+        "library": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+        "land": [
+          1.25,
+          0.35
+        ],
+        "column_centers_x": [
+          -1.4,
+          1.4
+        ],
+        "disposition": "Installed alternate IPC geometry differs; local proposal follows TI example lands, not manufacturer acceptance."
+      },
+      "stencil_basis": "Same-size rounded paste apertures and 0.125 mm stencil in TI example; actual mask/paste/process remain held.",
+      "proposed_supply": "+3V3 with separate local 100 nF bypass; effective capacitance and placement held."
+    },
+    "U13": {
+      "mpn": "SN74LVC1G04DBVR",
+      "manufacturer": "Texas Instruments",
+      "package": "DBV0005A SOT-23-5",
+      "footprint_name": "TI_DBV0005A_LVC1G04",
+      "identity_url": "https://www.ti.com/product/SN74LVC1G04/part-details/SN74LVC1G04DBVR",
+      "status_observed": "Active; not a stock or purchasing release claim.",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "datasheet_revision": "SCES214AF October 2025; pin functions page 3.",
+      "drawing_url": "https://www.ti.com/lit/pdf/MPDS018T",
+      "drawing_identifier": "4214839/K 08/2024; outline page 1, example board/stencil pages 2-3.",
+      "pins": {
+        "1": [
+          "NC",
+          "no_connect"
+        ],
+        "2": [
+          "A",
+          "input"
+        ],
+        "3": [
+          "GND",
+          "power_in"
+        ],
+        "4": [
+          "Y",
+          "output"
+        ],
+        "5": [
+          "VCC",
+          "power_in"
+        ]
+      },
+      "reviewed_dimensions_mm": {
+        "nominal_body_xy": [
+          1.6,
+          2.9
+        ],
+        "maximum_body_xy": [
+          1.75,
+          3.05
+        ],
+        "maximum_height": 1.45,
+        "land": [
+          1.1,
+          0.6
+        ],
+        "column_centers_x": [
+          -1.3,
+          1.3
+        ],
+        "pitch": 0.95,
+        "corner_radius": 0.05,
+        "overall_land_span_x": 3.7,
+        "land_inner_gap_x": 1.5,
+        "courtyard_proposed": [
+          4.3,
+          3.6
+        ]
+      },
+      "orientation": "Top view: 1-3 descend left; 4 lower right, 5 upper right. Pad 1 NC remains a physical land. Fab chamfer and silk triangle mark top-left pad 1.",
+      "generic_kicad_comparison": {
+        "library": "Package_TO_SOT_SMD:SOT-23-5",
+        "land": [
+          1.325,
+          0.6
+        ],
+        "column_centers_x": [
+          -1.1375,
+          1.1375
+        ],
+        "disposition": "Installed alternate IPC geometry differs; local proposal follows TI example lands, not manufacturer acceptance."
+      },
+      "stencil_basis": "Same-size rounded paste apertures and 0.125 mm stencil in TI example; actual mask/paste/process remain held.",
+      "proposed_supply": "+3V3 with separate local 100 nF bypass; effective capacitance and placement held."
+    },
+    "U14": {
+      "mpn": "SN74LVC1G11DBVR",
+      "manufacturer": "Texas Instruments",
+      "package": "DBV0006A SOT-23-6",
+      "footprint_name": "TI_DBV0006A_LVC1G11",
+      "identity_url": "https://www.ti.com/product/SN74LVC1G11/part-details/SN74LVC1G11DBVR",
+      "status_observed": "Active; not a stock or purchasing release claim.",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "datasheet_revision": "SCES487I November 2024; pin functions page 3.",
+      "drawing_url": "https://www.ti.com/lit/pdf/MPDS026Q",
+      "drawing_identifier": "4214840/G 08/2024; outline page 1, example board/stencil pages 2-3.",
+      "pins": {
+        "1": [
+          "A",
+          "input"
+        ],
+        "2": [
+          "GND",
+          "power_in"
+        ],
+        "3": [
+          "B",
+          "input"
+        ],
+        "4": [
+          "Y",
+          "output"
+        ],
+        "5": [
+          "VCC",
+          "power_in"
+        ],
+        "6": [
+          "C",
+          "input"
+        ]
+      },
+      "reviewed_dimensions_mm": {
+        "nominal_body_xy": [
+          1.6,
+          2.9
+        ],
+        "maximum_body_xy": [
+          1.75,
+          3.05
+        ],
+        "maximum_height": 1.45,
+        "land": [
+          1.1,
+          0.6
+        ],
+        "column_centers_x": [
+          -1.3,
+          1.3
+        ],
+        "pitch": 0.95,
+        "corner_radius": 0.05,
+        "overall_land_span_x": 3.7,
+        "land_inner_gap_x": 1.5,
+        "courtyard_proposed": [
+          4.3,
+          3.6
+        ]
+      },
+      "orientation": "Top view: 1-3 descend left, 4-6 ascend right; pad 1 A top left. Fab chamfer and silk triangle mark top-left pad 1.",
+      "generic_kicad_comparison": {
+        "library": "Package_TO_SOT_SMD:SOT-23-6",
+        "land": [
+          1.325,
+          0.6
+        ],
+        "column_centers_x": [
+          -1.1375,
+          1.1375
+        ],
+        "disposition": "Installed alternate IPC geometry differs; local proposal follows TI example lands, not manufacturer acceptance."
+      },
+      "stencil_basis": "Same-size rounded paste apertures and 0.125 mm stencil in TI example; actual mask/paste/process remain held.",
+      "proposed_supply": "+3V3 with separate local 100 nF bypass; effective capacitance and placement held."
+    }
+  },
+  "qualifications": {
+    "manufacturer_acceptance": false,
+    "assembly_qualified": false,
+    "stencil_qualified": false,
+    "board_fit_verified": false,
+    "pcb_drc_performed": false,
+    "thermal_qualified": false,
+    "timing_qualified": false,
+    "sequencing_qualified": false,
+    "actuator_backdrive_qualified": false,
+    "hardware_accepted": false
+  },
+  "context_holds": [
+    "Package checks do not qualify asynchronous clear timing, recovery/removal, ARM/ACK ordering, slow inputs or startup/brownout behavior.",
+    "QUAL_OK and ACK are unimplemented default-low qualification ports; no hardware readiness or watchdog implementation is implied.",
+    "C11 identity, receiver observation, backdrive and actual actuator behavior remain held.",
+    "Local silk and courtyard are proposed; pad mask/paste expansion, placement, stencil and thermal/board fit remain unqualified.",
+    "No 3D models are supplied. No live CAD/copper/BOM/firmware or prior packet is changed."
+  ]
+}

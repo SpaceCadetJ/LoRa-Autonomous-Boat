@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "revision": "ACT-04",
+  "classification": "settled_zero_delay_boolean_model_only",
+  "passed": true,
+  "test_count": 11,
+  "tests": [
+    "test_ack_while_armed_clears_readiness",
+    "test_all_32_state_input_combinations",
+    "test_and_all_eight_combinations",
+    "test_declared_contract_matches_sources",
+    "test_every_five_event_trace_from_valid_reset",
+    "test_fault_recovery_requires_new_ack_then_arm",
+    "test_no_reset_means_no_safe_startup_inference",
+    "test_normal_disarm_retains_readiness",
+    "test_rejects_changed_topology_identity_and_claims",
+    "test_rejects_non_boolean_values",
+    "test_valid_reset_covers_unknown_initial_q_and_held_inputs"
+  ],
+  "enumerated_cases": {
+    "and_combinations": 8,
+    "state_input_combinations": 32,
+    "valid_reset_initial_cases": 8,
+    "five_event_traces": 32768,
+    "contract_mutations": 10
+  },
+  "input_sha256": {
+    "test_latch.py": "617a950307464e16ac435e19de94cbf4e58e012134cd855c324e5aef98c9737b",
+    "expected_contract.json": "40cf04c14e30b8c33b3e873a83a3019600b24508a3bda32a3cf53552dbde66ee",
+    "source_review.json": "5c0182a0b7e308ac41a7454f4df77f794f6b788e52eba0578c544525bcb4c2ec"
+  },
+  "assumptions": [
+    "Valid rails and valid reset already established.",
+    "Every event represents settled Boolean values after propagation.",
+    "Edges satisfy the separately documented timing/power contract."
+  ],
+  "exclusions": [
+    "No pulse width, setup, hold, recovery/removal or propagation model.",
+    "No analog startup, brownout, bounce, metastability or concurrent-edge proof.",
+    "No independent qualification, watchdog or receiver-ready source.",
+    "No native connectivity result; use the separate native verifier."
+  ],
+  "hardware_accepted": false,
+  "timing_qualified": false,
+  "act03_fully_implemented": false
+}

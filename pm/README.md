@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Current actuator packet - ACT-04, 2026-10-12
+
+The [isolated arm latch and annotated native sheets](../reviews/codex/actuator_latch/README.md) separate PC4 from OE while retaining R40 at OE. Native ERC is zero errors / the original AD0 warning; 396 existing memberships are preserved and exactly two change. The qualification and ACK sources remain unimplemented and default low. ACK while armed disables, a documented difference from ACT-03. Next: qualification/reset-release circuitry with fault retention and conditioned ACK; receiver readiness and watchdog sources remain held. This supersedes older next-task text below.
+
 ## Current actuator packet - ACT-03, 2026-10-12
 
 The [interlock behavior and observability prototype](../reviews/codex/actuator_interlock/README.md) adds interactive fault scenarios, an executable deliberate-rearm contract and a receiver acceptance worksheet. Exact ACT-02 pin evidence confirms no receiver sensing and unused converter PG pins. No CAD/firmware change or new native acceptance is claimed. Next: isolated fault-dominant latch/OE gate with the PC4 request separated from OE and R40 retained; unimplemented qualifications must remain default-disabled. This supersedes older next-task text below.

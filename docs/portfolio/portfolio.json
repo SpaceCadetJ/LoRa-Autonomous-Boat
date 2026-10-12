@@ -40,7 +40,8 @@
     "actuator_supply": "reviews/codex/actuator_supply/README.md",
     "actuator_enable": "reviews/codex/actuator_enable/README.md",
     "actuator_interlock": "reviews/codex/actuator_interlock/README.md",
-    "interlock_demo": "reviews/codex/actuator_interlock/index.html"
+    "interlock_demo": "reviews/codex/actuator_interlock/index.html",
+    "actuator_latch": "reviews/codex/actuator_latch/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -161,6 +162,11 @@
       "path": "reviews/codex/actuator_interlock/v2_actuator_interlock.svg",
       "kind": "proposed_functional_architecture",
       "caption": "ACT-03: executable fault-latched arm contract and receiver-observation gaps; no circuit/firmware change."
+    },
+    {
+      "path": "reviews/codex/actuator_latch/v2_actuator_latch.svg",
+      "kind": "isolated_schematic",
+      "caption": "ACT-04 native arm latch; default-low unimplemented qualification, no PCB or hardware acceptance."
     }
   ],
   "validated_results": [
@@ -345,6 +351,15 @@
         "reviews/codex/actuator_interlock/observability.json",
         "reviews/codex/actuator_interlock/README.md"
       ]
+    },
+    {
+      "claim": "ACT-04 native candidate: 128 components, 429 pins; exactly two old memberships change and 396 are preserved; ERC zero errors and the original AD0 warning. Boolean and package evidence have separate limits.",
+      "evidence": [
+        "reviews/codex/actuator_latch/validation.json",
+        "reviews/codex/actuator_latch/logic_results.json",
+        "reviews/codex/actuator_latch/native_geometry.json"
+      ],
+      "scope": "isolated_native_and_boolean_checks_no_hardware_release"
     }
   ],
   "current_native_findings": {

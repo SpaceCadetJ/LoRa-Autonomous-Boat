@@ -65,3 +65,5 @@ reviews/codex/actuator_supply/** -text
 reviews/codex/actuator_enable/** -text
 
 reviews/codex/actuator_interlock/** -text
+
+reviews/codex/actuator_latch/** -text

@@ -309,6 +309,22 @@ def main():
     assert interlock["electrical_delta"] == 0 and interlock["copper_delta"] == 0
     assert not any(interlock[k] for k in ["parts_selected", "hardware_tested", "fabrication_approved", "native_commands_rerun"])
     print("PASS ACT-03 captured observability and behavioral test record; no circuit or hardware acceptance")
+    latch_root = "reviews/codex/actuator_latch/"
+    latch = read_json(latch_root + "packet_manifest.json")
+    check_hashes(latch["input_sha256"], "latch preserved inputs")
+    check_hashes(latch["artifact_sha256"], "latch candidate and checks")
+    for module_name, filename, function, record in [
+            ("latch_verify", "verify_candidate.py", "collect", "validation.json"),
+            ("latch_packages", "inspect_packages.py", "check", None)]:
+        spec = importlib.util.spec_from_file_location(module_name, ROOT / latch_root / filename)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        result = getattr(module, function)()
+        if record:
+            assert result == read_json(latch_root + record)
+    assert latch["live_electrical_delta"] == 0 and latch["live_copper_delta"] == 0
+    assert not any(latch[k] for k in ["hardware_tested", "pcb_updated", "fabrication_approved", "qualification_ports_implemented"])
+    print("PASS ACT-04 isolated native latch and package evidence; timing and qualifications remain held")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -321,6 +337,7 @@ def main():
     pages += list((ROOT / "docs/applications").glob("*.md"))
     pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md", ROOT / "reviews/codex/imu_placement/README.md", ROOT / "reviews/codex/imu_bias_filter/README.md"]
     pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md", ROOT / leakage_root / "README.md", ROOT / capacitor_root / "README.md", *[ROOT / folder / "README.md" for folder in buck_roots], ROOT / actuator_root / "README.md", ROOT / enable_root / "README.md", ROOT / interlock_root / "README.md", ROOT / interlock_root / "RECEIVER_ACCEPTANCE.md"]
+    pages += [ROOT / latch_root / "README.md", ROOT / latch_root / "TIMING.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

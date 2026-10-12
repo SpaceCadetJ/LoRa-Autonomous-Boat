@@ -1,0 +1,37 @@
+{
+  "scope": "Local viewer navigation, SVG loading, zoom and guide layout; no circuit or hardware test",
+  "input_sha256": {
+    "reviews/codex/actuator_latch/README.md": "f620e3e45c7b7387c336480ef8d7fd1850b40697b38afe5d512bf70017c26570",
+    "reviews/codex/actuator_latch/v2_actuator_latch.svg": "2d4f71b11b2a91b9c5402ced44008668f903f5af5ae7e396d171beb2cf78e927",
+    "reviews/codex/actuator_latch/verify_viewer.cjs": "5602b1d0cb00c92c39d0bb0e5f561b1391bf94531c28282e8085809f5b167d35",
+    "pm/index.template.html": "ceeb0a3785a733aaa2c3c5e03cd397b5f7d1dacd684eff174b21369976f57060"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "svg_loaded": true,
+      "isolated_project_link": true,
+      "zoom_percent": 200,
+      "guide_contract_and_holds_visible": true,
+      "horizontal_page_overflow": false,
+      "dialog_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "svg_loaded": true,
+      "isolated_project_link": true,
+      "zoom_percent": 200,
+      "guide_contract_and_holds_visible": true,
+      "horizontal_page_overflow": false,
+      "dialog_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

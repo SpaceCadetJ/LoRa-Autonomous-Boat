@@ -1,0 +1,28 @@
+{
+  "revision": "ACT-04",
+  "baseline_revision": "e3c5ffa18b30932fabfea81da534452b7cc0259c",
+  "classification": "isolated_native_latch_timing_unqualified",
+  "reviews": {
+    "power_native_review": "Reviewed manufacturer part/pin/timing limits, Boolean tests and final claims; bounded pass.",
+    "imu_candidate_validator": "Independent hardcoded netlist/metadata/population verifier and 44 mutation tests; actual capture checked.",
+    "input_protection_review": "Manufacturer-example land patterns, KiCad/portable geometry and nine mutation guards; actual copies checked."
+  },
+  "root_visual_review": "Both native schematic sheets reviewed; open wire stub corrected, page number corrected, subtitle revised to timing qualification pending. Desktop/phone viewer and guide reviewed.",
+  "checks": {
+    "native_erc_errors": 0,
+    "native_erc_original_warnings": 1,
+    "contract_tests": 44,
+    "boolean_tests": 11,
+    "boolean_event_traces": 32768,
+    "package_mutation_guards": 9
+  },
+  "native_scope": "Separate captured source only, 128 components / 429 pins, two retained-pin changes and 396 memberships preserved.",
+  "behavior_difference": "ACK while armed clears READY; ACT-03 ignores that ACK.",
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "firmware_changed": false,
+  "qualification_ports_implemented": false,
+  "hardware_tested": false,
+  "fabrication_approved": false,
+  "next_smallest_task": "Qualification/reset-release interface; explicit supply windows, retained fault duration and conditioned ACK; remote receiver and watchdog permissions default disabled."
+}

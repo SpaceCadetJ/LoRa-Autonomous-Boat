@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "revision": "ACT-04",
+  "reviewed_utc_date": "2026-10-12",
+  "classification": "primary_source_review_and_conditional_design_inference",
+  "disposition": "Suitable for a bounded isolated schematic study only.",
+  "hardware_accepted": false,
+  "act03_fully_implemented": false,
+  "timing_qualified": false,
+  "sources": {
+    "flip_flop": {
+      "part": "SN74LVC1G74DCUR",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+      "revision": "SCES794G, September 2021",
+      "sections": [
+        "5",
+        "6.3",
+        "6.5",
+        "6.6",
+        "6.7",
+        "7",
+        "8.4"
+      ],
+      "orderable": "https://www.ti.com/product/SN74LVC1G74/part-details/SN74LVC1G74DCUR",
+      "pins": {
+        "1": "CLK",
+        "2": "D",
+        "3": "Q_N",
+        "4": "GND",
+        "5": "Q",
+        "6": "CLR_N",
+        "7": "PRE_N",
+        "8": "VCC"
+      },
+      "facts": {
+        "vcc_operating_V": [
+          1.65,
+          5.5
+        ],
+        "temperature_C": [
+          -40,
+          125
+        ],
+        "VIH_min_at_VCC_3_to_3p6_V": 2,
+        "VIL_max_at_VCC_3_to_3p6_V": 0.8,
+        "input_range_V": [
+          0,
+          5.5
+        ],
+        "input_transition_max_ns_per_V_at_3p3_plus_minus_0p3_V": 10,
+        "input_leakage_max_abs_uA_at_VI_0_or_5p5_V": 5,
+        "Ioff_max_abs_uA_at_VCC_0_V_and_VI_or_VO_5p5_V": 10
+      },
+      "timing": {
+        "conditions": "3.3 V column; -40..125 C; use Section 7's specified 3.3 +/-0.3 V measurement conditions, including 50 pF.",
+        "CLK_high_or_low_width_min_ns": 2.7,
+        "CLR_low_width_min_ns": 2.7,
+        "D_setup_min_ns": 1.3,
+        "D_hold_min_ns": 1.2,
+        "CLR_or_PRE_inactive_before_CLK_min_ns": 1.2,
+        "CLK_to_Q_max_ns": 7.9,
+        "CLR_to_Q_max_ns": 7.9
+      },
+      "reset": "PRE_N high permits CLR_N low to force Q low regardless of CLK/D. Both asynchronous controls low is nonstable. No separate removal-time guarantee is inferred."
+    },
+    "inverter": {
+      "part": "SN74LVC1G04DBVR",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf",
+      "revision": "SCES214AF, October 2025",
+      "sections": [
+        "4",
+        "5.3",
+        "5.5",
+        "5.9"
+      ],
+      "orderable": "https://www.ti.com/product/SN74LVC1G04/part-details/SN74LVC1G04DBVR",
+      "pins": {
+        "1": "NC",
+        "2": "A",
+        "3": "GND",
+        "4": "Y",
+        "5": "VCC"
+      },
+      "facts": {
+        "vcc_operating_V": [
+          1.65,
+          5.5
+        ],
+        "temperature_C": [
+          -40,
+          125
+        ],
+        "VIH_min_at_VCC_3_to_3p6_V": 2,
+        "VIL_max_at_VCC_3_to_3p6_V": 0.8,
+        "input_range_V": [
+          0,
+          5.5
+        ],
+        "input_transition_max_ns_per_V_at_3p3_plus_minus_0p3_V": 10,
+        "input_leakage_max_abs_uA_at_VI_0_or_5p5_V": 5,
+        "Ioff_max_abs_uA_at_VCC_0_V_and_VI_or_VO_5p5_V": 10,
+        "propagation_max_ns": 4.2,
+        "propagation_conditions": "VCC 3.3 +/-0.3 V; -40..125 C; CL 50 pF and specified test load."
+      }
+    },
+    "and_gate": {
+      "part": "SN74LVC1G11DBVR",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "revision": "SCES487I, November 2024",
+      "sections": [
+        "4",
+        "5.3",
+        "5.5",
+        "5.8"
+      ],
+      "orderable": "https://www.ti.com/product/SN74LVC1G11/part-details/SN74LVC1G11DBVR",
+      "pins": {
+        "1": "A",
+        "2": "GND",
+        "3": "B",
+        "4": "Y",
+        "5": "VCC",
+        "6": "C"
+      },
+      "facts": {
+        "vcc_operating_V": [
+          1.65,
+          5.5
+        ],
+        "temperature_C": [
+          -40,
+          125
+        ],
+        "VIH_min_at_VCC_3_to_3p6_V": 2,
+        "VIL_max_at_VCC_3_to_3p6_V": 0.8,
+        "input_range_V": [
+          0,
+          5.5
+        ],
+        "input_transition_max_ns_per_V_at_3p3_plus_minus_0p3_V": 10,
+        "input_leakage_max_abs_uA_at_VI_0_or_5p5_V": 5,
+        "Ioff_max_abs_uA_at_VCC_0_V_and_VI_or_VO_5p5_V": 10,
+        "propagation_max_ns": 6.2,
+        "propagation_conditions": "VCC 3.3 +/-0.3 V; -40..125 C; CL 50 pF and specified test load."
+      }
+    }
+  },
+  "topology_inference": {
+    "READY": "At a valid ACK rising edge, capture NOT ARM. QUAL_OK low asynchronously clears READY.",
+    "OE": "QUAL_OK AND ARM AND READY",
+    "defaults": "ARM, QUAL_OK and ACK each have a 10k pulldown. Retain R40 directly at translator OE.",
+    "power": "All three logic devices use +3V3 with separate local bypass. PRE_N connects directly to +3V3; Q_N and inverter NC remain no-connect.",
+    "act03_difference": "ACK while ARM high clears READY and disables. ACT-03 ignores acknowledgement while armed.",
+    "startup": "The eventual qualification circuit must hold QUAL_OK low through supply startup and until reset/edge constraints are satisfied. The pulldown alone is not a characterized power-on reset.",
+    "held_levels": "After a valid clear, held ACK or ARM cannot set READY; recovery alone cannot do so. This statement assumes valid rails, adequate fault duration and valid transitions.",
+    "missing_inputs": "QUAL_OK and ACK are unimplemented, default-low functional ports, with no chosen harness or MCU source."
+  },
+  "acceptance_holds": [
+    "QUAL_OK must encode independently reviewed rails, receiver readiness, stop and fresh-command watchdog qualification; none is implemented here.",
+    "A too-short QUAL_OK-low pulse can leave READY set and allow output to return after the pulse.",
+    "ACK/ARM near each other, reset release near ACK, contact bounce, slow edges, analog brownout and propagation races are excluded from functional proof.",
+    "Do not assume an initial latch state or guaranteed behavior between zero supply and the valid operating range.",
+    "Ioff conditions at zero supply do not establish arbitrary supply-ramp isolation or protect an unpowered remote actuator.",
+    "No end-to-end stopping time, glitch suppression, single-fault tolerance or production acceptance is established."
+  ],
+  "native_validation": "Separate root-owned native delta verification; this source review does not assert its result.",
+  "documentation": "TIMING.md"
+}
