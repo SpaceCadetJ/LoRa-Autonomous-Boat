@@ -57,7 +57,7 @@
 <rect x="47.725" y="51.125" width="1.150" height="2.700" rx=".08" fill="#ef6b26" transform="rotate(-90.000 48.300 52.475)"/>
 <rect x="47.725" y="48.175" width="1.150" height="2.700" rx=".08" fill="#627e99" transform="rotate(-90.000 48.300 49.525)"/>
 <text class="ref" text-anchor="middle" x="48.300" y="51.300">C10</text></g>
-<g><title>C11 | 100uF 10V | EEE-FK1A101P | CANDIDATE | KiCad 0 deg</title>
+<g><title>C11 | 100uF 10V | EEE-FK1A101P | HOLD | KiCad 0 deg</title>
 <rect class="body" x="67.050" y="45.250" width="8.900" height="3.500"/>
 <rect x="67.050" y="46.200" width="3.500" height="1.600" rx=".08" fill="#ef6b26" transform="rotate(-0.000 68.800 47.000)"/>
 <rect x="72.450" y="46.200" width="3.500" height="1.600" rx=".08" fill="#627e99" transform="rotate(-0.000 74.200 47.000)"/>

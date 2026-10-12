@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-10-12T09:15:50.731286+00:00",
+  "kicad_version": "9.0.7",
+  "scope": "D_SMC electrical pads, selected dimensions and cathode artwork only; no board validation.",
+  "input_sha256": {
+    "inputs/D_SMC.kicad_mod": "6f9ff6495f0437be9a3a4557fb302be9cee329a6742edcbf393529dc8b83b196",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/D_SMC.kicad_mod": "6f9ff6495f0437be9a3a4557fb302be9cee329a6742edcbf393529dc8b83b196",
+    "expected_contract.json": "511cc3ebd317a4400676d9454443a036f526777484dc455ab323706d08fe7b26",
+    "inspect_packages.py": "b3446dbb4e1419d1a9edf6b4792ff387e6a0c6a32ddb8c186861e75b76419574"
+  },
+  "footprint": "D_SMC",
+  "references": [
+    "D4",
+    "D9"
+  ],
+  "geometry": {
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -3.4,
+        "y_mm": 0.0,
+        "size_x_mm": 3.3,
+        "size_y_mm": 2.5,
+        "rotation_deg": 90.0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "shape": "roundrect",
+        "roundrect_ratio": 0.1
+      },
+      {
+        "number": "2",
+        "x_mm": 3.4,
+        "y_mm": 0.0,
+        "size_x_mm": 3.3,
+        "size_y_mm": 2.5,
+        "rotation_deg": 90.0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "shape": "roundrect",
+        "roundrect_ratio": 0.1
+      }
+    ],
+    "lines": [
+      {
+        "layer": "F.CrtYd",
+        "start_mm": [
+          -4.9,
+          -3.35
+        ],
+        "end_mm": [
+          -4.9,
+          3.35
+        ]
+      },
+      {
+        "layer": "F.CrtYd",
+        "start_mm": [
+          -4.9,
+          -3.35
+        ],
+        "end_mm": [
+          4.9,
+          -3.35
+        ]
+      },
+      {
+        "layer": "F.CrtYd",
+        "start_mm": [
+          -4.9,
+          3.35
+        ],
+        "end_mm": [
+          4.9,
+          3.35
+        ]
+      },
+      {
+        "layer": "F.CrtYd",
+        "start_mm": [
+          4.9,
+          -3.35
+        ],
+        "end_mm": [
+          4.9,
+          3.35
+        ]
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          -3.55,
+          -3.1
+        ],
+        "end_mm": [
+          -3.55,
+          3.1
+        ]
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          -3.55,
+          -3.1
+        ],
+        "end_mm": [
+          3.55,
+          -3.1
+        ]
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          -3.55,
+          3.1
+        ],
+        "end_mm": [
+          3.55,
+          3.1
+        ]
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          -1.55114,
+          0.00102
+        ],
+        "end_mm": [
+          -0.64944,
+          0.00102
+        ]
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          -0.64944,
+          -0.79908
+        ],
+        "end_mm": [
+          -0.64944,
+          0.80112
+        ]
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          -0.64944,
+          0.00102
+        ],
+        "end_mm": [
+          0.50118,
+          -0.79908
+        ]
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          -0.64944,
+          0.00102
+        ],
+        "end_mm": [
+          0.50118,
+          0.75032
+        ]
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          0.50118,
+          -0.79908
+        ],
+        "end_mm": [
+          0.50118,
+          0.75032
+        ]
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          0.50118,
+          0.00102
+        ],
+        "end_mm": [
+          1.4994,
+          0.00102
+        ]
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          3.55,
+          -3.1
+        ],
+        "end_mm": [
+          3.55,
+          3.1
+        ]
+      },
+      {
+        "layer": "F.SilkS",
+        "start_mm": [
+          -4.91,
+          -3.25
+        ],
+        "end_mm": [
+          -4.91,
+          3.25
+        ]
+      },
+      {
+        "layer": "F.SilkS",
+        "start_mm": [
+          -4.91,
+          -3.25
+        ],
+        "end_mm": [
+          3.6,
+          -3.25
+        ]
+      },
+      {
+        "layer": "F.SilkS",
+        "start_mm": [
+          -4.91,
+          3.25
+        ],
+        "end_mm": [
+          3.6,
+          3.25
+        ]
+      }
+    ]
+  },
+  "dimensional_comparison": {
+    "physical_land_length_mm": 2.5,
+    "physical_land_width_mm": 3.3,
+    "center_pitch_mm": 6.8,
+    "inner_gap_mm": 4.3,
+    "overall_span_mm": 9.3,
+    "selected_drawing_constraints_pass": true,
+    "exact_reference_span_match": false,
+    "pad_1_cathode_artwork_verified": true,
+    "pad_2_anode_mapping_verified": true
+  },
+  "manufacturer_review": {
+    "reviewed_utc_date": "2026-10-12",
+    "mpn": "SS34-E3/57T",
+    "identity_url": "https://www.vishay.com/en/product/88751/tab/quality/",
+    "datasheet_url": "https://www.vishay.com/docs/88751/ss32.pdf",
+    "datasheet": "Vishay 88751, revision 23-Apr-2020, pages 1-3",
+    "identity_status": "Exact orderable name appears in the manufacturer's quality table; no stock assertion.",
+    "grade": "Commercial/non-automotive E3",
+    "case": "SMC (DO-214AB)",
+    "polarity": "Manufacturer cathode band maps to captured footprint pad 1 on the left; pad 2 is anode.",
+    "limits": {
+      "repetitive_peak_reverse_v": 40,
+      "average_forward_current_a": 3,
+      "average_current_condition": "At lead temperature per derating curve; not a general ambient or stall-current allowance.",
+      "surge_current_a": 100,
+      "surge_condition": "8.3 ms single half-sine superimposed on rated load; not repetitive actuator qualification.",
+      "max_forward_v": 0.5,
+      "forward_condition": "3 A, 25 C, 300 us pulse, 1 percent duty cycle; no all-temperature drop bound.",
+      "max_reverse_ma_25c": 0.5,
+      "max_reverse_ma_100c": 20,
+      "reverse_condition": "Rated DC blocking voltage, pulsed table conditions; not a measured low-voltage leakage value.",
+      "junction_temperature_c": [
+        -55,
+        150
+      ],
+      "typical_theta_ja_c_per_w": 55,
+      "typical_theta_jl_c_per_w": 17,
+      "thermal_condition": "Datasheet mounting condition uses 14 x 14 mm copper pad areas; board-dependent typical values."
+    },
+    "land_example_mm": {
+      "minimum_land_length": 1.52,
+      "minimum_land_width": 3.2,
+      "maximum_inner_gap": 4.69,
+      "reference_overall_span": 8.13
+    },
+    "comparison_status": "Selected minimum/maximum dimensions pass; captured span differs from the reference example.",
+    "limitations": [
+      "This is a selected dimensional comparison, not approval of copper, solder-mask, paste or placement.",
+      "A populated diode has reverse leakage; do not claim zero backfeed or approved source sharing.",
+      "Stored charge, reversed external supply and regenerative actuator energy require circuit review.",
+      "Source URLs were read for this review; no downloaded manufacturer PDF hash is claimed."
+    ]
+  },
+  "context_holds": {
+    "C11_identity": {
+      "source_mpn": "EEE-FK1A101P",
+      "source_value": "100uF 10V",
+      "status": "Unresolved: exact source identity was not confirmed in the current Panasonic product search/FK catalog.",
+      "primary_catalog_url": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf",
+      "primary_catalog_date": "10-Feb-2026",
+      "qualifications": {
+        "exact_identity_verified": false,
+        "land_verified": false,
+        "ripple_verified": false,
+        "reverse_voltage_accepted": false
+      },
+      "note": "Failed identity confirmation is not proof the part never existed. Do not borrow ratings from a nearby MPN or substitute silently."
+    },
+    "VSERVO": [
+      "After the separate four-pin rail amendment, VSERVO retains C11,C12,D4,D9,J3 and TP4.",
+      "BEC_ONLY requires D4 absent and D9 fitted; ONBOARD requires D4 fitted and D9 absent. Both remain proposed populations.",
+      "Actual actuator voltage, PWM input compatibility, startup/stall current, regenerative energy, harness and hotplug behavior remain unknown.",
+      "No C11/C12, connector, circuit or board qualification is supplied by this footprint inspection."
+    ]
+  },
+  "qualifications": {
+    "manufacturer_land_acceptance": false,
+    "assembly_qualified": false,
+    "stencil_qualified": false,
+    "board_fit_verified": false,
+    "pcb_drc_performed": false,
+    "thermal_qualified": false,
+    "source_sharing_qualified": false,
+    "dual_source_accepted": false,
+    "actuator_load_qualified": false,
+    "hardware_accepted": false
+  },
+  "source_files_changed": false,
+  "candidate_circuit_changed": false
+}

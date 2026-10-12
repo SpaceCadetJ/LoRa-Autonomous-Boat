@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "date": "2026-10-12",
+  "source_revision": "c3c38bd3da817a7789d75323fe559fe77fd2dcea",
+  "revision": "ACT-01",
+  "status": "reviewed_isolated_schematic_candidate",
+  "independent_reviews": [
+    {
+      "reviewer": "imu_candidate_validator",
+      "scope": "Exact native part/pin and metadata contract, master DNP flags, converter source preservation and mutually exclusive population rejection",
+      "result": "31 tests pass and actual native comparison passes; exactly four moves, two identity updates, 380 outside pins preserved. Both converter source files byte-identical. Native DNP properties preserved in full netlist.",
+      "files_written": [
+        "verify_candidate.py",
+        "test_candidate.py"
+      ]
+    },
+    {
+      "reviewer": "input_protection_review",
+      "scope": "Primary diode/capacitor/connector sources; native and portable SMC footprint inspection",
+      "result": "Native KiCad9.0.7 capture and portable check pass. Reviewer reported three in-memory geometry/polarity rejection cases. SMC dimensions/cathode artwork checked; assembly and thermal remain held. C11 exact identity could not be confirmed; C12 effective capacitance and actual harness/actuator energy remain open.",
+      "files_written": [
+        "inspect_packages.py",
+        "native_geometry.json"
+      ]
+    },
+    {
+      "reviewer": "power_native_review",
+      "scope": "Primary buffer supply/input/output/sequence limits and final guide/population review",
+      "result": "Four-pin move is a bounded correction. Grounded OE, absent powered-off output isolation specification and PFM envelope limit remain explicit. Independently compared final native netlists; no material guide correction found.",
+      "files_written": []
+    }
+  ],
+  "root_verification": {
+    "native_version": "9.0.7",
+    "native_command_record": "native_manifest.json",
+    "native_errors": 0,
+    "native_warnings": 1,
+    "warning_scope": "Original AD0 warning only",
+    "contract_tests_passed": 31,
+    "candidate_source_count": 32,
+    "native_output_count_including_viewer_copy": 13,
+    "live_cad_inputs_preserved": 52,
+    "prior_candidate_source_files_preserved": 31,
+    "unrelated_tool_hashes_preserved": {
+      "hardware/kicad/tools/v1_design.py": "4c3765346e6b64976aaad5f406f8662056cfece10029767837a9f47864474dc0",
+      "hardware/kicad_v2/tools/route_v2.py": "3e44123b01d58c8373850c2becf77df2e7103877f9c223b6d102c14346cd03dd"
+    },
+    "v1_procurement_files_preserved": 12,
+    "v1_procurement_before_hashes": "v1_procurement_preservation.json",
+    "v2_ordering": {
+      "candidate": 68,
+      "held": 39,
+      "board_features": 11,
+      "candidate_order_lines": 35
+    },
+    "browser_record": "viewer_check.json",
+    "visual_review": [
+      "actuator-review.png",
+      "LoRa_Boat_Controller_V2-Power-review.png",
+      "LoRa_Boat_Controller_V2-review.png",
+      "viewer-phone.png"
+    ],
+    "visual_disposition": "Four rail labels, parent/root hierarchy, diode DNP marks and supply/population notes inspected. Previous right-edge net label moved inward; direct root power link is clear. Desktop/phone SVG, source/guide navigation and 200% zoom pass without horizontal overflow or browser errors.",
+    "first_capture_rejection": "Initial native capture exposed truncated Power parsing from an unescaped newline, trailing format-node order and off-grid new sheet edge. Builder escaped quoted newlines, placed trailing format markers last, inserted pins before instances and aligned the new Power sheet edge to 66.04mm. Final native comparison passes the original intended contract. DNP did not remove parts from the final native netlist."
+  },
+  "acceptance_gates": {
+    "live_integration": false,
+    "pcb_updated": false,
+    "hardware_tested": false,
+    "fabrication_approved": false,
+    "assembly_variant_released": false,
+    "startup_shutdown_verified": false,
+    "powered_off_output_isolation_verified": false,
+    "actuator_load_qualified": false,
+    "thermal_verified": false,
+    "full_load_input_feed_verified": false,
+    "imu2_incorporated": false
+  },
+  "next_smallest_task": "New isolated default-disabled buffer enable and sequencing amendment, including powered/unpowered signal-backdrive cases. Preserve ACT-01 rail/population and both converter contracts. Then C11/VSERVO energy storage/regeneration/transients and remaining 6S input-feed, leakage/damping, ADC and combined IMU2 before local routing."
+}

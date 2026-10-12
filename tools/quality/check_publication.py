@@ -238,6 +238,33 @@ def main():
         assert not any(buck[k] for k in ["pcb_updated", "hardware_tested", "fabrication_approved", "effective_capacitance_verified"])
         assert all(not v for v in read_json(buck_root + "analysis.json")["acceptance_gates"].values())
         print("PASS converter native delta, package evidence and analytical capture; hardware held")
+    actuator_root = "reviews/codex/actuator_supply/"
+    actuator = read_json(actuator_root + "packet_manifest.json")
+    check_hashes(actuator["input_sha256"], "actuator preserved inputs")
+    check_hashes(actuator["artifact_sha256"], "actuator captured artifacts")
+    build = read_json(actuator_root + "build_manifest.json")
+    native = read_json(actuator_root + "native_manifest.json")
+    assert native["input_sha256"] == build["output_sha256"]
+    check_hashes(build["output_sha256"], "actuator source")
+    check_hashes(native["output_sha256"], "actuator native exports")
+    check_hashes({actuator_root + "build_candidate.py": build["builder_sha256"],
+                  actuator_root + "expected_contract.json": build["expected_contract_sha256"],
+                  actuator_root + "population_contract.json": build["population_contract_sha256"],
+                  actuator_root + "export_native.py": native["runner_sha256"]}, "actuator provenance")
+    for module_name, filename, function, record in [
+            ("actuator_verify", "verify_candidate.py", "collect", "validation.json"),
+            ("actuator_packages", "inspect_packages.py", "check", None)]:
+        spec = importlib.util.spec_from_file_location(module_name, ROOT / actuator_root / filename)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        result = getattr(module, function)()
+        if record:
+            assert result == read_json(actuator_root + record)
+    assert actuator["live_electrical_delta"] == 0 and actuator["live_copper_delta"] == 0
+    assert not any(actuator[k] for k in ["pcb_updated", "hardware_tested", "fabrication_approved", "assembly_variant_released"])
+    check_hashes(read_json(actuator_root + "v1_procurement_preservation.json"), "ACT-01 preserved V1 procurement")
+    assert "C11" in read_json("hardware/manufacturing/procurement_policy.json")["v2"]["holds"]
+    print("PASS actuator pin/identity delta, exclusive population and package evidence; assembly/hardware held")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -249,7 +276,7 @@ def main():
     pages += list((ROOT / "docs/build").glob("*.md"))
     pages += list((ROOT / "docs/applications").glob("*.md"))
     pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md", ROOT / "reviews/codex/imu_placement/README.md", ROOT / "reviews/codex/imu_bias_filter/README.md"]
-    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md", ROOT / leakage_root / "README.md", ROOT / capacitor_root / "README.md", *[ROOT / folder / "README.md" for folder in buck_roots]]
+    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md", ROOT / leakage_root / "README.md", ROOT / capacitor_root / "README.md", *[ROOT / folder / "README.md" for folder in buck_roots], ROOT / actuator_root / "README.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

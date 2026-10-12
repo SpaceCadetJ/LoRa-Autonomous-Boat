@@ -59,3 +59,5 @@ reviews/codex/input_capacitors/** -text
 reviews/codex/buck_3v3/** -text
 
 reviews/codex/buck_5v/** -text
+
+reviews/codex/actuator_supply/** -text

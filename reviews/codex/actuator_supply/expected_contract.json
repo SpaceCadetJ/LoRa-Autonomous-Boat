@@ -1,0 +1,237 @@
+{
+  "schema": 1,
+  "revision": "ACT-01",
+  "baseline_native": "reviews/codex/buck_5v/native/netlist.xml",
+  "boundary": [
+    "U4",
+    "U5",
+    "C13",
+    "C14",
+    "D4",
+    "D9"
+  ],
+  "removed_parts": [],
+  "added_parts": [],
+  "candidate_parts": {
+    "U4": {
+      "value": "74AHCT1G125",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "mpn": "SN74AHCT1G125DBVR",
+      "manufacturer": "Texas Instruments",
+      "library": [
+        "74xGxx",
+        "74AHCT1G125"
+      ],
+      "pins": {
+        "1": [
+          "",
+          "input"
+        ],
+        "2": [
+          "",
+          "input"
+        ],
+        "3": [
+          "GND",
+          "power_in"
+        ],
+        "4": [
+          "",
+          "tri_state"
+        ],
+        "5": [
+          "VCC",
+          "power_in"
+        ]
+      }
+    },
+    "U5": {
+      "value": "74AHCT1G125",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "mpn": "SN74AHCT1G125DBVR",
+      "manufacturer": "Texas Instruments",
+      "library": [
+        "74xGxx",
+        "74AHCT1G125"
+      ],
+      "pins": {
+        "1": [
+          "",
+          "input"
+        ],
+        "2": [
+          "",
+          "input"
+        ],
+        "3": [
+          "GND",
+          "power_in"
+        ],
+        "4": [
+          "",
+          "tri_state"
+        ],
+        "5": [
+          "VCC",
+          "power_in"
+        ]
+      }
+    },
+    "C13": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "KGM15ACG1H104KT",
+      "manufacturer": "Kyocera AVX",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "C14": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "KGM15ACG1H104KT",
+      "manufacturer": "Kyocera AVX",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "D4": {
+      "value": "SS34",
+      "footprint": "LoRa_Boat_Controller_V2:D_SMC",
+      "mpn": "SS34-E3/57T",
+      "manufacturer": "Vishay",
+      "library": [
+        "Device",
+        "D_Schottky"
+      ],
+      "pins": {
+        "1": [
+          "K",
+          "passive"
+        ],
+        "2": [
+          "A",
+          "passive"
+        ]
+      }
+    },
+    "D9": {
+      "value": "SS34",
+      "footprint": "LoRa_Boat_Controller_V2:D_SMC",
+      "mpn": "SS34-E3/57T",
+      "manufacturer": "Vishay",
+      "library": [
+        "Device",
+        "D_Schottky"
+      ],
+      "pins": {
+        "1": [
+          "K",
+          "passive"
+        ],
+        "2": [
+          "A",
+          "passive"
+        ]
+      }
+    }
+  },
+  "candidate_memberships": {
+    "U4": {
+      "4": "/Actuators/ESC_SIG_5V",
+      "2": "/PWM_ESC_PC6",
+      "1": "GND",
+      "3": "GND",
+      "5": "/Power/+5V_BUCK"
+    },
+    "U5": {
+      "4": "/Actuators/SERVO_SIG_5V",
+      "2": "/PWM_SERVO_PA8",
+      "1": "GND",
+      "3": "GND",
+      "5": "/Power/+5V_BUCK"
+    },
+    "C13": {
+      "2": "GND",
+      "1": "/Power/+5V_BUCK"
+    },
+    "C14": {
+      "2": "GND",
+      "1": "/Power/+5V_BUCK"
+    },
+    "D4": {
+      "2": "/Power/+5V_BUCK",
+      "1": "VSERVO"
+    },
+    "D9": {
+      "2": "/BEC_IN",
+      "1": "VSERVO"
+    }
+  },
+  "expected_counts": {
+    "baseline_components": 119,
+    "candidate_components": 119,
+    "baseline_pins": 398,
+    "candidate_pins": 398,
+    "outside_boundary_pins": 380
+  },
+  "expected_pin_deltas": [
+    {
+      "reference": "C13",
+      "pin": "1",
+      "before": "VSERVO",
+      "after": "/Power/+5V_BUCK"
+    },
+    {
+      "reference": "C14",
+      "pin": "1",
+      "before": "VSERVO",
+      "after": "/Power/+5V_BUCK"
+    },
+    {
+      "reference": "U4",
+      "pin": "5",
+      "before": "VSERVO",
+      "after": "/Power/+5V_BUCK"
+    },
+    {
+      "reference": "U5",
+      "pin": "5",
+      "before": "VSERVO",
+      "after": "/Power/+5V_BUCK"
+    }
+  ],
+  "expected_identity_changes": [
+    "D4",
+    "D9"
+  ],
+  "source_sheets_preserved": [
+    "Buck3V3.kicad_sch",
+    "Buck5V.kicad_sch"
+  ],
+  "live_electrical_delta": 0,
+  "pcb_updated": false,
+  "qualified_for_power": false
+}

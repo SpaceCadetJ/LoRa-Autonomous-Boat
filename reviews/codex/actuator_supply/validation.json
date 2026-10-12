@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "revision": "ACT-01",
+  "status": "pass_isolated_schematic_only",
+  "inputs": {
+    "baseline_netlist": {
+      "path": "reviews/codex/buck_5v/native/netlist.xml",
+      "sha256": "1315d9e9248a898d92521a6ed592720e0c73df91125ea854887ba77d5cdc4690"
+    },
+    "baseline_erc": {
+      "path": "reviews/codex/buck_5v/native/erc.json",
+      "sha256": "620f6f6b43cfaf93cd8a5aba23f4f85a347c973c3b27d04de78a6657cbaafddc"
+    },
+    "candidate_netlist": {
+      "path": "reviews/codex/actuator_supply/native/netlist.xml",
+      "sha256": "79dffb6bab000cd6c935d866e6216529e04978133ce83f5f192c62b9446717ec"
+    },
+    "candidate_erc": {
+      "path": "reviews/codex/actuator_supply/native/erc.json",
+      "sha256": "cfde9c4a6dd8aaba8566f19dc7241af6b8b203702a3e7781b30c0e6aa803c0b0"
+    },
+    "expected_contract": {
+      "path": "reviews/codex/actuator_supply/expected_contract.json",
+      "sha256": "511cc3ebd317a4400676d9454443a036f526777484dc455ab323706d08fe7b26"
+    },
+    "population_contract": {
+      "path": "reviews/codex/actuator_supply/population_contract.json",
+      "sha256": "ef86bd0df974914fd2cb103b759cea96bdc8dc8578dbc32414b9fe3afbd4a918"
+    },
+    "parser": {
+      "path": "reviews/codex/imu_interface/verify_candidate.py",
+      "sha256": "14d81fa62be5565c35674438a81d48d0922080ccbcfa0529aef5adb89c48cfb6"
+    },
+    "verifier": {
+      "path": "reviews/codex/actuator_supply/verify_candidate.py",
+      "sha256": "acec9d1567622580399df1663fe5cddb56effcd5a307421f0e6668a730815538"
+    },
+    "baseline_source_Buck3V3.kicad_sch": {
+      "path": "reviews/codex/buck_5v/source/hardware/kicad_v2/Buck3V3.kicad_sch",
+      "sha256": "a309488849b86e0488de886b36ceeb68bc7bd54a4ab99060558d84624c509829"
+    },
+    "candidate_source_Buck3V3.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/Buck3V3.kicad_sch",
+      "sha256": "a309488849b86e0488de886b36ceeb68bc7bd54a4ab99060558d84624c509829"
+    },
+    "baseline_source_Buck5V.kicad_sch": {
+      "path": "reviews/codex/buck_5v/source/hardware/kicad_v2/Buck5V.kicad_sch",
+      "sha256": "27f5604705c6acb110876ad85102404f3cd060e41b7d23b14ba1e6d2f048ee5f"
+    },
+    "candidate_source_Buck5V.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/Buck5V.kicad_sch",
+      "sha256": "27f5604705c6acb110876ad85102404f3cd060e41b7d23b14ba1e6d2f048ee5f"
+    }
+  },
+  "electrical_delta": {
+    "baseline_components": 119,
+    "candidate_components": 119,
+    "baseline_physical_pins": 398,
+    "candidate_physical_pins": 398,
+    "removed_components": [],
+    "added_components": [],
+    "updated_component_identities": [
+      "D4",
+      "D9"
+    ],
+    "master_schematic_added_dnp_refs": [
+      "D4",
+      "D9"
+    ],
+    "removed_physical_pins": 0,
+    "added_physical_pins": 0,
+    "preserved_existing_pin_memberships": 394,
+    "preserved_outside_boundary_pin_memberships": 380,
+    "existing_pin_deltas": [
+      {
+        "reference": "C13",
+        "pin": "1",
+        "before": "VSERVO",
+        "after": "/Power/+5V_BUCK"
+      },
+      {
+        "reference": "C14",
+        "pin": "1",
+        "before": "VSERVO",
+        "after": "/Power/+5V_BUCK"
+      },
+      {
+        "reference": "U4",
+        "pin": "5",
+        "before": "VSERVO",
+        "after": "/Power/+5V_BUCK"
+      },
+      {
+        "reference": "U5",
+        "pin": "5",
+        "before": "VSERVO",
+        "after": "/Power/+5V_BUCK"
+      }
+    ],
+    "added_net_names": [],
+    "removed_net_names": [],
+    "candidate_part_identity_contract": "pass",
+    "physical_pin_completeness_and_uniqueness": "pass",
+    "all_existing_sheet_paths_and_native_pin_metadata_preserved": true
+  },
+  "native_erc": {
+    "baseline": {
+      "kicad_version": "9.0.7",
+      "date": "2026-10-12T03:25:59-0500",
+      "errors": 0,
+      "warnings": 1,
+      "exclusions": 0,
+      "violations": [
+        {
+          "sheet": "/Navigation/",
+          "severity": "warning",
+          "type": "pin_to_pin",
+          "description": "Pins of type Bidirectional and Power output are connected",
+          "items": [
+            "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+            "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+          ]
+        }
+      ]
+    },
+    "candidate": {
+      "kicad_version": "9.0.7",
+      "date": "2026-10-12T04:19:14-0500",
+      "errors": 0,
+      "warnings": 1,
+      "exclusions": 0,
+      "violations": [
+        {
+          "sheet": "/Navigation/",
+          "severity": "warning",
+          "type": "pin_to_pin",
+          "description": "Pins of type Bidirectional and Power output are connected",
+          "items": [
+            "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+            "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+          ]
+        }
+      ]
+    }
+  },
+  "population_contract": {
+    "status": "pass_proposed_variants_only",
+    "variants": {
+      "BEC_ONLY": {
+        "D4": "DNP",
+        "D9": "POPULATE"
+      },
+      "ONBOARD": {
+        "D4": "POPULATE",
+        "D9": "DNP"
+      }
+    },
+    "dual_population_allowed": false,
+    "default_released_variant": null,
+    "base_schematic_dnp_refs": [
+      "D4",
+      "D9"
+    ],
+    "all_parts_held": true,
+    "procurement_approved": false,
+    "hardware_tested": false
+  },
+  "preserved_converter_source_sha256": {
+    "Buck3V3.kicad_sch": "a309488849b86e0488de886b36ceeb68bc7bd54a4ab99060558d84624c509829",
+    "Buck5V.kicad_sch": "27f5604705c6acb110876ad85102404f3cd060e41b7d23b14ba1e6d2f048ee5f"
+  },
+  "scope": "isolated native part/pin comparison and proposed exclusive population checks",
+  "pcb_updated": false,
+  "live_circuit_updated": false,
+  "hardware_tested": false,
+  "qualified_for_power": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "limitations": [
+    "Rechecks captured native files; does not run KiCad or independently establish whole-project source/export freshness.",
+    "Population contract is a proposal, not a released assembly or proof of the physically fitted configuration.",
+    "ERC and contract agreement do not qualify transient, leakage, thermal, backdrive, load or startup behavior.",
+    "Both converters and all other input-stage, ADC and separate IMU2 integration gates remain outside this amendment."
+  ]
+}

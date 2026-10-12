@@ -132,3 +132,13 @@ Root claims reviews/codex/buck_5v/** and current viewer/application/portfolio/ha
 ## BUCK5-A1 review checkpoint — 2026-10-12 UTC
 
 All second-converter child write scopes are released after native-contract, numerical and package review. Root closes viewer/guide/CI publication and records the confirmed D4/D9 SMC/SMA finding in existing procurement holds plus derived review exports. Live CAD/copper/BOM source/firmware, V1 outputs, prior packets and both unrelated tool edits remain unchanged. Next scope follows buck_5v/README.md: isolated buffer/OR-ing supply correction before full input-feed and combined IMU2 integration. No live PCB replacement, primary generation/routing or hardware action.
+
+## Actuator supply claim - 2026-10-12 UTC
+
+Root claims reviews/codex/actuator_supply/** and current viewer/application/portfolio/CI integration for an isolated BUCK5-A1-derived buffer rail and diode population amendment at c3c38bd. Preserve both converter source sheets, all live CAD/copper/firmware/ordering and older packets. Child imu_candidate_validator writes only verify_candidate.py/test_candidate.py; input_protection_review and power_native_review initially review primary sources read-only. No primary generator/router, branch change, orders or hardware access. Preserve both unrelated tool edits. Exact expected pin/identity delta precedes native export.
+
+ACT-01 scope update: the new unconfirmed C11 identity finding is recorded in current procurement holds and derived review exports. Source BOM/CAD and V1 outputs remain preserved; no part is released for ordering.
+
+## ACT-01 review checkpoint - 2026-10-12 UTC
+
+All child write scopes are released. Root closes viewer, guide, CI and selective publication of the isolated buffer supply/population candidate and the C11 procurement hold. Exact electrical delta, original ERC warning, 31 tests and remaining limits are recorded in actuator_supply/README.md and review_notes.json. Live CAD/copper/source BOM/firmware, V1 outputs, older packets and unrelated tool edits remain unchanged. Next bounded task is default-disabled enable and sequencing on a new copy; no hardware or primary generation/routing action.

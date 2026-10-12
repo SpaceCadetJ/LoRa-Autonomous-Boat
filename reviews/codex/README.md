@@ -1,5 +1,9 @@
 # Start here: Codex review checkpoint
 
+## Current actuator packet - ACT-01, 2026-10-12
+
+The [buffer supply and population review](actuator_supply/README.md) moves exactly four buffer/bypass pins to the dedicated 5 V converter, preserves both converter sheets and adds exact SMC diode identities with mutually exclusive BEC_ONLY/ONBOARD proposals. All 380 outside-boundary pins are preserved; no new ERC findings. A new C11 identity hold changes V2 ordering to 68 candidate / 39 held / 11 feature references, 35 candidate lines. Next: default-disabled buffer enable and power sequencing, followed by reservoir/transient and remaining integration gates. This supersedes older next-task text below.
+
 ## Current converter packet — BUCK5-A1, 2026-10-12
 
 The [5 V converter and shared-feed review](buck_5v/README.md) now includes an annotated native LM76003 sheet: 119 components, 398 physical pins, all 339 outside-boundary pins preserved, zero ERC errors and the original warning. The first 3.3 V sheet is byte-identical. New SS34 SMC/SMA package findings are added to existing ordering holds; the 7 V full-load feed remains unqualified. Next: isolate the buffer supply from VSERVO and resolve exact OR-ing parts and supply population variants, then input-feed/leakage/damping and remaining integration gates. This entry supersedes older next-task text below.

@@ -65,7 +65,8 @@
       "D2": "PE-03: Schematic 10 V and PCB 12 V values disagree. Qualify actual gate clamp and assembly identity. See reviews/codex/power_envelope/README.md.",
       "R1": "Gate clamp bias and transient response are unqualified for Q1 VGS limit. See reviews/codex/power_envelope/README.md.",
       "C2": "50 V input capacitor requires coordination with TVS clamp and actual surge waveform. See reviews/codex/power_envelope/README.md.",
-      "C10": "50 V input capacitor requires coordination with TVS clamp and actual surge waveform. See reviews/codex/power_envelope/README.md."
+      "C10": "50 V input capacitor requires coordination with TVS clamp and actual surge waveform. See reviews/codex/power_envelope/README.md.",
+      "C11": "ACT-01: Exact Panasonic EEE-FK1A101P identity could not be confirmed in the current FK manufacturer catalog/product evidence. Do not borrow another part's land, ripple or lifetime rating. Resolve exact orderable identity, footprint, effective reservoir behavior and reverse-voltage/transient limits; see reviews/codex/actuator_supply/README.md."
     },
     "population_options": {
       "onboard_5v": {

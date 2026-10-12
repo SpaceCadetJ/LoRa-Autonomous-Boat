@@ -36,7 +36,8 @@
     "reverse_leakage": "reviews/codex/reverse_leakage/README.md",
     "input_capacitors": "reviews/codex/input_capacitors/README.md",
     "buck_3v3": "reviews/codex/buck_3v3/README.md",
-    "buck_5v": "reviews/codex/buck_5v/README.md"
+    "buck_5v": "reviews/codex/buck_5v/README.md",
+    "actuator_supply": "reviews/codex/actuator_supply/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -142,6 +143,11 @@
       "path": "reviews/codex/buck_5v/v2_buck_5v.svg",
       "kind": "verified_schematic_candidate",
       "caption": "BUCK5-A1: isolated 5 V converter and documented shared-feed limits; hardware unqualified."
+    },
+    {
+      "path": "reviews/codex/actuator_supply/v2_actuator_supply.svg",
+      "kind": "verified_schematic_candidate",
+      "caption": "ACT-01: separate buffer supply and exclusive source population proposals; enable/sequencing and hardware acceptance pending."
     }
   ],
   "validated_results": [
@@ -297,6 +303,16 @@
         "reviews/codex/buck_5v/analysis.json",
         "reviews/codex/buck_5v/README.md"
       ]
+    },
+    {
+      "claim": "ACT-01 verifies four buffer/bypass rail moves, exact SMC diode identities, master DNP holds, 380 outside pins and both converter sources preserved. 31 contract/population tests pass; live board and physical acceptance remain unchanged.",
+      "classification": "verified_native_schematic_candidate_not_integrated",
+      "evidence": [
+        "reviews/codex/actuator_supply/validation.json",
+        "reviews/codex/actuator_supply/native_manifest.json",
+        "reviews/codex/actuator_supply/population_contract.json",
+        "reviews/codex/actuator_supply/README.md"
+      ]
     }
   ],
   "current_native_findings": {
@@ -325,7 +341,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Separate the buffer supply from VSERVO and resolve exact OR-ing parts/population; close 6S input-feed, reservoir/leakage/damping, ADC and combined IMU2 gates before routing.",
+    "Implement default-disabled buffer enable and supply sequencing; resolve C11/VSERVO reservoir/transients, full 6S input-feed/leakage/damping, ADC and combined IMU2 before routing.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",
     "Measure voice quality, airtime and RC coexistence before selecting handheld radio, codec or hardware."

@@ -1,0 +1,14 @@
+{
+  "hardware/manufacturing/v1/assembly_bottom.svg": "f4d066153f00cafadc777f27dd1513486160551fdf5873d6d0c38548cd9669c5",
+  "hardware/manufacturing/v1/assembly_top.svg": "0f82ae013347e5ca2f8535dc423c3c7416d5bbccfa50b0dc98b082a8e83dad97",
+  "hardware/manufacturing/v1/bom_review.csv": "38cc0da580436ed76bdab009337d4c94e44d0a701d6960ae54af556940fb4b72",
+  "hardware/manufacturing/v1/distributor_candidates_1board.csv": "a41e8323001eaef5d80c21df634122dbf3520edd9f50ad634de2e50f7ce6ffd5",
+  "hardware/manufacturing/v1/distributor_candidates_fleet5.csv": "949797b0f880c10051786e8880a5779b0f03f77ee2ffd224fd51e11b3dfef807",
+  "hardware/manufacturing/v1/distributor_candidates_selected.csv": "a41e8323001eaef5d80c21df634122dbf3520edd9f50ad634de2e50f7ce6ffd5",
+  "hardware/manufacturing/v1/external_parts_review.csv": "2f1bbd1592a5322179c89d75751d5f1a397c5b6fde0597eb722b4d8bc83c5d3a",
+  "hardware/manufacturing/v1/holds.csv": "c99b48f0af5a1619c5088bb380b2e2482c1db27c04cd5ec77e79f076745f9b3d",
+  "hardware/manufacturing/v1/orientation_review.csv": "018cf7a051d5f5f281dae5714c25a658b23077cb708e04e89874adfd7fabdb4b",
+  "hardware/manufacturing/v1/pcb_assembly_data.json": "2a9b50e570f741cd75962ab08293fef4f8bf0d61a2bca9aed1f6699fa8f36570",
+  "hardware/manufacturing/v1/positions_review.csv": "d2f02585937be0d0688d2d8a286798ae3349231ca98e994dd00112afba22ff1f",
+  "hardware/manufacturing/v1/summary.json": "fe9738daef80251b4ed94a0dc272d15ae8fbe1b6999467fa52b35aed9bc6a186"
+}

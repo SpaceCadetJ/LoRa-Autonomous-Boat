@@ -84,3 +84,7 @@ The [editable first converter](../../reviews/codex/buck_3v3/README.md) supplies 
 ## 5 V converter and actuator-supply checkpoint — BUCK5-A1
 
 The [5 V guide](../../reviews/codex/buck_5v/README.md) now separates converter capability from whole-board feed capacity. Its 7 V battery model needs about 2.66 A for both full nominal rail loads; the current feed does not support an accepted full-load claim. External-BEC and on-board variants require explicit population and voltage contracts. D4/D9 have an SMC/SMA identity mismatch, and U4/U5 remain on the unqualified VSERVO rail. Existing ordering/assembly/power/flashing holds remain. Next is the buffer/OR-ing correction, preserving both converter candidates and 6S. No new operational firmware or physical test is provided.
+
+## Actuator supply checkpoint - ACT-01
+
+The [buffer and source-variant guide](../../reviews/codex/actuator_supply/README.md) provides connector roles and two mutually exclusive proposed diode populations. Buffer VCC comes from the onboard 5 V converter in both variants; BEC-only actuator energy does not mean BEC-powered logic. Both positions default DNP in the review master. Native checks establish the four-pin correction only; default-disabled enable, startup/off-state and actual actuator qualification remain next. C11 identity is newly on hold, leaving 68 candidate / 39 held references. No powered-use or flashing procedure is released by this candidate.

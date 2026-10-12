@@ -92,3 +92,7 @@ The [annotated capacitor network](../../reviews/codex/input_capacitors/v2_input_
 ## Second converter and power-budget milestone — 2026-10-12
 
 [BUCK5-A1](../../reviews/codex/buck_5v/README.md) adds the editable LM76003 5 V candidate, [annotated SVG](../../reviews/codex/buck_5v/v2_buck_5v.svg), exact part/pin contract and a source-loss model. Native validation preserves all 339 outside-boundary pins and the first converter. The review also identifies an output-diode package mismatch and quantifies why the current low-voltage feed cannot promise both full rail loads. Present this as an engineering review milestone; PCB integration, assembly and hardware performance remain unqualified.
+
+## Latest actuator supply candidate - ACT-01
+
+The [annotated actuator revision](../../reviews/codex/actuator_supply/README.md) separates buffer power from servo energy, preserves both reviewed converters and defines explicit BEC/onboard population proposals. Independent checks verify four pin changes, two exact diode identities, both master DNP markers and 380 untouched outside-boundary pins; 31 mutation tests pass. Live PCB and operational firmware are unchanged. Enable/sequencing, load and fabrication acceptance remain open.
