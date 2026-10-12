@@ -1,0 +1,170 @@
+{
+  "source": "reviews/codex/input_stage/native/netlist.xml",
+  "source_sha256": "980cda02e5af967db4746e246cdc1f448ce605b536868360f0f948032e27986e",
+  "captured_parts": {
+    "C36": {
+      "value": "100nF",
+      "mpn": "KGM15ACG1H104KT",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    "R31": {
+      "value": "47k",
+      "mpn": "RC0603FR-0747KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    "R32": {
+      "value": "6.8k",
+      "mpn": "RC0603FR-076K8L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    "R33": {
+      "value": "0.02R 1W",
+      "mpn": "CRA2512-FZ-R020ELF",
+      "footprint": "Resistor_SMD:R_2512_6332Metric"
+    },
+    "U8": {
+      "value": "INA180A1",
+      "mpn": "INA180A1IDBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5"
+    },
+    "U1": {
+      "value": "STM32F446RET6",
+      "mpn": "STM32F446RET6",
+      "footprint": "Package_QFP:LQFP-64_10x10mm_P0.5mm"
+    },
+    "C1": {
+      "value": "47uF 63V",
+      "mpn": "EEEFK1J470P",
+      "footprint": "LoRa_Boat_Controller_V2:CP_Elec_8x10.5"
+    },
+    "C2": {
+      "value": "1uF 100V",
+      "mpn": "GRM32ER72A105KA01L",
+      "footprint": "LoRa_Boat_Controller_V2:C_1210_3225Metric"
+    },
+    "D12": {
+      "value": "STPS3H100U",
+      "mpn": "STPS3H100U",
+      "footprint": "LoRa_Boat_Controller_V2:D_SMB"
+    }
+  },
+  "captured_nets": {
+    "/ISENSE": [
+      {
+        "ref": "C37",
+        "pin": "1",
+        "function": null
+      },
+      {
+        "ref": "U1",
+        "pin": "20",
+        "function": "PA4"
+      },
+      {
+        "ref": "U8",
+        "pin": "1",
+        "function": null
+      }
+    ],
+    "/Power/VIN_BUCK": [
+      {
+        "ref": "C10",
+        "pin": "1",
+        "function": null
+      },
+      {
+        "ref": "R2",
+        "pin": "1",
+        "function": null
+      },
+      {
+        "ref": "R33",
+        "pin": "2",
+        "function": null
+      },
+      {
+        "ref": "R6",
+        "pin": "1",
+        "function": null
+      },
+      {
+        "ref": "U2",
+        "pin": "2",
+        "function": "VIN"
+      },
+      {
+        "ref": "U3",
+        "pin": "3",
+        "function": "VIN"
+      },
+      {
+        "ref": "U8",
+        "pin": "4",
+        "function": "-"
+      }
+    ],
+    "/VBAT_SENSE": [
+      {
+        "ref": "C36",
+        "pin": "1",
+        "function": null
+      },
+      {
+        "ref": "R31",
+        "pin": "2",
+        "function": null
+      },
+      {
+        "ref": "R32",
+        "pin": "1",
+        "function": null
+      },
+      {
+        "ref": "U1",
+        "pin": "16",
+        "function": "PA2"
+      }
+    ],
+    "VIN_RAW": [
+      {
+        "ref": "C1",
+        "pin": "1",
+        "function": null
+      },
+      {
+        "ref": "C2",
+        "pin": "1",
+        "function": null
+      },
+      {
+        "ref": "D12",
+        "pin": "1",
+        "function": "K"
+      },
+      {
+        "ref": "R31",
+        "pin": "1",
+        "function": null
+      },
+      {
+        "ref": "R33",
+        "pin": "1",
+        "function": null
+      },
+      {
+        "ref": "TP5",
+        "pin": "1",
+        "function": "1"
+      },
+      {
+        "ref": "U8",
+        "pin": "3",
+        "function": "+"
+      }
+    ]
+  },
+  "scope": "INPUT-A1 existing connectivity; proposed replacement parts and future converters are not installed",
+  "live_electrical_delta": 0,
+  "candidate_electrical_delta": 0,
+  "hardware_tested": false
+}

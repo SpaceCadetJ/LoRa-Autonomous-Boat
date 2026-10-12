@@ -67,3 +67,7 @@ Use the [interactive power budget](../../reviews/codex/power_topology/load_budge
 ## Input-stage circuit candidate — 2026-10-12
 
 [INPUT-A1](../../reviews/codex/input_stage/README.md) now provides a wired, native-checked input boundary with exact held candidate parts. It preserves 2S–6S and starts with the external-BEC load variant. The series diode adds loss excluded from the earlier calculator. This is not a powered-use revision: discharged-output reverse leakage needs a circuit disposition, and both buck cells, sensing/ADC, buffer and IMU corrections still need integration. Live ordering and flashing procedures remain gated.
+
+## Reversal and startup gate — 2026-10-12
+
+The [reverse-leakage review](../../reviews/codex/reverse_leakage/README.md) confirms that the polarized INPUT-A1 reservoir cannot be accepted for a negative rail, even when a converter's absolute limit is respected. [Interactive cases](../../reviews/codex/reverse_leakage/index.html) also distinguish ADC conversion limits from digital pin limits during startup. No application wiring, ordering or flashing gate is cleared. Next circuit work must select the reservoir/buck bypass and close the full leakage and power-sequencing budget.

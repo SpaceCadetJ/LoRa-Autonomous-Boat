@@ -1,0 +1,31 @@
+{
+  "scope": "Local analytical UI and workspace navigation; no circuit or hardware test",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "leakage_cases": 4,
+      "adc_cases": 6,
+      "graph_points_per_case": 81,
+      "acceptance_hold_visible": true,
+      "workspace_guide_and_tool_link": true,
+      "horizontal_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "leakage_cases": 4,
+      "adc_cases": 6,
+      "graph_points_per_case": 81,
+      "acceptance_hold_visible": true,
+      "workspace_guide_and_tool_link": true,
+      "horizontal_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

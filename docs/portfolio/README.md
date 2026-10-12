@@ -75,3 +75,7 @@ The [annotated comparison](../../reviews/codex/power_topology/v2_power_topologie
 ## Native input-stage implementation — 2026-10-12
 
 [INPUT-A1](../../reviews/codex/input_stage/README.md) advances the power study into an editable, wired schematic with specific fuse, TVS, diode and capacitor candidates. Native comparison verifies the exact delta and preserves all 344 connections outside the input section; ERC adds no findings. Fourteen tests reject wiring and identity regressions. The [drawing](../../reviews/codex/input_stage/v2_input_stage.svg) is an isolated engineering candidate: it is not routed, integrated, power-ready or fabrication-approved. Reverse-leakage protection and thermal/surge qualification remain open.
+
+## Reverse-leakage design disposition — 2026-10-12
+
+The [interactive boundary review](../../reviews/codex/reverse_leakage/index.html) shows why a component-level calculation is insufficient for board acceptance. Manufacturer review identified the polarized reservoir's zero-reverse-voltage requirement; a tested analytical model compares proposed leakage budgets and ADC startup limits. [Sources and restart contract](../../reviews/codex/reverse_leakage/README.md) preserve the distinction between calculated cases and verified hardware. INPUT-A1 and the live board remain unchanged.

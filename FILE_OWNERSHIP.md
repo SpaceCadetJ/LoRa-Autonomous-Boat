@@ -97,3 +97,11 @@ Input-stage child power_native_review now owns only reviews/codex/input_stage/ve
 ## INPUT-A1 review checkpoint - 2026-10-12 UTC
 
 The input-stage native candidate, fourteen mutation tests, independent claim review and desktop/phone viewer checks are complete. Child write scopes are released. Root closes selective publication of this isolated study and current viewer/guide records. All parts remain held; live CAD/copper/BOM/firmware are unchanged. The next bounded circuit task is an explicit negative-output/reverse-leakage amendment, as recorded in input_stage/README.md. Preserve INPUT-A1 and both unrelated dirty tools.
+
+## Reverse-leakage boundary claim - 2026-10-12 UTC
+
+Root claims reviews/codex/reverse_leakage/** and current viewer/guide/portfolio/check/handoff integration for a bounded negative-rail design disposition. No CAD amendment is accepted before coupled leakage, polarized capacitor and downstream startup limits are addressed. Expected live/candidate electrical and copper delta is zero; preserve INPUT-A1, all prior packets and unrelated v1_design.py / route_v2.py edits. Child power_native_review owns only reverse_leakage/model.py and test_model.py; input_protection_review remains read-only. No primary generators, routing, hardware access or ordering.
+
+## Reverse-leakage review checkpoint - 2026-10-12 UTC
+
+The bounded source review, seven analytical tests and desktop/phone scenario checks are complete. Child write scopes are released. Root closes selective publication; INPUT-A1 and all live CAD/copper/BOM/firmware remain unchanged. No new native or hardware acceptance is claimed. Next: reservoir and first-buck input-network selection, with complete leakage and sequencing constraints as recorded in reverse_leakage/README.md. Preserve both unrelated dirty tools.

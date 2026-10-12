@@ -175,6 +175,24 @@ def main():
         assert part["quantity"] == 1 and part["status"] == "held_candidate_only_not_order_approved"
     assert all(item["passed"] for item in read_json(input_root + "coordinate_bounds.json").values())
     print("PASS input-stage native delta, held identities and preserved live CAD; no hardware acceptance")
+    leakage_root = "reviews/codex/reverse_leakage/"
+    leakage = read_json(leakage_root + "packet_manifest.json")
+    check_hashes(leakage["input_sha256"], "reverse-leakage unchanged evidence inputs")
+    check_hashes(leakage["artifact_sha256"], "reverse-leakage analytical review artifacts")
+    for module_name, filename, function, record in [
+            ("leakage_capture", "capture.py", "collect", "capture.json"),
+            ("leakage_model", "model.py", "study", "analysis.json")]:
+        spec = importlib.util.spec_from_file_location(module_name, ROOT / leakage_root / filename)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        assert getattr(module, function)() == read_json(leakage_root + record)
+    analysis = read_json(leakage_root + "analysis.json")
+    assert analysis["hardware_accepted"] is False and analysis["capacitor_reverse_accepted"] is False
+    assert analysis["native_proofs_applicable"] is False
+    assert leakage["live_electrical_delta"] == 0 and leakage["candidate_electrical_delta"] == 0
+    assert leakage["hardware_tested"] is False and leakage["fabrication_approved"] is False
+    assert all(c["full_circuit_current_bound_verified"] is False for c in analysis["dc_cases"])
+    print("PASS reverse-leakage capture and analytical cases; capacitor and hardware acceptance remain blocked")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -186,7 +204,7 @@ def main():
     pages += list((ROOT / "docs/build").glob("*.md"))
     pages += list((ROOT / "docs/applications").glob("*.md"))
     pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md", ROOT / "reviews/codex/imu_placement/README.md", ROOT / "reviews/codex/imu_bias_filter/README.md"]
-    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md"]
+    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md", ROOT / leakage_root / "README.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

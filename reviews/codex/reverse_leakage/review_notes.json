@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "date": "2026-10-12",
+  "source_revision": "95863f1469ef5a04fcb1b229163d2d03ede2b0a4",
+  "status": "reviewed_analytical_disposition_only",
+  "independent_reviews": [
+    {
+      "reviewer": "input_protection_review",
+      "scope": "Primary manufacturer rectifier, resistor and polarized-capacitor guidance; final README/model/view-template claim review",
+      "result": "No material correction. C1 prohibits reverse voltage, diode-only current is not a full-circuit budget, and thermal/transient gates remain open.",
+      "files_written": []
+    },
+    {
+      "reviewer": "power_native_review",
+      "scope": "Primary future converter/sense/MCU limits and independently authored analytical model/rejection tests",
+      "result": "Buck VIN/EN absolute floor is -0.3 V; INA281 input and supply limits differ; ADC window and FT absolute check must remain separate. Seven tests passed.",
+      "files_written": [
+        "model.py",
+        "test_model.py"
+      ]
+    }
+  ],
+  "root_verification": {
+    "model_tests_passed": 7,
+    "captured_boundary_parts": 9,
+    "captured_boundary_nets": 4,
+    "analytical_capture_matches": true,
+    "view_render_matches_model": true,
+    "browser_record": "viewer_check.json",
+    "browser_leakage_cases_per_viewport": 4,
+    "browser_adc_cases_per_viewport": 6,
+    "browser_graph_points_per_case": 81,
+    "viewports": [
+      "1440x1050",
+      "390x844"
+    ],
+    "visual_inspection": [
+      "desktop-review.png",
+      "phone-review.png"
+    ],
+    "visual_result": "Legible scenario controls, voltage comparisons, graph/limit legend and open-gate labels; no observed overlaps or horizontal overflow",
+    "live_cad_hashes_preserved": 52,
+    "prior_input_a1_packet_preserved": true,
+    "preexisting_dirty_tools_preserved": true
+  },
+  "new_finding": {
+    "component": "C1 EEEFK1J470P",
+    "source": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/DME0000COL75.pdf#page=4",
+    "document_date": "2025-09-01",
+    "finding": "Manufacturer prohibits reverse voltage; no small-negative exception established.",
+    "consequence": "Do not accept a diode/bleeder amendment solely against the buck absolute floor."
+  },
+  "native_checks": {
+    "run_this_packet": false,
+    "reason": "Zero live and candidate schematic/PCB delta; prior native evidence preserved, no new native claim."
+  },
+  "next_smallest_task": "Select a nonpolar reservoir with the first wider-voltage buck bypass, then close complete negative-rail current and startup/protection limits before native amendment.",
+  "live_electrical_delta": 0,
+  "candidate_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "hardware_tested": false,
+  "fabrication_approved": false,
+  "hosted_ci_observed": false
+}

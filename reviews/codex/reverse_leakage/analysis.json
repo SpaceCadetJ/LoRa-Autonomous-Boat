@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "status": "analytical_disposition_only",
+  "hardware_accepted": false,
+  "capacitor_reverse_accepted": false,
+  "native_proofs_applicable": false,
+  "electrical_delta": 0,
+  "resistor": {
+    "nominal_ohm": 3300,
+    "additive_fraction": 0.043,
+    "minimum_ohm": 3158.1,
+    "maximum_ohm": 3441.8999999999996
+  },
+  "dc_cases": [
+    {
+      "name": "original_STPS_1mA_point",
+      "basis": "component_test_point",
+      "assumed_total_sink_a": 0.001,
+      "negative_output_v": -3.4418999999999995,
+      "target_margin_v": -3.3418999999999994,
+      "absolute_margin_v": -3.1418999999999997,
+      "arithmetic_target_met": false,
+      "arithmetic_above_absolute_min": false,
+      "full_circuit_current_bound_verified": false,
+      "hardware_accepted": false
+    },
+    {
+      "name": "proposed_STTH_20uA_point",
+      "basis": "component_test_point",
+      "assumed_total_sink_a": 2e-05,
+      "negative_output_v": -0.068838,
+      "target_margin_v": 0.03116200000000001,
+      "absolute_margin_v": 0.23116199999999998,
+      "arithmetic_target_met": true,
+      "arithmetic_above_absolute_min": true,
+      "full_circuit_current_bound_verified": false,
+      "hardware_accepted": false
+    },
+    {
+      "name": "hypothetical_total_25uA",
+      "basis": "assumed_total",
+      "assumed_total_sink_a": 2.5e-05,
+      "negative_output_v": -0.0860475,
+      "target_margin_v": 0.013952500000000007,
+      "absolute_margin_v": 0.2139525,
+      "arithmetic_target_met": true,
+      "arithmetic_above_absolute_min": true,
+      "full_circuit_current_bound_verified": false,
+      "hardware_accepted": false
+    },
+    {
+      "name": "illustrative_total_80uA",
+      "basis": "assumed_total_not_guaranteed_INA_off_state",
+      "assumed_total_sink_a": 8e-05,
+      "negative_output_v": -0.275352,
+      "target_margin_v": -0.17535199999999998,
+      "absolute_margin_v": 0.024648000000000003,
+      "arithmetic_target_met": false,
+      "arithmetic_above_absolute_min": true,
+      "full_circuit_current_bound_verified": false,
+      "hardware_accepted": false
+    }
+  ],
+  "power_cases": [
+    {
+      "voltage_v": 25.2,
+      "loss_w": 0.20108292960957538,
+      "allowed_w_assumed_curve": 0.8235294117647058,
+      "arithmetic_power_margin_w": 0.6224464821551304,
+      "thermal_qualified": false
+    },
+    {
+      "voltage_v": 44,
+      "loss_w": 0.6130268199233717,
+      "allowed_w_assumed_curve": 0.8235294117647058,
+      "arithmetic_power_margin_w": 0.21050259184133413,
+      "thermal_qualified": false
+    }
+  ],
+  "ideal_rc": {
+    "capacitance_f_nominal_only": 4.7e-05,
+    "resistance_ohm": 3441.8999999999996,
+    "current_a_assumed": 2.5e-05,
+    "initial_v": 0,
+    "points": [
+      {
+        "time_s": 0,
+        "voltage_v": 0.0
+      },
+      {
+        "time_s": 0.1,
+        "voltage_v": -0.03967367391656312
+      },
+      {
+        "time_s": 1,
+        "voltage_v": -0.08586963726072108
+      }
+    ],
+    "fast_dynamics_modelled": false
+  },
+  "divider_cases": [
+    {
+      "vin_v": -0.1,
+      "vdda_v": 3.3,
+      "vdd_v": 3.3,
+      "nominal_output_v": -0.012639405204460967,
+      "minimum_output_v": -0.012861904940259936,
+      "maximum_output_v": -0.012420205896461386,
+      "nominal_tau_s": 0.0005940520446096654,
+      "adc_range_arithmetic_met": false,
+      "ft_absolute_voltage_arithmetic_met": true,
+      "startup_or_injection_qualified": false
+    },
+    {
+      "vin_v": -0.1,
+      "vdda_v": 0,
+      "vdd_v": 0,
+      "nominal_output_v": -0.012639405204460967,
+      "minimum_output_v": -0.012861904940259936,
+      "maximum_output_v": -0.012420205896461386,
+      "nominal_tau_s": 0.0005940520446096654,
+      "adc_range_arithmetic_met": false,
+      "ft_absolute_voltage_arithmetic_met": true,
+      "startup_or_injection_qualified": false
+    },
+    {
+      "vin_v": 25.2,
+      "vdda_v": 3.3,
+      "vdd_v": 3.3,
+      "nominal_output_v": 3.1851301115241633,
+      "minimum_output_v": 3.129891885908269,
+      "maximum_output_v": 3.241200044945504,
+      "nominal_tau_s": 0.0005940520446096654,
+      "adc_range_arithmetic_met": true,
+      "ft_absolute_voltage_arithmetic_met": true,
+      "startup_or_injection_qualified": false
+    },
+    {
+      "vin_v": 25.2,
+      "vdda_v": 0,
+      "vdd_v": 0,
+      "nominal_output_v": 3.1851301115241633,
+      "minimum_output_v": 3.129891885908269,
+      "maximum_output_v": 3.241200044945504,
+      "nominal_tau_s": 0.0005940520446096654,
+      "adc_range_arithmetic_met": false,
+      "ft_absolute_voltage_arithmetic_met": true,
+      "startup_or_injection_qualified": false
+    },
+    {
+      "vin_v": 44,
+      "vdda_v": 3.3,
+      "vdd_v": 3.3,
+      "nominal_output_v": 5.5613382899628245,
+      "minimum_output_v": 5.464890594443009,
+      "maximum_output_v": 5.659238173714372,
+      "nominal_tau_s": 0.0005940520446096654,
+      "adc_range_arithmetic_met": false,
+      "ft_absolute_voltage_arithmetic_met": true,
+      "startup_or_injection_qualified": false
+    },
+    {
+      "vin_v": 44,
+      "vdda_v": 0,
+      "vdd_v": 0,
+      "nominal_output_v": 5.5613382899628245,
+      "minimum_output_v": 5.464890594443009,
+      "maximum_output_v": 5.659238173714372,
+      "nominal_tau_s": 0.0005940520446096654,
+      "adc_range_arithmetic_met": false,
+      "ft_absolute_voltage_arithmetic_met": false,
+      "startup_or_injection_qualified": false
+    }
+  ],
+  "limitations": [
+    "Component test points are not a proven full-circuit leakage budget.",
+    "The 2% service term and 25uA/80uA totals are declared assumptions, not measurements.",
+    "Polarized C1 is not accepted for reverse voltage; meeting the buck target does not clear it.",
+    "Ideal RC omits diode capacitance, reverse recovery, wiring inductance and converter behavior.",
+    "ADC voltage comparisons do not prove power sequencing, injection or unpowered acceptance."
+  ]
+}

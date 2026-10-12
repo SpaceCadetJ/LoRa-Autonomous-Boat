@@ -51,3 +51,5 @@ reviews/codex/power_envelope/** -text
 reviews/codex/power_topology/** -text
 
 reviews/codex/input_stage/** -text
+
+reviews/codex/reverse_leakage/** -text
