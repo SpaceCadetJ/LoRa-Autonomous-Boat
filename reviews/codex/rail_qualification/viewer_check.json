@@ -1,0 +1,44 @@
+{
+  "scope": "Local file-origin explorer and workspace checks; no circuit or hardware acceptance",
+  "input_sha256": {
+    "reviews/codex/rail_qualification/index.html": "016a07538208703fe28a22a0162c75ae0f28bf15fc7feb293dd44b4c04e0cfb5",
+    "reviews/codex/rail_qualification/index.template.html": "561e741e0ebe3bba538908bb3d2f60989f30ea57d442d4bb2e51f9aab20f7c60",
+    "reviews/codex/rail_qualification/analysis.json": "1fec3e1941d8226de02d88c85efbe786b0f5bf1d204f915e84eed1d4a3d65d0d",
+    "reviews/codex/rail_qualification/README.md": "916516fc159d4859de16343b4ba5714ea2e810214160646ec21d491b957def2a",
+    "reviews/codex/rail_qualification/v2_rail_qualification.svg": "cc205db828c8e060bdb1c35f4e8035ed4bdf7d1f212b54d5111b5063b20bd9f6",
+    "reviews/codex/rail_qualification/verify_viewer.cjs": "fce86b39378d1c75e1577e229a7771283a05eeab74b10aadc635f8bdc159ce4f",
+    "pm/index.template.html": "e7190e3636cdd0f2558bc5db9256d8853d494fda2cdb737d4ea99d61cf2bfbd0"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "rail_setting_history_cases": 8,
+      "invalid_edge_cases": 10,
+      "average_pass_remains_held": true,
+      "default_edge_fails": true,
+      "voltage_controls": true,
+      "local_links_exist": true,
+      "workspace_figure_and_guide": true,
+      "page_errors": [],
+      "horizontal_overflow": false
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "rail_setting_history_cases": 8,
+      "invalid_edge_cases": 10,
+      "average_pass_remains_held": true,
+      "default_edge_fails": true,
+      "voltage_controls": true,
+      "local_links_exist": true,
+      "workspace_figure_and_guide": true,
+      "page_errors": [],
+      "horizontal_overflow": false
+    }
+  ]
+}

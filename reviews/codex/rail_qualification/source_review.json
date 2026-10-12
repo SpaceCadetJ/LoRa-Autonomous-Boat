@@ -1,0 +1,337 @@
+{
+  "schema": 1,
+  "revision": "ACT-05",
+  "reviewed_utc_date": "2026-10-12",
+  "classification": "component_screening_not_circuit_selection",
+  "disposition": "Reject direct TPS3702CX33/CX50 selection for a universally compatible qualification boundary.",
+  "parts_selected": false,
+  "native_checks_applicable": false,
+  "hardware_accepted": false,
+  "expected_electrical_delta": 0,
+  "expected_copper_delta": 0,
+  "sources": {
+    "TPS3702": {
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps3702.pdf",
+      "revision": "SBVS251A, February 2024",
+      "sections": [
+        "4",
+        "5.3",
+        "5.5",
+        "5.6",
+        "6.3.3",
+        "6.4",
+        "7.2.1 Table 7-1",
+        "10.1.2"
+      ],
+      "exact_reviewed_parts": [
+        "TPS3702CX33DDCR",
+        "TPS3702CX50DDCR"
+      ],
+      "orderable_urls": [
+        "https://www.ti.com/product/TPS3702/part-details/TPS3702CX33DDCR",
+        "https://www.ti.com/product/TPS3702/part-details/TPS3702CX50DDCR"
+      ],
+      "pins_DDC": {
+        "1": "UV_N",
+        "2": "GND",
+        "3": "SENSE",
+        "4": "SET",
+        "5": "VDD",
+        "6": "OV_N"
+      },
+      "outputs": "Independent active-low open drains; joining them forms a common fault.",
+      "vdd_operating_V": [
+        2,
+        18
+      ],
+      "sense_operating_V": [
+        0,
+        6.5
+      ],
+      "C_window_fraction_by_SET": {
+        "high": 0.04,
+        "low": 0.09
+      },
+      "hysteresis_fraction_of_nominal_trip": {
+        "min": 0.003,
+        "typ": 0.0055,
+        "max": 0.008
+      },
+      "rounded_table_10_2_nominal_trips_V": {
+        "CX33": {
+          "nominal_rail": 3.3,
+          "SET_high": [
+            3.17,
+            3.43
+          ],
+          "SET_low": [
+            3,
+            3.6
+          ]
+        },
+        "CX50": {
+          "nominal_rail": 5,
+          "SET_high": [
+            4.8,
+            5.2
+          ],
+          "SET_low": [
+            4.55,
+            5.45
+          ]
+        }
+      },
+      "timing_nominal_only_us": {
+        "SENSE_high_to_low_propagation": 19,
+        "SENSE_low_to_high_propagation": 35,
+        "output_rise": 2.2,
+        "output_fall": 0.22,
+        "startup": 300
+      },
+      "timing_conditions": "VDD=2V, 2.5% overdrive, RPU=10k; no minimum/maximum entries.",
+      "POR_max_V": 0.8,
+      "POR_conditions": "VOL<=0.25V at 15uA",
+      "UVLO_falling_V": [
+        1.3,
+        1.7
+      ],
+      "below_UVLO_above_POR": "UV_N low; OV_N high impedance.",
+      "below_POR": "Outputs undefined.",
+      "guaranteed_VCC_zero_Ioff": null,
+      "rounding_note": "Enclose rounded and percentage nominal trips; rounding union does not resolve the accuracy-basis difference. Table 10-2 hysteresis is not the specified maximum.",
+      "threshold_accuracy_fraction_magnitude": 0.009,
+      "accuracy_presentation_difference": {
+        "section_6_3_3": "Adds accuracy percentage to nominal rail window: +/-4% becomes +/-4.9%.",
+        "table_7_1_CX33_example": {
+          "OV_V": 3.463,
+          "OV_percent": 4.94,
+          "UV_V": 3.139,
+          "UV_percent": 4.86
+        },
+        "inference": "Application example is consistent with trip-relative accuracy; source presentation does not resolve a unique guaranteed silicon bound.",
+        "published_erratum_asserted": false
+      }
+    },
+    "TPS3808": {
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+      "revision": "SBVS050N, August 2026",
+      "sections": [
+        "4",
+        "5",
+        "6.5",
+        "6.6",
+        "7.3.2",
+        "7.3.3",
+        "7.3.4",
+        "7.4"
+      ],
+      "exact_reviewed_part": "TPS3808G01DBVR",
+      "orderable_url": "https://www.ti.com/product/TPS3808/part-details/TPS3808G01DBVR",
+      "pins_DBV": {
+        "1": "RESET_N",
+        "2": "GND",
+        "3": "MR_N",
+        "4": "CT",
+        "5": "SENSE",
+        "6": "VDD"
+      },
+      "vdd_operating_full_temperature_V": [
+        1.7,
+        6.5
+      ],
+      "sense_G01_nominal_V": 0.405,
+      "sense_G01_accuracy_fraction": 0.02,
+      "reset_output": "Open drain; asserted by low SENSE or MR, released after both recover and delay expires.",
+      "MR_logic_ratios_of_VDD": {
+        "VIL_max": 0.3,
+        "VIH_min": 0.7
+      },
+      "MR_internal_pullup_kohm": {
+        "min": 70,
+        "typ": 90,
+        "max": null
+      },
+      "CT_open_delay_ms": {
+        "min": 12,
+        "typ": 20,
+        "max": 28
+      },
+      "CT_to_VDD_delay_ms": {
+        "min": 180,
+        "typ": 300,
+        "max": 420
+      },
+      "CT_to_VDD_connection": "40k to 200k resistor required by section 7.3.2.",
+      "timing_typical_only": {
+        "MR_pulse_us": 0.001,
+        "MR_to_RESET_ns": 150,
+        "SENSE_pulse_us": 20,
+        "SENSE_to_RESET_us": 20
+      },
+      "timing_conditions": "VDD1.7..6.5V, -40..125C, RESET100k/50pF; specified input levels/overdrive.",
+      "POR_max_V": 0.8,
+      "POR_conditions": "VOL<=0.2V at15uA; power-up note requires Trise(VDD)>=15us/V.",
+      "below_POR": "RESET undefined.",
+      "above_POR_below_operating_supply": "RESET asserted.",
+      "guaranteed_VCC_zero_Ioff": null
+    },
+    "TPS3703": {
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps3703.pdf",
+      "revision": "SBVS249B, November 2020",
+      "sections": [
+        "6",
+        "7.3",
+        "7.5",
+        "7.6",
+        "12.1"
+      ],
+      "role": "Alternative under investigation, not selected.",
+      "exact_reviewed_parts": [
+        "TPS3703A4330DSER",
+        "TPS3703A5500DSER"
+      ],
+      "orderable_urls": [
+        "https://www.ti.com/product/TPS3703/part-details/TPS3703A4330DSER",
+        "https://www.ti.com/product/TPS3703/part-details/TPS3703A5500DSER"
+      ],
+      "pins_DSE": {
+        "1": "SENSE",
+        "2": "VDD",
+        "3": "CT",
+        "4": "RESET_N",
+        "5": "GND",
+        "6": "MR_N"
+      },
+      "vdd_operating_V": [
+        1.7,
+        5.5
+      ],
+      "A_CT_open_release_ms": {
+        "min": 7,
+        "nom": 10,
+        "max": 13
+      },
+      "detect_delay_us": {
+        "nom": 15,
+        "max": 30
+      },
+      "detect_conditions": "5% threshold overdrive; VDD=1.7..5.5V, -40..125C, RESET pullup 10k/load 10pF.",
+      "MR_pulse_min_us": 1,
+      "MR_assert_delay_nominal_only_ns": 500,
+      "startup_nominal_only_us": 300,
+      "startup_note": "VDD must remain >=VDD(min) for startup plus release delay; no startup maximum specified.",
+      "limitation_inference": "Bounded step detection does not establish arbitrary near-threshold, rail-collapse or startup behavior; full window/recovery corners remain unreviewed."
+    },
+    "TPS3700": {
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+      "revision": "SBVS187G, February 2019",
+      "sections": [
+        "5",
+        "6.5",
+        "6.6",
+        "6.7"
+      ],
+      "role": "Adjustable-window alternative under investigation, not selected.",
+      "exact_reviewed_part": "TPS3700DDCR",
+      "orderable_url": "https://www.ti.com/product/TPS3700/part-details/TPS3700DDCR",
+      "pins_DDC": {
+        "1": "OUTA",
+        "2": "GND",
+        "3": "INA+",
+        "4": "INB-",
+        "5": "VDD",
+        "6": "OUTB"
+      },
+      "vdd_operating_V": [
+        1.8,
+        18
+      ],
+      "rising_threshold_mV": {
+        "min": 396,
+        "typ": 400,
+        "max": 404
+      },
+      "falling_threshold_mV": {
+        "min": 387,
+        "typ": 394.5,
+        "max": 400
+      },
+      "startup_us": {
+        "typ": 150,
+        "max": 450
+      },
+      "startup_conditions": "VDD exceeds 1.8V for specified delay before correct outputs.",
+      "input_transition_propagation_nominal_only_us": {
+        "high_to_low": 18,
+        "low_to_high": 29
+      },
+      "propagation_conditions": "VDD=5V, 10mV overdrive, RPU=10k, VOH=0.9VDD, VOL=400mV; directions refer to sense inputs, not universal fault/release.",
+      "below_POR": "Outputs undefined.",
+      "limitation_inference": "Requires divider tolerance/bias and retention review; startup maximum does not create a guaranteed detection maximum."
+    },
+    "SN74LVC1G17": {
+      "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf",
+      "revision": "SCES351Y, October 2025",
+      "sections": [
+        "4",
+        "5.3",
+        "5.8",
+        "7.1",
+        "7.3"
+      ],
+      "role": "Schmitt edge-conditioner alternative under investigation, not selected.",
+      "exact_reviewed_part": "SN74LVC1G17DBVR",
+      "orderable_url": "https://www.ti.com/product/SN74LVC1G17/part-details/SN74LVC1G17DBVR",
+      "pins_DBV": {
+        "1": "NC",
+        "2": "A",
+        "3": "GND",
+        "4": "Y",
+        "5": "VCC"
+      },
+      "vcc_operating_V": [
+        1.65,
+        5.5
+      ],
+      "input_operating_V": [
+        0,
+        5.5
+      ],
+      "propagation_ns_3V3_50pF_minus40_to125C": {
+        "min": 1.8,
+        "max": 6.5
+      },
+      "propagation_conditions": "VCC=3.3V +/-0.3V; Table 5-4 and Figure 6-2 test waveform/loading apply.",
+      "limitation_inference": "Schmitt hysteresis can condition slow inputs; output slew/loading, below-operating-supply behavior and ACT-04 event ordering still need qualification."
+    }
+  },
+  "method": {
+    "computed_results": "analysis.json",
+    "source_parameters_not_duplicate_results": true,
+    "error_basis": "Main screen follows section 6.3.3 rail-referenced error; separate trip-relative sensitivity follows the Table 7-1 example. Neither interpretation is asserted as the definitive guaranteed silicon bound.",
+    "nominal_union": "Each method encloses percentage-defined and rounded-table nominal trips before applying its own error basis; this addresses rounding only.",
+    "hysteresis": "Check recovery separately using its maximum specified magnitude. A rail may avoid new faults yet fail to release a prior fault.",
+    "regulator_inputs": [
+      "../buck_3v3/analysis.json",
+      "../buck_5v/analysis.json"
+    ],
+    "regulator_limits": "Recorded feedback/PWM screens exclude complete dynamic, aging and PFM bounds; typical no-load offset is not a worst-case addition.",
+    "rail_5V_comparison_corridor": "4.5..5.5V is a proposed signal-performance comparison corridor, not the TXU recommended operating range, an absolute maximum range or a proven board limit.",
+    "selection_conclusion": "Direct fixed-window selection remains rejected under either screened interpretation; interpretation-dependent static margins are not hardware acceptance."
+  },
+  "design_inferences": [
+    "Tight C windows overlap the recorded initial converter screens; independent trip and converter corners can cause nuisance faults.",
+    "Wide CX33 thresholds do not enforce the selected 3.0..3.6V logic timing interval.",
+    "Wide CX50 margin against the proposed 5V performance corridor depends on accuracy interpretation; neither static screen proves dynamic protection.",
+    "A release timer cannot detect faults missed by its input, nor repair unknown maximum detector latency.",
+    "Open-drain outputs require slew conditioning and leakage/loading review before ACT-04 LVC inputs.",
+    "QUAL_OK and ACK remain undriven/default low; remote readiness and command freshness are unimplemented."
+  ],
+  "acceptance_holds": [
+    "Threshold and hysteresis margins with complete regulator operating envelopes.",
+    "Guaranteed detection conditions, retained-fault duration and reset release.",
+    "Startup, fast collapse, independently missing supplies and pin backdrive.",
+    "Conditioned ACK/ARM/reset timing and complete OE/receiver stopping budget.",
+    "Actual receiver identities and independent watchdog/ready permissions."
+  ]
+}

@@ -32,6 +32,8 @@ Python tools generate and review CAD, assemble purchasing evidence and compile p
 
 ## Demonstrated results
 
+The latest [ACT-05 review](../../reviews/codex/rail_qualification/README.md) adds an interactive supervisor-window comparison, separate recovery margins and a tested signal-edge calculation. It rejects premature part selection while preserving ACT-04 as the native circuit candidate. This is analytical verification, with zero CAD change and no powered-hardware result.
+
 | Result | Evidence and scope |
 | --- | --- |
 | Fifteen grouped, annotated schematic pages | [Visual review](../../reviews/codex/professionalization/VISUAL_REVIEW.md); all pages inspected after PDF/SVG export |

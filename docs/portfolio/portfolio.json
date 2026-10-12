@@ -41,7 +41,9 @@
     "actuator_enable": "reviews/codex/actuator_enable/README.md",
     "actuator_interlock": "reviews/codex/actuator_interlock/README.md",
     "interlock_demo": "reviews/codex/actuator_interlock/index.html",
-    "actuator_latch": "reviews/codex/actuator_latch/README.md"
+    "actuator_latch": "reviews/codex/actuator_latch/README.md",
+    "rail_qualification": "reviews/codex/rail_qualification/README.md",
+    "rail_explorer": "reviews/codex/rail_qualification/index.html"
   },
   "technologies": [
     "STM32F446",
@@ -167,6 +169,11 @@
       "path": "reviews/codex/actuator_latch/v2_actuator_latch.svg",
       "kind": "isolated_schematic",
       "caption": "ACT-04 native arm latch; default-low unimplemented qualification, no PCB or hardware acceptance."
+    },
+    {
+      "path": "reviews/codex/rail_qualification/v2_rail_qualification.svg",
+      "kind": "calculated_screen",
+      "caption": "ACT-05 conditional converter/supervisor interval comparison; no circuit or measured hardware result."
     }
   ],
   "validated_results": [
@@ -360,6 +367,15 @@
         "reviews/codex/actuator_latch/native_geometry.json"
       ],
       "scope": "isolated_native_and_boolean_checks_no_hardware_release"
+    },
+    {
+      "claim": "ACT-05 tests conditional assertion/recovery arithmetic and an illustrative RC edge; fixed-window selection remains held.",
+      "classification": "analytical_screen",
+      "evidence": [
+        "reviews/codex/rail_qualification/analysis.json",
+        "reviews/codex/rail_qualification/test_model.py",
+        "reviews/codex/rail_qualification/preservation.json"
+      ]
     }
   ],
   "current_native_findings": {
@@ -388,8 +404,8 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Implement the isolated fault-dominant latch/OE gate from ACT-03, then qualify receiver observation, rail supervision and command timing before ACT-02 PCB/firmware integration.",
-    "Implement default-disabled buffer enable and supply sequencing; resolve C11/VSERVO reservoir/transients, full 6S input-feed/leakage/damping, ADC and combined IMU2 before routing.",
+    "Continue ACT-05 with an adjustable-versus-integrated window/reset comparison, bounded detection and edge conditioning; preserve ACT-04 and keep missing receiver/watchdog permissions disabled.",
+    "Qualify supply sequencing, C11/VSERVO transients, full 6S feed, leakage/damping, ADC and combined IMU2 before PCB integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",
     "Measure voice quality, airtime and RC coexistence before selecting handheld radio, codec or hardware."

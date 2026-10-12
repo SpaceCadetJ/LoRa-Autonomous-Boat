@@ -1,0 +1,27 @@
+{
+  "baseline_native_path": "reviews/codex/actuator_latch/native/netlist.xml",
+  "baseline_native_sha256": "c101893bb8c1a503f908d8b6140b60db82ebced5a0870b6658b095906f049110",
+  "checked_memberships": {
+    "/Actuators/ArmInterlock/QUAL_OK": [
+      "R42.1",
+      "U12.6",
+      "U14.6"
+    ],
+    "/Actuators/ArmInterlock/ACK": [
+      "R43.1",
+      "U12.1"
+    ],
+    "/Actuators/ACT_OE": [
+      "R40.1",
+      "U14.4",
+      "U4.6"
+    ]
+  },
+  "interpretation": "ACT-04 remains the latest native candidate; QUAL_OK and ACK have no permission driver. ACT-05 does not add one.",
+  "preserved_input_count": 174,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "qualified_for_power": false
+}

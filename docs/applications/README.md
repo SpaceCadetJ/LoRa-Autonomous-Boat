@@ -6,6 +6,8 @@ Use this project as a documented route from the existing boat controller to a re
 
 ## Current V2 design checkpoint
 
+The [ACT-05 supply-qualification screen](../../reviews/codex/rail_qualification/README.md) now documents voltage/recovery conflicts and detector/edge limits before part selection. Explore the [calculated rail intervals](../../reviews/codex/rail_qualification/index.html). No circuit or application is released; local rail validity does not establish remote receiver readiness. Next is a bounded window/reset/edge comparison, with all unimplemented permissions disabled.
+
 [ACT-04's native latch and signal path](../../reviews/codex/actuator_latch/README.md) now separate PC4 from translator OE and preserve both converters and source populations. Its exact two-pin delta passes native comparison; missing qualification and ACK sources remain default low. Receiver sensing, watchdog and startup/timing qualification remain open. ACK while armed disables in ACT-04; the [older ACT-03 demonstrator](../../reviews/codex/actuator_interlock/index.html) is not an exact circuit model. Use the [receiver worksheet](../../reviews/codex/actuator_interlock/RECEIVER_ACCEPTANCE.md) to record actual loads. Stage A remains the only V2 diagnostic; no powered application is released. The chronological checkpoints below preserve earlier decisions.
 
 ## Choose an application

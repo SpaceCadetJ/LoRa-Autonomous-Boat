@@ -1,0 +1,1084 @@
+{
+  "schema": 1,
+  "revision": "ACT-05",
+  "status": "static_component_screening_only",
+  "hardware_accepted": false,
+  "parts_selected": false,
+  "native_checks_applicable": false,
+  "expected_electrical_delta": 0,
+  "expected_copper_delta": 0,
+  "QUAL_OK_implemented": false,
+  "ACK_implemented": false,
+  "source_sha256": {
+    "reviews/codex/rail_qualification/source_review.json": "606268a8bb5c1ff3809eaf8b516f55a33231c22803248c0baac04b2a192d06cd",
+    "reviews/codex/buck_3v3/analysis.json": "c9f02370bc1b2b209af5ef41478c0bb3cbc85f2bb54cd2b248bffb6d1ab885f5",
+    "reviews/codex/buck_5v/analysis.json": "bba182e58aecb64e6b9223a90935ad881071edfb7bd4ae0da6bdeaea304db750",
+    "reviews/codex/actuator_latch/native/netlist.xml": "c101893bb8c1a503f908d8b6140b60db82ebced5a0870b6658b095906f049110",
+    "reviews/codex/actuator_latch/TIMING.md": "b86773e7fea2b3cc41f9186bc616b67ac13b1bc5488fbca982795b501edbbd1b",
+    "reviews/codex/rail_qualification/model.py": "a5b9f0f72a3a72e2b723126101b4af037fee5d6192ea4946fed85d256e847fa5"
+  },
+  "method": {
+    "main_accuracy_basis": "Section6.3.3 rail-referenced additive percentage-point screen",
+    "nominal_rounding": "Union percentage formula and Table10-2 rounded nominal trip before accuracy",
+    "hysteresis": "Table5.5 footnote2: electrical min/max fractions of nominal trip",
+    "source_presentation_limit": "Table7-1 results3.463/3.139V suggest trip-relative arithmetic; sensitivity is separate. No erratum or manufacturer guarantee is claimed.",
+    "intervals": "Closed numerical intervals; required margins strictly positive. Guaranteed bands are conditional model labels only."
+  },
+  "cases": [
+    {
+      "id": "3V3_SET_high",
+      "rail_id": "3V3",
+      "part": "TPS3702CX33DDCR",
+      "SET": "high",
+      "nominal_rail_V": 3.3,
+      "nominal_window_fraction": 0.04,
+      "nominal_trip_V": {
+        "percentage_defined": [
+          3.1679999999999997,
+          3.432
+        ],
+        "rounded_table": [
+          3.17,
+          3.43
+        ],
+        "union": {
+          "UV": [
+            3.1679999999999997,
+            3.17
+          ],
+          "OV": [
+            3.43,
+            3.432
+          ]
+        }
+      },
+      "accuracy_basis": "nominal_rail",
+      "accuracy_fraction": 0.009,
+      "hysteresis_fraction_of_nominal_trip": [
+        0.003,
+        0.008
+      ],
+      "hysteresis_V": {
+        "UV": [
+          0.009503999999999999,
+          0.02536
+        ],
+        "OV": [
+          0.01029,
+          0.027456
+        ]
+      },
+      "assert_V": {
+        "UV": [
+          3.1382999999999996,
+          3.1997
+        ],
+        "OV": [
+          3.4003,
+          3.4617
+        ]
+      },
+      "release_V": {
+        "UV": [
+          3.147804,
+          3.22506
+        ],
+        "OV": [
+          3.372844,
+          3.45141
+        ]
+      },
+      "guaranteed_no_new_fault_band_V": [
+        3.1997,
+        3.4003
+      ],
+      "guaranteed_recovery_band_V": [
+        3.22506,
+        3.372844
+      ],
+      "guaranteed_label_scope": "Conditional static-model intervals only, not guaranteed silicon or dynamic bounds.",
+      "converter_V": [
+        3.219942244224422,
+        3.412002431724654
+      ],
+      "logic_corridor_V": [
+        3.0,
+        3.6
+      ],
+      "corridor_basis": "ACT-04 LVC 3.3V +/-0.3V timing-analysis interval; not a board-wide safe rail.",
+      "margins_V": {
+        "no_trip_lower": 0.020242244224422112,
+        "no_trip_upper": -0.011702431724653906,
+        "recovery_lower": -0.005117755775577937,
+        "recovery_upper": -0.03915843172465383,
+        "late_UV": 0.13829999999999965,
+        "late_OV": 0.1383000000000001
+      },
+      "static_screen_pass": false,
+      "reasons": [
+        "no_trip_upper",
+        "recovery_lower",
+        "recovery_upper"
+      ],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false
+    },
+    {
+      "id": "3V3_SET_low",
+      "rail_id": "3V3",
+      "part": "TPS3702CX33DDCR",
+      "SET": "low",
+      "nominal_rail_V": 3.3,
+      "nominal_window_fraction": 0.09,
+      "nominal_trip_V": {
+        "percentage_defined": [
+          3.003,
+          3.597
+        ],
+        "rounded_table": [
+          3.0,
+          3.6
+        ],
+        "union": {
+          "UV": [
+            3.0,
+            3.003
+          ],
+          "OV": [
+            3.597,
+            3.6
+          ]
+        }
+      },
+      "accuracy_basis": "nominal_rail",
+      "accuracy_fraction": 0.009,
+      "hysteresis_fraction_of_nominal_trip": [
+        0.003,
+        0.008
+      ],
+      "hysteresis_V": {
+        "UV": [
+          0.009000000000000001,
+          0.024024
+        ],
+        "OV": [
+          0.010791,
+          0.028800000000000003
+        ]
+      },
+      "assert_V": {
+        "UV": [
+          2.9703,
+          3.0327
+        ],
+        "OV": [
+          3.5673,
+          3.6297
+        ]
+      },
+      "release_V": {
+        "UV": [
+          2.9793,
+          3.056724
+        ],
+        "OV": [
+          3.5385,
+          3.618909
+        ]
+      },
+      "guaranteed_no_new_fault_band_V": [
+        3.0327,
+        3.5673
+      ],
+      "guaranteed_recovery_band_V": [
+        3.056724,
+        3.5385
+      ],
+      "guaranteed_label_scope": "Conditional static-model intervals only, not guaranteed silicon or dynamic bounds.",
+      "converter_V": [
+        3.219942244224422,
+        3.412002431724654
+      ],
+      "logic_corridor_V": [
+        3.0,
+        3.6
+      ],
+      "corridor_basis": "ACT-04 LVC 3.3V +/-0.3V timing-analysis interval; not a board-wide safe rail.",
+      "margins_V": {
+        "no_trip_lower": 0.18724224422442193,
+        "no_trip_upper": 0.1552975682753459,
+        "recovery_lower": 0.1632182442244221,
+        "recovery_upper": 0.12649756827534597,
+        "late_UV": -0.02970000000000006,
+        "late_OV": -0.02970000000000006
+      },
+      "static_screen_pass": false,
+      "reasons": [
+        "late_UV",
+        "late_OV"
+      ],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false
+    },
+    {
+      "id": "5V_SET_high",
+      "rail_id": "5V",
+      "part": "TPS3702CX50DDCR",
+      "SET": "high",
+      "nominal_rail_V": 5.0,
+      "nominal_window_fraction": 0.04,
+      "nominal_trip_V": {
+        "percentage_defined": [
+          4.8,
+          5.2
+        ],
+        "rounded_table": [
+          4.8,
+          5.2
+        ],
+        "union": {
+          "UV": [
+            4.8,
+            4.8
+          ],
+          "OV": [
+            5.2,
+            5.2
+          ]
+        }
+      },
+      "accuracy_basis": "nominal_rail",
+      "accuracy_fraction": 0.009,
+      "hysteresis_fraction_of_nominal_trip": [
+        0.003,
+        0.008
+      ],
+      "hysteresis_V": {
+        "UV": [
+          0.0144,
+          0.0384
+        ],
+        "OV": [
+          0.015600000000000001,
+          0.041600000000000005
+        ]
+      },
+      "assert_V": {
+        "UV": [
+          4.755,
+          4.845
+        ],
+        "OV": [
+          5.155,
+          5.245
+        ]
+      },
+      "release_V": {
+        "UV": [
+          4.7694,
+          4.8834
+        ],
+        "OV": [
+          5.1134,
+          5.2294
+        ]
+      },
+      "guaranteed_no_new_fault_band_V": [
+        4.845,
+        5.155
+      ],
+      "guaranteed_recovery_band_V": [
+        4.8834,
+        5.1134
+      ],
+      "guaranteed_label_scope": "Conditional static-model intervals only, not guaranteed silicon or dynamic bounds.",
+      "converter_V": [
+        4.866303235118693,
+        5.189909215041985
+      ],
+      "logic_corridor_V": [
+        4.5,
+        5.5
+      ],
+      "corridor_basis": "Proposed 5V performance comparison; TXU0102 supply minimum is 1.08V. Not a receiver limit.",
+      "margins_V": {
+        "no_trip_lower": 0.02130323511869303,
+        "no_trip_upper": -0.034909215041984965,
+        "recovery_lower": -0.01709676488130718,
+        "recovery_upper": -0.07650921504198482,
+        "late_UV": 0.2549999999999999,
+        "late_OV": 0.2549999999999999
+      },
+      "static_screen_pass": false,
+      "reasons": [
+        "no_trip_upper",
+        "recovery_lower",
+        "recovery_upper"
+      ],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false
+    },
+    {
+      "id": "5V_SET_low",
+      "rail_id": "5V",
+      "part": "TPS3702CX50DDCR",
+      "SET": "low",
+      "nominal_rail_V": 5.0,
+      "nominal_window_fraction": 0.09,
+      "nominal_trip_V": {
+        "percentage_defined": [
+          4.55,
+          5.45
+        ],
+        "rounded_table": [
+          4.55,
+          5.45
+        ],
+        "union": {
+          "UV": [
+            4.55,
+            4.55
+          ],
+          "OV": [
+            5.45,
+            5.45
+          ]
+        }
+      },
+      "accuracy_basis": "nominal_rail",
+      "accuracy_fraction": 0.009,
+      "hysteresis_fraction_of_nominal_trip": [
+        0.003,
+        0.008
+      ],
+      "hysteresis_V": {
+        "UV": [
+          0.013649999999999999,
+          0.0364
+        ],
+        "OV": [
+          0.01635,
+          0.0436
+        ]
+      },
+      "assert_V": {
+        "UV": [
+          4.505,
+          4.595
+        ],
+        "OV": [
+          5.405,
+          5.495
+        ]
+      },
+      "release_V": {
+        "UV": [
+          4.51865,
+          4.6314
+        ],
+        "OV": [
+          5.361400000000001,
+          5.47865
+        ]
+      },
+      "guaranteed_no_new_fault_band_V": [
+        4.595,
+        5.405
+      ],
+      "guaranteed_recovery_band_V": [
+        4.6314,
+        5.361400000000001
+      ],
+      "guaranteed_label_scope": "Conditional static-model intervals only, not guaranteed silicon or dynamic bounds.",
+      "converter_V": [
+        4.866303235118693,
+        5.189909215041985
+      ],
+      "logic_corridor_V": [
+        4.5,
+        5.5
+      ],
+      "corridor_basis": "Proposed 5V performance comparison; TXU0102 supply minimum is 1.08V. Not a receiver limit.",
+      "margins_V": {
+        "no_trip_lower": 0.27130323511869303,
+        "no_trip_upper": 0.21509078495801504,
+        "recovery_lower": 0.2349032351186926,
+        "recovery_upper": 0.1714907849580154,
+        "late_UV": 0.004999999999999893,
+        "late_OV": 0.004999999999999893
+      },
+      "static_screen_pass": true,
+      "reasons": [],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false
+    }
+  ],
+  "accuracy_basis_sensitivity": {
+    "basis": "nominal_trip",
+    "changes_selection_conclusion": false,
+    "cases": [
+      {
+        "id": "3V3_SET_high",
+        "rail_id": "3V3",
+        "part": "TPS3702CX33DDCR",
+        "SET": "high",
+        "nominal_rail_V": 3.3,
+        "nominal_window_fraction": 0.04,
+        "nominal_trip_V": {
+          "percentage_defined": [
+            3.1679999999999997,
+            3.432
+          ],
+          "rounded_table": [
+            3.17,
+            3.43
+          ],
+          "union": {
+            "UV": [
+              3.1679999999999997,
+              3.17
+            ],
+            "OV": [
+              3.43,
+              3.432
+            ]
+          }
+        },
+        "accuracy_basis": "nominal_trip",
+        "accuracy_fraction": 0.009,
+        "hysteresis_fraction_of_nominal_trip": [
+          0.003,
+          0.008
+        ],
+        "hysteresis_V": {
+          "UV": [
+            0.009503999999999999,
+            0.02536
+          ],
+          "OV": [
+            0.01029,
+            0.027456
+          ]
+        },
+        "assert_V": {
+          "UV": [
+            3.1394879999999996,
+            3.1985299999999994
+          ],
+          "OV": [
+            3.39913,
+            3.4628879999999995
+          ]
+        },
+        "release_V": {
+          "UV": [
+            3.148992,
+            3.2238899999999995
+          ],
+          "OV": [
+            3.371674,
+            3.4525979999999996
+          ]
+        },
+        "guaranteed_no_new_fault_band_V": [
+          3.1985299999999994,
+          3.39913
+        ],
+        "guaranteed_recovery_band_V": [
+          3.2238899999999995,
+          3.371674
+        ],
+        "guaranteed_label_scope": "Conditional static-model intervals only, not guaranteed silicon or dynamic bounds.",
+        "converter_V": [
+          3.219942244224422,
+          3.412002431724654
+        ],
+        "logic_corridor_V": [
+          3.0,
+          3.6
+        ],
+        "corridor_basis": "ACT-04 LVC 3.3V +/-0.3V timing-analysis interval; not a board-wide safe rail.",
+        "margins_V": {
+          "no_trip_lower": 0.021412244224422672,
+          "no_trip_upper": -0.012872431724654021,
+          "recovery_lower": -0.003947755775577377,
+          "recovery_upper": -0.040328431724653946,
+          "late_UV": 0.1394879999999996,
+          "late_OV": 0.13711200000000057
+        },
+        "static_screen_pass": false,
+        "reasons": [
+          "no_trip_upper",
+          "recovery_lower",
+          "recovery_upper"
+        ],
+        "dynamic_screen_pass": false,
+        "hardware_accepted": false
+      },
+      {
+        "id": "3V3_SET_low",
+        "rail_id": "3V3",
+        "part": "TPS3702CX33DDCR",
+        "SET": "low",
+        "nominal_rail_V": 3.3,
+        "nominal_window_fraction": 0.09,
+        "nominal_trip_V": {
+          "percentage_defined": [
+            3.003,
+            3.597
+          ],
+          "rounded_table": [
+            3.0,
+            3.6
+          ],
+          "union": {
+            "UV": [
+              3.0,
+              3.003
+            ],
+            "OV": [
+              3.597,
+              3.6
+            ]
+          }
+        },
+        "accuracy_basis": "nominal_trip",
+        "accuracy_fraction": 0.009,
+        "hysteresis_fraction_of_nominal_trip": [
+          0.003,
+          0.008
+        ],
+        "hysteresis_V": {
+          "UV": [
+            0.009000000000000001,
+            0.024024
+          ],
+          "OV": [
+            0.010791,
+            0.028800000000000003
+          ]
+        },
+        "assert_V": {
+          "UV": [
+            2.973,
+            3.030027
+          ],
+          "OV": [
+            3.5646269999999998,
+            3.6323999999999996
+          ]
+        },
+        "release_V": {
+          "UV": [
+            2.9819999999999998,
+            3.054051
+          ],
+          "OV": [
+            3.535827,
+            3.6216089999999994
+          ]
+        },
+        "guaranteed_no_new_fault_band_V": [
+          3.030027,
+          3.5646269999999998
+        ],
+        "guaranteed_recovery_band_V": [
+          3.054051,
+          3.535827
+        ],
+        "guaranteed_label_scope": "Conditional static-model intervals only, not guaranteed silicon or dynamic bounds.",
+        "converter_V": [
+          3.219942244224422,
+          3.412002431724654
+        ],
+        "logic_corridor_V": [
+          3.0,
+          3.6
+        ],
+        "corridor_basis": "ACT-04 LVC 3.3V +/-0.3V timing-analysis interval; not a board-wide safe rail.",
+        "margins_V": {
+          "no_trip_lower": 0.18991524422442208,
+          "no_trip_upper": 0.15262456827534576,
+          "recovery_lower": 0.16589124422442225,
+          "recovery_upper": 0.12382456827534583,
+          "late_UV": -0.027000000000000135,
+          "late_OV": -0.03239999999999954
+        },
+        "static_screen_pass": false,
+        "reasons": [
+          "late_UV",
+          "late_OV"
+        ],
+        "dynamic_screen_pass": false,
+        "hardware_accepted": false
+      },
+      {
+        "id": "5V_SET_high",
+        "rail_id": "5V",
+        "part": "TPS3702CX50DDCR",
+        "SET": "high",
+        "nominal_rail_V": 5.0,
+        "nominal_window_fraction": 0.04,
+        "nominal_trip_V": {
+          "percentage_defined": [
+            4.8,
+            5.2
+          ],
+          "rounded_table": [
+            4.8,
+            5.2
+          ],
+          "union": {
+            "UV": [
+              4.8,
+              4.8
+            ],
+            "OV": [
+              5.2,
+              5.2
+            ]
+          }
+        },
+        "accuracy_basis": "nominal_trip",
+        "accuracy_fraction": 0.009,
+        "hysteresis_fraction_of_nominal_trip": [
+          0.003,
+          0.008
+        ],
+        "hysteresis_V": {
+          "UV": [
+            0.0144,
+            0.0384
+          ],
+          "OV": [
+            0.015600000000000001,
+            0.041600000000000005
+          ]
+        },
+        "assert_V": {
+          "UV": [
+            4.7568,
+            4.8431999999999995
+          ],
+          "OV": [
+            5.1532,
+            5.2467999999999995
+          ]
+        },
+        "release_V": {
+          "UV": [
+            4.7712,
+            4.8816
+          ],
+          "OV": [
+            5.1116,
+            5.231199999999999
+          ]
+        },
+        "guaranteed_no_new_fault_band_V": [
+          4.8431999999999995,
+          5.1532
+        ],
+        "guaranteed_recovery_band_V": [
+          4.8816,
+          5.1116
+        ],
+        "guaranteed_label_scope": "Conditional static-model intervals only, not guaranteed silicon or dynamic bounds.",
+        "converter_V": [
+          4.866303235118693,
+          5.189909215041985
+        ],
+        "logic_corridor_V": [
+          4.5,
+          5.5
+        ],
+        "corridor_basis": "Proposed 5V performance comparison; TXU0102 supply minimum is 1.08V. Not a receiver limit.",
+        "margins_V": {
+          "no_trip_lower": 0.023103235118693277,
+          "no_trip_upper": -0.03670921504198521,
+          "recovery_lower": -0.015296764881306935,
+          "recovery_upper": -0.07830921504198507,
+          "late_UV": 0.25680000000000014,
+          "late_OV": 0.25320000000000054
+        },
+        "static_screen_pass": false,
+        "reasons": [
+          "no_trip_upper",
+          "recovery_lower",
+          "recovery_upper"
+        ],
+        "dynamic_screen_pass": false,
+        "hardware_accepted": false
+      },
+      {
+        "id": "5V_SET_low",
+        "rail_id": "5V",
+        "part": "TPS3702CX50DDCR",
+        "SET": "low",
+        "nominal_rail_V": 5.0,
+        "nominal_window_fraction": 0.09,
+        "nominal_trip_V": {
+          "percentage_defined": [
+            4.55,
+            5.45
+          ],
+          "rounded_table": [
+            4.55,
+            5.45
+          ],
+          "union": {
+            "UV": [
+              4.55,
+              4.55
+            ],
+            "OV": [
+              5.45,
+              5.45
+            ]
+          }
+        },
+        "accuracy_basis": "nominal_trip",
+        "accuracy_fraction": 0.009,
+        "hysteresis_fraction_of_nominal_trip": [
+          0.003,
+          0.008
+        ],
+        "hysteresis_V": {
+          "UV": [
+            0.013649999999999999,
+            0.0364
+          ],
+          "OV": [
+            0.01635,
+            0.0436
+          ]
+        },
+        "assert_V": {
+          "UV": [
+            4.50905,
+            4.590949999999999
+          ],
+          "OV": [
+            5.40095,
+            5.4990499999999995
+          ]
+        },
+        "release_V": {
+          "UV": [
+            4.5227,
+            4.62735
+          ],
+          "OV": [
+            5.35735,
+            5.4826999999999995
+          ]
+        },
+        "guaranteed_no_new_fault_band_V": [
+          4.590949999999999,
+          5.40095
+        ],
+        "guaranteed_recovery_band_V": [
+          4.62735,
+          5.35735
+        ],
+        "guaranteed_label_scope": "Conditional static-model intervals only, not guaranteed silicon or dynamic bounds.",
+        "converter_V": [
+          4.866303235118693,
+          5.189909215041985
+        ],
+        "logic_corridor_V": [
+          4.5,
+          5.5
+        ],
+        "corridor_basis": "Proposed 5V performance comparison; TXU0102 supply minimum is 1.08V. Not a receiver limit.",
+        "margins_V": {
+          "no_trip_lower": 0.27535323511869336,
+          "no_trip_upper": 0.2110407849580147,
+          "recovery_lower": 0.23895323511869293,
+          "recovery_upper": 0.16744078495801507,
+          "late_UV": 0.009050000000000225,
+          "late_OV": 0.0009500000000004505
+        },
+        "static_screen_pass": true,
+        "reasons": [],
+        "dynamic_screen_pass": false,
+        "hardware_accepted": false
+      }
+    ]
+  },
+  "incorrect_5_percent_comparison": {
+    "is_released_part": false,
+    "description": "Earlier nominal +/-5% assumption, separate from actual C-family +/-4%; arithmetic only.",
+    "cases": [
+      {
+        "id": "3V3_SET_incorrect_nominal_5_percent",
+        "rail_id": "3V3",
+        "part": null,
+        "SET": "incorrect_nominal_5_percent",
+        "nominal_rail_V": 3.3,
+        "nominal_window_fraction": 0.05,
+        "nominal_trip_V": {
+          "percentage_defined": [
+            3.135,
+            3.465
+          ],
+          "rounded_table": null,
+          "union": {
+            "UV": [
+              3.135,
+              3.135
+            ],
+            "OV": [
+              3.465,
+              3.465
+            ]
+          }
+        },
+        "accuracy_basis": "nominal_rail",
+        "accuracy_fraction": 0.009,
+        "hysteresis_fraction_of_nominal_trip": [
+          0.003,
+          0.008
+        ],
+        "hysteresis_V": {
+          "UV": [
+            0.009405,
+            0.025079999999999998
+          ],
+          "OV": [
+            0.010395,
+            0.027719999999999998
+          ]
+        },
+        "assert_V": {
+          "UV": [
+            3.1052999999999997,
+            3.1647
+          ],
+          "OV": [
+            3.4353,
+            3.4947
+          ]
+        },
+        "release_V": {
+          "UV": [
+            3.114705,
+            3.18978
+          ],
+          "OV": [
+            3.40758,
+            3.484305
+          ]
+        },
+        "guaranteed_no_new_fault_band_V": [
+          3.1647,
+          3.4353
+        ],
+        "guaranteed_recovery_band_V": [
+          3.18978,
+          3.40758
+        ],
+        "guaranteed_label_scope": "Conditional static-model intervals only, not guaranteed silicon or dynamic bounds.",
+        "converter_V": [
+          3.219942244224422,
+          3.412002431724654
+        ],
+        "logic_corridor_V": [
+          3.0,
+          3.6
+        ],
+        "corridor_basis": "ACT-04 LVC 3.3V +/-0.3V timing-analysis interval; not a board-wide safe rail.",
+        "margins_V": {
+          "no_trip_lower": 0.055242244224422254,
+          "no_trip_upper": 0.023297568275345792,
+          "recovery_lower": 0.030162244224422263,
+          "recovery_upper": -0.0044224317246541744,
+          "late_UV": 0.10529999999999973,
+          "late_OV": 0.10530000000000017
+        },
+        "static_screen_pass": false,
+        "reasons": [
+          "recovery_upper"
+        ],
+        "dynamic_screen_pass": false,
+        "hardware_accepted": false
+      },
+      {
+        "id": "5V_SET_incorrect_nominal_5_percent",
+        "rail_id": "5V",
+        "part": null,
+        "SET": "incorrect_nominal_5_percent",
+        "nominal_rail_V": 5.0,
+        "nominal_window_fraction": 0.05,
+        "nominal_trip_V": {
+          "percentage_defined": [
+            4.75,
+            5.25
+          ],
+          "rounded_table": null,
+          "union": {
+            "UV": [
+              4.75,
+              4.75
+            ],
+            "OV": [
+              5.25,
+              5.25
+            ]
+          }
+        },
+        "accuracy_basis": "nominal_rail",
+        "accuracy_fraction": 0.009,
+        "hysteresis_fraction_of_nominal_trip": [
+          0.003,
+          0.008
+        ],
+        "hysteresis_V": {
+          "UV": [
+            0.01425,
+            0.038
+          ],
+          "OV": [
+            0.01575,
+            0.042
+          ]
+        },
+        "assert_V": {
+          "UV": [
+            4.705,
+            4.795
+          ],
+          "OV": [
+            5.205,
+            5.295
+          ]
+        },
+        "release_V": {
+          "UV": [
+            4.71925,
+            4.833
+          ],
+          "OV": [
+            5.163,
+            5.27925
+          ]
+        },
+        "guaranteed_no_new_fault_band_V": [
+          4.795,
+          5.205
+        ],
+        "guaranteed_recovery_band_V": [
+          4.833,
+          5.163
+        ],
+        "guaranteed_label_scope": "Conditional static-model intervals only, not guaranteed silicon or dynamic bounds.",
+        "converter_V": [
+          4.866303235118693,
+          5.189909215041985
+        ],
+        "logic_corridor_V": [
+          4.5,
+          5.5
+        ],
+        "corridor_basis": "Proposed 5V performance comparison; TXU0102 supply minimum is 1.08V. Not a receiver limit.",
+        "margins_V": {
+          "no_trip_lower": 0.07130323511869285,
+          "no_trip_upper": 0.015090784958014858,
+          "recovery_lower": 0.0333032351186926,
+          "recovery_upper": -0.026909215041984957,
+          "late_UV": 0.20500000000000007,
+          "late_OV": 0.20500000000000007
+        },
+        "static_screen_pass": false,
+        "reasons": [
+          "recovery_upper"
+        ],
+        "dynamic_screen_pass": false,
+        "hardware_accepted": false
+      }
+    ]
+  },
+  "adjustable_feasibility": [
+    {
+      "rail_id": "3V3",
+      "nominal_UV_open_interval_V": [
+        3.0297,
+        3.164922861333752
+      ],
+      "nominal_OV_open_interval_V": [
+        3.469458096496627,
+        3.5703
+      ],
+      "threshold_absolute_error_budget_V": 0.029699999999999997,
+      "hysteresis_fraction_of_nominal_trip_budget": 0.008,
+      "dynamic_guard_assumed_V": 0.0,
+      "normal_operation_margin_assumed_V": 0.0,
+      "nonempty_static_intervals": true,
+      "all_dynamic_budget_terms_allocated": false,
+      "part_selected": false,
+      "inequalities": [
+        "UVnom > Lsafe + E + dynamic_guard",
+        "UVnom < (Nmin - E - normal_margin)/(1+h)",
+        "OVnom > (Nmax + E + normal_margin)/(1-h)",
+        "OVnom < Usafe - E - dynamic_guard"
+      ],
+      "limitations": "Zero dynamic guard is optimistic algebra, not acceptable design margin. Envelopes and receiver limits remain incomplete."
+    },
+    {
+      "rail_id": "5V",
+      "nominal_UV_open_interval_V": [
+        4.545,
+        4.783038923728862
+      ],
+      "nominal_OV_open_interval_V": [
+        5.2771262248407105,
+        5.455
+      ],
+      "threshold_absolute_error_budget_V": 0.045,
+      "hysteresis_fraction_of_nominal_trip_budget": 0.008,
+      "dynamic_guard_assumed_V": 0.0,
+      "normal_operation_margin_assumed_V": 0.0,
+      "nonempty_static_intervals": true,
+      "all_dynamic_budget_terms_allocated": false,
+      "part_selected": false,
+      "inequalities": [
+        "UVnom > Lsafe + E + dynamic_guard",
+        "UVnom < (Nmin - E - normal_margin)/(1+h)",
+        "OVnom > (Nmax + E + normal_margin)/(1-h)",
+        "OVnom < Usafe - E - dynamic_guard"
+      ],
+      "limitations": "Zero dynamic guard is optimistic algebra, not acceptable design margin. Envelopes and receiver limits remain incomplete."
+    }
+  ],
+  "open_drain_slew": {
+    "R_ohm_assumed": 10000.0,
+    "C_F_assumed_not_measured": 1e-11,
+    "pullup_V": 3.3,
+    "logic_crossing_V": [
+      0.8,
+      2.0
+    ],
+    "crossing_time_ns": 65.39264674066641,
+    "average_ns_per_V": 54.49387228388868,
+    "receiver_max_ns_per_V": 10.0,
+    "necessary_slew_screen_pass": false,
+    "formula": "R*C*ln((VPU-VIL)/(VPU-VIH))",
+    "qualification": "Illustrative unloaded RC only. Omits R42 divider, leakage, measured capacitance and partial power. Passing cannot qualify the full transition or a direct LVC connection."
+  },
+  "summary": {
+    "tight_windows_static_pass": false,
+    "wide_3V3_static_pass": false,
+    "wide_5V_static_only_pass": true,
+    "selection_accepted": false,
+    "required_next_task": "Compare adjustable and integrated alternatives with complete accuracy, hysteresis, timing and partial-power budgets."
+  },
+  "limitations": [
+    "Converter corner records omit complete ripple, load-step, aging, thermal and PFM bounds.",
+    "3.0..3.6V is local LVC timing only; captured U6 VDDIO still needs separate IMU2 correction. No whole-board safe rail is established.",
+    "4.5..5.5V is a proposed performance interval, not TXU0102's full1.08..5.5V range or remote receiver acceptance.",
+    "TPS3702 SENSE-transition delays19/35us and startup300us are NOM-only; no guaranteed dynamic disable budget follows.",
+    "Local rails cannot observe remote readiness, stop continuity or fresh commands. QUAL_OK/ACK remain undriven/default-low.",
+    "Release delay cannot detect a missed fault or enforce ACK/ARM order. Fault retention and asynchronous timing remain unimplemented.",
+    "No CAD, copper, firmware, population or assembly changes. No power, procurement or fabrication acceptance."
+  ]
+}

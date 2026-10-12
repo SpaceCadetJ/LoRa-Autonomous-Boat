@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Current verification packet — ACT-05, 2026-10-12
+
+The [rail-supervision selection review](../reviews/codex/rail_qualification/README.md) and [interactive interval explorer](../reviews/codex/rail_qualification/index.html) show why the first fixed-window proposal is held: assertion/recovery conflicts, unknown maximum detection delay and an illustrative input-edge violation. Calculations include a separate accuracy-basis sensitivity; no silicon or hardware acceptance is inferred. ACT-04 remains the latest native circuit, with qualification and ACK default low. Next: compare an adjustable window with an integrated window/reset candidate and conditioned edges. This supersedes earlier next-task text below.
+
 ## Current actuator packet - ACT-04, 2026-10-12
 
 The [isolated arm latch and annotated native sheets](../reviews/codex/actuator_latch/README.md) separate PC4 from OE while retaining R40 at OE. Native ERC is zero errors / the original AD0 warning; 396 existing memberships are preserved and exactly two change. The qualification and ACK sources remain unimplemented and default low. ACK while armed disables, a documented difference from ACT-03. Next: qualification/reset-release circuitry with fault retention and conditioned ACK; receiver readiness and watchdog sources remain held. This supersedes older next-task text below.

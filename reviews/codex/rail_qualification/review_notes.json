@@ -1,0 +1,45 @@
+{
+  "revision": "ACT-05",
+  "review_date_utc": "2026-10-12",
+  "baseline_commit": "cf48ce5ec6616c64f0f64482bbd85618cf84494c",
+  "scope": "Conditional component screening and documentation; no circuit or hardware acceptance",
+  "reviews": [
+    {
+      "reviewer": "imu_candidate_validator",
+      "work": "Independent numeric fixtures, input/claim mutations and captured model; 21 tests pass."
+    },
+    {
+      "reviewer": "power_native_review",
+      "work": "Primary-source accuracy ambiguity, timing categories, pin maps and investigation alternatives checked."
+    },
+    {
+      "reviewer": "input_protection_review",
+      "work": "Read-only arithmetic/source/UI review; caught UI values below displayed minimum. Root enforces min/max and tests both invalid ranges."
+    },
+    {
+      "reviewer": "root",
+      "work": "Read code and numeric fixtures; inspected standalone figure and desktop/phone screenshots. Separated close plot labels and increased mobile chart text sizing."
+    }
+  ],
+  "checks": {
+    "model_tests": 21,
+    "preserved_input_hashes": 174,
+    "native_commands_rerun": false,
+    "browser_evidence": "viewer_check.json",
+    "packet_evidence": "packet_manifest.json"
+  },
+  "limitations": [
+    "TI accuracy-basis readings are separate conditional screens, not guaranteed silicon bounds.",
+    "Recorded converter bounds omit complete dynamic/aging/PFM limits.",
+    "Wide 5V static OV margin is 5mV rail-based or 0.95mV trip-relative; no dynamic acceptance.",
+    "RC example omits R42 divider, leakage, measured loading and partial power; average-only passing never qualifies a connection.",
+    "Receiver-ready, watchdog and conditioned ACK sources remain unimplemented/default disabled.",
+    "No hosted CI result is claimed."
+  ],
+  "expected_candidate_electrical_delta": 0,
+  "expected_live_electrical_delta": 0,
+  "expected_copper_delta": 0,
+  "parts_selected": false,
+  "hardware_tested": false,
+  "fabrication_approved": false
+}
