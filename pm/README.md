@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Current circuit packet: INPUT-A1 — 2026-10-12
+
+The [wired input-stage schematic](../reviews/codex/input_stage/README.md) implements an isolated fuse/TVS/100 V series-diode candidate. Exact native delta passes: 112 components, 356 pins, all 344 outside-boundary memberships preserved; no new ERC findings. Live CAD, ordering and the separate IMU2 candidate remain unchanged. Next: resolve discharged-output reverse leakage against downstream pin limits, then implement the wider-voltage converter cells. Surge energy, footprint/thermal qualification and physical acceptance remain open.
+
 ## Current power architecture study — 2026-10-12
 
 The [topology comparison](../reviews/codex/power_topology/README.md) recommends a wider-voltage input stage for the next isolated schematic study. The [interactive load budget](../reviews/codex/power_topology/load_budget.html) exposes why the simultaneous rail goals cannot fit a 1 A feed at 7 V. Exact package-pin proposals, cutoff tolerance calculations and an annotated power-path map are recorded. No live circuit or ordering changes. Next: one captured input-stage schematic, exact protection identities and a bounded surge/stored-energy envelope; preserve 6S and the on-board actuator option.

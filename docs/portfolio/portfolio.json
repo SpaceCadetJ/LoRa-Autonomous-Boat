@@ -31,7 +31,8 @@
     "imu_current": "reviews/codex/imu_bias_filter/README.md",
     "power_envelope": "reviews/codex/power_envelope/README.md",
     "power_topology": "reviews/codex/power_topology/README.md",
-    "load_budget": "reviews/codex/power_topology/load_budget.html"
+    "load_budget": "reviews/codex/power_topology/load_budget.html",
+    "input_stage": "reviews/codex/input_stage/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -112,6 +113,11 @@
       "path": "reviews/codex/power_topology/v2_power_topologies.svg",
       "kind": "architecture_study",
       "caption": "Two proposed 6S power paths with load and protection constraints; no live circuit change."
+    },
+    {
+      "path": "reviews/codex/input_stage/v2_input_stage.svg",
+      "kind": "native_schematic_candidate",
+      "caption": "INPUT-A1 wired 6S input boundary; exact native delta verified, PCB and hardware integration pending."
     }
   ],
   "validated_results": [
@@ -230,6 +236,15 @@
         "reviews/codex/power_topology/review_notes.json",
         "reviews/codex/power_topology/viewer_check.json"
       ]
+    },
+    {
+      "claim": "INPUT-A1 isolated schematic replaces the old input protection cell with a series-diode boundary, preserving all 344 outside-boundary memberships and adding no ERC findings.",
+      "classification": "verified_native_schematic_candidate_not_integrated",
+      "evidence": [
+        "reviews/codex/input_stage/validation.json",
+        "reviews/codex/input_stage/native_manifest.json",
+        "reviews/codex/input_stage/README.md"
+      ]
     }
   ],
   "current_native_findings": {
@@ -258,7 +273,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Implement the recommended wider-voltage input-stage schematic with exact protection identities and bounded positive/negative/stored-energy limits, then complete converter cells and coordinate IMU2 routing.",
+    "Resolve INPUT-A1 discharged-output reverse leakage, implement wider-voltage converter/sensing/ADC cells and coordinate IMU2 integration; surge, thermal and physical acceptance remain open.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",
     "Measure voice quality, airtime and RC coexistence before selecting handheld radio, codec or hardware."

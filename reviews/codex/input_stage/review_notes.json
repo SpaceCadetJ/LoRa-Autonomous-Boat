@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "date": "2026-10-12",
+  "status": "reviewed_isolated_schematic_only",
+  "independent_reviews": [
+    {
+      "reviewer": "input_protection_review",
+      "scope": "Read-only relevant native identities/memberships and manufacturer diode ratings/loss equation; later README/portfolio claim review",
+      "result": "No publication blocker for bounded study; negative-output leakage remains an unresolved circuit-design gate",
+      "not_repeated": [
+        "Full 344-pin preservation computation",
+        "Native ERC execution",
+        "Board or bench validation"
+      ]
+    },
+    {
+      "reviewer": "power_native_review",
+      "scope": "Independently authored exact native netlist comparison and fourteen acceptance/mutation tests",
+      "result": "Fourteen tests passed; root subsequently ran verifier against actual captured native exports",
+      "write_scope": [
+        "verify_candidate.py",
+        "test_candidate.py"
+      ]
+    }
+  ],
+  "root_validation": {
+    "native_version": "9.0.7",
+    "candidate_components": 112,
+    "candidate_pins": 356,
+    "unchanged_outside_boundary_memberships": 344,
+    "erc_errors": 0,
+    "erc_warnings": 1,
+    "erc_warning": "Unchanged U6 AD0 power-output/bidirectional finding",
+    "mutation_tests_passed": 14,
+    "native_manifest": "native_manifest.json",
+    "validation": "validation.json",
+    "geometry": "package_budget.json",
+    "geometry_scope": "Library pads/courtyards only, not manufacturer land/stencil or thermal acceptance"
+  },
+  "visual_review": {
+    "reviewer": "Codex root",
+    "inspected": [
+      "input-stage-review.png",
+      "LoRa_Boat_Controller_V2-review.png",
+      "LoRa_Boat_Controller_V2-Power-review.png"
+    ],
+    "result": "Final new input path, component captions, connection dots, polarity note and design-boundary annotations are legible without observed overlap; retained Power circuits remain marked unqualified",
+    "resolved_during_review": [
+      "Moved VBAT_FUSED label onto actual wire after native dangling-label finding",
+      "Separated rotated component captions and wire crossings before final native export"
+    ],
+    "coordinate_check": "coordinate_bounds.json",
+    "coordinate_scope": "Primitive anchors/corners only; not text collision detection"
+  },
+  "viewer_review": {
+    "record": "viewer_check.json",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "result": "Candidate image decodes; project link points to this isolated copy; PCB pending label and guide dialog pass; no browser errors or horizontal overflow"
+  },
+  "preservation": {
+    "live_cad_hashes_checked": 52,
+    "unchanged_subsystem_sheets": [
+      "Actuators",
+      "Debug",
+      "MCU",
+      "Navigation",
+      "Radio"
+    ],
+    "preexisting_dirty_tools_match_prior_packet": true,
+    "live_electrical_delta": 0,
+    "live_copper_delta": 0
+  },
+  "open_gates": [
+    "Discharged-output reverse leakage/negative excursion: resolve circuit before input-stage acceptance",
+    "Pulse waveform/energy, hot clamp, fuse interrupt/coordination and 44 V target verification",
+    "Diode cold drop, leakage/thermal model, inrush and backfeed",
+    "Exact land/stencil, capacitor bias/ripple and complete board fit",
+    "Retained downstream power, sensing, buffer and IMU corrections",
+    "Operational firmware and hardware acceptance"
+  ],
+  "next_smallest_task": "Separate captured native amendment adding an explicit negative-output clamp or alternative circuit against future converter/sense limits; preserve INPUT-A1.",
+  "pcb_updated": false,
+  "hardware_tested": false,
+  "fabrication_approved": false,
+  "hosted_ci_observed": false
+}

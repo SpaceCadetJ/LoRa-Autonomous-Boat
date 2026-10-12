@@ -43,6 +43,10 @@ jobs:
         run: |
           python reviews/codex/power_topology/model.py --check
           python reviews/codex/power_topology/test_model.py
+      - name: Verify isolated input-stage native delta and rejection cases
+        run: |
+          python reviews/codex/input_stage/verify_candidate.py --check
+          python reviews/codex/input_stage/test_candidate.py
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

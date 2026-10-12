@@ -49,3 +49,5 @@ reviews/codex/imu_bias_filter/** -text
 reviews/codex/power_envelope/** -text
 
 reviews/codex/power_topology/** -text
+
+reviews/codex/input_stage/** -text

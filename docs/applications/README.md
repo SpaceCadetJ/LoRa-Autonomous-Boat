@@ -63,3 +63,7 @@ The [power envelope and package review](../../reviews/codex/power_envelope/READM
 ## Load planning before application bring-up — 2026-10-12
 
 Use the [interactive power budget](../../reviews/codex/power_topology/load_budget.html) to distinguish external-BEC servo power from on-board servo demand. The [architecture recommendation](../../reviews/codex/power_topology/README.md) retains the 2S–6S and optional on-board actuator requirements. A 1 A board-feed goal cannot support the stated 3.3 V/1.2 A and 5 V/2 A capacities simultaneously at 7 V, even without losses. The first input-stage study uses external BEC for load planning; the higher-load variant remains open. No wiring or powered-use instruction is released by this calculation.
+
+## Input-stage circuit candidate — 2026-10-12
+
+[INPUT-A1](../../reviews/codex/input_stage/README.md) now provides a wired, native-checked input boundary with exact held candidate parts. It preserves 2S–6S and starts with the external-BEC load variant. The series diode adds loss excluded from the earlier calculator. This is not a powered-use revision: discharged-output reverse leakage needs a circuit disposition, and both buck cells, sensing/ADC, buffer and IMU corrections still need integration. Live ordering and flashing procedures remain gated.

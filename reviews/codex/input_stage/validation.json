@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "status": "pass_isolated_schematic_only",
+  "inputs": {
+    "baseline_netlist": {
+      "path": "reviews/codex/design_completion/native-review/v2/netlist.xml",
+      "sha256": "6efc1c8b3daa008a6e21028b5341d95381270798c502e4abc184a42a5e239dd6"
+    },
+    "baseline_erc": {
+      "path": "reviews/codex/design_completion/native-review/v2/erc.json",
+      "sha256": "b66a15c6a5d1e09edd0c61737b8b562f36d0019b9187fdd8e38bd4fd557a2afc"
+    },
+    "candidate_netlist": {
+      "path": "reviews/codex/input_stage/native/netlist.xml",
+      "sha256": "980cda02e5af967db4746e246cdc1f448ce605b536868360f0f948032e27986e"
+    },
+    "candidate_erc": {
+      "path": "reviews/codex/input_stage/native/erc.json",
+      "sha256": "a597ee91919fb80b885c5fec485ebecd09fc6ab44de5d56bff85e1254133e174"
+    },
+    "parser": {
+      "path": "reviews/codex/imu_interface/verify_candidate.py",
+      "sha256": "14d81fa62be5565c35674438a81d48d0922080ccbcfa0529aef5adb89c48cfb6"
+    },
+    "verifier": {
+      "path": "reviews/codex/input_stage/verify_candidate.py",
+      "sha256": "93a19920bf1f38ec8efa53bfa798a5e0bc3328c9430c128688249ea119baf7b2"
+    }
+  },
+  "electrical_delta": {
+    "baseline_components": 114,
+    "candidate_components": 112,
+    "baseline_physical_pins": 361,
+    "candidate_physical_pins": 356,
+    "removed_components": [
+      "D2",
+      "Q1",
+      "R1"
+    ],
+    "added_components": [
+      "D12"
+    ],
+    "updated_component_identities": [
+      "C1",
+      "C2",
+      "D1",
+      "F1"
+    ],
+    "removed_physical_pins": 7,
+    "added_physical_pins": 2,
+    "preserved_existing_pin_memberships": 350,
+    "preserved_outside_boundary_pin_memberships": 344,
+    "existing_pin_deltas": [
+      {
+        "reference": "D1",
+        "pin": "1",
+        "before": "VIN_RAW",
+        "after": "/PowerInput/VBAT_FUSED"
+      },
+      {
+        "reference": "F1",
+        "pin": "1",
+        "before": "/Power/VBAT_IN",
+        "after": "/PowerInput/VBAT_IN"
+      },
+      {
+        "reference": "F1",
+        "pin": "2",
+        "before": "/Power/VBAT_FUSED",
+        "after": "/PowerInput/VBAT_FUSED"
+      },
+      {
+        "reference": "J1",
+        "pin": "1",
+        "before": "/Power/VBAT_IN",
+        "after": "/PowerInput/VBAT_IN"
+      }
+    ],
+    "added_memberships": {
+      "D12.1": "VIN_RAW",
+      "D12.2": "/PowerInput/VBAT_FUSED"
+    },
+    "removed_memberships": {
+      "D2.1": "VIN_RAW",
+      "D2.2": "/Power/PGATE",
+      "Q1.1": "/Power/PGATE",
+      "Q1.2": "VIN_RAW",
+      "Q1.3": "/Power/VBAT_FUSED",
+      "R1.1": "/Power/PGATE",
+      "R1.2": "GND"
+    },
+    "candidate_part_identity_contract": "pass",
+    "unchanged_components_and_pin_definitions_preserved": true,
+    "physical_pin_completeness_and_uniqueness": "pass"
+  },
+  "native_erc": {
+    "baseline": {
+      "kicad_version": "9.0.7",
+      "date": "2026-09-17T17:13:40-0500",
+      "errors": 0,
+      "warnings": 1,
+      "exclusions": 0,
+      "violations": [
+        {
+          "sheet": "/Navigation/",
+          "severity": "warning",
+          "type": "pin_to_pin",
+          "description": "Pins of type Bidirectional and Power output are connected",
+          "items": [
+            "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+            "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+          ]
+        }
+      ]
+    },
+    "candidate": {
+      "kicad_version": "9.0.7",
+      "date": "2026-10-11T22:11:30-0500",
+      "errors": 0,
+      "warnings": 1,
+      "exclusions": 0,
+      "violations": [
+        {
+          "sheet": "/Navigation/",
+          "severity": "warning",
+          "type": "pin_to_pin",
+          "description": "Pins of type Bidirectional and Power output are connected",
+          "items": [
+            "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+            "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+          ]
+        }
+      ]
+    }
+  },
+  "scope": "isolated native schematic identity/connectivity comparison",
+  "pcb_updated": false,
+  "live_circuit_updated": false,
+  "hardware_tested": false,
+  "fabrication_approved": false,
+  "limitations": [
+    "ERC and netlist agreement do not qualify voltage, current, thermal, transient or inrush behavior.",
+    "Project-local generic footprints are not manufacturer land-pattern or assembly acceptance.",
+    "Existing downstream power and IMU defects remain outside this input-stage correction."
+  ]
+}

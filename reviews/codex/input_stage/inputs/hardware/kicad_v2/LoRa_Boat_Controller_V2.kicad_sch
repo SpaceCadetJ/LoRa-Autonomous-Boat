@@ -1,0 +1,536 @@
+(kicad_sch
+(version 20250114)
+(generator "gen_sch.py")
+(generator_version "9.0")
+(uuid "1dd45446-4f65-56e8-a2d3-9539c2076706")
+(paper "A3")
+(title_block (title "LoRa multifunction vehicle node V2 - Root") (date "2026-09-17") (rev "V2 draft") (company "LoRa Controller Project") (comment 1 "Annotated functional groups; connectivity preserved") (comment 2 "Build and review: docs/build/README.md"))
+(lib_symbols
+
+)
+	(text "LoRa multifunction vehicle node V2"
+		(exclude_from_sim no)
+		(at 13 16 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "22b2e098-fa32-5a08-9225-bc9448001af9")
+	)
+	(text "SHEET INDEX / Open a subsystem for component groups, net labels and review notes"
+		(exclude_from_sim no)
+		(at 13 24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "bbbe9979-93a8-5439-a098-63ed20be80e2")
+	)
+	(text "Power names are global; matching signal labels below join hierarchical sheet pins."
+		(exclude_from_sim no)
+		(at 13 30 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51031d5b-c51f-5b14-888d-3c2167c5cacb")
+	)
+	(wire
+		(pts
+			(xy 58.42 43.18) (xy 53.34 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1bc3824-f5ff-552e-90ca-d5cf5f1b5d16")
+	)
+(label "BEC_IN"  (at 53.34 43.18 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "07f48c91-4ad5-5a79-9837-c500e220b713"))
+	(wire
+		(pts
+			(xy 58.42 45.72) (xy 53.34 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fb10997-3781-50bf-ac6c-f7fa798f375b")
+	)
+(label "ISENSE"  (at 53.34 45.72 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "732b7c58-e55b-558a-9535-acd6669e98ce"))
+	(wire
+		(pts
+			(xy 58.42 48.26) (xy 53.34 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "757b1e57-f860-5fae-9125-bce932bd091e")
+	)
+(label "VBAT_SENSE"  (at 53.34 48.26 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "17acd9ba-ea55-5119-a0ea-de7950908fae"))
+	(wire
+		(pts
+			(xy 187.96 43.18) (xy 182.88 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42d0e537-c9e1-5cc6-9596-dca0aea1fc90")
+	)
+(label "GNSS_RX_PC11"  (at 182.88 43.18 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a14bd308-ab00-50ef-8cab-12623f019768"))
+	(wire
+		(pts
+			(xy 187.96 45.72) (xy 182.88 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cbae554-53d7-5e31-9375-01ad3b5841c3")
+	)
+(label "GNSS_TX_PC10"  (at 182.88 45.72 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "e99c347a-6e07-579a-8c59-43c3afbde118"))
+	(wire
+		(pts
+			(xy 187.96 48.26) (xy 182.88 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3af113dc-cb97-51d8-bcc9-716868abfb65")
+	)
+(label "I2C1_SCL"  (at 182.88 48.26 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "3b886d2e-79f2-5116-a49e-9cc2560d2f28"))
+	(wire
+		(pts
+			(xy 187.96 50.8) (xy 182.88 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a47b4a93-5f66-5083-bcf9-fb89edde6a5a")
+	)
+(label "I2C1_SDA"  (at 182.88 50.8 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "c850c36e-ff72-553b-a42d-63d7b92e1a5d"))
+	(wire
+		(pts
+			(xy 187.96 53.34) (xy 182.88 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a95864b1-b01d-5b16-b721-56166c29cff0")
+	)
+(label "IMU_INT"  (at 182.88 53.34 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "02849b04-8699-5422-aecf-42828dd00544"))
+	(wire
+		(pts
+			(xy 187.96 55.88) (xy 182.88 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "068f11dc-3e9d-5e92-bdfd-1229e8a01dcc")
+	)
+(label "ISENSE"  (at 182.88 55.88 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "00be39d2-9a8c-5e0e-bc1a-d022d524e774"))
+	(wire
+		(pts
+			(xy 187.96 58.42) (xy 182.88 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ebee0a5-6e87-55da-a9b7-03aa975c4669")
+	)
+(label "LORA_NRST_PA3"  (at 182.88 58.42 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "3c1f0c4d-3c4a-548c-a2a6-96b865672254"))
+	(wire
+		(pts
+			(xy 187.96 60.96) (xy 182.88 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d0b5e9a-046b-5c04-a010-c821a2c23d32")
+	)
+(label "LORA_RX_PA1"  (at 182.88 60.96 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "9abc4ce3-71b2-57fb-bc0b-47fcc657fbac"))
+	(wire
+		(pts
+			(xy 187.96 63.5) (xy 182.88 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ea13231-a127-59fb-92e0-2b44d08ca00c")
+	)
+(label "LORA_TX_PA0"  (at 182.88 63.5 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a3130db4-abc6-5dcc-8ba4-c5e6be044f3e"))
+	(wire
+		(pts
+			(xy 187.96 66.04) (xy 182.88 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d49fa26-1b80-5b00-8010-8b7d2e2870e7")
+	)
+(label "NRST"  (at 182.88 66.04 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0fbd88e8-5f1c-5928-9324-7a77390d00e2"))
+	(wire
+		(pts
+			(xy 187.96 68.58) (xy 182.88 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee381d53-a5ce-5537-8b93-70bb3581a594")
+	)
+(label "PPS_PB0"  (at 182.88 68.58 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5a41341e-e94d-51b1-83b5-eb8c73ac0606"))
+	(wire
+		(pts
+			(xy 187.96 71.12) (xy 182.88 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57b5b7b7-49ed-53b6-b1b1-6a4bc18b81a1")
+	)
+(label "PWM_ESC_PC6"  (at 182.88 71.12 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "1da43872-2226-57fa-bedd-72026a0a7683"))
+	(wire
+		(pts
+			(xy 187.96 73.66) (xy 182.88 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31fb0d5e-1bac-5a23-b683-f70fc2417ccb")
+	)
+(label "PWM_SERVO_PA8"  (at 182.88 73.66 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a0b3f60c-52fa-5d1c-be38-e3de79069232"))
+	(wire
+		(pts
+			(xy 187.96 76.2) (xy 182.88 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "162b8dc7-1988-515c-840e-da9d5a1dc5c3")
+	)
+(label "SWCLK"  (at 182.88 76.2 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "02d2bef8-a96b-5cc6-9660-0b68977fa285"))
+	(wire
+		(pts
+			(xy 187.96 78.74) (xy 182.88 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ad8da26-e819-57f9-9153-b75de285dd9c")
+	)
+(label "SWDIO"  (at 182.88 78.74 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f3ead4cd-0ab0-5fd2-9c64-f530c1fc6d08"))
+	(wire
+		(pts
+			(xy 187.96 81.28) (xy 182.88 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50e4f87e-94c1-5f3f-8cd0-b2f8626d8619")
+	)
+(label "SWO"  (at 182.88 81.28 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f85236fa-bddf-57db-8155-0ae6e827c63b"))
+	(wire
+		(pts
+			(xy 187.96 83.82) (xy 182.88 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c786772d-4c95-5bad-98f9-073517c24515")
+	)
+(label "USB_DM"  (at 182.88 83.82 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "82b9c19f-cde2-576f-a706-bb7dc2cfae8f"))
+	(wire
+		(pts
+			(xy 187.96 86.36) (xy 182.88 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4419254-7b77-50d4-bb25-70b9936681c6")
+	)
+(label "USB_DP"  (at 182.88 86.36 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "9d4683bc-d962-562f-b064-9eb242fa1003"))
+	(wire
+		(pts
+			(xy 187.96 88.9) (xy 182.88 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9e4742b-8580-5050-aa61-a78807354574")
+	)
+(label "VBAT_SENSE"  (at 182.88 88.9 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d53b7770-1459-594b-aecc-1f1ab8d20f4b"))
+	(wire
+		(pts
+			(xy 187.96 91.44) (xy 182.88 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d4f1160-5d86-5122-8cd3-b0bca1552fb9")
+	)
+(label "VBUS_SENSE"  (at 182.88 91.44 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5c2f4f74-1f21-5e88-8fc9-546d7e27c2e6"))
+	(wire
+		(pts
+			(xy 317.5 43.18) (xy 312.42 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1cff627-852b-5707-a300-76489c1c33f3")
+	)
+(label "LORA_NRST_PA3"  (at 312.42 43.18 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "44aeaccd-93a4-5271-98a4-7c7019e5287c"))
+	(wire
+		(pts
+			(xy 317.5 45.72) (xy 312.42 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97bb0f51-f008-585b-b12e-07bfd7f61755")
+	)
+(label "LORA_RX_PA1"  (at 312.42 45.72 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0a0e45b4-c5b3-555d-bf7a-acded5a8df6f"))
+	(wire
+		(pts
+			(xy 317.5 48.26) (xy 312.42 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e16a80a-efa4-52ff-8914-cafc9ca36ccc")
+	)
+(label "LORA_TX_PA0"  (at 312.42 48.26 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "e92c1a2c-206a-520d-9d59-264c236ba87a"))
+	(wire
+		(pts
+			(xy 58.42 119.38) (xy 53.34 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbbeccc9-6f67-5cd6-8e52-efa0fba3ac91")
+	)
+(label "GNSS_RX_PC11"  (at 53.34 119.38 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "1a3aa57b-1430-5768-804c-0c31d4597b35"))
+	(wire
+		(pts
+			(xy 58.42 121.92) (xy 53.34 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff638b24-eebb-5dec-a467-6d604797364e")
+	)
+(label "GNSS_TX_PC10"  (at 53.34 121.92 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "172d639e-ae6b-5442-90e1-85d4aaab9342"))
+	(wire
+		(pts
+			(xy 58.42 124.46) (xy 53.34 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f02bfa0f-5af8-5539-a5c6-df695cedcd03")
+	)
+(label "I2C1_SCL"  (at 53.34 124.46 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0ea9e72c-5cfc-5b57-9dff-064b013a4f1f"))
+	(wire
+		(pts
+			(xy 58.42 127) (xy 53.34 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cf26fcf-51dc-5179-ae95-75ff4527753c")
+	)
+(label "I2C1_SDA"  (at 53.34 127 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f14ed7eb-4854-5c1a-b5dd-44d84f9349f3"))
+	(wire
+		(pts
+			(xy 58.42 129.54) (xy 53.34 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67c76fd2-31fa-5e18-8c26-7ebdfab5d239")
+	)
+(label "IMU_INT"  (at 53.34 129.54 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "55f184bd-a9bf-5359-bb23-a90a6a0dee82"))
+	(wire
+		(pts
+			(xy 58.42 132.08) (xy 53.34 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c26410c-51e0-5fe4-8a61-cdf9c7e93e39")
+	)
+(label "PPS_PB0"  (at 53.34 132.08 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fded7b0b-7470-5f6e-a010-14b7b586621c"))
+	(wire
+		(pts
+			(xy 187.96 119.38) (xy 182.88 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aeac276a-b3ae-599e-91ed-0112f585a216")
+	)
+(label "BEC_IN"  (at 182.88 119.38 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "06cca592-ba0d-5971-88cb-e053275a92c3"))
+	(wire
+		(pts
+			(xy 187.96 121.92) (xy 182.88 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb33aecb-e67b-52f8-b75b-a22c5ea743f8")
+	)
+(label "PWM_ESC_PC6"  (at 182.88 121.92 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "dfa62d92-8394-5d87-ba4f-7ea4ad2734c6"))
+	(wire
+		(pts
+			(xy 187.96 124.46) (xy 182.88 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37d9abdc-13cf-50c8-b3e3-a096c060c96c")
+	)
+(label "PWM_SERVO_PA8"  (at 182.88 124.46 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f08a447c-f9c8-585d-b893-923a41fb2754"))
+	(wire
+		(pts
+			(xy 317.5 119.38) (xy 312.42 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c0fb3b5-d362-57b7-9f80-02b9c5ab5e76")
+	)
+(label "NRST"  (at 312.42 119.38 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ca7ac576-4723-5b21-80c9-0657043a2fd3"))
+	(wire
+		(pts
+			(xy 317.5 121.92) (xy 312.42 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2e0a1ca-19c4-5e9c-9019-7d17d38594ad")
+	)
+(label "SWCLK"  (at 312.42 121.92 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "deb30a0c-6a72-5619-aaf5-821d6860bfd4"))
+	(wire
+		(pts
+			(xy 317.5 124.46) (xy 312.42 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56e7471c-2f23-52b2-8b6f-959ea994e73f")
+	)
+(label "SWDIO"  (at 312.42 124.46 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "cf3e48e0-5d22-52a3-9b53-8eed3203cb2b"))
+	(wire
+		(pts
+			(xy 317.5 127) (xy 312.42 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d23d2d2-bd63-5a97-8f00-5fc05c68ce05")
+	)
+(label "SWO"  (at 312.42 127 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f728af65-2c93-581a-8802-60ed48248c12"))
+	(wire
+		(pts
+			(xy 317.5 129.54) (xy 312.42 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1aeea0a-f6cc-558f-84af-2877ba7e5bda")
+	)
+(label "USB_DM"  (at 312.42 129.54 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "8c6c71df-9740-5fc9-b57d-f7a3a6e7628c"))
+	(wire
+		(pts
+			(xy 317.5 132.08) (xy 312.42 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4415e11-926e-5f85-9807-a565d9020c4a")
+	)
+(label "USB_DP"  (at 312.42 132.08 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "14f35c49-c1b3-5aee-8072-1f3824866cac"))
+	(wire
+		(pts
+			(xy 317.5 134.62) (xy 312.42 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85cdd0ac-2af1-546f-a345-03b771683a3d")
+	)
+(label "VBUS_SENSE"  (at 312.42 134.62 0) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "1d7175dd-4351-5a61-b9ff-b2be888ef3a3"))
+	(text "BUILD PATH: review -> order selected BOM -> inspect/assemble -> verify power -> program over SWD -> functional acceptance"
+		(exclude_from_sim no)
+		(at 13 257 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3ede7c8-dc8d-59db-8b98-8ffa800097e1")
+	)
+	(text "Start: docs/build/README.md | V1 is the existing board; V2 is the multifunction vehicle-node draft."
+		(exclude_from_sim no)
+		(at 13 263 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "8764b1ac-4008-5785-a3f0-da190cf48b73")
+	)
+(sheet (at 58.42 40.64) (size 66 26) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "ab044879-1b8a-5671-848c-dc324c91f865") (property "Sheetname" "Power" (at 58.42 38.44 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "Power.kicad_sch" (at 58.42 68.64 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "BEC_IN" passive (at 58.42 43.18 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e58fd83b-dece-5e92-93a2-de5cd7957c07"))(pin "ISENSE" passive (at 58.42 45.72 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "67e8f517-3e4b-5b39-b3a0-255071b456d3"))(pin "VBAT_SENSE" passive (at 58.42 48.26 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "476829c0-3ec2-5e2f-9937-605349d5994b")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706" (page "2")))))
+(sheet (at 187.96 40.64) (size 66 55.88) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "8711b833-cdc8-552e-8deb-3b072a45ec1b") (property "Sheetname" "MCU" (at 187.96 38.44 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "MCU.kicad_sch" (at 187.96 98.52 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "GNSS_RX_PC11" passive (at 187.96 43.18 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "879513e6-ad42-5d63-9b94-66ceda7a8859"))(pin "GNSS_TX_PC10" passive (at 187.96 45.72 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "3096dfb9-fd4c-5fda-9392-895ca8e4d5fb"))(pin "I2C1_SCL" passive (at 187.96 48.26 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "fd51ed89-8675-56c0-9c58-e09227197f5a"))(pin "I2C1_SDA" passive (at 187.96 50.8 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "7529513f-85a4-50b6-ae25-fb652fc7e371"))(pin "IMU_INT" passive (at 187.96 53.34 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "f4354f7e-0b5d-5915-a539-3a918dd900c4"))(pin "ISENSE" passive (at 187.96 55.88 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "57764ad4-e0ce-5dbd-bb8f-6b91c62bcfdc"))(pin "LORA_NRST_PA3" passive (at 187.96 58.42 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "9eb86f67-2a96-5149-85d2-b669bc47711e"))(pin "LORA_RX_PA1" passive (at 187.96 60.96 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "fe070060-2244-5351-be82-6bd637cc4c82"))(pin "LORA_TX_PA0" passive (at 187.96 63.5 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "ff27565e-800f-573a-b201-d5e0004dd2e8"))(pin "NRST" passive (at 187.96 66.04 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e6452486-94f0-53c4-b5a0-30fa28cc753b"))(pin "PPS_PB0" passive (at 187.96 68.58 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b692389f-68db-5de9-a7c3-c1c300660984"))(pin "PWM_ESC_PC6" passive (at 187.96 71.12 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a5e2a9e5-ddf2-5994-a329-b9160ab0cbb3"))(pin "PWM_SERVO_PA8" passive (at 187.96 73.66 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "6b71e8f2-1d1c-5046-8a6d-cc34f6316f5b"))(pin "SWCLK" passive (at 187.96 76.2 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e2c56b4b-776d-536a-b6ae-27ab18546e9b"))(pin "SWDIO" passive (at 187.96 78.74 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "8211d80d-7b7a-5042-ade9-62b43fc5be2e"))(pin "SWO" passive (at 187.96 81.28 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "38936a46-4a71-50d6-9e96-c85efe651295"))(pin "USB_DM" passive (at 187.96 83.82 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "d42f9706-033a-5490-9378-174fddd2b3f1"))(pin "USB_DP" passive (at 187.96 86.36 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "f74e1fac-1f89-5d07-969d-8174717608f2"))(pin "VBAT_SENSE" passive (at 187.96 88.9 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "583aacc0-537d-50ba-bfda-cfc1570a2d0f"))(pin "VBUS_SENSE" passive (at 187.96 91.44 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "2f0f9283-54ed-525d-ae3c-0923bacdee4d")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706" (page "3")))))
+(sheet (at 317.5 40.64) (size 66 26) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "797ed2d7-f26a-5324-8d20-a644f401b7c5") (property "Sheetname" "Radio" (at 317.5 38.44 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "Radio.kicad_sch" (at 317.5 68.64 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "LORA_NRST_PA3" passive (at 317.5 43.18 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e4cc67eb-ab73-5634-abdd-30fc75a60b3b"))(pin "LORA_RX_PA1" passive (at 317.5 45.72 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "bc7cb96b-f746-540f-bda4-82e9a8cca0ca"))(pin "LORA_TX_PA0" passive (at 317.5 48.26 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "875b32d6-c644-595d-a050-8735c8577996")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706" (page "4")))))
+(sheet (at 58.42 116.84) (size 66 26) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "b7be4430-1eb4-5f2b-9d93-98132a937546") (property "Sheetname" "Navigation" (at 58.42 114.64 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "Navigation.kicad_sch" (at 58.42 144.84 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "GNSS_RX_PC11" passive (at 58.42 119.38 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a0ed7797-64f9-540b-b265-664dbec1df5e"))(pin "GNSS_TX_PC10" passive (at 58.42 121.92 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "76b3e9f0-3520-5fd2-8352-98772f47b274"))(pin "I2C1_SCL" passive (at 58.42 124.46 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a4400a68-e76b-532d-b28f-f8f1b8d6fee7"))(pin "I2C1_SDA" passive (at 58.42 127 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "23ba8303-3732-57ef-b4a2-0cd816e6cd9c"))(pin "IMU_INT" passive (at 58.42 129.54 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "930c1d5a-493d-5986-b5ce-092f4fe72ef4"))(pin "PPS_PB0" passive (at 58.42 132.08 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a50bb6f4-3445-5f25-b5f2-6d11e82302dd")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706" (page "5")))))
+(sheet (at 187.96 116.84) (size 66 26) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "6e640c51-22cb-59d5-a5d0-0c229d48ee31") (property "Sheetname" "Actuators" (at 187.96 114.64 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "Actuators.kicad_sch" (at 187.96 144.84 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "BEC_IN" passive (at 187.96 119.38 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "7647f781-8c87-5d7c-a901-f725bfff9585"))(pin "PWM_ESC_PC6" passive (at 187.96 121.92 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "449b2ad8-3adb-58d1-83be-de4b1398baee"))(pin "PWM_SERVO_PA8" passive (at 187.96 124.46 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "a2ca9e36-00b7-5548-9b38-95ec0d9b1cd5")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706" (page "6")))))
+(sheet (at 317.5 116.84) (size 66 26) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "d1e55589-9ee7-5c35-ba90-3e096ceac45d") (property "Sheetname" "Debug" (at 317.5 114.64 0) (effects (font (size 1.8 1.8)) (justify left bottom))) (property "Sheetfile" "Debug.kicad_sch" (at 317.5 144.84 0) (effects (font (size 1.1 1.1)) (justify left top))) (pin "NRST" passive (at 317.5 119.38 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "7af0f230-ed38-57f0-a4c9-6085f91efc4a"))(pin "SWCLK" passive (at 317.5 121.92 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "98567f6b-c5d4-5172-a1c8-a9f6bc46d32e"))(pin "SWDIO" passive (at 317.5 124.46 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "502b9983-7b77-55ee-abf3-766ddeb1b325"))(pin "SWO" passive (at 317.5 127 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "ef01a834-370f-53a3-a1db-3683241500f5"))(pin "USB_DM" passive (at 317.5 129.54 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e0a435f7-5bca-51e7-85d2-c857ad45f6c8"))(pin "USB_DP" passive (at 317.5 132.08 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "7894926c-eb49-5170-913d-3787e9960ff5"))(pin "VBUS_SENSE" passive (at 317.5 134.62 180) (effects (font (size 1.27 1.27)) (justify left)) (uuid "d78c80a6-5bf9-5e46-9ab8-4b50abb5a6e8")) (instances (project "LoRa_Boat_Controller_V2" (path "/1dd45446-4f65-56e8-a2d3-9539c2076706" (page "7")))))
+(sheet_instances (path "/" (page "1")))
+(embedded_fonts no)
+)

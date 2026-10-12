@@ -87,3 +87,13 @@ Independent read-only review passed and is released. Root closes the power-envel
 ## 6S power topology comparison claim — 2026-10-12 UTC
 
 Codex root claims reviews/codex/power_topology/**, current viewer/guide/handoff/portfolio links and portable comparison checks. Child power_cutoff_review is read-only. This packet compares explicit proposed power boundaries and load/package budgets; expected live electrical/copper delta is zero. Preserve prior captured reviews, original CAD/BOM/firmware and the two unrelated dirty tools. No routing/generation, orders, hardware access or branch/history changes.
+
+## Input-stage schematic claim — 2026-10-12 UTC
+
+Codex root claims reviews/codex/input_stage/**, current viewer/guide/handoff/portfolio links and captured-evidence checks. Children input_protection_review and power_native_review are read-only. Build one isolated 6S input schematic with a fuse, bidirectional TVS and 100 V series reverse diode; the diode replaces the screened controller after coupled positive/negative pulse analysis. Explicit expected candidate delta is recorded before native export; live electrical/copper delta remains zero. Preserve all historical packets, original Allegro/V1 and both unrelated dirty tools. No primary generation/routing, orders, hardware access or branch/history changes.
+
+Input-stage child power_native_review now owns only reviews/codex/input_stage/verify_candidate.py and test_candidate.py for independent delta validation. All other child work remains read-only.
+
+## INPUT-A1 review checkpoint - 2026-10-12 UTC
+
+The input-stage native candidate, fourteen mutation tests, independent claim review and desktop/phone viewer checks are complete. Child write scopes are released. Root closes selective publication of this isolated study and current viewer/guide records. All parts remain held; live CAD/copper/BOM/firmware are unchanged. The next bounded circuit task is an explicit negative-output/reverse-leakage amendment, as recorded in input_stage/README.md. Preserve INPUT-A1 and both unrelated dirty tools.

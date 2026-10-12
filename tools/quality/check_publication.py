@@ -146,6 +146,35 @@ def main():
     assert topology["electrical_delta"] == 0 and topology["hardware_tested"] is False
     assert topology["fabrication_approved"] is False
     print("PASS proposed power arithmetic and unchanged evidence; no circuit or hardware acceptance")
+    input_root = "reviews/codex/input_stage/"
+    input_packet = read_json(input_root + "packet_manifest.json")
+    check_hashes(input_packet["input_sha256"], "input-stage preserved baseline evidence")
+    check_hashes(input_packet["artifact_sha256"], "input-stage captured sources and artifacts")
+    input_build = read_json(input_root + "build_manifest.json")
+    input_native = read_json(input_root + "native_manifest.json")
+    check_hashes(input_build["output_sha256"], "input-stage candidate sources")
+    check_hashes(input_native["input_sha256"], "input-stage native inputs")
+    check_hashes(input_native["output_sha256"], "input-stage native outputs")
+    check_hashes({input_root + "build_candidate.py": input_build["builder_sha256"],
+                  input_root + "export_native.py": input_native["runner_sha256"]}, "input-stage evidence tools")
+    spec = importlib.util.spec_from_file_location("input_stage_verify", ROOT / input_root / "verify_candidate.py")
+    input_verify = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(input_verify)
+    assert input_verify.collect() == read_json(input_root + "validation.json")
+    assert input_packet["live_electrical_delta"] == 0 and input_packet["live_copper_delta"] == 0
+    assert not any(input_packet[k] for k in ["pcb_updated", "hardware_tested", "fabrication_approved"])
+    parts = read_json(input_root + "candidate_parts.json")
+    assert parts["all_parts_held"] is True and len(parts["parts"]) == 6
+    net_parts = {c.get("ref"): c for c in ET.parse(ROOT / input_root / "native/netlist.xml").findall("./components/comp")}
+    assert {p["ref"] for p in parts["parts"]} == {"J1", "F1", "D1", "D12", "C1", "C2"}
+    for part in parts["parts"]:
+        comp = net_parts[part["ref"]]
+        fields = {f.get("name"): f.text for f in comp.findall("./fields/field")}
+        assert part["value"] == comp.findtext("value") and part["footprint"] == comp.findtext("footprint")
+        assert part["mpn"] == fields["MPN"] and part["manufacturer"] == fields["Manufacturer"]
+        assert part["quantity"] == 1 and part["status"] == "held_candidate_only_not_order_approved"
+    assert all(item["passed"] for item in read_json(input_root + "coordinate_bounds.json").values())
+    print("PASS input-stage native delta, held identities and preserved live CAD; no hardware acceptance")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -157,7 +186,7 @@ def main():
     pages += list((ROOT / "docs/build").glob("*.md"))
     pages += list((ROOT / "docs/applications").glob("*.md"))
     pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md", ROOT / "reviews/codex/imu_placement/README.md", ROOT / "reviews/codex/imu_bias_filter/README.md"]
-    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md"]
+    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

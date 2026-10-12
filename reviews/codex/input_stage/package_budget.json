@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "scope": "Captured library pad numbering and courtyard bounds only; not footprint manufacturer matching, fit, stencil or thermal approval",
+  "kicad_version": "9.0.7",
+  "parts": [
+    {
+      "ref": "F1",
+      "footprint": "Fuse_Littelfuse-NANO2-451_453",
+      "sha256": "0515d814d319de9fad7d5c0d48bf0206723289e890fb382149acad9fe4f2aa3b",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -2.455,
+          "y_mm": 0.0,
+          "width_mm": 1.96,
+          "height_mm": 3.15
+        },
+        {
+          "number": "2",
+          "x_mm": 2.455,
+          "y_mm": 0.0,
+          "width_mm": 1.96,
+          "height_mm": 3.15
+        }
+      ],
+      "courtyard_bounds_mm": [
+        -3.715,
+        -1.855,
+        3.715,
+        1.855
+      ],
+      "courtyard_rectangle_area_mm2": 27.5653
+    },
+    {
+      "ref": "D1",
+      "footprint": "D_SMB",
+      "sha256": "c852067a09207754ec9c7f01513eb9a41b3f2b845f1db14c4124aa8ffa835859",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -2.15,
+          "y_mm": 0.0,
+          "width_mm": 2.5,
+          "height_mm": 2.3
+        },
+        {
+          "number": "2",
+          "x_mm": 2.15,
+          "y_mm": 0.0,
+          "width_mm": 2.5,
+          "height_mm": 2.3
+        }
+      ],
+      "courtyard_bounds_mm": [
+        -3.675,
+        -2.275,
+        3.675,
+        2.275
+      ],
+      "courtyard_rectangle_area_mm2": 33.4425
+    },
+    {
+      "ref": "D12",
+      "footprint": "D_SMB",
+      "sha256": "c852067a09207754ec9c7f01513eb9a41b3f2b845f1db14c4124aa8ffa835859",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -2.15,
+          "y_mm": 0.0,
+          "width_mm": 2.5,
+          "height_mm": 2.3
+        },
+        {
+          "number": "2",
+          "x_mm": 2.15,
+          "y_mm": 0.0,
+          "width_mm": 2.5,
+          "height_mm": 2.3
+        }
+      ],
+      "courtyard_bounds_mm": [
+        -3.675,
+        -2.275,
+        3.675,
+        2.275
+      ],
+      "courtyard_rectangle_area_mm2": 33.4425
+    },
+    {
+      "ref": "C1",
+      "footprint": "CP_Elec_8x10.5",
+      "sha256": "cc3b6bb7b181a8f2346b807e02b876286515f5a4498e01747605a91ec9f403b4",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -3.7,
+          "y_mm": 0.0,
+          "width_mm": 4.4,
+          "height_mm": 2.5
+        },
+        {
+          "number": "2",
+          "x_mm": 3.7,
+          "y_mm": 0.0,
+          "width_mm": 4.4,
+          "height_mm": 2.5
+        }
+      ],
+      "courtyard_bounds_mm": [
+        -6.175,
+        -4.525,
+        6.175,
+        4.525
+      ],
+      "courtyard_rectangle_area_mm2": 111.7675
+    },
+    {
+      "ref": "C2",
+      "footprint": "C_1210_3225Metric",
+      "sha256": "fe04a9081d0faf074eef3775f89ab1f4c53b4bb013bdaeb6c933b2f961de3484",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -1.475,
+          "y_mm": 0.0,
+          "width_mm": 1.15,
+          "height_mm": 2.7
+        },
+        {
+          "number": "2",
+          "x_mm": 1.475,
+          "y_mm": 0.0,
+          "width_mm": 1.15,
+          "height_mm": 2.7
+        }
+      ],
+      "courtyard_bounds_mm": [
+        -2.325,
+        -1.625,
+        2.325,
+        1.625
+      ],
+      "courtyard_rectangle_area_mm2": 15.1125
+    }
+  ],
+  "sum_rectangle_area_mm2": 221.33030000000002,
+  "excluded": [
+    "J1 existing connector",
+    "inter-part routing/clearance",
+    "TVS loop",
+    "thermal copper spreading",
+    "downstream converters"
+  ],
+  "pcb_updated": false,
+  "thermal_planning": {
+    "assumed_ambient_c": 60,
+    "chosen_junction_design_target_c": 125,
+    "diode_dc_current_a": 1,
+    "st_loss_model_w": 0.627,
+    "required_theta_ja_at_assumptions_c_per_w": 103.66826156299841,
+    "st_theta_jl_c_per_w": 25,
+    "is_measured": false
+  }
+}

@@ -71,3 +71,7 @@ For portfolio updates, preserve the distinctions in [portfolio.json](portfolio.j
 ## Power architecture and interactive study — 2026-10-12
 
 The [annotated comparison](../../reviews/codex/power_topology/v2_power_topologies.svg) and [interactive load calculator](../../reviews/codex/power_topology/load_budget.html) explain two proposed 6S architectures and their constraints. Independent review checked candidate pin maps and arithmetic. The study identifies a conflict between simultaneous rail capacities and the low-voltage 1 A feed goal; it recommends the wider-voltage input stage for the next schematic packet. These are analytical design artifacts, not an integrated circuit, measured efficiency or a fabrication release. [Evidence and restart task](../../reviews/codex/power_topology/README.md).
+
+## Native input-stage implementation — 2026-10-12
+
+[INPUT-A1](../../reviews/codex/input_stage/README.md) advances the power study into an editable, wired schematic with specific fuse, TVS, diode and capacitor candidates. Native comparison verifies the exact delta and preserves all 344 connections outside the input section; ERC adds no findings. Fourteen tests reject wiring and identity regressions. The [drawing](../../reviews/codex/input_stage/v2_input_stage.svg) is an isolated engineering candidate: it is not routed, integrated, power-ready or fabrication-approved. Reverse-leakage protection and thermal/surge qualification remain open.

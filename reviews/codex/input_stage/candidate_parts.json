@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "source": "native/netlist.xml",
+  "all_parts_held": true,
+  "parts": [
+    {
+      "ref": "C1",
+      "value": "47uF 63V",
+      "mpn": "EEEFK1J470P",
+      "manufacturer": "Panasonic",
+      "footprint": "LoRa_Boat_Controller_V2:CP_Elec_8x10.5",
+      "quantity": 1,
+      "status": "held_candidate_only_not_order_approved"
+    },
+    {
+      "ref": "C2",
+      "value": "1uF 100V",
+      "mpn": "GRM32ER72A105KA01L",
+      "manufacturer": "Murata",
+      "footprint": "LoRa_Boat_Controller_V2:C_1210_3225Metric",
+      "quantity": 1,
+      "status": "held_candidate_only_not_order_approved"
+    },
+    {
+      "ref": "D1",
+      "value": "SMBJ26CA",
+      "mpn": "SMBJ26CA",
+      "manufacturer": "Littelfuse",
+      "footprint": "LoRa_Boat_Controller_V2:D_SMB",
+      "quantity": 1,
+      "status": "held_candidate_only_not_order_approved"
+    },
+    {
+      "ref": "D12",
+      "value": "STPS3H100U",
+      "mpn": "STPS3H100U",
+      "manufacturer": "STMicroelectronics",
+      "footprint": "LoRa_Boat_Controller_V2:D_SMB",
+      "quantity": 1,
+      "status": "held_candidate_only_not_order_approved"
+    },
+    {
+      "ref": "F1",
+      "value": "2A 125V",
+      "mpn": "0451002.MRL",
+      "manufacturer": "Littelfuse",
+      "footprint": "LoRa_Boat_Controller_V2:Fuse_Littelfuse-NANO2-451_453",
+      "quantity": 1,
+      "status": "held_candidate_only_not_order_approved"
+    },
+    {
+      "ref": "J1",
+      "value": "BATTERY XT30",
+      "mpn": "XT30PW-M",
+      "manufacturer": "Amass",
+      "footprint": "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal",
+      "quantity": 1,
+      "status": "held_candidate_only_not_order_approved"
+    }
+  ]
+}

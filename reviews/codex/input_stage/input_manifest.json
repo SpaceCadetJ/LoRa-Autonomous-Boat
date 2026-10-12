@@ -1,0 +1,29 @@
+{
+  "revision": "8f58ae6d8939e483d45b89631e2a3b1c01771291",
+  "sha256": {
+    "hardware/kicad_v2/Actuators.kicad_sch": "19ccbc4b351d8f371c53b831e3f80bc9be7fdf925b876e5c6f14da5d1ad6bfa2",
+    "hardware/kicad_v2/Debug.kicad_sch": "601919fb15d757bd0018576be9a4278cb35f92bbdd9484ab85d984f6b5eff924",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch": "9f8754f2d40612077a687448ca6a3ae10855176f9c796f19831109b043c532eb",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym": "3a8e94baff843cfd8d3253f808d07d697424464d7a5db6d0a4a2f22c5527e121",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/QFN-24_3x3mm_P0.4mm_NoEP.kicad_mod": "45d275957763fbc76756a2c762a7dd9bf1e8ab71e7eeb03e3e537b192d28f054",
+    "hardware/kicad_v2/MCU.kicad_sch": "ecbec0770dd18ffdc33a859239e98700ea401bd74abe1135e2775989eb254ba7",
+    "hardware/kicad_v2/Navigation.kicad_sch": "9d07440781ce1fb8f1d98997a1f34044cdc7ac7a29b36a1b2260bd3e542ec039",
+    "hardware/kicad_v2/Power.kicad_sch": "77b234a7b111fc6105b951f4049ed4f8b4d68257905c57d70b86d1207a68dc04",
+    "hardware/kicad_v2/Radio.kicad_sch": "b4e1ee24c1b04bc9d6199e2ee57fbcffd5476d1599e1905a8d1fa9e916799930",
+    "hardware/kicad_v2/fp-lib-table": "ab7fae9b8768ecd1309a42873f463ef02016b0ac5c026a12fb412bfa47e8faf7",
+    "hardware/kicad_v2/sym-lib-table": "3dccf10d5632037fbc6978966881b8eb68ceb500677674a746481e19a0368ae3",
+    "hardware/kicad/tools/kicad_sym.py": "fdc2f79c1cc821d9a28dc9cbdb49aae2e6f86611d36a53a2194514c4c3a3f0f3",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sym": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod": "b880a51afb66d5a86cbd2dad667bd6a819500be0a7d51aa2234ce6cac41a2fee",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod": "ce99ee424974e7bae6c9137e43ac6b4f8bc4daaa9d6777f26049be4f1f1dd830",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod": "3df2bdad2d5533ceb5a0492e93aae8e2faab545a4f2e999d8a2a426829fca314"
+  },
+  "additional_symbols_sha256": "83b838054937ea1d1599d5740da203b7e89a70ee9603b09dee5b95efb1bd358c",
+  "footprint_sha256": {
+    "inputs/footprints/Capacitor_SMD.pretty/CP_Elec_8x10.5.kicad_mod": "cc3b6bb7b181a8f2346b807e02b876286515f5a4498e01747605a91ec9f403b4",
+    "inputs/footprints/Capacitor_SMD.pretty/C_1210_3225Metric.kicad_mod": "fe04a9081d0faf074eef3775f89ab1f4c53b4bb013bdaeb6c933b2f961de3484",
+    "inputs/footprints/Diode_SMD.pretty/D_SMB.kicad_mod": "c852067a09207754ec9c7f01513eb9a41b3f2b845f1db14c4124aa8ffa835859",
+    "inputs/footprints/Fuse.pretty/Fuse_Littelfuse-NANO2-451_453.kicad_mod": "0515d814d319de9fad7d5c0d48bf0206723289e890fb382149acad9fe4f2aa3b"
+  }
+}

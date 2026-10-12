@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-12T03:16:25.793Z",
+  "scope": "Local viewer navigation only; native schematic validation is separate",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "image_loaded": true,
+      "correct_candidate_project": true,
+      "pcb_pending_label": true,
+      "guide_opened": true,
+      "page_errors": [],
+      "horizontal_overflow": false
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image_loaded": true,
+      "correct_candidate_project": true,
+      "pcb_pending_label": true,
+      "guide_opened": true,
+      "page_errors": [],
+      "horizontal_overflow": false
+    }
+  ]
+}
