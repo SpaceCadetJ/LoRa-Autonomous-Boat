@@ -135,6 +135,17 @@ def main():
     assert {"C1", "C2", "C10", "F1", "D2", "R1"} <= holds.keys()
     assert power["electrical_delta"] == 0 and power["hardware_tested"] is False
     print("PASS power boundary capture, identity holds and unchanged CAD; no hardware qualification")
+    topology_root = "reviews/codex/power_topology/"
+    topology = read_json(topology_root + "packet_manifest.json")
+    check_hashes(topology["input_sha256"], "power topology unchanged evidence inputs")
+    check_hashes(topology["artifact_sha256"], "power topology artifacts")
+    spec = importlib.util.spec_from_file_location("topology_model", ROOT / topology_root / "model.py")
+    model = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(model)
+    assert model.study() == read_json(topology_root + "comparison.json")
+    assert topology["electrical_delta"] == 0 and topology["hardware_tested"] is False
+    assert topology["fabrication_approved"] is False
+    print("PASS proposed power arithmetic and unchanged evidence; no circuit or hardware acceptance")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -146,7 +157,7 @@ def main():
     pages += list((ROOT / "docs/build").glob("*.md"))
     pages += list((ROOT / "docs/applications").glob("*.md"))
     pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md", ROOT / "reviews/codex/imu_placement/README.md", ROOT / "reviews/codex/imu_bias_filter/README.md"]
-    pages += [ROOT / power_root / "README.md"]
+    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

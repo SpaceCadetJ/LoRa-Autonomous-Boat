@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "date": "2026-10-12T02:10:20.129Z",
+  "scope": "Local browser arithmetic, input rejection and navigation only",
+  "hardware_tested": false,
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "calculated_cases_compared": 7,
+      "numeric_tolerance": 1e-12,
+      "invalid_model_cases": 6,
+      "invalid_form_cases": 3,
+      "presets_and_capacity_messages": "pass",
+      "chart_finite": "pass",
+      "horizontal_overflow": false,
+      "viewer_map_loaded": true,
+      "calculator_link_present": true,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "calculated_cases_compared": 7,
+      "numeric_tolerance": 1e-12,
+      "invalid_model_cases": 6,
+      "invalid_form_cases": 3,
+      "presets_and_capacity_messages": "pass",
+      "chart_finite": "pass",
+      "horizontal_overflow": false,
+      "viewer_map_loaded": true,
+      "calculator_link_present": true,
+      "page_errors": []
+    }
+  ],
+  "input_sha256": {
+    "reviews/codex/power_topology/load_budget.html": "f2cb560527197270fa10c789143d683648b3bdab8ce6559834f4cc67ce5e81b6",
+    "reviews/codex/power_topology/comparison.json": "1950724a63fa0ad0aaa02917402dcc39f3e80d0fb3a91d2d3f900f6928820fe0",
+    "reviews/codex/power_topology/verify_viewer.cjs": "b832414672d1ae5b7699df532e8aee1a73a011c39e295ed82f0717f39a228e76",
+    "reviews/codex/power_topology/v2_power_topologies.svg": "3d938005ea2f80afae5b006ecf0cd725c347c38c4d9dce72f09f21e47346f946"
+  }
+}

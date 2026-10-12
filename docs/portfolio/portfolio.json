@@ -29,7 +29,9 @@
     "imu_candidate": "reviews/codex/imu_interface/README.md",
     "imu_placement": "reviews/codex/imu_placement/README.md",
     "imu_current": "reviews/codex/imu_bias_filter/README.md",
-    "power_envelope": "reviews/codex/power_envelope/README.md"
+    "power_envelope": "reviews/codex/power_envelope/README.md",
+    "power_topology": "reviews/codex/power_topology/README.md",
+    "load_budget": "reviews/codex/power_topology/load_budget.html"
   },
   "technologies": [
     "STM32F446",
@@ -105,6 +107,11 @@
       "path": "reviews/codex/power_envelope/v2_power_envelope.svg",
       "kind": "engineering_review",
       "caption": "6S input review: measured CAD courtyard bounds and proposed planning allowances; not an integrated power design."
+    },
+    {
+      "path": "reviews/codex/power_topology/v2_power_topologies.svg",
+      "kind": "architecture_study",
+      "caption": "Two proposed 6S power paths with load and protection constraints; no live circuit change."
     }
   ],
   "validated_results": [
@@ -214,6 +221,15 @@
         "reviews/codex/imu_bias_filter/native_manifest.json",
         "reviews/codex/imu_bias_filter/README.md"
       ]
+    },
+    {
+      "claim": "Analytical load and cutoff-tolerance models expose the low-input feed conflict; proposed package-specific pin maps independently reviewed. Browser calculator parity is recorded separately from hardware qualification.",
+      "classification": "analytical_design_review_not_hardware_test",
+      "evidence": [
+        "reviews/codex/power_topology/comparison.json",
+        "reviews/codex/power_topology/review_notes.json",
+        "reviews/codex/power_topology/viewer_check.json"
+      ]
     }
   ],
   "current_native_findings": {
@@ -242,7 +258,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Compare complete 6S power topologies with a simultaneous load budget and exact package/thermal areas; resolve the recorded C1/F1/D2/D1 identity conflicts before final IMU2 routing.",
+    "Implement the recommended wider-voltage input-stage schematic with exact protection identities and bounded positive/negative/stored-energy limits, then complete converter cells and coordinate IMU2 routing.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",
     "Measure voice quality, airtime and RC coexistence before selecting handheld radio, codec or hardware."

@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "status": "proposed_functional_contract_not_native_netlist",
+  "live_electrical_delta": 0,
+  "new_references_allocated": false,
+  "common_existing_pin_changes": [
+    {
+      "pins": [
+        "U4.5",
+        "U5.5",
+        "C13.1",
+        "C14.1"
+      ],
+      "from": "VSERVO",
+      "to": "+5V_BUCK"
+    },
+    {
+      "pins": [
+        "U8.1"
+      ],
+      "from": "ISENSE",
+      "to": "ISENSE_AMP",
+      "bridge": "proposed 1k resistor to existing ISENSE; verify stability/ADC settling"
+    }
+  ],
+  "preserve": [
+    "U1.16 VBAT_SENSE ADC allocation",
+    "U1.20 ISENSE ADC allocation",
+    "R33 nominal 20mOhm",
+    "U6/MCU changes only through separate IMU2 candidate",
+    "corrected ground copper where feasible; exact delta required on integration"
+  ],
+  "common_held": [
+    "F1 exact package/rating/interrupt selection",
+    "TVS waveform and fuse coordination",
+    "input capacitor ratings/effective capacitance",
+    "battery divider and unpowered ADC protection",
+    "MOSFET voltage/SOA/gate/thermal selection",
+    "output filters and inductors",
+    "C1/F1/D1/D2 identity reconciliation"
+  ],
+  "A": {
+    "path": [
+      "J1.1",
+      "F1",
+      "VBAT_FUSED",
+      "NMOS source-to-drain reverse stage",
+      "VIN_RAW",
+      "R33",
+      "VIN_BUCK",
+      "parallel buck3v3 and buck5v"
+    ],
+    "remove_cells": [
+      "Q1/R1/D2",
+      "old U2 regulator support",
+      "old U3 regulator support"
+    ],
+    "reverse_controller_candidate": "LM74700QDBVRQ1",
+    "reverse_pins": {
+      "1": "VCAP: charge-pump capacitor to ANODE",
+      "2": "GND",
+      "3": "EN: VBAT_FUSED for always-on study",
+      "4": "CATHODE: VIN_RAW / NMOS drain",
+      "5": "GATE: external NMOS gate",
+      "6": "ANODE: VBAT_FUSED / NMOS source"
+    },
+    "input_tvs": "bidirectional candidate across VBAT_FUSED/GND; no MPN selected",
+    "buck_candidate_each": "LMR36520ADDAR",
+    "buck_pins_each": {
+      "1": "PGND",
+      "2": "VIN_BUCK; local input bypass",
+      "3": "VIN_BUCK for always-on study, subject to sequencing",
+      "4": "PG: resistor pullup to own output rail; test point",
+      "5": "FB: new output divider",
+      "6": "VCC: local 1uF to GND, no external load",
+      "7": "BOOT: local 100nF to SW",
+      "8": "SW: new output inductor",
+      "thermal_pad": "ground thermal connection; not sole electrical return"
+    },
+    "sense_candidate": "INA281A1IDBVR",
+    "sense_pins": {
+      "1": "ISENSE_AMP",
+      "2": "GND",
+      "3": "VIN_RAW",
+      "4": "VIN_BUCK",
+      "5": "+3V3 with local bypass"
+    }
+  },
+  "B": {
+    "path": [
+      "J1.1",
+      "F1",
+      "VBAT_FUSED",
+      "back-to-back common-source NFET pair",
+      "VIN_RAW",
+      "R33",
+      "VIN_BUCK",
+      "existing bucks with E02/E04/E05/E06 corrections"
+    ],
+    "controller_candidate": "LTC4365ITS8#TRMPBF",
+    "controller_pins": {
+      "1": "VIN: VBAT_FUSED",
+      "2": "UV: independent qualified divider",
+      "3": "OV: separate 539k/10k study divider",
+      "4": "GND",
+      "5": "SHDN: reviewed enable network, not assigned yet",
+      "6": "FAULT: reviewed pullup/test point, not assigned yet",
+      "7": "VOUT: VIN_RAW",
+      "8": "GATE: both NFET gates"
+    },
+    "replace": [
+      "Q1/R1/D2 cell",
+      "U8: wider common-mode sense or separately demonstrated input protection"
+    ],
+    "fets": "common sources tied; drains to fused input and VIN_RAW; confirm manufacturer pin numbers after selection",
+    "retained_buck_issue": "R6 must be removed/qualified; L2 current budget corrected; existing capacitors/ratings not automatically accepted"
+  }
+}

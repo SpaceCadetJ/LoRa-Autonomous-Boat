@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "status": "analytical_planning_only",
+  "electrical_delta": 0,
+  "hardware_tested": false,
+  "assumptions": {
+    "normal_input_v": [
+      7,
+      25.2
+    ],
+    "logic_rail_v": 3.3,
+    "servo_rail_v": 5,
+    "aux5_a": 0.02,
+    "efficiency_each": 0.85,
+    "efficiency_is_measured": false,
+    "excluded": [
+      "frontend conduction losses",
+      "quiescent input currents",
+      "inrush and short circuits",
+      "ESC motor current, fed directly from battery",
+      "external BEC energy and servo wiring losses"
+    ]
+  },
+  "cases": {
+    "external_bec_logic_ceiling": {
+      "7": {
+        "output_power_w": 4.06,
+        "converter_input_power_w": 4.776470588235293,
+        "input_current_a": 0.6823529411764705,
+        "current_5v_a": 0.02,
+        "exceeds_1a_feed": false,
+        "exceeds_2a_5v_converter": false,
+        "loss_3v3_w": 0.6988235294117647,
+        "loss_5v_w": 0.017647058823529415,
+        "max_servo_a_for_1a_feed": 0.37800000000000006
+      },
+      "25.2": {
+        "output_power_w": 4.06,
+        "converter_input_power_w": 4.776470588235293,
+        "input_current_a": 0.18954248366013068,
+        "current_5v_a": 0.02,
+        "exceeds_1a_feed": false,
+        "exceeds_2a_5v_converter": false,
+        "loss_3v3_w": 0.6988235294117647,
+        "loss_5v_w": 0.017647058823529415,
+        "max_servo_a_for_1a_feed": 3.4719999999999995
+      }
+    },
+    "illustrative_mixed_load": {
+      "7": {
+        "output_power_w": 3.755,
+        "converter_input_power_w": 4.41764705882353,
+        "input_current_a": 0.63109243697479,
+        "current_5v_a": 0.52,
+        "exceeds_1a_feed": false,
+        "exceeds_2a_5v_converter": false,
+        "loss_3v3_w": 0.2038235294117647,
+        "loss_5v_w": 0.4588235294117648,
+        "max_servo_a_for_1a_feed": 0.939
+      },
+      "25.2": {
+        "output_power_w": 3.755,
+        "converter_input_power_w": 4.41764705882353,
+        "input_current_a": 0.17530345471521944,
+        "current_5v_a": 0.52,
+        "exceeds_1a_feed": false,
+        "exceeds_2a_5v_converter": false,
+        "loss_3v3_w": 0.2038235294117647,
+        "loss_5v_w": 0.4588235294117648,
+        "max_servo_a_for_1a_feed": 4.0329999999999995
+      }
+    },
+    "simultaneous_output_goals": {
+      "7": {
+        "output_power_w": 14.059999999999999,
+        "converter_input_power_w": 16.541176470588233,
+        "input_current_a": 2.363025210084033,
+        "current_5v_a": 2.02,
+        "exceeds_1a_feed": true,
+        "exceeds_2a_5v_converter": true,
+        "loss_3v3_w": 0.6988235294117647,
+        "loss_5v_w": 1.782352941176471,
+        "max_servo_a_for_1a_feed": 0.37800000000000006
+      },
+      "25.2": {
+        "output_power_w": 14.059999999999999,
+        "converter_input_power_w": 16.541176470588233,
+        "input_current_a": 0.6563958916900092,
+        "current_5v_a": 2.02,
+        "exceeds_1a_feed": false,
+        "exceeds_2a_5v_converter": true,
+        "loss_3v3_w": 0.6988235294117647,
+        "loss_5v_w": 1.782352941176471,
+        "max_servo_a_for_1a_feed": 3.4719999999999995
+      }
+    }
+  },
+  "ideal_simultaneous_without_aux_at_7v": {
+    "output_power_w": 13.959999999999999,
+    "converter_input_power_w": 13.959999999999999,
+    "input_current_a": 1.9942857142857142,
+    "current_5v_a": 2,
+    "exceeds_1a_feed": true,
+    "exceeds_2a_5v_converter": false,
+    "loss_3v3_w": 0.0,
+    "loss_5v_w": 0.0,
+    "max_servo_a_for_1a_feed": 0.6080000000000001
+  },
+  "cutoff_0p1percent": {
+    "ratio_nominal": 54.9,
+    "ratio_min": 54.7923076923077,
+    "ratio_max": 55.0079079079079,
+    "trip_min_v": 26.97981614846154,
+    "trip_max_v": 27.921908653263255,
+    "recovery_min_v": 25.2264623023077,
+    "operating_margin_to_28v": 0.07809134673674478,
+    "normal_restart_margin_v": 0.026462302307699304,
+    "voltage_at_specified_50mv_overdrive_v": 30.672304048658653
+  },
+  "cutoff_1percent": {
+    "ratio_nominal": 54.9,
+    "ratio_min": 53.83267326732673,
+    "ratio_max": 55.98888888888889,
+    "trip_min_v": 26.507147684158415,
+    "trip_max_v": 28.41980501111111,
+    "recovery_min_v": 24.784502139603962,
+    "operating_margin_to_28v": -0.4198050111111087,
+    "normal_restart_margin_v": -0.4154978603960373,
+    "voltage_at_specified_50mv_overdrive_v": 31.219249455555556
+  },
+  "charged_output_negative_pulse_differential_v": 78.5,
+  "lm74700_recommended_differential_limit_v": 70,
+  "lm74700_absolute_differential_limit_v": 75
+}

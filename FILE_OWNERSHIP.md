@@ -83,3 +83,7 @@ The power-envelope scope includes procurement holds and derived purchasing expor
 ## 6S power review checkpoint — 2026-10-12 UTC
 
 Independent read-only review passed and is released. Root closes the power-envelope/ordering/viewer packet with selective publication. New C1/F1 package and D2 value findings are held; live CAD and original BOM remain unchanged. Next bounded scope is the two-topology 6S load/protection/package comparison in power_envelope/README.md. No active child write claim remains.
+
+## 6S power topology comparison claim — 2026-10-12 UTC
+
+Codex root claims reviews/codex/power_topology/**, current viewer/guide/handoff/portfolio links and portable comparison checks. Child power_cutoff_review is read-only. This packet compares explicit proposed power boundaries and load/package budgets; expected live electrical/copper delta is zero. Preserve prior captured reviews, original CAD/BOM/firmware and the two unrelated dirty tools. No routing/generation, orders, hardware access or branch/history changes.

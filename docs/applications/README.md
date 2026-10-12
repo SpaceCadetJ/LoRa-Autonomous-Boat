@@ -59,3 +59,7 @@ The [current IMU2 candidate](../../reviews/codex/imu_bias_filter/README.md) impl
 ## 6S power review — 2026-10-12
 
 The [power envelope and package review](../../reviews/codex/power_envelope/README.md) retains 7–25.2 V / 2S–6S intent and finds C1/F1 package conflicts plus D2 value drift. Current ordering holds include these parts; live CAD and application readiness are unchanged. Use the new topology/load-budget task before IMU routing or powered bring-up. V1 inspection and future handheld voice/text/location remain separate; voice/RC coexistence is still unmeasured.
+
+## Load planning before application bring-up — 2026-10-12
+
+Use the [interactive power budget](../../reviews/codex/power_topology/load_budget.html) to distinguish external-BEC servo power from on-board servo demand. The [architecture recommendation](../../reviews/codex/power_topology/README.md) retains the 2S–6S and optional on-board actuator requirements. A 1 A board-feed goal cannot support the stated 3.3 V/1.2 A and 5 V/2 A capacities simultaneously at 7 V, even without losses. The first input-stage study uses external BEC for load planning; the higher-load variant remains open. No wiring or powered-use instruction is released by this calculation.

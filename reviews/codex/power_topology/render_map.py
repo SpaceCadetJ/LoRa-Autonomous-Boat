@@ -1,0 +1,60 @@
+"""Draw the proposed power paths; no CAD or router invocation."""
+from pathlib import Path
+from html import escape
+P = Path(__file__).resolve().parent
+s = ['<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1150" viewBox="0 0 1400 1150"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#537088" stroke-width="1.5"/></marker></defs><rect width="1400" height="1150" fill="#f1f5fa"/>']
+def text(x,y,t,size=18,color='#19364d',weight=400):
+    s.append(f'<text x="{x}" y="{y}" font-family="Segoe UI,Arial,sans-serif" font-size="{size}" fill="{color}" font-weight="{weight}">{escape(t)}</text>')
+def rect(x,y,w,h,fill='#ffffff',stroke='#d2dfeb'):
+    s.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" fill="{fill}" stroke="{stroke}"/>')
+def arrow(x1,y1,x2,y2):
+    s.append(f'<path d="M{x1} {y1}L{x2} {y2}" fill="none" stroke="#537088" stroke-width="2" marker-end="url(#arrow)"/>')
+def box(x,y,w,title,lines):
+    rect(x,y,w,100,'#f5f8fc');text(x+16,y+29,title,19,weight=600)
+    for i,t in enumerate(lines):text(x+16,y+55+i*22,t,16,'#465f73')
+text(44,43,'V2 / 2S–6S / PROPOSED POWER ARCHITECTURE',15,'#175ec2',700)
+text(44,91,'Choose the protection boundary before routing',35,weight=700)
+text(44,126,'Recommendation: advance A to an isolated schematic study. Neither circuit is selected or hardware-qualified.',19,'#465f73')
+rect(40,158,1320,335)
+text(66,200,'A  ·  Wider-voltage conversion',26,weight=700)
+text(66,233,'Higher-voltage bucks and sensing; reverse controller still needs a bounded positive/negative surge design.',18,'#465f73')
+box(66,259,170,'7–25.2 V pack',['Fuse + TVS','Exact parts open'])
+box(278,259,238,'Reverse protection',['Controller + N-FET','LM74700 under review'])
+box(558,259,200,'Sense boundary',['VIN_RAW → shunt','VIN_BUCK → loads'])
+box(806,259,238,'Parallel converters',['2 × LMR36520','3.3 V and 5 V'])
+box(1090,259,244,'Logic + actuator',['Buffers: regulated 5 V','Servo: variant choice'])
+for a,b in [(236,278),(516,558),(758,806),(1044,1090)]:arrow(a,309,b,309)
+text(68,393,'Sensing: INA281A1 on protected taps; battery divider and ADC protection must be recalculated.',18)
+text(68,424,'Open exclusion: charged output 25.2 V minus input −53.3 V = 78.5 V differential.',18,'#885200',600)
+text(68,454,'LM74700 limit: 70 V recommended / 75 V absolute. Resolve the envelope or use a different controller.',18,'#885200')
+rect(40,513,1320,310)
+text(66,555,'B  ·  Active cutoff, existing converter types',26,weight=700)
+text(66,588,'Retain for comparison. A lower cutoff is possible if restart at a full 25.2 V pack is not required.',18,'#465f73')
+box(66,614,170,'7–25.2 V pack',['Fuse + TVS','Exact parts open'])
+box(278,614,238,'Cutoff + reverse block',['LTC4365 TS8','2 common-source FETs'])
+box(558,614,200,'Protected island',['Shunt + ADC divider','Upgraded sensing'])
+box(806,614,238,'Existing buck types',['R1240 + TPS54202','Support fixes required'])
+box(1090,614,244,'Logic + actuator',['Same corrected rails','Same load constraints'])
+for a,b in [(236,278),(516,558),(758,806),(1044,1090)]:arrow(a,664,b,664)
+text(68,754,'OV study: 539 kΩ / 10 kΩ, ±0.1% → 26.980–27.922 V trip; minimum recovery 25.226 V.',18)
+text(68,785,'Only 78 mV below the 28 V buck operating ceiling. Delay at specified overdrive is not a surge guarantee.',18,'#885200')
+rect(40,843,644,219,'#fff6e7','#e7c78b');rect(706,843,654,219)
+text(66,884,'Load budget: one feed cannot promise every rail goal',21,weight=600)
+text(66,919,'7 V input, 1.2 A logic + 2 A servo:',19)
+text(66,951,'1.994 A ideal  /  2.363 A at the example assumptions',20,'#885200',600)
+text(66,984,'Example: 85% converter efficiency + 20 mA auxiliary 5 V.',17)
+text(66,1013,'External BEC removes servo demand from this board feed.',17)
+text(66,1040,'1 A is a planning goal, not a demonstrated hardware limit.',17)
+text(732,884,'Next: one captured input-stage schematic',21,weight=600)
+text(732,919,'1. Bound source, surge, reverse and stored-energy cases.',18)
+text(732,951,'2. Select exact protection parts and record every pin delta.',18)
+text(732,983,'3. Run native checks; qualify package and thermal space.',18)
+text(732,1015,'4. Then complete converter cells and coordinate IMU2 routing.',18)
+text(732,1040,'No live CAD, copper, BOM or firmware changes in this packet.',17,'#465f73')
+text(44,1100,'Functional power-path map • Not a native schematic • 2026-10-12 • Sources and tolerances: README.md',17,'#526577')
+text(44,1128,'Separate external BEC and motor feeds are omitted. Voice/text/location handheld hardware is a separate future design.',16,'#526577')
+s.append('</svg>')
+P.joinpath('v2_power_topologies.svg').write_text('\n'.join(s), encoding='utf-8')
+if __name__ == '__main__':
+    import cairosvg
+    cairosvg.svg2png(url=str(P/'v2_power_topologies.svg'), write_to=str(P/'topology-review.png'))

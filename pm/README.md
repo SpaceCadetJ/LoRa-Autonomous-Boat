@@ -1,12 +1,16 @@
 # LoRa engineering workspace
 
+## Current power architecture study — 2026-10-12
+
+The [topology comparison](../reviews/codex/power_topology/README.md) recommends a wider-voltage input stage for the next isolated schematic study. The [interactive load budget](../reviews/codex/power_topology/load_budget.html) exposes why the simultaneous rail goals cannot fit a 1 A feed at 7 V. Exact package-pin proposals, cutoff tolerance calculations and an annotated power-path map are recorded. No live circuit or ordering changes. Next: one captured input-stage schematic, exact protection identities and a bounded surge/stored-energy envelope; preserve 6S and the on-board actuator option.
+
 ## Current power review — 2026-10-12
 
-The [6S power envelope](../reviews/codex/power_envelope/README.md) records voltage boundaries, new C1/F1 package conflicts and D2 value drift. Its viewer map is a planning review, not a PCB revision. V2 purchasing now has 69 candidate / 38 held / 11 board-feature references and 36 candidate order lines. Earlier totals below describe previous checkpoints. Next: compare complete power topologies and their load/package budgets before final IMU2 routing.
+The [6S power envelope](../reviews/codex/power_envelope/README.md) records voltage boundaries, new C1/F1 package conflicts and D2 value drift. Its viewer map is a planning review, not a PCB revision. V2 purchasing now has 69 candidate / 38 held / 11 board-feature references and 36 candidate order lines. Earlier totals below describe previous checkpoints. The newer topology study above supersedes this checkpoint’s next task.
 
 ## Latest circuit revision: IMU2
 
-The [IMU2 bias-filter amendment](../reviews/codex/imu_bias_filter/README.md) is the current isolated schematic candidate. C43 adds two connections; all 398 previous memberships and the original ERC finding are preserved. Live hardware and ordering remain unchanged. Next: define the 6S protection/power-package envelope before final routing.
+The [IMU2 bias-filter amendment](../reviews/codex/imu_bias_filter/README.md) is the current isolated schematic candidate. C43 adds two connections; all 398 previous memberships and the original ERC finding are preserved. Live hardware and ordering remain unchanged. Coordinate final routing with the current power-architecture study above.
 
 ## Current IMU placement review
 

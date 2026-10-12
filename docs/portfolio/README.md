@@ -61,9 +61,13 @@ The [IMU correction candidate](../../reviews/codex/imu_interface/README.md) now 
 
 ## Next engineering milestones
 
-1. Correct the IMU's 1.8 V supply/interface and the remaining power/signal-limit findings, then reconcile schematic-to-PCB discrepancies before layout release.
+1. Implement the recommended wider-voltage input-stage schematic with exact protection identities and bounded surge limits, then complete the power corrections and route the isolated IMU2 candidate.
 2. Extend the implemented Stage A diagnostic after electrical acceptance: freeze the operational protocol, implement output supervision and measure failsafe behavior.
 3. Finish the V2 connector atlas, exact-part qualification and complete population/purchasing decisions; perform recorded staged board bring-up.
 4. Measure voice quality, airtime and RC coexistence, then develop the handheld and application interfaces.
 
 For portfolio updates, preserve the distinctions in [portfolio.json](portfolio.json): **source-implemented**, **independently checked**, **proposed** and **not tested**. Pin the portfolio's repository link to the actual integration commit after publication; this handoff deliberately does not invent a commit, public site URL or individual team role.
+
+## Power architecture and interactive study — 2026-10-12
+
+The [annotated comparison](../../reviews/codex/power_topology/v2_power_topologies.svg) and [interactive load calculator](../../reviews/codex/power_topology/load_budget.html) explain two proposed 6S architectures and their constraints. Independent review checked candidate pin maps and arithmetic. The study identifies a conflict between simultaneous rail capacities and the low-voltage 1 A feed goal; it recommends the wider-voltage input stage for the next schematic packet. These are analytical design artifacts, not an integrated circuit, measured efficiency or a fabrication release. [Evidence and restart task](../../reviews/codex/power_topology/README.md).
