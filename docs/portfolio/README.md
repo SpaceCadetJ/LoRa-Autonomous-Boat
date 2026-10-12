@@ -96,3 +96,7 @@ The [annotated capacitor network](../../reviews/codex/input_capacitors/v2_input_
 ## Latest actuator supply candidate - ACT-01
 
 The [annotated actuator revision](../../reviews/codex/actuator_supply/README.md) separates buffer power from servo energy, preserves both reviewed converters and defines explicit BEC/onboard population proposals. Independent checks verify four pin changes, two exact diode identities, both master DNP markers and 380 untouched outside-boundary pins; 31 mutation tests pass. Live PCB and operational firmware are unchanged. Enable/sequencing, load and fabrication acceptance remain open.
+
+## ACT-02 signal-enable checkpoint — 2026-10-12
+
+The [annotated actuator candidate and sequencing guide](../../reviews/codex/actuator_enable/README.md) adds a dual-supply translator, default-low PC4 enable and a proposed firmware arm/disarm contract. Native checks preserve 383 outside-boundary pins and both converter sheets; 41 mutation tests pass. This is isolated schematic evidence: Stage A does not drive PC4, live firmware/PCB and purchasing exports are unchanged, and no application is released for powered actuator use. Next: hardware arm interlock and receiver-power observation, then the remaining 6S, C11/transient, ADC and combined IMU2 gates. Keep V1 inspection, V2 vehicle nodes and future handheld work distinct.

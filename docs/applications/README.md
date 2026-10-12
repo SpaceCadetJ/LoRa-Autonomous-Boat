@@ -88,3 +88,7 @@ The [5 V guide](../../reviews/codex/buck_5v/README.md) now separates converter c
 ## Actuator supply checkpoint - ACT-01
 
 The [buffer and source-variant guide](../../reviews/codex/actuator_supply/README.md) provides connector roles and two mutually exclusive proposed diode populations. Buffer VCC comes from the onboard 5 V converter in both variants; BEC-only actuator energy does not mean BEC-powered logic. Both positions default DNP in the review master. Native checks establish the four-pin correction only; default-disabled enable, startup/off-state and actual actuator qualification remain next. C11 identity is newly on hold, leaving 68 candidate / 39 held references. No powered-use or flashing procedure is released by this candidate.
+
+## ACT-02 signal-enable checkpoint — 2026-10-12
+
+The [annotated actuator candidate and sequencing guide](../../reviews/codex/actuator_enable/README.md) adds a dual-supply translator, default-low PC4 enable and a proposed firmware arm/disarm contract. Native checks preserve 383 outside-boundary pins and both converter sheets; 41 mutation tests pass. This is isolated schematic evidence: Stage A does not drive PC4, live firmware/PCB and purchasing exports are unchanged, and no application is released for powered actuator use. Next: hardware arm interlock and receiver-power observation, then the remaining 6S, C11/transient, ADC and combined IMU2 gates. Keep V1 inspection, V2 vehicle nodes and future handheld work distinct.

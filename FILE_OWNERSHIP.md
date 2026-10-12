@@ -142,3 +142,13 @@ ACT-01 scope update: the new unconfirmed C11 identity finding is recorded in cur
 ## ACT-01 review checkpoint - 2026-10-12 UTC
 
 All child write scopes are released. Root closes viewer, guide, CI and selective publication of the isolated buffer supply/population candidate and the C11 procurement hold. Exact electrical delta, original ERC warning, 31 tests and remaining limits are recorded in actuator_supply/README.md and review_notes.json. Live CAD/copper/source BOM/firmware, V1 outputs, older packets and unrelated tool edits remain unchanged. Next bounded task is default-disabled enable and sequencing on a new copy; no hardware or primary generation/routing action.
+
+## Actuator enable claim - 2026-10-12 UTC
+
+Root claims reviews/codex/actuator_enable/** and current viewer/application/portfolio/handoff/CI integration for isolated ACT-02 based on 973ad17. Expected delta: replace U4/U5 with one TXU0102DCUR dual translator U4, use C13 on +3V3 and C14 on pre-diode +5V_BUCK, add R40 10k OE pulldown and ACT_EN_PC4 from U1 pad24 (previously NC). Preserve both converter sheets and the ACT-01 D4/D9 rail/population contract. All other pin memberships, identities, live CAD/copper/BOM/firmware and historical packets remain unchanged. Child imu_candidate_validator owns only actuator_enable/verify_candidate.py and test_candidate.py; power_native_review and input_protection_review review sources read-only pending narrower writes. Preserve unrelated v1_design.py and route_v2.py. No hardware access, primary generators/router or branch/history changes. Partial-power isolation does not establish unpowered-actuator injection protection; sequencing release remains held.
+
+ACT-02 package reviewer input_protection_review owns only inputs/TI_DCU0008A_TXU0102.kicad_mod, inspect_packages.py, package_review.json and native_geometry.json within actuator_enable. Remaining child scopes unchanged.
+
+## ACT-02 review checkpoint — 2026-10-12 UTC
+
+All child write scopes are released. Root closes selective publication of the independent native delta, TI footprint, annotated actuator sheet and sequencing/firmware contract. Source/claim review passed for the bounded candidate; hardware interlock, receiver-power observation and physical acceptance remain open. Live CAD/copper/BOM/firmware, historical packets and both unrelated tool edits are preserved. Next isolated scope is receiver-power observation and hardware arm interlock, as recorded in actuator_enable/README.md.

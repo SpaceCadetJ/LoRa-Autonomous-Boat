@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "revision": "ACT-02",
+  "baseline_native": "reviews/codex/actuator_supply/native/netlist.xml",
+  "boundary": [
+    "U4",
+    "U5",
+    "C13",
+    "C14"
+  ],
+  "pin_exceptions": {
+    "U1": {
+      "24": {
+        "before": "unconnected-(U1-PC4-Pad24)",
+        "after": "/ACT_EN_PC4",
+        "remove_no_connect": true
+      }
+    }
+  },
+  "removed_parts": [
+    "U5"
+  ],
+  "added_parts": [
+    "R40"
+  ],
+  "candidate_parts": {
+    "U4": {
+      "value": "TXU0102",
+      "footprint": "LoRa_Boat_Controller_V2:TI_DCU0008A_TXU0102",
+      "mpn": "TXU0102DCUR",
+      "manufacturer": "Texas Instruments",
+      "library": [
+        "LoRa_Boat_Controller_V2",
+        "TXU0102DCU"
+      ],
+      "pins": {
+        "1": [
+          "B2Y",
+          "tri_state"
+        ],
+        "2": [
+          "GND",
+          "power_in"
+        ],
+        "3": [
+          "VCCA",
+          "power_in"
+        ],
+        "4": [
+          "A2",
+          "input"
+        ],
+        "5": [
+          "A1",
+          "input"
+        ],
+        "6": [
+          "OE",
+          "input"
+        ],
+        "7": [
+          "VCCB",
+          "power_in"
+        ],
+        "8": [
+          "B1Y",
+          "tri_state"
+        ]
+      }
+    },
+    "C13": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "KGM15ACG1H104KT",
+      "manufacturer": "Kyocera AVX",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "C14": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "KGM15ACG1H104KT",
+      "manufacturer": "Kyocera AVX",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "R40": {
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "library": [
+        "Device",
+        "R"
+      ],
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    }
+  },
+  "candidate_memberships": {
+    "U4": {
+      "1": "/Actuators/SERVO_SIG_5V",
+      "2": "GND",
+      "3": "+3V3",
+      "4": "/PWM_SERVO_PA8",
+      "5": "/PWM_ESC_PC6",
+      "6": "/ACT_EN_PC4",
+      "7": "/Power/+5V_BUCK",
+      "8": "/Actuators/ESC_SIG_5V"
+    },
+    "C13": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "C14": {
+      "1": "/Power/+5V_BUCK",
+      "2": "GND"
+    },
+    "R40": {
+      "1": "/ACT_EN_PC4",
+      "2": "GND"
+    }
+  },
+  "expected_counts": {
+    "baseline_components": 119,
+    "candidate_components": 119,
+    "baseline_pins": 398,
+    "candidate_pins": 398,
+    "outside_boundary_pins": 383
+  },
+  "source_sheets_preserved": [
+    "Buck3V3.kicad_sch",
+    "Buck5V.kicad_sch",
+    "Power.kicad_sch"
+  ],
+  "population_contract_preserved": true,
+  "live_electrical_delta": 0,
+  "pcb_updated": false,
+  "qualified_for_power": false
+}

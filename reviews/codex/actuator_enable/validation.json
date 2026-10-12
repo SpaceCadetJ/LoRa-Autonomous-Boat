@@ -1,0 +1,601 @@
+{
+  "schema_version": 1,
+  "revision": "ACT-02",
+  "status": "pass_isolated_schematic_only",
+  "inputs": {
+    "baseline_netlist": {
+      "path": "reviews/codex/actuator_supply/native/netlist.xml",
+      "sha256": "79dffb6bab000cd6c935d866e6216529e04978133ce83f5f192c62b9446717ec"
+    },
+    "baseline_erc": {
+      "path": "reviews/codex/actuator_supply/native/erc.json",
+      "sha256": "cfde9c4a6dd8aaba8566f19dc7241af6b8b203702a3e7781b30c0e6aa803c0b0"
+    },
+    "candidate_netlist": {
+      "path": "reviews/codex/actuator_enable/native/netlist.xml",
+      "sha256": "7e83bbc40db05174a6b89579d7fa2bd26681a3106f9b662684a0b6f2160bf278"
+    },
+    "candidate_erc": {
+      "path": "reviews/codex/actuator_enable/native/erc.json",
+      "sha256": "9e3cdce307f14b85449227dd26a7da173963d7b5148349976a269389c76c92cf"
+    },
+    "expected_contract": {
+      "path": "reviews/codex/actuator_enable/expected_contract.json",
+      "sha256": "d37b307578823bb615bcebd878edb323196bbe1385d776aafec771bda3478c2b"
+    },
+    "population_contract": {
+      "path": "reviews/codex/actuator_enable/population_contract.json",
+      "sha256": "ef86bd0df974914fd2cb103b759cea96bdc8dc8578dbc32414b9fe3afbd4a918"
+    },
+    "baseline_population_contract": {
+      "path": "reviews/codex/actuator_supply/population_contract.json",
+      "sha256": "ef86bd0df974914fd2cb103b759cea96bdc8dc8578dbc32414b9fe3afbd4a918"
+    },
+    "parser": {
+      "path": "reviews/codex/imu_interface/verify_candidate.py",
+      "sha256": "14d81fa62be5565c35674438a81d48d0922080ccbcfa0529aef5adb89c48cfb6"
+    },
+    "prior_verifier": {
+      "path": "reviews/codex/actuator_supply/verify_candidate.py",
+      "sha256": "acec9d1567622580399df1663fe5cddb56effcd5a307421f0e6668a730815538"
+    },
+    "verifier": {
+      "path": "reviews/codex/actuator_enable/verify_candidate.py",
+      "sha256": "4579b36d02dee969a0545191b74be1a688d0591c9bccdeb3e01be099445f9972"
+    },
+    "baseline_source_Buck3V3.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/Buck3V3.kicad_sch",
+      "sha256": "a309488849b86e0488de886b36ceeb68bc7bd54a4ab99060558d84624c509829"
+    },
+    "candidate_source_Buck3V3.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/Buck3V3.kicad_sch",
+      "sha256": "a309488849b86e0488de886b36ceeb68bc7bd54a4ab99060558d84624c509829"
+    },
+    "baseline_source_Buck5V.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/Buck5V.kicad_sch",
+      "sha256": "27f5604705c6acb110876ad85102404f3cd060e41b7d23b14ba1e6d2f048ee5f"
+    },
+    "candidate_source_Buck5V.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/Buck5V.kicad_sch",
+      "sha256": "27f5604705c6acb110876ad85102404f3cd060e41b7d23b14ba1e6d2f048ee5f"
+    },
+    "baseline_source_Power.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/Power.kicad_sch",
+      "sha256": "964e367d207885523633d1d173de195790928e5f6b4f681409b7aa1042303f2a"
+    },
+    "candidate_source_Power.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/Power.kicad_sch",
+      "sha256": "964e367d207885523633d1d173de195790928e5f6b4f681409b7aa1042303f2a"
+    }
+  },
+  "manifest_inputs": {
+    "reviews/codex/actuator_enable/input_manifest.json": {
+      "path": "reviews/codex/actuator_enable/input_manifest.json",
+      "sha256": "0ad2a3ba1b6b6a29d644aa03e21fd4d2a33ff6f8d19d77ff38ec66a0fe8d4119"
+    },
+    "reviews/codex/actuator_enable/build_manifest.json": {
+      "path": "reviews/codex/actuator_enable/build_manifest.json",
+      "sha256": "565e1bf0c798153fce9af68ece8115c9484f643bb3121a8d1381739dcb1439df"
+    },
+    "reviews/codex/actuator_enable/native_manifest.json": {
+      "path": "reviews/codex/actuator_enable/native_manifest.json",
+      "sha256": "48055689c21a307c975f3c2233c6cbaaf3131d8a87e98f994ec01e5eba22274d"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad/LoRa_Boat_Controller.kicad_sym": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad/LoRa_Boat_Controller.kicad_sym",
+      "sha256": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/Actuators.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/Actuators.kicad_sch",
+      "sha256": "de6155d808043dfd46e6460d7cc56b805a221087e23dd482946adcadde310a2b"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/Buck3V3.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/Buck3V3.kicad_sch",
+      "sha256": "a309488849b86e0488de886b36ceeb68bc7bd54a4ab99060558d84624c509829"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/Buck5V.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/Buck5V.kicad_sch",
+      "sha256": "27f5604705c6acb110876ad85102404f3cd060e41b7d23b14ba1e6d2f048ee5f"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/Debug.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/Debug.kicad_sch",
+      "sha256": "601919fb15d757bd0018576be9a4278cb35f92bbdd9484ab85d984f6b5eff924"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/fp-lib-table": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/fp-lib-table",
+      "sha256": "ab7fae9b8768ecd1309a42873f463ef02016b0ac5c026a12fb412bfa47e8faf7"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro",
+      "sha256": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch",
+      "sha256": "8dbaa9ac100a20821e6a81375593e036cb86c32052d3a9d1f99536df5a179d3f"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym",
+      "sha256": "e11daadb83d9f8f71e2dca237bab0e2bc84a853b0d0c6d0b6d7754a2ce122f02"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/MCU.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/MCU.kicad_sch",
+      "sha256": "ecbec0770dd18ffdc33a859239e98700ea401bd74abe1135e2775989eb254ba7"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/Navigation.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/Navigation.kicad_sch",
+      "sha256": "9d07440781ce1fb8f1d98997a1f34044cdc7ac7a29b36a1b2260bd3e542ec039"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/Power.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/Power.kicad_sch",
+      "sha256": "964e367d207885523633d1d173de195790928e5f6b4f681409b7aa1042303f2a"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/PowerInput.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/PowerInput.kicad_sch",
+      "sha256": "600607b52caea1881b9ee960b5f1dea07f75c2dd5877289a05c441f664c386de"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/Radio.kicad_sch": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/Radio.kicad_sch",
+      "sha256": "b4e1ee24c1b04bc9d6199e2ee57fbcffd5476d1599e1905a8d1fa9e916799930"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/sym-lib-table": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/sym-lib-table",
+      "sha256": "3dccf10d5632037fbc6978966881b8eb68ceb500677674a746481e19a0368ae3"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/CP_Elec_8x10.5.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/CP_Elec_8x10.5.kicad_mod",
+      "sha256": "cc3b6bb7b181a8f2346b807e02b876286515f5a4498e01747605a91ec9f403b4"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0603_1608Metric.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0603_1608Metric.kicad_mod",
+      "sha256": "e623465f4d6218aa36a05697a93171eb897c162a613e5f635a2bfa5d0db8db0c"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0805_2012Metric.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0805_2012Metric.kicad_mod",
+      "sha256": "b430016bdeb578187fcd4d270e4e2893e7d8103056d27277d2297c4c1490032b"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_1210_3225Metric.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_1210_3225Metric.kicad_mod",
+      "sha256": "fe04a9081d0faf074eef3775f89ab1f4c53b4bb013bdaeb6c933b2f961de3484"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C3225X7R1E226M250AB.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C3225X7R1E226M250AB.kicad_mod",
+      "sha256": "d9c0caf3685485801184cc0abcc4eaa13c5014b3f1d6dfd44e1558ebb8d7fa75"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C5750X7S2A106K230KB.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C5750X7S2A106K230KB.kicad_mod",
+      "sha256": "b4afd24a1554435cad3aeefc7843be8c1d7fd24ec624fc2b2ba2967331d02761"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/D_SMB.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/D_SMB.kicad_mod",
+      "sha256": "c852067a09207754ec9c7f01513eb9a41b3f2b845f1db14c4124aa8ffa835859"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/D_SMC.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/D_SMC.kicad_mod",
+      "sha256": "6f9ff6495f0437be9a3a4557fb302be9cee329a6742edcbf393529dc8b83b196"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/Fuse_Littelfuse-NANO2-451_453.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/Fuse_Littelfuse-NANO2-451_453.kicad_mod",
+      "sha256": "0515d814d319de9fad7d5c0d48bf0206723289e890fb382149acad9fe4f2aa3b"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/L_Coilcraft_XAL6060-XXX.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/L_Coilcraft_XAL6060-XXX.kicad_mod",
+      "sha256": "fc897a486027f74e3b23e9d3e60fddbca42700ebc525caf81359d36181868acf"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/QFN-24_3x3mm_P0.4mm_NoEP.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/QFN-24_3x3mm_P0.4mm_NoEP.kicad_mod",
+      "sha256": "45d275957763fbc76756a2c762a7dd9bf1e8ab71e7eeb03e3e537b192d28f054"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/R_0603_1608Metric.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/R_0603_1608Metric.kicad_mod",
+      "sha256": "278c3af706aceec3085258fe265b53cd69adb616bef0db09a2ffc4083e5c2cae"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/Texas_RNP0030B_WQFN-30-1EP_4x6mm_P0.5mm_EP1.8x4.5mm.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/Texas_RNP0030B_WQFN-30-1EP_4x6mm_P0.5mm_EP1.8x4.5mm.kicad_mod",
+      "sha256": "a0e99ad9d27291e90399e662c64b192e09c8660cb03fc30e8ab2e2d58ffd3994"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DDA0008B_LMR36520.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DDA0008B_LMR36520.kicad_mod",
+      "sha256": "e3e7df73d4e2b9b655682fb16295923debb828288fcb7388e81efe808f81de47"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod",
+      "sha256": "3df2bdad2d5533ceb5a0492e93aae8e2faab545a4f2e999d8a2a426829fca314"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod",
+      "sha256": "ce99ee424974e7bae6c9137e43ac6b4f8bc4daaa9d6777f26049be4f1f1dd830"
+    },
+    "reviews/codex/actuator_supply/source/hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod": {
+      "path": "reviews/codex/actuator_supply/source/hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod",
+      "sha256": "b880a51afb66d5a86cbd2dad667bd6a819500be0a7d51aa2234ce6cac41a2fee"
+    },
+    "reviews/codex/actuator_supply/native/netlist.xml": {
+      "path": "reviews/codex/actuator_supply/native/netlist.xml",
+      "sha256": "79dffb6bab000cd6c935d866e6216529e04978133ce83f5f192c62b9446717ec"
+    },
+    "reviews/codex/actuator_supply/population_contract.json": {
+      "path": "reviews/codex/actuator_supply/population_contract.json",
+      "sha256": "ef86bd0df974914fd2cb103b759cea96bdc8dc8578dbc32414b9fe3afbd4a918"
+    },
+    "reviews/codex/actuator_supply/native/erc.json": {
+      "path": "reviews/codex/actuator_supply/native/erc.json",
+      "sha256": "cfde9c4a6dd8aaba8566f19dc7241af6b8b203702a3e7781b30c0e6aa803c0b0"
+    },
+    "reviews/codex/actuator_enable/build_candidate.py": {
+      "path": "reviews/codex/actuator_enable/build_candidate.py",
+      "sha256": "25fabd5c3d5b7dd727479db52aa38e400d7be897685702c7f9603470a830cc1d"
+    },
+    "reviews/codex/actuator_enable/expected_contract.json": {
+      "path": "reviews/codex/actuator_enable/expected_contract.json",
+      "sha256": "d37b307578823bb615bcebd878edb323196bbe1385d776aafec771bda3478c2b"
+    },
+    "reviews/codex/actuator_enable/population_contract.json": {
+      "path": "reviews/codex/actuator_enable/population_contract.json",
+      "sha256": "ef86bd0df974914fd2cb103b759cea96bdc8dc8578dbc32414b9fe3afbd4a918"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad/LoRa_Boat_Controller.kicad_sym": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad/LoRa_Boat_Controller.kicad_sym",
+      "sha256": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/Actuators.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/Actuators.kicad_sch",
+      "sha256": "a57b6e29cb37f1064d6f85eb1fecce58efacc7486263661e04ee4f30d0d0d162"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/Buck3V3.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/Buck3V3.kicad_sch",
+      "sha256": "a309488849b86e0488de886b36ceeb68bc7bd54a4ab99060558d84624c509829"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/Buck5V.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/Buck5V.kicad_sch",
+      "sha256": "27f5604705c6acb110876ad85102404f3cd060e41b7d23b14ba1e6d2f048ee5f"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/Debug.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/Debug.kicad_sch",
+      "sha256": "601919fb15d757bd0018576be9a4278cb35f92bbdd9484ab85d984f6b5eff924"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/fp-lib-table": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/fp-lib-table",
+      "sha256": "ab7fae9b8768ecd1309a42873f463ef02016b0ac5c026a12fb412bfa47e8faf7"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro",
+      "sha256": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch",
+      "sha256": "65c62deb3fb564545db48551cacccac394fd48e895808207f3c29071cb108238"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym",
+      "sha256": "2f5318310f113a17ccbe578d97e09965af6cb2d134f2a63ae665b62d675a0481"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/MCU.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/MCU.kicad_sch",
+      "sha256": "cf796415658363205a1b8ce050aa38d91301b27491b72dcf133a9844ed42061d"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/Navigation.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/Navigation.kicad_sch",
+      "sha256": "9d07440781ce1fb8f1d98997a1f34044cdc7ac7a29b36a1b2260bd3e542ec039"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/Power.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/Power.kicad_sch",
+      "sha256": "964e367d207885523633d1d173de195790928e5f6b4f681409b7aa1042303f2a"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/PowerInput.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/PowerInput.kicad_sch",
+      "sha256": "600607b52caea1881b9ee960b5f1dea07f75c2dd5877289a05c441f664c386de"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/Radio.kicad_sch": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/Radio.kicad_sch",
+      "sha256": "b4e1ee24c1b04bc9d6199e2ee57fbcffd5476d1599e1905a8d1fa9e916799930"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/sym-lib-table": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/sym-lib-table",
+      "sha256": "3dccf10d5632037fbc6978966881b8eb68ceb500677674a746481e19a0368ae3"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/CP_Elec_8x10.5.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/CP_Elec_8x10.5.kicad_mod",
+      "sha256": "cc3b6bb7b181a8f2346b807e02b876286515f5a4498e01747605a91ec9f403b4"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0603_1608Metric.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0603_1608Metric.kicad_mod",
+      "sha256": "e623465f4d6218aa36a05697a93171eb897c162a613e5f635a2bfa5d0db8db0c"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0805_2012Metric.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0805_2012Metric.kicad_mod",
+      "sha256": "b430016bdeb578187fcd4d270e4e2893e7d8103056d27277d2297c4c1490032b"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_1210_3225Metric.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_1210_3225Metric.kicad_mod",
+      "sha256": "fe04a9081d0faf074eef3775f89ab1f4c53b4bb013bdaeb6c933b2f961de3484"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C3225X7R1E226M250AB.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C3225X7R1E226M250AB.kicad_mod",
+      "sha256": "d9c0caf3685485801184cc0abcc4eaa13c5014b3f1d6dfd44e1558ebb8d7fa75"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C5750X7S2A106K230KB.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C5750X7S2A106K230KB.kicad_mod",
+      "sha256": "b4afd24a1554435cad3aeefc7843be8c1d7fd24ec624fc2b2ba2967331d02761"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/D_SMB.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/D_SMB.kicad_mod",
+      "sha256": "c852067a09207754ec9c7f01513eb9a41b3f2b845f1db14c4124aa8ffa835859"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/D_SMC.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/D_SMC.kicad_mod",
+      "sha256": "6f9ff6495f0437be9a3a4557fb302be9cee329a6742edcbf393529dc8b83b196"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/Fuse_Littelfuse-NANO2-451_453.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/Fuse_Littelfuse-NANO2-451_453.kicad_mod",
+      "sha256": "0515d814d319de9fad7d5c0d48bf0206723289e890fb382149acad9fe4f2aa3b"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/L_Coilcraft_XAL6060-XXX.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/L_Coilcraft_XAL6060-XXX.kicad_mod",
+      "sha256": "fc897a486027f74e3b23e9d3e60fddbca42700ebc525caf81359d36181868acf"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/QFN-24_3x3mm_P0.4mm_NoEP.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/QFN-24_3x3mm_P0.4mm_NoEP.kicad_mod",
+      "sha256": "45d275957763fbc76756a2c762a7dd9bf1e8ab71e7eeb03e3e537b192d28f054"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/R_0603_1608Metric.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/R_0603_1608Metric.kicad_mod",
+      "sha256": "278c3af706aceec3085258fe265b53cd69adb616bef0db09a2ffc4083e5c2cae"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/Texas_RNP0030B_WQFN-30-1EP_4x6mm_P0.5mm_EP1.8x4.5mm.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/Texas_RNP0030B_WQFN-30-1EP_4x6mm_P0.5mm_EP1.8x4.5mm.kicad_mod",
+      "sha256": "a0e99ad9d27291e90399e662c64b192e09c8660cb03fc30e8ab2e2d58ffd3994"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DCU0008A_TXU0102.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DCU0008A_TXU0102.kicad_mod",
+      "sha256": "27aa9ec8b27feb484da48c7218c5892c3174eb03147a3e3a19ffcc3e211e918d"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DDA0008B_LMR36520.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DDA0008B_LMR36520.kicad_mod",
+      "sha256": "e3e7df73d4e2b9b655682fb16295923debb828288fcb7388e81efe808f81de47"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod",
+      "sha256": "3df2bdad2d5533ceb5a0492e93aae8e2faab545a4f2e999d8a2a426829fca314"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod",
+      "sha256": "ce99ee424974e7bae6c9137e43ac6b4f8bc4daaa9d6777f26049be4f1f1dd830"
+    },
+    "reviews/codex/actuator_enable/source/hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod": {
+      "path": "reviews/codex/actuator_enable/source/hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod",
+      "sha256": "b880a51afb66d5a86cbd2dad667bd6a819500be0a7d51aa2234ce6cac41a2fee"
+    },
+    "reviews/codex/actuator_enable/export_native.py": {
+      "path": "reviews/codex/actuator_enable/export_native.py",
+      "sha256": "7c384b2a2c7ed5d64fa85e58f9caa7ca1a55b7be5b7aa79e2bc8f00c7b51bce5"
+    },
+    "reviews/codex/actuator_enable/native/erc.json": {
+      "path": "reviews/codex/actuator_enable/native/erc.json",
+      "sha256": "9e3cdce307f14b85449227dd26a7da173963d7b5148349976a269389c76c92cf"
+    },
+    "reviews/codex/actuator_enable/native/netlist.xml": {
+      "path": "reviews/codex/actuator_enable/native/netlist.xml",
+      "sha256": "7e83bbc40db05174a6b89579d7fa2bd26681a3106f9b662684a0b6f2160bf278"
+    },
+    "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Actuators.svg": {
+      "path": "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Actuators.svg",
+      "sha256": "03a11b89eb00fae3fac2fa26db23f606ed45394aa39b55d0ddf15f1393d06ce2"
+    },
+    "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Debug.svg": {
+      "path": "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Debug.svg",
+      "sha256": "58bd192f353938b403cb82bf48289eafaf616b81478e467a4fdd906dbcaa8c5b"
+    },
+    "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-MCU.svg": {
+      "path": "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-MCU.svg",
+      "sha256": "bbd4230f809389951c9be8f94235f624e9ec043259a05e168a65ad94e7163bb4"
+    },
+    "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Navigation.svg": {
+      "path": "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Navigation.svg",
+      "sha256": "56aa3c7feddf44ec5d3f94c613a7812fb6e44dde2312e0c6c0a657b59fccccf3"
+    },
+    "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Power-Buck3V3.svg": {
+      "path": "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Power-Buck3V3.svg",
+      "sha256": "fcaa652b568763e47a4d1f579c2fdc933512ccaaa295616a7a87436ec3c4a292"
+    },
+    "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Power-Buck5V.svg": {
+      "path": "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Power-Buck5V.svg",
+      "sha256": "e47fa8a68711ad8de3756a68395f9c6480a4cb0ef2a41bafebe2ebdc77f3e223"
+    },
+    "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Power.svg": {
+      "path": "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Power.svg",
+      "sha256": "703d4e21ea4f245d27e2b92ff76aeaa462bf8fba894d304bd3e1997135c79e40"
+    },
+    "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-PowerInput.svg": {
+      "path": "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-PowerInput.svg",
+      "sha256": "117572a644bc22028aac1d7066b25c45a0ee1cf31bf9cfe68175980ae1060999"
+    },
+    "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Radio.svg": {
+      "path": "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2-Radio.svg",
+      "sha256": "4f164ac5651fa1587299fa42c04483744306fd8c9813b4f45c2ed9123fe56988"
+    },
+    "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2.svg": {
+      "path": "reviews/codex/actuator_enable/native/svg/LoRa_Boat_Controller_V2.svg",
+      "sha256": "d5125213ea62bac2f252aae2ef2e965b58554139b780f2214aeb2671a9b409cb"
+    },
+    "reviews/codex/actuator_enable/v2_actuator_enable.svg": {
+      "path": "reviews/codex/actuator_enable/v2_actuator_enable.svg",
+      "sha256": "03a11b89eb00fae3fac2fa26db23f606ed45394aa39b55d0ddf15f1393d06ce2"
+    }
+  },
+  "manifest_chain": {
+    "status": "pass_captured_hash_chain",
+    "source_revision": "973ad17c4e1e4ea8fbfda94f992a50d9ef8f0ea2",
+    "source_file_count": 33,
+    "native_output_file_count": 13,
+    "reported_native_commands": 3,
+    "independently_reran_native_commands": false,
+    "live_local_preservation_files_rechecked": false
+  },
+  "electrical_delta": {
+    "baseline_components": 119,
+    "candidate_components": 119,
+    "baseline_physical_pins": 398,
+    "candidate_physical_pins": 398,
+    "removed_components": [
+      "U5"
+    ],
+    "added_components": [
+      "R40"
+    ],
+    "updated_component_identities": [
+      "U4"
+    ],
+    "preserved_master_dnp_refs": [
+      "D4",
+      "D9"
+    ],
+    "removed_physical_pins": 5,
+    "added_physical_pins": 5,
+    "preserved_existing_pin_memberships": 386,
+    "preserved_outside_boundary_pin_memberships": 383,
+    "existing_pin_deltas": [
+      {
+        "reference": "C13",
+        "pin": "1",
+        "before": "/Power/+5V_BUCK",
+        "after": "+3V3"
+      },
+      {
+        "reference": "U1",
+        "pin": "24",
+        "before": "unconnected-(U1-PC4-Pad24)",
+        "after": "/ACT_EN_PC4"
+      },
+      {
+        "reference": "U4",
+        "pin": "1",
+        "before": "GND",
+        "after": "/Actuators/SERVO_SIG_5V"
+      },
+      {
+        "reference": "U4",
+        "pin": "2",
+        "before": "/PWM_ESC_PC6",
+        "after": "GND"
+      },
+      {
+        "reference": "U4",
+        "pin": "3",
+        "before": "GND",
+        "after": "+3V3"
+      },
+      {
+        "reference": "U4",
+        "pin": "4",
+        "before": "/Actuators/ESC_SIG_5V",
+        "after": "/PWM_SERVO_PA8"
+      },
+      {
+        "reference": "U4",
+        "pin": "5",
+        "before": "/Power/+5V_BUCK",
+        "after": "/PWM_ESC_PC6"
+      }
+    ],
+    "added_net_names": [
+      "/ACT_EN_PC4"
+    ],
+    "removed_net_names": [
+      "unconnected-(U1-PC4-Pad24)"
+    ],
+    "native_pin_metadata_exceptions": [
+      {
+        "reference": "U1",
+        "pin": "24",
+        "before": "bidirectional+no_connect",
+        "after": "bidirectional"
+      }
+    ],
+    "candidate_part_identity_contract": "pass",
+    "physical_pin_completeness_and_uniqueness": "pass",
+    "other_existing_sheet_paths_and_native_pin_metadata_preserved": true
+  },
+  "native_erc": {
+    "baseline": {
+      "kicad_version": "9.0.7",
+      "date": "2026-10-12T04:19:14-0500",
+      "errors": 0,
+      "warnings": 1,
+      "exclusions": 0,
+      "violations": [
+        {
+          "sheet": "/Navigation/",
+          "severity": "warning",
+          "type": "pin_to_pin",
+          "description": "Pins of type Bidirectional and Power output are connected",
+          "items": [
+            "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+            "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+          ]
+        }
+      ]
+    },
+    "candidate": {
+      "kicad_version": "9.0.7",
+      "date": "2026-10-12T05:16:57-0500",
+      "errors": 0,
+      "warnings": 1,
+      "exclusions": 0,
+      "violations": [
+        {
+          "sheet": "/Navigation/",
+          "severity": "warning",
+          "type": "pin_to_pin",
+          "description": "Pins of type Bidirectional and Power output are connected",
+          "items": [
+            "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+            "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+          ]
+        }
+      ]
+    }
+  },
+  "population_contract": {
+    "status": "pass_proposed_variants_only",
+    "variants": {
+      "BEC_ONLY": {
+        "D4": "DNP",
+        "D9": "POPULATE"
+      },
+      "ONBOARD": {
+        "D4": "POPULATE",
+        "D9": "DNP"
+      }
+    },
+    "dual_population_allowed": false,
+    "default_released_variant": null,
+    "base_schematic_dnp_refs": [
+      "D4",
+      "D9"
+    ],
+    "all_parts_held": true,
+    "procurement_approved": false,
+    "hardware_tested": false
+  },
+  "preserved_source_sha256": {
+    "Buck3V3.kicad_sch": "a309488849b86e0488de886b36ceeb68bc7bd54a4ab99060558d84624c509829",
+    "Buck5V.kicad_sch": "27f5604705c6acb110876ad85102404f3cd060e41b7d23b14ba1e6d2f048ee5f",
+    "Power.kicad_sch": "964e367d207885523633d1d173de195790928e5f6b4f681409b7aa1042303f2a"
+  },
+  "population_contract_byte_preserved": true,
+  "scope": "isolated native part/pin, captured manifest hash and held population checks",
+  "pcb_updated": false,
+  "live_circuit_updated": false,
+  "firmware_updated": false,
+  "hardware_tested": false,
+  "qualified_for_power": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "limitations": [
+    "Checks captured hashes and recorded successful native commands; does not independently rerun KiCad or prove command execution.",
+    "Source hashes cover the isolated capture; installed library versions and unrelated live/local files are not requalified.",
+    "Only PC4 native NC metadata is removed. Firmware remains unchanged and has not enabled or qualified this actuator path.",
+    "D4/D9 remain held DNP in the master schematic; the exclusive assembly variants are proposals.",
+    "ERC and exact connectivity do not qualify startup, partial-power, pulse integrity, fault, load, thermal or real hardware behavior."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "reviewed_utc_date": "2026-10-12",
+  "revision": "ACT-02",
+  "mpn": "TXU0102DCUR",
+  "manufacturer": "Texas Instruments",
+  "package": "DCU0008A VSSOP-8",
+  "identity_url": "https://www.ti.com/product/TXU0102/part-details/TXU0102DCUR",
+  "status_observed": "Active; manufacturer status is not a stock or procurement release claim.",
+  "datasheet_url": "https://www.ti.com/lit/ds/symlink/txu0102.pdf",
+  "datasheet_revision": "SCES941A March 2022; pin functions page 4, supply and bypass pages 25-26.",
+  "drawing_url": "https://www.ti.com/lit/pdf/MPDS050E",
+  "drawing_identifier": "DCU0008A; drawing 4225266/A 09/2014 in current linked MPDS050E; outline page 1, example board and stencil pages 2-3.",
+  "pins": {
+    "1": [
+      "B2Y",
+      "tri_state"
+    ],
+    "2": [
+      "GND",
+      "power_in"
+    ],
+    "3": [
+      "VCCA",
+      "power_in"
+    ],
+    "4": [
+      "A2",
+      "input"
+    ],
+    "5": [
+      "A1",
+      "input"
+    ],
+    "6": [
+      "OE",
+      "input"
+    ],
+    "7": [
+      "VCCB",
+      "power_in"
+    ],
+    "8": [
+      "B1Y",
+      "tri_state"
+    ]
+  },
+  "functional_direction": "A1 to B1Y; A2 to B2Y; OE high enables, OE low disables both outputs.",
+  "proposal_supplies": {
+    "VCCA_pin_3": "+3V3",
+    "VCCB_pin_7": "pre-diode +5V_BUCK",
+    "GND_pin_2": "GND",
+    "bypass": "Separate 0.1 uF capacitor from each supply to GND, placed locally; circuit and placement verified elsewhere."
+  },
+  "reviewed_dimensions_mm": {
+    "nominal_body": [
+      2.3,
+      2.0
+    ],
+    "maximum_body": [
+      2.4,
+      2.1
+    ],
+    "maximum_height": 0.9,
+    "land": [
+      0.85,
+      0.3
+    ],
+    "column_centers_x": [
+      -1.55,
+      1.55
+    ],
+    "pitch": 0.5,
+    "corner_radius": 0.05,
+    "overall_land_span_x": 3.95,
+    "land_inner_gap_x": 2.25,
+    "courtyard_proposed": [
+      4.5,
+      2.6
+    ]
+  },
+  "orientation": "Top view: pad 1 top left, pads 1-4 descend left, pads 5-8 ascend right. Fab chamfer and silk triangle identify pad 1.",
+  "silk_courtyard_status": "Proposed local artwork/courtyard; these are not dimensions specified by the TI land example.",
+  "generic_kicad_comparison": {
+    "library": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+    "land": [
+      1.25,
+      0.35
+    ],
+    "column_centers_x": [
+      -1.4,
+      1.4
+    ],
+    "disposition": "Installed IPC family lands differ from TI example; local footprint uses the reviewed TI land dimensions. This does not establish manufacturer acceptance."
+  },
+  "stencil_basis": "TI example uses 0.85 x 0.30 mm apertures with R0.05 corners and 0.125 mm stencil; actual paste process and solder mask expansion remain assembly review items.",
+  "three_d_model": "None provided; no fabricated 3D model.",
+  "qualifications": {
+    "manufacturer_acceptance": false,
+    "assembly_qualified": false,
+    "stencil_qualified": false,
+    "board_fit_verified": false,
+    "pcb_drc_performed": false,
+    "thermal_qualified": false,
+    "sequencing_qualified": false,
+    "actuator_backdrive_qualified": false,
+    "hardware_accepted": false
+  },
+  "context_holds": [
+    "C11 exact capacitor identity and actuator source/load qualification remain held.",
+    "A package geometry check does not verify signal routing, firmware PC4 behavior, power ramps, actuator backdrive or complete electrical design.",
+    "No live CAD/copper/BOM/firmware or prior packet is changed by this package inspection."
+  ]
+}

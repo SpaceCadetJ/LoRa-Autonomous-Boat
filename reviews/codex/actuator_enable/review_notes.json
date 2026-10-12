@@ -1,0 +1,44 @@
+{
+  "revision": "ACT-02",
+  "baseline": "973ad17c4e1e4ea8fbfda94f992a50d9ef8f0ea2",
+  "independent_source_reviews": [
+    "power_native_review: TXU0102 exact identity, OE thresholds, leakage, supply isolation and unpowered-receiver limitation",
+    "input_protection_review: TI DCU pin map, native footprint and portable geometry checks",
+    "imu_candidate_validator: PC4 allocation, exact native delta and mutation tests"
+  ],
+  "rejected_alternatives": [
+    "SN74LV1T125 has no verified Ioff specification",
+    "5 V SN74LVC1G125 VIH can exceed 3.3 V",
+    "AHCT OE pullup/NMOS needs an edge-rate budget and retains output backdrive limitation"
+  ],
+  "verified": [
+    "Captured schematic pin/identity contract",
+    "Both converter and Power source sheets preserved",
+    "ACT-01 population contract preserved",
+    "Exact package drawing and native footprint geometry"
+  ],
+  "proposed": [
+    "OE arm policy and MCU register sequence",
+    "Hardware receiver-power observation and independent arm interlock"
+  ],
+  "untested": [
+    "Power sequencing and brownout",
+    "Real receivers/harness/loading",
+    "Firmware integration",
+    "PCB placement/routing/stencil/thermal",
+    "C11 reservoir/transients, 6S feed, ADC, combined IMU2"
+  ],
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "hardware_tested": false,
+  "fabrication_approved": false,
+  "next_smallest_task": "Hardware arm interlock and receiver-power observability, including independent ESC readiness in both population variants",
+  "checks": {
+    "native_erc_errors": 0,
+    "native_erc_warnings": 1,
+    "contract_tests": 41,
+    "geometry_mutation_guards": 3,
+    "viewer_desktop_phone": "pass",
+    "source_claim_review": "pass_bounded_candidate"
+  }
+}

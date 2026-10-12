@@ -78,6 +78,9 @@ jobs:
           python reviews/codex/actuator_supply/verify_candidate.py --check
           python reviews/codex/actuator_supply/test_candidate.py
           python reviews/codex/actuator_supply/inspect_packages.py --check
+          python reviews/codex/actuator_enable/verify_candidate.py --check
+          python reviews/codex/actuator_enable/test_candidate.py
+          python reviews/codex/actuator_enable/inspect_packages.py --check
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

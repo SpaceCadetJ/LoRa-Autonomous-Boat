@@ -265,6 +265,31 @@ def main():
     check_hashes(read_json(actuator_root + "v1_procurement_preservation.json"), "ACT-01 preserved V1 procurement")
     assert "C11" in read_json("hardware/manufacturing/procurement_policy.json")["v2"]["holds"]
     print("PASS actuator pin/identity delta, exclusive population and package evidence; assembly/hardware held")
+    enable_root = "reviews/codex/actuator_enable/"
+    enable = read_json(enable_root + "packet_manifest.json")
+    check_hashes(enable["input_sha256"], "enable preserved inputs")
+    check_hashes(enable["artifact_sha256"], "enable captured artifacts")
+    build = read_json(enable_root + "build_manifest.json")
+    native = read_json(enable_root + "native_manifest.json")
+    assert native["input_sha256"] == build["output_sha256"]
+    check_hashes(build["output_sha256"], "enable source")
+    check_hashes(native["output_sha256"], "enable native exports")
+    check_hashes({enable_root + "build_candidate.py": build["builder_sha256"],
+                  enable_root + "expected_contract.json": build["expected_contract_sha256"],
+                  enable_root + "population_contract.json": build["population_contract_sha256"],
+                  enable_root + "export_native.py": native["runner_sha256"]}, "enable provenance")
+    for module_name, filename, function, record in [
+            ("enable_verify", "verify_candidate.py", "collect", "validation.json"),
+            ("enable_packages", "inspect_packages.py", "check", None)]:
+        spec = importlib.util.spec_from_file_location(module_name, ROOT / enable_root / filename)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        result = getattr(module, function)()
+        if record:
+            assert result == read_json(enable_root + record)
+    assert enable["live_electrical_delta"] == 0 and enable["live_copper_delta"] == 0
+    assert not any(enable[k] for k in ["pcb_updated", "hardware_tested", "fabrication_approved", "assembly_variant_released"])
+    print("PASS ACT-02 native delta and default-enable contract; interlock/hardware held")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())

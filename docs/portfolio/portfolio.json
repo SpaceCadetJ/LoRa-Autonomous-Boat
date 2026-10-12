@@ -37,7 +37,8 @@
     "input_capacitors": "reviews/codex/input_capacitors/README.md",
     "buck_3v3": "reviews/codex/buck_3v3/README.md",
     "buck_5v": "reviews/codex/buck_5v/README.md",
-    "actuator_supply": "reviews/codex/actuator_supply/README.md"
+    "actuator_supply": "reviews/codex/actuator_supply/README.md",
+    "actuator_enable": "reviews/codex/actuator_enable/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -148,6 +149,11 @@
       "path": "reviews/codex/actuator_supply/v2_actuator_supply.svg",
       "kind": "verified_schematic_candidate",
       "caption": "ACT-01: separate buffer supply and exclusive source population proposals; enable/sequencing and hardware acceptance pending."
+    },
+    {
+      "path": "reviews/codex/actuator_enable/v2_actuator_enable.svg",
+      "kind": "verified_schematic_candidate",
+      "caption": "ACT-02: default-disabled dual translator; firmware, receiver-power interlock and hardware qualification remain open."
     }
   ],
   "validated_results": [
@@ -313,6 +319,16 @@
         "reviews/codex/actuator_supply/population_contract.json",
         "reviews/codex/actuator_supply/README.md"
       ]
+    },
+    {
+      "claim": "ACT-02 independently checks TXU0102 physical pins, new PC4 enable and pulldown, preserving 383 outside-boundary pins, both converters and ACT-01 source populations. 41 mutation tests pass; native ERC adds no findings. Live board/firmware/ordering remain unchanged.",
+      "classification": "verified_native_schematic_candidate_not_integrated",
+      "evidence": [
+        "reviews/codex/actuator_enable/validation.json",
+        "reviews/codex/actuator_enable/native_manifest.json",
+        "reviews/codex/actuator_enable/native_geometry.json",
+        "reviews/codex/actuator_enable/README.md"
+      ]
     }
   ],
   "current_native_findings": {
@@ -341,6 +357,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
+    "Resolve actuator receiver-power observation and independent hardware arm interlock before firmware/PCB integration of ACT-02.",
     "Implement default-disabled buffer enable and supply sequencing; resolve C11/VSERVO reservoir/transients, full 6S input-feed/leakage/damping, ADC and combined IMU2 before routing.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",

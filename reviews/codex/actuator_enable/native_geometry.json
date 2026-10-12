@@ -1,0 +1,473 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-10-12T10:16:35.269713+00:00",
+  "kicad_version": "9.0.7",
+  "scope": "Native/portable U4 pad numbering, TI example land dimensions and local artwork; no native board validation.",
+  "input_sha256": {
+    "inputs/TI_DCU0008A_TXU0102.kicad_mod": "27aa9ec8b27feb484da48c7218c5892c3174eb03147a3e3a19ffcc3e211e918d",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DCU0008A_TXU0102.kicad_mod": "27aa9ec8b27feb484da48c7218c5892c3174eb03147a3e3a19ffcc3e211e918d",
+    "expected_contract.json": "d37b307578823bb615bcebd878edb323196bbe1385d776aafec771bda3478c2b",
+    "package_review.json": "553ec4d50c9bce290d2a1cf4bdeb0664156ea73a662497033f5d6a985f2a8b56",
+    "inspect_packages.py": "c42d1ab973bb7d9729ef21728b3170ac5702224fdff0ecc9a9f35f6a9ef000f0"
+  },
+  "footprint": "TI_DCU0008A_TXU0102",
+  "references": [
+    "U4"
+  ],
+  "geometry": {
+    "pads": [
+      {
+        "number": "1",
+        "x_mm": -1.55,
+        "y_mm": -0.75,
+        "size_x_mm": 0.85,
+        "size_y_mm": 0.3,
+        "rotation_deg": 0.0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "shape": "roundrect",
+        "roundrect_ratio": 0.166667
+      },
+      {
+        "number": "2",
+        "x_mm": -1.55,
+        "y_mm": -0.25,
+        "size_x_mm": 0.85,
+        "size_y_mm": 0.3,
+        "rotation_deg": 0.0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "shape": "roundrect",
+        "roundrect_ratio": 0.166667
+      },
+      {
+        "number": "3",
+        "x_mm": -1.55,
+        "y_mm": 0.25,
+        "size_x_mm": 0.85,
+        "size_y_mm": 0.3,
+        "rotation_deg": 0.0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "shape": "roundrect",
+        "roundrect_ratio": 0.166667
+      },
+      {
+        "number": "4",
+        "x_mm": -1.55,
+        "y_mm": 0.75,
+        "size_x_mm": 0.85,
+        "size_y_mm": 0.3,
+        "rotation_deg": 0.0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "shape": "roundrect",
+        "roundrect_ratio": 0.166667
+      },
+      {
+        "number": "5",
+        "x_mm": 1.55,
+        "y_mm": 0.75,
+        "size_x_mm": 0.85,
+        "size_y_mm": 0.3,
+        "rotation_deg": 0.0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "shape": "roundrect",
+        "roundrect_ratio": 0.166667
+      },
+      {
+        "number": "6",
+        "x_mm": 1.55,
+        "y_mm": 0.25,
+        "size_x_mm": 0.85,
+        "size_y_mm": 0.3,
+        "rotation_deg": 0.0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "shape": "roundrect",
+        "roundrect_ratio": 0.166667
+      },
+      {
+        "number": "7",
+        "x_mm": 1.55,
+        "y_mm": -0.25,
+        "size_x_mm": 0.85,
+        "size_y_mm": 0.3,
+        "rotation_deg": 0.0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "shape": "roundrect",
+        "roundrect_ratio": 0.166667
+      },
+      {
+        "number": "8",
+        "x_mm": 1.55,
+        "y_mm": -0.75,
+        "size_x_mm": 0.85,
+        "size_y_mm": 0.3,
+        "rotation_deg": 0.0,
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "shape": "roundrect",
+        "roundrect_ratio": 0.166667
+      }
+    ],
+    "lines": [
+      {
+        "layer": "F.CrtYd",
+        "start_mm": [
+          -2.25,
+          -1.3
+        ],
+        "end_mm": [
+          -2.25,
+          1.3
+        ],
+        "width_mm": 0.05
+      },
+      {
+        "layer": "F.CrtYd",
+        "start_mm": [
+          -2.25,
+          -1.3
+        ],
+        "end_mm": [
+          2.25,
+          -1.3
+        ],
+        "width_mm": 0.05
+      },
+      {
+        "layer": "F.CrtYd",
+        "start_mm": [
+          -2.25,
+          1.3
+        ],
+        "end_mm": [
+          2.25,
+          1.3
+        ],
+        "width_mm": 0.05
+      },
+      {
+        "layer": "F.CrtYd",
+        "start_mm": [
+          2.25,
+          -1.3
+        ],
+        "end_mm": [
+          2.25,
+          1.3
+        ],
+        "width_mm": 0.05
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          -1.15,
+          -0.5
+        ],
+        "end_mm": [
+          -1.15,
+          1.0
+        ],
+        "width_mm": 0.1
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          -1.15,
+          -0.5
+        ],
+        "end_mm": [
+          -0.65,
+          -1.0
+        ],
+        "width_mm": 0.1
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          -1.15,
+          1.0
+        ],
+        "end_mm": [
+          1.15,
+          1.0
+        ],
+        "width_mm": 0.1
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          -0.65,
+          -1.0
+        ],
+        "end_mm": [
+          1.15,
+          -1.0
+        ],
+        "width_mm": 0.1
+      },
+      {
+        "layer": "F.Fab",
+        "start_mm": [
+          1.15,
+          -1.0
+        ],
+        "end_mm": [
+          1.15,
+          1.0
+        ],
+        "width_mm": 0.1
+      },
+      {
+        "layer": "F.SilkS",
+        "start_mm": [
+          -2.13,
+          -1.17
+        ],
+        "end_mm": [
+          -2.13,
+          -0.95
+        ],
+        "width_mm": 0.12
+      },
+      {
+        "layer": "F.SilkS",
+        "start_mm": [
+          -2.13,
+          -1.17
+        ],
+        "end_mm": [
+          -1.91,
+          -1.17
+        ],
+        "width_mm": 0.12
+      },
+      {
+        "layer": "F.SilkS",
+        "start_mm": [
+          -2.13,
+          -0.95
+        ],
+        "end_mm": [
+          -1.91,
+          -1.17
+        ],
+        "width_mm": 0.12
+      },
+      {
+        "layer": "F.SilkS",
+        "start_mm": [
+          -1.2,
+          -1.18
+        ],
+        "end_mm": [
+          1.2,
+          -1.18
+        ],
+        "width_mm": 0.12
+      },
+      {
+        "layer": "F.SilkS",
+        "start_mm": [
+          -1.2,
+          1.18
+        ],
+        "end_mm": [
+          1.2,
+          1.18
+        ],
+        "width_mm": 0.12
+      }
+    ]
+  },
+  "dimensional_comparison": {
+    "electrical_pad_set_matches_contract": true,
+    "ti_example_land_dimensions_match": true,
+    "top_view_numbering_and_pin_1_artwork_match": true,
+    "nominal_body_and_proposed_courtyard_match": true,
+    "reviewed_dimensions_mm": {
+      "nominal_body": [
+        2.3,
+        2.0
+      ],
+      "maximum_body": [
+        2.4,
+        2.1
+      ],
+      "maximum_height": 0.9,
+      "land": [
+        0.85,
+        0.3
+      ],
+      "column_centers_x": [
+        -1.55,
+        1.55
+      ],
+      "pitch": 0.5,
+      "corner_radius": 0.05,
+      "overall_land_span_x": 3.95,
+      "land_inner_gap_x": 2.25,
+      "courtyard_proposed": [
+        4.5,
+        2.6
+      ]
+    },
+    "no_three_d_model": true,
+    "interpretation": "Selected TI example land geometry matches. Local silk/courtyard and fabrication process remain proposals, not manufacturer or assembly acceptance."
+  },
+  "manufacturer_review": {
+    "schema_version": 1,
+    "reviewed_utc_date": "2026-10-12",
+    "revision": "ACT-02",
+    "mpn": "TXU0102DCUR",
+    "manufacturer": "Texas Instruments",
+    "package": "DCU0008A VSSOP-8",
+    "identity_url": "https://www.ti.com/product/TXU0102/part-details/TXU0102DCUR",
+    "status_observed": "Active; manufacturer status is not a stock or procurement release claim.",
+    "datasheet_url": "https://www.ti.com/lit/ds/symlink/txu0102.pdf",
+    "datasheet_revision": "SCES941A March 2022; pin functions page 4, supply and bypass pages 25-26.",
+    "drawing_url": "https://www.ti.com/lit/pdf/MPDS050E",
+    "drawing_identifier": "DCU0008A; drawing 4225266/A 09/2014 in current linked MPDS050E; outline page 1, example board and stencil pages 2-3.",
+    "pins": {
+      "1": [
+        "B2Y",
+        "tri_state"
+      ],
+      "2": [
+        "GND",
+        "power_in"
+      ],
+      "3": [
+        "VCCA",
+        "power_in"
+      ],
+      "4": [
+        "A2",
+        "input"
+      ],
+      "5": [
+        "A1",
+        "input"
+      ],
+      "6": [
+        "OE",
+        "input"
+      ],
+      "7": [
+        "VCCB",
+        "power_in"
+      ],
+      "8": [
+        "B1Y",
+        "tri_state"
+      ]
+    },
+    "functional_direction": "A1 to B1Y; A2 to B2Y; OE high enables, OE low disables both outputs.",
+    "proposal_supplies": {
+      "VCCA_pin_3": "+3V3",
+      "VCCB_pin_7": "pre-diode +5V_BUCK",
+      "GND_pin_2": "GND",
+      "bypass": "Separate 0.1 uF capacitor from each supply to GND, placed locally; circuit and placement verified elsewhere."
+    },
+    "reviewed_dimensions_mm": {
+      "nominal_body": [
+        2.3,
+        2.0
+      ],
+      "maximum_body": [
+        2.4,
+        2.1
+      ],
+      "maximum_height": 0.9,
+      "land": [
+        0.85,
+        0.3
+      ],
+      "column_centers_x": [
+        -1.55,
+        1.55
+      ],
+      "pitch": 0.5,
+      "corner_radius": 0.05,
+      "overall_land_span_x": 3.95,
+      "land_inner_gap_x": 2.25,
+      "courtyard_proposed": [
+        4.5,
+        2.6
+      ]
+    },
+    "orientation": "Top view: pad 1 top left, pads 1-4 descend left, pads 5-8 ascend right. Fab chamfer and silk triangle identify pad 1.",
+    "silk_courtyard_status": "Proposed local artwork/courtyard; these are not dimensions specified by the TI land example.",
+    "generic_kicad_comparison": {
+      "library": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "land": [
+        1.25,
+        0.35
+      ],
+      "column_centers_x": [
+        -1.4,
+        1.4
+      ],
+      "disposition": "Installed IPC family lands differ from TI example; local footprint uses the reviewed TI land dimensions. This does not establish manufacturer acceptance."
+    },
+    "stencil_basis": "TI example uses 0.85 x 0.30 mm apertures with R0.05 corners and 0.125 mm stencil; actual paste process and solder mask expansion remain assembly review items.",
+    "three_d_model": "None provided; no fabricated 3D model.",
+    "qualifications": {
+      "manufacturer_acceptance": false,
+      "assembly_qualified": false,
+      "stencil_qualified": false,
+      "board_fit_verified": false,
+      "pcb_drc_performed": false,
+      "thermal_qualified": false,
+      "sequencing_qualified": false,
+      "actuator_backdrive_qualified": false,
+      "hardware_accepted": false
+    },
+    "context_holds": [
+      "C11 exact capacitor identity and actuator source/load qualification remain held.",
+      "A package geometry check does not verify signal routing, firmware PC4 behavior, power ramps, actuator backdrive or complete electrical design.",
+      "No live CAD/copper/BOM/firmware or prior packet is changed by this package inspection."
+    ]
+  },
+  "qualifications": {
+    "manufacturer_acceptance": false,
+    "assembly_qualified": false,
+    "stencil_qualified": false,
+    "board_fit_verified": false,
+    "pcb_drc_performed": false,
+    "thermal_qualified": false,
+    "sequencing_qualified": false,
+    "actuator_backdrive_qualified": false,
+    "hardware_accepted": false
+  },
+  "source_files_changed_by_inspector": false,
+  "candidate_circuit_changed_by_inspector": false
+}

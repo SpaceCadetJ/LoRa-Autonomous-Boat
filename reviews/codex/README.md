@@ -1,5 +1,9 @@
 # Start here: Codex review checkpoint
 
+## Current actuator packet - ACT-02, 2026-10-12
+
+The [default-disabled translator and sequencing contract](actuator_enable/README.md) now has an annotated native schematic: TXU0102DCUR, PC4 arm signal and 10k hardware pulldown. Independent checks preserve 383 outside-boundary pins, both converters and ACT-01 source populations; 41 tests pass and ERC adds no findings. Firmware, ordering and live PCB are unchanged. Next: receiver-power observation and a hardware arm interlock, including independent ESC readiness in both populations. This supersedes older next-task text below.
+
 ## Current actuator packet - ACT-01, 2026-10-12
 
 The [buffer supply and population review](actuator_supply/README.md) moves exactly four buffer/bypass pins to the dedicated 5 V converter, preserves both converter sheets and adds exact SMC diode identities with mutually exclusive BEC_ONLY/ONBOARD proposals. All 380 outside-boundary pins are preserved; no new ERC findings. A new C11 identity hold changes V2 ordering to 68 candidate / 39 held / 11 feature references, 35 candidate lines. Next: default-disabled buffer enable and power sequencing, followed by reservoir/transient and remaining integration gates. This supersedes older next-task text below.

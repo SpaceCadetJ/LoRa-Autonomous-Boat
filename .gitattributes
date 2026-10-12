@@ -61,3 +61,5 @@ reviews/codex/buck_3v3/** -text
 reviews/codex/buck_5v/** -text
 
 reviews/codex/actuator_supply/** -text
+
+reviews/codex/actuator_enable/** -text
