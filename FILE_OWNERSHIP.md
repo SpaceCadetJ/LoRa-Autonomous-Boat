@@ -114,3 +114,13 @@ Root claims reviews/codex/input_capacitors/** and current viewer/guide/portfolio
 ## Input capacitor network checkpoint — 2026-10-12 UTC
 
 Model, native footprint inspection, independent geometry/claim review and desktop/phone viewer checks are complete. Child write claims are released. Root closes selective publication of CAP-01. All live/candidate electrical and copper inputs, purchasing, firmware and historical packets remain preserved. Next scope: isolated first 3.3 V converter cell using input_capacitors/README.md, with effective-capacitance, damping, leakage and ADC gates retained. Exclude unrelated v1_design.py / route_v2.py edits.
+
+## First 3.3 V converter claim - 2026-10-12 UTC
+
+Root claims reviews/codex/buck_3v3/** and current viewer/application/portfolio/handoff/CI integration for an isolated INPUT-A1-derived first converter schematic. Preserve every live CAD/copper/BOM/firmware input, INPUT-A1/CAP-01/IMU2 and unrelated v1_design.py / route_v2.py edits. Expected candidate boundary is U2,L1,C3-C6,R2-R5,D3: remove R2/R3/C4/D3; replace U2 and supporting identities; add C44-C48 for local input, HF, output and VCC bypass. Exact pin/identity contract will be saved before native export. Child power_native_review and input_protection_review are read-only circuit-source reviewers; imu_candidate_validator is read-only pending a specific verifier scope. No primary generation/routing, live-board replacement, ordering, hardware access or branch/history changes. Capacitance, damping, negative-rail and ADC integration gates remain open.
+
+First-converter child imu_candidate_validator owns only reviews/codex/buck_3v3/verify_candidate.py and test_candidate.py for independent expected-contract/native delta verification. Child power_native_review may write only buck_3v3/model.py and test_model.py for analytical screens. Root owns all remaining packet artifacts and integration.
+
+## BUCK33-A1 review checkpoint — 2026-10-12 UTC
+
+Independent native-contract review, source/claim review and native package inspection are complete; all child write claims are released. Root closes viewer/guide/evidence integration and selective publication of the isolated first-converter packet. Live CAD/copper/BOM/firmware and all older packets remain unchanged. The next bounded circuit scope follows buck_3v3/README.md: isolated 5 V converter and simultaneous-load budget, then named power/ADC/buffer integration gates. Preserve unrelated v1_design.py and route_v2.py edits. No primary generator, router, hardware, order or branch/history action is authorized by this checkpoint.

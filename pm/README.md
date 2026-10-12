@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Current converter packet — BUCK33-A1, 2026-10-12
+
+The [complete first 3.3 V converter](../reviews/codex/buck_3v3/README.md) now has a separate annotated sheet, exact supporting parts and native validation: 113 components, 361 pins, all 330 outside-boundary pins preserved, zero errors and the original ERC warning. This is an isolated INPUT-A1-derived candidate; live CAD, copper, purchasing and firmware remain unchanged. Capacitance, thermal, loop, input leakage and ADC gates remain open. Next: the isolated 5 V converter and its simultaneous-load budget, retaining 6S and the optional on-board actuator configuration. This entry supersedes older next-task text below.
+
 ## Current input-network packet — 2026-10-12
 
 The [nonpolar reservoir and local bypass specification](../reviews/codex/input_capacitors/README.md) now includes exact screened identities, an annotated connection drawing, capacitance requirements and a native-checked TDK land-pattern proposal. No circuit changed; source damping, effective capacitance and complete leakage remain integration gates. Next: the isolated first 3.3 V wider-voltage converter cell with explicit pin delta and those holds retained. This entry supersedes older next-task text below.

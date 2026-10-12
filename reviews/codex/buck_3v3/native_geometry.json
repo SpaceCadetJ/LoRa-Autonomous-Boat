@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-10-12T07:24:25.460289+00:00",
+  "kicad_version": "9.0.7",
+  "scope": "Native footprint parsing, electrical pad-number sets and selected reviewed dimensions only.",
+  "input_sha256": {
+    "expected_contract.json": "aea75f4f255d82f1f6d1b779fcf508d73e43b7c43ff36a93a6aa1cd12726a104",
+    "inspect_packages.py": "d8e72020c208f05f150d5e91b6ab1ce0d834d63535c06b2cee5aa3dc992229fc",
+    "inputs/footprints/C_0603_1608Metric.kicad_mod": "e623465f4d6218aa36a05697a93171eb897c162a613e5f635a2bfa5d0db8db0c",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0603_1608Metric.kicad_mod": "e623465f4d6218aa36a05697a93171eb897c162a613e5f635a2bfa5d0db8db0c",
+    "inputs/footprints/C_TDK_C5750X7S2A106K230KB.kicad_mod": "b4afd24a1554435cad3aeefc7843be8c1d7fd24ec624fc2b2ba2967331d02761",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C5750X7S2A106K230KB.kicad_mod": "b4afd24a1554435cad3aeefc7843be8c1d7fd24ec624fc2b2ba2967331d02761",
+    "inputs/footprints/C_0805_2012Metric.kicad_mod": "b430016bdeb578187fcd4d270e4e2893e7d8103056d27277d2297c4c1490032b",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0805_2012Metric.kicad_mod": "b430016bdeb578187fcd4d270e4e2893e7d8103056d27277d2297c4c1490032b",
+    "inputs/footprints/C_TDK_C3225X7R1E226M250AB.kicad_mod": "d9c0caf3685485801184cc0abcc4eaa13c5014b3f1d6dfd44e1558ebb8d7fa75",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C3225X7R1E226M250AB.kicad_mod": "d9c0caf3685485801184cc0abcc4eaa13c5014b3f1d6dfd44e1558ebb8d7fa75",
+    "inputs/footprints/L_Coilcraft_XAL6060-XXX.kicad_mod": "fc897a486027f74e3b23e9d3e60fddbca42700ebc525caf81359d36181868acf",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/L_Coilcraft_XAL6060-XXX.kicad_mod": "fc897a486027f74e3b23e9d3e60fddbca42700ebc525caf81359d36181868acf",
+    "inputs/footprints/R_0603_1608Metric.kicad_mod": "278c3af706aceec3085258fe265b53cd69adb616bef0db09a2ffc4083e5c2cae",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/R_0603_1608Metric.kicad_mod": "278c3af706aceec3085258fe265b53cd69adb616bef0db09a2ffc4083e5c2cae",
+    "inputs/footprints/TI_DDA0008B_LMR36520.kicad_mod": "e3e7df73d4e2b9b655682fb16295923debb828288fcb7388e81efe808f81de47",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DDA0008B_LMR36520.kicad_mod": "e3e7df73d4e2b9b655682fb16295923debb828288fcb7388e81efe808f81de47"
+  },
+  "footprint_count": 7,
+  "entries": [
+    {
+      "footprint": "C_0603_1608Metric",
+      "references": [
+        "C3",
+        "C48"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2"
+      ],
+      "path": "inputs/footprints/C_0603_1608Metric.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0603_1608Metric.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -0.775,
+          "y_mm": 0.0,
+          "size_x_mm": 0.9,
+          "size_y_mm": 0.95,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": 0.775,
+          "y_mm": 0.0,
+          "size_x_mm": 0.9,
+          "size_y_mm": 0.95,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "Pad-number set checked; no exact-manufacturer land acceptance asserted."
+    },
+    {
+      "footprint": "C_0805_2012Metric",
+      "references": [
+        "C46"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2"
+      ],
+      "path": "inputs/footprints/C_0805_2012Metric.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0805_2012Metric.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -0.95,
+          "y_mm": 0.0,
+          "size_x_mm": 1.0,
+          "size_y_mm": 1.45,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": 0.95,
+          "y_mm": 0.0,
+          "size_x_mm": 1.0,
+          "size_y_mm": 1.45,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "Pad-number set checked; no exact-manufacturer land acceptance asserted."
+    },
+    {
+      "footprint": "C_TDK_C3225X7R1E226M250AB",
+      "references": [
+        "C47",
+        "C5",
+        "C6"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2"
+      ],
+      "path": "inputs/footprints/C_TDK_C3225X7R1E226M250AB.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C3225X7R1E226M250AB.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -1.65,
+          "y_mm": 0.0,
+          "size_x_mm": 1.1,
+          "size_y_mm": 2.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": 1.65,
+          "y_mm": 0.0,
+          "size_x_mm": 1.1,
+          "size_y_mm": 2.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "Reviewed TDK land dimensions matched; assembly, stencil and board fit remain unqualified."
+    },
+    {
+      "footprint": "C_TDK_C5750X7S2A106K230KB",
+      "references": [
+        "C44",
+        "C45"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2"
+      ],
+      "path": "inputs/footprints/C_TDK_C5750X7S2A106K230KB.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C5750X7S2A106K230KB.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -2.85,
+          "y_mm": 0.0,
+          "size_x_mm": 1.3,
+          "size_y_mm": 4.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": 2.85,
+          "y_mm": 0.0,
+          "size_x_mm": 1.3,
+          "size_y_mm": 4.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "Reviewed TDK land dimensions matched; assembly, stencil and board fit remain unqualified."
+    },
+    {
+      "footprint": "L_Coilcraft_XAL6060-XXX",
+      "references": [
+        "L1"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2"
+      ],
+      "path": "inputs/footprints/L_Coilcraft_XAL6060-XXX.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/L_Coilcraft_XAL6060-XXX.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -2.02,
+          "y_mm": 0.0,
+          "size_x_mm": 1.43,
+          "size_y_mm": 5.5,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": 2.02,
+          "y_mm": 0.0,
+          "size_x_mm": 1.43,
+          "size_y_mm": 5.5,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "Pad-number set checked; no exact-manufacturer land acceptance asserted."
+    },
+    {
+      "footprint": "R_0603_1608Metric",
+      "references": [
+        "R4",
+        "R5"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2"
+      ],
+      "path": "inputs/footprints/R_0603_1608Metric.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/R_0603_1608Metric.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -0.825,
+          "y_mm": 0.0,
+          "size_x_mm": 0.8,
+          "size_y_mm": 0.95,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": 0.825,
+          "y_mm": 0.0,
+          "size_x_mm": 0.8,
+          "size_y_mm": 0.95,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "Pad-number set checked; no exact-manufacturer land acceptance asserted."
+    },
+    {
+      "footprint": "TI_DDA0008B_LMR36520",
+      "references": [
+        "U2"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "path": "inputs/footprints/TI_DDA0008B_LMR36520.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DDA0008B_LMR36520.kicad_mod",
+      "pads": [
+        {
+          "number": "",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "size_x_mm": 2.71,
+          "size_y_mm": 3.4,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "1",
+          "x_mm": -2.7,
+          "y_mm": -1.905,
+          "size_x_mm": 1.55,
+          "size_y_mm": 0.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": -2.7,
+          "y_mm": -0.635,
+          "size_x_mm": 1.55,
+          "size_y_mm": 0.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "3",
+          "x_mm": -2.7,
+          "y_mm": 0.635,
+          "size_x_mm": 1.55,
+          "size_y_mm": 0.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "4",
+          "x_mm": -2.7,
+          "y_mm": 1.905,
+          "size_x_mm": 1.55,
+          "size_y_mm": 0.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "5",
+          "x_mm": 2.7,
+          "y_mm": 1.905,
+          "size_x_mm": 1.55,
+          "size_y_mm": 0.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "6",
+          "x_mm": 2.7,
+          "y_mm": 0.635,
+          "size_x_mm": 1.55,
+          "size_y_mm": 0.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "7",
+          "x_mm": 2.7,
+          "y_mm": -0.635,
+          "size_x_mm": 1.55,
+          "size_y_mm": 0.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "8",
+          "x_mm": 2.7,
+          "y_mm": -1.905,
+          "size_x_mm": 1.55,
+          "size_y_mm": 0.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "9",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "size_x_mm": 2.95,
+          "size_y_mm": 4.9,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "DDA reviewed geometry matched; EP paste assumes TI's 0.125 mm stencil example. No vias or stencil acceptance."
+    }
+  ],
+  "qualifications": {
+    "board_fit_verified": false,
+    "pcb_drc_performed": false,
+    "manufacturer_acceptance": false,
+    "assembly_qualified": false,
+    "stencil_qualified": false,
+    "thermal_vias_qualified": false,
+    "inductor_start_lead_orientation_verified": false,
+    "hardware_accepted": false
+  },
+  "candidate_circuit_changed": false,
+  "source_files_changed": false,
+  "limitations": [
+    "A successful footprint load is not ERC, DRC, board fit or electrical qualification.",
+    "Only pad geometry and electrical numbering are cross-checked; no 3D-model or land-pattern approval.",
+    "Generic inductor/start-lead orientation and other generic footprints remain assembly review items."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "scope": "Local viewer navigation, SVG loading, zoom and guide layout; no circuit or hardware test",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "svg_loaded": true,
+      "isolated_project_link": true,
+      "zoom_percent": 200,
+      "guide_contract_and_holds_visible": true,
+      "horizontal_page_overflow": false,
+      "dialog_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "svg_loaded": true,
+      "isolated_project_link": true,
+      "zoom_percent": 200,
+      "guide_contract_and_holds_visible": true,
+      "horizontal_page_overflow": false,
+      "dialog_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

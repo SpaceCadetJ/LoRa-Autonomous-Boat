@@ -84,3 +84,7 @@ The [interactive boundary review](../../reviews/codex/reverse_leakage/index.html
 ## Input-network specification and footprint — 2026-10-12
 
 The [annotated capacitor network](../../reviews/codex/input_capacitors/v2_input_capacitors.svg) and [interactive sensitivity tool](../../reviews/codex/input_capacitors/index.html) document separate nonpolar storage and local converter bypass. Native KiCad inspection found that the generic 2220 lands differ from the selected TDK part’s recommendations; a dimension-checked isolated footprint is supplied. Analytical tests cover capacitance thresholds and RLC limiting cases. [Evidence and next implementation task](../../reviews/codex/input_capacitors/README.md) retain unverified bias/temperature, damping, leakage and assembly gates. No live circuit or hardware acceptance is claimed.
+
+## First converter schematic milestone — 2026-10-12
+
+[BUCK33-A1](../../reviews/codex/buck_3v3/README.md) adds an annotated, editable 3.3 V converter study with exact candidate parts, package dimensions, reproducible feedback/current calculations and independent native connectivity checks. All 330 outside-boundary pins remain unchanged; native ERC adds no findings. The [SVG](../../reviews/codex/buck_3v3/v2_buck_3v3.svg) is suitable for illustrating the design-review process. It depicts a held schematic candidate, not a manufactured or tested board. Live copper, ordering and firmware remain preserved; the next isolated circuit task is the 5 V rail and load budget.

@@ -211,6 +211,32 @@ def main():
     assert capacitor["live_electrical_delta"] == 0 and capacitor["candidate_electrical_delta"] == 0
     assert not any(capacitor[k] for k in ["hardware_tested", "fabrication_approved", "effective_capacitance_verified"])
     print("PASS input-capacitor screening and native/portable land dimensions; integration gates remain open")
+    buck_root = "reviews/codex/buck_3v3/"
+    buck = read_json(buck_root + "packet_manifest.json")
+    check_hashes(buck["input_sha256"], "3.3 V converter preserved inputs")
+    check_hashes(buck["artifact_sha256"], "3.3 V converter captured artifacts")
+    build = read_json(buck_root + "build_manifest.json")
+    native = read_json(buck_root + "native_manifest.json")
+    assert native["input_sha256"] == build["output_sha256"]
+    check_hashes(build["output_sha256"], "3.3 V converter source")
+    check_hashes(native["output_sha256"], "3.3 V converter native exports")
+    check_hashes({buck_root + "build_candidate.py": build["builder_sha256"],
+                  buck_root + "expected_contract.json": build["expected_contract_sha256"],
+                  buck_root + "export_native.py": native["runner_sha256"]}, "3.3 V converter provenance")
+    for module_name, filename, function, record in [
+            ("buck_verify", "verify_candidate.py", "collect", "validation.json"),
+            ("buck_model", "model.py", "study", "analysis.json"),
+            ("buck_packages", "inspect_packages.py", "check", None)]:
+        spec = importlib.util.spec_from_file_location(module_name, ROOT / buck_root / filename)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        result = getattr(module, function)()
+        if record:
+            assert result == read_json(buck_root + record)
+    assert buck["live_electrical_delta"] == 0 and buck["live_copper_delta"] == 0
+    assert not any(buck[k] for k in ["pcb_updated", "hardware_tested", "fabrication_approved", "effective_capacitance_verified"])
+    assert all(not v for v in read_json(buck_root + "analysis.json")["acceptance_gates"].values())
+    print("PASS 3.3 V converter native delta, package evidence and analytical capture; hardware held")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -222,7 +248,7 @@ def main():
     pages += list((ROOT / "docs/build").glob("*.md"))
     pages += list((ROOT / "docs/applications").glob("*.md"))
     pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md", ROOT / "reviews/codex/imu_placement/README.md", ROOT / "reviews/codex/imu_bias_filter/README.md"]
-    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md", ROOT / leakage_root / "README.md", ROOT / capacitor_root / "README.md"]
+    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md", ROOT / leakage_root / "README.md", ROOT / capacitor_root / "README.md", ROOT / buck_root / "README.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

@@ -59,6 +59,13 @@ jobs:
           python reviews/codex/input_capacitors/test_model.py
           python reviews/codex/input_capacitors/check_geometry.py
           python reviews/codex/input_capacitors/build_view.py --check
+      - name: Verify isolated 3.3 V converter evidence and rejection cases
+        run: |
+          python reviews/codex/buck_3v3/verify_candidate.py --check
+          python reviews/codex/buck_3v3/test_candidate.py
+          python reviews/codex/buck_3v3/model.py --check
+          python reviews/codex/buck_3v3/test_model.py
+          python reviews/codex/buck_3v3/inspect_packages.py --check
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

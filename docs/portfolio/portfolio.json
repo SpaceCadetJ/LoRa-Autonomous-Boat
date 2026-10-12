@@ -34,7 +34,8 @@
     "load_budget": "reviews/codex/power_topology/load_budget.html",
     "input_stage": "reviews/codex/input_stage/README.md",
     "reverse_leakage": "reviews/codex/reverse_leakage/README.md",
-    "input_capacitors": "reviews/codex/input_capacitors/README.md"
+    "input_capacitors": "reviews/codex/input_capacitors/README.md",
+    "buck_3v3": "reviews/codex/buck_3v3/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -130,6 +131,11 @@
       "path": "reviews/codex/input_capacitors/v2_input_capacitors.svg",
       "kind": "proposed_connection_contract",
       "caption": "Separate nonpolar reservoir and local bypass proposal; capacitance, damping and integration remain open."
+    },
+    {
+      "path": "reviews/codex/buck_3v3/v2_buck_3v3.svg",
+      "kind": "verified_schematic_candidate",
+      "caption": "BUCK33-A1: editable first 3.3 V converter; native connections checked, PCB and hardware qualification pending."
     }
   ],
   "validated_results": [
@@ -266,6 +272,15 @@
         "reviews/codex/reverse_leakage/analysis.json",
         "reviews/codex/reverse_leakage/review_notes.json"
       ]
+    },
+    {
+      "claim": "BUCK33-A1 native comparison verifies the complete first 3.3 V converter replacement: 113 parts, 361 pins, all 330 outside-boundary pins preserved and no new ERC findings. Analytical and package checks do not establish hardware acceptance.",
+      "classification": "verified_native_schematic_candidate_not_integrated",
+      "evidence": [
+        "reviews/codex/buck_3v3/validation.json",
+        "reviews/codex/buck_3v3/native_manifest.json",
+        "reviews/codex/buck_3v3/README.md"
+      ]
     }
   ],
   "current_native_findings": {
@@ -294,7 +309,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Complete the isolated 3.3 V wider-voltage converter cell, retaining effective-capacitance, damping, leakage and ADC sequencing gates before native power integration and IMU2 routing.",
+    "Complete the isolated 5 V converter and simultaneous-load budget; close nonpolar reservoir/leakage/damping, ADC and buffer gates before combined power/IMU2 integration and routing.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",
     "Measure voice quality, airtime and RC coexistence before selecting handheld radio, codec or hardware."

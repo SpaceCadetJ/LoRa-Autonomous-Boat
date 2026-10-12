@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "date": "2026-10-12",
+  "source_revision": "39ae4e73198037b3659b124994c8507da4e9cf52",
+  "status": "reviewed_isolated_schematic_candidate",
+  "independent_reviews": [
+    {
+      "reviewer": "imu_candidate_validator",
+      "scope": "Independent actual native contract, provenance and mutation checks",
+      "result": "--check and 18tests pass; 330 outside-boundary pins preserved;29 candidate source files and11 native files covered. Zero ERC errors/original AD0 warning. No circuit-contract blocker.",
+      "files_written": [
+        "verify_candidate.py",
+        "test_candidate.py"
+      ]
+    },
+    {
+      "reviewer": "power_native_review",
+      "scope": "Primary TI/Coilcraft source review, numerical screen and final guide claims",
+      "result": "Eight model tests pass. Valley/peak/timing wording agrees with sources. Explicit X5R VCC and X7S input dielectric exceptions, effective BOOT/VCC holds and nearby VCC placement added after review.",
+      "files_written": [
+        "model.py",
+        "test_model.py"
+      ]
+    },
+    {
+      "reviewer": "input_protection_review",
+      "scope": "Primary package-source review and native/portable footprint dimensions",
+      "result": "All 7 footprints load in KiCad9.0.7; pad sets and DDA/TDK dimensions match the contract. Four malformed-pad in-memory mutations rejected. Generic Coilcraft dimension orientation/start-lead assembly remains held.",
+      "files_written": [
+        "inspect_packages.py",
+        "native_geometry.json"
+      ]
+    }
+  ],
+  "root_verification": {
+    "native_version": "9.0.7",
+    "native_command_record": "native_manifest.json",
+    "contract_tests_passed": 18,
+    "model_tests_passed": 8,
+    "native_errors": 0,
+    "native_warnings": 1,
+    "native_warning_scope": "Original AD0 warning only",
+    "source_count": 29,
+    "native_file_count": 11,
+    "live_cad_inputs_preserved": 52,
+    "unrelated_tool_hashes_preserved": {
+      "hardware/kicad/tools/v1_design.py": "4c3765346e6b64976aaad5f406f8662056cfece10029767837a9f47864474dc0",
+      "hardware/kicad_v2/tools/route_v2.py": "3e44123b01d58c8373850c2becf77df2e7103877f9c223b6d102c14346cd03dd"
+    },
+    "browser_record": "viewer_check.json",
+    "visual_review": [
+      "buck-review.png",
+      "LoRa_Boat_Controller_V2-Power-review.png",
+      "viewer-desktop.png",
+      "guide-phone.png"
+    ],
+    "visual_disposition": "C3 annotation/loop separated; open ground-wire stub corrected before final capture. Viewer source/guide links and 200% zoom passed desktop/phone with no page errors or horizontal page/dialog overflow.",
+    "test_harness_repair": "Browser selector corrected from nonexistent app to actual main; final capture passes."
+  },
+  "acceptance_gates": {
+    "live_integration": false,
+    "pcb_updated": false,
+    "hardware_tested": false,
+    "fabrication_approved": false,
+    "effective_capacitance_verified": false,
+    "loop_stability_verified": false,
+    "thermal_verified": false,
+    "negative_rail_verified": false,
+    "adc_sequencing_verified": false
+  },
+  "next_smallest_task": "Isolated 5 V converter and simultaneous-load budget, retaining 6S and optional on-board actuator configuration; preserve this first-cell contract. Then nonpolar reservoir/leakage/damping, ADC/buffer and explicit combined IMU2 integration."
+}

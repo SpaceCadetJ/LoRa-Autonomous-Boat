@@ -76,3 +76,7 @@ The [reverse-leakage review](../../reviews/codex/reverse_leakage/README.md) conf
 ## Reservoir and local bypass specification — 2026-10-12
 
 The [capacitor network](../../reviews/codex/input_capacitors/README.md) separates input storage from each converter’s local bypass and provides a reviewed TDK footprint proposal. Its [interactive review](../../reviews/codex/input_capacitors/index.html) shows minimum effective-capacitance requirements and ideal source-wiring sensitivity. No powered-use, ordering, assembly or flashing gate is cleared; next is the isolated 3.3 V converter-cell design with qualification holds retained.
+
+## 3.3 V converter checkpoint — BUCK33-A1
+
+The [editable first converter](../../reviews/codex/buck_3v3/README.md) supplies an exact part/pin proposal for the V2 logic rail. Native validation preserves all 330 connections outside the converter boundary. Its calculations and package evidence remain separate from powered use. The PCB, ordering and application flashing procedures remain unchanged; V2 still has only the separate Stage A diagnostic. Next is the 5 V converter and its 7 V simultaneous-load budget, followed by unresolved input, ADC/buffer and combined IMU2 integration. The handheld voice/text/location requirement still needs measured voice/RC coexistence before hardware selection.
