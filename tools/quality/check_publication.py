@@ -124,6 +124,17 @@ def main():
     visual = read_json(bias_root + "review_notes.json")["visual_review"]
     check_hashes({visual["svg"]: visual["svg_sha256"], visual["png"]: visual["png_sha256"]}, "IMU2 reviewed drawing")
     print("PASS isolated IMU2 two-pin amendment and cumulative contract; no PCB/hardware acceptance")
+    power_root = "reviews/codex/power_envelope/"
+    power = read_json(power_root + "packet_manifest.json")
+    check_hashes(power["artifact_sha256"], "6S power review artifacts")
+    spec = importlib.util.spec_from_file_location("power_capture", ROOT / power_root / "capture.py")
+    power_capture = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(power_capture)
+    assert power_capture.collect() == read_json(power_root + "evidence.json")
+    holds = read_json("hardware/manufacturing/procurement_policy.json")["v2"]["holds"]
+    assert {"C1", "C2", "C10", "F1", "D2", "R1"} <= holds.keys()
+    assert power["electrical_delta"] == 0 and power["hardware_tested"] is False
+    print("PASS power boundary capture, identity holds and unchanged CAD; no hardware qualification")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -135,6 +146,7 @@ def main():
     pages += list((ROOT / "docs/build").glob("*.md"))
     pages += list((ROOT / "docs/applications").glob("*.md"))
     pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md", ROOT / "reviews/codex/imu_placement/README.md", ROOT / "reviews/codex/imu_bias_filter/README.md"]
+    pages += [ROOT / power_root / "README.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

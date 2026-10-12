@@ -55,3 +55,7 @@ The [placement review](../../reviews/codex/imu_placement/README.md) finds physic
 ## IMU2 circuit amendment
 
 The [current IMU2 candidate](../../reviews/codex/imu_bias_filter/README.md) implements the translator bias filter with a verified two-pin delta. It remains unrouted and does not change application acceptance, physical flashing steps, live BOM or the Stage A contract. The next gate is the 6S protection/power-package envelope followed by reviewed routing.
+
+## 6S power review — 2026-10-12
+
+The [power envelope and package review](../../reviews/codex/power_envelope/README.md) retains 7–25.2 V / 2S–6S intent and finds C1/F1 package conflicts plus D2 value drift. Current ordering holds include these parts; live CAD and application readiness are unchanged. Use the new topology/load-budget task before IMU routing or powered bring-up. V1 inspection and future handheld voice/text/location remain separate; voice/RC coexistence is still unmeasured.

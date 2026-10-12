@@ -45,3 +45,5 @@ reviews/codex/imu_interface/** -text
 reviews/codex/imu_placement/** -text
 
 reviews/codex/imu_bias_filter/** -text
+
+reviews/codex/power_envelope/** -text

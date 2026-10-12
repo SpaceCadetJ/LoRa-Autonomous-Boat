@@ -59,7 +59,13 @@
       "U1": "E-05: Current-sense output is over its specified capacitive load. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
       "L2": "E-06: 5 V buck output-current claim lacks ripple-current margin. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
       "C8": "E-06: 5 V buck output-current claim lacks ripple-current margin. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
-      "C9": "E-06: 5 V buck output-current claim lacks ripple-current margin. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md."
+      "C9": "E-06: 5 V buck output-current claim lacks ripple-current margin. Resolve circuit/population before ordering; see reviews/codex/design_completion/electrical/README.md.",
+      "C1": "PE-01: Specified Panasonic part has 8 mm body; current footprint is 6.3 mm. Also 50 V input capacitor against unqualified protection envelope. See reviews/codex/power_envelope/README.md.",
+      "F1": "PE-02: Specified 468 part is 1206 slow-blow, but source describes fast-acting 1812. Resolve 32 V interrupt/fault-current and derating limits. See reviews/codex/power_envelope/README.md.",
+      "D2": "PE-03: Schematic 10 V and PCB 12 V values disagree. Qualify actual gate clamp and assembly identity. See reviews/codex/power_envelope/README.md.",
+      "R1": "Gate clamp bias and transient response are unqualified for Q1 VGS limit. See reviews/codex/power_envelope/README.md.",
+      "C2": "50 V input capacitor requires coordination with TVS clamp and actual surge waveform. See reviews/codex/power_envelope/README.md.",
+      "C10": "50 V input capacitor requires coordination with TVS clamp and actual surge waveform. See reviews/codex/power_envelope/README.md."
     },
     "population_options": {
       "onboard_5v": {

@@ -1,0 +1,2428 @@
+{
+  "schema": 1,
+  "source_revision": "28b216644f0ec2e9098d31abf8b5ed2be4c6ea41",
+  "status": "review_only_not_an_integrated_power_design",
+  "expected_electrical_delta": {
+    "changed_existing_pins": 0,
+    "added_components": 0,
+    "changed_copper": 0
+  },
+  "hardware_tested": false,
+  "fabrication_approved": false,
+  "cad_input_sha256": {
+    "hardware/kicad/CAN_Bus.kicad_sch": "b4488ed536809ec9478e536cb40be5d42d35ca166bde5f6fd7781907843df21a",
+    "hardware/kicad/Debug.kicad_sch": "b5fefc732fe2feca52960ec93295a1772e5cc90cba1f75c86a8e590a7619a17d",
+    "hardware/kicad/fp-lib-table": "1d0776c29bd4d9155867b82549e64080a66d13c4b17c6fd28e3071e7635d0cbb",
+    "hardware/kicad/GPS_Module.kicad_sch": "29a1cba2e36d88d892d56f01fb14e35aa34f2b096fd3d0050e70f6d9b320686b",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_dru": "7d5337c38b2be25b88bbe9782c88fd56e48c7ec7e023646d69ff9805f43dc82c",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pcb": "2f604d1691ebde874075baecc2d1aa2985afa0db1a89ca277dec5d2156a553f2",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_pro": "bd7405e6898de2359513fca9e25c7008c0a23771fe8e9d0aa7f13b507b7a30a3",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sch": "b2f4a6ecc46b403bdf71a5335e9f95d78885b525ca46f8d94d156afea0bc9497",
+    "hardware/kicad/LoRa_Boat_Controller.kicad_sym": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/amv_con1.kicad_mod": "72f981b041e634931b5fdc25dcd9869e4820f256af557c82cc1866363dbdb885",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/amv_test_point.kicad_mod": "dbc2c1fa174aa92e4066ccf6303ebcb8f897e78f52d5a97b01fe97a4cfea5317",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_0603_CL10A_1P6XP8_SAM-M.kicad_mod": "42f5b0cf2557ab22c7bed1660f022ff6e0136b65283a00ded06722c7634e213a",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_0603G_AVX-M.kicad_mod": "19a007764f08f538e91316a0453f13a176b10aef8ae6fd6d81ba58d41adbb21d",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_CL10_SAM-M.kicad_mod": "631ee486aa336407342863dcd3a27d9500b782fbd31473b40d9a517345f5a3c1",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_GJM1555C1H220JB01__MUR-L.kicad_mod": "d5654fecba8c3ff2912b7713540b888f7cb03bf378583e0a9bb5758ecf59854e",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_KGM21_KAV-L.kicad_mod": "4303ac243d17f1c170711780b72b9101b3d65173e3f674aa9650d958faf5b367",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CAP_NTS_55_2P8T_NIP.kicad_mod": "581137c5ec59ffe1ea65f99dc766b552301111f71fd7441583420edd7af58aa6",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod": "3df2bdad2d5533ceb5a0492e93aae8e2faab545a4f2e999d8a2a426829fca314",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CONN_B4B-XH-A_JST.kicad_mod": "256219b5dfe2bb4b3a7779bb2d0726ef0c38dbd482418a951cb4d16c763d4d56",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/CONN_PPTC031_SUL.kicad_mod": "986dd4d6067549d0b65e6da1d8c8c3375e2e3b1c077a59f5980233fab0da7f52",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/D0008A_L.kicad_mod": "ae80a251bf6812470cc2c8e10f5a72651ff1598ea69bc08466bb60096e581096",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/G-21_MUR-L.kicad_mod": "7bd06c7d3ab02d1f539148d7bbe5a42a579ad8fac70edbd0f47a73f9d10022bd",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/G-31_MUR-M.kicad_mod": "5ad069daf33bc0e026ec3702bb7d75f334812b22d8e7cf6ad1ff41c047edfe1f",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/IND_7045_TDK.kicad_mod": "01cf11258392766428c623e4f3ef0d7bcb843a87ea33c5dfd0238a1216f51092",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/IND_BLM15_0402_MUR-L.kicad_mod": "381ae1f8b25d6e1954ee99bfffa7015c2f5d570f8b9b34c075a0300bb531c69a",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/LQFP64-10x10mm.kicad_mod": "8bed62a1ecce2fc5fbd96a4147ba0cca47a77731cbde2481333f6cc8320a7eca",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod": "ce99ee424974e7bae6c9137e43ac6b4f8bc4daaa9d6777f26049be4f1f1dd830",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RC0402N_PAN-M.kicad_mod": "e7c9be7583fb4cf11cc020c328fc0818ca1b1eb24f8309b4875d31f8fe04eec9",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RC0402N_YAG-M.kicad_mod": "6582594b232e1e65278dffdd375499ecf1a46567da5623687e01ebb309fd8c7a",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RC0603N_YAG-M.kicad_mod": "3ae3fcd2fe5cb14bed3a1fb531605a796854b1a01991e4ab02fb58a6e1f79557",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RES_1005_SAM-M.kicad_mod": "fed0e29515f092c6cd3ce2c0d4caf16b0489cde0b06b8b10b60dafc3124e8bba",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/RES_R0805_ROM-M.kicad_mod": "9ddd2658a69dd539ff1d2a019773211e8aaeeee9a742a34026427cd618514803",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/SAMTEC_FTSH-105-XX-X-DV.kicad_mod": "9dfc3fef1cfbed2c8d3a2ce7b7653f8019a591ec039ba1a24d5b5d3049882165",
+    "hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod": "b880a51afb66d5a86cbd2dad667bd6a819500be0a7d51aa2234ce6cac41a2fee",
+    "hardware/kicad/LoRa_Module.kicad_sch": "f75993974ab9b4c1bf68ab92871ce256e6f44d70d469b74873ad22a5fb54048a",
+    "hardware/kicad/MCU.kicad_sch": "1bd904af9fd33906c6a1fafc43b17e0f8c072126fb358eebc3637f44f3ba4f75",
+    "hardware/kicad/PowerSupply.kicad_sch": "63e6d6a238fb7fbc3764dc48d28d2bd3f39620d71bfe77a3cfbf2f5d257da91e",
+    "hardware/kicad/PWM_Outputs.kicad_sch": "f76959998e8aab96115fe7c0043acc39fdcaedd4105ab0d00ef30509b58e4f50",
+    "hardware/kicad/sym-lib-table": "34e90e5baea1d322bbb94670fcaea5e5e7eb42425d520e3faaef27f1e54f1de6",
+    "hardware/kicad_v2/Actuators.kicad_sch": "19ccbc4b351d8f371c53b831e3f80bc9be7fdf925b876e5c6f14da5d1ad6bfa2",
+    "hardware/kicad_v2/Debug.kicad_sch": "601919fb15d757bd0018576be9a4278cb35f92bbdd9484ab85d984f6b5eff924",
+    "hardware/kicad_v2/fp-lib-table": "ab7fae9b8768ecd1309a42873f463ef02016b0ac5c026a12fb412bfa47e8faf7",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb": "49a8aa88cf61e8b6272ce13a0d5a5a6a3c6b81aeba057ebcd4ca15a6262c37b2",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch": "9f8754f2d40612077a687448ca6a3ae10855176f9c796f19831109b043c532eb",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym": "3a8e94baff843cfd8d3253f808d07d697424464d7a5db6d0a4a2f22c5527e121",
+    "hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/QFN-24_3x3mm_P0.4mm_NoEP.kicad_mod": "45d275957763fbc76756a2c762a7dd9bf1e8ab71e7eeb03e3e537b192d28f054",
+    "hardware/kicad_v2/MCU.kicad_sch": "ecbec0770dd18ffdc33a859239e98700ea401bd74abe1135e2775989eb254ba7",
+    "hardware/kicad_v2/Navigation.kicad_sch": "9d07440781ce1fb8f1d98997a1f34044cdc7ac7a29b36a1b2260bd3e542ec039",
+    "hardware/kicad_v2/Power.kicad_sch": "77b234a7b111fc6105b951f4049ed4f8b4d68257905c57d70b86d1207a68dc04",
+    "hardware/kicad_v2/Radio.kicad_sch": "b4e1ee24c1b04bc9d6199e2ee57fbcffd5476d1599e1905a8d1fa9e916799930",
+    "hardware/kicad_v2/sym-lib-table": "3dccf10d5632037fbc6978966881b8eb68ceb500677674a746481e19a0368ae3"
+  },
+  "input_sha256": {
+    "reviews/codex/design_completion/native-review/v2/netlist.xml": "6efc1c8b3daa008a6e21028b5341d95381270798c502e4abc184a42a5e239dd6",
+    "reviews/codex/imu_placement/geometry.json": "3fc7577d24ae02b42ab29b3f1c50bf51847ae9b939ae7ff31f6d6a720dfc0465",
+    "reviews/codex/imu_placement/compare_study.py": "e2cae31f55b4d6ab8fc46ddb5a419a8aebc08762ac5cc836cd1787bb0bc457e6",
+    "docs/V2_REQUIREMENTS.md": "a5ee1bb427b3338812cddf681458c36692537fccdf8b601d0d022f6203c7bd1d",
+    "hardware/kicad_v2/tools/v2_design.py": "5b8d457625ba2dec897a0ab1e8b75ac2a57455c914030d89d772f3a255cbf3b4",
+    "reviews/codex/power_envelope/inputs/CP_Elec_8x6.2.kicad_mod": "9c60483b68e1a8c7aaa42ddb60fd7ecb3ee1cf4e8ca4b547098dec2caba306ca"
+  },
+  "capturer_sha256": "085d58cb82403ec031c211d6cafdd6948bf5243e734ea84a6c242c099e3bad3d",
+  "nets": {
+    "/Power/EN_3V3": [
+      {
+        "ref": "R2",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "1",
+        "pinfunction": "CE",
+        "pintype": "input"
+      }
+    ],
+    "/Power/EN_5V": [
+      {
+        "ref": "R6",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U3",
+        "pin": "5",
+        "pinfunction": "EN",
+        "pintype": "input"
+      }
+    ],
+    "/Power/PGATE": [
+      {
+        "ref": "D2",
+        "pin": "2",
+        "pinfunction": "A",
+        "pintype": "passive"
+      },
+      {
+        "ref": "Q1",
+        "pin": "1",
+        "pinfunction": "G",
+        "pintype": "input"
+      },
+      {
+        "ref": "R1",
+        "pin": "1",
+        "pintype": "passive"
+      }
+    ],
+    "/Power/SW_3V3": [
+      {
+        "ref": "C3",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "D3",
+        "pin": "2",
+        "pinfunction": "K",
+        "pintype": "passive"
+      },
+      {
+        "ref": "L1",
+        "pin": "1",
+        "pinfunction": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "3",
+        "pinfunction": "LX",
+        "pintype": "power_out"
+      }
+    ],
+    "/Power/VBAT_FUSED": [
+      {
+        "ref": "F1",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "Q1",
+        "pin": "3",
+        "pinfunction": "D",
+        "pintype": "passive"
+      }
+    ],
+    "/Power/VBAT_IN": [
+      {
+        "ref": "F1",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "J1",
+        "pin": "1",
+        "pinfunction": "Pin_1",
+        "pintype": "passive"
+      }
+    ],
+    "/Power/VIN_BUCK": [
+      {
+        "ref": "C10",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R2",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R33",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R6",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U2",
+        "pin": "2",
+        "pinfunction": "VIN",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U3",
+        "pin": "3",
+        "pinfunction": "VIN",
+        "pintype": "power_in"
+      },
+      {
+        "ref": "U8",
+        "pin": "4",
+        "pinfunction": "-",
+        "pintype": "input"
+      }
+    ],
+    "/VBAT_SENSE": [
+      {
+        "ref": "C36",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R31",
+        "pin": "2",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R32",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U1",
+        "pin": "16",
+        "pinfunction": "PA2",
+        "pintype": "bidirectional"
+      }
+    ],
+    "VIN_RAW": [
+      {
+        "ref": "C1",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "C2",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "D1",
+        "pin": "1",
+        "pinfunction": "A1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "D2",
+        "pin": "1",
+        "pinfunction": "K",
+        "pintype": "passive"
+      },
+      {
+        "ref": "Q1",
+        "pin": "2",
+        "pinfunction": "S",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R31",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "R33",
+        "pin": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "TP5",
+        "pin": "1",
+        "pinfunction": "1",
+        "pintype": "passive"
+      },
+      {
+        "ref": "U8",
+        "pin": "3",
+        "pinfunction": "+",
+        "pintype": "input"
+      }
+    ]
+  },
+  "inventory": [
+    {
+      "ref": "C1",
+      "schematic_value": "47uF 50V",
+      "mpn": "EEE-FK1H470P",
+      "description": "Bulk input capacitor",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x7.7",
+      "pcb_value": "47uF 50V",
+      "xy_mm": [
+        57.0,
+        80.0
+      ],
+      "courtyard_aabb_mm": [
+        52.275,
+        76.425,
+        61.725,
+        83.575
+      ],
+      "courtyard_size_mm": [
+        9.45,
+        7.15
+      ],
+      "courtyard_aabb_area_mm2": 67.5675,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VIN_RAW",
+          "xy": [
+            54.3,
+            80.0
+          ],
+          "size": [
+            3.5,
+            1.6
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "xy": [
+            59.7,
+            80.0
+          ],
+          "size": [
+            3.5,
+            1.6
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C2",
+      "schematic_value": "10uF 50V",
+      "mpn": "GRM32ER71H106KA12L",
+      "description": "Input ceramic",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "pcb_value": "10uF 50V",
+      "xy_mm": [
+        74.5,
+        66.5
+      ],
+      "courtyard_aabb_mm": [
+        72.175,
+        64.875,
+        76.825,
+        68.125
+      ],
+      "courtyard_size_mm": [
+        4.65,
+        3.25
+      ],
+      "courtyard_aabb_area_mm2": 15.1125,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VIN_RAW",
+          "xy": [
+            73.025,
+            66.5
+          ],
+          "size": [
+            1.15,
+            2.7
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "xy": [
+            75.975,
+            66.5
+          ],
+          "size": [
+            1.15,
+            2.7
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C3",
+      "schematic_value": "100nF 50V",
+      "mpn": "CL10B104KB8NNNC",
+      "description": "Bootstrap capacitor",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "pcb_value": "100nF 50V",
+      "xy_mm": [
+        72.0,
+        81.5
+      ],
+      "courtyard_aabb_mm": [
+        70.495,
+        80.745,
+        73.505,
+        82.255
+      ],
+      "courtyard_size_mm": [
+        3.01,
+        1.51
+      ],
+      "courtyard_aabb_area_mm2": 4.5451,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "SW_3V3",
+          "xy": [
+            71.225,
+            81.5
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "BST_RC",
+          "xy": [
+            72.775,
+            81.5
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C10",
+      "schematic_value": "10uF 50V",
+      "mpn": "GRM32ER71H106KA12L",
+      "description": "5 V buck input",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "pcb_value": "10uF 50V",
+      "xy_mm": [
+        86.3,
+        84.0
+      ],
+      "courtyard_aabb_mm": [
+        84.675,
+        81.675,
+        87.925,
+        86.325
+      ],
+      "courtyard_size_mm": [
+        3.25,
+        4.65
+      ],
+      "courtyard_aabb_area_mm2": 15.1125,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VIN_BUCK",
+          "xy": [
+            86.3,
+            85.475
+          ],
+          "size": [
+            1.15,
+            2.7
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "xy": [
+            86.3,
+            82.525
+          ],
+          "size": [
+            1.15,
+            2.7
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C36",
+      "schematic_value": "100nF",
+      "mpn": "KGM15ACG1H104KT",
+      "description": "Battery ADC filter",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "pcb_value": "100nF",
+      "xy_mm": [
+        84.3,
+        73.5
+      ],
+      "courtyard_aabb_mm": [
+        83.545,
+        71.995,
+        85.055,
+        75.005
+      ],
+      "courtyard_size_mm": [
+        1.51,
+        3.01
+      ],
+      "courtyard_aabb_area_mm2": 4.5451,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VBAT_SENSE",
+          "xy": [
+            84.3,
+            74.275
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "xy": [
+            84.3,
+            72.725
+          ],
+          "size": [
+            0.9,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D1",
+      "schematic_value": "SMAJ33A",
+      "mpn": "SMAJ33A",
+      "description": "33 V unidirectional TVS on VIN_RAW (pin 1 = cathode to VIN_RAW)",
+      "footprint": "Diode_SMD:D_SMA",
+      "pcb_value": "SMAJ33A",
+      "xy_mm": [
+        68.2,
+        66.5
+      ],
+      "courtyard_aabb_mm": [
+        64.675,
+        64.725,
+        71.725,
+        68.275
+      ],
+      "courtyard_size_mm": [
+        7.05,
+        3.55
+      ],
+      "courtyard_aabb_area_mm2": 25.0275,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VIN_RAW",
+          "xy": [
+            66.2,
+            66.5
+          ],
+          "size": [
+            2.5,
+            1.8
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "xy": [
+            70.2,
+            66.5
+          ],
+          "size": [
+            2.5,
+            1.8
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D2",
+      "schematic_value": "10V",
+      "mpn": "BZT52C10-7-F",
+      "description": "Gate-source clamp for Q1 (10 V: AO3401A Vgs max is 12 V, review A-10)",
+      "footprint": "Diode_SMD:D_SOD-123",
+      "pcb_value": "12V",
+      "xy_mm": [
+        75.2,
+        62.0
+      ],
+      "courtyard_aabb_mm": [
+        72.825,
+        60.825,
+        77.575,
+        63.175
+      ],
+      "courtyard_size_mm": [
+        4.75,
+        2.35
+      ],
+      "courtyard_aabb_area_mm2": 11.1625,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VIN_RAW",
+          "xy": [
+            73.55,
+            62.0
+          ],
+          "size": [
+            0.9,
+            1.2
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "PGATE",
+          "xy": [
+            76.85,
+            62.0
+          ],
+          "size": [
+            0.9,
+            1.2
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D3",
+      "schematic_value": "CMS06",
+      "mpn": "CMS06(TE12L,Q,M)",
+      "description": "Catch diode 30 V 2 A",
+      "footprint": "LoRa_Boat_Controller:M-FLAT_TOS-L",
+      "pcb_value": "CMS06",
+      "xy_mm": [
+        65.5,
+        84.5
+      ],
+      "courtyard_aabb_mm": [
+        62.9223,
+        83.5733,
+        68.0777,
+        85.4267
+      ],
+      "courtyard_size_mm": [
+        5.1554,
+        1.8534
+      ],
+      "courtyard_aabb_area_mm2": 9.55502,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "xy": [
+            63.4299,
+            84.5
+          ],
+          "size": [
+            0.9652,
+            1.8034
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "SW_3V3",
+          "xy": [
+            67.5701,
+            84.5
+          ],
+          "size": [
+            0.9652,
+            1.8034
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "F1",
+      "schematic_value": "3A",
+      "mpn": "0468003.NR",
+      "description": "3 A fast-acting 1812 fuse on the board feed",
+      "footprint": "Fuse:Fuse_1812_4532Metric",
+      "pcb_value": "3A",
+      "xy_mm": [
+        67.5,
+        70.5
+      ],
+      "courtyard_aabb_mm": [
+        64.525,
+        68.525,
+        70.475,
+        72.475
+      ],
+      "courtyard_size_mm": [
+        5.95,
+        3.95
+      ],
+      "courtyard_aabb_area_mm2": 23.5025,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VBAT_IN",
+          "xy": [
+            65.3625,
+            70.5
+          ],
+          "size": [
+            1.125,
+            3.4
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "VBAT_FUSED",
+          "xy": [
+            69.6375,
+            70.5
+          ],
+          "size": [
+            1.125,
+            3.4
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J1",
+      "schematic_value": "BATTERY XT30",
+      "mpn": "XT30PW-M",
+      "description": "Battery input 7-25 V, board only (<= 3 A)",
+      "footprint": "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal",
+      "pcb_value": "BATTERY XT30",
+      "xy_mm": [
+        59.7,
+        73.0
+      ],
+      "courtyard_aabb_mm": [
+        50.025,
+        59.375,
+        64.375,
+        75.275
+      ],
+      "courtyard_size_mm": [
+        14.35,
+        15.9
+      ],
+      "courtyard_aabb_area_mm2": 228.165,
+      "all_pads": [
+        {
+          "pin": "",
+          "net": "",
+          "xy": [
+            51.7,
+            63.0
+          ],
+          "size": [
+            1.4,
+            1.4
+          ]
+        },
+        {
+          "pin": "",
+          "net": "",
+          "xy": [
+            62.7,
+            63.0
+          ],
+          "size": [
+            1.4,
+            1.4
+          ]
+        },
+        {
+          "pin": "1",
+          "net": "VBAT_IN",
+          "xy": [
+            59.7,
+            73.0
+          ],
+          "size": [
+            3.5,
+            3.5
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "xy": [
+            54.7,
+            73.0
+          ],
+          "size": [
+            3.5,
+            3.5
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "L1",
+      "schematic_value": "4.7uH 3A",
+      "mpn": "SRN6045TA-4R7M",
+      "description": "Replaces the EOL SLF7045 (F-BOM-01)",
+      "footprint": "Inductor_SMD:L_Bourns_SRN6045TA",
+      "pcb_value": "4.7uH 3A",
+      "xy_mm": [
+        78.0,
+        81.0
+      ],
+      "courtyard_aabb_mm": [
+        74.475,
+        77.725,
+        81.525,
+        84.275
+      ],
+      "courtyard_size_mm": [
+        7.05,
+        6.55
+      ],
+      "courtyard_aabb_area_mm2": 46.1775,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "SW_3V3",
+          "xy": [
+            75.925,
+            81.0
+          ],
+          "size": [
+            2.35,
+            5.1
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+3V3",
+          "xy": [
+            80.075,
+            81.0
+          ],
+          "size": [
+            2.35,
+            5.1
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "L2",
+      "schematic_value": "4.7uH 3A",
+      "mpn": "SRN6045TA-4R7M",
+      "description": "5 V buck inductor",
+      "footprint": "Inductor_SMD:L_Bourns_SRN6045TA",
+      "pcb_value": "4.7uH 3A",
+      "xy_mm": [
+        97.0,
+        80.5
+      ],
+      "courtyard_aabb_mm": [
+        93.475,
+        77.225,
+        100.525,
+        83.775
+      ],
+      "courtyard_size_mm": [
+        7.05,
+        6.55
+      ],
+      "courtyard_aabb_area_mm2": 46.1775,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "SW_5V",
+          "xy": [
+            94.925,
+            80.5
+          ],
+          "size": [
+            2.35,
+            5.1
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "+5V_BUCK",
+          "xy": [
+            99.075,
+            80.5
+          ],
+          "size": [
+            2.35,
+            5.1
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q1",
+      "schematic_value": "AO3401A",
+      "mpn": "AO3401A",
+      "description": "P-MOSFET reverse-polarity protection (-30 V, 4 A)",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "pcb_value": "AO3401A",
+      "xy_mm": [
+        70.7,
+        62.0
+      ],
+      "courtyard_aabb_mm": [
+        68.745,
+        60.275,
+        72.655,
+        63.725
+      ],
+      "courtyard_size_mm": [
+        3.91,
+        3.45
+      ],
+      "courtyard_aabb_area_mm2": 13.4895,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "PGATE",
+          "xy": [
+            69.7625,
+            61.05
+          ],
+          "size": [
+            1.475,
+            0.6
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "VIN_RAW",
+          "xy": [
+            69.7625,
+            62.95
+          ],
+          "size": [
+            1.475,
+            0.6
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "VBAT_FUSED",
+          "xy": [
+            71.6375,
+            62.0
+          ],
+          "size": [
+            1.475,
+            0.6
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R1",
+      "schematic_value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "description": "Q1 gate pull-down",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pcb_value": "100k",
+      "xy_mm": [
+        72.8,
+        59.3
+      ],
+      "courtyard_aabb_mm": [
+        71.295,
+        58.545,
+        74.305,
+        60.055
+      ],
+      "courtyard_size_mm": [
+        3.01,
+        1.51
+      ],
+      "courtyard_aabb_area_mm2": 4.5451,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "PGATE",
+          "xy": [
+            71.975,
+            59.3
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "xy": [
+            73.625,
+            59.3
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R2",
+      "schematic_value": "5.1k",
+      "mpn": "RC0603FR-075K1L",
+      "description": "CE pull-up to VIN_BUCK",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pcb_value": "5.1k",
+      "xy_mm": [
+        69.0,
+        80.5
+      ],
+      "courtyard_aabb_mm": [
+        68.245,
+        78.995,
+        69.755,
+        82.005
+      ],
+      "courtyard_size_mm": [
+        1.51,
+        3.01
+      ],
+      "courtyard_aabb_area_mm2": 4.5451,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VIN_BUCK",
+          "xy": [
+            69.0,
+            81.325
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "EN_3V3",
+          "xy": [
+            69.0,
+            79.675
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R6",
+      "schematic_value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "description": "EN pull-up",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pcb_value": "100k",
+      "xy_mm": [
+        86.5,
+        79.0
+      ],
+      "courtyard_aabb_mm": [
+        85.745,
+        77.495,
+        87.255,
+        80.505
+      ],
+      "courtyard_size_mm": [
+        1.51,
+        3.01
+      ],
+      "courtyard_aabb_area_mm2": 4.5451,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VIN_BUCK",
+          "xy": [
+            86.5,
+            79.825
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "EN_5V",
+          "xy": [
+            86.5,
+            78.175
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R31",
+      "schematic_value": "47k",
+      "mpn": "RC0603FR-0747KL",
+      "description": "Battery divider top (26 V -> 3.3 V)",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pcb_value": "47k",
+      "xy_mm": [
+        81.5,
+        71.0
+      ],
+      "courtyard_aabb_mm": [
+        80.745,
+        69.495,
+        82.255,
+        72.505
+      ],
+      "courtyard_size_mm": [
+        1.51,
+        3.01
+      ],
+      "courtyard_aabb_area_mm2": 4.5451,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VIN_RAW",
+          "xy": [
+            81.5,
+            71.825
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "VBAT_SENSE",
+          "xy": [
+            81.5,
+            70.175
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R32",
+      "schematic_value": "6.8k",
+      "mpn": "RC0603FR-076K8L",
+      "description": "Battery divider bottom",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "pcb_value": "6.8k",
+      "xy_mm": [
+        81.5,
+        74.5
+      ],
+      "courtyard_aabb_mm": [
+        80.745,
+        72.995,
+        82.255,
+        76.005
+      ],
+      "courtyard_size_mm": [
+        1.51,
+        3.01
+      ],
+      "courtyard_aabb_area_mm2": 4.5451,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VBAT_SENSE",
+          "xy": [
+            81.5,
+            75.325
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "xy": [
+            81.5,
+            73.675
+          ],
+          "size": [
+            0.8,
+            0.95
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R33",
+      "schematic_value": "0.02R 1W",
+      "mpn": "CRA2512-FZ-R020ELF",
+      "description": "Board current shunt (REQ-PWR-06)",
+      "footprint": "Resistor_SMD:R_2512_6332Metric",
+      "pcb_value": "0.02R 1W",
+      "xy_mm": [
+        76.0,
+        70.5
+      ],
+      "courtyard_aabb_mm": [
+        72.145,
+        68.545,
+        79.855,
+        72.455
+      ],
+      "courtyard_size_mm": [
+        7.71,
+        3.91
+      ],
+      "courtyard_aabb_area_mm2": 30.1461,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VIN_RAW",
+          "xy": [
+            73.0375,
+            70.5
+          ],
+          "size": [
+            1.225,
+            3.35
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "VIN_BUCK",
+          "xy": [
+            78.9625,
+            70.5
+          ],
+          "size": [
+            1.225,
+            3.35
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "TP5",
+      "schematic_value": "VIN_RAW",
+      "mpn": "",
+      "description": null,
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "pcb_value": "VIN_RAW",
+      "xy_mm": [
+        101.0,
+        94.0
+      ],
+      "courtyard_aabb_mm": [
+        99.725,
+        92.725,
+        102.275,
+        95.275
+      ],
+      "courtyard_size_mm": [
+        2.55,
+        2.55
+      ],
+      "courtyard_aabb_area_mm2": 6.5025,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "VIN_RAW",
+          "xy": [
+            101.0,
+            94.0
+          ],
+          "size": [
+            1.5,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "schematic_value": "R1240N001B-TR-FE",
+      "mpn": "R1240N001B-TR-FE",
+      "description": "1.25 MHz async buck, 1.2 A",
+      "footprint": "LoRa_Boat_Controller:SOT-23-6W_PE-SOT23-6W-0512_NMD",
+      "pcb_value": "R1240N001B-TR-FE",
+      "xy_mm": [
+        65.0,
+        80.5
+      ],
+      "courtyard_aabb_mm": [
+        63.07,
+        79.24564,
+        66.93,
+        81.75436
+      ],
+      "courtyard_size_mm": [
+        3.86,
+        2.50872
+      ],
+      "courtyard_aabb_area_mm2": 9.68366,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "EN_3V3",
+          "xy": [
+            63.54585,
+            79.55004
+          ],
+          "size": [
+            0.9017,
+            0.5588
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "VIN_BUCK",
+          "xy": [
+            63.54585,
+            80.5
+          ],
+          "size": [
+            0.9017,
+            0.5588
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "SW_3V3",
+          "xy": [
+            63.54585,
+            81.44996
+          ],
+          "size": [
+            0.9017,
+            0.5588
+          ]
+        },
+        {
+          "pin": "4",
+          "net": "BST_3V3",
+          "xy": [
+            66.45415,
+            81.44996
+          ],
+          "size": [
+            0.9017,
+            0.5588
+          ]
+        },
+        {
+          "pin": "5",
+          "net": "GND",
+          "xy": [
+            66.45415,
+            80.5
+          ],
+          "size": [
+            0.9017,
+            0.5588
+          ]
+        },
+        {
+          "pin": "6",
+          "net": "FB_3V3",
+          "xy": [
+            66.45415,
+            79.55004
+          ],
+          "size": [
+            0.9017,
+            0.5588
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U3",
+      "schematic_value": "TPS54202",
+      "mpn": "TPS54202DDCR",
+      "description": "5 V / 2 A buck for the servo rail (populate option)",
+      "footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+      "pcb_value": "TPS54202",
+      "xy_mm": [
+        90.0,
+        79.0
+      ],
+      "courtyard_aabb_mm": [
+        87.925,
+        77.275,
+        92.075,
+        80.725
+      ],
+      "courtyard_size_mm": [
+        4.15,
+        3.45
+      ],
+      "courtyard_aabb_area_mm2": 14.3175,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "xy": [
+            88.8625,
+            78.05
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "SW_5V",
+          "xy": [
+            88.8625,
+            79.0
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "VIN_BUCK",
+          "xy": [
+            88.8625,
+            79.95
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "pin": "4",
+          "net": "FB_5V",
+          "xy": [
+            91.1375,
+            79.95
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "pin": "5",
+          "net": "EN_5V",
+          "xy": [
+            91.1375,
+            79.0
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "pin": "6",
+          "net": "BOOT_5V",
+          "xy": [
+            91.1375,
+            78.05
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U8",
+      "schematic_value": "INA180A1",
+      "mpn": "INA180A1IDBVR",
+      "description": "Current-sense amplifier, gain 20 (3 A = 1.2 V)",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "pcb_value": "INA180A1",
+      "xy_mm": [
+        74.0,
+        75.5
+      ],
+      "courtyard_aabb_mm": [
+        71.925,
+        73.775,
+        76.075,
+        77.225
+      ],
+      "courtyard_size_mm": [
+        4.15,
+        3.45
+      ],
+      "courtyard_aabb_area_mm2": 14.3175,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "ISENSE",
+          "xy": [
+            72.8625,
+            74.55
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "xy": [
+            72.8625,
+            75.5
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "VIN_RAW",
+          "xy": [
+            72.8625,
+            76.45
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "pin": "4",
+          "net": "VIN_BUCK",
+          "xy": [
+            75.1375,
+            76.45
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        },
+        {
+          "pin": "5",
+          "net": "+3V3",
+          "xy": [
+            75.1375,
+            74.55
+          ],
+          "size": [
+            1.325,
+            0.6
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U1",
+      "schematic_value": "STM32F446RET6",
+      "mpn": "STM32F446RET6",
+      "description": "Cortex-M4 180 MHz",
+      "footprint": "Package_QFP:LQFP-64_10x10mm_P0.5mm",
+      "pcb_value": "STM32F446RET6",
+      "xy_mm": [
+        96.0,
+        67.0
+      ],
+      "courtyard_aabb_mm": [
+        89.275,
+        60.275,
+        102.725,
+        73.725
+      ],
+      "courtyard_size_mm": [
+        13.45,
+        13.45
+      ],
+      "courtyard_aabb_area_mm2": 180.9025,
+      "all_pads": [
+        {
+          "pin": "1",
+          "net": "+3V3",
+          "xy": [
+            90.325,
+            63.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "",
+          "xy": [
+            90.325,
+            63.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "3",
+          "net": "LSE_IN",
+          "xy": [
+            90.325,
+            64.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "4",
+          "net": "LSE_OUT",
+          "xy": [
+            90.325,
+            64.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "5",
+          "net": "HSE_IN",
+          "xy": [
+            90.325,
+            65.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "6",
+          "net": "HSE_OUT",
+          "xy": [
+            90.325,
+            65.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "7",
+          "net": "NRST",
+          "xy": [
+            90.325,
+            66.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "8",
+          "net": "",
+          "xy": [
+            90.325,
+            66.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "9",
+          "net": "LED_LINK",
+          "xy": [
+            90.325,
+            67.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "10",
+          "net": "LED_FIX",
+          "xy": [
+            90.325,
+            67.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "11",
+          "net": "LED_FAULT",
+          "xy": [
+            90.325,
+            68.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "12",
+          "net": "GND",
+          "xy": [
+            90.325,
+            68.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "13",
+          "net": "VDDA",
+          "xy": [
+            90.325,
+            69.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "14",
+          "net": "LORA_TX_PA0",
+          "xy": [
+            90.325,
+            69.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "15",
+          "net": "LORA_RX_PA1",
+          "xy": [
+            90.325,
+            70.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "16",
+          "net": "VBAT_SENSE",
+          "xy": [
+            90.325,
+            70.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "17",
+          "net": "LORA_NRST_PA3",
+          "xy": [
+            92.25,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "18",
+          "net": "GND",
+          "xy": [
+            92.75,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "19",
+          "net": "+3V3",
+          "xy": [
+            93.25,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "20",
+          "net": "ISENSE",
+          "xy": [
+            93.75,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "21",
+          "net": "",
+          "xy": [
+            94.25,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "22",
+          "net": "",
+          "xy": [
+            94.75,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "23",
+          "net": "",
+          "xy": [
+            95.25,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "24",
+          "net": "",
+          "xy": [
+            95.75,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "25",
+          "net": "",
+          "xy": [
+            96.25,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "26",
+          "net": "PPS_PB0",
+          "xy": [
+            96.75,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "27",
+          "net": "",
+          "xy": [
+            97.25,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "28",
+          "net": "",
+          "xy": [
+            97.75,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "29",
+          "net": "",
+          "xy": [
+            98.25,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "30",
+          "net": "VCAP1",
+          "xy": [
+            98.75,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "31",
+          "net": "GND",
+          "xy": [
+            99.25,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "32",
+          "net": "+3V3",
+          "xy": [
+            99.75,
+            72.675
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "33",
+          "net": "",
+          "xy": [
+            101.675,
+            70.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "34",
+          "net": "",
+          "xy": [
+            101.675,
+            70.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "35",
+          "net": "",
+          "xy": [
+            101.675,
+            69.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "36",
+          "net": "",
+          "xy": [
+            101.675,
+            69.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "37",
+          "net": "PWM_ESC_PC6",
+          "xy": [
+            101.675,
+            68.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "38",
+          "net": "",
+          "xy": [
+            101.675,
+            68.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "39",
+          "net": "",
+          "xy": [
+            101.675,
+            67.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "40",
+          "net": "",
+          "xy": [
+            101.675,
+            67.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "41",
+          "net": "PWM_SERVO_PA8",
+          "xy": [
+            101.675,
+            66.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "42",
+          "net": "VBUS_SENSE",
+          "xy": [
+            101.675,
+            66.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "43",
+          "net": "",
+          "xy": [
+            101.675,
+            65.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "44",
+          "net": "USB_DM",
+          "xy": [
+            101.675,
+            65.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "45",
+          "net": "USB_DP",
+          "xy": [
+            101.675,
+            64.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "46",
+          "net": "SWDIO",
+          "xy": [
+            101.675,
+            64.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "47",
+          "net": "GND",
+          "xy": [
+            101.675,
+            63.75
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "48",
+          "net": "+3V3",
+          "xy": [
+            101.675,
+            63.25
+          ],
+          "size": [
+            1.55,
+            0.3
+          ]
+        },
+        {
+          "pin": "49",
+          "net": "SWCLK",
+          "xy": [
+            99.75,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "50",
+          "net": "",
+          "xy": [
+            99.25,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "51",
+          "net": "GNSS_TX_PC10",
+          "xy": [
+            98.75,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "52",
+          "net": "GNSS_RX_PC11",
+          "xy": [
+            98.25,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "53",
+          "net": "",
+          "xy": [
+            97.75,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "54",
+          "net": "",
+          "xy": [
+            97.25,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "55",
+          "net": "SWO",
+          "xy": [
+            96.75,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "56",
+          "net": "",
+          "xy": [
+            96.25,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "57",
+          "net": "IMU_INT",
+          "xy": [
+            95.75,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "58",
+          "net": "I2C1_SCL",
+          "xy": [
+            95.25,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "59",
+          "net": "I2C1_SDA",
+          "xy": [
+            94.75,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "60",
+          "net": "BOOT0",
+          "xy": [
+            94.25,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "61",
+          "net": "",
+          "xy": [
+            93.75,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "62",
+          "net": "",
+          "xy": [
+            93.25,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "63",
+          "net": "GND",
+          "xy": [
+            92.75,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        },
+        {
+          "pin": "64",
+          "net": "+3V3",
+          "xy": [
+            92.25,
+            61.325
+          ],
+          "size": [
+            0.3,
+            1.55
+          ]
+        }
+      ]
+    }
+  ],
+  "package_studies": [
+    {
+      "ref": "C1",
+      "basis": "library courtyard AABB; package compatibility unqualified",
+      "aabb_mm": [
+        51.7,
+        75.6,
+        62.3,
+        84.4
+      ],
+      "area_mm2": 93.28,
+      "overlapping_existing_courtyard_aabbs": []
+    },
+    {
+      "ref": "U2",
+      "basis": "proposed 10 x 10 mm planning allowance, not a selected footprint",
+      "aabb_mm": [
+        60.0,
+        75.5,
+        70.0,
+        85.5
+      ],
+      "area_mm2": 100,
+      "overlapping_existing_courtyard_aabbs": [
+        "R4",
+        "R2",
+        "D3",
+        "C1"
+      ]
+    },
+    {
+      "ref": "U3",
+      "basis": "proposed 10 x 10 mm planning allowance, not a selected footprint",
+      "aabb_mm": [
+        85.0,
+        74.0,
+        95.0,
+        84.0
+      ],
+      "area_mm2": 100,
+      "overlapping_existing_courtyard_aabbs": [
+        "L2",
+        "C36",
+        "C10",
+        "C7",
+        "R16",
+        "C24",
+        "R8",
+        "R6"
+      ]
+    }
+  ],
+  "calculations": {
+    "six_s_full_charge_assumption_v": 25.200000000000003,
+    "ina180_common_mode_headroom_v": 0.8,
+    "divider_max_ratio_1percent": 0.12861904940259936,
+    "divider_at_25_2v_worst_ratio_v": 3.241200044945504,
+    "divider_at_26v_worst_ratio_v": 3.344095284467583,
+    "shunt_drop_at_3a_v": 0.06,
+    "shunt_power_at_3a_w": 0.18,
+    "q1_nominal_gate_clamp_current_at_25_2v_a": 0.00015199999999999998
+  }
+}

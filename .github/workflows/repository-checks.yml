@@ -37,6 +37,8 @@ jobs:
         run: python reviews/codex/imu_placement/test_preservation.py
       - name: Check IMU2 bias-filter amendment rejection cases
         run: python reviews/codex/imu_bias_filter/test_amendment.py
+      - name: Verify unchanged 6S power boundary capture
+        run: python reviews/codex/power_envelope/capture.py --check
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

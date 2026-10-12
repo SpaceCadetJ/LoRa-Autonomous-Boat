@@ -65,6 +65,7 @@ const images=walk('docs/img').filter(p=>/\.(png|svg|pdf)$/.test(p)).map(p=>({pat
 if(exists('reviews/codex/imu_interface/v2_imu_candidate.svg'))images.push({path:'reviews/codex/imu_interface/v2_imu_candidate.svg',title:'IMU1 schematic - previous revision, not integrated',type:'svg'});
 if(exists('reviews/codex/imu_placement/v2_imu_placement.svg'))images.push({path:'reviews/codex/imu_placement/v2_imu_placement.svg',title:'IMU placement study - copper conflicts, not integrated',type:'svg'});
 if(exists('reviews/codex/imu_bias_filter/v2_imu_bias_filter.svg'))images.push({path:'reviews/codex/imu_bias_filter/v2_imu_bias_filter.svg',title:'IMU2 schematic - bias filter added, unrouted',type:'svg'});
+if(exists('reviews/codex/power_envelope/v2_power_envelope.svg'))images.push({path:'reviews/codex/power_envelope/v2_power_envelope.svg',title:'6S power envelope - review map, no circuit changes',type:'svg'});
 const reports={};for(const n of ['drc','erc','netlist_check','xor_report','validate_pcb']){const p=`docs/build/evidence/primary_reports/v1/${n}.json`;reports[n]={path:p,data:json(p),provenance:'Preserved primary report; independently checked only where separately stated'};}
 const v2Reports={};for(const n of ['erc.json','drc.rpt','drc_all.rpt','placement.json']){const p=`docs/build/evidence/primary_reports/v2/${n}`;if(exists(p))v2Reports[n]={path:p,content:read(p)};}
 const findings=[

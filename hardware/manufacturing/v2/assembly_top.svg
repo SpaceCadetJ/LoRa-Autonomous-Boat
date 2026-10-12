@@ -7,12 +7,12 @@
 <text x="4" y="9" font-size="1.45">80.000 × 46.000 mm · electrical pad geometry · NOT FABRICATION RELEASED</text>
 <text x="4" y="12.2" font-size="1.25">Top view: +X right, +Y down. Hover a part for its value and source MPN.</text>
 <rect x="12.000" y="17" width="80.000" height="46.000" rx=".2" fill="#e9f0f4" stroke="#20364c" stroke-width=".25"/>
-<g><title>C1 | 47uF 50V | EEE-FK1H470P | CANDIDATE | KiCad 0 deg</title>
+<g><title>C1 | 47uF 50V | EEE-FK1H470P | HOLD | KiCad 0 deg</title>
 <rect class="body" x="14.550" y="45.250" width="8.900" height="3.500"/>
 <rect x="14.550" y="46.200" width="3.500" height="1.600" rx=".08" fill="#ef6b26" transform="rotate(-0.000 16.300 47.000)"/>
 <rect x="19.950" y="46.200" width="3.500" height="1.600" rx=".08" fill="#627e99" transform="rotate(-0.000 21.700 47.000)"/>
 <text class="ref" text-anchor="middle" x="19.000" y="47.300">C1</text></g>
-<g><title>C2 | 10uF 50V | GRM32ER71H106KA12L | CANDIDATE | KiCad 0 deg</title>
+<g><title>C2 | 10uF 50V | GRM32ER71H106KA12L | HOLD | KiCad 0 deg</title>
 <rect class="body" x="33.675" y="32.150" width="5.650" height="2.700"/>
 <rect x="34.450" y="32.150" width="1.150" height="2.700" rx=".08" fill="#ef6b26" transform="rotate(-0.000 35.025 33.500)"/>
 <rect x="37.400" y="32.150" width="1.150" height="2.700" rx=".08" fill="#627e99" transform="rotate(-0.000 37.975 33.500)"/>
@@ -198,7 +198,7 @@
 <rect x="26.950" y="32.600" width="2.500" height="1.800" rx=".08" fill="#ef6b26" transform="rotate(-0.000 28.200 33.500)"/>
 <rect x="30.950" y="32.600" width="2.500" height="1.800" rx=".08" fill="#627e99" transform="rotate(-0.000 32.200 33.500)"/>
 <text class="ref" text-anchor="middle" x="30.200" y="33.800">D1</text></g>
-<g><title>D2 | 10V | BZT52C10-7-F | CANDIDATE | KiCad 0 deg</title>
+<g><title>D2 | 10V | BZT52C10-7-F | HOLD | KiCad 0 deg</title>
 <rect class="body" x="34.950" y="28.400" width="4.500" height="1.200"/>
 <rect x="35.100" y="28.400" width="0.900" height="1.200" rx=".08" fill="#ef6b26" transform="rotate(-0.000 35.550 29.000)"/>
 <rect x="38.400" y="28.400" width="0.900" height="1.200" rx=".08" fill="#627e99" transform="rotate(-0.000 38.850 29.000)"/>
@@ -248,7 +248,7 @@
 <rect x="43.700" y="55.825" width="0.600" height="0.450" rx=".08" fill="#ef6b26" transform="rotate(-90.000 44.000 56.050)"/>
 <rect x="43.700" y="53.725" width="0.600" height="0.450" rx=".08" fill="#627e99" transform="rotate(-90.000 44.000 53.950)"/>
 <text class="ref" text-anchor="middle" x="44.000" y="55.300">D11</text></g>
-<g><title>F1 | 3A | 0468003.NR | CANDIDATE | KiCad 0 deg</title>
+<g><title>F1 | 3A | 0468003.NR | HOLD | KiCad 0 deg</title>
 <rect class="body" x="25.662" y="35.800" width="7.675" height="3.400"/>
 <rect x="26.800" y="35.800" width="1.125" height="3.400" rx=".08" fill="#ef6b26" transform="rotate(-0.000 27.362 37.500)"/>
 <rect x="31.075" y="35.800" width="1.125" height="3.400" rx=".08" fill="#627e99" transform="rotate(-0.000 31.638 37.500)"/>
@@ -405,7 +405,7 @@
 <rect x="31.025" y="29.650" width="1.475" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 31.763 29.950)"/>
 <rect x="32.900" y="28.700" width="1.475" height="0.600" rx=".08" fill="#627e99" transform="rotate(-0.000 33.638 29.000)"/>
 <text class="ref" text-anchor="middle" x="32.700" y="29.300">Q1</text></g>
-<g><title>R1 | 100k | RC0603FR-07100KL | CANDIDATE | KiCad 0 deg</title>
+<g><title>R1 | 100k | RC0603FR-07100KL | HOLD | KiCad 0 deg</title>
 <rect class="body" x="33.500" y="25.825" width="2.600" height="0.950"/>
 <rect x="33.575" y="25.825" width="0.800" height="0.950" rx=".08" fill="#ef6b26" transform="rotate(-0.000 33.975 26.300)"/>
 <rect x="35.225" y="25.825" width="0.800" height="0.950" rx=".08" fill="#627e99" transform="rotate(-0.000 35.625 26.300)"/>

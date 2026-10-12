@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "date": "2026-10-12",
+  "source_revision": "28b216644f0ec2e9098d31abf8b5ed2be4c6ea41",
+  "electrical_delta": 0,
+  "hardware_tested": false,
+  "fabrication_approved": false,
+  "artifact_sha256": {
+    "reviews/codex/power_envelope/capture.py": "085d58cb82403ec031c211d6cafdd6948bf5243e734ea84a6c242c099e3bad3d",
+    "reviews/codex/power_envelope/evidence.json": "12dbf6ef24fe74d653b8a68bcc35ee2ddbf78a1ef78fbacef91ded02c67a08c7",
+    "reviews/codex/power_envelope/inputs/CP_Elec_8x6.2.kicad_mod": "9c60483b68e1a8c7aaa42ddb60fd7ecb3ee1cf4e8ca4b547098dec2caba306ca",
+    "reviews/codex/power_envelope/power-review.png": "441d78f2a7bcde0008e4e22f239d453c25c2b6c06e02f7aadb13c71f273396ea",
+    "reviews/codex/power_envelope/README.md": "010f7add4fbfb56963d1e2415f9eec961b1c906bb5e22cc0196caf2677cda65b",
+    "reviews/codex/power_envelope/render_map.py": "82a502d28f721af2b958f54756803cd2402a6ae268e8bf249433b3e3f08f9f9b",
+    "reviews/codex/power_envelope/review_notes.json": "6ba74b8d27a2e77f7ad2c5119808bcb84f4dc45bc248b49137bf5c9f2ba96d92",
+    "reviews/codex/power_envelope/v2_power_envelope.svg": "9fdbe8d2cc3a7a282cb1230b346c4188f5f6009115271c1b1ef9c235a6ebbb70",
+    "reviews/codex/power_envelope/viewer_check.json": "4c61b5c77ac837ce0f32f25af0f6bc3cbe8683d2be6744397655303aed2a11a1"
+  },
+  "verification": [
+    "Independent electrical/part identity review passed; citation correction applied",
+    "Desktop 1440x1000 and phone 390x844 viewer map passed",
+    "Procurement regeneration check and package validator passed",
+    "Unrelated dirty tools match previous packet protected hashes",
+    "V1 procurement files have no Git diff"
+  ],
+  "limitations": [
+    "No new native CAD checks: all 52 captured inputs remain unchanged",
+    "No surge/load/thermal measurements, no integrated power topology",
+    "C1 library shape and converter allowances are planning evidence only",
+    "Hosted CI run not observed"
+  ]
+}

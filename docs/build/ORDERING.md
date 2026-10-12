@@ -1,5 +1,7 @@
 # Parts and board ordering
 
+Current 2026-10-12 review: [6S input and package findings](../../reviews/codex/power_envelope/README.md) place C1/C2/C10, F1, D2 and R1 on hold. V2 now has **69 candidate / 38 held / 11 board-feature references**, 36 candidate order lines. These supersede earlier totals below; no approved complete cart exists.
+
 Use **V1 for the existing boat's inspection and repair**. Use **V2 as the developing vehicle-node design**. Neither package is a new-board manufacturing release. V1 retains known electrical defects from the original hardware; V2 still needs final electrical, layout, firmware and assembly validation. The handheld's voice, text, location, display and controls need a separate hardware BOM.
 
 ## Pick the right files

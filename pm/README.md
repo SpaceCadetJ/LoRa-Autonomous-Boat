@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Current power review — 2026-10-12
+
+The [6S power envelope](../reviews/codex/power_envelope/README.md) records voltage boundaries, new C1/F1 package conflicts and D2 value drift. Its viewer map is a planning review, not a PCB revision. V2 purchasing now has 69 candidate / 38 held / 11 board-feature references and 36 candidate order lines. Earlier totals below describe previous checkpoints. Next: compare complete power topologies and their load/package budgets before final IMU2 routing.
+
 ## Latest circuit revision: IMU2
 
 The [IMU2 bias-filter amendment](../reviews/codex/imu_bias_filter/README.md) is the current isolated schematic candidate. C43 adds two connections; all 398 previous memberships and the original ERC finding are preserved. Live hardware and ordering remain unchanged. Next: define the 6S protection/power-package envelope before final routing.

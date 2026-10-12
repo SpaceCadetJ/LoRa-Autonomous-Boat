@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-12",
+  "independent_reviewer": "power_limits_review",
+  "status": "pass_documentation_procurement_scope",
+  "verified": [
+    "52 unchanged CAD hashes",
+    "6 supporting input hashes and capturer hash",
+    "voltage, divider, shunt and gate-bias calculations",
+    "C1/F1 manufacturer identity findings",
+    "six purchasing holds and resulting quantities",
+    "proposal versus implementation boundaries"
+  ],
+  "correction_applied": "CMS06 linked manufacturer PDF citation updated to 2026-04-07 after independent review and root verification.",
+  "visual_review": {
+    "artifact": "v2_power_envelope.svg",
+    "raster": "power-review.png",
+    "result": "Root inspected rendered 1440 x 900 map: readable labels, no clipped annotations; planning boxes are clearly distinguished."
+  },
+  "new_native_checks": false,
+  "hardware_tested": false
+}

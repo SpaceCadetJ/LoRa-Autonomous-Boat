@@ -73,3 +73,13 @@ Codex root claims reviews/codex/imu_bias_filter/**, current viewer/application/h
 ## IMU2 review checkpoint - 2026-09-18 UTC
 
 Independent read-only review is complete; child claim released. Root finishes candidate viewer/CI records and ordinary selective publication. Live CAD, purchasing, firmware and historical candidate/placement evidence are preserved. The next bounded scope follows the imu_bias_filter handoff: 6S power envelope before final routing.
+
+## 6S power envelope claim - 2026-10-12 UTC
+
+Codex root claims reviews/codex/power_envelope/** and current viewer/application/handoff/portfolio links plus captured-evidence validation for a bounded 6S input and footprint review. Child power_limits_review is read-only. Expected electrical delta is zero: preserve all live CAD, BOM, firmware, historical evidence and the two unrelated dirty tools. No full generation/routing, physical hardware access, ordering or branch changes.
+
+The power-envelope scope includes procurement holds and derived purchasing exports for newly verified part/package conflicts; original schematic/BOM source and V1 outputs remain preserved. This updates review eligibility only.
+
+## 6S power review checkpoint — 2026-10-12 UTC
+
+Independent read-only review passed and is released. Root closes the power-envelope/ordering/viewer packet with selective publication. New C1/F1 package and D2 value findings are held; live CAD and original BOM remain unchanged. Next bounded scope is the two-topology 6S load/protection/package comparison in power_envelope/README.md. No active child write claim remains.

@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "mode": "local-file",
+  "browser": "headless Edge via Playwright",
+  "procedure": "Open pm/index.html; navigate Design viewer; choose V2 draft and 6S power envelope; verify loaded image, correct guide/planning captions, no overflow or script errors.",
+  "results": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "image": 1440,
+      "caption": "reviews/codex/power_envelope/v2_power_envelope.svgOpen full artifact",
+      "hasGuide": true,
+      "hasPlanningNotice": true,
+      "overflow": false,
+      "scriptErrors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "image": 1440,
+      "caption": "reviews/codex/power_envelope/v2_power_envelope.svgOpen full artifact",
+      "hasGuide": true,
+      "hasPlanningNotice": true,
+      "overflow": false,
+      "scriptErrors": []
+    }
+  ]
+}
