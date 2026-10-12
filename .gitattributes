@@ -53,3 +53,5 @@ reviews/codex/power_topology/** -text
 reviews/codex/input_stage/** -text
 
 reviews/codex/reverse_leakage/** -text
+
+reviews/codex/input_capacitors/** -text

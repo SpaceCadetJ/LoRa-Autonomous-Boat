@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "date": "2026-10-12",
+  "source_revision": "c46e8e86809b38fd4b8a444e5de40e1f2d80e5fd",
+  "status": "reviewed_screening_and_footprint_proposal",
+  "independent_reviews": [
+    {
+      "reviewer": "input_protection_review",
+      "scope": "TDK primary evidence and read-only review of guide, connection contract, native geometry, custom footprint and model",
+      "result": "No material correction; independently reproduced geometry/hash check and verified connection membership against captured R33 nets. Not capacitance, circuit or assembly acceptance.",
+      "files_written": []
+    },
+    {
+      "reviewer": "power_native_review",
+      "scope": "TI primary local input network/EVM evidence and analytical limiting-case model",
+      "result": "Effective 4.7uF local bank plus separate220nF bypass; no remote reservoir credit. Seven model tests passed.",
+      "files_written": [
+        "model.py",
+        "test_model.py"
+      ]
+    }
+  ],
+  "root_verification": {
+    "model_tests_passed": 7,
+    "native_footprint_reader": "KiCad 9.0.7 pcbnew",
+    "native_geometry_record": "native_geometry.json",
+    "portable_geometry_check_passed": true,
+    "analysis_capture_matches": true,
+    "view_render_matches_model": true,
+    "browser_record": "viewer_check.json",
+    "bank_cases_per_viewport": 4,
+    "rlc_cases_per_viewport": 9,
+    "viewports": [
+      "1440x1050",
+      "390x844"
+    ],
+    "visual_inspection": [
+      "diagram-review.png",
+      "desktop-review.png",
+      "phone-review.png"
+    ],
+    "visual_result": "Separated circuit captions from wires; legible controls and qualification labels; mobile chart has its own horizontal scroll. No observed overlaps or page overflow.",
+    "live_cad_hashes_preserved": 52,
+    "prior_packets_preserved": true,
+    "preexisting_dirty_tools_preserved": true
+  },
+  "native_checks": {
+    "schematic_erc_run": false,
+    "pcb_drc_run": false,
+    "footprint_parse_run": true,
+    "scope": "Library pad geometry only; no connectivity, thermal, stencil or hardware acceptance."
+  },
+  "new_finding": "Installed generic2220 lands differ from selectedTDK reflow recommendation; isolated matched-range footprint supplied.",
+  "next_smallest_task": "Complete isolated3.3V LMR36520 cell with local bank contract and explicit pin delta; retain capacitance/damping/leakage/ADC gates before integration.",
+  "live_electrical_delta": 0,
+  "candidate_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "hardware_tested": false,
+  "fabrication_approved": false,
+  "hosted_ci_observed": false
+}

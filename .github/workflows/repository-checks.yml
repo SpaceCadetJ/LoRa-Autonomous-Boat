@@ -53,6 +53,12 @@ jobs:
           python reviews/codex/reverse_leakage/model.py --check
           python reviews/codex/reverse_leakage/test_model.py
           python reviews/codex/reverse_leakage/build_view.py --check
+      - name: Check input capacitor specification and footprint evidence
+        run: |
+          python reviews/codex/input_capacitors/model.py --check
+          python reviews/codex/input_capacitors/test_model.py
+          python reviews/codex/input_capacitors/check_geometry.py
+          python reviews/codex/input_capacitors/build_view.py --check
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

@@ -71,3 +71,8 @@ Use the [interactive power budget](../../reviews/codex/power_topology/load_budge
 ## Reversal and startup gate — 2026-10-12
 
 The [reverse-leakage review](../../reviews/codex/reverse_leakage/README.md) confirms that the polarized INPUT-A1 reservoir cannot be accepted for a negative rail, even when a converter's absolute limit is respected. [Interactive cases](../../reviews/codex/reverse_leakage/index.html) also distinguish ADC conversion limits from digital pin limits during startup. No application wiring, ordering or flashing gate is cleared. Next circuit work must select the reservoir/buck bypass and close the full leakage and power-sequencing budget.
+
+
+## Reservoir and local bypass specification — 2026-10-12
+
+The [capacitor network](../../reviews/codex/input_capacitors/README.md) separates input storage from each converter’s local bypass and provides a reviewed TDK footprint proposal. Its [interactive review](../../reviews/codex/input_capacitors/index.html) shows minimum effective-capacitance requirements and ideal source-wiring sensitivity. No powered-use, ordering, assembly or flashing gate is cleared; next is the isolated 3.3 V converter-cell design with qualification holds retained.

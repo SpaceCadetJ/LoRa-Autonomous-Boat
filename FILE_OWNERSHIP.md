@@ -105,3 +105,12 @@ Root claims reviews/codex/reverse_leakage/** and current viewer/guide/portfolio/
 ## Reverse-leakage review checkpoint - 2026-10-12 UTC
 
 The bounded source review, seven analytical tests and desktop/phone scenario checks are complete. Child write scopes are released. Root closes selective publication; INPUT-A1 and all live CAD/copper/BOM/firmware remain unchanged. No new native or hardware acceptance is claimed. Next: reservoir and first-buck input-network selection, with complete leakage and sequencing constraints as recorded in reverse_leakage/README.md. Preserve both unrelated dirty tools.
+
+## Input capacitor network claim - 2026-10-12 UTC
+
+Root claims reviews/codex/input_capacitors/** and current viewer/guide/portfolio/check/handoff integration for a bounded nonpolar reservoir and first-converter local bypass specification. Child power_native_review owns only input_capacitors/model.py and test_model.py; input_protection_review remains read-only. Expected live/candidate electrical and copper delta is zero until complete leakage and capacitance bounds permit a native amendment. Add a separate reviewed footprint proposal and clear proposed connection drawing, without changing INPUT-A1, IMU2, live CAD, purchasing or firmware. Preserve historical evidence and unrelated v1_design.py / route_v2.py edits. No generators, routing, hardware access, ordering or branch/history changes.
+
+
+## Input capacitor network checkpoint — 2026-10-12 UTC
+
+Model, native footprint inspection, independent geometry/claim review and desktop/phone viewer checks are complete. Child write claims are released. Root closes selective publication of CAP-01. All live/candidate electrical and copper inputs, purchasing, firmware and historical packets remain preserved. Next scope: isolated first 3.3 V converter cell using input_capacitors/README.md, with effective-capacitance, damping, leakage and ADC gates retained. Exclude unrelated v1_design.py / route_v2.py edits.

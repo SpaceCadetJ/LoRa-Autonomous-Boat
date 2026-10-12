@@ -1,0 +1,31 @@
+{
+  "scope": "Local analytical UI and workspace navigation; no circuit or hardware test",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "bank_requirement_cases": 4,
+      "rlc_cases": 9,
+      "plotted_points_per_case": 3,
+      "acceptance_hold_visible": true,
+      "workspace_guide_tool_and_drawing": true,
+      "horizontal_page_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bank_requirement_cases": 4,
+      "rlc_cases": 9,
+      "plotted_points_per_case": 3,
+      "acceptance_hold_visible": true,
+      "workspace_guide_tool_and_drawing": true,
+      "horizontal_page_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

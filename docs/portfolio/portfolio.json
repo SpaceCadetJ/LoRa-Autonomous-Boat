@@ -33,7 +33,8 @@
     "power_topology": "reviews/codex/power_topology/README.md",
     "load_budget": "reviews/codex/power_topology/load_budget.html",
     "input_stage": "reviews/codex/input_stage/README.md",
-    "reverse_leakage": "reviews/codex/reverse_leakage/README.md"
+    "reverse_leakage": "reviews/codex/reverse_leakage/README.md",
+    "input_capacitors": "reviews/codex/input_capacitors/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -124,6 +125,11 @@
       "path": "reviews/codex/reverse_leakage/index.html",
       "kind": "interactive_analytical_review",
       "caption": "Leakage and ADC startup scenarios; polarized capacitor acceptance remains blocked, no CAD change."
+    },
+    {
+      "path": "reviews/codex/input_capacitors/v2_input_capacitors.svg",
+      "kind": "proposed_connection_contract",
+      "caption": "Separate nonpolar reservoir and local bypass proposal; capacitance, damping and integration remain open."
     }
   ],
   "validated_results": [
@@ -288,7 +294,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Select the nonpolar reservoir with the first wider-voltage buck bypass, close complete reverse-leakage and ADC sequencing limits, then implement the native power amendments and coordinate IMU2 integration.",
+    "Complete the isolated 3.3 V wider-voltage converter cell, retaining effective-capacitance, damping, leakage and ADC sequencing gates before native power integration and IMU2 routing.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",
     "Measure voice quality, airtime and RC coexistence before selecting handheld radio, codec or hardware."

@@ -79,3 +79,8 @@ The [annotated comparison](../../reviews/codex/power_topology/v2_power_topologie
 ## Reverse-leakage design disposition — 2026-10-12
 
 The [interactive boundary review](../../reviews/codex/reverse_leakage/index.html) shows why a component-level calculation is insufficient for board acceptance. Manufacturer review identified the polarized reservoir's zero-reverse-voltage requirement; a tested analytical model compares proposed leakage budgets and ADC startup limits. [Sources and restart contract](../../reviews/codex/reverse_leakage/README.md) preserve the distinction between calculated cases and verified hardware. INPUT-A1 and the live board remain unchanged.
+
+
+## Input-network specification and footprint — 2026-10-12
+
+The [annotated capacitor network](../../reviews/codex/input_capacitors/v2_input_capacitors.svg) and [interactive sensitivity tool](../../reviews/codex/input_capacitors/index.html) document separate nonpolar storage and local converter bypass. Native KiCad inspection found that the generic 2220 lands differ from the selected TDK part’s recommendations; a dimension-checked isolated footprint is supplied. Analytical tests cover capacitance thresholds and RLC limiting cases. [Evidence and next implementation task](../../reviews/codex/input_capacitors/README.md) retain unverified bias/temperature, damping, leakage and assembly gates. No live circuit or hardware acceptance is claimed.

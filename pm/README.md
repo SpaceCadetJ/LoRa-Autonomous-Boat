@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Current input-network packet — 2026-10-12
+
+The [nonpolar reservoir and local bypass specification](../reviews/codex/input_capacitors/README.md) now includes exact screened identities, an annotated connection drawing, capacitance requirements and a native-checked TDK land-pattern proposal. No circuit changed; source damping, effective capacitance and complete leakage remain integration gates. Next: the isolated first 3.3 V wider-voltage converter cell with explicit pin delta and those holds retained. This entry supersedes older next-task text below.
+
 ## Current decision: reverse leakage and startup — 2026-10-12
 
 The [boundary review](../reviews/codex/reverse_leakage/README.md) and [interactive cases](../reviews/codex/reverse_leakage/index.html) show why a diode/bleeder amendment cannot yet be accepted: C1 prohibits reverse voltage, and a diode-only current budget omits downstream paths. No circuit changed. Next: select a nonpolar reservoir with the first wider-voltage buck bypass, then close complete powered/unpowered leakage and ADC sequencing before native amendment. INPUT-A1 remains the preserved schematic candidate.

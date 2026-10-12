@@ -193,6 +193,24 @@ def main():
     assert leakage["hardware_tested"] is False and leakage["fabrication_approved"] is False
     assert all(c["full_circuit_current_bound_verified"] is False for c in analysis["dc_cases"])
     print("PASS reverse-leakage capture and analytical cases; capacitor and hardware acceptance remain blocked")
+    capacitor_root = "reviews/codex/input_capacitors/"
+    capacitor = read_json(capacitor_root + "packet_manifest.json")
+    check_hashes(capacitor["input_sha256"], "input-capacitor preserved evidence inputs")
+    check_hashes(capacitor["artifact_sha256"], "input-capacitor specification and geometry artifacts")
+    for module_name, filename, function in [("capacitor_model", "model.py", "study"), ("capacitor_geometry", "check_geometry.py", "check")]:
+        spec = importlib.util.spec_from_file_location(module_name, ROOT / capacitor_root / filename)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        result = getattr(module, function)()
+        if function == "study":
+            assert result == read_json(capacitor_root + "analysis.json")
+            assert result["hardware_accepted"] is False and result["native_proofs_applicable"] is False
+            assert all(x["hypothetical_total_effective_uf"] is None for x in result["local_bank_thresholds"])
+        else:
+            assert result is True
+    assert capacitor["live_electrical_delta"] == 0 and capacitor["candidate_electrical_delta"] == 0
+    assert not any(capacitor[k] for k in ["hardware_tested", "fabrication_approved", "effective_capacitance_verified"])
+    print("PASS input-capacitor screening and native/portable land dimensions; integration gates remain open")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -204,7 +222,7 @@ def main():
     pages += list((ROOT / "docs/build").glob("*.md"))
     pages += list((ROOT / "docs/applications").glob("*.md"))
     pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md", ROOT / "reviews/codex/imu_placement/README.md", ROOT / "reviews/codex/imu_bias_filter/README.md"]
-    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md", ROOT / leakage_root / "README.md"]
+    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md", ROOT / leakage_root / "README.md", ROOT / capacitor_root / "README.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]
