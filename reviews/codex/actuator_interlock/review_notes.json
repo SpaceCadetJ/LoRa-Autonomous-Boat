@@ -1,0 +1,30 @@
+{
+  "revision": "ACT-03",
+  "classification": "behavioral_prototype_and_captured_observability",
+  "baseline_revision": "912007b11b01d47ef66e29483485d268b7f0e8f6",
+  "source_reviews": {
+    "imu_candidate_validator": "Exact ACT-02 connector/net/PG no-connect audit; current firmware and proposed timing distinctions",
+    "power_native_review": "Fault-dominant latch; supervisor/watchdog startup and recovery caveats; no part selection",
+    "input_protection_review": "Executable model and adversarial test implementation"
+  },
+  "source_urls": [
+    "https://www.ti.com/lit/ds/symlink/tps386000.pdf",
+    "https://www.ti.com/lit/ds/symlink/tps3430.pdf"
+  ],
+  "native_capture_status": "Reused and independently checked ACT-02 netlist; no circuit changes or native rerun",
+  "electrical_delta": 0,
+  "copper_delta": 0,
+  "hardware_tested": false,
+  "parts_selected": false,
+  "fabrication_approved": false,
+  "next_smallest_task": "Isolated fault-dominant latch/OE gate on ACT-02; explicit PC4/OE split and default-disabled qualification ports; preserve R40 on OE.",
+  "checks": {
+    "model_tests": 61,
+    "deterministic_property_steps": 5000,
+    "health_combinations": 32,
+    "browser_scenarios": 6,
+    "desktop_phone": "pass",
+    "native_observability": "pass_captured_evidence_only",
+    "independent_architecture_claim_review": "pass"
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "schema": 1,
+  "revision": "ACT-03",
+  "classification": "behavioral_proposal_tests_not_hardware",
+  "model_sha256": "8208a8f5fb90462106fda2c4a4019cfcd7afbc95a633df7e1e7bf9e537213366",
+  "contract_sha256": "1e12309c71309b2ef9857fe7ed2fa070b8aec86e0fcb38c0204a566fd25924da",
+  "test_runner_sha256": "79321816bb8f55a2ff461b4412c0d934a5552cfa5a012363f7436997c3559402",
+  "tests": 61,
+  "passed": 61,
+  "failed": 0,
+  "results": [
+    {
+      "name": "contract input names and illustrative defaults match",
+      "status": "pass"
+    },
+    {
+      "name": "browser UMD and CommonJS expose the same pure API",
+      "status": "pass"
+    },
+    {
+      "name": "startup ignores inherited physical-high assumptions and is immutable",
+      "status": "pass"
+    },
+    {
+      "name": "qualification, new ACK, subsequent ARM and normal disarm",
+      "status": "pass"
+    },
+    {
+      "name": "one startup pulse cannot qualify even with short qualification",
+      "status": "pass"
+    },
+    {
+      "name": "zero qualification still needs two service rises and separate ARM",
+      "status": "pass"
+    },
+    {
+      "name": "zero watchdog interval never yields fresh service",
+      "status": "pass"
+    },
+    {
+      "name": "ACK held through qualification is not a new acknowledgment",
+      "status": "pass"
+    },
+    {
+      "name": "same-step ACK plus ARM cannot unlock or enable",
+      "status": "pass"
+    },
+    {
+      "name": "initial ARM-high cannot auto-enable on qualification",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 00000",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 00001",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 00010",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 00011",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 00100",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 00101",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 00110",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 00111",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 01000",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 01001",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 01010",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 01011",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 01100",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 01101",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 01110",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 01111",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 10000",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 10001",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 10010",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 10011",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 10100",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 10101",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 10110",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 10111",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 11000",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 11001",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 11010",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 11011",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 11100",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 11101",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 11110",
+      "status": "pass"
+    },
+    {
+      "name": "all health combinations while armed: 11111",
+      "status": "pass"
+    },
+    {
+      "name": "every health fault wins over simultaneous new ACK and ARM",
+      "status": "pass"
+    },
+    {
+      "name": "rail return and held ACK cannot rearm; explicit recovery succeeds",
+      "status": "pass"
+    },
+    {
+      "name": "health gap resets qualification and accepted service count",
+      "status": "pass"
+    },
+    {
+      "name": "watchdog boundary: before deadline allowed, exactly deadline locked",
+      "status": "pass"
+    },
+    {
+      "name": "new pulse at deadline cannot conceal old expiry",
+      "status": "pass"
+    },
+    {
+      "name": "long sampling gap plus fresh pulse cannot inherit qualification",
+      "status": "pass"
+    },
+    {
+      "name": "stuck-high heartbeat is only one edge and eventually expires",
+      "status": "pass"
+    },
+    {
+      "name": "stopped command processing locks an armed model",
+      "status": "pass"
+    },
+    {
+      "name": "COUNTEREXAMPLE: periodic stale IRQ strobes can fool the watchdog",
+      "status": "pass"
+    },
+    {
+      "name": "COUNTEREXAMPLE: faults entirely between samples are unobserved",
+      "status": "pass"
+    },
+    {
+      "name": "unknown or missing receiver-ready input is rejected atomically",
+      "status": "pass"
+    },
+    {
+      "name": "every input rejects truthy/falsy coercion and extra fields",
+      "status": "pass"
+    },
+    {
+      "name": "invalid time/config, including backward time, cannot mutate state",
+      "status": "pass"
+    },
+    {
+      "name": "equal timestamps and maximum safe integer time are well-defined",
+      "status": "pass"
+    },
+    {
+      "name": "timing changes lock and requalify rather than inherit permission",
+      "status": "pass"
+    },
+    {
+      "name": "successful updates are pure and do not freeze caller-owned inputs",
+      "status": "pass"
+    },
+    {
+      "name": "inconsistent READY/ARMED snapshots cannot bypass qualification",
+      "status": "pass"
+    },
+    {
+      "name": "consistent serialized READY/ARMED snapshots remain model-readable",
+      "status": "pass"
+    },
+    {
+      "name": "deterministic 5000-step property trace enforces enable invariants",
+      "status": "pass"
+    }
+  ],
+  "hardware_tested": false,
+  "firmware_tested": false
+}

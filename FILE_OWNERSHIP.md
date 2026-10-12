@@ -152,3 +152,11 @@ ACT-02 package reviewer input_protection_review owns only inputs/TI_DCU0008A_TXU
 ## ACT-02 review checkpoint — 2026-10-12 UTC
 
 All child write scopes are released. Root closes selective publication of the independent native delta, TI footprint, annotated actuator sheet and sequencing/firmware contract. Source/claim review passed for the bounded candidate; hardware interlock, receiver-power observation and physical acceptance remain open. Live CAD/copper/BOM/firmware, historical packets and both unrelated tool edits are preserved. Next isolated scope is receiver-power observation and hardware arm interlock, as recorded in actuator_enable/README.md.
+
+## Actuator interlock prototype claim — 2026-10-12 UTC
+
+Root claims reviews/codex/actuator_interlock/** and current viewer/application/portfolio/CI/handoff integration for ACT-03, an executable fault-latched arm contract and receiver-observability map based on 912007b. Expected live and candidate electrical/copper delta is zero: preserve ACT-02, both converter sheets and ACT-01 populations byte-for-byte; no new native schematic is claimed. Exact receiver thresholds and hardware parts remain unselected until observability and fault policy are explicit. Child input_protection_review owns only actuator_interlock/model.js and test_model.cjs; power_native_review and imu_candidate_validator review sources/netlist/firmware read-only. Preserve all historical packets and unrelated v1_design.py/route_v2.py; no primary generation/routing, hardware access, orders or branch/history changes.
+
+## ACT-03 review checkpoint — 2026-10-12 UTC
+
+Child write scopes are released. Root closes the tested interlock behavior/observability packet, viewer, acceptance worksheet and selective publication. Independent architecture/claim review found no blocker to this bounded software proposal. No CAD/native/firmware/hardware or ordering change is implied. Next scope is the isolated fault-dominant latch/OE gate described in actuator_interlock/README.md; retain default-disabled unimplemented qualifications. Preserve all prior packets and both unrelated dirty tools.

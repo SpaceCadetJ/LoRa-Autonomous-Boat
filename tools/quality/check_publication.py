@@ -290,6 +290,25 @@ def main():
     assert enable["live_electrical_delta"] == 0 and enable["live_copper_delta"] == 0
     assert not any(enable[k] for k in ["pcb_updated", "hardware_tested", "fabrication_approved", "assembly_variant_released"])
     print("PASS ACT-02 native delta and default-enable contract; interlock/hardware held")
+    interlock_root = "reviews/codex/actuator_interlock/"
+    interlock = read_json(interlock_root + "packet_manifest.json")
+    check_hashes(interlock["input_sha256"], "interlock preserved circuit/software inputs")
+    check_hashes(interlock["artifact_sha256"], "interlock prototype and observation artifacts")
+    for name, expected in interlock["normalized_text_input_sha256"].items():
+        assert hashlib.sha256((ROOT / name).read_bytes().replace(b"\r\n", b"\n")).hexdigest() == expected, name
+    spec = importlib.util.spec_from_file_location("interlock_observation", ROOT / interlock_root / "verify_observability.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    assert module.collect() == read_json(interlock_root + "observability.json")
+    tests = read_json(interlock_root + "test_results.json")
+    check_hashes({interlock_root + "model.js": tests["model_sha256"],
+                  interlock_root + "contract.json": tests["contract_sha256"],
+                  interlock_root + "test_model.cjs": tests["test_runner_sha256"]}, "interlock test provenance")
+    assert tests["failed"] == 0 and tests["passed"] == tests["tests"] and tests["tests"] >= 59
+    assert not tests["hardware_tested"] and not tests["firmware_tested"]
+    assert interlock["electrical_delta"] == 0 and interlock["copper_delta"] == 0
+    assert not any(interlock[k] for k in ["parts_selected", "hardware_tested", "fabrication_approved", "native_commands_rerun"])
+    print("PASS ACT-03 captured observability and behavioral test record; no circuit or hardware acceptance")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -301,7 +320,7 @@ def main():
     pages += list((ROOT / "docs/build").glob("*.md"))
     pages += list((ROOT / "docs/applications").glob("*.md"))
     pages += [ROOT / "firmware_v2/README.md", ROOT / "reviews/codex/imu_interface/README.md", ROOT / "reviews/codex/imu_placement/README.md", ROOT / "reviews/codex/imu_bias_filter/README.md"]
-    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md", ROOT / leakage_root / "README.md", ROOT / capacitor_root / "README.md", *[ROOT / folder / "README.md" for folder in buck_roots], ROOT / actuator_root / "README.md"]
+    pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md", ROOT / leakage_root / "README.md", ROOT / capacitor_root / "README.md", *[ROOT / folder / "README.md" for folder in buck_roots], ROOT / actuator_root / "README.md", ROOT / enable_root / "README.md", ROOT / interlock_root / "README.md", ROOT / interlock_root / "RECEIVER_ACCEPTANCE.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

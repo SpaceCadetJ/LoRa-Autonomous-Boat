@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "revision": "ACT-03",
+  "classification": "executable_behavior_proposal_not_hardware",
+  "baseline_revision": "912007b11b01d47ef66e29483485d268b7f0e8f6",
+  "baseline_candidate": "reviews/codex/actuator_enable",
+  "expected_electrical_delta": 0,
+  "expected_copper_delta": 0,
+  "mode_scope": "RC command-driven actuator enable; autonomous mission policy and handheld are separate",
+  "inputs": [
+    "logic_good",
+    "driver_good",
+    "esc_ready",
+    "servo_ready",
+    "stop_closed",
+    "arm_request",
+    "acknowledge",
+    "command_service_edge"
+  ],
+  "states": [
+    "LOCKED",
+    "READY",
+    "ARMED"
+  ],
+  "demo_timing_ms": {
+    "qualify_ms": 100,
+    "watchdog_ms": 100
+  },
+  "timing_status": "Illustrative behavioral scenarios only; no actual hardware timing or maximum safe stop interval selected.",
+  "rules": [
+    "Start LOCKED; missing, unknown or failed permission cannot enable output.",
+    "All five health permissions plus a fresh service history must hold continuously for the qualification interval.",
+    "Require at least two distinct accepted service-strobe rises in the current healthy epoch. The strobe must return low before another rise; a held-high level is not repeated service.",
+    "A new acknowledge edge, arm low and completed qualification unlock to READY.",
+    "Only a subsequent low-to-high arm_request edge from READY may enable.",
+    "Loss of any permission or service expiration while READY/ARMED locks; fault wins over same-step acknowledge/arm.",
+    "No auto-rearm after restored power/service. Deliberate low arm, new acknowledge edge, then new arm edge required.",
+    "Normal arm-low disarm with healthy permissions returns READY.",
+    "At exactly watchdog deadline the service is expired; a late/new pulse in that step cannot hide the expiration.",
+    "The model assumes command_service_edge is issued only after new valid command processing; periodic stale strobes can fool a hardware watchdog.",
+    "Time is monotonic; all inputs booleans and finite nonnegative safe integer times/config required; invalid updates must not mutate state."
+  ],
+  "qualification_holds": [
+    "No receiver-ready wires exist in ACT-02. Boolean ready inputs are proposed interface contracts, not observed hardware signals.",
+    "Exact local/remote voltage thresholds, hysteresis and deglitch intervals pending load identities and receiver limits.",
+    "Discrete sampled model omits analog ramps, propagation delays, noise and faults between steps.",
+    "Output is a permission proposal; TXU HiZ does not imply zero volts or a stopped motor.",
+    "Invalid step input throws with no new permission result. Integrations must lock/disable on rejection, never reuse a previous enabled state."
+  ],
+  "hardware_tested": false,
+  "parts_selected": false,
+  "pcb_updated": false,
+  "fabrication_approved": false
+}

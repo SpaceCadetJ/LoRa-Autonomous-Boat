@@ -1,0 +1,45 @@
+{
+  "scope": "Software proposal UI and local navigation only; no hardware acceptance",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "scenarios": {
+        "normal": "ARMED",
+        "rail_loss": "LOCKED",
+        "deadline": "LOCKED",
+        "held_arm": "LOCKED",
+        "missing_ready": "LOCKED",
+        "stale_strobes": "ARMED"
+      },
+      "stale_strobe_blind_spot_visible": true,
+      "permission_loss_and_no_auto_rearm": true,
+      "reset_inputs_disabled": true,
+      "diagram_and_guide": true,
+      "no_horizontal_overflow": true,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scenarios": {
+        "normal": "ARMED",
+        "rail_loss": "LOCKED",
+        "deadline": "LOCKED",
+        "held_arm": "LOCKED",
+        "missing_ready": "LOCKED",
+        "stale_strobes": "ARMED"
+      },
+      "stale_strobe_blind_spot_visible": true,
+      "permission_loss_and_no_auto_rearm": true,
+      "reset_inputs_disabled": true,
+      "diagram_and_guide": true,
+      "no_horizontal_overflow": true,
+      "page_errors": []
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Current actuator packet - ACT-03, 2026-10-12
+
+The [interlock behavior and observability prototype](../reviews/codex/actuator_interlock/README.md) adds interactive fault scenarios, an executable deliberate-rearm contract and a receiver acceptance worksheet. Exact ACT-02 pin evidence confirms no receiver sensing and unused converter PG pins. No CAD/firmware change or new native acceptance is claimed. Next: isolated fault-dominant latch/OE gate with the PC4 request separated from OE and R40 retained; unimplemented qualifications must remain default-disabled. This supersedes older next-task text below.
+
 ## Current actuator packet - ACT-02, 2026-10-12
 
 The [default-disabled translator and sequencing contract](../reviews/codex/actuator_enable/README.md) now has an annotated native schematic: TXU0102DCUR, PC4 arm signal and 10k hardware pulldown. Independent checks preserve 383 outside-boundary pins, both converters and ACT-01 source populations; 41 tests pass and ERC adds no findings. Firmware, ordering and live PCB are unchanged. Next: receiver-power observation and a hardware arm interlock, including independent ESC readiness in both populations. This supersedes older next-task text below.

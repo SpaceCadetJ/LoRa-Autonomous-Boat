@@ -4,6 +4,10 @@ Use this project as a documented route from the existing boat controller to a re
 
 **The current release is an engineering review edition.** V1 has a reproducible preserved-source firmware build and an instrument-only bench procedure. V2 is a developing vehicle board. Powered vehicle operation and the handheld have not been qualified. A drawing, compiled image or passing software test alone does not release a physical application.
 
+## Current V2 design checkpoint
+
+[ACT-03's interlock demonstrator](../../reviews/codex/actuator_interlock/index.html) and [receiver worksheet](../../reviews/codex/actuator_interlock/RECEIVER_ACCEPTANCE.md) now make fault recovery and missing readiness evidence reviewable. Its 61 model tests pass; the latest native circuit remains [ACT-02](../../reviews/codex/actuator_enable/README.md). The hardware latch and receiver sensing are not implemented, and Stage A is still the only V2 diagnostic. The chronological checkpoints below preserve earlier decisions.
+
 ## Choose an application
 
 | Application | Available now | Required before normal operation | Guide |
@@ -92,3 +96,7 @@ The [buffer and source-variant guide](../../reviews/codex/actuator_supply/README
 ## ACT-02 signal-enable checkpoint — 2026-10-12
 
 The [annotated actuator candidate and sequencing guide](../../reviews/codex/actuator_enable/README.md) adds a dual-supply translator, default-low PC4 enable and a proposed firmware arm/disarm contract. Native checks preserve 383 outside-boundary pins and both converter sheets; 41 mutation tests pass. This is isolated schematic evidence: Stage A does not drive PC4, live firmware/PCB and purchasing exports are unchanged, and no application is released for powered actuator use. Next: hardware arm interlock and receiver-power observation, then the remaining 6S, C11/transient, ADC and combined IMU2 gates. Keep V1 inspection, V2 vehicle nodes and future handheld work distinct.
+
+## ACT-03 interlock prototype — 2026-10-12
+
+The [interactive arm/fault demonstrator](../../reviews/codex/actuator_interlock/index.html) and [review guide](../../reviews/codex/actuator_interlock/README.md) define deliberate rearming after power/command faults and expose the stale-periodic-strobe blind spot. The [receiver worksheet](../../reviews/codex/actuator_interlock/RECEIVER_ACCEPTANCE.md) captures exact ESC/BEC/servo limits before receiver-ready interface selection. Current connectors have no receiver-ready sensing; converter PG pins are unused. These are independently checked captured connections and tested software proposals, not an implemented hardware interlock. ACT-02, live CAD, firmware and ordering are unchanged. Next: isolated latch/OE gate; receiver interfaces and hardware timing remain held.
