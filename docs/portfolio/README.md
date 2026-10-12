@@ -88,3 +88,7 @@ The [annotated capacitor network](../../reviews/codex/input_capacitors/v2_input_
 ## First converter schematic milestone — 2026-10-12
 
 [BUCK33-A1](../../reviews/codex/buck_3v3/README.md) adds an annotated, editable 3.3 V converter study with exact candidate parts, package dimensions, reproducible feedback/current calculations and independent native connectivity checks. All 330 outside-boundary pins remain unchanged; native ERC adds no findings. The [SVG](../../reviews/codex/buck_3v3/v2_buck_3v3.svg) is suitable for illustrating the design-review process. It depicts a held schematic candidate, not a manufactured or tested board. Live copper, ordering and firmware remain preserved; the next isolated circuit task is the 5 V rail and load budget.
+
+## Second converter and power-budget milestone — 2026-10-12
+
+[BUCK5-A1](../../reviews/codex/buck_5v/README.md) adds the editable LM76003 5 V candidate, [annotated SVG](../../reviews/codex/buck_5v/v2_buck_5v.svg), exact part/pin contract and a source-loss model. Native validation preserves all 339 outside-boundary pins and the first converter. The review also identifies an output-diode package mismatch and quantifies why the current low-voltage feed cannot promise both full rail loads. Present this as an engineering review milestone; PCB integration, assembly and hardware performance remain unqualified.

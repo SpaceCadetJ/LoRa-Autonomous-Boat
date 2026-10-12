@@ -80,3 +80,7 @@ The [capacitor network](../../reviews/codex/input_capacitors/README.md) separate
 ## 3.3 V converter checkpoint — BUCK33-A1
 
 The [editable first converter](../../reviews/codex/buck_3v3/README.md) supplies an exact part/pin proposal for the V2 logic rail. Native validation preserves all 330 connections outside the converter boundary. Its calculations and package evidence remain separate from powered use. The PCB, ordering and application flashing procedures remain unchanged; V2 still has only the separate Stage A diagnostic. Next is the 5 V converter and its 7 V simultaneous-load budget, followed by unresolved input, ADC/buffer and combined IMU2 integration. The handheld voice/text/location requirement still needs measured voice/RC coexistence before hardware selection.
+
+## 5 V converter and actuator-supply checkpoint — BUCK5-A1
+
+The [5 V guide](../../reviews/codex/buck_5v/README.md) now separates converter capability from whole-board feed capacity. Its 7 V battery model needs about 2.66 A for both full nominal rail loads; the current feed does not support an accepted full-load claim. External-BEC and on-board variants require explicit population and voltage contracts. D4/D9 have an SMC/SMA identity mismatch, and U4/U5 remain on the unqualified VSERVO rail. Existing ordering/assembly/power/flashing holds remain. Next is the buffer/OR-ing correction, preserving both converter candidates and 6S. No new operational firmware or physical test is provided.

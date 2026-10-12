@@ -1,0 +1,900 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-10-12T08:20:40.752076+00:00",
+  "kicad_version": "9.0.7",
+  "scope": "Native footprint parsing, electrical pad-number sets and selected reviewed dimensions only.",
+  "input_sha256": {
+    "expected_contract.json": "ba96bdc5e015b5810623a5b27d144e87e30e8abd1669693a81fdf1dde15f2d8d",
+    "inspect_packages.py": "f8e5b07f45a7b80f051d0652b8c547372c739fd2800ab692ec4da03ce3f65618",
+    "inputs/footprints/C_TDK_C5750X7S2A106K230KB.kicad_mod": "b4afd24a1554435cad3aeefc7843be8c1d7fd24ec624fc2b2ba2967331d02761",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C5750X7S2A106K230KB.kicad_mod": "b4afd24a1554435cad3aeefc7843be8c1d7fd24ec624fc2b2ba2967331d02761",
+    "inputs/footprints/C_TDK_C3225X7R1E226M250AB.kicad_mod": "d9c0caf3685485801184cc0abcc4eaa13c5014b3f1d6dfd44e1558ebb8d7fa75",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C3225X7R1E226M250AB.kicad_mod": "d9c0caf3685485801184cc0abcc4eaa13c5014b3f1d6dfd44e1558ebb8d7fa75",
+    "inputs/footprints/C_0805_2012Metric.kicad_mod": "b430016bdeb578187fcd4d270e4e2893e7d8103056d27277d2297c4c1490032b",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0805_2012Metric.kicad_mod": "b430016bdeb578187fcd4d270e4e2893e7d8103056d27277d2297c4c1490032b",
+    "inputs/footprints/C_0603_1608Metric.kicad_mod": "e623465f4d6218aa36a05697a93171eb897c162a613e5f635a2bfa5d0db8db0c",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0603_1608Metric.kicad_mod": "e623465f4d6218aa36a05697a93171eb897c162a613e5f635a2bfa5d0db8db0c",
+    "inputs/footprints/L_Coilcraft_XAL6060-XXX.kicad_mod": "fc897a486027f74e3b23e9d3e60fddbca42700ebc525caf81359d36181868acf",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/L_Coilcraft_XAL6060-XXX.kicad_mod": "fc897a486027f74e3b23e9d3e60fddbca42700ebc525caf81359d36181868acf",
+    "inputs/footprints/R_0603_1608Metric.kicad_mod": "278c3af706aceec3085258fe265b53cd69adb616bef0db09a2ffc4083e5c2cae",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/R_0603_1608Metric.kicad_mod": "278c3af706aceec3085258fe265b53cd69adb616bef0db09a2ffc4083e5c2cae",
+    "inputs/footprints/Texas_RNP0030B_WQFN-30-1EP_4x6mm_P0.5mm_EP1.8x4.5mm.kicad_mod": "a0e99ad9d27291e90399e662c64b192e09c8660cb03fc30e8ab2e2d58ffd3994",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/Texas_RNP0030B_WQFN-30-1EP_4x6mm_P0.5mm_EP1.8x4.5mm.kicad_mod": "a0e99ad9d27291e90399e662c64b192e09c8660cb03fc30e8ab2e2d58ffd3994"
+  },
+  "footprint_count": 7,
+  "entries": [
+    {
+      "footprint": "C_0603_1608Metric",
+      "references": [
+        "C55",
+        "C7"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2"
+      ],
+      "path": "inputs/footprints/C_0603_1608Metric.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0603_1608Metric.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -0.775,
+          "y_mm": 0.0,
+          "size_x_mm": 0.9,
+          "size_y_mm": 0.95,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": 0.775,
+          "y_mm": 0.0,
+          "size_x_mm": 0.9,
+          "size_y_mm": 0.95,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "Pad-number set checked; no exact-manufacturer land acceptance asserted."
+    },
+    {
+      "footprint": "C_0805_2012Metric",
+      "references": [
+        "C53",
+        "C54"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2"
+      ],
+      "path": "inputs/footprints/C_0805_2012Metric.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0805_2012Metric.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -0.95,
+          "y_mm": 0.0,
+          "size_x_mm": 1.0,
+          "size_y_mm": 1.45,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": 0.95,
+          "y_mm": 0.0,
+          "size_x_mm": 1.0,
+          "size_y_mm": 1.45,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "Pad-number set checked; no exact-manufacturer land acceptance asserted."
+    },
+    {
+      "footprint": "C_TDK_C3225X7R1E226M250AB",
+      "references": [
+        "C49",
+        "C50",
+        "C51",
+        "C8",
+        "C9"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2"
+      ],
+      "path": "inputs/footprints/C_TDK_C3225X7R1E226M250AB.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C3225X7R1E226M250AB.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -1.65,
+          "y_mm": 0.0,
+          "size_x_mm": 1.1,
+          "size_y_mm": 2.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": 1.65,
+          "y_mm": 0.0,
+          "size_x_mm": 1.1,
+          "size_y_mm": 2.2,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "Reviewed TDK land dimensions matched; assembly, stencil and board fit remain unqualified."
+    },
+    {
+      "footprint": "C_TDK_C5750X7S2A106K230KB",
+      "references": [
+        "C10",
+        "C52"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2"
+      ],
+      "path": "inputs/footprints/C_TDK_C5750X7S2A106K230KB.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C5750X7S2A106K230KB.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -2.85,
+          "y_mm": 0.0,
+          "size_x_mm": 1.3,
+          "size_y_mm": 4.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": 2.85,
+          "y_mm": 0.0,
+          "size_x_mm": 1.3,
+          "size_y_mm": 4.6,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "Reviewed TDK land dimensions matched; assembly, stencil and board fit remain unqualified."
+    },
+    {
+      "footprint": "L_Coilcraft_XAL6060-XXX",
+      "references": [
+        "L2"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2"
+      ],
+      "path": "inputs/footprints/L_Coilcraft_XAL6060-XXX.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/L_Coilcraft_XAL6060-XXX.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -2.02,
+          "y_mm": 0.0,
+          "size_x_mm": 1.43,
+          "size_y_mm": 5.5,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": 2.02,
+          "y_mm": 0.0,
+          "size_x_mm": 1.43,
+          "size_y_mm": 5.5,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "Pad-number set checked; no exact-manufacturer land acceptance asserted."
+    },
+    {
+      "footprint": "R_0603_1608Metric",
+      "references": [
+        "R8",
+        "R9"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "2"
+      ],
+      "path": "inputs/footprints/R_0603_1608Metric.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/R_0603_1608Metric.kicad_mod",
+      "pads": [
+        {
+          "number": "1",
+          "x_mm": -0.825,
+          "y_mm": 0.0,
+          "size_x_mm": 0.8,
+          "size_y_mm": 0.95,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": 0.825,
+          "y_mm": 0.0,
+          "size_x_mm": 0.8,
+          "size_y_mm": 0.95,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "Pad-number set checked; no exact-manufacturer land acceptance asserted."
+    },
+    {
+      "footprint": "Texas_RNP0030B_WQFN-30-1EP_4x6mm_P0.5mm_EP1.8x4.5mm",
+      "references": [
+        "U3"
+      ],
+      "expected_electrical_pad_numbers": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "3",
+        "30",
+        "31",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "path": "inputs/footprints/Texas_RNP0030B_WQFN-30-1EP_4x6mm_P0.5mm_EP1.8x4.5mm.kicad_mod",
+      "candidate_copy_path": "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/Texas_RNP0030B_WQFN-30-1EP_4x6mm_P0.5mm_EP1.8x4.5mm.kicad_mod",
+      "pads": [
+        {
+          "number": "",
+          "x_mm": -0.45,
+          "y_mm": -1.68,
+          "size_x_mm": 0.73,
+          "size_y_mm": 0.91,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "x_mm": -0.45,
+          "y_mm": -0.56,
+          "size_x_mm": 0.73,
+          "size_y_mm": 0.91,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "x_mm": -0.45,
+          "y_mm": 0.56,
+          "size_x_mm": 0.73,
+          "size_y_mm": 0.91,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "x_mm": -0.45,
+          "y_mm": 1.68,
+          "size_x_mm": 0.73,
+          "size_y_mm": 0.91,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "x_mm": 0.45,
+          "y_mm": -1.68,
+          "size_x_mm": 0.73,
+          "size_y_mm": 0.91,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "x_mm": 0.45,
+          "y_mm": -0.56,
+          "size_x_mm": 0.73,
+          "size_y_mm": 0.91,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "x_mm": 0.45,
+          "y_mm": 0.56,
+          "size_x_mm": 0.73,
+          "size_y_mm": 0.91,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "",
+          "x_mm": 0.45,
+          "y_mm": 1.68,
+          "size_x_mm": 0.73,
+          "size_y_mm": 0.91,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "1",
+          "x_mm": -1.8625,
+          "y_mm": -2.5,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "10",
+          "x_mm": -1.8625,
+          "y_mm": 2.0,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "11",
+          "x_mm": -1.8625,
+          "y_mm": 2.5,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "12",
+          "x_mm": -0.75,
+          "y_mm": 2.9875,
+          "size_x_mm": 0.25,
+          "size_y_mm": 0.775,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "13",
+          "x_mm": -0.25,
+          "y_mm": 2.9875,
+          "size_x_mm": 0.25,
+          "size_y_mm": 0.775,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "14",
+          "x_mm": 0.25,
+          "y_mm": 2.9875,
+          "size_x_mm": 0.25,
+          "size_y_mm": 0.775,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "15",
+          "x_mm": 0.75,
+          "y_mm": 2.9875,
+          "size_x_mm": 0.25,
+          "size_y_mm": 0.775,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "16",
+          "x_mm": 1.8625,
+          "y_mm": 2.5,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "17",
+          "x_mm": 1.8625,
+          "y_mm": 2.0,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "18",
+          "x_mm": 1.8625,
+          "y_mm": 1.5,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "19",
+          "x_mm": 1.8625,
+          "y_mm": 1.0,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "2",
+          "x_mm": -1.8625,
+          "y_mm": -2.0,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "20",
+          "x_mm": 1.8625,
+          "y_mm": 0.5,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "21",
+          "x_mm": 1.8625,
+          "y_mm": 0.0,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "22",
+          "x_mm": 1.8625,
+          "y_mm": -0.5,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "23",
+          "x_mm": 1.8625,
+          "y_mm": -1.0,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "24",
+          "x_mm": 1.8625,
+          "y_mm": -1.5,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "25",
+          "x_mm": 1.8625,
+          "y_mm": -2.0,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "26",
+          "x_mm": 1.8625,
+          "y_mm": -2.5,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "27",
+          "x_mm": 0.75,
+          "y_mm": -2.9875,
+          "size_x_mm": 0.25,
+          "size_y_mm": 0.775,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "28",
+          "x_mm": 0.25,
+          "y_mm": -2.9875,
+          "size_x_mm": 0.25,
+          "size_y_mm": 0.775,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "29",
+          "x_mm": -0.25,
+          "y_mm": -2.9875,
+          "size_x_mm": 0.25,
+          "size_y_mm": 0.775,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "3",
+          "x_mm": -1.8625,
+          "y_mm": -1.5,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "30",
+          "x_mm": -0.75,
+          "y_mm": -2.9875,
+          "size_x_mm": 0.25,
+          "size_y_mm": 0.775,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "31",
+          "x_mm": 0.0,
+          "y_mm": 0.0,
+          "size_x_mm": 1.8,
+          "size_y_mm": 4.5,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
+        },
+        {
+          "number": "4",
+          "x_mm": -1.8625,
+          "y_mm": -1.0,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "5",
+          "x_mm": -1.8625,
+          "y_mm": -0.5,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "6",
+          "x_mm": -1.8625,
+          "y_mm": 0.0,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "7",
+          "x_mm": -1.8625,
+          "y_mm": 0.5,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "8",
+          "x_mm": -1.8625,
+          "y_mm": 1.0,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "number": "9",
+          "x_mm": -1.8625,
+          "y_mm": 1.5,
+          "size_x_mm": 1.025,
+          "size_y_mm": 0.25,
+          "rotation_deg": 0.0,
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "electrical_pad_set_matches_contract": true,
+      "review_scope": "RNP numbering, 0.5 mm pitch and EP1.8x4.5 checked; captured lands and paste differ from TI examples. No vias or assembly acceptance."
+    }
+  ],
+  "qualifications": {
+    "board_fit_verified": false,
+    "pcb_drc_performed": false,
+    "manufacturer_acceptance": false,
+    "assembly_qualified": false,
+    "stencil_qualified": false,
+    "thermal_vias_qualified": false,
+    "inductor_start_lead_orientation_verified": false,
+    "hardware_accepted": false
+  },
+  "candidate_circuit_changed": false,
+  "source_files_changed": false,
+  "rnp_drawing_comparison": {
+    "primary_url": "https://www.ti.com/lit/ds/symlink/lm76003.pdf",
+    "drawing": "RNP0030B 4222784/B 09/2017",
+    "pdf_pages": [
+      53,
+      54,
+      55
+    ],
+    "status": "Captured IPC-generated lands differ from TI example; manufacturer acceptance remains held.",
+    "matching_dimensions_mm": {
+      "terminal_pitch": 0.5,
+      "ep_width": 1.8,
+      "ep_height": 4.5
+    },
+    "side_land_size_mm": {
+      "captured": [
+        1.025,
+        0.25
+      ],
+      "ti_example": [
+        0.75,
+        0.25
+      ]
+    },
+    "side_column_spacing_mm": {
+      "captured": 3.725,
+      "ti_example": 3.65
+    },
+    "end_land_size_mm": {
+      "captured": [
+        0.25,
+        0.775
+      ],
+      "ti_example": [
+        0.25,
+        0.6
+      ]
+    },
+    "end_row_spacing_mm": {
+      "captured": 5.975,
+      "ti_example": 5.8
+    },
+    "ep_paste_aperture_size_mm": {
+      "captured": [
+        0.73,
+        0.91
+      ],
+      "ti_example": [
+        0.8,
+        0.94
+      ]
+    },
+    "ep_paste_aperture_count": 8,
+    "thermal_vias_present": false,
+    "notes": [
+      "Dimensions are selected drawing comparisons, not an exact reproduction of TI's land or stencil example.",
+      "Rounded aperture shapes, solder-mask expansion, stencil thickness and printed coverage need assembly review.",
+      "Absence of thermal vias is a captured footprint fact, not approval of a no-via converter layout.",
+      "TI requires exposed-pad soldering; a native footprint load does not establish the board's thermal connection."
+    ]
+  },
+  "limitations": [
+    "A successful footprint load is not ERC, DRC, board fit or electrical qualification.",
+    "Only pad geometry and electrical numbering are cross-checked; no 3D-model or land-pattern approval.",
+    "Generic inductor/start-lead orientation and other generic footprints remain assembly review items."
+  ]
+}

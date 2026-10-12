@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T01:01:42.220845+00:00",
+  "generated_at": "2026-10-12T08:29:00.675421+00:00",
   "selected_boards": 1,
   "purpose": "Ordering/assembly review package; no purchase or fabrication release",
   "sources": [
@@ -10,8 +10,8 @@
     },
     {
       "path": "hardware/manufacturing/procurement_policy.json",
-      "sha256": "bf519c43c5ae6ff25a089cd6d2e893c9c484dcb4c91b3f91bada0754f55ee17d",
-      "bytes": 8411
+      "sha256": "4201ecc04cb114e4be20a0330fd19aa6c858a7e16bf14f4b48ef4b57fe9c04c3",
+      "bytes": 8733
     },
     {
       "path": "hardware/kicad_v2/tools/v2_design.py",
@@ -180,8 +180,8 @@
     },
     {
       "path": "hardware/manufacturing/v2/bom_review.csv",
-      "sha256": "fc221ff606e3a7f4671b017d1fbdc30111585aa79b303e1ac6b19d46e79f7193",
-      "bytes": 34388
+      "sha256": "114a232d9a1544cbb589024c19aede7b6ee5503e1cfdab63687dd4509ea05a8c",
+      "bytes": 34714
     },
     {
       "path": "hardware/manufacturing/v2/distributor_candidates_1board.csv",
@@ -205,8 +205,8 @@
     },
     {
       "path": "hardware/manufacturing/v2/holds.csv",
-      "sha256": "3210e37ef3db4bfc6e32ee126bd3e5c3186bbb036081fb67d7b9c16c37398652",
-      "bytes": 13788
+      "sha256": "a754dd6ad104d1fa68ef065150c1e69c909f0055d2dbeb2a9093520b0e70e386",
+      "bytes": 14114
     },
     {
       "path": "hardware/manufacturing/v2/orientation_review.csv",

@@ -66,6 +66,13 @@ jobs:
           python reviews/codex/buck_3v3/model.py --check
           python reviews/codex/buck_3v3/test_model.py
           python reviews/codex/buck_3v3/inspect_packages.py --check
+      - name: Verify isolated 5 V converter and feed evidence
+        run: |
+          python reviews/codex/buck_5v/verify_candidate.py --check
+          python reviews/codex/buck_5v/test_candidate.py
+          python reviews/codex/buck_5v/model.py --check
+          python reviews/codex/buck_5v/test_model.py
+          python reviews/codex/buck_5v/inspect_packages.py --check
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

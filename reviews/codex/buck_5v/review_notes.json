@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "date": "2026-10-12",
+  "source_revision": "358371efb06f40a6980d04e457ee27b60744dd24",
+  "revision": "BUCK5-A1",
+  "status": "reviewed_isolated_schematic_candidate",
+  "independent_reviews": [
+    {
+      "reviewer": "imu_candidate_validator",
+      "scope": "Native part, physical-pin, hierarchy and metadata contract plus provenance and mutation rejection",
+      "result": "27 tests and stable --check pass. All 339 outside-boundary memberships, identities, paths and native metadata preserved, including U2 PG no-connect. Stacked PVIN pins and grounded NC thermal pins checked. No blocker.",
+      "files_written": [
+        "verify_candidate.py",
+        "test_candidate.py"
+      ]
+    },
+    {
+      "reviewer": "power_native_review",
+      "scope": "Primary TI/Coilcraft limits, numerical corner and source-feed model, final README claims",
+      "result": "10 tests and model --check pass. PWM/leakage limits, typical capacitance distinction and current-limit comparator selection screen correctly qualified. No final guide/model blocker.",
+      "files_written": [
+        "model.py",
+        "test_model.py"
+      ]
+    },
+    {
+      "reviewer": "input_protection_review",
+      "scope": "Primary input/OR-ing/package sources, native and portable footprint inspection; final procurement/CI read-only review",
+      "result": "Seven footprints load in KiCad9.0.7; portable check passes. Five malformed geometry/pad-number cases rejected, valid split EP31 accepted. RNP perimeter lands/paste differences remain explicit holds. D4/D9 SMC/SMA identity conflict correctly retained in 38 existing holds. CI retains BUCK33 and adds BUCK5 checks. No publication blocker.",
+      "files_written": [
+        "inspect_packages.py",
+        "native_geometry.json"
+      ]
+    }
+  ],
+  "root_verification": {
+    "native_version": "9.0.7",
+    "native_command_record": "native_manifest.json",
+    "contract_tests_passed": 27,
+    "model_tests_passed": 10,
+    "native_errors": 0,
+    "native_warnings": 1,
+    "native_warning_scope": "Original AD0 warning only",
+    "source_count": 31,
+    "native_file_count": 12,
+    "svg_sheet_count": 10,
+    "native_output_hash_count_including_viewer_copy": 13,
+    "live_cad_inputs_preserved": 52,
+    "prior_candidate_source_files_preserved": 29,
+    "unrelated_tool_hashes_preserved": {
+      "hardware/kicad/tools/v1_design.py": "4c3765346e6b64976aaad5f406f8662056cfece10029767837a9f47864474dc0",
+      "hardware/kicad_v2/tools/route_v2.py": "3e44123b01d58c8373850c2becf77df2e7103877f9c223b6d102c14346cd03dd"
+    },
+    "v1_procurement_files_preserved": 12,
+    "v1_procurement_before_hashes": "v1_procurement_preservation.json",
+    "procurement_counts": {
+      "v2_candidate": 69,
+      "v2_held": 38,
+      "v2_board_features": 11,
+      "v2_candidate_order_lines": 36,
+      "v1_candidate": 20,
+      "v1_held": 18,
+      "v1_board_features": 6
+    },
+    "browser_record": "viewer_check.json",
+    "visual_review": [
+      "buck-review.png",
+      "LoRa_Boat_Controller_V2-Power-review.png",
+      "viewer-desktop.png"
+    ],
+    "visual_disposition": "BOOT/SW loop and C7 annotation separated before final native capture. Final schematic visually inspected. Viewer SVG/project/guide links and 200% zoom pass desktop and phone, with no page errors or horizontal page/dialog overflow.",
+    "initial_capture_repairs": [
+      "Added predeclared SW_5V net label when first export exposed unnamed SW net.",
+      "Added explicitly documented output PWR_FLAG to represent source through passive L2 for BIAS ERC. Neither flag nor ERC result is powered-hardware evidence."
+    ],
+    "minor_inherited_heading": "export_native.py retains BUCK33-A1 in its docstring; executed paths and recorded BUCK5 source/output hashes are correct. Runner bytes preserved after final capture."
+  },
+  "acceptance_gates": {
+    "live_integration": false,
+    "pcb_updated": false,
+    "hardware_tested": false,
+    "fabrication_approved": false,
+    "effective_capacitance_verified": false,
+    "loop_stability_verified": false,
+    "thermal_verified": false,
+    "negative_rail_verified": false,
+    "adc_sequencing_verified": false,
+    "full_load_input_feed_verified": false,
+    "buffer_supply_verified": false,
+    "imu2_incorporated": false
+  },
+  "next_smallest_task": "New isolated candidate separating PWM buffer supply/bypass from VSERVO, exact D4/D9 identities and external-BEC/on-board population contract. Preserve both converter contracts. Then full 6S input-feed rating, nonpolar reservoir/complete leakage/damping, ADC/sense and combined IMU2 before local routing."
+}

@@ -1,5 +1,9 @@
 # Start here: Codex review checkpoint
 
+## Current converter packet — BUCK5-A1, 2026-10-12
+
+The [5 V converter and shared-feed review](buck_5v/README.md) now includes an annotated native LM76003 sheet: 119 components, 398 physical pins, all 339 outside-boundary pins preserved, zero ERC errors and the original warning. The first 3.3 V sheet is byte-identical. New SS34 SMC/SMA package findings are added to existing ordering holds; the 7 V full-load feed remains unqualified. Next: isolate the buffer supply from VSERVO and resolve exact OR-ing parts and supply population variants, then input-feed/leakage/damping and remaining integration gates. This entry supersedes older next-task text below.
+
 ## Current converter packet — BUCK33-A1, 2026-10-12
 
 The [complete first 3.3 V converter](buck_3v3/README.md) now has a separate annotated sheet, exact supporting parts and native validation: 113 components, 361 pins, all 330 outside-boundary pins preserved, zero errors and the original ERC warning. This is an isolated INPUT-A1-derived candidate; live CAD, copper, purchasing and firmware remain unchanged. Capacitance, thermal, loop, input leakage and ADC gates remain open. Next: the isolated 5 V converter and its simultaneous-load budget, retaining 6S and the optional on-board actuator configuration. This entry supersedes older next-task text below.

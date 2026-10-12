@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "revision": "BUCK5-A1",
+  "status": "pass_isolated_schematic_only",
+  "inputs": {
+    "baseline_netlist": {
+      "path": "reviews/codex/buck_3v3/native/netlist.xml",
+      "sha256": "632c93241b9d355216e8c5be4917a609a978b8d7687b83daed3b85d55f130ed6"
+    },
+    "baseline_erc": {
+      "path": "reviews/codex/buck_3v3/native/erc.json",
+      "sha256": "8497e080b7f93be2f796b0ef32aaf53384bbde7d3be69b51bc8a7ac1ded07bc2"
+    },
+    "candidate_netlist": {
+      "path": "reviews/codex/buck_5v/native/netlist.xml",
+      "sha256": "1315d9e9248a898d92521a6ed592720e0c73df91125ea854887ba77d5cdc4690"
+    },
+    "candidate_erc": {
+      "path": "reviews/codex/buck_5v/native/erc.json",
+      "sha256": "620f6f6b43cfaf93cd8a5aba23f4f85a347c973c3b27d04de78a6657cbaafddc"
+    },
+    "expected_contract": {
+      "path": "reviews/codex/buck_5v/expected_contract.json",
+      "sha256": "ba96bdc5e015b5810623a5b27d144e87e30e8abd1669693a81fdf1dde15f2d8d"
+    },
+    "parser": {
+      "path": "reviews/codex/imu_interface/verify_candidate.py",
+      "sha256": "14d81fa62be5565c35674438a81d48d0922080ccbcfa0529aef5adb89c48cfb6"
+    },
+    "verifier": {
+      "path": "reviews/codex/buck_5v/verify_candidate.py",
+      "sha256": "6c1f85bad1bacfb850c506ade1d81c0c42aae06f5510a7cc056d3a034c3b1683"
+    }
+  },
+  "electrical_delta": {
+    "baseline_components": 113,
+    "candidate_components": 119,
+    "baseline_physical_pins": 361,
+    "candidate_physical_pins": 398,
+    "removed_components": [
+      "R6"
+    ],
+    "added_components": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "updated_component_identities": [
+      "C10",
+      "C7",
+      "C8",
+      "C9",
+      "L2",
+      "R8",
+      "R9",
+      "U3"
+    ],
+    "removed_physical_pins": 2,
+    "added_physical_pins": 39,
+    "preserved_existing_pin_memberships": 348,
+    "preserved_outside_boundary_pin_memberships": 339,
+    "existing_pin_deltas": [
+      {
+        "reference": "C7",
+        "pin": "1",
+        "before": "/Power/SW_5V",
+        "after": "/Power/Buck5V/SW_5V"
+      },
+      {
+        "reference": "C7",
+        "pin": "2",
+        "before": "/Power/BOOT_5V",
+        "after": "/Power/Buck5V/BOOT_5V"
+      },
+      {
+        "reference": "L2",
+        "pin": "1",
+        "before": "/Power/SW_5V",
+        "after": "/Power/Buck5V/SW_5V"
+      },
+      {
+        "reference": "R8",
+        "pin": "2",
+        "before": "/Power/FB_5V",
+        "after": "/Power/Buck5V/FB_5V"
+      },
+      {
+        "reference": "R9",
+        "pin": "1",
+        "before": "/Power/FB_5V",
+        "after": "/Power/Buck5V/FB_5V"
+      },
+      {
+        "reference": "U3",
+        "pin": "1",
+        "before": "GND",
+        "after": "/Power/Buck5V/SW_5V"
+      },
+      {
+        "reference": "U3",
+        "pin": "2",
+        "before": "/Power/SW_5V",
+        "after": "/Power/Buck5V/SW_5V"
+      },
+      {
+        "reference": "U3",
+        "pin": "3",
+        "before": "/Power/VIN_BUCK",
+        "after": "/Power/Buck5V/SW_5V"
+      },
+      {
+        "reference": "U3",
+        "pin": "4",
+        "before": "/Power/FB_5V",
+        "after": "/Power/Buck5V/SW_5V"
+      },
+      {
+        "reference": "U3",
+        "pin": "5",
+        "before": "/Power/EN_5V",
+        "after": "/Power/Buck5V/SW_5V"
+      },
+      {
+        "reference": "U3",
+        "pin": "6",
+        "before": "/Power/BOOT_5V",
+        "after": "/Power/Buck5V/BOOT_5V"
+      }
+    ],
+    "added_memberships": {
+      "C49.1": "/Power/+5V_BUCK",
+      "C49.2": "GND",
+      "C50.1": "/Power/+5V_BUCK",
+      "C50.2": "GND",
+      "C51.1": "/Power/+5V_BUCK",
+      "C51.2": "GND",
+      "C52.1": "/Power/VIN_BUCK",
+      "C52.2": "GND",
+      "C53.1": "/Power/VIN_BUCK",
+      "C53.2": "GND",
+      "C54.1": "/Power/Buck5V/VCC_5V",
+      "C54.2": "GND",
+      "C55.1": "/Power/+5V_BUCK",
+      "C55.2": "GND",
+      "U3.10": "unconnected-(U3-RT-Pad10)",
+      "U3.11": "unconnected-(U3-SS/TRK-Pad11)",
+      "U3.12": "/Power/Buck5V/FB_5V",
+      "U3.13": "GND",
+      "U3.14": "GND",
+      "U3.15": "GND",
+      "U3.16": "unconnected-(U3-PGOOD-Pad16)",
+      "U3.17": "GND",
+      "U3.18": "/Power/VIN_BUCK",
+      "U3.19": "GND",
+      "U3.20": "/Power/VIN_BUCK",
+      "U3.21": "/Power/VIN_BUCK",
+      "U3.22": "/Power/VIN_BUCK",
+      "U3.23": "GND",
+      "U3.24": "GND",
+      "U3.25": "GND",
+      "U3.26": "GND",
+      "U3.27": "GND",
+      "U3.28": "GND",
+      "U3.29": "GND",
+      "U3.30": "GND",
+      "U3.31": "GND",
+      "U3.7": "GND",
+      "U3.8": "/Power/Buck5V/VCC_5V",
+      "U3.9": "/Power/+5V_BUCK"
+    },
+    "removed_memberships": {
+      "R6.1": "/Power/VIN_BUCK",
+      "R6.2": "/Power/EN_5V"
+    },
+    "added_net_names": [
+      "/Power/Buck5V/BOOT_5V",
+      "/Power/Buck5V/FB_5V",
+      "/Power/Buck5V/SW_5V",
+      "/Power/Buck5V/VCC_5V",
+      "unconnected-(U3-PGOOD-Pad16)",
+      "unconnected-(U3-RT-Pad10)",
+      "unconnected-(U3-SS/TRK-Pad11)"
+    ],
+    "removed_net_names": [
+      "/Power/BOOT_5V",
+      "/Power/EN_5V",
+      "/Power/FB_5V",
+      "/Power/SW_5V"
+    ],
+    "candidate_part_identity_contract": "pass",
+    "physical_pin_completeness_and_uniqueness": "pass",
+    "explicit_no_connects": {
+      "U3": [
+        "10",
+        "11",
+        "16"
+      ]
+    },
+    "converter_child_sheet": "/Power/Buck5V/"
+  },
+  "native_erc": {
+    "baseline": {
+      "kicad_version": "9.0.7",
+      "date": "2026-10-12T02:16:12-0500",
+      "errors": 0,
+      "warnings": 1,
+      "exclusions": 0,
+      "violations": [
+        {
+          "sheet": "/Navigation/",
+          "severity": "warning",
+          "type": "pin_to_pin",
+          "description": "Pins of type Bidirectional and Power output are connected",
+          "items": [
+            "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+            "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+          ]
+        }
+      ]
+    },
+    "candidate": {
+      "kicad_version": "9.0.7",
+      "date": "2026-10-12T03:25:59-0500",
+      "errors": 0,
+      "warnings": 1,
+      "exclusions": 0,
+      "violations": [
+        {
+          "sheet": "/Navigation/",
+          "severity": "warning",
+          "type": "pin_to_pin",
+          "description": "Pins of type Bidirectional and Power output are connected",
+          "items": [
+            "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+            "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+          ]
+        }
+      ]
+    }
+  },
+  "scope": "isolated native schematic identity/connectivity comparison to pre-export contract",
+  "pcb_updated": false,
+  "live_circuit_updated": false,
+  "hardware_tested": false,
+  "qualified_for_power": false,
+  "fabrication_approved": false,
+  "limitations": [
+    "Rechecks captured native files; does not run KiCad or independently prove source-to-export freshness.",
+    "ERC and contract agreement do not qualify capacitance, inrush, thermal, transient, leakage, damping, stability or startup behavior.",
+    "PCB layout and footprint qualification are outside this comparison.",
+    "Inherited input-stage, ADC, buffer and separate IMU2 integration gates remain outside this converter amendment."
+  ]
+}

@@ -35,7 +35,8 @@
     "input_stage": "reviews/codex/input_stage/README.md",
     "reverse_leakage": "reviews/codex/reverse_leakage/README.md",
     "input_capacitors": "reviews/codex/input_capacitors/README.md",
-    "buck_3v3": "reviews/codex/buck_3v3/README.md"
+    "buck_3v3": "reviews/codex/buck_3v3/README.md",
+    "buck_5v": "reviews/codex/buck_5v/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -136,6 +137,11 @@
       "path": "reviews/codex/buck_3v3/v2_buck_3v3.svg",
       "kind": "verified_schematic_candidate",
       "caption": "BUCK33-A1: editable first 3.3 V converter; native connections checked, PCB and hardware qualification pending."
+    },
+    {
+      "path": "reviews/codex/buck_5v/v2_buck_5v.svg",
+      "kind": "verified_schematic_candidate",
+      "caption": "BUCK5-A1: isolated 5 V converter and documented shared-feed limits; hardware unqualified."
     }
   ],
   "validated_results": [
@@ -281,6 +287,16 @@
         "reviews/codex/buck_3v3/native_manifest.json",
         "reviews/codex/buck_3v3/README.md"
       ]
+    },
+    {
+      "claim": "BUCK5-A1 native comparison preserves all 339 outside-boundary pins and the first converter. The 5 V candidate has 119 components and 398 pins and no new ERC findings; analytical feed limits and diode package holds remain separate from hardware acceptance.",
+      "classification": "verified_native_schematic_candidate_not_integrated",
+      "evidence": [
+        "reviews/codex/buck_5v/validation.json",
+        "reviews/codex/buck_5v/native_manifest.json",
+        "reviews/codex/buck_5v/analysis.json",
+        "reviews/codex/buck_5v/README.md"
+      ]
     }
   ],
   "current_native_findings": {
@@ -309,7 +325,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Complete the isolated 5 V converter and simultaneous-load budget; close nonpolar reservoir/leakage/damping, ADC and buffer gates before combined power/IMU2 integration and routing.",
+    "Separate the buffer supply from VSERVO and resolve exact OR-ing parts/population; close 6S input-feed, reservoir/leakage/damping, ADC and combined IMU2 gates before routing.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",
     "Measure voice quality, airtime and RC coexistence before selecting handheld radio, codec or hardware."

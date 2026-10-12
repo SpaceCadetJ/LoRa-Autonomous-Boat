@@ -124,3 +124,11 @@ First-converter child imu_candidate_validator owns only reviews/codex/buck_3v3/v
 ## BUCK33-A1 review checkpoint — 2026-10-12 UTC
 
 Independent native-contract review, source/claim review and native package inspection are complete; all child write claims are released. Root closes viewer/guide/evidence integration and selective publication of the isolated first-converter packet. Live CAD/copper/BOM/firmware and all older packets remain unchanged. The next bounded circuit scope follows buck_3v3/README.md: isolated 5 V converter and simultaneous-load budget, then named power/ADC/buffer integration gates. Preserve unrelated v1_design.py and route_v2.py edits. No primary generator, router, hardware, order or branch/history action is authorized by this checkpoint.
+
+## Second converter claim — 2026-10-12 UTC
+
+Root claims reviews/codex/buck_5v/** and current viewer/application/portfolio/handoff/CI integration for an isolated BUCK33-A1-derived 5 V converter and simultaneous-load budget. Baseline is commit358371e; preserve first-converter source and all live CAD/copper/BOM/firmware, previous packets, and both unrelated tool edits. No primary generators/routing or hardware actions. Exact regulator identity must be primary-source verified; expected old/new part and physical-pin delta precedes native capture. Children input_protection_review and power_native_review are read-only source reviewers; power_native_review may write only buck_5v/model.py and test_model.py. Preserve 6S and both external-BEC and optional on-board-actuator configurations. No release/power acceptance follows from ERC.
+
+## BUCK5-A1 review checkpoint — 2026-10-12 UTC
+
+All second-converter child write scopes are released after native-contract, numerical and package review. Root closes viewer/guide/CI publication and records the confirmed D4/D9 SMC/SMA finding in existing procurement holds plus derived review exports. Live CAD/copper/BOM source/firmware, V1 outputs, prior packets and both unrelated tool edits remain unchanged. Next scope follows buck_5v/README.md: isolated buffer/OR-ing supply correction before full input-feed and combined IMU2 integration. No live PCB replacement, primary generation/routing or hardware action.

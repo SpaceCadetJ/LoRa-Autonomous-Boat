@@ -1,0 +1,555 @@
+{
+  "schema": 1,
+  "revision": "BUCK5-A1",
+  "baseline_revision": "358371efb06f40a6980d04e457ee27b60744dd24",
+  "baseline_native": "reviews/codex/buck_3v3/native/netlist.xml",
+  "boundary": [
+    "U3",
+    "L2",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "R6",
+    "R8",
+    "R9"
+  ],
+  "removed_parts": [
+    "R6"
+  ],
+  "added_parts": [
+    "C49",
+    "C50",
+    "C51",
+    "C52",
+    "C53",
+    "C54",
+    "C55"
+  ],
+  "candidate_parts": {
+    "U3": {
+      "value": "LM76003RNPR",
+      "mpn": "LM76003RNPR",
+      "manufacturer": "Texas Instruments",
+      "library": [
+        "LoRa_Boat_Controller_V2",
+        "LM76003"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:Texas_RNP0030B_WQFN-30-1EP_4x6mm_P0.5mm_EP1.8x4.5mm",
+      "pins": {
+        "9": [
+          "BIAS",
+          "power_in"
+        ],
+        "1": [
+          "SW",
+          "power_out"
+        ],
+        "20": [
+          "PVIN",
+          "power_in"
+        ],
+        "21": [
+          "PVIN",
+          "passive"
+        ],
+        "22": [
+          "PVIN",
+          "passive"
+        ],
+        "18": [
+          "EN",
+          "input"
+        ],
+        "16": [
+          "PGOOD",
+          "open_collector"
+        ],
+        "10": [
+          "RT",
+          "input"
+        ],
+        "11": [
+          "SS/TRK",
+          "input"
+        ],
+        "17": [
+          "SYNC/MODE",
+          "input"
+        ],
+        "19": [
+          "NC_{GND}",
+          "passive"
+        ],
+        "27": [
+          "NC_{GND}",
+          "passive"
+        ],
+        "28": [
+          "NC_{GND}",
+          "passive"
+        ],
+        "29": [
+          "NC_{GND}",
+          "passive"
+        ],
+        "30": [
+          "NC_{GND}",
+          "passive"
+        ],
+        "13": [
+          "AGND",
+          "power_in"
+        ],
+        "14": [
+          "AGND",
+          "passive"
+        ],
+        "15": [
+          "AGND",
+          "passive"
+        ],
+        "31": [
+          "AGND",
+          "passive"
+        ],
+        "24": [
+          "PGND",
+          "power_in"
+        ],
+        "25": [
+          "PGND",
+          "passive"
+        ],
+        "26": [
+          "PGND",
+          "passive"
+        ],
+        "7": [
+          "NC_{GND}",
+          "passive"
+        ],
+        "23": [
+          "NC_{GND}",
+          "passive"
+        ],
+        "6": [
+          "BOOT",
+          "input"
+        ],
+        "2": [
+          "SW",
+          "passive"
+        ],
+        "3": [
+          "SW",
+          "passive"
+        ],
+        "4": [
+          "SW",
+          "passive"
+        ],
+        "5": [
+          "SW",
+          "passive"
+        ],
+        "12": [
+          "FB",
+          "input"
+        ],
+        "8": [
+          "VCC",
+          "power_out"
+        ]
+      }
+    },
+    "L2": {
+      "value": "10uH",
+      "mpn": "XAL6060-103MEC",
+      "manufacturer": "Coilcraft",
+      "library": [
+        "Device",
+        "L"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:L_Coilcraft_XAL6060-XXX",
+      "pins": {
+        "1": [
+          "1",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "passive"
+        ]
+      }
+    },
+    "C7": {
+      "value": "470nF 25V",
+      "mpn": "C1608X7R1E474K080AB",
+      "manufacturer": "TDK",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:C_0603_1608Metric",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "C54": {
+      "value": "2.2uF 25V",
+      "mpn": "C2012X7R1E225K125AB",
+      "manufacturer": "TDK",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:C_0805_2012Metric",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "C55": {
+      "value": "1uF 25V",
+      "mpn": "C1608X7R1E105K080AB",
+      "manufacturer": "TDK",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:C_0603_1608Metric",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "C8": {
+      "value": "22uF 25V",
+      "mpn": "C3225X7R1E226M250AB",
+      "manufacturer": "TDK",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:C_TDK_C3225X7R1E226M250AB",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "C9": {
+      "value": "22uF 25V",
+      "mpn": "C3225X7R1E226M250AB",
+      "manufacturer": "TDK",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:C_TDK_C3225X7R1E226M250AB",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "C49": {
+      "value": "22uF 25V",
+      "mpn": "C3225X7R1E226M250AB",
+      "manufacturer": "TDK",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:C_TDK_C3225X7R1E226M250AB",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "C50": {
+      "value": "22uF 25V",
+      "mpn": "C3225X7R1E226M250AB",
+      "manufacturer": "TDK",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:C_TDK_C3225X7R1E226M250AB",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "C51": {
+      "value": "22uF 25V",
+      "mpn": "C3225X7R1E226M250AB",
+      "manufacturer": "TDK",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:C_TDK_C3225X7R1E226M250AB",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "C10": {
+      "value": "10uF 100V",
+      "mpn": "C5750X7S2A106K230KB",
+      "manufacturer": "TDK",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:C_TDK_C5750X7S2A106K230KB",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "C52": {
+      "value": "10uF 100V",
+      "mpn": "C5750X7S2A106K230KB",
+      "manufacturer": "TDK",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:C_TDK_C5750X7S2A106K230KB",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "C53": {
+      "value": "220nF 100V",
+      "mpn": "GRM21AR72A224KAC5L",
+      "manufacturer": "Murata",
+      "library": [
+        "Device",
+        "C"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:C_0805_2012Metric",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "R8": {
+      "value": "100k 1%",
+      "mpn": "CRCW0603100KFKEA",
+      "manufacturer": "Vishay",
+      "library": [
+        "Device",
+        "R"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:R_0603_1608Metric",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    },
+    "R9": {
+      "value": "24.9k 1%",
+      "mpn": "CRCW060324K9FKEA",
+      "manufacturer": "Vishay",
+      "library": [
+        "Device",
+        "R"
+      ],
+      "footprint": "LoRa_Boat_Controller_V2:R_0603_1608Metric",
+      "pins": {
+        "1": [
+          "",
+          "passive"
+        ],
+        "2": [
+          "",
+          "passive"
+        ]
+      }
+    }
+  },
+  "candidate_memberships": {
+    "C8": {
+      "1": "/Power/+5V_BUCK",
+      "2": "GND"
+    },
+    "C9": {
+      "1": "/Power/+5V_BUCK",
+      "2": "GND"
+    },
+    "C49": {
+      "1": "/Power/+5V_BUCK",
+      "2": "GND"
+    },
+    "C50": {
+      "1": "/Power/+5V_BUCK",
+      "2": "GND"
+    },
+    "C51": {
+      "1": "/Power/+5V_BUCK",
+      "2": "GND"
+    },
+    "C55": {
+      "1": "/Power/+5V_BUCK",
+      "2": "GND"
+    },
+    "C10": {
+      "1": "/Power/VIN_BUCK",
+      "2": "GND"
+    },
+    "C52": {
+      "1": "/Power/VIN_BUCK",
+      "2": "GND"
+    },
+    "C53": {
+      "1": "/Power/VIN_BUCK",
+      "2": "GND"
+    },
+    "C7": {
+      "1": "/Power/Buck5V/SW_5V",
+      "2": "/Power/Buck5V/BOOT_5V"
+    },
+    "C54": {
+      "1": "/Power/Buck5V/VCC_5V",
+      "2": "GND"
+    },
+    "L2": {
+      "1": "/Power/Buck5V/SW_5V",
+      "2": "/Power/+5V_BUCK"
+    },
+    "R8": {
+      "1": "/Power/+5V_BUCK",
+      "2": "/Power/Buck5V/FB_5V"
+    },
+    "R9": {
+      "1": "/Power/Buck5V/FB_5V",
+      "2": "GND"
+    },
+    "U3": {
+      "7": "GND",
+      "13": "GND",
+      "14": "GND",
+      "15": "GND",
+      "17": "GND",
+      "19": "GND",
+      "23": "GND",
+      "24": "GND",
+      "25": "GND",
+      "26": "GND",
+      "27": "GND",
+      "28": "GND",
+      "29": "GND",
+      "30": "GND",
+      "31": "GND",
+      "1": "/Power/Buck5V/SW_5V",
+      "2": "/Power/Buck5V/SW_5V",
+      "3": "/Power/Buck5V/SW_5V",
+      "4": "/Power/Buck5V/SW_5V",
+      "5": "/Power/Buck5V/SW_5V",
+      "18": "/Power/VIN_BUCK",
+      "20": "/Power/VIN_BUCK",
+      "21": "/Power/VIN_BUCK",
+      "22": "/Power/VIN_BUCK",
+      "6": "/Power/Buck5V/BOOT_5V",
+      "8": "/Power/Buck5V/VCC_5V",
+      "9": "/Power/+5V_BUCK",
+      "12": "/Power/Buck5V/FB_5V",
+      "10": "unconnected-(U3-RT-Pad10)",
+      "11": "unconnected-(U3-SS/TRK-Pad11)",
+      "16": "unconnected-(U3-PGOOD-Pad16)"
+    }
+  },
+  "expected_counts": {
+    "baseline_components": 113,
+    "candidate_components": 119,
+    "baseline_pins": 361,
+    "candidate_pins": 398,
+    "outside_boundary_pins": 339
+  },
+  "explicit_no_connects": {
+    "U3": [
+      "10",
+      "11",
+      "16"
+    ]
+  },
+  "live_electrical_delta": 0,
+  "pcb_updated": false,
+  "qualified_for_power": false
+}
