@@ -1,0 +1,118 @@
+{
+  "revision": "ACT-07",
+  "retrieved_UTC": "2026-10-13",
+  "review_mode": "Manufacturer documents and independent source review; no measurements",
+  "comparator": {
+    "part": "TLV3202AIDGKR",
+    "document": "SBOS561C, May2024",
+    "url": "https://www.ti.com/lit/ds/symlink/tlv3202.pdf",
+    "sections": [
+      "5",
+      "6.5",
+      "6.6",
+      "6.7",
+      "6.8",
+      "8.1"
+    ],
+    "supply_V": [
+      2.7,
+      5.5
+    ],
+    "offset_max_V": 0.006,
+    "offset_condition": "-40..125C, VCM=VCC/2, VCC=2.7V or5V tables",
+    "bias_max_A": 5e-09,
+    "bias_condition": "-40..125C,VCM=VCC/2",
+    "hysteresis_typ_V": 0.0012,
+    "hysteresis_max_V": null,
+    "propagation_max_overtemp_ns": 55,
+    "propagation_conditions": "2.7V and5V tables,CL15pF,20mV and100mV overdrive rows; applicability to continuous supply,chosen commonmode and ramp not established",
+    "CMRR_min_dB": {
+      "at_2p7V": 56,
+      "at_5V": 60,
+      "temperature_basis": "25C default; do not extend unqualified to fulltemp"
+    },
+    "PSRR_min_dB": 65,
+    "PSRR_condition": "25C default,VCM=VCC/2,VCC2.5..5.5V",
+    "pins": {
+      "1": "OUT_UV",
+      "2": "IN1-",
+      "3": "IN1+",
+      "4": "GND",
+      "5": "IN2+",
+      "6": "IN2-",
+      "7": "OUT_OV",
+      "8": "VCC"
+    },
+    "input_clamp": "Input diode clamps to supply rails; absolute10mA limit is not an accepted off-state injection budget.",
+    "startup_guaranteed": false,
+    "identity_url": "https://www.ti.com/product/TLV3202/part-details/TLV3202AIDGKR"
+  },
+  "reference": {
+    "part": "REF3425IDBVR",
+    "document": "SBAS804G, April2026",
+    "url": "https://www.ti.com/lit/gpn/REF34",
+    "sections": [
+      "5",
+      "6.5",
+      "7.1",
+      "7.2",
+      "7.3",
+      "9.2.2.3",
+      "8.3.2 Eq3"
+    ],
+    "nominal_V": 2.5,
+    "initial_error_fraction": 0.0005,
+    "initial_condition": "25C and stated datasheet load/supply/capacitor conditions",
+    "drift_max_ppm_per_C": 6,
+    "drift_method": "BOX over-40..125C; not a pointwise slope bound",
+    "full_span_C": 165,
+    "conservative_initial_plus_BOX_fraction": 0.001490495,
+    "pins": {
+      "1": "GND_F",
+      "2": "GND_S",
+      "3": "EN",
+      "4": "IN",
+      "5": "OUT_S",
+      "6": "OUT_F"
+    },
+    "supply_slew_note": "Section9.2.2.3 warns of slow-input startup/shutdown anomalies and recommends rise/fall slew near6V/ms; this is not an accepted board waveform or guaranteed timing.",
+    "assembly_and_aging_max_bounded": false,
+    "line_max_ppm_per_V": 15,
+    "line_condition": "Test dropout50mV,see6.5",
+    "source_load_max_ppm_per_mA": 30,
+    "source_load_condition": "Test dropout500mV,see6.5",
+    "sink_load_max_ppm_per_mA": 70,
+    "sink_load_condition": "REF3425 at25C only; no fulltemp extension",
+    "startup_typ_ms": 2.5,
+    "startup_condition": "To0.1%,10uF output cap; not a maximum",
+    "output_capacitance_uF": [
+      0.1,
+      10
+    ],
+    "EN_high_min_V": 1.6,
+    "EN_low_max_V": 0.5,
+    "identity_url": "https://www.ti.com/product/REF34/part-details/REF3425IDBVR",
+    "load_gate": "Two comparator reference-input currents can source into reference. Fulltemp sinking regulation not bounded; bleeder/load plan unresolved.",
+    "BOX_formula": "(1+0.0005)*(1+6e-6*165)-1; BOX denominator is actual25C reference."
+  },
+  "rejected_integrated": {
+    "part": "TPS37042A3OFDDFRQ1",
+    "document": "SNVSBS9C,May2024",
+    "url": "https://www.ti.com/lit/ds/symlink/tps3704-q1.pdf",
+    "identity_url": "https://www.ti.com/product/TPS3704-Q1/part-details/TPS37042A3OFDDFRQ1",
+    "sections": [
+      "6.5",
+      "6.6",
+      "7.3.2.1"
+    ],
+    "detector_max_us": 10,
+    "condition": "10% overdrive, fixeddelay>1ms,VDD1.7..6V,-40..125C,10k/10pF",
+    "step_amplitudes_V": [
+      2.79015,
+      3.84615
+    ],
+    "hysteresis_scaling": "Nominal-trip assumption, same screening convention asACT06",
+    "recovery_ceiling_V": 3.3957,
+    "reason": "Overdrive amplitudes outside3.0..3.6V; recovery upper bound below converter upper corner. Nominal2us glitch immunity cannot replace maximum detection."
+  }
+}

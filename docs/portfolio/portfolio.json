@@ -44,7 +44,8 @@
     "actuator_latch": "reviews/codex/actuator_latch/README.md",
     "rail_qualification": "reviews/codex/rail_qualification/README.md",
     "rail_explorer": "reviews/codex/rail_qualification/index.html",
-    "supervisor_comparison": "reviews/codex/supervisor_comparison/README.md"
+    "supervisor_comparison": "reviews/codex/supervisor_comparison/README.md",
+    "observation_3v3": "reviews/codex/observation_3v3/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -180,6 +181,11 @@
       "path": "reviews/codex/supervisor_comparison/v2_supervisor_comparison.svg",
       "kind": "functional_proposal",
       "caption": "ACT-06 local observation and separate actuator permission; no native connection implemented."
+    },
+    {
+      "path": "reviews/codex/observation_3v3/v2_observation_3v3.svg",
+      "type": "svg",
+      "caption": "ACT-07 conditional local observation allocation; no native insertion or hardware acceptance."
     }
   ],
   "validated_results": [
@@ -391,6 +397,15 @@
         "reviews/codex/supervisor_comparison/test_model.py",
         "reviews/codex/supervisor_comparison/RESULTS.md"
       ]
+    },
+    {
+      "claim": "ACT-07 verifies conditional comparator/reference threshold and waveform budgets with ten numerical/rejection tests; no component or arbitrary-ramp qualification follows.",
+      "classification": "conditional_requirements_allocation",
+      "evidence": [
+        "reviews/codex/observation_3v3/analysis.json",
+        "reviews/codex/observation_3v3/test_model.py",
+        "reviews/codex/observation_3v3/RESULTS.md"
+      ]
     }
   ],
   "current_native_findings": {
@@ -419,7 +434,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Close one 3.3 V observation subcell after ACT-06: applicable maximum detector delay, positive reference/divider guard, retained clear, conditioned output and supply-loss behavior; preserve disabled missing permissions.",
+    "Resolve comparator threshold/delay applicability and monitor/reference power, startup, load and backdrive against ACT-07 before an isolated native amendment. Preserve default-disabled missing permissions.",
     "Qualify supply sequencing, C11/VSERVO transients, full 6S feed, leakage/damping, ADC and combined IMU2 before PCB integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",

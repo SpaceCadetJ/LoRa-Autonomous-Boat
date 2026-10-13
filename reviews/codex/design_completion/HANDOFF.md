@@ -204,3 +204,18 @@ Latest packet: `reviews/codex/supervisor_comparison/README.md`, `RESULTS.md` and
 Preserve ACT-04, both converter sheets, MCU, ACT-01 source populations, R40/R42 defaults and corrected copper. Receiver identities/readiness and watchdog deadlines, C11 identity/VSERVO reservoir/transients, full6S feed, leakage/damping, ADC and combined IMU2 remain open. V1 inspection, V2 vehicle applications and the future voice/text/location handheld stay separate; measured coexistence precedes handheld hardware selection.
 
 Restart: `python -B reviews/codex/supervisor_comparison/model.py --check`; `test_model.py`; `build_results.py --check`; `check_packet.py --check`; `python -B tools/quality/check_publication.py`; `node pm/tools/validate.mjs`. These are portable and need no CAD tool. Run viewer checks only after relevant changes. Inspect current Git, publication state and ownership before writing; no branch changes, primary generators/router or hardware actions.
+
+
+## ACT-07 / 3.3 V observation allocation — 2026-10-13 UTC
+
+Latest packet: [observation_3v3/README.md](../observation_3v3/README.md), [RESULTS.md](../observation_3v3/RESULTS.md) and [ACCEPTANCE.md](../observation_3v3/ACCEPTANCE.md). Baseline715a5d9718083c37729aa8743d37c46c38d45fa3. ACT-04 remains latest native candidate; this supersedes ACT-06's broad next task.
+
+Exact investigation identities TLV3202AIDGKR + REF3425IDBVR,249/1k UV and402/1k OV dividers. Model enumerates explicit total allocations (reference0.2%,offset10mV,hysteresis0..4mV,bias5nA,resistor0.35%). No exact resistor or part selection is released. Ten numerical/rejection tests cover thresholds, polarity, dimensions, failure cases and forbidden qualification claims. Three declared slew examples distinguish conditional headroom from a physical ramp guarantee.20mV sense overdrive leaves71.938mV UV /35.960mV OV headroom;400ns allocation yields zero-margin slope ceilings0.179845/0.0898995V/us.0.01 fits;0.1 exhaustsOV;1 exhausts both.
+
+Independent source review found TPS3704's10% maximum-delay condition unsuitable here. TLV3202 hysteresis maximum and continuous supply/common-mode timing applicability remain unbounded. REF34 BOX drift uses its full165C span and actual25C reference denominator: initial plus drift consumes0.1490495%, leaving0.0509505% for other terms. Startup2.5ms and aging are typical; slow input-ramp anomalies, full-temperature sinking regulation and charged reference-capacitor backfeed require explicit treatment. Source ledger records manufacturer revisions/sections and pin maps.
+
+Expected and actual candidate/live electrical/copper delta: zero.218 prior input hashes preserve ACT-04/05/06, converter and population evidence. No native commands, primary generators/router, firmware, purchasing or hardware actions. Unrelated v1_design.py/route_v2.py edits remain excluded. Local observation never drives QUAL_OK; missing5V,receiver,watchdog,stop andACK permissions remain disabled.
+
+**Next smallest task:** resolve monitor/reference power states (source,EN,load/bypass,slow ramps,shutdown and injection) and comparator threshold/delay applicability against this allocation. Start from the worksheet, not a fresh broad catalog search. Only after conditions fit, predeclare an exact part/pin delta on a newACT-04 copy and run captured native checks. If no bounded source satisfies the contract, explicitly revise the waveform/response architecture instead of promoting typical values. Preserve R40/R42,both converters,ACT-01 populations and corrected copper.
+
+Keep C11/VSERVO,full6Sfeed,leakage/damping,ADC and combinedIMU2 open. V1 inspection,V2vehicle applications and futurehandheldvoice/text/location stay distinct; measuredvoice/RCcoexistence precedes handheldselection.

@@ -339,6 +339,12 @@ def main():
     assert all(supervisor[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
     assert not any(supervisor[k] for k in ["parts_selected", "hardware_tested", "fabrication_approved", "native_commands_rerun", "qualification_ports_implemented"])
     print("PASS ACT-06 portable comparison; no new circuit or permission driver")
+    observation_root = "reviews/codex/observation_3v3/"
+    observation = read_json(observation_root + "packet_manifest.json")
+    check_hashes(observation["input_sha256"], "ACT-07 preserved inputs")
+    check_hashes(observation["artifact_sha256"], "ACT-07 allocation and viewer artifacts")
+    assert all(observation[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
+    assert not any(observation[k] for k in ["parts_selected", "hardware_tested", "fabrication_approved", "native_commands_rerun", "qualification_ports_implemented"])
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -354,6 +360,7 @@ def main():
     pages += [ROOT / latch_root / "README.md", ROOT / latch_root / "TIMING.md"]
     pages += [ROOT / rail_root / "README.md", ROOT / rail_root / "QUALIFICATION.md"]
     pages += [ROOT / supervisor_root / "README.md", ROOT / supervisor_root / "RESULTS.md"]
+    pages += [ROOT / observation_root / name for name in ["README.md", "RESULTS.md", "ACCEPTANCE.md"]]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

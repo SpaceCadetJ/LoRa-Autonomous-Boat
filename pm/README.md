@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Current observation packet — ACT-07, 2026-10-13
+
+The [3.3 V observation allocation](../reviews/codex/observation_3v3/README.md) makes the comparator/reference proposal reviewable with an annotated map, threshold bounds and an acceptance worksheet. Ten analytical/rejection tests pass. The 400 ns conditional budget fits the 0.01 V/us example but exhausts OV headroom at 0.1 V/us. No circuitry or powered application is released. Next: Resolve comparator threshold/delay applicability and monitor/reference power, startup, load and backdrive against ACT-07 before an isolated native amendment. Preserve default-disabled missing permissions.
+
 ## Current verification packet — ACT-06, 2026-10-13 UTC
 
 The [supervisor comparison](../reviews/codex/supervisor_comparison/README.md) now provides concrete divider values, five verified integrated-window identities, recovery/error-budget calculations and a [proposed local-permission path](../reviews/codex/supervisor_comparison/v2_supervisor_comparison.svg). Nineteen tests pass for this conditional screen. Neither option closes the complete timing/power boundary; ACT-04 stays native and default disabled. Next: one 3.3 V observation subcell with applicable maximum detection delay and positive divider/reference guard. This supersedes earlier next-task text below.

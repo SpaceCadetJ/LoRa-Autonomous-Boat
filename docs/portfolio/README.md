@@ -1,5 +1,9 @@
 # LoRa controller: from legacy board to reviewable platform
 
+## Current observation packet — ACT-07, 2026-10-13
+
+The [3.3 V observation allocation](../../reviews/codex/observation_3v3/README.md) makes the comparator/reference proposal reviewable with an annotated map, threshold bounds and an acceptance worksheet. Ten analytical/rejection tests pass. The 400 ns conditional budget fits the 0.01 V/us example but exhausts OV headroom at 0.1 V/us. No circuitry or powered application is released. Next: Resolve comparator threshold/delay applicability and monitor/reference power, startup, load and backdrive against ACT-07 before an isolated native amendment. Preserve default-disabled missing permissions.
+
 **Embedded systems, PCB reconstruction and engineering documentation.** This project turns an existing university boat-controller design into an inspectable KiCad workspace, with an evolving multifunction vehicle node and a future handheld. The current milestone is a documented engineering review edition with application guides and a separate V2 identity diagnostic. It is not a production release.
 
 > A LoRa vehicle-controller project combining STM32 firmware, PCB reconstruction and an interactive engineering workspace. The repository preserves the original boat hardware, presents fifteen annotated schematic pages, traces connectors and parts to source evidence, and provides a reproducible V1 firmware build. A second-generation controller and voice/text/location handheld are under development, with verification results and unresolved design decisions recorded alongside the design.

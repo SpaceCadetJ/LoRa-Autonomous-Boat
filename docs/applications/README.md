@@ -6,6 +6,8 @@ Use this project as a documented route from the existing boat controller to a re
 
 ## Current V2 design checkpoint
 
+[ACT-07](../../reviews/codex/observation_3v3/README.md) adds a concrete 3.3 V comparator/reference allocation and [power/waveform acceptance worksheet](../../reviews/codex/observation_3v3/ACCEPTANCE.md). Positive static margins remain conditional; the proposed 400 ns response budget fails the 0.1 V/us overvoltage example. Reference startup and observer backfeed are unresolved. This changes design evidence, not wiring, flashing or application release. Next: close those source and power-state conditions before native insertion.
+
 [ACT-06](../../reviews/codex/supervisor_comparison/README.md) narrows the local-supervision design with tested divider and integrated-window comparisons. Initial static fits do not establish fault response across temperature or power loss. The next subcell is 3.3 V observation; receiver/watchdog permission and powered vehicle operation remain held. See the [calculated margins](../../reviews/codex/supervisor_comparison/RESULTS.md).
 
 The [ACT-05 supply-qualification screen](../../reviews/codex/rail_qualification/README.md) now documents voltage/recovery conflicts and detector/edge limits before part selection. Explore the [calculated rail intervals](../../reviews/codex/rail_qualification/index.html). No circuit or application is released; local rail validity does not establish remote receiver readiness. Next is a bounded window/reset/edge comparison, with all unimplemented permissions disabled.

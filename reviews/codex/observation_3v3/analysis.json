@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "revision": "ACT-07",
+  "verdict": "conditional_allocation_only",
+  "native_accepted": false,
+  "hardware_accepted": false,
+  "parts_selected": false,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "qualification_ports_implemented": false,
+  "QUAL_OK_implemented": false,
+  "ACK_implemented": false,
+  "ramp_detection_qualified": false,
+  "parameters_are_sourced_guarantees": false,
+  "thresholds_V": {
+    "UV": {
+      "assert": [
+        3.0969529850675155,
+        3.14563529100326
+      ],
+      "recover": [
+        3.0994475112259607,
+        3.1481367892471135
+      ]
+    },
+    "OV": {
+      "assert": [
+        3.476999596437093,
+        3.5359437320375084
+      ],
+      "recover": [
+        3.4742012048077964,
+        3.5331340842703236
+      ]
+    }
+  },
+  "margins_V": {
+    "normal_UV_assert": 0.07430695322116199,
+    "normal_OV_assert": 0.06499716471243921,
+    "normal_UV_recovery": 0.07180545497730861,
+    "normal_OV_recovery": 0.06219877308314237,
+    "latest_UV_assert_to_corridor": 0.09695298506751548,
+    "latest_OV_assert_to_corridor": 0.06405626796249164
+  },
+  "normal_V": [
+    3.219942244224422,
+    3.412002431724654
+  ],
+  "corridor_V": [
+    3.0,
+    3.6
+  ],
+  "static_allocation_pass": true,
+  "overdrive_screen": {
+    "sense_overdrive_V": 0.02,
+    "maximum_divider_multiplier": {
+      "UV": 1.2507491219267437,
+      "OV": 1.4048238835925742
+    },
+    "rail_amplitude_V": {
+      "UV": 3.0719380026289804,
+      "OV": 3.56404020970936
+    },
+    "headroom_to_corridor_V": {
+      "UV": 0.07193800262898042,
+      "OV": 0.035959790290640115
+    },
+    "method": "Use latest assertion and maximum divider multiplier independently: conservative cross-corner bound, not a single physical corner."
+  },
+  "total_budget_ns": 400,
+  "budget_components_ns": {
+    "detector_budget_ns": 55,
+    "downstream_budget_ns": 245,
+    "sense_settling_budget_ns": 100
+  },
+  "maximum_slew_V_per_us": {
+    "UV": 0.17984500657245106,
+    "OV": 0.08989947572660029
+  },
+  "strictly_below_maximum_slew_required": true,
+  "ramp_cases": [
+    {
+      "slew_V_per_us": 0.01,
+      "additional_excursion_V": 0.004,
+      "residual_V": {
+        "UV": 0.06793800262898042,
+        "OV": 0.03195979029064011
+      },
+      "positive_headroom": {
+        "UV": true,
+        "OV": true
+      },
+      "conditional_allocation_pass": true,
+      "hardware_accepted": false,
+      "ramp_detection_qualified": false
+    },
+    {
+      "slew_V_per_us": 0.1,
+      "additional_excursion_V": 0.04000000000000001,
+      "residual_V": {
+        "UV": 0.031938002628980416,
+        "OV": -0.004040209709359893
+      },
+      "positive_headroom": {
+        "UV": true,
+        "OV": false
+      },
+      "conditional_allocation_pass": false,
+      "hardware_accepted": false,
+      "ramp_detection_qualified": false
+    },
+    {
+      "slew_V_per_us": 1.0,
+      "additional_excursion_V": 0.4,
+      "residual_V": {
+        "UV": -0.3280619973710196,
+        "OV": -0.3640402097093599
+      },
+      "positive_headroom": {
+        "UV": false,
+        "OV": false
+      },
+      "conditional_allocation_pass": false,
+      "hardware_accepted": false,
+      "ramp_detection_qualified": false
+    }
+  ],
+  "all_declared_cases_fit_allocation": false,
+  "method": {
+    "threshold": "(Vref+offset+/-hys/2)*(1+Rt/Rb)+Ibias*Rt",
+    "corners_per_threshold": 64,
+    "UV": "assert lower, recover upper threshold",
+    "OV": "assert upper, recover lower threshold",
+    "ramp": "residual=headroom-slew*(total_ns/1000); slew is V/us. Clamped zero maximum means no positive slew allocation."
+  },
+  "limitations": [
+    "Error, hysteresis, bias and timing values are allocations, not a qualified component implementation.",
+    "The full-width hysteresis allocation is split about a modeled center threshold; that transfer function needs component confirmation.",
+    "The voltage beyond threshold needed to reach allocated overdrive is counted before the full downstream time budget.",
+    "Comparator step delay does not establish arbitrary-ramp response. No sourced ramp, full-temperature timing or settling guarantee follows.",
+    "Budget exhaustion means this conditional allocation fails, not a prediction of actual hardware failure.",
+    "Reference startup, invalid/missing supply, independence, reset retention, conditioning and remote qualification remain open.",
+    "No native circuit, copper, firmware, QUAL_OK, ACK or hardware acceptance is created."
+  ],
+  "source_sha256": {
+    "reviews/codex/observation_3v3/contract.json": "b4a8e0fa05e4aa36d9f46d034dba76040b4bec7e98c274f5fd5b4b3516ef30ee",
+    "reviews/codex/observation_3v3/model.py": "a604c5c4a538d8223a33d48d126d03d6288c8c11e75757201f9075bcbbec2e65"
+  }
+}

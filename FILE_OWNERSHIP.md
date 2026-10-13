@@ -184,3 +184,13 @@ Root claims reviews/codex/supervisor_comparison/** and current viewer/applicatio
 ## ACT-06 review checkpoint — 2026-10-13 UTC
 
 All child scopes are released. Root closes the tested supervisor/divider comparison, annotated functional map, current viewer/application/portfolio links and selective publication. ACT-04 remains native and default disabled; no candidate/live electrical or copper delta, native recapture, firmware or purchasing change. Next scope follows supervisor_comparison/README.md: one3.3V observation subcell with bounded detection, total error guard, retention, conditioning and power-loss behavior before native insertion. Preserve previous packets and both unrelated dirty tools.
+
+
+## ACT-07 observation budget claim — 2026-10-13 UTC
+
+Root claims reviews/codex/observation_3v3/** and current viewer/application/portfolio/CI/handoff integration, based on 715a5d9. Bound one 3.3 V local observation specification with primary-source detector conditions, threshold and fault-waveform budgets. Expected candidate/live electrical and copper delta is zero unless a complete accepted subcell contract permits a separately declared native amendment. Preserve ACT-04/05/06, both converters, ACT-01 populations, R40/R42 and all prior inputs. All missing qualifications remain disabled. Children power_native_review and input_protection_review are read-only source reviewers; imu_candidate_validator may write only observation_3v3/model.py and test_model.py after assignment. No primary generators, routing, hardware, ordering, firmware or branch/history changes. Exclude unrelated v1_design.py and route_v2.py edits.
+
+
+## ACT-07 review checkpoint — 2026-10-13 UTC
+
+All child scopes are released after independent source, numerical, pin-map and diagram review. Root closes the conditional 3.3 V observation allocation, viewer/guide/portfolio/CI records and selective publication. ACT-04 stays native and default disabled; no circuit, copper, firmware, ordering or hardware change. Next scope follows observation_3v3/README.md: monitor/reference power-state and comparator applicability closure against explicit allocations. Preserve all prior evidence and both unrelated dirty tools.

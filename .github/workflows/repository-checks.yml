@@ -99,6 +99,11 @@ jobs:
           python reviews/codex/supervisor_comparison/test_model.py
           python reviews/codex/supervisor_comparison/build_results.py --check
           python reviews/codex/supervisor_comparison/check_packet.py --check
+      - name: Verify 3.3 V observation allocation
+        run: |
+          python reviews/codex/observation_3v3/model.py --check
+          python reviews/codex/observation_3v3/test_model.py
+          python reviews/codex/observation_3v3/build_packet.py --check
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "revision": "ACT-07",
+  "source_revision": "715a5d9718083c37729aa8743d37c46c38d45fa3",
+  "classification": "conditional_requirements_allocation",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_accepted": false,
+  "hardware_accepted": false,
+  "parts_selected": false,
+  "qualification_ports_implemented": false,
+  "native_commands_rerun": false,
+  "proposal": {
+    "reference_V": 2.5,
+    "reference_fraction": 0.002,
+    "comparator_offset_abs_V": 0.01,
+    "hysteresis_V": [
+      0,
+      0.004
+    ],
+    "bias_abs_A": 5e-09,
+    "resistor_fraction": 0.0035,
+    "bottom_ohm": 1000,
+    "UV_top_ohm": 249,
+    "OV_top_ohm": 402,
+    "overdrive_V": 0.02,
+    "detector_budget_ns": 55,
+    "downstream_budget_ns": 245,
+    "sense_settling_budget_ns": 100,
+    "normal_V": [
+      3.219942244224422,
+      3.412002431724654
+    ],
+    "corridor_V": [
+      3.0,
+      3.6
+    ],
+    "slew_cases_V_per_us": [
+      0.01,
+      0.1,
+      1.0
+    ]
+  },
+  "interpretation": {
+    "values": "All proposal entries are design allocations or retained review inputs, not blanket component specifications or measurements.",
+    "reference_fraction": "0.2% allocated total. Compounded initial0.05% and6ppm/C BOX over165C consume0.1490495%; remaining0.0509505% must cover applicable line/load,assembly,aging,noise and other terms.",
+    "comparator_offset": "10mV total equivalent input allocation; includes applicable offset and common-mode/supply/temperature errors, excludes separately enumerated hysteresis and bias.",
+    "hysteresis": "0..4mV full-width allocation, centered around effective input offset. TLV3202 only specifies1.2mV typical; this allocation is UNVERIFIED.",
+    "resistors": "Independent0.35% per resistor total allocation, not an exact selected resistor specification.",
+    "timing": "55ns detector,245ns downstream,100ns sensing-settling allocations. None is an end-to-end measured or certified delay. No guaranteed arbitrary ramp response is inferred from step-test delay.",
+    "bias": "5nA bound at source test common mode; application at reference common mode remains open.",
+    "overdrive": "20mV beyond worst allocated switching threshold, converted to rail voltage conservatively with maximum divider multiplier. Source conditions still need confirmation.",
+    "waveform": "Continuous monotone ramps only as a conditional budget exercise, after sufficient differential overdrive has been established. Step-through-corridor and narrow pulses are not certified.",
+    "power": "Observation power, reference settling, dead-rail injection, retained fault and final permission chain remain unimplemented."
+  },
+  "investigation_parts": [
+    "TLV3202AIDGKR",
+    "REF3425IDBVR"
+  ],
+  "release_gates": [
+    "Exact resistor identities and total drift/assembly/aging budget",
+    "Bound comparator hysteresis, bias and common-mode/supply errors over chosen conditions",
+    "Applicable max delay at actual supply, common mode, loading and declared waveform",
+    "Sense-node settling and downstream complete timing/load budget",
+    "Reference startup/disable/supply-slew behavior and monitor power-loss/backdrive",
+    "Retained clear, ACK/ARM recovery and receiver/watchdog permissions"
+  ],
+  "next_scope": "Resolve comparator threshold/delay applicability and the reference/monitor power boundary against this explicit allocation before declaring an isolated native subcell."
+}

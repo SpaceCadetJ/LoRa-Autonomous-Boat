@@ -1,0 +1,40 @@
+{
+  "scope": "Local viewer SVG, zoom and comparison-guide checks; no native circuit or hardware test",
+  "input_sha256": {
+    "reviews/codex/observation_3v3/README.md": "e10b27853bdaf05af219714a8162a4b6f07fe705eb68ef0155ab7594ed795a21",
+    "reviews/codex/observation_3v3/RESULTS.md": "af66a994d70db5907d64f4e0ac07536e50cd5ab097583555cf2427c57cc0d32d",
+    "reviews/codex/observation_3v3/ACCEPTANCE.md": "05a6314aff4216441f960dedf6a086f59af849a530cde496c63624331e9819ad",
+    "reviews/codex/observation_3v3/analysis.json": "62198987556c6ed8f003f4738e0f174f67c6a07719510ca5bd27e67eb39ced68",
+    "reviews/codex/observation_3v3/v2_observation_3v3.svg": "22675b3f61eea0fb0e0fb5a982ec2f051957e68302202127e06a512bf27bf68b",
+    "reviews/codex/observation_3v3/verify_viewer.cjs": "f6b1e734aba436df069656d0e1cc22d8274d2ab14839ba98f5f404a36f43e975",
+    "pm/index.template.html": "9d8f1573c0e054a19d56355b22c3aa5f2c5700d38ded6fe5a6628ad3e12a2b43"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "worksheet_checked": true,
+      "planning_svg_loaded": true,
+      "zoom_percent": 200,
+      "guide_and_numeric_tables": true,
+      "horizontal_page_overflow": false,
+      "dialog_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "worksheet_checked": true,
+      "planning_svg_loaded": true,
+      "zoom_percent": 200,
+      "guide_and_numeric_tables": true,
+      "horizontal_page_overflow": false,
+      "dialog_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

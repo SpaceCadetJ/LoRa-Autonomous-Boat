@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1000" viewBox="0 0 1280 1000"><rect width="1280" height="1000" fill="#f4f7fb"/><style>text{font-family:Arial,sans-serif;fill:#172638}.h{font-size:30px;font-weight:bold}.sub{font-size:18px;fill:#425874}.t{font-size:20px}.s{font-size:17px}.line{stroke:#246789;stroke-width:3;fill:none}.box{fill:white;stroke:#9bb3c9;stroke-width:2}.hold{fill:#fff5e7;stroke:#b86e12;stroke-width:2;stroke-dasharray:8 5}</style>
+<text x="40" y="52" class="h">ACT-07 | 3.3 V observation allocation</text>
+<text x="40" y="86" class="sub">Functional proposal only · no native connection · ACT-04 QUAL_OK / ACK remain low</text>
+<rect x="40" y="115" width="1200" height="62" rx="10" class="hold"/>
+<text x="58" y="141" class="t">Exact investigation parts: TLV3202AIDGKR + REF3425IDBVR</text>
+<text x="58" y="165" class="s">Resistors, supply / EN strategy, bypass, retention and partial-power behavior are not accepted.</text>
+<rect x="40" y="204" width="290" height="125" rx="10" class="box"/>
+<text x="58" y="232" class="t">UV divider: 249 ohm / 1k</text>
+<text x="58" y="262" class="s">Observed +3V3 to top resistor</text>
+<text x="58" y="289" class="s">Sense node to 1k to GND</text>
+<text x="58" y="314" class="s">Nominal center: 3.1225 V</text>
+<rect x="40" y="355" width="290" height="125" rx="10" class="box"/>
+<text x="58" y="383" class="t">OV divider: 402 ohm / 1k</text>
+<text x="58" y="413" class="s">Observed +3V3 to top resistor</text>
+<text x="58" y="440" class="s">Sense node to 1k to GND</text>
+<text x="58" y="465" class="s">Nominal center: 3.5050 V</text>
+<rect x="390" y="204" width="375" height="276" rx="10" class="box"/>
+<text x="408" y="233" class="t">Comparator · supply unresolved</text>
+<text x="408" y="268" class="s">Channel 1: +pin3 UV / -pin2 REF</text>
+<text x="408" y="299" class="t">pin1 UV_OK goes LOW on UV</text>
+<text x="408" y="368" class="s">Channel 2: +pin5 REF / -pin6 OV</text>
+<text x="408" y="399" class="t">pin7 OV_OK goes LOW on OV</text>
+<text x="408" y="446" class="s">pin4 GND · pin8 monitor supply</text>
+<path d="M330 273H384 M330 422H384" class="line"/>
+<rect x="825" y="204" width="415" height="276" rx="10" class="hold"/>
+<text x="843" y="235" class="t">Separate push-pull outputs</text>
+<text x="843" y="268" class="s">Do not wire outputs together.</text>
+<text x="843" y="299" class="s">Future AND + retained-clear interface</text>
+<text x="843" y="336" class="t">LOCAL_3V3_OK is only a proposal.</text>
+<text x="843" y="372" class="s">Missing 5V / receiver / watchdog /</text>
+<text x="843" y="398" class="s">stop / ACK qualifications stay disabled.</text>
+<text x="843" y="447" class="s">No connection to QUAL_OK is made.</text>
+<path d="M765 290H819 M765 391H819" stroke="#b86e12" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="40" y="508" width="1200" height="132" rx="10" class="box"/>
+<text x="58" y="539" class="t">Reference / power: settle before permission; include charged output capacitance</text>
+<text x="58" y="571" class="s">REF3425: OUT_F6 / OUT_S5 at reference node; GND_F1 / GND_S2 at ground; IN4 and EN3 unresolved.</text>
+<text x="58" y="601" class="s">0.2% reference allocation; about 0.14905% already consumed by initial error + full-span BOX drift.</text>
+<text x="58" y="626" class="s">Slow supply ramps and dead-comparator input clamps require a power-state review.</text>
+<rect x="40" y="667" width="1200" height="196" rx="10" class="box"/>
+<text x="58" y="699" class="t">Conditional fault budget: 20 mV sense overdrive, then 400 ns total response</text>
+<text x="58" y="737" class="t">UV: allocated overdrive at 3.071938 V</text>
+<text x="58" y="771" class="s">Headroom to corridor: 71.938 mV</text>
+<text x="58" y="805" class="s">Zero-margin slope ceiling: 0.179845 V/us</text>
+<text x="648" y="737" class="t">OV: allocated overdrive at 3.564040 V</text>
+<text x="648" y="771" class="s">Headroom to corridor: 35.960 mV</text>
+<text x="648" y="805" class="s">Zero-margin slope ceiling: 0.089899 V/us</text>
+<text x="58" y="842" class="s">0.01 V/us fits the arithmetic · 0.1 V/us exhausts OV · 1 V/us exhausts both</text>
+<rect x="40" y="890" width="1200" height="76" rx="10" class="hold"/>
+<text x="58" y="920" class="t">A passing calculation is not a ramp-response or startup guarantee.</text>
+<text x="58" y="949" class="s">Next: close comparator applicability and monitor/reference power states against this allocation.</text>
+</svg>
