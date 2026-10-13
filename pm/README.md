@@ -1,5 +1,9 @@
 # LoRa engineering workspace
 
+## Current verification packet — ACT-06, 2026-10-13 UTC
+
+The [supervisor comparison](../reviews/codex/supervisor_comparison/README.md) now provides concrete divider values, five verified integrated-window identities, recovery/error-budget calculations and a [proposed local-permission path](../reviews/codex/supervisor_comparison/v2_supervisor_comparison.svg). Nineteen tests pass for this conditional screen. Neither option closes the complete timing/power boundary; ACT-04 stays native and default disabled. Next: one 3.3 V observation subcell with applicable maximum detection delay and positive divider/reference guard. This supersedes earlier next-task text below.
+
 ## Current verification packet — ACT-05, 2026-10-12
 
 The [rail-supervision selection review](../reviews/codex/rail_qualification/README.md) and [interactive interval explorer](../reviews/codex/rail_qualification/index.html) show why the first fixed-window proposal is held: assertion/recovery conflicts, unknown maximum detection delay and an illustrative input-edge violation. Calculations include a separate accuracy-basis sensitivity; no silicon or hardware acceptance is inferred. ACT-04 remains the latest native circuit, with qualification and ACK default low. Next: compare an adjustable window with an integrated window/reset candidate and conditioned edges. This supersedes earlier next-task text below.

@@ -1,0 +1,212 @@
+{
+  "schema": 1,
+  "revision": "ACT-06",
+  "classification": "conditional_component_comparison",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "parts_selected": false,
+  "native_commands_rerun": false,
+  "hardware_accepted": false,
+  "QUAL_OK_implemented": false,
+  "ACK_implemented": false,
+  "rails": {
+    "3V3": {
+      "nominal_V": 3.3,
+      "converter_V": [
+        3.219942244224422,
+        3.412002431724654
+      ],
+      "corridor_V": [
+        3.0,
+        3.6
+      ],
+      "corridor_basis": "Retained ACT-04 logic timing range; not a board-wide acceptance envelope."
+    },
+    "5V": {
+      "nominal_V": 5.0,
+      "converter_V": [
+        4.866303235118693,
+        5.189909215041985
+      ],
+      "corridor_V": [
+        4.5,
+        5.5
+      ],
+      "corridor_basis": "Proposed performance comparison; not full TXU operating range or receiver acceptance."
+    }
+  },
+  "integrated": {
+    "family": "TPS3703",
+    "source": "https://www.ti.com/lit/ds/symlink/tps3703.pdf",
+    "document": "SBVS249B, November2020",
+    "sections": [
+      "7.5",
+      "7.6",
+      "8.3.4",
+      "8.4",
+      "9.1.5 Eq7",
+      "9.2.1.2 Eq8/9",
+      "12.1 Table12-1",
+      "orderable addendum"
+    ],
+    "accuracy_fraction_of_nominal_rail": 0.007,
+    "hysteresis_fraction": [
+      0.003,
+      0.008
+    ],
+    "hysteresis_main_basis": "nominal comparator trip, screening assumption; include actual-trip sensitivity",
+    "cases": [
+      {
+        "rail_id": "3V3",
+        "part": "TPS3703A4330DSER",
+        "window_fraction": 0.04
+      },
+      {
+        "rail_id": "3V3",
+        "part": "TPS3703A5330DSER",
+        "window_fraction": 0.05
+      },
+      {
+        "rail_id": "3V3",
+        "part": "TPS3703A6330DSER",
+        "window_fraction": 0.06
+      },
+      {
+        "rail_id": "3V3",
+        "part": "TPS3703A7330DSER",
+        "window_fraction": 0.07
+      },
+      {
+        "rail_id": "5V",
+        "part": "TPS3703A5500DSER",
+        "window_fraction": 0.05
+      }
+    ],
+    "detect_max_us": 30,
+    "detect_overdrive_fraction": 0.05,
+    "overdrive_basis": "Eq7: absolute difference from actual trip divided by nominal threshold. Main step screen uses each comparator nominal trip, not actual-trip multiplication.",
+    "detect_conditions": "VDD1.7..5.5V, -40..125C, RESET10k/10pF,5%threshold overdrive. A test step is not an arbitrary rail-ramp guarantee.",
+    "CT_open_release_ms": [
+      7,
+      13
+    ],
+    "startup_nominal_us": 300,
+    "CT_option_evaluation_unbounded_us": 450,
+    "MR_assert_delay_nominal_ns": 500,
+    "MR_pulse_min_us": 1,
+    "VDD_operating_V": [
+      1.7,
+      5.5
+    ],
+    "SENSE_operating_V": [
+      0,
+      5.5
+    ],
+    "POR_max_V": 1.0,
+    "POR_condition": "VOL<=0.25V,15uA; outputs undefined below POR",
+    "orderable_scope": "Only identities verified in TI addendum. No assumed A6500 identity."
+  },
+  "adjustable": {
+    "family": "TPS3700DDCR",
+    "source": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+    "document": "SBVS187G, February2019",
+    "sections": [
+      "5",
+      "6.5",
+      "6.6",
+      "7.3",
+      "8.2"
+    ],
+    "pins_DDC": {
+      "1": "OUTA",
+      "2": "GND",
+      "3": "INA+",
+      "4": "INB-",
+      "5": "VDD",
+      "6": "OUTB"
+    },
+    "rising_threshold_V": [
+      0.396,
+      0.404
+    ],
+    "falling_threshold_V": [
+      0.387,
+      0.4
+    ],
+    "polarity": "UV OUTA asserts on falling and releases on rising. OV OUTB asserts on rising and releases on falling. Use published rising/falling bounds directly; do not subtract hysteresis a second time.",
+    "input_bias_abs_A": {
+      "UV": 2.5e-08,
+      "OV": 1.5e-08
+    },
+    "bias_test_conditions": {
+      "UV": "VI=6.5V,VDD1.8V/18V",
+      "OV": "VI=0.1V,VDD1.8V/18V"
+    },
+    "bias_applicability_at_threshold_verified": false,
+    "dividers": {
+      "3V3": {
+        "UV_top_ohm": 6900,
+        "OV_top_ohm": 7870,
+        "bottom_ohm": 1000
+      },
+      "5V": {
+        "UV_top_ohm": 10900,
+        "OV_top_ohm": 12500,
+        "OV_top_series_ohm": [
+          12400,
+          100
+        ],
+        "bottom_ohm": 1000
+      }
+    },
+    "resistor_budgets": [
+      {
+        "id": "initial_0p1",
+        "fraction": 0.001,
+        "basis": "Assumed independent initial tolerance per resistor; no selected MPN."
+      },
+      {
+        "id": "temperature_sensitivity_0p35",
+        "fraction": 0.0035,
+        "basis": "Assumed0.1%initial+25ppm/C*100C; not a selected part specification. Aging/self-heating/ratio correlation not qualified."
+      }
+    ],
+    "preferred_values_source": "https://www.vishay.com/docs/28372/e-series.pdf",
+    "exact_resistor_MPNs_selected": false,
+    "formula": "Vrail=Vthreshold*(1+Rtop/Rbottom)+Ibias*Rtop, Ibias positive into sense pin; enumerate all extrema independently.",
+    "VDD_operating_V": [
+      1.8,
+      18
+    ],
+    "startup_max_us": 450,
+    "startup_condition": "After VDD exceeds1.8V; this is not a detection maximum.",
+    "input_transition_delay_nominal_us": [
+      18,
+      29
+    ],
+    "delay_conditions": "VDD5V,10mV sense-input overdrive,10k pullup; transitions refer to inputs. No max specified."
+  },
+  "interface": {
+    "proposed_conditioner": "SN74LVC1G17DBVR",
+    "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf",
+    "retention_investigation": "TPS3808G01DBVR",
+    "retention_source": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+    "pullup_example_ohm": 10000,
+    "existing_R42_ohm": 10000,
+    "pullup_V": 3.3,
+    "direct_divider_high_V": 1.65,
+    "ACT04_VIH_V": 2.0,
+    "direct_fault_bus_to_QUAL_OK_accepted": false,
+    "connection_contract": "Conditioned local permission remains a separate proposed port. No connection to ACT-04 QUAL_OK or ACK; no bypass of missing remote-ready/watchdog permissions."
+  },
+  "release_conditions": [
+    "Complete converter dynamic/PFM/aging envelope",
+    "Selected divider ratio budget across operating conditions and applicable bias bound",
+    "Detector maximum delay at a fault amplitude still within retained corridor",
+    "Total detector/conditioner/OE/receiver inhibit deadline under declared fault waveform",
+    "Retained clear and reset/ACK/ARM timing",
+    "Monitor-supply startup/collapse/backdrive and all external qualification sources"
+  ],
+  "hardware_failure_predicted": false
+}

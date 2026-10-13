@@ -69,3 +69,5 @@ reviews/codex/actuator_interlock/** -text
 reviews/codex/actuator_latch/** -text
 
 reviews/codex/rail_qualification/** -text
+
+reviews/codex/supervisor_comparison/** -text

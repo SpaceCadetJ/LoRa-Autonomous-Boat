@@ -1,0 +1,1164 @@
+{
+  "schema": 1,
+  "revision": "ACT-06",
+  "status": "conditional_component_comparison",
+  "source_sha256": {
+    "reviews/codex/supervisor_comparison/contract.json": "58bfdfe4880b51f8ee5ef52afc1cd7ab2f5b39da84d185c3386b7ebb70a7cc51",
+    "reviews/codex/rail_qualification/analysis.json": "1fec3e1941d8226de02d88c85efbe786b0f5bf1d204f915e84eed1d4a3d65d0d",
+    "reviews/codex/rail_qualification/input_manifest.json": "1860ed6540624b58d5adb88d08c79400b128733b098ae7d5d0c424ce2d9daf9f",
+    "reviews/codex/supervisor_comparison/input_manifest.json": "58a7778647af5294e973a9ff40474b039c94bf3d571b813b3a32c260cf423be4",
+    "reviews/codex/supervisor_comparison/model.py": "f6c0a4fb60f4d9b9af7cf2a699ab490766cc2e4dcaac67aa5fe64b0b09293dc0"
+  },
+  "prior_analysis_input_hashes_rechecked": 6,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "parts_selected": false,
+  "native_commands_rerun": false,
+  "hardware_accepted": false,
+  "hardware_failure_predicted": false,
+  "QUAL_OK_implemented": false,
+  "ACK_implemented": false,
+  "integrated_cases": [
+    {
+      "id": "TPS3703A4330DSER",
+      "part": "TPS3703A4330DSER",
+      "rail_id": "3V3",
+      "nominal_rail_V": 3.3,
+      "window_fraction": 0.04,
+      "nominal_trip_V": {
+        "UV": 3.1679999999999997,
+        "OV": 3.432
+      },
+      "accuracy_fraction_of_rail": 0.007,
+      "hysteresis_fraction": [
+        0.003,
+        0.008
+      ],
+      "hysteresis_basis": "Nominal comparator trip scaling assumption; sensitivity uses actual trip.",
+      "assert_V": {
+        "UV": [
+          3.1449,
+          3.1910999999999996
+        ],
+        "OV": [
+          3.4089,
+          3.4551
+        ]
+      },
+      "release_V": {
+        "UV": [
+          3.154404,
+          3.2164439999999996
+        ],
+        "OV": [
+          3.381444,
+          3.444804
+        ]
+      },
+      "converter_V": [
+        3.219942244224422,
+        3.412002431724654
+      ],
+      "logic_corridor_V": [
+        3.0,
+        3.6
+      ],
+      "screened_no_new_fault_band_V": [
+        3.1910999999999996,
+        3.4089
+      ],
+      "screened_recovery_band_V": [
+        3.2164439999999996,
+        3.381444
+      ],
+      "margins_V": {
+        "no_trip_lower": 0.028842244224422497,
+        "no_trip_upper": -0.0031024317246539646,
+        "recovery_lower": 0.0034982442244224643,
+        "recovery_upper": -0.03055843172465389,
+        "late_UV": 0.1448999999999998,
+        "late_OV": 0.14490000000000025
+      },
+      "static_screen_pass": false,
+      "reasons": [
+        "no_trip_upper",
+        "recovery_upper"
+      ],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false,
+      "actual_trip_hysteresis_sensitivity": {
+        "assert_V": {
+          "UV": [
+            3.1449,
+            3.1910999999999996
+          ],
+          "OV": [
+            3.4089,
+            3.4551
+          ]
+        },
+        "release_V": {
+          "UV": [
+            3.1543346999999993,
+            3.2166287999999996
+          ],
+          "OV": [
+            3.3816288,
+            3.4447346999999997
+          ]
+        },
+        "converter_V": [
+          3.219942244224422,
+          3.412002431724654
+        ],
+        "logic_corridor_V": [
+          3.0,
+          3.6
+        ],
+        "screened_no_new_fault_band_V": [
+          3.1910999999999996,
+          3.4089
+        ],
+        "screened_recovery_band_V": [
+          3.2166287999999996,
+          3.3816288
+        ],
+        "margins_V": {
+          "no_trip_lower": 0.028842244224422497,
+          "no_trip_upper": -0.0031024317246539646,
+          "recovery_lower": 0.0033134442244224793,
+          "recovery_upper": -0.030373631724653904,
+          "late_UV": 0.1448999999999998,
+          "late_OV": 0.14490000000000025
+        },
+        "static_screen_pass": false,
+        "reasons": [
+          "no_trip_upper",
+          "recovery_upper"
+        ],
+        "dynamic_screen_pass": false,
+        "hardware_accepted": false
+      },
+      "timing_step_screen": {
+        "overdrive_fraction": 0.05,
+        "denominator_basis": "Eq7 nominal comparator trip",
+        "propagation_max_us_at_stated_test": 30,
+        "UV_test_rail_V": 2.9865,
+        "OV_test_rail_V": 3.6267,
+        "UV_corridor_margin_V": -0.013500000000000068,
+        "OV_corridor_margin_V": -0.026699999999999946,
+        "test_amplitudes_inside_corridor": false,
+        "guarantee_established": false,
+        "interpretation": "Insufficient evidence for in-corridor shutdown; not a prediction of actual failure.",
+        "other_test_conditions": "VDD1.7..5.5V, -40..125C, RESET10k/10pF; exact table7.6 step/overdrive conditions apply.",
+        "earlier_actual_trip_denominator_sensitivity_V": {
+          "UV": 2.9876549999999997,
+          "OV": 3.627855
+        }
+      }
+    },
+    {
+      "id": "TPS3703A5330DSER",
+      "part": "TPS3703A5330DSER",
+      "rail_id": "3V3",
+      "nominal_rail_V": 3.3,
+      "window_fraction": 0.05,
+      "nominal_trip_V": {
+        "UV": 3.135,
+        "OV": 3.465
+      },
+      "accuracy_fraction_of_rail": 0.007,
+      "hysteresis_fraction": [
+        0.003,
+        0.008
+      ],
+      "hysteresis_basis": "Nominal comparator trip scaling assumption; sensitivity uses actual trip.",
+      "assert_V": {
+        "UV": [
+          3.1119,
+          3.1580999999999997
+        ],
+        "OV": [
+          3.4419,
+          3.4880999999999998
+        ]
+      },
+      "release_V": {
+        "UV": [
+          3.121305,
+          3.1831799999999997
+        ],
+        "OV": [
+          3.41418,
+          3.477705
+        ]
+      },
+      "converter_V": [
+        3.219942244224422,
+        3.412002431724654
+      ],
+      "logic_corridor_V": [
+        3.0,
+        3.6
+      ],
+      "screened_no_new_fault_band_V": [
+        3.1580999999999997,
+        3.4419
+      ],
+      "screened_recovery_band_V": [
+        3.1831799999999997,
+        3.41418
+      ],
+      "margins_V": {
+        "no_trip_lower": 0.061842244224422416,
+        "no_trip_upper": 0.029897568275345954,
+        "recovery_lower": 0.036762244224422425,
+        "recovery_upper": 0.002177568275345987,
+        "late_UV": 0.11189999999999989,
+        "late_OV": 0.11190000000000033
+      },
+      "static_screen_pass": true,
+      "reasons": [],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false,
+      "actual_trip_hysteresis_sensitivity": {
+        "assert_V": {
+          "UV": [
+            3.1119,
+            3.1580999999999997
+          ],
+          "OV": [
+            3.4419,
+            3.4880999999999998
+          ]
+        },
+        "release_V": {
+          "UV": [
+            3.1212356999999997,
+            3.1833647999999997
+          ],
+          "OV": [
+            3.4143648,
+            3.4776356999999996
+          ]
+        },
+        "converter_V": [
+          3.219942244224422,
+          3.412002431724654
+        ],
+        "logic_corridor_V": [
+          3.0,
+          3.6
+        ],
+        "screened_no_new_fault_band_V": [
+          3.1580999999999997,
+          3.4419
+        ],
+        "screened_recovery_band_V": [
+          3.1833647999999997,
+          3.4143648
+        ],
+        "margins_V": {
+          "no_trip_lower": 0.061842244224422416,
+          "no_trip_upper": 0.029897568275345954,
+          "recovery_lower": 0.03657744422442244,
+          "recovery_upper": 0.002362368275345972,
+          "late_UV": 0.11189999999999989,
+          "late_OV": 0.11190000000000033
+        },
+        "static_screen_pass": true,
+        "reasons": [],
+        "dynamic_screen_pass": false,
+        "hardware_accepted": false
+      },
+      "timing_step_screen": {
+        "overdrive_fraction": 0.05,
+        "denominator_basis": "Eq7 nominal comparator trip",
+        "propagation_max_us_at_stated_test": 30,
+        "UV_test_rail_V": 2.9551499999999997,
+        "OV_test_rail_V": 3.6613499999999997,
+        "UV_corridor_margin_V": -0.04485000000000028,
+        "OV_corridor_margin_V": -0.06134999999999957,
+        "test_amplitudes_inside_corridor": false,
+        "guarantee_established": false,
+        "interpretation": "Insufficient evidence for in-corridor shutdown; not a prediction of actual failure.",
+        "other_test_conditions": "VDD1.7..5.5V, -40..125C, RESET10k/10pF; exact table7.6 step/overdrive conditions apply.",
+        "earlier_actual_trip_denominator_sensitivity_V": {
+          "UV": 2.956305,
+          "OV": 3.662505
+        }
+      }
+    },
+    {
+      "id": "TPS3703A6330DSER",
+      "part": "TPS3703A6330DSER",
+      "rail_id": "3V3",
+      "nominal_rail_V": 3.3,
+      "window_fraction": 0.06,
+      "nominal_trip_V": {
+        "UV": 3.102,
+        "OV": 3.4979999999999998
+      },
+      "accuracy_fraction_of_rail": 0.007,
+      "hysteresis_fraction": [
+        0.003,
+        0.008
+      ],
+      "hysteresis_basis": "Nominal comparator trip scaling assumption; sensitivity uses actual trip.",
+      "assert_V": {
+        "UV": [
+          3.0789,
+          3.1250999999999998
+        ],
+        "OV": [
+          3.4749,
+          3.5210999999999997
+        ]
+      },
+      "release_V": {
+        "UV": [
+          3.088206,
+          3.1499159999999997
+        ],
+        "OV": [
+          3.446916,
+          3.5106059999999997
+        ]
+      },
+      "converter_V": [
+        3.219942244224422,
+        3.412002431724654
+      ],
+      "logic_corridor_V": [
+        3.0,
+        3.6
+      ],
+      "screened_no_new_fault_band_V": [
+        3.1250999999999998,
+        3.4749
+      ],
+      "screened_recovery_band_V": [
+        3.1499159999999997,
+        3.446916
+      ],
+      "margins_V": {
+        "no_trip_lower": 0.09484224422442233,
+        "no_trip_upper": 0.06289756827534587,
+        "recovery_lower": 0.07002624422442238,
+        "recovery_upper": 0.03491356827534586,
+        "late_UV": 0.07889999999999997,
+        "late_OV": 0.07890000000000041
+      },
+      "static_screen_pass": true,
+      "reasons": [],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false,
+      "actual_trip_hysteresis_sensitivity": {
+        "assert_V": {
+          "UV": [
+            3.0789,
+            3.1250999999999998
+          ],
+          "OV": [
+            3.4749,
+            3.5210999999999997
+          ]
+        },
+        "release_V": {
+          "UV": [
+            3.0881366999999997,
+            3.1501007999999997
+          ],
+          "OV": [
+            3.4471008,
+            3.5105367
+          ]
+        },
+        "converter_V": [
+          3.219942244224422,
+          3.412002431724654
+        ],
+        "logic_corridor_V": [
+          3.0,
+          3.6
+        ],
+        "screened_no_new_fault_band_V": [
+          3.1250999999999998,
+          3.4749
+        ],
+        "screened_recovery_band_V": [
+          3.1501007999999997,
+          3.4471008
+        ],
+        "margins_V": {
+          "no_trip_lower": 0.09484224422442233,
+          "no_trip_upper": 0.06289756827534587,
+          "recovery_lower": 0.0698414442244224,
+          "recovery_upper": 0.03509836827534585,
+          "late_UV": 0.07889999999999997,
+          "late_OV": 0.07890000000000041
+        },
+        "static_screen_pass": true,
+        "reasons": [],
+        "dynamic_screen_pass": false,
+        "hardware_accepted": false
+      },
+      "timing_step_screen": {
+        "overdrive_fraction": 0.05,
+        "denominator_basis": "Eq7 nominal comparator trip",
+        "propagation_max_us_at_stated_test": 30,
+        "UV_test_rail_V": 2.9238,
+        "OV_test_rail_V": 3.6959999999999997,
+        "UV_corridor_margin_V": -0.07620000000000005,
+        "OV_corridor_margin_V": -0.09599999999999964,
+        "test_amplitudes_inside_corridor": false,
+        "guarantee_established": false,
+        "interpretation": "Insufficient evidence for in-corridor shutdown; not a prediction of actual failure.",
+        "other_test_conditions": "VDD1.7..5.5V, -40..125C, RESET10k/10pF; exact table7.6 step/overdrive conditions apply.",
+        "earlier_actual_trip_denominator_sensitivity_V": {
+          "UV": 2.9249549999999997,
+          "OV": 3.697155
+        }
+      }
+    },
+    {
+      "id": "TPS3703A7330DSER",
+      "part": "TPS3703A7330DSER",
+      "rail_id": "3V3",
+      "nominal_rail_V": 3.3,
+      "window_fraction": 0.07,
+      "nominal_trip_V": {
+        "UV": 3.0689999999999995,
+        "OV": 3.531
+      },
+      "accuracy_fraction_of_rail": 0.007,
+      "hysteresis_fraction": [
+        0.003,
+        0.008
+      ],
+      "hysteresis_basis": "Nominal comparator trip scaling assumption; sensitivity uses actual trip.",
+      "assert_V": {
+        "UV": [
+          3.0458999999999996,
+          3.0920999999999994
+        ],
+        "OV": [
+          3.5079000000000002,
+          3.5541
+        ]
+      },
+      "release_V": {
+        "UV": [
+          3.0551069999999996,
+          3.1166519999999993
+        ],
+        "OV": [
+          3.479652,
+          3.543507
+        ]
+      },
+      "converter_V": [
+        3.219942244224422,
+        3.412002431724654
+      ],
+      "logic_corridor_V": [
+        3.0,
+        3.6
+      ],
+      "screened_no_new_fault_band_V": [
+        3.0920999999999994,
+        3.5079000000000002
+      ],
+      "screened_recovery_band_V": [
+        3.1166519999999993,
+        3.479652
+      ],
+      "margins_V": {
+        "no_trip_lower": 0.1278422442244227,
+        "no_trip_upper": 0.09589756827534623,
+        "recovery_lower": 0.10329024422442279,
+        "recovery_upper": 0.06764956827534618,
+        "late_UV": 0.04589999999999961,
+        "late_OV": 0.04590000000000005
+      },
+      "static_screen_pass": true,
+      "reasons": [],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false,
+      "actual_trip_hysteresis_sensitivity": {
+        "assert_V": {
+          "UV": [
+            3.0458999999999996,
+            3.0920999999999994
+          ],
+          "OV": [
+            3.5079000000000002,
+            3.5541
+          ]
+        },
+        "release_V": {
+          "UV": [
+            3.0550376999999993,
+            3.1168367999999993
+          ],
+          "OV": [
+            3.4798368,
+            3.5434377
+          ]
+        },
+        "converter_V": [
+          3.219942244224422,
+          3.412002431724654
+        ],
+        "logic_corridor_V": [
+          3.0,
+          3.6
+        ],
+        "screened_no_new_fault_band_V": [
+          3.0920999999999994,
+          3.5079000000000002
+        ],
+        "screened_recovery_band_V": [
+          3.1168367999999993,
+          3.4798368
+        ],
+        "margins_V": {
+          "no_trip_lower": 0.1278422442244227,
+          "no_trip_upper": 0.09589756827534623,
+          "recovery_lower": 0.1031054442244228,
+          "recovery_upper": 0.06783436827534617,
+          "late_UV": 0.04589999999999961,
+          "late_OV": 0.04590000000000005
+        },
+        "static_screen_pass": true,
+        "reasons": [],
+        "dynamic_screen_pass": false,
+        "hardware_accepted": false
+      },
+      "timing_step_screen": {
+        "overdrive_fraction": 0.05,
+        "denominator_basis": "Eq7 nominal comparator trip",
+        "propagation_max_us_at_stated_test": 30,
+        "UV_test_rail_V": 2.8924499999999997,
+        "OV_test_rail_V": 3.7306500000000002,
+        "UV_corridor_margin_V": -0.10755000000000026,
+        "OV_corridor_margin_V": -0.13065000000000015,
+        "test_amplitudes_inside_corridor": false,
+        "guarantee_established": false,
+        "interpretation": "Insufficient evidence for in-corridor shutdown; not a prediction of actual failure.",
+        "other_test_conditions": "VDD1.7..5.5V, -40..125C, RESET10k/10pF; exact table7.6 step/overdrive conditions apply.",
+        "earlier_actual_trip_denominator_sensitivity_V": {
+          "UV": 2.8936049999999995,
+          "OV": 3.731805
+        }
+      }
+    },
+    {
+      "id": "TPS3703A5500DSER",
+      "part": "TPS3703A5500DSER",
+      "rail_id": "5V",
+      "nominal_rail_V": 5.0,
+      "window_fraction": 0.05,
+      "nominal_trip_V": {
+        "UV": 4.75,
+        "OV": 5.25
+      },
+      "accuracy_fraction_of_rail": 0.007,
+      "hysteresis_fraction": [
+        0.003,
+        0.008
+      ],
+      "hysteresis_basis": "Nominal comparator trip scaling assumption; sensitivity uses actual trip.",
+      "assert_V": {
+        "UV": [
+          4.715,
+          4.785
+        ],
+        "OV": [
+          5.215,
+          5.285
+        ]
+      },
+      "release_V": {
+        "UV": [
+          4.7292499999999995,
+          4.823
+        ],
+        "OV": [
+          5.173,
+          5.26925
+        ]
+      },
+      "converter_V": [
+        4.866303235118693,
+        5.189909215041985
+      ],
+      "logic_corridor_V": [
+        4.5,
+        5.5
+      ],
+      "screened_no_new_fault_band_V": [
+        4.785,
+        5.215
+      ],
+      "screened_recovery_band_V": [
+        4.823,
+        5.173
+      ],
+      "margins_V": {
+        "no_trip_lower": 0.08130323511869264,
+        "no_trip_upper": 0.025090784958014645,
+        "recovery_lower": 0.043303235118692385,
+        "recovery_upper": -0.01690921504198517,
+        "late_UV": 0.21499999999999986,
+        "late_OV": 0.21499999999999986
+      },
+      "static_screen_pass": false,
+      "reasons": [
+        "recovery_upper"
+      ],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false,
+      "actual_trip_hysteresis_sensitivity": {
+        "assert_V": {
+          "UV": [
+            4.715,
+            4.785
+          ],
+          "OV": [
+            5.215,
+            5.285
+          ]
+        },
+        "release_V": {
+          "UV": [
+            4.729144999999999,
+            4.8232800000000005
+          ],
+          "OV": [
+            5.17328,
+            5.269145
+          ]
+        },
+        "converter_V": [
+          4.866303235118693,
+          5.189909215041985
+        ],
+        "logic_corridor_V": [
+          4.5,
+          5.5
+        ],
+        "screened_no_new_fault_band_V": [
+          4.785,
+          5.215
+        ],
+        "screened_recovery_band_V": [
+          4.8232800000000005,
+          5.17328
+        ],
+        "margins_V": {
+          "no_trip_lower": 0.08130323511869264,
+          "no_trip_upper": 0.025090784958014645,
+          "recovery_lower": 0.04302323511869233,
+          "recovery_upper": -0.016629215041985113,
+          "late_UV": 0.21499999999999986,
+          "late_OV": 0.21499999999999986
+        },
+        "static_screen_pass": false,
+        "reasons": [
+          "recovery_upper"
+        ],
+        "dynamic_screen_pass": false,
+        "hardware_accepted": false
+      },
+      "timing_step_screen": {
+        "overdrive_fraction": 0.05,
+        "denominator_basis": "Eq7 nominal comparator trip",
+        "propagation_max_us_at_stated_test": 30,
+        "UV_test_rail_V": 4.4775,
+        "OV_test_rail_V": 5.5475,
+        "UV_corridor_margin_V": -0.022499999999999964,
+        "OV_corridor_margin_V": -0.04750000000000032,
+        "test_amplitudes_inside_corridor": false,
+        "guarantee_established": false,
+        "interpretation": "Insufficient evidence for in-corridor shutdown; not a prediction of actual failure.",
+        "other_test_conditions": "VDD1.7..5.5V, -40..125C, RESET10k/10pF; exact table7.6 step/overdrive conditions apply.",
+        "earlier_actual_trip_denominator_sensitivity_V": {
+          "UV": 4.4792499999999995,
+          "OV": 5.549250000000001
+        }
+      }
+    }
+  ],
+  "divider_cases": [
+    {
+      "id": "3V3_initial_0p1",
+      "family": "TPS3700",
+      "part_selected": false,
+      "rail_id": "3V3",
+      "budget_id": "initial_0p1",
+      "resistor_tolerance_fraction": 0.001,
+      "top_elements_ohm": {
+        "UV": [
+          6900.0
+        ],
+        "OV": [
+          7870.0
+        ]
+      },
+      "bottom_ohm": 1000.0,
+      "bias_bound_A_assumed": {
+        "UV": 2.5e-08,
+        "OV": 1.5e-08
+      },
+      "bias_applicability_at_threshold_qualified": false,
+      "divider_currents": {
+        "UV": {
+          "rail_top_current_A": [
+            0.00040717728084882493,
+            0.00043233453792078835
+          ],
+          "ground_bottom_current_A": [
+            0.0004071586099627489,
+            0.00043235320880686434
+          ],
+          "bias_applied_as_assumption": true,
+          "nominal_no_bias_current_A": 0.00041772151898734173
+        },
+        "OV": {
+          "rail_top_current_A": [
+            0.00036265056580673247,
+            0.0003850544362541407
+          ],
+          "ground_bottom_current_A": [
+            0.0003626389479938801,
+            0.000385066054066993
+          ],
+          "bias_applied_as_assumption": true,
+          "nominal_no_bias_current_A": 0.0003720405862457723
+        },
+        "total_rail_current_A": [
+          0.0007698278466555573,
+          0.000817388974174929
+        ]
+      },
+      "assert_V": {
+        "UV": [
+          3.0517924077647356,
+          3.165698198025526
+        ],
+        "OV": [
+          3.5061752548631873,
+          3.589963493375325
+        ]
+      },
+      "release_V": {
+        "UV": [
+          3.1227683318406596,
+          3.197353453280781
+        ],
+        "OV": [
+          3.4264867733447053,
+          3.5544204703523024
+        ]
+      },
+      "converter_V": [
+        3.219942244224422,
+        3.412002431724654
+      ],
+      "logic_corridor_V": [
+        3.0,
+        3.6
+      ],
+      "screened_no_new_fault_band_V": [
+        3.165698198025526,
+        3.5061752548631873
+      ],
+      "screened_recovery_band_V": [
+        3.197353453280781,
+        3.4264867733447053
+      ],
+      "margins_V": {
+        "no_trip_lower": 0.054244046198896,
+        "no_trip_upper": 0.09417282313853326,
+        "recovery_lower": 0.02258879094364108,
+        "recovery_upper": 0.0144843416200513,
+        "late_UV": 0.05179240776473559,
+        "late_OV": 0.010036506624675035
+      },
+      "static_screen_pass": true,
+      "reasons": [],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false
+    },
+    {
+      "id": "3V3_temperature_sensitivity_0p35",
+      "family": "TPS3700",
+      "part_selected": false,
+      "rail_id": "3V3",
+      "budget_id": "temperature_sensitivity_0p35",
+      "resistor_tolerance_fraction": 0.0035,
+      "top_elements_ohm": {
+        "UV": [
+          6900.0
+        ],
+        "OV": [
+          7870.0
+        ]
+      },
+      "bottom_ohm": 1000.0,
+      "bias_bound_A_assumed": {
+        "UV": 2.5e-08,
+        "OV": 1.5e-08
+      },
+      "bias_applicability_at_threshold_qualified": false,
+      "divider_currents": {
+        "UV": {
+          "rail_top_current_A": [
+            0.00040616288013779896,
+            0.0004334191625403664
+          ],
+          "ground_bottom_current_A": [
+            0.00040614420925172304,
+            0.0004334378334264424
+          ],
+          "bias_applied_as_assumption": true,
+          "nominal_no_bias_current_A": 0.00041772151898734173
+        },
+        "OV": {
+          "rail_top_current_A": [
+            0.0003617470973042404,
+            0.0003860204491622203
+          ],
+          "ground_bottom_current_A": [
+            0.000361735479491388,
+            0.0003860320669750727
+          ],
+          "bias_applied_as_assumption": true,
+          "nominal_no_bias_current_A": 0.0003720405862457723
+        },
+        "total_rail_current_A": [
+          0.0007679099774420394,
+          0.0008194396117025867
+        ]
+      },
+      "assert_V": {
+        "UV": [
+          3.0385011979204037,
+          3.1795609612512545
+        ],
+        "OV": [
+          3.4906628116054934,
+          3.6059329940330036
+        ]
+      },
+      "release_V": {
+        "UV": [
+          3.1091680140639015,
+          3.2113548398262672
+        ],
+        "OV": [
+          3.411326892322982,
+          3.5702318600641125
+        ]
+      },
+      "converter_V": [
+        3.219942244224422,
+        3.412002431724654
+      ],
+      "logic_corridor_V": [
+        3.0,
+        3.6
+      ],
+      "screened_no_new_fault_band_V": [
+        3.1795609612512545,
+        3.4906628116054934
+      ],
+      "screened_recovery_band_V": [
+        3.2113548398262672,
+        3.411326892322982
+      ],
+      "margins_V": {
+        "no_trip_lower": 0.040381282973167565,
+        "no_trip_upper": 0.0786603798808394,
+        "recovery_lower": 0.008587404398154863,
+        "recovery_upper": -0.0006755394016719762,
+        "late_UV": 0.03850119792040374,
+        "late_OV": -0.005932994033003514
+      },
+      "static_screen_pass": false,
+      "reasons": [
+        "recovery_upper",
+        "late_OV"
+      ],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false
+    },
+    {
+      "id": "5V_initial_0p1",
+      "family": "TPS3700",
+      "part_selected": false,
+      "rail_id": "5V",
+      "budget_id": "initial_0p1",
+      "resistor_tolerance_fraction": 0.001,
+      "top_elements_ohm": {
+        "UV": [
+          10900.0
+        ],
+        "OV": [
+          12400.0,
+          100.0
+        ]
+      },
+      "bottom_ohm": 1000.0,
+      "bias_bound_A_assumed": {
+        "UV": 2.5e-08,
+        "OV": 1.5e-08
+      },
+      "bias_applicability_at_threshold_qualified": false,
+      "divider_currents": {
+        "UV": {
+          "rail_top_current_A": [
+            0.00040852241960717374,
+            0.00043656548902196185
+          ],
+          "ground_bottom_current_A": [
+            0.000408501621287846,
+            0.00043658628734128963
+          ],
+          "bias_applied_as_assumption": true,
+          "nominal_no_bias_current_A": 0.0004201680672268908
+        },
+        "OV": {
+          "rail_top_current_A": [
+            0.00036010568839447174,
+            0.00038482365328602566
+          ],
+          "ground_bottom_current_A": [
+            0.0003600929106166939,
+            0.0003848364310638034
+          ],
+          "bias_applied_as_assumption": true,
+          "nominal_no_bias_current_A": 0.00037037037037037035
+        },
+        "total_rail_current_A": [
+          0.0007686281080016455,
+          0.0008213891423079875
+        ]
+      },
+      "assert_V": {
+        "UV": [
+          4.596599600671829,
+          4.769001501228728
+        ],
+        "OV": [
+          5.335922577609891,
+          5.464297797610111
+        ]
+      },
+      "release_V": {
+        "UV": [
+          4.703503596675826,
+          4.816688788516016
+        ],
+        "OV": [
+          5.214647352834666,
+          5.41019769751001
+        ]
+      },
+      "converter_V": [
+        4.866303235118693,
+        5.189909215041985
+      ],
+      "logic_corridor_V": [
+        4.5,
+        5.5
+      ],
+      "screened_no_new_fault_band_V": [
+        4.769001501228728,
+        5.335922577609891
+      ],
+      "screened_recovery_band_V": [
+        4.816688788516016,
+        5.214647352834666
+      ],
+      "margins_V": {
+        "no_trip_lower": 0.09730173388996466,
+        "no_trip_upper": 0.14601336256790542,
+        "recovery_lower": 0.049614446602676665,
+        "recovery_upper": 0.024738137792680526,
+        "late_UV": 0.09659960067182904,
+        "late_OV": 0.035702202389889415
+      },
+      "static_screen_pass": true,
+      "reasons": [],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false
+    },
+    {
+      "id": "5V_temperature_sensitivity_0p35",
+      "family": "TPS3700",
+      "part_selected": false,
+      "rail_id": "5V",
+      "budget_id": "temperature_sensitivity_0p35",
+      "resistor_tolerance_fraction": 0.0035,
+      "top_elements_ohm": {
+        "UV": [
+          10900.0
+        ],
+        "OV": [
+          12400.0,
+          100.0
+        ]
+      },
+      "bottom_ohm": 1000.0,
+      "bias_bound_A_assumed": {
+        "UV": 2.5e-08,
+        "OV": 1.5e-08
+      },
+      "bias_applicability_at_threshold_qualified": false,
+      "divider_currents": {
+        "UV": {
+          "rail_top_current_A": [
+            0.0004075046704281814,
+            0.0004376607308387748
+          ],
+          "ground_bottom_current_A": [
+            0.00040748387210885365,
+            0.00043768152915810247
+          ],
+          "bias_applied_as_assumption": true,
+          "nominal_no_bias_current_A": 0.0004201680672268908
+        },
+        "OV": {
+          "rail_top_current_A": [
+            0.0003592085613403969,
+            0.00038578908866529043
+          ],
+          "ground_bottom_current_A": [
+            0.0003591957835626191,
+            0.00038580186644306813
+          ],
+          "bias_applied_as_assumption": true,
+          "nominal_no_bias_current_A": 0.00037037037037037035
+        },
+        "total_rail_current_A": [
+          0.0007667132317685783,
+          0.0008234498195040653
+        ]
+      },
+      "assert_V": {
+        "UV": [
+          4.575603341642377,
+          4.790900648933142
+        ],
+        "OV": [
+          5.311284008267937,
+          5.489662315808456
+        ]
+      },
+      "release_V": {
+        "UV": [
+          4.682019036709642,
+          4.8388069208849736
+        ],
+        "OV": [
+          5.190568761631165,
+          5.435311086505897
+        ]
+      },
+      "converter_V": [
+        4.866303235118693,
+        5.189909215041985
+      ],
+      "logic_corridor_V": [
+        4.5,
+        5.5
+      ],
+      "screened_no_new_fault_band_V": [
+        4.790900648933142,
+        5.311284008267937
+      ],
+      "screened_recovery_band_V": [
+        4.8388069208849736,
+        5.190568761631165
+      ],
+      "margins_V": {
+        "no_trip_lower": 0.07540258618555118,
+        "no_trip_upper": 0.1213747932259519,
+        "recovery_lower": 0.027496314233719232,
+        "recovery_upper": 0.0006595465891798824,
+        "late_UV": 0.0756033416423767,
+        "late_OV": 0.010337684191544128
+      },
+      "static_screen_pass": true,
+      "reasons": [],
+      "dynamic_screen_pass": false,
+      "hardware_accepted": false
+    }
+  ],
+  "resistor_feasibility": {
+    "fixed_proposal_budget_suprema_fraction": {
+      "3V3_UV": 0.005027132366653642,
+      "3V3_OV": 0.0025726613182573965,
+      "5V_UV": 0.006590501317812747,
+      "5V_OV": 0.0035686542529961285
+    },
+    "any_3V3_OV_ratio_budget_supremum_fraction": 0.002980504744227841,
+    "3V3_OV_ratio_cases": [
+      {
+        "resistor_tolerance_fraction": 0.001,
+        "required_ratio_lower_exclusive": 7.8324963761811786,
+        "allowed_ratio_upper_exclusive": 7.894792282554533,
+        "has_feasible_ratio": true,
+        "guard_V": 0.0,
+        "qualification": "Conditional on threshold/bias assumptions and fixed1k bottom; no dynamic/aging budget."
+      },
+      {
+        "resistor_tolerance_fraction": 0.0035,
+        "required_ratio_lower_exclusive": 7.871757910199672,
+        "allowed_ratio_upper_exclusive": 7.855417351603938,
+        "has_feasible_ratio": false,
+        "guard_V": 0.0,
+        "qualification": "Conditional on threshold/bias assumptions and fixed1k bottom; no dynamic/aging budget."
+      }
+    ],
+    "strictly_less_than_supremum_required": true,
+    "all_dynamic_and_aging_guards_allocated": false,
+    "parts_selected": false
+  },
+  "summary": {
+    "integrated_cases": 5,
+    "divider_cases": 4,
+    "integrated_static_pass_parts": [
+      "TPS3703A5330DSER",
+      "TPS3703A6330DSER",
+      "TPS3703A7330DSER"
+    ],
+    "divider_static_pass_cases": [
+      "3V3_initial_0p1",
+      "5V_initial_0p1",
+      "5V_temperature_sensitivity_0p35"
+    ],
+    "in_corridor_detection_guarantee_established": false,
+    "selection_accepted": false
+  },
+  "method": {
+    "integrated_accuracy": "Rail-additive0.007 per reviewed Eq8/9 numerical example",
+    "hysteresis": "Nominal-trip main assumption; actual-trip sensitivity separate",
+    "timing": "Eq7 nominal-trip denominator,5% step amplitude at latest assertion corner; not arbitrary ramp timing",
+    "divider": "Enumerate independent threshold, each series resistor, bottom resistor and signed bias extrema; no RSS or duplicate hysteresis",
+    "currents": "Top=(Vrail+Ibias*Rb)/(Rt+Rb); bottom=(Vrail-Ibias*Rt)/(Rt+Rb); Ibias positive into pin",
+    "budget": "0.1% initial versus assumed0.1%+25ppm/C*100C=0.35%; no resistor MPN selected"
+  },
+  "limitations": [
+    "Static arithmetic cannot qualify shutdown latency, overshoot, ramp response, startup or fault capture.",
+    "Nominal-trip and actual-trip hysteresis screens are engineering interpretations, not blanket silicon guarantees.",
+    "Published TPS3700 input bias is tested away from threshold; applicability of the assumed symmetric envelope remains unqualified.",
+    "Unrelated resistor extrema are conservative; correlation/aging/self-heating and total ratio budget remain unqualified.",
+    "3V3 corridor is local ACT-04 timing, not whole-board acceptance; IMU2 is still separate. 5V corridor is a proposed performance comparison.",
+    "No remote-ready, command-watchdog or ACK source is implemented; actuator permission remains disabled.",
+    "No regulator dynamic/PFM/aging completeness, hardware-failure prediction, power, procurement or fabrication approval follows."
+  ]
+}

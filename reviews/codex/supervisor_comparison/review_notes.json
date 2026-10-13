@@ -1,0 +1,42 @@
+{
+  "revision": "ACT-06",
+  "review_date_utc": "2026-10-13",
+  "source_revision": "a251f5b2cc55149874dcc30c014c026cb4b40a2b",
+  "classification": "conditional_comparison_not_circuit_acceptance",
+  "reviews": [
+    {
+      "reviewer": "power_native_review",
+      "scope": "Primary TPS3703 source and contract review; Eq7 denominator correction retained, no blocker."
+    },
+    {
+      "reviewer": "input_protection_review",
+      "scope": "Independent preferred-value, bias, polarity, series resistor and ratio-feasibility fixtures; final model/doc/diagram review passed."
+    },
+    {
+      "reviewer": "imu_candidate_validator",
+      "scope": "Model and 19 numeric/source/claim tests; source hashes replay."
+    },
+    {
+      "reviewer": "root",
+      "scope": "Reviewed calculation tables, source conditions and functional map; fixed mobile long-artifact-caption overflow; desktop/phone guide/zoom checks pass. Final diff review caught and repaired a temporary Windows text-decoding regression; the viewer test now checks the original Unicode title."
+    }
+  ],
+  "tests_passed": 19,
+  "preserved_input_hashes": 198,
+  "native_commands_rerun": false,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "parts_selected": false,
+  "hardware_tested": false,
+  "fabrication_approved": false,
+  "limitations": [
+    "Conditional divider bias at threshold and resistor budgets; no exact resistor MPN release.",
+    "Eq7 test amplitudes beyond retained corridors prevent an established in-corridor maximum-delay guarantee; actual failure is not predicted.",
+    "Retained logic/performance corridors are not a board or receiver acceptance envelope.",
+    "Complete converter/PFM/aging/transient, monitor startup/collapse and ACK ordering remain unqualified.",
+    "QUAL_OK/ACK, remote-ready and watchdog sources remain unimplemented/default disabled.",
+    "No new native check, firmware build, live hardware test or hosted CI outcome claimed."
+  ],
+  "next_packet": "One3V3 observation subcell with applicable maximum detector delay, positive total reference/divider guard, retained clear, conditioned output and missing-supply behavior before native insertion."
+}

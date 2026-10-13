@@ -1,0 +1,37 @@
+{
+  "scope": "Local viewer SVG, zoom and comparison-guide checks; no native circuit or hardware test",
+  "input_sha256": {
+    "reviews/codex/supervisor_comparison/README.md": "5e19609022a4754baf2e33e2eb365b3ada80ac090bc5a487dc347f7f523b4a75",
+    "reviews/codex/supervisor_comparison/RESULTS.md": "cb689f1d83845111a9d1407e5ce1fde356643dcc5aae258288942e704daaf87f",
+    "reviews/codex/supervisor_comparison/analysis.json": "c00400bcee21a1ae598920dc9af4c4491a9a49efafa0c4f5f016d3a913f5232c",
+    "reviews/codex/supervisor_comparison/v2_supervisor_comparison.svg": "a54e3a61df9c6d3da98208f2d99786c5b6fba718fa592d8e8a086ece3f54197c",
+    "reviews/codex/supervisor_comparison/verify_viewer.cjs": "d45151f70f268c1067e2df7bd0f65e81a41ecf5124ab0b729f1064c56f132117",
+    "pm/index.template.html": "a10749314801691ae5f7e8ef4dde0737e4fcedfb7b86b50774a89ac3faa54433"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "planning_svg_loaded": true,
+      "zoom_percent": 200,
+      "guide_and_numeric_tables": true,
+      "horizontal_page_overflow": false,
+      "dialog_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "planning_svg_loaded": true,
+      "zoom_percent": 200,
+      "guide_and_numeric_tables": true,
+      "horizontal_page_overflow": false,
+      "dialog_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

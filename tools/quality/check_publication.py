@@ -332,6 +332,13 @@ def main():
     assert all(rail[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
     assert not any(rail[k] for k in ["parts_selected", "hardware_tested", "fabrication_approved", "native_commands_rerun", "qualification_ports_implemented"])
     print("PASS ACT-05 portable screening evidence; circuit and qualification sources unchanged")
+    supervisor_root = "reviews/codex/supervisor_comparison/"
+    supervisor = read_json(supervisor_root + "packet_manifest.json")
+    check_hashes(supervisor["input_sha256"], "ACT-06 preserved review/native inputs")
+    check_hashes(supervisor["artifact_sha256"], "ACT-06 source, calculation and viewer artifacts")
+    assert all(supervisor[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
+    assert not any(supervisor[k] for k in ["parts_selected", "hardware_tested", "fabrication_approved", "native_commands_rerun", "qualification_ports_implemented"])
+    print("PASS ACT-06 portable comparison; no new circuit or permission driver")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -346,6 +353,7 @@ def main():
     pages += [ROOT / power_root / "README.md", ROOT / topology_root / "README.md", ROOT / input_root / "README.md", ROOT / leakage_root / "README.md", ROOT / capacitor_root / "README.md", *[ROOT / folder / "README.md" for folder in buck_roots], ROOT / actuator_root / "README.md", ROOT / enable_root / "README.md", ROOT / interlock_root / "README.md", ROOT / interlock_root / "RECEIVER_ACCEPTANCE.md"]
     pages += [ROOT / latch_root / "README.md", ROOT / latch_root / "TIMING.md"]
     pages += [ROOT / rail_root / "README.md", ROOT / rail_root / "QUALIFICATION.md"]
+    pages += [ROOT / supervisor_root / "README.md", ROOT / supervisor_root / "RESULTS.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

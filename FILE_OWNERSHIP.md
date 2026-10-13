@@ -176,3 +176,11 @@ Root claims reviews/codex/rail_qualification/** and current viewer/application/p
 ## ACT-05 review checkpoint — 2026-10-12 UTC
 
 All child write scopes are released. Root closes the conditional rail-window/recovery and signal-edge screening packet, viewer, application/portfolio links and selective publication. ACT-04 remains the latest native candidate, with QUAL_OK/ACK undriven and default low. No CAD/copper/firmware/purchasing or hardware release. Preserve all older packets and both unrelated dirty tools. Next bounded scope follows rail_qualification/README.md: adjustable versus integrated window/reset comparison, with detector, recovery, startup and edge conditions explicit before a native amendment.
+
+## ACT-06 supervisor comparison claim — 2026-10-12 UTC
+
+Root claims reviews/codex/supervisor_comparison/** and current viewer/application/portfolio/CI/handoff links, based on a251f5b. Compare concrete adjustable divider and integrated window/reset options, including assertion/recovery tolerance, detection conditions and interface/loading. Expected candidate/live electrical and copper delta is zero until those conditions support a new native amendment. Preserve ACT-04, ACT-05, both converters, ACT-01 populations and both unrelated dirty tools. Children power_native_review and input_protection_review research primary sources read-only; imu_candidate_validator may own only new model.py/test_model.py/analysis.json after an explicit assignment. No primary generators, routing, CAD recapture, hardware access, ordering or branch/history changes. All unimplemented receiver/watchdog/ACK permissions remain disabled.
+
+## ACT-06 review checkpoint — 2026-10-13 UTC
+
+All child scopes are released. Root closes the tested supervisor/divider comparison, annotated functional map, current viewer/application/portfolio links and selective publication. ACT-04 remains native and default disabled; no candidate/live electrical or copper delta, native recapture, firmware or purchasing change. Next scope follows supervisor_comparison/README.md: one3.3V observation subcell with bounded detection, total error guard, retention, conditioning and power-loss behavior before native insertion. Preserve previous packets and both unrelated dirty tools.
