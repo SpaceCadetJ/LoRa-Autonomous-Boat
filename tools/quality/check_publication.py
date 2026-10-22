@@ -357,6 +357,12 @@ def main():
     check_hashes(retention["artifact_sha256"], "ACT-09 architecture, request model and viewer")
     assert all(retention[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
     assert all(retention[k] is False for k in ["parts_selected", "hardware_tested", "fabrication_approved", "native_commands_rerun", "qualification_ports_implemented"])
+    isolation_root = "reviews/codex/oe_isolation/"
+    isolation = read_json(isolation_root + "packet_manifest.json")
+    check_hashes(isolation["input_sha256"], "ACT-10 preserved inputs")
+    check_hashes(isolation["artifact_sha256"], "ACT-10 circuit proposal and OE screen")
+    assert all(isolation[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
+    assert all(isolation[k] is False for k in ["parts_selected", "hardware_tested", "fabrication_approved", "native_commands_rerun", "qualification_ports_implemented", "partial_power_isolation_qualified", "source_timing_applicable_to_RC_edge"])
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -375,6 +381,7 @@ def main():
     pages += [ROOT / observation_root / name for name in ["README.md", "RESULTS.md", "ACCEPTANCE.md"]]
     pages += [ROOT / observer_power_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / retention_root / name for name in ["README.md", "RESULTS.md"]]
+    pages += [ROOT / isolation_root / name for name in ["README.md", "RESULTS.md"]]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

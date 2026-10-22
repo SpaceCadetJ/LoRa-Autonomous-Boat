@@ -1,0 +1,36 @@
+{
+  "packet": "ACT-10",
+  "date_utc": "2026-10-22",
+  "baseline_head": "074464449376a9c2c47c564e45df0ea2104b44c2",
+  "reviewers": {
+    "isolation_review": "Independent primary-source, pin map and claim review; corrected inverse-slew wording and adjacent1.5..1.8V signal-range hold.",
+    "isolation_model": "Independent model author;12 analytical/rejection/scope/hash tests pass.",
+    "root": "Reviewed model and integration; local browser/visual checks recorded separately."
+  },
+  "verified_in_this_packet": [
+    "Exact proposed PW/TSSOP14 pin mapping against TI source.",
+    "Native ACT-04 R40 value10k; no native amendment.",
+    "Conditional RC results and preserved input hashes."
+  ],
+  "not_verified": [
+    "Arbitrary intermediate-supply isolation or actual OE waveform.",
+    "Applicability of switch/translator timing tables to the RC edge.",
+    "Total feed/capacitance, maximum injected charge, guard delay or receiver readiness.",
+    "No native checks rerun, hardware, assembly, flashing, hosted CI or fabrication approval."
+  ],
+  "preserved_input_count": 279,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "next_task": "Source-condition review of TXU VCCA gating/discharge; do not reuse OE timing or presume floating-supply definition.",
+  "reviewed_sha256": {
+    "README.md": "2de67380c2b6a260d70bd6ac2df9028e7eacc1e5634815104e13950d5a08093d",
+    "RESULTS.md": "b251f1bb70707c465d16cc39cf67f63606443c99baa012ae5ee3fb7ae8b4d91f",
+    "sources.json": "997ac4145aab95c1e9b921f02db3f7e019f900dfe80f0b1dfd81896c518a14e6",
+    "contract.json": "3db41920216357d533e6fbfe7b8124a01f5f8e73fdfe7e2d3926d311a5517124",
+    "model.py": "3313787191f923b9cb760ff8558f0797617d34040270d1932d5ee4fb4996e869",
+    "test_model.py": "5cc71f43e51cb04bfb369623b38bb58f498a548c533f3e73dba8cac02c610046",
+    "analysis.json": "36b1196948f473aae9701b4038a59242b328a2d3a59fef3b2cb0f17e214a3101",
+    "v2_oe_isolation.svg": "0a99a39f95049c2b6153a052d4453a7537a392cdc58e3e69244d93e9f75dc169"
+  }
+}

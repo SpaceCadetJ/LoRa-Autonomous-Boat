@@ -1,5 +1,10 @@
 # LoRa controller: from legacy board to reviewable platform
 
+## Current OE isolation review - ACT-10, 2026-10-22
+
+The [annotated switch proposal](../../reviews/codex/oe_isolation/README.md) and [calculated limits](../../reviews/codex/oe_isolation/RESULTS.md) expose an optimistic 9.805 pF total enable-node capacitance ceiling. A positive arithmetic margin does not qualify the slow OE edge or intermediate-supply isolation. No circuit is inserted. Next assess TXU0102 VCCA gating/discharge with a separate supply-collapse timing contract. This supersedes older next-task text; ACT-04 remains native and applications remain held.
+
+
 ## Current retention packet — ACT-09, 2026-10-22
 
 The [retention architecture](../../reviews/codex/observer_retention/README.md) and [sequence explorer](../../reviews/codex/observer_retention/index.html) distinguish detection, retained clear and physical output disable. The same-rail UV budget tightens to a conditional 0.167345 V/us zero-margin ceiling. A separate island has only finite hold-up; a disabled physical output must take over before it expires. The next task is the U14-to-TXU0102 permission boundary under partial power. Native circuitry and powered applications remain held. This supersedes earlier next-task text below.

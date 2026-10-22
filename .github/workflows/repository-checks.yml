@@ -114,6 +114,9 @@ jobs:
           python reviews/codex/observer_retention/model.py --check
           python reviews/codex/observer_retention/test_model.py
           python reviews/codex/observer_retention/build_packet.py --check
+          python reviews/codex/oe_isolation/model.py --check
+          python reviews/codex/oe_isolation/test_model.py
+          python reviews/codex/oe_isolation/build_packet.py --check
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

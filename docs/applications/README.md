@@ -1,5 +1,8 @@
 # Application handbook
 
+The latest [ACT-10 circuit review](../../reviews/codex/oe_isolation/README.md) holds the proposed enable-isolation switch: R40 discharge has a tight capacitance budget, and continuous brownout isolation is unqualified. Wiring, assembly, flashing and powered-application release do not change. Next assess the translator supply-isolation alternative before any native amendment. Older checkpoint tasks below are historical.
+
+
 Use this project as a documented route from the existing boat controller to a reusable vehicle and communications platform. Choose an application below, identify its hardware and software revision, then follow its preparation, operating sequence and acceptance checks.
 
 **The current release is an engineering review edition.** V1 has a reproducible preserved-source firmware build and an instrument-only bench procedure. V2 is a developing vehicle board. Powered vehicle operation and the handheld have not been qualified. A drawing, compiled image or passing software test alone does not release a physical application.

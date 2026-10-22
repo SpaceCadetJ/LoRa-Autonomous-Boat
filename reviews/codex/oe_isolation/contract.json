@@ -1,0 +1,51 @@
+{
+  "packet": "ACT-10",
+  "status": "investigation_only_not_native",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "parts_selected": false,
+  "hardware_tested": false,
+  "fabrication_approved": false,
+  "native_commands_rerun": false,
+  "qualification_ports_implemented": false,
+  "partial_power_isolation_qualified": false,
+  "source_timing_applicable_to_RC_edge": false,
+  "assumptions": {
+    "R40_nominal_ohm": 10000,
+    "R40_tolerance_fraction_allocated": 0.01,
+    "initial_OE_V_allocated": 3.6,
+    "target_OE_V_allocated": 0.8,
+    "feed_current_A_allocated": 5e-06,
+    "capacitance_pF_cases": [
+      8,
+      10,
+      15,
+      20,
+      50
+    ],
+    "downstream_budget_ns_allocated": 245,
+    "control_to_switch_start_ns_screen": 55,
+    "TXU_disable_ns_screen": 36,
+    "other_logic_ns_optimistic": 0
+  },
+  "proposed_boundary_not_implemented": {
+    "candidate": "TMUX1511PWR",
+    "U14.4": "ACT_OE_REQUEST -> candidate pin2 S1",
+    "candidate pin3 D1": "ACT_OE -> U4.6 and existing R40.1",
+    "candidate pin1 SEL1": "ISLAND_PERMIT with external 10k pulldown; authority unimplemented/default low",
+    "candidate pin14 VDD": "proposed reverse-blocked observer island; guard and expiry unqualified",
+    "candidate pin7 GND": "GND",
+    "candidate pins4,10,13": "unused SEL2/3/4 grounded",
+    "candidate pins5,6,8,9,11,12": "unused S/D grounded",
+    "local_bypass": "100nF proposal; exact identity/effective value unselected",
+    "native_state": "ACT-04 remains native; no new reference or net assigned"
+  },
+  "holds": [
+    "For3.6V request, normal signal range requires VDD>=1.8V; 1.5<=VDD<1.8V is outside that recommendation. Below1.5V voltage allowance still does not bound arbitrary isolation.",
+    "No bounded OFF conduction/leakage found for arbitrary 0<VDD<1.5V dwell/bounce. Signal voltage allowance is not proof.",
+    "SEL transition and output-loading conditions differ from released timing tests.",
+    "Charge injection lacks a maximum; total OE capacitance and feed are unqualified.",
+    "OE low does not imply motor stopped; receiver readiness remains independent."
+  ]
+}

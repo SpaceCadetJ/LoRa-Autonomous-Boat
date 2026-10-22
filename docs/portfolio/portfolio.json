@@ -48,7 +48,8 @@
     "observation_3v3": "reviews/codex/observation_3v3/README.md",
     "observer_power": "reviews/codex/observer_power/README.md",
     "observer_retention": "reviews/codex/observer_retention/README.md",
-    "sequence_explorer": "reviews/codex/observer_retention/index.html"
+    "sequence_explorer": "reviews/codex/observer_retention/index.html",
+    "oe_isolation": "reviews/codex/oe_isolation/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -199,6 +200,11 @@
       "path": "reviews/codex/observer_retention/v2_observer_retention.svg",
       "kind": "functional_proposal",
       "caption": "ACT-09 proposed observer island and physical-output handover; no native amendment or hardware acceptance."
+    },
+    {
+      "path": "reviews/codex/oe_isolation/v2_oe_isolation.svg",
+      "kind": "held_circuit_proposal",
+      "caption": "ACT-10 annotated series-switch boundary and discharge screen; no native or hardware acceptance."
     }
   ],
   "validated_results": [
@@ -437,6 +443,15 @@
         "reviews/codex/observer_retention/test_model.py",
         "reviews/codex/observer_retention/RESULTS.md"
       ]
+    },
+    {
+      "claim": "ACT-10 checks an exact series-switch proposal and conditional OE decay. The optimistic total capacitance ceiling is9.805pF; source timing and arbitrary brownout isolation remain unqualified. No native delta.",
+      "classification": "primary_source_review_and_conditional_analysis",
+      "evidence": [
+        "reviews/codex/oe_isolation/analysis.json",
+        "reviews/codex/oe_isolation/RESULTS.md",
+        "reviews/codex/oe_isolation/review_notes.json"
+      ]
     }
   ],
   "current_native_findings": {
@@ -465,7 +480,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Continue from ACT-09: close the physical permission boundary between U14 and TXU0102 OE, including contention, partial power, disable delay and off-state leakage; then resolve island charge/blocking/OV paths. Missing qualifications remain disabled.",
+    "Continue from ACT-10: evaluate TXU0102 VCCA gating/discharge under its own supply-isolation conditions, including backfeed, collapse timing and recovery. Preserve VCCB/ACT-01 and U12-U14 supplies. TMUX1511 series isolation remains held; missing qualifications stay disabled.",
     "Qualify supply sequencing, C11/VSERVO transients, full 6S feed, leakage/damping, ADC and combined IMU2 before PCB integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",

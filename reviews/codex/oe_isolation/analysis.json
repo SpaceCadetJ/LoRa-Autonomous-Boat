@@ -1,0 +1,99 @@
+{
+  "packet": "ACT-10",
+  "scope": "allocated_constant_feed_RC_screen_only",
+  "native_accepted": false,
+  "hardware_accepted": false,
+  "physical_OE_proven": false,
+  "parts_selected": false,
+  "hardware_tested": false,
+  "fabrication_approved": false,
+  "native_commands_rerun": false,
+  "qualification_ports_implemented": false,
+  "partial_power_isolation_qualified": false,
+  "source_timing_applicable_to_RC_edge": false,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "R_max_ohm": 10100.0,
+  "fixed_screen_ns": 91.0,
+  "available_decay_ns": 154.0,
+  "maximum_C_pF_at_zero_margin": 9.804500382212536,
+  "maximum_feed_A_at_asymptote": 7.920792079207921e-05,
+  "maximum_feed_interpretation": "Strictly less than this value is necessary to reach the target in finite time; it is not a component leakage guarantee.",
+  "slope_interpretation": "Magnitude abs(dt/dV) at target, in ns/V. Actual dt/dV is negative. This is a local RC slope, not a valid digital-input edge specification.",
+  "timing_applicability": "55 ns and 36 ns are screening inputs from different source tests with fast control edges and different loads. Adding them to an RC decay does not establish an end-to-end bound.",
+  "limitations": [
+    "Resistance tolerance, capacitance, initial voltage, total constant feed and target are allocations, not a selected and verified component envelope.",
+    "No guaranteed arbitrary partial-power isolation, charge injection, slew qualification or propagation through the missing authority logic is modeled.",
+    "A positive numeric margin does not authorize native implementation, fabrication, hardware use or a claim of motor stop."
+  ],
+  "assumptions": {
+    "R40_nominal_ohm": 10000,
+    "R40_tolerance_fraction_allocated": 0.01,
+    "initial_OE_V_allocated": 3.6,
+    "target_OE_V_allocated": 0.8,
+    "feed_current_A_allocated": 5e-06,
+    "capacitance_pF_cases": [
+      8,
+      10,
+      15,
+      20,
+      50
+    ],
+    "downstream_budget_ns_allocated": 245,
+    "control_to_switch_start_ns_screen": 55,
+    "TXU_disable_ns_screen": 36,
+    "other_logic_ns_optimistic": 0
+  },
+  "cases": [
+    {
+      "C_pF": 8.0,
+      "floor_V": 0.0505,
+      "decay_ns": 125.65658136289245,
+      "downstream_screen_ns": 216.65658136289244,
+      "margin_ns": 28.34341863710756,
+      "fits_allocation_only": true,
+      "slope_at_target_ns_per_V": 107.8052034689793
+    },
+    {
+      "C_pF": 10.0,
+      "floor_V": 0.0505,
+      "decay_ns": 157.07072670361558,
+      "downstream_screen_ns": 248.07072670361558,
+      "margin_ns": -3.070726703615577,
+      "fits_allocation_only": false,
+      "slope_at_target_ns_per_V": 134.75650433622414
+    },
+    {
+      "C_pF": 15.0,
+      "floor_V": 0.0505,
+      "decay_ns": 235.60609005542338,
+      "downstream_screen_ns": 326.60609005542335,
+      "margin_ns": -81.60609005542335,
+      "fits_allocation_only": false,
+      "slope_at_target_ns_per_V": 202.13475650433622
+    },
+    {
+      "C_pF": 20.0,
+      "floor_V": 0.0505,
+      "decay_ns": 314.14145340723115,
+      "downstream_screen_ns": 405.14145340723115,
+      "margin_ns": -160.14145340723115,
+      "fits_allocation_only": false,
+      "slope_at_target_ns_per_V": 269.5130086724483
+    },
+    {
+      "C_pF": 50.0,
+      "floor_V": 0.0505,
+      "decay_ns": 785.353633518078,
+      "downstream_screen_ns": 876.353633518078,
+      "margin_ns": -631.353633518078,
+      "fits_allocation_only": false,
+      "slope_at_target_ns_per_V": 673.7825216811207
+    }
+  ],
+  "input_sha256": {
+    "contract.json": "3db41920216357d533e6fbfe7b8124a01f5f8e73fdfe7e2d3926d311a5517124",
+    "model.py": "3313787191f923b9cb760ff8558f0797617d34040270d1932d5ee4fb4996e869"
+  }
+}

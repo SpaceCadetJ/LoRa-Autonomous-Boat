@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="980" viewBox="0 0 1280 980"><rect width="1280" height="980" fill="#f4f7fb"/><style>text{font-family:Arial,sans-serif;fill:#172638}.h{font-size:28px;font-weight:bold}.t{font-size:20px;font-weight:bold}.s{font-size:16px}.sub{font-size:18px;fill:#425874}.box{fill:white;stroke:#9bb3c9;stroke-width:2}.hold{fill:#fff5e7;stroke:#b86e12;stroke-width:2;stroke-dasharray:8 5}.wire{fill:none;stroke:#246789;stroke-width:3}.proposal{fill:none;stroke:#a46d20;stroke-width:2;stroke-dasharray:7 4}</style>
+<text x="40" y="48" class="h">ACT-10 | Can opening a switch reliably remove actuator permission?</text>
+<text x="40" y="80" class="sub">Annotated connection proposal | ACT-04 stays native | No new wiring or parts are released</text>
+<rect x="40" y="108" width="1200" height="60" rx="9" class="hold"/>
+<text x="58" y="134" class="t">HELD: intermediate-supply isolation and end-to-end disable time are unqualified.</text>
+<text x="58" y="157" class="s">All unimplemented qualification sources remain disabled. Arithmetic margin does not establish physical acceptance.</text>
+<rect x="40" y="204" width="300" height="157" rx="9" class="box"/>
+<text x="58" y="234" class="t">U14: existing main-rail logic</text>
+<text x="58" y="265" class="s">QUAL_OK AND ARM AND READY</text>
+<text x="58" y="296" class="s">Pin 4 -&gt; proposed request net</text>
+<text x="58" y="327" class="s">Original main 3V3 supply.</text>
+<rect x="490" y="204" width="325" height="157" rx="9" class="hold"/>
+<text x="508" y="234" class="t">TMUX1511PWR / channel 1</text>
+<text x="508" y="265" class="s">S1 pin 2</text>
+<text x="692" y="265" class="s">D1 pin 3</text>
+<text x="508" y="327" class="s">SEL1 pin 1: independent permit</text>
+<path class="wire" d="M340 283H490 M535 283H595 M595 283L650 262 M665 283H770 M815 283H960"/><circle cx="595" cy="283" r="4" fill="#246789"/><circle cx="665" cy="283" r="4" fill="#246789"/>
+<text x="351" y="272" class="s">ACT_OE_REQUEST</text>
+<text x="830" y="272" class="s">ACT_OE</text>
+<rect x="960" y="204" width="280" height="157" rx="9" class="box"/>
+<text x="978" y="234" class="t">U4 TXU0102: existing</text>
+<text x="978" y="265" class="s">OE pin 6 at ACT_OE</text>
+<text x="978" y="299" class="s">VCCA pin 3: original main 3V3</text>
+<text x="978" y="330" class="s">VCCB pin 7: ACT-01 rail</text>
+<path class="wire" d="M904 283V389H889V437H919V389H904 M904 437V465 M886 465H922 M892 473H916 M898 481H910"/>
+<text x="947" y="410" class="s">R40 = 10 kOhm, retained</text>
+<text x="947" y="439" class="s">OE discharges after isolation.</text>
+<text x="947" y="468" class="s">No clamp against U14 drive.</text>
+<rect x="40" y="397" width="710" height="104" rx="9" class="hold"/>
+<text x="58" y="426" class="s">Proposed island -&gt; pin 14; GND -&gt; pin 7; local 100 nF</text>
+<text x="58" y="455" class="s">Independent guard -&gt; SEL1, with external 10 kOhm pulldown.</text>
+<text x="58" y="483" class="s">Authority and supply expiry remain unimplemented; default disabled.</text>
+<path class="proposal" d="M652 397V361"/>
+<rect x="40" y="537" width="580" height="148" rx="9" class="box"/>
+<text x="58" y="568" class="s">A. Valid island; SEL low</text>
+<text x="58" y="598" class="s">U14 disconnected only within applicable switch conditions.</text>
+<text x="58" y="628" class="s">R40, total C and feed determine the OE waveform.</text>
+<text x="58" y="658" class="s">Source timing is not a completed discharge time.</text>
+<rect x="660" y="537" width="580" height="148" rx="9" class="hold"/>
+<text x="678" y="568" class="s">B. Island collapses or dwells below 1.5 V</text>
+<text x="678" y="598" class="s">3.6 V request also needs VDD &gt;= 1.8 V in normal operation.</text>
+<text x="678" y="628" class="s">Zero-volt leakage is one endpoint, not a full ramp contract.</text>
+<text x="678" y="658" class="s">Stored energy cannot cover an indefinite brownout.</text>
+<rect x="40" y="720" width="580" height="151" rx="9" class="box"/>
+<text x="58" y="751" class="t">C. Conditional 245 ns downstream budget</text>
+<text x="58" y="782" class="s">55 ns switch + R40 decay +36 ns translator; no guard delay</text>
+<text x="58" y="813" class="s">Zero-margin total C: 9.805pF</text>
+<text x="58" y="844" class="s">Fast source-test edges differ from the proposed RC edge.</text>
+<rect x="660" y="720" width="580" height="151" rx="9" class="box"/>
+<text x="678" y="751" class="t">D. Preserve the rest of the design</text>
+<text x="678" y="782" class="s">Both converters, ACT-01 source options and corrected copper</text>
+<text x="678" y="813" class="s">READY / ARM / ACK behavior and missing-source defaults</text>
+<text x="678" y="844" class="s">V1 evidence, live firmware, BOM and assembly remain held.</text>
+<rect x="40" y="904" width="1200" height="53" rx="9" class="hold"/>
+<text x="58" y="928" class="t">Next: assess TXU VCCA gating/discharge with its own supply-collapse timing contract.</text>
+<text x="58" y="950" class="s">Do not reuse OE delay as supply-isolation delay. Local rail voltage still does not prove remote readiness.</text>
+</svg>

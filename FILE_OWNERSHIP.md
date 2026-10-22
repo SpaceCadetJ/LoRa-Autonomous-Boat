@@ -211,3 +211,11 @@ Root claims reviews/codex/observer_retention/** and current viewer/application/p
 ### ACT-09 review completion — 2026-10-22 UTC
 
 Root and child ACT-09 write claims are released after independent architecture review, 12 tests and desktop/phone verification of six request traces. No native or physical-output acceptance; ACT-04 stays native and missing sources remain disabled. Follow the newest ACT-09 design_completion/HANDOFF.md entry for the exact U14-to-TXU0102 partial-power permission boundary. Preserve all prior circuit evidence and both unrelated dirty tools. Only reviewed packet/viewer/guide/CI integration is included in selective publication.
+
+## ACT-10 OE isolation screen claim - 2026-10-22 UTC
+
+Root claims reviews/codex/oe_isolation/** and current viewer/application/portfolio/CI/handoff integration from 0744644. Review one TMUX1511PWR series boundary between U14 and TXU0102 OE, keeping R40=10k and both converter/population contracts. Expected candidate/live electrical and copper delta is zero: no native insertion unless partial-power and disable conditions close. Child isolation_review is read-only; isolation_model owns only new model.py/test_model.py/analysis.json. Preserve all previous packets and the unrelated v1_design.py/route_v2.py edits. Missing qualifications remain disabled. No primary generation/router, hardware, firmware, purchasing or branch/history changes.
+
+### ACT-10 review completion - 2026-10-22 UTC
+
+Root and child ACT-10 scopes are released after the bounded source/connection/RC review and viewer integration. The series switch remains held for signal range, intermediate supply and timing applicability; no candidate/live CAD/copper or hardware delta. Independent review corrections and12 tests are recorded in oe_isolation/review_notes.json. Continue from the newest handoff's TXU VCCA gating/discharge study, preserving ACT-01 VCCB populations and U12-U14 supply. Keep missing qualifications disabled. Previous packets and both unrelated dirty tools remain preserved; publication includes only the reviewed packet and current documentation/CI integration.

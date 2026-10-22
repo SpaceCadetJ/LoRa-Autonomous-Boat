@@ -1,0 +1,98 @@
+{
+  "retrieved_utc": "2026-10-22",
+  "classification": "primary_document_review_not_hardware_measurement",
+  "sources": [
+    {
+      "id": "TI-TMUX1511",
+      "url": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf",
+      "document": "SCDS390B, revised March 2025",
+      "sections": [
+        "4",
+        "5.3",
+        "5.5-5.7",
+        "6.5-6.6",
+        "7.3-7.5",
+        "ordering addendum"
+      ],
+      "candidate": "TMUX1511PWR",
+      "pins_PW_TSSOP14": {
+        "SEL1": 1,
+        "S1": 2,
+        "D1": 3,
+        "SEL2": 4,
+        "S2": 5,
+        "D2": 6,
+        "GND": 7,
+        "D3": 8,
+        "S3": 9,
+        "SEL3": 10,
+        "D4": 11,
+        "S4": 12,
+        "SEL4": 13,
+        "VDD": 14
+      },
+      "bounds": {
+        "VDD_V": [
+          1.5,
+          5.5
+        ],
+        "signal_below_1_5V_supply_V": [
+          0,
+          3.6
+        ],
+        "VIL_max_V": 0.45,
+        "VIH_min_V": 1.2,
+        "RON_max_ohm": 4.5,
+        "off_leakage_abs_A_at_0_2_and_0_8_VDD": 1e-07,
+        "Ipoff_abs_A_VDD0_VS0to3_6_VD0": 2e-06,
+        "COFF_max_pF_at_halfVDD_1MHz": 4,
+        "CON_max_pF_at_halfVDD_1MHz": 6,
+        "tTRAN_max_ns_VDD2_5to5_5": 55,
+        "tTRAN_max_ns_VDD1_5to2_5_exclusive": 80,
+        "tOFF_VDD_max_us_1us_fall": 4,
+        "normal_signal_range_V": "0..min(2*VDD,5.5), VDD>=1.5"
+      },
+      "typical_not_bound": {
+        "charge_injection_pC": 2,
+        "SEL_pulldown_Mohm": 6
+      },
+      "conditions": "-40..125 C. Transition test: 200 ohm/15 pF, signal=VDD, SEL edges<5 ns, output first 10% change. Supply-off test: source3.6 V, 1 us fall, 200 ohm/15 pF; measured from1.5 V supply crossing to90% output. Add external discharge; neither number establishes OE low.",
+      "gap": "Signal voltage allowance below1.5 V does not provide an arbitrary dwell/bounce leakage or OFF-transition bound. Zero-supply Ipoff is not a full brownout proof. At3.6V request, the normal signal range additionally requires VDD>=1.8V; 1.5..1.8V is not covered for that signal."
+    },
+    {
+      "id": "TI-TXU0102",
+      "url": "https://www.ti.com/lit/ds/symlink/txu0102.pdf",
+      "document": "SCES941A, revised March 2022",
+      "sections": [
+        "7.3",
+        "7.5",
+        "7.10",
+        "8.1",
+        "9.3.6",
+        "11"
+      ],
+      "bounds": {
+        "OE_negative_threshold_min_V_at_3V_equal_supplies": 0.89,
+        "OE_input_current_uA_at_rails_minus40to125": [
+          -0.1,
+          2
+        ],
+        "control_C_max_pF_at_3_3V_equal_supplies": 3.5,
+        "OE_to_B_disable_max_ns_3_3V_A_5V_B": 36
+      },
+      "conditions": "Disable column: VCCA3.3+/-0.3 V, VCCB5+/-0.5 V,-40..125 C. Output load5 pF/10k; generator<=1 ns/V. OE current tested at supply or ground; capacitance at equal3.3 V supplies.",
+      "gap": "RC OE edge and actual output load require timing applicability; 0.8 V is an allocated target, not a universal brownout threshold. TXU documents glitch-free supply sequencing, but that does not qualify invalid upstream permission."
+    },
+    {
+      "id": "TI-TMUX1101",
+      "url": "https://www.ti.com/lit/ds/symlink/tmux1101.pdf",
+      "document": "SCDS410D, revised February 2024",
+      "sections": [
+        "6.1",
+        "6.3",
+        "8.3"
+      ],
+      "disposition": "Rejected as a substitute for this signal-isolation boundary: fail-safe SEL is separate from signal power-off protection; recommended signal range is0..VDD. No broad alternative search performed."
+    }
+  ]
+}
