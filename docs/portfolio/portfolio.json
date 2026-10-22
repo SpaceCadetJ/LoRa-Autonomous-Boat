@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-13",
+  "updated": "2026-10-22",
   "title": "LoRa Vehicle Controller: Reconstruction and Platform Redesign",
   "short_title": "LoRa Autonomous Boat Controller",
   "summary": "An STM32 and LoRa vehicle-controller project with reconstructed KiCad hardware, annotated schematics, a searchable engineering workspace, assembly evidence and a reproducible V1 firmware build. V2 hardware and a voice/text/location handheld remain under development.",
@@ -45,7 +45,8 @@
     "rail_qualification": "reviews/codex/rail_qualification/README.md",
     "rail_explorer": "reviews/codex/rail_qualification/index.html",
     "supervisor_comparison": "reviews/codex/supervisor_comparison/README.md",
-    "observation_3v3": "reviews/codex/observation_3v3/README.md"
+    "observation_3v3": "reviews/codex/observation_3v3/README.md",
+    "observer_power": "reviews/codex/observer_power/README.md"
   },
   "technologies": [
     "STM32F446",
@@ -186,6 +187,11 @@
       "path": "reviews/codex/observation_3v3/v2_observation_3v3.svg",
       "type": "svg",
       "caption": "ACT-07 conditional local observation allocation; no native insertion or hardware acceptance."
+    },
+    {
+      "path": "reviews/codex/observer_power/v2_observer_power.svg",
+      "kind": "functional_proposal",
+      "caption": "ACT-08 conditional observer load and shutdown-path study; no native connection or hardware acceptance."
     }
   ],
   "validated_results": [
@@ -406,6 +412,15 @@
         "reviews/codex/observation_3v3/test_model.py",
         "reviews/codex/observation_3v3/RESULTS.md"
       ]
+    },
+    {
+      "claim": "ACT-08 verifies conditional reference load, feed-floor discharge and input resistor limits with ten analytical/rejection tests; partial-power behavior remains unqualified.",
+      "classification": "conditional_analytical_screen",
+      "evidence": [
+        "reviews/codex/observer_power/analysis.json",
+        "reviews/codex/observer_power/test_model.py",
+        "reviews/codex/observer_power/RESULTS.md"
+      ]
     }
   ],
   "current_native_findings": {
@@ -434,7 +449,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Resolve comparator threshold/delay applicability and monitor/reference power, startup, load and backdrive against ACT-07 before an isolated native amendment. Preserve default-disabled missing permissions.",
+    "Continue from ACT-08: design a retained-low observer-valid interface and reference shutdown/injection path; define supply, sink/hold-up, feed bounds and timing before native insertion. Missing permissions stay disabled.",
     "Qualify supply sequencing, C11/VSERVO transients, full 6S feed, leakage/damping, ADC and combined IMU2 before PCB integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",

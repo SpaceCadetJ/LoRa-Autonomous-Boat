@@ -1,0 +1,47 @@
+{
+  "revision": "ACT-08",
+  "date_UTC": "2026-10-22",
+  "classification": "independently reviewed conditional analytical screen",
+  "source_revision": "16bbcd6f61f5aab9d5c78231e9636491e40a1f23",
+  "model_tests_passed": 10,
+  "model_replay_passed": true,
+  "independent_review": {
+    "reviewer": "observer_power_review",
+    "arithmetic": "Reference load, error terms, feed-floor discharge and series current/bias/settling independently agree.",
+    "source_corrections": [
+      "REF34 electrical header uses VIN=VOUT+VDO; 12 V belongs to typical curves and line-test endpoint.",
+      "500 mV sourcing-test headroom gives 3.005 V boundary; not an actual-dropout prediction.",
+      "Typical capacitance/startup, sinking regulation, partial-power and common-mode applicability are not promoted to guarantees."
+    ],
+    "wording_corrections_applied": [
+      "Diagram explicitly labels REF EN3 to avoid confusion with comparator pin3.",
+      "README names ACT-04 native candidate; ACT-07 contains no native observation subcell."
+    ],
+    "blocking_findings_remaining_for_this_screen": []
+  },
+  "visual_review": {
+    "diagram": "Inspected 1280x1040 raster: separated cards, legible labels, no observed overlap.",
+    "desktop": "Inspected selected ACT-08 figure at 1440x1050.",
+    "phone": "Inspected calculation dialog at 390x844; readable wrapping and no horizontal overflow.",
+    "automated_checks": "Both viewports load the 1280px SVG, zoom to 200%, open guide/results, match numeric values, and report no page errors or horizontal overflow."
+  },
+  "preserved_input_count": 238,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "hardware_tested": false,
+  "hosted_CI_observed": false,
+  "qualification_ports_implemented": false,
+  "remaining_limits": [
+    "No bounded reference startup/shutdown or reverse/leakage path.",
+    "No total supply sink/hold-up, actual maximum feed, reference overshoot or phantom-rail bound.",
+    "No retained-low observer-valid interface; no native input permission is driven.",
+    "ACT-07 hysteresis, bias, common-mode, delay and waveform applicability remain open.",
+    "Exact passive parts, complete power/receiver acceptance and hardware tests remain open."
+  ],
+  "protected_unrelated_sha256": {
+    "hardware/kicad/tools/v1_design.py": "4c3765346e6b64976aaad5f406f8662056cfece10029767837a9f47864474dc0",
+    "hardware/kicad_v2/tools/route_v2.py": "3e44123b01d58c8373850c2becf77df2e7103877f9c223b6d102c14346cd03dd"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "packet": "ACT-08",
+  "model": "conditional observer power-state screen",
+  "native_accepted": false,
+  "hardware_accepted": false,
+  "parts_selected": false,
+  "qualification_ports_implemented": false,
+  "native_commands_rerun": false,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "conditional_scope": {
+    "native_implemented": false,
+    "hardware_accepted": false,
+    "input_ports_qualified": false,
+    "bias_applicability_qualified": false,
+    "capacitance_bound_qualified": false,
+    "startup_shutdown_qualified": false,
+    "linear_regulation_allocation_only": true,
+    "ideal_constant_feed_bleeder_ODE_only": true,
+    "series_current_is_zero_V_node_ceiling_not_diode_behavior": true
+  },
+  "formulas": {
+    "resistor_bounds": "Rmin = Rnom*(1-f); Rmax = Rnom*(1+f)",
+    "reference_load": "Imin = Vref_min/Rmax - N*Ibias; Imax = Vref_max/Rmin + N*Ibias",
+    "bleeder_power": "Pmax = Vref_max**2/Rmin",
+    "linear_regulation": "f_load = Imax[A]*1000[mA/A]*load[ppm/mA]*1e-6; f_line = (Vspec_max-(Vref_min+line_headroom))*line[ppm/V]*1e-6",
+    "remaining_allocation": "total_fraction - initial_plus_BOX_fraction - f_load - f_line (linear sum, conditional screen)",
+    "voltage_decay": "V(t) = R*If + (V0-R*If)*exp(-t/(R*C))",
+    "target_time": "t = R*C*ln((V0-R*If)/(Vtarget-R*If)) if R*If < Vtarget < V0; otherwise null",
+    "series_current_ceiling": "I_ceiling = Vref_max/Rseries_min per input, ideal receiving node at 0 V",
+    "series_bias": "abs(error_V) = abs(Ibias)*Rseries_max per input",
+    "series_settling": "t = Rseries_max*C_allocated*ln(1/settle_fraction); ignores source impedance and port parasitics"
+  },
+  "reference_load": {
+    "resistance_min_ohm": 2481.2850000000003,
+    "resistance_max_ohm": 2498.715,
+    "minimum_sourcing_A": 0.000998503235803203,
+    "maximum_sourcing_A": 0.001009567547802852,
+    "bleeder_power_max_W": 0.002528941657246144,
+    "source_test_min_supply_V": 3.005,
+    "minimum_normal_rail_headroom_margin_V": 0.2149422442244222
+  },
+  "reference_allocation": {
+    "initial_plus_BOX_fraction": 0.001490495,
+    "specified_line_span_V": 9.455,
+    "load_regulation_fraction": 3.028702643408556e-05,
+    "line_regulation_fraction": 0.000141825,
+    "linear_sum_fraction": 0.0016626070264340856,
+    "total_allocated_fraction": 0.002,
+    "remaining_fraction": 0.00033739297356591446,
+    "positive_remaining_allocation_only": true
+  },
+  "discharge": {
+    "initial_V": 2.505,
+    "resistance_ohm": 2498.715,
+    "capacitance_F": 2.64e-07,
+    "target_V": 0.3,
+    "time_constant_s": 0.00065966076,
+    "cases": [
+      {
+        "feed_A": 0.0,
+        "floor_V": 0.0,
+        "target_reachable": true,
+        "time_to_target_s": 0.0013999726596449803
+      },
+      {
+        "feed_A": 1e-05,
+        "floor_V": 0.024987150000000003,
+        "target_reachable": true,
+        "time_to_target_s": 0.001450726732840753
+      },
+      {
+        "feed_A": 0.0001,
+        "floor_V": 0.24987150000000002,
+        "target_reachable": true,
+        "time_to_target_s": 0.0025109145934542458
+      },
+      {
+        "feed_A": 0.001,
+        "floor_V": 2.4987150000000002,
+        "target_reachable": false,
+        "time_to_target_s": null
+      }
+    ]
+  },
+  "series_input": {
+    "sense_budget_ns": 100.0,
+    "settle_fraction": 0.01,
+    "cases": [
+      {
+        "nominal_ohm": 1000.0,
+        "minimum_ohm": 996.5,
+        "maximum_ohm": 1003.5000000000001,
+        "ideal_zero_V_node_current_ceiling_A_per_input": 0.0025137982940291017,
+        "steady_bias_error_V_per_input": 5.017500000000001e-06,
+        "allocated_capacitance_F": 1e-11,
+        "settling_time_s": 4.6212882816390505e-08,
+        "settling_time_ns": 46.212882816390504,
+        "remaining_sense_budget_ns": 53.787117183609496,
+        "fits_allocated_sense_budget_only": true
+      },
+      {
+        "nominal_ohm": 10000.0,
+        "minimum_ohm": 9965.0,
+        "maximum_ohm": 10035.0,
+        "ideal_zero_V_node_current_ceiling_A_per_input": 0.00025137982940291016,
+        "steady_bias_error_V_per_input": 5.0175e-05,
+        "allocated_capacitance_F": 1e-11,
+        "settling_time_s": 4.62128828163905e-07,
+        "settling_time_ns": 462.128828163905,
+        "remaining_sense_budget_ns": -362.128828163905,
+        "fits_allocated_sense_budget_only": false
+      }
+    ]
+  },
+  "contract_sha256": "4ad0015f831785b0692b8e51f20c843e6972a5322f650092c95375a8b804534d"
+}

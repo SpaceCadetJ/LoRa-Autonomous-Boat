@@ -194,3 +194,12 @@ Root claims reviews/codex/observation_3v3/** and current viewer/application/port
 ## ACT-07 review checkpoint — 2026-10-13 UTC
 
 All child scopes are released after independent source, numerical, pin-map and diagram review. Root closes the conditional 3.3 V observation allocation, viewer/guide/portfolio/CI records and selective publication. ACT-04 stays native and default disabled; no circuit, copper, firmware, ordering or hardware change. Next scope follows observation_3v3/README.md: monitor/reference power-state and comparator applicability closure against explicit allocations. Preserve all prior evidence and both unrelated dirty tools.
+
+
+## ACT-08 observer power-state claim — 2026-10-22 UTC
+
+Root claims reviews/codex/observer_power/** and current viewer/application/portfolio/CI/handoff integration based on16bbcd6. Bound reference load/discharge and comparator-input backfeed on a proposed same-3V3 observer supply. Expected candidate/live electrical and copper delta is zero: preserve ACT-04, both converters, ACT-01 populations, ACT-07 and all original/V1 evidence. Child observer_power_review is read-only; a model reviewer may own only new model.py/test_model.py after assignment. No native insertion before supply, retained-clear and timing conditions fit. Missing receiver/watchdog/ACK sources remain disabled. No primary generators/router, hardware, ordering, firmware or branch changes. Preserve and exclude unrelated v1_design.py/route_v2.py edits.
+
+### ACT-08 review completion — 2026-10-22 UTC
+
+Root and child ACT-08 write claims are released after the bounded observer-power packet. Independent source/arithmetic review, ten tests, model replay and desktop/phone viewer checks pass for conditional analysis only. Exact passive selection, shutdown/injection bounds and the retained-low observer-valid circuit remain held. Continue from the newest ACT-08 design_completion/HANDOFF.md entry; keep native QUAL_OK/ACK disabled and all previous circuit inputs preserved. Selective publication excludes the unchanged unrelated v1_design.py/route_v2.py edits. Ordinary commits and fast-forward pushes remain as authorized; no new active primary claim was found.

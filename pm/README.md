@@ -1,6 +1,10 @@
 # LoRa engineering workspace
 
-## Current observation packet — ACT-07, 2026-10-13
+## Current power-state packet — ACT-08, 2026-10-22
+
+The [observer power-state review](../reviews/codex/observer_power/README.md) adds an annotated power-path map and tested load, discharge and input-settling calculations. A 2.49 kΩ reference load leaves 337.393 ppm within the conditional reference allocation. A continuing 1 mA feed prevents discharge to the illustrative 0.3 V endpoint; 10 kΩ series resistance exceeds the allocated 100 ns settling time. The 1 kΩ proposal needs explicit retained-low validity and shutdown/injection control before native insertion. No circuit or powered application is released. This supersedes earlier next-task text below.
+
+## Previous observation packet — ACT-07, 2026-10-13
 
 The [3.3 V observation allocation](../reviews/codex/observation_3v3/README.md) makes the comparator/reference proposal reviewable with an annotated map, threshold bounds and an acceptance worksheet. Ten analytical/rejection tests pass. The 400 ns conditional budget fits the 0.01 V/us example but exhausts OV headroom at 0.1 V/us. No circuitry or powered application is released. Next: Resolve comparator threshold/delay applicability and monitor/reference power, startup, load and backdrive against ACT-07 before an isolated native amendment. Preserve default-disabled missing permissions.
 

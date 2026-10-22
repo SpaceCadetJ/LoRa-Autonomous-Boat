@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "revision": "ACT-08",
+  "source_revision": "16bbcd6f61f5aab9d5c78231e9636491e40a1f23",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_accepted": false,
+  "hardware_accepted": false,
+  "parts_selected": false,
+  "qualification_ports_implemented": false,
+  "native_commands_rerun": false,
+  "proposal": {
+    "reference_V": [
+      2.495,
+      2.505
+    ],
+    "normal_rail_V": [
+      3.219942244224422,
+      3.412002431724654
+    ],
+    "bleeder_ohm": 2490,
+    "resistor_fraction": 0.0035,
+    "bias_abs_A": 5e-09,
+    "reference_inputs": 2,
+    "effective_C_F": [
+      1e-07,
+      2.64e-07
+    ],
+    "feed_cases_A": [
+      0,
+      1e-05,
+      0.0001,
+      0.001
+    ],
+    "discharge_target_V": 0.3,
+    "series_ohm": [
+      1000,
+      10000
+    ],
+    "input_C_allocated_F": 1e-11,
+    "settle_fraction": 0.01,
+    "sense_budget_ns": 100,
+    "reference_spec_supply_max_V": 12,
+    "line_test_headroom_V": 0.05,
+    "load_regulation_ppm_per_mA": 30,
+    "line_regulation_ppm_per_V": 15,
+    "source_test_headroom_V": 0.5,
+    "reference_total_fraction": 0.002,
+    "initial_plus_BOX_fraction": 0.001490495
+  },
+  "assumptions": [
+    "Same observed3V3 powers comparator and reference; this is an investigated topology, not an implemented connection.",
+    "Reference initial voltage bounded2.495..2.505V only for settled allocation; startup/shutdown anomalies may exceed it.",
+    "Bleeder/resistor total0.35% and effectivecap0.1..0.264uF are allocations with no selected exact identities.",
+    "5nA comparator bias and10pF perpin capacitance application bounds remain unverified.",
+    "Discharge assumes reference stopped driving, fixed bounded feed and fixed R/C; it is not a guaranteed shutdown model.",
+    "Series-current ceiling assumes receiving input node>=0V and reference<=2.505V; does not bound rail voltage, diode characteristic or total injection.",
+    "Singlepole1% settling assumes stated capacitance and lowimpedance reference; not complete detector delay or arbitraryramp response.",
+    "Reference error uses full specified line span from minimumref+50mV to12V, not12V as an initial-accuracy test point.",
+    "The3.005V headroom boundary is a conservative condition for applying500mV load-regulation test; not measured dropout or actual failure threshold."
+  ],
+  "next_scope": "Design an explicit retained-low observer-valid interface and reference shutdown/injection path; prove total rail sink/hold-up and bounded startup before native insertion."
+}

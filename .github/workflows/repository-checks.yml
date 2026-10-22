@@ -104,6 +104,11 @@ jobs:
           python reviews/codex/observation_3v3/model.py --check
           python reviews/codex/observation_3v3/test_model.py
           python reviews/codex/observation_3v3/build_packet.py --check
+      - name: Verify observer load and power-state limits
+        run: |
+          python reviews/codex/observer_power/model.py --check
+          python reviews/codex/observer_power/test_model.py
+          python reviews/codex/observer_power/build_packet.py --check
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

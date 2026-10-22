@@ -6,6 +6,8 @@ Use this project as a documented route from the existing boat controller to a re
 
 ## Current V2 design checkpoint
 
+[ACT-08](../../reviews/codex/observer_power/README.md) now defines the reference load, proposed input resistors and [power-state calculation limits](../../reviews/codex/observer_power/RESULTS.md). Passive discharge cannot establish safe shutdown while unknown current continues feeding the node. The next task is a retained-low observer-valid interface and an explicit reference shutdown/injection path; the source-test headroom boundary is 3.005 V. The calculations do not change wiring, flashing, assembly or application release. Earlier next-task wording below is historical; ACT-04 remains the latest native candidate and missing qualifications remain disabled.
+
 [ACT-07](../../reviews/codex/observation_3v3/README.md) adds a concrete 3.3 V comparator/reference allocation and [power/waveform acceptance worksheet](../../reviews/codex/observation_3v3/ACCEPTANCE.md). Positive static margins remain conditional; the proposed 400 ns response budget fails the 0.1 V/us overvoltage example. Reference startup and observer backfeed are unresolved. This changes design evidence, not wiring, flashing or application release. Next: close those source and power-state conditions before native insertion.
 
 [ACT-06](../../reviews/codex/supervisor_comparison/README.md) narrows the local-supervision design with tested divider and integrated-window comparisons. Initial static fits do not establish fault response across temperature or power loss. The next subcell is 3.3 V observation; receiver/watchdog permission and powered vehicle operation remain held. See the [calculated margins](../../reviews/codex/supervisor_comparison/RESULTS.md).

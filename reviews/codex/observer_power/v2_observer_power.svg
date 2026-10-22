@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1040" viewBox="0 0 1280 1040"><rect width="1280" height="1040" fill="#f4f7fb"/><style>text{font-family:Arial,sans-serif;fill:#172638}.h{font-size:30px;font-weight:bold}.sub{font-size:18px;fill:#425874}.t{font-size:20px;font-weight:bold}.s{font-size:17px}.wire{stroke:#246789;stroke-width:3;fill:none}.hold{fill:#fff5e7;stroke:#b86e12;stroke-width:2;stroke-dasharray:8 5}.box{fill:white;stroke:#9bb3c9;stroke-width:2}</style>
+<text x="40" y="50" class="h">ACT-08 | Observer reference and power states</text>
+<text x="40" y="84" class="sub">Functional proposal only | No native connection | ACT-04 QUAL_OK / ACK stay low</text>
+<rect x="40" y="108" width="1200" height="64" rx="10" class="hold"/>
+<text x="58" y="135" class="t">Passive loading narrows the problem; it does not guarantee default disable.</text>
+<text x="58" y="160" class="s">Same observed +3V3 supply is proposed for REF3425 and TLV3202. Startup / retained clear are unresolved.</text>
+<rect x="40" y="200" width="370" height="246" rx="10" class="box"/>
+<text x="58" y="232" class="t">1. Reference and defined load</text>
+<text x="58" y="267" class="s">REF3425IDBVR investigation</text>
+<text x="58" y="296" class="s">IN4 to observed +3V3 (proposed)</text>
+<text x="58" y="325" class="s">OUT_F6 / OUT_S5 tied at VREF</text>
+<text x="58" y="354" class="s">GND_F1 / GND_S2 tied at ground</text>
+<text x="58" y="390" class="s">VREF to 2.49k bleeder to GND</text>
+<text x="58" y="421" class="s">VREF to effective 0.1..0.264 uF to GND</text>
+<rect x="455" y="200" width="365" height="246" rx="10" class="box"/>
+<text x="473" y="232" class="t">2. Two independent input paths</text>
+<text x="473" y="270" class="s">VREF -- 1k -- comparator pin2 (-)</text>
+<text x="473" y="309" class="s">VREF -- 1k -- comparator pin5 (+)</text>
+<text x="473" y="348" class="s">Keep ACT-07 UV / OV dividers.</text>
+<text x="473" y="382" class="s">TLV3202 supply8 to observed +3V3</text>
+<text x="473" y="421" class="s">Bias / capacitance bounds are allocated.</text>
+<rect x="865" y="200" width="375" height="246" rx="10" class="hold"/>
+<text x="883" y="232" class="t">3. Missing retained-low interface</text>
+<text x="883" y="270" class="s">UV_OK pin1 and OV_OK pin7</text>
+<text x="883" y="309" class="s">Separate push-pull outputs.</text>
+<text x="883" y="348" class="s">Do not tie outputs together.</text>
+<text x="883" y="382" class="s">REF EN3, valid delay, clear</text>
+<text x="883" y="409" class="s">retention and total inhibit: OPEN</text>
+<text x="883" y="433" class="s">No path to QUAL_OK is made.</text>
+<path d="M410 280H449 M820 280H859" class="wire"/>
+<rect x="40" y="474" width="1200" height="95" rx="10" class="hold"/>
+<text x="58" y="504" class="t">Backfeed path to evaluate: charged VREF -&gt; each series resistor -&gt; input clamp -&gt; observed rail</text>
+<text x="58" y="533" class="s">Both pins may inject. A resistor bounds conditional current, not rail voltage, Ioff isolation or output state.</text>
+<text x="58" y="557" class="s">Bound all supply sources / sinks and retain clear before the 3.005 V reference test-condition boundary.</text>
+<rect x="40" y="597" width="580" height="173" rx="10" class="box"/>
+<text x="58" y="628" class="t">Settled load and error screen</text>
+<text x="58" y="663" class="s">Maximum source load: 1.009568 mA</text>
+<text x="58" y="693" class="s">Bleeder dissipation: 2.528942 mW</text>
+<text x="58" y="723" class="s">Conditional error remainder: 337.393 ppm</text>
+<text x="58" y="751" class="s">Does not qualify startup, aging or reference anomalies.</text>
+<rect x="660" y="597" width="580" height="173" rx="10" class="box"/>
+<text x="678" y="628" class="t">Series resistor comparison</text>
+<text x="678" y="663" class="s">1000 ohm: 46.213 ns to 1% at allocated 10 pF</text>
+<text x="678" y="693" class="s">10000 ohm: 462.129 ns to 1% at allocated 10 pF</text>
+<text x="678" y="723" class="s">1k fits this pole only; 10k exceeds the 100 ns budget.</text>
+<text x="678" y="751" class="s">Two-input current and added bias are in RESULTS.md.</text>
+<rect x="40" y="798" width="1200" height="105" rx="10" class="box"/>
+<text x="58" y="829" class="t">Discharge sensitivity: zero feed is not a shutdown guarantee</text>
+<text x="58" y="861" class="s">Feed: 0 / 10 / 100 / 1000 uA | Time to 0.3 V: 1.400 / 1.451 / 2.511 ms / unreachable</text>
+<text x="58" y="887" class="s">Model starts only after drive stops. No actual maximum leakage or shutdown waveform is accepted.</text>
+<rect x="40" y="932" width="1200" height="76" rx="10" class="hold"/>
+<text x="58" y="961" class="t">Next: explicit retained-low valid interface + reference shutdown / injection strategy.</text>
+<text x="58" y="990" class="s">Define supply, sink / hold-up, feed bounds and timing before exact part selection or native insertion.</text>
+</svg>

@@ -1,0 +1,53 @@
+{
+  "revision": "ACT-08",
+  "reviewed_UTC": "2026-10-22",
+  "reference": {
+    "part": "REF3425IDBVR",
+    "url": "https://www.ti.com/lit/gpn/REF34",
+    "document": "SBAS804G, April 2026",
+    "sections": [
+      "6.5 and footnotes 2/3",
+      "8.4.1",
+      "9.2.2.1",
+      "9.2.2.3",
+      "9.2.2.4"
+    ],
+    "electrical_header": "VIN = VOUT + VDO, COUT = 10 uF, CIN = 0.1 uF, IL = 0; min/max at -40..125 C, typical at 25 C. VIN = VEN = 12 V belongs to typical curves, not the initial-accuracy header.",
+    "line_max_ppm_per_V": 15,
+    "line_condition": "VOUT + 50 mV to 12 V",
+    "source_load_max_ppm_per_mA": 30,
+    "source_load_condition": "0..10 mA, VIN = VOUT + 500 mV",
+    "sinking_max_fulltemp_available": false,
+    "stable_C_uF": [
+      0.1,
+      10
+    ],
+    "shutdown_output": "High-impedance shutdown described; no maximum powered-off/reverse output leakage or guaranteed discharge time established.",
+    "EN": "Low <= 0.5 V, high >= 1.6 V; avoid dwelling between. Tying EN to IN is allowed when unused; does not replace slew/startup verification.",
+    "slew": "Manufacturer recommends rise/fall near 6 V/ms to avoid stated startup/shutdown anomalies; no tolerance window or arbitrary-fault guarantee inferred.",
+    "startup_ms_typ_only": 2.5,
+    "capacitance_applicability": "Proposed 0.1..0.264 uF effective capacitance differs from the 10 uF electrical table condition; startup and transient applicability remain open."
+  },
+  "comparator": {
+    "part": "TLV3202AIDGKR",
+    "url": "https://www.ti.com/lit/ds/symlink/tlv3202.pdf",
+    "document": "SBOS561C, May 2024",
+    "sections": [
+      "6.1 note 2",
+      "6.5",
+      "6.7",
+      "7.4",
+      "8.1.1"
+    ],
+    "input_clamp": "Supply-rail diode clamps; beyond rail by 0.5 V requires current limit <= 10 mA absolute. Not an Ioff or functional powered-off guarantee.",
+    "bias": "5 nA maximum over temperature at VCM = VCC/2 in 2.7 V/5 V tables; proposed reference common-mode applicability held.",
+    "capacitance": "2 pF common-mode / 4 pF differential typical; 10 pF is an allocated total, not a manufacturer maximum.",
+    "propagation_and_hysteresis": "ACT-07 applicability and maximum-hysteresis gates remain open.",
+    "below_minimum_supply": "Below 2.7 V behavior is unspecified; the off description in section 7.4 is not an Ioff or retained-low guarantee.",
+    "differential_input": "Section 8.1.1 warns against differential voltage greater than supply; current limiting alone does not qualify the application."
+  },
+  "translator": {
+    "source": "../actuator_enable/README.md",
+    "boundary": "TXU0102 zero-supply Ioff and <100 mV isolation conditions do not establish behavior throughout brownout."
+  }
+}
