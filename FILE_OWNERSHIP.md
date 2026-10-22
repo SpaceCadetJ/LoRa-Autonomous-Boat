@@ -203,3 +203,11 @@ Root claims reviews/codex/observer_power/** and current viewer/application/portf
 ### ACT-08 review completion — 2026-10-22 UTC
 
 Root and child ACT-08 write claims are released after the bounded observer-power packet. Independent source/arithmetic review, ten tests, model replay and desktop/phone viewer checks pass for conditional analysis only. Exact passive selection, shutdown/injection bounds and the retained-low observer-valid circuit remain held. Continue from the newest ACT-08 design_completion/HANDOFF.md entry; keep native QUAL_OK/ACK disabled and all previous circuit inputs preserved. Selective publication excludes the unchanged unrelated v1_design.py/route_v2.py edits. Ordinary commits and fast-forward pushes remain as authorized; no new active primary claim was found.
+
+## ACT-09 observer retention claim — 2026-10-22 UTC
+
+Root claims reviews/codex/observer_retention/** and current viewer/application/portfolio/CI/handoff integration from ebd2b6c. Expected candidate/live electrical and copper delta is zero. Bound the separate detection, retained-clear and physical-output-disable obligations; compare same-rail deadline with a proposed reverse-blocked observer island. Child retention_model owns only model.py/test_model.py; retention_review is read-only. Preserve ACT-04, both converters, ACT-01 populations, all earlier packets and corrected copper. Unimplemented permissions remain disabled; no native insertion, primary generators/router, firmware, purchasing or hardware action. Exclude unrelated v1_design.py and route_v2.py edits.
+
+### ACT-09 review completion — 2026-10-22 UTC
+
+Root and child ACT-09 write claims are released after independent architecture review, 12 tests and desktop/phone verification of six request traces. No native or physical-output acceptance; ACT-04 stays native and missing sources remain disabled. Follow the newest ACT-09 design_completion/HANDOFF.md entry for the exact U14-to-TXU0102 partial-power permission boundary. Preserve all prior circuit evidence and both unrelated dirty tools. Only reviewed packet/viewer/guide/CI integration is included in selective publication.

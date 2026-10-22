@@ -1,0 +1,42 @@
+{
+  "revision": "ACT-09",
+  "date_UTC": "2026-10-22",
+  "classification": "independently reviewed conditional architecture and request model",
+  "source_revision": "ebd2b6ca194592e05af791fd8c1a10663cd8a981",
+  "model_tests_passed": 12,
+  "independent_tests_passed": 12,
+  "demonstration_scenarios": 6,
+  "events_per_viewport": 37,
+  "preserved_input_count": 257,
+  "independent_review": {
+    "reviewer": "retention_review",
+    "corrections_applied": [
+      "Separate fast inhibition before U14 supply invalidity from 100 us handover-finish allocation; no undefined-OE interval is allowed.",
+      "3.005 V is reference-derived only; the final island floor must satisfy every powered guard/retention/conditioner/interface.",
+      "Timing-lockout wording leaves reference-enable governed by its independent power guard.",
+      "UI reports modeled guard checks; ACK high/low pulse widths and debounce remain excluded.",
+      "Diagram describes unqualified parameters plainly rather than using held as a status."
+    ],
+    "remaining_blockers_for_documented_conditional_scope": [],
+    "known_unmodeled_case": "1 ns ACK high/low pulses are outside physical acceptance; no pulse-width or debounce proof is asserted."
+  },
+  "visual_review": {
+    "diagram": "1280x980 raster inspected; readable separate cards and no observed label overlap.",
+    "explorer": "Desktop 1440x1050 and phone 390x844 screenshots inspected; request states, lockout and reference-enable distinction readable.",
+    "browser": "Each viewport verified all 6 scenarios / 37 events against captured analysis, next/restart controls, SVG zoom, guide/results and absence of page errors/horizontal page overflow."
+  },
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "hardware_tested": false,
+  "physical_OE_proven": false,
+  "physical_disabled_after_hold_up": false,
+  "hosted_CI_observed": false,
+  "qualification_ports_implemented": false,
+  "protected_unrelated_sha256": {
+    "hardware/kicad/tools/v1_design.py": "4c3765346e6b64976aaad5f406f8662056cfece10029767837a9f47864474dc0",
+    "hardware/kicad_v2/tools/route_v2.py": "3e44123b01d58c8373850c2becf77df2e7103877f9c223b6d102c14346cd03dd"
+  },
+  "next_scope": "Exact physical permission boundary between U14 and TXU0102 OE; partial-power, contention, disable time, leakage and continuous fail-disabled handover before native changes."
+}

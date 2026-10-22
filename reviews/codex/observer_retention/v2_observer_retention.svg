@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="980" viewBox="0 0 1280 980"><rect width="1280" height="980" fill="#f4f7fb"/><style>text{font-family:Arial,sans-serif;fill:#172638}.h{font-size:29px;font-weight:bold}.t{font-size:20px;font-weight:bold}.s{font-size:17px}.sub{font-size:18px;fill:#425874}.box{fill:white;stroke:#9bb3c9;stroke-width:2}.hold{fill:#fff5e7;stroke:#b86e12;stroke-width:2;stroke-dasharray:8 5}.line{stroke:#246789;stroke-width:3;fill:none}</style>
+<text x="40" y="50" class="h">ACT-09 | Detect, retain, then isolate the physical output</text>
+<text x="40" y="84" class="sub">Proposed architecture | No native amendment | Missing QUAL_OK / ACK sources stay disabled</text>
+<rect x="40" y="112" width="1200" height="62" rx="10" class="hold"/>
+<text x="58" y="139" class="t">Finite observer power does not guarantee disable through an indefinite brownout.</text>
+<text x="58" y="164" class="s">A separate output boundary must take over before the stored energy expires. No circuit is accepted here.</text>
+<rect x="40" y="202" width="365" height="125" rx="10" class="box"/>
+<text x="58" y="234" class="t">Main +3V3: sense upstream</text>
+<text x="58" y="268" class="s">Keep actual UV / OV observation.</text>
+<text x="58" y="298" class="s">A short must not drain held storage.</text>
+<rect x="455" y="202" width="365" height="125" rx="10" class="box"/>
+<text x="473" y="234" class="t">Proposed reverse-blocked island</text>
+<text x="473" y="268" class="s">Reference, observer and fault memory</text>
+<text x="473" y="298" class="s">Independent guard starts reference.</text>
+<rect x="870" y="202" width="370" height="125" rx="10" class="hold"/>
+<text x="888" y="234" class="t">Charge, OV and input paths: OPEN</text>
+<text x="888" y="268" class="s">Blocking is not OV protection.</text>
+<text x="888" y="298" class="s">All injected current needs bounds.</text>
+<path d="M405 263H449 M820 263H864" class="line"/>
+<rect x="40" y="365" width="365" height="183" rx="10" class="box"/>
+<text x="58" y="397" class="t">1. Detect before validity is lost</text>
+<text x="58" y="432" class="s">Declared amplitude, duration and slew</text>
+<text x="58" y="464" class="s">Sense / reference / supply applicability</text>
+<text x="58" y="496" class="s">Fast inhibit is a separate path.</text>
+<text x="58" y="527" class="s">400 ns is an allocation, not a guarantee.</text>
+<rect x="455" y="365" width="365" height="183" rx="10" class="box"/>
+<text x="473" y="397" class="t">2. Retain a detected fault</text>
+<text x="473" y="432" class="s">Keep clear through reference changes.</text>
+<text x="473" y="464" class="s">Fresh healthy epoch after each loss</text>
+<text x="473" y="496" class="s">QUAL release -&gt; guard -&gt; ACK</text>
+<text x="473" y="527" class="s">ACK with ARM low -&gt; guard -&gt; ARM</text>
+<rect x="870" y="365" width="370" height="183" rx="10" class="hold"/>
+<text x="888" y="397" class="t">3. Establish physical disable</text>
+<text x="888" y="432" class="s">U14 remains on original main +3V3.</text>
+<text x="888" y="464" class="s">Do not clamp its push-pull output.</text>
+<text x="888" y="496" class="s">Isolate invalid drive before TXU OE.</text>
+<text x="888" y="527" class="s">Retain R40; exact circuit still OPEN.</text>
+<path d="M405 455H449 M820 455H864" class="line"/>
+<rect x="40" y="586" width="580" height="150" rx="10" class="box"/>
+<text x="58" y="618" class="t">Same-rail observation deadline</text>
+<text x="58" y="653" class="s">3.071938 V to 3.005 V: 66.938 mV</text>
+<text x="58" y="684" class="s">400 ns zero-margin ceiling: 0.167345 V/us</text>
+<text x="58" y="715" class="s">This ceiling is not a held-island guarantee.</text>
+<rect x="660" y="586" width="580" height="150" rx="10" class="box"/>
+<text x="678" y="618" class="t">Held island: a finite handover interval</text>
+<text x="678" y="653" class="s">100 us handover budget; fast inhibit is still separate.</text>
+<text x="678" y="684" class="s">Zero-margin effective C: 4.457 uF</text>
+<text x="678" y="715" class="s">ESR, leakage, load and final disable remain unqualified.</text>
+<rect x="40" y="774" width="1200" height="85" rx="10" class="box"/>
+<text x="58" y="805" class="t">Explorer: startup, bounce, held ACK, conflicting edges, unknown receiver and guard loss</text>
+<text x="58" y="837" class="s">All displayed states are requests. Unknown inputs block qualification; timing conflicts invalidate the trace.</text>
+<rect x="40" y="894" width="1200" height="58" rx="10" class="hold"/>
+<text x="58" y="920" class="t">Next circuit task: exact U14-to-TXU0102 permission boundary under partial power.</text>
+<text x="58" y="944" class="s">Then close island charging, reverse blocking, overvoltage and reference shutdown before native insertion.</text>
+</svg>

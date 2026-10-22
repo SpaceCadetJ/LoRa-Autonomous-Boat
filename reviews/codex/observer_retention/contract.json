@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "revision": "ACT-09",
+  "source_revision": "ebd2b6ca194592e05af791fd8c1a10663cd8a981",
+  "classification": "conditional_architecture_and_request_model",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_accepted": false,
+  "hardware_accepted": false,
+  "parts_selected": false,
+  "qualification_ports_implemented": false,
+  "native_commands_rerun": false,
+  "proposal": {
+    "same_rail_overdrive_V": 3.0719380026289804,
+    "same_rail_valid_floor_V": 3.005,
+    "total_response_ns": 400,
+    "slew_V_per_us": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "island_start_source_min_V": 3.219942244224422,
+    "blocking_drop_max_V": 0.1,
+    "island_valid_floor_V": 3.005,
+    "island_total_load_A": 0.005,
+    "reverse_leakage_A": 0.0001,
+    "island_ESR_ohm": 0.1,
+    "effective_capacitance_F": [
+      1e-06,
+      4.7e-06,
+      1e-05
+    ],
+    "isolation_completion_allocated_s": 0.0001,
+    "qualification_ns": 1000000,
+    "clear_hold_ns": 1000,
+    "release_guard_ns": 100,
+    "arm_guard_ns": 100
+  },
+  "requirements": {
+    "REF_EN_request": "Follows independent guard_ok, not reference_valid or QUAL_OK; avoids a circular start condition.",
+    "guard_ok": "Independent supply/window authority with power valid before use. No implemented source.",
+    "reference_valid": "Externally established settled/bounded reference under actual supply/slew/load; not inferred from elapsed time.",
+    "request_model": "All health inputs must be present/true before qualification. Timing conflicts invalidate a trace; Boolean priority is not an analog proof.",
+    "fault_path": "Fast inhibit plus fault memory plus physical output-disable boundary are distinct obligations.",
+    "island": "Proposed reverse-blocked monitor supply for reference/comparator/retention/conditioner; main-rail sensing stays upstream. This does not power or validate existing U14 through brownout.",
+    "output_boundary": "Must prevent invalid U14 from sourcing translator OE. Do not add a clamp against push-pull U14. Final series/enable isolation must be specified before native insertion.",
+    "shutdown": "Independent guard requests REF_EN low and output isolation, while retained state remains powered until verified isolation completes. Reference injection paths still need bounds.",
+    "startup": "Begin output-isolated; independently validate island and reference, then require a fresh healthy interval and deliberate ACK with ARM low.",
+    "hold_up": "Effective capacitance, ESR, total load, reverse leakage and 100 us isolation deadline are unverified allocations; no fault source may drain the island outside the budget.",
+    "OV": "Reverse blocking alone does not reject input overvoltage; island voltage ceiling and every pin/interface limit still need an explicit protection path.",
+    "off_state": "A finite hold-up result ends at 3.005 V. It proves nothing afterward; an independently valid disabled output condition must already exist.",
+    "release": "The 1 ms healthy interval is a policy allocation after reference_valid, not a reference startup guarantee.",
+    "island_floor": "3.005 V is the inherited reference sourcing-test floor, not a guarantee for unselected island parts. The charge screen assumes every island element remains valid down to this floor; use the maximum applicable floor across guard, retention, conditioner and interfaces when selecting parts. A higher floor reduces margin.",
+    "fast_boundary": "Before main logic leaves its applicable supply range, the physical output boundary must suppress invalid U14 drive and then maintain disable continuously. The 100 us isolation-completion allocation is a handover-finish budget, not permission for undefined OE or a substitute for the fast end-to-end inhibit deadline.",
+    "excluded_pulse_checks": "The request sequencer checks only listed guard intervals. It does not validate ACK high/low pulse widths, debounce, analog edge rates or asynchronous pulse capture."
+  },
+  "next_scope": "Close the physical permission boundary between U14 and TXU0102 OE, with exact partial-power, output-contention, disable-delay and powered-off leakage conditions; then resolve island isolation/charge/OV paths on a fresh native copy."
+}

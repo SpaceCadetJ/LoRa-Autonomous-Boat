@@ -1,0 +1,42 @@
+{
+  "revision": "ACT-09",
+  "reviewed_UTC": "2026-10-22",
+  "prior_evidence": [
+    "../observer_power/contract.json",
+    "../observer_power/analysis.json",
+    "../observation_3v3/analysis.json",
+    "../actuator_latch/source_review.json",
+    "../actuator_latch/TIMING.md"
+  ],
+  "sources": [
+    {
+      "part": "TXU0102",
+      "document": "SCES941A, March 2022",
+      "url": "https://www.ti.com/lit/ds/symlink/txu0102.pdf",
+      "sections": [
+        "9.1",
+        "9.3.4",
+        "9.3.6",
+        "11"
+      ],
+      "facts": "Glitch-free supply sequencing is specified. Isolation with one supply below 100 mV or disconnected requires complementary supply within recommended conditions. OE should remain low/floating through transitions.",
+      "inference": "Upstream invalid OE generation, remote receiver injection and an indefinite partial-power state still require board-level analysis; do not claim the translator lacks sequencing support."
+    },
+    {
+      "part": "TLV3202",
+      "document": "SBOS561C, May 2024",
+      "url": "https://www.ti.com/lit/ds/symlink/tlv3202.pdf",
+      "sections": [
+        "8.1.1"
+      ],
+      "facts": "Differential input voltage relative to supply requires review during supply loss.",
+      "inference": "A bounded series-input current does not itself establish valid outputs or isolation."
+    }
+  ],
+  "allocated_not_sourced": [
+    "Reverse-block path drop, ESR, effective capacitance, total load and reverse leakage",
+    "100 us isolation-completion deadline",
+    "1 ms healthy qualification, 1 us clear hold, 100 ns release/arm guards"
+  ],
+  "native_or_hardware_accepted": false
+}

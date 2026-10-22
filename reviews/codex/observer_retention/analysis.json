@@ -1,0 +1,971 @@
+{
+  "schema": 1,
+  "revision": "ACT-09",
+  "verdict": "conditional_architecture_and_request_model",
+  "native_accepted": false,
+  "hardware_accepted": false,
+  "parts_selected": false,
+  "qualification_ports_implemented": false,
+  "native_commands_rerun": false,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "physical_disabled_after_hold_up": false,
+  "physical_OE_proven": false,
+  "same_rail": {
+    "overdrive_V": 3.0719380026289804,
+    "valid_floor_V": 3.005,
+    "headroom_V": 0.06693800262898053,
+    "response_ns": 400.0,
+    "maximum_slew_V_per_us": 0.16734500657245133,
+    "strictly_below_maximum_slew_required": true,
+    "cases": [
+      {
+        "slew_V_per_us": 0.01,
+        "additional_excursion_V": 0.004,
+        "residual_V": 0.06293800262898053,
+        "fits_conditional_deadline_only": true
+      },
+      {
+        "slew_V_per_us": 0.1,
+        "additional_excursion_V": 0.04000000000000001,
+        "residual_V": 0.026938002628980523,
+        "fits_conditional_deadline_only": true
+      },
+      {
+        "slew_V_per_us": 1.0,
+        "additional_excursion_V": 0.4,
+        "residual_V": -0.3330619973710195,
+        "fits_conditional_deadline_only": false
+      }
+    ]
+  },
+  "held_island": {
+    "source_min_V": 3.219942244224422,
+    "blocking_drop_max_V": 0.1,
+    "total_discharge_current_A": 0.0051,
+    "initial_ESR_drop_V": 0.00051,
+    "initial_after_drops_V": 3.1194322442244222,
+    "valid_floor_V": 3.005,
+    "headroom_V": 0.11443224422442233,
+    "isolation_deadline_s": 0.0001,
+    "effective_capacitance_at_zero_margin_F": 4.456785790199114e-06,
+    "cases": [
+      {
+        "effective_capacitance_F": 1e-06,
+        "available_charge_C": 1.1443224422442232e-07,
+        "time_to_valid_floor_s": 2.243769494596516e-05,
+        "isolation_margin_s": -7.756230505403485e-05,
+        "fits_allocated_isolation_deadline_only": false,
+        "physical_disabled_after_hold_up": false
+      },
+      {
+        "effective_capacitance_F": 4.7e-06,
+        "available_charge_C": 5.378315478547849e-07,
+        "time_to_valid_floor_s": 0.00010545716624603626,
+        "isolation_margin_s": 5.45716624603625e-06,
+        "fits_allocated_isolation_deadline_only": true,
+        "physical_disabled_after_hold_up": false
+      },
+      {
+        "effective_capacitance_F": 1e-05,
+        "available_charge_C": 1.1443224422442234e-06,
+        "time_to_valid_floor_s": 0.00022437694945965164,
+        "isolation_margin_s": 0.00012437694945965162,
+        "fits_allocated_isolation_deadline_only": true,
+        "physical_disabled_after_hold_up": false
+      }
+    ],
+    "physical_disabled_after_hold_up": false
+  },
+  "sequencing_allocations_ns": {
+    "qualification_ns": 1000000,
+    "clear_hold_ns": 1000,
+    "release_guard_ns": 100,
+    "arm_guard_ns": 100
+  },
+  "formulas": {
+    "same_rail": "headroom = overdrive - valid_floor; residual = headroom - slew*(response_ns/1000)",
+    "island": "I = load + reverse_leakage; V0 = source_min - blocking_drop - I*ESR; Q = C*max(0,V0-valid_floor); t = Q/I",
+    "isolation_margin": "time_to_valid_floor - allocated_isolation_deadline; positive margin is conditional only"
+  },
+  "limitations": [
+    "Same-rail detection has a finite deadline and does not retain a valid disabled state through arbitrary brownout.",
+    "Hold-up allocations are not chosen components, measured loads, leakage bounds or qualified detection/disable delays.",
+    "A finite held island expires at its validity floor; a stalled or prolonged rail fault can exhaust it. Physical disable after that remains unproven.",
+    "Reverse blocking does not supply overvoltage protection, reference startup bounds, injection isolation or valid existing U14 behavior.",
+    "Sequencer outputs are logical requests, not physical pins; unimplemented input sources default disabled.",
+    "Timing conflicts invalidate the complete trace. Request-level ordering cannot establish asynchronous hardware dominance, metastability margins, pulse widths or pin behavior.",
+    "Reference validity must be supplied independently; the qualification interval is not a reference startup guarantee."
+  ],
+  "prior_allocation_alignment": {
+    "same_rail_overdrive_V": 3.0719380026289804,
+    "same_rail_valid_floor_V": 3.005,
+    "island_valid_floor_V": 3.005,
+    "island_start_source_min_V": 3.219942244224422,
+    "total_response_ns": 400
+  },
+  "demonstrations": {
+    "healthy_startup_ack_arm": {
+      "request_model_only": true,
+      "physical_OE_proven": false,
+      "hardware_accepted": false,
+      "native_accepted": false,
+      "physical_disabled_after_hold_up": false,
+      "timing_contract_met": true,
+      "timing_violations": [],
+      "trace": [
+        {
+          "t_ns": 0,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": false,
+            "rail_ok": false,
+            "local5v_ok": false,
+            "remote_ready": false,
+            "watchdog_ok": false,
+            "stop_ok": false,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": [],
+          "note": "Reference requested before reference validity."
+        },
+        {
+          "t_ns": 1000,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001000,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001100,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": true,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001200,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": true
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": true,
+          "ARM_ACCEPTED_requested": true,
+          "OUTPUT_ENABLE_requested": true,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        }
+      ]
+    },
+    "fault_bounce_fresh_requalification": {
+      "request_model_only": true,
+      "physical_OE_proven": false,
+      "hardware_accepted": false,
+      "native_accepted": false,
+      "physical_disabled_after_hold_up": false,
+      "timing_contract_met": true,
+      "timing_violations": [],
+      "trace": [
+        {
+          "t_ns": 0,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": false,
+            "rail_ok": false,
+            "local5v_ok": false,
+            "remote_ready": false,
+            "watchdog_ok": false,
+            "stop_ok": false,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": [],
+          "note": "Reference requested before reference validity."
+        },
+        {
+          "t_ns": 1000,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001000,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001100,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": true,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001200,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": true
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": true,
+          "ARM_ACCEPTED_requested": true,
+          "OUTPUT_ENABLE_requested": true,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001301,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": false,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": true
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1002301,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1502301,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": false,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1503301,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 2503301,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 2503401,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": true,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 2503501,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": true
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": true,
+          "ARM_ACCEPTED_requested": true,
+          "OUTPUT_ENABLE_requested": true,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        }
+      ]
+    },
+    "held_ack_blocks": {
+      "request_model_only": true,
+      "physical_OE_proven": false,
+      "hardware_accepted": false,
+      "native_accepted": false,
+      "physical_disabled_after_hold_up": false,
+      "timing_contract_met": true,
+      "timing_violations": [],
+      "trace": [
+        {
+          "t_ns": 0,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": false,
+            "rail_ok": false,
+            "local5v_ok": false,
+            "remote_ready": false,
+            "watchdog_ok": false,
+            "stop_ok": false,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": [],
+          "note": "Reference requested before reference validity."
+        },
+        {
+          "t_ns": 1000,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001000,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001100,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": true,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001200,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": true
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": true,
+          "ARM_ACCEPTED_requested": true,
+          "OUTPUT_ENABLE_requested": true,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001301,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": false,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": true
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1002301,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 2003301,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        }
+      ]
+    },
+    "coincident_release_ack_unqualified": {
+      "request_model_only": true,
+      "physical_OE_proven": false,
+      "hardware_accepted": false,
+      "native_accepted": false,
+      "physical_disabled_after_hold_up": false,
+      "timing_contract_met": false,
+      "timing_violations": [
+        {
+          "t_ns": 1001000,
+          "reason": "ack_at_qualification_release"
+        }
+      ],
+      "trace": [
+        {
+          "t_ns": 0,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": false,
+            "rail_ok": false,
+            "local5v_ok": false,
+            "remote_ready": false,
+            "watchdog_ok": false,
+            "stop_ok": false,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": [],
+          "note": "Reference requested before reference validity."
+        },
+        {
+          "t_ns": 1000,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001000,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": false,
+          "new_timing_violations": [
+            "ack_at_qualification_release"
+          ]
+        },
+        {
+          "t_ns": 1001200,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": true
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": false,
+          "new_timing_violations": []
+        }
+      ]
+    },
+    "unknown_receiver_blocks": {
+      "request_model_only": true,
+      "physical_OE_proven": false,
+      "hardware_accepted": false,
+      "native_accepted": false,
+      "physical_disabled_after_hold_up": false,
+      "timing_contract_met": true,
+      "timing_violations": [],
+      "trace": [
+        {
+          "t_ns": 0,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": null,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001000,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": null,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        }
+      ]
+    },
+    "guard_loss_reference_off": {
+      "request_model_only": true,
+      "physical_OE_proven": false,
+      "hardware_accepted": false,
+      "native_accepted": false,
+      "physical_disabled_after_hold_up": false,
+      "timing_contract_met": true,
+      "timing_violations": [],
+      "trace": [
+        {
+          "t_ns": 0,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": false,
+            "rail_ok": false,
+            "local5v_ok": false,
+            "remote_ready": false,
+            "watchdog_ok": false,
+            "stop_ok": false,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": [],
+          "note": "Reference requested before reference validity."
+        },
+        {
+          "t_ns": 1000,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001000,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": false,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001100,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": false
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": true,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001200,
+          "inputs": {
+            "guard_ok": true,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": true
+          },
+          "REF_EN_requested": true,
+          "QUAL_requested": true,
+          "READY_requested": true,
+          "ARM_ACCEPTED_requested": true,
+          "OUTPUT_ENABLE_requested": true,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        },
+        {
+          "t_ns": 1001301,
+          "inputs": {
+            "guard_ok": false,
+            "reference_valid": true,
+            "rail_ok": true,
+            "local5v_ok": true,
+            "remote_ready": true,
+            "watchdog_ok": true,
+            "stop_ok": true,
+            "ack": true,
+            "arm": true
+          },
+          "REF_EN_requested": false,
+          "QUAL_requested": false,
+          "READY_requested": false,
+          "ARM_ACCEPTED_requested": false,
+          "OUTPUT_ENABLE_requested": false,
+          "timing_contract_met_so_far": true,
+          "new_timing_violations": []
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "reviews/codex/observer_retention/contract.json": "6b1dac7cb98b7434db8e6c80afc5e0a02cf0cb15f7e27fcead2c002d7ead4dc3",
+    "reviews/codex/observer_retention/model.py": "fba462c753974da267ec18a3da7a8670992656d692e4521a489977e62580730b",
+    "reviews/codex/observation_3v3/analysis.json": "62198987556c6ed8f003f4738e0f174f67c6a07719510ca5bd27e67eb39ced68",
+    "reviews/codex/observer_power/analysis.json": "c982489e81d3ce410bc98948ad850ce03ad0102d56524be88de5c58da45965ed"
+  }
+}

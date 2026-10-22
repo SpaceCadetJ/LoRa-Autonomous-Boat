@@ -1,6 +1,10 @@
 # LoRa controller: from legacy board to reviewable platform
 
-## Current power-state packet — ACT-08, 2026-10-22
+## Current retention packet — ACT-09, 2026-10-22
+
+The [retention architecture](../../reviews/codex/observer_retention/README.md) and [sequence explorer](../../reviews/codex/observer_retention/index.html) distinguish detection, retained clear and physical output disable. The same-rail UV budget tightens to a conditional 0.167345 V/us zero-margin ceiling. A separate island has only finite hold-up; a disabled physical output must take over before it expires. The next task is the U14-to-TXU0102 permission boundary under partial power. Native circuitry and powered applications remain held. This supersedes earlier next-task text below.
+
+## Previous power-state packet — ACT-08, 2026-10-22
 
 The [observer power-state review](../../reviews/codex/observer_power/README.md) adds an annotated power-path map and tested load, discharge and input-settling calculations. A 2.49 kΩ reference load leaves 337.393 ppm within the conditional reference allocation. A continuing 1 mA feed prevents discharge to the illustrative 0.3 V endpoint; 10 kΩ series resistance exceeds the allocated 100 ns settling time. The 1 kΩ proposal needs explicit retained-low validity and shutdown/injection control before native insertion. No circuit or powered application is released. This supersedes earlier next-task text below.
 

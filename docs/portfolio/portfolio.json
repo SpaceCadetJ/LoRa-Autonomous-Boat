@@ -46,7 +46,9 @@
     "rail_explorer": "reviews/codex/rail_qualification/index.html",
     "supervisor_comparison": "reviews/codex/supervisor_comparison/README.md",
     "observation_3v3": "reviews/codex/observation_3v3/README.md",
-    "observer_power": "reviews/codex/observer_power/README.md"
+    "observer_power": "reviews/codex/observer_power/README.md",
+    "observer_retention": "reviews/codex/observer_retention/README.md",
+    "sequence_explorer": "reviews/codex/observer_retention/index.html"
   },
   "technologies": [
     "STM32F446",
@@ -192,6 +194,11 @@
       "path": "reviews/codex/observer_power/v2_observer_power.svg",
       "kind": "functional_proposal",
       "caption": "ACT-08 conditional observer load and shutdown-path study; no native connection or hardware acceptance."
+    },
+    {
+      "path": "reviews/codex/observer_retention/v2_observer_retention.svg",
+      "kind": "functional_proposal",
+      "caption": "ACT-09 proposed observer island and physical-output handover; no native amendment or hardware acceptance."
     }
   ],
   "validated_results": [
@@ -421,6 +428,15 @@
         "reviews/codex/observer_power/test_model.py",
         "reviews/codex/observer_power/RESULTS.md"
       ]
+    },
+    {
+      "claim": "ACT-09 reproduces conditional same-rail deadlines, finite hold-up and fault/restart request traces. The physical permission boundary remains unimplemented.",
+      "classification": "conditional_architecture_and_request_model",
+      "evidence": [
+        "reviews/codex/observer_retention/analysis.json",
+        "reviews/codex/observer_retention/test_model.py",
+        "reviews/codex/observer_retention/RESULTS.md"
+      ]
     }
   ],
   "current_native_findings": {
@@ -449,7 +465,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Continue from ACT-08: design a retained-low observer-valid interface and reference shutdown/injection path; define supply, sink/hold-up, feed bounds and timing before native insertion. Missing permissions stay disabled.",
+    "Continue from ACT-09: close the physical permission boundary between U14 and TXU0102 OE, including contention, partial power, disable delay and off-state leakage; then resolve island charge/blocking/OV paths. Missing qualifications remain disabled.",
     "Qualify supply sequencing, C11/VSERVO transients, full 6S feed, leakage/damping, ADC and combined IMU2 before PCB integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",

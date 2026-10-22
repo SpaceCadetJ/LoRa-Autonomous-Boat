@@ -1,0 +1,44 @@
+{
+  "scope": "Local viewer SVG, zoom and retention guide and six-scenario request explorer checks; no native circuit or hardware test",
+  "input_sha256": {
+    "reviews/codex/observer_retention/README.md": "94e9e4e2f7e3febc7a7a46457c53b7f28ee516f325d6354047acc1584cd9923b",
+    "reviews/codex/observer_retention/RESULTS.md": "dd27ce87cf85ab88990f62176bfa16b25a4ebf349e3f26803bc76ed03902d1f8",
+    "reviews/codex/observer_retention/analysis.json": "cea0851f7625545973b94ce303496991936be66ef2e314c35a099910d7fc64e2",
+    "reviews/codex/observer_retention/index.html": "34645f17890126825e7c7578ee244276a417af1e0f552c26d5cad9b81743135e",
+    "reviews/codex/observer_retention/v2_observer_retention.svg": "b025bb507cd2c79d8521cf0f479cb54708604cf201edef95fd55a0fc564634bb",
+    "reviews/codex/observer_retention/verify_viewer.cjs": "9ce982f00b23bf929b3a7329b781fa523395f4a6abcef960823a3ec75ea9727a",
+    "pm/index.template.html": "6ddebd1a25e21dd24c9abeae5806569aa3dfa63a6ad484dcad1c510b24db220e"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "planning_svg_loaded": true,
+      "zoom_percent": 200,
+      "guide_and_numeric_tables": true,
+      "explorer_scenarios": 6,
+      "explorer_events": 37,
+      "restart_and_timing_lockout": true,
+      "horizontal_page_overflow": false,
+      "dialog_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "planning_svg_loaded": true,
+      "zoom_percent": 200,
+      "guide_and_numeric_tables": true,
+      "explorer_scenarios": 6,
+      "explorer_events": 37,
+      "restart_and_timing_lockout": true,
+      "horizontal_page_overflow": false,
+      "dialog_overflow": false,
+      "page_errors": []
+    }
+  ]
+}
