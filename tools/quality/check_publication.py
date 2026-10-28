@@ -363,6 +363,12 @@ def main():
     check_hashes(isolation["artifact_sha256"], "ACT-10 circuit proposal and OE screen")
     assert all(isolation[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
     assert all(isolation[k] is False for k in ["parts_selected", "hardware_tested", "fabrication_approved", "native_commands_rerun", "qualification_ports_implemented", "partial_power_isolation_qualified", "source_timing_applicable_to_RC_edge"])
+    shutdown_root = "reviews/codex/vcca_shutdown/"
+    shutdown = read_json(shutdown_root + "packet_manifest.json")
+    check_hashes(shutdown["input_sha256"], "ACT-11 preserved inputs")
+    check_hashes(shutdown["artifact_sha256"], "ACT-11 supply-state and discharge review")
+    assert all(shutdown[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
+    assert all(shutdown[k] is False for k in ["parts_selected", "hardware_tested", "fabrication_approved", "native_commands_rerun", "qualification_ports_implemented", "supply_collapse_timing_qualified", "continuous_partial_power_isolation_qualified"])
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -382,6 +388,7 @@ def main():
     pages += [ROOT / observer_power_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / retention_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / isolation_root / name for name in ["README.md", "RESULTS.md"]]
+    pages += [ROOT / shutdown_root / name for name in ["README.md", "RESULTS.md"]]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

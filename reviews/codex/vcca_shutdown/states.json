@@ -1,0 +1,48 @@
+{
+  "packet": "ACT-11",
+  "scope": "source_applicability_and_logical_counterexample_not_waveform_model",
+  "states": [
+    {
+      "id": "both_valid_OE_low",
+      "conditions": "Both supplies within valid ranges; OE valid low",
+      "source_result": "Outputs high impedance through OE control",
+      "limitation": "OE timing depends on specified edge and load; this does not bound supply collapse."
+    },
+    {
+      "id": "VCCA_below_100mV",
+      "conditions": "VCCA <100mV; VCCB valid",
+      "source_result": "Documented static supply isolation",
+      "limitation": "No maximum entry time established. Hold the rail below the condition against feed."
+    },
+    {
+      "id": "qualified_float",
+      "conditions": "VCCA undriven, external leakage<=10nA; VCCB valid",
+      "source_result": "Documented disconnected-supply isolation",
+      "limitation": "A QOD-connected rail is not the floating test case. Low inputs recommended; Ioff-float test ports atGND."
+    },
+    {
+      "id": "intermediate_or_bouncing",
+      "conditions": "VCCA between isolation endpoint and valid range, or bouncing",
+      "source_result": "Glitch-free sequencing documented; no fast-inhibit deadline established",
+      "limitation": "Do not grant operation or claim the <100mV condition before it is reached."
+    },
+    {
+      "id": "complementary_invalid",
+      "conditions": "VCCB outside its applicable range",
+      "source_result": "Single-rail isolation condition cannot be applied without its prerequisites",
+      "limitation": "Assess both rails and external feed; default permission stays disabled."
+    },
+    {
+      "id": "switch_input_collapses",
+      "conditions": "TPS22919 IN drops below1.6V during shutdown",
+      "source_result": "Outside recommended switch input range",
+      "limitation": "Cannot assume QOD24ohm or continuous discharge persists."
+    },
+    {
+      "id": "restore_after_power_only_off",
+      "conditions": "Only U4 VCCA was interrupted; U12-U14 remained powered and QUAL/ARM/READY high",
+      "source_result": "Old enable request is retained and can resume on restoration",
+      "limitation": "Power cycling U4 does not clear READY. Separate fault clear and fresh ACK are required."
+    }
+  ]
+}

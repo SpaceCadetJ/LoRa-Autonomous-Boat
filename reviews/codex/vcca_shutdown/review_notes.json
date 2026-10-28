@@ -1,0 +1,38 @@
+{
+  "packet": "ACT-11",
+  "date_utc": "2026-10-27",
+  "baseline_head": "bdf6349971d127346feda8e1438255e887ca79f8",
+  "reviewers": {
+    "act11_review": "Independent primary-source, topology, arithmetic and final claim review passed. Verified both proposed/native pin maps, all298 preserved inputs, corrected QOD input-collapse citation and fixed-illustration assertions. Read-only; no circuit acceptance.",
+    "root": "Reviewed integration, eight passing tests, generated diagram and phone results screenshot. Desktop1440x1050 and phone390x844 checks pass for SVG loading,200%zoom, guide/results dialogs, overflow and page errors; viewer_check.json records tested input hashes."
+  },
+  "verified_in_this_packet": [
+    "Exact ACT-04 U4/C13/C14/R40 supply/value memberships against the preserved native XML.",
+    "TPS22919DCKR proposed pin map and applicability distinctions against primary sources.",
+    "Conditional constant-feed arithmetic, charge requirement and fixed-illustration drift rejection.",
+    "Logical stale-READY counterexample when only U4 VCCA cycles."
+  ],
+  "not_verified": [
+    "Maximum collapse-to-high-Z timing or total backfeed across arbitrary partial power.",
+    "Actual receiver waveform, glitch rejection, actuator stopping or recovery.",
+    "Secondary shutdown circuit, reverse isolation or continuous disabled hold.",
+    "No native commands, hardware, flashing, assembly, hosted CI or fabrication approval."
+  ],
+  "test_count": 8,
+  "preserved_input_count": 298,
+  "next_task": "Connector-level fault acceptance contract for fast inhibit, continuous disabled hold and fresh rearm; preserve400ns/245ns allocation unless explicitly revised with evidence. Unknown receiver identities/bounds remain unavailable.",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "reviewed_sha256": {
+    "README.md": "189236b96cfd466f7ae49291140df76eea293d109876e3239c3ec819a8557017",
+    "RESULTS.md": "c5c474fecdc0558f81b70e8d7bb9c679870d2820eacd2e43aa392daacf99def2",
+    "sources.json": "6b62620a7abc6309ecc162793f2248bb94a2301cfb275f189bd96fd8bac05fec",
+    "states.json": "c2d010f1593cce6c4a8f18407314c65a81f39fc57413807fbed6cfd45f2be6c1",
+    "contract.json": "a2658285889378e0b4d50f5dd2eae98780539e2276ab6ca1e3cbffe57aab7bc5",
+    "build_packet.py": "604afb8b930fa7b54c3affffab6e21e05f29b8454a884046040fdfa899ce1c74",
+    "test_packet.py": "84ed01a57b7431d192e608b6fae85522809e04e84e110c79f84678549e69082e",
+    "analysis.json": "d7a63f098eb7e901ad500a9484b228442ae625ff6b9e2079c9ee3212d501dd52",
+    "v2_vcca_shutdown.svg": "ba5c41f2fcca92fce52814e06a8cbbade641ec5d549747890ac226dbe6627094"
+  }
+}

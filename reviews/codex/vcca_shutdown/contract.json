@@ -1,0 +1,65 @@
+{
+  "packet": "ACT-11",
+  "decision": "VCCA_gating_not_accepted_as_fast_primary_inhibit",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "parts_selected": false,
+  "native_commands_rerun": false,
+  "hardware_tested": false,
+  "fabrication_approved": false,
+  "qualification_ports_implemented": false,
+  "supply_collapse_timing_qualified": false,
+  "continuous_partial_power_isolation_qualified": false,
+  "existing_memberships": {
+    "U4.3": "+3V3",
+    "C13.1": "+3V3",
+    "U4.7": "/Power/+5V_BUCK",
+    "C14.1": "/Power/+5V_BUCK",
+    "U4.6": "/Actuators/ACT_OE",
+    "U14.4": "/Actuators/ACT_OE",
+    "R40.1": "/Actuators/ACT_OE"
+  },
+  "existing_values": {
+    "C13": "100nF",
+    "C14": "100nF",
+    "R40": "10k"
+  },
+  "proposal_only": {
+    "TPS22919DCKR.1_IN": "+3V3",
+    "TPS22919DCKR.2_GND": "GND",
+    "TPS22919DCKR.3_ON": "independent SUPPLY_PERMIT with external10k pulldown; unimplemented",
+    "TPS22919DCKR.4_NC": "leave floating",
+    "TPS22919DCKR.5_QOD": "connect directly to pin6 VOUT",
+    "TPS22919DCKR.6_VOUT": "new VCCA_SW to U4.3 and C13.1 only",
+    "local_input_bypass": "100nF proposed; identity unselected",
+    "unchanged": "U4.7/C14.1 /Power/+5V_BUCK; U12-U14 main3V3; R40/OE and ACT-01 source populations"
+  },
+  "illustration": {
+    "nominal_C13_F": 1e-07,
+    "R_QOD_ohm_typical": 24,
+    "initial_V": 3.6,
+    "target_V_allocated": 0.08,
+    "feed_A_cases": [
+      0,
+      0.0001,
+      0.001,
+      0.004
+    ],
+    "downstream_budget_s_allocated": 2.45e-07,
+    "full_response_s_allocated": 4e-07,
+    "input_power_valid_assumed": true,
+    "turnoff_delay_included": false,
+    "TXU_supply_isolation_delay_included": false,
+    "corner_bound": false
+  },
+  "holds": [
+    "No maximum TXU supply-collapse-to-high-Z time established. OE disable timing must not be reused.",
+    "TPS22919 QOD resistance, turnoff and rise/fall times cited here are typical, not maximum guarantees.",
+    "Input may leave TPS22919 recommended1.6..5.5V range before permanent discharge is established.",
+    "Total feed from switch, OE, data, VCCB, PCB and transient paths is not bounded across partial supply.",
+    "Floating and actively discharged supply cases must not be conflated.",
+    "Secondary shutdown still requires fast inhibit and fresh requalification; no timer alone permits rearm.",
+    "Cycling only U4 VCCA leaves the separately powered U12 READY latch intact; power restoration can resume an old permission unless a separately qualified fault path clears it and requires a fresh ACK."
+  ]
+}

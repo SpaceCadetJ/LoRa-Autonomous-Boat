@@ -1,0 +1,38 @@
+{
+  "packet": "ACT-11",
+  "classification": "typical_parameter_illustration_not_delay_bound",
+  "cases": [
+    {
+      "feed_A_allocated": 0,
+      "floor_V_typical_model": 0,
+      "time_to_target_s_typical_model": 9.135989975448767e-06
+    },
+    {
+      "feed_A_allocated": 0.0001,
+      "floor_V_typical_model": 0.0024000000000000002,
+      "time_to_target_s_typical_model": 9.207491539841578e-06
+    },
+    {
+      "feed_A_allocated": 0.001,
+      "floor_V_typical_model": 0.024,
+      "time_to_target_s_typical_model": 9.975956269339813e-06
+    },
+    {
+      "feed_A_allocated": 0.004,
+      "floor_V_typical_model": 0.096,
+      "time_to_target_s_typical_model": null
+    }
+  ],
+  "charge_C_at_nominal_C13": 3.52e-07,
+  "average_net_sink_A_for_245ns": 1.436734693877551,
+  "maximum_feed_A_for_finite_80mV_crossing": 0.0033333333333333335,
+  "native_accepted": false,
+  "hardware_accepted": false,
+  "supply_collapse_timing_qualified": false,
+  "input_sha256": {
+    "reviews/codex/vcca_shutdown/contract.json": "a2658285889378e0b4d50f5dd2eae98780539e2276ab6ca1e3cbffe57aab7bc5",
+    "reviews/codex/vcca_shutdown/build_packet.py": "604afb8b930fa7b54c3affffab6e21e05f29b8454a884046040fdfa899ce1c74",
+    "reviews/codex/oe_isolation/model.py": "3313787191f923b9cb760ff8558f0797617d34040270d1932d5ee4fb4996e869",
+    "reviews/codex/actuator_latch/native/netlist.xml": "c101893bb8c1a503f908d8b6140b60db82ebced5a0870b6658b095906f049110"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "reviewed_utc": "2026-10-22",
+  "finalized_utc": "2026-10-27",
+  "classification": "primary_source_review_not_measurement",
+  "sources": [
+    {
+      "id": "TXU0102",
+      "document": "TI SCES941A, revised March2022",
+      "url": "https://www.ti.com/lit/ds/symlink/txu0102.pdf",
+      "sections": [
+        "7.5",
+        "7.10",
+        "9.3.4-9.3.6",
+        "11"
+      ],
+      "static_isolation": "Either supply below100mV or qualifying disconnected supply; complementary supply must be within recommended conditions.",
+      "floating_definition": "Externally undriven, external leakage<=10nA; inputs low recommended before disconnect.",
+      "leakage_scope": "Ioff rows: A/B ports at0..5.5V, one supply0V. Ioff-float rows: port atGND. Do not use these rows as a complete OE or arbitrary partial-rail feed bound.",
+      "sequencing": "Glitch-free supply sequencing is documented. It does not specify a maximum collapse-to-high-Z response or clear external READY state.",
+      "timing": "No maximum supply-collapse-to-high-Z time established. The36ns OE-to-B table entry is a different path."
+    },
+    {
+      "id": "TPS22919",
+      "document": "TI SLVSEN5B, revised May2019",
+      "url": "https://www.ti.com/lit/ds/symlink/tps22919.pdf",
+      "sections": [
+        "5",
+        "6.3",
+        "6.5-6.6",
+        "7.1",
+        "8.3.1",
+        "8.3.3",
+        "8.3.3.1",
+        "ordering addendum"
+      ],
+      "candidate": "TPS22919DCKR",
+      "pins": {
+        "IN": 1,
+        "GND": 2,
+        "ON": 3,
+        "NC_leave_floating": 4,
+        "QOD": 5,
+        "VOUT": 6
+      },
+      "valid_input_V": [
+        1.6,
+        5.5
+      ],
+      "ambient_C": [
+        -40,
+        105
+      ],
+      "junction_characterization_C": [
+        -40,
+        125
+      ],
+      "ON_VIL_max_V": 0.35,
+      "ON_VIH_min_V": 1.0,
+      "typical_only": {
+        "QOD_ohm": 24,
+        "turnoff_us": 6,
+        "turnon_us_at3_6V": 1750,
+        "fall_us_RL100_C100nF": 10
+      },
+      "timing_conditions": "Typical table:25C,VIN3.6V unless otherwise specified,CL0.1uF,RL100ohm. Timing control edges100ns. RQOD short for cited fall example.",
+      "limits": "QOD R and timing are not max bounds. VIN shutdown current is not a complete VOUT feed limit. No reverse isolation or QOD behavior during arbitrary VIN collapse is accepted by this review. Section 8.3.3.1 states that QOD strength decreases as VIN falls."
+    }
+  ]
+}

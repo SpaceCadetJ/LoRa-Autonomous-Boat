@@ -1,0 +1,39 @@
+{
+  "scope": "Local SVG, zoom, circuit proposal and numeric table checks; no native or hardware verification",
+  "input_sha256": {
+    "reviews/codex/vcca_shutdown/README.md": "189236b96cfd466f7ae49291140df76eea293d109876e3239c3ec819a8557017",
+    "reviews/codex/vcca_shutdown/RESULTS.md": "c5c474fecdc0558f81b70e8d7bb9c679870d2820eacd2e43aa392daacf99def2",
+    "reviews/codex/vcca_shutdown/analysis.json": "d7a63f098eb7e901ad500a9484b228442ae625ff6b9e2079c9ee3212d501dd52",
+    "reviews/codex/vcca_shutdown/v2_vcca_shutdown.svg": "ba5c41f2fcca92fce52814e06a8cbbade641ec5d549747890ac226dbe6627094",
+    "reviews/codex/vcca_shutdown/verify_viewer.cjs": "16c03ab64304a3a4dac7f59a1edffee085fbdbb642a62ee5ad975924b39b67b6",
+    "pm/index.template.html": "d623577c0895018eb6107f26dda1d0327e61a61cd7c789c5f439df6b6904986f"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "proposal_svg_loaded": true,
+      "zoom_percent": 200,
+      "guide_and_results": true,
+      "expected_zero_delta_visible": true,
+      "horizontal_overflow": false,
+      "dialog_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "proposal_svg_loaded": true,
+      "zoom_percent": 200,
+      "guide_and_results": true,
+      "expected_zero_delta_visible": true,
+      "horizontal_overflow": false,
+      "dialog_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

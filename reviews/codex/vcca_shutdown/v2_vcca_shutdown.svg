@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="980" viewBox="0 0 1280 980"><rect width="1280" height="980" fill="#f4f7fb"/><style>text{font-family:Arial,sans-serif;fill:#172638}.h{font-size:28px;font-weight:bold}.t{font-size:20px;font-weight:bold}.s{font-size:17px}.sub{font-size:18px;fill:#425874}.box{fill:white;stroke:#9bb3c9;stroke-width:2}.hold{fill:#fff5e7;stroke:#b86e12;stroke-width:2;stroke-dasharray:8 5}.wire{fill:none;stroke:#246789;stroke-width:3}.proposed{fill:none;stroke:#a46d20;stroke-width:2;stroke-dasharray:7 4}</style>
+<text x="40" y="48" class="h">ACT-11 | Supply isolation is a state, not a proven shutdown deadline</text>
+<text x="40" y="80" class="sub">Proposed VCCA-only switch | ACT-04 stays native | Exact supply and restart boundaries</text>
+<rect x="40" y="108" width="1200" height="64" rx="9" class="hold"/>
+<text x="58" y="135" class="t">NOT ACCEPTED as primary fast inhibit: no bounded supply-collapse response.</text>
+<text x="58" y="160" class="s">Possible secondary shutdown remains unqualified. No new native circuit or purchasing part is released.</text>
+<rect x="40" y="208" width="260" height="140" rx="9" class="box"/>
+<text x="58" y="239" class="t">Existing +3V3</text>
+<text x="58" y="271" class="s">U12 / U13 / U14 stay here.</text>
+<text x="58" y="304" class="s">READY remains powered.</text>
+<rect x="440" y="208" width="345" height="140" rx="9" class="hold"/>
+<text x="458" y="239" class="t">TPS22919DCKR proposal</text>
+<text x="458" y="271" class="s">IN1 -&gt; switch -&gt; VOUT6</text>
+<text x="458" y="303" class="s">QOD5 tied to VOUT; GND2</text>
+<rect x="940" y="208" width="300" height="140" rx="9" class="box"/>
+<text x="958" y="239" class="t">TXU0102 U4</text>
+<text x="958" y="271" class="s">VCCA3 + C13.1 -&gt; VCCA_SW</text>
+<text x="958" y="303" class="s">C13 remains 100 nF to GND.</text>
+<path class="wire" d="M300 280H440 M785 280H940"/>
+<text x="801" y="266" class="s">VCCA_SW</text>
+<rect x="40" y="391" width="745" height="102" rx="9" class="hold"/>
+<text x="58" y="421" class="s">Independent SUPPLY_PERMIT -&gt; ON3; external 10k pulldown</text>
+<text x="58" y="451" class="s">ON source unimplemented: default disabled. NC4 left floating.</text>
+<text x="58" y="479" class="s">Local input bypass proposed; QOD behavior below VIN 1.6 V is open.</text>
+<path class="proposed" d="M610 391V348"/>
+<rect x="830" y="391" width="410" height="102" rx="9" class="box"/>
+<text x="848" y="421" class="t">Preserve VCCB7 and C14.1</text>
+<text x="848" y="451" class="s">/Power/+5V_BUCK, before D4</text>
+<text x="848" y="479" class="s">ACT-01 source populations unchanged.</text>
+<rect x="40" y="533" width="580" height="142" rx="9" class="box"/>
+<text x="58" y="565" class="t">Static isolation condition</text>
+<text x="58" y="596" class="s">VCCA below 100 mV, with VCCB valid</text>
+<text x="58" y="627" class="s">A discharged node is not the floating-supply test.</text>
+<text x="58" y="658" class="s">Entry time and continuous backfeed remain unqualified.</text>
+<rect x="660" y="533" width="580" height="142" rx="9" class="hold"/>
+<text x="678" y="565" class="t">Power-only restart counterexample</text>
+<text x="678" y="596" class="s">U4 off does not clear the separately powered READY latch.</text>
+<text x="678" y="627" class="s">Old enable can return when VCCA is restored.</text>
+<text x="678" y="658" class="s">Independent fault clear + healthy interval + fresh ACK.</text>
+<rect x="40" y="712" width="580" height="148" rx="9" class="box"/>
+<text x="58" y="743" class="t">Illustration, not a component timing bound</text>
+<text x="58" y="774" class="s">100 nF / typical 24 ohm / no feed / 3.6 V -&gt; 80 mV</text>
+<text x="58" y="805" class="s">9.136 us after ideal disconnection; other delays omitted</text>
+<text x="58" y="836" class="s">Do not remove bypass to force a timing fit.</text>
+<rect x="660" y="712" width="580" height="148" rx="9" class="box"/>
+<text x="678" y="743" class="t">Fast inhibit allocation remains unchanged</text>
+<text x="678" y="774" class="s">400 ns total; 245 ns downstream</text>
+<text x="678" y="805" class="s">Nominal capacitor charge removal: 352 nC</text>
+<text x="678" y="836" class="s">245 ns would require 1.437 A average net sink.</text>
+<rect x="40" y="900" width="1200" height="62" rx="9" class="hold"/>
+<text x="58" y="926" class="t">Next: define connector-level fault acceptance before choosing a third isolation circuit.</text>
+<text x="58" y="951" class="s">Separate fast inhibit, indefinite disabled hold and rearm. Missing receiver qualifications stay disabled.</text>
+</svg>

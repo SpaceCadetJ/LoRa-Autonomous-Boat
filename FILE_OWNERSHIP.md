@@ -219,3 +219,11 @@ Root claims reviews/codex/oe_isolation/** and current viewer/application/portfol
 ### ACT-10 review completion - 2026-10-22 UTC
 
 Root and child ACT-10 scopes are released after the bounded source/connection/RC review and viewer integration. The series switch remains held for signal range, intermediate supply and timing applicability; no candidate/live CAD/copper or hardware delta. Independent review corrections and12 tests are recorded in oe_isolation/review_notes.json. Continue from the newest handoff's TXU VCCA gating/discharge study, preserving ACT-01 VCCB populations and U12-U14 supply. Keep missing qualifications disabled. Previous packets and both unrelated dirty tools remain preserved; publication includes only the reviewed packet and current documentation/CI integration.
+
+## ACT-11 translator supply shutdown claim - 2026-10-22 UTC
+
+Root claims reviews/codex/vcca_shutdown/** and current viewer/application/portfolio/CI/handoff integration from bdf6349. Review TXU0102 supply isolation with one TPS22919DCKR discharge proposal; candidate/live electrical and copper delta are zero. Child vcca_source_review is read-only. Preserve U4.7/C14.1 on /Power/+5V_BUCK, U12-U14 supplies, R40, both converters, ACT-01 population options, all previous packets and unrelated v1_design.py/route_v2.py edits. No primary generators/router, native recapture, firmware, purchasing, hardware actions or branch/history changes. Missing qualifications remain disabled.
+
+### ACT-11 review completion - 2026-10-27 UTC
+
+Root and read-only child review scopes are released after the bounded supply-shutdown packet, independent source/topology review,8 tests and desktop/phone viewer checks. ACT-04 stays native; no circuit/copper delta. TPS22919 VCCA gating remains unaccepted as primary fast inhibit, and power-only cycling leaves READY retained. Continue with the newest handoff's connector-level fault contract, keeping400ns/245ns allocations and missing qualifications disabled. Preserve all previous packets and both unrelated dirty tools. Selective publication contains only this packet and current viewer/application/portfolio/CI/handoff integration.

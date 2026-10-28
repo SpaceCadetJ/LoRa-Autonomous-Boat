@@ -1,5 +1,9 @@
 # LoRa controller: from legacy board to reviewable platform
 
+## Current supply-shutdown review - ACT-11, 2026-10-27
+
+The [translator supply review](../../reviews/codex/vcca_shutdown/README.md) and [annotated connection diagram](../../reviews/codex/vcca_shutdown/v2_vcca_shutdown.svg) record why the reviewed VCCA switch is not accepted as a primary fast inhibit. Typical discharge arithmetic provides no maximum response guarantee, and cycling U4 alone leaves the separately powered READY latch intact. No native circuit or application is released. Next define the connector-level fault contract for fast inhibit, continuous disabled hold and fresh rearm before another part selection; the 400 ns total / 245 ns downstream allocation remains unchanged. This supersedes earlier next-task text; ACT-04 remains native.
+
 ## Current OE isolation review - ACT-10, 2026-10-22
 
 The [annotated switch proposal](../../reviews/codex/oe_isolation/README.md) and [calculated limits](../../reviews/codex/oe_isolation/RESULTS.md) expose an optimistic 9.805 pF total enable-node capacitance ceiling. A positive arithmetic margin does not qualify the slow OE edge or intermediate-supply isolation. No circuit is inserted. Next assess TXU0102 VCCA gating/discharge with a separate supply-collapse timing contract. This supersedes older next-task text; ACT-04 remains native and applications remain held.
