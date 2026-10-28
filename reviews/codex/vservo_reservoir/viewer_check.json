@@ -1,0 +1,53 @@
+{
+  "scope": "Local portable viewer, native drawing preview and allocated reservoir arithmetic; no waveform, load or hardware tests",
+  "input_sha256": {
+    "reviews/codex/vservo_reservoir/README.md": "99afd16496b7dc936171825c4c403893eb87346d2619534dc64272dc02f875e7",
+    "reviews/codex/vservo_reservoir/RESULTS.md": "5bc5469fa611ad1e26722488b554ddac86edc2ad26957d904f0fca40e75cf82a",
+    "reviews/codex/vservo_reservoir/analysis.json": "0d781347bac9226dd9cb35056cf5e431a7a1c78a1e3b934d946d07e6aea27b29",
+    "reviews/codex/vservo_reservoir/model.py": "a880c3c1bca97dc30144497be3cb8e0efa19f5601e2ea938f4fa8d3c383be396",
+    "reviews/codex/vservo_reservoir/index.html": "ca44931c495e2f2e1e3026e1a5f46a4168768633b4e3476fa7f9f39fe3739e18",
+    "reviews/codex/vservo_reservoir/explorer.template.html": "3ebae47bf7f0043ef19108f66f4f4729034a35e4a996581e556bd54de77043a4",
+    "reviews/codex/vservo_reservoir/v2_vservo_reservoir.svg": "95f0c4801b5658b8b33a698a2cfcb1e19f56833e3344f56efaa44581f12cdb27",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Power.svg": "3facd132f16a60a159649dd08a7f4afe4961f45026cad76d1598920fd80c1274",
+    "reviews/codex/vservo_reservoir/verify_viewer.cjs": "ba2f1fc2d0ad87d91554bc344e2b51089b4abad1bc5e1cb3fbfb1c6184cf422c",
+    "pm/index.template.html": "1536d22d3201b8ce90b7b672051ddf7108360bbc3fc725392ef5ba764a4fd1e3"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "diagram_loaded": true,
+      "annotated_diagram_text_in_bounds": true,
+      "native_power_preview": true,
+      "zoom_percent": 200,
+      "two_guide_dialogs": true,
+      "source_conditions_visible": true,
+      "three_load_steps_match_analysis": true,
+      "nine_energy_cases_match_analysis": true,
+      "strict_arithmetic_margin_only": true,
+      "physical_acceptance_flags_false": true,
+      "horizontal_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "diagram_loaded": true,
+      "annotated_diagram_text_in_bounds": true,
+      "native_power_preview": true,
+      "zoom_percent": 200,
+      "two_guide_dialogs": true,
+      "source_conditions_visible": true,
+      "three_load_steps_match_analysis": true,
+      "nine_energy_cases_match_analysis": true,
+      "strict_arithmetic_margin_only": true,
+      "physical_acceptance_flags_false": true,
+      "horizontal_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

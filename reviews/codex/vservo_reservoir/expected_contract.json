@@ -1,0 +1,59 @@
+{
+  "revision": "VSERVO-01",
+  "baseline_candidate": "ACT-04",
+  "classification": "isolated_identity_land_amendment_with_unqualified_reservoir",
+  "expected_changed_components": [
+    "C11"
+  ],
+  "expected_pin_net_changes": {},
+  "candidate_electrical_membership_delta": 0,
+  "candidate_identity_changes": 1,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": true,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "reservoir_qualified": false,
+  "qualification_ports_implemented": false,
+  "source_identity": {
+    "mpn": "EEE-FK1A101P",
+    "value": "100uF 10V",
+    "footprint": "Capacitor_SMD:CP_Elec_6.3x7.7",
+    "status": "unconfirmed_not_proven_nonexistent"
+  },
+  "candidate_identity": {
+    "mpn": "EEEFK1C101P",
+    "manufacturer": "Panasonic",
+    "value": "100uF 16V",
+    "footprint": "LoRa_Boat_Controller_V2:CP_Panasonic_FK_D_6.3x5.8",
+    "datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf",
+    "description": "VSERVO-01 held C11 candidate; reservoir and assembly unqualified"
+  },
+  "candidate_pad_contract_mm": {
+    "centers_x": [
+      -2.5,
+      2.5
+    ],
+    "centers_y": [
+      0,
+      0
+    ],
+    "size": [
+      3.2,
+      1.6
+    ],
+    "inner_gap": 1.8,
+    "outer_span": 8.2,
+    "pad1": "positive VSERVO",
+    "pad2": "negative GND"
+  },
+  "preserve": [
+    "both converter sheets",
+    "ACT-01 source populations",
+    "all429 physical pin memberships",
+    "all127 other component identities",
+    "ACT-04 latch and default-disabled qualifications",
+    "live PCB and Allegro/V1"
+  ]
+}

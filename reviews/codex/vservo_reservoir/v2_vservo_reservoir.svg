@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="980" viewBox="0 0 1280 980"><rect width="1280" height="980" fill="#f4f7fb"/><style>text{font-family:Arial,sans-serif;fill:#172638}.h{font-size:28px;font-weight:bold}.t{font-size:20px;font-weight:bold}.s{font-size:17px}.sub{font-size:18px;fill:#425874}.box{fill:white;stroke:#9bb3c9;stroke-width:2}.hold{fill:#fff5e7;stroke:#b86e12;stroke-width:2;stroke-dasharray:8 5}.wire{fill:none;stroke:#246789;stroke-width:3}.pad{fill:#b67420;stroke:#714614;stroke-width:1}</style>
+<text x="40" y="48" class="h">VSERVO-01 | C11 identity, land pattern and energy boundary</text>
+<text x="40" y="80" class="sub">Native isolated candidate | 429 pin memberships preserved | Live PCB and purchasing package unchanged</text>
+<rect x="40" y="107" width="1200" height="66" rx="9" class="hold"/>
+<text x="58" y="136" class="t">EEEFK1C101P is a confirmed 100 uF / 16 V candidate, with explicit Panasonic lands.</text>
+<text x="58" y="161" class="s">The higher capacitor rating does not raise the receiver voltage limit. Reservoir and assembly remain unqualified.</text>
+<rect x="40" y="205" width="300" height="92" rx="9" class="box"/>
+<text x="58" y="237" class="t">ONBOARD: +5V_BUCK</text>
+<text x="58" y="271" class="s">D4 populated; D9 DNP</text>
+<rect x="40" y="322" width="300" height="92" rx="9" class="box"/>
+<text x="58" y="354" class="t">BEC_ONLY: BEC_IN</text>
+<text x="58" y="388" class="s">D9 populated; D4 DNP</text>
+<path class="wire" d="M340 251H430V368H340 M430 310H480 M800 310H900"/>
+<rect x="480" y="254" width="320" height="110" rx="9" class="box"/>
+<text x="498" y="286" class="t">VSERVO / J3.2 / TP4.1</text>
+<text x="498" y="320" class="s">C11.1 + ; C11.2 GND</text>
+<text x="498" y="346" class="s">C12: no effective-capacitance credit</text>
+<rect x="900" y="254" width="340" height="110" rx="9" class="hold"/>
+<text x="918" y="286" class="t">Servo + harness: unknown</text>
+<text x="918" y="319" class="s">Load steps and returned energy</text>
+<text x="918" y="346" class="s">No accepted sink / clamp path</text>
+<text x="480" y="403" class="t">Forward source feed is not a controlled energy sink.</text>
+<rect x="40" y="452" width="590" height="233" rx="9" class="box"/>
+<text x="58" y="484" class="t">Land correction | top view, dimensions in mm</text>
+<circle cx="185" cy="568" r="69.3" fill="none" stroke="#91a9ba" stroke-width="2"/>
+<rect x="87.1" y="550.4" width="77.0" height="35.2" class="pad"/>
+<text x="120.6" y="574" class="s">1</text>
+<rect x="205.9" y="550.4" width="77.0" height="35.2" class="pad"/>
+<text x="239.4" y="574" class="s">2</text>
+<text x="75" y="534" class="s">+</text>
+<text x="85" y="654" class="t">Existing stock</text>
+<text x="71" y="678" class="s">3.5 x 1.6; gap 1.9; span 8.9</text>
+<circle cx="475" cy="568" r="69.3" fill="none" stroke="#91a9ba" stroke-width="2"/>
+<rect x="384.8" y="550.4" width="70.4" height="35.2" class="pad"/>
+<text x="415.0" y="574" class="s">1</text>
+<rect x="494.8" y="550.4" width="70.4" height="35.2" class="pad"/>
+<text x="525.0" y="574" class="s">2</text>
+<text x="365" y="534" class="s">+</text>
+<text x="375" y="654" class="t">Candidate</text>
+<text x="361" y="678" class="s">3.2 x 1.6; gap 1.8; span 8.2</text>
+<rect x="660" y="452" width="580" height="233" rx="9" class="box"/>
+<text x="678" y="484" class="t">What native verification establishes</text>
+<text x="678" y="521" class="s">One C11 identity / footprint amendment; zero pin changes.</text>
+<text x="678" y="553" class="s">Both converters and exclusive populations preserved.</text>
+<text x="678" y="585" class="s">ERC: zero errors, same AD0 warning.</text>
+<text x="678" y="617" class="s">Native pad inspection matches selected dimensions.</text>
+<text x="678" y="649" class="s">No PCB fit, stencil, assembly or reservoir acceptance.</text>
+<rect x="40" y="720" width="590" height="144" rx="9" class="box"/>
+<text x="58" y="752" class="t">Load step | illustrative allocations</text>
+<text x="58" y="783" class="s">5 V start; 0.5 A deficit for 100 us; allocated R = 0.2 ohm</text>
+<text x="58" y="812" class="s">80 uF endpoint = 4.275 V &lt; allocated 4.5 V floor</text>
+<text x="58" y="841" class="s">C &gt; 125 uF needed for positive arithmetic margin.</text>
+<rect x="660" y="720" width="580" height="144" rx="9" class="box"/>
+<text x="678" y="752" class="t">Returned energy | ideal endpoint, not peak</text>
+<text x="678" y="783" class="s">80 uF: only 0.210 mJ from 5 V to allocated 5.5 V</text>
+<text x="678" y="812" class="s">Source, load, sink, ripple and inductance remain unknown.</text>
+<text x="678" y="841" class="s">56 / 80 uF are source-conditioned illustrations only.</text>
+<rect x="40" y="898" width="1200" height="62" rx="9" class="hold"/>
+<text x="58" y="926" class="t">Next: bound the VSERVO energy sink and reverse-voltage path for both source populations.</text>
+<text x="58" y="951" class="s">Keep missing permissions disabled. Preserve 6S, both converters and the separate IMU2 review lineage.</text>
+</svg>

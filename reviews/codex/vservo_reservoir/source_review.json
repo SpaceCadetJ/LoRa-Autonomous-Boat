@@ -1,0 +1,107 @@
+{
+  "revision": "VSERVO-01",
+  "reviewed_utc": "2026-10-28",
+  "classification": "primary_source_identity_and_selected_land_dimensions",
+  "original_identity": "EEE-FK1A101P",
+  "original_status": "Unconfirmed in exact primary searches and current FK catalog; neither nonexistence nor discontinuation inferred.",
+  "candidate": "EEEFK1C101P",
+  "candidate_release_status": "held isolated identity/land proposal; no purchasing release",
+  "sources": [
+    {
+      "id": "product",
+      "url": "https://industrial.panasonic.com/ww/products/pt/aluminum-cap-smd/models/EEEFK1C101P",
+      "scope": "Exact listed manufacturer identity and tabulated component parameters; no explicit lifecycle or stock guarantee.",
+      "parameters": {
+        "capacitance_uF": 100,
+        "rated_voltage_V": 16,
+        "tolerance_percent": 20,
+        "temperature_C": [
+          -55,
+          105
+        ],
+        "ripple_mA_rms_at_100kHz": 240,
+        "impedance_max_ohm_at_100kHz": 0.36,
+        "ESR_specification_available": false,
+        "leakage_max_uA": 16,
+        "endurance_h": 2000,
+        "body_diameter_mm": 6.3,
+        "body_length_mm": 5.8
+      }
+    },
+    {
+      "id": "catalog",
+      "url": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf",
+      "revision_date": "2026-02-10",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "scope": "FK standard D row and recommended lands, not V vibration-proof or AP high-reflow variants.",
+      "conditions": {
+        "capacitance_tolerance": "120 Hz, +20 C",
+        "ripple": "100 kHz, +105 C",
+        "impedance": "100 kHz, +20 C; not an ESR value",
+        "leakage": "Two minutes after reaching rated voltage, +20 C",
+        "endurance": "Rated voltage for 2000 h at +105 C +/-2 C; stabilized at +20 C afterward; capacitance change within +/-30 percent of initial."
+      },
+      "land_mm": {
+        "gap_a": 1.8,
+        "pad_length_b": 3.2,
+        "pad_width_c": 1.6,
+        "derived_centers_x": [
+          -2.5,
+          2.5
+        ],
+        "derived_span": 8.2
+      },
+      "body_mm": {
+        "diameter_nominal": 6.3,
+        "diameter_tolerance": 0.5,
+        "height_nominal": 5.8,
+        "height_tolerance": 0.3,
+        "base_nominal": 6.6,
+        "base_tolerance": 0.2,
+        "terminal_span_max": 7.8
+      }
+    },
+    {
+      "id": "solder",
+      "url": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/DME0000COL48.pdf",
+      "revision_date": "2026-01-30",
+      "pages": [
+        1
+      ],
+      "scope": "Candidate catalog profile (1): case-top 250 C peak, 5 s at peak, 60 s at or above 200 C, one cycle. Board solder joints/process remain unqualified."
+    },
+    {
+      "id": "precautions",
+      "url": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/DME0000COL75.pdf",
+      "pages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "scope": "Reverse voltage prohibited; DC plus ripple peak must stay within rating; repetitive charge/discharge requires application-specific review. Component limits do not establish system transient acceptance."
+    }
+  ],
+  "existing_land_mm": {
+    "pad_size": [
+      3.5,
+      1.6
+    ],
+    "centers_x": [
+      -2.7,
+      2.7
+    ],
+    "gap": 1.9,
+    "span": 8.9
+  },
+  "qualification_limits": [
+    "Exact land dimensions do not approve mask, stencil, solder profile execution, board fit, vibration or assembly.",
+    "No actual receiver/BEC load, regeneration, transient waveform, ripple spectrum or thermal/lifetime result exists.",
+    "A 16 V capacitor rating is not a 16 V VSERVO or receiver operating limit.",
+    "C12 nominal capacitance is not credited as a guaranteed effective minimum."
+  ]
+}

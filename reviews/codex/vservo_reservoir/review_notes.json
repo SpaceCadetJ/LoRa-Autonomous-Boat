@@ -1,0 +1,73 @@
+{
+  "revision": "VSERVO-01",
+  "reviewed_utc": "2026-10-28",
+  "scope": "Independent primary-source, land, arithmetic and captured-native comparison; root report and visual review. No hardware acceptance.",
+  "reviewed_sha256": {
+    "README.md": "99afd16496b7dc936171825c4c403893eb87346d2619534dc64272dc02f875e7",
+    "source_review.json": "75841b12b8356ba403e15bc600c74e2d2dd299a6821b5657ee6b93bbca1e43ee",
+    "expected_contract.json": "de06fcce1d4c4842c2ce56895a74bde1ee4b6867d10ca5b02d5de511fe789644",
+    "model.py": "a880c3c1bca97dc30144497be3cb8e0efa19f5601e2ea938f4fa8d3c383be396",
+    "test_model.py": "4916fb26976ed5c5b339ac9176d2c8d76fa175f005e96b0385f7d5738c7f977f",
+    "build_candidate.py": "96bd061181801a9a5b9bf698383f8a1aa89fb11bb7cdccddfead8547303989d1",
+    "verify_candidate.py": "e2412da2f85cebb19bb2410d90dbc1c4a999b1d9c6a5f7a7d14aab44ad5a52e9",
+    "test_candidate.py": "ee89093fc450935a7556377f0e2f4a85f3c1764ad235f3d91c271e6840a062fb",
+    "inspect_geometry.py": "d42dcdace5f00ccf6e7b6477c6eac2a76c9da5b36acb877d25730ac1ef311fa1",
+    "validation.json": "5b4368c738677de7fd522cfd6172c6f16d15b8090943036e41d91225abff498c",
+    "geometry_native.json": "1914d6e2239d1ba57ac6ae12c4324170f0510e3ce710cadc9ee8603c62518da1",
+    "native/netlist.xml": "77de758d11e734e2c7dbb456192ad875f8a17449f67f1feb382b6a17888b0804",
+    "source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/CP_Panasonic_FK_D_6.3x5.8.kicad_mod": "24cad54e9d05f1e36f93a704b28d6cdbd1b9305d5d836448a9557d037ff0f350",
+    "build_packet.py": "ba008890e2fc206864437f481f9393424b7b4f35ff44a73da22cc0c460c23eb4",
+    "RESULTS.md": "5bc5469fa611ad1e26722488b554ddac86edc2ad26957d904f0fca40e75cf82a",
+    "analysis.json": "0d781347bac9226dd9cb35056cf5e431a7a1c78a1e3b934d946d07e6aea27b29",
+    "v2_vservo_reservoir.svg": "95f0c4801b5658b8b33a698a2cfcb1e19f56833e3344f56efaa44581f12cdb27",
+    "explorer.template.html": "3ebae47bf7f0043ef19108f66f4f4729034a35e4a996581e556bd54de77043a4",
+    "verify_viewer.cjs": "ba2f1fc2d0ad87d91554bc344e2b51089b4abad1bc5e1cb3fbfb1c6184cf422c"
+  },
+  "independent_review": {
+    "source_identity_and_conditions": "pass; exact candidate listed; original identity remains unconfirmed rather than declared nonexistent",
+    "native_comparison": "pass; 429 memberships/node attributes and127 other full component records preserved; C11 metadata alone differs; both converters and population bytes preserved",
+    "native_erc": "zero errors, unchanged AD0 warning",
+    "footprint": "native and portable pad geometry agree; selected lands match manufacturer; other assembly geometry remains proposed",
+    "arithmetic": "independently recomputed load endpoints, energy budgets and strict equality thresholds",
+    "candidate_tests": 13,
+    "model_tests": 12,
+    "additional_mutations": "duplicate component and pin records rejected in memory"
+  },
+  "corrections": [
+    {
+      "issue": "Returned-energy omission wording could imply the load-step ESR drop was omitted.",
+      "resolution": "Qualified that omitted ESR/inductive peak applies to returned-energy branch; neither branch includes converter/source dynamics."
+    },
+    {
+      "issue": "Source ledger spacing.",
+      "resolution": "Changed above200 C to above 200 C."
+    },
+    {
+      "issue": "Fixed diagram/report examples could drift from model inputs.",
+      "resolution": "Builder asserts all fixed illustration inputs, capacitance cases, endpoint and threshold values before rendering."
+    },
+    {
+      "issue": "Land circle could touch title.",
+      "resolution": "Shifted land illustrations and labels; root inspected diagram-preview.png and confirmed separation."
+    }
+  ],
+  "root_visual_review": [
+    "Annotated diagram readable with no overlapping title, pad or caption.",
+    "Standalone explorer keeps source conditions and acceptance limits adjacent to calculations.",
+    "Desktop/phone explorer and annotated review are readable; all3 load steps and9 return-energy cases match recorded data.",
+    "Native Power screenshot confirms the isolated C11 annotation; the inherited crowded C12/annotation region remains a layout-polish task, not an accepted professional-sheet completion."
+  ],
+  "limitations": [
+    "Native capture and replay do not establish fit, PCB routing, mask/paste/stencil/reflow execution, reservoir, thermal, vibration, hardware or fabrication acceptance.",
+    "80 uF initial and56 uF stacked post-endurance figures apply only at their stated measurement conditions; no all-condition effective bound.",
+    "No actual load, BEC/source envelope, receiver identity/voltage limits, return energy, ripple spectrum or harness inductance is established.",
+    "Missing qualification ports remain default disabled; IMU2 remains separate."
+  ],
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "reservoir_qualified": false,
+  "browser_record": "viewer_check.json"
+}

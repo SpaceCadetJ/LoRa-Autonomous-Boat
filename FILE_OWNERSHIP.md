@@ -235,3 +235,12 @@ Root claims reviews/codex/connector_fault_contract/** and current viewer/applica
 ### ACT-12 review completion - 2026-10-28 UTC
 
 Root and child ACT-12 write claims are released after the connector fault contract, nine tests, independent review and desktop/phone explorer checks. No native/copper/circuit delta; receiver evidence and physical acceptance remain open. Continue from the latest handoff's C11 identity/VSERVO reservoir packet while exact ESC/BEC/servo details are outstanding. Preserve all earlier evidence, source populations, both converters, default-disabled qualifications and the two unrelated dirty tools. Selective publication includes only this packet and current documentation/viewer/portfolio/CI integration.
+
+## VSERVO-01 C11 identity and reservoir claim - 2026-10-28 UTC
+
+Root claims reviews/codex/vservo_reservoir/** and current viewer/application/portfolio/CI/handoff integration from7ebb315. Proposed isolated ACT-04 amendment: C11 only, to the confirmed Panasonic EEEFK1C101P 100 uF/16 V and explicit manufacturer D-size lands. Expected pin/net delta zero; one component identity/footprint change; live electrical/copper delta zero. Both converters, ACT-01 populations and all permissions are preserved. c11_identity_review is read-only. c11_native owns only candidate/native/geometry scripts and captured source/native/geometry records after assignment; root owns guide/model/viewer/integration. No live CAD, primary generators/router, firmware, purchasing, hardware or branch/history changes. Exclude unrelated v1_design.py and route_v2.py edits; receiver and reservoir acceptance remain held.
+
+
+### VSERVO-01 review completion - 2026-10-28 UTC
+
+Root and child write scopes are released after the isolated C11 amendment, independent source/native/math review, 13 candidate tests, 12 model tests and desktop/phone checks. All 429 memberships, 127 other component records, both converter sheets and ACT-01 populations are preserved. VSERVO-01 is the latest native candidate in this isolated lineage; live PCB/BOM/firmware and hardware acceptance remain unchanged. Continue from the newest handoff's energy-sink/reverse-voltage boundary task. Preserve disabled missing permissions and 6S. Native C12 annotation crowding remains a separate polish task. Selective publication excludes both unrelated dirty tools.

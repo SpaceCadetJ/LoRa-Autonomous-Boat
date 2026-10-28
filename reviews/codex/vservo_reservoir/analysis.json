@@ -1,0 +1,347 @@
+{
+  "revision": "VSERVO-01",
+  "classification": "source_conditioned_idealized_arithmetic",
+  "parameters": {
+    "classification": "illustrative_allocations_not_measured_load_or_limits",
+    "initial_voltage_V": 5.0,
+    "allocated_floor_V": 4.5,
+    "allocated_ceiling_V": 5.5,
+    "current_deficit_A": 0.5,
+    "duration_s": 0.0001,
+    "allocated_constant_esr_ohm": 0.2,
+    "net_retained_energies_J": [
+      0.0001,
+      0.00025,
+      0.001
+    ],
+    "C12_credited_capacitance_F": 0.0,
+    "C12_credit_condition": "No credit until DC-bias and temperature behavior are established.",
+    "voltage_envelope_note": "4.5/5.5 V are allocations, not receiver limits or capacitor ratings.",
+    "esr_note": "0.2 ohm is a free allocation, not inferred from 360 mOhm AC impedance.",
+    "source_conditions": "The candidate's nominal 100 uF has initial +/-20% capacitance tolerance at 120 Hz and 20 C. The separate endurance criterion allows +/-30% change from the initial value after the specified test and restoration to 20 C. Stacking those limits gives 56 uF only for that post-test condition; it is not an all-temperature, in-operation lifetime or effective-capacitance lower bound.",
+    "nominal_capacitance_F": 0.0001,
+    "initial_tolerance_fraction": 0.2,
+    "post_endurance_change_fraction_of_initial": 0.3
+  },
+  "cases": [
+    {
+      "capacitance_F": 5.6e-05,
+      "condition": "stacked_post_endurance_20C_only",
+      "label": "56 uF: stacked initial and post-endurance limits at the specified restored condition",
+      "load_step": {
+        "charge_removed_C": 5e-05,
+        "esr_drop_V": 0.1,
+        "capacitive_drop_V": 0.8928571428571429,
+        "algebraic_endpoint_V": 4.007142857142857,
+        "voltage_V": 4.007142857142857,
+        "model_valid": true,
+        "status": "idealized_endpoint",
+        "headroom_V": -0.4928571428571429,
+        "strict_positive_allocated_headroom": false
+      },
+      "energy_cases": [
+        {
+          "net_retained_energy_J": 0.0001,
+          "voltage_V": 5.3452248382484875,
+          "model_valid": true,
+          "status": "idealized_energy_endpoint_not_peak_voltage",
+          "allocated_energy_budget_J": 0.000147,
+          "headroom_J": 4.699999999999999e-05,
+          "headroom_V": 0.1547751617515125,
+          "strict_positive_allocated_headroom": true
+        },
+        {
+          "net_retained_energy_J": 0.00025,
+          "voltage_V": 5.8248237251071755,
+          "model_valid": true,
+          "status": "idealized_energy_endpoint_not_peak_voltage",
+          "allocated_energy_budget_J": 0.000147,
+          "headroom_J": -0.00010300000000000001,
+          "headroom_V": -0.3248237251071755,
+          "strict_positive_allocated_headroom": false
+        },
+        {
+          "net_retained_energy_J": 0.001,
+          "voltage_V": 7.791937224739796,
+          "model_valid": true,
+          "status": "idealized_energy_endpoint_not_peak_voltage",
+          "allocated_energy_budget_J": 0.000147,
+          "headroom_J": -0.000853,
+          "headroom_V": -2.2919372247397964,
+          "strict_positive_allocated_headroom": false
+        }
+      ]
+    },
+    {
+      "capacitance_F": 8e-05,
+      "condition": "initial_120Hz_20C_minimum_only",
+      "label": "80 uF: initial tolerance minimum at 120 Hz and 20 C",
+      "load_step": {
+        "charge_removed_C": 5e-05,
+        "esr_drop_V": 0.1,
+        "capacitive_drop_V": 0.625,
+        "algebraic_endpoint_V": 4.275,
+        "voltage_V": 4.275,
+        "model_valid": true,
+        "status": "idealized_endpoint",
+        "headroom_V": -0.22499999999999964,
+        "strict_positive_allocated_headroom": false
+      },
+      "energy_cases": [
+        {
+          "net_retained_energy_J": 0.0001,
+          "voltage_V": 5.244044240850758,
+          "model_valid": true,
+          "status": "idealized_energy_endpoint_not_peak_voltage",
+          "allocated_energy_budget_J": 0.00021,
+          "headroom_J": 0.00011,
+          "headroom_V": 0.2559557591492423,
+          "strict_positive_allocated_headroom": true
+        },
+        {
+          "net_retained_energy_J": 0.00025,
+          "voltage_V": 5.5901699437494745,
+          "model_valid": true,
+          "status": "idealized_energy_endpoint_not_peak_voltage",
+          "allocated_energy_budget_J": 0.00021,
+          "headroom_J": -3.9999999999999996e-05,
+          "headroom_V": -0.09016994374947451,
+          "strict_positive_allocated_headroom": false
+        },
+        {
+          "net_retained_energy_J": 0.001,
+          "voltage_V": 7.0710678118654755,
+          "model_valid": true,
+          "status": "idealized_energy_endpoint_not_peak_voltage",
+          "allocated_energy_budget_J": 0.00021,
+          "headroom_J": -0.00079,
+          "headroom_V": -1.5710678118654755,
+          "strict_positive_allocated_headroom": false
+        }
+      ]
+    },
+    {
+      "capacitance_F": 0.0001,
+      "condition": "nominal_reference_only",
+      "label": "100 uF: nominal reference, not a guaranteed effective value",
+      "load_step": {
+        "charge_removed_C": 5e-05,
+        "esr_drop_V": 0.1,
+        "capacitive_drop_V": 0.5,
+        "algebraic_endpoint_V": 4.4,
+        "voltage_V": 4.4,
+        "model_valid": true,
+        "status": "idealized_endpoint",
+        "headroom_V": -0.09999999999999964,
+        "strict_positive_allocated_headroom": false
+      },
+      "energy_cases": [
+        {
+          "net_retained_energy_J": 0.0001,
+          "voltage_V": 5.196152422706632,
+          "model_valid": true,
+          "status": "idealized_energy_endpoint_not_peak_voltage",
+          "allocated_energy_budget_J": 0.00026250000000000004,
+          "headroom_J": 0.00016250000000000005,
+          "headroom_V": 0.303847577293368,
+          "strict_positive_allocated_headroom": true
+        },
+        {
+          "net_retained_energy_J": 0.00025,
+          "voltage_V": 5.477225575051661,
+          "model_valid": true,
+          "status": "idealized_energy_endpoint_not_peak_voltage",
+          "allocated_energy_budget_J": 0.00026250000000000004,
+          "headroom_J": 1.2500000000000033e-05,
+          "headroom_V": 0.02277442494833881,
+          "strict_positive_allocated_headroom": true
+        },
+        {
+          "net_retained_energy_J": 0.001,
+          "voltage_V": 6.708203932499369,
+          "model_valid": true,
+          "status": "idealized_energy_endpoint_not_peak_voltage",
+          "allocated_energy_budget_J": 0.00026250000000000004,
+          "headroom_J": -0.0007375,
+          "headroom_V": -1.2082039324993694,
+          "strict_positive_allocated_headroom": false
+        }
+      ]
+    }
+  ],
+  "required_C_step": {
+    "headroom_V": 0.4,
+    "required_capacitance_F": 0.000125,
+    "finite_solution_for_positive_margin": true,
+    "comparison": "C > required_capacitance_F; C must also be positive",
+    "status": "equality_threshold"
+  },
+  "required_C_energy": [
+    {
+      "net_retained_energy_J": 0.0001,
+      "headroom_V": 0.5,
+      "voltage_squared_window_V2": 5.25,
+      "required_capacitance_F": 3.80952380952381e-05,
+      "finite_solution_for_positive_margin": true,
+      "comparison": "C > required_capacitance_F; C must also be positive",
+      "status": "equality_threshold"
+    },
+    {
+      "net_retained_energy_J": 0.00025,
+      "headroom_V": 0.5,
+      "voltage_squared_window_V2": 5.25,
+      "required_capacitance_F": 9.523809523809524e-05,
+      "finite_solution_for_positive_margin": true,
+      "comparison": "C > required_capacitance_F; C must also be positive",
+      "status": "equality_threshold"
+    },
+    {
+      "net_retained_energy_J": 0.001,
+      "headroom_V": 0.5,
+      "voltage_squared_window_V2": 5.25,
+      "required_capacitance_F": 0.00038095238095238096,
+      "finite_solution_for_positive_margin": true,
+      "comparison": "C > required_capacitance_F; C must also be positive",
+      "status": "equality_threshold"
+    }
+  ],
+  "limitations": [
+    "Current is the capacitor deficit after source contribution; no actual actuator load is known.",
+    "Returned energy is NET retained after other paths; no regenerative event has been measured.",
+    "The returned-energy calculation omits ESR and inductive voltage peaks. Neither calculation includes source response, converter stability or thermal behavior.",
+    "Constant ESR and capacitance are allocations; small-signal AC data do not establish pulse behavior.",
+    "Equality at the floor or ceiling has zero margin and does not pass strict positive headroom.",
+    "A nonpositive algebraic load-step endpoint means model invalid/depleted, not predicted negative voltage.",
+    "Positive arithmetic margin establishes neither a component selection nor hardware acceptance."
+  ],
+  "hardware_accepted": false,
+  "component_selected_for_release": false,
+  "voltage_envelope_qualified": false,
+  "actual_load_known": false,
+  "effective_capacitance_bound_qualified": false,
+  "reservoir_qualified": false,
+  "native_summary": {
+    "status": "pass_isolated_c11_identity_land_only",
+    "electrical_delta": {
+      "baseline_components": 128,
+      "candidate_components": 128,
+      "preserved_other_component_identities": 127,
+      "candidate_identity_changes": [
+        "C11"
+      ],
+      "physical_pin_memberships_preserved": 429,
+      "pin_net_deltas": [],
+      "native_node_attributes_preserved": 429,
+      "symbol_pin_definitions_preserved": true,
+      "master_dnp_refs": [
+        "D4",
+        "D9"
+      ],
+      "c11_polarity": {
+        "1": "VSERVO",
+        "2": "GND"
+      }
+    },
+    "source_preservation": {
+      "baseline_source_files": 37,
+      "candidate_source_files": 38,
+      "byte_identical_source_files": 36,
+      "changed_files": [
+        "hardware/kicad_v2/Power.kicad_sch"
+      ],
+      "added_files": [
+        "hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/CP_Panasonic_FK_D_6.3x5.8.kicad_mod"
+      ],
+      "both_converters_byte_identical": true,
+      "actuator_sheets_byte_identical": true
+    },
+    "native_erc": {
+      "baseline": {
+        "kicad_version": "9.0.7",
+        "date": "2026-10-12T07:31:18-0500",
+        "errors": 0,
+        "warnings": 1,
+        "exclusions": 0,
+        "violations": [
+          {
+            "sheet": "/Navigation/",
+            "severity": "warning",
+            "type": "pin_to_pin",
+            "description": "Pins of type Bidirectional and Power output are connected",
+            "items": [
+              "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+              "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+            ]
+          }
+        ]
+      },
+      "candidate": {
+        "kicad_version": "9.0.7",
+        "date": "2026-10-27T21:58:30-0500",
+        "errors": 0,
+        "warnings": 1,
+        "exclusions": 0,
+        "violations": [
+          {
+            "sheet": "/Navigation/",
+            "severity": "warning",
+            "type": "pin_to_pin",
+            "description": "Pins of type Bidirectional and Power output are connected",
+            "items": [
+              "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+              "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+            ]
+          }
+        ]
+      }
+    },
+    "geometry": {
+      "pads": 2,
+      "manufacturer_recommended_land_dimensions_match": true,
+      "pad1": "positive VSERVO",
+      "pad2": "negative GND",
+      "pad_centers_x_mm": [
+        -2.5,
+        2.5
+      ],
+      "pad_size_mm": [
+        3.2,
+        1.6
+      ],
+      "inner_gap_mm": 1.8,
+      "outer_span_mm": 8.2,
+      "nominal_body_diameter_mm": 6.3,
+      "maximum_body_diameter_mm": 6.8,
+      "nominal_base_xy_mm": [
+        6.6,
+        6.6
+      ],
+      "maximum_base_xy_mm": [
+        6.8,
+        6.8
+      ],
+      "maximum_terminal_span_mm": 7.8,
+      "nominal_height_mm": 5.8,
+      "maximum_height_mm": 6.1,
+      "proposal_only": [
+        "courtyard",
+        "silkscreen",
+        "fabrication artwork",
+        "default mask and paste openings"
+      ],
+      "assembly_qualified": false,
+      "stencil_qualified": false,
+      "board_fit_verified": false,
+      "pcb_drc_performed": false,
+      "reservoir_qualified": false,
+      "manufacturer_acceptance": false
+    }
+  },
+  "input_sha256": {
+    "reviews/codex/vservo_reservoir/model.py": "a880c3c1bca97dc30144497be3cb8e0efa19f5601e2ea938f4fa8d3c383be396",
+    "reviews/codex/vservo_reservoir/source_review.json": "75841b12b8356ba403e15bc600c74e2d2dd299a6821b5657ee6b93bbca1e43ee",
+    "reviews/codex/vservo_reservoir/expected_contract.json": "de06fcce1d4c4842c2ce56895a74bde1ee4b6867d10ca5b02d5de511fe789644",
+    "reviews/codex/vservo_reservoir/validation.json": "5b4368c738677de7fd522cfd6172c6f16d15b8090943036e41d91225abff498c",
+    "reviews/codex/vservo_reservoir/build_packet.py": "ba008890e2fc206864437f481f9393424b7b4f35ff44a73da22cc0c460c23eb4"
+  }
+}

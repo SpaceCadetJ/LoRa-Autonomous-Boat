@@ -52,7 +52,9 @@
     "oe_isolation": "reviews/codex/oe_isolation/README.md",
     "vcca_shutdown": "reviews/codex/vcca_shutdown/README.md",
     "connector_fault_contract": "reviews/codex/connector_fault_contract/README.md",
-    "fault_explorer": "reviews/codex/connector_fault_contract/index.html"
+    "fault_explorer": "reviews/codex/connector_fault_contract/index.html",
+    "vservo_reservoir": "reviews/codex/vservo_reservoir/README.md",
+    "reservoir_explorer": "reviews/codex/vservo_reservoir/index.html"
   },
   "technologies": [
     "STM32F446",
@@ -218,6 +220,16 @@
       "path": "reviews/codex/connector_fault_contract/v2_connector_fault_contract.svg",
       "kind": "verified_topology_with_unqualified_interfaces",
       "caption": "ACT-12 existing ESC/servo paths and separate inhibit, hold and rearm requirements; no electrical changes."
+    },
+    {
+      "path": "reviews/codex/vservo_reservoir/v2_vservo_reservoir.svg",
+      "kind": "isolated_identity_and_land_review",
+      "caption": "VSERVO-01 C11 identity and manufacturer land amendment with conditional reservoir limits; no live PCB/BOM, assembly or hardware release."
+    },
+    {
+      "path": "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Power.svg",
+      "kind": "native_schematic_candidate",
+      "caption": "Latest isolated ACT-04-lineage Power sheet: C11 identity and footprint only; all 429 pin memberships preserved."
     }
   ],
   "validated_results": [
@@ -485,6 +497,17 @@
         "reviews/codex/connector_fault_contract/review_notes.json",
         "reviews/codex/connector_fault_contract/packet_manifest.json"
       ]
+    },
+    {
+      "claim": "VSERVO-01 amends only isolated C11 identity and lands while preserving 429 pin memberships, 127 other full component records, both converters and ACT-01 population bytes. Native KiCad 9.0.7 reports zero ERC errors and one unchanged AD0 warning. Thirteen candidate tests, twelve conditional-model tests and 343 preserved inputs support review; reservoir, assembly and hardware acceptance remain open.",
+      "classification": "isolated_native_identity_land_verification_and_conditional_arithmetic",
+      "evidence": [
+        "reviews/codex/vservo_reservoir/RESULTS.md",
+        "reviews/codex/vservo_reservoir/validation.json",
+        "reviews/codex/vservo_reservoir/geometry_native.json",
+        "reviews/codex/vservo_reservoir/review_notes.json",
+        "reviews/codex/vservo_reservoir/packet_manifest.json"
+      ]
     }
   ],
   "current_native_findings": {
@@ -513,7 +536,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Continue from ACT-12: resolve C11 identity and the VSERVO reservoir/transient contract on the current isolated ACT-04 candidate, preserving both converters and source populations. Exact ESC/BEC/servo and harness evidence is required to close connector inhibit/hold/rearm acceptance; do not repeat an isolation-part screen or relax the 400 ns allocation while those bounds are unknown.",
+    "Continue from VSERVO-01: define the energy-sink and reverse-voltage boundary for both BEC_ONLY and ONBOARD populations using symbolic unknowns before selecting devices. Preserve the isolated C11 identity/land amendment, both converters and default-disabled qualifications; exact actuator, source and harness evidence remains required.",
     "Qualify supply sequencing, C11/VSERVO transients, full 6S feed, leakage/damping, ADC and combined IMU2 before PCB integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",

@@ -375,6 +375,29 @@ def main():
     check_hashes(connector_fault["artifact_sha256"], "ACT-12 connector contract and explorer")
     assert all(connector_fault[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
     assert all(connector_fault[k] is False for k in ["parts_selected", "native_accepted", "hardware_accepted", "fabrication_approved", "native_commands_rerun", "qualification_ports_implemented", "receiver_contract_closed", "timing_qualified"])
+    vservo_root = "reviews/codex/vservo_reservoir/"
+    vservo = read_json(vservo_root + "packet_manifest.json")
+    check_hashes(vservo["input_sha256"], "VSERVO-01 preserved inputs")
+    check_hashes(vservo["artifact_sha256"], "VSERVO-01 candidate, reservoir and viewer artifacts")
+    assert len(vservo["input_sha256"]) == 343
+    assert vservo["candidate_identity_changes"] == 1
+    assert all(vservo[k] == 0 for k in ["candidate_electrical_membership_delta", "live_electrical_delta", "live_copper_delta"])
+    assert vservo["native_commands_rerun"] is True
+    assert all(vservo[k] is False for k in ["hardware_accepted", "fabrication_approved", "procurement_approved", "reservoir_qualified", "qualification_ports_implemented"])
+    for module_name, filename, function, record in [
+            ("vservo_native", "verify_candidate.py", "collect", "validation.json"),
+            ("vservo_geometry", "inspect_geometry.py", "check", None)]:
+        spec = importlib.util.spec_from_file_location(module_name, ROOT / vservo_root / filename)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        result = getattr(module, function)()
+        if record:
+            assert result == read_json(vservo_root + record)
+    vservo_validation = read_json(vservo_root + "validation.json")
+    assert vservo_validation["electrical_delta"]["physical_pin_memberships_preserved"] == 429
+    assert vservo_validation["electrical_delta"]["preserved_other_component_identities"] == 127
+    assert "C11" in read_json("hardware/manufacturing/procurement_policy.json")["v2"]["holds"]
+    print("PASS VSERVO-01 isolated C11 identity/land evidence; live PCB/BOM and assembly/hardware release unchanged")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -396,6 +419,7 @@ def main():
     pages += [ROOT / isolation_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / shutdown_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / connector_fault_root / name for name in ["README.md", "RESULTS.md", "MEASUREMENT_PLAN.md"]]
+    pages += [ROOT / vservo_root / name for name in ["README.md", "RESULTS.md"]]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

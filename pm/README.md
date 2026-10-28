@@ -1,5 +1,11 @@
 # LoRa engineering workspace
 
+## Current C11 native candidate and reservoir review - VSERVO-01, 2026-10-28
+
+[VSERVO-01](../reviews/codex/vservo_reservoir/README.md) is the latest isolated native candidate in the ACT-04 lineage. It changes only C11 to Panasonic EEEFK1C101P, 100 uF/16 V, with explicit manufacturer D-size lands. Independent comparison preserves all 429 pin memberships, 127 other component records, both converters and the exclusive ACT-01 source populations. Native ERC reports zero errors and the one unchanged AD0 warning. The packet records 13 candidate tests, 12 model tests and 343 preserved inputs.
+
+The [annotated diagram](../reviews/codex/vservo_reservoir/v2_vservo_reservoir.svg), [native Power sheet](../reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Power.svg) and [reservoir explorer](../reviews/codex/vservo_reservoir/index.html) distinguish the confirmed identity and land dimensions from conditional load-step and returned-energy calculations. Live PCB/BOM, purchasing and application release are unchanged; reservoir, assembly and hardware acceptance remain held. Next define the energy-sink and reverse-voltage boundary for both source populations with symbolic unknowns before choosing devices. Earlier checkpoints and their next-task wording below are historical.
+
 ## Current connector fault contract - ACT-12, 2026-10-28
 
 The [fault explorer](../reviews/codex/connector_fault_contract/index.html) and [annotated connector map](../reviews/codex/connector_fault_contract/v2_connector_fault_contract.svg) separate fast inhibit, continuous disabled hold and fresh rearm. Thirty captured pin memberships are checked; neither pulldowns nor the retained 400 ns allocation establish receiver pulse rejection or actuator stop. Each receiver still lacks ten evidence groups. The [future measurement plan](../reviews/codex/connector_fault_contract/MEASUREMENT_PLAN.md) defines the distinct clocks and unloaded observations. No circuit or application is released. Next independently address C11 identity and the VSERVO reservoir/transient contract while exact ESC/BEC/servo evidence remains required; older next-task text is historical.

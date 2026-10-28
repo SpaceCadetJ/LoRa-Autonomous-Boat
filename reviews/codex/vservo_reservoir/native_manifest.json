@@ -1,0 +1,110 @@
+{
+  "revision": "VSERVO-01",
+  "captured_utc": "2026-10-28T02:58:20.795407+00:00",
+  "kicad_version": "9.0.7",
+  "runner_sha256": "96bd061181801a9a5b9bf698383f8a1aa89fb11bb7cdccddfead8547303989d1",
+  "input_sha256": {
+    "reviews/codex/vservo_reservoir/source/hardware/kicad/LoRa_Boat_Controller.kicad_sym": "07750cf783425b30502de1cd254a336a3e22cc819bb67894bbc7d3df7a1cf950",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad/LoRa_Boat_Controller.pretty/CONN5_1LFBN-RC_SUL.kicad_mod": "3df2bdad2d5533ceb5a0492e93aae8e2faab545a4f2e999d8a2a426829fca314",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad/LoRa_Boat_Controller.pretty/M-FLAT_TOS-L.kicad_mod": "ce99ee424974e7bae6c9137e43ac6b4f8bc4daaa9d6777f26049be4f1f1dd830",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad/LoRa_Boat_Controller.pretty/SOT-23-6W_PE-SOT23-6W-0512_NMD.kicad_mod": "b880a51afb66d5a86cbd2dad667bd6a819500be0a7d51aa2234ce6cac41a2fee",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/Actuators.kicad_sch": "8b4df0568998e12c8323fbfe700c9e602813fad265d8aa5024008fa722a4bb6e",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/ArmInterlock.kicad_sch": "ce3afaeffbe6978d8449f98890c5375f484be260147fc33e241e112753b2f61a",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/Buck3V3.kicad_sch": "a309488849b86e0488de886b36ceeb68bc7bd54a4ab99060558d84624c509829",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/Buck5V.kicad_sch": "27f5604705c6acb110876ad85102404f3cd060e41b7d23b14ba1e6d2f048ee5f",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/Debug.kicad_sch": "601919fb15d757bd0018576be9a4278cb35f92bbdd9484ab85d984f6b5eff924",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/fp-lib-table": "ab7fae9b8768ecd1309a42873f463ef02016b0ac5c026a12fb412bfa47e8faf7",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch": "07eae01abe1a0ea00dd1b77b65369aadbcd2f51e89552bc20b8bfdae86a6f6a6",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sym": "8497a95e5b4923fd87816c07087c2d1ffeff89297be2bac535752348a9e3e559",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0603_1608Metric.kicad_mod": "e623465f4d6218aa36a05697a93171eb897c162a613e5f635a2bfa5d0db8db0c",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_0805_2012Metric.kicad_mod": "b430016bdeb578187fcd4d270e4e2893e7d8103056d27277d2297c4c1490032b",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_1210_3225Metric.kicad_mod": "fe04a9081d0faf074eef3775f89ab1f4c53b4bb013bdaeb6c933b2f961de3484",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C3225X7R1E226M250AB.kicad_mod": "d9c0caf3685485801184cc0abcc4eaa13c5014b3f1d6dfd44e1558ebb8d7fa75",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/C_TDK_C5750X7S2A106K230KB.kicad_mod": "b4afd24a1554435cad3aeefc7843be8c1d7fd24ec624fc2b2ba2967331d02761",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/CP_Elec_8x10.5.kicad_mod": "cc3b6bb7b181a8f2346b807e02b876286515f5a4498e01747605a91ec9f403b4",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/CP_Panasonic_FK_D_6.3x5.8.kicad_mod": "24cad54e9d05f1e36f93a704b28d6cdbd1b9305d5d836448a9557d037ff0f350",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/D_SMB.kicad_mod": "c852067a09207754ec9c7f01513eb9a41b3f2b845f1db14c4124aa8ffa835859",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/D_SMC.kicad_mod": "6f9ff6495f0437be9a3a4557fb302be9cee329a6742edcbf393529dc8b83b196",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/Fuse_Littelfuse-NANO2-451_453.kicad_mod": "0515d814d319de9fad7d5c0d48bf0206723289e890fb382149acad9fe4f2aa3b",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/L_Coilcraft_XAL6060-XXX.kicad_mod": "fc897a486027f74e3b23e9d3e60fddbca42700ebc525caf81359d36181868acf",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/QFN-24_3x3mm_P0.4mm_NoEP.kicad_mod": "45d275957763fbc76756a2c762a7dd9bf1e8ab71e7eeb03e3e537b192d28f054",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/R_0603_1608Metric.kicad_mod": "278c3af706aceec3085258fe265b53cd69adb616bef0db09a2ffc4083e5c2cae",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/Texas_RNP0030B_WQFN-30-1EP_4x6mm_P0.5mm_EP1.8x4.5mm.kicad_mod": "a0e99ad9d27291e90399e662c64b192e09c8660cb03fc30e8ab2e2d58ffd3994",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DBV0005A_LVC1G04.kicad_mod": "1066939360c68c5492051427ed70216a768123a700a151e589edfcf6ff638376",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DBV0006A_LVC1G11.kicad_mod": "f8f8cf9a344516d03721ca89d50598c53d02503850a1a4c4403222c9a9b80c33",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DCU0008A_LVC1G74.kicad_mod": "5ad294cf7c5a57ed379f41d576dfa924bd4d7c3a3d28bdd924bf7f1733a935f5",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DCU0008A_TXU0102.kicad_mod": "27aa9ec8b27feb484da48c7218c5892c3174eb03147a3e3a19ffcc3e211e918d",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/TI_DDA0008B_LMR36520.kicad_mod": "e3e7df73d4e2b9b655682fb16295923debb828288fcb7388e81efe808f81de47",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/MCU.kicad_sch": "cf796415658363205a1b8ce050aa38d91301b27491b72dcf133a9844ed42061d",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/Navigation.kicad_sch": "9d07440781ce1fb8f1d98997a1f34044cdc7ac7a29b36a1b2260bd3e542ec039",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/Power.kicad_sch": "51f11b3221f3cccf8485a4996b9ad823d43445a8dbe6db34a905851af4269635",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/PowerInput.kicad_sch": "600607b52caea1881b9ee960b5f1dea07f75c2dd5877289a05c441f664c386de",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/Radio.kicad_sch": "b4e1ee24c1b04bc9d6199e2ee57fbcffd5476d1599e1905a8d1fa9e916799930",
+    "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/sym-lib-table": "3dccf10d5632037fbc6978966881b8eb68ceb500677674a746481e19a0368ae3"
+  },
+  "commands": [
+    {
+      "argv": [
+        "C:/Users/Jay/AppData/Local/Programs/KiCad/9.0/bin/kicad-cli.exe",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "reviews/codex/vservo_reservoir/native/netlist.xml",
+        "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/Jay/AppData/Local/Programs/KiCad/9.0/bin/kicad-cli.exe",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "-o",
+        "reviews/codex/vservo_reservoir/native/erc.json",
+        "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "Found 1 violations\nSaved ERC Report to reviews/codex/vservo_reservoir/native/erc.json\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:/Users/Jay/AppData/Local/Programs/KiCad/9.0/bin/kicad-cli.exe",
+        "sch",
+        "export",
+        "svg",
+        "-o",
+        "reviews/codex/vservo_reservoir/native/svg/",
+        "reviews/codex/vservo_reservoir/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "Plotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\vservo_reservoir\\native\\svg\\LoRa_Boat_Controller_V2.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\vservo_reservoir\\native\\svg\\LoRa_Boat_Controller_V2-Power.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\vservo_reservoir\\native\\svg\\LoRa_Boat_Controller_V2-MCU.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\vservo_reservoir\\native\\svg\\LoRa_Boat_Controller_V2-Radio.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\vservo_reservoir\\native\\svg\\LoRa_Boat_Controller_V2-Navigation.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\vservo_reservoir\\native\\svg\\LoRa_Boat_Controller_V2-Actuators.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\vservo_reservoir\\native\\svg\\LoRa_Boat_Controller_V2-Debug.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\vservo_reservoir\\native\\svg\\LoRa_Boat_Controller_V2-PowerInput.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\vservo_reservoir\\native\\svg\\LoRa_Boat_Controller_V2-Power-Buck3V3.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\vservo_reservoir\\native\\svg\\LoRa_Boat_Controller_V2-Power-Buck5V.svg'.\nPlotted to 'C:\\Users\\Jay\\OneDrive\\Desktop\\LoRa Autonomous Boat\\LoRa Autonomous Boat\\reviews\\codex\\vservo_reservoir\\native\\svg\\LoRa_Boat_Controller_V2-Actuators-ArmInterlock.svg'.\nDone.\n",
+      "stderr": ""
+    }
+  ],
+  "inputs_unchanged_after_commands": true,
+  "output_sha256": {
+    "reviews/codex/vservo_reservoir/native/erc.json": "4182ffd018881bcb9adb34a21fc119c4f530f27b05b99e4e595b3596ebfa2e21",
+    "reviews/codex/vservo_reservoir/native/netlist.xml": "77de758d11e734e2c7dbb456192ad875f8a17449f67f1feb382b6a17888b0804",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Actuators-ArmInterlock.svg": "732590df1ad8301ad297ab6f32e2b170875b4585f029228a5daed1cd1c2577c9",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Actuators.svg": "384adafad08395daad43147c09d0ceae625e812993368f648de215735a74ec80",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Debug.svg": "7cca35ae8a12b105d783e119aa828e973ef1b0c08848b5cec86340ae3df3a935",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-MCU.svg": "ba05b64ac6ed28edc03e0c4d13372e614fcbe88f621ee038d77b6fe0131fd0bd",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Navigation.svg": "f8aa035c0581b838b6ff5e40529d613a43ba60963ae586a552116b3a3f2434a8",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Power-Buck3V3.svg": "9a5332b13175dc8182c9a18dc2def73a30aae6aaac852e902d6a95c469ffb0f4",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Power-Buck5V.svg": "7b9bf24f692f97d3f620c4a7fb07deafefbffc7d82b7f7d89d4db6b2c9a20d08",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Power.svg": "3facd132f16a60a159649dd08a7f4afe4961f45026cad76d1598920fd80c1274",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-PowerInput.svg": "ec789f622a7884aa91bd76fac6eb7ce4476c56a1f199daab1d0a76df477ef34b",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Radio.svg": "05c65c47cc044280f1d77be6835d1a9a3d13493d55c2d70320759f321781ec92",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2.svg": "e581da55b4cb1050a5e709b887c725db67cd7c43a8c2816f003ee4ff22291122"
+  }
+}

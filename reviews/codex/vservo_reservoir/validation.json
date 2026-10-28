@@ -1,0 +1,169 @@
+{
+  "revision": "VSERVO-01",
+  "status": "pass_isolated_c11_identity_land_only",
+  "electrical_delta": {
+    "baseline_components": 128,
+    "candidate_components": 128,
+    "preserved_other_component_identities": 127,
+    "candidate_identity_changes": [
+      "C11"
+    ],
+    "physical_pin_memberships_preserved": 429,
+    "pin_net_deltas": [],
+    "native_node_attributes_preserved": 429,
+    "symbol_pin_definitions_preserved": true,
+    "master_dnp_refs": [
+      "D4",
+      "D9"
+    ],
+    "c11_polarity": {
+      "1": "VSERVO",
+      "2": "GND"
+    }
+  },
+  "source_preservation": {
+    "baseline_source_files": 37,
+    "candidate_source_files": 38,
+    "byte_identical_source_files": 36,
+    "changed_files": [
+      "hardware/kicad_v2/Power.kicad_sch"
+    ],
+    "added_files": [
+      "hardware/kicad_v2/LoRa_Boat_Controller_V2.pretty/CP_Panasonic_FK_D_6.3x5.8.kicad_mod"
+    ],
+    "both_converters_byte_identical": true,
+    "actuator_sheets_byte_identical": true
+  },
+  "native_erc": {
+    "baseline": {
+      "kicad_version": "9.0.7",
+      "date": "2026-10-12T07:31:18-0500",
+      "errors": 0,
+      "warnings": 1,
+      "exclusions": 0,
+      "violations": [
+        {
+          "sheet": "/Navigation/",
+          "severity": "warning",
+          "type": "pin_to_pin",
+          "description": "Pins of type Bidirectional and Power output are connected",
+          "items": [
+            "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+            "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+          ]
+        }
+      ]
+    },
+    "candidate": {
+      "kicad_version": "9.0.7",
+      "date": "2026-10-27T21:58:30-0500",
+      "errors": 0,
+      "warnings": 1,
+      "exclusions": 0,
+      "violations": [
+        {
+          "sheet": "/Navigation/",
+          "severity": "warning",
+          "type": "pin_to_pin",
+          "description": "Pins of type Bidirectional and Power output are connected",
+          "items": [
+            "Symbol #FLGPow04 Pin 1 [Power output, Line]",
+            "Symbol U6 Pin 9 [SDO/AD0, Bidirectional, Line]"
+          ]
+        }
+      ]
+    }
+  },
+  "population_contract_byte_preserved": true,
+  "population_contract": {
+    "status": "pass_proposed_variants_only",
+    "variants": {
+      "BEC_ONLY": {
+        "D4": "DNP",
+        "D9": "POPULATE"
+      },
+      "ONBOARD": {
+        "D4": "POPULATE",
+        "D9": "DNP"
+      }
+    },
+    "dual_population_allowed": false,
+    "default_released_variant": null,
+    "base_schematic_dnp_refs": [
+      "D4",
+      "D9"
+    ],
+    "all_parts_held": true,
+    "procurement_approved": false,
+    "hardware_tested": false
+  },
+  "geometry": {
+    "pads": 2,
+    "manufacturer_recommended_land_dimensions_match": true,
+    "pad1": "positive VSERVO",
+    "pad2": "negative GND",
+    "pad_centers_x_mm": [
+      -2.5,
+      2.5
+    ],
+    "pad_size_mm": [
+      3.2,
+      1.6
+    ],
+    "inner_gap_mm": 1.8,
+    "outer_span_mm": 8.2,
+    "nominal_body_diameter_mm": 6.3,
+    "maximum_body_diameter_mm": 6.8,
+    "nominal_base_xy_mm": [
+      6.6,
+      6.6
+    ],
+    "maximum_base_xy_mm": [
+      6.8,
+      6.8
+    ],
+    "maximum_terminal_span_mm": 7.8,
+    "nominal_height_mm": 5.8,
+    "maximum_height_mm": 6.1,
+    "proposal_only": [
+      "courtyard",
+      "silkscreen",
+      "fabrication artwork",
+      "default mask and paste openings"
+    ],
+    "assembly_qualified": false,
+    "stencil_qualified": false,
+    "board_fit_verified": false,
+    "pcb_drc_performed": false,
+    "reservoir_qualified": false,
+    "manufacturer_acceptance": false
+  },
+  "input_sha256": {
+    "reviews/codex/vservo_reservoir/build_candidate.py": "96bd061181801a9a5b9bf698383f8a1aa89fb11bb7cdccddfead8547303989d1",
+    "reviews/codex/vservo_reservoir/build_manifest.json": "5999f579f30931bb7186b21ecb81059de23c94a32afcfd88fea91ebef0c4fa0c",
+    "reviews/codex/vservo_reservoir/expected_contract.json": "de06fcce1d4c4842c2ce56895a74bde1ee4b6867d10ca5b02d5de511fe789644",
+    "reviews/codex/vservo_reservoir/geometry_native.json": "1914d6e2239d1ba57ac6ae12c4324170f0510e3ce710cadc9ee8603c62518da1",
+    "reviews/codex/vservo_reservoir/input_manifest.json": "7bfbb7ffe074bda21a381f0a11cead7e18e1f354414839265eb9813a6260e549",
+    "reviews/codex/vservo_reservoir/inspect_geometry.py": "d42dcdace5f00ccf6e7b6477c6eac2a76c9da5b36acb877d25730ac1ef311fa1",
+    "reviews/codex/vservo_reservoir/native_manifest.json": "c6b9757e1ea583b44eda1289c088e211f40acc56d2bc5e7025ec3a5a074ef934",
+    "reviews/codex/vservo_reservoir/population_contract.json": "ef86bd0df974914fd2cb103b759cea96bdc8dc8578dbc32414b9fe3afbd4a918",
+    "reviews/codex/vservo_reservoir/verify_candidate.py": "e2412da2f85cebb19bb2410d90dbc1c4a999b1d9c6a5f7a7d14aab44ad5a52e9"
+  },
+  "preserved_input_count": 343,
+  "native_commands_reported": 3,
+  "native_svg_sheets": 11,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "hardware_tested": false,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "reservoir_qualified": false,
+  "qualification_ports_implemented": false,
+  "limitations": [
+    "Portable verification checks captured bytes, XML and recorded command results; it does not rerun native commands or independently prove their execution.",
+    "Only the isolated schematic identity and candidate land are amended. No PCB, live CAD, V1, firmware or assembly release is changed.",
+    "Native footprint parsing and ERC do not qualify reservoir capacity, load or regenerative transients, temperature, leakage, soldering, fit, pulse integrity, backdrive or physical hardware.",
+    "Both exclusive ACT-01 variants and default-disabled qualifications remain held."
+  ]
+}

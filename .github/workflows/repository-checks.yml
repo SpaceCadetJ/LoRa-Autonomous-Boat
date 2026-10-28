@@ -121,6 +121,13 @@ jobs:
           python -B reviews/codex/vcca_shutdown/build_packet.py --check
           python -B reviews/codex/connector_fault_contract/test_model.py
           python -B reviews/codex/connector_fault_contract/build_packet.py --check
+      - name: Verify isolated C11 identity, lands and reservoir limits
+        run: |
+          python -B reviews/codex/vservo_reservoir/verify_candidate.py --check
+          python -B reviews/codex/vservo_reservoir/inspect_geometry.py --check
+          python -B reviews/codex/vservo_reservoir/test_candidate.py
+          python -B reviews/codex/vservo_reservoir/test_model.py
+          python -B reviews/codex/vservo_reservoir/build_packet.py --check
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources
