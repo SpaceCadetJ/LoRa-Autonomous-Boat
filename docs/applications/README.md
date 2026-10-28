@@ -1,5 +1,7 @@
 # Application handbook
 
+The latest V2 [ACT-12 connector fault contract](../../reviews/codex/connector_fault_contract/README.md) and [interactive explorer](../../reviews/codex/connector_fault_contract/index.html) distinguish an inactive driver, connector voltage, receiver pulse/loss behavior and actual actuator response. The future unloaded measurement plan is preparation only; exact ESC/BEC/servo evidence remains missing. V1 procedures and V2 wiring, flashing, assembly and powered-application release remain unchanged. Next independent circuit review: C11 identity and VSERVO reservoir/transients. Older checkpoint tasks below are historical.
+
 The latest [ACT-11 supply-shutdown review](../../reviews/codex/vcca_shutdown/README.md) shows that translator power cycling alone does not reset the existing READY latch. The proposed switch also lacks an accepted fast shutdown bound. Wiring, assembly, flashing and powered-application release remain unchanged. Next define the connector-level fault acceptance contract, including fresh acknowledgement after recovery. Older checkpoint tasks below are historical.
 
 The latest [ACT-10 circuit review](../../reviews/codex/oe_isolation/README.md) holds the proposed enable-isolation switch: R40 discharge has a tight capacitance budget, and continuous brownout isolation is unqualified. Wiring, assembly, flashing and powered-application release do not change. Next assess the translator supply-isolation alternative before any native amendment. Older checkpoint tasks below are historical.

@@ -369,6 +369,12 @@ def main():
     check_hashes(shutdown["artifact_sha256"], "ACT-11 supply-state and discharge review")
     assert all(shutdown[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
     assert all(shutdown[k] is False for k in ["parts_selected", "hardware_tested", "fabrication_approved", "native_commands_rerun", "qualification_ports_implemented", "supply_collapse_timing_qualified", "continuous_partial_power_isolation_qualified"])
+    connector_fault_root = "reviews/codex/connector_fault_contract/"
+    connector_fault = read_json(connector_fault_root + "packet_manifest.json")
+    check_hashes(connector_fault["input_sha256"], "ACT-12 preserved inputs")
+    check_hashes(connector_fault["artifact_sha256"], "ACT-12 connector contract and explorer")
+    assert all(connector_fault[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
+    assert all(connector_fault[k] is False for k in ["parts_selected", "native_accepted", "hardware_accepted", "fabrication_approved", "native_commands_rerun", "qualification_ports_implemented", "receiver_contract_closed", "timing_qualified"])
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -389,6 +395,7 @@ def main():
     pages += [ROOT / retention_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / isolation_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / shutdown_root / name for name in ["README.md", "RESULTS.md"]]
+    pages += [ROOT / connector_fault_root / name for name in ["README.md", "RESULTS.md", "MEASUREMENT_PLAN.md"]]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

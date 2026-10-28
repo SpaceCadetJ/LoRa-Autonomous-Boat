@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "title": "LoRa Vehicle Controller: Reconstruction and Platform Redesign",
   "short_title": "LoRa Autonomous Boat Controller",
   "summary": "An STM32 and LoRa vehicle-controller project with reconstructed KiCad hardware, annotated schematics, a searchable engineering workspace, assembly evidence and a reproducible V1 firmware build. V2 hardware and a voice/text/location handheld remain under development.",
@@ -50,7 +50,9 @@
     "observer_retention": "reviews/codex/observer_retention/README.md",
     "sequence_explorer": "reviews/codex/observer_retention/index.html",
     "oe_isolation": "reviews/codex/oe_isolation/README.md",
-    "vcca_shutdown": "reviews/codex/vcca_shutdown/README.md"
+    "vcca_shutdown": "reviews/codex/vcca_shutdown/README.md",
+    "connector_fault_contract": "reviews/codex/connector_fault_contract/README.md",
+    "fault_explorer": "reviews/codex/connector_fault_contract/index.html"
   },
   "technologies": [
     "STM32F446",
@@ -211,6 +213,11 @@
       "path": "reviews/codex/vcca_shutdown/v2_vcca_shutdown.svg",
       "kind": "annotated_circuit_proposal",
       "caption": "ACT-11 translator supply shutdown and retained-READY limits; no native circuit change or accepted shutdown timing."
+    },
+    {
+      "path": "reviews/codex/connector_fault_contract/v2_connector_fault_contract.svg",
+      "kind": "verified_topology_with_unqualified_interfaces",
+      "caption": "ACT-12 existing ESC/servo paths and separate inhibit, hold and rearm requirements; no electrical changes."
     }
   ],
   "validated_results": [
@@ -468,6 +475,16 @@
         "reviews/codex/vcca_shutdown/review_notes.json",
         "reviews/codex/vcca_shutdown/packet_manifest.json"
       ]
+    },
+    {
+      "claim": "ACT-12 checks 30 captured pin memberships and the inherited 400 ns allocation. Nine tests cover topology drift, conditional arithmetic and missing-evidence rejection. The interactive explorer distinguishes five fault cases; receiver thresholds, pulse/loss behavior and stop response remain unqualified.",
+      "classification": "captured_topology_and_requirements_verification",
+      "evidence": [
+        "reviews/codex/connector_fault_contract/RESULTS.md",
+        "reviews/codex/connector_fault_contract/analysis.json",
+        "reviews/codex/connector_fault_contract/review_notes.json",
+        "reviews/codex/connector_fault_contract/packet_manifest.json"
+      ]
     }
   ],
   "current_native_findings": {
@@ -496,7 +513,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Continue from ACT-11: define the connector-level fault acceptance contract for fast inhibit, continuous disabled hold and fresh rearm before another isolation-device selection. Preserve the 400 ns total / 245 ns downstream allocation until an explicit evidence-backed revision. Unknown receiver thresholds and missing qualifications remain unavailable/disabled; ACT-04 stays native.",
+    "Continue from ACT-12: resolve C11 identity and the VSERVO reservoir/transient contract on the current isolated ACT-04 candidate, preserving both converters and source populations. Exact ESC/BEC/servo and harness evidence is required to close connector inhibit/hold/rearm acceptance; do not repeat an isolation-part screen or relax the 400 ns allocation while those bounds are unknown.",
     "Qualify supply sequencing, C11/VSERVO transients, full 6S feed, leakage/damping, ADC and combined IMU2 before PCB integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",

@@ -1,0 +1,41 @@
+{
+  "packet": "ACT-12",
+  "date_utc": "2026-10-28",
+  "baseline_head": "73a31e6aafafa4c083e7e89913ea18f0f24f4f0a",
+  "reviewers": {
+    "fault_contract_model": "Authored the isolated topology/timing/completeness model and nine passing tests; added U1 input memberships and rejection of boolean/nonfinite evidence placeholders. Write scope released.",
+    "fault_contract_review": "Read-only independent source/topology/timing/claim review; independently reran nine tests. No actionable findings in final guide, model, measurement plan and diagram text.",
+    "root": "Reviewed integration and inspected diagram plus phone explorer screenshot; desktop/phone browser checks pass, recorded separately."
+  },
+  "verified_scope": [
+    "30 explicit captured native pin memberships, four complete output signal nets and ten component values.",
+    "Inherited 400 ns allocation and separate UV/OV headroom; equality never gives positive margin.",
+    "Missing evidence cannot grant acceptance; both receiver records remain incomplete.",
+    "Five requirements scenarios, not measured physical traces."
+  ],
+  "not_verified": [
+    "Receiver identity, thresholds, input feed/capacitance, pulse/loss response, readiness, actual stopping or harness orientation.",
+    "Physical timing, partial-power isolation, continuous hold or fresh-rearm waveforms.",
+    "No native commands, live circuit/copper changes, hardware operation, fabrication approval or hosted CI run."
+  ],
+  "test_count": 9,
+  "preserved_input_count": 319,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "next_task": "Resolve C11 identity and VSERVO reservoir/transient contract while exact receiver evidence remains required for actuator acceptance.",
+  "reviewed_sha256": {
+    "README.md": "baf11248ab00e9bcb5cab8c54249f4a351559081ca58cec72c76a9a809e27333",
+    "MEASUREMENT_PLAN.md": "0ad3269a2919cc11d2f066d082a5da7f1adfbb7dc6ef8082efd3ad823e7af538",
+    "RESULTS.md": "0208250e161289a4f935a465a5f8ccbedcf32a65987d5ef7643c7eaeb491db4f",
+    "contract.json": "f59be5e972a11aa16a3fdf79a6d705e7524d20b7b0b34fbf56637a6d12faef1d",
+    "scenarios.json": "056957c12b418a2ebb02be8920d65954feeb90a4d52343c6f3321ffb8d8547b2",
+    "model.py": "9c986bc6fc9f69be28fdcc3fb907ff4e45deb5b3c799b0446d73762cec45a925",
+    "test_model.py": "4215fb544a110ae5e705fb94d6e2162c9afa26f010c526021098861b11a1ebfd",
+    "build_packet.py": "a91edfbb8fd9a1fdefad7cdc76e4bb8c4ac6cb2bd2d06f30274e9f2577df88a4",
+    "analysis.json": "499a3f65265dce9b8b40cab3344388e3a895dc7ccb928fc74c00900e989e03e6",
+    "explorer.template.html": "c1c61c6d1a76bafa60b792a192f6320e36408a79d05d7514ed3e365eb19ecc98",
+    "index.html": "a3a110206229b29cd6f36d852cd70b87acadb65ae424bb4f8b00bdbe6fd3198e",
+    "v2_connector_fault_contract.svg": "06e710bb7e78a7f230bef63ab57824ceb038e5db40d787bfdd67881b4df4dfaf"
+  }
+}

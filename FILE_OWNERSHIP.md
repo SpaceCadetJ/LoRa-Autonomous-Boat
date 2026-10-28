@@ -227,3 +227,11 @@ Root claims reviews/codex/vcca_shutdown/** and current viewer/application/portfo
 ### ACT-11 review completion - 2026-10-27 UTC
 
 Root and read-only child review scopes are released after the bounded supply-shutdown packet, independent source/topology review,8 tests and desktop/phone viewer checks. ACT-04 stays native; no circuit/copper delta. TPS22919 VCCA gating remains unaccepted as primary fast inhibit, and power-only cycling leaves READY retained. Continue with the newest handoff's connector-level fault contract, keeping400ns/245ns allocations and missing qualifications disabled. Preserve all previous packets and both unrelated dirty tools. Selective publication contains only this packet and current viewer/application/portfolio/CI/handoff integration.
+
+## ACT-12 connector fault contract claim - 2026-10-28 UTC
+
+Root claims reviews/codex/connector_fault_contract/** and current viewer/application/portfolio/CI/handoff integration from73a31e6. Expected candidate/live electrical and copper delta is zero. Child fault_contract_model owns only model.py/test_model.py; fault_contract_review is read-only. Define exact native connector paths, inherited timing allocation, fault/hold/rearm obligations and the missing receiver evidence. No new device selection, native amendment, generators/router, firmware, purchasing or hardware action. Preserve all previous candidates, ACT-01 populations, both converters, corrected copper and unrelated v1_design.py/route_v2.py edits. Unknown qualifications remain disabled.
+
+### ACT-12 review completion - 2026-10-28 UTC
+
+Root and child ACT-12 write claims are released after the connector fault contract, nine tests, independent review and desktop/phone explorer checks. No native/copper/circuit delta; receiver evidence and physical acceptance remain open. Continue from the latest handoff's C11 identity/VSERVO reservoir packet while exact ESC/BEC/servo details are outstanding. Preserve all earlier evidence, source populations, both converters, default-disabled qualifications and the two unrelated dirty tools. Selective publication includes only this packet and current documentation/viewer/portfolio/CI integration.

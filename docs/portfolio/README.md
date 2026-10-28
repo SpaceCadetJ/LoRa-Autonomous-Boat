@@ -1,5 +1,9 @@
 # LoRa controller: from legacy board to reviewable platform
 
+## Current connector fault contract - ACT-12, 2026-10-28
+
+The [fault explorer](../../reviews/codex/connector_fault_contract/index.html) and [annotated connector map](../../reviews/codex/connector_fault_contract/v2_connector_fault_contract.svg) separate fast inhibit, continuous disabled hold and fresh rearm. Thirty captured pin memberships are checked; neither pulldowns nor the retained 400 ns allocation establish receiver pulse rejection or actuator stop. Each receiver still lacks ten evidence groups. The [future measurement plan](../../reviews/codex/connector_fault_contract/MEASUREMENT_PLAN.md) defines the distinct clocks and unloaded observations. No circuit or application is released. Next independently address C11 identity and the VSERVO reservoir/transient contract while exact ESC/BEC/servo evidence remains required; older next-task text is historical.
+
 ## Current supply-shutdown review - ACT-11, 2026-10-27
 
 The [translator supply review](../../reviews/codex/vcca_shutdown/README.md) and [annotated connection diagram](../../reviews/codex/vcca_shutdown/v2_vcca_shutdown.svg) record why the reviewed VCCA switch is not accepted as a primary fast inhibit. Typical discharge arithmetic provides no maximum response guarantee, and cycling U4 alone leaves the separately powered READY latch intact. No native circuit or application is released. Next define the connector-level fault contract for fast inhibit, continuous disabled hold and fresh rearm before another part selection; the 400 ns total / 245 ns downstream allocation remains unchanged. This supersedes earlier next-task text; ACT-04 remains native.

@@ -1,0 +1,56 @@
+{
+  "classification": "requirements_and_future_measurement_plan",
+  "hardware_tests_run": false,
+  "scenarios": [
+    {
+      "id": "ramp",
+      "title": "Local 3.3 V monotone fault ramp",
+      "phase": "Fast inhibit",
+      "trigger": "Upstream rail reaches the inherited allocated overdrive point with all stated model conditions valid.",
+      "required": "Complete the entire downstream inhibit path before the relevant supply-valid boundary. Retain the fault and clear READY.",
+      "observe": "Upstream rail, sense input, detector, QUAL, U12 READY, OE, U4 output and both connector signals on a shared timebase.",
+      "unknown": "Actual ramp-delay applicability, physical isolation endpoint and receiver voltage/pulse acceptance.",
+      "cannot_infer": "Positive arithmetic headroom is not a measured connector-low or stop time."
+    },
+    {
+      "id": "pulse",
+      "title": "Step, short excursion or fault during PWM high",
+      "phase": "Fast inhibit",
+      "trigger": "A non-monotone fault or interruption at any phase of an existing command pulse.",
+      "required": "Bound detection/retention and the full output waveform, including the truncated pulse and any later edge. Declare excluded waveform classes explicitly.",
+      "observe": "Fault waveform and duration, original rising edge, all later edges, amplitude at receiver ground and receiver response when separately qualified.",
+      "unknown": "Minimum capturable fault, incomplete-pulse interpretation, amplitude/width/history rejection limits.",
+      "cannot_infer": "A 400 ns path allocation is not a receiver pulse-rejection specification; the preceding high interval also matters."
+    },
+    {
+      "id": "dwell",
+      "title": "Long partial-power dwell or external backfeed",
+      "phase": "Continuous disabled hold",
+      "trigger": "Local logic loses valid power; a receiver, opposite rail or signal remains powered.",
+      "required": "Maintain a defined disabled interface for every permitted dwell and source combination; no gap after stored island energy expires.",
+      "observe": "All rails, OE, connector voltages relative to local and remote grounds, current in each permitted feed path.",
+      "unknown": "Total leakage/feed, effective capacitance, ground offset, partial-power isolation and allowed transient energy.",
+      "cannot_infer": "High impedance does not guarantee low voltage. The 100 us handover allocation does not permit an undefined output interval."
+    },
+    {
+      "id": "restore",
+      "title": "Supply bounce, stale READY or held acknowledgement",
+      "phase": "Fresh rearm",
+      "trigger": "Supply returns after a fault, including a translator-only interruption while the latch stayed powered.",
+      "required": "Keep outputs disabled; confirm fault clear, valid supplies and receiver readiness; restart the healthy interval after bounce; require a fresh ACK with ARM low before later ARM.",
+      "observe": "QUAL at latch clear, READY, conditioned ACK, ARM and both output signals through the complete recovery.",
+      "unknown": "Physical clear width, recovery/setup/hold guards, observation sources and output inhibition during startup.",
+      "cannot_infer": "A timer, completed discharge or restored rail cannot grant permission. Normal disarm retaining READY is distinct from a fault."
+    },
+    {
+      "id": "remote",
+      "title": "Receiver supply, readiness or ground missing",
+      "phase": "All three obligations",
+      "trigger": "Remote power/ground/harness disappears or a readiness source is missing, stale or stuck.",
+      "required": "Missing qualification disables; specify the exact supported fault envelope and how a fault is detected. Any uncontained short or ground-loss case blocks that claimed envelope.",
+      "observe": "Actual receiver control supply and ground, readiness interface, local rails and signal injection currents.",
+      "unknown": "Exact receiver identity, readiness behavior, broken-ground current paths, stuck-high fault coverage and signal-loss response.",
+      "cannot_infer": "Local VSERVO or BEC voltage is not independent proof of ESC readiness, especially in ONBOARD."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="980" viewBox="0 0 1280 980"><rect width="1280" height="980" fill="#f4f7fb"/><style>text{font-family:Arial,sans-serif;fill:#172638}.h{font-size:28px;font-weight:bold}.t{font-size:20px;font-weight:bold}.s{font-size:17px}.sub{font-size:18px;fill:#425874}.box{fill:white;stroke:#9bb3c9;stroke-width:2}.hold{fill:#fff5e7;stroke:#b86e12;stroke-width:2;stroke-dasharray:8 5}.wire{fill:none;stroke:#246789;stroke-width:3}</style>
+<text x="40" y="48" class="h">ACT-12 | Define the fault response at the actuator connector</text>
+<text x="40" y="80" class="sub">Verified ACT-04 signal paths | No circuit change | Receiver interpretation and stop behavior unresolved</text>
+<rect x="40" y="110" width="1200" height="65" rx="9" class="hold"/>
+<text x="58" y="138" class="t">An inactive driver does not establish a low signal, rejected pulse or stopped actuator.</text>
+<text x="58" y="162" class="s">400 ns remains a conditional inhibit allocation. Actual connector and receiver limits still need evidence.</text>
+<rect x="40" y="215" width="215" height="90" rx="9" class="box"/>
+<rect x="315" y="215" width="200" height="90" rx="9" class="box"/>
+<rect x="575" y="215" width="150" height="90" rx="9" class="box"/>
+<rect x="785" y="215" width="240" height="90" rx="9" class="box"/>
+<text x="58" y="247" class="t">PC6 / U1.37</text>
+<text x="58" y="281" class="s">PWM input</text>
+<text x="333" y="247" class="t">U4 TXU0102</text>
+<text x="333" y="281" class="s">Pins 5 -&gt; 8</text>
+<text x="593" y="247" class="t">R10 100 ohm</text>
+<text x="593" y="281" class="s">Series resistor</text>
+<text x="803" y="247" class="t">J2.1 ESC signal</text>
+<text x="803" y="281" class="s">R11 10k + D10 to GND</text>
+<path class="wire" d="M255 260H315 M515 260H575 M725 260H785 M1025 260H1070"/>
+<rect x="1070" y="215" width="170" height="90" rx="9" class="hold"/>
+<text x="1086" y="246" class="t">Receiver</text>
+<text x="1086" y="279" class="s">Unidentified</text>
+<text x="785" y="334" class="s">J2.2 BEC_IN; J2.3 GND</text>
+<rect x="40" y="365" width="215" height="90" rx="9" class="box"/>
+<rect x="315" y="365" width="200" height="90" rx="9" class="box"/>
+<rect x="575" y="365" width="150" height="90" rx="9" class="box"/>
+<rect x="785" y="365" width="240" height="90" rx="9" class="box"/>
+<text x="58" y="397" class="t">PA8 / U1.41</text>
+<text x="58" y="431" class="s">PWM input</text>
+<text x="333" y="397" class="t">U4 TXU0102</text>
+<text x="333" y="431" class="s">Pins 4 -&gt; 1</text>
+<text x="593" y="397" class="t">R12 100 ohm</text>
+<text x="593" y="431" class="s">Series resistor</text>
+<text x="803" y="397" class="t">J3.1 Servo signal</text>
+<text x="803" y="431" class="s">R13 10k + D11 to GND</text>
+<path class="wire" d="M255 410H315 M515 410H575 M725 410H785 M1025 410H1070"/>
+<rect x="1070" y="365" width="170" height="90" rx="9" class="hold"/>
+<text x="1086" y="396" class="t">Receiver</text>
+<text x="1086" y="429" class="s">Unidentified</text>
+<text x="785" y="484" class="s">J3.2 VSERVO; J3.3 GND</text>
+<rect x="40" y="530" width="1200" height="65" rx="9" class="box"/>
+<text x="58" y="559" class="t">Preserve U4 VCCB = +5V_BUCK before D4; BEC_ONLY / ONBOARD remain exclusive.</text>
+<text x="58" y="583" class="s">Pin numbers are schematic evidence. Physical harness orientation and receiver-ground behavior require verification.</text>
+<rect x="40" y="635" width="380" height="180" rx="9" class="box"/>
+<text x="58" y="668" class="t">1. Fast inhibit</text>
+<text x="58" y="701" class="s">100 ns + 55 ns + 245 ns = 400 ns</text>
+<text x="58" y="730" class="s">After the allocated overdrive point.</text>
+<text x="58" y="759" class="s">Whole downstream path shares 245 ns.</text>
+<text x="58" y="788" class="s">Actual waveform remains unqualified.</text>
+<rect x="450" y="635" width="380" height="180" rx="9" class="box"/>
+<text x="468" y="668" class="t">2. Continuous disabled hold</text>
+<text x="468" y="701" class="s">No gap after island hold-up expires.</text>
+<text x="468" y="730" class="s">Bound every allowed feed and dwell.</text>
+<text x="468" y="759" class="s">High-Z alone does not mean low.</text>
+<text x="468" y="788" class="s">Receiver loss policy remains unknown.</text>
+<rect x="860" y="635" width="380" height="180" rx="9" class="box"/>
+<text x="878" y="668" class="t">3. Fresh rearm</text>
+<text x="878" y="701" class="s">Fault must clear retained READY.</text>
+<text x="878" y="730" class="s">New health interval after any bounce.</text>
+<text x="878" y="759" class="s">Fresh ACK with ARM low; then ARM.</text>
+<text x="878" y="788" class="s">Normal disarm is a separate case.</text>
+<rect x="40" y="855" width="1200" height="99" rx="9" class="hold"/>
+<text x="58" y="885" class="t">Next evidence: exact ESC/BEC/servo, voltage/pulse/loss limits, readiness and harness.</text>
+<text x="58" y="916" class="s">No hardware test or application release. Independent next packet: C11 identity and VSERVO reservoir/transients.</text>
+<text x="58" y="942" class="s">Preserve 6S, both converters and all default-disabled qualifications.</text>
+</svg>

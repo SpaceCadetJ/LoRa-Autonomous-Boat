@@ -1,0 +1,36 @@
+{
+  "packet": "ACT-12",
+  "classification": "connector_fault_requirements_not_implementation",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "parts_selected": false,
+  "native_accepted": false,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "qualification_ports_implemented": false,
+  "receiver_contract_closed": false,
+  "timing_qualified": false,
+  "total_allocated_ns": 400,
+  "downstream_allocated_ns": 245,
+  "indefinite_hold_required": true,
+  "healthy_interval_restarts_on_fault": true,
+  "fresh_ack_after_fault_required": true,
+  "existing_act04_normal_disarm_retains_READY": true,
+  "missing_qualifications_default": "disabled",
+  "receiver_profiles": [
+    {
+      "port": "J2",
+      "role": "ESC",
+      "population": "BEC_ONLY or ONBOARD, exact selection unresolved",
+      "evidence": {}
+    },
+    {
+      "port": "J3",
+      "role": "servo",
+      "population": "BEC_ONLY or ONBOARD, exact selection unresolved",
+      "evidence": {}
+    }
+  ]
+}

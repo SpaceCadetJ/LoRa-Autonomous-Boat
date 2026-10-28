@@ -1,0 +1,44 @@
+{
+  "scope": "Local portable viewer and requirements explorer; no physical waveform, native or hardware tests",
+  "input_sha256": {
+    "reviews/codex/connector_fault_contract/README.md": "baf11248ab00e9bcb5cab8c54249f4a351559081ca58cec72c76a9a809e27333",
+    "reviews/codex/connector_fault_contract/MEASUREMENT_PLAN.md": "0ad3269a2919cc11d2f066d082a5da7f1adfbb7dc6ef8082efd3ad823e7af538",
+    "reviews/codex/connector_fault_contract/RESULTS.md": "0208250e161289a4f935a465a5f8ccbedcf32a65987d5ef7643c7eaeb491db4f",
+    "reviews/codex/connector_fault_contract/analysis.json": "499a3f65265dce9b8b40cab3344388e3a895dc7ccb928fc74c00900e989e03e6",
+    "reviews/codex/connector_fault_contract/index.html": "a3a110206229b29cd6f36d852cd70b87acadb65ae424bb4f8b00bdbe6fd3198e",
+    "reviews/codex/connector_fault_contract/explorer.template.html": "c1c61c6d1a76bafa60b792a192f6320e36408a79d05d7514ed3e365eb19ecc98",
+    "reviews/codex/connector_fault_contract/v2_connector_fault_contract.svg": "06e710bb7e78a7f230bef63ab57824ceb038e5db40d787bfdd67881b4df4dfaf",
+    "reviews/codex/connector_fault_contract/verify_viewer.cjs": "de6d1b213f574588a8898825dba75a382a5d6d92f46e2973289ca76e005c9896",
+    "pm/index.template.html": "c60ffc38d58e19f2c2ac58416e50269c9a3f20adb10cc976d601c045ab1833a2"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "diagram_loaded": true,
+      "zoom_percent": 200,
+      "three_guide_dialogs": true,
+      "five_fault_cases": true,
+      "twenty_missing_evidence_groups": true,
+      "UV_OV_and_zero_margin_cases": true,
+      "horizontal_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "diagram_loaded": true,
+      "zoom_percent": 200,
+      "three_guide_dialogs": true,
+      "five_fault_cases": true,
+      "twenty_missing_evidence_groups": true,
+      "UV_OV_and_zero_margin_cases": true,
+      "horizontal_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

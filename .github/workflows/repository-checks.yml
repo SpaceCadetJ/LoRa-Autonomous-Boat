@@ -119,6 +119,8 @@ jobs:
           python reviews/codex/oe_isolation/build_packet.py --check
           python -B reviews/codex/vcca_shutdown/test_packet.py
           python -B reviews/codex/vcca_shutdown/build_packet.py --check
+          python -B reviews/codex/connector_fault_contract/test_model.py
+          python -B reviews/codex/connector_fault_contract/build_packet.py --check
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

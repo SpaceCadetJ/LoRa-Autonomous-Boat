@@ -1,0 +1,342 @@
+{
+  "schema": 1,
+  "revision": "ACT-12",
+  "classification": "connector_fault_requirements_not_implementation",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "hardware_accepted": false,
+  "native_accepted": false,
+  "native_commands_rerun": false,
+  "timing_qualified": false,
+  "receiver_contract_closed": false,
+  "topology": {
+    "classification": "independently_checked_captured_native_topology",
+    "native_revision": "ACT-04",
+    "channels": [
+      {
+        "role": "ESC",
+        "port": "J2",
+        "driver_pin": "U4.8",
+        "series_component": "R10",
+        "series_value": "100R",
+        "signal_pin": "J2.1",
+        "signal_net": "/Actuators/ESC_SIG",
+        "pulldown_component": "R11",
+        "pulldown_value": "10k",
+        "protection_component": "D10",
+        "protection_value": "PESD5V0S1BA",
+        "supply_pin": "J2.2",
+        "supply_net": "/BEC_IN",
+        "ground_pin": "J2.3"
+      },
+      {
+        "role": "servo",
+        "port": "J3",
+        "driver_pin": "U4.1",
+        "series_component": "R12",
+        "series_value": "100R",
+        "signal_pin": "J3.1",
+        "signal_net": "/Actuators/SERVO_SIG",
+        "pulldown_component": "R13",
+        "pulldown_value": "10k",
+        "protection_component": "D11",
+        "protection_value": "PESD5V0S1BA",
+        "supply_pin": "J3.2",
+        "supply_net": "VSERVO",
+        "ground_pin": "J3.3"
+      }
+    ],
+    "driver_VCCB": {
+      "pin": "U4.7",
+      "net": "/Power/+5V_BUCK",
+      "bypass": "C14",
+      "bypass_value": "100nF"
+    },
+    "signal_net_memberships": {
+      "/Actuators/ESC_SIG_5V": [
+        "R10.1",
+        "U4.8"
+      ],
+      "/Actuators/ESC_SIG": [
+        "D10.1",
+        "J2.1",
+        "R10.2",
+        "R11.1"
+      ],
+      "/Actuators/SERVO_SIG_5V": [
+        "R12.1",
+        "U4.1"
+      ],
+      "/Actuators/SERVO_SIG": [
+        "D11.1",
+        "J3.1",
+        "R12.2",
+        "R13.1"
+      ]
+    },
+    "checked_pin_nets": {
+      "U1.37": "/PWM_ESC_PC6",
+      "U1.41": "/PWM_SERVO_PA8",
+      "U4.1": "/Actuators/SERVO_SIG_5V",
+      "U4.2": "GND",
+      "U4.3": "+3V3",
+      "U4.4": "/PWM_SERVO_PA8",
+      "U4.5": "/PWM_ESC_PC6",
+      "U4.6": "/Actuators/ACT_OE",
+      "U4.7": "/Power/+5V_BUCK",
+      "U4.8": "/Actuators/ESC_SIG_5V",
+      "C14.1": "/Power/+5V_BUCK",
+      "C14.2": "GND",
+      "R10.1": "/Actuators/ESC_SIG_5V",
+      "R10.2": "/Actuators/ESC_SIG",
+      "R11.1": "/Actuators/ESC_SIG",
+      "R11.2": "GND",
+      "R12.1": "/Actuators/SERVO_SIG_5V",
+      "R12.2": "/Actuators/SERVO_SIG",
+      "R13.1": "/Actuators/SERVO_SIG",
+      "R13.2": "GND",
+      "D10.1": "/Actuators/ESC_SIG",
+      "D10.2": "GND",
+      "D11.1": "/Actuators/SERVO_SIG",
+      "D11.2": "GND",
+      "J2.1": "/Actuators/ESC_SIG",
+      "J2.2": "/BEC_IN",
+      "J2.3": "GND",
+      "J3.1": "/Actuators/SERVO_SIG",
+      "J3.2": "VSERVO",
+      "J3.3": "GND"
+    },
+    "checked_values": {
+      "U4": "TXU0102",
+      "C14": "100nF",
+      "R10": "100R",
+      "R12": "100R",
+      "R11": "10k",
+      "R13": "10k",
+      "D10": "PESD5V0S1BA",
+      "D11": "PESD5V0S1BA",
+      "J2": "ESC",
+      "J3": "SERVO"
+    },
+    "receiver_input_low_proven": false,
+    "pulse_rejection_proven": false,
+    "actuator_stop_time_known": false
+  },
+  "timing": {
+    "budget_components_ns": {
+      "sense_settling_budget_ns": 100,
+      "detector_budget_ns": 55,
+      "downstream_budget_ns": 245
+    },
+    "total_budget_ns": 400,
+    "allocation_is_measured_delay": false,
+    "allocation_is_system_stop_deadline": false,
+    "waveform_qualified": false,
+    "UV": {
+      "overdrive_V": 3.0719380026289804,
+      "valid_boundary_V": 3.005,
+      "headroom_V": 0.06693800262898053,
+      "maximum_slew_V_per_us": 0.16734500657245133,
+      "strictly_below_maximum_slew_required": true,
+      "cases": [
+        {
+          "slew_V_per_us": 0.01,
+          "additional_excursion_V": 0.004,
+          "residual_V": 0.06293800262898053,
+          "conditional_margin_positive": true,
+          "hardware_accepted": false,
+          "waveform_qualified": false
+        },
+        {
+          "slew_V_per_us": 0.1,
+          "additional_excursion_V": 0.04000000000000001,
+          "residual_V": 0.026938002628980523,
+          "conditional_margin_positive": true,
+          "hardware_accepted": false,
+          "waveform_qualified": false
+        },
+        {
+          "slew_V_per_us": 1.0,
+          "additional_excursion_V": 0.4,
+          "residual_V": -0.3330619973710195,
+          "conditional_margin_positive": false,
+          "hardware_accepted": false,
+          "waveform_qualified": false
+        }
+      ]
+    },
+    "OV": {
+      "overdrive_V": 3.56404020970936,
+      "valid_boundary_V": 3.6,
+      "headroom_V": 0.035959790290640115,
+      "maximum_slew_V_per_us": 0.08989947572660029,
+      "strictly_below_maximum_slew_required": true,
+      "cases": [
+        {
+          "slew_V_per_us": 0.01,
+          "additional_excursion_V": 0.004,
+          "residual_V": 0.03195979029064011,
+          "conditional_margin_positive": true,
+          "hardware_accepted": false,
+          "waveform_qualified": false
+        },
+        {
+          "slew_V_per_us": 0.1,
+          "additional_excursion_V": 0.04000000000000001,
+          "residual_V": -0.004040209709359893,
+          "conditional_margin_positive": false,
+          "hardware_accepted": false,
+          "waveform_qualified": false
+        },
+        {
+          "slew_V_per_us": 1.0,
+          "additional_excursion_V": 0.4,
+          "residual_V": -0.3640402097093599,
+          "conditional_margin_positive": false,
+          "hardware_accepted": false,
+          "waveform_qualified": false
+        }
+      ]
+    }
+  },
+  "evidence_gate": {
+    "required_fields": [
+      "receiver_identity",
+      "receiver_supply_range",
+      "signal_voltage_limits",
+      "input_thresholds",
+      "input_feed_and_capacitance",
+      "pulse_acceptance",
+      "signal_loss_response",
+      "readiness_observation",
+      "stop_deadline",
+      "harness_definition"
+    ],
+    "missing_fields": [
+      "receiver_identity",
+      "receiver_supply_range",
+      "signal_voltage_limits",
+      "input_thresholds",
+      "input_feed_and_capacitance",
+      "pulse_acceptance",
+      "signal_loss_response",
+      "readiness_observation",
+      "stop_deadline",
+      "harness_definition"
+    ],
+    "record_complete": false,
+    "hardware_accepted": false,
+    "meaning": "Record completeness only; populated entries still require review and physical verification."
+  },
+  "limitations": [
+    "The 400 ns allocation is inherited, conditional and unqualified; it is not an actuator stop deadline.",
+    "Only continuous monotone ramps after sufficient differential overdrive are screened; steps, noise, bouncing rails and pulses remain unqualified.",
+    "The ACT-09 UV boundary is 3.005 V; the ACT-07 OV boundary remains 3.6 V. Neither is an observed hardware failure threshold.",
+    "HiZ, pulldown and TVS topology do not establish receiver input-low voltage, pulse rejection or actuator stop response.",
+    "Receiver identity, thresholds, feed/capacitance, pulse policy, missing-signal response, readiness, stop deadline and harness evidence remain required.",
+    "Missing qualifications default disabled. Local VSERVO does not establish remote receiver readiness.",
+    "Timing arithmetic and record completeness cannot approve hardware, fabrication or use."
+  ],
+  "source_sha256": {
+    "reviews/codex/actuator_latch/native/netlist.xml": "c101893bb8c1a503f908d8b6140b60db82ebced5a0870b6658b095906f049110",
+    "reviews/codex/observation_3v3/contract.json": "b4a8e0fa05e4aa36d9f46d034dba76040b4bec7e98c274f5fd5b4b3516ef30ee",
+    "reviews/codex/observation_3v3/analysis.json": "62198987556c6ed8f003f4738e0f174f67c6a07719510ca5bd27e67eb39ced68",
+    "reviews/codex/observer_retention/contract.json": "6b1dac7cb98b7434db8e6c80afc5e0a02cf0cb15f7e27fcead2c002d7ead4dc3",
+    "reviews/codex/observer_retention/analysis.json": "cea0851f7625545973b94ce303496991936be66ef2e314c35a099910d7fc64e2",
+    "reviews/codex/connector_fault_contract/model.py": "9c986bc6fc9f69be28fdcc3fb907ff4e45deb5b3c799b0446d73762cec45a925",
+    "reviews/codex/connector_fault_contract/contract.json": "f59be5e972a11aa16a3fdf79a6d705e7524d20b7b0b34fbf56637a6d12faef1d",
+    "reviews/codex/connector_fault_contract/scenarios.json": "056957c12b418a2ebb02be8920d65954feeb90a4d52343c6f3321ffb8d8547b2",
+    "reviews/codex/connector_fault_contract/build_packet.py": "a91edfbb8fd9a1fdefad7cdc76e4bb8c4ac6cb2bd2d06f30274e9f2577df88a4"
+  },
+  "receiver_profiles": [
+    {
+      "port": "J2",
+      "role": "ESC",
+      "missing_fields": [
+        "receiver_identity",
+        "receiver_supply_range",
+        "signal_voltage_limits",
+        "input_thresholds",
+        "input_feed_and_capacitance",
+        "pulse_acceptance",
+        "signal_loss_response",
+        "readiness_observation",
+        "stop_deadline",
+        "harness_definition"
+      ],
+      "record_complete": false,
+      "hardware_accepted": false
+    },
+    {
+      "port": "J3",
+      "role": "servo",
+      "missing_fields": [
+        "receiver_identity",
+        "receiver_supply_range",
+        "signal_voltage_limits",
+        "input_thresholds",
+        "input_feed_and_capacitance",
+        "pulse_acceptance",
+        "signal_loss_response",
+        "readiness_observation",
+        "stop_deadline",
+        "harness_definition"
+      ],
+      "record_complete": false,
+      "hardware_accepted": false
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "ramp",
+      "title": "Local 3.3 V monotone fault ramp",
+      "phase": "Fast inhibit",
+      "trigger": "Upstream rail reaches the inherited allocated overdrive point with all stated model conditions valid.",
+      "required": "Complete the entire downstream inhibit path before the relevant supply-valid boundary. Retain the fault and clear READY.",
+      "observe": "Upstream rail, sense input, detector, QUAL, U12 READY, OE, U4 output and both connector signals on a shared timebase.",
+      "unknown": "Actual ramp-delay applicability, physical isolation endpoint and receiver voltage/pulse acceptance.",
+      "cannot_infer": "Positive arithmetic headroom is not a measured connector-low or stop time."
+    },
+    {
+      "id": "pulse",
+      "title": "Step, short excursion or fault during PWM high",
+      "phase": "Fast inhibit",
+      "trigger": "A non-monotone fault or interruption at any phase of an existing command pulse.",
+      "required": "Bound detection/retention and the full output waveform, including the truncated pulse and any later edge. Declare excluded waveform classes explicitly.",
+      "observe": "Fault waveform and duration, original rising edge, all later edges, amplitude at receiver ground and receiver response when separately qualified.",
+      "unknown": "Minimum capturable fault, incomplete-pulse interpretation, amplitude/width/history rejection limits.",
+      "cannot_infer": "A 400 ns path allocation is not a receiver pulse-rejection specification; the preceding high interval also matters."
+    },
+    {
+      "id": "dwell",
+      "title": "Long partial-power dwell or external backfeed",
+      "phase": "Continuous disabled hold",
+      "trigger": "Local logic loses valid power; a receiver, opposite rail or signal remains powered.",
+      "required": "Maintain a defined disabled interface for every permitted dwell and source combination; no gap after stored island energy expires.",
+      "observe": "All rails, OE, connector voltages relative to local and remote grounds, current in each permitted feed path.",
+      "unknown": "Total leakage/feed, effective capacitance, ground offset, partial-power isolation and allowed transient energy.",
+      "cannot_infer": "High impedance does not guarantee low voltage. The 100 us handover allocation does not permit an undefined output interval."
+    },
+    {
+      "id": "restore",
+      "title": "Supply bounce, stale READY or held acknowledgement",
+      "phase": "Fresh rearm",
+      "trigger": "Supply returns after a fault, including a translator-only interruption while the latch stayed powered.",
+      "required": "Keep outputs disabled; confirm fault clear, valid supplies and receiver readiness; restart the healthy interval after bounce; require a fresh ACK with ARM low before later ARM.",
+      "observe": "QUAL at latch clear, READY, conditioned ACK, ARM and both output signals through the complete recovery.",
+      "unknown": "Physical clear width, recovery/setup/hold guards, observation sources and output inhibition during startup.",
+      "cannot_infer": "A timer, completed discharge or restored rail cannot grant permission. Normal disarm retaining READY is distinct from a fault."
+    },
+    {
+      "id": "remote",
+      "title": "Receiver supply, readiness or ground missing",
+      "phase": "All three obligations",
+      "trigger": "Remote power/ground/harness disappears or a readiness source is missing, stale or stuck.",
+      "required": "Missing qualification disables; specify the exact supported fault envelope and how a fault is detected. Any uncontained short or ground-loss case blocks that claimed envelope.",
+      "observe": "Actual receiver control supply and ground, readiness interface, local rails and signal injection currents.",
+      "unknown": "Exact receiver identity, readiness behavior, broken-ground current paths, stuck-high fault coverage and signal-loss response.",
+      "cannot_infer": "Local VSERVO or BEC voltage is not independent proof of ESC readiness, especially in ONBOARD."
+    }
+  ]
+}
