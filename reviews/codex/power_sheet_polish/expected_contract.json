@@ -1,0 +1,41 @@
+{
+  "revision": "POWER-DOC-01",
+  "baseline_candidate": "VSERVO-01",
+  "baseline_head": "2a405c417b33f1f85dadc746e57219462c7209a9",
+  "scope": "Isolated native Power sheet presentation only; electrical equivalent of VSERVO-01",
+  "expected_changed_source_files": [
+    "hardware/kicad_v2/Power.kicad_sch"
+  ],
+  "expected_added_source_files": [],
+  "expected_component_identity_changes": [],
+  "expected_pin_net_changes": {},
+  "expected_candidate_component_count": 128,
+  "expected_physical_pin_membership_count": 429,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": true,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "protection_qualified": false,
+  "qualification_ports_implemented": false,
+  "preserve": [
+    "All component fields and pin/NC attributes",
+    "Embedded symbol definitions and pin geometry",
+    "Both converter source sheets and C11 custom lands",
+    "ACT-01 population contract; master D4 and D9 DNP",
+    "6S requirement; disabled unimplemented permissions",
+    "All preceding packets, V1, Allegro, live board/firmware/BOM"
+  ],
+  "allowed_presentation_changes": [
+    "Power sheet graphics, notes and title metadata",
+    "Symbol/property/label/sheet/wire positions with native netlist equivalence",
+    "Same logical wire endpoints after coordinated relocation"
+  ],
+  "forbidden": [
+    "New/removed components, electrical memberships or identities",
+    "Changes outside Power.kicad_sch in the copied source",
+    "Electrical signoff inferred from rendering or ERC"
+  ]
+}

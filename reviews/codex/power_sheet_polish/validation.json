@@ -1,0 +1,47 @@
+{
+  "revision": "POWER-DOC-01",
+  "electrical_candidate": "VSERVO-01",
+  "status": "pass_captured_presentation_equivalence",
+  "electrical_delta": {
+    "component_records_preserved": 128,
+    "physical_pin_memberships_preserved": 429,
+    "node_attributes_preserved": 429,
+    "complete_nets_preserved": 121,
+    "sheet_identities_preserved": 11,
+    "component_identity_changes": [],
+    "pin_net_deltas": [],
+    "symbol_pin_definitions_preserved": true
+  },
+  "source_preservation": {
+    "source_files": 38,
+    "byte_identical_files": 37,
+    "changed_files": [
+      "hardware/kicad_v2/Power.kicad_sch"
+    ],
+    "both_converters_preserved": true,
+    "population_contract_preserved": true,
+    "root_uuid_preserved": true,
+    "embedded_symbol_definitions_preserved_after_newline_normalization": true
+  },
+  "native_erc": {
+    "errors": 0,
+    "warnings": 1,
+    "unchanged_ad0_warning": true
+  },
+  "native_commands_reported": 3,
+  "native_svg_sheets": 11,
+  "preserved_input_count": 456,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "protection_qualified": false,
+  "qualification_ports_implemented": false,
+  "native_commands_rerun": true,
+  "limits": [
+    "Portable checks replay captured files; no fresh native or hardware execution.",
+    "Presentation equivalence and unchanged ERC do not establish fabrication, reservoir, shunt or application acceptance."
+  ]
+}

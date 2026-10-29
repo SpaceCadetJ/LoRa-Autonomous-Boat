@@ -259,3 +259,13 @@ Root extends this packet to the discovered CI failure where historical browser r
 ### VSERVO-02 review completion - 2026-10-28 UTC
 
 Root and child write scopes are released after the transient boundary, independent review, 14 model tests and desktop/phone checks. The CI repair preserves seven historical templates and replays their outputs while separately validating the current viewer. No prior packet, circuit, copper, BOM or firmware changed. Continue from the newest handoff's local-shunt specification; preserve all unknown permissions disabled, 6S and the separate IMU2 lineage. Native C12 annotation polish remains available as independent work. Selective publication excludes both unrelated dirty tools.
+
+## Power sheet readability claim - 2026-10-29 UTC
+
+Root claims reviews/codex/power_sheet_polish/** and current viewer/application/portfolio/CI/handoff integration from 2a405c4. Bounded independent task from the newest handoff: polish the native Power sheet on a new isolated VSERVO-01 copy, with zero intended component identity, pin/net, live electrical or copper delta. Preserve both converter sheets, C11 identity/lands, ACT-01 populations and all disabled qualifications. power_sheet_native owns only the new source copy, layout/native capture scripts and native/build records; power_sheet_review is read-only. Root owns contract, independent verification, documentation/viewer and final publication. No primary generators/router, live CAD, hardware action, procurement release or branch/history changes. Both unrelated dirty tools remain excluded. Local-shunt specification and receiver evidence remain open.
+
+POWER-DOC-01 delegation: power_doc_integration owns only pm/README.md, pm/index.template.html, pm/tools/build.mjs, docs/applications/README.md, docs/portfolio/README.md, docs/portfolio/portfolio.json, tools/quality/check_publication.py, .github/workflows/repository-checks.yml and .gitattributes. Root retains generated PM outputs, registry/current viewer capture and review/handoff. All child scopes remain confined to presentation and evidence integration.
+
+### POWER-DOC-01 review completion - 2026-10-29 UTC
+
+All child write scopes are released after native capture, independent electrical/visual review, 17 tests and desktop/phone comparison-viewer checks. Root closes packet and selective publication. Only the isolated Power sheet presentation changed; 37 other source files, both converters, ACT-01 populations and all prior evidence are preserved. VSERVO-01 remains the electrical candidate, with no hardware/ordering/application release. Continue from the newest handoff's local-shunt specification. Preserve and exclude both unrelated dirty tools. No live CAD, copper, primary generator/router or branch/history change.

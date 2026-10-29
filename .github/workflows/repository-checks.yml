@@ -125,6 +125,10 @@ jobs:
         run: |
           python -B reviews/codex/vservo_transients/test_model.py
           python -B reviews/codex/vservo_transients/build_packet.py --check
+      - name: Verify native Power sheet presentation equivalence
+        run: |
+          python -B reviews/codex/power_sheet_polish/test_equivalence.py
+          python -B reviews/codex/power_sheet_polish/verify_packet.py --check
       - name: Replay historical packets and verify current viewer provenance
         run: |
           python -B tools/quality/test_viewer_replay.py

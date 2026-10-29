@@ -1,0 +1,68 @@
+{
+  "revision": "POWER-DOC-01",
+  "captured_utc": "2026-10-29T01:01:37.331737+00:00",
+  "reviewer": "power_sheet_review (independent read-only subagent), root electrical/browser verification",
+  "status": "pass_bounded_presentation_equivalence",
+  "reviewed_sha256": {
+    "reviews/codex/power_sheet_polish/expected_contract.json": "8eaaa2d20c93d621e1d7a01c150581c4c363c3511803ca0420cb676307a0c2f7",
+    "reviews/codex/power_sheet_polish/layout_candidate.py": "9cbeb80ffb264fe7ab2a99314b26acaf1892c431a3c0d5e90919ce9aa2252614",
+    "reviews/codex/power_sheet_polish/verify_packet.py": "4a9806da1bc45c22e563b5f45f0e94b86b65ba6b924d7d36c18466e2979399f1",
+    "reviews/codex/power_sheet_polish/test_equivalence.py": "7784ddcc93302b615685ba0f574db043f761147750abf494d2a38224f4d7249b",
+    "reviews/codex/power_sheet_polish/validation.json": "18cb9d01f71690ea23520c2ca0dc9dbb4ccee995085f3c0533879244e2edb52e",
+    "reviews/codex/power_sheet_polish/native_manifest.json": "9fd79b263c3f1615b4b6831697ffad32a144d87fe8831c7fa2a4a176e227bd9b",
+    "reviews/codex/power_sheet_polish/build_manifest.json": "7d6a3be1b561d80054f6a26676e153389050f02d63d57ca1b48da3b174827ee4",
+    "reviews/codex/power_sheet_polish/population_contract.json": "ef86bd0df974914fd2cb103b759cea96bdc8dc8578dbc32414b9fe3afbd4a918",
+    "reviews/codex/power_sheet_polish/source/hardware/kicad_v2/Power.kicad_sch": "438fb2ddb8cb2f10a953164f5396c49dd03e7d866d2ad0b78abfcb292f92a595",
+    "reviews/codex/power_sheet_polish/native/netlist.xml": "e1d237d61ce1945df3e282ba4024288a834c550aaf4d17873a45d48f6e5b3ae0",
+    "reviews/codex/power_sheet_polish/native/erc.json": "bf973c6036bce00e9321c8e8e1f2c9a29b0b79405a4b0d9a90331ae175613330",
+    "reviews/codex/power_sheet_polish/native/svg/LoRa_Boat_Controller_V2-Power.svg": "669f9951ad960e64dc121ebbcc820c0e9fb9d1311f16c5a88d2626b9c3610648",
+    "reviews/codex/power_sheet_polish/README.md": "bd8cf9dea86b6dd8b65f6d0784bad3f7e372cb696f77a68814a4cefa829f325b",
+    "reviews/codex/power_sheet_polish/viewer.template.html": "7f4eacbc7a10d1a90be6bb6e997cb481d7d18cd8c33c739d3d11b316d865228e",
+    "reviews/codex/power_sheet_polish/build_view.py": "848748e16d203e3538599bef68e763491f0b9ec3d163f609200bea8cd4d4f75e",
+    "reviews/codex/power_sheet_polish/verify_viewer.cjs": "82a84109a3e2b82f6e6beee4101609e31c96fc672713113a056e5bb0659cdd57",
+    "reviews/codex/power_sheet_polish/viewer_check.json": "7eab209519d38eb8a8ceddd15370aa3c26f7ac83f7fc8a2c5ed4b59e0dd4aab6",
+    "reviews/codex/power_sheet_polish/native-power-preview.png": "66bc8d43e3f432d3732c0a2a1db9fc17a436f01470336dc042a13947acaefb11",
+    "reviews/codex/power_sheet_polish/native-reservoir-detail.png": "87c561c7043b82061407a4c8b2eea00b5f55e66489d41e8c1899171f8a18566b"
+  },
+  "findings_resolved": [
+    "C12 ground text overlapped the previous diode note; reservoir and annotation rows separated.",
+    "Native revision title crossed its frame; compact PD-01 title revision with full POWER-DOC-01 header retained.",
+    "Converter output label crowded its hierarchy edge; clear spacing and child-sheet explanations added.",
+    "Verifier now directly checks embedded Power symbol definitions and root UUID after newline normalization, because XML libparts do not preserve symbol geometry.",
+    "ERC comparison permits only relocated power-flag diagnostic coordinates; warning identities and all other recorded findings remain strict."
+  ],
+  "verification": {
+    "equivalence_tests": 17,
+    "component_records_preserved": 128,
+    "pin_memberships_and_attributes_preserved": 429,
+    "complete_nets_preserved": 121,
+    "sheet_identities_preserved": 11,
+    "source_files_byte_identical": 37,
+    "source_files_total": 38,
+    "native_commands": 3,
+    "native_svg_sheets": 11,
+    "erc_errors": 0,
+    "erc_unchanged_warnings": 1,
+    "visual_review": [
+      "Final native whole sheet",
+      "Final reservoir detail",
+      "Root phone comparison capture"
+    ],
+    "browser_viewports": [
+      "1440x1050",
+      "390x844"
+    ],
+    "comparison_zoom_percent": [
+      100,
+      200,
+      400
+    ],
+    "browser_page_errors": 0
+  },
+  "limits": [
+    "Only Power presentation received visual cleanup; other native sheets retain their prior layouts.",
+    "Embedded symbol definitions were compared after line-ending normalization; this is distinct from the 37 truly byte-identical copied source files.",
+    "Native/BOM/source identity and rendering checks are not hardware, fabrication, shunt, reservoir or receiver acceptance.",
+    "Local-shunt specification still requires symbolic unknown receiver/source limits; no part was selected."
+  ]
+}

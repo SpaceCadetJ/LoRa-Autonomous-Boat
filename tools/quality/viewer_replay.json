@@ -81,7 +81,7 @@
     }
   ],
   "current_packet": {
-    "packet": "reviews/codex/vservo_transients",
-    "template_snapshot": "reviews/codex/vservo_transients/viewer-template.snapshot.html"
+    "packet": "reviews/codex/power_sheet_polish",
+    "template_snapshot": "reviews/codex/power_sheet_polish/viewer-template.snapshot.html"
   }
 }

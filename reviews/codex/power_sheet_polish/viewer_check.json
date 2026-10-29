@@ -1,0 +1,60 @@
+{
+  "scope": "Native Power sheet before/after UI and current PM integration; no hardware or complete project visual acceptance",
+  "input_sha256": {
+    "reviews/codex/power_sheet_polish/README.md": "bd8cf9dea86b6dd8b65f6d0784bad3f7e372cb696f77a68814a4cefa829f325b",
+    "reviews/codex/power_sheet_polish/validation.json": "18cb9d01f71690ea23520c2ca0dc9dbb4ccee995085f3c0533879244e2edb52e",
+    "reviews/codex/power_sheet_polish/index.html": "a64a8f50e6fed3442caa0fd933ffe35e6ee82b9d80610b5e16cdbbb450a0260a",
+    "reviews/codex/power_sheet_polish/viewer.template.html": "7f4eacbc7a10d1a90be6bb6e997cb481d7d18cd8c33c739d3d11b316d865228e",
+    "reviews/codex/power_sheet_polish/build_view.py": "848748e16d203e3538599bef68e763491f0b9ec3d163f609200bea8cd4d4f75e",
+    "reviews/codex/power_sheet_polish/verify_viewer.cjs": "82a84109a3e2b82f6e6beee4101609e31c96fc672713113a056e5bb0659cdd57",
+    "reviews/codex/power_sheet_polish/native/svg/LoRa_Boat_Controller_V2-Power.svg": "669f9951ad960e64dc121ebbcc820c0e9fb9d1311f16c5a88d2626b9c3610648",
+    "reviews/codex/power_sheet_polish/native-power-preview.png": "66bc8d43e3f432d3732c0a2a1db9fc17a436f01470336dc042a13947acaefb11",
+    "reviews/codex/power_sheet_polish/native-reservoir-detail.png": "87c561c7043b82061407a4c8b2eea00b5f55e66489d41e8c1899171f8a18566b",
+    "reviews/codex/power_sheet_polish/preview_native.cjs": "6faa1ea8a1ded30ae465369e3976ab117baf7b6e5c37ee19e9618e460db0435a",
+    "pm/index.template.html": "811e689d821905f9d6f5b8a508ee8d03f2e03b603bd44b76293d0adf350f7aa6",
+    "pm/tools/build.mjs": "63f36ac1801e1f8d46e3af7035161ddc8b74e9bef130429f60973611b195467a",
+    "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Power.svg": "3facd132f16a60a159649dd08a7f4afe4961f45026cad76d1598920fd80c1274"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "before_after_native_images": true,
+      "comparison_zoom": [
+        100,
+        200,
+        400
+      ],
+      "fit_resets": true,
+      "scroll_contained": true,
+      "embedded_validation_matches": true,
+      "pm_native_picker_and_project_link": true,
+      "pm_zoom": 200,
+      "guide_dialog": true,
+      "horizontal_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "before_after_native_images": true,
+      "comparison_zoom": [
+        100,
+        200,
+        400
+      ],
+      "fit_resets": true,
+      "scroll_contained": true,
+      "embedded_validation_matches": true,
+      "pm_native_picker_and_project_link": true,
+      "pm_zoom": 200,
+      "guide_dialog": true,
+      "horizontal_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

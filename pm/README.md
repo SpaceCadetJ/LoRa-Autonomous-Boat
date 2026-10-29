@@ -1,5 +1,11 @@
 # LoRa engineering workspace
 
+## Current Power sheet presentation - POWER-DOC-01, 2026-10-29
+
+[POWER-DOC-01](../reviews/codex/power_sheet_polish/README.md) reorganizes the native Power sheet's annotations and layout on an isolated VSERVO-01 copy. Use the [before/after viewer](../reviews/codex/power_sheet_polish/index.html), [full native sheet](../reviews/codex/power_sheet_polish/native/svg/LoRa_Boat_Controller_V2-Power.svg) and [equivalence record](../reviews/codex/power_sheet_polish/validation.json) to review the presentation and its preservation checks. Captured native comparison preserves all 128 component records, 429 pin memberships and 121 complete nets. Thirty-seven of 38 source files are byte-identical; only Power sheet presentation changes. Three native commands exported 11 SVG sheets and recorded zero ERC errors with the unchanged AD0 warning. Seventeen equivalence tests pass. Component identity, pin/net, live electrical and copper deltas are zero; VSERVO-01 remains the latest electrical candidate.
+
+This presentation packet does not change ordering, assembly, flashing or powered-application acceptance. The next circuit task remains VSERVO-02's independent local-shunt specification, including startup, loaded clamp, fault, thermal and reverse-voltage boundaries with symbolic unknown receiver/source limits. Both converter sheets, C11 identity/lands, exclusive source populations, 6S and disabled missing qualifications must remain preserved. Older entries retain their historical scope.
+
 ## Current transient boundary review - VSERVO-02, 2026-10-28
 
 [VSERVO-02](../reviews/codex/vservo_transients/README.md) compares a proposed local dissipative shunt with returning energy to an upstream source. The [annotated boundary](../reviews/codex/vservo_transients/v2_vservo_transients.svg), [conditional calculations](../reviews/codex/vservo_transients/RESULTS.md) and [protection explorer](../reviews/codex/vservo_transients/index.html) separate normal voltage, threshold tolerances and response overshoot, and distinguish finite event storage from recurring dissipation. Passive return across D4/D9 is unqualified because upstream sink and off-state behavior are unknown. Reverse voltage and receiver/source limits remain open.

@@ -406,6 +406,29 @@ def main():
     assert all(transient[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
     assert all(transient[k] is False for k in ["native_commands_rerun", "parts_selected", "hardware_accepted", "fabrication_approved", "procurement_approved", "protection_qualified"])
     print("PASS VSERVO-02 conditional protection review; VSERVO-01 native candidate and hardware holds preserved")
+    power_doc_root = "reviews/codex/power_sheet_polish/"
+    power_doc = read_json(power_doc_root + "packet_manifest.json")
+    check_hashes(power_doc["input_sha256"], "POWER-DOC-01 preserved inputs")
+    check_hashes(power_doc["artifact_sha256"], "POWER-DOC-01 native presentation and viewer artifacts")
+    assert power_doc["revision"] == "POWER-DOC-01" and power_doc["electrical_candidate"] == "VSERVO-01"
+    assert len(power_doc["input_sha256"]) == 456
+    assert all(power_doc[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
+    assert power_doc["native_commands_rerun"] is True
+    assert all(power_doc[k] is False for k in ["hardware_accepted", "fabrication_approved", "procurement_approved", "protection_qualified", "qualification_ports_implemented"])
+    spec = importlib.util.spec_from_file_location("power_doc_equivalence", ROOT / power_doc_root / "verify_packet.py")
+    power_doc_module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(power_doc_module)
+    power_doc_validation = power_doc_module.collect()
+    assert power_doc_validation == read_json(power_doc_root + "validation.json")
+    assert power_doc_validation["electrical_delta"]["component_records_preserved"] == 128
+    assert power_doc_validation["electrical_delta"]["physical_pin_memberships_preserved"] == 429
+    assert power_doc_validation["electrical_delta"]["component_identity_changes"] == []
+    assert power_doc_validation["electrical_delta"]["pin_net_deltas"] == []
+    assert power_doc_validation["source_preservation"]["byte_identical_files"] == 37
+    assert power_doc_validation["source_preservation"]["source_files"] == 38
+    assert power_doc_validation["native_commands_reported"] == 3 and power_doc_validation["native_svg_sheets"] == 11
+    assert power_doc_validation["native_erc"] == {"errors": 0, "warnings": 1, "unchanged_ad0_warning": True}
+    print("PASS POWER-DOC-01 captured native presentation equivalence; VSERVO-01 electrical candidate and hardware holds preserved")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -429,6 +452,7 @@ def main():
     pages += [ROOT / connector_fault_root / name for name in ["README.md", "RESULTS.md", "MEASUREMENT_PLAN.md"]]
     pages += [ROOT / vservo_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / transient_root / name for name in ["README.md", "RESULTS.md"]]
+    pages += [ROOT / power_doc_root / "README.md"]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

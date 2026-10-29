@@ -1,0 +1,2817 @@
+(kicad_sch
+	(version 20250114)
+	(generator "buck33_candidate")
+	(generator_version "9.0")
+	(uuid "0799e918-f935-5e78-963d-90b42005b44c")
+	(paper "A3")
+	(title_block
+		(title "BUCK33-A1 - isolated first 3.3 V converter")
+		(date "2026-10-12")
+		(rev "BUCK33-A1")
+		(comment 1 "Not integrated, routed or power approved")
+	)
+	(lib_symbols
+		(symbol "LoRa_Boat_Controller_V2:LMR36520ADDA"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LMR36520ADDA"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LoRa_Boat_Controller_V2:TI_DDA0008B_LMR36520"
+				(at 0 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr36520.pdf"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "4.2-65V 2A 400kHz synchronous buck; isolated held candidate"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "synchronous buck step-down"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Texas*HTSOP*1EP*3.9x4.9mm*P1.27mm*EP2.95x4.9mm*Mask2.4x3.1mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LMR36520ADDA_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LMR36520ADDA_1_1"
+				(pin power_in line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "PGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -10.16 90)
+					(length 2.54)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "BOOT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "BUCK33-A1 / 3.3 V LOGIC SUPPLY"
+		(at 16 21 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+			(justify left bottom)
+		)
+		(uuid "52c16db3-f033-58bd-90cf-395a7dbdb1bc")
+	)
+	(text "ISOLATED WIRED CANDIDATE - full-board protection and remaining circuits are not accepted"
+		(at 16 32 0)
+		(effects
+			(font
+				(size 1.9 1.9)
+			)
+			(justify left bottom)
+		)
+		(uuid "bad0c8f8-2837-5ffd-aef2-ecde578b5cbd")
+	)
+	(text "Design load 1.2 A. Battery intent 7-25.2 V; +44 V protected-rail target remains unverified."
+		(at 16 42 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+			)
+			(justify left bottom)
+		)
+		(uuid "117e6e09-e52c-51af-b8f2-8e4398790b76")
+	)
+	(text "LOCAL INPUT BANK"
+		(at 32 55 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e05d2d0-6b29-5ef7-bea2-679ce6d6e92e")
+	)
+	(text "BOOTSTRAP / SWITCH"
+		(at 221 55 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "2176afba-b463-5977-ba56-ed9e44ad4213")
+	)
+	(text "OUTPUT BANK"
+		(at 299 71 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "8ab59f6e-b07b-530e-bea2-d95e72f3a189")
+	)
+	(symbol
+		(lib_id "LoRa_Boat_Controller_V2:LMR36520ADDA")
+		(at 205.74 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2356ebc-24c8-5796-a8ee-81f7037d6235")
+		(property "Reference" "U2"
+			(at 194 70 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "LMR36520ADDAR"
+			(at 194 74 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:TI_DDA0008B_LMR36520"
+			(at 194 70 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LMR36520ADDAR"
+			(at 194 70 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 194 70 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr36520.pdf"
+			(at 194 70 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Held candidate; see reviews/codex/buck_3v3/README.md"
+			(at 194 70 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3917bc5a-23cb-5ff2-b4b1-79f70240b4bc")
+		)
+		(pin "3"
+			(uuid "0b8974b9-1137-5eda-b81f-bcc56a2d0fde")
+		)
+		(pin "6"
+			(uuid "e4bbf6f7-1cab-5fb1-b642-28ab8b841e9d")
+		)
+		(pin "1"
+			(uuid "986631a7-3e02-5bbd-949f-1e4a9cab3c5d")
+		)
+		(pin "9"
+			(uuid "eec5995d-3267-50bc-a9da-69a489bfa79f")
+		)
+		(pin "7"
+			(uuid "eb7ab394-b24b-57e8-ba54-f96659d74424")
+		)
+		(pin "8"
+			(uuid "eed7b596-cfc4-53a8-94cd-7d72086665b8")
+		)
+		(pin "5"
+			(uuid "92b16d87-20f0-54c8-bce9-e57e537c65d1")
+		)
+		(pin "4"
+			(uuid "0048e1bb-9916-5046-83b2-67e15c7302e9")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865/49976346-5e08-5c8a-99f3-254aa0e56332"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 53.34 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "acbe4815-f703-5949-8a9e-629884e3f77a")
+		(property "Reference" "C44"
+			(at 61 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10uF 100V"
+			(at 61 89 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:C_TDK_C5750X7S2A106K230KB"
+			(at 61 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C5750X7S2A106K230KB"
+			(at 61 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 61 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C5750X7S2A106K230KB"
+			(at 61 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Held candidate; see reviews/codex/buck_3v3/README.md"
+			(at 61 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90581cb3-409b-51d2-9304-33ec70929874")
+		)
+		(pin "2"
+			(uuid "69bb8e0a-09a2-5eed-910e-b68f748faed4")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865/49976346-5e08-5c8a-99f3-254aa0e56332"
+					(reference "C44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 96.52 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a40cbce-d7a7-5fa3-ad32-4e1c7ae193a5")
+		(property "Reference" "C45"
+			(at 104 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10uF 100V"
+			(at 104 89 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:C_TDK_C5750X7S2A106K230KB"
+			(at 104 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C5750X7S2A106K230KB"
+			(at 104 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 104 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C5750X7S2A106K230KB"
+			(at 104 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Held candidate; see reviews/codex/buck_3v3/README.md"
+			(at 104 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "226228bb-5f61-5a92-a996-4be0b821e0c5")
+		)
+		(pin "2"
+			(uuid "ed045509-1a3d-521f-b0bd-ffb801c8b79c")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865/49976346-5e08-5c8a-99f3-254aa0e56332"
+					(reference "C45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 134.62 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11d6482d-f7b4-5b3f-8f5e-d4bce08af26c")
+		(property "Reference" "C46"
+			(at 142 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "220nF 100V"
+			(at 142 89 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:C_0805_2012Metric"
+			(at 142 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM21AR72A224KAC5L"
+			(at 142 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 142 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ug/snvu677/snvu677.pdf"
+			(at 142 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Held candidate; see reviews/codex/buck_3v3/README.md"
+			(at 142 85 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bb19cae-0ad5-598b-85fa-881123570abb")
+		)
+		(pin "2"
+			(uuid "a9712f81-9d2b-5551-9e4f-bdd6ae22625a")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865/49976346-5e08-5c8a-99f3-254aa0e56332"
+					(reference "C46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 172.72 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5938f1f1-7de1-54b7-8c5b-71ff2af27d93")
+		(property "Reference" "C48"
+			(at 181 117 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1uF 25V"
+			(at 181 121 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:C_0603_1608Metric"
+			(at 181 117 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C1608X5R1E105K080AC"
+			(at 181 117 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 181 117 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1E105K080AC"
+			(at 181 117 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Held candidate; see reviews/codex/buck_3v3/README.md"
+			(at 181 117 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02241578-5b30-5de0-9f4e-9fba5363bcf6")
+		)
+		(pin "2"
+			(uuid "8749dde5-9660-55e4-b8bb-e6d46c2c5f19")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865/49976346-5e08-5c8a-99f3-254aa0e56332"
+					(reference "C48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 236.22 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "da28f9b1-be1c-5806-a25f-b17113e9873e")
+		(property "Reference" "C3"
+			(at 250 74 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF 25V"
+			(at 250 78 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:C_0603_1608Metric"
+			(at 250 74 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "06033C104KAT2A"
+			(at 250 74 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 250 74 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ug/snvu677/snvu677.pdf"
+			(at 250 74 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Held candidate; see reviews/codex/buck_3v3/README.md"
+			(at 250 74 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ba212a5-ea4a-5a6d-bd5a-b6fcc4ae3d41")
+		)
+		(pin "2"
+			(uuid "d90bfba5-3c09-5dec-ad7e-35324b4612cc")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865/49976346-5e08-5c8a-99f3-254aa0e56332"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 269.24 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae1622f7-bb8d-5871-b79d-aee6d40c25f6")
+		(property "Reference" "L1"
+			(at 278 99 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10uH"
+			(at 278 103 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:L_Coilcraft_XAL6060-XXX"
+			(at 278 99 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "XAL6060-103MEC"
+			(at 278 99 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Coilcraft"
+			(at 278 99 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.coilcraft.com/getmedia/ea51f14b-7f32-4dc6-8dfe-d4b70549040f/xal60xx.pdf"
+			(at 278 99 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Held candidate; see reviews/codex/buck_3v3/README.md"
+			(at 278 99 90)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "208221d8-4c44-5feb-b792-4210b3dbba60")
+		)
+		(pin "2"
+			(uuid "569b2363-4751-5299-8d7c-324bf4535443")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865/49976346-5e08-5c8a-99f3-254aa0e56332"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 294.64 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2b9f1ddc-8a88-58ce-a7d7-a080d4f835d1")
+		(property "Reference" "C5"
+			(at 302 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "22uF 25V"
+			(at 302 114 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:C_TDK_C3225X7R1E226M250AB"
+			(at 302 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C3225X7R1E226M250AB"
+			(at 302 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 302 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1E226M250AB"
+			(at 302 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Held candidate; see reviews/codex/buck_3v3/README.md"
+			(at 302 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aefadab6-df54-51ca-8b5b-8cd2a28a3891")
+		)
+		(pin "2"
+			(uuid "538e9f90-e590-54fe-808f-edfb6d8ede97")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865/49976346-5e08-5c8a-99f3-254aa0e56332"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 335.28 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1d48835-925e-53d1-b7d0-05f8fe0c0383")
+		(property "Reference" "C6"
+			(at 343 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "22uF 25V"
+			(at 343 114 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:C_TDK_C3225X7R1E226M250AB"
+			(at 343 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C3225X7R1E226M250AB"
+			(at 343 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 343 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1E226M250AB"
+			(at 343 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Held candidate; see reviews/codex/buck_3v3/README.md"
+			(at 343 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8716c3e6-d086-5cae-97ca-e12876952fb9")
+		)
+		(pin "2"
+			(uuid "fed65dd6-83be-5f8f-9487-8a74045b6620")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865/49976346-5e08-5c8a-99f3-254aa0e56332"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 375.92 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6fe0e60e-ddd4-5877-a24a-38a39e417326")
+		(property "Reference" "C47"
+			(at 383 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "22uF 25V"
+			(at 383 114 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:C_TDK_C3225X7R1E226M250AB"
+			(at 383 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C3225X7R1E226M250AB"
+			(at 383 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 383 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1E226M250AB"
+			(at 383 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Held candidate; see reviews/codex/buck_3v3/README.md"
+			(at 383 110 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2043e337-6989-5f0e-941f-65c9609427ee")
+		)
+		(pin "2"
+			(uuid "484ca1fa-5ba0-55ea-860f-c4a365190f06")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865/49976346-5e08-5c8a-99f3-254aa0e56332"
+					(reference "C47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(hierarchical_label "VIN_BUCK"
+		(shape input)
+		(at 25.4 63.5 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "5fa14ea8-b86f-5c7a-bf6f-e3a38ecf5b92")
+	)
+	(wire
+		(pts
+			(xy 25.4 63.5)
+			(xy 53.34 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f07f17a4-c912-5a74-9ec0-46c7b6ce8984")
+	)
+	(wire
+		(pts
+			(xy 53.34 63.5)
+			(xy 96.52 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7496af7b-0bf9-5e2e-8ab5-6b78db5e4b60")
+	)
+	(wire
+		(pts
+			(xy 96.52 63.5)
+			(xy 134.62 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6619dbb1-8463-5c31-ac2d-7be1e92bc148")
+	)
+	(wire
+		(pts
+			(xy 134.62 63.5)
+			(xy 190.5 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "522a9a33-2d09-5f93-8b4f-91b42127f6ce")
+	)
+	(wire
+		(pts
+			(xy 53.34 63.5)
+			(xy 53.34 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a86a9b87-763e-5d50-af93-c527dc76caff")
+	)
+	(wire
+		(pts
+			(xy 53.34 92.71)
+			(xy 53.34 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce19d947-1dc3-514f-a08c-076d8ca4ed77")
+	)
+	(junction
+		(at 53.34 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a50890d3-dbf5-5c2f-a77f-23e59c598fb3")
+	)
+	(wire
+		(pts
+			(xy 96.52 63.5)
+			(xy 96.52 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9de46b7-4e2b-594c-b0a1-3628eaca7744")
+	)
+	(wire
+		(pts
+			(xy 96.52 92.71)
+			(xy 96.52 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3ee05e5-4fb2-56c6-9f1a-b56dd1b02335")
+	)
+	(junction
+		(at 96.52 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4351a626-6a3e-549a-87d6-9a79c54b3aca")
+	)
+	(wire
+		(pts
+			(xy 134.62 63.5)
+			(xy 134.62 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7f99638-8d7b-5d00-bf3a-b5b4dbd175a4")
+	)
+	(wire
+		(pts
+			(xy 134.62 92.71)
+			(xy 134.62 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dea60d4b-ebda-5832-89a3-8dbcbfafa92f")
+	)
+	(junction
+		(at 134.62 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf29fc35-2f86-53dc-ba88-f3a748d4241d")
+	)
+	(wire
+		(pts
+			(xy 190.5 63.5)
+			(xy 190.5 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d5887cd-2bfe-58e9-9937-18e26f4e34fc")
+	)
+	(wire
+		(pts
+			(xy 190.5 86.36)
+			(xy 195.58 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fdefd58-a38e-57f2-ad2c-b441336e0d47")
+	)
+	(wire
+		(pts
+			(xy 190.5 86.36)
+			(xy 190.5 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d77908f-773e-537b-8240-8365c783da81")
+	)
+	(wire
+		(pts
+			(xy 190.5 91.44)
+			(xy 195.58 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d368518-4c11-5a35-8d73-e4eca4662de2")
+	)
+	(junction
+		(at 190.5 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08dba3f1-ce1b-5982-b777-30bb3e2553fd")
+	)
+	(wire
+		(pts
+			(xy 195.58 96.52)
+			(xy 172.72 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5ca6f0b-39ce-55a3-ac0b-55e86185262f")
+	)
+	(wire
+		(pts
+			(xy 172.72 96.52)
+			(xy 172.72 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9e00b6e-b77d-5469-9c7f-4d90a9eeb644")
+	)
+	(wire
+		(pts
+			(xy 172.72 123.19)
+			(xy 172.72 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "533c4f51-d386-5219-b83d-983bcb66e27f")
+	)
+	(label "VCC_3V3"
+		(at 172.72 106.68 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d88317b-4bb3-59dd-8bf0-acaaf778a4fb")
+	)
+	(wire
+		(pts
+			(xy 205.74 101.6)
+			(xy 205.74 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee750157-5db3-5681-9732-4f97c6a29159")
+	)
+	(wire
+		(pts
+			(xy 208.28 101.6)
+			(xy 208.28 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c194ee7-af27-5ea3-bd27-db60cf3f1177")
+	)
+	(wire
+		(pts
+			(xy 215.9 86.36)
+			(xy 223.52 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "270f6721-3268-555f-8ad5-aae4fa31c24d")
+	)
+	(wire
+		(pts
+			(xy 223.52 86.36)
+			(xy 223.52 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6924e239-fc82-5e6f-b7a5-6665408ef34d")
+	)
+	(wire
+		(pts
+			(xy 223.52 63.5)
+			(xy 245.11 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdc65e11-1976-5b64-8447-f2e3b804254b")
+	)
+	(wire
+		(pts
+			(xy 245.11 63.5)
+			(xy 245.11 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b90b41e3-66b2-55fd-8f1e-e46728eb89cf")
+	)
+	(wire
+		(pts
+			(xy 245.11 80.01)
+			(xy 236.22 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fb15420-9ddc-5fec-a256-da839e9c595b")
+	)
+	(label "BOOT_3V3"
+		(at 223.52 63.5 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1ac106e-b130-5261-a007-67c5ae3404b3")
+	)
+	(wire
+		(pts
+			(xy 215.9 88.9)
+			(xy 232.41 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62acb00e-56e2-55af-82d9-cc8414766347")
+	)
+	(wire
+		(pts
+			(xy 232.41 88.9)
+			(xy 265.43 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e40537b7-a391-54a0-94ab-7dc23dcddf55")
+	)
+	(wire
+		(pts
+			(xy 236.22 72.39)
+			(xy 232.41 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0cb7929-d93f-5fb4-9a7f-1bd62043da0b")
+	)
+	(wire
+		(pts
+			(xy 232.41 72.39)
+			(xy 232.41 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cac966e-34f7-5453-97af-5d8f93f02411")
+	)
+	(junction
+		(at 232.41 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5588c5cc-1a88-5daf-9dc8-fbcb3f857054")
+	)
+	(label "SW_3V3"
+		(at 246.38 88.9 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e7b60eb-1229-53bd-adc2-c4fed18b9172")
+	)
+	(wire
+		(pts
+			(xy 273.05 88.9)
+			(xy 294.64 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ee04910-dbbe-5f3e-b8fb-48a67e839bf2")
+	)
+	(wire
+		(pts
+			(xy 294.64 88.9)
+			(xy 335.28 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d7668e9-4b93-54f4-93d7-da1f1d885236")
+	)
+	(wire
+		(pts
+			(xy 335.28 88.9)
+			(xy 375.92 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fa3edf5-0c03-534d-9a8d-e8e9af4fd5e5")
+	)
+	(wire
+		(pts
+			(xy 375.92 88.9)
+			(xy 398.78 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2de9c8f4-e3bc-50a9-b2cf-d972764c4d21")
+	)
+	(global_label "+3V3"
+		(shape passive)
+		(at 398.78 88.9 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "8b0d8767-ef35-5f43-a8aa-14567b6be068")
+	)
+	(wire
+		(pts
+			(xy 294.64 88.9)
+			(xy 294.64 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e18c7d1f-09e8-5824-b7c5-ea41e893c4f0")
+	)
+	(wire
+		(pts
+			(xy 294.64 115.57)
+			(xy 294.64 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eafb9dbe-d150-51a3-a06d-6aadbce3c1e4")
+	)
+	(junction
+		(at 294.64 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "497ca30d-2d00-5a15-8caf-c5119e772e35")
+	)
+	(wire
+		(pts
+			(xy 335.28 88.9)
+			(xy 335.28 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2716e159-ef57-5aee-b398-0437b3ef195a")
+	)
+	(wire
+		(pts
+			(xy 335.28 115.57)
+			(xy 335.28 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cb1c804-d3c6-5741-9769-fb69b238c55a")
+	)
+	(junction
+		(at 335.28 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e6971ff-b007-5a86-a05d-e995bd412721")
+	)
+	(wire
+		(pts
+			(xy 375.92 88.9)
+			(xy 375.92 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9def6182-47ed-5086-986b-d6083a1d7de3")
+	)
+	(wire
+		(pts
+			(xy 375.92 115.57)
+			(xy 375.92 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00c92e32-42cd-5be4-96ab-5c300d2ef756")
+	)
+	(junction
+		(at 375.92 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e30bf71-e537-578d-9a41-6013bd321a5c")
+	)
+	(wire
+		(pts
+			(xy 53.34 139.7)
+			(xy 96.52 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97a1241b-6eb2-5995-9fbe-c28511bbdb7e")
+	)
+	(wire
+		(pts
+			(xy 96.52 139.7)
+			(xy 134.62 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c29945b4-3ac0-50d0-87f6-4cac3b98e480")
+	)
+	(wire
+		(pts
+			(xy 134.62 139.7)
+			(xy 172.72 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8b4e22f-7414-5576-8af8-ade1f547061e")
+	)
+	(wire
+		(pts
+			(xy 172.72 139.7)
+			(xy 205.74 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8f75c65-11f4-5458-83d1-18a3d2f84659")
+	)
+	(wire
+		(pts
+			(xy 205.74 139.7)
+			(xy 208.28 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cf0809c-90a6-5ae4-b565-c2c26f3b4b15")
+	)
+	(wire
+		(pts
+			(xy 208.28 139.7)
+			(xy 294.64 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb49abd6-6309-5ced-991f-63058370ee89")
+	)
+	(wire
+		(pts
+			(xy 294.64 139.7)
+			(xy 335.28 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67fa9a85-d37d-56bb-808a-ded38458b6db")
+	)
+	(wire
+		(pts
+			(xy 335.28 139.7)
+			(xy 375.92 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35b925b0-7dfe-5e2d-88ec-fbadaf3b1bc4")
+	)
+	(wire
+		(pts
+			(xy 375.92 139.7)
+			(xy 398.78 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17a42dc4-5da4-5236-af1a-366b65389b9e")
+	)
+	(junction
+		(at 96.52 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34c672ba-617d-5b36-b9a8-47ab0bb8130c")
+	)
+	(junction
+		(at 134.62 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b208e9f-40ef-5e0c-aaa0-687c61035d54")
+	)
+	(junction
+		(at 172.72 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ba65b73-c32b-547f-9f57-1fa75655c1e3")
+	)
+	(junction
+		(at 205.74 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4f8342a-ace9-52f3-9ee0-37c0e66ac0ec")
+	)
+	(junction
+		(at 208.28 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3412ebbf-55df-5e6e-966a-0de0259111a3")
+	)
+	(junction
+		(at 294.64 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d1a16c0-59a7-50c1-80e0-1f9fc3172ff0")
+	)
+	(junction
+		(at 335.28 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98dd35d6-6470-588a-a30f-a3292a9a52ba")
+	)
+	(junction
+		(at 375.92 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da603995-3b59-5253-97ba-857b999e75e2")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 398.78 139.7 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "66ad880c-0114-5e47-bda0-f1d73509a988")
+	)
+	(wire
+		(pts
+			(xy 215.9 93.98)
+			(xy 223.52 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80827b73-e85a-565d-941a-636806f0d374")
+	)
+	(wire
+		(pts
+			(xy 223.52 93.98)
+			(xy 223.52 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d30396-b287-566c-9754-df58c471356a")
+	)
+	(label "FB_3V3"
+		(at 223.52 116.84 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "888ced90-d7b3-598b-9b26-b454aedffd9f")
+	)
+	(no_connect
+		(at 215.9 96.52)
+		(uuid "ce50ea26-61a8-58bf-bac1-53ef277ea2d3")
+	)
+	(text "PG unused; explicit NC"
+		(at 228 130 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+			)
+			(justify left bottom)
+		)
+		(uuid "5eb7d34f-26c1-5344-a3c6-978765ae14bf")
+	)
+	(text "FEEDBACK - SENSE AT OUTPUT BANK"
+		(at 282 154 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a682111-b3c7-52cb-8150-b429ff8201ea")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 320.04 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "308d31eb-3940-51a6-977a-91ab0c22a853")
+		(property "Reference" "R4"
+			(at 329 168 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100k 1%"
+			(at 329 172 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:R_0603_1608Metric"
+			(at 329 168 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CRCW0603100KFKEA"
+			(at 329 168 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 329 168 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 329 168 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Held candidate; see reviews/codex/buck_3v3/README.md"
+			(at 329 168 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf60267a-cc6e-57dd-884d-ab2dc2575d28")
+		)
+		(pin "2"
+			(uuid "6d4beb87-b3c5-59e8-8008-97036639dac0")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865/49976346-5e08-5c8a-99f3-254aa0e56332"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 320.04 200.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d0b822b-ff91-5cca-a527-d2a48c80f8fe")
+		(property "Reference" "R5"
+			(at 329 199 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "43.2k 1%"
+			(at 329 203 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "LoRa_Boat_Controller_V2:R_0603_1608Metric"
+			(at 329 199 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CRCW060343K2FKEA"
+			(at 329 199 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 329 199 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 329 199 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Held candidate; see reviews/codex/buck_3v3/README.md"
+			(at 329 199 0)
+			(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a39320f-fe40-5962-a04c-f95434aa6749")
+		)
+		(pin "2"
+			(uuid "018def6a-8e07-5dad-a89a-f0a2efa7883b")
+		)
+		(instances
+			(project "LoRa_Boat_Controller_V2"
+				(path "/1dd45446-4f65-56e8-a2d3-9539c2076706/ab044879-1b8a-5671-848c-dc324c91f865/49976346-5e08-5c8a-99f3-254aa0e56332"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "+3V3"
+		(shape passive)
+		(at 320.04 160.02 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "f15b8e43-a88f-5002-81a2-a2b46965d49e")
+	)
+	(wire
+		(pts
+			(xy 320.04 160.02)
+			(xy 320.04 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffb59585-4181-5341-a0d6-e68cb1712f76")
+	)
+	(wire
+		(pts
+			(xy 320.04 173.99)
+			(xy 320.04 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0924eb1e-2665-5835-a071-50a2a975f453")
+	)
+	(wire
+		(pts
+			(xy 320.04 185.42)
+			(xy 320.04 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db282ce2-b19d-5c7f-b25b-72c9afee6cfd")
+	)
+	(wire
+		(pts
+			(xy 287.02 185.42)
+			(xy 320.04 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf0a967f-ad80-58ad-97b6-ce4a4c694dbd")
+	)
+	(label "FB_3V3"
+		(at 287.02 185.42 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "bebece5b-a859-5235-abf3-8118d1263d1b")
+	)
+	(junction
+		(at 320.04 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "113c8fbf-b25b-5789-b566-3df7244214d7")
+	)
+	(wire
+		(pts
+			(xy 320.04 204.47)
+			(xy 320.04 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17809e31-fb83-54ea-a1ab-454910adf554")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 320.04 213.36 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "01008c9d-10a9-5760-a745-190dda565bb5")
+	)
+	(text "C44/C45: >=4.7 uF combined effective + separate HF bypass; capacitance held."
+		(at 18 151 0)
+		(effects
+			(font
+				(size 1.45 1.45)
+			)
+			(justify left bottom)
+		)
+		(uuid "b65ec0c2-4e22-5c57-a1d3-3681d64eaf39")
+	)
+	(text "U2 pins 1 and 9 both connect to ground. Thermal pad is not the sole return."
+		(at 18 158 0)
+		(effects
+			(font
+				(size 1.45 1.45)
+			)
+			(justify left bottom)
+		)
+		(uuid "45309cf8-f46b-5c39-b5d8-617192e2e547")
+	)
+	(text "C48 supplies VCC only. C3 connects BOOT to SW; old 51-ohm resistor removed."
+		(at 18 165 0)
+		(effects
+			(font
+				(size 1.45 1.45)
+			)
+			(justify left bottom)
+		)
+		(uuid "68c5fc4d-67d7-51e0-900e-a107b1f72907")
+	)
+	(text "EN tied to VIN_BUCK: always-on cell, no battery discharge cutoff implemented."
+		(at 18 180 0)
+		(effects
+			(font
+				(size 1.45 1.45)
+			)
+			(justify left bottom)
+		)
+		(uuid "19cb2bbe-fa79-5776-9779-614eef3524d4")
+	)
+	(text "100k / 43.2k sets 3.3148 V nominal; resistor / VFB corner screen is documented."
+		(at 18 188 0)
+		(effects
+			(font
+				(size 1.45 1.45)
+			)
+			(justify left bottom)
+		)
+		(uuid "a057a4fb-77ed-51f3-a062-be9c2f30d7a6")
+	)
+	(text "10 uH differs from TI 6.8 uH quick-start. Validate load steps and loop stability."
+		(at 18 196 0)
+		(effects
+			(font
+				(size 1.45 1.45)
+			)
+			(justify left bottom)
+		)
+		(uuid "1cfbd27b-319e-5d2d-aa64-d4b37e8d0412")
+	)
+	(text "Output: 3 x 22 uF rated, not 66 uF guaranteed effective. Ripple / bias / aging held."
+		(at 18 204 0)
+		(effects
+			(font
+				(size 1.45 1.45)
+			)
+			(justify left bottom)
+		)
+		(uuid "95bb4a3c-2715-5bd4-add9-22d8eeb70e61")
+	)
+	(text "INTEGRATION GATES / BEFORE POWERED USE"
+		(at 16 230 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "4c6f47b6-e6e9-5e2e-b84c-e4ddf1ac2256")
+	)
+	(text "This copy retains uncorrected input leakage, polarized C1, 5 V buck, sense/ADC and buffer circuits; IMU2 is separate."
+		(at 16 240 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "f3d1d1bd-c7d2-5939-9f36-1ff0fa607773")
+	)
+	(text "Confirm hot inductor behavior, losses, junction temperature, startup, source damping and actual capacitor bounds."
+		(at 16 248 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "f32199cd-8d30-505e-ae8f-dcd1981a3b97")
+	)
+	(text "Custom regulator and capacitor lands are candidates; thermal vias, assembly process and whole-board fit remain open."
+		(at 16 256 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "fbc3eff2-afd4-5b1c-8aed-e86399918b6e")
+	)
+	(text "Native ERC / netlist delta prove recorded connections only. No routing, fabrication or hardware acceptance."
+		(at 16 264 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "679bd460-cb71-5816-8b94-86be0e6a715c")
+	)
+	(embedded_fonts no)
+)

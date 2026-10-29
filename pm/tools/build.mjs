@@ -68,6 +68,7 @@ if(exists('reviews/codex/imu_bias_filter/v2_imu_bias_filter.svg'))images.push({p
 if(exists('reviews/codex/power_envelope/v2_power_envelope.svg'))images.push({path:'reviews/codex/power_envelope/v2_power_envelope.svg',title:'6S power envelope - review map, no circuit changes',type:'svg'});
 if(exists('reviews/codex/power_topology/v2_power_topologies.svg'))images.push({path:'reviews/codex/power_topology/v2_power_topologies.svg',title:'6S power paths - proposed alternatives and load limits',type:'svg'});
 if(exists('reviews/codex/input_stage/v2_input_stage.svg'))images.push({path:'reviews/codex/input_stage/v2_input_stage.svg',title:'INPUT-A1 schematic - wired input boundary, not integrated',type:'svg'});
+if(exists('reviews/codex/power_sheet_polish/native/svg/LoRa_Boat_Controller_V2-Power.svg'))images.push({path:'reviews/codex/power_sheet_polish/native/svg/LoRa_Boat_Controller_V2-Power.svg',title:'POWER-DOC-01 - Power sheet presentation copy of VSERVO-01',type:'svg',revision:'v2'});
 if(exists('reviews/codex/vservo_transients/v2_vservo_transients.svg'))images.push({path:'reviews/codex/vservo_transients/v2_vservo_transients.svg',title:'VSERVO-02 - conditional energy sink, clamp and reverse-voltage boundaries',type:'svg'});
 if(exists('reviews/codex/vservo_reservoir/v2_vservo_reservoir.svg'))images.push({path:'reviews/codex/vservo_reservoir/v2_vservo_reservoir.svg',title:'VSERVO-01 - isolated C11 identity and reservoir limits',type:'svg'});
 if(exists('reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Power.svg'))images.push({path:'reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Power.svg',title:'VSERVO-01 - native Power sheet with C11 identity amendment',type:'svg'});
@@ -133,6 +134,7 @@ for(const p of ['reviews/codex/imu_bias_filter/source/hardware/kicad_v2/LoRa_Boa
 data.changed_since_previous=previous?Object.keys(hashes).filter(p=>previous.manifest?.[p]!==hashes[p]):[];
 for(const p of ['docs/applications/applications.json','firmware_v2/board_contract.json',v2DiagnosticManifestPath,'reviews/codex/design_completion/electrical/blockers.json'])if(exists(p)){read(p);data.available_paths.push(p);}
 for(const p of ['reviews/codex/power_topology/load_budget.html','reviews/codex/power_topology/comparison.json','reviews/codex/power_topology/proposed_connections.json'])if(exists(p)){read(p);data.available_paths.push(p);}
+for(const p of walk('reviews/codex/power_sheet_polish').filter(p=>/\.(json|svg|html|kicad_pro)$/.test(p)&&!p.endsWith('.template.html')))data.available_paths.push(p);
 for(const p of walk('reviews/codex/vservo_transients').filter(p=>/\.(json|svg|html)$/.test(p)&&!p.endsWith('.template.html')))data.available_paths.push(p);
 for(const p of walk('reviews/codex/vservo_reservoir').filter(p=>/\.(json|svg|html)$/.test(p)&&!p.endsWith('.template.html')))data.available_paths.push(p);
 for(const p of walk('reviews/codex/connector_fault_contract').filter(p=>/\.(json|svg|html)$/.test(p)&&!p.endsWith('.template.html')))data.available_paths.push(p);

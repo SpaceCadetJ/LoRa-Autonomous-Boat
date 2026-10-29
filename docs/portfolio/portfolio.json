@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "title": "LoRa Vehicle Controller: Reconstruction and Platform Redesign",
   "short_title": "LoRa Autonomous Boat Controller",
   "summary": "An STM32 and LoRa vehicle-controller project with reconstructed KiCad hardware, annotated schematics, a searchable engineering workspace, assembly evidence and a reproducible V1 firmware build. V2 hardware and a voice/text/location handheld remain under development.",
@@ -56,7 +56,9 @@
     "vservo_reservoir": "reviews/codex/vservo_reservoir/README.md",
     "reservoir_explorer": "reviews/codex/vservo_reservoir/index.html",
     "vservo_transients": "reviews/codex/vservo_transients/README.md",
-    "protection_explorer": "reviews/codex/vservo_transients/index.html"
+    "protection_explorer": "reviews/codex/vservo_transients/index.html",
+    "power_sheet_polish": "reviews/codex/power_sheet_polish/README.md",
+    "power_sheet_comparison": "reviews/codex/power_sheet_polish/index.html"
   },
   "technologies": [
     "STM32F446",
@@ -237,6 +239,16 @@
       "path": "reviews/codex/vservo_transients/v2_vservo_transients.svg",
       "kind": "proposed_protection_boundary",
       "caption": "VSERVO-02 local dissipative shunt versus upstream energy-return study with conditional threshold, response and reverse-voltage limits; no circuit or protection qualification."
+    },
+    {
+      "path": "reviews/codex/power_sheet_polish/native/svg/LoRa_Boat_Controller_V2-Power.svg",
+      "kind": "native_schematic_presentation",
+      "caption": "POWER-DOC-01: isolated Power sheet layout and annotation polish; VSERVO-01 remains the electrical candidate."
+    },
+    {
+      "path": "reviews/codex/power_sheet_polish/index.html",
+      "kind": "interactive_native_comparison",
+      "caption": "Before/after native Power sheets with review boundaries; no powered-application release."
     }
   ],
   "validated_results": [
@@ -524,6 +536,17 @@
         "reviews/codex/vservo_transients/analysis.json",
         "reviews/codex/vservo_transients/review_notes.json",
         "reviews/codex/vservo_transients/packet_manifest.json"
+      ]
+    },
+    {
+      "claim": "POWER-DOC-01 improves native Power sheet layout and annotations without changing the VSERVO-01 electrical candidate. Captured comparison preserves 128 component records, 429 physical pin memberships and node attributes, 121 complete nets and 11 sheet identities. Thirty-seven of 38 source files, both converters, symbol definitions and population bytes are preserved. Three native commands export 11 SVG sheets; ERC has zero errors and the unchanged AD0 warning. Seventeen equivalence tests pass. Live CAD/copper and hardware release remain unchanged.",
+      "classification": "captured_native_presentation_equivalence_no_hardware_acceptance",
+      "evidence": [
+        "reviews/codex/power_sheet_polish/README.md",
+        "reviews/codex/power_sheet_polish/validation.json",
+        "reviews/codex/power_sheet_polish/native_manifest.json",
+        "reviews/codex/power_sheet_polish/review_notes.json",
+        "reviews/codex/power_sheet_polish/packet_manifest.json"
       ]
     }
   ],
