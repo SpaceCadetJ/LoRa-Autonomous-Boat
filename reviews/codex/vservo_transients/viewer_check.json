@@ -1,0 +1,52 @@
+{
+  "scope": "Portable requirements viewer and conditional transient arithmetic only; no new native capture, actual waveform or hardware test",
+  "input_sha256": {
+    "reviews/codex/vservo_transients/README.md": "dcbe9c6f00e8c8d8161cd49fcaa575b6f73194e076233a5df1780b80655622fb",
+    "reviews/codex/vservo_transients/RESULTS.md": "5ae30ecb6226930c0ad2ac6c2e038d51f6cf4c15e51cc1e12617679273fcc9ea",
+    "reviews/codex/vservo_transients/analysis.json": "9a19192d33cdc2577c1b7edf1984dadc699c121b8a64793c5015a648ebbb498b",
+    "reviews/codex/vservo_transients/model.py": "9bae033f1e4d4993627d164b60b88d76d0e64e88dd3842eb64c4216c0895ce9f",
+    "reviews/codex/vservo_transients/explorer.template.html": "0433c0ed9d5cd570719ddd107af046941f86102d3df414979b33948164b0b492",
+    "reviews/codex/vservo_transients/index.html": "b4b006c3c1cc8a80f27cd9e5cc98955d20cf2f90efa0e3335d9032b6a2f2a11b",
+    "reviews/codex/vservo_transients/v2_vservo_transients.svg": "178e2b7d2404a7d44f5c76c2f43e8ac2e0a4a3529eae2f095f22fe0e534baade",
+    "reviews/codex/vservo_transients/verify_viewer.cjs": "b496a05bab93ddf726ec7dc0e86230006a75d1aa16fd2e15eb5603640a79f45c",
+    "pm/index.template.html": "f936dbdcc70f9c2282b0c54dc9ebb513b03bab7ba0ba5e5c0f0cbb4f51e94289"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "diagram_loaded": true,
+      "diagram_text_in_bounds": true,
+      "zoom_percent": 200,
+      "two_guide_dialogs": true,
+      "actual_inputs_remain_null": true,
+      "three_window_cases_match_analysis": true,
+      "two_sink_cases_match_analysis": true,
+      "delay_and_zero_negative_boundary_match": true,
+      "endpoint_lower_bound_and_reset_scope_visible": true,
+      "no_hardware_acceptance": true,
+      "horizontal_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "diagram_loaded": true,
+      "diagram_text_in_bounds": true,
+      "zoom_percent": 200,
+      "two_guide_dialogs": true,
+      "actual_inputs_remain_null": true,
+      "three_window_cases_match_analysis": true,
+      "two_sink_cases_match_analysis": true,
+      "delay_and_zero_negative_boundary_match": true,
+      "endpoint_lower_bound_and_reset_scope_visible": true,
+      "no_hardware_acceptance": true,
+      "horizontal_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

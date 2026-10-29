@@ -1,5 +1,11 @@
 # LoRa controller: from legacy board to reviewable platform
 
+## Current transient boundary review - VSERVO-02, 2026-10-28
+
+[VSERVO-02](../../reviews/codex/vservo_transients/README.md) compares a proposed local dissipative shunt with returning energy to an upstream source. The [annotated boundary](../../reviews/codex/vservo_transients/v2_vservo_transients.svg), [conditional calculations](../../reviews/codex/vservo_transients/RESULTS.md) and [protection explorer](../../reviews/codex/vservo_transients/index.html) separate normal voltage, threshold tolerances and response overshoot, and distinguish finite event storage from recurring dissipation. Passive return across D4/D9 is unqualified because upstream sink and off-state behavior are unknown. Reverse voltage and receiver/source limits remain open.
+
+This review preserves 427 input hashes and makes no CAD, copper, part selection or application change; VSERVO-01 remains the latest isolated native candidate. Purchasing, protection, assembly and hardware acceptance remain held. Next specify one independent local shunt cell's enable, startup, fault, thermal and safe-operating-area contract using a symbolic receiver envelope before selecting a device or inserting native circuitry. Earlier checkpoints and next-task wording below are historical.
+
 ## Current C11 native candidate and reservoir review - VSERVO-01, 2026-10-28
 
 [VSERVO-01](../../reviews/codex/vservo_reservoir/README.md) is the latest isolated native candidate in the ACT-04 lineage. It changes only C11 to Panasonic EEEFK1C101P, 100 uF/16 V, with explicit manufacturer D-size lands. Independent comparison preserves all 429 pin memberships, 127 other component records, both converters and the exclusive ACT-01 source populations. Native ERC reports zero errors and the one unchanged AD0 warning. The packet records 13 candidate tests, 12 model tests and 343 preserved inputs.

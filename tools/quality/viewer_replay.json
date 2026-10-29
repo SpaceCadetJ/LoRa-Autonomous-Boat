@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "scope": "Exact historical Git templates for immutable captured viewer evidence; current snapshot must also match live PM source. No historical records rewritten.",
+  "historical_packets": [
+    {
+      "packet": "reviews/codex/observation_3v3",
+      "revision": "ACT-07",
+      "analysis_api": "collect",
+      "packet_manifest_sha256": "a385132887833f5381a6b445e9a3ea0f281679fefa39ed8c0d9bea859aa004c3",
+      "template_snapshot": "reviews/codex/vservo_transients/historical_viewers/ACT-07.template.html",
+      "template_source_path": "pm/index.template.html",
+      "template_source_commit": "16bbcd6f61f5aab9d5c78231e9636491e40a1f23",
+      "template_git_blob": "b0ae32e68d74b9ae31050e8156925afe1c3a64e4",
+      "template_sha256": "9d8f1573c0e054a19d56355b22c3aa5f2c5700d38ded6fe5a6628ad3e12a2b43"
+    },
+    {
+      "packet": "reviews/codex/observer_power",
+      "revision": "ACT-08",
+      "analysis_api": "artifact",
+      "packet_manifest_sha256": "6d4e13f71c93f2bbfe51c5c795d9308463b2e96bd80cb52a4d57bab50d9488a4",
+      "template_snapshot": "reviews/codex/vservo_transients/historical_viewers/ACT-08.template.html",
+      "template_source_path": "pm/index.template.html",
+      "template_source_commit": "ebd2b6ca194592e05af791fd8c1a10663cd8a981",
+      "template_git_blob": "39ff55713ecb5914be61f2c5700826a05b77c88d",
+      "template_sha256": "1adadfc829e6b6f4827aa72a1d6da4df33e7ae547d565053a5e0f10f56f4392a"
+    },
+    {
+      "packet": "reviews/codex/observer_retention",
+      "revision": "ACT-09",
+      "analysis_api": "collect",
+      "packet_manifest_sha256": "7aec7ca8e58296ce8a7493a93b47de22523b33453be3409d953ee173f0364dfe",
+      "template_snapshot": "reviews/codex/vservo_transients/historical_viewers/ACT-09.template.html",
+      "template_source_path": "pm/index.template.html",
+      "template_source_commit": "074464449376a9c2c47c564e45df0ea2104b44c2",
+      "template_git_blob": "38a65cab0ff9081990b6c9672cd97f578e29f3b1",
+      "template_sha256": "6ddebd1a25e21dd24c9abeae5806569aa3dfa63a6ad484dcad1c510b24db220e"
+    },
+    {
+      "packet": "reviews/codex/oe_isolation",
+      "revision": "ACT-10",
+      "analysis_api": "collect",
+      "packet_manifest_sha256": "1a1d88b2c339df1ca3fb3b454ffa4c6b16cf524f7ed26df4de242d58f755a459",
+      "template_snapshot": "reviews/codex/vservo_transients/historical_viewers/ACT-10.template.html",
+      "template_source_path": "pm/index.template.html",
+      "template_source_commit": "bdf6349971d127346feda8e1438255e887ca79f8",
+      "template_git_blob": "281779d7efcf094f3d835af35fa2aff0326dc9c3",
+      "template_sha256": "08bf7c03353402f436e8880df8a70496c2788b1f492934bebb847aecbbd729e9"
+    },
+    {
+      "packet": "reviews/codex/vcca_shutdown",
+      "revision": "ACT-11",
+      "analysis_api": "collect",
+      "packet_manifest_sha256": "99abae302d98abeeb2130f8aed74e14c2caa9749f9e884e8f9e62b2a5c29d7c5",
+      "template_snapshot": "reviews/codex/vservo_transients/historical_viewers/ACT-11.template.html",
+      "template_source_path": "pm/index.template.html",
+      "template_source_commit": "73a31e6aafafa4c083e7e89913ea18f0f24f4f0a",
+      "template_git_blob": "adb2075fe276268376fef47fbdfc4140d6094869",
+      "template_sha256": "d623577c0895018eb6107f26dda1d0327e61a61cd7c789c5f439df6b6904986f"
+    },
+    {
+      "packet": "reviews/codex/connector_fault_contract",
+      "revision": "ACT-12",
+      "analysis_api": "collect",
+      "packet_manifest_sha256": "133ae8297b103245b6d8564a2aea2ab56655f166d2c46e1483c7bc7c7bcc0280",
+      "template_snapshot": "reviews/codex/vservo_transients/historical_viewers/ACT-12.template.html",
+      "template_source_path": "pm/index.template.html",
+      "template_source_commit": "7ebb315623315af666daee7c299745ec98ad3030",
+      "template_git_blob": "24843608aa45cb3fdb2b2698f49bb291f3cf934d",
+      "template_sha256": "c60ffc38d58e19f2c2ac58416e50269c9a3f20adb10cc976d601c045ab1833a2"
+    },
+    {
+      "packet": "reviews/codex/vservo_reservoir",
+      "revision": "VSERVO-01",
+      "analysis_api": "collect",
+      "packet_manifest_sha256": "98773767b63c3d8b768266a44791326b8e0e1cb6234462b114e221769ede6ea9",
+      "template_snapshot": "reviews/codex/vservo_transients/historical_viewers/VSERVO-01.template.html",
+      "template_source_path": "pm/index.template.html",
+      "template_source_commit": "6e6c03ad05f36792fb5affda292bcff9d0a241ef",
+      "template_git_blob": "d2068d5e2988b87bd99731688b7677c5be2994db",
+      "template_sha256": "1536d22d3201b8ce90b7b672051ddf7108360bbc3fc725392ef5ba764a4fd1e3"
+    }
+  ],
+  "current_packet": {
+    "packet": "reviews/codex/vservo_transients",
+    "template_snapshot": "reviews/codex/vservo_transients/viewer-template.snapshot.html"
+  }
+}

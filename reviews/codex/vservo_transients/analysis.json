@@ -1,0 +1,335 @@
+{
+  "revision": "VSERVO-02",
+  "classification": "analytical_boundaries_with_unavailable_actual_envelopes",
+  "actual": {
+    "clamp_window": {
+      "status": "unavailable",
+      "missing_fields": [
+        "normal_max_V",
+        "turnon_min_V",
+        "turnon_max_V",
+        "overshoot_V",
+        "allowed_max_V"
+      ],
+      "inputs": {
+        "normal_max_V": null,
+        "turnon_min_V": null,
+        "turnon_max_V": null,
+        "overshoot_V": null,
+        "allowed_max_V": null
+      },
+      "off_margin_V": null,
+      "protection_margin_V": null,
+      "strict_positive_arithmetic_margin": null,
+      "hardware_accepted": false,
+      "overshoot_definition": "Combined rise above turnon_max_V including full-current clamp I-V/regulation, delay, ESR/inductance and local path effects; not delay alone.",
+      "full_current_response_qualified": false,
+      "remote_harness_qualified": false,
+      "window_is_necessary_not_sufficient": true
+    },
+    "delay_rise": {
+      "status": "unavailable",
+      "missing_fields": [
+        "C_F",
+        "return_current_A",
+        "delay_s"
+      ],
+      "inputs": {
+        "C_F": null,
+        "return_current_A": null,
+        "delay_s": null
+      },
+      "returned_charge_C": null,
+      "rise_V": null,
+      "hardware_accepted": false
+    },
+    "sink_budget": {
+      "status": "unavailable",
+      "missing_fields": [
+        "C_F",
+        "start_V",
+        "ceiling_V",
+        "net_event_energy_J",
+        "events_per_s"
+      ],
+      "inputs": {
+        "C_F": null,
+        "start_V": null,
+        "ceiling_V": null,
+        "net_event_energy_J": null,
+        "events_per_s": null
+      },
+      "capacitor_energy_window_J": null,
+      "minimum_event_sink_J": null,
+      "repeated_events_same_start_require_local_sink_J": null,
+      "mean_local_sink_W": null,
+      "hardware_accepted": false,
+      "event_energy_definition": "Allocated positive residual burst energy after other paths; no later offset or recovery absorption is credited within the burst.",
+      "minimum_event_sink_is_lower_bound": true,
+      "endpoint_model_bounds_peak": false,
+      "peak_requires_max_cumulative_energy_excursion": true,
+      "repeated_average_scope": "Conditional on restoration to the same starting rail by the sole residual local sink, with no other later absorption credit.",
+      "credits_later_absorption": false,
+      "automatically_adds_harness_inductive_energy": false
+    },
+    "negative_boundary": {
+      "status": "unavailable",
+      "missing_fields": [
+        "cap_terminal_min_V",
+        "receiver_terminal_min_V",
+        "receiver_allowed_min_V"
+      ],
+      "inputs": {
+        "cap_terminal_min_V": null,
+        "receiver_terminal_min_V": null,
+        "receiver_allowed_min_V": null
+      },
+      "capacitor_margin_V": null,
+      "receiver_margin_V": null,
+      "capacitor_nonnegative_boundary_met": null,
+      "receiver_boundary_met": null,
+      "strict_positive_arithmetic_margin": null,
+      "hardware_accepted": false
+    }
+  },
+  "parameters": {
+    "classification": "illustrative_allocations_not_actual_limits",
+    "start_V": 5.0,
+    "normal_max_V": 5.1,
+    "turnon_min_V": 5.2,
+    "turnon_max_V": 5.3,
+    "overshoot_V": 0.1,
+    "allowed_max_V": 5.5,
+    "C_F": 8e-05,
+    "return_current_A": 0.5,
+    "delay_s": 1e-05,
+    "net_event_energies_J": [
+      0.001,
+      0.0001
+    ],
+    "events_per_s": 10.0,
+    "capacitance_condition": "80 uF is the earlier initial 120 Hz/20 C tolerance illustration, not an all-condition effective-capacitance bound."
+  },
+  "window_cases": [
+    {
+      "id": "allocated_fit",
+      "label": "Allocated positive window; physically unqualified",
+      "result": {
+        "status": "calculated",
+        "missing_fields": [],
+        "inputs": {
+          "normal_max_V": 5.1,
+          "turnon_min_V": 5.2,
+          "turnon_max_V": 5.3,
+          "overshoot_V": 0.1,
+          "allowed_max_V": 5.5
+        },
+        "off_margin_V": 0.1,
+        "protection_margin_V": 0.1,
+        "strict_positive_arithmetic_margin": true,
+        "hardware_accepted": false,
+        "overshoot_definition": "Combined rise above turnon_max_V including full-current clamp I-V/regulation, delay, ESR/inductance and local path effects; not delay alone.",
+        "full_current_response_qualified": false,
+        "remote_harness_qualified": false,
+        "window_is_necessary_not_sufficient": true
+      }
+    },
+    {
+      "id": "allocated_exhausted",
+      "label": "Allocated overshoot consumes the protection window",
+      "result": {
+        "status": "calculated",
+        "missing_fields": [],
+        "inputs": {
+          "normal_max_V": 5.1,
+          "turnon_min_V": 5.2,
+          "turnon_max_V": 5.3,
+          "overshoot_V": 0.2,
+          "allowed_max_V": 5.5
+        },
+        "off_margin_V": 0.1,
+        "protection_margin_V": 0.0,
+        "strict_positive_arithmetic_margin": false,
+        "hardware_accepted": false,
+        "overshoot_definition": "Combined rise above turnon_max_V including full-current clamp I-V/regulation, delay, ESR/inductance and local path effects; not delay alone.",
+        "full_current_response_qualified": false,
+        "remote_harness_qualified": false,
+        "window_is_necessary_not_sufficient": true
+      }
+    },
+    {
+      "id": "unknown",
+      "label": "Actual envelope unavailable",
+      "result": {
+        "status": "unavailable",
+        "missing_fields": [
+          "normal_max_V",
+          "turnon_min_V",
+          "turnon_max_V",
+          "overshoot_V",
+          "allowed_max_V"
+        ],
+        "inputs": {
+          "normal_max_V": null,
+          "turnon_min_V": null,
+          "turnon_max_V": null,
+          "overshoot_V": null,
+          "allowed_max_V": null
+        },
+        "off_margin_V": null,
+        "protection_margin_V": null,
+        "strict_positive_arithmetic_margin": null,
+        "hardware_accepted": false,
+        "overshoot_definition": "Combined rise above turnon_max_V including full-current clamp I-V/regulation, delay, ESR/inductance and local path effects; not delay alone.",
+        "full_current_response_qualified": false,
+        "remote_harness_qualified": false,
+        "window_is_necessary_not_sufficient": true
+      }
+    }
+  ],
+  "delay_case": {
+    "status": "calculated",
+    "missing_fields": [],
+    "inputs": {
+      "C_F": 8e-05,
+      "return_current_A": 0.5,
+      "delay_s": 1e-05
+    },
+    "returned_charge_C": 5e-06,
+    "rise_V": 0.0625,
+    "hardware_accepted": false
+  },
+  "sink_cases": [
+    {
+      "id": "one_mJ",
+      "label": "1 mJ per event, 10 events/s; allocation only",
+      "result": {
+        "status": "calculated",
+        "missing_fields": [],
+        "inputs": {
+          "C_F": 8e-05,
+          "start_V": 5.0,
+          "ceiling_V": 5.5,
+          "net_event_energy_J": 0.001,
+          "events_per_s": 10.0
+        },
+        "capacitor_energy_window_J": 0.00021,
+        "minimum_event_sink_J": 0.00079,
+        "repeated_events_same_start_require_local_sink_J": 0.001,
+        "mean_local_sink_W": 0.01,
+        "hardware_accepted": false,
+        "event_energy_definition": "Allocated positive residual burst energy after other paths; no later offset or recovery absorption is credited within the burst.",
+        "minimum_event_sink_is_lower_bound": true,
+        "endpoint_model_bounds_peak": false,
+        "peak_requires_max_cumulative_energy_excursion": true,
+        "repeated_average_scope": "Conditional on restoration to the same starting rail by the sole residual local sink, with no other later absorption credit.",
+        "credits_later_absorption": false,
+        "automatically_adds_harness_inductive_energy": false
+      }
+    },
+    {
+      "id": "tenth_mJ",
+      "label": "0.1 mJ per event, 10 events/s; allocation only",
+      "result": {
+        "status": "calculated",
+        "missing_fields": [],
+        "inputs": {
+          "C_F": 8e-05,
+          "start_V": 5.0,
+          "ceiling_V": 5.5,
+          "net_event_energy_J": 0.0001,
+          "events_per_s": 10.0
+        },
+        "capacitor_energy_window_J": 0.00021,
+        "minimum_event_sink_J": 0.0,
+        "repeated_events_same_start_require_local_sink_J": 0.0001,
+        "mean_local_sink_W": 0.001,
+        "hardware_accepted": false,
+        "event_energy_definition": "Allocated positive residual burst energy after other paths; no later offset or recovery absorption is credited within the burst.",
+        "minimum_event_sink_is_lower_bound": true,
+        "endpoint_model_bounds_peak": false,
+        "peak_requires_max_cumulative_energy_excursion": true,
+        "repeated_average_scope": "Conditional on restoration to the same starting rail by the sole residual local sink, with no other later absorption credit.",
+        "credits_later_absorption": false,
+        "automatically_adds_harness_inductive_energy": false
+      }
+    }
+  ],
+  "negative_case": {
+    "status": "calculated",
+    "missing_fields": [],
+    "inputs": {
+      "cap_terminal_min_V": 0.0,
+      "receiver_terminal_min_V": 0.0,
+      "receiver_allowed_min_V": 0.0
+    },
+    "capacitor_margin_V": 0.0,
+    "receiver_margin_V": 0.0,
+    "capacitor_nonnegative_boundary_met": true,
+    "receiver_boundary_met": true,
+    "strict_positive_arithmetic_margin": false,
+    "hardware_accepted": false
+  },
+  "limitations": [
+    "Actual source, receiver, clamp, current and energy envelopes are unavailable; no component is selected.",
+    "The normal-voltage and protection margins must both be strictly positive; equality is not margin.",
+    "The overshoot allocation includes all rise above turn-on maximum: full-current clamp I-V/regulation, delay, ESR/inductance and local path effects. It is not derived from the delay example alone.",
+    "A necessary scalar window does not establish dynamic clamp behavior, tolerance, temperature, shutdown applicability or remote harness voltage.",
+    "Delay rise assumes constant net capacitor return current; ESR and inductive peaks are omitted.",
+    "Energy means an allocated positive residual burst after other paths, without later offset/recovery absorption inside the burst. Harness inductive energy already counted at the port is not added again.",
+    "The event-sink result is an endpoint-based lower bound only. Actual peak closure needs maximum cumulative energy excursion and the time waveform.",
+    "A capacitor's one-event storage window cannot be credited repeatedly while also assuming restoration to the same starting voltage.",
+    "Full residual burst energy must leave through the sole local sink for each event restored to the same starting rail, with no other later absorption credit. Average watts alone do not qualify pulse power or thermals.",
+    "C11 nonnegative terminal voltage and receiver minimum voltage are separate constraints. Zero is a boundary with no positive margin.",
+    "No actual waveform, load, clamp, reverse-voltage, thermal or hardware acceptance is established."
+  ],
+  "hardware_accepted": false,
+  "component_selected_for_release": false,
+  "voltage_envelope_qualified": false,
+  "actual_load_known": false,
+  "sink_qualified": false,
+  "reverse_voltage_qualified": false,
+  "fabrication_approved": false,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "topology": {
+    "captured_candidate": "VSERVO-01",
+    "checked_pin_nets": {
+      "D4.1": "VSERVO",
+      "D4.2": "/Power/+5V_BUCK",
+      "D9.1": "VSERVO",
+      "D9.2": "/BEC_IN",
+      "C11.1": "VSERVO",
+      "C11.2": "GND",
+      "C12.1": "VSERVO",
+      "C12.2": "GND",
+      "J2.2": "/BEC_IN",
+      "J2.3": "GND",
+      "J3.2": "VSERVO",
+      "J3.3": "GND",
+      "TP4.1": "VSERVO",
+      "U3.17": "GND"
+    },
+    "VSERVO_members": [
+      "C11.1",
+      "C12.1",
+      "D4.1",
+      "D9.1",
+      "J3.2",
+      "TP4.1"
+    ],
+    "U3_value": "LM76003RNPR",
+    "U3_SYNC_MODE_pin17": "GND",
+    "source_population_preserved": true,
+    "native_commands_rerun": false
+  },
+  "input_sha256": {
+    "reviews/codex/vservo_transients/contract.json": "80e3057858fb1d3dbd76deae4ea3946500a591153dfdc9a1692b60a70bf59e0e",
+    "reviews/codex/vservo_transients/sources.json": "ff4c52e74b9eb969458c19e4848854c9710023fe5da98e7b05a7e02ca77524e6",
+    "reviews/codex/vservo_transients/model.py": "9bae033f1e4d4993627d164b60b88d76d0e64e88dd3842eb64c4216c0895ce9f",
+    "reviews/codex/vservo_transients/build_packet.py": "b4d4c173d3f45c1ff5086425ba6097d8d8d0cc609bddcd412f9eb458b48d7608",
+    "reviews/codex/vservo_reservoir/native/netlist.xml": "77de758d11e734e2c7dbb456192ad875f8a17449f67f1feb382b6a17888b0804",
+    "reviews/codex/vservo_reservoir/population_contract.json": "ef86bd0df974914fd2cb103b759cea96bdc8dc8578dbc32414b9fe3afbd4a918"
+  }
+}

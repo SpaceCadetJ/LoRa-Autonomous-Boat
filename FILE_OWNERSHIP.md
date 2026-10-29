@@ -244,3 +244,18 @@ Root claims reviews/codex/vservo_reservoir/** and current viewer/application/por
 ### VSERVO-01 review completion - 2026-10-28 UTC
 
 Root and child write scopes are released after the isolated C11 amendment, independent source/native/math review, 13 candidate tests, 12 model tests and desktop/phone checks. All 429 memberships, 127 other component records, both converter sheets and ACT-01 populations are preserved. VSERVO-01 is the latest native candidate in this isolated lineage; live PCB/BOM/firmware and hardware acceptance remain unchanged. Continue from the newest handoff's energy-sink/reverse-voltage boundary task. Preserve disabled missing permissions and 6S. Native C12 annotation crowding remains a separate polish task. Selective publication excludes both unrelated dirty tools.
+
+
+## VSERVO-02 transient-boundary claim - 2026-10-28 UTC
+
+Root claims reviews/codex/vservo_transients/** and current documentation/viewer/portfolio/CI/handoff integration from 6e6c03a. Expected candidate/live electrical and copper delta is zero. Define the local sink, source-return and reverse-voltage acceptance boundaries without device selection or native insertion. Child vservo_model owns only new model.py/test_model.py; c11_identity_review is read-only; c11_native owns the assigned nine current integration files. Preserve VSERVO-01, both converters, ACT-01 exclusive populations, all prior evidence, 6S and disabled missing qualifications. No live CAD, primary generation/router, firmware, procurement or hardware action. Exclude unrelated v1_design.py and route_v2.py edits.
+
+
+### VSERVO-02 historical viewer replay repair scope
+
+Root extends this packet to the discovered CI failure where historical browser records were compared against the newer shared PM template. c11_native may add tools/quality/check_viewer_replay.py, viewer_replay.json, test_viewer_replay.py and exact historical template snapshots under the new packet, and update the workflow. Preserve all prior packet bytes. Replay deterministic historical outputs and verify archived viewer inputs by their recorded hashes; validate the current snapshot against the live template separately. No missing/stale evidence may be silently skipped. Root owns the current packet snapshot/check and final handoff.
+
+
+### VSERVO-02 review completion - 2026-10-28 UTC
+
+Root and child write scopes are released after the transient boundary, independent review, 14 model tests and desktop/phone checks. The CI repair preserves seven historical templates and replays their outputs while separately validating the current viewer. No prior packet, circuit, copper, BOM or firmware changed. Continue from the newest handoff's local-shunt specification; preserve all unknown permissions disabled, 6S and the separate IMU2 lineage. Native C12 annotation polish remains available as independent work. Selective publication excludes both unrelated dirty tools.

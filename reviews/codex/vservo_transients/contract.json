@@ -1,0 +1,26 @@
+{
+  "revision": "VSERVO-02",
+  "baseline_candidate": "VSERVO-01",
+  "classification": "symbolic_protection_boundary_and_architecture_review",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "protection_qualified": false,
+  "parts_selected": false,
+  "qualification_ports_implemented": false,
+  "missing_qualifications_default": "disabled",
+  "source_variants": [
+    "BEC_ONLY",
+    "ONBOARD"
+  ],
+  "proposed_next_architecture": "independent_local_dissipative_shunt_with_separate_reverse_voltage_boundary",
+  "source_return_accepted": false,
+  "actual_receiver_envelope_known": false,
+  "actual_source_sink_capability_known": false,
+  "c11_rating_is_receiver_limit": false,
+  "repeated_events_may_reuse_capacitor_storage_without_reset": false
+}

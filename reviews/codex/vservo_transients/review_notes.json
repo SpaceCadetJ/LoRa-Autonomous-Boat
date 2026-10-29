@@ -1,0 +1,78 @@
+{
+  "revision": "VSERVO-02",
+  "reviewed_utc": "2026-10-28",
+  "scope": "Independent source, topology and analytical boundary review; root builder and visual review; no native circuit or hardware test.",
+  "reviewed_sha256": {
+    "README.md": "dcbe9c6f00e8c8d8161cd49fcaa575b6f73194e076233a5df1780b80655622fb",
+    "sources.json": "ff4c52e74b9eb969458c19e4848854c9710023fe5da98e7b05a7e02ca77524e6",
+    "contract.json": "80e3057858fb1d3dbd76deae4ea3946500a591153dfdc9a1692b60a70bf59e0e",
+    "model.py": "9bae033f1e4d4993627d164b60b88d76d0e64e88dd3842eb64c4216c0895ce9f",
+    "test_model.py": "1b0a0c6653c51d2de6110f72f19c5990868eb47992a89c16bd8b162d4854f761",
+    "build_packet.py": "b4d4c173d3f45c1ff5086425ba6097d8d8d0cc609bddcd412f9eb458b48d7608",
+    "analysis.json": "9a19192d33cdc2577c1b7edf1984dadc699c121b8a64793c5015a648ebbb498b",
+    "RESULTS.md": "5ae30ecb6226930c0ad2ac6c2e038d51f6cf4c15e51cc1e12617679273fcc9ea",
+    "v2_vservo_transients.svg": "178e2b7d2404a7d44f5c76c2f43e8ac2e0a4a3529eae2f095f22fe0e534baade",
+    "explorer.template.html": "0433c0ed9d5cd570719ddd107af046941f86102d3df414979b33948164b0b492",
+    "verify_viewer.cjs": "b496a05bab93ddf726ec7dc0e86230006a75d1aa16fd2e15eb5603640a79f45c",
+    "viewer-template.snapshot.html": "f936dbdcc70f9c2282b0c54dc9ebb513b03bab7ba0ba5e5c0f0cbb4f51e94289"
+  },
+  "independent_review": {
+    "model_tests": 14,
+    "source_topology": "Confirmed14 pin memberships,complete VSERVO membership,U3 LM76003RNPR SYNC/MODE17 atGND and exclusive populations. Grounded-mode inference is not a reverse-isolation guarantee.",
+    "arithmetic": "Independently confirmed0.1V margins,zero-margin rejection,62.5mV delay rise,.210mJ storage,.790mJ minimum event sink,10mW and1mW conditional repeated means.",
+    "scope": "Endpoint lower bounds are separate from peak closure; repeated energy assumes the same restored starting rail and sole local sink. Unknowns remain unavailable; reverse and remote boundaries remain separate."
+  },
+  "corrections": [
+    {
+      "issue": "Ambiguous I_return sign in source/sink authority.",
+      "resolution": "Renamed incoming current to I_J3_into_bus,max."
+    },
+    {
+      "issue": "Source ledger missing spaces.",
+      "resolution": "Changed The16V to The 16 V."
+    },
+    {
+      "issue": "Risk of hardcoded diagram examples drifting from model.",
+      "resolution": "Builder asserts all fixed allocation parameters and displayed key results."
+    }
+  ],
+  "visual_review": [
+    "Root inspected diagram and desktop explorer; annotations are separated and fit within the page.",
+    "Child inspected phone explorer; all window/sink cases and unknown state remain readable.",
+    "Browser record covers desktop and phone,guide dialogs,200percent zoom,three window states,two sink cases,delay andnegativeboundary,zerooverflow andzero script errors."
+  ],
+  "current_viewer_input": "viewer-template.snapshot.html",
+  "historical_replay_scope": "Separate exact snapshots for older shared PM input; prior packet bytes preserved. Current live binding is checked by tools/quality/check_viewer_replay.py.",
+  "limitations": [
+    "No part,clamp threshold or sink/current/thermal envelope is qualified.",
+    "Mean power and endpoint energy do not establish hot-start pulse SOA or maximum cumulative transient excursion.",
+    "No circuitry,native export,PCB,firmware,procurement or physical application release changed."
+  ],
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "hardware_accepted": false,
+  "protection_qualified": false,
+  "ci_replay_review": {
+    "classification": "captured verification of separate historical and current viewer contexts",
+    "historical_packets": 7,
+    "deterministic_outputs_replayed": 20,
+    "historical_packet_artifact_hashes": 198,
+    "historical_input_hash_checks": 1952,
+    "historical_template_count": 7,
+    "historical_template_bytes": 436167,
+    "current_viewer_inputs": 9,
+    "result": "pass; historical captured inputs and current live-template binding separately verified",
+    "tool_sha256_at_capture": {
+      "tools/quality/check_viewer_replay.py": "4438383b9772d5a8892efb6f38b3d8f6651319f287500a8b3705f0e6f294b170",
+      "tools/quality/viewer_replay.json": "eb063ee772c52b12c1dd992605f62c8a9371e4677ba26dcd9b747230c7eda12f",
+      "tools/quality/test_viewer_replay.py": "3ec5840782c19834e16be65ecd45a543785faf9b1cb533f214f17a33b47e0f75"
+    },
+    "provenance_note": "Tool hashes identify this verification revision. Historical packets are replayed by the maintained current checker; its registry may advance on later commits. Original packet artifacts and template snapshots remain immutable.",
+    "tests": 8,
+    "rejection_cases": 7,
+    "positive_cases": 1,
+    "independent_provenance_review": "All seven archived templates independently match git show at the recorded commit, Git blob IDs and original viewer SHA256. Runtime validates content-derived blob identity without requiring Git history."
+  }
+}

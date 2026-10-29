@@ -54,7 +54,9 @@
     "connector_fault_contract": "reviews/codex/connector_fault_contract/README.md",
     "fault_explorer": "reviews/codex/connector_fault_contract/index.html",
     "vservo_reservoir": "reviews/codex/vservo_reservoir/README.md",
-    "reservoir_explorer": "reviews/codex/vservo_reservoir/index.html"
+    "reservoir_explorer": "reviews/codex/vservo_reservoir/index.html",
+    "vservo_transients": "reviews/codex/vservo_transients/README.md",
+    "protection_explorer": "reviews/codex/vservo_transients/index.html"
   },
   "technologies": [
     "STM32F446",
@@ -230,6 +232,11 @@
       "path": "reviews/codex/vservo_reservoir/native/svg/LoRa_Boat_Controller_V2-Power.svg",
       "kind": "native_schematic_candidate",
       "caption": "Latest isolated ACT-04-lineage Power sheet: C11 identity and footprint only; all 429 pin memberships preserved."
+    },
+    {
+      "path": "reviews/codex/vservo_transients/v2_vservo_transients.svg",
+      "kind": "proposed_protection_boundary",
+      "caption": "VSERVO-02 local dissipative shunt versus upstream energy-return study with conditional threshold, response and reverse-voltage limits; no circuit or protection qualification."
     }
   ],
   "validated_results": [
@@ -508,6 +515,16 @@
         "reviews/codex/vservo_reservoir/review_notes.json",
         "reviews/codex/vservo_reservoir/packet_manifest.json"
       ]
+    },
+    {
+      "claim": "VSERVO-02 preserves 427 captured inputs and checks conditional threshold/response windows, finite event storage and recurring dissipation. Upstream energy return, reverse voltage and receiver/source limits remain unqualified. A local dissipative shunt is a next-study proposal only; VSERVO-01 stays native and no part, circuit or application is released.",
+      "classification": "preserved_evidence_and_conditional_protection_arithmetic",
+      "evidence": [
+        "reviews/codex/vservo_transients/RESULTS.md",
+        "reviews/codex/vservo_transients/analysis.json",
+        "reviews/codex/vservo_transients/review_notes.json",
+        "reviews/codex/vservo_transients/packet_manifest.json"
+      ]
     }
   ],
   "current_native_findings": {
@@ -536,7 +553,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Continue from VSERVO-01: define the energy-sink and reverse-voltage boundary for both BEC_ONLY and ONBOARD populations using symbolic unknowns before selecting devices. Preserve the isolated C11 identity/land amendment, both converters and default-disabled qualifications; exact actuator, source and harness evidence remains required.",
+    "Continue from VSERVO-02: specify one independent local dissipative shunt cell, including enable, startup, fault, thermal and safe-operating-area requirements, using a symbolic receiver voltage envelope before device selection or native insertion. Preserve VSERVO-01, both exclusive source populations and default-disabled qualifications; source, receiver and regenerative-event evidence remains unknown.",
     "Qualify supply sequencing, C11/VSERVO transients, full 6S feed, leakage/damping, ADC and combined IMU2 before PCB integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",

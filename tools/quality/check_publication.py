@@ -398,6 +398,14 @@ def main():
     assert vservo_validation["electrical_delta"]["preserved_other_component_identities"] == 127
     assert "C11" in read_json("hardware/manufacturing/procurement_policy.json")["v2"]["holds"]
     print("PASS VSERVO-01 isolated C11 identity/land evidence; live PCB/BOM and assembly/hardware release unchanged")
+    transient_root = "reviews/codex/vservo_transients/"
+    transient = read_json(transient_root + "packet_manifest.json")
+    check_hashes(transient["input_sha256"], "VSERVO-02 preserved inputs")
+    check_hashes(transient["artifact_sha256"], "VSERVO-02 boundary, calculations and viewer artifacts")
+    assert len(transient["input_sha256"]) == 427
+    assert all(transient[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
+    assert all(transient[k] is False for k in ["native_commands_rerun", "parts_selected", "hardware_accepted", "fabrication_approved", "procurement_approved", "protection_qualified"])
+    print("PASS VSERVO-02 conditional protection review; VSERVO-01 native candidate and hardware holds preserved")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -420,6 +428,7 @@ def main():
     pages += [ROOT / shutdown_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / connector_fault_root / name for name in ["README.md", "RESULTS.md", "MEASUREMENT_PLAN.md"]]
     pages += [ROOT / vservo_root / name for name in ["README.md", "RESULTS.md"]]
+    pages += [ROOT / transient_root / name for name in ["README.md", "RESULTS.md"]]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

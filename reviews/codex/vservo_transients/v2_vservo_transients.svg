@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="980" viewBox="0 0 1280 980"><rect width="1280" height="980" fill="#f4f7fb"/><style>text{font-family:Arial,sans-serif;fill:#172638}.h{font-size:28px;font-weight:bold}.t{font-size:20px;font-weight:bold}.s{font-size:17px}.sub{font-size:18px;fill:#425874}.box{fill:white;stroke:#9bb3c9;stroke-width:2}.hold{fill:#fff5e7;stroke:#b86e12;stroke-width:2;stroke-dasharray:8 5}.wire{fill:none;stroke:#246789;stroke-width:3}</style>
+<text x="40" y="48" class="h">VSERVO-02 | Where must returned energy go?</text>
+<text x="40" y="80" class="sub">Captured VSERVO-01 topology + proposed protection boundary | No circuit change or selected device</text>
+<rect x="40" y="107" width="1200" height="63" rx="9" class="hold"/>
+<text x="58" y="135" class="t">Finite capacitor storage does not replace a qualified sink or a return-capable source.</text>
+<text x="58" y="159" class="s">Actual receiver, source and harness limits remain unavailable. All examples are allocations.</text>
+<rect x="40" y="199" width="320" height="72" rx="9" class="box"/>
+<text x="58" y="229" class="t">ONBOARD: buck -&gt; D4</text>
+<text x="58" y="254" class="s">U3 SYNC/MODE pin 17 = GND</text>
+<rect x="40" y="291" width="320" height="72" rx="9" class="box"/>
+<text x="58" y="321" class="t">BEC_ONLY: J2.2 -&gt; D9</text>
+<text x="58" y="346" class="s">Actual BEC sink behavior unknown</text>
+<path class="wire" d="M360 235H410V327H360 M410 280H460 M780 280H850"/>
+<rect x="460" y="225" width="320" height="111" rx="9" class="box"/>
+<text x="478" y="256" class="t">VSERVO / C11 / C12</text>
+<text x="478" y="286" class="s">J3.2 and TP4.1</text>
+<text x="478" y="315" class="s">Exclusive source populations</text>
+<rect x="850" y="225" width="390" height="111" rx="9" class="hold"/>
+<text x="868" y="256" class="t">J3 servo supply + harness</text>
+<text x="868" y="286" class="s">Returned energy is unmeasured.</text>
+<text x="868" y="315" class="s">Propulsion energy is not assumed here.</text>
+<rect x="40" y="396" width="590" height="158" rx="9" class="hold"/>
+<text x="58" y="428" class="t">Next study: local dissipative shunt</text>
+<text x="58" y="460" class="s">Proposed VSERVO -&gt; controlled sink -&gt; GND</text>
+<text x="58" y="486" class="s">Bound full-current clamp rise, delay and current.</text>
+<text x="58" y="512" class="s">Qualify pulse / repeated / continuous dissipation.</text>
+<text x="58" y="538" class="s">Control power must exist while energy can arrive.</text>
+<rect x="660" y="396" width="580" height="158" rx="9" class="hold"/>
+<text x="678" y="428" class="t">Alternative: return to source remains held</text>
+<text x="678" y="460" class="s">D4 / D9 do not provide an intended return path.</text>
+<text x="678" y="486" class="s">Existing buck mode is not an accepted energy sink.</text>
+<text x="678" y="512" class="s">BEC, input path and battery acceptance are unknown.</text>
+<text x="678" y="538" class="s">No diode bridging or population change is proposed.</text>
+<rect x="40" y="585" width="590" height="172" rx="9" class="box"/>
+<text x="58" y="617" class="t">Window: normal &lt; threshold &lt; allowed ceiling</text>
+<text x="58" y="650" class="s">Allocated 5.1 V normal; turn-on range 5.2-5.3 V.</text>
+<text x="58" y="678" class="s">At 5.5 V ceiling: 0.1 V combined rise leaves 0.1 V.</text>
+<text x="58" y="706" class="s">0.2 V combined rise leaves zero margin.</text>
+<text x="58" y="734" class="s">10 us at 0.5 A / 80 uF adds 62.5 mV capacitive rise.</text>
+<rect x="660" y="585" width="580" height="172" rx="9" class="box"/>
+<text x="678" y="617" class="t">Storage is temporary; energy must leave</text>
+<text x="678" y="650" class="s">80 uF: 0.210 mJ storage from 5 V to 5.5 V.</text>
+<text x="678" y="678" class="s">1 mJ burst: minimum event sink 0.790 mJ.</text>
+<text x="678" y="706" class="s">Same-start reset by sole sink: full 1 mJ each event.</text>
+<text x="678" y="734" class="s">At 10 events/s: 10 mW mean; peak limits unknown.</text>
+<rect x="40" y="789" width="1200" height="88" rx="9" class="box"/>
+<text x="58" y="820" class="t">Separate boundary: C11 reverse voltage and remote receiver voltage remain unqualified.</text>
+<text x="58" y="850" class="s">Check maximum cumulative energy, local and remote waveforms, and ground/contact sequencing. Do not count energy twice.</text>
+<rect x="40" y="908" width="1200" height="52" rx="9" class="hold"/>
+<text x="58" y="932" class="t">Next: specify one independent local shunt cell before choosing parts or inserting circuitry.</text>
+<text x="58" y="953" class="s">Preserve 6S, both converters, C11 candidate, exclusive populations and all default-disabled missing permissions.</text>
+</svg>

@@ -103,31 +103,32 @@ jobs:
         run: |
           python reviews/codex/observation_3v3/model.py --check
           python reviews/codex/observation_3v3/test_model.py
-          python reviews/codex/observation_3v3/build_packet.py --check
       - name: Verify observer load and power-state limits
         run: |
           python reviews/codex/observer_power/model.py --check
           python reviews/codex/observer_power/test_model.py
-          python reviews/codex/observer_power/build_packet.py --check
       - name: Verify observer retention and restart contract
         run: |
           python reviews/codex/observer_retention/model.py --check
           python reviews/codex/observer_retention/test_model.py
-          python reviews/codex/observer_retention/build_packet.py --check
           python reviews/codex/oe_isolation/model.py --check
           python reviews/codex/oe_isolation/test_model.py
-          python reviews/codex/oe_isolation/build_packet.py --check
           python -B reviews/codex/vcca_shutdown/test_packet.py
-          python -B reviews/codex/vcca_shutdown/build_packet.py --check
           python -B reviews/codex/connector_fault_contract/test_model.py
-          python -B reviews/codex/connector_fault_contract/build_packet.py --check
       - name: Verify isolated C11 identity, lands and reservoir limits
         run: |
           python -B reviews/codex/vservo_reservoir/verify_candidate.py --check
           python -B reviews/codex/vservo_reservoir/inspect_geometry.py --check
           python -B reviews/codex/vservo_reservoir/test_candidate.py
           python -B reviews/codex/vservo_reservoir/test_model.py
-          python -B reviews/codex/vservo_reservoir/build_packet.py --check
+      - name: Verify VSERVO transient boundary and conditional calculations
+        run: |
+          python -B reviews/codex/vservo_transients/test_model.py
+          python -B reviews/codex/vservo_transients/build_packet.py --check
+      - name: Replay historical packets and verify current viewer provenance
+        run: |
+          python -B tools/quality/test_viewer_replay.py
+          python -B tools/quality/check_viewer_replay.py --check
       - name: Reconcile candidate ordering package
         run: python hardware/manufacturing/check_package.py
       - name: Check connector atlas sources

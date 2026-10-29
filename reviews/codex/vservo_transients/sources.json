@@ -1,0 +1,83 @@
+{
+  "revision": "VSERVO-02",
+  "reviewed_utc": "2026-10-28",
+  "classification": "primary_source_mechanisms_plus_captured_topology_inference",
+  "sources": [
+    {
+      "id": "ti_motor",
+      "url": "https://www.ti.com/lit/an/slvaf66/slvaf66.pdf",
+      "document": "SLVAF66",
+      "revision": "June2021",
+      "sections": [
+        "7.1",
+        "7.1.2",
+        "7.1.3"
+      ],
+      "pages": [
+        20,
+        21
+      ],
+      "finding": "Some motor control states return energy to the supply. A dissipative external brake path requires feedback and rated power components. This is a general mechanism, not evidence about the unidentified servo or ESC."
+    },
+    {
+      "id": "ti_buck",
+      "url": "https://www.ti.com/lit/ds/symlink/lm76003.pdf",
+      "document": "SNVSAK0A",
+      "revision": "October2019",
+      "sections": [
+        "5 pin17",
+        "7.4.5",
+        "7.4.6",
+        "7.4.8"
+      ],
+      "pages": [
+        4,
+        22,
+        23
+      ],
+      "finding": "Grounded SYNC/MODE selects automatic light-load behavior; DCM avoids negative inductor current. FPWM is a different configuration. Inference with captured U3.17=GND: existing operation is not an accepted regenerative sink. No mode change or reverse-current guarantee is proposed."
+    },
+    {
+      "id": "adi_harness",
+      "url": "https://www.analog.com/media/en/technical-documentation/application-notes/an88f.pdf",
+      "document": "AN88",
+      "revision": "March2001",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "finding": "Lead inductance and capacitance can produce insertion transients; damping and clamp behavior depend on the network. Source examples do not bound this harness or justify a fixed overshoot multiplier."
+    },
+    {
+      "id": "panasonic",
+      "url": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/DME0000COL75.pdf",
+      "document": "Aluminum electrolytic capacitor application precautions",
+      "pages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "finding": "Retained VSERVO-01 source requirement: polarized capacitor reverse voltage and repetitive charge/discharge need explicit control. The 16 V part rating does not supply receiver voltage limits."
+    },
+    {
+      "id": "mps_energy",
+      "url": "https://media.monolithicpower.com/document/AN132_r1.1.pdf",
+      "document": "AN132 Rev1.1",
+      "revision": "2018-09-18",
+      "pages": [
+        4,
+        5,
+        6,
+        9,
+        10
+      ],
+      "finding": "Maximum cumulative returned energy determines the capacitor excursion. A switched resistive protection path needs both electrical and thermal sizing. No example component values or motor conditions are transferred to this design."
+    }
+  ],
+  "no_device_selected": true,
+  "native_candidate": "VSERVO-01",
+  "native_commands_rerun": false,
+  "hardware_accepted": false
+}

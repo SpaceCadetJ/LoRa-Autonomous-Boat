@@ -79,3 +79,4 @@ reviews/codex/oe_isolation/** -text
 reviews/codex/vcca_shutdown/** -text
 reviews/codex/connector_fault_contract/** -text
 reviews/codex/vservo_reservoir/** -text
+reviews/codex/vservo_transients/** -text
