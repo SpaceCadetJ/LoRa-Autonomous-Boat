@@ -1,0 +1,103 @@
+(footprint "M-FLAT_TOS-L"
+	(version 20241229)
+	(generator "gen_footprints.py")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Toshiba M-FLAT (SOD-123F class) diode, L density (pads 71x38 mil, 163 mil pitch)")
+	(tags "allegro M-FLAT_TOS-L")
+	(property "Reference" "REF**"
+		(at 0 -1.9177 0)
+		(layer "F.Fab")
+		(uuid "651fa07f-cff6-52d0-9d1a-a19b45cb6059")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "M-FLAT_TOS-L"
+		(at 0 1.9177 0)
+		(layer "F.Fab")
+		(uuid "e49aec28-b5ca-53f2-b754-5e7d245808be")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ce40dc48-107d-5b37-8001-00929c195bb8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "095f2fba-9ff5-5f2d-b301-060e3e60d16f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2.5527 -0.9017)
+		(end 2.5527 0.9017)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "0e934916-1881-5498-9cd4-1c763442f56d")
+	)
+	(fp_rect
+		(start -2.5527 -0.9017)
+		(end 2.5527 0.9017)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "09675dc2-ebfc-5ea1-ae18-4d5d5e821d2a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "effd941e-1ee5-5079-87fd-93a9c828751e")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.0701 0)
+		(size 0.9652 1.8034)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "6c7a54ab-d81e-5ee4-9908-741b902ffe40")
+	)
+	(pad "2" smd rect
+		(at 2.0701 0)
+		(size 0.9652 1.8034)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0)
+		(uuid "285a1dca-ab30-5fb9-b5f1-8594eb3668c4")
+	)
+	(embedded_fonts no)
+)

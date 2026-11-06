@@ -1,6 +1,16 @@
 # LoRa engineering workspace
 
-## Current 6S sensing review - SENSE-01, 2026-11-06 UTC
+## Current isolated sensing filter candidate - SENSE-02, 2026-11-06 UTC
+
+[SENSE-02](../reviews/codex/sensing_filter/README.md) is the current isolated sensing-filter correction on a new POWER-DOC-01/VSERVO-01 copy. Inspect its [native Power sheet](../reviews/codex/sensing_filter/native/svg/LoRa_Boat_Controller_V2-Power.svg), [candidate results](../reviews/codex/sensing_filter/RESULTS.md), [validation record](../reviews/codex/sensing_filter/validation.json) and [isolated KiCad project](../reviews/codex/sensing_filter/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro). C36/C37 use manufacturer-confirmed TDK C1608X7R1H104K080AA 100 nF identities; R33's annotation becomes 0.02R 3W with the same CRA2512-FZ-R020ELF identity. R44 (Yageo RC0603FR-071KL, 1 kΩ) separates U8 OUT from the existing ISENSE/C37 node, and C59 (TDK C1608X7R1E105K080AB, 1 µF) bypasses +3V3 to GND. The R33 annotation is not thermal qualification.
+
+Captured native verification passes the declared delta: 130 parts, 433 physical pins, 122 nets and 11 sheets. It checks all 128 old component records and preserves all 429 old node attributes; 428 old pin memberships are unchanged, only U8.1 moves to /Power/ISENSE_DRV, and R44/C59 add four pins. Thirty-seven of 38 source files are byte-identical, including both converters; ACT-01 source populations are preserved. Native ERC records zero errors and the inherited AD0 warning. All 27 mutation tests pass. These are local captured-file and rejection checks, not physical qualification. C11 lands, separate IMU2, live CAD, copper, BOM and firmware remain unchanged. Stage A has no ADC acquisition implementation.
+
+Exact part identity does not qualify effective bypass capacitance, U8 stability, ADC settling, power-off injection or transient exposure. The generic 0603 lands are not exact TDK reflow recommendations; land, stencil and assembly approval remain held. All hardware, fabrication, procurement and powered-application gates remain held; 6S and default-disabled missing qualifications remain intact.
+
+Next: review divider scaling and power-off protection after establishing the source/transient and minimum VDDA envelopes; do not assume arbitrary ranges or guarantees. Current-sense common mode, full 6S feed/leakage/damping, VSERVO and combined IMU2 integration remain open. Earlier checkpoints and next-task wording below are historical.
+
+## Previous 6S sensing review - SENSE-01, 2026-11-06 UTC
 
 [SENSE-01](../reviews/codex/sensing_6s/README.md), its [annotated sensing boundary](../reviews/codex/sensing_6s/sensing_boundary.svg), [conditional results](../reviews/codex/sensing_6s/RESULTS.md) and [captured/source evidence](../reviews/codex/sensing_6s/evidence.json) identify what the two ADC paths can observe. U1 PA2/pad 16 measures post-protection-diode VIN_RAW through 47 kΩ/6.8 kΩ; PA4/pad 20 receives U8 INA180A1 converter-input branch current through a 20 mΩ shunt at gain 20. These are not battery-terminal voltage or whole-vehicle current measurements; BEC_ONLY bypasses the shunt. Actual V2 firmware remains Stage A with no ADC implementation.
 

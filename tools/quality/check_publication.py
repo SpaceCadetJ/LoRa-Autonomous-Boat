@@ -449,6 +449,41 @@ def main():
     assert sense_evidence["topology"]["checked_pin_count"] == 35
     assert all(x["status"] == "unavailable" for x in sense_evidence["calculations"]["actual"].values())
     print("PASS SENSE-01 captured sensing boundary and conditional arithmetic; circuit and hardware holds preserved")
+    filter_root = "reviews/codex/sensing_filter/"
+    sensing_filter = read_json(filter_root + "packet_manifest.json")
+    filter_contract = read_json(filter_root + "expected_contract.json")
+    assert sensing_filter["revision"] == "SENSE-02"
+    assert len(sensing_filter["input_sha256"]) == 580
+    assert sensing_filter["input_sha256"] == read_json(filter_root + "input_manifest.json")["input_sha256"]
+    check_hashes(sensing_filter["input_sha256"], "SENSE-02 preserved inputs")
+    filter_artifacts = {p.relative_to(ROOT).as_posix() for p in (ROOT / filter_root).rglob("*")
+                        if p.is_file() and p.name != "packet_manifest.json" and "__pycache__" not in p.parts}
+    assert set(sensing_filter["artifact_sha256"]) == filter_artifacts, "SENSE-02 artifact coverage changed"
+    check_hashes(sensing_filter["artifact_sha256"], "SENSE-02 native candidate and review artifacts")
+    assert isinstance(sensing_filter["candidate_electrical_delta"], dict)
+    assert sensing_filter["candidate_electrical_delta"] == filter_contract["candidate_electrical_delta"]
+    assert all(sensing_filter[k] == 0 for k in ["live_electrical_delta", "live_copper_delta"])
+    assert sensing_filter["native_commands_rerun"] is True
+    filter_holds = ["hardware_accepted", "fabrication_approved", "procurement_approved",
+                    "protection_qualified", "qualification_ports_implemented", "pcb_integrated"]
+    assert all(sensing_filter[k] is False for k in filter_holds)
+    filter_validation = read_json(filter_root + "validation.json")
+    assert filter_validation["revision"] == "SENSE-02"
+    assert filter_validation["status"] == "pass_captured_declared_delta"
+    filter_delta = filter_validation["candidate_electrical_delta"]
+    assert {k: filter_delta[k] for k in ["components", "physical_pin_memberships", "nets", "sheets"]} == {
+        "components": 130, "physical_pin_memberships": 433, "nets": 122, "sheets": 11}
+    assert all(filter_delta[k] == filter_contract["candidate_electrical_delta"][k]
+               for k in ["moved_existing_pins", "added_pins"])
+    assert filter_validation["source_preservation"]["byte_identical_files"] == 37
+    assert filter_validation["source_preservation"]["source_files"] == 38
+    assert filter_validation["native_erc"]["errors"] == 0
+    assert filter_validation["native_erc"]["warnings"] == 1
+    assert filter_validation["native_erc"]["unchanged_ad0_warning"] is True
+    assert filter_validation["native_commands_rerun"] is True
+    assert all(filter_validation[k] == 0 for k in ["live_electrical_delta", "live_copper_delta"])
+    assert all(filter_validation[k] is False for k in filter_holds)
+    print("PASS SENSE-02 captured native sensing-filter delta; live CAD/copper and hardware holds preserved")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -475,6 +510,7 @@ def main():
     pages += [ROOT / power_doc_root / "README.md"]
     pages += [ROOT / shunt_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / sense_root / name for name in ["README.md", "RESULTS.md"]]
+    pages += [ROOT / filter_root / name for name in ["README.md", "RESULTS.md"]]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

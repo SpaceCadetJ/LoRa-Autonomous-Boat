@@ -1,0 +1,50 @@
+{
+  "scope": "Current PM native candidate navigation and desktop/phone guides; native images visually reviewed separately; no hardware acceptance",
+  "input_sha256": {
+    "reviews/codex/sensing_filter/README.md": "0ef86b50eeec8c9c8c4050df0e71c9ca8bc059bdbbde97c2f79125b426b90b94",
+    "reviews/codex/sensing_filter/RESULTS.md": "c089f94c9a17281c6169665e05a07d8406a18724ae6277aa41c425054dfe24b8",
+    "reviews/codex/sensing_filter/filter_analysis.json": "2f330eb21919737d404f28d26dcc2fefd1460fad64a132a1068d965b332d1c3e",
+    "reviews/codex/sensing_filter/validation.json": "e31c008331d2326158b7cb0228470ee83ebf47ed01fb253eb1288611cc49a915",
+    "reviews/codex/sensing_filter/verify_viewer.cjs": "ee5dde324322ab6d0d84bb58de446396b885a57cd0aa7901983ab81b2245603a",
+    "reviews/codex/sensing_filter/preview_native.cjs": "4f8a765ced51a4dd1256216b755d8f6c5bcd4d37c4b5db9df1fd61b4c81cdd6e",
+    "reviews/codex/sensing_filter/native-power-preview.png": "77629338265f6da91853a91677763b81bc9b50361d7bfa61decb7105aa9d0382",
+    "reviews/codex/sensing_filter/native-sensing-detail.png": "09d49f4d35c3d763321608783072608eb9cee0cb859740b905e4df3fe57185a4",
+    "reviews/codex/sensing_filter/native/svg/LoRa_Boat_Controller_V2-Power.svg": "e9ec2f57b6827cfe47da1cfdb6bfa10b8e9d088a27369a3e4dd04bf418715ef2",
+    "reviews/codex/sensing_filter/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro": "0cdb35be4e2b41ec6ca64b0e41ff03fd2ce277e170d3cce2da0e1e3269907056",
+    "reviews/codex/power_sheet_polish/native/svg/LoRa_Boat_Controller_V2-Power.svg": "669f9951ad960e64dc121ebbcc820c0e9fb9d1311f16c5a88d2626b9c3610648",
+    "pm/index.template.html": "405eed9d1c0a18aee2b52b90d995508167f85be6ac37506e6f48b9a9822218f3",
+    "pm/tools/build.mjs": "a0bbc6432dce3ae18b2c140340d6b0fd7f923726050184462e521d3cde3563a9"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "new_asset_v2_only": true,
+      "baseline_and_candidate_images": true,
+      "isolated_project_link": true,
+      "pcb_integration_pending": true,
+      "zoom_percent": 200,
+      "embedded_guides_exact": true,
+      "guide_dialogs": 2,
+      "horizontal_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "new_asset_v2_only": true,
+      "baseline_and_candidate_images": true,
+      "isolated_project_link": true,
+      "pcb_integration_pending": true,
+      "zoom_percent": 200,
+      "embedded_guides_exact": true,
+      "guide_dialogs": 2,
+      "horizontal_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

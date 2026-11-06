@@ -1,0 +1,103 @@
+{
+  "revision": "SENSE-02",
+  "baseline_head": "95150a0916fee0fd9fc1dbb7f3c1a9185e499c63",
+  "baseline_candidate": "VSERVO-01",
+  "baseline_presentation": "POWER-DOC-01",
+  "baseline_source": "reviews/codex/power_sheet_polish/source",
+  "expected_changed_source_files": [
+    "hardware/kicad_v2/Power.kicad_sch"
+  ],
+  "expected_added_source_files": [],
+  "expected_component_count": 130,
+  "expected_physical_pin_count": 433,
+  "expected_net_count": 122,
+  "expected_sheet_count": 11,
+  "candidate_electrical_delta": {
+    "moved_existing_pins": {
+      "U8.1": [
+        "/ISENSE",
+        "/Power/ISENSE_DRV"
+      ]
+    },
+    "added_pins": {
+      "R44.1": "/Power/ISENSE_DRV",
+      "R44.2": "/ISENSE",
+      "C59.1": "+3V3",
+      "C59.2": "GND"
+    }
+  },
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": true,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "protection_qualified": false,
+  "qualification_ports_implemented": false,
+  "pcb_integrated": false,
+  "parts": {
+    "C36": {
+      "value": "100nF",
+      "MPN": "C1608X7R1H104K080AA",
+      "Manufacturer": "TDK",
+      "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    "C37": {
+      "value": "100nF",
+      "MPN": "C1608X7R1H104K080AA",
+      "Manufacturer": "TDK",
+      "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    "R33": {
+      "value": "0.02R 3W",
+      "MPN": "CRA2512-FZ-R020ELF"
+    },
+    "R44": {
+      "value": "1k",
+      "MPN": "RC0603FR-071KL",
+      "Manufacturer": "Yageo",
+      "Datasheet": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-071KL",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Description": "INA180 output isolation; stability and acquisition unqualified"
+    },
+    "C59": {
+      "value": "1uF",
+      "MPN": "C1608X7R1E105K080AB",
+      "Manufacturer": "TDK",
+      "Datasheet": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Description": "INA180 local bypass; effective capacitance and layout held"
+    }
+  },
+  "allowed_existing_field_changes": {
+    "C36": [
+      "MPN",
+      "Manufacturer",
+      "Datasheet"
+    ],
+    "C37": [
+      "MPN",
+      "Manufacturer",
+      "Datasheet"
+    ],
+    "R33": [
+      "Value"
+    ]
+  },
+  "preserve": [
+    "37 other source files byte-identical",
+    "Root UUID and embedded lib_symbols",
+    "All other old component records, node attributes and complete net memberships",
+    "Both converter sheets and ACT-01 population bytes",
+    "C11 lands, original Allegro, V1, live CAD/firmware/BOM and corrected copper",
+    "6S and default-disabled unimplemented permissions; separate IMU2"
+  ],
+  "holds": [
+    "Effective bypass capacitance >=0.1uF and physical placement/high-frequency impedance unqualified",
+    "R44/C37 amplifier stability, ADC settling, power-off injection and transient exposure unqualified",
+    "Existing0603 lands not exact TDK reflow recommendations; land/stencil/assembly approval held",
+    "Divider range/protection, INA18026V common mode, full6Sfeed/leakage/damping, VSERVO and combinedIMU2 remain open"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "revision": "ACT-01",
+  "status": "proposed_assembly_variants_not_released",
+  "variants": {
+    "BEC_ONLY": {
+      "D4": "DNP",
+      "D9": "POPULATE",
+      "actuator_source": "J2.2 BEC_IN through D9 to J3.2 VSERVO",
+      "logic_supply": "Board battery and both converter rails required; BEC does not power logic"
+    },
+    "ONBOARD": {
+      "D4": "POPULATE",
+      "D9": "DNP",
+      "actuator_source": "5 V buck through D4 to J3.2 VSERVO",
+      "logic_supply": "Board battery and both converter rails required; full-load feed still held"
+    }
+  },
+  "dual_population_allowed": false,
+  "base_schematic_role": "superset_for_connectivity_review_not_a_default_assembly",
+  "default_released_variant": null,
+  "all_parts_held": true,
+  "procurement_approved": false,
+  "hardware_tested": false,
+  "unchanged_connectors": {
+    "J2": [
+      "ESC_SIG",
+      "BEC_IN",
+      "GND"
+    ],
+    "J3": [
+      "SERVO_SIG",
+      "VSERVO",
+      "GND"
+    ]
+  },
+  "constraints": [
+    "Never connect a battery directly to J2.2 or J3.2.",
+    "BEC_ONLY requires D4 physically absent; diode voltage priority is not an assembly contract.",
+    "ONBOARD requires D9 physically absent and isolate any unused ESC BEC positive wire; shared signal ground remains necessary.",
+    "No unpowered output-backdrive/hotplug/servo pulse behavior is qualified.",
+    "Actual ESC/servo/BEC, harness, signal levels, current, thermal and transient limits must be qualified before use."
+  ],
+  "base_schematic_dnp_refs": [
+    "D4",
+    "D9"
+  ]
+}

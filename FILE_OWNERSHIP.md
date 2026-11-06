@@ -302,3 +302,18 @@ SENSE-01 delegation: sense_topology owns only new-packet model.py/test_model.py;
 
 
 SENSE-01 completion: all child scopes released after independent topology/source/math review and twelve tests. Root completed final visual/browser review and owns manifests, publication checks, generated viewer and selective publication. No circuit, firmware, native renderer or copper change. Next scope is exact sensing-capacitor/filter/bypass qualification before a new isolated correction; preserve both unrelated tool edits.
+
+
+## SENSE-02 isolated sensing filter correction - 2026-11-06 UTC
+
+Root claims reviews/codex/sensing_filter/** and additive viewer/application/portfolio/CI/handoff integration from 95150a0. Manufacturer-confirmed candidates: TDK100nF C36/C37, TDK1uF C59 bypass and Yageo1k R44; native correction on a new POWER-DOC-01 copy only. Expected delta: U8.1 moves to ISENSE_DRV, R44 connects to old ISENSE, C59 bypasses+3V3/GND; C36/C37 identities and R33 rating annotation update. Other old memberships/components preserved; live electrical/copper delta zero. filter_native owns only scoped_native.py, source/**, build_manifest.json, native_manifest.json and native/**. filter_parts is read-only. Root owns expected contract, population copy, verification, docs and final publication. Preserve prior evidence, both converters, ACT-01 populations, C11 lands, 6S, disabled qualifications, separate IMU2 and unrelated v1_design.py/route_v2.py edits. No primary generation/routing or hardware actions. Effective capacitance, stability, power-off, lands and fabrication remain held.
+
+SENSE-02 delegation: filter_verify owns verify_candidate.py, test_candidate.py and generated validation.json only. filter_integration owns pm/README.md, pm/tools/build.mjs, pm/index.template.html, docs/applications/README.md, docs/portfolio/README.md, docs/portfolio/portfolio.json, .github/workflows/repository-checks.yml and .gitattributes. Root retains packet.py, source ledger, docs, viewer capture/current binding, generated PM outputs and publication.
+
+
+SENSE-02 final publication delegation: filter_integration owns only tools/quality/check_publication.py for exact new-packet hash/delta/hold checks and two guide-link entries. Root retains review notes, packet manifest, current viewer binding, final handoff and selective publication. All other child scopes are frozen.
+
+
+### SENSE-02 completion - 2026-11-06 UTC
+
+All child scopes are released after final native capture, independent source/delta review, 27 mutation tests, desktop/phone checks and full publication validation. Root closes manifests, generated viewer, handoff and selective publication. SENSE-02 is the latest isolated electrical/presentation candidate; live CAD/copper/BOM/firmware remain unchanged and hardware gates held. Next bounded task is divider/source/VDDA and power-off analysis from the newest handoff, preserving the new filter/bypass on any new isolated copy. Preserve both converters, ACT-01 populations, disabled missing qualifications, separate IMU2, 6S and both unrelated tool edits. No primary generation/routing or hardware action.

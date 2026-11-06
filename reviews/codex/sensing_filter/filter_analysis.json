@@ -1,0 +1,37 @@
+{
+  "revision": "SENSE-02",
+  "classification": "ideal_RC_initial_tolerance_arithmetic_only",
+  "R44_ohm": 1000,
+  "C37_nominal_F": 1e-07,
+  "C59_nominal_F": 1e-06,
+  "nominal_tau_s": 9.999999999999999e-05,
+  "initial_tolerance_tau_s": [
+    8.91e-05,
+    0.00011110000000000002
+  ],
+  "nominal_fc_Hz": 1591.5494309189535,
+  "initial_tolerance_fc_Hz": [
+    1432.537741601218,
+    1786.250764218803
+  ],
+  "ideal_12bit_fullscale_step_to_quarter_lsb_nominal_s": 0.0009704060527839233,
+  "initial_tolerance_step_settling_s": [
+    0.0008646317930304757,
+    0.001078121124642939
+  ],
+  "actual_effective_C37_F": null,
+  "actual_effective_C59_F": null,
+  "actual_ADC_sample_cycles": null,
+  "actual_ADC_clock_Hz": null,
+  "amplifier_stability_qualified": false,
+  "ADC_acquisition_qualified": false,
+  "poweroff_protection_qualified": false,
+  "pcb_layout_qualified": false,
+  "hardware_accepted": false,
+  "limitations": [
+    "Tolerance interval excludes DC bias, temperature, aging and frequency: not an effective-capacitance or system bound.",
+    "Ideal first-order step settling is not ADC track-and-hold acquisition or amplifier closed-loop response.",
+    "Nominal1uF does not prove effective bypass>=0.1uF at actual conditions or physical high-frequency performance.",
+    "No sample rate, current envelope, power-off protection, assembly or operating range released."
+  ]
+}

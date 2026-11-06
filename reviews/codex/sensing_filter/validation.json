@@ -1,0 +1,81 @@
+{
+  "revision": "SENSE-02",
+  "baseline_presentation": "POWER-DOC-01",
+  "status": "pass_captured_declared_delta",
+  "candidate_electrical_delta": {
+    "components": 130,
+    "physical_pin_memberships": 433,
+    "nets": 122,
+    "sheets": 11,
+    "old_component_records_checked": 128,
+    "old_node_attributes_preserved": 429,
+    "unchanged_old_pin_memberships": 428,
+    "added_components": [
+      "C59",
+      "R44"
+    ],
+    "moved_existing_pins": {
+      "U8.1": [
+        "/ISENSE",
+        "/Power/ISENSE_DRV"
+      ]
+    },
+    "added_pins": {
+      "R44.1": "/Power/ISENSE_DRV",
+      "R44.2": "/ISENSE",
+      "C59.1": "+3V3",
+      "C59.2": "GND"
+    },
+    "changed_existing_fields": {
+      "C36": [
+        "MPN",
+        "Manufacturer",
+        "Datasheet"
+      ],
+      "C37": [
+        "MPN",
+        "Manufacturer",
+        "Datasheet"
+      ],
+      "R33": [
+        "Value"
+      ]
+    },
+    "complete_net_memberships_checked": 122,
+    "sheet_identities_preserved": 11,
+    "symbol_pin_definitions_preserved": true
+  },
+  "source_preservation": {
+    "source_files": 38,
+    "byte_identical_files": 37,
+    "changed_files": [
+      "hardware/kicad_v2/Power.kicad_sch"
+    ],
+    "both_converters_preserved": true,
+    "population_contract_preserved": true,
+    "root_uuid_preserved": true,
+    "embedded_symbol_definitions_preserved_after_newline_normalization": true
+  },
+  "native_erc": {
+    "errors": 0,
+    "warnings": 1,
+    "unchanged_ad0_warning": true,
+    "finding_position_normalizations": []
+  },
+  "native_commands_reported": 3,
+  "native_svg_sheets": 11,
+  "preserved_input_count": 580,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "protection_qualified": false,
+  "qualification_ports_implemented": false,
+  "pcb_integrated": false,
+  "native_commands_rerun": true,
+  "limits": [
+    "Portable checks replay captured files; they do not launch native tools or execute hardware.",
+    "Native/ERC and delta checks do not qualify stability, ADC settling, bypass placement, effective capacitance, land pattern, PCB integration, fabrication or application acceptance."
+  ]
+}

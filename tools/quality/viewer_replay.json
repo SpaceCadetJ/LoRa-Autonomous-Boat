@@ -81,7 +81,7 @@
     }
   ],
   "current_packet": {
-    "packet": "reviews/codex/vservo_shunt_spec",
-    "template_snapshot": "reviews/codex/vservo_shunt_spec/viewer-template.snapshot.html"
+    "packet": "reviews/codex/sensing_filter",
+    "template_snapshot": "reviews/codex/sensing_filter/viewer-template.snapshot.html"
   }
 }

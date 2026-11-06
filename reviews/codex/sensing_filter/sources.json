@@ -1,0 +1,191 @@
+{
+  "revision": "SENSE-02",
+  "consulted_utc": "2026-11-06",
+  "identity_confirmed_only": true,
+  "procurement_approved": false,
+  "parts": [
+    {
+      "refs": [
+        "C36",
+        "C37"
+      ],
+      "MPN": "C1608X7R1H104K080AA",
+      "manufacturer": "TDK",
+      "value_F": 1e-07,
+      "tolerance_fraction": 0.1,
+      "rated_VDC": 50,
+      "dielectric": "X7R",
+      "temperature_C": [
+        -55,
+        125
+      ],
+      "body_mm": {
+        "length": [
+          1.5,
+          1.7
+        ],
+        "width": [
+          0.7,
+          0.9
+        ],
+        "thickness": [
+          0.7,
+          0.9
+        ]
+      },
+      "product_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+      "characterization_url": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1h104k080aa.pdf",
+      "characterization_date": "2016-01-03",
+      "reflow_land_dimensions_PA_PB_PC_mm": [
+        [
+          0.6,
+          0.8
+        ],
+        [
+          0.6,
+          0.8
+        ],
+        [
+          0.6,
+          0.8
+        ]
+      ],
+      "qualification": "Exact identity/rating confirmed; effective capacitance, layout and assembly unqualified"
+    },
+    {
+      "refs": [
+        "C59"
+      ],
+      "MPN": "C1608X7R1E105K080AB",
+      "manufacturer": "TDK",
+      "value_F": 1e-06,
+      "tolerance_fraction": 0.1,
+      "rated_VDC": 25,
+      "dielectric": "X7R",
+      "temperature_C": [
+        -55,
+        125
+      ],
+      "body_mm": {
+        "length": [
+          1.5,
+          1.7
+        ],
+        "width": [
+          0.7,
+          0.9
+        ],
+        "thickness": [
+          0.7,
+          0.9
+        ]
+      },
+      "product_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+      "characterization_url": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1e105k080ab.pdf",
+      "characterization_date": "2016-01-03",
+      "reflow_land_dimensions_PA_PB_PC_mm": [
+        [
+          0.6,
+          0.8
+        ],
+        [
+          0.6,
+          0.8
+        ],
+        [
+          0.6,
+          0.8
+        ]
+      ],
+      "qualification": "Nominal1uF margin above TI0.1uF minimum; effective>=0.1uF over actual bias/temp/age and high-frequency placement remain held"
+    },
+    {
+      "refs": [
+        "R44"
+      ],
+      "MPN": "RC0603FR-071KL",
+      "manufacturer": "Yageo",
+      "value_ohm": 1000,
+      "tolerance_fraction": 0.01,
+      "rated_W_at_70C": 0.1,
+      "TCR_ppm_per_C": 100,
+      "body_mm": {
+        "length": [
+          1.5,
+          1.7
+        ],
+        "width": [
+          0.7,
+          0.9
+        ],
+        "thickness": [
+          0.35,
+          0.55
+        ]
+      },
+      "spec_url": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-071KL",
+      "spec_date_printed": "11/05/2026",
+      "family_url": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "family_revision": "V14 November14 2025",
+      "qualification": "Identity confirmed; not a clamp or proof of fault-current/ADC acceptance"
+    },
+    {
+      "refs": [
+        "R33"
+      ],
+      "MPN": "CRA2512-FZ-R020ELF",
+      "manufacturer": "Bourns",
+      "value_ohm": 0.02,
+      "tolerance_fraction": 0.01,
+      "rated_W_at_70C": 3,
+      "datasheet_url": "https://www.bourns.com/docs/product-datasheets/cra.pdf",
+      "revision": "Rev07/26 pp1-2",
+      "exact_MPN_confirmation": "https://www.bourns.com/docs/technical-documents/product-change-notifications/N1618_CRA_CRE_CRF_PCN.pdf",
+      "exact_MPN_revision": "N1618 revised2019-07-11 p2",
+      "qualification": "Value annotation only; no board-current increase"
+    }
+  ],
+  "catalog": {
+    "url": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf",
+    "revision": "20260831",
+    "pages": {
+      "100nF": 34,
+      "1uF": 35
+    }
+  },
+  "design_basis": {
+    "url": "https://www.ti.com/lit/ds/symlink/ina180.pdf",
+    "revision": "SBOS741H July2022",
+    "sections": {
+      "p8 section7.5": "1nF capacitive-load no-sustained-oscillation entry is TYP, not guaranteed maximum",
+      "p21 section9.1.1": "At least0.1uF supply bypass close to device",
+      "p23 section9.1.3": "OutputRC filtering for high-impedance receiver",
+      "p26 section9.3": "Powered/unpowered differential-input withstand does not establish output isolation",
+      "p27 section9.4.1": "Supply/ground bypass placement and ADC ground/filter guidance"
+    }
+  },
+  "land_review": {
+    "baseline_board": "hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pcb",
+    "refs": [
+      "C36",
+      "C37"
+    ],
+    "existing_pad_size_mm": [
+      0.9,
+      0.95
+    ],
+    "existing_centers_x_mm": [
+      -0.775,
+      0.775
+    ],
+    "derived_inner_gap_mm": 0.65,
+    "conclusion": "Pads are not an exact match to cited TDK reflow recommendation; retain schematic footprints and live copper; land/stencil/assembly acceptance held. No placement of new R44/C59 is implemented on PCB."
+  },
+  "limits": [
+    "Manufacturer product status is not stock/cart/ordering authorization.",
+    "Characteristic curves are reference data, not guaranteed effective-C bounds.",
+    "Original KGM15ACG1H104KT identity remains held in preserved history.",
+    "1k output resistor is functional filtering/isolation, not qualified MCU power-off/fault protection.",
+    "6S common-mode/transient, divider/reference, ADC sampling, VSERVO and combinedIMU2 gates remain open."
+  ]
+}
