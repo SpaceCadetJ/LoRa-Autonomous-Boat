@@ -1,0 +1,56 @@
+{
+  "revision": "SENSE-04",
+  "consulted_utc": "2026-11-06",
+  "sources": [
+    {
+      "id": "TI-POWERED-OFF",
+      "url": "https://www.ti.com/document-viewer/lit/html/scda015",
+      "revision": "SCDA015C April2021",
+      "locations": [
+        "Definition of Powered-Off Protection Features",
+        "Ensuring System Isolation With Powered-Off Protected Switches"
+      ],
+      "claims": [
+        "Back-power protection and powered-off signal isolation are distinct requirements.",
+        "Device-specific powered-off leakage must include VDD=0 test conditions; high impedance is not zero leakage or a discharge path."
+      ],
+      "limits": "No cited example part is selected. Zero-supply behavior alone does not bound intermediate supplies, control inputs or complete board sequencing."
+    },
+    {
+      "id": "ST-PAD-STATE",
+      "url": "https://www.st.com/resource/en/datasheet/stm32f446re.pdf",
+      "revision": "DS10693 Rev11 May2026",
+      "locations": [
+        "Tables13/14/16/74"
+      ],
+      "claims": [
+        "SENSE-03 reviewed PA2FT absolute limits separately from activeADC reference range and supply sequencing."
+      ],
+      "limits": "This packet reuses that manufacturer review; it does not claim new device or hardware qualification."
+    },
+    {
+      "id": "ST-ANALOG-STATE",
+      "url": "https://www.st.com/resource/en/application_note/an4899-stm32-microcontroller-gpio-hardware-settings-and-lowpower-consumption-stmicroelectronics.pdf",
+      "revision": "AN4899 Rev4 May2026",
+      "locations": [
+        "sections4.2,5.2.2,5.3.6,6.3"
+      ],
+      "claims": [
+        "Peripheral analog-switch state and product-specific off-state limits must be examined; internal analog diodes are not designed protection elements."
+      ],
+      "limits": "No universalVDD+0.3offrule or passive-divider impossibility theorem."
+    },
+    {
+      "id": "ADI-CHARGE",
+      "url": "https://www.analog.com/en/resources/analog-dialogue/articles/ask-the-applications-engineer-26.html",
+      "title": "Ask the Applications Engineer26: Switches and Multiplexers",
+      "locations": [
+        "Charge injection and minimizing effects sections"
+      ],
+      "claims": [
+        "Switch transitions can inject charge that remains on isolated load capacitance. The ideal voltage step is Q/C; actual charge depends on device and test conditions."
+      ],
+      "limits": "No historical example device/rating is selected or extended to this board; signed glitches, feedthrough and exact guaranteed conditions remain open."
+    }
+  ]
+}

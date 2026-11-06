@@ -1,6 +1,14 @@
 # LoRa controller: from legacy board to reviewable platform
 
-## Current divider/reference review - SENSE-03, 2026-11-06 UTC
+## Current ADC interface contract - SENSE-04, 2026-11-06 UTC
+
+[SENSE-04](../../reviews/codex/adc_interface/README.md) proposes isolation between the R31/R32/C36 node and PA2, with C36 retained upstream, a separate MCU-side discharge path and independent reference-valid qualification. Its [interface boundary](../../reviews/codex/adc_interface/interface_boundary.svg), [conditional results](../../reviews/codex/adc_interface/RESULTS.md), [evidence record](../../reviews/codex/adc_interface/evidence.json) and [interactive explorer](../../reviews/codex/adc_interface/index.html) distinguish requested connection/acquisition states from physical proof. Missing or unknown qualifications keep commands disabled; the explorer uses allocated examples and leaves actual hardware fields unknown.
+
+High impedance does not establish zero leakage or discharge, and a brownout does not inherit a guarantee specified only at VDD = 0. Permanent pull-down loading and pin-parking bounds can conflict; a switched discharge path needs sequencing proof. Necessary timing checks cannot cover an unbounded reference collapse. No device is selected and no native circuit or firmware changes. SENSE-02 remains the latest isolated native candidate; live CAD, copper and BOM are unchanged. Hardware and powered-application gates remain held, preserving 6S, both converters, ACT-01 populations, separate IMU2 and disabled missing qualifications.
+
+Next: screen exact parts and arrangements against signed leakage, loading, pin/control limits across supply states, charge injection and timing. Keep selection held wherever guaranteed limits are missing. Earlier next-task wording below is historical.
+
+## Previous divider/reference review - SENSE-03, 2026-11-06 UTC
 
 [SENSE-03](../../reviews/codex/sensing_reference/README.md), its [reference boundary](../../reviews/codex/sensing_reference/reference_boundary.svg), [conditional results](../../reviews/codex/sensing_reference/RESULTS.md) and [evidence record](../../reviews/codex/sensing_reference/evidence.json) compare the existing divider with converter-reference and initial resistor corners. The conditional reference screen is 3.219942244 V, below the divider's 3.241200045 V at 25.2 V VIN_RAW by 21.257801 mV; the zero-allowance crossing is 25.034723 V VIN_RAW. The TI converter-reference limit is specified at VIN = 24 V. This is not a guaranteed full-6S minimum VDDA or measured clipping result; actual minimum VDDA, transient limits and required margin remain unknown.
 

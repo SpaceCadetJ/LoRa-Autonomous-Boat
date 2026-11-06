@@ -1,0 +1,89 @@
+{
+  "revision": "SENSE-04",
+  "baseline_head": "f0f4702e46c14d55722e0ef01bdcd8966465b3cc",
+  "native_candidate": "SENSE-02",
+  "classification": "proposed_interface_contract_not_implemented",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "protection_qualified": false,
+  "qualification_ports_implemented": false,
+  "adc_implemented": false,
+  "interface_selected": false,
+  "present_net": "/VBAT_SENSE",
+  "present_complete_members": [
+    "C36.1",
+    "R31.2",
+    "R32.1",
+    "U1.16"
+  ],
+  "proposed_boundary": {
+    "source_side": [
+      "R31.2",
+      "R32.1",
+      "C36.1"
+    ],
+    "mcu_side": [
+      "U1.16"
+    ],
+    "functional_additions": [
+      "default-disabled pin-side isolation",
+      "defined MCU-side discharge",
+      "independent source/reference validity qualification"
+    ],
+    "actual_component_refs": null,
+    "actual_interface_mpn": null,
+    "future_delta": "Any native amendment must split PA2 from the present common node, preserve C36 on source side, declare exact new pins/nets and recapture native checks; not applied here."
+  },
+  "required_qualifications": [
+    "source_bound",
+    "reference_bound",
+    "power_states",
+    "isolation",
+    "discharge",
+    "transitions",
+    "acquisition"
+  ],
+  "states": [
+    {
+      "name": "HOLD",
+      "connect_command": false,
+      "acquire_command": false,
+      "rule": "Default and missing qualification: request isolation, invalidate samples; verify physical parking separately."
+    },
+    {
+      "name": "QUALIFY",
+      "connect_command": false,
+      "acquire_command": false,
+      "rule": "Require every source/reference/power-state/interface qualification, stable reference and a fresh request."
+    },
+    {
+      "name": "SETTLE",
+      "connect_command": true,
+      "acquire_command": false,
+      "rule": "Only after qualified closure; account switch and ADC charge, source recovery and settle interval."
+    },
+    {
+      "name": "ACQUIRE",
+      "connect_command": true,
+      "acquire_command": true,
+      "rule": "Only while all qualifications and settled/valid reference remain true; timestamp actual measurement boundary."
+    },
+    {
+      "name": "TRIP",
+      "connect_command": false,
+      "acquire_command": false,
+      "rule": "Invalidate immediately on any fault/unknown; bounded physical isolation, analog exposure and discharge must be proven."
+    },
+    {
+      "name": "REARM",
+      "connect_command": false,
+      "acquire_command": false,
+      "rule": "No automatic sample-valid recovery; fresh qualification/request and complete settling are required."
+    }
+  ]
+}

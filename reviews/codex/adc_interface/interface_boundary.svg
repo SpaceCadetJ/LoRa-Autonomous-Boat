@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<rect width="1200" height="800" fill="#f5f7fa"/><style>text{font-family:Arial,sans-serif;font-size:20px;fill:#173348}.h{font-size:28px;font-weight:bold}.sub{font-size:17px;fill:#40596b}.label{font-weight:bold}.old{fill:white;stroke:#a9bccb;stroke-width:2}.proposal{fill:#e9f4f6;stroke:#167d91;stroke-width:2;stroke-dasharray:9 5}.line{stroke:#167d91;stroke-width:3;fill:none}.dash{stroke-dasharray:7 5}</style>
+<text x="40" y="47" class="h">SENSE-04 · Proposed ADC boundary</text>
+<text x="40" y="79" class="sub">Functional contract only. No switch, discharge device, pin assignment or native circuit selected.</text>
+<rect x="430" y="115" width="300" height="102" rx="10" class="proposal"/><text x="449" y="148" class="label">Independent qualification</text><text x="449" y="179" class="sub">Source + reference + power states</text><text x="449" y="202" class="sub">Unknown → permission disabled</text>
+<path d="M580 217V280" class="line dash"/>
+<rect x="40" y="280" width="310" height="123" rx="10" class="old"/><text x="61" y="315" class="label">Divider / source reservoir</text><text x="61" y="349">R31 / R32 / C36</text><text x="61" y="380" class="sub">Keep C36 upstream of isolation</text>
+<path d="M350 341H430 M730 341H830" class="line"/>
+<rect x="430" y="280" width="300" height="123" rx="10" class="proposal"/><text x="449" y="315" class="label">Default-disabled isolation</text><text x="449" y="349" class="sub">Normal / off / brownout limits</text><text x="449" y="380" class="sub">Opening time + leakage bounded</text>
+<rect x="830" y="280" width="330" height="123" rx="10" class="old"/><text x="852" y="315" class="label">PA2 / MCU-side capacitance</text><text x="852" y="349" class="sub">Stored charge remains after open</text><text x="852" y="380" class="sub">Enabled ADC follows actual VREF+</text>
+<path d="M995 403V455" class="line"/>
+<rect x="830" y="455" width="330" height="108" rx="10" class="proposal"/><text x="852" y="487" class="label">Defined discharge / parking</text><text x="852" y="519" class="sub">Permanent pull: loading tradeoff</text><text x="852" y="545" class="sub">Switched sink: sequencing proof</text>
+<path d="M995 563V596 M971 596H1019" class="line"/><text x="1040" y="602" class="sub">GND</text>
+<text x="40" y="453" class="label">Opening the source is not discharging the pin.</text>
+<text x="40" y="486" class="sub">C36 stays on the source side in this proposal.</text><text x="40" y="516" class="sub">High impedance does not imply zero leakage.</text><text x="40" y="546" class="sub">A command transition is not physical protection.</text>
+<rect x="40" y="632" width="1120" height="127" rx="10" fill="#fff0e7" stroke="#cf7549"/>
+<text x="60" y="664" class="label">HOLD → QUALIFY → SETTLE → ACQUIRE</text><text x="60" y="696" class="sub">Any fault or unknown: invalidate samples and request isolation; prove the voltage trajectory separately.</text><text x="60" y="728" class="sub">REARM requires fresh qualification and settling. Actual qualification inputs are still unavailable.</text>
+<text x="40" y="789" class="sub">SENSE-02 remains the unchanged native candidate. No fabrication, procurement or powered-use release.</text>
+</svg>

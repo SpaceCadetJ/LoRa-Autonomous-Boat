@@ -1,0 +1,67 @@
+{
+  "scope": "SENSE-04 auto-discovered guides and proposed boundary and interactive contract explorer; historical PM renderer unchanged, no new application behavior",
+  "input_sha256": {
+    "reviews/codex/adc_interface/README.md": "b2feec7a791eb0effc5801905d52477a1437040b60df39716d1fee6571793468",
+    "reviews/codex/adc_interface/RESULTS.md": "125a7d2d27f45efa307e9ac98857580f38cfe4c1b4a98cd902b0a643f4eb28bf",
+    "reviews/codex/adc_interface/evidence.json": "2469b78b928c6bf62a64df308d46b06151dbc4bcf2b0ca2afdd849b2b90d6936",
+    "reviews/codex/adc_interface/interface_boundary.svg": "0474be48f7cf179b32c7840ebd3b50281c2f68742ad5abc274a77043a707f0a5",
+    "reviews/codex/adc_interface/index.html": "763b4a323d084dc405028b867f8dc11435213be7cd3032ea28d4eba180b29c97",
+    "reviews/codex/adc_interface/explorer.template.html": "dbbb73af13946b8bf810f5fccbb050ef876dee19f467ae3b27f0f2e721f9073e",
+    "reviews/codex/adc_interface/verify_viewer.cjs": "7c4052a79c1a43a5816384ce898c174af79a60264c298fe31cbce48c1161c28e",
+    "reviews/codex/sensing_filter/viewer-template.snapshot.html": "405eed9d1c0a18aee2b52b90d995508167f85be6ac37506e6f48b9a9822218f3",
+    "reviews/codex/sensing_filter/viewer-builder.snapshot.mjs": "a0bbc6432dce3ae18b2c140340d6b0fd7f923726050184462e521d3cde3563a9"
+  },
+  "renderer_archive": {
+    "pm/index.template.html": "reviews/codex/sensing_filter/viewer-template.snapshot.html",
+    "pm/tools/build.mjs": "reviews/codex/sensing_filter/viewer-builder.snapshot.mjs"
+  },
+  "generated_pm_sha256_at_capture": "081dab60c63bb83b2db204a71771aa79587c4b6ff8f6489104c160226b4a0dfa",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "explorer_default_unavailable": true,
+      "actual_permission_always_disabled": true,
+      "illustration_cases_checked": 4,
+      "proposed_states_checked": 6,
+      "explorer_no_overflow": true,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "guide_and_results_open": true,
+      "embedded_markdown_matches": true,
+      "dialog_and_document_no_overflow": true,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "explorer_default_unavailable": true,
+      "actual_permission_always_disabled": true,
+      "illustration_cases_checked": 4,
+      "proposed_states_checked": 6,
+      "explorer_no_overflow": true,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "guide_and_results_open": true,
+      "embedded_markdown_matches": true,
+      "dialog_and_document_no_overflow": true,
+      "page_errors": []
+    }
+  ],
+  "diagram_text_in_bounds": true,
+  "native_or_hardware_acceptance": false
+}

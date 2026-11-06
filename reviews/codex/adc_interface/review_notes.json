@@ -1,0 +1,63 @@
+{
+  "revision": "SENSE-04",
+  "reviewed_utc": "2026-11-06",
+  "scope": "Proposed ADC interface state contract, necessary numerical bounds, functional diagram and interactive explorer; no implemented state controller or physical acceptance.",
+  "independent_reviews": [
+    {
+      "reviewer": "adc_contract_review",
+      "result": "PASS",
+      "checks": "Independently recomputed shutdown sign/units/deadlines, logarithmic discharge, exact-rational permanent-pull bound and attainment-versus-retention cases; confirmed source/downstream charge separation and no physical acceptance claim."
+    },
+    {
+      "reviewer": "filter_verify",
+      "result": "18 tests passed",
+      "checks": "Fraction/analytic equations, monotonicity, equality, leakage floor, retention after initial attainment, unknown/nonfinite/domain rejection and every missing qualification defaulting disabled."
+    },
+    {
+      "reviewer": "root",
+      "result": "PASS local checks",
+      "checks": "Reran18tests; verified675 prior hashes and captured four-pin source net; visually inspected diagram and phone explorer. Final browser capture covers four allocated scenarios, six proposed states and two embedded guides at desktop/phone sizes after shorter selector labels."
+    }
+  ],
+  "visual_review_limit": "Functional proposal and review UI only; no native schematic or PCB rendering/acceptance in this packet.",
+  "browser_checks": {
+    "viewports": [
+      "1440x1050",
+      "390x844"
+    ],
+    "actual_permission_always_disabled": true,
+    "allocated_scenarios": 4,
+    "proposed_states": 6,
+    "guide_dialogs_per_viewport": 2,
+    "horizontal_overflow": false,
+    "page_errors": []
+  },
+  "limitations": [
+    "Actual numerical bounds and all seven qualifications remain null; model permission is disabled.",
+    "18tests verify necessary mathematics and contract predicates, not an implemented state machine or circuit.",
+    "Positive pre-opening margin does not prove subsequent pin-voltage trajectory or protection during unbounded reference collapse.",
+    "A permanent pull can fail loading/parking constraints; switched discharge adds sequencing and all-supply-state obligations.",
+    "No part, threshold, resistor or downstream capacitor selected; live CAD/BOM/firmware and hardware gates unchanged."
+  ],
+  "reviewed_sha256": {
+    "reviews/codex/adc_interface/build_packet.py": "749dc59282f6cfcda7c0a38b08a7a419b2dfce7f896e4e9eb5ab575275b2906d",
+    "reviews/codex/adc_interface/contract.json": "1566fdcdbfe60a317f07342dc307201a4bdcd709dc40a58866cbd319e9151c11",
+    "reviews/codex/adc_interface/diagram-preview.png": "b60eb1a40dc97e7bf2bb42769b4468dfb646ae33916fd33f76420e6fe9edadc0",
+    "reviews/codex/adc_interface/evidence.json": "2469b78b928c6bf62a64df308d46b06151dbc4bcf2b0ca2afdd849b2b90d6936",
+    "reviews/codex/adc_interface/explorer-desktop.png": "228efebed5f35837ee0c13261f57be85c132605e36a5e246b95339a8c546177b",
+    "reviews/codex/adc_interface/explorer-phone.png": "7fe7348faed43506f2dca859a3d3e27161089396d9cfcbf8a0f0366eb4150743",
+    "reviews/codex/adc_interface/explorer.template.html": "dbbb73af13946b8bf810f5fccbb050ef876dee19f467ae3b27f0f2e721f9073e",
+    "reviews/codex/adc_interface/guide-desktop.png": "7b41568925890b02f38c2dc95184eca1e9af1e23080b3ccf127b6e07e959b218",
+    "reviews/codex/adc_interface/guide-phone.png": "dfa9bec667981ebdf3d2d0ba906596c90c4b973f78c5d5d5f2b14aeffc50e23d",
+    "reviews/codex/adc_interface/index.html": "763b4a323d084dc405028b867f8dc11435213be7cd3032ea28d4eba180b29c97",
+    "reviews/codex/adc_interface/input_manifest.json": "93dc4b23dd95428d9b76a7264f542afdb25a2ad0677ac9d80a381ac58a9663e2",
+    "reviews/codex/adc_interface/interface_boundary.svg": "0474be48f7cf179b32c7840ebd3b50281c2f68742ad5abc274a77043a707f0a5",
+    "reviews/codex/adc_interface/model.py": "8b2f5486c9d0a925f278be51b6625fc7faa9b7573866a923382f59302503b746",
+    "reviews/codex/adc_interface/README.md": "b2feec7a791eb0effc5801905d52477a1437040b60df39716d1fee6571793468",
+    "reviews/codex/adc_interface/RESULTS.md": "125a7d2d27f45efa307e9ac98857580f38cfe4c1b4a98cd902b0a643f4eb28bf",
+    "reviews/codex/adc_interface/sources.json": "ab3165ca7ee2870291fb3ace8b3ed697d018940a8739d1079bba8f3b27c567ed",
+    "reviews/codex/adc_interface/test_model.py": "edd6e064682fc2f4896d45b7182c0b27b3789962252ce75222c9113a76631547",
+    "reviews/codex/adc_interface/verify_viewer.cjs": "7c4052a79c1a43a5816384ce898c174af79a60264c298fe31cbce48c1161c28e",
+    "reviews/codex/adc_interface/viewer_check.json": "ea340fbe648f58a9b3e5b0ed94a305b2aab6b58f0638fb3d52bc537d40843d41"
+  }
+}

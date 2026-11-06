@@ -73,7 +73,12 @@
     "sensing_reference": "reviews/codex/sensing_reference/README.md",
     "sensing_reference_results": "reviews/codex/sensing_reference/RESULTS.md",
     "sensing_reference_boundary": "reviews/codex/sensing_reference/reference_boundary.svg",
-    "sensing_reference_evidence": "reviews/codex/sensing_reference/evidence.json"
+    "sensing_reference_evidence": "reviews/codex/sensing_reference/evidence.json",
+    "adc_interface": "reviews/codex/adc_interface/README.md",
+    "adc_interface_results": "reviews/codex/adc_interface/RESULTS.md",
+    "adc_interface_evidence": "reviews/codex/adc_interface/evidence.json",
+    "adc_interface_boundary": "reviews/codex/adc_interface/interface_boundary.svg",
+    "adc_interface_explorer": "reviews/codex/adc_interface/index.html"
   },
   "technologies": [
     "STM32F446",
@@ -290,6 +295,16 @@
       "path": "reviews/codex/sensing_reference/reference_boundary.svg",
       "kind": "conditional_divider_reference_boundary",
       "caption": "SENSE-03: conditional divider/reference screen and ADC power-state boundaries; actual full-6S minimum VDDA and protection remain unqualified."
+    },
+    {
+      "path": "reviews/codex/adc_interface/interface_boundary.svg",
+      "kind": "proposed_adc_interface_contract",
+      "caption": "SENSE-04: proposed pin-side isolation with C36 upstream, separate MCU-side discharge and independent reference-valid qualification; no device selection or native insertion."
+    },
+    {
+      "path": "reviews/codex/adc_interface/index.html",
+      "kind": "interactive_conditional_adc_interface_contract",
+      "caption": "Requested connection/acquisition states and allocated leakage/loading/timing examples; actual hardware limits remain unknown and missing qualifications disable commands."
     }
   ],
   "validated_results": [
@@ -707,6 +722,26 @@
         "reviews/codex/sensing_reference/evidence.json",
         "reviews/codex/sensing_reference/reference_boundary.svg"
       ]
+    },
+    {
+      "packet": "SENSE-04",
+      "claim": "SENSE-04 defines a proposed pin-side isolation, separate MCU-side discharge and independent reference-valid contract. C36 stays upstream. Requested states are distinct from physical proof: high impedance does not establish zero leakage or discharge, brownout does not inherit VDD = 0 guarantees, and necessary timing checks cannot cover unbounded reference collapse. Permanent pull-down loading and parking bounds can conflict; switched discharge requires sequencing proof.",
+      "classification": "proposed_interface_contract_and_conditional_examples_not_hardware_qualification",
+      "illustration_scope": "Explorer calculations use allocated examples only; actual hardware evidence remains unknown and no device is selected.",
+      "actual_interface_mpn": null,
+      "hardware_accepted": false,
+      "interface_selected": false,
+      "adc_implemented": false,
+      "preservation": "Candidate/live electrical and copper deltas are zero; no native commands rerun or firmware change. SENSE-02 remains latest native. Both converters, ACT-01 populations, separate IMU2, 6S, disabled missing qualifications and all live CAD/BOM/firmware remain preserved; no physical release.",
+      "next_task": "Screen exact ADC isolation/discharge parts and arrangements against signed leakage, measurement loading, pin/control limits across supply states, charge injection and timing. Keep selection held where guaranteed limits are missing; require independent reference validity and bounded transitions before any isolated amendment from SENSE-02. Preserve 6S, both converters, ACT-01 populations, separate IMU2 and disabled missing qualifications.",
+      "evidence": [
+        "reviews/codex/adc_interface/README.md",
+        "reviews/codex/adc_interface/RESULTS.md",
+        "reviews/codex/adc_interface/evidence.json",
+        "reviews/codex/adc_interface/contract.json",
+        "reviews/codex/adc_interface/interface_boundary.svg",
+        "reviews/codex/adc_interface/index.html"
+      ]
     }
   ],
   "current_native_findings": {
@@ -735,7 +770,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Define a state-based ADC isolation/discharge and reference-valid contract on paper before an isolated amendment from SENSE-02. Account for ADC state, C36 stored charge, pull-ups and reference collapse; establish actual source/transient, minimum VDDA and margin envelopes before range guarantees. Preserve 6S, both converters, exclusive source populations and disabled missing qualifications.",
+    "Screen exact ADC isolation/discharge parts and arrangements against signed leakage, measurement loading, pin/control limits across supply states, charge injection and timing. Keep selection held where guaranteed limits are missing; require independent reference validity and bounded transitions before any isolated amendment from SENSE-02. Preserve 6S, both converters, ACT-01 populations, separate IMU2 and disabled missing qualifications.",
     "Qualify supply sequencing, C11/VSERVO transients, full 6S feed, leakage/damping, ADC and combined IMU2 before PCB integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",

@@ -331,3 +331,15 @@ SENSE-03 integration delegation: filter_integration owns only pm/README.md, docs
 ### SENSE-03 completion - 2026-11-06 UTC
 
 All child scopes released after independent manufacturer/topology/math review,14 tests, browser/visual checks and full publication validation. Root closes manifests, generated viewer, handoff and selective publication. No circuit/native/copper change; SENSE-02 remains latest native. Next is the newest handoff's ADC state/isolation/discharge/reference-valid contract before component selection. Preserve all prior evidence, both converters, populations, disabled qualifications, separate IMU2,6S and unrelated tool edits. Shared PM renderer/replay unchanged.
+
+
+## SENSE-04 ADC interface contract - 2026-11-06 UTC
+
+Root claims reviews/codex/adc_interface/** and additive viewer/application/portfolio/CI/handoff integration from f0f4702. Bounded proposed pin-side isolation/discharge/reference-valid state contract and necessary timing/leakage calculations; expected candidate/live electrical and copper delta zero. SENSE-02 remains immutable native candidate. adc_contract_review is read-only. filter_verify owns only new-packet model.py/test_model.py after root assignment. Missing qualifications default disabled. Preserve both converters, ACT-01 populations, C11 lands, separate IMU2, 6S, original Allegro/V1 and unrelated v1_design.py/route_v2.py edits. No primary generators/router, native amendment, live CAD/BOM/firmware, device selection, procurement or hardware action. Shared PM renderer/template/current replay binding stay unchanged.
+
+SENSE-04 integration delegation: filter_integration owns only pm/README.md, docs/applications/README.md, docs/portfolio/README.md, docs/portfolio/portfolio.json, .github/workflows/repository-checks.yml, .gitattributes and tools/quality/check_publication.py. Root retains packet artifacts, explorer/browser capture, generated PM data and handoff. No shared PM renderer/template/replay change.
+
+
+### SENSE-04 completion - 2026-11-06 UTC
+
+All child scopes released after independent engineering/math review,18 tests, desktop/phone explorer/guide checks and full publication validation. Root closes generated PM data, handoff and selective publication. SENSE-02 remains native; no circuit/copper/firmware or hardware acceptance change. Next is the newest handoff's exact-part/arrangement feasibility screen, keeping unknown qualifications disabled. Preserve both converters, populations, separate IMU2,6S and unrelated tool edits. Shared renderer and historical replay unchanged.

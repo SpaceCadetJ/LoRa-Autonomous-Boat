@@ -498,6 +498,21 @@ def main():
                                              "procurement_approved", "protection_qualified", "qualification_ports_implemented",
                                              "voltage_range_qualified"])
     print("PASS SENSE-03 conditional divider/reference and ADC state review; SENSE-02 native candidate and hardware holds preserved")
+    adc_root = "reviews/codex/adc_interface/"
+    adc_interface = read_json(adc_root + "packet_manifest.json")
+    assert adc_interface["revision"] == "SENSE-04"
+    assert len(adc_interface["input_sha256"]) == 675
+    assert adc_interface["input_sha256"] == read_json(adc_root + "input_manifest.json")["input_sha256"]
+    check_hashes(adc_interface["input_sha256"], "SENSE-04 preserved inputs")
+    adc_artifacts = {p.relative_to(ROOT).as_posix() for p in (ROOT / adc_root).rglob("*")
+                     if p.is_file() and p.name != "packet_manifest.json" and "__pycache__" not in p.parts}
+    assert set(adc_interface["artifact_sha256"]) == adc_artifacts, "SENSE-04 artifact coverage changed"
+    check_hashes(adc_interface["artifact_sha256"], "SENSE-04 proposed interface and explorer artifacts")
+    assert all(adc_interface[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
+    assert all(adc_interface[k] is False for k in ["native_commands_rerun", "hardware_accepted", "fabrication_approved",
+                                                 "procurement_approved", "protection_qualified", "qualification_ports_implemented",
+                                                 "adc_implemented", "interface_selected"])
+    print("PASS SENSE-04 proposed ADC interface contract and conditional explorer; SENSE-02 native candidate and hardware holds preserved")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -526,6 +541,7 @@ def main():
     pages += [ROOT / sense_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / filter_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / reference_root / name for name in ["README.md", "RESULTS.md"]]
+    pages += [ROOT / adc_root / name for name in ["README.md", "RESULTS.md"]]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

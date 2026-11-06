@@ -1,0 +1,479 @@
+{
+  "revision": "SENSE-04",
+  "classification": "proposed_interface_contract_and_necessary_arithmetic",
+  "native_candidate": "SENSE-02",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "protection_qualified": false,
+  "qualification_ports_implemented": false,
+  "adc_implemented": false,
+  "interface_selected": false,
+  "preserved_input_count": 675,
+  "captured_topology": {
+    "source": "reviews/codex/sensing_filter/native/netlist.xml",
+    "sha256": "62e650a2301966d95b8d073f7fbf867842e18319e998beb605ff8f52194b3f90",
+    "net": "/VBAT_SENSE",
+    "members": [
+      "C36.1",
+      "R31.2",
+      "R32.1",
+      "U1.16"
+    ],
+    "pin_function": "PA2"
+  },
+  "proposed_boundary": {
+    "source_side": [
+      "R31.2",
+      "R32.1",
+      "C36.1"
+    ],
+    "mcu_side": [
+      "U1.16"
+    ],
+    "functional_additions": [
+      "default-disabled pin-side isolation",
+      "defined MCU-side discharge",
+      "independent source/reference validity qualification"
+    ],
+    "actual_component_refs": null,
+    "actual_interface_mpn": null,
+    "future_delta": "Any native amendment must split PA2 from the present common node, preserve C36 on source side, declare exact new pins/nets and recapture native checks; not applied here."
+  },
+  "states": [
+    {
+      "name": "HOLD",
+      "connect_command": false,
+      "acquire_command": false,
+      "rule": "Default and missing qualification: request isolation, invalidate samples; verify physical parking separately."
+    },
+    {
+      "name": "QUALIFY",
+      "connect_command": false,
+      "acquire_command": false,
+      "rule": "Require every source/reference/power-state/interface qualification, stable reference and a fresh request."
+    },
+    {
+      "name": "SETTLE",
+      "connect_command": true,
+      "acquire_command": false,
+      "rule": "Only after qualified closure; account switch and ADC charge, source recovery and settle interval."
+    },
+    {
+      "name": "ACQUIRE",
+      "connect_command": true,
+      "acquire_command": true,
+      "rule": "Only while all qualifications and settled/valid reference remain true; timestamp actual measurement boundary."
+    },
+    {
+      "name": "TRIP",
+      "connect_command": false,
+      "acquire_command": false,
+      "rule": "Invalidate immediately on any fault/unknown; bounded physical isolation, analog exposure and discharge must be proven."
+    },
+    {
+      "name": "REARM",
+      "connect_command": false,
+      "acquire_command": false,
+      "rule": "No automatic sample-valid recovery; fresh qualification/request and complete settling are required."
+    }
+  ],
+  "calculations": {
+    "schema": 1,
+    "revision": "SENSE-04",
+    "status": "proposed_contract_and_necessary_arithmetic_only",
+    "candidate_electrical_delta": 0,
+    "live_electrical_delta": 0,
+    "live_copper_delta": 0,
+    "native_commands_rerun": false,
+    "hardware_accepted": false,
+    "fabrication_approved": false,
+    "procurement_approved": false,
+    "protection_qualified": false,
+    "qualification_ports_implemented": false,
+    "full_6s_accepted": false,
+    "interface_selected": false,
+    "pcb_integrated": false,
+    "qualifications": {
+      "source_bound": null,
+      "reference_bound": null,
+      "power_states": null,
+      "isolation": null,
+      "discharge": null,
+      "transitions": null,
+      "acquisition": null
+    },
+    "permission": {
+      "qualifications": {
+        "source_bound": null,
+        "reference_bound": null,
+        "power_states": null,
+        "isolation": null,
+        "discharge": null,
+        "transitions": null,
+        "acquisition": null
+      },
+      "request": null,
+      "unqualified": [
+        "source_bound",
+        "reference_bound",
+        "power_states",
+        "isolation",
+        "discharge",
+        "transitions",
+        "acquisition"
+      ],
+      "enabled": false,
+      "permission_is_contract_model_only": true,
+      "state_control_implemented": false,
+      "hardware_accepted": false
+    },
+    "unknown_actual_inputs": {
+      "release_floor_v": null,
+      "signal_peak_v": null,
+      "reserve_v": null,
+      "fall_slew_v_per_s": null,
+      "detect_delay_s": null,
+      "open_delay_s": null,
+      "initial_v": null,
+      "leakage_a": null,
+      "rdis_ohm": null,
+      "cap_max_f": null,
+      "target_v": null,
+      "charge_c": null,
+      "cap_min_f": null,
+      "rth_ohm": null,
+      "ron_max_ohm": null,
+      "loading_error_fraction": null,
+      "park_max_v": null,
+      "leak_max_a": null
+    },
+    "actual": {
+      "shutdown": {
+        "status": "unavailable",
+        "available": false,
+        "inputs": {
+          "release_floor_v": null,
+          "signal_peak_v": null,
+          "reserve_v": null,
+          "fall_slew_v_per_s": null,
+          "detect_delay_s": null,
+          "open_delay_s": null
+        },
+        "missing_fields": [
+          "release_floor_v",
+          "signal_peak_v",
+          "reserve_v",
+          "fall_slew_v_per_s",
+          "detect_delay_s",
+          "open_delay_s"
+        ],
+        "initial_headroom_v": null,
+        "total_delay_s": null,
+        "reference_after_delay_v": null,
+        "headroom_after_delay_v": null,
+        "strict_delay_limit_s": null,
+        "deadline_unbounded": null,
+        "positive_initial_window": null,
+        "strict_positive_arithmetic_margin": null,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false
+      },
+      "discharge": {
+        "status": "unavailable",
+        "available": false,
+        "inputs": {
+          "initial_v": null,
+          "leakage_a": null,
+          "rdis_ohm": null,
+          "cap_max_f": null,
+          "target_v": null
+        },
+        "missing_fields": [
+          "initial_v",
+          "leakage_a",
+          "rdis_ohm",
+          "cap_max_f",
+          "target_v"
+        ],
+        "leakage_floor_v": null,
+        "tau_s": null,
+        "initial_already_at_or_below_target": null,
+        "target_above_leakage_floor": null,
+        "leakage_floor_exceeds_target": null,
+        "equilibrium_at_or_below_target": null,
+        "sustained_target_possible_in_model": null,
+        "finite_time_to_target": null,
+        "time_to_target_s": null,
+        "voltage_at_target_time_v": null,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false
+      },
+      "injection": {
+        "status": "unavailable",
+        "available": false,
+        "inputs": {
+          "charge_c": null,
+          "cap_min_f": null
+        },
+        "missing_fields": [
+          "charge_c",
+          "cap_min_f"
+        ],
+        "glitch_magnitude_v": null,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "conditional_glitch_only": true
+      },
+      "bleed": {
+        "status": "unavailable",
+        "available": false,
+        "inputs": {
+          "rth_ohm": null,
+          "ron_max_ohm": null,
+          "loading_error_fraction": null,
+          "park_max_v": null,
+          "leak_max_a": null
+        },
+        "missing_fields": [
+          "rth_ohm",
+          "ron_max_ohm",
+          "loading_error_fraction",
+          "park_max_v",
+          "leak_max_a"
+        ],
+        "rp_min_ohm": null,
+        "rp_max_ohm": null,
+        "upper_bound_unbounded": null,
+        "necessary_interval_exists": null,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "interval_inclusive": true,
+        "resistor_selected": false
+      }
+    },
+    "shutdown_examples": [
+      {
+        "status": "calculated",
+        "available": true,
+        "inputs": {
+          "release_floor_v": 3.35,
+          "signal_peak_v": 3.241200044945504,
+          "reserve_v": 0.05,
+          "fall_slew_v_per_s": 100.0,
+          "detect_delay_s": 0.00015,
+          "open_delay_s": 5e-05
+        },
+        "missing_fields": [],
+        "initial_headroom_v": 0.05879995505449624,
+        "total_delay_s": 0.00019999999999999998,
+        "reference_after_delay_v": 3.33,
+        "headroom_after_delay_v": 0.038799955054496245,
+        "strict_delay_limit_s": 0.0005879995505449624,
+        "deadline_unbounded": false,
+        "positive_initial_window": true,
+        "strict_positive_arithmetic_margin": true,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "description": "Allocated linear-fall illustration; not a qualified sequence",
+        "release_threshold_selected": false,
+        "release_floor_availability_on_low_rail_qualified": false,
+        "allocation_only": true
+      },
+      {
+        "status": "calculated",
+        "available": true,
+        "inputs": {
+          "release_floor_v": 3.35,
+          "signal_peak_v": 3.241200044945504,
+          "reserve_v": 0.05,
+          "fall_slew_v_per_s": 10000.0,
+          "detect_delay_s": 0.00015,
+          "open_delay_s": 5e-05
+        },
+        "missing_fields": [],
+        "initial_headroom_v": 0.05879995505449624,
+        "total_delay_s": 0.00019999999999999998,
+        "reference_after_delay_v": 1.3500000000000003,
+        "headroom_after_delay_v": -1.9412000449455036,
+        "strict_delay_limit_s": 5.879995505449624e-06,
+        "deadline_unbounded": false,
+        "positive_initial_window": true,
+        "strict_positive_arithmetic_margin": false,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "description": "Allocated linear-fall illustration; not a qualified sequence",
+        "release_threshold_selected": false,
+        "release_floor_availability_on_low_rail_qualified": false,
+        "allocation_only": true
+      }
+    ],
+    "discharge_examples": [
+      {
+        "status": "calculated",
+        "available": true,
+        "inputs": {
+          "initial_v": 3.241200044945504,
+          "leakage_a": 1e-06,
+          "rdis_ohm": 6800.0,
+          "cap_max_f": 1e-07,
+          "target_v": 0.3
+        },
+        "missing_fields": [],
+        "leakage_floor_v": 0.0068,
+        "tau_s": 0.0006799999999999999,
+        "initial_already_at_or_below_target": false,
+        "target_above_leakage_floor": true,
+        "leakage_floor_exceeds_target": false,
+        "equilibrium_at_or_below_target": true,
+        "sustained_target_possible_in_model": true,
+        "finite_time_to_target": true,
+        "time_to_target_s": 0.0016325057583029031,
+        "voltage_at_target_time_v": 0.2999999999999999,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "description": "Retained C36 100 nF used as an illustrative capacitance, not a maximum bound",
+        "target_is_allocated_not_pa2_limit": true,
+        "allocation_only": true,
+        "capacitance_is_qualified_maximum": false
+      },
+      {
+        "status": "no_finite_time_to_target",
+        "available": true,
+        "inputs": {
+          "initial_v": 3.241200044945504,
+          "leakage_a": 0.0001,
+          "rdis_ohm": 6800.0,
+          "cap_max_f": 1e-07,
+          "target_v": 0.3
+        },
+        "missing_fields": [],
+        "leakage_floor_v": 0.68,
+        "tau_s": 0.0006799999999999999,
+        "initial_already_at_or_below_target": false,
+        "target_above_leakage_floor": false,
+        "leakage_floor_exceeds_target": true,
+        "equilibrium_at_or_below_target": false,
+        "sustained_target_possible_in_model": false,
+        "finite_time_to_target": false,
+        "time_to_target_s": null,
+        "voltage_at_target_time_v": null,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "description": "Retained C36 illustration with a higher injected-leakage allocation",
+        "target_is_allocated_not_pa2_limit": true,
+        "allocation_only": true,
+        "capacitance_is_qualified_maximum": false
+      },
+      {
+        "status": "calculated",
+        "available": true,
+        "inputs": {
+          "initial_v": 3.241200044945504,
+          "leakage_a": 1e-06,
+          "rdis_ohm": 6800.0,
+          "cap_max_f": 1e-09,
+          "target_v": 0.3
+        },
+        "missing_fields": [],
+        "leakage_floor_v": 0.0068,
+        "tau_s": 6.8e-06,
+        "initial_already_at_or_below_target": false,
+        "target_above_leakage_floor": true,
+        "leakage_floor_exceeds_target": false,
+        "equilibrium_at_or_below_target": true,
+        "sustained_target_possible_in_model": true,
+        "finite_time_to_target": true,
+        "time_to_target_s": 1.6325057583029033e-05,
+        "voltage_at_target_time_v": 0.2999999999999999,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "description": "Hypothetical separate downstream 1 nF; not a selected or implemented capacitor",
+        "target_is_allocated_not_pa2_limit": true,
+        "allocation_only": true,
+        "capacitance_is_qualified_maximum": false
+      }
+    ],
+    "injection_example": {
+      "status": "calculated",
+      "available": true,
+      "inputs": {
+        "charge_c": 1e-12,
+        "cap_min_f": 1e-09
+      },
+      "missing_fields": [],
+      "glitch_magnitude_v": 0.001,
+      "necessary_arithmetic_only": true,
+      "hardware_accepted": false,
+      "conditional_glitch_only": true,
+      "description": "Allocated 1 pC into hypothetical downstream 1 nF",
+      "allocation_only": true,
+      "capacitance_is_qualified_minimum": false
+    },
+    "bleed_examples": [
+      {
+        "status": "calculated",
+        "available": true,
+        "inputs": {
+          "rth_ohm": 5940.520446096654,
+          "ron_max_ohm": 10.0,
+          "loading_error_fraction": 0.001,
+          "park_max_v": 0.3,
+          "leak_max_a": 1e-06
+        },
+        "missing_fields": [],
+        "rp_min_ohm": 5944569.9256505575,
+        "rp_max_ohm": 300000.0,
+        "upper_bound_unbounded": false,
+        "necessary_interval_exists": false,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "interval_inclusive": true,
+        "resistor_selected": false,
+        "description": "Allocated Ron, loading-error, park voltage and leakage example",
+        "allocation_only": true,
+        "park_target_is_pa2_limit": false,
+        "rth_is_nominal_only": true
+      },
+      {
+        "status": "calculated",
+        "available": true,
+        "inputs": {
+          "rth_ohm": 5940.520446096654,
+          "ron_max_ohm": 10.0,
+          "loading_error_fraction": 0.001,
+          "park_max_v": 0.3,
+          "leak_max_a": 1e-09
+        },
+        "missing_fields": [],
+        "rp_min_ohm": 5944569.9256505575,
+        "rp_max_ohm": 300000000.0,
+        "upper_bound_unbounded": false,
+        "necessary_interval_exists": true,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "interval_inclusive": true,
+        "resistor_selected": false,
+        "description": "Allocated Ron, loading-error, park voltage and leakage example",
+        "allocation_only": true,
+        "park_target_is_pa2_limit": false,
+        "rth_is_nominal_only": true
+      }
+    ],
+    "limitations": [
+      "All examples are allocations; actual source, reference, sequence, leakage and dynamic limits remain unknown.",
+      "The allocated 3.35 V release floor is not a selected threshold and may be unavailable on the low rail.",
+      "Shutdown-window margin covers the two supplied delays only; subsequent node discharge and sequencing require separate proof.",
+      "The allocated 0.3 V park target is not a PA2 absolute, injection, or active-ADC limit.",
+      "Retained C36 remains 100 nF nominal; using it in an example does not establish its maximum capacitance.",
+      "A separate downstream 1 nF capacitor and 1 pC charge are hypothetical; no component or bound is selected.",
+      "Permanent pull-down feasibility is a necessary static interval, not acquisition, transition, or protection qualification.",
+      "Active ADC range and PA2 FT stress/power-off behavior are separate constraints; no universal passive-divider impossibility is claimed.",
+      "All seven qualifications must be explicit True before the modeled permission can enable; the model implements no hardware state control."
+    ]
+  }
+}
