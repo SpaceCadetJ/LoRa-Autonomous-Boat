@@ -1,0 +1,94 @@
+{
+  "revision": "SENSE-03",
+  "consulted_utc": "2026-11-06",
+  "sources": [
+    {
+      "id": "TI-LMR36520",
+      "url": "https://www.ti.com/lit/ds/symlink/lmr36520.pdf",
+      "revision": "SNVSBF0C November2025",
+      "locations": [
+        "p6 section6.5",
+        "p8 section6.8",
+        "pp14-15 sections7.3.4 and7.4"
+      ],
+      "claims": [
+        "VFB0.985..1.015V, defaultVIN24V,-40..125C;2.1nA FBleakage is typical.",
+        "PFM output regulation -1.5/+2.5percent uses typical application/components atVIN24V and is not production tested; not an independent error to add atop VFB.",
+        "PFM ripple and mean depend on operating point; dropout/UVLO/startup/fault states do not preserve a normal-regulation floor."
+      ],
+      "limits": "Reference/initial-resistor arithmetic is not full-line, dynamic or actualVDDA qualification."
+    },
+    {
+      "id": "VISHAY-R4-R5",
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "revision": "Document20035 April14,2026",
+      "locations": [
+        "pp2-3"
+      ],
+      "claims": [
+        "CRCW0603100KFKEA and CRCW060343K2FKEA decode100k/43.2k,F=1percent,K=100ppm/K."
+      ],
+      "limits": "Initial resistor tolerance excludes temperature drift and aging."
+    },
+    {
+      "id": "YAGEO-R31",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0747KL",
+      "locations": [
+        "p1"
+      ],
+      "claims": [
+        "Exact47k1percent identity recorded in SENSE-01; source replay, no new supplier availability claim."
+      ]
+    },
+    {
+      "id": "YAGEO-R32",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-076K8L",
+      "locations": [
+        "p1"
+      ],
+      "claims": [
+        "Exact6.8k1percent identity recorded in SENSE-01; source replay, no new supplier availability claim."
+      ]
+    },
+    {
+      "id": "ST-DS10693",
+      "url": "https://www.st.com/resource/en/datasheet/stm32f446re.pdf",
+      "revision": "DS10693 Rev11 May2026",
+      "locations": [
+        "Tables9/10 pp45/47",
+        "Tables13/14 pp73/74",
+        "Table16 pp76-77",
+        "Table74 pp140-141 and Figure47 note1 p144"
+      ],
+      "claims": [
+        "PA2 is FT, ADC123_IN2, floating input at reset. LQFP64 references tie internally toVDDA/VSSA; active conversion range0..VREF+.",
+        "FT absolute maximum VDD+4.0V gives4.0V stress ceiling atVDD0; not analog or off-state operation approval. FT injection -5/+0mA and footnote are not a positive diode-clamp allowance.",
+        "Input pulls disabled aboveVDD+0.3V; VDD/VDDA power-up/down difference limited300mV."
+      ],
+      "limits": "Stress, conversion and sequencing limits remain distinct."
+    },
+    {
+      "id": "ST-AN4899",
+      "url": "https://www.st.com/resource/en/application_note/an4899-stm32-microcontroller-gpio-hardware-settings-and-lowpower-consumption-stmicroelectronics.pdf",
+      "revision": "AN4899 Rev4 May2026",
+      "locations": [
+        "section4.2 pp11-12",
+        "sections5.2.2/5.3.6 pp19-24",
+        "section6.3 p26"
+      ],
+      "claims": [
+        "Optional analog switch is product/peripheral dependent; GPIO analog-mode selection alone does not establish analog-path isolation.",
+        "Digital FT tolerance does not authorize enabled-analog exposure. Parasitic analog diodes are not specified protection devices. Device-specific off-state limit governs."
+      ],
+      "limits": "A clamp into deadVDDA needs separate sink/backfeed and rail-sequence proof."
+    },
+    {
+      "id": "MURATA-FB1-HOLD",
+      "url": "https://www.murata.com/",
+      "claims": [
+        "Native identity BLM18AG601SN1D and topology verified; attempted official exact-part pages were unavailable."
+      ],
+      "limits": "No new guaranteed DCR or actualVDDA drop bound is claimed."
+    }
+  ]
+}

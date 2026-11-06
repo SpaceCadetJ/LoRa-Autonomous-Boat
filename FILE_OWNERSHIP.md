@@ -317,3 +317,17 @@ SENSE-02 final publication delegation: filter_integration owns only tools/qualit
 ### SENSE-02 completion - 2026-11-06 UTC
 
 All child scopes are released after final native capture, independent source/delta review, 27 mutation tests, desktop/phone checks and full publication validation. Root closes manifests, generated viewer, handoff and selective publication. SENSE-02 is the latest isolated electrical/presentation candidate; live CAD/copper/BOM/firmware remain unchanged and hardware gates held. Next bounded task is divider/source/VDDA and power-off analysis from the newest handoff, preserving the new filter/bypass on any new isolated copy. Preserve both converters, ACT-01 populations, disabled missing qualifications, separate IMU2, 6S and both unrelated tool edits. No primary generation/routing or hardware action.
+
+
+## SENSE-03 divider/reference envelope review - 2026-11-06 UTC
+
+Root claims reviews/codex/sensing_reference/** and additive PM/application/portfolio/CI/handoff integration from40955cd. Bounded review: reconcile the existing divider with the actual converter reference/resistor corners, VDDA path and MCU power states before selecting a corrected divider/interface. Expected candidate/live electrical and copper delta zero; SENSE-02 remains immutable latest native candidate. divider_limits and divider_supply are read-only manufacturer/topology reviewers. Preserve both converters, ACT-01 populations, disabled missing permissions, separate IMU2, 6S, original Allegro/V1 and both unrelated tool edits. No primary generator/router, live CAD/BOM/firmware, procurement or hardware action. Shared PM renderer/template and historical viewer binding remain unchanged.
+
+SENSE-03 delegation: filter_verify owns only new-packet model.py and test_model.py for conditional reference/divider arithmetic and rejection tests. Root retains all other files and final verification.
+
+SENSE-03 integration delegation: filter_integration owns only pm/README.md, docs/applications/README.md, docs/portfolio/README.md, docs/portfolio/portfolio.json, .github/workflows/repository-checks.yml, .gitattributes and tools/quality/check_publication.py. Root retains generated PM data, packet evidence, browser capture, handoff and publication. Shared PM renderer/template and current historical binding stay unchanged.
+
+
+### SENSE-03 completion - 2026-11-06 UTC
+
+All child scopes released after independent manufacturer/topology/math review,14 tests, browser/visual checks and full publication validation. Root closes manifests, generated viewer, handoff and selective publication. No circuit/native/copper change; SENSE-02 remains latest native. Next is the newest handoff's ADC state/isolation/discharge/reference-valid contract before component selection. Preserve all prior evidence, both converters, populations, disabled qualifications, separate IMU2,6S and unrelated tool edits. Shared PM renderer/replay unchanged.

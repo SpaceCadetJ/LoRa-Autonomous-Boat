@@ -484,6 +484,20 @@ def main():
     assert all(filter_validation[k] == 0 for k in ["live_electrical_delta", "live_copper_delta"])
     assert all(filter_validation[k] is False for k in filter_holds)
     print("PASS SENSE-02 captured native sensing-filter delta; live CAD/copper and hardware holds preserved")
+    reference_root = "reviews/codex/sensing_reference/"
+    reference = read_json(reference_root + "packet_manifest.json")
+    assert reference["revision"] == "SENSE-03"
+    assert len(reference["input_sha256"]) == 658
+    check_hashes(reference["input_sha256"], "SENSE-03 preserved inputs")
+    reference_artifacts = {p.relative_to(ROOT).as_posix() for p in (ROOT / reference_root).rglob("*")
+                           if p.is_file() and p.name != "packet_manifest.json" and "__pycache__" not in p.parts}
+    assert set(reference["artifact_sha256"]) == reference_artifacts, "SENSE-03 artifact coverage changed"
+    check_hashes(reference["artifact_sha256"], "SENSE-03 reference/divider review artifacts")
+    assert all(reference[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
+    assert all(reference[k] is False for k in ["native_commands_rerun", "hardware_accepted", "fabrication_approved",
+                                             "procurement_approved", "protection_qualified", "qualification_ports_implemented",
+                                             "voltage_range_qualified"])
+    print("PASS SENSE-03 conditional divider/reference and ADC state review; SENSE-02 native candidate and hardware holds preserved")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -511,6 +525,7 @@ def main():
     pages += [ROOT / shunt_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / sense_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / filter_root / name for name in ["README.md", "RESULTS.md"]]
+    pages += [ROOT / reference_root / name for name in ["README.md", "RESULTS.md"]]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

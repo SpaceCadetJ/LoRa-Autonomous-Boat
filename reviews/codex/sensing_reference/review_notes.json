@@ -1,0 +1,50 @@
+{
+  "revision": "SENSE-03",
+  "reviewed_utc": "2026-11-06",
+  "scope": "Captured reference/divider topology, manufacturer limits, conditional math and unchanged PM renderer; no native circuit or hardware acceptance.",
+  "independent_reviews": [
+    {
+      "reviewer": "divider_supply",
+      "result": "PASS after citation correction",
+      "checks": "Independent Fraction review of both feedback corners, four voltage cases, inverse thresholds and50mV allocation; topology and datasheet condition review. TIUVLO reference corrected to7.3.4."
+    },
+    {
+      "reviewer": "divider_limits",
+      "result": "PASS state separation",
+      "checks": "PA2FT/ADC/reset/off-state limits checked against STDS10693/AN4899; no universalVDD+0.3offrule or internaldiode protection credit."
+    },
+    {
+      "reviewer": "filter_verify",
+      "result": "14 tests passed",
+      "checks": "Exact rational corners, monotonicity, equality and inverse thresholds, missing values, invalid/nonfinite inputs and no acceptance flags."
+    },
+    {
+      "reviewer": "root",
+      "result": "PASS local review",
+      "checks": "Reran14tests; captured26pins/12identities and658previoushashes; inspected full diagram and phone guide; desktop/phone browser checks pass."
+    }
+  ],
+  "limitations": [
+    "The21.257801mV overlap is conditional arithmetic, not a measured failure or guaranteedVDDA/full6S bound.",
+    "Actualsource/transient/reference/sequence/reserve fields remain null;44V and50mV are unqualified examples.",
+    "SENSE-02 native candidate and all prior files preserved; no native commands, layout, firmware or hardware actions.",
+    "No resistor/interface chosen, no acquisition/protection/ordering/fabrication/powered-use release."
+  ],
+  "reviewed_sha256": {
+    "reviews/codex/sensing_reference/build_packet.py": "7cc850c5601e5229e2bbd56d589b115d5866d806069fb6796c96732a69969424",
+    "reviews/codex/sensing_reference/contract.json": "fe7e05085204347cb58861365239bdbf69ffd4f04868fc7b43514aaaf1eb1d91",
+    "reviews/codex/sensing_reference/diagram-preview.png": "7db69b91ea279aba646317d3b11e8997ec2af2ce38e15e41dc238601d2d46990",
+    "reviews/codex/sensing_reference/evidence.json": "f666b2faa9b8466c2ee512884dc6cb2f6d8763a72ac386e88ec23d2bb12d4b48",
+    "reviews/codex/sensing_reference/guide-desktop.png": "0316e9a103df1a06ecd8244b900300957483f694a094d9dd272cd25436b5663d",
+    "reviews/codex/sensing_reference/guide-phone.png": "fd7f3210fd3adba0c357dd088a2213ccee71c21ca547a76e69ec85095926e0d8",
+    "reviews/codex/sensing_reference/input_manifest.json": "e658aaa1c6814cbe3c70a74381be8f917285b59541cad4e49ab0f75651ec124d",
+    "reviews/codex/sensing_reference/model.py": "0d155bf8575515a551368e3c2cb4e35936bd323898baa412de26852bfda524e3",
+    "reviews/codex/sensing_reference/README.md": "e800a37cb5ed13014149d7d83d69faab14eb145936a9ed45b65bed78f9f55fd6",
+    "reviews/codex/sensing_reference/reference_boundary.svg": "13d89dd8605e36a150fd1e86f904117466f7b9065cf8de0c2ee08aab4e622fe1",
+    "reviews/codex/sensing_reference/RESULTS.md": "031983cd1c6e0be46564b5ce04b46d404d0bb7a25841a7965aa456c33391fbf5",
+    "reviews/codex/sensing_reference/sources.json": "7ef4b394ab3e3d72a947b1c88077f69dab0e5f0f6b9f8a0ce7081a2417d12f53",
+    "reviews/codex/sensing_reference/test_model.py": "e8f5ea3e5a348570ae8c4f5f4e0015099265901ad5e77393cfd58550339950dc",
+    "reviews/codex/sensing_reference/verify_viewer.cjs": "7668fcaec86c4fe18503cf667d65cb748c47a46e2525ec1e09e4d2d35520ac50",
+    "reviews/codex/sensing_reference/viewer_check.json": "16e5b7b24493e3f7e846f6ced2b11f344ff853aee577d4f4e3a91ecf9b908bf2"
+  }
+}

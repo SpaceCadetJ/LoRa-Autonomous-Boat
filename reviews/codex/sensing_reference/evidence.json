@@ -1,0 +1,478 @@
+{
+  "revision": "SENSE-03",
+  "classification": "captured_topology_and_conditional_reference_review",
+  "native_candidate": "SENSE-02",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "protection_qualified": false,
+  "qualification_ports_implemented": false,
+  "voltage_range_qualified": false,
+  "preserved_input_count": 658,
+  "topology": {
+    "source": "reviews/codex/sensing_filter/native/netlist.xml",
+    "sha256": "62e650a2301966d95b8d073f7fbf867842e18319e998beb605ff8f52194b3f90",
+    "components": {
+      "U1": [
+        "STM32F446RET6",
+        "STM32F446RET6"
+      ],
+      "U2": [
+        "LMR36520ADDAR",
+        "LMR36520ADDAR"
+      ],
+      "FB1": [
+        "600R",
+        "BLM18AG601SN1D"
+      ],
+      "R4": [
+        "100k 1%",
+        "CRCW0603100KFKEA"
+      ],
+      "R5": [
+        "43.2k 1%",
+        "CRCW060343K2FKEA"
+      ],
+      "R31": [
+        "47k",
+        "RC0603FR-0747KL"
+      ],
+      "R32": [
+        "6.8k",
+        "RC0603FR-076K8L"
+      ],
+      "C21": [
+        "1uF",
+        "CL10A105KB8NNNC"
+      ],
+      "C22": [
+        "100nF",
+        "KGM15ACG1H104KT"
+      ],
+      "C36": [
+        "100nF",
+        "C1608X7R1H104K080AA"
+      ],
+      "R44": [
+        "1k",
+        "RC0603FR-071KL"
+      ],
+      "C59": [
+        "1uF",
+        "C1608X7R1E105K080AB"
+      ]
+    },
+    "complete_net_members": {
+      "/MCU/VDDA": [
+        "C21.1",
+        "C22.1",
+        "FB1.2",
+        "U1.13"
+      ],
+      "/Power/Buck3V3/FB_3V3": [
+        "R4.2",
+        "R5.1",
+        "U2.5"
+      ],
+      "/VBAT_SENSE": [
+        "C36.1",
+        "R31.2",
+        "R32.1",
+        "U1.16"
+      ],
+      "VIN_RAW": [
+        "C1.1",
+        "C2.1",
+        "D12.1",
+        "R31.1",
+        "R33.1",
+        "TP5.1",
+        "U8.3"
+      ]
+    },
+    "additional_pins": {
+      "R4.1": "+3V3",
+      "R5.2": "GND",
+      "FB1.1": "+3V3",
+      "U1.12": "GND",
+      "C21.2": "GND",
+      "C22.2": "GND",
+      "R32.2": "GND",
+      "C36.2": "GND"
+    },
+    "checked_pin_count": 26
+  },
+  "calculations": {
+    "schema": 1,
+    "revision": "SENSE-03",
+    "status": "conditional_static_analysis_only",
+    "candidate_electrical_delta": 0,
+    "live_electrical_delta": 0,
+    "live_copper_delta": 0,
+    "native_commands_rerun": false,
+    "hardware_accepted": false,
+    "fabrication_approved": false,
+    "procurement_approved": false,
+    "protection_qualified": false,
+    "qualification_ports_implemented": false,
+    "full_6s_accepted": false,
+    "divider_selected": false,
+    "pcb_integrated": false,
+    "feedback_reference_cross_check": {
+      "status": "calculated",
+      "available": true,
+      "inputs": {
+        "vfb_min_v": 0.985,
+        "vfb_max_v": 1.015,
+        "rtop_ohm": 100000.0,
+        "rbottom_ohm": 43200.0,
+        "rtop_tol": 0.01,
+        "rbottom_tol": 0.01
+      },
+      "missing_fields": [],
+      "gain_min": 3.268976897689769,
+      "gain_max": 3.3615787504676393,
+      "output_min_v": 3.2199422442244225,
+      "output_max_v": 3.4120024317246536,
+      "conditional_static_only": true,
+      "hardware_accepted": false,
+      "reference": "U2 VFB",
+      "rtop_ref": "R4",
+      "rbottom_ref": "R5",
+      "vfb_nominal_v": 1.0,
+      "output_nominal_v": 3.314814814814815,
+      "reference_limit_conditions": {
+        "vin_v": 24.0,
+        "temperature_min_c": -40.0,
+        "temperature_max_c": 125.0
+      },
+      "guaranteed_vdda_envelope": false,
+      "excluded_terms": [
+        "Other line/load regulation and dynamic terms",
+        "Resistor temperature drift and aging",
+        "Output ripple, startup, shutdown and fault behavior",
+        "VDDA path drop and VREF+ behavior"
+      ]
+    },
+    "divider": {
+      "status": "calculated",
+      "available": true,
+      "inputs": {
+        "rtop_ohm": 47000.0,
+        "rbottom_ohm": 6800.0,
+        "rtop_tol": 0.01,
+        "rbottom_tol": 0.01
+      },
+      "missing_fields": [],
+      "ratio_min": 0.12420205896461385,
+      "ratio_nominal": 0.12639405204460966,
+      "ratio_max": 0.12861904940259936,
+      "conditional_static_only": true,
+      "hardware_accepted": false,
+      "rtop_ref": "R31",
+      "rbottom_ref": "R32",
+      "voltage_boundary": "VIN_RAW; not battery-terminal voltage",
+      "resistor_temperature_and_adc_errors_included": false
+    },
+    "static_cases": [
+      {
+        "status": "calculated",
+        "available": true,
+        "inputs": {
+          "vin": 24.0,
+          "reference_floor": 3.2199422442244225,
+          "ratio_max": 0.12861904940259936,
+          "reserve_v": 0.0
+        },
+        "missing_fields": [],
+        "adc_max_v": 3.0868571856623843,
+        "usable_reference_v": 3.2199422442244225,
+        "headroom_v": 0.13308505856203823,
+        "vin_ceiling_v": 25.034722766030242,
+        "strict_positive_arithmetic_margin": true,
+        "conditional_static_only": true,
+        "hardware_accepted": false,
+        "description": "Illustrative static VIN_RAW case",
+        "reference_is_conditional_converter_corner": true,
+        "vin_is_qualified_bound": false,
+        "reserve_allocation_v": 0.0,
+        "threshold": {
+          "status": "calculated",
+          "available": true,
+          "inputs": {
+            "vin": 24.0,
+            "rbottom": 6800.0,
+            "rtop_tol": 0.01,
+            "rbottom_tol": 0.01,
+            "floor": 3.2199422442244225,
+            "reserve": 0.0
+          },
+          "missing_fields": [],
+          "usable_reference_v": 3.2199422442244225,
+          "rtop_threshold_ohm": 44770.68717446827,
+          "finite_positive_rtop_can_meet_arithmetic_margin": true,
+          "conditional_static_only": true,
+          "hardware_accepted": false,
+          "comparator": ">",
+          "rtop_must_also_be_positive": true,
+          "resistor_selected": false
+        }
+      },
+      {
+        "status": "calculated",
+        "available": true,
+        "inputs": {
+          "vin": 25.2,
+          "reference_floor": 3.2199422442244225,
+          "ratio_max": 0.12861904940259936,
+          "reserve_v": 0.0
+        },
+        "missing_fields": [],
+        "adc_max_v": 3.241200044945504,
+        "usable_reference_v": 3.2199422442244225,
+        "headroom_v": -0.0212578007210813,
+        "vin_ceiling_v": 25.034722766030242,
+        "strict_positive_arithmetic_margin": false,
+        "conditional_static_only": true,
+        "hardware_accepted": false,
+        "description": "Illustrative static VIN_RAW case",
+        "reference_is_conditional_converter_corner": true,
+        "vin_is_qualified_bound": false,
+        "reserve_allocation_v": 0.0,
+        "threshold": {
+          "status": "calculated",
+          "available": true,
+          "inputs": {
+            "vin": 25.2,
+            "rbottom": 6800.0,
+            "rtop_tol": 0.01,
+            "rbottom_tol": 0.01,
+            "floor": 3.2199422442244225,
+            "reserve": 0.0
+          },
+          "missing_fields": [],
+          "usable_reference_v": 3.2199422442244225,
+          "rtop_threshold_ohm": 47356.090220060374,
+          "finite_positive_rtop_can_meet_arithmetic_margin": true,
+          "conditional_static_only": true,
+          "hardware_accepted": false,
+          "comparator": ">",
+          "rtop_must_also_be_positive": true,
+          "resistor_selected": false
+        }
+      },
+      {
+        "status": "calculated",
+        "available": true,
+        "inputs": {
+          "vin": 26.0,
+          "reference_floor": 3.2199422442244225,
+          "ratio_max": 0.12861904940259936,
+          "reserve_v": 0.0
+        },
+        "missing_fields": [],
+        "adc_max_v": 3.344095284467583,
+        "usable_reference_v": 3.2199422442244225,
+        "headroom_v": -0.12415304024316054,
+        "vin_ceiling_v": 25.034722766030242,
+        "strict_positive_arithmetic_margin": false,
+        "conditional_static_only": true,
+        "hardware_accepted": false,
+        "description": "Illustrative static VIN_RAW case",
+        "reference_is_conditional_converter_corner": true,
+        "vin_is_qualified_bound": false,
+        "reserve_allocation_v": 0.0,
+        "threshold": {
+          "status": "calculated",
+          "available": true,
+          "inputs": {
+            "vin": 26.0,
+            "rbottom": 6800.0,
+            "rtop_tol": 0.01,
+            "rbottom_tol": 0.01,
+            "floor": 3.2199422442244225,
+            "reserve": 0.0
+          },
+          "missing_fields": [],
+          "usable_reference_v": 3.2199422442244225,
+          "rtop_threshold_ohm": 49079.692250455104,
+          "finite_positive_rtop_can_meet_arithmetic_margin": true,
+          "conditional_static_only": true,
+          "hardware_accepted": false,
+          "comparator": ">",
+          "rtop_must_also_be_positive": true,
+          "resistor_selected": false
+        }
+      },
+      {
+        "status": "calculated",
+        "available": true,
+        "inputs": {
+          "vin": 44.0,
+          "reference_floor": 3.2199422442244225,
+          "ratio_max": 0.12861904940259936,
+          "reserve_v": 0.0
+        },
+        "missing_fields": [],
+        "adc_max_v": 5.659238173714372,
+        "usable_reference_v": 3.2199422442244225,
+        "headroom_v": -2.4392959294899494,
+        "vin_ceiling_v": 25.034722766030242,
+        "strict_positive_arithmetic_margin": false,
+        "conditional_static_only": true,
+        "hardware_accepted": false,
+        "description": "Existing unqualified protected-rail target; not an actual bound",
+        "reference_is_conditional_converter_corner": true,
+        "vin_is_qualified_bound": false,
+        "reserve_allocation_v": 0.0,
+        "threshold": {
+          "status": "calculated",
+          "available": true,
+          "inputs": {
+            "vin": 44.0,
+            "rbottom": 6800.0,
+            "rtop_tol": 0.01,
+            "rbottom_tol": 0.01,
+            "floor": 3.2199422442244225,
+            "reserve": 0.0
+          },
+          "missing_fields": [],
+          "usable_reference_v": 3.2199422442244225,
+          "rtop_threshold_ohm": 87860.73793433662,
+          "finite_positive_rtop_can_meet_arithmetic_margin": true,
+          "conditional_static_only": true,
+          "hardware_accepted": false,
+          "comparator": ">",
+          "rtop_must_also_be_positive": true,
+          "resistor_selected": false
+        }
+      }
+    ],
+    "allocated_reserve_case": {
+      "status": "calculated",
+      "available": true,
+      "inputs": {
+        "vin": 25.2,
+        "reference_floor": 3.2199422442244225,
+        "ratio_max": 0.12861904940259936,
+        "reserve_v": 0.05
+      },
+      "missing_fields": [],
+      "adc_max_v": 3.241200044945504,
+      "usable_reference_v": 3.1699422442244227,
+      "headroom_v": -0.07125780072108112,
+      "vin_ceiling_v": 24.64597786212809,
+      "strict_positive_arithmetic_margin": false,
+      "conditional_static_only": true,
+      "hardware_accepted": false,
+      "description": "Explicitly allocated 50 mV reserve; not a verified error budget",
+      "reserve_allocation_v": 0.05,
+      "allocation_is_verified": false,
+      "threshold": {
+        "status": "calculated",
+        "available": true,
+        "inputs": {
+          "vin": 25.2,
+          "rbottom": 6800.0,
+          "rtop_tol": 0.01,
+          "rbottom_tol": 0.01,
+          "floor": 3.2199422442244225,
+          "reserve": 0.05
+        },
+        "missing_fields": [],
+        "usable_reference_v": 3.1699422442244227,
+        "rtop_threshold_ohm": 48212.46960767154,
+        "finite_positive_rtop_can_meet_arithmetic_margin": true,
+        "conditional_static_only": true,
+        "hardware_accepted": false,
+        "comparator": ">",
+        "rtop_must_also_be_positive": true,
+        "resistor_selected": false
+      }
+    },
+    "unknown_actual_inputs": {
+      "vin_raw_source_max_v": null,
+      "vin_raw_transient_max_v": null,
+      "vdda_min_v": null,
+      "vref_plus_min_v": null,
+      "power_sequence_envelope": null,
+      "required_reserve_v": null
+    },
+    "actual": {
+      "headroom": {
+        "status": "unavailable",
+        "available": false,
+        "inputs": {
+          "vin": null,
+          "reference_floor": null,
+          "ratio_max": 0.12861904940259936,
+          "reserve_v": null
+        },
+        "missing_fields": [
+          "vin",
+          "reference_floor",
+          "reserve_v"
+        ],
+        "adc_max_v": null,
+        "usable_reference_v": null,
+        "headroom_v": null,
+        "vin_ceiling_v": null,
+        "strict_positive_arithmetic_margin": null,
+        "conditional_static_only": true,
+        "hardware_accepted": false
+      },
+      "threshold": {
+        "status": "unavailable",
+        "available": false,
+        "inputs": {
+          "vin": null,
+          "rbottom": 6800.0,
+          "rtop_tol": 0.01,
+          "rbottom_tol": 0.01,
+          "floor": null,
+          "reserve": null
+        },
+        "missing_fields": [
+          "vin",
+          "floor",
+          "reserve"
+        ],
+        "usable_reference_v": null,
+        "rtop_threshold_ohm": null,
+        "finite_positive_rtop_can_meet_arithmetic_margin": null,
+        "conditional_static_only": true,
+        "hardware_accepted": false,
+        "comparator": ">",
+        "rtop_must_also_be_positive": true,
+        "resistor_selected": false
+      }
+    },
+    "limitations": [
+      "The U2 reference/resistor corners are conditional static arithmetic, not guaranteed VDDA limits.",
+      "The VFB limits are stated at VIN 24 V and -40 to 125 C; extension to a full 6S envelope is unqualified.",
+      "Other converter, distribution, reference, source, resistor drift and ADC error terms are absent.",
+      "A negative conditional margin identifies an overlap; a positive conditional margin is not acceptance.",
+      "44 V is an existing unqualified protected-rail target, not a measured or guaranteed VIN_RAW bound.",
+      "The 50 mV reserve is an explicit allocation only; the actual required reserve remains unknown.",
+      "Active ADC input range 0 to VREF+ differs from the PA2 FT absolute-voltage rule involving VDD+4 V.",
+      "No power-off protection, injection, sequencing, or passive-divider impossibility theorem is established.",
+      "Strict Rtop thresholds do not select a resistor or establish source impedance, acquisition, or protection."
+    ]
+  },
+  "findings": [
+    {
+      "id": "SENSE-REF",
+      "status": "conditional_overlap",
+      "finding": "Reference/initial-resistor low corner is below divider high corner at illustrative25.2Vraw; not an actualVDDA bound or measuredclipping."
+    },
+    {
+      "id": "SENSE-STATE",
+      "status": "manufacturer_review_not_hardware_acceptance",
+      "finding": "PA2FT stress/reset behavior differs from activeADC range; sequencing, capacitor charge and analog state need separate qualification."
+    }
+  ]
+}

@@ -69,7 +69,11 @@
     "sensing_filter_results": "reviews/codex/sensing_filter/RESULTS.md",
     "sensing_filter_validation": "reviews/codex/sensing_filter/validation.json",
     "sensing_filter_native": "reviews/codex/sensing_filter/native/svg/LoRa_Boat_Controller_V2-Power.svg",
-    "sensing_filter_project": "reviews/codex/sensing_filter/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro"
+    "sensing_filter_project": "reviews/codex/sensing_filter/source/hardware/kicad_v2/LoRa_Boat_Controller_V2.kicad_pro",
+    "sensing_reference": "reviews/codex/sensing_reference/README.md",
+    "sensing_reference_results": "reviews/codex/sensing_reference/RESULTS.md",
+    "sensing_reference_boundary": "reviews/codex/sensing_reference/reference_boundary.svg",
+    "sensing_reference_evidence": "reviews/codex/sensing_reference/evidence.json"
   },
   "technologies": [
     "STM32F446",
@@ -281,6 +285,11 @@
       "kind": "isolated_native_sensing_filter_candidate",
       "revision": "v2",
       "caption": "SENSE-02: isolated U8 output resistor and local bypass, exact C36/C37 identities and consistent R33 rating annotation; analog behavior and hardware qualification held."
+    },
+    {
+      "path": "reviews/codex/sensing_reference/reference_boundary.svg",
+      "kind": "conditional_divider_reference_boundary",
+      "caption": "SENSE-03: conditional divider/reference screen and ADC power-state boundaries; actual full-6S minimum VDDA and protection remain unqualified."
     }
   ],
   "validated_results": [
@@ -674,6 +683,30 @@
         "unchanged_ad0_warning": true,
         "mutation_tests_passed": 27
       }
+    },
+    {
+      "packet": "SENSE-03",
+      "claim": "SENSE-03 compares converter-reference and initial resistor corners with the existing divider. The conditional reference screen is lower than the divider output at 25.2 V VIN_RAW, but the TI reference limit is specified at VIN = 24 V: no guaranteed full-6S minimum VDDA or measured clipping is inferred. PA2 FT absolute limits remain distinct from active ADC range and do not establish internal diode protection.",
+      "classification": "conditional_reference_divider_screen_and_power_state_review_not_hardware_qualification",
+      "conditional_results": {
+        "reference_and_initial_resistor_screen_V": 3.219942244,
+        "existing_divider_at_25_2_V_VIN_RAW_V": 3.241200045,
+        "screen_minus_divider_mV": -21.257801,
+        "zero_allowance_crossing_VIN_RAW_V": 25.034723,
+        "TI_reference_limit_test_VIN_V": 24,
+        "actual_minimum_VDDA_V": null,
+        "actual_transient_envelope": null,
+        "required_margin_V": null,
+        "voltage_range_qualified": false
+      },
+      "preservation": "No candidate/live electrical or copper delta and no native commands rerun. SENSE-02 remains the latest native candidate. Both converters, ACT-01 source populations, separate IMU2, 6S, disabled missing qualifications and all live CAD/BOM/firmware remain preserved; no interface hardware selected or physical release.",
+      "next_task": "Define a state-based ADC isolation/discharge and reference-valid contract on paper before an isolated amendment from SENSE-02. Account for ADC state, C36 stored charge, pull-ups and reference collapse; establish actual source/transient, minimum VDDA and margin envelopes before range guarantees. Preserve 6S, both converters, exclusive source populations and disabled missing qualifications.",
+      "evidence": [
+        "reviews/codex/sensing_reference/README.md",
+        "reviews/codex/sensing_reference/RESULTS.md",
+        "reviews/codex/sensing_reference/evidence.json",
+        "reviews/codex/sensing_reference/reference_boundary.svg"
+      ]
     }
   ],
   "current_native_findings": {
@@ -702,7 +735,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Review divider scaling and power-off protection using established source/transient and minimum VDDA envelopes before choosing values or making range guarantees. Keep U8 filter stability, effective bypass capacitance, ADC acquisition and off-state behavior held; preserve 6S, both converters and exclusive source populations. Current-sense common mode remains open; shunt selection awaits the actual receiver/source envelope.",
+    "Define a state-based ADC isolation/discharge and reference-valid contract on paper before an isolated amendment from SENSE-02. Account for ADC state, C36 stored charge, pull-ups and reference collapse; establish actual source/transient, minimum VDDA and margin envelopes before range guarantees. Preserve 6S, both converters, exclusive source populations and disabled missing qualifications.",
     "Qualify supply sequencing, C11/VSERVO transients, full 6S feed, leakage/damping, ADC and combined IMU2 before PCB integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",

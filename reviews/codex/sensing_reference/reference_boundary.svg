@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<rect width="1200" height="800" fill="#f5f7fa"/><style>text{font-family:Arial,sans-serif;fill:#132c42;font-size:19px}.h{font-size:29px;font-weight:bold}.sub{font-size:16px;fill:#40596b}.label{font-weight:bold}.box{fill:white;stroke:#b2c3cf;stroke-width:2}.wire{fill:none;stroke:#147d91;stroke-width:3}</style>
+<text x="38" y="46" class="h">SENSE-03 · Follow the signal and its reference</text>
+<text x="38" y="76" class="sub">Captured SENSE-02 topology + conditional arithmetic. No native change or hardware acceptance.</text>
+<rect x="35" y="104" width="1130" height="230" rx="12" class="box"/>
+<text x="58" y="138" class="label">Signal path</text><text x="58" y="184">VIN_RAW</text><text x="58" y="211" class="sub">post-D12</text>
+<path d="M190 185H260 M440 185H810" class="wire"/>
+<rect x="260" y="157" width="180" height="58" rx="8" class="box"/><text x="280" y="192">R31 · 47 kΩ</text>
+<circle cx="590" cy="185" r="5" fill="#147d91"/><text x="505" y="154" class="sub">VBAT_SENSE</text>
+<text x="517" y="240">R32 · 6.8 kΩ</text><text x="517" y="269">C36 · 100 nF</text><text x="517" y="299" class="sub">both to GND</text>
+<path d="M590 190V217" class="wire"/>
+<rect x="810" y="151" width="300" height="92" rx="8" class="box"/><text x="833" y="184" class="label">U1 PA2 · ADC123_IN2</text><text x="833" y="217" class="sub">Active range: 0…VREF+</text>
+<text x="58" y="295" class="sub">The divider measures VIN_RAW, not battery-terminal voltage.</text>
+<rect x="35" y="353" width="1130" height="168" rx="12" class="box"/>
+<text x="58" y="386" class="label">Reference path</text>
+<rect x="58" y="404" width="290" height="83" rx="8" class="box"/><text x="74" y="435">U2 · LMR36520ADDAR</text><text x="74" y="466" class="sub">R4 / R5: 100 kΩ / 43.2 kΩ</text>
+<path d="M348 446H540 M700 446H810" class="wire"/><text x="400" y="430">+3V3</text>
+<rect x="540" y="420" width="160" height="53" rx="8" class="box"/><text x="566" y="453">FB1 bead</text>
+<rect x="810" y="404" width="300" height="83" rx="8" class="box"/><text x="833" y="435">VDDA / internal VREF+</text><text x="833" y="466" class="sub">C21 / C22 to analog return</text>
+<rect x="35" y="540" width="1130" height="109" rx="12" fill="#fff0e7" stroke="#ce7444"/>
+<text x="58" y="575" class="label">25.2 V raw example: 3.219942 − 3.241200 = −21.257801 mV</text>
+<text x="58" y="605" class="sub">Reference + initial-resistor screen only; VFB limits specified at converter VIN=24 V.</text>
+<text x="58" y="630" class="sub">Actual VDDA, transients, ripple, drift, feed drop and required reserve remain unqualified.</text>
+<text x="38" y="685" class="label">Reset / inactive FT pad ≠ enabled ADC ≠ startup / shutdown</text>
+<text x="38" y="717" class="sub">Check peripheral state, pull configuration, C36 stored charge and reference collapse.</text>
+<text x="38" y="745" class="sub">FT VDD+4 V stress ceiling is not conversion permission or a diode-clamp allowance.</text>
+<text x="38" y="777" class="sub">Next: state-based isolation / discharge / reference-valid contract before a new circuit amendment.</text>
+</svg>

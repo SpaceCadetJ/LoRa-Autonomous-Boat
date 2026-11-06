@@ -1,0 +1,103 @@
+{
+  "revision": "SENSE-03",
+  "baseline_head": "40955cdf2e2ab96b72dd4b113236f712a30c108f",
+  "native_candidate": "SENSE-02",
+  "expected_complete_members": {
+    "/MCU/VDDA": [
+      "C21.1",
+      "C22.1",
+      "FB1.2",
+      "U1.13"
+    ],
+    "/Power/Buck3V3/FB_3V3": [
+      "R4.2",
+      "R5.1",
+      "U2.5"
+    ],
+    "/VBAT_SENSE": [
+      "C36.1",
+      "R31.2",
+      "R32.1",
+      "U1.16"
+    ],
+    "VIN_RAW": [
+      "C1.1",
+      "C2.1",
+      "D12.1",
+      "R31.1",
+      "R33.1",
+      "TP5.1",
+      "U8.3"
+    ]
+  },
+  "components": {
+    "U1": [
+      "STM32F446RET6",
+      "STM32F446RET6"
+    ],
+    "U2": [
+      "LMR36520ADDAR",
+      "LMR36520ADDAR"
+    ],
+    "FB1": [
+      "600R",
+      "BLM18AG601SN1D"
+    ],
+    "R4": [
+      "100k 1%",
+      "CRCW0603100KFKEA"
+    ],
+    "R5": [
+      "43.2k 1%",
+      "CRCW060343K2FKEA"
+    ],
+    "R31": [
+      "47k",
+      "RC0603FR-0747KL"
+    ],
+    "R32": [
+      "6.8k",
+      "RC0603FR-076K8L"
+    ],
+    "C21": [
+      "1uF",
+      "CL10A105KB8NNNC"
+    ],
+    "C22": [
+      "100nF",
+      "KGM15ACG1H104KT"
+    ],
+    "C36": [
+      "100nF",
+      "C1608X7R1H104K080AA"
+    ],
+    "R44": [
+      "1k",
+      "RC0603FR-071KL"
+    ],
+    "C59": [
+      "1uF",
+      "C1608X7R1E105K080AB"
+    ]
+  },
+  "additional_pins": {
+    "R4.1": "+3V3",
+    "R5.2": "GND",
+    "FB1.1": "+3V3",
+    "U1.12": "GND",
+    "C21.2": "GND",
+    "C22.2": "GND",
+    "R32.2": "GND",
+    "C36.2": "GND"
+  },
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "protection_qualified": false,
+  "qualification_ports_implemented": false,
+  "voltage_range_qualified": false
+}
