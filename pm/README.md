@@ -1,10 +1,18 @@
 # LoRa engineering workspace
 
+## Current local-shunt specification - VSERVO-03, 2026-10-29
+
+[VSERVO-03](../reviews/codex/vservo_shunt_spec/README.md) specifies an independent switched-resistor shunt across local VSERVO and GND. The [annotated proposal](../reviews/codex/vservo_shunt_spec/v2_shunt_spec.svg), [conditional calculations](../reviews/codex/vservo_shunt_spec/RESULTS.md) and [specification explorer](../reviews/codex/vservo_shunt_spec/index.html) connect threshold/hysteresis bounds, resistor and current limits, startup, event energy, repeated dissipation and fault behavior. Actual receiver/source limits remain unavailable; a positive illustrative result does not qualify a device or circuit.
+
+Sixteen model tests pass, and 14 captured power-path pin memberships are checked. The illustrative 0.5 A excess-current case has a strict 5.789474–9.619048 ohm nominal-resistance interval; the 1 A case has no interval. These are conditional calculations, not device or hardware acceptance.
+
+The specification preserves 532 captured input hashes with zero candidate/live electrical or copper delta. No part is selected, no native circuitry is inserted and no hardware or application is released. POWER-DOC-01 remains the latest schematic presentation and VSERVO-01 the latest electrical candidate. Next independently review the full 6S ADC/sensing range and protection on the preserved Power source. Shunt part selection remains held until the actual receiver/source envelope is recorded; preserve both converters, exclusive source populations and default-disabled qualifications.
+
 ## Current Power sheet presentation - POWER-DOC-01, 2026-10-29
 
 [POWER-DOC-01](../reviews/codex/power_sheet_polish/README.md) reorganizes the native Power sheet's annotations and layout on an isolated VSERVO-01 copy. Use the [before/after viewer](../reviews/codex/power_sheet_polish/index.html), [full native sheet](../reviews/codex/power_sheet_polish/native/svg/LoRa_Boat_Controller_V2-Power.svg) and [equivalence record](../reviews/codex/power_sheet_polish/validation.json) to review the presentation and its preservation checks. Captured native comparison preserves all 128 component records, 429 pin memberships and 121 complete nets. Thirty-seven of 38 source files are byte-identical; only Power sheet presentation changes. Three native commands exported 11 SVG sheets and recorded zero ERC errors with the unchanged AD0 warning. Seventeen equivalence tests pass. Component identity, pin/net, live electrical and copper deltas are zero; VSERVO-01 remains the latest electrical candidate.
 
-This presentation packet does not change ordering, assembly, flashing or powered-application acceptance. The next circuit task remains VSERVO-02's independent local-shunt specification, including startup, loaded clamp, fault, thermal and reverse-voltage boundaries with symbolic unknown receiver/source limits. Both converter sheets, C11 identity/lands, exclusive source populations, 6S and disabled missing qualifications must remain preserved. Older entries retain their historical scope.
+This presentation packet does not change ordering, assembly, flashing or powered-application acceptance. The local-shunt specification is now recorded in VSERVO-03 above; its receiver/source and hardware limits remain open. Both converter sheets, C11 identity/lands, exclusive source populations, 6S and disabled missing qualifications must remain preserved. Older entries retain their historical scope.
 
 ## Current transient boundary review - VSERVO-02, 2026-10-28
 

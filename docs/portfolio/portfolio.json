@@ -58,7 +58,9 @@
     "vservo_transients": "reviews/codex/vservo_transients/README.md",
     "protection_explorer": "reviews/codex/vservo_transients/index.html",
     "power_sheet_polish": "reviews/codex/power_sheet_polish/README.md",
-    "power_sheet_comparison": "reviews/codex/power_sheet_polish/index.html"
+    "power_sheet_comparison": "reviews/codex/power_sheet_polish/index.html",
+    "vservo_shunt_spec": "reviews/codex/vservo_shunt_spec/README.md",
+    "shunt_spec_explorer": "reviews/codex/vservo_shunt_spec/index.html"
   },
   "technologies": [
     "STM32F446",
@@ -249,6 +251,16 @@
       "path": "reviews/codex/power_sheet_polish/index.html",
       "kind": "interactive_native_comparison",
       "caption": "Before/after native Power sheets with review boundaries; no powered-application release."
+    },
+    {
+      "path": "reviews/codex/vservo_shunt_spec/v2_shunt_spec.svg",
+      "kind": "proposed_circuit_specification",
+      "caption": "VSERVO-03: independent switched-resistor local-shunt requirements; no device or native insertion."
+    },
+    {
+      "path": "reviews/codex/vservo_shunt_spec/index.html",
+      "kind": "interactive_conditional_specification",
+      "caption": "Threshold, resistor/current, startup and energy requirements; actual receiver/source limits remain unavailable."
     }
   ],
   "validated_results": [
@@ -548,6 +560,33 @@
         "reviews/codex/power_sheet_polish/review_notes.json",
         "reviews/codex/power_sheet_polish/packet_manifest.json"
       ]
+    },
+    {
+      "claim": "VSERVO-03 preserves 532 captured inputs, checks 14 captured power-path pin memberships and passes 16 conditional-model tests for the proposed independent switched-resistor shunt. Illustrative 0.5 A excess current admits a strict nominal-resistance interval of 5.789474–9.619048 ohm; 1 A admits none. The fixed 8.2 ohm illustration bounds fully-on sink/current and instantaneous losses only. Actual source/receiver limits remain unavailable. No part or native circuit is selected, candidate/live electrical and copper deltas are zero, and protection/hardware qualification remains open.",
+      "classification": "preserved_evidence_and_conditional_shunt_specification",
+      "evidence": [
+        "reviews/codex/vservo_shunt_spec/README.md",
+        "reviews/codex/vservo_shunt_spec/RESULTS.md",
+        "reviews/codex/vservo_shunt_spec/analysis.json",
+        "reviews/codex/vservo_shunt_spec/test_model.py",
+        "reviews/codex/vservo_shunt_spec/sources.json",
+        "reviews/codex/vservo_shunt_spec/contract.json",
+        "reviews/codex/vservo_shunt_spec/packet_manifest.json"
+      ],
+      "metrics": {
+        "model_tests": 16,
+        "preserved_input_hashes": 532,
+        "captured_pin_memberships_checked": 14,
+        "illustrative_nominal_interval_0_5_A_ohm": [
+          5.789474,
+          9.619048
+        ],
+        "illustrative_nominal_interval_1_A_exists": false,
+        "illustrative_8_2_ohm_minimum_fully_on_sink_A": 0.585534,
+        "illustrative_8_2_ohm_maximum_branch_current_A": 0.706033,
+        "illustrative_conservative_resistor_instantaneous_W": 3.883184,
+        "illustrative_fully_on_fet_conduction_only_mW": 49.848313
+      }
     }
   ],
   "current_native_findings": {
@@ -576,7 +615,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Continue from VSERVO-02: specify one independent local dissipative shunt cell, including enable, startup, fault, thermal and safe-operating-area requirements, using a symbolic receiver voltage envelope before device selection or native insertion. Preserve VSERVO-01, both exclusive source populations and default-disabled qualifications; source, receiver and regenerative-event evidence remains unknown.",
+    "Next independently review the full 6S ADC/sensing range and protection on the preserved Power source. Shunt part selection remains held until the actual receiver/source envelope is recorded; preserve both converters, exclusive source populations and default-disabled qualifications.",
     "Qualify supply sequencing, C11/VSERVO transients, full 6S feed, leakage/damping, ADC and combined IMU2 before PCB integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",

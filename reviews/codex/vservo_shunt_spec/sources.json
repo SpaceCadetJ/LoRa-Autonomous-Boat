@@ -1,0 +1,126 @@
+{
+  "revision": "VSERVO-03",
+  "reviewed_utc": "2026-10-29",
+  "classification": "primary_source_mechanisms_and_proposed_requirements_not_device_selection",
+  "sources": [
+    {
+      "id": "ti_motor",
+      "url": "https://www.ti.com/lit/an/slvaf66/slvaf66.pdf",
+      "document": "SLVAF66",
+      "revision": "June 2021",
+      "sections": [
+        "6.2",
+        "7.1",
+        "7.1.2",
+        "7.1.3"
+      ],
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "use": "Rated feedback-controlled resistor/FET energy dissipation and passive gate discharge mechanisms; example motor currents and MCU implementation are not transferred."
+    },
+    {
+      "id": "mps_brake",
+      "url": "https://media.monolithicpower.com/document/AN132_r1.1.pdf",
+      "document": "AN132",
+      "revision": "1.1, 2018-09-18",
+      "sections": [
+        "Figure 4",
+        "Appendix 2",
+        "Figure 6",
+        "Equations 28-31"
+      ],
+      "pages": [
+        5,
+        9,
+        10
+      ],
+      "use": "Comparator-switched resistor/NMOS brake architecture, resistor/current/pulse-power constraints; ideal instantaneous clamp is not a delay or parasitic bound."
+    },
+    {
+      "id": "ti_hysteresis",
+      "url": "https://www.ti.com/lit/pdf/sboa219",
+      "document": "SBOA219B",
+      "revision": "October 2024",
+      "sections": [
+        "Design Description",
+        "Design Notes",
+        "Design Steps"
+      ],
+      "pages": [
+        1,
+        2
+      ],
+      "use": "Distinct rising/falling thresholds and tolerance/noise considerations; project error budgets and threshold values remain allocations."
+    },
+    {
+      "id": "ti_startup",
+      "url": "https://www.ti.com/content/dam/videos/external-videos/en-us/2/3816841626001/5465094248001.mp4/subassets/comparators-how-to-solve-comparator-startup-uncertainty-with-por-presentation-quiz.pdf",
+      "document": "TIPL2103: How to solve comparator startup uncertainty with POR",
+      "revision": "2017-06-08",
+      "pages": [
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15
+      ],
+      "page_basis": "one-based PDF pages",
+      "use": "Comparator startup output and POR are device-specific; propagation timing/overdrive do not include complete gate enhancement or final sink response."
+    },
+    {
+      "id": "nexperia_soa",
+      "url": "https://assets.nexperia.com/documents/application-note/AN50006.pdf",
+      "document": "AN50006",
+      "revision": "2.0, 2022-04-12",
+      "sections": [
+        "2",
+        "4",
+        "5.1",
+        "5.2",
+        "6"
+      ],
+      "pages": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "use": "Fully enhanced conduction differs from linear transition behavior; hot-start SOA, pulse shape and thermal stability need explicit device-specific checks."
+    },
+    {
+      "id": "nexperia_mosfet",
+      "url": "https://assets.nexperia.com/documents/application-note/AN11158.pdf",
+      "document": "AN11158",
+      "revision": "7.0, 2025-02-18",
+      "sections": [
+        "2.2",
+        "2.5",
+        "2.6.1"
+      ],
+      "pages": [
+        4,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "use": "Body-diode polarity, thermal duty and gate-drive applicability. Proposed low-side body-diode path is not a qualified negative clamp."
+    }
+  ],
+  "parts_selected": false,
+  "hardware_tested": false
+}

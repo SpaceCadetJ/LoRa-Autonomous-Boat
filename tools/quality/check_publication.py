@@ -429,6 +429,15 @@ def main():
     assert power_doc_validation["native_commands_reported"] == 3 and power_doc_validation["native_svg_sheets"] == 11
     assert power_doc_validation["native_erc"] == {"errors": 0, "warnings": 1, "unchanged_ad0_warning": True}
     print("PASS POWER-DOC-01 captured native presentation equivalence; VSERVO-01 electrical candidate and hardware holds preserved")
+    shunt_root = "reviews/codex/vservo_shunt_spec/"
+    shunt = read_json(shunt_root + "packet_manifest.json")
+    check_hashes(shunt["input_sha256"], "VSERVO-03 preserved inputs")
+    check_hashes(shunt["artifact_sha256"], "VSERVO-03 specification, calculations and viewer artifacts")
+    assert shunt["revision"] == "VSERVO-03"
+    assert len(shunt["input_sha256"]) == 532
+    assert all(shunt[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
+    assert all(shunt[k] is False for k in ["native_commands_rerun", "parts_selected", "hardware_accepted", "fabrication_approved", "procurement_approved", "protection_qualified", "qualification_ports_implemented", "actual_receiver_limits_available"])
+    print("PASS VSERVO-03 conditional local-shunt specification; POWER-DOC-01/VSERVO-01 and hardware holds preserved")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -453,6 +462,7 @@ def main():
     pages += [ROOT / vservo_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / transient_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / power_doc_root / "README.md"]
+    pages += [ROOT / shunt_root / name for name in ["README.md", "RESULTS.md"]]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

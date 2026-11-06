@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1100" viewBox="0 0 1280 1100"><rect width="1280" height="1100" fill="#f3f6fa"/><style>text{font-family:Arial,sans-serif;fill:#1b3045}.h{font-size:28px;font-weight:bold}.t{font-size:20px;font-weight:bold}.s{font-size:17px}.sub{font-size:18px;fill:#4b6379}.box{fill:white;stroke:#9eb5c8;stroke-width:2}.proposal{fill:#edf5f8;stroke:#29748b;stroke-width:2;stroke-dasharray:8 6}.hold{fill:#fff6e6;stroke:#b67a24;stroke-width:2}.wire{fill:none;stroke:#277a89;stroke-width:3}.control{fill:none;stroke:#617899;stroke-width:2;stroke-dasharray:6 5}</style>
+<text x="40" y="46" class="h">VSERVO-03 | Independent local-shunt specification</text>
+<text x="40" y="77" class="sub">Functional proposal only | No selected devices, native insertion, protection release or hardware test</text>
+<rect x="40" y="105" width="390" height="104" rx="8" class="box"/>
+<text x="58" y="133" class="t">Preserved exclusive source feed</text>
+<text x="58" y="163" class="s">ONBOARD: +5V_BUCK -&gt; D4</text>
+<text x="58" y="190" class="s">BEC_ONLY: BEC_IN -&gt; D9</text>
+<rect x="480" y="105" width="320" height="104" rx="8" class="box"/>
+<text x="498" y="134" class="t">Local VSERVO / GND</text>
+<text x="498" y="164" class="s">C11 / C12 / TP4</text>
+<text x="498" y="190" class="s">Reservoir remains unqualified</text>
+<rect x="850" y="105" width="390" height="104" rx="8" class="box"/>
+<text x="868" y="134" class="t">J3 servo + remote harness</text>
+<text x="868" y="164" class="s">Actual energy / voltage limits unknown</text>
+<text x="868" y="190" class="s">Separate receiver and return nodes</text>
+<path d="M430 155H480 M800 155H850" class="wire"/>
+<text x="40" y="238" class="sub">Proposed cell taps the named VSERVO / GND pair below. Existing master D4 and D9 remain DNP.</text>
+<rect x="40" y="266" width="1200" height="337" rx="8" class="proposal"/>
+<text x="60" y="298" class="t">PROPOSED POWER PATH + CONTROL — labels are functional, not part references</text>
+<path d="M550 320V370" class="wire"/>
+<text x="560" y="338" class="s">VSERVO</text>
+<rect x="460" y="370" width="180" height="66" rx="8" class="box"/>
+<text x="480" y="397" class="t">Brake resistor</text>
+<text x="480" y="423" class="s">Pulse rating held</text>
+<path d="M550 436V466" class="wire"/>
+<rect x="460" y="466" width="180" height="67" rx="8" class="box"/>
+<text x="480" y="494" class="t">NMOS switch</text>
+<text x="480" y="519" class="s">On-state bounds</text>
+<path d="M550 533V555 M528 555H572 M536 562H564 M544 569H556" class="wire"/>
+<text x="580" y="562" class="s">Local GND</text>
+<rect x="70" y="351" width="320" height="146" rx="8" class="box"/>
+<text x="90" y="380" class="t">Rail-derived control supply</text>
+<text x="90" y="411" class="s">Sense + reference + hysteresis</text>
+<text x="90" y="438" class="s">POR / UVLO + bounded gate driver</text>
+<text x="90" y="466" class="s">Startup behavior unimplemented</text>
+<path d="M550 344H230V351" class="control"/>
+<path d="M390 466H425V500H460" class="control"/>
+<text x="75" y="538" class="s">Gate pulldown: discharge with high-Z drive.</text>
+<text x="75" y="565" class="s">Cannot override a stuck-high output.</text>
+<rect x="710" y="350" width="500" height="218" rx="8" class="hold"/>
+<text x="730" y="382" class="t">Before energy exposure, establish:</text>
+<text x="730" y="416" class="s">Valid control power and defined output</text>
+<text x="730" y="445" class="s">Full-current turn-on and turn-off bounds</text>
+<text x="730" y="474" class="s">Sink authority at minimum release voltage</text>
+<text x="730" y="503" class="s">Hot-start pulse / repeated / continuous limits</text>
+<text x="730" y="532" class="s">Gap protection or proven exposure prevention</text>
+<rect x="40" y="635" width="590" height="174" rx="8" class="box"/>
+<text x="60" y="667" class="t">Thresholds must leave three positive margins</text>
+<text x="60" y="701" class="s">Release above normal: 0.100 V allocated</text>
+<text x="60" y="729" class="s">Hysteresis after disturbance: 0.060 V allocated</text>
+<text x="60" y="757" class="s">Upper response margin: 0.100 V allocated</text>
+<text x="60" y="785" class="s">Turn-off lower-voltage excursion still unknown</text>
+<rect x="660" y="635" width="580" height="174" rx="8" class="box"/>
+<text x="680" y="667" class="t">Current authority creates a resistance window</text>
+<text x="680" y="701" class="s">At 0.5 A excess: 5.789 &lt; Rnom &lt; 9.619 ohm</text>
+<text x="680" y="729" class="s">At 1.0 A excess: no interval under same limits</text>
+<text x="680" y="757" class="s">Example 8.2 ohm: 0.5855 A minimum sink</text>
+<text x="680" y="785" class="s">All values are allocations, not selected hardware</text>
+<rect x="40" y="840" width="1200" height="110" rx="8" class="hold"/>
+<text x="60" y="872" class="t">Faults require different responses; off does not mean protected.</text>
+<text x="60" y="902" class="s">Open path: lost sink. Stuck on: continuous load. Resistor short: lost current limit. Startup: undefined exposure.</text>
+<text x="60" y="931" class="s">Negative rail / ground loss / remote ringing need separate bounds. Body-diode conduction is not an accepted clamp.</text>
+<rect x="40" y="980" width="1200" height="91" rx="8" class="box"/>
+<text x="60" y="1010" class="t">No actuator permission is added; missing qualifications stay disabled.</text>
+<text x="60" y="1038" class="s">Preserve 6S, both converters, C11 lands and exclusive populations. Shunt device selection remains held.</text>
+<text x="60" y="1063" class="s">Next independent circuit review: full 6S sensing / ADC range and protection.</text>
+</svg>

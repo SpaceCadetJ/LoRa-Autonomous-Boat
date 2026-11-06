@@ -269,3 +269,26 @@ POWER-DOC-01 delegation: power_doc_integration owns only pm/README.md, pm/index.
 ### POWER-DOC-01 review completion - 2026-10-29 UTC
 
 All child write scopes are released after native capture, independent electrical/visual review, 17 tests and desktop/phone comparison-viewer checks. Root closes packet and selective publication. Only the isolated Power sheet presentation changed; 37 other source files, both converters, ACT-01 populations and all prior evidence are preserved. VSERVO-01 remains the electrical candidate, with no hardware/ordering/application release. Continue from the newest handoff's local-shunt specification. Preserve and exclude both unrelated dirty tools. No live CAD, copper, primary generator/router or branch/history change.
+
+## VSERVO-03 independent shunt specification claim - 2026-10-29 UTC
+
+Root claims reviews/codex/vservo_shunt_spec/** and current viewer/application/portfolio/CI/handoff integration from 9b9d087. Specify a proposed switched-resistor local shunt, threshold/current/startup/fault/reverse-voltage contract without device selection or native insertion. Expected candidate/live electrical and copper deltas are zero. shunt_math owns only model.py/test_model.py; shunt_review is read-only. Preserve POWER-DOC-01/VSERVO-01, both converters, exclusive ACT-01 source populations, C11 lands, 6S and disabled missing qualifications. No live CAD, primary generation/router, firmware, purchasing or hardware action. Exclude unrelated v1_design.py and route_v2.py edits. Actual receiver/source limits stay unavailable.
+
+
+VSERVO-03 delegation: shunt_integration owns only pm/README.md, pm/index.template.html, pm/tools/build.mjs, docs/applications/README.md, docs/portfolio/README.md, docs/portfolio/portfolio.json, tools/quality/check_publication.py, .github/workflows/repository-checks.yml and .gitattributes. Root retains generated viewer files, current viewer binding, packet artifacts and handoff.
+
+
+VSERVO-03 viewer delegation: shunt_math additionally owns verify_viewer.cjs, viewer_check.json and named explorer/viewer desktop/phone screenshots after root renders the packet. Root owns HTML/SVG, manifests and current PM snapshot.
+
+
+### VSERVO-03 review completion - 2026-10-29 UTC
+
+All child scopes are released after primary-source/math review,16 tests and desktop/phone viewer checks. Root closes selective publication. This is a proposed shunt requirements packet with zero native/circuit/copper delta;532 prior hashes and all existing electrical/presentation candidates are preserved. Shunt selection remains held. Next independent scope is the newest handoff's full6S sensing/ADC review. Preserve source populations,6S,missing permissions disabled and both unrelated tool edits.
+
+
+### VSERVO-03 historical builder replay repair
+
+The prior POWER-DOC-01 CLI was reproduced failing on its captured pm/tools/build.mjs hash after the shared builder changed. shunt_integration owns only new-packet replay_power_viewer.py, test_replay_power_viewer.py, historical_power_viewer.json and historical-power-build.snapshot.mjs plus the workflow substitution. Validate all old packet inputs/artifacts, deterministic outputs and exact archived template/builder bytes without modifying old files or replacing hash functions. Root snapshots this packet's own PM builder and template, and retains final handoff/publication.
+
+
+VSERVO-03 final CI review and capture: all child scopes, including historical replay repair, are released. Independent review passed ten replay tests, 456/75/13 historical hash maps, two original function outputs and exact Git provenance. Root completed the final browser capture after the repair; model and native candidates remain unchanged. Root owns final manifests and selective publication only.

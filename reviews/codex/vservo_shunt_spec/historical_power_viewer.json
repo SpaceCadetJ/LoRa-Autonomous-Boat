@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "revision": "POWER-DOC-01",
+  "packet": "reviews/codex/power_sheet_polish",
+  "source_commit": "9b9d087c3c8b24ad6041b939d1b118b933fdb977",
+  "packet_manifest_sha256": "8d535ff64c71fa360083d055ac0bd5596cba99b58ba9acf722ca8375a58e39a6",
+  "expected_input_count": 456,
+  "expected_artifact_count": 75,
+  "expected_viewer_input_count": 13,
+  "archives": {
+    "pm/index.template.html": {
+      "snapshot": "reviews/codex/power_sheet_polish/viewer-template.snapshot.html",
+      "sha256": "811e689d821905f9d6f5b8a508ee8d03f2e03b603bd44b76293d0adf350f7aa6",
+      "git_blob": "0682178dd2358cc87e3f2066aae47b070b97f8a1",
+      "source_commit": "9b9d087c3c8b24ad6041b939d1b118b933fdb977",
+      "source_path": "pm/index.template.html"
+    },
+    "pm/tools/build.mjs": {
+      "snapshot": "reviews/codex/vservo_shunt_spec/historical-power-build.snapshot.mjs",
+      "sha256": "63f36ac1801e1f8d46e3af7035161ddc8b74e9bef130429f60973611b195467a",
+      "git_blob": "1f429c0b590723a2820751b52d51a801cf02abf6",
+      "source_commit": "9b9d087c3c8b24ad6041b939d1b118b933fdb977",
+      "source_path": "pm/tools/build.mjs"
+    }
+  },
+  "scope": "Immutable historical native-equivalence and comparison-viewer replay. Only the two exact archived shared PM inputs are substituted; no native, browser or hardware rerun."
+}

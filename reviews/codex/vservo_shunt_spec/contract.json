@@ -1,0 +1,33 @@
+{
+  "revision": "VSERVO-03",
+  "baseline_head": "9b9d087c3c8b24ad6041b939d1b118b933fdb977",
+  "electrical_candidate": "VSERVO-01",
+  "presentation_candidate": "POWER-DOC-01",
+  "scope": "Proposed local switched-resistor shunt specification only",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "parts_selected": false,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "protection_qualified": false,
+  "qualification_ports_implemented": false,
+  "actual_receiver_limits_available": false,
+  "architecture": [
+    "Proposed VSERVO -> brake resistor -> low-side NMOS -> local GND",
+    "Independent rail-derived detector/reference/driver with bounded operating supply; no MCU enable dependency",
+    "Gate pull-down provides intended off discharge only with high-impedance drive; startup/UVLO output behavior and leakage/Miller bounds remain unimplemented. Off is not protection against arriving energy.",
+    "Protection readiness must be established before exposure or an independent qualified path must cover the gap",
+    "Existing actuator qualifications remain disabled; no new permission signal or native connection is implemented"
+  ],
+  "failure_requirements": {
+    "open_path": "No controlled sink credit; independently prevent exposure or provide a qualified backup.",
+    "shorted_switch": "Switch short or stuck-high drive continuously connects the resistor; bound source/reservoir current, temperature and clearing energy.",
+    "shorted_resistor": "Lost current limitation; switch/source/trace/fuse stress requires a separate fault assessment.",
+    "absent_control_power": "No guaranteed clamp; firmware disarm is not evidence that energy cannot arrive.",
+    "negative_rail": "Positive shunt does not establish local capacitor or remote reverse-voltage limits.",
+    "invalid_sense_reference_or_driver": "Classify by resulting off, on or chattering drive. A powered driver stuck high is not dominated by the gate pulldown and shares the continuous-load fault boundary."
+  }
+}

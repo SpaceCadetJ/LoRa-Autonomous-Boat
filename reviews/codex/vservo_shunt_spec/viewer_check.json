@@ -1,0 +1,60 @@
+{
+  "scope": "Conditional local-shunt specification explorer and current viewer; no circuit insertion, selected device, waveform, SOA or hardware acceptance",
+  "input_sha256": {
+    "reviews/codex/vservo_shunt_spec/README.md": "5468f03fe23072d2e945043ae4e9bd67222b1b92f0ee69600ccd26b55b602a14",
+    "reviews/codex/vservo_shunt_spec/RESULTS.md": "8f32ccb3bb995ffdfe0b01975c2e60419bf50f1419bd5887b7c9f6ef0dcfde73",
+    "reviews/codex/vservo_shunt_spec/analysis.json": "408c9735c70078e105e1a89d9a56cfbb1076a6486ac50b3b05fa1fce8ca7f5c6",
+    "reviews/codex/vservo_shunt_spec/model.py": "76958cf777223731ba38e1d0797a443c64b0f90e3dc4005045786216e45079d5",
+    "reviews/codex/vservo_shunt_spec/viewer.template.html": "e1472e83e449c760857927d6d05b39edb598db29b2f5e2032d6d9bd4bd4ec527",
+    "reviews/codex/vservo_shunt_spec/index.html": "0ad54b00f3646aabe0a72bbd6e8e298dcf2d9d8b828b32daabcc5d3e577cc5d0",
+    "reviews/codex/vservo_shunt_spec/v2_shunt_spec.svg": "fe5cab2f57c95d403ac9c910442d7ebf7594101a00993896846ed3d16fd8561f",
+    "reviews/codex/vservo_shunt_spec/verify_viewer.cjs": "bae71bb5850ad66f47a33d47e1437d94b413314471373a6de06adecf224b545a",
+    "reviews/codex/vservo_shunt_spec/build_packet.py": "d1aa70b80ed7a955e54c63e3d5a4b39999de19defb1d6e6476a87865dfac3828",
+    "pm/index.template.html": "ee718709560f1265d5beed162120c98a54f4d1eaa1b7c2360b68544a58fa6a8e",
+    "pm/tools/build.mjs": "9f95faeb30a6e9505e4fff28f11eb6779b89df6209b0bc0db4998192b830589b"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "diagram_loaded": true,
+      "diagram_text_in_bounds": true,
+      "component_caption_bounds": true,
+      "pm_zoom_percent": 200,
+      "two_guide_dialogs": true,
+      "actual_inputs_remain_null": true,
+      "three_actual_records_visible_unavailable": true,
+      "three_window_cases_match_analysis": true,
+      "three_resistance_cases_match_analysis": true,
+      "branch_current_and_power_bounds_match": true,
+      "unknown_defaults": true,
+      "embedded_analysis_matches": true,
+      "no_device_or_hardware_release": true,
+      "horizontal_overflow": false,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "diagram_loaded": true,
+      "diagram_text_in_bounds": true,
+      "component_caption_bounds": true,
+      "pm_zoom_percent": 200,
+      "two_guide_dialogs": true,
+      "actual_inputs_remain_null": true,
+      "three_actual_records_visible_unavailable": true,
+      "three_window_cases_match_analysis": true,
+      "three_resistance_cases_match_analysis": true,
+      "branch_current_and_power_bounds_match": true,
+      "unknown_defaults": true,
+      "embedded_analysis_matches": true,
+      "no_device_or_hardware_release": true,
+      "horizontal_overflow": false,
+      "page_errors": []
+    }
+  ]
+}

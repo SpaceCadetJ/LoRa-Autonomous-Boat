@@ -1,0 +1,322 @@
+{
+  "revision": "VSERVO-03",
+  "classification": "necessary_shunt_arithmetic_with_unavailable_actual_envelopes",
+  "actual": {
+    "window": {
+      "status": "unavailable",
+      "inputs": {
+        "normal_max": null,
+        "off_min": null,
+        "off_max": null,
+        "on_min": null,
+        "on_max": null,
+        "noise_pp": null,
+        "remaining_rise": null,
+        "allowed_max": null
+      },
+      "missing_fields": [
+        "normal_max",
+        "off_min",
+        "off_max",
+        "on_min",
+        "on_max",
+        "noise_pp",
+        "remaining_rise",
+        "allowed_max"
+      ],
+      "release_margin_V": null,
+      "hysteresis_margin_V": null,
+      "protection_margin_V": null,
+      "strict_positive_arithmetic_margin": null,
+      "necessary_arithmetic_only": true,
+      "hardware_accepted": false,
+      "device_release_approved": false
+    },
+    "resistance_window": {
+      "status": "unavailable",
+      "inputs": {
+        "off_min": null,
+        "excess_current_max": null,
+        "rail_max": null,
+        "path_current_allocation": null,
+        "ron_min": null,
+        "ron_max": null,
+        "tolerance": null
+      },
+      "missing_fields": [
+        "off_min",
+        "excess_current_max",
+        "rail_max",
+        "path_current_allocation",
+        "ron_min",
+        "ron_max",
+        "tolerance"
+      ],
+      "nominal_lower_exclusive_ohm": null,
+      "nominal_upper_exclusive_ohm": null,
+      "nominal_interval_width_ohm": null,
+      "strict_positive_nominal_interval": null,
+      "necessary_arithmetic_only": true,
+      "hardware_accepted": false,
+      "device_release_approved": false
+    },
+    "branch_bound": {
+      "status": "unavailable",
+      "inputs": {
+        "Rnom": null,
+        "tolerance": null,
+        "ron_min": null,
+        "ron_max": null,
+        "off_min": null,
+        "rail_max": null,
+        "Iexcess": null
+      },
+      "missing_fields": [
+        "Rnom",
+        "tolerance",
+        "ron_min",
+        "ron_max",
+        "off_min",
+        "rail_max",
+        "Iexcess"
+      ],
+      "sink_current_min_A": null,
+      "branch_current_max_A": null,
+      "sink_current_margin_A": null,
+      "strict_positive_sink_current_margin": null,
+      "resistor_instantaneous_upper_W": null,
+      "fet_on_state_conduction_upper_W": null,
+      "necessary_arithmetic_only": true,
+      "hardware_accepted": false,
+      "device_release_approved": false,
+      "switching_loss_included": false,
+      "linear_soa_qualified": false,
+      "thermal_qualified": false
+    }
+  },
+  "parameters": {
+    "classification": "illustrative_allocations_not_actual_limits",
+    "normal_max_V": 5.0,
+    "off_min_V": 5.1,
+    "off_max_V": 5.15,
+    "on_min_V": 5.25,
+    "on_max_V": 5.3,
+    "noise_pp_V": 0.04,
+    "remaining_rise_V": 0.1,
+    "allowed_max_V": 5.5,
+    "excess_current_max_A": 0.5,
+    "rail_max_V": 5.5,
+    "path_current_allocation_A": 1.0,
+    "ron_min_ohm": 0.0,
+    "ron_max_ohm": 0.1,
+    "tolerance": 0.05,
+    "Rnom_ohm": 8.2
+  },
+  "window_cases": [
+    {
+      "id": "allocated_fit",
+      "label": "Positive allocated margins; physically unqualified",
+      "result": {
+        "status": "calculated",
+        "inputs": {
+          "normal_max": 5.0,
+          "off_min": 5.1,
+          "off_max": 5.15,
+          "on_min": 5.25,
+          "on_max": 5.3,
+          "noise_pp": 0.04,
+          "remaining_rise": 0.1,
+          "allowed_max": 5.5
+        },
+        "missing_fields": [],
+        "release_margin_V": 0.1,
+        "hysteresis_margin_V": 0.06,
+        "protection_margin_V": 0.1,
+        "strict_positive_arithmetic_margin": true,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "device_release_approved": false
+      }
+    },
+    {
+      "id": "allocated_exhausted",
+      "label": "Allocated protection margin exhausted",
+      "result": {
+        "status": "calculated",
+        "inputs": {
+          "normal_max": 5.0,
+          "off_min": 5.1,
+          "off_max": 5.15,
+          "on_min": 5.25,
+          "on_max": 5.3,
+          "noise_pp": 0.04,
+          "remaining_rise": 0.2,
+          "allowed_max": 5.5
+        },
+        "missing_fields": [],
+        "release_margin_V": 0.1,
+        "hysteresis_margin_V": 0.06,
+        "protection_margin_V": 0.0,
+        "strict_positive_arithmetic_margin": false,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "device_release_approved": false
+      }
+    },
+    {
+      "id": "unknown",
+      "label": "Actual envelope unavailable",
+      "result": {
+        "status": "unavailable",
+        "inputs": {
+          "normal_max": null,
+          "off_min": null,
+          "off_max": null,
+          "on_min": null,
+          "on_max": null,
+          "noise_pp": null,
+          "remaining_rise": null,
+          "allowed_max": null
+        },
+        "missing_fields": [
+          "normal_max",
+          "off_min",
+          "off_max",
+          "on_min",
+          "on_max",
+          "noise_pp",
+          "remaining_rise",
+          "allowed_max"
+        ],
+        "release_margin_V": null,
+        "hysteresis_margin_V": null,
+        "protection_margin_V": null,
+        "strict_positive_arithmetic_margin": null,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "device_release_approved": false
+      }
+    }
+  ],
+  "resistance_cases": [
+    {
+      "id": "half_amp",
+      "label": "0.5 A excess-current allocation",
+      "result": {
+        "status": "calculated",
+        "inputs": {
+          "off_min": 5.1,
+          "excess_current_max": 0.5,
+          "rail_max": 5.5,
+          "path_current_allocation": 1.0,
+          "ron_min": 0.0,
+          "ron_max": 0.1,
+          "tolerance": 0.05
+        },
+        "missing_fields": [],
+        "nominal_lower_exclusive_ohm": 5.7894736842105265,
+        "nominal_upper_exclusive_ohm": 9.619047619047619,
+        "nominal_interval_width_ohm": 3.8295739348370925,
+        "strict_positive_nominal_interval": true,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "device_release_approved": false
+      }
+    },
+    {
+      "id": "one_amp",
+      "label": "1 A excess allocation exceeds the interval",
+      "result": {
+        "status": "calculated",
+        "inputs": {
+          "off_min": 5.1,
+          "excess_current_max": 1.0,
+          "rail_max": 5.5,
+          "path_current_allocation": 1.0,
+          "ron_min": 0.0,
+          "ron_max": 0.1,
+          "tolerance": 0.05
+        },
+        "missing_fields": [],
+        "nominal_lower_exclusive_ohm": 5.7894736842105265,
+        "nominal_upper_exclusive_ohm": 4.761904761904762,
+        "nominal_interval_width_ohm": -1.0275689223057645,
+        "strict_positive_nominal_interval": false,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "device_release_approved": false
+      }
+    }
+  ],
+  "branch_case": {
+    "status": "calculated",
+    "inputs": {
+      "Rnom": 8.2,
+      "tolerance": 0.05,
+      "ron_min": 0.0,
+      "ron_max": 0.1,
+      "off_min": 5.1,
+      "rail_max": 5.5,
+      "Iexcess": 0.5
+    },
+    "missing_fields": [],
+    "sink_current_min_A": 0.5855338691159586,
+    "branch_current_max_A": 0.7060333761232349,
+    "sink_current_margin_A": 0.08553386911595867,
+    "strict_positive_sink_current_margin": true,
+    "resistor_instantaneous_upper_W": 3.8831835686777922,
+    "fet_on_state_conduction_upper_W": 0.04984831281999733,
+    "necessary_arithmetic_only": true,
+    "hardware_accepted": false,
+    "device_release_approved": false,
+    "switching_loss_included": false,
+    "linear_soa_qualified": false,
+    "thermal_qualified": false
+  },
+  "limitations": [
+    "Actual source, receiver and branch values are unavailable; no component has been selected.",
+    "All positive windows are necessary arithmetic only. Equality is not positive margin or hardware acceptance.",
+    "Threshold allocations include tolerance, drift and sense error. normal_max includes the worst sensed normal source, ripple and signed sense disturbance; noise_pp protects the rising/falling gap.",
+    "Remaining rise includes loaded clamp response, delay, ESR and local inductance; remote harness voltage and reverse voltage are separate. The turn-OFF-delay lower-rail excursion needs its own bound; a release threshold alone does not protect the receiver minimum.",
+    "Excess current is the positive simultaneous net current from all contributing paths after credited loads, not an assumed servo-only current.",
+    "Branch bounds assume a fully ON switch at declared Ron bounds over operating conditions. Gate-drive startup, transitions, SOA and fault behavior are not modeled.",
+    "Instantaneous resistor and fully ON FET powers are conservative independent endpoint bounds, not pulse or continuous thermal ratings.",
+    "A nominal resistance interval does not choose a resistor, FET, comparator, controller or approved circuit.",
+    "Repeated energy requires a real sink and restoration; this packet gives no recurring capacitor-storage credit.",
+    "No firmware, native schematic, copper, waveform, physical device or powered-application acceptance is established."
+  ],
+  "necessary_arithmetic_only": true,
+  "hardware_accepted": false,
+  "device_release_approved": false,
+  "parts_selected": false,
+  "native_commands_rerun": false,
+  "protection_qualified": false,
+  "fabrication_approved": false,
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "captured_topology": {
+    "source": "reviews/codex/power_sheet_polish/native/netlist.xml",
+    "sha256": "e1d237d61ce1945df3e282ba4024288a834c550aaf4d17873a45d48f6e5b3ae0",
+    "vservo_members": [
+      "C11.1",
+      "C12.1",
+      "D4.1",
+      "D9.1",
+      "J3.2",
+      "TP4.1"
+    ],
+    "other_checked_pins": {
+      "C11.2": "GND",
+      "C12.2": "GND",
+      "J3.3": "GND",
+      "J2.3": "GND",
+      "D4.2": "/Power/+5V_BUCK",
+      "D9.2": "/BEC_IN",
+      "J2.2": "/BEC_IN",
+      "U3.17": "GND"
+    },
+    "source_populations_exclusive": true,
+    "new_native_connections": 0
+  }
+}

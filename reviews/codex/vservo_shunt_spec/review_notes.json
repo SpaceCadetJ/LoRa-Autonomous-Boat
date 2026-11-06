@@ -1,0 +1,80 @@
+{
+  "revision": "VSERVO-03",
+  "captured_utc": "2026-10-30T04:33:19.518860+00:00",
+  "status": "pass_proposed_requirements_and_necessary_arithmetic_only",
+  "reviewers": {
+    "shunt_review": "Independent primary-source, engineering, math and captured-topology review",
+    "shunt_math": "Focused model tests and independent browser/visual verification of root HTML/SVG",
+    "root": "Integrated source limitations; reran final browser capture, visually inspected final diagram/phone, and reviewed final CI integration",
+    "shunt_ci_final": "Independent read-only historical replay code, ten tests, full replay and Git provenance review"
+  },
+  "reviewed_sha256": {
+    "reviews/codex/vservo_shunt_spec/README.md": "5468f03fe23072d2e945043ae4e9bd67222b1b92f0ee69600ccd26b55b602a14",
+    "reviews/codex/vservo_shunt_spec/RESULTS.md": "8f32ccb3bb995ffdfe0b01975c2e60419bf50f1419bd5887b7c9f6ef0dcfde73",
+    "reviews/codex/vservo_shunt_spec/contract.json": "264239c6ab1fb4274de645f48267a3347b2dd84303815fc61b3d30ecd82a0bf7",
+    "reviews/codex/vservo_shunt_spec/sources.json": "28a61dc59e36b51c8c49d05dbddec945dc76b89bdd2d589b99dc1dbab3d2cc4f",
+    "reviews/codex/vservo_shunt_spec/model.py": "76958cf777223731ba38e1d0797a443c64b0f90e3dc4005045786216e45079d5",
+    "reviews/codex/vservo_shunt_spec/test_model.py": "e2e902e929e89d4903e65e38af4dac6b992d2146ad1f41d571d813f9c6ecd794",
+    "reviews/codex/vservo_shunt_spec/build_packet.py": "d1aa70b80ed7a955e54c63e3d5a4b39999de19defb1d6e6476a87865dfac3828",
+    "reviews/codex/vservo_shunt_spec/analysis.json": "408c9735c70078e105e1a89d9a56cfbb1076a6486ac50b3b05fa1fce8ca7f5c6",
+    "reviews/codex/vservo_shunt_spec/v2_shunt_spec.svg": "fe5cab2f57c95d403ac9c910442d7ebf7594101a00993896846ed3d16fd8561f",
+    "reviews/codex/vservo_shunt_spec/viewer.template.html": "e1472e83e449c760857927d6d05b39edb598db29b2f5e2032d6d9bd4bd4ec527",
+    "reviews/codex/vservo_shunt_spec/index.html": "0ad54b00f3646aabe0a72bbd6e8e298dcf2d9d8b828b32daabcc5d3e577cc5d0",
+    "reviews/codex/vservo_shunt_spec/verify_viewer.cjs": "bae71bb5850ad66f47a33d47e1437d94b413314471373a6de06adecf224b545a",
+    "reviews/codex/vservo_shunt_spec/viewer_check.json": "9776039e1a2ec7b13efca78aee64eb6a36a37a6e2c91e04adc16ccaa7bcc96aa",
+    "reviews/codex/vservo_shunt_spec/replay_power_viewer.py": "a060aeb36430960a4231db2adfc53fba07b99edbbbb997455043ed2e06fcb5ff",
+    "reviews/codex/vservo_shunt_spec/test_replay_power_viewer.py": "2903f6f7d0621748f9f3175ce7c3f9a5f741d9a1d5b9fdea907bd129f62df5d7",
+    "reviews/codex/vservo_shunt_spec/historical_power_viewer.json": "d2f09e0809249cb595a372d220ac0c4e74c1128287c953bca67fbecd035c631b",
+    "reviews/codex/vservo_shunt_spec/historical-power-build.snapshot.mjs": "63f36ac1801e1f8d46e3af7035161ddc8b74e9bef130429f60973611b195467a",
+    "reviews/codex/vservo_shunt_spec/viewer-builder.snapshot.mjs": "9f95faeb30a6e9505e4fff28f11eb6779b89df6209b0bc0db4998192b830589b",
+    "reviews/codex/vservo_shunt_spec/viewer-template.snapshot.html": "ee718709560f1265d5beed162120c98a54f4d1eaa1b7c2360b68544a58fa6a8e"
+  },
+  "resolved_findings": [
+    "Gate pulldown wording narrowed to high-impedance drive; stuck-high/startup output is not overridden.",
+    "Normal maximum explicitly includes worst sensed source/ripple/signed disturbance; hysteresis noise remains distinct.",
+    "Turn-off undervoltage excursion and negative/body-diode boundary explicitly separate from positive clamp margin.",
+    "Diagram control-feed join corrected; long transfer wire replaced with explicit named VSERVO tap to avoid annotation crossings.",
+    "Narrow resistor/switch captions shortened and verified contained.",
+    "Historical Power viewer builder dependency replayed with exact Git archive; prior packet bytes remain unchanged and both current shared viewer inputs are captured."
+  ],
+  "verification": {
+    "model_tests": 16,
+    "preserved_inputs": 532,
+    "captured_pin_memberships_checked": 14,
+    "deterministic_outputs": 3,
+    "browser_viewports": [
+      "1440x1050",
+      "390x844"
+    ],
+    "window_scenarios": 3,
+    "resistance_scenarios": 3,
+    "branch_outputs": 5,
+    "actual_models_unavailable": 3,
+    "pm_zoom_percent": 200,
+    "guide_dialogs": 2,
+    "page_errors": 0,
+    "horizontal_overflow": false,
+    "historical_power_replay_tests": 10,
+    "historical_power_replay": {
+      "input_hashes": 456,
+      "artifact_hashes": 75,
+      "viewer_input_hashes": 13,
+      "deterministic_outputs": 2,
+      "native_commands_rerun": false,
+      "browser_checks_rerun": false
+    }
+  },
+  "limits": [
+    "No part selected or new native circuit; VSERVO-01 and POWER-DOC-01 preserved.",
+    "Arithmetic is necessary only; no actual receiver/source/device limit is supplied.",
+    "Actual startup, turn-on/off waveform, thermal/SOA, fault interruption and reverse/remote voltage remain unqualified.",
+    "Local checks and captured files do not establish hosted CI, physical hardware or application acceptance."
+  ],
+  "historical_ci_review": {
+    "source_commit": "9b9d087c3c8b24ad6041b939d1b118b933fdb977",
+    "builder_git_blob": "1f429c0b590723a2820751b52d51a801cf02abf6",
+    "template_git_blob": "0682178dd2358cc87e3f2066aae47b070b97f8a1",
+    "workflow_sha256_at_review": "238778b7773bb3d68f1235f0a884f5b2ba6a1a41ad065bbea0dd158204fe681c",
+    "result": "No actionable findings; exact source commit-to-blob provenance independently verified with Git. Ten tests and full immutable replay passed."
+  }
+}
