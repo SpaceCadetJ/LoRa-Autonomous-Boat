@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1030" viewBox="0 0 1240 1030" role="img" aria-labelledby="title desc">
+<title id="title">SENSE-01: what the controller actually measures</title><desc id="desc">Captured voltage and converter-input current paths with unresolved ADC, capacitor and power-state qualifications. No circuit change.</desc>
+<style>text{font-family:Arial,sans-serif;fill:#17364c;font-size:17px}.h{font-weight:bold;font-size:23px}.b{font-weight:bold;font-size:19px}.small{font-size:16px}.box{fill:white;stroke:#8caec4;stroke-width:2}.hold{fill:#fff7e8;stroke:#bb7a13;stroke-width:2}.line{fill:none;stroke:#278399;stroke-width:3}.sub{fill:#345f77}</style>
+<rect width="1240" height="1030" fill="#f2f6fa"/>
+<text x="40" y="46" class="h">SENSE-01 | Read the measurement boundary before the number</text>
+<text x="40" y="77">Captured POWER-DOC-01 / VSERVO-01 topology · Review only · No native or hardware change</text>
+<rect x="40" y="106" width="1160" height="226" rx="10" class="box"/>
+<text x="60" y="139" class="h">Voltage channel: post-diode rail, not battery terminals</text>
+<rect x="65" y="165" width="300" height="113" rx="8" class="box"/>
+<text x="83" y="194" class="b">VIN_RAW → R31, 47kΩ</text><text x="83" y="222">After input fuse and D12</text><text x="83" y="249">Upstream voltage drops excluded</text>
+<path d="M365 218H455" class="line"/><text x="383" y="205" class="small">sense</text>
+<rect x="455" y="165" width="330" height="113" rx="8" class="box"/>
+<text x="475" y="194" class="b">/VBAT_SENSE</text><text x="475" y="222">R32 6.8kΩ + C36 100nF</text><text x="475" y="249">Both return to local GND</text>
+<path d="M785 218H875" class="line"/>
+<rect x="875" y="165" width="300" height="113" rx="8" class="box"/>
+<text x="895" y="194" class="b">U1 PA2 · pad 16</text><text x="895" y="222">FT pin; analog limits apply</text><text x="895" y="249">ADC conversion: 0…VREF+</text>
+<text x="65" y="309">Reference follows VDDA through FB1. A nominal 3.3V label is not an accepted minimum or calibration.</text>
+<rect x="40" y="356" width="1160" height="270" rx="10" class="box"/>
+<text x="60" y="390" class="h">Current channel: shared converter-input branch</text>
+<rect x="65" y="414" width="330" height="155" rx="8" class="box"/>
+<text x="83" y="444" class="b">R33 · 20mΩ</text><text x="83" y="472">VIN_RAW → R33 → VIN_BUCK</text><text x="83" y="500">Feeds both converter inputs</text><text x="83" y="528">Does not measure output current</text><text x="83" y="553" class="small">Sense IN+ / IN− across R33</text>
+<path d="M395 488H455" class="line"/>
+<rect x="455" y="414" width="330" height="155" rx="8" class="box"/>
+<text x="475" y="444" class="b">U8 · INA180A1</text><text x="475" y="472">Gain 20; supplied from +3V3</text><text x="475" y="500">Ideal transfer: 0.4V/A</text><text x="475" y="528">OUT directly drives /ISENSE</text><text x="475" y="553" class="small">26V common-mode ceiling</text>
+<path d="M785 488H875" class="line"/>
+<rect x="875" y="414" width="300" height="155" rx="8" class="hold"/>
+<text x="895" y="444" class="b">U1 PA4 · pad 20</text><text x="895" y="472">TTa pin; C37 100nF to GND</text><text x="895" y="500">No series isolation resistor</text><text x="895" y="528">Loading stability unqualified</text><text x="895" y="553" class="small">TI listed capability: 1nF typical</text>
+<text x="65" y="601">BEC_ONLY servo power, external propulsion, raw-side divider/capacitor and TVS currents bypass R33.</text>
+<rect x="40" y="650" width="365" height="233" rx="10" class="hold"/>
+<text x="60" y="684" class="b">Divider headroom is conditional</text><text x="60" y="716">25.2V raw → 3.2412V worst 1%</text><text x="60" y="745">26V raw → 3.3441V worst 1%</text><text x="60" y="774">Actual minimum VDDA unknown</text><text x="60" y="803">Transient and error budget open</text><text x="60" y="832">RC settling ≠ ADC acquisition</text><text x="60" y="861" class="small">100nF remains a nominal value.</text>
+<rect x="435" y="650" width="365" height="233" rx="10" class="hold"/>
+<text x="455" y="684" class="b">Power-off protection is open</text><text x="455" y="716">Treat PA2 and PA4 separately</text><text x="455" y="745">Digital FT ≠ analog tolerance</text><text x="455" y="774">No external clamp on either net</text><text x="455" y="803">U8 off output not proven isolated</text><text x="455" y="832">No internal-diode protection credit</text><text x="455" y="861" class="small">Missing permissions stay disabled.</text>
+<rect x="830" y="650" width="370" height="233" rx="10" class="hold"/>
+<text x="850" y="684" class="b">Parts and implementation</text><text x="850" y="716">R33 field: 1W; exact MPN: 3W</text><text x="850" y="745">No board-current uprating</text><text x="850" y="774">C36/C37 exact identity unverified</text><text x="850" y="803">Stage A implements no ADC</text><text x="850" y="832">No assembly or flashing release</text><text x="850" y="861" class="small">Native source and live BOM preserved.</text>
+<rect x="40" y="910" width="1160" height="88" rx="10" class="box"/>
+<text x="60" y="941" class="b">Next: qualify capacitor/filter/bypass parts, then amend an isolated circuit copy with native checks.</text>
+<text x="60" y="972">Retain 6S, both converters, exclusive source populations, C11 lands, corrected copper and separate IMU2.</text>
+</svg>

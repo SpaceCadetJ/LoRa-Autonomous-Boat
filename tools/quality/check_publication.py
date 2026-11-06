@@ -438,6 +438,17 @@ def main():
     assert all(shunt[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
     assert all(shunt[k] is False for k in ["native_commands_rerun", "parts_selected", "hardware_accepted", "fabrication_approved", "procurement_approved", "protection_qualified", "qualification_ports_implemented", "actual_receiver_limits_available"])
     print("PASS VSERVO-03 conditional local-shunt specification; POWER-DOC-01/VSERVO-01 and hardware holds preserved")
+    sense_root = "reviews/codex/sensing_6s/"
+    sense = read_json(sense_root + "packet_manifest.json")
+    check_hashes(sense["input_sha256"], "SENSE-01 preserved inputs")
+    check_hashes(sense["artifact_sha256"], "SENSE-01 topology, calculations and guide evidence")
+    assert sense["revision"] == "SENSE-01" and len(sense["input_sha256"]) == 559
+    assert all(sense[k] == 0 for k in ["candidate_electrical_delta", "live_electrical_delta", "live_copper_delta"])
+    assert all(sense[k] is False for k in ["native_commands_rerun", "hardware_accepted", "fabrication_approved", "procurement_approved", "protection_qualified", "qualification_ports_implemented", "adc_implemented", "current_range_qualified", "voltage_range_qualified"])
+    sense_evidence = read_json(sense_root + "evidence.json")
+    assert sense_evidence["topology"]["checked_pin_count"] == 35
+    assert all(x["status"] == "unavailable" for x in sense_evidence["calculations"]["actual"].values())
+    print("PASS SENSE-01 captured sensing boundary and conditional arithmetic; circuit and hardware holds preserved")
     portfolio = read_json("docs/portfolio/portfolio.json")
     assert portfolio["status"]["manufacturing_approved"] is False
     paths = list(portfolio["entrypoints"].values())
@@ -463,6 +474,7 @@ def main():
     pages += [ROOT / transient_root / name for name in ["README.md", "RESULTS.md"]]
     pages += [ROOT / power_doc_root / "README.md"]
     pages += [ROOT / shunt_root / name for name in ["README.md", "RESULTS.md"]]
+    pages += [ROOT / sense_root / name for name in ["README.md", "RESULTS.md"]]
     for page in pages:
         for target in re.findall(r"\]\(([^)]+)\)", page.read_text(encoding="utf-8-sig")):
             target = target.strip("<>").split("#", 1)[0]

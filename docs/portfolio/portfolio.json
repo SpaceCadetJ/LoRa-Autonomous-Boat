@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-29",
+  "updated": "2026-11-06",
   "title": "LoRa Vehicle Controller: Reconstruction and Platform Redesign",
   "short_title": "LoRa Autonomous Boat Controller",
   "summary": "An STM32 and LoRa vehicle-controller project with reconstructed KiCad hardware, annotated schematics, a searchable engineering workspace, assembly evidence and a reproducible V1 firmware build. V2 hardware and a voice/text/location handheld remain under development.",
@@ -60,7 +60,11 @@
     "power_sheet_polish": "reviews/codex/power_sheet_polish/README.md",
     "power_sheet_comparison": "reviews/codex/power_sheet_polish/index.html",
     "vservo_shunt_spec": "reviews/codex/vservo_shunt_spec/README.md",
-    "shunt_spec_explorer": "reviews/codex/vservo_shunt_spec/index.html"
+    "shunt_spec_explorer": "reviews/codex/vservo_shunt_spec/index.html",
+    "sensing_6s": "reviews/codex/sensing_6s/README.md",
+    "sensing_results": "reviews/codex/sensing_6s/RESULTS.md",
+    "sensing_boundary": "reviews/codex/sensing_6s/sensing_boundary.svg",
+    "sensing_evidence": "reviews/codex/sensing_6s/evidence.json"
   },
   "technologies": [
     "STM32F446",
@@ -261,6 +265,11 @@
       "path": "reviews/codex/vservo_shunt_spec/index.html",
       "kind": "interactive_conditional_specification",
       "caption": "Threshold, resistor/current, startup and energy requirements; actual receiver/source limits remain unavailable."
+    },
+    {
+      "path": "reviews/codex/sensing_6s/sensing_boundary.svg",
+      "kind": "captured_sensing_boundary",
+      "caption": "SENSE-01: post-diode VIN_RAW and converter-input branch sensing, with manufacturer-limit and unqualified power-state boundaries; no circuit change."
     }
   ],
   "validated_results": [
@@ -587,6 +596,33 @@
         "illustrative_conservative_resistor_instantaneous_W": 3.883184,
         "illustrative_fully_on_fet_conduction_only_mW": 49.848313
       }
+    },
+    {
+      "claim": "SENSE-01 verifies captured sensing topology and manufacturer-limit discrepancies, with conditional divider arithmetic. Sensing and exact capacitor identities remain unqualified; the proposed correction has not been applied.",
+      "packet": "SENSE-01",
+      "classification": "captured_topology_and_manufacturer_limits_with_conditional_arithmetic",
+      "captured_findings": [
+        "U1 PA2/pad 16 senses post-protection-diode VIN_RAW through 47 kΩ/6.8 kΩ, not battery-terminal voltage.",
+        "U1 PA4/pad 20 receives U8 INA180A1 converter-input branch current through a 20 mΩ shunt at gain 20. BEC_ONLY bypasses the shunt; whole-vehicle current is not measured.",
+        "C37's direct nominal 100 nF output load is 100 times the INA180 datasheet's listed 1 nF typical capacitive-load capability. Stability remains unqualified and actual oscillation is unmeasured.",
+        "The recorded R33 0.02R/1 W annotation conflicts with the exact Bourns CRA2512-FZ-R020ELF manufacturer rating of 3 W at 70 °C. Identity/annotation consistency is unresolved; no thermal uprating follows.",
+        "The exact C36/C37 KGM15ACG1H104KT orderable combination remains unverified; nominal 100 nF RC calculations do not validate the actual capacitor identity.",
+        "Actual V2 Stage A firmware has no ADC implementation."
+      ],
+      "conditional_results": {
+        "divider_resistor_tolerance_percent": 1,
+        "divider_max_at_25_2_V": 3.2412,
+        "divider_max_at_26_V": 3.3441,
+        "qualification": "Unqualified: minimum VDDA, transient and calibration envelopes remain unknown."
+      },
+      "proposed_next_change": "Qualify exact C36/C37 and U8 filter/bypass parts and values, then apply an isolated output-loading correction and consistent R33 rating annotation. Preserve all candidates and sources; review divider/off-state and current-sense common-mode boundaries separately afterward.",
+      "preservation": "No circuit, native candidate or hardware change. VSERVO-01 electrical, POWER-DOC-01 presentation, both converters, exclusive source populations, 6S and disabled missing qualifications remain preserved.",
+      "evidence": [
+        "reviews/codex/sensing_6s/README.md",
+        "reviews/codex/sensing_6s/RESULTS.md",
+        "reviews/codex/sensing_6s/sensing_boundary.svg",
+        "reviews/codex/sensing_6s/evidence.json"
+      ]
     }
   ],
   "current_native_findings": {
@@ -615,7 +651,7 @@
     "scope_note": "Strict gate retains the existing V2 ERC warning and detects the intentional PCB ground correction against the older preservation baseline; six component-limit blockers remain."
   },
   "roadmap": [
-    "Next independently review the full 6S ADC/sensing range and protection on the preserved Power source. Shunt part selection remains held until the actual receiver/source envelope is recorded; preserve both converters, exclusive source populations and default-disabled qualifications.",
+    "Qualify exact C36/C37 and U8 filter/bypass parts and values, then apply an isolated U8 output-loading correction and consistent R33 rating annotation. Preserve all candidates and sources, both converters, exclusive source populations, 6S and disabled missing qualifications. Review divider/off-state and current-sense common-mode boundaries separately afterward; shunt selection still awaits the actual receiver/source envelope.",
     "Qualify supply sequencing, C11/VSERVO transients, full 6S feed, leakage/damping, ADC and combined IMU2 before PCB integration.",
     "Extend the implemented Stage A diagnostic after electrical acceptance; freeze the operational protocol and measure supervised-output failsafe behavior.",
     "Complete V2 connector atlas, exact-part qualification, purchasing decisions and recorded board bring-up.",

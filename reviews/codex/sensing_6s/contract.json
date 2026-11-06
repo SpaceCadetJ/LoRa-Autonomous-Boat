@@ -1,0 +1,86 @@
+{
+  "revision": "SENSE-01",
+  "electrical_candidate": "VSERVO-01",
+  "presentation_candidate": "POWER-DOC-01",
+  "scope": "Captured topology and manufacturer-limit review with conditional ADC calculations; no circuit amendment",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "protection_qualified": false,
+  "qualification_ports_implemented": false,
+  "adc_implemented": false,
+  "current_range_qualified": false,
+  "voltage_range_qualified": false,
+  "expected_complete_members": {
+    "/VBAT_SENSE": [
+      "C36.1",
+      "R31.2",
+      "R32.1",
+      "U1.16"
+    ],
+    "/ISENSE": [
+      "C37.1",
+      "U1.20",
+      "U8.1"
+    ],
+    "VIN_RAW": [
+      "C1.1",
+      "C2.1",
+      "D12.1",
+      "R31.1",
+      "R33.1",
+      "TP5.1",
+      "U8.3"
+    ],
+    "/Power/VIN_BUCK": [
+      "C10.1",
+      "C44.1",
+      "C45.1",
+      "C46.1",
+      "C52.1",
+      "C53.1",
+      "R33.2",
+      "U2.2",
+      "U2.3",
+      "U3.18",
+      "U3.20",
+      "U3.21",
+      "U3.22",
+      "U8.4"
+    ]
+  },
+  "components": {
+    "R31": [
+      "47k",
+      "RC0603FR-0747KL"
+    ],
+    "R32": [
+      "6.8k",
+      "RC0603FR-076K8L"
+    ],
+    "R33": [
+      "0.02R 1W",
+      "CRA2512-FZ-R020ELF"
+    ],
+    "C36": [
+      "100nF",
+      "KGM15ACG1H104KT"
+    ],
+    "C37": [
+      "100nF",
+      "KGM15ACG1H104KT"
+    ],
+    "U8": [
+      "INA180A1",
+      "INA180A1IDBVR"
+    ],
+    "U1": [
+      "STM32F446RET6",
+      "STM32F446RET6"
+    ]
+  }
+}

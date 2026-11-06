@@ -1,0 +1,495 @@
+{
+  "revision": "SENSE-01",
+  "classification": "captured_topology_and_manufacturer_review_with_conditional_calculations",
+  "candidate_electrical_delta": 0,
+  "live_electrical_delta": 0,
+  "live_copper_delta": 0,
+  "native_commands_rerun": false,
+  "hardware_accepted": false,
+  "fabrication_approved": false,
+  "procurement_approved": false,
+  "protection_qualified": false,
+  "qualification_ports_implemented": false,
+  "adc_implemented": false,
+  "current_range_qualified": false,
+  "voltage_range_qualified": false,
+  "preserved_input_count": 559,
+  "topology": {
+    "source": "reviews/codex/power_sheet_polish/native/netlist.xml",
+    "sha256": "e1d237d61ce1945df3e282ba4024288a834c550aaf4d17873a45d48f6e5b3ae0",
+    "components": {
+      "R31": {
+        "value": "47k",
+        "MPN": "RC0603FR-0747KL",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "datasheet_field": "~"
+      },
+      "R32": {
+        "value": "6.8k",
+        "MPN": "RC0603FR-076K8L",
+        "footprint": "Resistor_SMD:R_0603_1608Metric",
+        "datasheet_field": "~"
+      },
+      "R33": {
+        "value": "0.02R 1W",
+        "MPN": "CRA2512-FZ-R020ELF",
+        "footprint": "Resistor_SMD:R_2512_6332Metric",
+        "datasheet_field": "~"
+      },
+      "C36": {
+        "value": "100nF",
+        "MPN": "KGM15ACG1H104KT",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "datasheet_field": "~"
+      },
+      "C37": {
+        "value": "100nF",
+        "MPN": "KGM15ACG1H104KT",
+        "footprint": "Capacitor_SMD:C_0603_1608Metric",
+        "datasheet_field": "~"
+      },
+      "U8": {
+        "value": "INA180A1",
+        "MPN": "INA180A1IDBVR",
+        "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+        "datasheet_field": "http://www.ti.com/lit/ds/symlink/ina180.pdf"
+      },
+      "U1": {
+        "value": "STM32F446RET6",
+        "MPN": "STM32F446RET6",
+        "footprint": "Package_QFP:LQFP-64_10x10mm_P0.5mm",
+        "datasheet_field": "https://www.st.com/resource/en/datasheet/stm32f446re.pdf"
+      }
+    },
+    "complete_net_members": {
+      "/VBAT_SENSE": [
+        "C36.1",
+        "R31.2",
+        "R32.1",
+        "U1.16"
+      ],
+      "/ISENSE": [
+        "C37.1",
+        "U1.20",
+        "U8.1"
+      ],
+      "VIN_RAW": [
+        "C1.1",
+        "C2.1",
+        "D12.1",
+        "R31.1",
+        "R33.1",
+        "TP5.1",
+        "U8.3"
+      ],
+      "/Power/VIN_BUCK": [
+        "C10.1",
+        "C44.1",
+        "C45.1",
+        "C46.1",
+        "C52.1",
+        "C53.1",
+        "R33.2",
+        "U2.2",
+        "U2.3",
+        "U3.18",
+        "U3.20",
+        "U3.21",
+        "U3.22",
+        "U8.4"
+      ]
+    },
+    "additional_pins": {
+      "R32.2": "GND",
+      "C36.2": "GND",
+      "C37.2": "GND",
+      "U8.2": "GND",
+      "U8.5": "+3V3",
+      "U1.13": "/MCU/VDDA",
+      "U1.12": "GND"
+    },
+    "checked_pin_count": 35,
+    "source_populations_exclusive": true
+  },
+  "firmware": {
+    "source_revision": "4ebf6cbad3485653e367b355b83245bc2425a0b0",
+    "scope": "Exact Stage A files captured before review; future replay uses immutable snapshots, not future live firmware",
+    "files": {
+      "firmware_v2/src/main.c": {
+        "snapshot": "reviews/codex/sensing_6s/inputs/firmware_v2/src/main.c",
+        "sha256": "dfe36c27a94fbbd08b4f5999b01fd5dccb31be70e3ccc068890a94f15d355bd7"
+      },
+      "firmware_v2/README.md": {
+        "snapshot": "reviews/codex/sensing_6s/inputs/firmware_v2/README.md",
+        "sha256": "a57fbf708325ea82431be6e71e87460798062799adc9440bcddfe51a770fd477"
+      },
+      "firmware_v2/board_contract.json": {
+        "snapshot": "reviews/codex/sensing_6s/inputs/firmware_v2/board_contract.json",
+        "sha256": "924235d31951c05814149f7ce1e8db78d3962daa138851a4412a5599263c4dac"
+      }
+    }
+  },
+  "calculations": {
+    "schema": 1,
+    "revision": "SENSE-01",
+    "status": "conditional_analysis_only",
+    "candidate_electrical_delta": 0,
+    "live_electrical_delta": 0,
+    "live_copper_delta": 0,
+    "hardware_accepted": false,
+    "device_release_approved": false,
+    "protection_qualified": false,
+    "native_commands_rerun": false,
+    "captured_topology": {
+      "voltage_boundary": "VIN_RAW: post-fuse and post-D12 series diode, before R33",
+      "current_boundary": "R33: VIN_RAW to shared converter-input VIN_BUCK",
+      "rtop_ref": "R31",
+      "rtop_ohm": 47000,
+      "rbottom_ref": "R32",
+      "rbottom_ohm": 6800,
+      "voltage_cap_ref": "C36",
+      "voltage_cap_nominal_f": 1e-07,
+      "shunt_ref": "R33",
+      "shunt_nominal_ohm": 0.02,
+      "amplifier_ref": "U8",
+      "amplifier_gain_nominal": 20,
+      "current_cap_ref": "C37",
+      "current_cap_nominal_f": 1e-07,
+      "current_output_series_resistor_present": false,
+      "current_channel_passive_rc_cutoff_hz": null
+    },
+    "unknown_actual_inputs": {
+      "vin_raw_source_max_v": null,
+      "vin_raw_transient_max_v": null,
+      "vdda_min_v": null,
+      "vdda_max_v": null,
+      "effective_filter_capacitance_f": null,
+      "adc_sample_cycles": null,
+      "adc_clock_hz": null,
+      "adc_error_budget_v": null,
+      "amplifier_error_budget_v": null,
+      "current_envelope_a": null,
+      "power_sequence_envelope": null
+    },
+    "actual": {
+      "voltage_range": {
+        "status": "unavailable",
+        "inputs": {
+          "vin_raw_max_v": null,
+          "vdda_min_v": null,
+          "ratio_max": 0.12861904940259936
+        },
+        "missing_fields": [
+          "vin_raw_max_v",
+          "vdda_min_v"
+        ],
+        "adc_max_v": null,
+        "headroom_v": null,
+        "input_ceiling_v": null,
+        "strict_positive_arithmetic_margin": null,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false
+      },
+      "adc_acquisition": {
+        "status": "unavailable",
+        "inputs": {
+          "fadc_hz": null,
+          "rain_ohm": null,
+          "radc_ohm": null,
+          "cadc_f": null,
+          "bits": 12
+        },
+        "missing_fields": [
+          "fadc_hz",
+          "rain_ohm",
+          "radc_ohm",
+          "cadc_f"
+        ],
+        "k_min_cycles": null,
+        "equivalent_time_s": null,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "illustrative_only": true,
+        "external_capacitance_modeled": false,
+        "actual_sample_cycles": null,
+        "actual_sample_time_s": null,
+        "acquisition_qualified": false
+      },
+      "current_transfer": {
+        "status": "unavailable",
+        "inputs": {
+          "current_a": null,
+          "shunt_ohm": 0.02,
+          "gain_v_per_v": 20.0
+        },
+        "missing_fields": [
+          "current_a"
+        ],
+        "ideal_transfer_v_per_a": null,
+        "ideal_output_v": null,
+        "shunt_drop_v": null,
+        "shunt_loss_w": null,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "validated_current_range_a": null,
+        "output_swing_qualified": false,
+        "values_are_device_ratings": false
+      }
+    },
+    "divider": {
+      "status": "calculated",
+      "inputs": {
+        "rtop_ohm": 47000.0,
+        "rbottom_ohm": 6800.0,
+        "top_tolerance": 0.01,
+        "bottom_tolerance": 0.01
+      },
+      "missing_fields": [],
+      "ratio_nominal": 0.12639405204460966,
+      "ratio_min": 0.12420205896461385,
+      "ratio_max": 0.12861904940259936,
+      "inverse_nominal": 7.911764705882353,
+      "necessary_arithmetic_only": true,
+      "hardware_accepted": false
+    },
+    "divider_filter_nominal": {
+      "status": "calculated",
+      "inputs": {
+        "rtop_ohm": 47000.0,
+        "rbottom_ohm": 6800.0,
+        "capacitance_f": 1e-07
+      },
+      "missing_fields": [],
+      "rth_ohm": 5940.520446096654,
+      "tau_s": 0.0005940520446096654,
+      "fc_hz": 267.91414074918555,
+      "necessary_arithmetic_only": true,
+      "hardware_accepted": false
+    },
+    "voltage_cases": [
+      {
+        "status": "calculated",
+        "inputs": {
+          "vin_raw_max_v": 25.2,
+          "vdda_min_v": 3.3,
+          "ratio_max": 0.12861904940259936
+        },
+        "missing_fields": [],
+        "adc_max_v": 3.241200044945504,
+        "headroom_v": 0.05879995505449598,
+        "input_ceiling_v": 25.65716365754222,
+        "strict_positive_arithmetic_margin": true,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "assumed_reference_floor": true,
+        "adc_nominal_v": 3.1851301115241633,
+        "adc_min_resistor_corner_v": 3.129891885908269
+      },
+      {
+        "status": "calculated",
+        "inputs": {
+          "vin_raw_max_v": 25.2,
+          "vdda_min_v": 3.135,
+          "ratio_max": 0.12861904940259936
+        },
+        "missing_fields": [],
+        "adc_max_v": 3.241200044945504,
+        "headroom_v": -0.10620004494550406,
+        "input_ceiling_v": 24.37430547466511,
+        "strict_positive_arithmetic_margin": false,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "assumed_reference_floor": true,
+        "adc_nominal_v": 3.1851301115241633,
+        "adc_min_resistor_corner_v": 3.129891885908269
+      },
+      {
+        "status": "calculated",
+        "inputs": {
+          "vin_raw_max_v": 26.0,
+          "vdda_min_v": 3.3,
+          "ratio_max": 0.12861904940259936
+        },
+        "missing_fields": [],
+        "adc_max_v": 3.344095284467583,
+        "headroom_v": -0.04409528446758326,
+        "input_ceiling_v": 25.65716365754222,
+        "strict_positive_arithmetic_margin": false,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "assumed_reference_floor": true,
+        "adc_nominal_v": 3.2862453531598512,
+        "adc_min_resistor_corner_v": 3.22925353307996
+      },
+      {
+        "status": "calculated",
+        "inputs": {
+          "vin_raw_max_v": 26.0,
+          "vdda_min_v": 3.135,
+          "ratio_max": 0.12861904940259936
+        },
+        "missing_fields": [],
+        "adc_max_v": 3.344095284467583,
+        "headroom_v": -0.2090952844675833,
+        "input_ceiling_v": 24.37430547466511,
+        "strict_positive_arithmetic_margin": false,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "assumed_reference_floor": true,
+        "adc_nominal_v": 3.2862453531598512,
+        "adc_min_resistor_corner_v": 3.22925353307996
+      }
+    ],
+    "divider_settling_cases": [
+      {
+        "description": "Full-reference ADC-node step, ideal nominal RC",
+        "status": "calculated",
+        "inputs": {
+          "tau_s": 0.0005940520446096654,
+          "adc_node_step_v": 3.3,
+          "vref_v": 3.3,
+          "bits": 12
+        },
+        "missing_fields": [],
+        "quarter_lsb_v": 0.000201416015625,
+        "settling_time_s": 0.005764716997578846,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false
+      },
+      {
+        "description": "Zero to 25.2 V VIN_RAW, nominal divider and RC",
+        "status": "calculated",
+        "inputs": {
+          "tau_s": 0.0005940520446096654,
+          "adc_node_step_v": 3.1851301115241633,
+          "vref_v": 3.3,
+          "bits": 12
+        },
+        "missing_fields": [],
+        "quarter_lsb_v": 0.000201416015625,
+        "settling_time_s": 0.005743670132282454,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false
+      }
+    ],
+    "adc_illustration": {
+      "status": "calculated",
+      "inputs": {
+        "fadc_hz": 30000000.0,
+        "rain_ohm": 5940.520446096654,
+        "radc_ohm": 6000.0,
+        "cadc_f": 7e-12,
+        "bits": 12
+      },
+      "missing_fields": [],
+      "k_min_cycles": 24.83302195999301,
+      "equivalent_time_s": 8.277673986664337e-07,
+      "necessary_arithmetic_only": true,
+      "hardware_accepted": false,
+      "illustrative_only": true,
+      "external_capacitance_modeled": false,
+      "actual_sample_cycles": null,
+      "actual_sample_time_s": null,
+      "acquisition_qualified": false
+    },
+    "shunt_examples": [
+      {
+        "status": "calculated",
+        "inputs": {
+          "current_a": 0.0,
+          "shunt_ohm": 0.02,
+          "gain_v_per_v": 20.0
+        },
+        "missing_fields": [],
+        "ideal_transfer_v_per_a": 0.4,
+        "ideal_output_v": 0.0,
+        "shunt_drop_v": 0.0,
+        "shunt_loss_w": 0.0,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "validated_current_range_a": null,
+        "output_swing_qualified": false,
+        "values_are_device_ratings": false
+      },
+      {
+        "status": "calculated",
+        "inputs": {
+          "current_a": 1.0,
+          "shunt_ohm": 0.02,
+          "gain_v_per_v": 20.0
+        },
+        "missing_fields": [],
+        "ideal_transfer_v_per_a": 0.4,
+        "ideal_output_v": 0.4,
+        "shunt_drop_v": 0.02,
+        "shunt_loss_w": 0.02,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "validated_current_range_a": null,
+        "output_swing_qualified": false,
+        "values_are_device_ratings": false
+      },
+      {
+        "status": "calculated",
+        "inputs": {
+          "current_a": 3.0,
+          "shunt_ohm": 0.02,
+          "gain_v_per_v": 20.0
+        },
+        "missing_fields": [],
+        "ideal_transfer_v_per_a": 0.4,
+        "ideal_output_v": 1.2,
+        "shunt_drop_v": 0.06,
+        "shunt_loss_w": 0.18,
+        "necessary_arithmetic_only": true,
+        "hardware_accepted": false,
+        "validated_current_range_a": null,
+        "output_swing_qualified": false,
+        "values_are_device_ratings": false
+      }
+    ],
+    "limitations": [
+      "Recorded part values and arithmetic do not establish qualified supplier identities or ratings.",
+      "The 1% resistor examples exclude temperature, leakage, reference variation and ADC errors.",
+      "3.3 V and 3.135 V are explicit illustration inputs; neither is a measured VDDA bound.",
+      "VIN_RAW sensing excludes upstream diode/fuse/wiring drops and is not battery-terminal measurement.",
+      "R33 measures converter input; BEC_ONLY servo current, divider draw and input TVS/capacitor currents bypass it.",
+      "Current-channel C37 directly loads U8; no series isolation resistor or valid passive RC cutoff is established.",
+      "RC step settling and the resistive-source ADC expression are separate simplified models, not combined acquisition proof.",
+      "Shunt ideal output ignores common-mode, output swing, amplifier offset/gain error and unpowered behavior.",
+      "Stage A firmware has no ADC driver, calibration, acquisition setting or voltage/current conversion."
+    ]
+  },
+  "findings": [
+    {
+      "id": "SENSE-BND",
+      "status": "verified_captured_topology",
+      "finding": "Voltage is post-D12 VIN_RAW; current is shared converter-input branch. BEC_ONLY and external propulsion do not pass through R33."
+    },
+    {
+      "id": "SENSE-RANGE",
+      "status": "conditional_range_not_qualified",
+      "finding": "Worst1% divider ratio is compared to explicit illustrative reference floors; actual VDDA/transient/error budgets remain unavailable."
+    },
+    {
+      "id": "SENSE-LOAD",
+      "status": "source_review_stability_unqualified",
+      "finding": "Nominal100nF is100 times TI listed1nF typical capacitive-load capability. No measured oscillation or guaranteed maximum is inferred."
+    },
+    {
+      "id": "SENSE-PART",
+      "status": "source_review_identity_inconsistency",
+      "finding": "R33 field1W differs from exact Bourns MPN3W@70C rating. C36/C37 exact orderable identities remain unverified; no BOM or thermal release."
+    },
+    {
+      "id": "SENSE-OFF",
+      "status": "power_state_qualification_open",
+      "finding": "PA2 FT and PA4 TTa need distinct analog/off-state analysis; internal diodes and unpowered amplifier output are not qualified isolation/protection."
+    },
+    {
+      "id": "SENSE-SW",
+      "status": "reviewed_captured_source",
+      "finding": "Captured Stage A has no ADC acquisition/calibration; proposed future telemetry must name actual measurement boundaries."
+    }
+  ]
+}

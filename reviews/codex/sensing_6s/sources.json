@@ -1,0 +1,123 @@
+{
+  "revision": "SENSE-01",
+  "consulted_utc": "2026-11-06",
+  "sources": [
+    {
+      "id": "TI-INA180",
+      "url": "https://www.ti.com/lit/ds/symlink/ina180.pdf",
+      "revision": "SBOS741H July2022 (electrical body; packaging addenda may update)",
+      "locations": [
+        "p7 sections7.1/7.3",
+        "p8 section7.5",
+        "pp19-20 sections8.4.2-3",
+        "p23 section9.1.3",
+        "p26 section9.3"
+      ],
+      "claims": [
+        "Operating VS2.7..5.5V and common-mode -0.2..26V; stress ratings separate",
+        "A1 gain20; gain error1% under stated output0.5..VS-0.5V conditions; offset depends on common mode",
+        "Capacitive-load row lists1nF in TYP column for no sustained oscillation, not a guaranteed maximum; outputRC recommended for high-impedance receiver",
+        "Differential input withstand applies powered/unpowered; output is not specified as isolated; typical high-impedance paths are not a guaranteed safety limit"
+      ],
+      "limits": "No actual waveform, hot errors, guaranteed off-state isolation or board acceptance."
+    },
+    {
+      "id": "ST-DS10693",
+      "url": "https://www.st.com/resource/en/datasheet/stm32f446re.pdf",
+      "revision": "DS10693 Rev11 May2026",
+      "locations": [
+        "Table10 pp47-48",
+        "Tables13-14 pp73-74",
+        "Table16 pp76-77",
+        "Table74 and Equation1 pp140-141",
+        "pp142-144"
+      ],
+      "claims": [
+        "PA2 FT versus PA4 TTa; analog peripheral limits differ from digital FT tolerance",
+        "ADC range0..VREF+; LQFP64 internal reference connections to VDDA/VSSA",
+        "RAIN<=50k additionally limited by sampling equation, RADC<=6k,CADC<=7pF",
+        "ADC max36MHz atVDDA2.4..3.6V;18MHz atVDDA1.7..2.4V; sampleclock example30MHz is an allocation"
+      ],
+      "limits": "Stress/injection ratings are not conversion or diode-protection approval; source equation does not qualify external-capacitor scan behavior."
+    },
+    {
+      "id": "ST-AN4899",
+      "url": "https://www.st.com/resource/en/application_note/an4899-stm32-microcontroller-gpio-hardware-settings-and-lowpower-consumption-stmicroelectronics.pdf",
+      "revision": "AN4899 Rev4 May2026",
+      "locations": [
+        "section4.2 pp11-12",
+        "section5.2 pp19-20",
+        "section5.3.6 pp23-24",
+        "section6.3 p26"
+      ],
+      "claims": [
+        "FT tolerance is lost for analog use; analog input operating envelope follows reference/supply",
+        "Parasitic analog diodes are not characterized as protection devices; exact device off-state rules must be checked"
+      ],
+      "limits": "Do not replace device-specific constraints with a universal off-state VDD+0.3V rule."
+    },
+    {
+      "id": "YAGEO-R31",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-0747KL",
+      "revision": "Exact-part specsheet, no revision printed, p1",
+      "claims": [
+        "47k ohm +/-1%,0.1W at70C,+/-100ppm/C,75V ceiling subject to power and derating"
+      ]
+    },
+    {
+      "id": "YAGEO-R32",
+      "url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0603FR-076K8L",
+      "revision": "Exact-part specsheet, no revision printed, p1",
+      "claims": [
+        "6.8k ohm +/-1%,0.1W at70C,+/-100ppm/C,75V ceiling subject to power and derating"
+      ]
+    },
+    {
+      "id": "YAGEO-RC",
+      "url": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "revision": "RC_L V14 November14 2025",
+      "locations": [
+        "p2 ordering",
+        "p5 Table2",
+        "p7 working-voltage/derating"
+      ],
+      "claims": [
+        "Use minimum of sqrt(ratedPower*R) and listed maximum continuous voltage, with temperature derating"
+      ]
+    },
+    {
+      "id": "BOURNS-CRA",
+      "url": "https://www.bourns.com/docs/product-datasheets/cra.pdf",
+      "revision": "Rev07/26",
+      "locations": [
+        "p1 ratings/derating",
+        "p2 ordering"
+      ],
+      "claims": [
+        "CRA2512-FZ-R020ELF20mohm +/-1%,3W at70C,+/-50ppm/C; derates to zero at170C"
+      ],
+      "limits": "Rated component power does not establish actual PCB temperature/current capability."
+    },
+    {
+      "id": "BOURNS-EXACT",
+      "url": "https://www.bourns.com/docs/technical-documents/product-change-notifications/N1618_CRA_CRE_CRF_PCN.pdf",
+      "revision": "N1618 revised July11 2019, p2",
+      "claims": [
+        "Exact CRA2512-FZ-R020ELF row identifies20mohm1%3W"
+      ]
+    },
+    {
+      "id": "KYOCERA-IDENTITY-HOLD",
+      "url": "https://datasheets.kyocera-avx.com/C0GNP0-KGM.pdf",
+      "revision": "TDS-SMDMLCC-0036 Rev7",
+      "locations": [
+        "PDFp1/catalogp29 ordering",
+        "PDFp3/catalogp31 availability"
+      ],
+      "claims": [
+        "KGM15ACG1H104KT string decodes0603 C0G50V100nF+/-10% paper tape"
+      ],
+      "limits": "Exact orderable combination not independently verified. Decoding is not product availability or effective-capacitance qualification; C36/C37 identity remains held."
+    }
+  ]
+}

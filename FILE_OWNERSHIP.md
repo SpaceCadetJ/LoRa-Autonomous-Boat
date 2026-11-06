@@ -292,3 +292,13 @@ The prior POWER-DOC-01 CLI was reproduced failing on its captured pm/tools/build
 
 
 VSERVO-03 final CI review and capture: all child scopes, including historical replay repair, are released. Independent review passed ten replay tests, 456/75/13 historical hash maps, two original function outputs and exact Git provenance. Root completed the final browser capture after the repair; model and native candidates remain unchanged. Root owns final manifests and selective publication only.
+
+
+## SENSE-01 full 6S sensing review claim - 2026-11-06 UTC
+
+Root claims reviews/codex/sensing_6s/** and additive PM/application/portfolio/CI/handoff integration from 4ebf6cb. Bounded task: independently capture sensing topology, manufacturer limits, power states and conditional ADC calculations before an isolated circuit amendment. Expected and actual candidate/live electrical and copper deltas are zero; no native or hardware actions. sense_sources and sense_topology are read-only reviewers. Preserve POWER-DOC-01/VSERVO-01, converters, C11 lands, ACT-01 populations, disabled qualifications, separate IMU2, 6S and both unrelated tool edits. Shared PM template/builder and historical viewer records remain unchanged.
+
+SENSE-01 delegation: sense_topology owns only new-packet model.py/test_model.py; sense_sources remains read-only. sense_integration owns only pm/README.md, docs/applications/README.md, docs/portfolio/README.md, docs/portfolio/portfolio.json, .github/workflows/repository-checks.yml and .gitattributes. Root retains evidence, contract, documentation/diagram, checks, generated viewer and handoff.
+
+
+SENSE-01 completion: all child scopes released after independent topology/source/math review and twelve tests. Root completed final visual/browser review and owns manifests, publication checks, generated viewer and selective publication. No circuit, firmware, native renderer or copper change. Next scope is exact sensing-capacitor/filter/bypass qualification before a new isolated correction; preserve both unrelated tool edits.

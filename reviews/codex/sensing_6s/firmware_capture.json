@@ -1,0 +1,18 @@
+{
+  "source_revision": "4ebf6cbad3485653e367b355b83245bc2425a0b0",
+  "scope": "Exact Stage A files captured before review; future replay uses immutable snapshots, not future live firmware",
+  "files": {
+    "firmware_v2/src/main.c": {
+      "snapshot": "reviews/codex/sensing_6s/inputs/firmware_v2/src/main.c",
+      "sha256": "dfe36c27a94fbbd08b4f5999b01fd5dccb31be70e3ccc068890a94f15d355bd7"
+    },
+    "firmware_v2/README.md": {
+      "snapshot": "reviews/codex/sensing_6s/inputs/firmware_v2/README.md",
+      "sha256": "a57fbf708325ea82431be6e71e87460798062799adc9440bcddfe51a770fd477"
+    },
+    "firmware_v2/board_contract.json": {
+      "snapshot": "reviews/codex/sensing_6s/inputs/firmware_v2/board_contract.json",
+      "sha256": "924235d31951c05814149f7ce1e8db78d3962daa138851a4412a5599263c4dac"
+    }
+  }
+}

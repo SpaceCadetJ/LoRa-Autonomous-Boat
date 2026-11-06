@@ -1,6 +1,14 @@
 # LoRa engineering workspace
 
-## Current local-shunt specification - VSERVO-03, 2026-10-29
+## Current 6S sensing review - SENSE-01, 2026-11-06 UTC
+
+[SENSE-01](../reviews/codex/sensing_6s/README.md), its [annotated sensing boundary](../reviews/codex/sensing_6s/sensing_boundary.svg), [conditional results](../reviews/codex/sensing_6s/RESULTS.md) and [captured/source evidence](../reviews/codex/sensing_6s/evidence.json) identify what the two ADC paths can observe. U1 PA2/pad 16 measures post-protection-diode VIN_RAW through 47 kΩ/6.8 kΩ; PA4/pad 20 receives U8 INA180A1 converter-input branch current through a 20 mΩ shunt at gain 20. These are not battery-terminal voltage or whole-vehicle current measurements; BEC_ONLY bypasses the shunt. Actual V2 firmware remains Stage A with no ADC implementation.
+
+C37's direct nominal 100 nF load is 100 times the INA180 datasheet's listed 1 nF typical capacitive-load capability; stability remains unqualified and actual oscillation is unmeasured. The divider's worst 1% tolerance case reaches 3.2412 V at 25.2 V and 3.3441 V at 26 V. Minimum VDDA, transients and calibration remain unknown, so sensing is unqualified. R33's recorded 0.02R/1 W value conflicts with the exact Bourns CRA2512-FZ-R020ELF manufacturer's 3 W at 70 °C rating; this is an identity/annotation inconsistency, not a thermal uprating.
+
+The exact C36/C37 KGM15ACG1H104KT orderable combination remains unverified; nominal 100 nF RC arithmetic does not validate the capacitor identity. No circuit, native candidate or hardware changes. POWER-DOC-01 remains the presentation and VSERVO-01 the electrical candidate; 6S, both converters, source populations and disabled missing qualifications are preserved. Next: qualify exact C36/C37 and U8 filter/bypass parts and values, then apply an isolated output-loading correction with consistent R33 rating annotation. Separately review the divider/off-state and current-sense common-mode boundaries afterward. Preserve all candidates and sources. Earlier next-task wording below is historical.
+
+## Previous local-shunt specification - VSERVO-03, 2026-10-29
 
 [VSERVO-03](../reviews/codex/vservo_shunt_spec/README.md) specifies an independent switched-resistor shunt across local VSERVO and GND. The [annotated proposal](../reviews/codex/vservo_shunt_spec/v2_shunt_spec.svg), [conditional calculations](../reviews/codex/vservo_shunt_spec/RESULTS.md) and [specification explorer](../reviews/codex/vservo_shunt_spec/index.html) connect threshold/hysteresis bounds, resistor and current limits, startup, event energy, repeated dissipation and fault behavior. Actual receiver/source limits remain unavailable; a positive illustrative result does not qualify a device or circuit.
 

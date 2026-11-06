@@ -1,0 +1,41 @@
+{
+  "scope": "SENSE-01 auto-discovered guides and static boundary drawing; historical PM renderer unchanged, no new application behavior",
+  "input_sha256": {
+    "reviews/codex/sensing_6s/README.md": "68880c2c29ba60c8a161ba261f94c5fbb180089694b93a0f1f231cac4548024b",
+    "reviews/codex/sensing_6s/RESULTS.md": "b2df24810e90ee055228941aaccbc4d384750fe5a1ffd900fafebd019ef5ab3e",
+    "reviews/codex/sensing_6s/evidence.json": "b24e6ba07a7a845d8ea618edb7c05cba4a8fd2836cebda5897384f3cf56b13e0",
+    "reviews/codex/sensing_6s/sensing_boundary.svg": "0d078565dc6b7e02f859aef64eecc3948e7f154263c6c4854b01923982783ee8",
+    "reviews/codex/sensing_6s/verify_viewer.cjs": "b099b7519f01678ab336e5da7c40de9e599e216e50bfb2a6782855caed923b15",
+    "reviews/codex/vservo_shunt_spec/viewer-template.snapshot.html": "ee718709560f1265d5beed162120c98a54f4d1eaa1b7c2360b68544a58fa6a8e",
+    "reviews/codex/vservo_shunt_spec/viewer-builder.snapshot.mjs": "9f95faeb30a6e9505e4fff28f11eb6779b89df6209b0bc0db4998192b830589b"
+  },
+  "renderer_archive": {
+    "pm/index.template.html": "reviews/codex/vservo_shunt_spec/viewer-template.snapshot.html",
+    "pm/tools/build.mjs": "reviews/codex/vservo_shunt_spec/viewer-builder.snapshot.mjs"
+  },
+  "generated_pm_sha256_at_capture": "d8c42aceda68309767620bace06f5bbb983d817e54b3f8c1740cf182a5fac1d4",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1050
+      },
+      "guide_and_results_open": true,
+      "embedded_markdown_matches": true,
+      "dialog_and_document_no_overflow": true,
+      "page_errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "guide_and_results_open": true,
+      "embedded_markdown_matches": true,
+      "dialog_and_document_no_overflow": true,
+      "page_errors": []
+    }
+  ],
+  "diagram_text_in_bounds": true,
+  "native_or_hardware_acceptance": false
+}
